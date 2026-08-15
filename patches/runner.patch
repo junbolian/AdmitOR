@@ -1,0 +1,51 @@
+--- a/pipeline/runner.py
++++ b/pipeline/runner.py
+@@ -100,9 +100,14 @@
+         return _record("cluster", item, result)
+ 
+     with ThreadPoolExecutor(max_workers=args.cluster_workers) as pool:
+-        futures = [pool.submit(collect, item) for item in pending]
++        futures = {pool.submit(collect, item): item for item in pending}
+         for future in as_completed(futures):
+-            record = future.result()
++            item = futures[future]
++            try:
++                record = future.result()
++            except Exception as exc:  # AdmitOR: sample-fatal, not phase-fatal
++                print(f"[run_cluster] sample {item.get('sample_id')} failed: {exc}; skipped, resume retries it", flush=True)
++                continue
+             with write_lock:
+                 _commit(layout, state, record)
+ 
+@@ -166,7 +171,29 @@
+         return _record("eval", item, result)
+ 
+     with ThreadPoolExecutor(max_workers=args.eval_workers) as pool:
+-        futures = [pool.submit(evaluate, item) for item in pending]
++        futures = {pool.submit(evaluate, item): item for item in pending}
+         for future in as_completed(futures):
++            item = futures[future]
++            try:
++                record = future.result()
++            except Exception as exc:  # AdmitOR: sample-fatal, not phase-fatal
++                message = f"{type(exc).__name__}: {exc}"
++                if "invalid skill_id" in str(exc):
++                    # Deterministic selector hallucination: temp-0 retries can
++                    # never pass this sample; commit it as a failed row
++                    # (prediction None, scored wrong, same treatment as solver
++                    # failures) so the segment can close instead of crash-loop.
++                    print(f"[run_eval] sample {item.get('sample_id')} failed "
++                          f"deterministically ({message}); committing failed row",
++                          flush=True)
++                    record = _record("eval", item, {
++                        "prediction": None,
++                        "error": message,
++                        "e1_eval_failure": True,
++                    })
++                else:
++                    print(f"[run_eval] sample {item.get('sample_id')} failed: "
++                          f"{message}; skipped, resume retries it", flush=True)
++                    continue
+             with lock:
+-                _commit(layout, state, future.result())
++                _commit(layout, state, record)

@@ -1,0 +1,179 @@
+--- a/llm/llm_caller.py
++++ b/llm/llm_caller.py
+@@ -1,6 +1,8 @@
+ from __future__ import annotations
+ 
+ import json
++import os
++import sys
+ import time
+ import urllib.error
+ import urllib.request
+@@ -8,6 +10,38 @@
+ 
+ from .llm_config import LLMConfig
+ 
++# ---- AdmitOR runlog hook (W3 wiring) --------------------------------------
++# Logging only; zero behavioral change to the host. If runlog is missing or
++# anything in the hook fails, the host runs exactly as before.
++# Env knobs:
++#   ADMITOR_SCRIPTS  dir containing runlog.py (default ./scripts)
++#   ADMITOR_RUNLOG   output jsonl (default runs/host_llm.jsonl, CWD-relative)
++#   ADMITOR_RUN_ID   run id tag (default "host")
++#   ADMITOR_FAMILY   family tag (default "deepseek")
++_ADMITOR_LOGGER = None
++_ADMITOR_TRIED = False
++
++
++def _admitor_logger():
++    global _ADMITOR_LOGGER, _ADMITOR_TRIED
++    if _ADMITOR_TRIED:
++        return _ADMITOR_LOGGER
++    _ADMITOR_TRIED = True
++    try:
++        scripts = os.environ.get("ADMITOR_SCRIPTS", os.path.join(".", "scripts"))
++        if scripts and scripts not in sys.path:
++            sys.path.append(scripts)
++        from runlog import RunLogger
++        _ADMITOR_LOGGER = RunLogger(
++            os.environ.get("ADMITOR_RUNLOG", "runs/host_llm.jsonl"),
++            run_id=os.environ.get("ADMITOR_RUN_ID", "host"),
++            operator=os.environ.get("ADMITOR_OPERATOR", "unknown"),
++        )
++    except Exception:
++        _ADMITOR_LOGGER = None
++    return _ADMITOR_LOGGER
++# ---------------------------------------------------------------------------
++
+ 
+ def _extract_message_content(payload: Dict[str, Any]) -> str:
+     try:
+@@ -112,15 +146,99 @@
+         body = json.dumps(payload).encode("utf-8")
+         last_error: Optional[Exception] = None
+ 
+-        for attempt in range(self.config.retries):
++        # ---- AdmitOR opt-in response cache (retry economics only) ----------
++        # ADMITOR_CACHE=<dir> caches successful responses keyed by the exact
++        # request body (model+messages+temperature+...). With temp 0 an
++        # identical request is the identical computation, so a monolithic
++        # rebuild that dies mid-way replays its completed calls for free on
++        # the next attempt. Unset => stock behavior, no cache reads/writes.
++        cache_dir = os.environ.get("ADMITOR_CACHE")
++        cache_path = None
++        if cache_dir:
++            try:
++                import hashlib
++                os.makedirs(cache_dir, exist_ok=True)
++                key = hashlib.sha256(body).hexdigest()
++                cache_path = os.path.join(cache_dir, key + ".json")
++                if os.path.isfile(cache_path):
++                    with open(cache_path, encoding="utf-8") as fh:
++                        cached = json.load(fh)
++                    lg = _admitor_logger()
++                    if lg is not None:
++                        try:
++                            lg.write({"kind": "llm_cache_hit",
++                                      "model": payload.get("model", "?"),
++                                      "key": key[:16]})
++                        except Exception:
++                            pass
++                    return cached
++            except Exception:
++                cache_path = None  # cache trouble must never break the call
++        # --------------------------------------------------------------------
++
++
++        # ---- AdmitOR opt-in retry override (network robustness only) -------
++        # Unset ADMITOR_RETRIES => stock behavior, byte-identical.
++        # Set (e.g. 10) => more attempts with exponential backoff capped at
++        # 60s, so a transient relay drop is absorbed inside this call instead
++        # of escalating to a phase-fatal RuntimeError upstream.
++        retries = self.config.retries
++
++        def _backoff(a: int) -> float:
++            return 1.5 * (a + 1)
++
++        env_retries = os.environ.get("ADMITOR_RETRIES")
++        if env_retries:
++            try:
++                retries = max(1, int(env_retries))
++
++                def _backoff(a: int) -> float:  # noqa: F811
++                    return min(60.0, 3.0 * (2 ** a))
++            except ValueError:
++                pass
++        # --------------------------------------------------------------------
++
++        for attempt in range(retries):
+             req = urllib.request.Request(url=url, data=body, method="POST")
+             req.add_header("Content-Type", "application/json")
+             if self.config.api_key:
+                 req.add_header("Authorization", f"Bearer {self.config.api_key}")
+ 
++            t0 = time.time()
+             try:
+                 with urllib.request.urlopen(req, timeout=self.config.timeout) as resp:
+                     response_payload = json.loads(resp.read().decode("utf-8"))
++                if cache_path:
++                    try:
++                        tmp = cache_path + ".tmp"
++                        with open(tmp, "w", encoding="utf-8") as fh:
++                            json.dump(response_payload, fh, ensure_ascii=False)
++                        os.replace(tmp, cache_path)
++                    except Exception:
++                        pass
++                # ---- AdmitOR runlog hook: success record (logging only) ----
++                lg = _admitor_logger()
++                if lg is not None:
++                    try:
++                        msg = response_payload.get("choices", [{}])[0].get(
++                            "message", {})
++                        lg.log_llm(
++                            model=payload.get("model", "?"),
++                            family=os.environ.get("ADMITOR_FAMILY", "deepseek"),
++                            strategy="host",
++                            request=payload,
++                            response_text=json.dumps(msg, ensure_ascii=False),
++                            usage=response_payload.get("usage") or {},
++                            latency_s=round(time.time() - t0, 3),
++                            tags=[
++                                "resp_model:" + str(response_payload.get("model")),
++                                "attempt:" + str(attempt),
++                                "req_chars:" + str(len(body)),
++                            ],
++                        )
++                    except Exception:
++                        pass
++                # ------------------------------------------------------------
+                 return response_payload
+             except urllib.error.HTTPError as err:
+                 detail = err.read().decode("utf-8", errors="ignore")
+@@ -130,7 +248,23 @@
+             except Exception as err:  # pragma: no cover - defensive
+                 last_error = err
+ 
+-            if attempt < self.config.retries - 1:
+-                time.sleep(1.5 * (attempt + 1))
++            if attempt < retries - 1:
++                time.sleep(_backoff(attempt))
+ 
+-        raise RuntimeError(f"LLM call failed after retries: {last_error}")
++        # ---- AdmitOR runlog hook: terminal failure record (logging only) ---
++        lg = _admitor_logger()
++        if lg is not None:
++            try:
++                lg.write({
++                    "kind": "llm_failure",
++                    "model": payload.get("model", "?"),
++                    "family": os.environ.get("ADMITOR_FAMILY", "deepseek"),
++                    "strategy": "host",
++                    "error": str(last_error)[:300],
++                    "retries": retries,
++                    "req_chars": len(body),
++                })
++            except Exception:
++                pass
++        # --------------------------------------------------------------------
++        raise RuntimeError(f"LLM call failed after retries: {last_error}")
+\ No newline at end of file
