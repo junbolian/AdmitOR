@@ -1,0 +1,14 @@
+# Disable all end-of-line conversion.
+#
+# artifacts/MANIFEST.md records the sha256 of every released artifact, and
+# release_tools/make_manifest.py verifies those hashes against the files in a
+# checkout. If Git rewrote line endings on checkout, the bytes on disk would
+# no longer match the bytes that were hashed and verification would fail on
+# Windows while passing on Linux.
+#
+# The patch files under patches/ have the same requirement: they are unified
+# diffs against LF-normalized upstream sources and must not be rewritten.
+#
+# Everything in this repository is committed with LF, so disabling conversion
+# gives every platform a byte-identical working tree.
+* -text

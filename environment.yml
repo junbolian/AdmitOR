@@ -1,0 +1,38 @@
+# AdmitOR reproduction environment.
+#
+# Versions are the ones actually used for the experiments reported in the
+# paper, read off the frozen environment snapshot taken before the E1
+# certification campaign.
+#
+# Solver stack: HiGHS (highspy) is the default and is installed here. It is
+# open source and needs no licence, and every offline test in tests/ runs
+# against it or against pure Python.
+#
+# Gurobi is OPTIONAL and COMMERCIAL. One of the three certification
+# candidate arms (C-direct) was generated against the gurobipy stack in the
+# paper's runs, so a full live reproduction of that arm needs a valid Gurobi
+# licence (see https://www.gurobi.com/academics for academic licences).
+# Everything else, including the whole offline test suite and every
+# artifact-replay script, runs without it. To enable that arm, uncomment the
+# gurobipy line below or install it into the created environment with:
+#     pip install gurobipy==13.0.1
+#
+#     conda env create -f environment.yml
+#     conda activate admitor
+
+name: admitor
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.12
+  - pip
+  - pip:
+      - numpy==2.4.4
+      - scipy==1.18.0
+      - pyomo==6.10.0
+      - highspy==1.15.1
+      - requests==2.34.2
+      - openai==2.53.0
+      - pytest==8.4.2
+      # Optional commercial solver, not required by the core gate or tests:
+      # - gurobipy==13.0.1

@@ -1,0 +1,40 @@
+# Secrets and local environment
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Run outputs and local working directories
+runs/
+outputs/
+local/
+scratch/
+*.log
+
+# Regenerated derived data (rebuild with scripts/regen_derived.py)
+data/derived/
+
+# Release staging
+release_assets/
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
