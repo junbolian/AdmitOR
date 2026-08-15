@@ -1,0 +1,311 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "distances": [
+        [
+          0,
+          11,
+          19,
+          18,
+          19
+        ],
+        [
+          16,
+          0,
+          10,
+          14,
+          15
+        ],
+        [
+          15,
+          13,
+          0,
+          12,
+          13
+        ],
+        [
+          10,
+          11,
+          14,
+          0,
+          16
+        ],
+        [
+          10,
+          16,
+          15,
+          10,
+          0
+        ]
+      ],
+      "k": 3,
+      "n": 5
+    },
+    {
+      "distances": [
+        [
+          0,
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "k": 3,
+      "n": 5
+    },
+    {
+      "distances": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "k": 3,
+      "n": 5
+    },
+    {
+      "distances": [
+        [
+          0,
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0,
+          -1,
+          -1
+        ]
+      ],
+      "k": 3,
+      "n": 5
+    },
+    {
+      "distances": [
+        [
+          -1,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "k": 3,
+      "n": 5
+    },
+    {
+      "distances": [
+        [
+          -1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "k": 3,
+      "n": 5
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      91.0,
+      -2.0,
+      -1.0,
+      -2.0,
+      -1.0,
+      -1.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:return sum(distances[i * n + j] * m.y[i, j] for (i, j) in m.P) | ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+      "crash:return sum(distances[i * n + j] * m.y[i, j] for (i, j) in m.P) | ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+      "crash:return sum(distances[i * n + j] * m.y[i, j] for (i, j) in m.P) | ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+      "crash:return sum(distances[i * n + j] * m.y[i, j] for (i, j) in m.P) | ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+      "crash:return sum(distances[i * n + j] * m.y[i, j] for (i, j) in m.P) | ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+      "crash:return sum(distances[i * n + j] * m.y[i, j] for (i, j) in m.P) | ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'"
+    ],
+    "B-structured": [
+      "crash:I��ll fix the distance lookup to match the provided `params[\"distances\"]` structure, keep the Pyomo/HiGHS solve pattern exact, and return a complete script. | ^ | SyntaxError: invalid character '��' (",
+      "crash:I��ll fix the distance lookup to match the provided `params[\"distances\"]` structure, keep the Pyomo/HiGHS solve pattern exact, and return a complete script. | ^ | SyntaxError: invalid character '��' (",
+      "crash:I��ll fix the distance lookup to match the provided `params[\"distances\"]` structure, keep the Pyomo/HiGHS solve pattern exact, and return a complete script. | ^ | SyntaxError: invalid character '��' (",
+      "crash:I��ll fix the distance lookup to match the provided `params[\"distances\"]` structure, keep the Pyomo/HiGHS solve pattern exact, and return a complete script. | ^ | SyntaxError: invalid character '��' (",
+      "crash:I��ll fix the distance lookup to match the provided `params[\"distances\"]` structure, keep the Pyomo/HiGHS solve pattern exact, and return a complete script. | ^ | SyntaxError: invalid character '��' (",
+      "crash:I��ll fix the distance lookup to match the provided `params[\"distances\"]` structure, keep the Pyomo/HiGHS solve pattern exact, and return a complete script. | ^ | SyntaxError: invalid character '��' ("
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

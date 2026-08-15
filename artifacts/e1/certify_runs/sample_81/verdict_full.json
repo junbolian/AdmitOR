@@ -1,0 +1,114 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek"
+  ],
+  "instantiations": [
+    {
+      "crate_weight": 28,
+      "truck_capacity": 100,
+      "num_crates": 10,
+      "num_trucks": 10
+    },
+    {
+      "crate_weight": 28.365607907473027,
+      "truck_capacity": 71.50064531336001,
+      "num_crates": 10,
+      "num_trucks": 10
+    },
+    {
+      "crate_weight": 34.18827284984074,
+      "truck_capacity": 110.60196924537469,
+      "num_crates": 10,
+      "num_trucks": 10
+    },
+    {
+      "crate_weight": 15.315309181116227,
+      "truck_capacity": 71.78783316628422,
+      "num_crates": 10,
+      "num_trucks": 10
+    },
+    {
+      "crate_weight": -8.407841818968183,
+      "truck_capacity": 81.93025904119891,
+      "num_crates": 10,
+      "num_trucks": 10
+    },
+    {
+      "crate_weight": 3.226437322441802,
+      "truck_capacity": 105.35594103255453,
+      "num_crates": 10,
+      "num_trucks": 10
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      4.0,
+      5.0,
+      4.0,
+      3.0,
+      1.0,
+      1.0
+    ],
+    "B-structured": [
+      4.0,
+      5.0,
+      4.0,
+      3.0,
+      0.0,
+      1.0
+    ],
+    "C-direct": [
+      4.0,
+      5.0,
+      4.0,
+      3.0,
+      1.0,
+      1.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "B-structured": "diverges from consensus by 1 on instance 4 (params: {'crate_weight': -8.41, 'truck_capacity': 81.93, 'num_crates': 10, 'num_trucks': 10})"
+  },
+  "disagreements": [],
+  "notes": []
+}

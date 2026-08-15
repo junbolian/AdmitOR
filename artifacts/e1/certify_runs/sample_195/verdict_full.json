@@ -1,0 +1,209 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "expected_returns": [
+        0.1198399540303747,
+        0.1395955829429499,
+        0.1457913995574378,
+        0.1496654487872439
+      ],
+      "min_expected_return": 0.1,
+      "variances": [
+        0.0101879558977498,
+        0.0355505169950095,
+        0.0560854380672688,
+        0.0407491774646337
+      ],
+      "covariances": [
+        0.0158199509980502,
+        0.00491024687378598,
+        0.015691134415331,
+        0.0280846471658999,
+        0.0272910762602217,
+        0.0729113393387762
+      ],
+      "max_asset_weight": 0.3
+    },
+    {
+      "expected_returns": [
+        0.1418280395373651,
+        -0.04249677343319992,
+        0.032508795510735766,
+        0.01696322144464682
+      ],
+      "min_expected_return": 0.14729424283280249,
+      "variances": [
+        0.13533989748458228,
+        0.1784359135409691,
+        0.017387766525883232,
+        0.08438436393705409
+      ],
+      "covariances": [
+        -0.09255069514048242,
+        -0.045340506299099165,
+        0.02633882202584059,
+        -0.0933660075790341,
+        -0.05029058732833788,
+        0.062471109444880796
+      ],
+      "max_asset_weight": 0.308089466508579
+    },
+    {
+      "expected_returns": [
+        0.016132186612209,
+        0.1267797051627726,
+        0.19282913700334797,
+        -0.048050372096581695
+      ],
+      "min_expected_return": 0.16116385036656158,
+      "variances": [
+        0.13962787899764537,
+        0.06805010330359838,
+        0.031095899962356312,
+        0.19144261444135624
+      ],
+      "covariances": [
+        -0.015851363721843315,
+        -0.07681353915496303,
+        -0.075820905791634,
+        0.11187359158686494,
+        0.05093150784172276,
+        0.10178206831859504
+      ],
+      "max_asset_weight": 0.3413517216048872
+    },
+    {
+      "expected_returns": [
+        0.11086842743641022,
+        0.2419347291938112,
+        0.06356031316250603,
+        0.11561218938196809
+      ],
+      "min_expected_return": 0.165880932850599,
+      "variances": [
+        0.12370395047284921,
+        0.17234138006215546,
+        0.11547042905135241,
+        0.1409143672429847
+      ],
+      "covariances": [
+        -0.08854390408608445,
+        -0.04302543108711329,
+        -0.027653009099473214,
+        -0.08005200576909313,
+        -0.04180227840974246,
+        -0.07474964264756773
+      ],
+      "max_asset_weight": 0.2600352485598166
+    },
+    {
+      "expected_returns": [
+        0.14070533327932006,
+        0.05944965369102527,
+        0.06105429013506479,
+        0.012852109231446307
+      ],
+      "min_expected_return": 0.053395564409822675,
+      "variances": [
+        0.1873309175424988,
+        0.1296070770493187,
+        0.12182620113339765,
+        0.0342277296396194
+      ],
+      "covariances": [
+        0.08228169948758729,
+        -0.05914937655951791,
+        -0.00513613956058806,
+        0.1473808376591488,
+        0.05999993996352321,
+        0.03923743594366155
+      ],
+      "max_asset_weight": 0.33323056517817745
+    },
+    {
+      "expected_returns": [
+        0.20285557605694288,
+        0.18279997346387344,
+        0.01871442158923131,
+        -0.04036992682878868
+      ],
+      "min_expected_return": 0.06309060961181638,
+      "variances": [
+        0.053548175195140546,
+        0.04219656871726529,
+        0.1885819428670109,
+        0.17527352529453377
+      ],
+      "covariances": [
+        -0.021330529800380527,
+        0.06385966632372,
+        -0.0010920247348339407,
+        0.12863689743513587,
+        0.014712963146849695,
+        -0.03377995837548689
+      ],
+      "max_asset_weight": 0.254392951384917
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      0.025283506016794306,
+      null,
+      null,
+      null,
+      0.03262707138931238,
+      0.04624173841068149
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i"
+    ],
+    "B-structured": [
+      "crash:return covariances[(i_idx, j_idx)] | ~~~~~~~~~~~^^^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:return covariances[(i_idx, j_idx)] | ~~~~~~~~~~~^^^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:return covariances[(i_idx, j_idx)] | ~~~~~~~~~~~^^^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:return covariances[(i_idx, j_idx)] | ~~~~~~~~~~~^^^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:return covariances[(i_idx, j_idx)] | ~~~~~~~~~~~^^^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:return covariances[(i_idx, j_idx)] | ~~~~~~~~~~~^^^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple"
+    ],
+    "C-direct": [
+      "optimal",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

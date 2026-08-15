@@ -1,0 +1,132 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "vehicle_costs": [
+        38,
+        48,
+        72,
+        36,
+        28
+      ]
+    },
+    {
+      "vehicle_costs": [
+        80,
+        13,
+        40,
+        35,
+        91
+      ]
+    },
+    {
+      "vehicle_costs": [
+        84,
+        108,
+        20,
+        56,
+        13
+      ]
+    },
+    {
+      "vehicle_costs": [
+        34,
+        66,
+        13,
+        32,
+        81
+      ]
+    },
+    {
+      "vehicle_costs": [
+        70,
+        34,
+        75,
+        99,
+        11
+      ]
+    },
+    {
+      "vehicle_costs": [
+        99,
+        87,
+        47,
+        27,
+        115
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      186.0,
+      224.0,
+      225.0,
+      194.0,
+      190.0,
+      348.0
+    ],
+    "B-structured": [
+      186.0,
+      224.0,
+      225.0,
+      194.0,
+      190.0,
+      348.0
+    ],
+    "C-direct": [
+      186.0,
+      224.0,
+      225.0,
+      194.0,
+      190.0,
+      348.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": []
+}

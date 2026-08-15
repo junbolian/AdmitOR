@@ -1,0 +1,191 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "hub_demand": [
+        345,
+        655,
+        -774,
+        -142,
+        -84
+      ],
+      "fixed_costs": [
+        1901,
+        2075
+      ],
+      "variable_costs": [
+        19,
+        21
+      ],
+      "capacity_limits": [
+        539,
+        990
+      ]
+    },
+    {
+      "hub_demand": [
+        373.86134728078196,
+        468.32922680250806,
+        -669.5236154506189,
+        -118.41755489027969,
+        -95.91814919386623
+      ],
+      "fixed_costs": [
+        2102.543435354573,
+        2563.2635617925325
+      ],
+      "variable_costs": [
+        14.291102691975345,
+        20.016214928034408
+      ],
+      "capacity_limits": [
+        386.93642076627197,
+        822.8709570333403
+      ]
+    },
+    {
+      "hub_demand": [
+        346.10854463739605,
+        468.9286360857584,
+        -634.1402049788795,
+        -154.77015409881537,
+        -86.26505062240211
+      ],
+      "fixed_costs": [
+        1582.1345734996185,
+        2186.1357764255063
+      ],
+      "variable_costs": [
+        22.527507206127225,
+        14.781884371943567
+      ],
+      "capacity_limits": [
+        637.9019460427301,
+        1107.6948006230066
+      ]
+    },
+    {
+      "hub_demand": [
+        311.93185691922434,
+        519.6034434260301,
+        -986.3297507328292,
+        -128.0778552435958,
+        -63.474390506359455
+      ],
+      "fixed_costs": [
+        1441.014699416249,
+        2507.6304861025874
+      ],
+      "variable_costs": [
+        20.18247675758256,
+        24.869816243257194
+      ],
+      "capacity_limits": [
+        613.2952598167807,
+        1011.5194863240923
+      ]
+    },
+    {
+      "hub_demand": [
+        442.93496314372976,
+        607.2640102428828,
+        -798.1676691632865,
+        -170.06527739435518,
+        -89.973395519158
+      ],
+      "fixed_costs": [
+        2313.5628904944724,
+        2171.303420844669
+      ],
+      "variable_costs": [
+        21.332118932850126,
+        15.277387234061344
+      ],
+      "capacity_limits": [
+        451.00230234571023,
+        864.8964503796516
+      ]
+    },
+    {
+      "hub_demand": [
+        258.0169392231909,
+        549.9868183398848,
+        -588.7050638178781,
+        -123.08335098497984,
+        -90.83849599092576
+      ],
+      "fixed_costs": [
+        1746.827583333278,
+        1913.3753040605188
+      ],
+      "variable_costs": [
+        15.68838015079496,
+        18.063920557818825
+      ],
+      "capacity_limits": [
+        680.2140936662206,
+        1077.9330188364765
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:fixed = sum(fixed_costs[i][j] * m.y[i, j] for i in hubs for j in hubs) | ~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:fixed = sum(fixed_costs[i][j] * m.y[i, j] for i in hubs for j in hubs) | ~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:fixed = sum(fixed_costs[i][j] * m.y[i, j] for i in hubs for j in hubs) | ~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:fixed = sum(fixed_costs[i][j] * m.y[i, j] for i in hubs for j in hubs) | ~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:fixed = sum(fixed_costs[i][j] * m.y[i, j] for i in hubs for j in hubs) | ~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:fixed = sum(fixed_costs[i][j] * m.y[i, j] for i in hubs for j in hubs) | ~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+    ],
+    "B-structured": [
+      "crash:return data[origin][destination] | ~~~~~~~~~~~~^^^^^^^^^^^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return data[origin][destination] | ~~~~~~~~~~~~^^^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return data[origin][destination] | ~~~~~~~~~~~~^^^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return data[origin][destination] | ~~~~~~~~~~~~^^^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return data[origin][destination] | ~~~~~~~~~~~~^^^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return data[origin][destination] | ~~~~~~~~~~~~^^^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable"
+    ],
+    "C-direct": [
+      "crash:fixed_cost_expr = gp.quicksum(fixed_costs.get((i, j), fixed_costs.get(f\"{i},{j}\", 0)) * y[i, j] | ^^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'get'",
+      "crash:fixed_cost_expr = gp.quicksum(fixed_costs.get((i, j), fixed_costs.get(f\"{i},{j}\", 0)) * y[i, j] | ^^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'get'",
+      "crash:fixed_cost_expr = gp.quicksum(fixed_costs.get((i, j), fixed_costs.get(f\"{i},{j}\", 0)) * y[i, j] | ^^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'get'",
+      "crash:fixed_cost_expr = gp.quicksum(fixed_costs.get((i, j), fixed_costs.get(f\"{i},{j}\", 0)) * y[i, j] | ^^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'get'",
+      "crash:fixed_cost_expr = gp.quicksum(fixed_costs.get((i, j), fixed_costs.get(f\"{i},{j}\", 0)) * y[i, j] | ^^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'get'",
+      "crash:fixed_cost_expr = gp.quicksum(fixed_costs.get((i, j), fixed_costs.get(f\"{i},{j}\", 0)) * y[i, j] | ^^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'get'"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

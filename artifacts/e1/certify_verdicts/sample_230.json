@@ -1,0 +1,31 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 60974.0,
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": [],
+  "warnings": [
+    "[holding_cost_per_unit] inverted abs range (lo > hi); swapped",
+    "[holding_cost_per_unit] abs range [-30.0, 0.0] is disjoint from base span [15, 15]; replaced with rel +/-30% around base",
+    "[drill_time_per_unit] inverted abs range (lo > hi); swapped",
+    "[drill_time_per_unit] abs range [-2.0, 0.5] is disjoint from base span [1, 1]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_230",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 147.2,
+  "m": 5,
+  "seed": 42
+}

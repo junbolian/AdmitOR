@@ -1,0 +1,316 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek"
+  ],
+  "instantiations": [
+    {
+      "fixed_costs": [
+        440,
+        283,
+        559,
+        476,
+        449,
+        293
+      ],
+      "variable_costs": [
+        12,
+        2,
+        3,
+        8,
+        5,
+        6
+      ],
+      "min_production": [
+        39,
+        42,
+        32,
+        40,
+        41,
+        32
+      ],
+      "max_production": [
+        104,
+        113,
+        112,
+        111,
+        132,
+        145
+      ],
+      "demand": [
+        180,
+        188,
+        211,
+        209
+      ]
+    },
+    {
+      "fixed_costs": [
+        501.3477913214688,
+        148.57804372801473,
+        433.2413889683377,
+        344.24831135883966,
+        555.1755751596415,
+        344.77294981491303
+      ],
+      "variable_costs": [
+        14.823692887474886,
+        1.5043265991552994,
+        2.859459275433487,
+        5.743026653302738,
+        4.15591392441081,
+        6.0192790371721046
+      ],
+      "min_production": [
+        5,
+        40,
+        130,
+        109,
+        44,
+        118
+      ],
+      "max_production": [
+        136.18076749449395,
+        57.234359843620894,
+        146.2517562052745,
+        132.99347284369318,
+        110.91306818037492,
+        95.04452747270832
+      ],
+      "demand": [
+        262.29835299722066,
+        157.27977448117383,
+        125.06937295321121,
+        124.71372275819398
+      ]
+    },
+    {
+      "fixed_costs": [
+        592.8975211928822,
+        312.35446687683014,
+        730.6847047603785,
+        585.3523304662573,
+        465.2664130631606,
+        431.6229188459556
+      ],
+      "variable_costs": [
+        11.125447515900145,
+        2.0624487575278723,
+        3.592928395655391,
+        8.56889481134838,
+        6.085120700932332,
+        6.2784677229243435
+      ],
+      "min_production": [
+        141,
+        9,
+        46,
+        58,
+        16,
+        47
+      ],
+      "max_production": [
+        62.504148658611825,
+        87.9110171514404,
+        127.19665775761283,
+        95.99637186567935,
+        114.86388765942851,
+        102.87851946186572
+      ],
+      "demand": [
+        138.0560079688404,
+        270.0910624899489,
+        242.23546628703122,
+        231.80838018440056
+      ]
+    },
+    {
+      "fixed_costs": [
+        295.3010052071627,
+        347.84288381994884,
+        370.84199401291795,
+        418.6207902766403,
+        668.7959844358313,
+        334.0199296372492
+      ],
+      "variable_costs": [
+        12.410038155177453,
+        2.2215371011878497,
+        3.6171334563416577,
+        9.324799575421975,
+        4.187144215892314,
+        4.315560878054535
+      ],
+      "min_production": [
+        63,
+        54,
+        42,
+        189,
+        175,
+        63
+      ],
+      "max_production": [
+        120.16562119066752,
+        101.20640481985507,
+        158.42933005094088,
+        106.43255563720126,
+        100.96418197774292,
+        108.2609886156276
+      ],
+      "demand": [
+        191.04626414936712,
+        143.39542240231182,
+        228.84764393716708,
+        292.1449826729177
+      ]
+    },
+    {
+      "fixed_costs": [
+        395.7362222617748,
+        203.56777484151118,
+        837.1235220307666,
+        480.53451578999716,
+        265.3183260660335,
+        160.30509799944724
+      ],
+      "variable_costs": [
+        9.189473738524745,
+        2.1529352500437082,
+        3.5257428558533355,
+        7.626367840638483,
+        3.690583118455871,
+        5.5738294314235315
+      ],
+      "min_production": [
+        199,
+        106,
+        194,
+        172,
+        2,
+        144
+      ],
+      "max_production": [
+        122.89787837876379,
+        117.17764733619386,
+        85.8844212746848,
+        126.64675964235869,
+        80.72488691465568,
+        135.54096134702021
+      ],
+      "demand": [
+        171.67026713925716,
+        273.31739437396305,
+        290.30497041979896,
+        159.54831160697796
+      ]
+    },
+    {
+      "fixed_costs": [
+        440.2578897421312,
+        192.05848219002718,
+        789.6589621937546,
+        652.366839242301,
+        358.50171136043616,
+        333.7122019957395
+      ],
+      "variable_costs": [
+        12.78458552235484,
+        1.5834071222595618,
+        3.4725194401352724,
+        8.189019344574204,
+        5.835879435891675,
+        6.109273219902638
+      ],
+      "min_production": [
+        0,
+        65,
+        4,
+        186,
+        176,
+        166
+      ],
+      "max_production": [
+        83.98146904187679,
+        63.045543813843196,
+        154.33707511085254,
+        160.61138842807733,
+        77.30625567295999,
+        142.968617180909
+      ],
+      "demand": [
+        102.45825332430906,
+        236.9932070683595,
+        267.09106458377437,
+        131.33381608045042
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      5174.0,
+      4485.813731576309,
+      8258.270791277018,
+      5575.407689502309,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      5174.0,
+      4485.813731576309,
+      8258.27079127702,
+      5575.407689502309,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "B-structured": [
+      "crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac",
+      "crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac",
+      "crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac",
+      "crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac",
+      "crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac",
+      "crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "infeasible",
+      "infeasible"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "diagnoses": {
+    "B-structured": "failed on informative instance(s) [0, 1, 2, 3]: ['crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac', 'crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac', 'crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac', 'crash:I��ll fix the data-access bug, keep the model structure minimal, and make the solve path match your exact HiGHS requirement. Then I��ll return a complete script only. | ^ | SyntaxError: invalid charac']"
+  },
+  "disagreements": [],
+  "notes": []
+}

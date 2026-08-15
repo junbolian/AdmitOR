@@ -1,0 +1,204 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "program_costs": [
+        34,
+        38,
+        86,
+        25,
+        86,
+        51,
+        53,
+        41,
+        60,
+        5,
+        89,
+        77,
+        44,
+        74,
+        41,
+        93,
+        55
+      ]
+    },
+    {
+      "program_costs": [
+        96,
+        4,
+        41,
+        33,
+        110,
+        102,
+        134,
+        13,
+        63,
+        4,
+        33,
+        76,
+        4,
+        30,
+        97,
+        82,
+        33
+      ]
+    },
+    {
+      "program_costs": [
+        88,
+        121,
+        1,
+        121,
+        105,
+        51,
+        23,
+        144,
+        50,
+        14,
+        15,
+        127,
+        91,
+        121,
+        109,
+        80,
+        146
+      ]
+    },
+    {
+      "program_costs": [
+        57,
+        83,
+        124,
+        93,
+        129,
+        87,
+        106,
+        7,
+        34,
+        43,
+        12,
+        35,
+        15,
+        42,
+        95,
+        55,
+        56
+      ]
+    },
+    {
+      "program_costs": [
+        31,
+        40,
+        140,
+        97,
+        91,
+        26,
+        109,
+        25,
+        57,
+        148,
+        96,
+        84,
+        103,
+        126,
+        116,
+        34,
+        5
+      ]
+    },
+    {
+      "program_costs": [
+        47,
+        40,
+        32,
+        141,
+        131,
+        47,
+        98,
+        59,
+        137,
+        69,
+        40,
+        37,
+        84,
+        39,
+        88,
+        135,
+        60
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      153.0,
+      58.0,
+      130.0,
+      96.0,
+      186.0,
+      193.0
+    ],
+    "B-structured": [
+      153.0,
+      58.0,
+      130.0,
+      96.0,
+      186.0,
+      193.0
+    ],
+    "C-direct": [
+      153.0,
+      58.0,
+      130.0,
+      96.0,
+      186.0,
+      193.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": []
+}

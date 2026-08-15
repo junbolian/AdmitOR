@@ -1,0 +1,313 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "team_costs": [
+        3,
+        1,
+        3,
+        4,
+        2,
+        2,
+        3,
+        5,
+        2,
+        1,
+        5,
+        5,
+        4,
+        2
+      ],
+      "location_requirements": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        1,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "team_costs": [
+        3.250968237224191,
+        0.7150064531336001,
+        2.595052773064414,
+        3.3357057715571745,
+        2.283765456996815,
+        2.2120393849074937,
+        3.7059232218687215,
+        3.7608164978882486,
+        1.9063061836223245,
+        0.7178783316628422,
+        4.15591392441081,
+        5.016065864310088,
+        2.8636863272412727,
+        1.638605180823978
+      ],
+      "location_requirements": [
+        3,
+        3,
+        1,
+        3,
+        4,
+        0,
+        4,
+        3,
+        2,
+        1,
+        5,
+        2,
+        0,
+        0,
+        4,
+        3,
+        4,
+        4,
+        3,
+        5,
+        2
+      ]
+    },
+    {
+      "team_costs": [
+        3.0936731362918084,
+        1.197642798551797,
+        3.213335554255643,
+        4.868096560745865,
+        2.0928225743081144,
+        2.245486203457908,
+        2.182483890580192,
+        4.183694826954641,
+        1.7472655563225286,
+        0.7478751861541765,
+        4.19837265908309,
+        3.803004288229187,
+        3.467136647464221,
+        2.16282133311728
+      ],
+      "location_requirements": [
+        2,
+        2,
+        1,
+        1,
+        5,
+        3,
+        3,
+        1,
+        4,
+        1,
+        2,
+        5,
+        3,
+        3,
+        3,
+        4,
+        4,
+        1,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "team_costs": [
+        2.4797691184553874,
+        1.2657458286010326,
+        3.677461727650804,
+        3.555226913916347,
+        2.1865263983538563,
+        1.874758281272797,
+        3.7461856615329787,
+        4.876555557762197,
+        1.717856199797663,
+        0.8479765046163901,
+        5.184104402489452,
+        4.288224825568806,
+        4.203006376536497,
+        2.4773874603229724
+      ],
+      "location_requirements": [
+        2,
+        1,
+        5,
+        3,
+        0,
+        0,
+        1,
+        3,
+        4,
+        2,
+        0,
+        2,
+        5,
+        3,
+        5,
+        4,
+        0,
+        4,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "team_costs": [
+        3.2537312374436542,
+        0.7669313041575259,
+        2.882577451204389,
+        3.8889368951900956,
+        2.5445791130252964,
+        2.451023528453833,
+        2.5741002913519635,
+        5.001758339150895,
+        1.6143822566361576,
+        1.2475767036068923,
+        6.111555709510301,
+        4.395334374345898,
+        4.333478787678413,
+        2.1307642537258067
+      ],
+      "location_requirements": [
+        1,
+        4,
+        3,
+        4,
+        3,
+        0,
+        2,
+        0,
+        5,
+        4,
+        4,
+        2,
+        0,
+        4,
+        5,
+        0,
+        2,
+        0,
+        4,
+        4,
+        1
+      ]
+    },
+    {
+      "team_costs": [
+        2.9555082805777166,
+        1.0298821560969662,
+        2.5771019320921065,
+        4.893839298604618,
+        1.9077655282410642,
+        1.6541578465304985,
+        3.070732959803025,
+        5.689793207269929,
+        1.641381276067635,
+        0.8870297747805369,
+        6.485448069982684,
+        5.44963417291836,
+        3.8514402013948095,
+        2.021091009242709
+      ],
+      "location_requirements": [
+        1,
+        1,
+        2,
+        3,
+        1,
+        1,
+        0,
+        3,
+        1,
+        5,
+        4,
+        0,
+        1,
+        3,
+        1,
+        1,
+        5,
+        3,
+        2,
+        4,
+        4
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      20.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      20.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "B-structured": [
+      "crash:I��m checking the indexing mismatch and then I��ll patch the script to read the params safely with 1-based team/location indexing. | ^ | SyntaxError: invalid character '��' (U+2019)",
+      "crash:I��m checking the indexing mismatch and then I��ll patch the script to read the params safely with 1-based team/location indexing. | ^ | SyntaxError: invalid character '��' (U+2019)",
+      "crash:I��m checking the indexing mismatch and then I��ll patch the script to read the params safely with 1-based team/location indexing. | ^ | SyntaxError: invalid character '��' (U+2019)",
+      "crash:I��m checking the indexing mismatch and then I��ll patch the script to read the params safely with 1-based team/location indexing. | ^ | SyntaxError: invalid character '��' (U+2019)",
+      "crash:I��m checking the indexing mismatch and then I��ll patch the script to read the params safely with 1-based team/location indexing. | ^ | SyntaxError: invalid character '��' (U+2019)",
+      "crash:I��m checking the indexing mismatch and then I��ll patch the script to read the params safely with 1-based team/location indexing. | ^ | SyntaxError: invalid character '��' (U+2019)"
+    ],
+    "C-direct": [
+      "optimal",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible"
+    ]
+  },
+  "informative": [
+    0
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

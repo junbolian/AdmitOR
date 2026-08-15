@@ -1,0 +1,30 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 3.0,
+  "clique": [
+    "A-direct",
+    "B-structured"
+  ],
+  "families": [
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[resource_weights] inverted abs range (lo > hi); swapped",
+    "[resource_weights] abs range [-20.0, 20.0] is disjoint from base span [33, 40]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_288",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 47.8,
+  "m": 5,
+  "seed": 42
+}

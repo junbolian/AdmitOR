@@ -1,0 +1,89 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "supply_node_0": 1,
+      "demand_node_7": 1
+    },
+    {
+      "supply_node_0": 1.4591401976868257,
+      "demand_node_7": 0.5375161328340003
+    },
+    {
+      "supply_node_0": 0.9125439775536789,
+      "demand_node_7": 0.8348161072232341
+    },
+    {
+      "supply_node_0": 1.6047068212460185,
+      "demand_node_7": 1.515049231134367
+    },
+    {
+      "supply_node_0": 1.8382693515572681,
+      "demand_node_7": 0.6304082489441243
+    },
+    {
+      "supply_node_0": 1.1328827295279056,
+      "demand_node_7": 0.5446958291571056
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'"
+    ],
+    "B-structured": [
+      "crash:input_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:input_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:input_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:input_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:input_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:input_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'"
+    ],
+    "C-direct": [
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

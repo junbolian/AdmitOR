@@ -1,0 +1,30 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 17994.0,
+  "clique": [
+    "A-direct",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[aircraft_availability] inverted abs range (lo > hi); swapped",
+    "[aircraft_availability] abs range [-1.0, 0.0] is disjoint from base span [3, 6]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_77",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 52.7,
+  "m": 5,
+  "seed": 42
+}

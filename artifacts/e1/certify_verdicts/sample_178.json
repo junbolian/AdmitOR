@@ -1,0 +1,30 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 3.0,
+  "clique": [
+    "A-direct",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[supply_weights] inverted abs range (lo > hi); swapped",
+    "[supply_weights] abs range [-40.0, 20.0] is disjoint from base span [25, 31]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_178",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 35.7,
+  "m": 5,
+  "seed": 42
+}

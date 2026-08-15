@@ -1,0 +1,84 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "instantiations": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "C-direct": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: 'pref'",
+      "crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: 'pref'",
+      "crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: 'pref'",
+      "crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: 'pref'",
+      "crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: 'pref'",
+      "crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: 'pref'"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: \\'pref\\'', 'crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: \\'pref\\'', 'crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: \\'pref\\'', 'crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: \\'pref\\'', 'crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: \\'pref\\'', 'crash:pref = params[\"pref\"] | ~~~~~~^^^^^^^^ | KeyError: \\'pref\\'']"
+  },
+  "disagreements": [],
+  "notes": []
+}

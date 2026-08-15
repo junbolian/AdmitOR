@@ -1,0 +1,312 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "cost_matrix": [
+        [
+          0,
+          168,
+          167,
+          154,
+          161
+        ],
+        [
+          169,
+          0,
+          165,
+          170,
+          168
+        ],
+        [
+          152,
+          169,
+          0,
+          150,
+          165
+        ],
+        [
+          158,
+          167,
+          157,
+          -1,
+          156
+        ],
+        [
+          165,
+          167,
+          167,
+          165,
+          0
+        ]
+      ]
+    },
+    {
+      "cost_matrix": [
+        [
+          0.0,
+          104.16144550192644,
+          136.94391693411433,
+          119.89956293993495,
+          191.4574923843248
+        ],
+        [
+          192.88977069957758,
+          0.0,
+          110.47592590708292,
+          159.3813674771968,
+          104.80474629247665
+        ],
+        [
+          117.78637773611817,
+          169.72403495157457,
+          0.0,
+          113.86051808239782,
+          184.78474578689708
+        ],
+        [
+          163.68060314824658,
+          129.65086710463706,
+          168.21176989481413,
+          -1.2475443653422613,
+          94.41104520782201
+        ],
+        [
+          205.36814124193063,
+          193.4714231704271,
+          145.6574690068037,
+          119.52329397515517,
+          0.0
+        ]
+      ]
+    },
+    {
+      "cost_matrix": [
+        [
+          0.0,
+          113.26504135029187,
+          113.12130794495079,
+          196.81130593400704,
+          174.35991284005553
+        ],
+        [
+          210.5237425466962,
+          0.0,
+          169.78210807202046,
+          234.3437439011944,
+          151.6750202968027
+        ],
+        [
+          158.32814076282438,
+          213.53551060700488,
+          0.0,
+          193.40482803729324,
+          175.21048317389256
+        ],
+        [
+          183.85788009756632,
+          106.32213765639648,
+          122.82402342183428,
+          -0.8315103708816857,
+          103.5580387200687
+        ],
+        [
+          129.72839699965598,
+          113.6937909691398,
+          137.3372733755083,
+          182.9103466429008,
+          0.0
+        ]
+      ]
+    },
+    {
+      "cost_matrix": [
+        [
+          0.0,
+          128.95774493568794,
+          135.86823702576152,
+          207.79584520617925,
+          180.06695761976124
+        ],
+        [
+          183.75451196617678,
+          0.0,
+          195.24473732944608,
+          124.22273915162226,
+          151.79881137222785
+        ],
+        [
+          211.52603943740996,
+          187.92796753227336,
+          0.0,
+          172.15371011878494,
+          210.25645346505485
+        ],
+        [
+          192.88638881944533,
+          130.80082241440434,
+          98.23179063434713,
+          -0.8523624384472654,
+          127.0140613217677
+        ],
+        [
+          126.84973535339509,
+          226.17273783516328,
+          217.28271489674853,
+          140.53748026539907,
+          0.0
+        ]
+      ]
+    },
+    {
+      "cost_matrix": [
+        [
+          0.0,
+          223.71519606112903,
+          161.50260750567645,
+          125.03323651256005,
+          128.36562299098506
+        ],
+        [
+          177.29697173885796,
+          0.0,
+          176.16535070950735,
+          224.10391216993685,
+          154.47942789086937
+        ],
+        [
+          117.86940431352565,
+          236.26708439813888,
+          0.0,
+          100.90912946085525,
+          105.21936155606497
+        ],
+        [
+          108.65965007632332,
+          184.0267911715328,
+          193.6851681639883,
+          -0.9377279734397472,
+          101.52825772776424
+        ],
+        [
+          149.37374581886283,
+          233.2818164000769,
+          170.8896765052447,
+          227.18234584499757,
+          0.0
+        ]
+      ]
+    },
+    {
+      "cost_matrix": [
+        [
+          0.0,
+          197.66501252201016,
+          191.27650530195038,
+          158.55474470636355,
+          130.9670844658875
+        ],
+        [
+          188.05803516799003,
+          0.0,
+          156.38901308832186,
+          163.70642406077206,
+          228.99286065883317
+        ],
+        [
+          197.7037175499884,
+          137.01019966154746,
+          0.0,
+          111.43822566361577,
+          219.4668747935163
+        ],
+        [
+          204.83354722736735,
+          140.07222413753735,
+          174.45205655517026,
+          -1.0871761691505377,
+          112.67434071499441
+        ],
+        [
+          199.65142560991998,
+          172.26103842398197,
+          204.22449754504257,
+          169.00668472976344,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      794.0,
+      614.4876334004905,
+      694.2516909350992,
+      688.5184635401073,
+      739.8184857685281,
+      774.7600669800732
+    ],
+    "C-direct": [
+      794.0,
+      614.4876334004906,
+      694.2516909350992,
+      688.5184635401073,
+      739.818485768528,
+      774.7600669800732
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ",
+      "crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ",
+      "crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ",
+      "crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ",
+      "crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ",
+      "crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return "
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ', 'crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ', 'crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ', 'crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ', 'crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ', 'crash:pyomo.common.errors.InvalidConstraintError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return ']"
+  },
+  "disagreements": [],
+  "notes": []
+}

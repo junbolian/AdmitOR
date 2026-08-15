@@ -1,0 +1,54 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 1081.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[c_01] inverted abs range (lo > hi); swapped",
+    "[c_01] abs range [-100.0, 100.0] is disjoint from base span [255, 255]; replaced with rel +/-30% around base",
+    "[c_02] inverted abs range (lo > hi); swapped",
+    "[c_02] abs range [-100.0, 100.0] is disjoint from base span [252, 252]; replaced with rel +/-30% around base",
+    "[c_03] inverted abs range (lo > hi); swapped",
+    "[c_03] abs range [-100.0, 100.0] is disjoint from base span [278, 278]; replaced with rel +/-30% around base",
+    "[c_10] inverted abs range (lo > hi); swapped",
+    "[c_10] abs range [-100.0, 100.0] is disjoint from base span [268, 268]; replaced with rel +/-30% around base",
+    "[c_12] inverted abs range (lo > hi); swapped",
+    "[c_12] abs range [-100.0, 100.0] is disjoint from base span [281, 281]; replaced with rel +/-30% around base",
+    "[c_13] inverted abs range (lo > hi); swapped",
+    "[c_13] abs range [-100.0, 100.0] is disjoint from base span [260, 260]; replaced with rel +/-30% around base",
+    "[c_20] inverted abs range (lo > hi); swapped",
+    "[c_20] abs range [-100.0, 100.0] is disjoint from base span [343, 343]; replaced with rel +/-30% around base",
+    "[c_21] inverted abs range (lo > hi); swapped",
+    "[c_21] abs range [-100.0, 100.0] is disjoint from base span [302, 302]; replaced with rel +/-30% around base",
+    "[c_23] inverted abs range (lo > hi); swapped",
+    "[c_23] abs range [-100.0, 100.0] is disjoint from base span [313, 313]; replaced with rel +/-30% around base",
+    "[c_30] inverted abs range (lo > hi); swapped",
+    "[c_30] abs range [-100.0, 100.0] is disjoint from base span [267, 267]; replaced with rel +/-30% around base",
+    "[c_31] inverted abs range (lo > hi); swapped",
+    "[c_31] abs range [-100.0, 100.0] is disjoint from base span [323, 323]; replaced with rel +/-30% around base",
+    "[c_32] inverted abs range (lo > hi); swapped",
+    "[c_32] abs range [-100.0, 100.0] is disjoint from base span [266, 266]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_197",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 75.1,
+  "m": 5,
+  "seed": 42
+}

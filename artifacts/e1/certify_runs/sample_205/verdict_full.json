@@ -1,0 +1,126 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "cost_0_1": 115,
+      "cost_0_2": 105,
+      "cost_1_0": 476,
+      "cost_1_2": 90,
+      "cost_2_0": 145,
+      "cost_2_1": 181
+    },
+    {
+      "cost_0_1": 124.62044909359398,
+      "cost_0_2": 75.07567757902801,
+      "cost_1_0": 411.7483733262204,
+      "cost_1_2": 75.05337986003643,
+      "cost_2_0": 165.57299563226908,
+      "cost_2_1": 200.1895643341282
+    },
+    {
+      "cost_0_1": 142.0603901716343,
+      "cost_0_2": 78.97714645565323,
+      "cost_1_0": 453.70087170211326,
+      "cost_1_2": 64.6090498496558,
+      "cost_2_0": 120.52150380791349,
+      "cost_2_1": 181.58158428802517
+    },
+    {
+      "cost_0_1": 82.33098190818659,
+      "cost_0_2": 86.02677199325885,
+      "cost_1_0": 518.8069954298318,
+      "cost_1_2": 92.4268399525737,
+      "cost_2_0": 120.6783341175406,
+      "cost_2_1": 190.6942532689237
+    },
+    {
+      "cost_0_1": 136.35070151077005,
+      "cost_0_2": 73.90942185971784,
+      "cost_1_0": 563.3419783234499,
+      "cost_1_2": 100.69952732936424,
+      "cost_2_0": 131.1017949370653,
+      "cost_2_1": 143.58507367955949
+    },
+    {
+      "cost_0_1": 146.5477019822679,
+      "cost_0_2": 94.70545634209549,
+      "cost_1_0": 359.6882128693702,
+      "cost_1_2": 68.22268434900705,
+      "cost_2_0": 175.232009872229,
+      "cost_2_1": 192.2646470064444
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      350.0,
+      365.2468245858995,
+      327.1909438292036,
+      295.4361559783009,
+      368.1520237771996,
+      390.00239620350396
+    ],
+    "C-direct": [
+      350.0,
+      365.2468245858995,
+      327.1909438292036,
+      295.4361559783009,
+      368.1520237771996,
+      390.00239620350396
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+  },
+  "disagreements": [],
+  "notes": []
+}

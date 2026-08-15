@@ -1,0 +1,314 @@
+{
+  "decision": "ABSTAIN",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "pairwise_benefits": [
+        [
+          0,
+          12,
+          19,
+          16,
+          18
+        ],
+        [
+          11,
+          0,
+          16,
+          15,
+          10
+        ],
+        [
+          16,
+          10,
+          0,
+          14,
+          20
+        ],
+        [
+          20,
+          10,
+          16,
+          0,
+          14
+        ],
+        [
+          10,
+          13,
+          16,
+          16,
+          0
+        ]
+      ],
+      "k": 3
+    },
+    {
+      "pairwise_benefits": [
+        [
+          16,
+          -9,
+          1,
+          -1,
+          19
+        ],
+        [
+          17,
+          26,
+          -7,
+          7,
+          -9
+        ],
+        [
+          -1,
+          10,
+          -9,
+          -2,
+          16
+        ],
+        [
+          12,
+          -1,
+          14,
+          22,
+          -10
+        ],
+        [
+          22,
+          18,
+          4,
+          -4,
+          28
+        ]
+      ],
+      "k": 3
+    },
+    {
+      "pairwise_benefits": [
+        [
+          -6,
+          -6,
+          24,
+          14,
+          22
+        ],
+        [
+          19,
+          11,
+          29,
+          5,
+          12
+        ],
+        [
+          23,
+          15,
+          24,
+          13,
+          18
+        ],
+        [
+          -8,
+          -1,
+          2,
+          -7,
+          -1
+        ],
+        [
+          -6,
+          1,
+          15,
+          5,
+          5
+        ]
+      ],
+      "k": 3
+    },
+    {
+      "pairwise_benefits": [
+        [
+          1,
+          27,
+          16,
+          14,
+          -3
+        ],
+        [
+          19,
+          -3,
+          5,
+          30,
+          16
+        ],
+        [
+          12,
+          17,
+          24,
+          21,
+          -1
+        ],
+        [
+          -9,
+          3,
+          1,
+          -2,
+          28
+        ],
+        [
+          25,
+          3,
+          16,
+          6,
+          27
+        ]
+      ],
+      "k": 3
+    },
+    {
+      "pairwise_benefits": [
+        [
+          1,
+          0,
+          12,
+          1,
+          13
+        ],
+        [
+          26,
+          6,
+          -1,
+          30,
+          10
+        ],
+        [
+          -6,
+          -8,
+          -6,
+          15,
+          22
+        ],
+        [
+          7,
+          -7,
+          5,
+          30,
+          11
+        ],
+        [
+          29,
+          24,
+          -10,
+          19,
+          17
+        ]
+      ],
+      "k": 3
+    },
+    {
+      "pairwise_benefits": [
+        [
+          1,
+          16,
+          -6,
+          7,
+          8
+        ],
+        [
+          28,
+          25,
+          1,
+          10,
+          -3
+        ],
+        [
+          27,
+          25,
+          2,
+          16,
+          14
+        ],
+        [
+          -4,
+          21,
+          12,
+          21,
+          11
+        ],
+        [
+          -10,
+          3,
+          -9,
+          27,
+          25
+        ]
+      ],
+      "k": 3
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      57.0,
+      36.0,
+      64.0,
+      74.0,
+      51.0,
+      41.0
+    ],
+    "C-direct": [
+      101.0,
+      61.0,
+      104.0,
+      96.0,
+      102.0,
+      91.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [
+    "A-direct vs B-structured: incomparable (no co-solved instance)",
+    "A-direct vs C-direct: incomparable (no co-solved instance)",
+    "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+  ],
+  "notes": []
+}

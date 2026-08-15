@@ -1,0 +1,24 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[profit_per_unit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[machine_capacity] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[machine_usage] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[sales_limit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[target_inventory] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[holding_cost] inverted abs range (lo > hi); swapped",
+    "[holding_cost] abs range [-25.0, 0.0] is disjoint from base span [10, 10]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_15",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 106.8,
+  "m": 5,
+  "seed": 42
+}

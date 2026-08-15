@@ -1,0 +1,150 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek"
+  ],
+  "instantiations": [
+    {
+      "supply_weights": [
+        28,
+        29,
+        27,
+        27,
+        25,
+        31,
+        30
+      ],
+      "hospital_capacity": 100
+    },
+    {
+      "supply_weights": [
+        30.342370214092448,
+        20.7351871408744,
+        23.35547495757973,
+        22.516013958010927,
+        28.547068212460186,
+        34.28661046606615,
+        37.059232218687214
+      ],
+      "hospital_capacity": 59
+    },
+    {
+      "supply_weights": [
+        26.688286570712542,
+        20.818471618222425,
+        22.441935191818374,
+        27.086755667274474,
+        17.898039545257955,
+        25.39838030277166,
+        32.697919880031414
+      ],
+      "hospital_capacity": 104
+    },
+    {
+      "supply_weights": [
+        23.303402450283702,
+        30.55322289944081,
+        32.0127733981808,
+        19.005279906784587,
+        29.587288777492116,
+        34.68539274678102,
+        27.124509297323854
+      ],
+      "hospital_capacity": 66
+    },
+    {
+      "supply_weights": [
+        35.68117961307392,
+        26.156745084959706,
+        20.402482662758395,
+        20.466805304702117,
+        30.212415495211896,
+        32.92930418342418,
+        35.52830891893885
+      ],
+      "hospital_capacity": 123
+    },
+    {
+      "supply_weights": [
+        28.608631936438975,
+        37.23221429324105,
+        25.032256910775324,
+        27.843058226626276,
+        29.941069963794924,
+        33.20446739397497,
+        36.51072420559399
+      ],
+      "hospital_capacity": 108
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      3.0,
+      4.0,
+      2.0,
+      4.0,
+      2.0,
+      3.0
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      3.0,
+      4.0,
+      2.0,
+      4.0,
+      2.0,
+      3.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: 'solve'",
+      "crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: 'solve'",
+      "crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: 'solve'",
+      "crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: 'solve'",
+      "crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: 'solve'",
+      "crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: 'solve'"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "B-structured": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: \\'solve\\'', 'crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: \\'solve\\'', 'crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: \\'solve\\'', 'crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: \\'solve\\'', 'crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: \\'solve\\'', 'crash:res = g[\"solve\"](params) | ~^^^^^^^^^ | KeyError: \\'solve\\'']"
+  },
+  "disagreements": [],
+  "notes": []
+}

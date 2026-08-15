@@ -1,0 +1,212 @@
+{
+  "decision": "ABSTAIN",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "base_cost_type0": 75,
+      "base_cost_type1": 79,
+      "var_cost_type0": 4,
+      "var_cost_type1": 3,
+      "startup_cost_type0": 381,
+      "startup_cost_type1": 360,
+      "max_operational_type0": 3,
+      "max_operational_type1": 4,
+      "demand": [
+        165,
+        181,
+        203,
+        216
+      ],
+      "min_output_type0": 50,
+      "max_output_type0": 131,
+      "min_output_type1": 48,
+      "max_output_type1": 145,
+      "buffer_factor": 0.15,
+      "max_startups_type0_period0": 2,
+      "max_startups_type1_period0": 1
+    },
+    {
+      "base_cost_type0": 95,
+      "base_cost_type1": 56.48550979755441,
+      "var_cost_type0": 4,
+      "var_cost_type1": 2,
+      "startup_cost_type0": 421,
+      "startup_cost_type1": 398.1670892833489,
+      "max_operational_type0": 3,
+      "max_operational_type1": 4,
+      "demand": [
+        157.27026014884177,
+        129.93597803097444,
+        168.7301053310789,
+        216.6940453381958
+      ],
+      "min_output_type0": 31,
+      "max_output_type0": 107.32863934397056,
+      "min_output_type1": 56,
+      "max_output_type1": 144,
+      "buffer_factor": 0.10511015551017418,
+      "max_startups_type0_period0": 2,
+      "max_startups_type1_period0": 1
+    },
+    {
+      "base_cost_type0": 50,
+      "base_cost_type1": 93.49583253687508,
+      "var_cost_type0": 6,
+      "var_cost_type1": 3,
+      "startup_cost_type0": 247,
+      "startup_cost_type1": 458.75802359666477,
+      "max_operational_type0": 3,
+      "max_operational_type1": 4,
+      "demand": [
+        125.07492130651293,
+        218.73788818533413,
+        215.63383062048734,
+        255.8038242163597
+      ],
+      "min_output_type0": 59,
+      "max_output_type0": 133.8475279883395,
+      "min_output_type1": 69,
+      "max_output_type1": 130,
+      "buffer_factor": 0.18801015781830677,
+      "max_startups_type0_period0": 2,
+      "max_startups_type1_period0": 1
+    },
+    {
+      "base_cost_type0": 110,
+      "base_cost_type1": 82.66649168517051,
+      "var_cost_type0": 6,
+      "var_cost_type1": 1,
+      "startup_cost_type0": 268,
+      "startup_cost_type1": 314.50780013805513,
+      "max_operational_type0": 3,
+      "max_operational_type1": 4,
+      "demand": [
+        125.49914151156317,
+        156.887933297756,
+        219.52636531140394,
+        198.4822503945229
+      ],
+      "min_output_type0": 45,
+      "max_output_type0": 108.16725261863893,
+      "min_output_type1": 41,
+      "max_output_type1": 175,
+      "buffer_factor": 0.2120088463116484,
+      "max_startups_type0_period0": 2,
+      "max_startups_type1_period0": 1
+    },
+    {
+      "base_cost_type0": 101,
+      "base_cost_type1": 63.04527820431541,
+      "var_cost_type0": 4,
+      "var_cost_type1": 6,
+      "startup_cost_type0": 392,
+      "startup_cost_type1": 372.3011446553236,
+      "max_operational_type0": 3,
+      "max_operational_type1": 4,
+      "demand": [
+        192.32399124307824,
+        151.57462061530174,
+        146.0098097075118,
+        192.08271502845702
+      ],
+      "min_output_type0": 41,
+      "max_output_type0": 108.28325150588526,
+      "min_output_type1": 68,
+      "max_output_type1": 170,
+      "buffer_factor": 0.1286694701996195,
+      "max_startups_type0_period0": 2,
+      "max_startups_type1_period0": 1
+    },
+    {
+      "base_cost_type0": 114,
+      "base_cost_type1": 77.04957781264271,
+      "var_cost_type0": 4,
+      "var_cost_type1": 2,
+      "startup_cost_type0": 368,
+      "startup_cost_type1": 308.75218744095406,
+      "max_operational_type0": 3,
+      "max_operational_type1": 4,
+      "demand": [
+        155.04065000889935,
+        150.51823444448098,
+        263.60008047110443,
+        217.23460766046978
+      ],
+      "min_output_type0": 34,
+      "max_output_type0": 95.40334710838414,
+      "min_output_type1": 34,
+      "max_output_type1": 150,
+      "buffer_factor": 0.24801984109074104,
+      "max_startups_type0_period0": 2,
+      "max_startups_type1_period0": 1
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      2927.0,
+      1740.6593462810627,
+      3325.9891218984194,
+      1279.0611323114397,
+      3737.964546377395,
+      2266.2333454836935
+    ],
+    "B-structured": [
+      2927.0,
+      1797.144856078617,
+      3784.7471454950846,
+      1361.7276239966102,
+      3939.9645463773954,
+      2420.3325011089787
+    ],
+    "C-direct": [
+      3881.0,
+      3058.508015050206,
+      5052.767360151538,
+      1908.07673258755,
+      4756.12721036951,
+      3566.5889869276734
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [
+    "A-direct vs B-structured: diverge on instance(s) [1, 2, 3, 4, 5]",
+    "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+    "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+  ],
+  "notes": []
+}

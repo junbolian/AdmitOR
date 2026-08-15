@@ -1,0 +1,102 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek"
+  ],
+  "instantiations": [
+    {
+      "participant_count": 5,
+      "car_count": 4
+    },
+    {
+      "participant_count": 5,
+      "car_count": 4
+    },
+    {
+      "participant_count": 5,
+      "car_count": 4
+    },
+    {
+      "participant_count": 5,
+      "car_count": 4
+    },
+    {
+      "participant_count": 5,
+      "car_count": 4
+    },
+    {
+      "participant_count": 5,
+      "car_count": 4
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "B-structured": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "C-direct": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "B-structured": "diverges from consensus by 1 on instance 0 (params: {'participant_count': 5, 'car_count': 4})"
+  },
+  "disagreements": [],
+  "notes": []
+}

@@ -1,0 +1,98 @@
+{
+  "decision": "ABSTAIN",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "processing_time": 1,
+      "bigM": 100000
+    },
+    {
+      "processing_time": 2.0985669961447093,
+      "bigM": 52501.07552226669
+    },
+    {
+      "processing_time": 1.1875732959227983,
+      "bigM": 72321.07381488227
+    },
+    {
+      "processing_time": 2.341178035410031,
+      "bigM": 117669.94874229113
+    },
+    {
+      "processing_time": 2.7304489192621135,
+      "bigM": 58693.883262941614
+    },
+    {
+      "processing_time": 1.5548045492131761,
+      "bigM": 52979.72194380703
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      3.0,
+      6.295700988434074,
+      3.562719887761678,
+      7.023534106227274,
+      8.191346757785334,
+      4.6644136476368825
+    ],
+    "B-structured": [
+      4.0,
+      8.394267984578782,
+      4.750293183684477,
+      9.364712141634485,
+      10.921795677047449,
+      6.219218196848547
+    ],
+    "C-direct": [
+      2.0,
+      6.295700988404967,
+      3.562719887732573,
+      7.023534106169063,
+      8.191346757756229,
+      4.664413647607777
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [
+    "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+    "A-direct vs C-direct: diverge on instance(s) [0]",
+    "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+  ],
+  "notes": []
+}

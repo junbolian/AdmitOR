@@ -1,0 +1,167 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "weights": [
+        19,
+        14,
+        15,
+        20,
+        14,
+        13,
+        13,
+        13,
+        16,
+        13,
+        11,
+        16
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        8,
+        -28,
+        -13,
+        -17,
+        14,
+        11,
+        24,
+        -25,
+        -5,
+        -28,
+        -17,
+        0
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        -18,
+        9,
+        3,
+        -17,
+        5,
+        19,
+        -30,
+        18,
+        12,
+        -10,
+        -21,
+        27
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        -24,
+        -24,
+        21,
+        6,
+        18,
+        14,
+        2,
+        28,
+        -7,
+        3,
+        20,
+        7
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        5,
+        12,
+        -27,
+        -16,
+        -13,
+        -25,
+        -16,
+        -24,
+        -13,
+        8,
+        -8,
+        -8
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        -14,
+        26,
+        9,
+        7,
+        -20,
+        14,
+        -20,
+        -7,
+        29,
+        8,
+        3,
+        11
+      ],
+      "num_selected": 3
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:total += weights[i][j] * m.z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:total += weights[i][j] * m.z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:total += weights[i][j] * m.z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:total += weights[i][j] * m.z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:total += weights[i][j] * m.z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:total += weights[i][j] * m.z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+    ],
+    "B-structured": [
+      "crash:return weight_data[i_val][j_val] | ~~~~~~~~~~~~~~~~~~^^^^^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return weight_data[i_val][j_val] | ~~~~~~~~~~~~~~~~~~^^^^^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return weight_data[i_val][j_val] | ~~~~~~~~~~~~~~~~~~^^^^^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return weight_data[i_val][j_val] | ~~~~~~~~~~~~~~~~~~^^^^^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return weight_data[i_val][j_val] | ~~~~~~~~~~~~~~~~~~^^^^^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return weight_data[i_val][j_val] | ~~~~~~~~~~~~~~~~~~^^^^^^^ | TypeError: 'int' object is not subscriptable"
+    ],
+    "C-direct": [
+      "crash:weights[i][j] * z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:weights[i][j] * z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:weights[i][j] * z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:weights[i][j] * z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:weights[i][j] * z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:weights[i][j] * z[i, j] | ~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

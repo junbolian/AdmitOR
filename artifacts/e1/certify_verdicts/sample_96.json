@@ -1,0 +1,23 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[assignment_costs] non-numeric base dropped",
+    "[noe_constraint_rhs_1] inverted abs range (lo > hi); swapped",
+    "[noe_constraint_rhs_1] abs range [-1.0, 0.0] is disjoint from base span [2, 2]; replaced with rel +/-30% around base",
+    "[noe_constraint_rhs_2] inverted abs range (lo > hi); swapped",
+    "[noe_constraint_rhs_2] abs range [-1.0, 0.0] is disjoint from base span [1, 1]; replaced with rel +/-30% around base",
+    "[total_assignments] degenerate abs range (lo == hi); perturbation has no effect"
+  ],
+  "sample_id": "sample_96",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 75.6,
+  "m": 5,
+  "seed": 42
+}

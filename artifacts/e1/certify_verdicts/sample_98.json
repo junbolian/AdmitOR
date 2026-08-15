@@ -1,0 +1,31 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 75679.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[resource_consumption] abs range [-0.5, 0.5] is disjoint from base span [1.622, 1.884]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_98",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 63.9,
+  "m": 5,
+  "seed": 42
+}

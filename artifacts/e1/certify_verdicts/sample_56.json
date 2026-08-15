@@ -1,0 +1,34 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 101910.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[capacity] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[min_delivery] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[cost] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+  ],
+  "sample_id": "sample_56",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 57.2,
+  "m": 5,
+  "seed": 42
+}

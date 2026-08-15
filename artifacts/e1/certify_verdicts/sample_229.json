@@ -1,0 +1,31 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [
+    0
+  ],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[supply_0] inverted abs range (lo > hi); swapped",
+    "[supply_0] abs range [-1.0, 60.0] is disjoint from base span [86, 86]; replaced with rel +/-30% around base",
+    "[cost_0_2] inverted abs range (lo > hi); swapped",
+    "[cost_0_2] abs range [-1.0, 1.0] is disjoint from base span [7, 7]; replaced with rel +/-30% around base",
+    "[cost_0_4] inverted abs range (lo > hi); swapped",
+    "[cost_0_4] abs range [-1.0, 1.0] is disjoint from base span [7, 7]; replaced with rel +/-30% around base",
+    "[cost_2_1] inverted abs range (lo > hi); swapped",
+    "[cost_2_1] abs range [-1.0, 1.0] is disjoint from base span [7, 7]; replaced with rel +/-30% around base",
+    "[cost_2_4] inverted abs range (lo > hi); swapped",
+    "[cost_2_4] abs range [-1.0, 1.0] is disjoint from base span [7, 7]; replaced with rel +/-30% around base",
+    "[cost_3_2] inverted abs range (lo > hi); swapped",
+    "[cost_3_2] abs range [-1.0, 1.0] is disjoint from base span [7, 7]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_229",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 88.0,
+  "m": 5,
+  "seed": 42
+}

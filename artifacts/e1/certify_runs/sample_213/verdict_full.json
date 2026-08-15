@@ -1,0 +1,305 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "weights": [
+        [
+          0,
+          16,
+          14,
+          15,
+          17
+        ],
+        [
+          18,
+          0,
+          20,
+          11,
+          19
+        ],
+        [
+          18,
+          13,
+          0,
+          20,
+          20
+        ],
+        [
+          15,
+          14,
+          18,
+          0,
+          18
+        ],
+        [
+          18,
+          18,
+          15,
+          11,
+          0
+        ]
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        [
+          0.0,
+          8.400172083562671,
+          10.85041045716767,
+          10.848161072232342,
+          21.02001064078821
+        ],
+        [
+          21.180590773612405,
+          0.0,
+          11.738776652588323,
+          10.141140016537975,
+          10.066147169323337
+        ],
+        [
+          12.93548354646486,
+          13.06961874534371,
+          0.0,
+          13.97675301373297,
+          22.997688755590463
+        ],
+        [
+          15.67412220904825,
+          10.086168708569755,
+          19.606782309766356,
+          0.0,
+          9.1169776742051
+        ],
+        [
+          23.504746532990545,
+          21.566509109788083,
+          12.603757747769878,
+          7.210274497929597,
+          0.0
+        ]
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        [
+          0.0,
+          9.547462029335424,
+          18.864921128864435,
+          16.555890470503368,
+          22.22118064566446
+        ],
+        [
+          22.13517216048872,
+          0.0,
+          29.46231527958741,
+          9.663878149291888,
+          19.98877199419131
+        ],
+        [
+          23.929283956553906,
+          14.5407567807352,
+          0.0,
+          21.547042905135243,
+          24.09143672429847
+        ],
+        [
+          8.187365754834934,
+          10.190575859121656,
+          14.208983344837929,
+          0.0,
+          13.190235954498544
+        ],
+        [
+          10.818025729375124,
+          14.003524855981658,
+          17.035266663966006,
+          9.513153968670927,
+          0.0
+        ]
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        [
+          0.0,
+          22.986473403399906,
+          16.072495393452307,
+          16.636965085004825,
+          11.409357019367649
+        ],
+        [
+          22.12428236310629,
+          0.0,
+          17.589108835152956,
+          16.384756857002547,
+          21.659995437227767
+        ],
+        [
+          19.025095387943633,
+          15.399985262868368,
+          0.0,
+          25.519998230924898,
+          14.580961439282088
+        ],
+        [
+          7.981503658560566,
+          11.416342672827147,
+          13.819335767562649,
+          0.0,
+          25.97237485803098
+        ],
+        [
+          24.774617276508042,
+          14.664201854372603,
+          17.3315799794232,
+          9.851950911667307,
+          0.0
+        ]
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        [
+          0.0,
+          11.946040123103735,
+          14.85915387828411,
+          11.441124127844029,
+          18.43796183380019
+        ],
+        [
+          25.160811904844586,
+          0.0,
+          14.386415183145667,
+          16.472913671446214,
+          19.180999579852827
+        ],
+        [
+          10.63636941912829,
+          7.11251288052155,
+          0.0,
+          22.5489208340618,
+          25.84158728725928
+        ],
+        [
+          13.83239950199526,
+          7.8893878861274,
+          15.869147157117661,
+          0.0,
+          18.524058211784467
+        ],
+        [
+          26.479410797045126,
+          24.494034640220967,
+          7.672215329142294,
+          13.42794001296214,
+          0.0
+        ]
+      ],
+      "num_selected": 3
+    },
+    {
+      "weights": [
+        [
+          0.0,
+          18.255388777276927,
+          8.56173043034227,
+          14.021478760036574,
+          16.213303007596508
+        ],
+        [
+          26.168686695379442,
+          0.0,
+          15.267781015021814,
+          11.00644724355328,
+          12.894385730072496
+        ],
+        [
+          25.427301108206766,
+          17.81674140787797,
+          0.0,
+          22.778989897320105,
+          22.179404228763445
+        ],
+        [
+          9.792589028244523,
+          17.675151201052117,
+          18.708822542153264,
+          0.0,
+          18.546366099513197
+        ],
+        [
+          9.010294130302983,
+          14.834809026084116,
+          7.792151135787485,
+          15.720084778910788,
+          0.0
+        ]
+      ],
+      "num_selected": 3
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      106.0,
+      105.73817631006526,
+      119.12207229876006,
+      117.61892735398226,
+      125.69925887886743,
+      111.49762943410519
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:weight_dict[(i, j)] = weights[idx] | ~~~~~~~^^^^^ | IndexError: list index out of range",
+      "crash:weight_dict[(i, j)] = weights[idx] | ~~~~~~~^^^^^ | IndexError: list index out of range",
+      "crash:weight_dict[(i, j)] = weights[idx] | ~~~~~~~^^^^^ | IndexError: list index out of range",
+      "crash:weight_dict[(i, j)] = weights[idx] | ~~~~~~~^^^^^ | IndexError: list index out of range",
+      "crash:weight_dict[(i, j)] = weights[idx] | ~~~~~~~^^^^^ | IndexError: list index out of range",
+      "crash:weight_dict[(i, j)] = weights[idx] | ~~~~~~~^^^^^ | IndexError: list index out of range"
+    ],
+    "B-structured": [
+      "crash:expr=sum(weights_data[i_loc, j_loc] * model.pair_on[i_loc, j_loc] for i_loc, j_loc in model.A), | ~~~~~~~~~~~~^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:expr=sum(weights_data[i_loc, j_loc] * model.pair_on[i_loc, j_loc] for i_loc, j_loc in model.A), | ~~~~~~~~~~~~^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:expr=sum(weights_data[i_loc, j_loc] * model.pair_on[i_loc, j_loc] for i_loc, j_loc in model.A), | ~~~~~~~~~~~~^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:expr=sum(weights_data[i_loc, j_loc] * model.pair_on[i_loc, j_loc] for i_loc, j_loc in model.A), | ~~~~~~~~~~~~^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:expr=sum(weights_data[i_loc, j_loc] * model.pair_on[i_loc, j_loc] for i_loc, j_loc in model.A), | ~~~~~~~~~~~~^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+      "crash:expr=sum(weights_data[i_loc, j_loc] * model.pair_on[i_loc, j_loc] for i_loc, j_loc in model.A), | ~~~~~~~~~~~~^^^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not tuple"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

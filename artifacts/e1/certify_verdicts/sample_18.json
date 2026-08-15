@@ -1,0 +1,23 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [
+    0
+  ],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[supply] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[cost] inverted abs range (lo > hi); swapped",
+    "[cost] abs range [-5.0, 5.0] is disjoint from base span [15, 20]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_18",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 43.4,
+  "m": 5,
+  "seed": 42
+}

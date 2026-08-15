@@ -1,0 +1,31 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 853.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    2,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[employee_availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[project_requirement] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[assignment_limit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+  ],
+  "sample_id": "sample_92",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 47.8,
+  "m": 5,
+  "seed": 42
+}

@@ -1,0 +1,32 @@
+{
+  "decision": "ABSTAIN",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[base_cost_type1] degenerate abs range (lo == hi); perturbation has no effect",
+    "[base_cost_type1] abs range [-20.0, -20.0] is disjoint from base span [79, 79]; replaced with rel +/-30% around base",
+    "[startup_cost_type1] inverted abs range (lo > hi); swapped",
+    "[startup_cost_type1] abs range [-20.0, 180.0] is disjoint from base span [360, 360]; replaced with rel +/-30% around base",
+    "[max_operational_type0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_operational_type1] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_output_type0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_output_type0] abs range [-20.0, -20.0] is disjoint from base span [131, 131]; replaced with rel +/-30% around base",
+    "[max_startups_type0_period0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_startups_type1_period0] degenerate abs range (lo == hi); perturbation has no effect"
+  ],
+  "sample_id": "sample_147",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 101.0,
+  "m": 5,
+  "seed": 42
+}

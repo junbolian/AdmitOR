@@ -1,0 +1,34 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 8.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[cost_0_2] inverted abs range (lo > hi); swapped",
+    "[cost_0_2] abs range [-1.0, 0.0] is disjoint from base span [7, 7]; replaced with rel +/-30% around base",
+    "[cost_2_6] inverted abs range (lo > hi); swapped",
+    "[cost_2_6] abs range [-1.0, 0.0] is disjoint from base span [5, 5]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_265",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 110.3,
+  "m": 5,
+  "seed": 42
+}

@@ -1,0 +1,102 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "num_participants": 8,
+      "num_cars": 8
+    },
+    {
+      "num_participants": 8,
+      "num_cars": 8
+    },
+    {
+      "num_participants": 8,
+      "num_cars": 8
+    },
+    {
+      "num_participants": 8,
+      "num_cars": 8
+    },
+    {
+      "num_participants": 8,
+      "num_cars": 8
+    },
+    {
+      "num_participants": 8,
+      "num_cars": 8
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "B-structured": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "C-direct": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": []
+}

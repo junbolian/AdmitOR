@@ -1,0 +1,34 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": -56.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[capacity] inverted abs range (lo > hi); swapped",
+    "[capacity] abs range [-1.0, 80.0] is disjoint from base span [125, 130]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_287",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 46.3,
+  "m": 5,
+  "seed": 42
+}

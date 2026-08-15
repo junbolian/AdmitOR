@@ -1,0 +1,138 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "plane_capacity_0": 80,
+      "plane_capacity_1": 89,
+      "trip_cost_0": 5,
+      "trip_cost_1": 6,
+      "idle_planes_limit_0": 2,
+      "idle_planes_limit_1": 2,
+      "demand_1_to_0": 17,
+      "max_trips_per_plane": 2
+    },
+    {
+      "plane_capacity_0": 95,
+      "plane_capacity_1": 62,
+      "trip_cost_0": 4.125439775536789,
+      "trip_cost_1": 4.01779328667881,
+      "idle_planes_limit_0": 2,
+      "idle_planes_limit_1": 2,
+      "demand_1_to_0": 21.000231590589422,
+      "max_trips_per_plane": 1.5043265991552994
+    },
+    {
+      "plane_capacity_0": 80,
+      "plane_capacity_1": 62,
+      "trip_cost_0": 3.2795696220540504,
+      "trip_cost_1": 9.096395185860523,
+      "idle_planes_limit_0": 2,
+      "idle_planes_limit_1": 2,
+      "demand_1_to_0": 18.528821265351137,
+      "max_trips_per_plane": 2.05392977672386
+    },
+    {
+      "plane_capacity_0": 65,
+      "plane_capacity_1": 101,
+      "trip_cost_0": 12.1414568501674,
+      "trip_cost_1": 0.1169776742050983,
+      "idle_planes_limit_0": 2,
+      "idle_planes_limit_1": 2,
+      "demand_1_to_0": 15.370555268483518,
+      "max_trips_per_plane": 1.5865753997741379
+    },
+    {
+      "plane_capacity_0": 117,
+      "plane_capacity_1": 84,
+      "trip_cost_0": 1.3911876507022187,
+      "trip_cost_1": 1.7408947830023522,
+      "idle_planes_limit_0": 2,
+      "idle_planes_limit_1": 2,
+      "demand_1_to_0": 20.13270838739868,
+      "max_trips_per_plane": 2.2756781440325815
+    },
+    {
+      "plane_capacity_0": 88,
+      "plane_capacity_1": 128,
+      "trip_cost_0": 5.678015658125302,
+      "trip_cost_1": 9.936731362918087,
+      "idle_planes_limit_0": 2,
+      "idle_planes_limit_1": 2,
+      "demand_1_to_0": 20.68941038316993,
+      "max_trips_per_plane": 2.0928225743081144
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      5.0,
+      4.01779328667881,
+      3.2795696220540504,
+      0.1169776742050983,
+      1.3911876507022187,
+      5.678015658125302
+    ],
+    "B-structured": [
+      5.0,
+      4.01779328667881,
+      3.2795696220540504,
+      0.1169776742050983,
+      1.3911876507022187,
+      5.678015658125302
+    ],
+    "C-direct": [
+      5.0,
+      4.01779328667881,
+      3.2795696220540504,
+      0.1169776742050983,
+      1.3911876507022187,
+      5.678015658125302
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": []
+}

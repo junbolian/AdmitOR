@@ -1,0 +1,29 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [
+    0
+  ],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[net_outflow_0] inverted abs range (lo > hi); swapped",
+    "[net_outflow_0] abs range [-250.0, 0.0] is disjoint from base span [150, 150]; replaced with rel +/-30% around base",
+    "[net_outflow_1] inverted abs range (lo > hi); swapped",
+    "[net_outflow_1] abs range [-200.0, 0.0] is disjoint from base span [100, 100]; replaced with rel +/-30% around base",
+    "[net_inflow_3] inverted abs range (lo > hi); swapped",
+    "[net_inflow_3] abs range [-100.0, 0.0] is disjoint from base span [23, 23]; replaced with rel +/-30% around base",
+    "[capacity_0_2] inverted abs range (lo > hi); swapped",
+    "[capacity_0_2] abs range [-350.0, 0.0] is disjoint from base span [227, 227]; replaced with rel +/-30% around base",
+    "[capacity_1_2] inverted abs range (lo > hi); swapped",
+    "[capacity_1_2] abs range [-350.0, 0.0] is disjoint from base span [229, 229]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_232",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 145.3,
+  "m": 5,
+  "seed": 42
+}

@@ -1,0 +1,33 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 43992.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    3
+  ],
+  "notes": [],
+  "warnings": [
+    "[sales_limit_product0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[sales_limit_product1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_per_unit_product0] inverted abs range (lo > hi); swapped",
+    "[profit_per_unit_product0] abs range [-20.0, 50.0] is disjoint from base span [132, 132]; replaced with rel +/-30% around base",
+    "[holding_cost_per_unit_per_period] inverted abs range (lo > hi); swapped",
+    "[holding_cost_per_unit_per_period] abs range [-25.0, 0.0] is disjoint from base span [10, 10]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_88",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 95.8,
+  "m": 5,
+  "seed": 42
+}

@@ -1,0 +1,39 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 4702.0,
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[startup_cost_type0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[startup_cost_type0] abs range [-100.0, -100.0] is disjoint from base span [387, 387]; replaced with rel +/-30% around base",
+    "[startup_cost_type1] degenerate abs range (lo == hi); perturbation has no effect",
+    "[startup_cost_type1] abs range [-100.0, -100.0] is disjoint from base span [360, 360]; replaced with rel +/-30% around base",
+    "[max_output_type0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_output_type0] abs range [-100.0, -100.0] is disjoint from base span [135, 135]; replaced with rel +/-30% around base",
+    "[max_output_type1] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_output_type1] abs range [-100.0, -100.0] is disjoint from base span [125, 125]; replaced with rel +/-30% around base",
+    "[max_active_per_type] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_startups_type0_period0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_startups_type1_period0] degenerate abs range (lo == hi); perturbation has no effect"
+  ],
+  "sample_id": "sample_110",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 129.7,
+  "m": 5,
+  "seed": 42
+}

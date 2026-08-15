@@ -1,0 +1,36 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 43866.299999999996,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[profit] degenerate abs range (lo == hi); perturbation has no effect",
+    "[profit] abs range [-10.0, -10.0] is disjoint from base span [20, 48]; replaced with rel +/-30% around base",
+    "[resource_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+    "[resource_capacity] abs range [-100.0, -100.0] is disjoint from base span [562, 562]; replaced with rel +/-30% around base",
+    "[production_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+    "[production_capacity] abs range [0.0, 0.0] is disjoint from base span [102, 197]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_35",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 100.2,
+  "m": 5,
+  "seed": 42
+}

@@ -1,0 +1,50 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 340670.4150755947,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    2,
+    3,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[stage_req_0] inverted abs range (lo > hi); swapped",
+    "[stage_req_0] abs range [-0.4, 0.1] is disjoint from base span [0.25, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_1] inverted abs range (lo > hi); swapped",
+    "[stage_req_1] abs range [-0.35, 0.1] is disjoint from base span [0.167, 0.25]; replaced with rel +/-30% around base",
+    "[stage_req_2] inverted abs range (lo > hi); swapped",
+    "[stage_req_2] abs range [-0.3, 0.15] is disjoint from base span [0.167, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_3] inverted abs range (lo > hi); swapped",
+    "[stage_req_3] abs range [-0.35, 0.1] is disjoint from base span [0.167, 0.25]; replaced with rel +/-30% around base",
+    "[stage_req_4] inverted abs range (lo > hi); swapped",
+    "[stage_req_4] abs range [-0.4, 0.1] is disjoint from base span [0.167, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_5] inverted abs range (lo > hi); swapped",
+    "[stage_req_5] abs range [-0.35, 0.1] is disjoint from base span [0.2, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_6] inverted abs range (lo > hi); swapped",
+    "[stage_req_6] abs range [-0.4, 0.1] is disjoint from base span [0.167, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_7] inverted abs range (lo > hi); swapped",
+    "[stage_req_7] abs range [-0.4, 0.1] is disjoint from base span [0.167, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_8] inverted abs range (lo > hi); swapped",
+    "[stage_req_8] abs range [-0.4, 0.1] is disjoint from base span [0.167, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_9] inverted abs range (lo > hi); swapped",
+    "[stage_req_9] abs range [-0.4, 0.1] is disjoint from base span [0.167, 0.333]; replaced with rel +/-30% around base",
+    "[stage_req_10] inverted abs range (lo > hi); swapped",
+    "[stage_req_10] abs range [-0.35, 0.1] is disjoint from base span [0.167, 0.25]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_180",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 68.8,
+  "m": 5,
+  "seed": 42
+}

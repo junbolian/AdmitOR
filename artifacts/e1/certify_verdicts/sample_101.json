@@ -1,0 +1,31 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 133.00000000000006,
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[d] degenerate abs range (lo == hi); perturbation has no effect",
+    "[d] abs range [-10.0, -10.0] is disjoint from base span [0, 25]; replaced with rel +/-30% around base",
+    "[k] degenerate abs range (lo == hi); perturbation has no effect"
+  ],
+  "sample_id": "sample_101",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 67.6,
+  "m": 5,
+  "seed": 42
+}

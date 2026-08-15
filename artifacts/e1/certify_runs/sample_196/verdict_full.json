@@ -1,0 +1,133 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "truck_capacity": 100,
+      "good_weights": [
+        30,
+        38,
+        39,
+        30,
+        34,
+        39
+      ]
+    },
+    {
+      "truck_capacity": 128,
+      "good_weights": [
+        4,
+        54,
+        44,
+        147,
+        135,
+        178
+      ]
+    },
+    {
+      "truck_capacity": 16,
+      "good_weights": [
+        84,
+        5,
+        43,
+        101,
+        4,
+        39
+      ]
+    },
+    {
+      "truck_capacity": 130,
+      "good_weights": [
+        109,
+        43,
+        117,
+        162,
+        0,
+        161
+      ]
+    },
+    {
+      "truck_capacity": 139,
+      "good_weights": [
+        67,
+        30,
+        191,
+        67,
+        18,
+        18
+      ]
+    },
+    {
+      "truck_capacity": 169,
+      "good_weights": [
+        120,
+        161,
+        146,
+        107,
+        195,
+        75
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      3.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      3.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      3.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "B-structured": [
+      "optimal",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "C-direct": [
+      "optimal",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible"
+    ]
+  },
+  "informative": [
+    0
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

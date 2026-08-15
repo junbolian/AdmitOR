@@ -1,0 +1,150 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "resource_weights": [
+        38,
+        37,
+        36,
+        34,
+        34,
+        33,
+        36
+      ],
+      "facility_capacity": 100
+    },
+    {
+      "resource_weights": [
+        41.178931004839754,
+        26.455238765943204,
+        31.140633276772974,
+        28.353499058235982,
+        38.824012768945856,
+        36.49864985097365,
+        44.47107866242466
+      ],
+      "facility_capacity": 65
+    },
+    {
+      "resource_weights": [
+        36.21981748882416,
+        26.56149827152516,
+        29.922580255757833,
+        34.1092478773086,
+        24.34133378155082,
+        27.03698548359564,
+        39.2375038560377
+      ],
+      "facility_capacity": 93
+    },
+    {
+      "resource_weights": [
+        31.62604618252788,
+        38.98169818204517,
+        42.68369786424106,
+        23.932574697432443,
+        40.23871273738928,
+        36.923160020766886,
+        32.54941115678862
+      ],
+      "facility_capacity": 69
+    },
+    {
+      "resource_weights": [
+        48.42445804631461,
+        33.37239890150031,
+        27.203310217011193,
+        25.773014087402665,
+        41.08888507348818,
+        35.053775421064444,
+        42.633970702726614
+      ],
+      "facility_capacity": 104
+    },
+    {
+      "resource_weights": [
+        38.82600048516718,
+        47.50316996034203,
+        33.37634254770043,
+        35.06162887797383,
+        40.7198551507611,
+        35.34669109681207,
+        43.81286904671279
+      ],
+      "facility_capacity": 95
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      4.0,
+      5.0,
+      3.0,
+      5.0,
+      3.0,
+      4.0
+    ],
+    "B-structured": [
+      4.0,
+      5.0,
+      3.0,
+      5.0,
+      3.0,
+      4.0
+    ],
+    "C-direct": [
+      4.0,
+      5.0,
+      3.0,
+      5.0,
+      3.0,
+      4.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": []
+}

@@ -1,0 +1,318 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured"
+  ],
+  "families": [
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "pairwise_distances": [
+        [
+          0,
+          19,
+          21,
+          22,
+          24
+        ],
+        [
+          17,
+          0,
+          21,
+          21,
+          17
+        ],
+        [
+          16,
+          23,
+          0,
+          22,
+          25
+        ],
+        [
+          22,
+          17,
+          21,
+          0,
+          22
+        ],
+        [
+          22,
+          18,
+          23,
+          15,
+          0
+        ]
+      ],
+      "num_facilities_to_open": 3
+    },
+    {
+      "pairwise_distances": [
+        [
+          32,
+          1,
+          14,
+          11,
+          37
+        ],
+        [
+          34,
+          45,
+          4,
+          21,
+          1
+        ],
+        [
+          11,
+          25,
+          1,
+          10,
+          32
+        ],
+        [
+          27,
+          11,
+          29,
+          40,
+          0
+        ],
+        [
+          40,
+          35,
+          17,
+          8,
+          48
+        ]
+      ],
+      "num_facilities_to_open": 3
+    },
+    {
+      "pairwise_distances": [
+        [
+          5,
+          5,
+          42,
+          30,
+          40
+        ],
+        [
+          36,
+          27,
+          49,
+          19,
+          28
+        ],
+        [
+          41,
+          31,
+          43,
+          29,
+          35
+        ],
+        [
+          2,
+          11,
+          14,
+          4,
+          12
+        ],
+        [
+          5,
+          14,
+          32,
+          18,
+          19
+        ]
+      ],
+      "num_facilities_to_open": 3
+    },
+    {
+      "pairwise_distances": [
+        [
+          13,
+          47,
+          32,
+          30,
+          9
+        ],
+        [
+          36,
+          8,
+          19,
+          49,
+          32
+        ],
+        [
+          28,
+          34,
+          42,
+          39,
+          11
+        ],
+        [
+          2,
+          16,
+          13,
+          11,
+          47
+        ],
+        [
+          44,
+          16,
+          33,
+          20,
+          46
+        ]
+      ],
+      "num_facilities_to_open": 3
+    },
+    {
+      "pairwise_distances": [
+        [
+          13,
+          12,
+          28,
+          13,
+          29
+        ],
+        [
+          45,
+          20,
+          11,
+          50,
+          25
+        ],
+        [
+          5,
+          2,
+          5,
+          31,
+          40
+        ],
+        [
+          21,
+          3,
+          19,
+          50,
+          26
+        ],
+        [
+          49,
+          43,
+          1,
+          36,
+          34
+        ]
+      ],
+      "num_facilities_to_open": 3
+    },
+    {
+      "pairwise_distances": [
+        [
+          13,
+          32,
+          6,
+          22,
+          23
+        ],
+        [
+          48,
+          44,
+          13,
+          25,
+          9
+        ],
+        [
+          46,
+          44,
+          15,
+          32,
+          30
+        ],
+        [
+          8,
+          38,
+          27,
+          39,
+          27
+        ],
+        [
+          0,
+          16,
+          1,
+          46,
+          44
+        ]
+      ],
+      "num_facilities_to_open": 3
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      69.99999999999997,
+      83.0,
+      117.0,
+      128.0,
+      101.0,
+      89.00000000000007
+    ],
+    "B-structured": [
+      70.0,
+      83.0,
+      117.0,
+      128.0,
+      101.0,
+      89.0
+    ],
+    "C-direct": [
+      131.0,
+      151.0,
+      204.0,
+      196.0,
+      203.0,
+      189.0
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "C-direct": "diverges from consensus by 102 on instance 4 (params: {'pairwise_distances': [[13, 12, 28, 13, 29], [45, 20, 11, 50, 25], [5, 2, 5, 31, 40], [21, 3, 19, 50, 26], [49, 43, 1, 36, 34]], 'num_facilities_to_open': 3})"
+  },
+  "disagreements": [],
+  "notes": []
+}

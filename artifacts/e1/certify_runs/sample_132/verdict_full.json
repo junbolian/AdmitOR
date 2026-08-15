@@ -1,0 +1,139 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "cost_team1": 1,
+      "cost_team2": 3,
+      "cost_team3": 2,
+      "coverage_requirement_1": 2,
+      "coverage_requirement_2": 2,
+      "coverage_requirement_3": 1,
+      "coverage_requirement_4": 3,
+      "coverage_requirement_5": 1,
+      "coverage_requirement_6": 2,
+      "coverage_requirement_7": 1
+    },
+    {
+      "cost_team1": 3.2331913124436307,
+      "cost_team2": 0.687580664170002,
+      "cost_team3": 1.7951700465408915,
+      "coverage_requirement_1": 1.6678528857785873,
+      "coverage_requirement_2": 2.283765456996815,
+      "coverage_requirement_3": 1.1060196924537469,
+      "coverage_requirement_4": 3.7059232218687215,
+      "coverage_requirement_5": 0.7521632995776497,
+      "coverage_requirement_6": 1.9063061836223245,
+      "coverage_requirement_7": 0.7178783316628422
+    },
+    {
+      "cost_team1": 1.1713260765376567,
+      "cost_team2": 4.290164660775218,
+      "cost_team3": 0.353908624166409,
+      "coverage_requirement_1": 1.638605180823978,
+      "coverage_requirement_2": 2.1798613253354278,
+      "coverage_requirement_3": 1.02696488836193,
+      "coverage_requirement_4": 2.496793119673254,
+      "coverage_requirement_5": 1.0535594103255452,
+      "coverage_requirement_6": 2.371316548013392,
+      "coverage_requirement_7": 0.7038992558068365
+    },
+    {
+      "cost_team1": 4.0485143339807586,
+      "cost_team2": 5.736045462411702,
+      "cost_team3": 2.173452995804353,
+      "coverage_requirement_1": 1.5865753997741379,
+      "coverage_requirement_2": 2.5486556866481376,
+      "coverage_requirement_3": 0.901956727067576,
+      "coverage_requirement_4": 2.2669425180842664,
+      "coverage_requirement_5": 0.7580298261000784,
+      "coverage_requirement_6": 2.416993239616952,
+      "coverage_requirement_7": 1.0622356188201347
+    },
+    {
+      "cost_team1": 4.054928539044463,
+      "cost_team2": 5.972988400203634,
+      "cost_team3": 3.3101229304372644,
+      "coverage_requirement_1": 2.567738916775245,
+      "coverage_requirement_2": 1.854241252650024,
+      "coverage_requirement_3": 1.0312243787639361,
+      "coverage_requirement_4": 3.592928395655391,
+      "coverage_requirement_5": 1.0711118514185476,
+      "coverage_requirement_6": 2.4340482803729326,
+      "coverage_requirement_7": 1.0464112871540572
+    },
+    {
+      "cost_team1": 3.5524019974531256,
+      "cost_team2": 0.8436828774174666,
+      "cost_team3": 1.5218099987789717,
+      "coverage_requirement_1": 1.7472655563225286,
+      "coverage_requirement_2": 1.495750372308353,
+      "coverage_requirement_3": 0.8396745318166181,
+      "coverage_requirement_4": 2.2818025729375124,
+      "coverage_requirement_5": 0.8667841618660552,
+      "coverage_requirement_6": 2.16282133311728,
+      "coverage_requirement_7": 0.9188993073820505
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      6.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      6.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      6.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "B-structured": [
+      "optimal",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded",
+      "infeasible_or_unbounded"
+    ],
+    "C-direct": [
+      "optimal",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible",
+      "infeasible"
+    ]
+  },
+  "informative": [
+    0
+  ],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 98563.99999999999,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[producer_capacities] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[contract_demands] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[min_delivery_per_contract] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[cost_matrix] inverted abs range (lo > hi); swapped"
+  ],
+  "sample_id": "sample_130",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 60.5,
+  "m": 5,
+  "seed": 42
+}

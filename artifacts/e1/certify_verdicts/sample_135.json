@@ -1,0 +1,39 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 27748.0,
+  "clique": [
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[profit_per_unit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[grinder_capacity] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[drill_capacity] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[borer_capacity] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[grinder_usage] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[drill_usage] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[borer_usage] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[max_sales] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[final_inventory] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[holding_cost_per_unit] inverted abs range (lo > hi); swapped",
+    "[holding_cost_per_unit] abs range [-25.0, 0.0] is disjoint from base span [10, 10]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_135",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 126.8,
+  "m": 5,
+  "seed": 42
+}

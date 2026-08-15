@@ -1,0 +1,591 @@
+{
+  "alpha": 0.05,
+  "n_accept": 103,
+  "n_true_clique": 93,
+  "n_false_clique": 10,
+  "null_scores": [
+    22.3,
+    22.4,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    33.5,
+    33.6
+  ],
+  "positive_scores": [
+    22.3,
+    22.4,
+    22.4,
+    22.4,
+    22.5,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    22.6,
+    33.3,
+    33.4,
+    33.5,
+    33.5,
+    33.5,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6,
+    33.6
+  ],
+  "raw_false_rate_on_calibration": 0.0970873786407767,
+  "tau": 33.3,
+  "threshold_table": [
+    {
+      "tau": 22.3,
+      "selected": 103,
+      "false_selected": 10,
+      "false_rate": 0.0970873786407767,
+      "cp95_upper": 0.15911620856191452
+    },
+    {
+      "tau": 22.4,
+      "selected": 101,
+      "false_selected": 9,
+      "false_rate": 0.0891089108910891,
+      "cp95_upper": 0.1503439757076363
+    },
+    {
+      "tau": 22.5,
+      "selected": 97,
+      "false_selected": 8,
+      "false_rate": 0.08247422680412371,
+      "cp95_upper": 0.14389108839635253
+    },
+    {
+      "tau": 22.6,
+      "selected": 96,
+      "false_selected": 8,
+      "false_rate": 0.08333333333333333,
+      "cp95_upper": 0.1453383229810515
+    },
+    {
+      "tau": 33.3,
+      "selected": 64,
+      "false_selected": 2,
+      "false_rate": 0.03125,
+      "cp95_upper": 0.09512171935033915
+    },
+    {
+      "tau": 33.4,
+      "selected": 63,
+      "false_selected": 2,
+      "false_rate": 0.031746031746031744,
+      "cp95_upper": 0.09658001129258793
+    },
+    {
+      "tau": 33.5,
+      "selected": 62,
+      "false_selected": 2,
+      "false_rate": 0.03225806451612903,
+      "cp95_upper": 0.09808368159210062
+    },
+    {
+      "tau": 33.6,
+      "selected": 58,
+      "false_selected": 1,
+      "false_rate": 0.017241379310344827,
+      "cp95_upper": 0.07919781050002478
+    }
+  ],
+  "records": {
+    "positive": [
+      {
+        "sample_id": "e3_AP_easy_2",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_AP_easy_3",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_AP_easy_4",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_AP_easy_5",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_ARP_easy_6",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_ATSP_easy_11",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_ATSP_easy_12",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_ATSP_easy_13",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_ATSP_easy_14",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_BCP_23",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_BCP_25",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_BM_easy_26",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_BM_easy_27",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_BM_easy_28",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_BPP_31",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_BPP_32",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_BPP_34",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_Balanced_LAP_easy_17",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_Balanced_LAP_easy_18",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_Balanced_LAP_easy_19",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_CFLP_41",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_CFLP_45",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_DCMST_62",
+        "score": 22.4
+      },
+      {
+        "sample_id": "e3_DCMST_64",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_FSSP_66",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_FSSP_68",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_FSSP_69",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_GAP_easy_73",
+        "score": 33.5
+      },
+      {
+        "sample_id": "e3_GAP_easy_74",
+        "score": 22.4
+      },
+      {
+        "sample_id": "e3_GAP_easy_75",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_GBP_79",
+        "score": 33.3
+      },
+      {
+        "sample_id": "e3_GCP_82",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_GCP_85",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_HCLP_86",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_HCLP_89",
+        "score": 33.4
+      },
+      {
+        "sample_id": "e3_HCLP_90",
+        "score": 33.5
+      },
+      {
+        "sample_id": "e3_JSSP_94",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_LBAP_easy_100",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_LBAP_easy_96",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_LBAP_easy_98",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_LCP_103",
+        "score": 22.4
+      },
+      {
+        "sample_id": "e3_MBM_easy_108",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MBM_easy_109",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MBM_easy_110",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MCC_easy_116",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MCC_easy_117",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MCLP_126",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MCLP_128",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MCLP_129",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MCMF_easy_132",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MCMF_easy_133",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MCP_136",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MCP_139",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MCP_140",
+        "score": 22.3
+      },
+      {
+        "sample_id": "e3_MC_easy_111",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MC_easy_112",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MC_easy_115",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MF_easy_142",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MF_easy_143",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MF_easy_144",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MGM_easy_148",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MLSTP_151",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MLSTP_153",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MMCF_easy_156",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MMCF_easy_159",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_MultiCF_easy_167",
+        "score": 22.5
+      },
+      {
+        "sample_id": "e3_MultiCF_easy_169",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_MultiCF_easy_170",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_OSSP_172",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_OSSP_173",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_OSSP_175",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_PFSP_176",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_PFSP_178",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_PFSP_179",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_QAP_easy_181",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_QAP_easy_184",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_QAP_easy_185",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_SCLP_192",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_SCLP_193",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_SCLP_195",
+        "score": 33.5
+      },
+      {
+        "sample_id": "e3_TSPPD_easy_216",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_TSPPD_easy_218",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_TSPPD_easy_219",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_TSP_easy_211",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_TSP_easy_213",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_TSP_easy_214",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_UFLP_228",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_UFLP_229",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_UFLP_230",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_Unbalanced_LAP_easy_232",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_Unbalanced_LAP_easy_234",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_Unbalanced_LAP_easy_235",
+        "score": 33.6
+      },
+      {
+        "sample_id": "e3_VBP_238",
+        "score": 33.6
+      }
+    ],
+    "null": [
+      {
+        "sample_id": "e3_CARP_easy_37",
+        "score": 22.3
+      },
+      {
+        "sample_id": "e3_DCMST_61",
+        "score": 22.4
+      },
+      {
+        "sample_id": "e3_MCMF_easy_131",
+        "score": 33.5
+      },
+      {
+        "sample_id": "e3_RPP_easy_190",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_VRP_easy_243",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_VRP_easy_244",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_VRP_easy_245",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_mTSP_easy_162",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_mTSP_easy_164",
+        "score": 22.6
+      },
+      {
+        "sample_id": "e3_mTSP_easy_165",
+        "score": 33.6
+      }
+    ]
+  }
+}

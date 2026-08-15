@@ -1,0 +1,221 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "profit_per_unit": [
+        120,
+        156
+      ],
+      "holding_cost": 10,
+      "machine_capacity_grinders": 240,
+      "machine_capacity_drills": 120,
+      "machine_capacity_borers": 120,
+      "inventory_limit": 50,
+      "sales_limit": [
+        [
+          21,
+          33,
+          34,
+          36
+        ],
+        [
+          37,
+          43,
+          24,
+          33
+        ]
+      ],
+      "target_inventory": 10
+    },
+    {
+      "profit_per_unit": [
+        130.03872948896765,
+        111.54100668884162
+      ],
+      "holding_cost": 6.875732959227982,
+      "machine_capacity_grinders": -10.715704740470898,
+      "machine_capacity_drills": 137.02592741980888,
+      "machine_capacity_borers": 132.72236309444963,
+      "inventory_limit": 90,
+      "sales_limit": [
+        [
+          15.795429291130644,
+          31.454052029768356,
+          24.407863276536634,
+          29.922580255757833
+        ],
+        [
+          37.118887395894646,
+          30.78462801784368,
+          19.663262169887737,
+          35.967711868034556
+        ]
+      ],
+      "target_inventory": 16
+    },
+    {
+      "profit_per_unit": [
+        99.87172478693014,
+        164.35526801078507
+      ],
+      "holding_cost": 20.235761416945667,
+      "machine_capacity_grinders": -97.40049612877559,
+      "machine_capacity_drills": 142.01898613196215,
+      "machine_capacity_borers": 134.26603643915232,
+      "inventory_limit": 37,
+      "sales_limit": [
+        [
+          16.659041697628446,
+          42.05281882969427,
+          30.666528720297585,
+          27.203310217011193
+        ],
+        [
+          28.0471035657029,
+          51.965354651764464,
+          25.49365485168323,
+          39.08113981083273
+        ]
+      ],
+      "target_inventory": 22
+    },
+    {
+      "profit_per_unit": [
+        122.60842258473846,
+        200.2836355084691
+      ],
+      "holding_cost": 9.463359430208836,
+      "machine_capacity_grinders": 120.81625250929079,
+      "machine_capacity_drills": 143.71713582621564,
+      "machine_capacity_borers": 128.53342217022572,
+      "inventory_limit": 87,
+      "sales_limit": [
+        [
+          21.9746370302352,
+          37.050522357055485,
+          24.73481742657551,
+          30.122602754073412
+        ],
+        [
+          32.32441279196678,
+          32.158633004629586,
+          20.152188763598836,
+          25.099828302312634
+        ]
+      ],
+      "target_inventory": 8
+    },
+    {
+      "profit_per_unit": [
+        129.7692799870368,
+        143.3482919515999
+      ],
+      "holding_cost": 9.254524177922066,
+      "machine_capacity_grinders": -16.19718769140492,
+      "machine_capacity_drills": 103.22240318753616,
+      "machine_capacity_borers": 151.4391303152996,
+      "inventory_limit": 67,
+      "sales_limit": [
+        [
+          22.37505067140405,
+          26.48854523432232,
+          38.67418667818712,
+          28.729493865257652
+        ],
+        [
+          34.32391080701978,
+          55.629702446424155,
+          26.015996541898936,
+          34.127604926737995
+        ]
+      ],
+      "target_inventory": 21
+    },
+    {
+      "profit_per_unit": [
+        144.68533825366632,
+        181.83359172072852
+      ],
+      "holding_cost": 5.7262017991026095,
+      "machine_capacity_grinders": -87.15990243838489,
+      "machine_capacity_drills": 106.71261946025389,
+      "machine_capacity_borers": 103.2773430702506,
+      "inventory_limit": 25,
+      "sales_limit": [
+        [
+          26.580662400621684,
+          40.45207900415885,
+          30.21942876828895,
+          39.35747517036941
+        ],
+        [
+          34.68302820354674,
+          53.69532781530603,
+          23.407466677258544,
+          28.34462729666144
+        ]
+      ],
+      "target_inventory": 7
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      31092.0,
+      null,
+      null,
+      35677.09041783914,
+      null,
+      null
+    ],
+    "C-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:return m.inventory[p, 3] == target_inventory[p] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return m.inventory[p, 3] == target_inventory[p] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return m.inventory[p, 3] == target_inventory[p] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return m.inventory[p, 3] == target_inventory[p] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return m.inventory[p, 3] == target_inventory[p] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:return m.inventory[p, 3] == target_inventory[p] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+    ],
+    "B-structured": [
+      "optimal",
+      "crash:raise ValueError( | ValueError: Invalid parameter value: machine_capacity_grinders[None] = '-10.715704740470898', value type=<class 'float'>. | Value not in parameter domain NonNegativeReals",
+      "crash:raise ValueError( | ValueError: Invalid parameter value: machine_capacity_grinders[None] = '-97.40049612877559', value type=<class 'float'>. | Value not in parameter domain NonNegativeReals",
+      "optimal",
+      "crash:raise ValueError( | ValueError: Invalid parameter value: machine_capacity_grinders[None] = '-16.19718769140492', value type=<class 'float'>. | Value not in parameter domain NonNegativeReals",
+      "crash:raise ValueError( | ValueError: Invalid parameter value: machine_capacity_grinders[None] = '-87.15990243838489', value type=<class 'float'>. | Value not in parameter domain NonNegativeReals"
+    ],
+    "C-direct": [
+      "crash:inventory[t, p] <= inventory_limit[t][p], | ~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:inventory[t, p] <= inventory_limit[t][p], | ~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:inventory[t, p] <= inventory_limit[t][p], | ~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:inventory[t, p] <= inventory_limit[t][p], | ~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:inventory[t, p] <= inventory_limit[t][p], | ~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+      "crash:inventory[t, p] <= inventory_limit[t][p], | ~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

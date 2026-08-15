@@ -1,0 +1,33 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 3765.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[values] rel rate r=-0.5 outside (0,1]; clamped to 0.3",
+    "[capacity] inverted abs range (lo > hi); swapped",
+    "[capacity] abs range [-5000.0, 5000.0] is disjoint from base span [14277, 14277]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_95",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 36.7,
+  "m": 5,
+  "seed": 42
+}

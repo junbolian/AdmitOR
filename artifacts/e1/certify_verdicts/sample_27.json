@@ -1,0 +1,36 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 5.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[idle_planes_limit_0] degenerate abs range (lo == hi); perturbation has no effect",
+    "[idle_planes_limit_1] degenerate abs range (lo == hi); perturbation has no effect",
+    "[demand_1_to_0] inverted abs range (lo > hi); swapped",
+    "[demand_1_to_0] abs range [-1.0, 0.0] is disjoint from base span [17, 17]; replaced with rel +/-30% around base",
+    "[max_trips_per_plane] degenerate abs range (lo == hi); perturbation has no effect",
+    "[max_trips_per_plane] abs range [-1.0, -1.0] is disjoint from base span [2, 2]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_27",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 72.5,
+  "m": 5,
+  "seed": 42
+}

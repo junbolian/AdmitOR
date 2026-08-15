@@ -1,0 +1,34 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 27002.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[aircraft_availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[route_demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[capacity_matrix] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[cost_matrix] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+  ],
+  "sample_id": "sample_50",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 81.7,
+  "m": 5,
+  "seed": 42
+}

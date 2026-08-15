@@ -1,0 +1,40 @@
+{
+  "decision": "ACCEPT",
+  "clique_value": 1407.0,
+  "clique": [
+    "A-direct",
+    "B-structured",
+    "C-direct"
+  ],
+  "families": [
+    "claude",
+    "deepseek",
+    "gpt"
+  ],
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": [],
+  "warnings": [
+    "[demand_p0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[demand_p1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c0_p0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c0_p1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c1_p0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c1_p1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c2_p0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c2_p1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c3_p0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[profit_c3_p1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+  ],
+  "sample_id": "sample_226",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 70.3,
+  "m": 5,
+  "seed": 42
+}

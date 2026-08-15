@@ -1,0 +1,144 @@
+{
+  "decision": "ACCEPT",
+  "clique": [
+    "A-direct",
+    "B-structured"
+  ],
+  "families": [
+    "deepseek",
+    "gpt"
+  ],
+  "instantiations": [
+    {
+      "resource_weights": [
+        37,
+        37,
+        33,
+        40,
+        38,
+        37
+      ],
+      "center_capacity": 100
+    },
+    {
+      "resource_weights": [
+        40.09527492576502,
+        26.455238765943204,
+        28.545580503708557,
+        33.35705771557174,
+        43.391543682939485,
+        40.92272862078863
+      ],
+      "center_capacity": 139
+    },
+    {
+      "resource_weights": [
+        27.83004208437304,
+        35.266664397013,
+        23.689984944873792,
+        33.24731139528648,
+        38.122100568756665,
+        26.489098526981774
+      ],
+      "center_capacity": 70
+    },
+    {
+      "resource_weights": [
+        40.32743451870542,
+        37.99770086939141,
+        27.464724316405793,
+        42.14237641302181,
+        45.05501441225445,
+        26.044272464852952
+      ],
+      "center_capacity": 131
+    },
+    {
+      "resource_weights": [
+        41.398694568738634,
+        33.45356146669942,
+        26.178494096273276,
+        50.97311373296275,
+        34.27435562856789,
+        27.958957723039283
+      ],
+      "center_capacity": 60
+    },
+    {
+      "resource_weights": [
+        44.71437493291361,
+        39.30271789634499,
+        39.08113981083273,
+        45.513562880651634,
+        38.82600048516718,
+        47.50316996034203
+      ],
+      "center_capacity": 88
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      3.0,
+      2.0,
+      3.0,
+      2.0,
+      5.0,
+      3.0
+    ],
+    "B-structured": [
+      3.0,
+      2.0,
+      3.0,
+      2.0,
+      5.0,
+      3.0
+    ],
+    "C-direct": [
+      3.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "B-structured": [
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal",
+      "optimal"
+    ],
+    "C-direct": [
+      "optimal",
+      "crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: 'float' object is not ",
+      "crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: 'float' object is not ",
+      "crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: 'float' object is not ",
+      "crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: 'float' object is not ",
+      "crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: 'float' object is not "
+    ]
+  },
+  "informative": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "diagnoses": {
+    "C-direct": "failed on informative instance(s) [1, 2, 3, 4, 5]: ['crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: \\'float\\' object is not ', 'crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: \\'float\\' object is not ', 'crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: \\'float\\' object is not ', 'crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: \\'float\\' object is not ', 'crash:File \"src/gurobipy/_model.pyx\", line 3265, in gurobipy._model.Model.addVars | File \"src/gurobipy/_modelutil.pyx\", line 344, in gurobipy._modelutil._listify.__init__ | TypeError: \\'float\\' object is not ']"
+  },
+  "disagreements": [],
+  "notes": []
+}

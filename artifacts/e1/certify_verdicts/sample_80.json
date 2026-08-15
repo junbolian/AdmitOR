@@ -1,0 +1,23 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [
+    0
+  ],
+  "notes": [
+    "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[time_capacity] inverted abs range (lo > hi); swapped",
+    "[time_capacity] abs range [-1.0, 100.0] is disjoint from base span [168, 168]; replaced with rel +/-30% around base",
+    "[min_production] inverted abs range (lo > hi); swapped",
+    "[min_production] abs range [-1.0, 0.0] is disjoint from base span [74, 87]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_80",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 48.7,
+  "m": 5,
+  "seed": 42
+}

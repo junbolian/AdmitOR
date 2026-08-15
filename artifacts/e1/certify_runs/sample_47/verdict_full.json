@@ -1,0 +1,215 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "expected_returns": [
+        0.1471,
+        0.0583,
+        0.0685,
+        0.1077
+      ],
+      "min_return": 0.1,
+      "variances": [
+        0.0378,
+        0.0675,
+        0.0624,
+        0.0219
+      ],
+      "covariances": [
+        0.0341,
+        0.0433,
+        0.0222,
+        0.0233,
+        0.0182,
+        -0.0036
+      ],
+      "max_allocation": 0.3,
+      "total_allocation": 1.0
+    },
+    {
+      "expected_returns": [
+        0.1418280395373651,
+        -0.04249677343319992,
+        0.032508795510735766,
+        0.01696322144464682
+      ],
+      "min_return": 0.14729424283280249,
+      "variances": [
+        0.10150492311343669,
+        0.1338269351557268,
+        0.013040824894412422,
+        0.06328827295279056
+      ],
+      "covariances": [
+        -0.04612636147305086,
+        -0.021577063275531563,
+        0.015696187453437108,
+        -0.04655032394109773,
+        -0.024151105410735698,
+        0.03448497691133802
+      ],
+      "max_allocation": 0.308089466508579,
+      "total_allocation": 1.0
+    },
+    {
+      "expected_returns": [
+        0.1267797051627726,
+        0.19282913700334797,
+        -0.048050372096581695,
+        0.19174577554984235
+      ],
+      "min_return": 0.13962787899764537,
+      "variances": [
+        0.05103757747769878,
+        0.023321924971767233,
+        0.14358196083101718,
+        0.050489181766894015
+      ],
+      "covariances": [
+        -0.03794304036058077,
+        -0.03742687101164968,
+        0.06017426762516977,
+        0.028484384077695837,
+        0.05492667552566942,
+        0.044865132270196326
+      ],
+      "max_allocation": 0.30652105646184613,
+      "total_allocation": 1.0
+    },
+    {
+      "expected_returns": [
+        0.06356031316250603,
+        0.11561218938196809,
+        0.19882139927589842,
+        0.13555592570927383
+      ],
+      "min_return": 0.17234138006215546,
+      "variances": [
+        0.0866028217885143,
+        0.10568577543223852,
+        0.006873657548349332,
+        0.03418474134773203
+      ],
+      "covariances": [
+        -0.012379564731726071,
+        -0.039627042999928426,
+        -0.019737184773066078,
+        -0.03686981417673522,
+        -0.013863431595688029,
+        0.03263897775437202
+      ],
+      "max_allocation": 0.27566979221461513,
+      "total_allocation": 1.0
+    },
+    {
+      "expected_returns": [
+        0.012852109231446307,
+        0.030093346614734007,
+        0.2309963763137482,
+        0.14441061557397805
+      ],
+      "min_return": 0.12182620113339765,
+      "variances": [
+        0.025670797229714548,
+        0.10936901969255237,
+        0.02451037406428926,
+        0.05691831626364716
+      ],
+      "covariances": [
+        0.07863803558275738,
+        0.03319996878103207,
+        0.022403466690704005,
+        0.038999852628683704,
+        0.05957074962467525,
+        0.05087998850101183
+      ],
+      "max_allocation": 0.2512286529535388,
+      "total_allocation": 1.0
+    },
+    {
+      "expected_returns": [
+        0.044635914417724576,
+        0.030322262792710816,
+        0.013294853075897936,
+        0.23287291430051632
+      ],
+      "min_return": 0.17527352529453377,
+      "variances": [
+        0.04720168211977169,
+        0.09831579979423201,
+        0.05934478515909963,
+        0.13718213846108152
+      ],
+      "covariances": [
+        0.009650740836361846,
+        -0.015565578355253185,
+        -0.017938423999782155,
+        0.0229778574412096,
+        -0.015843590892018415,
+        0.025996178729060265
+      ],
+      "max_allocation": 0.3716081190484459,
+      "total_allocation": 1.0
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      0.027036403839577644,
+      null,
+      0.02573348237118627,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i",
+      "crash:File \"<PATH>/...\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs i"
+    ],
+    "B-structured": [
+      "crash:return container[left_idx][right_idx] | ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return container[left_idx][right_idx] | ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return container[left_idx][right_idx] | ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return container[left_idx][right_idx] | ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return container[left_idx][right_idx] | ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable",
+      "crash:return container[left_idx][right_idx] | ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: 'float' object is not subscriptable"
+    ],
+    "C-direct": [
+      "optimal",
+      "infeasible",
+      "optimal",
+      "infeasible",
+      "infeasible",
+      "infeasible"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

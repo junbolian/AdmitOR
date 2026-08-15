@@ -1,0 +1,95 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "noe_constraint_rhs_1": 2,
+      "noe_constraint_rhs_2": 1,
+      "total_assignments": 3
+    },
+    {
+      "noe_constraint_rhs_1": 2.1673121581494605,
+      "noe_constraint_rhs_2": 0.7150064531336001,
+      "total_assignments": 3
+    },
+    {
+      "noe_constraint_rhs_1": 1.6678528857785873,
+      "noe_constraint_rhs_2": 1.1418827284984074,
+      "total_assignments": 3
+    },
+    {
+      "noe_constraint_rhs_1": 2.4706154812458143,
+      "noe_constraint_rhs_2": 0.7521632995776497,
+      "total_assignments": 3
+    },
+    {
+      "noe_constraint_rhs_1": 1.4357566633256844,
+      "noe_constraint_rhs_2": 0.831182784882162,
+      "total_assignments": 3
+    },
+    {
+      "noe_constraint_rhs_1": 1.4318431636206363,
+      "noe_constraint_rhs_2": 0.819302590411989,
+      "total_assignments": 3
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:assignment_costs = params[\"assignment_costs\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_costs'",
+      "crash:assignment_costs = params[\"assignment_costs\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_costs'",
+      "crash:assignment_costs = params[\"assignment_costs\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_costs'",
+      "crash:assignment_costs = params[\"assignment_costs\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_costs'",
+      "crash:assignment_costs = params[\"assignment_costs\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_costs'",
+      "crash:assignment_costs = params[\"assignment_costs\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_costs'"
+    ],
+    "B-structured": [
+      "crash:I��m checking the repo instructions and then I��ll patch the solver to be robust to the provided parameter shape while keeping the required Pyomo/HiGHS flow. | ^ | SyntaxError: invalid character '��' ",
+      "crash:I��m checking the repo instructions and then I��ll patch the solver to be robust to the provided parameter shape while keeping the required Pyomo/HiGHS flow. | ^ | SyntaxError: invalid character '��' ",
+      "crash:I��m checking the repo instructions and then I��ll patch the solver to be robust to the provided parameter shape while keeping the required Pyomo/HiGHS flow. | ^ | SyntaxError: invalid character '��' ",
+      "crash:I��m checking the repo instructions and then I��ll patch the solver to be robust to the provided parameter shape while keeping the required Pyomo/HiGHS flow. | ^ | SyntaxError: invalid character '��' ",
+      "crash:I��m checking the repo instructions and then I��ll patch the solver to be robust to the provided parameter shape while keeping the required Pyomo/HiGHS flow. | ^ | SyntaxError: invalid character '��' ",
+      "crash:I��m checking the repo instructions and then I��ll patch the solver to be robust to the provided parameter shape while keeping the required Pyomo/HiGHS flow. | ^ | SyntaxError: invalid character '��' "
+    ],
+    "C-direct": [
+      "crash:assignment_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:assignment_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:assignment_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:assignment_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:assignment_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'",
+      "crash:assignment_costs = params[\"costs\"] | ~~~~~~^^^^^^^^^ | KeyError: 'costs'"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

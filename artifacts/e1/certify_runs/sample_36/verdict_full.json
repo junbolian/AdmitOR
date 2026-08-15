@@ -1,0 +1,191 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique": [],
+  "families": [],
+  "instantiations": [
+    {
+      "person_capacity": [
+        0,
+        23,
+        24,
+        21,
+        24,
+        21,
+        24,
+        15
+      ],
+      "project_demand": [
+        16,
+        21,
+        20,
+        23,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "person_capacity": [
+        26,
+        1,
+        11,
+        9,
+        29,
+        27,
+        36,
+        3
+      ],
+      "project_demand": [
+        12,
+        -4,
+        4,
+        15,
+        -4,
+        3,
+        21
+      ]
+    },
+    {
+      "person_capacity": [
+        22,
+        9,
+        24,
+        32,
+        0,
+        32,
+        28,
+        14
+      ],
+      "project_demand": [
+        1,
+        33,
+        8,
+        -1,
+        -1,
+        29,
+        19
+      ]
+    },
+    {
+      "person_capacity": [
+        32,
+        29,
+        21,
+        39,
+        15,
+        22,
+        33,
+        25
+      ],
+      "project_demand": [
+        29,
+        18,
+        23,
+        -3,
+        4,
+        7,
+        -2
+      ]
+    },
+    {
+      "person_capacity": [
+        9,
+        4,
+        11,
+        25,
+        15,
+        15,
+        8,
+        11
+      ],
+      "project_demand": [
+        32,
+        21,
+        19,
+        2,
+        24,
+        2,
+        10
+      ]
+    },
+    {
+      "person_capacity": [
+        40,
+        26,
+        22,
+        27,
+        34,
+        31,
+        9,
+        1
+      ],
+      "project_demand": [
+        8,
+        6,
+        3,
+        33,
+        30,
+        8,
+        21
+      ]
+    }
+  ],
+  "objectives": {
+    "A-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "B-structured": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "C-direct": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "statuses": {
+    "A-direct": [
+      "crash:assignment_cost = params[\"assignment_cost\"]  # 8x7 cost matrix | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_cost'",
+      "crash:assignment_cost = params[\"assignment_cost\"]  # 8x7 cost matrix | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_cost'",
+      "crash:assignment_cost = params[\"assignment_cost\"]  # 8x7 cost matrix | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_cost'",
+      "crash:assignment_cost = params[\"assignment_cost\"]  # 8x7 cost matrix | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_cost'",
+      "crash:assignment_cost = params[\"assignment_cost\"]  # 8x7 cost matrix | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_cost'",
+      "crash:assignment_cost = params[\"assignment_cost\"]  # 8x7 cost matrix | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'assignment_cost'"
+    ],
+    "B-structured": [
+      "crash:max_per_project = params[\"max_per_project\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'max_per_project'",
+      "crash:max_per_project = params[\"max_per_project\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'max_per_project'",
+      "crash:max_per_project = params[\"max_per_project\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'max_per_project'",
+      "crash:max_per_project = params[\"max_per_project\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'max_per_project'",
+      "crash:max_per_project = params[\"max_per_project\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'max_per_project'",
+      "crash:max_per_project = params[\"max_per_project\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'max_per_project'"
+    ],
+    "C-direct": [
+      "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+      "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+      "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+      "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+      "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+      "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'"
+    ]
+  },
+  "informative": [],
+  "diagnoses": {},
+  "disagreements": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ]
+}

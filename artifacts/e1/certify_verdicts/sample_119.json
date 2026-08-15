@@ -1,0 +1,26 @@
+{
+  "decision": "UNINFORMATIVE",
+  "clique_value": null,
+  "clique": [],
+  "families": [],
+  "informative": [],
+  "notes": [
+    "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+  ],
+  "warnings": [
+    "[profit_per_unit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[borer_capacity_per_period] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[grinder_hours_per_unit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[drill_hours_per_unit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[borer_hours_per_unit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[sales_limit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[target_inventory_end] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+    "[holding_cost_per_unit_per_period] inverted abs range (lo > hi); swapped",
+    "[holding_cost_per_unit_per_period] abs range [-30.0, 0.0] is disjoint from base span [15, 15]; replaced with rel +/-30% around base"
+  ],
+  "sample_id": "sample_119",
+  "run_dir": "<PATH>/...",
+  "elapsed_s": 156.4,
+  "m": 5,
+  "seed": 42
+}
