@@ -41,11 +41,11 @@ GitHub Release for tag `v1.0.0` and are verified against
 | `datasets/train_set/` | 2.9 MB | `b047a14747ed5dc769abbe4afb21cca168e5489c99161aec3a15953fe54a1ecc` | Table 2 (E1), Table 4 (E3); mining pool, blind variant, NANO-CO (3 files) |
 | `datasets/vault/optmath-train-300-labels.jsonl` | 10.2 KB | `c05faaa8777e04cdd61eb29239c1b5b14e5d227d8ae46a7cf5c5881b3357c155` | Table 2 (E1) GT arm, Table 4 (E3) grading; sealed answer book |
 | `figures/fig1_overview.png` | 100.8 KB | `96eecd96ac124bf58d76b3d78d1cb97b9fb7e2813affa19566c8d1f822cb7829` | Figure 1; value functions separate, purity ladder |
-| `figures/fig2_pipeline.png` | 655.3 KB | `09275af98beeba68bc228cb45542b1923ad2717bd024f20810966901fface0a8` | Figure 2; the gate pipeline |
+| `figures/fig2_pipeline.png` | 246.8 KB | `9a2c57157b37d16b2f8dbca0346191154e2c14d9792d5c0b3fa1d37c3a0c9638` | Figure 2; the gate pipeline |
 | `figures/fig3_quality.png` | 42.3 KB | `d1f4347e99eb40eab86fb1a8ceb526478c29a8d5b2a650f56488d0f04c69e3eb` | Figure 3; library size against downstream macro |
 | `figures/fig4_e3_forensics.png` | 67.5 KB | `9516f9dee23ad1693a32e742d3064b0b46943dc4c19e650e9063b0cdbc78d7cc` | Figure 4; E3 forensics |
 | `figures/fig1_overview.pdf` | 21.7 KB | `be739ba245711580f6e6469a80b93412048d0496febdbbddbd0f45ad7f101805` | Figure 1; vector source |
-| `figures/fig2_pipeline.pdf` | 101.1 KB | `0507e5f6fcb8de5aaed212dbbc8c454f88304b18da29872506a07c137da11a97` | Figure 2; vector source |
+| `figures/fig2_pipeline.pdf` | 95.5 KB | `e00c6bdb5d70032993594e347ab8c3c55bee9e3ec045c7bd5acbea97e3683a95` | Figure 2; vector source |
 | `figures/fig3_quality.pdf` | 15.0 KB | `d0a8ee91d21553d4561a692c4b93c968f50ab8439af5725351d4f9897612ef5c` | Figure 3; vector source |
 | `figures/fig4_e3_forensics.pdf` | 17.5 KB | `19748d36b160d685ccf8136f5fb704f47aa8a6dc25c1a4da0fe31fdeca9bdda0` | Figure 4; vector source |
 | `admitor-v1.0.0-runlogs.zip` | 3.3 MB | `272d52030e1ab229547e0762b7c25f954bcfc22e6e2586eeb82bcbec682a4c0f` | (release asset) Appendix run ledger; complete scrubbed per-call ledger, 93,909 records |
