@@ -8,13 +8,15 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![arXiv](https://img.shields.io/badge/arXiv-forthcoming-b31b1b.svg)
+[![arXiv](https://img.shields.io/badge/arXiv-2608.15565-b31b1b.svg)](https://arxiv.org/abs/2608.15565)
 [![Release](https://img.shields.io/badge/release-v1.0.0-2ea44f.svg)](https://github.com/junbolian/AdmitOR/releases/tag/v1.0.0)
 [![Tests](https://img.shields.io/badge/tests-14%20passing%20offline-2ea44f.svg)](#installation)
 [![Artifacts](https://img.shields.io/badge/artifacts-MANIFEST-informational.svg)](artifacts/MANIFEST.md)
 [![Host](https://img.shields.io/badge/host-OptSkills-181717.svg?logo=github)](https://github.com/fujiwaranoM0kou/OptSkills)
 
 **Certify an optimization model's answer without ever seeing an answer key.**
+
+[**Paper**](https://arxiv.org/abs/2608.15565) &nbsp;·&nbsp; [**Release v1.0.0**](https://github.com/junbolian/AdmitOR/releases/tag/v1.0.0) &nbsp;·&nbsp; [**Artifacts**](artifacts/MANIFEST.md)
 
 </div>
 
@@ -328,8 +330,12 @@ paper's Limitations section for the full discussion.
              Experience Learning for LLM-Based Optimization Modeling},
   author  = {Lian, Junbo Jacob and Chen, Huiling and Qin, Hanzhang and
              Teo, Chung-Piaw},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
+  journal = {arXiv preprint arXiv:2608.15565},
+  year    = {2026},
+  eprint  = {2608.15565},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url     = {https://arxiv.org/abs/2608.15565}
 }
 ```
 
