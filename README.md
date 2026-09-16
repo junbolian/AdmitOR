@@ -311,6 +311,95 @@ scrubbing is auditable.
 
 ---
 
+## Reviewer-round analyses (September 2026)
+
+Re-analysis of the released artifacts for the ICLR 2027 submission. Every
+number is recomputed from the stored logs, libraries and caches with no model
+calls, except the two-extractor preliminary.
+
+### Pins, as run
+
+| Component | Pin |
+|---|---|
+| Host backbone | `deepseek-v3.2`, temperature 0, non-thinking |
+| Extractor | arm A, `deepseek-v3.2`, temperature 0, max_tokens 8192 |
+| Candidate arm A | `deepseek-v3.2`, direct, Pyomo + HiGHS, temperature 0, max_tokens 3000 |
+| Candidate arm B | `gpt-5.4`, structured, Pyomo + HiGHS, pinned through `ADMITOR_MODEL_B` |
+| Candidate arm C | `claude-sonnet-4-6`, direct, gurobipy, pinned through `ADMITOR_MODEL_C` |
+
+Response-side model audit covers host calls only: 60,000 ledger records,
+**58,575 `deepseek-v3.2`** and **1,425 `deepseek-v3-2-251201`** (a hosting
+provider identifier for the 2025-12-01 release of the same model), none
+outside those two. Response-side model strings were **not** logged for the
+extractor or the three candidate arms; those carry request-side pins only.
+
+### Host backbone availability
+
+`deepseek-v3.2` is being withdrawn by the hosting providers used here. Tencent
+Cloud removed it on 2026-07-16. On 2026-09-16 the relay used for the original
+runs accepted the name but served `deepseek-flash` in response. Alibaba Cloud
+Bailian has announced removal for 2026-10-10. Open weights remain at
+huggingface.co/deepseek-ai/DeepSeek-V3.2.
+
+This does not affect reproducibility: every printed number is recomputable
+from the released logs, libraries and caches without model calls.
+
+### Two protocol facts
+
+- An instance counts as **informative when at least two candidates** return a
+  finite optimal value (`admitor/consensus.py`), not three.
+- The agreement test is `abs(a - b) <= tol_rel * max(1.0, abs(a), abs(b))`
+  with `tol_rel = 1e-4`, applied to every informative instance including the
+  stated one.
+
+### Two admission rules
+
+The E1 skill library was built under **`gate_asdeployed`** (decision ACCEPT
+with a base value, no score threshold), which is the rule behind the
+downstream accuracy table. The calibrated threshold **`gate_tau`** (deployed
+score >= 33.3) was fitted afterwards on NANO-CO and is used only for the
+false-discovery analysis. They are different rules and are reported
+separately.
+
+Counterfactual, applying `gate_tau` to the E1 arm: 27 of 148 eligible problems
+and 69 of 413 admitted candidates would be removed, carrying 8 of the 30
+poison admissions; 16 of the 99 built library files would disappear entirely
+and 6 more would be thinned; candidate-level precision would rise from 0.927
+to 0.936.
+
+### Stream provenance
+
+The 300-problem stream is the first 300 by index of the host's OptMATH
+training split (`datasets/train_set/optmath-train-300.jsonl`, indices
+contiguous). The blind file used for mining is that file with the answer
+column removed; the vault is its index and answer projection. Both regenerate
+byte-identically via `scripts/regen_derived.py`. Disjointness against all
+1,100 evaluation items: **zero exact matches, zero after normalization, zero
+at 5-gram Jaccard >= 0.8**; maximum Jaccard 0.2059 for the stream and 0.0201
+for the calibration set. Hashes and details in `release/06_provenance.md`.
+
+### Shipped files
+
+| File | Contents |
+|---|---|
+| `release/k3_attribution.csv` | per-case class for the 22 disagreements; authoritative, since the review packet template predates class (d) |
+| `release/admitted_ids_wild_138.txt` | the 138 problems admitted at the calibrated threshold |
+| `release/admitted_ids_calibration.txt` | the calibration accepts at that threshold |
+| `release/02_calibration_table.csv` | per-threshold false-discovery table, both units, both confidence levels |
+| `release/05b_retrieval_concentration.md` | distinct files retrieved and top-file share, per arm and plate |
+| `release/06_provenance.md` | stream and calibration provenance, hashes, disjointness |
+
+### Known deviations
+
+- The embedding model is DashScope `text-embedding-v4`, which the paper names
+  differently.
+- Solver builds are the pinned versions in `environment.yml`; HiGHS and
+  gurobipy minor versions may differ from a fresh install.
+- The relay rehosted `deepseek-v3.2`; see the availability note above.
+- 5,025 of the 60,000 host ledger records cannot be attributed to a phase: the
+  library rebuild writes no runtime event stream and no cache entry survives
+  in that window. All 5,025 are inside the pinned model set.
+
 ## Limitations
 
 The certificate is conditional on the extracted specification: all three
