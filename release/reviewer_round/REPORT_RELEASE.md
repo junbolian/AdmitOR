@@ -3,7 +3,7 @@
 Work order `CLAUDE_CODE_GITHUB_RELEASE_2026-09-16` with its amendments (T5 to T13 replaced; rulings on
 scipy, environment, tool fixes, and the four "every number from a released script" items).
 Status: **complete**. `main` and tag `v1.1.0` pushed, GitHub release created with four assets,
-`anon-mirror` pushed. This is the committed copy; the local copy kept by the authors lists the path samples of
+the anonymized mirror was withdrawn (section 8). This is the committed copy; the local copy kept by the authors lists the path samples of
 section 5.3 unmasked.
 
 ## 1. Git state
@@ -26,7 +26,7 @@ e6f6641 release: reviewer-round outputs (September 2026)
 git tag: v1.0.0, v1.1.0 (annotated, on 6df8202)
 origin/main = 6df8202, fast-forward from 8fd0397; no force push, no amend
 reviewer-round-2026-09 = 6df8202 (pushed)
-anon-mirror = 2e72ec2 (branched from v1.1.0, pushed, never merged)
+anon-mirror = deleted 2026-09-17 (was 2e72ec2; no anonymized mirror needed)
 ```
 
 The report commit itself follows `6df8202` on `main`. All commits are authored by the repository
@@ -69,7 +69,7 @@ SCRIPTS_DIR = `scripts/`. T1 gate: libraries 130 / 145 / 163 / 101, 298 stream v
 | T8 figure | `4f41ca8` | `figures/fig1_overview.pdf` (Jacob's regenerated copy), `figures/fig1_overview.png` removed from git, `paper/make_fig1.py`, `paper/README.md`, `artifacts/MANIFEST.md` (png row removed, pdf row refreshed by `make_manifest.py --write`; verify: 19 verified, 0 mismatched, 0 missing), `README.md` (overview image replaced by a link to the PDF, since the PNG is no longer in git) |
 | T9 bootstrap report | `2be0999` | `scripts/format_bootstrap_report.py`, `release/reviewer_round/04_bootstrap.md` (2,298 B; the only diff hunk is the command block, lines 7 to 17) |
 | T11 notes | `6df8202` | `release/reviewer_round/RELEASE_NOTES_v1.1.0.md` |
-| T12 mirror | `2e72ec2` (anon-mirror only) | `README.md`, `LICENSE`, `release/reviewer_round/RELEASE_NOTES_v1.1.0.md`, `release/reviewer_round/REPORT_reviewer_round_2026-09.md` |
+| T12 mirror (withdrawn, branch deleted) | `2e72ec2` | `README.md`, `LICENSE`, `release/reviewer_round/RELEASE_NOTES_v1.1.0.md`, `release/reviewer_round/REPORT_reviewer_round_2026-09.md` |
 
 T3 script byte counts at `655838b`: candidate_crosstab 5,969; code_facts 13,029; corrected_bootstrap 20,408;
 disjointness_audit 8,474; e3_certificate_numbers 14,390; feasibility_resampling 10,561; gate_arm_composition 9,581;
@@ -248,25 +248,11 @@ next to it: every script in section 4.2 marked "asset" reproduces as listed. No 
 - `admitor-v1.1.0-run-records-e0.zip`: downloaded from the public release URL, 22,242,226 bytes, sha256 matches.
 - core, eval, cache: the API confirmed the uploaded sizes (93,940,328 / 100,333,853 / 71,862,628 bytes, equal to the local files whose sha256 is listed in section 5.1). A full re-download was stopped because the connection delivered about 38 KB/s (the 22 MB part took 580 s; the other three would take about two hours). To check them later: download each file from the release page and compare `Get-FileHash -Algorithm SHA256` with section 5.1.
 
-## 8. Anonymized mirror (T12)
+## 8. Anonymized mirror (T12): withdrawn
 
-- Branch `anon-mirror` at `2e72ec2`, from `v1.1.0`, pushed, not merged.
-- README: header block (title div, author list, badges, arXiv and release links, and the T5.5 line that refers to
-  the arXiv version) replaced by the anonymized header paragraph plus the T12 addition; citation section removed;
-  the v1.0.0 release link in the Artifacts section turned into plain text. Everything else unchanged.
-- `LICENSE`: "Copyright (c) 2026 Anonymous authors". No CITATION or BibTeX file exists. `patches/`: no author,
-  email, institution or user name (OptSkills URL kept). No `docs/` directory.
-- Release notes: link to the v1.0.0 release turned into plain text. `REPORT_reviewer_round_2026-09.md`: heading
-  "Open questions for Jacob" -> "Open questions for the authors".
-- Term list for anonymous.4open.science (`admitor-infra/anon_terms.txt`, distinctive tokens only):
-  `junbolian, Junbo, Hanzhang, Chung-Piaw, Huiling, 2608.15565, Northwestern, Wenzhou, github.com/junbolian`.
-- Branch sweep with the full list (`anon_terms_full.txt`: junbolian, Junbo, Lian, Jacob, Hanzhang, Qin,
-  Chung-Piaw, Teo, Huiling, Chen, National University of Singapore, NUS, Northwestern, Wenzhou, 2608.15565,
-  github.com/junbolian): 2,867 files, **1 hit, inspected and kept**: `datasets/benchmark/optibench.jsonl:8`,
-  the problem text "Jacob has $3000 to invest", not an author reference. With the distinctive list: 0 hits.
-  Credential terms: 0 hits.
-- Not anonymized by file edits: commit metadata on the branch (author name and noreply address) and the commit hash
-  `8fd0397` cited in the pins table; the mirror service shows files, not commits.
+The `anon-mirror` branch (`2e72ec2`) was created and pushed, then deleted from GitHub and locally on
+2026-09-17 on Jacob's instruction: no anonymized mirror is needed, the repository is released openly under
+the authors' names (it is public). `main` was never touched by the anonymization.
 
 ## 9. Not done, with reasons
 
@@ -284,13 +270,9 @@ next to it: every script in section 4.2 marked "asset" reproduces as listed. No 
 
 ## 10. Remaining items for Jacob
 
-1. Create the anonymous mirror at https://anonymous.4open.science: repository `junbolian/AdmitOR`, branch
-   `anon-mirror`, expiration at least 2027-02-28, terms from `admitor-infra/anon_terms.txt`.
-2. Paste the generated link into the manuscript footnote (`REPLACE-WITH-LINK`) and recompile.
-3. Verify the mirror from a private window: open README.md and LICENSE, search each term; and
-   `curl.exe -s "<anonymized link>/README.md" | Select-String -Pattern "junbolian|Lian|Teo|Qin|2608.15565"`
-   (expected: no output).
-4. The GitHub release was created through the API. Optionally re-download the core, eval and cache parts and compare their sha256 with section 5.1 (section 7.1).
-5. arXiv v2 after 2026-09-25.
-6. Optional: rotate the relay key (it was pasted in chat during the reviewer round); decide whether `pytest` should
-   stay pinned in `environment.yml` and whether a PNG of Figure 1 should return for the README.
+1. Optionally re-download the core, eval and cache parts and compare their sha256 with section 5.1
+   (section 7.1).
+2. arXiv v2 after 2026-09-25.
+3. Optional: rotate the relay key (it was pasted in chat during the reviewer round); decide whether
+   `pytest` should stay pinned in `environment.yml` and whether a PNG of Figure 1 should return for the
+   README.
