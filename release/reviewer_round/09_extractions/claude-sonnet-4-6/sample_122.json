@@ -1,0 +1,290 @@
+{
+ "sample_id": "sample_122",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "production_costs": {
+   "base": [
+    [
+     40,
+     46,
+     45,
+     42,
+     44,
+     43
+    ],
+    [
+     46,
+     40,
+     43,
+     44,
+     42,
+     45
+    ],
+    [
+     45,
+     43,
+     40,
+     46,
+     41,
+     44
+    ],
+    [
+     42,
+     44,
+     46,
+     40,
+     45,
+     41
+    ],
+    [
+     44,
+     42,
+     41,
+     45,
+     40,
+     46
+    ],
+    [
+     43,
+     45,
+     44,
+     41,
+     46,
+     40
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "producer_capacities": {
+   "base": [
+    2054,
+    2879,
+    2737,
+    2754,
+    2762,
+    1816
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "contract_demands": {
+   "base": [
+    898,
+    1143,
+    1107,
+    1044,
+    1090,
+    1020
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "min_contributors": {
+   "base": [
+    2,
+    3,
+    2,
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_delivery_per_producer": {
+   "base": [
+    451,
+    633,
+    602,
+    605,
+    607,
+    399
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "num_producers": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_contracts": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_producers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_contracts] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "production_costs": {
+    "meaning": "Cost per unit of electricity by producer and contract (6x6 matrix)",
+    "base": [
+     [
+      40,
+      46,
+      45,
+      42,
+      44,
+      43
+     ],
+     [
+      46,
+      40,
+      43,
+      44,
+      42,
+      45
+     ],
+     [
+      45,
+      43,
+      40,
+      46,
+      41,
+      44
+     ],
+     [
+      42,
+      44,
+      46,
+      40,
+      45,
+      41
+     ],
+     [
+      44,
+      42,
+      41,
+      45,
+      40,
+      46
+     ],
+     [
+      43,
+      45,
+      44,
+      41,
+      46,
+      40
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "producer_capacities": {
+    "meaning": "Maximum generation capacity per producer (units)",
+    "base": [
+     2054,
+     2879,
+     2737,
+     2754,
+     2762,
+     1816
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "contract_demands": {
+    "meaning": "Minimum electricity requirement per contract (units)",
+    "base": [
+     898,
+     1143,
+     1107,
+     1044,
+     1090,
+     1020
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers per contract",
+    "base": [
+     2,
+     3,
+     2,
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_delivery_per_producer": {
+    "meaning": "Minimum delivery if producer contributes to a contract (units)",
+    "base": [
+     451,
+     633,
+     602,
+     605,
+     607,
+     399
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "num_producers": {
+    "meaning": "Number of power producers (frozen index-set size)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_contracts": {
+    "meaning": "Number of supply contracts (frozen index-set size)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

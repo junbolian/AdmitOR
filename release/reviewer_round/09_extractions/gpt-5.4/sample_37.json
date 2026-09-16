@@ -1,0 +1,150 @@
+{
+ "sample_id": "sample_37",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-truncated",
+ "score": "33.5",
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0.537,
+     0.669,
+     0.619,
+     0.527,
+     0.656
+    ],
+    [
+     0.675,
+     0.501,
+     0.601,
+     0.598,
+     0.603
+    ],
+    [
+     0.539,
+     0.599,
+     0.612,
+     0.576,
+     0.623
+    ],
+    [
+     0.587,
+     0.67,
+     0.53,
+     0.67,
+     0.518
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "num_peaks": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_amino_acids": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_assignments": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_amino_acids] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_assignments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "assignment cost matrix (4 peaks x 5 amino acids)",
+    "base": [
+     [
+      0.537,
+      0.669,
+      0.619,
+      0.527,
+      0.656
+     ],
+     [
+      0.675,
+      0.501,
+      0.601,
+      0.598,
+      0.603
+     ],
+     [
+      0.539,
+      0.599,
+      0.612,
+      0.576,
+      0.623
+     ],
+     [
+      0.587,
+      0.67,
+      0.53,
+      0.67,
+      0.518
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "num_peaks": {
+    "meaning": "number of spectral peaks",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_amino_acids": {
+    "meaning": "number of amino acids",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_assignments": {
+    "meaning": "exact number of assignments to make",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

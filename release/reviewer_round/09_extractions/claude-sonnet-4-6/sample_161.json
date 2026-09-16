@@ -1,0 +1,180 @@
+{
+ "sample_id": "sample_161",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "n_cities": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     282,
+     283,
+     338,
+     320,
+     338,
+     273
+    ],
+    [
+     290,
+     0,
+     347,
+     319,
+     345,
+     338,
+     343
+    ],
+    [
+     318,
+     260,
+     0,
+     289,
+     271,
+     319,
+     331
+    ],
+    [
+     297,
+     266,
+     264,
+     0,
+     304,
+     319,
+     250
+    ],
+    [
+     311,
+     288,
+     306,
+     288,
+     0,
+     316,
+     304
+    ],
+    [
+     300,
+     328,
+     291,
+     287,
+     326,
+     0,
+     317
+    ],
+    [
+     317,
+     314,
+     331,
+     251,
+     317,
+     253,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[n_cities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "n_cities": {
+    "meaning": "Number of cities in the TSP instance",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "cost_matrix": {
+    "meaning": "Travel cost from city i to city j (7x7 asymmetric matrix, diagonal undefined/unused)",
+    "base": [
+     [
+      0,
+      282,
+      283,
+      338,
+      320,
+      338,
+      273
+     ],
+     [
+      290,
+      0,
+      347,
+      319,
+      345,
+      338,
+      343
+     ],
+     [
+      318,
+      260,
+      0,
+      289,
+      271,
+      319,
+      331
+     ],
+     [
+      297,
+      266,
+      264,
+      0,
+      304,
+      319,
+      250
+     ],
+     [
+      311,
+      288,
+      306,
+      288,
+      0,
+      316,
+      304
+     ],
+     [
+      300,
+      328,
+      291,
+      287,
+      326,
+      0,
+      317
+     ],
+     [
+      317,
+      314,
+      331,
+      251,
+      317,
+      253,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

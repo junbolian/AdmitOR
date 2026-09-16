@@ -1,0 +1,218 @@
+{
+ "sample_id": "sample_278",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "item_values": {
+   "base": [
+    264,
+    226,
+    221,
+    194,
+    242,
+    200,
+    241,
+    200,
+    332,
+    166,
+    174,
+    344,
+    285,
+    273,
+    258,
+    153,
+    267,
+    246,
+    150,
+    201,
+    252,
+    231,
+    285,
+    154,
+    341,
+    299,
+    349,
+    151,
+    339,
+    233,
+    176,
+    313
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "item_weights": {
+   "base": [
+    49,
+    38,
+    26,
+    47,
+    50,
+    27,
+    49,
+    50,
+    31,
+    39,
+    52,
+    31,
+    42,
+    39,
+    28,
+    32,
+    46,
+    34,
+    32,
+    30,
+    36,
+    29,
+    33,
+    30,
+    38,
+    28,
+    32,
+    30,
+    50,
+    51,
+    26,
+    46
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity": {
+   "base": 780,
+   "perturb": {
+    "mode": "abs",
+    "lo": 400.0,
+    "hi": 1100.0,
+    "integer": true
+   }
+  },
+  "num_items": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 32.0,
+    "hi": 32.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [
+  "[num_items] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "item_values": {
+    "meaning": "Value (utility) of each of the 32 items",
+    "base": [
+     264,
+     226,
+     221,
+     194,
+     242,
+     200,
+     241,
+     200,
+     332,
+     166,
+     174,
+     344,
+     285,
+     273,
+     258,
+     153,
+     267,
+     246,
+     150,
+     201,
+     252,
+     231,
+     285,
+     154,
+     341,
+     299,
+     349,
+     151,
+     339,
+     233,
+     176,
+     313
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "item_weights": {
+    "meaning": "Weight (resource consumption) of each of the 32 items",
+    "base": [
+     49,
+     38,
+     26,
+     47,
+     50,
+     27,
+     49,
+     50,
+     31,
+     39,
+     52,
+     31,
+     42,
+     39,
+     28,
+     32,
+     46,
+     34,
+     32,
+     30,
+     36,
+     29,
+     33,
+     30,
+     38,
+     28,
+     32,
+     30,
+     50,
+     51,
+     26,
+     46
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total weight allowed in the knapsack",
+    "base": 780,
+    "perturb": {
+     "mode": "abs",
+     "lo": 400,
+     "hi": 1100,
+     "integer": true
+    }
+   },
+   "num_items": {
+    "meaning": "Number of items available (index-set cardinality, frozen)",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 32,
+     "hi": 32,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

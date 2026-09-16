@@ -1,0 +1,108 @@
+{
+ "sample_id": "sample_67",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "hub_activation_costs": {
+   "base": [
+    34,
+    45,
+    14,
+    28,
+    19,
+    44,
+    50,
+    15,
+    26,
+    21,
+    23,
+    46,
+    35,
+    15,
+    39
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "num_hubs": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "num_routes": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 16.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_hubs] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_routes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "hub_activation_costs": {
+    "meaning": "Cost to activate each of the 15 hubs",
+    "base": [
+     34,
+     45,
+     14,
+     28,
+     19,
+     44,
+     50,
+     15,
+     26,
+     21,
+     23,
+     46,
+     35,
+     15,
+     39
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "num_hubs": {
+    "meaning": "Number of hubs (structure parameter, frozen)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "num_routes": {
+    "meaning": "Number of delivery routes (structure parameter, frozen)",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 16,
+     "hi": 16,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

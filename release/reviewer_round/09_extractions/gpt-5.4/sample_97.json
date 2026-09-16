@@ -1,0 +1,956 @@
+{
+ "sample_id": "sample_97",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.3",
+ "spec": {
+  "t0": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "t1": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "t2": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "t3": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "t4": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "e0": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "l0": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "e1": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "l1": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "e2": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "l2": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "e3": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "l3": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "e4": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "l4": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "z01": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z02": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z03": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z04": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z12": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z13": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z14": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z23": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z24": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "z34": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "minsep01": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep02": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep03": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep04": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep12": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep13": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep14": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep23": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep24": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minsep34": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "a0_earliest": {
+   "base": 69,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "a0_latest": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "a0_target": {
+   "base": 99,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "c0_early": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "c0_late": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "a1_earliest": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "a1_latest": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "a1_target": {
+   "base": 76,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "c1_early": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "c1_late": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "a2_earliest": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "a2_latest": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "a2_target": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "c2_early": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "c2_late": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "a3_earliest": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "a3_latest": {
+   "base": 92,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "a3_target": {
+   "base": 62,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "c3_early": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "c3_late": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "a4_earliest": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "a4_latest": {
+   "base": 97,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "a4_target": {
+   "base": 67,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "c4_early": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "c4_late": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "t0": {
+    "meaning": "Aircraft 0 actual landing time",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "t1": {
+    "meaning": "Aircraft 1 actual landing time",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "t2": {
+    "meaning": "Aircraft 2 actual landing time",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "t3": {
+    "meaning": "Aircraft 3 actual landing time",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "t4": {
+    "meaning": "Aircraft 4 actual landing time",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "e0": {
+    "meaning": "Aircraft 0 early deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "l0": {
+    "meaning": "Aircraft 0 late deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "e1": {
+    "meaning": "Aircraft 1 early deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "l1": {
+    "meaning": "Aircraft 1 late deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "e2": {
+    "meaning": "Aircraft 2 early deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "l2": {
+    "meaning": "Aircraft 2 late deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "e3": {
+    "meaning": "Aircraft 3 early deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "l3": {
+    "meaning": "Aircraft 3 late deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "e4": {
+    "meaning": "Aircraft 4 early deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "l4": {
+    "meaning": "Aircraft 4 late deviation",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "z01": {
+    "meaning": "Binary: 0 lands before 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z02": {
+    "meaning": "Binary: 0 lands before 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z03": {
+    "meaning": "Binary: 0 lands before 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z04": {
+    "meaning": "Binary: 0 lands before 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z12": {
+    "meaning": "Binary: 1 lands before 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z13": {
+    "meaning": "Binary: 1 lands before 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z14": {
+    "meaning": "Binary: 1 lands before 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z23": {
+    "meaning": "Binary: 2 lands before 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z24": {
+    "meaning": "Binary: 2 lands before 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "z34": {
+    "meaning": "Binary: 3 lands before 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "minsep01": {
+    "meaning": "Min separation Aircraft 0 and 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep02": {
+    "meaning": "Min separation Aircraft 0 and 2",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep03": {
+    "meaning": "Min separation Aircraft 0 and 3",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep04": {
+    "meaning": "Min separation Aircraft 0 and 4",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep12": {
+    "meaning": "Min separation Aircraft 1 and 2",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep13": {
+    "meaning": "Min separation Aircraft 1 and 3",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep14": {
+    "meaning": "Min separation Aircraft 1 and 4",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep23": {
+    "meaning": "Min separation Aircraft 2 and 3",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep24": {
+    "meaning": "Min separation Aircraft 2 and 4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minsep34": {
+    "meaning": "Min separation Aircraft 3 and 4",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "a0_earliest": {
+    "meaning": "Aircraft 0 earliest landing time",
+    "base": 69,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "a0_latest": {
+    "meaning": "Aircraft 0 latest landing time",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "a0_target": {
+    "meaning": "Aircraft 0 target landing time",
+    "base": 99,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "c0_early": {
+    "meaning": "Aircraft 0 early penalty per minute",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "c0_late": {
+    "meaning": "Aircraft 0 late penalty per minute",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "a1_earliest": {
+    "meaning": "Aircraft 1 earliest landing time",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "a1_latest": {
+    "meaning": "Aircraft 1 latest landing time",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "a1_target": {
+    "meaning": "Aircraft 1 target landing time",
+    "base": 76,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "c1_early": {
+    "meaning": "Aircraft 1 early penalty per minute",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "c1_late": {
+    "meaning": "Aircraft 1 late penalty per minute",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "a2_earliest": {
+    "meaning": "Aircraft 2 earliest landing time",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "a2_latest": {
+    "meaning": "Aircraft 2 latest landing time",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "a2_target": {
+    "meaning": "Aircraft 2 target landing time",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "c2_early": {
+    "meaning": "Aircraft 2 early penalty per minute",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "c2_late": {
+    "meaning": "Aircraft 2 late penalty per minute",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "a3_earliest": {
+    "meaning": "Aircraft 3 earliest landing time",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "a3_latest": {
+    "meaning": "Aircraft 3 latest landing time",
+    "base": 92,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "a3_target": {
+    "meaning": "Aircraft 3 target landing time",
+    "base": 62,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "c3_early": {
+    "meaning": "Aircraft 3 early penalty per minute",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "c3_late": {
+    "meaning": "Aircraft 3 late penalty per minute",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "a4_earliest": {
+    "meaning": "Aircraft 4 earliest landing time",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "a4_latest": {
+    "meaning": "Aircraft 4 latest landing time",
+    "base": 97,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "a4_target": {
+    "meaning": "Aircraft 4 target landing time",
+    "base": 67,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "c4_early": {
+    "meaning": "Aircraft 4 early penalty per minute",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "c4_late": {
+    "meaning": "Aircraft 4 late penalty per minute",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

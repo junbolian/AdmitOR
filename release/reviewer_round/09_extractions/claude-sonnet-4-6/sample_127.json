@@ -1,0 +1,290 @@
+{
+ "sample_id": "sample_127",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "fixed_ordering_cost": {
+   "base": [
+    97,
+    147,
+    123,
+    110,
+    135,
+    98,
+    141,
+    128,
+    147,
+    105,
+    92,
+    118,
+    130,
+    102
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 250.0,
+    "integer": false
+   }
+  },
+  "variable_ordering_cost": {
+   "base": [
+    8,
+    15,
+    12,
+    9,
+    14,
+    7,
+    13,
+    15,
+    11,
+    10,
+    6,
+    8,
+    9,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "holding_cost": {
+   "base": [
+    5,
+    7,
+    10,
+    8,
+    9,
+    10,
+    7,
+    6,
+    8,
+    9,
+    10,
+    7,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "demand": {
+   "base": [
+    51,
+    66,
+    48,
+    72,
+    55,
+    63,
+    58,
+    70,
+    52,
+    68,
+    61,
+    57,
+    65,
+    63
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "max_order_quantity": {
+   "base": 878,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "initial_inventory": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "final_inventory": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "num_periods": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_periods] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "fixed_ordering_cost": {
+    "meaning": "Fixed cost incurred when placing an order in each period",
+    "base": [
+     97,
+     147,
+     123,
+     110,
+     135,
+     98,
+     141,
+     128,
+     147,
+     105,
+     92,
+     118,
+     130,
+     102
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 250,
+     "integer": false
+    }
+   },
+   "variable_ordering_cost": {
+    "meaning": "Variable cost per unit ordered in each period",
+    "base": [
+     8,
+     15,
+     12,
+     9,
+     14,
+     7,
+     13,
+     15,
+     11,
+     10,
+     6,
+     8,
+     9,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "holding_cost": {
+    "meaning": "Cost per unit of inventory held at end of each period",
+    "base": [
+     5,
+     7,
+     10,
+     8,
+     9,
+     10,
+     7,
+     6,
+     8,
+     9,
+     10,
+     7,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "demand": {
+    "meaning": "Customer demand in each period that must be satisfied",
+    "base": [
+     51,
+     66,
+     48,
+     72,
+     55,
+     63,
+     58,
+     70,
+     52,
+     68,
+     61,
+     57,
+     65,
+     63
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "max_order_quantity": {
+    "meaning": "Maximum units that can be ordered in a single period",
+    "base": 878,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Inventory available at start of planning horizon",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "final_inventory": {
+    "meaning": "Required inventory at end of planning horizon",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "num_periods": {
+    "meaning": "Number of periods in planning horizon (structural parameter, frozen)",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 14,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

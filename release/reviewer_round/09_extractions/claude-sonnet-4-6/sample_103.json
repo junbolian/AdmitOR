@@ -1,0 +1,154 @@
+{
+ "sample_id": "sample_103",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0.6345,
+     0.3799,
+     0.6411,
+     0.5612,
+     0.6908
+    ],
+    [
+     0.3703,
+     0.5965,
+     0.4636,
+     0.4187,
+     0.696
+    ],
+    [
+     0.3983,
+     0.4061,
+     0.3755,
+     0.4623,
+     0.3749
+    ],
+    [
+     0.4167,
+     0.3458,
+     0.6115,
+     0.4942,
+     0.4896
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 1.2,
+    "integer": false
+   }
+  },
+  "num_assignments_required": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_peaks": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_amino_acids": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_assignments_required] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_amino_acids] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Assignment cost from peak i to amino acid j",
+    "base": [
+     [
+      0.6345,
+      0.3799,
+      0.6411,
+      0.5612,
+      0.6908
+     ],
+     [
+      0.3703,
+      0.5965,
+      0.4636,
+      0.4187,
+      0.696
+     ],
+     [
+      0.3983,
+      0.4061,
+      0.3755,
+      0.4623,
+      0.3749
+     ],
+     [
+      0.4167,
+      0.3458,
+      0.6115,
+      0.4942,
+      0.4896
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 1.2,
+     "integer": false
+    }
+   },
+   "num_assignments_required": {
+    "meaning": "Exactly how many peak-amino assignments must be made",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_peaks": {
+    "meaning": "Number of NMR peaks (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_amino_acids": {
+    "meaning": "Number of amino acids (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

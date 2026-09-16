@@ -1,0 +1,67 @@
+{
+ "sample_id": "sample_67",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "activation_costs": {
+   "base": [
+    34,
+    45,
+    14,
+    28,
+    19,
+    44,
+    50,
+    15,
+    26,
+    21,
+    23,
+    46,
+    35,
+    15,
+    39
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "activation_costs": {
+    "meaning": "hub activation costs",
+    "base": [
+     34,
+     45,
+     14,
+     28,
+     19,
+     44,
+     50,
+     15,
+     26,
+     21,
+     23,
+     46,
+     35,
+     15,
+     39
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

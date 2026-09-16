@@ -1,0 +1,335 @@
+{
+ "sample_id": "sample_201",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.5",
+ "spec": {
+  "aircraft_availability": {
+   "base": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "route_demand": {
+   "base": [
+    276,
+    208,
+    286,
+    297,
+    263,
+    263,
+    280
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "aircraft_capacity": {
+   "base": [
+    95,
+    88,
+    80,
+    80,
+    87,
+    109,
+    110,
+    105,
+    119,
+    99,
+    112,
+    114,
+    89,
+    112,
+    94,
+    87,
+    115,
+    98,
+    95,
+    85,
+    104,
+    102,
+    110,
+    94,
+    115,
+    109,
+    101,
+    97,
+    99,
+    107,
+    109,
+    103,
+    100,
+    103,
+    101,
+    119,
+    109,
+    113,
+    115,
+    91,
+    97,
+    97
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "operational_cost": {
+   "base": [
+    3604,
+    3617,
+    3460,
+    3515,
+    3698,
+    3592,
+    3639,
+    3308,
+    3501,
+    3253,
+    3637,
+    3477,
+    3293,
+    3567,
+    3349,
+    3398,
+    3702,
+    3429,
+    3525,
+    3423,
+    3589,
+    3607,
+    3594,
+    3341,
+    3645,
+    3696,
+    3374,
+    3443,
+    3547,
+    3524,
+    3576,
+    3518,
+    3521,
+    3537,
+    3457,
+    3548,
+    3693,
+    3637,
+    3549,
+    3438,
+    3374,
+    3409
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2500.0,
+    "hi": 4500.0,
+    "integer": true
+   }
+  },
+  "num_aircraft_types": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_routes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_aircraft_types] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_routes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "aircraft_availability": {
+    "meaning": "Maximum number of aircraft available for each type",
+    "base": [
+     5,
+     4,
+     5,
+     4,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "route_demand": {
+    "meaning": "Minimum capacity required for each route",
+    "base": [
+     276,
+     208,
+     286,
+     297,
+     263,
+     263,
+     280
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "aircraft_capacity": {
+    "meaning": "Capacity contribution of each aircraft type to each route (6x7 matrix, row-major)",
+    "base": [
+     95,
+     88,
+     80,
+     80,
+     87,
+     109,
+     110,
+     105,
+     119,
+     99,
+     112,
+     114,
+     89,
+     112,
+     94,
+     87,
+     115,
+     98,
+     95,
+     85,
+     104,
+     102,
+     110,
+     94,
+     115,
+     109,
+     101,
+     97,
+     99,
+     107,
+     109,
+     103,
+     100,
+     103,
+     101,
+     119,
+     109,
+     113,
+     115,
+     91,
+     97,
+     97
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "operational_cost": {
+    "meaning": "Cost of assigning each aircraft type to each route (6x7 matrix, row-major)",
+    "base": [
+     3604,
+     3617,
+     3460,
+     3515,
+     3698,
+     3592,
+     3639,
+     3308,
+     3501,
+     3253,
+     3637,
+     3477,
+     3293,
+     3567,
+     3349,
+     3398,
+     3702,
+     3429,
+     3525,
+     3423,
+     3589,
+     3607,
+     3594,
+     3341,
+     3645,
+     3696,
+     3374,
+     3443,
+     3547,
+     3524,
+     3576,
+     3518,
+     3521,
+     3537,
+     3457,
+     3548,
+     3693,
+     3637,
+     3549,
+     3438,
+     3374,
+     3409
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2500,
+     "hi": 4500,
+     "integer": true
+    }
+   },
+   "num_aircraft_types": {
+    "meaning": "Number of aircraft types (structural parameter, not perturbed)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_routes": {
+    "meaning": "Number of routes (structural parameter, not perturbed)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

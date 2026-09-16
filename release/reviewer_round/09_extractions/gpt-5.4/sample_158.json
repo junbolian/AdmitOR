@@ -1,0 +1,624 @@
+{
+ "sample_id": "sample_158",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "d0p0": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d0p1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d1p0": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d1p1": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d2p0": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d2p1": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d3p0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "d3p1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p0m0": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p1m0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p0m1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p1m1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p0m2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p1m2": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p0m3": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c0p1m3": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p0m0": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p1m0": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p0m1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p1m1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p0m2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p1m2": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p0m3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c1p1m3": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p0m0": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p1m0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p0m1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p1m1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p0m2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p1m2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p0m3": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  },
+  "c2p1m3": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1000.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "d0p0": {
+    "meaning": "Market 0 Product 0 demand",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d0p1": {
+    "meaning": "Market 0 Product 1 demand",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d1p0": {
+    "meaning": "Market 1 Product 0 demand",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d1p1": {
+    "meaning": "Market 1 Product 1 demand",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d2p0": {
+    "meaning": "Market 2 Product 0 demand",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d2p1": {
+    "meaning": "Market 2 Product 1 demand",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d3p0": {
+    "meaning": "Market 3 Product 0 demand",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "d3p1": {
+    "meaning": "Market 3 Product 1 demand",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p0m0": {
+    "meaning": "Company 0 Product 0 Market 0 profit",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p1m0": {
+    "meaning": "Company 0 Product 1 Market 0 profit",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p0m1": {
+    "meaning": "Company 0 Product 0 Market 1 profit",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p1m1": {
+    "meaning": "Company 0 Product 1 Market 1 profit",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p0m2": {
+    "meaning": "Company 0 Product 0 Market 2 profit",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p1m2": {
+    "meaning": "Company 0 Product 1 Market 2 profit",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p0m3": {
+    "meaning": "Company 0 Product 0 Market 3 profit",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c0p1m3": {
+    "meaning": "Company 0 Product 1 Market 3 profit",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p0m0": {
+    "meaning": "Company 1 Product 0 Market 0 profit",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p1m0": {
+    "meaning": "Company 1 Product 1 Market 0 profit",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p0m1": {
+    "meaning": "Company 1 Product 0 Market 1 profit",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p1m1": {
+    "meaning": "Company 1 Product 1 Market 1 profit",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p0m2": {
+    "meaning": "Company 1 Product 0 Market 2 profit",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p1m2": {
+    "meaning": "Company 1 Product 1 Market 2 profit",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p0m3": {
+    "meaning": "Company 1 Product 0 Market 3 profit",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c1p1m3": {
+    "meaning": "Company 1 Product 1 Market 3 profit",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p0m0": {
+    "meaning": "Company 2 Product 0 Market 0 profit",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p1m0": {
+    "meaning": "Company 2 Product 1 Market 0 profit",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p0m1": {
+    "meaning": "Company 2 Product 0 Market 1 profit",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p1m1": {
+    "meaning": "Company 2 Product 1 Market 1 profit",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p0m2": {
+    "meaning": "Company 2 Product 0 Market 2 profit",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p1m2": {
+    "meaning": "Company 2 Product 1 Market 2 profit",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p0m3": {
+    "meaning": "Company 2 Product 0 Market 3 profit",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   },
+   "c2p1m3": {
+    "meaning": "Company 2 Product 1 Market 3 profit",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1000,
+     "hi": 1000,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

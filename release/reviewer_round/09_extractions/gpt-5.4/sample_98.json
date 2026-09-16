@@ -1,0 +1,507 @@
+{
+ "sample_id": "sample_98",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "b",
+ "score": "33.6",
+ "spec": {
+  "D0": {
+   "base": [
+    79,
+    76,
+    93,
+    96,
+    91,
+    81
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "D1": {
+   "base": [
+    86,
+    81,
+    85,
+    54,
+    80,
+    87
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "D2": {
+   "base": [
+    95,
+    69,
+    51,
+    76,
+    55,
+    83
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "PC0": {
+   "base": [
+    48,
+    41,
+    50,
+    46,
+    44,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "PC1": {
+   "base": [
+    43,
+    47,
+    47,
+    40,
+    44,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "PC2": {
+   "base": [
+    45,
+    43,
+    44,
+    47,
+    43,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "SC0": {
+   "base": [
+    1095,
+    1071,
+    1391,
+    1222,
+    1313,
+    1101
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "SC1": {
+   "base": [
+    1449,
+    1196,
+    1003,
+    1297,
+    1113,
+    1140
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "SC2": {
+   "base": [
+    1048,
+    1433,
+    1094,
+    1497,
+    1423,
+    1070
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "H0": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": false
+   }
+  },
+  "H1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": false
+   }
+  },
+  "H2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "C": {
+   "base": [
+    1090,
+    1009,
+    1106,
+    1048,
+    1098,
+    1016
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "a0": {
+   "base": 1.877,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "a1": {
+   "base": 1.884,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "a2": {
+   "base": 1.622,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "max_Q0": {
+   "base": [
+    79,
+    76,
+    93,
+    96,
+    91,
+    81
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "max_Q1": {
+   "base": [
+    86,
+    81,
+    85,
+    54,
+    80,
+    87
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 95.0,
+    "integer": true
+   }
+  },
+  "max_Q2": {
+   "base": [
+    95,
+    69,
+    51,
+    76,
+    55,
+    83
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "D0": {
+    "meaning": "demands for product 0",
+    "base": [
+     79,
+     76,
+     93,
+     96,
+     91,
+     81
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "D1": {
+    "meaning": "demands for product 1",
+    "base": [
+     86,
+     81,
+     85,
+     54,
+     80,
+     87
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "D2": {
+    "meaning": "demands for product 2",
+    "base": [
+     95,
+     69,
+     51,
+     76,
+     55,
+     83
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "PC0": {
+    "meaning": "production costs for product 0",
+    "base": [
+     48,
+     41,
+     50,
+     46,
+     44,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "PC1": {
+    "meaning": "production costs for product 1",
+    "base": [
+     43,
+     47,
+     47,
+     40,
+     44,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "PC2": {
+    "meaning": "production costs for product 2",
+    "base": [
+     45,
+     43,
+     44,
+     47,
+     43,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "SC0": {
+    "meaning": "setup costs for product 0",
+    "base": [
+     1095,
+     1071,
+     1391,
+     1222,
+     1313,
+     1101
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "SC1": {
+    "meaning": "setup costs for product 1",
+    "base": [
+     1449,
+     1196,
+     1003,
+     1297,
+     1113,
+     1140
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "SC2": {
+    "meaning": "setup costs for product 2",
+    "base": [
+     1048,
+     1433,
+     1094,
+     1497,
+     1423,
+     1070
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "H0": {
+    "meaning": "holding cost per unit for product 0",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": false
+    }
+   },
+   "H1": {
+    "meaning": "holding cost per unit for product 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": false
+    }
+   },
+   "H2": {
+    "meaning": "holding cost per unit for product 2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "C": {
+    "meaning": "production capacities",
+    "base": [
+     1090,
+     1009,
+     1106,
+     1048,
+     1098,
+     1016
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "a0": {
+    "meaning": "capacity usage per unit of product 0",
+    "base": 1.877,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "a1": {
+    "meaning": "capacity usage per unit of product 1",
+    "base": 1.884,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "a2": {
+    "meaning": "capacity usage per unit of product 2",
+    "base": 1.622,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "max_Q0": {
+    "meaning": "max production for product 0 per month",
+    "base": [
+     79,
+     76,
+     93,
+     96,
+     91,
+     81
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "max_Q1": {
+    "meaning": "max production for product 1 per month",
+    "base": [
+     86,
+     81,
+     85,
+     54,
+     80,
+     87
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 95,
+     "integer": true
+    }
+   },
+   "max_Q2": {
+    "meaning": "max production for product 2 per month",
+    "base": [
+     95,
+     69,
+     51,
+     76,
+     55,
+     83
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

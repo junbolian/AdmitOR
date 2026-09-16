@@ -1,0 +1,400 @@
+{
+ "sample_id": "sample_179",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.5",
+ "spec": {
+  "cap_0": {
+   "base": 2226,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cap_1": {
+   "base": 2118,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cap_2": {
+   "base": 2644,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cap_3": {
+   "base": 2649,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cap_4": {
+   "base": 2548,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cap_5": {
+   "base": 2682,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dem_0": {
+   "base": 989,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dem_1": {
+   "base": 1142,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dem_2": {
+   "base": 1012,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dem_3": {
+   "base": 1011,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dem_4": {
+   "base": 1015,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dem_5": {
+   "base": 1096,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "min_contrib_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_contrib_1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_contrib_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_contrib_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_contrib_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_contrib_5": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_deliv_0": {
+   "base": 489,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "min_deliv_1": {
+   "base": 465,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "min_deliv_2": {
+   "base": 581,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "min_deliv_3": {
+   "base": 582,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "min_deliv_4": {
+   "base": 560,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "min_deliv_5": {
+   "base": 590,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cap_0": {
+    "meaning": "Producer 0 capacity",
+    "base": 2226,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cap_1": {
+    "meaning": "Producer 1 capacity",
+    "base": 2118,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cap_2": {
+    "meaning": "Producer 2 capacity",
+    "base": 2644,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cap_3": {
+    "meaning": "Producer 3 capacity",
+    "base": 2649,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cap_4": {
+    "meaning": "Producer 4 capacity",
+    "base": 2548,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cap_5": {
+    "meaning": "Producer 5 capacity",
+    "base": 2682,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dem_0": {
+    "meaning": "Contract 0 demand",
+    "base": 989,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dem_1": {
+    "meaning": "Contract 1 demand",
+    "base": 1142,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dem_2": {
+    "meaning": "Contract 2 demand",
+    "base": 1012,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dem_3": {
+    "meaning": "Contract 3 demand",
+    "base": 1011,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dem_4": {
+    "meaning": "Contract 4 demand",
+    "base": 1015,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dem_5": {
+    "meaning": "Contract 5 demand",
+    "base": 1096,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "min_contrib_0": {
+    "meaning": "Contract 0 min producers",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_contrib_1": {
+    "meaning": "Contract 1 min producers",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_contrib_2": {
+    "meaning": "Contract 2 min producers",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_contrib_3": {
+    "meaning": "Contract 3 min producers",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_contrib_4": {
+    "meaning": "Contract 4 min producers",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_contrib_5": {
+    "meaning": "Contract 5 min producers",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_deliv_0": {
+    "meaning": "Producer 0 min per contract",
+    "base": 489,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "min_deliv_1": {
+    "meaning": "Producer 1 min per contract",
+    "base": 465,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "min_deliv_2": {
+    "meaning": "Producer 2 min per contract",
+    "base": 581,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "min_deliv_3": {
+    "meaning": "Producer 3 min per contract",
+    "base": 582,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "min_deliv_4": {
+    "meaning": "Producer 4 min per contract",
+    "base": 560,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "min_deliv_5": {
+    "meaning": "Producer 5 min per contract",
+    "base": 590,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

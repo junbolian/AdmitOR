@@ -1,0 +1,49 @@
+{
+ "sample_id": "sample_175",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "cost": {
+   "base": [
+    8,
+    33,
+    88,
+    21,
+    15,
+    95,
+    89,
+    59
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "implementation cost of each strategy",
+    "base": [
+     8,
+     33,
+     88,
+     21,
+     15,
+     95,
+     89,
+     59
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

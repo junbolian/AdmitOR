@@ -1,0 +1,124 @@
+{
+ "sample_id": "sample_130",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "capacities": {
+   "base": [
+    1524,
+    1541,
+    1553,
+    1505
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1400.0,
+    "hi": 1600.0,
+    "integer": true
+   }
+  },
+  "demands": {
+   "base": [
+    841,
+    812,
+    837,
+    850,
+    818
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 700.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  },
+  "min_contributors": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_deliveries": {
+   "base": [
+    381,
+    385,
+    388,
+    376
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 350.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "producer max production capacities",
+    "base": [
+     1524,
+     1541,
+     1553,
+     1505
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1400,
+     "hi": 1600,
+     "integer": true
+    }
+   },
+   "demands": {
+    "meaning": "contract min energy requirements",
+    "base": [
+     841,
+     812,
+     837,
+     850,
+     818
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 700,
+     "hi": 900,
+     "integer": true
+    }
+   },
+   "min_contributors": {
+    "meaning": "minimum number of producers per contract",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_deliveries": {
+    "meaning": "producer-specific minimum delivery per contract",
+    "base": [
+     381,
+     385,
+     388,
+     376
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 350,
+     "hi": 400,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "sample_id": "sample_62",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.5",
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    376,
+    200,
+    451,
+    377,
+    470,
+    416
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "var_cost": {
+   "base": [
+    3,
+    11,
+    10,
+    10,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "min_prod": {
+   "base": [
+    48,
+    48,
+    35,
+    35,
+    33,
+    43
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "max_prod": {
+   "base": [
+    121,
+    123,
+    136,
+    108,
+    140,
+    115
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    187,
+    187,
+    231,
+    221,
+    159
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "run_binary": {
+   "base": [
+    6,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "production_level": {
+   "base": [
+    6,
+    5,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[run_binary] inverted abs range (lo > hi); swapped",
+  "[production_level] inverted abs range (lo > hi); swapped"
+ ],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "fixed monthly cost to run factory",
+    "base": [
+     376,
+     200,
+     451,
+     377,
+     470,
+     416
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "var_cost": {
+    "meaning": "variable production cost per unit",
+    "base": [
+     3,
+     11,
+     10,
+     10,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "min_prod": {
+    "meaning": "minimum production if factory runs",
+    "base": [
+     48,
+     48,
+     35,
+     35,
+     33,
+     43
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "max_prod": {
+    "meaning": "maximum production capacity if running",
+    "base": [
+     121,
+     123,
+     136,
+     108,
+     140,
+     115
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "monthly product demand",
+    "base": [
+     187,
+     187,
+     231,
+     221,
+     159
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "run_binary": {
+    "meaning": "factory run decision (binary)",
+    "base": [
+     6,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "production_level": {
+    "meaning": "production quantity per factory-month",
+    "base": [
+     6,
+     5,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

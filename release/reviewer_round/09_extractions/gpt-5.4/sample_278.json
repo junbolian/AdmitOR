@@ -1,0 +1,530 @@
+{
+ "sample_id": "sample_278",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "objective": {
+   "base": 0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "capacity": {
+   "base": 780,
+   "perturb": {
+    "mode": "abs",
+    "lo": 780.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  },
+  "item_0": {
+   "base": 264,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_1": {
+   "base": 226,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_2": {
+   "base": 221,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_3": {
+   "base": 194,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_4": {
+   "base": 242,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_5": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_6": {
+   "base": 241,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_7": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_8": {
+   "base": 332,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_9": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_10": {
+   "base": 174,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_11": {
+   "base": 344,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_12": {
+   "base": 285,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_13": {
+   "base": 273,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_14": {
+   "base": 258,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_15": {
+   "base": 153,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_16": {
+   "base": 267,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_17": {
+   "base": 246,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_18": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_19": {
+   "base": 201,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_20": {
+   "base": 252,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_21": {
+   "base": 231,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_22": {
+   "base": 285,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_23": {
+   "base": 154,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_24": {
+   "base": 341,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_25": {
+   "base": 299,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_26": {
+   "base": 349,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_27": {
+   "base": 151,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_28": {
+   "base": 339,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_29": {
+   "base": 233,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_30": {
+   "base": 176,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "item_31": {
+   "base": 313,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "objective": {
+    "meaning": "maximize total value of selected items",
+    "base": 0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "capacity": {
+    "meaning": "maximum total weight allowed",
+    "base": 780,
+    "perturb": {
+     "mode": "abs",
+     "lo": 780,
+     "hi": 900,
+     "integer": true
+    }
+   },
+   "item_0": {
+    "meaning": "value-weight pair for item_0",
+    "base": 264,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_1": {
+    "meaning": "value-weight pair for item_1",
+    "base": 226,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_2": {
+    "meaning": "value-weight pair for item_2",
+    "base": 221,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_3": {
+    "meaning": "value-weight pair for item_3",
+    "base": 194,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_4": {
+    "meaning": "value-weight pair for item_4",
+    "base": 242,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_5": {
+    "meaning": "value-weight pair for item_5",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_6": {
+    "meaning": "value-weight pair for item_6",
+    "base": 241,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_7": {
+    "meaning": "value-weight pair for item_7",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_8": {
+    "meaning": "value-weight pair for item_8",
+    "base": 332,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_9": {
+    "meaning": "value-weight pair for item_9",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_10": {
+    "meaning": "value-weight pair for item_10",
+    "base": 174,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_11": {
+    "meaning": "value-weight pair for item_11",
+    "base": 344,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_12": {
+    "meaning": "value-weight pair for item_12",
+    "base": 285,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_13": {
+    "meaning": "value-weight pair for item_13",
+    "base": 273,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_14": {
+    "meaning": "value-weight pair for item_14",
+    "base": 258,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_15": {
+    "meaning": "value-weight pair for item_15",
+    "base": 153,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_16": {
+    "meaning": "value-weight pair for item_16",
+    "base": 267,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_17": {
+    "meaning": "value-weight pair for item_17",
+    "base": 246,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_18": {
+    "meaning": "value-weight pair for item_18",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_19": {
+    "meaning": "value-weight pair for item_19",
+    "base": 201,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_20": {
+    "meaning": "value-weight pair for item_20",
+    "base": 252,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_21": {
+    "meaning": "value-weight pair for item_21",
+    "base": 231,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_22": {
+    "meaning": "value-weight pair for item_22",
+    "base": 285,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_23": {
+    "meaning": "value-weight pair for item_23",
+    "base": 154,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_24": {
+    "meaning": "value-weight pair for item_24",
+    "base": 341,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_25": {
+    "meaning": "value-weight pair for item_25",
+    "base": 299,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_26": {
+    "meaning": "value-weight pair for item_26",
+    "base": 349,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_27": {
+    "meaning": "value-weight pair for item_27",
+    "base": 151,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_28": {
+    "meaning": "value-weight pair for item_28",
+    "base": 339,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_29": {
+    "meaning": "value-weight pair for item_29",
+    "base": 233,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_30": {
+    "meaning": "value-weight pair for item_30",
+    "base": 176,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "item_31": {
+    "meaning": "value-weight pair for item_31",
+    "base": 313,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

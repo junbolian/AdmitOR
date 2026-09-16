@@ -1,0 +1,169 @@
+{
+ "sample_id": "sample_219",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.4",
+ "spec": {
+  "n_peaks": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "n_amino_acids": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "n_assignments": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     0.5003,
+     0.637,
+     0.724,
+     0.489,
+     0.512
+    ],
+    [
+     0.61,
+     0.55,
+     0.68,
+     0.59,
+     0.62
+    ],
+    [
+     0.72,
+     0.69,
+     0.54,
+     0.71,
+     0.65
+    ],
+    [
+     0.48,
+     0.66,
+     0.7,
+     0.52,
+     0.58
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "noe_distance_threshold": {
+   "base": 5.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[n_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_amino_acids] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_assignments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "n_peaks": {
+    "meaning": "Number of spectral peaks",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "n_amino_acids": {
+    "meaning": "Number of amino acids",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "n_assignments": {
+    "meaning": "Exact number of assignments required",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "cost_matrix": {
+    "meaning": "Assignment cost c[i,j] for peak i to amino acid j",
+    "base": [
+     [
+      0.5003,
+      0.637,
+      0.724,
+      0.489,
+      0.512
+     ],
+     [
+      0.61,
+      0.55,
+      0.68,
+      0.59,
+      0.62
+     ],
+     [
+      0.72,
+      0.69,
+      0.54,
+      0.71,
+      0.65
+     ],
+     [
+      0.48,
+      0.66,
+      0.7,
+      0.52,
+      0.58
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "noe_distance_threshold": {
+    "meaning": "Distance threshold for NOE constraint activation",
+    "base": 5.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.0,
+     "hi": 8.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

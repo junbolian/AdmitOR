@@ -1,0 +1,251 @@
+{
+ "sample_id": "sample_179",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.5",
+ "spec": {
+  "producer_capacities": {
+   "base": [
+    2226,
+    2118,
+    2644,
+    2649,
+    2548,
+    2682
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "contract_demands": {
+   "base": [
+    989,
+    1142,
+    1012,
+    1011,
+    1015,
+    1096
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_producers_per_contract": {
+   "base": [
+    3,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "producer_min_delivery": {
+   "base": [
+    489,
+    465,
+    581,
+    582,
+    560,
+    590
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "generation_costs": {
+   "base": [
+    [
+     46,
+     43,
+     50,
+     44,
+     48,
+     43
+    ],
+    [
+     46,
+     47,
+     40,
+     48,
+     45,
+     41
+    ],
+    [
+     40,
+     47,
+     42,
+     44,
+     50,
+     50
+    ],
+    [
+     46,
+     45,
+     42,
+     46,
+     45,
+     48
+    ],
+    [
+     43,
+     44,
+     48,
+     41,
+     42,
+     50
+    ],
+    [
+     50,
+     44,
+     43,
+     48,
+     50,
+     41
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[min_producers_per_contract] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "producer_capacities": {
+    "meaning": "Maximum electricity generation capacity per producer (units)",
+    "base": [
+     2226,
+     2118,
+     2644,
+     2649,
+     2548,
+     2682
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "contract_demands": {
+    "meaning": "Minimum electricity required per contract (units)",
+    "base": [
+     989,
+     1142,
+     1012,
+     1011,
+     1015,
+     1096
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_producers_per_contract": {
+    "meaning": "Minimum number of producers that must contribute to each contract",
+    "base": [
+     3,
+     2,
+     2,
+     2,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "producer_min_delivery": {
+    "meaning": "Minimum delivery per producer if they participate in any contract (units)",
+    "base": [
+     489,
+     465,
+     581,
+     582,
+     560,
+     590
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "generation_costs": {
+    "meaning": "Cost per unit of electricity from producer i to contract j",
+    "base": [
+     [
+      46,
+      43,
+      50,
+      44,
+      48,
+      43
+     ],
+     [
+      46,
+      47,
+      40,
+      48,
+      45,
+      41
+     ],
+     [
+      40,
+      47,
+      42,
+      44,
+      50,
+      50
+     ],
+     [
+      46,
+      45,
+      42,
+      46,
+      45,
+      48
+     ],
+     [
+      43,
+      44,
+      48,
+      41,
+      42,
+      50
+     ],
+     [
+      50,
+      44,
+      43,
+      48,
+      50,
+      41
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

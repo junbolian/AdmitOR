@@ -1,0 +1,361 @@
+{
+ "sample_id": "sample_97",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.3",
+ "spec": {
+  "earliest_landing": {
+   "base": [
+    69,
+    60,
+    60,
+    60,
+    60
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "latest_landing": {
+   "base": [
+    100,
+    100,
+    100,
+    92,
+    97
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 85.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "target_landing": {
+   "base": [
+    99,
+    76,
+    88,
+    62,
+    67
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 55.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "early_penalty": {
+   "base": [
+    12,
+    15,
+    15,
+    12,
+    16
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "late_penalty": {
+   "base": [
+    19,
+    15,
+    16,
+    14,
+    14
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 35.0,
+    "integer": false
+   }
+  },
+  "separation_time_0_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "separation_time_0_2": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "separation_time_0_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "separation_time_0_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "separation_time_1_2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "separation_time_1_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "separation_time_1_4": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "separation_time_2_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "separation_time_2_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "separation_time_3_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "earliest_landing": {
+    "meaning": "Earliest possible landing time for each aircraft (minutes)",
+    "base": [
+     69,
+     60,
+     60,
+     60,
+     60
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "latest_landing": {
+    "meaning": "Latest possible landing time for each aircraft (minutes)",
+    "base": [
+     100,
+     100,
+     100,
+     92,
+     97
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 85,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "target_landing": {
+    "meaning": "Target landing time for each aircraft (minutes)",
+    "base": [
+     99,
+     76,
+     88,
+     62,
+     67
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 55,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "early_penalty": {
+    "meaning": "Cost per minute for landing early ($/min)",
+    "base": [
+     12,
+     15,
+     15,
+     12,
+     16
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "late_penalty": {
+    "meaning": "Cost per minute for landing late ($/min)",
+    "base": [
+     19,
+     15,
+     16,
+     14,
+     14
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 35,
+     "integer": false
+    }
+   },
+   "separation_time_0_1": {
+    "meaning": "Required separation between Aircraft 0 and 1 (minutes)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "separation_time_0_2": {
+    "meaning": "Required separation between Aircraft 0 and 2 (minutes)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "separation_time_0_3": {
+    "meaning": "Required separation between Aircraft 0 and 3 (minutes)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "separation_time_0_4": {
+    "meaning": "Required separation between Aircraft 0 and 4 (minutes)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "separation_time_1_2": {
+    "meaning": "Required separation between Aircraft 1 and 2 (minutes)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "separation_time_1_3": {
+    "meaning": "Required separation between Aircraft 1 and 3 (minutes)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "separation_time_1_4": {
+    "meaning": "Required separation between Aircraft 1 and 4 (minutes)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "separation_time_2_3": {
+    "meaning": "Required separation between Aircraft 2 and 3 (minutes)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "separation_time_2_4": {
+    "meaning": "Required separation between Aircraft 2 and 4 (minutes)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "separation_time_3_4": {
+    "meaning": "Required separation between Aircraft 3 and 4 (minutes)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

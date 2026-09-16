@@ -1,0 +1,108 @@
+{
+ "sample_id": "sample_241",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "num_programs": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 17.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "num_topics": {
+   "base": 37,
+   "perturb": {
+    "mode": "abs",
+    "lo": 37.0,
+    "hi": 37.0,
+    "integer": true
+   }
+  },
+  "program_costs": {
+   "base": [
+    34,
+    38,
+    86,
+    25,
+    86,
+    51,
+    53,
+    41,
+    60,
+    5,
+    89,
+    77,
+    44,
+    74,
+    41,
+    93,
+    55
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_programs] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_topics] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_programs": {
+    "meaning": "Number of programs available",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 17,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "num_topics": {
+    "meaning": "Number of topics to cover",
+    "base": 37,
+    "perturb": {
+     "mode": "abs",
+     "lo": 37,
+     "hi": 37,
+     "integer": true
+    }
+   },
+   "program_costs": {
+    "meaning": "Cost of each program (units)",
+    "base": [
+     34,
+     38,
+     86,
+     25,
+     86,
+     51,
+     53,
+     41,
+     60,
+     5,
+     89,
+     77,
+     44,
+     74,
+     41,
+     93,
+     55
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

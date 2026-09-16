@@ -1,0 +1,928 @@
+{
+ "sample_id": "sample_237",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "profit_0_0_0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_0_0_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 10.5,
+    "integer": true
+   }
+  },
+  "profit_0_1_0": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "profit_0_1_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "profit_0_2_0": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": true
+   }
+  },
+  "profit_0_2_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 10.5,
+    "integer": true
+   }
+  },
+  "profit_0_3_0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_0_3_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_1_0_0": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": true
+   }
+  },
+  "profit_1_0_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.5,
+    "hi": 13.5,
+    "integer": true
+   }
+  },
+  "profit_1_1_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "profit_1_1_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.5,
+    "hi": 13.5,
+    "integer": true
+   }
+  },
+  "profit_1_2_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "profit_1_2_1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": true
+   }
+  },
+  "profit_1_3_0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_1_3_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_2_0_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_2_0_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_2_1_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 10.5,
+    "integer": true
+   }
+  },
+  "profit_2_1_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_2_2_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "profit_2_2_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_2_3_0": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.5,
+    "hi": 13.5,
+    "integer": true
+   }
+  },
+  "profit_2_3_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "profit_3_0_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_3_0_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_3_1_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "profit_3_1_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_3_2_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "profit_3_2_1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": true
+   }
+  },
+  "profit_3_3_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "profit_3_3_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_4_0_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "profit_4_0_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_4_1_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 10.5,
+    "integer": true
+   }
+  },
+  "profit_4_1_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.5,
+    "hi": 13.5,
+    "integer": true
+   }
+  },
+  "profit_4_2_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": true
+   }
+  },
+  "profit_4_2_1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "profit_4_3_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "profit_4_3_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "demand_0_0": {
+   "base": 21,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.5,
+    "hi": 31.5,
+    "integer": true
+   }
+  },
+  "demand_0_1": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.5,
+    "hi": 25.5,
+    "integer": true
+   }
+  },
+  "demand_1_0": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 27.0,
+    "integer": true
+   }
+  },
+  "demand_1_1": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 33.0,
+    "integer": true
+   }
+  },
+  "demand_2_0": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.5,
+    "hi": 25.5,
+    "integer": true
+   }
+  },
+  "demand_2_1": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.5,
+    "hi": 28.5,
+    "integer": true
+   }
+  },
+  "demand_3_0": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "demand_3_1": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.5,
+    "hi": 37.5,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_0_0_0": {
+    "meaning": "profit for company 0 to market 0 product 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_0_0_1": {
+    "meaning": "profit for company 0 to market 0 product 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 10.5,
+     "integer": true
+    }
+   },
+   "profit_0_1_0": {
+    "meaning": "profit for company 0 to market 1 product 0",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "profit_0_1_1": {
+    "meaning": "profit for company 0 to market 1 product 1",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "profit_0_2_0": {
+    "meaning": "profit for company 0 to market 2 product 0",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": true
+    }
+   },
+   "profit_0_2_1": {
+    "meaning": "profit for company 0 to market 2 product 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 10.5,
+     "integer": true
+    }
+   },
+   "profit_0_3_0": {
+    "meaning": "profit for company 0 to market 3 product 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_0_3_1": {
+    "meaning": "profit for company 0 to market 3 product 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_1_0_0": {
+    "meaning": "profit for company 1 to market 0 product 0",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": true
+    }
+   },
+   "profit_1_0_1": {
+    "meaning": "profit for company 1 to market 0 product 1",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4.5,
+     "hi": 13.5,
+     "integer": true
+    }
+   },
+   "profit_1_1_0": {
+    "meaning": "profit for company 1 to market 1 product 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "profit_1_1_1": {
+    "meaning": "profit for company 1 to market 1 product 1",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4.5,
+     "hi": 13.5,
+     "integer": true
+    }
+   },
+   "profit_1_2_0": {
+    "meaning": "profit for company 1 to market 2 product 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "profit_1_2_1": {
+    "meaning": "profit for company 1 to market 2 product 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": true
+    }
+   },
+   "profit_1_3_0": {
+    "meaning": "profit for company 1 to market 3 product 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_1_3_1": {
+    "meaning": "profit for company 1 to market 3 product 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_2_0_0": {
+    "meaning": "profit for company 2 to market 0 product 0",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_2_0_1": {
+    "meaning": "profit for company 2 to market 0 product 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_2_1_0": {
+    "meaning": "profit for company 2 to market 1 product 0",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 10.5,
+     "integer": true
+    }
+   },
+   "profit_2_1_1": {
+    "meaning": "profit for company 2 to market 1 product 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_2_2_0": {
+    "meaning": "profit for company 2 to market 2 product 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "profit_2_2_1": {
+    "meaning": "profit for company 2 to market 2 product 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_2_3_0": {
+    "meaning": "profit for company 2 to market 3 product 0",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4.5,
+     "hi": 13.5,
+     "integer": true
+    }
+   },
+   "profit_2_3_1": {
+    "meaning": "profit for company 2 to market 3 product 1",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "profit_3_0_0": {
+    "meaning": "profit for company 3 to market 0 product 0",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_3_0_1": {
+    "meaning": "profit for company 3 to market 0 product 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_3_1_0": {
+    "meaning": "profit for company 3 to market 1 product 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "profit_3_1_1": {
+    "meaning": "profit for company 3 to market 1 product 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_3_2_0": {
+    "meaning": "profit for company 3 to market 2 product 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "profit_3_2_1": {
+    "meaning": "profit for company 3 to market 2 product 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": true
+    }
+   },
+   "profit_3_3_0": {
+    "meaning": "profit for company 3 to market 3 product 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "profit_3_3_1": {
+    "meaning": "profit for company 3 to market 3 product 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_4_0_0": {
+    "meaning": "profit for company 4 to market 0 product 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "profit_4_0_1": {
+    "meaning": "profit for company 4 to market 0 product 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_4_1_0": {
+    "meaning": "profit for company 4 to market 1 product 0",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 10.5,
+     "integer": true
+    }
+   },
+   "profit_4_1_1": {
+    "meaning": "profit for company 4 to market 1 product 1",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4.5,
+     "hi": 13.5,
+     "integer": true
+    }
+   },
+   "profit_4_2_0": {
+    "meaning": "profit for company 4 to market 2 product 0",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": true
+    }
+   },
+   "profit_4_2_1": {
+    "meaning": "profit for company 4 to market 2 product 1",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "profit_4_3_0": {
+    "meaning": "profit for company 4 to market 3 product 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "profit_4_3_1": {
+    "meaning": "profit for company 4 to market 3 product 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "demand_0_0": {
+    "meaning": "demand for product 0 in market 0",
+    "base": 21,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10.5,
+     "hi": 31.5,
+     "integer": true
+    }
+   },
+   "demand_0_1": {
+    "meaning": "demand for product 1 in market 0",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8.5,
+     "hi": 25.5,
+     "integer": true
+    }
+   },
+   "demand_1_0": {
+    "meaning": "demand for product 0 in market 1",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 27,
+     "integer": true
+    }
+   },
+   "demand_1_1": {
+    "meaning": "demand for product 1 in market 1",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 33,
+     "integer": true
+    }
+   },
+   "demand_2_0": {
+    "meaning": "demand for product 0 in market 2",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8.5,
+     "hi": 25.5,
+     "integer": true
+    }
+   },
+   "demand_2_1": {
+    "meaning": "demand for product 1 in market 2",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9.5,
+     "hi": 28.5,
+     "integer": true
+    }
+   },
+   "demand_3_0": {
+    "meaning": "demand for product 0 in market 3",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "demand_3_1": {
+    "meaning": "demand for product 1 in market 3",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12.5,
+     "hi": 37.5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

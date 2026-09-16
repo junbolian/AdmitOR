@@ -1,0 +1,174 @@
+{
+ "sample_id": "sample_281",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "assignment_costs": {
+   "base": [
+    [
+     0.6976,
+     0.4602,
+     0.5663,
+     0.483,
+     0.5177,
+     0.641
+    ],
+    [
+     0.5759,
+     0.6253,
+     0.3509,
+     0.535,
+     0.5759,
+     0.5228
+    ],
+    [
+     0.483,
+     0.535,
+     0.6253,
+     0.5759,
+     0.4189,
+     0.5759
+    ],
+    [
+     0.641,
+     0.5177,
+     0.483,
+     0.5663,
+     0.4602,
+     0.6976
+    ],
+    [
+     0.5228,
+     0.5759,
+     0.535,
+     0.3509,
+     0.6253,
+     0.5759
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "required_assignments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_peaks": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_amino_acids": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[required_assignments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_amino_acids] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "assignment_costs": {
+    "meaning": "Cost matrix for assigning each of 5 peaks to each of 6 amino acids",
+    "base": [
+     [
+      0.6976,
+      0.4602,
+      0.5663,
+      0.483,
+      0.5177,
+      0.641
+     ],
+     [
+      0.5759,
+      0.6253,
+      0.3509,
+      0.535,
+      0.5759,
+      0.5228
+     ],
+     [
+      0.483,
+      0.535,
+      0.6253,
+      0.5759,
+      0.4189,
+      0.5759
+     ],
+     [
+      0.641,
+      0.5177,
+      0.483,
+      0.5663,
+      0.4602,
+      0.6976
+     ],
+     [
+      0.5228,
+      0.5759,
+      0.535,
+      0.3509,
+      0.6253,
+      0.5759
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "required_assignments": {
+    "meaning": "Exact number of peak-to-amino-acid assignments required",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_peaks": {
+    "meaning": "Number of spectral peaks available",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_amino_acids": {
+    "meaning": "Number of amino acids available",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

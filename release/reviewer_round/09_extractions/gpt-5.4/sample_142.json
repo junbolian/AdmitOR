@@ -1,0 +1,538 @@
+{
+ "sample_id": "sample_142",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "fixed_cost_fac0": {
+   "base": 102701,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 150000.0,
+    "integer": true
+   }
+  },
+  "fixed_cost_fac1": {
+   "base": 104150,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 150000.0,
+    "integer": true
+   }
+  },
+  "fixed_cost_fac2": {
+   "base": 103985,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 150000.0,
+    "integer": true
+   }
+  },
+  "fixed_cost_fac3": {
+   "base": 101826,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 150000.0,
+    "integer": true
+   }
+  },
+  "demand_c0": {
+   "base": 192,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c1": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c2": {
+   "base": 192,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c3": {
+   "base": 213,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c4": {
+   "base": 217,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c5": {
+   "base": 205,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c6": {
+   "base": 218,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c7": {
+   "base": 181,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c8": {
+   "base": 211,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "demand_c9": {
+   "base": 203,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "cap_fac0": {
+   "base": 964,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 1200.0,
+    "integer": true
+   }
+  },
+  "cap_fac1": {
+   "base": 1047,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 1200.0,
+    "integer": true
+   }
+  },
+  "cap_fac2": {
+   "base": 977,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 1200.0,
+    "integer": true
+   }
+  },
+  "cap_fac3": {
+   "base": 988,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 1200.0,
+    "integer": true
+   }
+  },
+  "ship_cost_f0c0": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f0c1": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f0c2": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f1c0": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f1c1": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f1c2": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f2c0": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f2c1": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f2c2": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f3c0": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f3c1": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ship_cost_f3c2": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost_fac0": {
+    "meaning": "fixed op cost fac0",
+    "base": 102701,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 150000,
+     "integer": true
+    }
+   },
+   "fixed_cost_fac1": {
+    "meaning": "fixed op cost fac1",
+    "base": 104150,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 150000,
+     "integer": true
+    }
+   },
+   "fixed_cost_fac2": {
+    "meaning": "fixed op cost fac2",
+    "base": 103985,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 150000,
+     "integer": true
+    }
+   },
+   "fixed_cost_fac3": {
+    "meaning": "fixed op cost fac3",
+    "base": 101826,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 150000,
+     "integer": true
+    }
+   },
+   "demand_c0": {
+    "meaning": "demand customer_0",
+    "base": 192,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c1": {
+    "meaning": "demand customer_1",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c2": {
+    "meaning": "demand customer_2",
+    "base": 192,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c3": {
+    "meaning": "demand customer_3",
+    "base": 213,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c4": {
+    "meaning": "demand customer_4",
+    "base": 217,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c5": {
+    "meaning": "demand customer_5",
+    "base": 205,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c6": {
+    "meaning": "demand customer_6",
+    "base": 218,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c7": {
+    "meaning": "demand customer_7",
+    "base": 181,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c8": {
+    "meaning": "demand customer_8",
+    "base": 211,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "demand_c9": {
+    "meaning": "demand customer_9",
+    "base": 203,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "cap_fac0": {
+    "meaning": "capacity fac0",
+    "base": 964,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 1200,
+     "integer": true
+    }
+   },
+   "cap_fac1": {
+    "meaning": "capacity fac1",
+    "base": 1047,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 1200,
+     "integer": true
+    }
+   },
+   "cap_fac2": {
+    "meaning": "capacity fac2",
+    "base": 977,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 1200,
+     "integer": true
+    }
+   },
+   "cap_fac3": {
+    "meaning": "capacity fac3",
+    "base": 988,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 1200,
+     "integer": true
+    }
+   },
+   "ship_cost_f0c0": {
+    "meaning": "ship cost fac0->c0",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f0c1": {
+    "meaning": "ship cost fac0->c1",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f0c2": {
+    "meaning": "ship cost fac0->c2",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f1c0": {
+    "meaning": "ship cost fac1->c0",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f1c1": {
+    "meaning": "ship cost fac1->c1",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f1c2": {
+    "meaning": "ship cost fac1->c2",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f2c0": {
+    "meaning": "ship cost fac2->c0",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f2c1": {
+    "meaning": "ship cost fac2->c1",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f2c2": {
+    "meaning": "ship cost fac2->c2",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f3c0": {
+    "meaning": "ship cost fac3->c0",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f3c1": {
+    "meaning": "ship cost fac3->c1",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ship_cost_f3c2": {
+    "meaning": "ship cost fac3->c2",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

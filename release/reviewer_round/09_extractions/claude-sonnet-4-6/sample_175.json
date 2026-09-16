@@ -1,0 +1,90 @@
+{
+ "sample_id": "sample_175",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "strategy_costs": {
+   "base": [
+    8,
+    33,
+    88,
+    21,
+    15,
+    95,
+    89,
+    59
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "num_strategies": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_segments": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 39.0,
+    "hi": 39.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_strategies] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_segments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "strategy_costs": {
+    "meaning": "Cost of each of the 8 promotional strategies",
+    "base": [
+     8,
+     33,
+     88,
+     21,
+     15,
+     95,
+     89,
+     59
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "num_strategies": {
+    "meaning": "Number of promotional strategies (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_segments": {
+    "meaning": "Number of customer segments (index-set size, frozen)",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 39,
+     "hi": 39,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

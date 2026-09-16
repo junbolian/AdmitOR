@@ -1,0 +1,567 @@
+{
+ "sample_id": "sample_251",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "rev0": {
+   "base": 978,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev1": {
+   "base": 1021,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev2": {
+   "base": 1063,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev3": {
+   "base": 891,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev4": {
+   "base": 678,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev5": {
+   "base": 756,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev6": {
+   "base": 878,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev7": {
+   "base": 685,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev8": {
+   "base": 929,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev9": {
+   "base": 916,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "rev10": {
+   "base": 952,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "cap0": {
+   "base": 300,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "cap1": {
+   "base": 275,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 550.0,
+    "integer": true
+   }
+  },
+  "cap2": {
+   "base": 254,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 508.0,
+    "integer": true
+   }
+  },
+  "cap3": {
+   "base": 249,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 498.0,
+    "integer": true
+   }
+  },
+  "cap4": {
+   "base": 234,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 468.0,
+    "integer": true
+   }
+  },
+  "cap5": {
+   "base": 224,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 448.0,
+    "integer": true
+   }
+  },
+  "cap6": {
+   "base": 252,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 504.0,
+    "integer": true
+   }
+  },
+  "dem0": {
+   "base": 162,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem1": {
+   "base": 204,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem2": {
+   "base": 141,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem3": {
+   "base": 145,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem4": {
+   "base": 213,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem5": {
+   "base": 195,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem6": {
+   "base": 162,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem7": {
+   "base": 179,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem8": {
+   "base": 207,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem9": {
+   "base": 159,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "dem10": {
+   "base": 147,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "rev0": {
+    "meaning": "revenue per package0 unit",
+    "base": 978,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev1": {
+    "meaning": "revenue per package1 unit",
+    "base": 1021,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev2": {
+    "meaning": "revenue per package2 unit",
+    "base": 1063,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev3": {
+    "meaning": "revenue per package3 unit",
+    "base": 891,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev4": {
+    "meaning": "revenue per package4 unit",
+    "base": 678,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev5": {
+    "meaning": "revenue per package5 unit",
+    "base": 756,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev6": {
+    "meaning": "revenue per package6 unit",
+    "base": 878,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev7": {
+    "meaning": "revenue per package7 unit",
+    "base": 685,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev8": {
+    "meaning": "revenue per package8 unit",
+    "base": 929,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev9": {
+    "meaning": "revenue per package9 unit",
+    "base": 916,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "rev10": {
+    "meaning": "revenue per package10 unit",
+    "base": 952,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "cap0": {
+    "meaning": "seats on leg0",
+    "base": 300,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "cap1": {
+    "meaning": "seats on leg1",
+    "base": 275,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 550,
+     "integer": true
+    }
+   },
+   "cap2": {
+    "meaning": "seats on leg2",
+    "base": 254,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 508,
+     "integer": true
+    }
+   },
+   "cap3": {
+    "meaning": "seats on leg3",
+    "base": 249,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 498,
+     "integer": true
+    }
+   },
+   "cap4": {
+    "meaning": "seats on leg4",
+    "base": 234,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 468,
+     "integer": true
+    }
+   },
+   "cap5": {
+    "meaning": "seats on leg5",
+    "base": 224,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 448,
+     "integer": true
+    }
+   },
+   "cap6": {
+    "meaning": "seats on leg6",
+    "base": 252,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 504,
+     "integer": true
+    }
+   },
+   "dem0": {
+    "meaning": "demand limit for package0",
+    "base": 162,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem1": {
+    "meaning": "demand limit for package1",
+    "base": 204,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem2": {
+    "meaning": "demand limit for package2",
+    "base": 141,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem3": {
+    "meaning": "demand limit for package3",
+    "base": 145,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem4": {
+    "meaning": "demand limit for package4",
+    "base": 213,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem5": {
+    "meaning": "demand limit for package5",
+    "base": 195,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem6": {
+    "meaning": "demand limit for package6",
+    "base": 162,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem7": {
+    "meaning": "demand limit for package7",
+    "base": 179,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem8": {
+    "meaning": "demand limit for package8",
+    "base": 207,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem9": {
+    "meaning": "demand limit for package9",
+    "base": 159,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "dem10": {
+    "meaning": "demand limit for package10",
+    "base": 147,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

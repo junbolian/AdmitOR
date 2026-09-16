@@ -1,0 +1,209 @@
+{
+ "sample_id": "sample_233",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "b",
+ "score": "33.4",
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     20,
+     34,
+     26,
+     28,
+     30
+    ],
+    [
+     34,
+     33,
+     28,
+     36,
+     38
+    ],
+    [
+     23,
+     29,
+     28,
+     30,
+     34
+    ],
+    [
+     28,
+     21,
+     22,
+     31,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cap": {
+   "base": [
+    1204,
+    1596,
+    1653,
+    1303
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1000.0,
+    "hi": 2000.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    950,
+    989,
+    860,
+    795,
+    899
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 700.0,
+    "hi": 1100.0,
+    "integer": true
+   }
+  },
+  "min_contrib": {
+   "base": [
+    3,
+    3,
+    3,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "min_delivery": {
+   "base": [
+    240,
+    319,
+    330,
+    260
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "unit production cost",
+    "base": [
+     [
+      20,
+      34,
+      26,
+      28,
+      30
+     ],
+     [
+      34,
+      33,
+      28,
+      36,
+      38
+     ],
+     [
+      23,
+      29,
+      28,
+      30,
+      34
+     ],
+     [
+      28,
+      21,
+      22,
+      31,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cap": {
+    "meaning": "producer capacity",
+    "base": [
+     1204,
+     1596,
+     1653,
+     1303
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1000,
+     "hi": 2000,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "contract minimum delivery",
+    "base": [
+     950,
+     989,
+     860,
+     795,
+     899
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 700,
+     "hi": 1100,
+     "integer": true
+    }
+   },
+   "min_contrib": {
+    "meaning": "contract min contributing producers",
+    "base": [
+     3,
+     3,
+     3,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "min_delivery": {
+    "meaning": "producer min delivery per contract",
+    "base": [
+     240,
+     319,
+     330,
+     260
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 400,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

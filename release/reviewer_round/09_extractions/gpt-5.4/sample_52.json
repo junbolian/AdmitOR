@@ -1,0 +1,252 @@
+{
+ "sample_id": "sample_52",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    95800,
+    101873,
+    99294,
+    99542
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 80000.0,
+    "hi": 110000.0,
+    "integer": true
+   }
+  },
+  "capacities": {
+   "base": [
+    950,
+    1009,
+    1040,
+    1020
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "demands": {
+   "base": [
+    217,
+    197,
+    194,
+    216,
+    200,
+    192,
+    181,
+    209,
+    192,
+    220
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "unit_costs": {
+   "base": [
+    [
+     34,
+     26,
+     32,
+     32
+    ],
+    [
+     26,
+     35,
+     25,
+     30
+    ],
+    [
+     28,
+     29,
+     34,
+     27
+    ],
+    [
+     31,
+     26,
+     32,
+     35
+    ],
+    [
+     25,
+     34,
+     29,
+     28
+    ],
+    [
+     27,
+     31,
+     33,
+     26
+    ],
+    [
+     32,
+     28,
+     30,
+     29
+    ],
+    [
+     26,
+     33,
+     27,
+     31
+    ],
+    [
+     35,
+     30,
+     26,
+     34
+    ],
+    [
+     29,
+     27,
+     32,
+     28
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "opening costs for facilities 0-3",
+    "base": [
+     95800,
+     101873,
+     99294,
+     99542
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 80000,
+     "hi": 110000,
+     "integer": true
+    }
+   },
+   "capacities": {
+    "meaning": "capacities of facilities 0-3",
+    "base": [
+     950,
+     1009,
+     1040,
+     1020
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "demands": {
+    "meaning": "demands of customers 0-9",
+    "base": [
+     217,
+     197,
+     194,
+     216,
+     200,
+     192,
+     181,
+     209,
+     192,
+     220
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "unit_costs": {
+    "meaning": "unit serving costs (facility-customer pairs)",
+    "base": [
+     [
+      34,
+      26,
+      32,
+      32
+     ],
+     [
+      26,
+      35,
+      25,
+      30
+     ],
+     [
+      28,
+      29,
+      34,
+      27
+     ],
+     [
+      31,
+      26,
+      32,
+      35
+     ],
+     [
+      25,
+      34,
+      29,
+      28
+     ],
+     [
+      27,
+      31,
+      33,
+      26
+     ],
+     [
+      32,
+      28,
+      30,
+      29
+     ],
+     [
+      26,
+      33,
+      27,
+      31
+     ],
+     [
+      35,
+      30,
+      26,
+      34
+     ],
+     [
+      29,
+      27,
+      32,
+      28
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

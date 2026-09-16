@@ -1,0 +1,220 @@
+{
+ "sample_id": "sample_287",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "aircraft_availability": {
+   "base": [
+    14,
+    13,
+    15,
+    13,
+    15
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "route_demand": {
+   "base": [
+    201,
+    210,
+    212,
+    212,
+    210
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 280.0,
+    "integer": true
+   }
+  },
+  "aircraft_capacity": {
+   "base": [
+    129,
+    128,
+    130,
+    130,
+    125,
+    130,
+    129,
+    126,
+    130,
+    126,
+    125,
+    125,
+    127,
+    130,
+    127,
+    130,
+    128,
+    125,
+    127,
+    125,
+    125,
+    129,
+    127,
+    127,
+    128
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "operational_cost": {
+   "base": [
+    2006,
+    2073,
+    1975,
+    2047,
+    2062,
+    2048,
+    1978,
+    2092,
+    2040,
+    2086,
+    1984,
+    2027,
+    1909,
+    1956,
+    2003,
+    1960,
+    1932,
+    2070,
+    2009,
+    2063,
+    2089,
+    1918,
+    1995,
+    2032,
+    1930
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 2500.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "aircraft_availability": {
+    "meaning": "Number of units available for each aircraft type (0-4)",
+    "base": [
+     14,
+     13,
+     15,
+     13,
+     15
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "route_demand": {
+    "meaning": "Minimum passengers required on each route (0-4)",
+    "base": [
+     201,
+     210,
+     212,
+     212,
+     210
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 280,
+     "integer": true
+    }
+   },
+   "aircraft_capacity": {
+    "meaning": "Passenger capacity of aircraft type i on route j (5x5 matrix, row-major)",
+    "base": [
+     129,
+     128,
+     130,
+     130,
+     125,
+     130,
+     129,
+     126,
+     130,
+     126,
+     125,
+     125,
+     127,
+     130,
+     127,
+     130,
+     128,
+     125,
+     127,
+     125,
+     125,
+     129,
+     127,
+     127,
+     128
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "operational_cost": {
+    "meaning": "Cost of assigning aircraft type i to route j (5x5 matrix, row-major)",
+    "base": [
+     2006,
+     2073,
+     1975,
+     2047,
+     2062,
+     2048,
+     1978,
+     2092,
+     2040,
+     2086,
+     1984,
+     2027,
+     1909,
+     1956,
+     2003,
+     1960,
+     1932,
+     2070,
+     2009,
+     2063,
+     2089,
+     1918,
+     1995,
+     2032,
+     1930
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 2500,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

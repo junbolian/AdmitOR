@@ -1,0 +1,264 @@
+{
+ "sample_id": "sample_254",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.4",
+ "spec": {
+  "supply": {
+   "base": [
+    266,
+    98,
+    115,
+    123,
+    150
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    125,
+    125,
+    128,
+    89,
+    98,
+    99,
+    88
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "cost": {
+   "base": [
+    29,
+    30,
+    21,
+    30,
+    28,
+    29,
+    27,
+    20,
+    25,
+    23,
+    22,
+    20,
+    30,
+    30,
+    29,
+    27,
+    29,
+    28,
+    20,
+    25,
+    28,
+    26,
+    30,
+    20,
+    28,
+    29,
+    27,
+    21,
+    27,
+    22,
+    25,
+    27,
+    26,
+    23,
+    20
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "capacity": {
+   "base": [
+    132,
+    133,
+    149,
+    121,
+    133,
+    106,
+    141,
+    136,
+    133,
+    126,
+    102,
+    118,
+    144,
+    110,
+    143,
+    111,
+    134,
+    141,
+    122,
+    122,
+    118,
+    125,
+    143,
+    126,
+    125,
+    141,
+    126,
+    135,
+    105,
+    123,
+    125,
+    102,
+    125,
+    133,
+    118
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 250.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Available resources at each of the 5 production facilities",
+    "base": [
+     266,
+     98,
+     115,
+     123,
+     150
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Required resources at each of the 7 distribution centers",
+    "base": [
+     125,
+     125,
+     128,
+     89,
+     98,
+     99,
+     88
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "cost": {
+    "meaning": "Transportation cost per unit from each facility (row) to each center (column), 5x7 matrix flattened row-major",
+    "base": [
+     29,
+     30,
+     21,
+     30,
+     28,
+     29,
+     27,
+     20,
+     25,
+     23,
+     22,
+     20,
+     30,
+     30,
+     29,
+     27,
+     29,
+     28,
+     20,
+     25,
+     28,
+     26,
+     30,
+     20,
+     28,
+     29,
+     27,
+     21,
+     27,
+     22,
+     25,
+     27,
+     26,
+     23,
+     20
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum units transportable from each facility (row) to each center (column), 5x7 matrix flattened row-major",
+    "base": [
+     132,
+     133,
+     149,
+     121,
+     133,
+     106,
+     141,
+     136,
+     133,
+     126,
+     102,
+     118,
+     144,
+     110,
+     143,
+     111,
+     134,
+     141,
+     122,
+     122,
+     118,
+     125,
+     143,
+     126,
+     125,
+     141,
+     126,
+     135,
+     105,
+     123,
+     125,
+     102,
+     125,
+     133,
+     118
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 250,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

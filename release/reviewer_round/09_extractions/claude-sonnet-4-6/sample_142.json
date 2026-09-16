@@ -1,0 +1,200 @@
+{
+ "sample_id": "sample_142",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    102701,
+    104150,
+    103985,
+    101826
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    192,
+    200,
+    192,
+    213,
+    217,
+    205,
+    218,
+    181,
+    211,
+    203
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacities": {
+   "base": [
+    964,
+    1047,
+    977,
+    988
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "shipping_costs": {
+   "base": [
+    30,
+    30,
+    26,
+    31,
+    32,
+    27,
+    26,
+    26,
+    28,
+    25,
+    31,
+    32,
+    25,
+    31,
+    28,
+    30,
+    29,
+    32,
+    27,
+    33,
+    29,
+    32,
+    26,
+    30,
+    29,
+    30,
+    30,
+    29,
+    32,
+    31,
+    30,
+    28,
+    29,
+    30,
+    29,
+    25,
+    32,
+    28,
+    31,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "Fixed operating cost for each distribution center if opened",
+    "base": [
+     102701,
+     104150,
+     103985,
+     101826
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "Demand at each retail store (units)",
+    "base": [
+     192,
+     200,
+     192,
+     213,
+     217,
+     205,
+     218,
+     181,
+     211,
+     203
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum capacity of each distribution center (units)",
+    "base": [
+     964,
+     1047,
+     977,
+     988
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "shipping_costs": {
+    "meaning": "Per-unit shipping cost from each facility to each customer (4x10 matrix, row-major)",
+    "base": [
+     30,
+     30,
+     26,
+     31,
+     32,
+     27,
+     26,
+     26,
+     28,
+     25,
+     31,
+     32,
+     25,
+     31,
+     28,
+     30,
+     29,
+     32,
+     27,
+     33,
+     29,
+     32,
+     26,
+     30,
+     29,
+     30,
+     30,
+     29,
+     32,
+     31,
+     30,
+     28,
+     29,
+     30,
+     29,
+     25,
+     32,
+     28,
+     31,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

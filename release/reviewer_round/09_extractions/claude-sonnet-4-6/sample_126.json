@@ -1,0 +1,284 @@
+{
+ "sample_id": "sample_126",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "num_producers": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_contracts": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "production_costs": {
+   "base": [
+    [
+     50,
+     48,
+     49,
+     47,
+     46,
+     45,
+     44
+    ],
+    [
+     46,
+     45,
+     47,
+     44,
+     43,
+     46,
+     45
+    ],
+    [
+     48,
+     47,
+     46,
+     45,
+     44,
+     43,
+     42
+    ],
+    [
+     44,
+     46,
+     45,
+     43,
+     47,
+     44,
+     46
+    ],
+    [
+     42,
+     43,
+     44,
+     42,
+     45,
+     43,
+     44
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "producer_capacities": {
+   "base": [
+    2712,
+    1816,
+    2983,
+    2866,
+    1897
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "contract_demands": {
+   "base": [
+    889,
+    1083,
+    881,
+    1121,
+    1089,
+    921,
+    1059
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_contributors": {
+   "base": [
+    2,
+    3,
+    2,
+    2,
+    2,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_delivery_per_producer": {
+   "base": [
+    596,
+    399,
+    656,
+    630,
+    417
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_producers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_contracts] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_producers": {
+    "meaning": "Number of power producers",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_contracts": {
+    "meaning": "Number of contracts",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "production_costs": {
+    "meaning": "Cost per unit of electricity from each producer to each contract (producers × contracts)",
+    "base": [
+     [
+      50,
+      48,
+      49,
+      47,
+      46,
+      45,
+      44
+     ],
+     [
+      46,
+      45,
+      47,
+      44,
+      43,
+      46,
+      45
+     ],
+     [
+      48,
+      47,
+      46,
+      45,
+      44,
+      43,
+      42
+     ],
+     [
+      44,
+      46,
+      45,
+      43,
+      47,
+      44,
+      46
+     ],
+     [
+      42,
+      43,
+      44,
+      42,
+      45,
+      43,
+      44
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "producer_capacities": {
+    "meaning": "Maximum generation capacity per producer (units)",
+    "base": [
+     2712,
+     1816,
+     2983,
+     2866,
+     1897
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "contract_demands": {
+    "meaning": "Minimum electricity required per contract (units)",
+    "base": [
+     889,
+     1083,
+     881,
+     1121,
+     1089,
+     921,
+     1059
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers that must contribute to each contract",
+    "base": [
+     2,
+     3,
+     2,
+     2,
+     2,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_delivery_per_producer": {
+    "meaning": "Minimum delivery amount if a producer contributes to any contract (units)",
+    "base": [
+     596,
+     399,
+     656,
+     630,
+     417
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

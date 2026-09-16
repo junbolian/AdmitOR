@@ -1,0 +1,200 @@
+{
+ "sample_id": "sample_52",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    95800,
+    101873,
+    99294,
+    99542
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "service_cost": {
+   "base": [
+    34,
+    26,
+    32,
+    32,
+    33,
+    26,
+    29,
+    29,
+    30,
+    32,
+    27,
+    33,
+    34,
+    34,
+    27,
+    30,
+    33,
+    28,
+    33,
+    33,
+    28,
+    28,
+    33,
+    32,
+    34,
+    29,
+    27,
+    31,
+    31,
+    27,
+    31,
+    35,
+    27,
+    30,
+    29,
+    25,
+    34,
+    30,
+    34,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    217,
+    197,
+    194,
+    216,
+    200,
+    192,
+    181,
+    209,
+    192,
+    220
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity": {
+   "base": [
+    950,
+    1009,
+    1040,
+    1020
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost to open each facility (4 facilities)",
+    "base": [
+     95800,
+     101873,
+     99294,
+     99542
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "service_cost": {
+    "meaning": "Unit cost to serve each customer from each facility (4x10 matrix, row-major)",
+    "base": [
+     34,
+     26,
+     32,
+     32,
+     33,
+     26,
+     29,
+     29,
+     30,
+     32,
+     27,
+     33,
+     34,
+     34,
+     27,
+     30,
+     33,
+     28,
+     33,
+     33,
+     28,
+     28,
+     33,
+     32,
+     34,
+     29,
+     27,
+     31,
+     31,
+     27,
+     31,
+     35,
+     27,
+     30,
+     29,
+     25,
+     34,
+     30,
+     34,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Demand requirement for each customer (10 customers)",
+    "base": [
+     217,
+     197,
+     194,
+     216,
+     200,
+     192,
+     181,
+     209,
+     192,
+     220
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum capacity of each facility (4 facilities)",
+    "base": [
+     950,
+     1009,
+     1040,
+     1020
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

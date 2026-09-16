@@ -1,0 +1,250 @@
+{
+ "sample_id": "sample_233",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "b",
+ "score": "33.4",
+ "spec": {
+  "unit_cost": {
+   "base": [
+    [
+     20,
+     34,
+     26,
+     28,
+     30
+    ],
+    [
+     34,
+     33,
+     28,
+     36,
+     38
+    ],
+    [
+     23,
+     29,
+     28,
+     30,
+     34
+    ],
+    [
+     28,
+     21,
+     22,
+     31,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "producer_capacity": {
+   "base": [
+    1204,
+    1596,
+    1653,
+    1303
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 2200.0,
+    "integer": true
+   }
+  },
+  "contract_demand": {
+   "base": [
+    950,
+    989,
+    860,
+    795,
+    899
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 1400.0,
+    "integer": true
+   }
+  },
+  "min_producers_per_contract": {
+   "base": [
+    3,
+    3,
+    3,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_delivery_per_producer": {
+   "base": [
+    240,
+    319,
+    330,
+    260
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "num_producers": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_contracts": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_producers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_contracts] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "unit_cost": {
+    "meaning": "Unit production cost for each producer-contract pair",
+    "base": [
+     [
+      20,
+      34,
+      26,
+      28,
+      30
+     ],
+     [
+      34,
+      33,
+      28,
+      36,
+      38
+     ],
+     [
+      23,
+      29,
+      28,
+      30,
+      34
+     ],
+     [
+      28,
+      21,
+      22,
+      31,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "producer_capacity": {
+    "meaning": "Maximum generation capacity per producer",
+    "base": [
+     1204,
+     1596,
+     1653,
+     1303
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 2200,
+     "integer": true
+    }
+   },
+   "contract_demand": {
+    "meaning": "Minimum electricity delivery requirement per contract",
+    "base": [
+     950,
+     989,
+     860,
+     795,
+     899
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 1400,
+     "integer": true
+    }
+   },
+   "min_producers_per_contract": {
+    "meaning": "Minimum number of producers required per contract",
+    "base": [
+     3,
+     3,
+     3,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_delivery_per_producer": {
+    "meaning": "Minimum delivery if producer assigned to any contract",
+    "base": [
+     240,
+     319,
+     330,
+     260
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "num_producers": {
+    "meaning": "Number of producers (structural, fixed)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_contracts": {
+    "meaning": "Number of contracts (structural, fixed)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

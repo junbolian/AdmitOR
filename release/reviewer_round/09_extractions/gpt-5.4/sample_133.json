@@ -1,0 +1,115 @@
+{
+ "sample_id": "sample_133",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "5": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "M": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "D": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100000.0,
+    "hi": 10000000.0,
+    "integer": false
+   }
+  },
+  "epsilon": {
+   "base": 0.01,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.001,
+    "hi": 0.1,
+    "integer": false
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [
+  "[5] degenerate abs range (lo == hi); perturbation has no effect",
+  "[2] degenerate abs range (lo == hi); perturbation has no effect",
+  "[M] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "5": {
+    "meaning": "num_facilities",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "2": {
+    "meaning": "num_selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "M": {
+    "meaning": "num_pairs",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "D": {
+    "meaning": "large_constant",
+    "base": 1000000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100000,
+     "hi": 10000000,
+     "integer": false
+    }
+   },
+   "epsilon": {
+    "meaning": "epsilon",
+    "base": 0.01,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.001,
+     "hi": 0.1,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

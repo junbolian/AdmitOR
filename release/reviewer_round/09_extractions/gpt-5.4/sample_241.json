@@ -1,0 +1,67 @@
+{
+ "sample_id": "sample_241",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "costs": {
+   "base": [
+    34,
+    38,
+    86,
+    25,
+    86,
+    51,
+    53,
+    41,
+    60,
+    5,
+    89,
+    77,
+    44,
+    74,
+    41,
+    93,
+    55
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "costs": {
+    "meaning": "program implementation cost",
+    "base": [
+     34,
+     38,
+     86,
+     25,
+     86,
+     51,
+     53,
+     41,
+     60,
+     5,
+     89,
+     77,
+     44,
+     74,
+     41,
+     93,
+     55
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

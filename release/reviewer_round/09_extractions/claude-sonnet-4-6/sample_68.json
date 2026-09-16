@@ -1,0 +1,90 @@
+{
+ "sample_id": "sample_68",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "vehicle_costs": {
+   "base": [
+    78,
+    56,
+    56,
+    61,
+    67,
+    16
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_routes": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 13.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_routes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "vehicle_costs": {
+    "meaning": "Deployment cost for each of the 6 vehicles",
+    "base": [
+     78,
+     56,
+     56,
+     61,
+     67,
+     16
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of vehicles in the fleet",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_routes": {
+    "meaning": "Number of delivery routes to cover",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 13,
+     "hi": 13,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

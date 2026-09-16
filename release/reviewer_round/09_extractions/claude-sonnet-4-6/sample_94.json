@@ -1,0 +1,319 @@
+{
+ "sample_id": "sample_94",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "num_companies": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_products": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_markets": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    [
+     21,
+     22,
+     16
+    ],
+    [
+     25,
+     16,
+     23
+    ],
+    [
+     24,
+     18,
+     22
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "profit_margins": {
+   "base": [
+    [
+     [
+      4,
+      9,
+      8
+     ],
+     [
+      10,
+      8,
+      4
+     ],
+     [
+      4,
+      5,
+      3
+     ]
+    ],
+    [
+     [
+      9,
+      10,
+      8
+     ],
+     [
+      8,
+      3,
+      10
+     ],
+     [
+      10,
+      4,
+      6
+     ]
+    ],
+    [
+     [
+      10,
+      4,
+      4
+     ],
+     [
+      8,
+      5,
+      6
+     ],
+     [
+      6,
+      4,
+      9
+     ]
+    ],
+    [
+     [
+      10,
+      8,
+      5
+     ],
+     [
+      3,
+      3,
+      3
+     ],
+     [
+      8,
+      3,
+      7
+     ]
+    ],
+    [
+     [
+      5,
+      5,
+      4
+     ],
+     [
+      7,
+      3,
+      9
+     ],
+     [
+      6,
+      10,
+      10
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [
+  "[num_companies] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_products] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_markets] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_companies": {
+    "meaning": "Number of companies in the network",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_products": {
+    "meaning": "Number of distinct products",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_markets": {
+    "meaning": "Number of markets",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Market demand for each product (markets × products)",
+    "base": [
+     [
+      21,
+      22,
+      16
+     ],
+     [
+      25,
+      16,
+      23
+     ],
+     [
+      24,
+      18,
+      22
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "profit_margins": {
+    "meaning": "Profit per unit for company-product-market (companies × products × markets)",
+    "base": [
+     [
+      [
+       4,
+       9,
+       8
+      ],
+      [
+       10,
+       8,
+       4
+      ],
+      [
+       4,
+       5,
+       3
+      ]
+     ],
+     [
+      [
+       9,
+       10,
+       8
+      ],
+      [
+       8,
+       3,
+       10
+      ],
+      [
+       10,
+       4,
+       6
+      ]
+     ],
+     [
+      [
+       10,
+       4,
+       4
+      ],
+      [
+       8,
+       5,
+       6
+      ],
+      [
+       6,
+       4,
+       9
+      ]
+     ],
+     [
+      [
+       10,
+       8,
+       5
+      ],
+      [
+       3,
+       3,
+       3
+      ],
+      [
+       8,
+       3,
+       7
+      ]
+     ],
+     [
+      [
+       5,
+       5,
+       4
+      ],
+      [
+       7,
+       3,
+       9
+      ],
+      [
+       6,
+       10,
+       10
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 15,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

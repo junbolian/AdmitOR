@@ -1,0 +1,369 @@
+{
+ "sample_id": "sample_237",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "demand_product0_market0": {
+   "base": 21,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "demand_product1_market0": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "demand_product0_market1": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "demand_product1_market1": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 44.0,
+    "integer": true
+   }
+  },
+  "demand_product0_market2": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 34.0,
+    "integer": true
+   }
+  },
+  "demand_product1_market2": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 38.0,
+    "integer": true
+   }
+  },
+  "demand_product0_market3": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "demand_product1_market3": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "profit_coefficients": {
+   "base": [
+    [
+     [
+      10,
+      7
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      10,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      9
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      10,
+      10
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      7,
+      10
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      9,
+      6
+     ]
+    ],
+    [
+     [
+      3,
+      10
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      4,
+      3
+     ]
+    ],
+    [
+     [
+      6,
+      3
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      6,
+      10
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_product0_market0": {
+    "meaning": "Demand for Product 0 in Market 0",
+    "base": 21,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "demand_product1_market0": {
+    "meaning": "Demand for Product 1 in Market 0",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "demand_product0_market1": {
+    "meaning": "Demand for Product 0 in Market 1",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "demand_product1_market1": {
+    "meaning": "Demand for Product 1 in Market 1",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 44,
+     "integer": true
+    }
+   },
+   "demand_product0_market2": {
+    "meaning": "Demand for Product 0 in Market 2",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 34,
+     "integer": true
+    }
+   },
+   "demand_product1_market2": {
+    "meaning": "Demand for Product 1 in Market 2",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 38,
+     "integer": true
+    }
+   },
+   "demand_product0_market3": {
+    "meaning": "Demand for Product 0 in Market 3",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "demand_product1_market3": {
+    "meaning": "Demand for Product 1 in Market 3",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "profit_coefficients": {
+    "meaning": "Profit per unit for each (company, market, product) tuple, indexed as [company][market][product]",
+    "base": [
+     [
+      [
+       10,
+       7
+      ],
+      [
+       8,
+       6
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       10,
+       10
+      ]
+     ],
+     [
+      [
+       5,
+       9
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       10,
+       10
+      ]
+     ],
+     [
+      [
+       3,
+       3
+      ],
+      [
+       7,
+       10
+      ],
+      [
+       4,
+       3
+      ],
+      [
+       9,
+       6
+      ]
+     ],
+     [
+      [
+       3,
+       10
+      ],
+      [
+       4,
+       10
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       4,
+       3
+      ]
+     ],
+     [
+      [
+       6,
+       3
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       10
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

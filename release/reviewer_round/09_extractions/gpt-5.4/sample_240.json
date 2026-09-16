@@ -1,0 +1,35 @@
+{
+ "sample_id": "sample_240",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "capacity": {
+   "base": 733,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1000.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "max weight allowed",
+    "base": 733,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1000,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

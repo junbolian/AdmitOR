@@ -1,0 +1,215 @@
+{
+ "sample_id": "sample_127",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "fixed_ordering_costs": {
+   "base": [
+    97,
+    147,
+    92,
+    92,
+    92,
+    92,
+    92,
+    92,
+    147,
+    92,
+    92,
+    92,
+    92,
+    92
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "variable_ordering_costs": {
+   "base": [
+    8,
+    15,
+    12,
+    12,
+    12,
+    12,
+    12,
+    15,
+    12,
+    12,
+    12,
+    12,
+    12,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "inventory_holding_costs": {
+   "base": [
+    5,
+    7,
+    10,
+    7,
+    7,
+    10,
+    7,
+    7,
+    7,
+    7,
+    10,
+    7,
+    7,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demands": {
+   "base": [
+    51,
+    66,
+    55,
+    55,
+    55,
+    55,
+    55,
+    60,
+    55,
+    55,
+    55,
+    55,
+    55,
+    63
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_order_quantity": {
+   "base": 878,
+   "perturb": {
+    "mode": "abs",
+    "lo": 700.0,
+    "hi": 1050.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_ordering_costs": {
+    "meaning": "fixed cost of placing order in each period",
+    "base": [
+     97,
+     147,
+     92,
+     92,
+     92,
+     92,
+     92,
+     92,
+     147,
+     92,
+     92,
+     92,
+     92,
+     92
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "variable_ordering_costs": {
+    "meaning": "variable cost per unit ordered in each period",
+    "base": [
+     8,
+     15,
+     12,
+     12,
+     12,
+     12,
+     12,
+     15,
+     12,
+     12,
+     12,
+     12,
+     12,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "inventory_holding_costs": {
+    "meaning": "holding cost per unit at end of each period",
+    "base": [
+     5,
+     7,
+     10,
+     7,
+     7,
+     10,
+     7,
+     7,
+     7,
+     7,
+     10,
+     7,
+     7,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demands": {
+    "meaning": "customer demand in each period",
+    "base": [
+     51,
+     66,
+     55,
+     55,
+     55,
+     55,
+     55,
+     60,
+     55,
+     55,
+     55,
+     55,
+     55,
+     63
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_order_quantity": {
+    "meaning": "maximum order quantity per period",
+    "base": 878,
+    "perturb": {
+     "mode": "abs",
+     "lo": 700,
+     "hi": 1050,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

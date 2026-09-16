@@ -1,0 +1,49 @@
+{
+ "sample_id": "sample_68",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "costs": {
+   "base": [
+    78,
+    56,
+    56,
+    61,
+    67,
+    16
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "costs": {
+    "meaning": "deployment costs for 6 vehicles",
+    "base": [
+     78,
+     56,
+     56,
+     61,
+     67,
+     16
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "sample_id": "sample_158",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "num_companies": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_markets": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_products": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    [
+     14,
+     10
+    ],
+    [
+     20,
+     13
+    ],
+    [
+     19,
+     16
+    ],
+    [
+     10,
+     12
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "profit": {
+   "base": [
+    [
+     [
+      9,
+      3
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      10,
+      9
+     ]
+    ],
+    [
+     [
+      7,
+      7
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    [
+     [
+      8,
+      6
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      8,
+      9
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [
+  "[num_companies] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_markets] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_products] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_companies": {
+    "meaning": "Number of companies",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_markets": {
+    "meaning": "Number of markets",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_products": {
+    "meaning": "Number of product types",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Demand for each product in each market [market][product]",
+    "base": [
+     [
+      14,
+      10
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      10,
+      12
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "profit": {
+    "meaning": "Profit per unit for each company-market-product combination [company][market][product]",
+    "base": [
+     [
+      [
+       9,
+       3
+      ],
+      [
+       10,
+       10
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       10,
+       9
+      ]
+     ],
+     [
+      [
+       7,
+       7
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       9,
+       6
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     [
+      [
+       8,
+       6
+      ],
+      [
+       8,
+       6
+      ],
+      [
+       5,
+       5
+      ],
+      [
+       8,
+       9
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

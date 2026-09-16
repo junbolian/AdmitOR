@@ -1,0 +1,122 @@
+{
+ "sample_id": "sample_120",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "facility_costs": {
+   "base": [
+    50,
+    79,
+    40,
+    59,
+    53,
+    59,
+    62,
+    72,
+    68,
+    78,
+    49,
+    57,
+    53,
+    52,
+    50,
+    67,
+    56,
+    68,
+    68,
+    42,
+    76,
+    53
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "num_facilities": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 22.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "num_zones": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 39.0,
+    "hi": 39.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_zones] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "facility_costs": {
+    "meaning": "Cost to open and operate each of the 22 facilities",
+    "base": [
+     50,
+     79,
+     40,
+     59,
+     53,
+     59,
+     62,
+     72,
+     68,
+     78,
+     49,
+     57,
+     53,
+     52,
+     50,
+     67,
+     56,
+     68,
+     68,
+     42,
+     76,
+     53
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of potential facility locations (STRUCTURAL - DO NOT PERTURB)",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 22,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "num_zones": {
+    "meaning": "Number of delivery zones to cover (STRUCTURAL - DO NOT PERTURB)",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 39,
+     "hi": 39,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

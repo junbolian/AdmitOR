@@ -1,0 +1,334 @@
+{
+ "sample_id": "sample_281",
+ "family": "gpt-5.4",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "x": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509
+    ],
+    [
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509
+    ],
+    [
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509
+    ],
+    [
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509
+    ],
+    [
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509,
+     0.3509
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.3509,
+    "hi": 0.6976,
+    "integer": false
+   }
+  },
+  "num_assign": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "NOE_0_4_0_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "NOE_1_4_0_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "NOE_2_4_0_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "NOE_3_4_0_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "NOE_4_4_0_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_assign] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "x": {
+    "meaning": "binary assignment variables (5 peaks x 6 amino acids)",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "cost": {
+    "meaning": "assignment costs (matrix)",
+    "base": [
+     [
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509
+     ],
+     [
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509
+     ],
+     [
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509
+     ],
+     [
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509
+     ],
+     [
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509,
+      0.3509
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.3509,
+     "hi": 0.6976,
+     "integer": false
+    }
+   },
+   "num_assign": {
+    "meaning": "required number of assignments",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "NOE_0_4_0_1": {
+    "meaning": "NOE constraint coefficient",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "NOE_1_4_0_1": {
+    "meaning": "NOE constraint coefficient",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "NOE_2_4_0_1": {
+    "meaning": "NOE constraint coefficient",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "NOE_3_4_0_1": {
+    "meaning": "NOE constraint coefficient",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "NOE_4_4_0_1": {
+    "meaning": "NOE constraint coefficient",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

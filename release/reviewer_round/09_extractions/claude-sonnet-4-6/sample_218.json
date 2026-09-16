@@ -1,0 +1,335 @@
+{
+ "sample_id": "sample_218",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.4",
+ "spec": {
+  "consultant_availability": {
+   "base": [
+    0,
+    14,
+    20,
+    15,
+    19,
+    16,
+    19
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "project_requirements": {
+   "base": [
+    20,
+    18,
+    15,
+    19,
+    16,
+    15
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "assignment_costs": {
+   "base": [
+    33,
+    34,
+    25,
+    31,
+    34,
+    25,
+    31,
+    30,
+    28,
+    29,
+    25,
+    33,
+    35,
+    30,
+    30,
+    28,
+    30,
+    28,
+    34,
+    35,
+    31,
+    32,
+    25,
+    25,
+    28,
+    30,
+    32,
+    35,
+    27,
+    29,
+    30,
+    29,
+    27,
+    35,
+    35,
+    26,
+    35,
+    31,
+    33,
+    25,
+    30,
+    33
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 50.0,
+    "integer": false
+   }
+  },
+  "assignment_limits": {
+   "base": [
+    8,
+    8,
+    9,
+    10,
+    7,
+    5,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "num_consultants": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_projects": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_consultants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_projects] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "consultant_availability": {
+    "meaning": "Hours each consultant can dedicate across all projects",
+    "base": [
+     0,
+     14,
+     20,
+     15,
+     19,
+     16,
+     19
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "project_requirements": {
+    "meaning": "Hours required to complete each project",
+    "base": [
+     20,
+     18,
+     15,
+     19,
+     16,
+     15
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "assignment_costs": {
+    "meaning": "Cost per hour for consultant-project pairs (7×6 matrix, row-major)",
+    "base": [
+     33,
+     34,
+     25,
+     31,
+     34,
+     25,
+     31,
+     30,
+     28,
+     29,
+     25,
+     33,
+     35,
+     30,
+     30,
+     28,
+     30,
+     28,
+     34,
+     35,
+     31,
+     32,
+     25,
+     25,
+     28,
+     30,
+     32,
+     35,
+     27,
+     29,
+     30,
+     29,
+     27,
+     35,
+     35,
+     26,
+     35,
+     31,
+     33,
+     25,
+     30,
+     33
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 50,
+     "integer": false
+    }
+   },
+   "assignment_limits": {
+    "meaning": "Maximum hours each consultant can work on each project (7×6 matrix, row-major)",
+    "base": [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     15,
+     15,
+     15,
+     15,
+     15,
+     15,
+     19,
+     19,
+     19,
+     19,
+     19,
+     19,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     19,
+     19,
+     19,
+     19,
+     19,
+     19
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "num_consultants": {
+    "meaning": "Number of consultants (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_projects": {
+    "meaning": "Number of projects (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

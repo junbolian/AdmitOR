@@ -1,0 +1,180 @@
+{
+ "sample_id": "sample_269",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-truncated",
+ "score": "33.6",
+ "spec": {
+  "profit_margins": {
+   "base": [
+    49,
+    49,
+    43,
+    35,
+    20,
+    28,
+    40,
+    34,
+    47,
+    43,
+    49,
+    33,
+    29,
+    25,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_consumption": {
+   "base": [
+    0.2,
+    0.5,
+    0.2,
+    1.0,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.333,
+    0.5,
+    0.2,
+    0.333,
+    0.333
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "total_resource_available": {
+   "base": 471,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 800.0,
+    "integer": false
+   }
+  },
+  "production_capacity": {
+   "base": [
+    170,
+    101,
+    124,
+    194,
+    167,
+    131,
+    194,
+    167,
+    185,
+    120,
+    141,
+    190,
+    110,
+    177,
+    198
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_margins": {
+    "meaning": "Profit per unit produced for each of 15 items ($/unit)",
+    "base": [
+     49,
+     49,
+     43,
+     35,
+     20,
+     28,
+     40,
+     34,
+     47,
+     43,
+     49,
+     33,
+     29,
+     25,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_consumption": {
+    "meaning": "Resource units consumed per unit produced for each of 15 items",
+    "base": [
+     0.2,
+     0.5,
+     0.2,
+     1.0,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.333,
+     0.5,
+     0.2,
+     0.333,
+     0.333
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "total_resource_available": {
+    "meaning": "Total resource budget available for all production",
+    "base": 471,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 800,
+     "integer": false
+    }
+   },
+   "production_capacity": {
+    "meaning": "Maximum production quantity allowed for each of 15 items (units)",
+    "base": [
+     170,
+     101,
+     124,
+     194,
+     167,
+     131,
+     194,
+     167,
+     185,
+     120,
+     141,
+     190,
+     110,
+     177,
+     198
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 300,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

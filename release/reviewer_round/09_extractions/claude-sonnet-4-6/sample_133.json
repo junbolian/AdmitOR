@@ -1,0 +1,109 @@
+{
+ "sample_id": "sample_133",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "d-missing",
+ "score": "33.6",
+ "spec": {
+  "num_facilities": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_to_select": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "big_M": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distances": {
+   "base": [
+    10,
+    20,
+    30,
+    40,
+    15,
+    25,
+    35,
+    18,
+    28,
+    22
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_to_select] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_facilities": {
+    "meaning": "Total number of candidate facility locations",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_to_select": {
+    "meaning": "Exact number of facilities to select",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "big_M": {
+    "meaning": "Large constant for conditional distance constraints",
+    "base": 1000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distances": {
+    "meaning": "Pairwise distances between facility locations (upper triangular: (0,1), (0,2), (0,3), (0,4), (1,2), (1,3), (1,4), (2,3), (2,4), (3,4))",
+    "base": [
+     10,
+     20,
+     30,
+     40,
+     15,
+     25,
+     35,
+     18,
+     28,
+     22
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

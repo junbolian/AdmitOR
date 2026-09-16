@@ -1,0 +1,350 @@
+{
+ "sample_id": "sample_258",
+ "family": "gpt-5.4",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.4",
+ "spec": {
+  "person_capacity": {
+   "base": [
+    0,
+    3,
+    16,
+    20,
+    20,
+    20,
+    25
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "project_demand": {
+   "base": [
+    18,
+    17,
+    16,
+    20,
+    17,
+    16
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     38,
+     30,
+     32,
+     45,
+     48,
+     38
+    ],
+    [
+     37,
+     44,
+     35,
+     41,
+     46,
+     48
+    ],
+    [
+     39,
+     44,
+     40,
+     32,
+     41,
+     41
+    ],
+    [
+     30,
+     37,
+     35,
+     30,
+     46,
+     42
+    ],
+    [
+     45,
+     40,
+     40,
+     39,
+     32,
+     39
+    ],
+    [
+     34,
+     48,
+     32,
+     31,
+     43,
+     37
+    ],
+    [
+     36,
+     40,
+     40,
+     38,
+     32,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "max_per_project": {
+   "base": [
+    [
+     8,
+     7,
+     12,
+     8,
+     7,
+     9
+    ],
+    [
+     12,
+     9,
+     10,
+     7,
+     12,
+     10
+    ],
+    [
+     7,
+     10,
+     11,
+     9,
+     10,
+     12
+    ],
+    [
+     8,
+     11,
+     12,
+     11,
+     11,
+     8
+    ],
+    [
+     11,
+     12,
+     10,
+     8,
+     12,
+     9
+    ],
+    [
+     9,
+     11,
+     8,
+     7,
+     10,
+     9
+    ],
+    [
+     8,
+     10,
+     11,
+     10,
+     9,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "person_capacity": {
+    "meaning": "individual total contribution capacity",
+    "base": [
+     0,
+     3,
+     16,
+     20,
+     20,
+     20,
+     25
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "project_demand": {
+    "meaning": "project required hours",
+    "base": [
+     18,
+     17,
+     16,
+     20,
+     17,
+     16
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "assignment_cost": {
+    "meaning": "cost of individual-to-project assignment",
+    "base": [
+     [
+      38,
+      30,
+      32,
+      45,
+      48,
+      38
+     ],
+     [
+      37,
+      44,
+      35,
+      41,
+      46,
+      48
+     ],
+     [
+      39,
+      44,
+      40,
+      32,
+      41,
+      41
+     ],
+     [
+      30,
+      37,
+      35,
+      30,
+      46,
+      42
+     ],
+     [
+      45,
+      40,
+      40,
+      39,
+      32,
+      39
+     ],
+     [
+      34,
+      48,
+      32,
+      31,
+      43,
+      37
+     ],
+     [
+      36,
+      40,
+      40,
+      38,
+      32,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "max_per_project": {
+    "meaning": "individual max hours per project",
+    "base": [
+     [
+      8,
+      7,
+      12,
+      8,
+      7,
+      9
+     ],
+     [
+      12,
+      9,
+      10,
+      7,
+      12,
+      10
+     ],
+     [
+      7,
+      10,
+      11,
+      9,
+      10,
+      12
+     ],
+     [
+      8,
+      11,
+      12,
+      11,
+      11,
+      8
+     ],
+     [
+      11,
+      12,
+      10,
+      8,
+      12,
+      9
+     ],
+     [
+      9,
+      11,
+      8,
+      7,
+      10,
+      9
+     ],
+     [
+      8,
+      10,
+      11,
+      10,
+      9,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

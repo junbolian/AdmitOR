@@ -1,0 +1,150 @@
+{
+ "sample_id": "sample_289",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "num_peaks": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_amino_acids": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_assignments": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "assignment_costs": {
+   "base": [
+    [
+     0.5641263375471741,
+     0.4130089886790078,
+     0.3000019032840542,
+     0.5317842542041415,
+     0.4926803611218522
+    ],
+    [
+     0.5448260796638597,
+     0.6433424851939639,
+     0.4739017236535142,
+     0.4662114340171688,
+     0.356556034150675
+    ],
+    [
+     0.5064550698874446,
+     0.5047532090554707,
+     0.4581864962942434,
+     0.5681751607309229,
+     0.4744310845901966
+    ],
+    [
+     0.5279620574647521,
+     0.6884979142173221,
+     0.4565196754711658,
+     0.505841572608058,
+     0.4910780430709527
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [
+  "[num_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_amino_acids] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_assignments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_peaks": {
+    "meaning": "Number of NMR peaks",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_amino_acids": {
+    "meaning": "Number of amino acids in protein sequence",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_assignments": {
+    "meaning": "Exact number of assignments required",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "assignment_costs": {
+    "meaning": "Cost matrix: cost[peak][amino_acid]",
+    "base": [
+     [
+      0.5641263375471741,
+      0.4130089886790078,
+      0.3000019032840542,
+      0.5317842542041415,
+      0.4926803611218522
+     ],
+     [
+      0.5448260796638597,
+      0.6433424851939639,
+      0.4739017236535142,
+      0.4662114340171688,
+      0.356556034150675
+     ],
+     [
+      0.5064550698874446,
+      0.5047532090554707,
+      0.4581864962942434,
+      0.5681751607309229,
+      0.4744310845901966
+     ],
+     [
+      0.5279620574647521,
+      0.6884979142173221,
+      0.4565196754711658,
+      0.505841572608058,
+      0.4910780430709527
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

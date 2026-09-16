@@ -1,0 +1,198 @@
+{
+ "sample_id": "sample_240",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "n_items": {
+   "base": 27,
+   "perturb": {
+    "mode": "abs",
+    "lo": 27.0,
+    "hi": 27.0,
+    "integer": true
+   }
+  },
+  "values": {
+   "base": [
+    156,
+    291,
+    267,
+    211,
+    208,
+    312,
+    160,
+    295,
+    216,
+    179,
+    219,
+    264,
+    212,
+    253,
+    269,
+    288,
+    252,
+    201,
+    340,
+    262,
+    158,
+    263,
+    251,
+    189,
+    188,
+    335,
+    269
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights": {
+   "base": [
+    44,
+    39,
+    47,
+    40,
+    37,
+    45,
+    54,
+    45,
+    30,
+    54,
+    27,
+    47,
+    47,
+    48,
+    47,
+    31,
+    46,
+    27,
+    48,
+    54,
+    28,
+    27,
+    28,
+    37,
+    54,
+    52,
+    46
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": 733,
+   "perturb": {
+    "mode": "abs",
+    "lo": 400.0,
+    "hi": 1100.0,
+    "integer": true
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [
+  "[n_items] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "n_items": {
+    "meaning": "Number of items available",
+    "base": 27,
+    "perturb": {
+     "mode": "abs",
+     "lo": 27,
+     "hi": 27,
+     "integer": true
+    }
+   },
+   "values": {
+    "meaning": "Value of each item",
+    "base": [
+     156,
+     291,
+     267,
+     211,
+     208,
+     312,
+     160,
+     295,
+     216,
+     179,
+     219,
+     264,
+     212,
+     253,
+     269,
+     288,
+     252,
+     201,
+     340,
+     262,
+     158,
+     263,
+     251,
+     189,
+     188,
+     335,
+     269
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights": {
+    "meaning": "Weight of each item",
+    "base": [
+     44,
+     39,
+     47,
+     40,
+     37,
+     45,
+     54,
+     45,
+     30,
+     54,
+     27,
+     47,
+     47,
+     48,
+     47,
+     31,
+     46,
+     27,
+     48,
+     54,
+     28,
+     27,
+     28,
+     37,
+     54,
+     52,
+     46
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum weight capacity of knapsack",
+    "base": 733,
+    "perturb": {
+     "mode": "abs",
+     "lo": 400,
+     "hi": 1100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

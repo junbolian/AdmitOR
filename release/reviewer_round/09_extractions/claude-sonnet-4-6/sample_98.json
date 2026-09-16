@@ -1,0 +1,408 @@
+{
+ "sample_id": "sample_98",
+ "family": "claude-sonnet-4-6",
+ "group": "wrong",
+ "k3_class": "b",
+ "score": "33.6",
+ "spec": {
+  "demand_product_0": {
+   "base": [
+    79,
+    76,
+    93,
+    96,
+    91,
+    81
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_product_1": {
+   "base": [
+    86,
+    81,
+    85,
+    54,
+    80,
+    87
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_product_2": {
+   "base": [
+    95,
+    69,
+    51,
+    76,
+    55,
+    83
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "production_cost_product_0": {
+   "base": [
+    48,
+    41,
+    50,
+    46,
+    44,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "production_cost_product_1": {
+   "base": [
+    43,
+    47,
+    47,
+    40,
+    44,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "production_cost_product_2": {
+   "base": [
+    45,
+    43,
+    44,
+    47,
+    43,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "setup_cost_product_0": {
+   "base": [
+    1095,
+    1071,
+    1391,
+    1222,
+    1313,
+    1101
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "setup_cost_product_1": {
+   "base": [
+    1449,
+    1196,
+    1003,
+    1297,
+    1113,
+    1140
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "setup_cost_product_2": {
+   "base": [
+    1048,
+    1433,
+    1094,
+    1497,
+    1423,
+    1070
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost_product_0": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "holding_cost_product_1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "holding_cost_product_2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "monthly_capacity": {
+   "base": [
+    1090,
+    1009,
+    1106,
+    1048,
+    1098,
+    1016
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_consumption_product_0": {
+   "base": 1.877,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_consumption_product_1": {
+   "base": 1.884,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_consumption_product_2": {
+   "base": 1.622,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "sense": "min",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_product_0": {
+    "meaning": "Monthly demand for Product 0 (units), months 1-6",
+    "base": [
+     79,
+     76,
+     93,
+     96,
+     91,
+     81
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_product_1": {
+    "meaning": "Monthly demand for Product 1 (units), months 1-6",
+    "base": [
+     86,
+     81,
+     85,
+     54,
+     80,
+     87
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_product_2": {
+    "meaning": "Monthly demand for Product 2 (units), months 1-6",
+    "base": [
+     95,
+     69,
+     51,
+     76,
+     55,
+     83
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "production_cost_product_0": {
+    "meaning": "Unit production cost for Product 0 ($/unit), months 1-6",
+    "base": [
+     48,
+     41,
+     50,
+     46,
+     44,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "production_cost_product_1": {
+    "meaning": "Unit production cost for Product 1 ($/unit), months 1-6",
+    "base": [
+     43,
+     47,
+     47,
+     40,
+     44,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "production_cost_product_2": {
+    "meaning": "Unit production cost for Product 2 ($/unit), months 1-6",
+    "base": [
+     45,
+     43,
+     44,
+     47,
+     43,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "setup_cost_product_0": {
+    "meaning": "Setup cost for Product 0 ($/setup), months 1-6",
+    "base": [
+     1095,
+     1071,
+     1391,
+     1222,
+     1313,
+     1101
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "setup_cost_product_1": {
+    "meaning": "Setup cost for Product 1 ($/setup), months 1-6",
+    "base": [
+     1449,
+     1196,
+     1003,
+     1297,
+     1113,
+     1140
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "setup_cost_product_2": {
+    "meaning": "Setup cost for Product 2 ($/setup), months 1-6",
+    "base": [
+     1048,
+     1433,
+     1094,
+     1497,
+     1423,
+     1070
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost_product_0": {
+    "meaning": "Inventory holding cost for Product 0 ($/unit/month)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "holding_cost_product_1": {
+    "meaning": "Inventory holding cost for Product 1 ($/unit/month)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "holding_cost_product_2": {
+    "meaning": "Inventory holding cost for Product 2 ($/unit/month)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "monthly_capacity": {
+    "meaning": "Production resource capacity (units), months 1-6",
+    "base": [
+     1090,
+     1009,
+     1106,
+     1048,
+     1098,
+     1016
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_consumption_product_0": {
+    "meaning": "Resource units consumed per unit of Product 0",
+    "base": 1.877,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_consumption_product_1": {
+    "meaning": "Resource units consumed per unit of Product 1",
+    "base": 1.884,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_consumption_product_2": {
+    "meaning": "Resource units consumed per unit of Product 2",
+    "base": 1.622,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

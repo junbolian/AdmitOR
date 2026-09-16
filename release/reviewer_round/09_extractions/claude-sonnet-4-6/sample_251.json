@@ -1,0 +1,125 @@
+{
+ "sample_id": "sample_251",
+ "family": "claude-sonnet-4-6",
+ "group": "control",
+ "k3_class": "",
+ "score": "33.6",
+ "spec": {
+  "revenue": {
+   "base": [
+    978,
+    1021,
+    1063,
+    891,
+    678,
+    756,
+    878,
+    685,
+    929,
+    916,
+    952
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand": {
+   "base": [
+    162,
+    204,
+    141,
+    145,
+    213,
+    195,
+    162,
+    179,
+    207,
+    159,
+    147
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    300,
+    275,
+    254,
+    249,
+    234,
+    224,
+    252
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "sense": "max",
+ "warnings": [],
+ "raw": {
+  "params": {
+   "revenue": {
+    "meaning": "Revenue per unit for each of 11 packages",
+    "base": [
+     978,
+     1021,
+     1063,
+     891,
+     678,
+     756,
+     878,
+     685,
+     929,
+     916,
+     952
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand": {
+    "meaning": "Maximum demand (units) for each of 11 packages",
+    "base": [
+     162,
+     204,
+     141,
+     145,
+     213,
+     195,
+     162,
+     179,
+     207,
+     159,
+     147
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Seat capacity for each of 7 flight legs",
+    "base": [
+     300,
+     275,
+     254,
+     249,
+     234,
+     224,
+     252
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}
