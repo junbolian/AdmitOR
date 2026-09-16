@@ -1,0 +1,78 @@
+  scorer: round_aware imported from scripts/score_eval.py
+benchmarks aligned across arms: ['complexor', 'industryor', 'mamo', 'optibench', 'optmath']
+  complexor    per-arm {'gt': 18, 'vote': 18, 'runsok': 18, 'gate': 18}  common 18
+  industryor   per-arm {'gt': 100, 'vote': 100, 'runsok': 100, 'gate': 100}  common 100
+  mamo         per-arm {'gt': 211, 'vote': 211, 'runsok': 211, 'gate': 211}  common 211
+  optibench    per-arm {'gt': 605, 'vote': 605, 'runsok': 605, 'gate': 605}  common 605
+  optmath      per-arm {'gt': 166, 'vote': 166, 'runsok': 166, 'gate': 166}  common 166
+
+RECONCILIATION: common counts must be 18 / 100 / 211 / 166 / 605. If not, the arms are not aligned and every interval below is void.
+
+===== UNCORRECTED (as published)  (1100 items) =====
+  gt         macro  53.89   micro  57.18
+  vote       macro  54.82   micro  62.18
+  runsok     macro  56.51   micro  62.64
+  gate       macro  58.35   micro  63.91
+  paired stratified bootstrap, 10000 resamples, seed 42
+  gate - gt   macro +4.46  95% [+2.34, +6.65]  P(>0)=1.0000
+              micro +6.73  95% [+4.36, +9.18]  P(>0)=1.0000
+  gate - vote   macro +3.53  95% [+0.87, +6.68]  P(>0)=0.9975
+                micro +1.73  95% [-0.27, +3.73]  P(>0)=0.9531
+  gate - runsok   macro +1.84  95% [-0.27, +3.96]  P(>0)=0.9574
+                  micro +1.27  95% [-0.73, +3.27]  P(>0)=0.8866
+
+  Check 1: the UNCORRECTED macro column must equal Table 2 exactly: gt 53.89, vote 54.82, runsok 56.51, gate 58.35.
+  Check 2: gate-vote about +3.53 [+0.87, +6.75], gate-gt about +4.46 [+2.37, +6.64].
+  Check 3: the R1 block must put gt macro at 55.95.
+  Any of these failing means the row reader is wrong, not the paper. STOP and report.
+
+===== CORRECTED, R1 flagged rows of the gt arm on optibench only  [PAPER BASIS]  (removed 85: {'optibench': 85})  (1015 items) =====
+  gt         macro  55.95   micro  61.97
+  vote       macro  54.61   micro  60.79
+  runsok     macro  56.30   micro  61.28
+  gate       macro  58.09   micro  62.56
+  paired stratified bootstrap, 10000 resamples, seed 42
+  gate - gt   macro +2.14  95% [+0.04, +4.29]  P(>0)=0.9773
+              micro +0.59  95% [-1.48, +2.66]  P(>0)=0.6985
+  gate - vote   macro +3.49  95% [+0.78, +6.73]  P(>0)=0.9950
+                micro +1.77  95% [-0.39, +3.84]  P(>0)=0.9472
+  gate - runsok   macro +1.79  95% [-0.26, +3.96]  P(>0)=0.9554
+                  micro +1.28  95% [-0.79, +3.45]  P(>0)=0.8695
+
+===== CORRECTED, R2 flagged rows of the gt arm on every plate  (removed 95: {'industryor': 4, 'mamo': 4, 'optibench': 85, 'optmath': 2})  (1005 items) =====
+  gt         macro  56.55   micro  62.59
+  vote       macro  54.59   micro  61.00
+  runsok     macro  56.30   micro  61.49
+  gate       macro  58.14   micro  62.79
+  paired stratified bootstrap, 10000 resamples, seed 42
+  gate - gt   macro +1.59  95% [-0.45, +3.68]  P(>0)=0.9361
+              micro +0.20  95% [-1.89, +2.29]  P(>0)=0.5632
+  gate - vote   macro +3.56  95% [+0.80, +6.75]  P(>0)=0.9952
+                micro +1.79  95% [-0.30, +3.88]  P(>0)=0.9442
+  gate - runsok   macro +1.84  95% [-0.28, +3.99]  P(>0)=0.9578
+                  micro +1.29  95% [-0.80, +3.48]  P(>0)=0.8722
+
+===== CORRECTED, R3 union of flagged rows across all arms, every plate  (removed 111: {'industryor': 6, 'mamo': 10, 'optibench': 87, 'optmath': 8})  (989 items) =====
+  gt         macro  56.33   micro  62.49
+  vote       macro  54.98   micro  61.38
+  runsok     macro  56.80   micro  62.18
+  gate       macro  58.07   micro  62.79
+  paired stratified bootstrap, 10000 resamples, seed 42
+  gate - gt   macro +1.74  95% [-0.36, +3.89]  P(>0)=0.9487
+              micro +0.30  95% [-1.82, +2.43]  P(>0)=0.5896
+  gate - vote   macro +3.09  95% [+0.41, +6.31]  P(>0)=0.9894
+                micro +1.42  95% [-0.71, +3.54]  P(>0)=0.8947
+  gate - runsok   macro +1.27  95% [-0.88, +3.43]  P(>0)=0.8821
+                  micro +0.61  95% [-1.52, +2.73]  P(>0)=0.6922
+
+HOW TO READ THIS
+  R1 is the basis the paper already prints. It must reproduce the
+  published sensitivity numbers exactly (ground truth 73.5 on
+  OptiBench, 55.95 macro). If it does, R1 is the interval to print
+  and R2/R3 stay internal: they exist so you know where the
+  boundary is, not so the paper reports three of everything.
+  Every rule removes the same items from EVERY arm, which is what
+  keeps the bootstrap paired. The correction favours the baseline,
+  so an interval that still excludes zero is the stronger claim.
+
+wrote release/reviewer_round/excluded_ids.txt
