@@ -1,0 +1,9 @@
+# Reviewer-round analysis scripts (scripts/*.py added in v1.1.0).
+#
+# Beyond the Python standard library and this repository's own modules
+# (admitor/, scripts/label_oracle.py, scripts/score_eval.py), the scripts import
+# only scipy (Clopper-Pearson bounds, chi2, fisher_exact), which is already
+# pinned in environment.yml. No additional package is required.
+#
+# For a pip-only environment without environment.yml:
+#     pip install scipy==1.18.0

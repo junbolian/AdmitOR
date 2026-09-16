@@ -1,0 +1,247 @@
+# -*- coding: utf-8 -*-
+"""Composition of the E1 gate arm by clique family span (zero token).
+
+Purpose
+    The E1 gate library was built from admission-time ACCEPT certificates.
+    GateOracle applies no score threshold, so two-family cliques (deployed
+    score 22.x) feed the library alongside three-family cliques (33.x). This
+    reports how much of the arm comes from each.
+
+Definitions, from the released code
+    eligible   e1_relabel.py: any(host_label(c, gt) == "positive")
+    positive   label_oracle.host_label, 2dp half-up else abs gap <= 0.005
+    admitted   a candidate labelled positive under the gate certificate
+    poison     an admitted candidate whose own result does not match the
+               vault answer under the same host ruler
+
+Inputs
+    --arm            <host>/outputs/e1/arms/gate.jsonl, relabeled rows
+                     (private, not distributed)
+    --runs           artifacts/e1/certify_runs (in git)
+    --vault          datasets/vault/optmath-train-300-labels.jsonl (in git)
+    --build-summary  artifacts/e1/libraries/skill_library_gate.build_summary.json
+                     (in git; optional)
+    --out            default reanalysis/reviewer_round
+
+Input availability key: "in git" = shipped in this repository; "release
+asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
+not distributed" = kept by the authors (<host> below is the OptSkills host
+clone the experiments ran in).
+
+Reproduce (from the repository root)
+    python scripts/gate_arm_composition.py --arm <host>/outputs/e1/arms/gate.jsonl --build-summary artifacts/e1/libraries/skill_library_gate.build_summary.json
+
+Outputs
+    <out>/03_0_gate_arm_composition.md
+
+Paper location
+    Section 4.2 (27 problems / 69 candidates / 8 poisoned, precision 0.936)
+    and Appendix C.
+"""
+from __future__ import annotations
+
+import argparse
+import collections
+import json
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # scripts/, for label_oracle
+from label_oracle import (DEV_SPLIT_INDICES, host_label,  # noqa: E402
+                          row_candidates, row_index)
+
+DEV = {"sample_%d" % i for i in DEV_SPLIT_INDICES}
+
+
+def verdict_score(v):
+    clique = v.get("clique") or []
+    fams = {str(m)[:1] for m in clique}
+    return 10.0 * len(fams) + len(clique) + len(v.get("informative") or []) / 10.0
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Task 3.0 gate arm composition.")
+    ap.add_argument("--arm", required=True)
+    ap.add_argument("--runs", default="artifacts/e1/certify_runs")
+    ap.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl")
+    ap.add_argument("--build-summary", dest="build_summary", default="")
+    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    a = ap.parse_args()
+    os.makedirs(a.out, exist_ok=True)
+
+    vault = {}
+    for line in open(a.vault, encoding="utf-8"):
+        if line.strip():
+            r = json.loads(line)
+            vault["sample_%s" % r["idx"]] = str(r.get("answer"))
+
+    score = {}
+    fam_span = {}
+    for d in sorted(os.listdir(a.runs)):
+        p = os.path.join(a.runs, d, "verdict_full.json")
+        if os.path.isfile(p):
+            v = json.load(open(p, encoding="utf-8"))
+            score[d] = verdict_score(v)
+            fam_span[d] = len({str(m)[:1] for m in (v.get("clique") or [])})
+
+    buckets = collections.Counter()
+    adm = collections.Counter()
+    poison = collections.Counter()
+    elig_ids = collections.defaultdict(list)
+    admitted_keys, poison_keys = {}, {}
+    two_fam_samples = set()
+    n_rows = 0
+
+    for line in open(a.arm, encoding="utf-8"):
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        n_rows += 1
+        sid = str(row.get("sample_id"))
+        if sid in DEV:
+            continue
+        if not row.get("eligible"):
+            continue
+        gt = str(row.get("answer", ""))          # the gate certificate
+        ans = vault.get(sid)
+        span = fam_span.get(sid)
+        key = ("two-family (22.x)" if span == 2 else
+               "three-family (33.x)" if span == 3 else
+               "other span=%s" % span)
+        buckets[key] += 1
+        elig_ids[key].append(sid)
+        if span == 2:
+            two_fam_samples.add(str(row.get("sample_key")))
+        for c in row_candidates(row):
+            if host_label(c, gt) != "positive":
+                continue
+            adm[key] += 1
+            ckey = "%s__%s" % (row.get("sample_key"), c.get("candidate_id"))
+            admitted_keys[ckey] = (sid, span)
+            if ans is None or host_label(c, ans) != "positive":
+                poison[key] += 1
+                poison_keys[ckey] = (sid, span)
+
+    L = []
+
+    def w(s=""):
+        L.append(s)
+
+    w("# Task 3.0. Gate arm composition by clique family span")
+    w()
+    w("Zero-token. Generated by `admitor-infra/gate_arm_composition.py`.")
+    w()
+    w("## The admission rule the E1 gate arm actually used")
+    w()
+    w("`admitor-core/label_oracle.py`, `GateOracle.effective_gt`:")
+    w()
+    w("```python")
+    w('decision = str(verdict.get("decision", "")).upper()')
+    w('value = verdict.get("clique_value", verdict.get("answer_at_base_instance"))')
+    w('if decision == "ACCEPT" and value is not None:')
+    w('    return str(value)')
+    w("return NO_CONSENSUS")
+    w("```")
+    w()
+    w("No score and no threshold appear. The E1 gate arm admits on "
+      "`decision == ACCEPT` with a base value, so two-family cliques enter "
+      "the library. The 33.3 threshold is an E3 construct and was never "
+      "applied to the E1 library build.")
+    w()
+    w("Eligibility, `admitor-core/e1_relabel.py:84`:")
+    w()
+    w("```python")
+    w('labels = [host_label(c, gt) for c in cands]')
+    w('eligible = any(l == "positive" for l in labels)')
+    w("```")
+    w()
+    w("A problem is eligible when at least one host trajectory matches the "
+      "certificate under the host ruler (2dp half-up, else abs gap <= 0.005).")
+    w()
+    w("## Composition of the eligible set")
+    w()
+    w("| Clique span | eligible problems | admitted candidates | poison |")
+    w("|---|---:|---:|---:|")
+    tot_e = tot_a = tot_p = 0
+    for k in sorted(buckets):
+        w("| %s | %d | %d | %d |" % (k, buckets[k], adm[k], poison[k]))
+        tot_e += buckets[k]
+        tot_a += adm[k]
+        tot_p += poison[k]
+    w("| **total** | **%d** | **%d** | **%d** |" % (tot_e, tot_a, tot_p))
+    w()
+    w("Precision over admitted candidates: %.3f"
+      % ((tot_a - tot_p) / tot_a if tot_a else float("nan")))
+    w()
+    for k in sorted(buckets):
+        if k.startswith("two-family"):
+            w("Two-family eligible problem ids (%d): `%s`"
+              % (len(elig_ids[k]), ", ".join(sorted(elig_ids[k],
+                                                    key=lambda s: int(s.split("_")[1])))))
+            w()
+    w("Rows read from the arm file: %d" % n_rows)
+    w()
+
+    # ---- library composition under the tau counterfactual ----------------
+    w("## Library composition: which files carry two-family trajectories")
+    w()
+    bs = a.build_summary
+    if not (bs and os.path.isfile(bs)):
+        w("build summary not supplied or missing; skipped.")
+    else:
+        b = json.load(open(bs, encoding="utf-8"))
+        clusters = (b.get("build_summary") or {}).get("clusters") or []
+        any2 = only2 = 0
+        files_any2, files_only2, poison_files = [], [], collections.Counter()
+        for cl in clusters:
+            path = (cl.get("record") or {}).get("path")
+            keys = [str(k) for k in (cl.get("sample_keys") or [])]
+            if not keys:
+                continue
+            n2 = sum(1 for k in keys if k in two_fam_samples)
+            if n2:
+                any2 += 1
+                files_any2.append(path)
+                if n2 == len(keys):
+                    only2 += 1
+                    files_only2.append(path)
+            for ca in (cl.get("candidate_analyses") or []):
+                cid = ca.get("candidate_id")
+                if cid in poison_keys:
+                    poison_files[path] += 1
+        w("| Quantity | Count |")
+        w("|---|---:|")
+        w("| clusters (files) built | %d |" % len(clusters))
+        w("| files containing >=1 two-family-admitted trajectory | %d |" % any2)
+        w("| files consisting only of two-family-admitted trajectories | %d |" % only2)
+        w("| files receiving >=1 poison admission | %d |" % len(poison_files))
+        w("| poison admissions matched to a file | %d |" % sum(poison_files.values()))
+        w()
+        if files_only2:
+            w("Files built only from two-family-admitted trajectories "
+              "(these disappear under tau >= 33.3):")
+            w()
+            for f in sorted(x for x in files_only2 if x):
+                w("- `%s`" % f)
+            w()
+        if poison_files:
+            w("Files receiving poison admissions (file: n_poison):")
+            w()
+            for f, n in poison_files.most_common():
+                w("- `%s`: %d" % (f, n))
+            w()
+    
+
+    p = os.path.join(a.out, "03_0_gate_arm_composition.md")
+    open(p, "w", encoding="utf-8", newline="\n").write("\n".join(L) + "\n")
+    print("wrote", p)
+    print("eligible:", dict(buckets))
+    print("admitted:", dict(adm))
+    print("poison  :", dict(poison))
+    print("totals  : eligible=%d admitted=%d poison=%d precision=%.3f"
+          % (tot_e, tot_a, tot_p, (tot_a - tot_p) / tot_a if tot_a else float("nan")))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

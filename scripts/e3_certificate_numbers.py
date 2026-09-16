@@ -1,0 +1,370 @@
+# -*- coding: utf-8 -*-
+"""Calibration contingency table and stream reconciliation (zero token).
+
+Purpose
+    Print the per-threshold counts behind the calibrated certificate, so the
+    threshold selection rule can be checked: point false rate <= alpha and a
+    one-sided Clopper-Pearson upper bound <= 2*alpha. The threshold, the
+    tolerance, the scorer and the admitted sets are not changed.
+
+    Clopper-Pearson: U = scipy.stats.beta.ppf(1 - delta, k + 1, n - k) for
+    k < n, U = 1 for k = n.
+
+Inputs
+    --calib-runs      <host>/outputs/e3/certify_runs, <sid>/verdict_full.json
+                      for the 150 NANO-CO calibration problems
+                      (private, not distributed)
+    --calib-labels    <host>/outputs/e3/e3_labels.jsonl (private, not distributed)
+    --stream-runs     artifacts/e1/certify_runs (in git)
+    --stream-verdicts artifacts/e1/certify_verdicts (in git; compact verdicts
+                      carrying clique_value)
+    --vault           datasets/vault/optmath-train-300-labels.jsonl (in git)
+    --out             default reanalysis/reviewer_round
+
+Input availability key: "in git" = shipped in this repository; "release
+asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
+not distributed" = kept by the authors (<host> below is the OptSkills host
+clone the experiments ran in).
+
+Reproduce (from the repository root)
+    python scripts/e3_certificate_numbers.py --calib-runs <host>/outputs/e3/certify_runs --calib-labels <host>/outputs/e3/e3_labels.jsonl
+
+Outputs
+    <out>/02_calibration_table.md, 02_calibration_table.csv,
+    admitted_ids_calibration.txt, admitted_ids_wild_138.txt
+
+Paper location
+    Section 4.3 and Appendix C Table 8 (value-bearing n 63, 1 false, U95 7.31%;
+    174 -> 170 -> 138 on the stream, 22 wrong round-aware).
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import os
+import sys
+from decimal import ROUND_HALF_UP, Decimal
+
+THRESHOLDS = [33.3, 33.4, 33.5, 33.6]
+DEV_SPLIT = {"sample_1", "sample_2", "sample_3", "sample_4", "sample_5"}
+ALPHA = 0.05
+
+# the released scorer, imported rather than reimplemented
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+from score_eval import dec_places, rel_match, round_aware, to_num  # noqa: E402
+
+try:
+    from scipy.stats import beta as _beta
+    HAVE_SCIPY = True
+except ImportError:
+    HAVE_SCIPY = False
+
+
+def cp_upper(k, n, delta):
+    """One-sided Clopper-Pearson upper bound at level 1 - delta."""
+    if n == 0:
+        return float("nan")
+    if k >= n:
+        return 1.0
+    if HAVE_SCIPY:
+        return float(_beta.ppf(1.0 - delta, k + 1, n - k))
+    lo, hi = 0.0, 1.0            # bisection fallback
+    import math
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        cdf = sum(math.comb(n, i) * mid ** i * (1 - mid) ** (n - i)
+                  for i in range(0, k + 1))
+        if cdf > delta:
+            lo = mid
+        else:
+            hi = mid
+    return hi
+
+
+def verdict_score(v):
+    """Deployed score, as computed in e3_calibrate.verdict_score."""
+    clique = v.get("clique") or []
+    families = {str(m)[:1] for m in clique}
+    informative = v.get("informative") or []
+    return 10.0 * len(families) + len(clique) + len(informative) / 10.0
+
+
+def certified_value(v):
+    obj = v.get("objectives") or {}
+    clique = v.get("clique") or []
+    if not clique:
+        return None
+    vals = obj.get(clique[0]) or []
+    return vals[0] if vals else None
+
+
+def label_match(certified, answer):
+    """2dp half-up equality with an absolute-gap fallback (the GT ruler)."""
+    try:
+        c = float(certified)
+        a = float(str(answer).strip())
+    except (TypeError, ValueError):
+        return False
+    q = Decimal("0.01")
+    try:
+        if Decimal(repr(c)).quantize(q, rounding=ROUND_HALF_UP) == \
+           Decimal(repr(a)).quantize(q, rounding=ROUND_HALF_UP):
+            return True
+    except Exception:
+        pass
+    return abs(c - a) <= 0.005
+
+
+def load_runs(runs_dir):
+    out = {}
+    for d in sorted(os.listdir(runs_dir)):
+        p = os.path.join(runs_dir, d, "verdict_full.json")
+        if os.path.isfile(p):
+            out[d] = json.load(open(p, encoding="utf-8"))
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Task 2 calibration table.")
+    ap.add_argument("--calib-runs", required=True)
+    ap.add_argument("--calib-labels", required=True)
+    ap.add_argument("--stream-runs", default="artifacts/e1/certify_runs")
+    ap.add_argument("--stream-verdicts", default="artifacts/e1/certify_verdicts")
+    ap.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl")
+    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    a = ap.parse_args()
+    os.makedirs(a.out, exist_ok=True)
+    L, rows = [], []
+
+    def w(s=""):
+        L.append(s)
+
+    w("# Task 2. Calibration contingency table and stream reconciliation")
+    w()
+    w("Zero-token. Generated by `admitor-infra/e3_certificate_numbers.py`.")
+    w("Clopper-Pearson: `U = scipy.stats.beta.ppf(1 - delta, k + 1, n - k)` "
+      "for `k < n`, `U = 1` for `k = n`. scipy available: %s." % HAVE_SCIPY)
+    w()
+
+    # ---------- calibration ----------
+    labels = {}
+    for line in open(a.calib_labels, encoding="utf-8"):
+        if line.strip():
+            r = json.loads(line)
+            labels[str(r["sample_id"])] = r
+    runs = load_runs(a.calib_runs)
+
+    accepts = []
+    for sid, v in runs.items():
+        if str(v.get("decision", "")).upper() != "ACCEPT":
+            continue
+        if sid not in labels:
+            continue
+        cv = certified_value(v)
+        clique = v.get("clique") or []
+        fams = {str(m)[:1] for m in clique}
+        accepts.append(dict(
+            sid=sid, score=verdict_score(v), n_fam=len(fams),
+            clique=len(clique), value=cv,
+            has_value=cv is not None,
+            false=(cv is None) or (not label_match(cv, labels[sid].get("answer"))),
+        ))
+    accepts.sort(key=lambda r: r["sid"])
+
+    w("## 2.3 Reconciling the 103 calibration accepts")
+    w()
+    n_acc = len(accepts)
+    w("| Quantity | Count |")
+    w("|---|---:|")
+    w("| ACCEPT verdicts joined to a calibration label | %d |" % n_acc)
+    w("| with score >= 33.3 | %d |" % sum(1 for r in accepts if r["score"] >= 33.3))
+    w("| three-family cliques | %d |" % sum(1 for r in accepts if r["n_fam"] == 3))
+    w("| two-family cliques | %d |" % sum(1 for r in accepts if r["n_fam"] == 2))
+    w("| cliques spanning one family | %d |" % sum(1 for r in accepts if r["n_fam"] < 2))
+    w("| lacking a base value | %d |" % sum(1 for r in accepts if not r["has_value"]))
+    w("| false cliques (all accepts) | %d |" % sum(1 for r in accepts if r["false"]))
+    w()
+    w("Score values present: `%s`"
+      % sorted({round(r["score"], 1) for r in accepts}))
+    w()
+    w("The 10 false cliques, score and family coverage:")
+    w()
+    w("| sample_id | score | families | clique size | certified |")
+    w("|---|---:|---:|---:|---|")
+    for r in accepts:
+        if r["false"]:
+            w("| %s | %.1f | %d | %d | %s |"
+              % (r["sid"], r["score"], r["n_fam"], r["clique"], r["value"]))
+    w()
+    w("All two-family accepts (score 22.x), id and score:")
+    w()
+    w("| sample_id | score | clique | informative | false |")
+    w("|---|---:|---:|---:|---|")
+    for r in accepts:
+        if r["n_fam"] == 2:
+            w("| %s | %.1f | %d | %d | %s |"
+              % (r["sid"], r["score"], r["clique"],
+                 int(round((r["score"] % 1) * 10)), "yes" if r["false"] else "no"))
+    w()
+
+    # ---------- 2.1 the table ----------
+    w("## 2.1 Per-threshold false-discovery table")
+    w()
+    w("| Row | tau | n | k false | p_hat | CP95 upper | CP98.75 upper |")
+    w("|---|---:|---:|---:|---:|---:|---:|")
+    subsets = [
+        ("all accepts", lambda r: True),
+        ("value-bearing accepts", lambda r: r["has_value"]),
+        ("three-family cliques", lambda r: r["n_fam"] == 3),
+        ("two-family cliques", lambda r: r["n_fam"] == 2),
+    ]
+    for name, pred in subsets:
+        for tau in THRESHOLDS:
+            sel = [r for r in accepts if pred(r) and r["score"] >= tau]
+            n = len(sel)
+            k = sum(1 for r in sel if r["false"])
+            ph = (k / n) if n else float("nan")
+            u95 = cp_upper(k, n, 0.05)
+            u9875 = cp_upper(k, n, 0.0125)
+            w("| %s | %.1f | %d | %d | %s | %s | %s |"
+              % (name, tau, n, k,
+                 "%.4f" % ph if n else "-",
+                 "%.4f" % u95 if n else "-",
+                 "%.4f" % u9875 if n else "-"))
+            rows.append(dict(row=name, tau=tau, n=n, k_false=k,
+                             p_hat=round(ph, 6) if n else "",
+                             cp95_upper=round(u95, 6) if n else "",
+                             cp9875_upper=round(u9875, 6) if n else ""))
+    w()
+
+    # ---------- 2.2 ----------
+    w("## 2.2 Does Proposition 2's selection rule admit any threshold")
+    w()
+    w("Rule: `p_hat <= alpha` and `U95 <= 2*alpha`, with alpha = %.2f." % ALPHA)
+    w()
+    ok = []
+    for tau in THRESHOLDS:
+        sel = [r for r in accepts if r["score"] >= tau]
+        n, k = len(sel), sum(1 for r in sel if r["false"])
+        if not n:
+            continue
+        ph, u95 = k / n, cp_upper(k, n, 0.05)
+        passes = (ph <= ALPHA) and (u95 <= 2 * ALPHA)
+        w("- tau = %.1f: n = %d, k = %d, p_hat = %.4f, U95 = %.4f -> %s"
+          % (tau, n, k, ph, u95, "SATISFIES" if passes else "fails"))
+        if passes:
+            ok.append(tau)
+    w()
+    w("At the tighter level delta = 0.0125 (98.75%), rule `p_hat <= alpha` and "
+      "`U98.75 <= 2*alpha`:")
+    w()
+    for name, pred in subsets:
+        for tau in THRESHOLDS:
+            sel = [r for r in accepts if pred(r) and r["score"] >= tau]
+            n, k = len(sel), sum(1 for r in sel if r["false"])
+            if not n:
+                continue
+            ph, u = k / n, cp_upper(k, n, 0.0125)
+            w("- %s, tau = %.1f: n = %d, k = %d, p_hat = %.4f, U98.75 = %.4f -> %s"
+              % (name, tau, n, k, ph, u,
+                 "SATISFIES" if (ph <= ALPHA and u <= 2 * ALPHA) else "fails"))
+    w()
+    if ok:
+        w("**Set is nonempty.** Minimum satisfying threshold: %.1f. "
+          "Deployed threshold is 33.3, so the deployed choice %s the minimum."
+          % (min(ok), "is" if abs(min(ok) - 33.3) < 1e-9 else "is NOT"))
+    else:
+        w("**Set is empty over the attainable grid {33.3, 33.4, 33.5, 33.6}.** "
+          "No threshold on this grid satisfies both conditions on the "
+          "calibration accepts. Reported, not repaired.")
+    w()
+
+    # ---------- 2.4 stream ----------
+    w("## 2.4 Reconciling 174 to 170 to 138 on the stream")
+    w()
+    sruns = load_runs(a.stream_runs)
+    compact = {}
+    for f in sorted(os.listdir(a.stream_verdicts)):
+        if f.endswith(".json"):
+            compact[f[:-5]] = json.load(open(os.path.join(a.stream_verdicts, f),
+                                             encoding="utf-8"))
+    vault = {}
+    for line in open(a.vault, encoding="utf-8"):
+        if line.strip():
+            r = json.loads(line)
+            vault["sample_%s" % r["idx"]] = r.get("answer")
+
+    acc_ids = sorted([s for s, c in compact.items()
+                      if str(c.get("decision", "")).upper() == "ACCEPT"],
+                     key=lambda s: int(s.split("_")[1]))
+    dev = [s for s in acc_ids if s in DEV_SPLIT]
+    novalue = [s for s in acc_ids if compact[s].get("clique_value") is None]
+    keep = [s for s in acc_ids if s not in DEV_SPLIT
+            and compact[s].get("clique_value") is not None]
+    w("| Step | Count |")
+    w("|---|---:|")
+    w("| ACCEPT in the compact verdicts | %d |" % len(acc_ids))
+    w("| of which dev split (sample_1..5) | %d |" % len(dev))
+    w("| of which lacking a base value | %d |" % len(novalue))
+    w("| value-bearing non-dev accepts | **%d** |" % len(keep))
+    w()
+    if dev:
+        w("Dev-split accepts: `%s`" % ", ".join(dev))
+    if novalue:
+        w("Accepts without a base value: `%s`" % ", ".join(novalue))
+    w()
+
+    admitted, wrong_ra, wrong_2dp = [], [], []
+    for s in keep:
+        v = sruns.get(s)
+        if v is None:
+            continue
+        if verdict_score(v) < 33.3:
+            continue
+        admitted.append(s)
+        cv = compact[s].get("clique_value")
+        ans = vault.get(s)
+        if ans is None:
+            continue
+        if not round_aware(to_num(cv), to_num(ans), ans):
+            wrong_ra.append(s)
+        if not label_match(cv, ans):
+            wrong_2dp.append(s)
+    w("| Admitted at tau = 33.3 | **%d** |" % len(admitted))
+    w("| Disagreements, round-aware ruler | **%d** |" % len(wrong_ra))
+    w("| Disagreements, 2dp ruler | **%d** |" % len(wrong_2dp))
+    w()
+    w("Round-aware disagreements: `%s`" % ", ".join(wrong_ra))
+    w()
+    w("2dp-only disagreements (in 2dp, not in round-aware): `%s`"
+      % ", ".join(s for s in wrong_2dp if s not in set(wrong_ra)))
+    w()
+
+    # ---------- outputs ----------
+    md = os.path.join(a.out, "02_calibration_table.md")
+    open(md, "w", encoding="utf-8", newline="\n").write("\n".join(L) + "\n")
+    cv_path = os.path.join(a.out, "02_calibration_table.csv")
+    with open(cv_path, "w", encoding="utf-8", newline="") as fh:
+        wtr = csv.DictWriter(fh, fieldnames=["row", "tau", "n", "k_false",
+                                             "p_hat", "cp95_upper", "cp9875_upper"])
+        wtr.writeheader()
+        wtr.writerows(rows)
+    open(os.path.join(a.out, "admitted_ids_wild_138.txt"), "w",
+         encoding="utf-8", newline="\n").write("\n".join(admitted) + "\n")
+    open(os.path.join(a.out, "admitted_ids_calibration.txt"), "w",
+         encoding="utf-8", newline="\n").write(
+        "\n".join(r["sid"] for r in accepts if r["score"] >= 33.3) + "\n")
+
+    print("wrote", md)
+    print("calibration accepts: %d, false: %d"
+          % (n_acc, sum(1 for r in accepts if r["false"])))
+    print("stream: %d ACCEPT -> %d value-bearing non-dev -> %d admitted"
+          % (len(acc_ids), len(keep), len(admitted)))
+    print("disagreements: round-aware %d, 2dp %d" % (len(wrong_ra), len(wrong_2dp)))
+    print("Proposition 2 satisfying thresholds:", ok or "NONE")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
