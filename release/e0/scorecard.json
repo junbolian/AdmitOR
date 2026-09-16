@@ -1,0 +1,13 @@
+{
+  "tolerance_pp": 3.0,
+  "rows": {
+    "IndustryOR": {"paper": 36.00, "ours": null, "plate": "industryor"},
+    "Mamo.Complex": {"paper": 63.51, "ours": null, "plate": "mamo_c"},
+    "OptiBench": {"paper": 77.02, "ours": null, "plate": "optibench"},
+    "ComplexOR": {"paper": 72.22, "ours": null, "plate": "complexor"},
+    "OptMATH-Bench": {"paper": 61.45, "ours": null, "plate": "optmath"}
+  },
+  "meta": {"paper": "reported accuracies quoted from the OptSkills paper (Yang, Zhao, Qian, arXiv:2605.29829)",
+           "ours": "filled at run time from the E0 run records with --eval-root",
+           "model_string": "deepseek-v3.2"}
+}

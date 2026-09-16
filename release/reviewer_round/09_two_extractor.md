@@ -49,6 +49,7 @@ scipy available: True.
 | wrong | 0 | 0 |
 | control | 0 | 0 |
 
+Three-way alignment (the pilot aligned at L2 with both other extractors), required for the statistic above: 5 of 44 cases.
 
 ## Exploratory decomposition, not a preregistered rule
 
@@ -75,6 +76,7 @@ Totals per group:
 | class (d) | 244 | 38 | 146 |
 | label error | 50 | 0 | 33 |
 | control | 764 | 10 | 121 |
+| all groups | 1058 | 48 | 300 |
 
 Cases in which an array parameter with at least 4 entries in one
 specification has no value-matched counterpart in another:

@@ -14,6 +14,12 @@ Levels, each reported separately
     L4  perturbation-domain compatibility under that bijection, after the
         guardrails: same mode, and for abs mode overlapping [lo, hi].
 
+Also reported: the number of cases in which the pilot aligns at L2 with both
+other extractors (three-way alignment), and an exploratory, not preregistered,
+decomposition of each pair into (a) unmatched parameters, (b) shape-matched
+parameters with conflicting values and (c) agreeing parameters, per group and
+in total.
+
 Inputs
     --cases        release/reviewer_round/09_cases.csv (in git)
     --extractions  release/reviewer_round/09_extractions (in git)
@@ -153,6 +159,39 @@ def levels(A, B):
     return {"L1": l1, "L2": l2, "L3": l3, "L4": l4}
 
 
+def decompose(A, B):
+    """Split one pair's parameters into (a) unmatched, (b) shape-matched but
+    value-conflicting, (c) shape- and value-matched. Also counts unmatched
+    array parameters with at least 4 base entries. Exploratory, not a
+    preregistered rule; greedy in A's key order like align()."""
+    usedB, a, b, c = set(), 0, 0, 0
+    big_unmatched = 0
+    for ka, pa in A.items():
+        sa, va = shape(pa.get("base")), values(pa)
+        exact = shapeonly = None
+        for kb, pb in B.items():
+            if kb in usedB or shape(pb.get("base")) != sa:
+                continue
+            vb = values(pb)
+            if len(va) == len(vb) and all(close(x, y) for x, y in zip(va, vb)):
+                exact = kb
+                break
+            if shapeonly is None:
+                shapeonly = kb
+        if exact is not None:
+            usedB.add(exact)
+            c += 1
+        elif shapeonly is not None:
+            usedB.add(shapeonly)
+            b += 1
+        else:
+            a += 1
+            if len(va) >= 4:
+                big_unmatched += 1
+    a += len(B) - len(usedB)     # parameters of B with no counterpart in A
+    return a, b, c, big_unmatched
+
+
 def main():
     ap = argparse.ArgumentParser(description="Task 9 agreement analysis.")
     ap.add_argument("--cases", default="release/reviewer_round/09_cases.csv")
@@ -170,6 +209,10 @@ def main():
 
     cases = list(csv.DictReader(open(a.cases, encoding="utf-8")))
     rows = []
+    PAIRS = [(PILOT, "claude-sonnet-4-6", "P-C"), (PILOT, "gpt-5.4", "P-G"),
+             ("claude-sonnet-4-6", "gpt-5.4", "C-G")]
+    GROUPS = ("class (d)", "label error", "control")
+    decomp, bigcases, threeway = {}, {}, 0
     for c in cases:
         sid = c["sample_id"]
         specs = {}
@@ -200,12 +243,26 @@ def main():
             pr = align(specs[PILOT], specs["claude-sonnet-4-6"])
             pg = align(specs[PILOT], specs["gpt-5.4"])
             if pr and pg:
+                threeway += 1
                 for k, pa in specs[PILOT].items():
                     for v in values(pa):
                         if not any(close(v, t) for t in tn):
                             unprinted_agreed += 1
         rec["unprinted_values_agreed_by_all_three"] = unprinted_agreed
         rows.append(rec)
+        grp = ("label error" if c["k3_class"] == "b"
+               else "class (d)" if c["k3_class"] else "control")
+        any_big = False
+        for x, y, tag in PAIRS:
+            if x not in specs or y not in specs:
+                continue
+            ua, vb_, ag, big = decompose(specs[x], specs[y])
+            s = decomp.setdefault((grp, tag), [0, 0, 0])
+            s[0] += ua
+            s[1] += vb_
+            s[2] += ag
+            any_big = any_big or big > 0
+        bigcases[grp] = bigcases.get(grp, 0) + int(any_big)
 
     def any_dis(r, tags, lvl):
         vals = [r.get("%s_%s" % (t, lvl)) for t in tags]
@@ -262,6 +319,36 @@ def main():
                  % (g, sum(1 for r in rs if r["unprinted_values_agreed_by_all_three"]),
                     sum(r["unprinted_values_agreed_by_all_three"] for r in rs)))
     L.append("")
+    L += ["Three-way alignment (the pilot aligned at L2 with both other extractors), "
+          "required for the statistic above: %d of %d cases." % (threeway, len(rows)), ""]
+
+    L += ["## Exploratory decomposition, not a preregistered rule", "",
+          "Each pair's L2 outcome split into (a) parameters in one specification with no",
+          "shape-and-value match in the other, (b) shape-matched parameters whose values",
+          "conflict, and (c) shape-matched parameters whose values agree.", "",
+          "| Group | Pair | (a) unmatched | (b) shape match, value conflict | (c) agreeing |",
+          "|---|---|---:|---:|---:|"]
+    for grp in GROUPS:
+        for _x, _y, tag in PAIRS:
+            s = decomp.get((grp, tag))
+            if s:
+                L.append("| %s | %s | %d | %d | %d |" % (grp, tag, s[0], s[1], s[2]))
+    L += ["", "Totals per group:", "", "| Group | (a) | (b) | (c) |", "|---|---:|---:|---:|"]
+    grand = [0, 0, 0]
+    for grp in GROUPS:
+        t = [0, 0, 0]
+        for _x, _y, tag in PAIRS:
+            for i, v in enumerate(decomp.get((grp, tag), [0, 0, 0])):
+                t[i] += v
+        grand = [g + v for g, v in zip(grand, t)]
+        L.append("| %s | %d | %d | %d |" % (grp, t[0], t[1], t[2]))
+    L.append("| all groups | %d | %d | %d |" % tuple(grand))
+    L += ["", "Cases in which an array parameter with at least 4 entries in one",
+          "specification has no value-matched counterpart in another:", "",
+          "| Group | cases |", "|---|---:|"]
+    for grp in GROUPS:
+        L.append("| %s | %d |" % (grp, bigcases.get(grp, 0)))
+    L.append("")
 
     open(os.path.join(a.out, "09_two_extractor.md"), "w",
          encoding="utf-8", newline="\n").write("\n".join(L) + "\n")
@@ -278,6 +365,8 @@ def main():
         print("  %s  wrong %d/%d  control %d/%d"
               % (lvl, sum(any_dis(r, ["P-C", "P-G", "C-G"], lvl) for r in wr), len(wr),
                  sum(any_dis(r, ["P-C", "P-G", "C-G"], lvl) for r in cr), len(cr)))
+    print("  three-way alignment %d of %d; unmatched %d, value conflicts %d, agreeing %d"
+          % (threeway, len(rows), grand[0], grand[1], grand[2]))
     return 0
 
 
