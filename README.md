@@ -48,7 +48,7 @@ compressed into a maximum clique, and a verdict is issued only when that clique
 A conformal calibration step thresholds admission to a target false-discovery
 budget, so the gate can be tuned to a **stated purity** rather than a hope.
 
-**Figure 1** (overview): [`figures/fig1_overview.pdf`](figures/fig1_overview.pdf)
+![Overview](figures/fig1_overview.png)
 
 ![Pipeline](figures/fig2_pipeline.png)
 

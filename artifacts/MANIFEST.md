@@ -40,6 +40,7 @@ GitHub Release for tag `v1.0.0` and are verified against
 | `datasets/benchmark/` | 1.4 MB | `2140f83a22cca99df3891f2e1e4e6f7772b6bf4095d2be494c7a825be9703262` | Table 2 (E1), Table 6 (E0); the five evaluation benchmarks (5 files) |
 | `datasets/train_set/` | 2.9 MB | `b047a14747ed5dc769abbe4afb21cca168e5489c99161aec3a15953fe54a1ecc` | Table 2 (E1), Table 4 (E3); mining pool, blind variant, NANO-CO (3 files) |
 | `datasets/vault/optmath-train-300-labels.jsonl` | 10.2 KB | `c05faaa8777e04cdd61eb29239c1b5b14e5d227d8ae46a7cf5c5881b3357c155` | Table 2 (E1) GT arm, Table 4 (E3) grading; sealed answer book |
+| `figures/fig1_overview.png` | 149.7 KB | `3ee8cd895fafcd9270ead8286c38f3b4bf384e7c21095dc0f564f5317272cc2e` | Figure 1; value functions separate, admission precision |
 | `figures/fig2_pipeline.png` | 246.8 KB | `9a2c57157b37d16b2f8dbca0346191154e2c14d9792d5c0b3fa1d37c3a0c9638` | Figure 2; the gate pipeline |
 | `figures/fig3_quality.png` | 42.3 KB | `d1f4347e99eb40eab86fb1a8ceb526478c29a8d5b2a650f56488d0f04c69e3eb` | Figure 3; library size against downstream macro |
 | `figures/fig4_e3_forensics.png` | 67.5 KB | `9516f9dee23ad1693a32e742d3064b0b46943dc4c19e650e9063b0cdbc78d7cc` | Figure 4; E3 forensics |

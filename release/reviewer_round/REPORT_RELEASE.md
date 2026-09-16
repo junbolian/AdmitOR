@@ -66,7 +66,7 @@ SCRIPTS_DIR = `scripts/`. T1 gate: libraries 130 / 145 / 163 / 101, 298 stream v
 | T6 packets | `5f049d5` | `release/k3_packets/` (22 packets), `release/k3_attribution.csv` (path column only) |
 | items 1 to 4 | `65e5bf4` | `scripts/two_extractor_agreement.py`, `release/reviewer_round/09_two_extractor.md` (2,654 B), `scripts/assemble_decomposition_report.py`, `scripts/admitor_reanalysis.py`, `scripts/e0_scorecard.py`, `release/e0/scorecard.json` |
 | T7 README | `a64a235` | `README.md` |
-| T8 figure | `4f41ca8` | `figures/fig1_overview.pdf` (Jacob's regenerated copy), `figures/fig1_overview.png` removed from git, `paper/make_fig1.py`, `paper/README.md`, `artifacts/MANIFEST.md` (png row removed, pdf row refreshed by `make_manifest.py --write`; verify: 19 verified, 0 mismatched, 0 missing), `README.md` (overview image replaced by a link to the PDF, since the PNG is no longer in git) |
+| T8 figure | `4f41ca8` | `figures/fig1_overview.pdf` (Jacob's regenerated copy), `figures/fig1_overview.png` removed from git (restored 2026-09-17 from the v2.1 zip, the PNG exported with the same PDF), `paper/make_fig1.py`, `paper/README.md`, `artifacts/MANIFEST.md` (png row removed, pdf row refreshed by `make_manifest.py --write`; verify: 19 verified, 0 mismatched, 0 missing), `README.md` (overview image replaced by a link to the PDF, since the PNG is no longer in git) |
 | T9 bootstrap report | `2be0999` | `scripts/format_bootstrap_report.py`, `release/reviewer_round/04_bootstrap.md` (2,298 B; the only diff hunk is the command block, lines 7 to 17) |
 | T11 notes | `6df8202` | `release/reviewer_round/RELEASE_NOTES_v1.1.0.md` |
 | T12 mirror (withdrawn, branch deleted) | `2e72ec2` | `README.md`, `LICENSE`, `release/reviewer_round/RELEASE_NOTES_v1.1.0.md`, `release/reviewer_round/REPORT_reviewer_round_2026-09.md` |
@@ -266,7 +266,6 @@ the authors' names (it is public). `main` was never touched by the anonymization
 | `sample_98.md` packet | shipped as recorded; it differs from the generator output only by a removed checklist block |
 | `pytest` pin | `environment.yml` pins `pytest==8.4.2`, absent from `optskills`; file not edited per ruling; the README's "14 passed" line predates this release and was not re-run in `optskills` |
 | Figure generator environment | `paper/make_fig1.py` needs matplotlib, not in `environment.yml`; run with base Anaconda (matplotlib 3.7.5) to confirm seed 157 and base value 960; the PDF in git is Jacob's copy |
-| README overview image | the PNG left git per ruling, so the README links the PDF instead of embedding an image |
 
 ## 10. Remaining items for Jacob
 
@@ -274,5 +273,4 @@ the authors' names (it is public). `main` was never touched by the anonymization
    (section 7.1).
 2. arXiv v2 after 2026-09-25.
 3. Optional: rotate the relay key (it was pasted in chat during the reviewer round); decide whether
-   `pytest` should stay pinned in `environment.yml` and whether a PNG of Figure 1 should return for the
-   README.
+   `pytest` should stay pinned in `environment.yml`.
