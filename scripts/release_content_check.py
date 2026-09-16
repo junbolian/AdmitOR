@@ -8,11 +8,18 @@ answers), (2) no shipped text file contains an absolute Windows path, and
 header with credentials.
 
 Inputs (all in git):
-    --root     repository root (default `.`)
+    --root     repository root (default `.`), or any directory; outside a git
+               work tree every file under it is checked
     --vault    vault labels, relative to root
                (default `datasets/vault/optmath-train-300-labels.jsonl`)
     --release  directory checked for vault content, relative to root
                (default `release`)
+    --allow-benchmark-text
+               mode for a release asset (for example the run records): benchmark
+               problem text is permitted because the datasets are in git. The
+               script has no benchmark-text check, so nothing is skipped; in this
+               mode the credential-key check covers every file, and a key whose
+               value is "[REDACTED]" passes.
 
 Candidate objective values in the derived verdict files are allowed: they are
 already public in `artifacts/e1/certify_runs`. Columns that match some vault
@@ -20,6 +27,7 @@ answers are listed for inspection but fail only at 300 matched rows.
 
 Reproduce:
     python scripts/release_content_check.py --root .
+    python scripts/release_content_check.py --root <unpacked asset> --allow-benchmark-text
 
 Output: printed report; exit 0 when all gates pass, 1 otherwise.
 Paper location: none (release hygiene).
@@ -39,8 +47,11 @@ TEXT_EXT = {".md", ".txt", ".csv", ".json", ".jsonl", ".py", ".yml", ".yaml", ".
 # documentation placeholder such as `C:\\Users\\...`.
 ABS_PATH = re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:(?:\\{1,2}|/)(?!(?:n|t|r)(?![A-Za-z]))"
                       r"[A-Za-z0-9_$][A-Za-z0-9_.$ -]*(?![A-Za-z0-9_.$ -])(?![\\/]{1,2}\.\.\.)")
-# Inside JSON a single backslash starts an escape, so a path needs `\\` or `/`.
-ABS_PATH_JSON = re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:(?:\\\\|/)(?!(?:n|t|r)(?![A-Za-z]))"
+# Inside JSON a single backslash starts an escape, so a path needs `\\` (one
+# backslash in the decoded string), `\\\\` (two) or `/`. A separator followed by
+# another escape (`\\n`, `\\t`, `\\r`, `\\"`, i.e. literal backslash sequences in
+# decoded code such as print("x:\n")) is not a path.
+ABS_PATH_JSON = re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:(?:(?:\\\\){1,2}|/)(?![ntr\"\\])"
                            r"[A-Za-z0-9_$][A-Za-z0-9_.$ -]*")
 CRED_KEYS = re.compile(r"(?i)[\"']?(authorization|api[_-]?key|x-api-key)[\"']?\s*[:=]")
 
@@ -66,9 +77,21 @@ def same(a, b):
 
 
 def shipped_files(root):
-    out = subprocess.run(["git", "-C", root, "ls-files", "-co", "--exclude-standard", "-z"],
-                         capture_output=True, check=True).stdout
-    return sorted(p for p in out.decode("utf-8").split("\0") if p)
+    """Files git would commit; every file under root when root is not a work tree."""
+    try:
+        top = subprocess.run(["git", "-C", root, "rev-parse", "--show-toplevel"],
+                             capture_output=True, check=True).stdout.decode("utf-8").strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        top = ""
+    if top and os.path.normcase(os.path.abspath(top)) == os.path.normcase(os.path.abspath(root)):
+        out = subprocess.run(["git", "-C", root, "ls-files", "-co", "--exclude-standard", "-z"],
+                             capture_output=True, check=True).stdout
+        return sorted(p for p in out.decode("utf-8").split("\0") if p)
+    acc = []
+    for dp, dirs, names in os.walk(root):
+        dirs[:] = [d for d in dirs if d != ".git"]
+        acc.extend(os.path.relpath(os.path.join(dp, n), root).replace(os.sep, "/") for n in names)
+    return sorted(acc)
 
 
 def row_id(row):
@@ -126,8 +149,16 @@ def main():
     ap.add_argument("--root", default=".")
     ap.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl")
     ap.add_argument("--release", default="release")
+    ap.add_argument("--allow-benchmark-text", action="store_true", dest="allow_benchmark_text")
     a = ap.parse_args()
-    vault = load_vault(os.path.join(a.root, a.vault))
+    if a.allow_benchmark_text:
+        print("--allow-benchmark-text: benchmark problem text is permitted (the datasets are "
+              "in git); this script has no benchmark-text check, so no check is skipped. "
+              "Credential keys are checked in every file.")
+    vault_path = os.path.join(a.root, a.vault)
+    vault = load_vault(vault_path) if os.path.isfile(vault_path) else {}
+    if not vault:
+        print("vault not found under root; vault-content check covers only the vault file name")
     files = shipped_files(a.root)
     fails, notes, n_text, n_rel = [], [], 0, 0
     rel_prefix = a.release.strip("/\\").replace("\\", "/") + "/"
@@ -146,8 +177,10 @@ def main():
         for m in rx.finditer(text):
             fails.append("absolute path: %s:%d  %r" % (rel, text[:m.start()].count("\n") + 1,
                                                        m.group(0)[:40]))
-        if "/09_extractions/" in "/" + rel:
+        if a.allow_benchmark_text or "/09_extractions/" in "/" + rel:
             for m in CRED_KEYS.finditer(text):
+                if text[m.end():m.end() + 16].lstrip().startswith('"[REDACTED]"'):
+                    continue
                 fails.append("credential header key: %s:%d" % (rel, text[:m.start()].count("\n") + 1))
     print("files under %s checked for vault content: %d" % (rel_prefix, n_rel))
     print("shipped text files checked for absolute paths: %d" % n_text)

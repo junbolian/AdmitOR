@@ -58,8 +58,18 @@ SENSITIVE_KEY = re.compile(r"(?i)(api[_-]?key|authorization|token|secret|base_ur
 
 # Windows drive-letter paths and POSIX home paths. Kept deliberately greedy on
 # the path body but stopped at quotes, whitespace and common JSON delimiters.
+#
+# A Windows path must have a real path shape: the drive letter is not preceded
+# by a letter or digit (so "solution:\" in escaped code is not a drive), and a
+# backslash followed by n, t, r or a double quote after the colon is an escape
+# sequence, not a separator (so "j:\n" and print("matrix Q:\") are not paths).
+# A drive letter directly after an escape sequence (the "n" of "...\nC:\Users")
+# still starts a path. Without these two conditions the pattern
+# rewrote ordinary text such as print("Verification:\n") in run records.
 ABS_PATH = re.compile(
-    r"(?:[A-Za-z]:[\\/]{1,2}[^\s\"'<>|]*" r"|/home/[^\s\"'<>|:]*" r"|/Users/[^\s\"'<>|:]*)"
+    r"(?:(?:(?<![A-Za-z0-9])|(?<=\\[ntr]))[A-Za-z]:(?:/|\\\\(?![ntr\"])|\\(?![\\ntr\"]))[^\s\"'<>|]*"
+    r"|/home/[^\s\"'<>|:]*"
+    r"|/Users/[^\s\"'<>|:]*)"
 )
 
 REDACTED = "[REDACTED]"

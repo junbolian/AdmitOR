@@ -29,7 +29,8 @@ import subprocess
 import sys
 
 GENERIC = [
-    ("sk- prefix", re.compile(r"sk-[A-Za-z0-9_\-]{8,}")),
+    # not after a letter or digit, so words such as "risk-weighted" do not match
+    ("sk- prefix", re.compile(r"(?<![A-Za-z0-9])sk-[A-Za-z0-9_\-]{8,}")),
     ("api_key literal", re.compile(r"(?i)api[_-]?key\s*[=:]\s*['\"]?[A-Za-z0-9_\-]{8,}")),
     ("Bearer token", re.compile(r"(?i)bearer\s+[A-Za-z0-9_\-\.]{16,}")),
     ("Authorization header", re.compile(r"(?i)authorization\s*[=:]\s*['\"]?[A-Za-z]+\s+\S{8,}")),
