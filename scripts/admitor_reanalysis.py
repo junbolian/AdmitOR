@@ -17,13 +17,13 @@ uninf  problem-level decomposition of the UNINFORMATIVE outcomes.
 Inputs (all in git)
     --runs           artifacts/e1/certify_runs (verdict_full.json per sample)
     --vault          datasets/vault/optmath-train-300-labels.jsonl
-    --only-samples   release/reviewer_round/admitted_ids_wild_138.txt for the
+    --only-samples   release/analyses/admitted_ids_wild_138.txt for the
                      138 problems admitted at the calibrated threshold
-    --out            default reanalysis/reviewer_round
+    --out            default reanalysis/analyses
 
 Reproduce (from the repository root)
-    python scripts/admitor_reanalysis.py score --only-samples release/reviewer_round/admitted_ids_wild_138.txt
-    python scripts/admitor_reanalysis.py relax --only-samples release/reviewer_round/admitted_ids_wild_138.txt
+    python scripts/admitor_reanalysis.py score --only-samples release/analyses/admitted_ids_wild_138.txt
+    python scripts/admitor_reanalysis.py relax --only-samples release/analyses/admitted_ids_wild_138.txt
 
 Outputs
     score: a per-statistic table on stdout; <out>/admitted_rows.json and
@@ -520,7 +520,7 @@ def cmd_relax(a):
               "Report the count and their precision in 4.2.")
     else:
         print("  The cross-family requirement is never binding in this pilot. "
-              "Say so explicitly rather than leaving it implied; a reviewer "
+              "Say so explicitly rather than leaving it implied; a reader "
               "who finds this unaided will read it as an untested design claim.")
     return 0
 
@@ -604,7 +604,7 @@ def main():
                        help="directory containing certification runs")
         p.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl",
                        help="sealed vault jsonl")
-        p.add_argument("--out", default="reanalysis/reviewer_round", help="output directory")
+        p.add_argument("--out", default="reanalysis/analyses", help="output directory")
         p.add_argument("--alpha", type=float, default=0.05)
         p.add_argument("--min-coverage", type=float, default=0.5,
                        dest="min_coverage",

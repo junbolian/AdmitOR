@@ -4,15 +4,15 @@
 Calls `admitor.ir_extract.extract_spec` with a closure routed to each family,
 so the prompt, the JSON parsing and the `validate_spec` guardrails are
 identical to the pilot. Records request parameters, resp_model and usage per
-call. This is the only script of the reviewer round that calls a model
+call. This is the only script of the analysis round that calls a model
 (88 calls: 44 cases x 2 families).
 
 Inputs
     --family     model name as served by the endpoint (claude-sonnet-4-6, gpt-5.4)
-    --cases      release/reviewer_round/09_cases.csv (in git)
+    --cases      release/analyses/09_cases.csv (in git)
     --workorder  <host>/outputs/e1/gate_workorder.jsonl, the problem text
                  (private, not distributed)
-    --out        default reanalysis/reviewer_round/09_extractions
+    --out        default reanalysis/analyses/09_extractions
     credentials  OPTSKILL_BASE_URL and OPTSKILL_API_KEY from the environment,
                  or from the file passed as --env-file (private, not distributed)
 
@@ -96,10 +96,10 @@ def make_call(model, sid):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--family", required=True)
-    ap.add_argument("--cases", default="release/reviewer_round/09_cases.csv")
+    ap.add_argument("--cases", default="release/analyses/09_cases.csv")
     ap.add_argument("--workorder", required=True)
     ap.add_argument("--env-file", default="")
-    ap.add_argument("--out", default="reanalysis/reviewer_round/09_extractions")
+    ap.add_argument("--out", default="reanalysis/analyses/09_extractions")
     ap.add_argument("--workers", type=int, default=3)
     a = ap.parse_args()
     if a.env_file:

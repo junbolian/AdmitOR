@@ -28,9 +28,9 @@ Inputs
     --runs   <host>/outputs/e1/certify_runs; needs spec.json and the stored
              candidate programs <candidate>.py next to verdict_full.json
              (private, not distributed)
-    --ids    release/reviewer_round/11_ids.txt, the 57 ids (in git)
+    --ids    release/analyses/11_ids.txt, the 57 ids (in git)
     --vault  datasets/vault/optmath-train-300-labels.jsonl (in git)
-    --out    default reanalysis/reviewer_round
+    --out    default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -80,9 +80,9 @@ def close(a, b):
 def main():
     ap = argparse.ArgumentParser(description="Task 11 feasibility resampling.")
     ap.add_argument("--runs", required=True)
-    ap.add_argument("--ids", default="release/reviewer_round/11_ids.txt")
+    ap.add_argument("--ids", default="release/analyses/11_ids.txt")
     ap.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     ap.add_argument("--m", type=int, default=5)
     ap.add_argument("--max-attempts", type=int, default=10)
     ap.add_argument("--seed", type=int, default=20260916)

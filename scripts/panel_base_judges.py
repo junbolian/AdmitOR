@@ -28,7 +28,7 @@ Inputs
     --collect  <host>/outputs/e1/collect/trajectories.jsonl, for host_vote
                (private, not distributed)
     --vault    datasets/vault/optmath-train-300-labels.jsonl (in git)
-    --out      default reanalysis/reviewer_round
+    --out      default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -137,7 +137,7 @@ def main():
     ap.add_argument("--runs", default="artifacts/e1/certify_runs")
     ap.add_argument("--collect", required=True)
     ap.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 

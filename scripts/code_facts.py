@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Code-fact counts for the reviewer round (zero token, read-only).
+"""Code-fact counts for the analysis round (zero token, read-only).
 
 Purpose
     Count, from stored artifacts, the facts the manuscript states about the
@@ -17,7 +17,7 @@ Inputs
     --collect      <host>/outputs/e1/collect/trajectories.jsonl
                    (private, not distributed)
     --libs         artifacts/e1/libraries (in git)
-    --out          default reanalysis/reviewer_round
+    --out          default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -149,7 +149,7 @@ def main():
     ap.add_argument("--calib-runs", required=True)
     ap.add_argument("--collect", required=True)
     ap.add_argument("--libs", default="artifacts/e1/libraries")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     L = []

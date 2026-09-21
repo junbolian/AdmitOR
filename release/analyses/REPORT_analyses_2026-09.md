@@ -1,11 +1,11 @@
-# AdmitOR reviewer round, report
+# AdmitOR analysis round, report
 
 Issued against the consolidated work order of 2026-09-16 and its amendments.
 Every number carries the script and the output file that produced it. All
 work is zero-token except Task 9.
 
 Scripts live in `admitor-infra\`; outputs in
-`AdmitOR\reanalysis\reviewer_round\` (gitignored); shipped files in
+`AdmitOR\reanalysis\analyses\` (gitignored); shipped files in
 `AdmitOR\release\`.
 
 ---
@@ -23,7 +23,7 @@ Scripts live in `admitor-infra\`; outputs in
 | 7 | "Our majority-vote arm is that rule instantiated across model families" | The Vote oracle aggregates the host's own rollout (`label_oracle.py:135`, `row["rollout"]["candidates"]`), which is exactly three trajectories per problem from the single DeepSeek backbone. It is not cross-family. | `01_code_facts_data.md` section 1.6 |
 | 8 | "We adopt the instrument of ReLoop as a diagnostic layer" | No ReLoop component is imported or executed anywhere. Zero matches for `reloop` across `admitor-core`, `admitor-infra` and `OptSkills-main`. | Task 1.9 grep |
 | 9 | Task 14.1: a figure generator can be found by grepping for "Conformal Gate" | No figure generator exists in the project, `fig2_pipeline.pdf` has no text layer (0 characters, 0 fonts, 0 vector drawings), and the string appears nowhere. The box already reads "Calibrated Gate" in the re-exported figure; the two sub-lines cannot be added without the drawing source. | Task 14.1 probe |
-| 10 | The per-sample K3 attribution is recorded | It was not. All 22 review packets carry unticked boxes (0 of 22). The mapping was supplied by the operator and is now recorded in `release/k3_attribution.csv`, which is authoritative. | Task 12 |
+| 10 | The per-sample K3 attribution is recorded | It was not. All 22 case packets carry unticked boxes (0 of 22). The mapping was supplied by the operator and is now recorded in `release/k3_attribution.csv`, which is authoritative. | Task 12 |
 | 11 | The 26 and the 22 disagreement sets are nested | They are not. 21 wrong under both, 5 wrong only under the 2dp rule (64, 75, 113, 180, 212), 1 wrong only under round-aware (37). 26 minus 22 is a net figure. | `02_calibration_table.md` |
 | 12 | Proposition 2 cannot hold at 33.3 given 10 false of 103 | The threshold-selected set is 64, not 103. At 33.3: n = 64, k = 2, p_hat = 0.0312, CP95 = 0.0951. The rule holds and 33.3 is the minimum satisfying threshold. | `02_calibration_table.md` |
 
@@ -349,17 +349,17 @@ occurrences.
 
 ## 13. Task 12. Packet annotation
 
-22 copies regenerated in `reanalysis/reviewer_round/k3_packets_ticked/`:
+22 copies regenerated in `reanalysis/analyses/case_packets_ticked/`:
 **2 ticked (b)**, **20 annotated** with a new line `(d) text is not a faithful
 encoding of the labeled instance: [x]` plus the sub-class in the notes.
-**No (c) box is ticked anywhere.** The originals under `outputs/e3/review/`
+**No (c) box is ticked anywhere.** The originals under `outputs/e3/case_packets/`
 were verified untouched (0 files contain `[x]`).
 
 ---
 
 ## 14. Task 13. Release hygiene
 
-See `13_release.md`. Branch `reviewer-round-2026-09`, commit `0cd3f30`, one
+See `13_release.md`. Branch `analyses-2026-09`, commit `0cd3f30`, one
 commit ahead of `origin/main`, **not pushed**. Secret sweep: **0 hits over
 1,203 files**. Six files shipped under `release/`, all aggregate or
 identifier-only, verified to contain zero vault answers.

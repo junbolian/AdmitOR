@@ -21,7 +21,7 @@ Inputs
     --vault          datasets/vault/optmath-train-300-labels.jsonl (in git)
     --build-summary  artifacts/e1/libraries/skill_library_gate.build_summary.json
                      (in git; optional)
-    --out            default reanalysis/reviewer_round
+    --out            default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -65,7 +65,7 @@ def main():
     ap.add_argument("--runs", default="artifacts/e1/certify_runs")
     ap.add_argument("--vault", default="datasets/vault/optmath-train-300-labels.jsonl")
     ap.add_argument("--build-summary", dest="build_summary", default="")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 

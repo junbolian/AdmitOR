@@ -11,7 +11,7 @@ present in that arm's library.
 Inputs
     --eval-root  <host>/outputs/e1/eval (private, not distributed)
     --libs       artifacts/e1/libraries (in git)
-    --out        default reanalysis/reviewer_round
+    --out        default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -40,7 +40,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--eval-root", required=True)
     ap.add_argument("--libs", default="artifacts/e1/libraries")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
 

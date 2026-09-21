@@ -1,8 +1,8 @@
-"""AdmitOR E3 forensics -- review_packet.py
+"""AdmitOR E3 forensics -- case_packet.py
 
-Assembles one human-review markdown packet per disputed admission:
+Assembles one human-audit markdown packet per disputed admission:
 problem text, certified value vs vault label, gap, and the clique
-members' code, so a reviewer can classify each case as
+members' code, so an auditor can classify each case as
 (a) gate model defect, (b) label error, or (c) ambiguous problem text
 with a legitimate alternative reading.
 
@@ -16,14 +16,14 @@ Inputs
 
 Outputs
     <out>/<sample_id>.md, one markdown packet per disputed admission, each
-    with an unfilled classification checklist for the reviewer.
+    with an unfilled classification checklist for the auditor.
 
 Example invocation (from the repository root)
-    python scripts/review_packet.py \\
+    python scripts/case_packet.py \\
         --report artifacts/e3/e3_report_v06.json \\
         --e1-runs artifacts/e1/certify_runs \\
         --workorder outputs/e1/gate_workorder.jsonl \\
-        --out outputs/e3/review
+        --out outputs/e3/case_packets
 """
 
 from __future__ import annotations
@@ -87,7 +87,7 @@ def main() -> None:
         with open(os.path.join(a.out, f"{sid}.md"), "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
         n += 1
-    print(f"[review] wrote {n} packets -> {a.out}")
+    print(f"[packets] wrote {n} packets -> {a.out}")
 
 
 if __name__ == "__main__":

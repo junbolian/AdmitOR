@@ -17,7 +17,7 @@ Inputs (all required on the command line)
     --runs           artifacts/e1/certify_runs (in git)
     --vault          datasets/vault/optmath-train-300-labels.jsonl (in git)
     --build-summary  artifacts/e1/libraries/skill_library_gate.build_summary.json (in git)
-    --admitted       release/reviewer_round/admitted_ids_wild_138.txt (in git)
+    --admitted       release/analyses/admitted_ids_wild_138.txt (in git)
     --eval-root      <host>/outputs/e1/eval, uses the gate arm
                      (private, not distributed)
     --named          library file title to classify (item 1)
@@ -29,7 +29,7 @@ not distributed" = kept by the authors (<host> below is the OptSkills host
 clone the experiments ran in).
 
 Reproduce (from the repository root)
-    python scripts/poison_provenance.py --arm <host>/outputs/e1/arms/gate.jsonl --runs artifacts/e1/certify_runs --vault datasets/vault/optmath-train-300-labels.jsonl --build-summary artifacts/e1/libraries/skill_library_gate.build_summary.json --admitted release/reviewer_round/admitted_ids_wild_138.txt --eval-root <host>/outputs/e1/eval --out reanalysis/reviewer_round
+    python scripts/poison_provenance.py --arm <host>/outputs/e1/arms/gate.jsonl --runs artifacts/e1/certify_runs --vault datasets/vault/optmath-train-300-labels.jsonl --build-summary artifacts/e1/libraries/skill_library_gate.build_summary.json --admitted release/analyses/admitted_ids_wild_138.txt --eval-root <host>/outputs/e1/eval --out reanalysis/analyses
 
 Outputs
     <out>/03_0_poison_provenance.md
@@ -156,8 +156,8 @@ def main():
     w("## 2. Poison-bearing files, problem by problem")
     w()
     w("The per-sample K3 attribution (class b, d-missing, d-truncated) is "
-      "**not recorded in any artifact**: the 22 review packets under "
-      "`outputs/e3/review/` carry unticked `[ ] (a) / (b) / (c)` boxes (0 of 22 "
+      "**not recorded in any artifact**: the 22 case packets under "
+      "`outputs/e3/case_packets/` carry unticked `[ ] (a) / (b) / (c)` boxes (0 of 22 "
       "ticked) and `wrong_admission_detail` has no class field. The class "
       "column below is therefore left as `not recorded`.")
     w()

@@ -18,7 +18,7 @@ Inputs
                admitor-v1.0.0-runlogs.zip (release asset)
     --outputs  <host>/outputs, the tree holding runtime_logs
                (private, not distributed)
-    --out      default reanalysis/reviewer_round
+    --out      default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -114,7 +114,7 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--runlog", required=True)
     ap.add_argument("--outputs", required=True)
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
 
     wins = windows(a.outputs)
@@ -183,7 +183,7 @@ def main():
     w("python admitor-infra\\runlog_phase_audit.py `")
     w("    --runlog OptSkills-main\\runs\\host_llm.jsonl `")
     w("    --outputs OptSkills-main\\outputs `")
-    w("    --out AdmitOR\\reanalysis\\reviewer_round")
+    w("    --out AdmitOR\\reanalysis\\analyses")
     w("```")
     w()
     w("## Ledger totals")

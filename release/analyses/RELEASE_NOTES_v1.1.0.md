@@ -1,6 +1,6 @@
-# v1.1.0: reviewer-round analyses (September 2026)
+# v1.1.0: additional analyses (September 2026)
 
-Every number in the revised manuscript was regenerated from these assets and the git checkout before this release; see REPORT_RELEASE.md for the per-script table. The two exceptions are those stated in the README: the 88 extractor calls of the two-extractor preliminary (outputs shipped under `release/reviewer_round/09_extractions/`) and the feasibility-resampling diagnostic (outputs shipped as recorded).
+Every number in the revised manuscript was regenerated from these assets and the git checkout before this release; see REPORT_RELEASE.md for the per-script table. The two exceptions are those stated in the README: the 88 extractor calls of the two-extractor preliminary (outputs shipped under `release/analyses/09_extractions/`) and the feasibility-resampling diagnostic (outputs shipped as recorded).
 
 ## Release assets
 
@@ -17,7 +17,7 @@ The host run ledger (93,909 records) remains the `v1.0.0` release asset and is u
 
 ## New scripts (`scripts/`)
 
-Reviewer-round analyses: `reviewer_inventory.py`, `e3_certificate_numbers.py`, `code_facts.py`, `runlog_phase_audit.py`, `gate_arm_composition.py`, `poison_provenance.py`, `serving_variant_join.py`, `panel_base_judges.py`, `candidate_crosstab.py`, `task3_additions.py`, `assemble_decomposition_report.py`, `corrected_bootstrap.py`, `format_bootstrap_report.py`, `retrieval_stats.py`, `retrieval_final.py`, `disjointness_audit.py`, `numeric_coverage.py`, `k4_restricted.py`, `two_extractor_run.py`, `two_extractor_agreement.py`, `feasibility_resampling.py`, `admitor_reanalysis.py`.
+Additional analyses: `artifact_inventory.py`, `e3_certificate_numbers.py`, `code_facts.py`, `runlog_phase_audit.py`, `gate_arm_composition.py`, `poison_provenance.py`, `serving_variant_join.py`, `panel_base_judges.py`, `candidate_crosstab.py`, `task3_additions.py`, `assemble_decomposition_report.py`, `corrected_bootstrap.py`, `format_bootstrap_report.py`, `retrieval_stats.py`, `retrieval_final.py`, `disjointness_audit.py`, `numeric_coverage.py`, `k4_restricted.py`, `two_extractor_run.py`, `two_extractor_agreement.py`, `feasibility_resampling.py`, `admitor_reanalysis.py`.
 
 Release hygiene: `secret_sweep.py`, `release_content_check.py`.
 
@@ -27,14 +27,14 @@ Each script's module docstring states its inputs (in git, run records, ledger), 
 
 ## New files in git
 
-- `release/reviewer_round/`: every reviewer-round output (calibration table, judge decomposition and the five derived judges' verdicts, bootstrap, retrieval, serving-variant join, provenance, numeric coverage, restricted K4, two-extractor preliminary with the 88 extractions and their call ledgers, feasibility resampling, admitted id lists) and `REPORT_reviewer_round_2026-09.md`.
-- `release/k3_packets/`: the 22 K3 review packets; `release/k3_attribution.csv` points at them.
+- `release/analyses/`: every analysis output (calibration table, judge decomposition and the five derived judges' verdicts, bootstrap, retrieval, serving-variant join, provenance, numeric coverage, restricted K4, two-extractor preliminary with the 88 extractions and their call ledgers, feasibility resampling, admitted id lists) and `REPORT_analyses_2026-09.md`.
+- `release/case_packets/`: the 22 K3 case packets; `release/k3_attribution.csv` points at them.
 - `release/e0/scorecard.json`: the reported column of Table 9 and the plate of each row.
 - `paper/make_fig1.py`: regenerates Figure 1; `figures/fig1_overview.pdf` is the regenerated figure (the PNG copy is removed).
 
 ## README
 
-- New sections: "Reviewer-round analyses (September 2026)", "Model pins and the response-side audit", "Host backbone availability", and "Reproducing the paper's numbers" (one row per script with its inputs, command, outputs and manuscript location).
+- New sections: "Additional analyses (September 2026)", "Model pins and the response-side audit", "Host backbone availability", and "Reproducing the paper's numbers" (one row per script with its inputs, command, outputs and manuscript location).
 - Corrections checked: the README was searched for a three-candidate informative rule, a cross-family description of the majority-vote arm, ReLoop as a pipeline component, a library built at the calibrated threshold, a claim that every call was served by the pinned backbone, and a `gpt-5.1` pin. None occurred outside the replaced section, so no sentence needed correcting. The new sections state the admission-time rule of the E1 library and the calibrated threshold tau = 33.3 as separate rules (judge table), the majority-vote judge as a vote over host samples, the `gpt-5.4` pin set through `ADMITOR_MODEL_B`, and the response-side audit counts.
 - Bootstrap intervals updated to the manuscript's values: gate minus vote +3.53 [+0.87, +6.68], gate minus ground truth +4.46 [+2.34, +6.65].
 - Installation documents the pinned environment (`environment.yml`: Python 3.12.12, numpy 2.4.4, scipy 1.18.0, Pyomo 6.10.0, HiGHS 1.15.1) in which the outputs were re-verified.

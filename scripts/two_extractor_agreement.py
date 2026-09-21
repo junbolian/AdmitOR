@@ -21,13 +21,13 @@ parameters with conflicting values and (c) agreeing parameters, per group and
 in total.
 
 Inputs
-    --cases        release/reviewer_round/09_cases.csv (in git)
-    --extractions  release/reviewer_round/09_extractions (in git)
+    --cases        release/analyses/09_cases.csv (in git)
+    --extractions  release/analyses/09_extractions (in git)
     --runs         <host>/outputs/e1/certify_runs, needs the pilot spec.json
                    (private, not distributed)
     --workorder    <host>/outputs/e1/gate_workorder.jsonl, the problem text
                    (private, not distributed)
-    --out          default reanalysis/reviewer_round
+    --out          default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -194,11 +194,11 @@ def decompose(A, B):
 
 def main():
     ap = argparse.ArgumentParser(description="Task 9 agreement analysis.")
-    ap.add_argument("--cases", default="release/reviewer_round/09_cases.csv")
-    ap.add_argument("--extractions", default="release/reviewer_round/09_extractions")
+    ap.add_argument("--cases", default="release/analyses/09_cases.csv")
+    ap.add_argument("--extractions", default="release/analyses/09_extractions")
     ap.add_argument("--runs", required=True)
     ap.add_argument("--workorder", required=True)
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
 
     q = {}

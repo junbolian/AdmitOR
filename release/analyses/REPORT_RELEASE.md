@@ -1,4 +1,4 @@
-# REPORT_RELEASE: GitHub release update for the reviewer round (v1.1.0)
+# REPORT_RELEASE: GitHub release update for the analysis round (v1.1.0)
 
 Work order `CLAUDE_CODE_GITHUB_RELEASE_2026-09-16` with its amendments (T5 to T13 replaced; rulings on
 scipy, environment, tool fixes, and the four "every number from a released script" items).
@@ -13,19 +13,19 @@ git log --oneline -12 main
 6df8202 release: v1.1.0 release notes
 2be0999 release: bootstrap report regenerated with the fixed writer
 4f41ca8 paper: regenerated Figure 1 and its generator
-a64a235 README: reviewer-round results, pins and availability, script index with input provenance
+a64a235 README: analysis results, pins and availability, script index with input provenance
 65e5bf4 analysis: every manuscript number from a released script
-5f049d5 release: K3 review packets and repo-relative attribution paths
+5f049d5 release: K3 case packets and repo-relative attribution paths
 2978e1f release tools: real-path shape in the scrubber, sk- word boundary in the sweep, asset mode in the content check
 54f8580 release: bootstrap stdout regenerated with the path-scrubbed script
-655838b analysis: reviewer-round scripts, path-scrubbed, docstring reproduce commands
-e6f6641 release: reviewer-round outputs (September 2026)
+655838b analysis: analysis scripts, path-scrubbed, docstring reproduce commands
+e6f6641 release: analysis outputs (September 2026)
 7e32378 gitignore: reanalysis/ (local working outputs)
-0cd3f30 docs: reviewer-round analyses, pins, provenance and release files
+0cd3f30 docs: additional analyses, pins, provenance and release files
 
 git tag: v1.0.0, v1.1.0 (annotated, on 6df8202)
 origin/main = 6df8202, fast-forward from 8fd0397; no force push, no amend
-reviewer-round-2026-09 = 6df8202 (pushed)
+analyses-2026-09 = 6df8202 (pushed)
 anon-mirror = deleted 2026-09-17 (was 2e72ec2; no anonymized mirror needed)
 ```
 
@@ -49,7 +49,7 @@ owner identity with no co-author line. `secret_sweep.py` ran before every commit
 | runtime event streams `outputs/**/runtime_logs/*.events.jsonl` (95) | neither | release asset (core) |
 | host run ledger (93,909 records, scrubbed) | release asset of v1.0.0 | unchanged, release asset of v1.0.0 |
 | vault, datasets | in git | in git |
-| K3 review packets (22) | neither | in git `release/k3_packets/` |
+| K3 case packets (22) | neither | in git `release/case_packets/` |
 
 SCRIPTS_DIR = `scripts/`. T1 gate: libraries 130 / 145 / 163 / 101, 298 stream verdicts: PASS.
 `00_inventory.md` counts at T1: certify_runs 298; libraries gt 130, vote 145, runsok 163, gate 101 (all PASS).
@@ -59,22 +59,22 @@ SCRIPTS_DIR = `scripts/`. T1 gate: libraries 130 / 145 / 163 / 101, 298 stream v
 | Task | Commit | Files touched |
 |---|---|---|
 | T2 `.gitignore` | `7e32378` | `.gitignore` |
-| T2 outputs | `e6f6641` | 1,613 files under `release/reviewer_round/`: 34 top-level outputs, `03_verdicts/` 1,490 files (5 judges x 298), `09_extractions/` 88 extractions + 2 call ledgers. Names unchanged, no mapping. `REPORT_reviewer_round_2026-09.md` = bundle `REPORT.md` (byte-identical to the local one). `00_inventory.md` not shipped (section 8). |
+| T2 outputs | `e6f6641` | 1,613 files under `release/analyses/`: 34 top-level outputs, `03_verdicts/` 1,490 files (5 judges x 298), `09_extractions/` 88 extractions + 2 call ledgers. Names unchanged, no mapping. `REPORT_analyses_2026-09.md` = bundle `REPORT.md` (byte-identical to the local one). `00_inventory.md` not shipped (section 8). |
 | T3 scripts | `655838b` | 21 scripts into `scripts/` + `requirements-analysis.txt` |
-| T3 follow-up | `54f8580` | `release/reviewer_round/04_bootstrap_raw.txt` (4,598 B), regenerated with the path-scrubbed script, numbers identical |
+| T3 follow-up | `54f8580` | `release/analyses/04_bootstrap_raw.txt` (4,598 B), regenerated with the path-scrubbed script, numbers identical |
 | tool fixes | `2978e1f` | `release_tools/scrub_logs.py`, `scripts/secret_sweep.py`, `scripts/release_content_check.py` |
-| T6 packets | `5f049d5` | `release/k3_packets/` (22 packets), `release/k3_attribution.csv` (path column only) |
-| items 1 to 4 | `65e5bf4` | `scripts/two_extractor_agreement.py`, `release/reviewer_round/09_two_extractor.md` (2,654 B), `scripts/assemble_decomposition_report.py`, `scripts/admitor_reanalysis.py`, `scripts/e0_scorecard.py`, `release/e0/scorecard.json` |
+| T6 packets | `5f049d5` | `release/case_packets/` (22 packets), `release/k3_attribution.csv` (path column only) |
+| items 1 to 4 | `65e5bf4` | `scripts/two_extractor_agreement.py`, `release/analyses/09_two_extractor.md` (2,654 B), `scripts/assemble_decomposition_report.py`, `scripts/admitor_reanalysis.py`, `scripts/e0_scorecard.py`, `release/e0/scorecard.json` |
 | T7 README | `a64a235` | `README.md` |
 | T8 figure | `4f41ca8` | `figures/fig1_overview.pdf` (Jacob's regenerated copy), `figures/fig1_overview.png` removed from git (restored 2026-09-17 from the v2.1 zip, the PNG exported with the same PDF), `paper/make_fig1.py`, `paper/README.md`, `artifacts/MANIFEST.md` (png row removed, pdf row refreshed by `make_manifest.py --write`; verify: 19 verified, 0 mismatched, 0 missing), `README.md` (overview image replaced by a link to the PDF, since the PNG is no longer in git) |
-| T9 bootstrap report | `2be0999` | `scripts/format_bootstrap_report.py`, `release/reviewer_round/04_bootstrap.md` (2,298 B; the only diff hunk is the command block, lines 7 to 17) |
-| T11 notes | `6df8202` | `release/reviewer_round/RELEASE_NOTES_v1.1.0.md` |
-| T12 mirror (withdrawn, branch deleted) | `2e72ec2` | `README.md`, `LICENSE`, `release/reviewer_round/RELEASE_NOTES_v1.1.0.md`, `release/reviewer_round/REPORT_reviewer_round_2026-09.md` |
+| T9 bootstrap report | `2be0999` | `scripts/format_bootstrap_report.py`, `release/analyses/04_bootstrap.md` (2,298 B; the only diff hunk is the command block, lines 7 to 17) |
+| T11 notes | `6df8202` | `release/analyses/RELEASE_NOTES_v1.1.0.md` |
+| T12 mirror (withdrawn, branch deleted) | `2e72ec2` | `README.md`, `LICENSE`, `release/analyses/RELEASE_NOTES_v1.1.0.md`, `release/analyses/REPORT_analyses_2026-09.md` |
 
 T3 script byte counts at `655838b`: candidate_crosstab 5,969; code_facts 13,029; corrected_bootstrap 20,408;
 disjointness_audit 8,474; e3_certificate_numbers 14,390; feasibility_resampling 10,561; gate_arm_composition 9,581;
 k4_restricted 5,580; numeric_coverage 10,577; panel_base_judges 15,257; poison_provenance 10,688;
-release_content_check 6,648; retrieval_final 5,282; retrieval_stats 2,792; reviewer_inventory 10,657;
+release_content_check 6,648; retrieval_final 5,282; retrieval_stats 2,792; artifact_inventory 10,657;
 runlog_phase_audit 10,312; secret_sweep 4,042; serving_variant_join 10,286; task3_additions 6,937;
 two_extractor_agreement 10,894; two_extractor_run 6,763. Code changes beyond the docstrings are path scrubbing
 only (repo-relative argparse defaults, `../admitor-core` imports pointed at `scripts/` and the `admitor` package,
@@ -88,7 +88,7 @@ private copies.
 
 ### 4.1 Interpreter history
 
-- The reviewer-round outputs were first produced under base Anaconda Python 3.8.5 / scipy 1.10.1.
+- The analysis outputs were first produced under base Anaconda Python 3.8.5 / scipy 1.10.1.
 - T4 first ran in the local `admitor` env (Python 3.11.15), which had no scipy (p-values `nan`); re-run under base
   Anaconda 3.8.5 / scipy 1.10.1: all outputs byte-identical.
 - T4b: scipy 1.17.1 was installed into `admitor` per the first ruling (the `admitor` env is left as it is); the
@@ -132,7 +132,7 @@ bootstrap stdout differs only in the scorer-import and write-path lines.
 | `e3_calibrate.py replay` | git + asset work order | PASS | report identical to `e3_report_v06.json` |
 | `k4_matrix.py` | git | PASS | `k4_matrix.json` identical |
 | `e1_relabel.py` (4 arms) | asset | PASS | all four summaries identical to the private run (gate: 151 eligible, 421 positive, 479 negative, 127 no consensus) |
-| `review_packet.py` | git + asset | PASS for numbers | 21 of 22 packets byte-identical; `sample_98.md` in the shipped set lacks the unfilled classification checklist the generator writes (removed by hand from the original packet; no numbers) |
+| `case_packet.py` | git + asset | PASS for numbers | 21 of 22 packets byte-identical; `sample_98.md` in the shipped set lacks the unfilled classification checklist the generator writes (removed by hand from the original packet; no numbers) |
 | `feasibility_resampling.py` | asset | NOT RUN | no verification mode; outputs shipped as recorded |
 | `two_extractor_run.py`, `e1_certify.py`, `e1_rebuild.py` | asset + model calls | NOT RUN | model calls |
 
@@ -224,7 +224,7 @@ The 16 doubled-backslash spans (8 distinct paths, each occurring twice):
 
 ### 5.4 Verification gate from the asset
 
-Fresh clone of `reviewer-round-2026-09`, the four parts unzipped into `../run-records`, the v1.0.0 ledger unzipped
+Fresh clone of `analyses-2026-09`, the four parts unzipped into `../run-records`, the v1.0.0 ledger unzipped
 next to it: every script in section 4.2 marked "asset" reproduces as listed. No number differs.
 
 ## 6. T8/T10 sweep counts (final, before push)
@@ -238,9 +238,9 @@ next to it: every script in section 4.2 marked "asset" reproduces as listed. No 
 ## 7. Release
 
 - Release: https://github.com/junbolian/AdmitOR/releases/tag/v1.1.0, created through the GitHub API (no `gh`),
-  title "v1.1.0: reviewer-round analyses (September 2026)", body = `release/reviewer_round/RELEASE_NOTES_v1.1.0.md`.
+  title "v1.1.0: additional analyses (September 2026)", body = `release/analyses/RELEASE_NOTES_v1.1.0.md`.
 - Four assets uploaded (sizes confirmed by the API); post-upload download check in section 7.1.
-- Release notes: see `release/reviewer_round/RELEASE_NOTES_v1.1.0.md` (text as published). The required sentence
+- Release notes: see `release/analyses/RELEASE_NOTES_v1.1.0.md` (text as published). The required sentence
   is followed by the two exceptions stated in the README.
 
 ### 7.1 Post-release download check
@@ -272,5 +272,5 @@ the authors' names (it is public). `main` was never touched by the anonymization
 1. Optionally re-download the core, eval and cache parts and compare their sha256 with section 5.1
    (section 7.1).
 2. arXiv v2 after 2026-09-25.
-3. Optional: rotate the relay key (it was pasted in chat during the reviewer round); decide whether
+3. Optional: rotate the relay key (it was pasted in chat during the analysis round); decide whether
    `pytest` should stay pinned in `environment.yml`.

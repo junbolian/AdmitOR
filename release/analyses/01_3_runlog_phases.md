@@ -7,7 +7,7 @@ conda activate admitor
 python admitor-infra\runlog_phase_audit.py `
     --runlog OptSkills-main\runs\host_llm.jsonl `
     --outputs OptSkills-main\outputs `
-    --out AdmitOR\reanalysis\reviewer_round
+    --out AdmitOR\reanalysis\analyses
 ```
 
 ## Ledger totals

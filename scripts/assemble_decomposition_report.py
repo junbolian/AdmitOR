@@ -1,4 +1,4 @@
-"""Assemble release/reviewer_round/03_decomposition.md from script outputs (zero token).
+"""Assemble release/analyses/03_decomposition.md from script outputs (zero token).
 
 Purpose
     03_decomposition.md was assembled in two parts: panel_base_judges.py writes
@@ -23,8 +23,8 @@ Inputs
     --out            default: overwrite --problem-md in place
 
 Reproduce (from the repository root, after panel_base_judges.py,
-task3_additions.py and candidate_crosstab.py have written into reanalysis/reviewer_round)
-    python scripts/assemble_decomposition_report.py --problem-md reanalysis/reviewer_round/03_decomposition.md --candidate-csv reanalysis/reviewer_round/03_decomposition_candidate.csv --out release/reviewer_round/03_decomposition.md
+task3_additions.py and candidate_crosstab.py have written into reanalysis/analyses)
+    python scripts/assemble_decomposition_report.py --problem-md reanalysis/analyses/03_decomposition.md --candidate-csv reanalysis/analyses/03_decomposition_candidate.csv --out release/analyses/03_decomposition.md
 
 Outputs
     <out>, the full markdown report.

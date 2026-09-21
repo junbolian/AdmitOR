@@ -11,7 +11,7 @@ python scripts/corrected_bootstrap.py run `
     --arm runsok=<run-records>/outputs/e1/eval/runsok `
     --arm gate=<run-records>/outputs/e1/eval/gate `
     --rule-arm gt --rule-plate optibench --reps 10000 --seed 42 `
-    --score-eval scripts/score_eval.py --out release/reviewer_round
+    --score-eval scripts/score_eval.py --out release/analyses
 ```
 
 Seed 42, 10,000 paired resamples stratified by plate. R0 = all 1,100 items;

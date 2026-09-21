@@ -9,7 +9,7 @@ SequenceMatcher runs only with --with-difflib.
 
 Inputs
     --datasets  datasets (in git: benchmark/, train_set/)
-    --out       default reanalysis/reviewer_round
+    --out       default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -71,7 +71,7 @@ def load(p, key="question"):
 def main():
     ap = argparse.ArgumentParser(description="Task 6 provenance and disjointness.")
     ap.add_argument("--datasets", default="datasets")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     ap.add_argument("--with-difflib", action="store_true")
     a = ap.parse_args()
     D = a.datasets

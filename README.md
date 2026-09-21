@@ -20,9 +20,8 @@
 
 </div>
 
-Revised manuscript (September 2026) and the reviewer-round analyses: see
-"Reviewer-round analyses (September 2026)" below. The arXiv version will be updated after the
-review period.
+Revised manuscript (September 2026) and the additional analyses: see
+"Additional analyses (September 2026)" below. The arXiv version will be updated after the next revision.
 
 ---
 
@@ -98,12 +97,12 @@ AdmitOR/
 ├── scripts/          EXPERIMENT DRIVERS
 │   ├── E0            data_audit · e0_scorecard
 │   ├── E1            label_oracle · e1_relabel · e1_certify · e1_rebuild
-│   ├── E3            e3_calibrate · k4_matrix · review_packet
+│   ├── E3            e3_calibrate · k4_matrix · case_packet
 │   ├── shared        score_eval · paired_bootstrap · regen_derived · runlog
-│   └── reviewer      the reviewer-round analyses (see "Reproducing the paper's numbers")
+│   └── analyses      the additional analyses (see "Reproducing the paper's numbers")
 ├── datasets/         benchmark/ · train_set/ · vault/   (third-party, see datasets/README.md)
 ├── artifacts/        verdicts · skill libraries · E3 reports · run-ledger excerpt
-├── release/          reviewer-round outputs · K3 review packets · E0 scorecard
+├── release/          analysis outputs · K3 case packets · E0 scorecard
 ├── patches/          OptSkills host patches as unified diffs
 ├── release_tools/    scrub_logs.py · make_manifest.py
 ├── tests/            offline suite, no API key needed
@@ -121,7 +120,7 @@ pytest -q          # 14 passed, fully offline, no API key
 ```
 
 `environment.yml` is the pinned specification. It is the environment the E1 experiments ran
-in, and every shipped output under `release/reviewer_round/` was re-verified in it: Python
+in, and every shipped output under `release/analyses/` was re-verified in it: Python
 3.12.12, numpy 2.4.4, scipy 1.18.0, Pyomo 6.10.0, HiGHS 1.15.1 (gurobipy 13.0.1 optional).
 The code runs on Python 3.8+.
 
@@ -317,19 +316,19 @@ The complete scrubbed run ledger (**93,909** records) is attached to the
 rather than committed, since it grows with every campaign. The run records of every arm
 (collection, relabeled arms, certification runs with specifications and candidate programs,
 evaluation trajectories, response cache, runtime logs) are the four-part v1.1.0 release asset;
-`release/` holds the reviewer-round outputs, the 22 K3 review packets and the E0 scorecard.
+`release/` holds the analysis outputs, the 22 K3 case packets and the E0 scorecard.
 Everything released passed through `release_tools/scrub_logs.py`, which is committed so the
 scrubbing is auditable.
 
 ---
 
-## Reviewer-round analyses (September 2026)
+## Additional analyses (September 2026)
 
 All analyses in this section are zero-token: no script in it calls a model. Their inputs are
 the released verdicts and libraries (in git), the run records (release asset
 `admitor-v1.1.0-run-records.zip`, see "Reproducing the paper's numbers"), and the host call
-ledger (release asset of v1.0.0). Outputs are under `release/reviewer_round/`;
-`REPORT_reviewer_round_2026-09.md` there is the full report. Three of the analyses run from
+ledger (release asset of v1.0.0). Outputs are under `release/analyses/`;
+`REPORT_analyses_2026-09.md` there is the full report. Three of the analyses run from
 the git checkout alone (`task3_additions.py`, `disjointness_audit.py`, `k4_restricted.py`);
 the others need the run-records asset unpacked next to the checkout. One exception:
 `feasibility_resampling.py` re-solves candidate programs and its outputs are shipped as
@@ -402,7 +401,7 @@ The two-extractor preliminary (`two_extractor_run.py`, `two_extractor_agreement.
 the only model calls in this round) compares three extractor families on the 22 audited
 disagreements and 22 concordant controls: raw parameter names disagree in 22/22 of both groups;
 after aligning parameters by shape and value, 18/22 against 21/22 (Fisher p = 0.34); a full
-three-way alignment succeeds in 5 of 44 cases. Outputs under `release/reviewer_round/09_*`.
+three-way alignment succeeds in 5 of 44 cases. Outputs under `release/analyses/09_*`.
 
 ### Feasibility-preserving resampling (manuscript Appendix C)
 
@@ -423,7 +422,7 @@ The 300-problem stream is the first 300 problems by index of the OptMATH trainin
 calibration set is a stratified sample of NANO-CO. No stream or calibration item matches any of
 the 1,100 evaluation items exactly, after normalization, or as a near duplicate (5-gram Jaccard
 at least 0.8); maximum Jaccard 0.2059 (stream) and 0.0201 (calibration). Hashes in
-`release/reviewer_round/06_provenance.md`. Script: `disjointness_audit.py`.
+`release/analyses/06_provenance.md`. Script: `disjointness_audit.py`.
 
 ## Model pins and the response-side audit
 
@@ -439,7 +438,7 @@ The extractor and candidate calls bypass the host transport and were never writt
 ledger, so only their request-side pins can be stated. Of the 60,000 ledger records, 5,025 fall
 in no runtime window and are reported as one unattributed bucket. A per-item join shows no
 association between the dated tag and either selection failures or accuracy
-(`release/reviewer_round/05b_serving_variant_join.md`).
+(`release/analyses/05b_serving_variant_join.md`).
 
 ## Host backbone availability
 
@@ -449,7 +448,7 @@ Re-running any arm that calls the host backbone requires an endpoint that serves
 V3.2 on 2026-07-16; Alibaba Bailian announced removal for 2026-10-10. The manuscript's numbers are recomputable without model calls from the git checkout plus the
 two release assets (run records, host call ledger); the exceptions are the 88 extractor calls of
 the two-extractor preliminary, whose outputs are shipped under
-`release/reviewer_round/09_extractions/`, and the feasibility-resampling diagnostic, whose
+`release/analyses/09_extractions/`, and the feasibility-resampling diagnostic, whose
 outputs are shipped as recorded. Only new candidate generation needs the host backbone.
 
 ## Reproducing the paper's numbers
@@ -470,7 +469,7 @@ local paths only) and checked with `scripts/secret_sweep.py` and
 | `admitor-v1.1.0-run-records-cache.zip` | `outputs/e1/llm_cache_eval`, eval response cache | 40,208 | 162,549,387 | 71,862,628 | `f65e9541e6f4d209a59aae6e8b617103675d80e8a7b11934281961c17885127e` |
 
 All commands run from the repository root in the pinned environment (see Installation). Scripts
-without `--out` in the command write to `reanalysis/reviewer_round/` (gitignored); compare
+without `--out` in the command write to `reanalysis/analyses/` (gitignored); compare
 against the shipped files under `release/`.
 
 | Script | Inputs | Command | Output | Paper location |
@@ -485,25 +484,25 @@ against the shipped files under `release/`.
 | `k4_matrix.py` | git | `python scripts/k4_matrix.py --e1-runs artifacts/e1/certify_runs --out k4_matrix.json` | `k4_matrix.json` | Section 4.2 (chi-square 30.96), Appendix C Table 5 |
 | `k4_restricted.py` | git | `python scripts/k4_restricted.py` | `08_k4_restricted.md` | Section 4.2 (chi-square 8.75), Appendix C |
 | `panel_base_judges.py` | git + run records | `python scripts/panel_base_judges.py --collect <rr>/outputs/e1/collect/trajectories.jsonl` | `03_verdicts/`, `03_decomposition.md`, `03_decomposition_problem.csv`, `03_pairs.csv` | Section 4.2 Table 3, Appendix C "Judge ablation details" |
-| `candidate_crosstab.py` | git + run records | `python scripts/candidate_crosstab.py --arms runsok=<rr>/outputs/e1/arms/runsok.jsonl --arms vote=<rr>/outputs/e1/arms/vote.jsonl --arms gate_asdeployed=<rr>/outputs/e1/arms/gate.jsonl --arms panel_base_2of3=<arm> --arms panel_base_3of3=<arm> --arms gate_tau=<arm>` (derived arms: `python scripts/e1_relabel.py --collect <rr>/outputs/e1/collect/trajectories.jsonl --arm gate --verdicts-dir reanalysis/reviewer_round/03_verdicts/<judge> --out <arm>`) | `03_decomposition_candidate.csv` | Section 4.2 Table 3, Appendix C "Judge ablation details" |
+| `candidate_crosstab.py` | git + run records | `python scripts/candidate_crosstab.py --arms runsok=<rr>/outputs/e1/arms/runsok.jsonl --arms vote=<rr>/outputs/e1/arms/vote.jsonl --arms gate_asdeployed=<rr>/outputs/e1/arms/gate.jsonl --arms panel_base_2of3=<arm> --arms panel_base_3of3=<arm> --arms gate_tau=<arm>` (derived arms: `python scripts/e1_relabel.py --collect <rr>/outputs/e1/collect/trajectories.jsonl --arm gate --verdicts-dir reanalysis/analyses/03_verdicts/<judge> --out <arm>`) | `03_decomposition_candidate.csv` | Section 4.2 Table 3, Appendix C "Judge ablation details" |
 | `task3_additions.py` | git | `python scripts/task3_additions.py` | appends to `03_decomposition.md` | Section 4.2 Table 3, Appendix C "Judge ablation details" |
-| `assemble_decomposition_report.py` | git + run records | `python scripts/assemble_decomposition_report.py --problem-md reanalysis/reviewer_round/03_decomposition.md --candidate-csv reanalysis/reviewer_round/03_decomposition_candidate.csv --out release/reviewer_round/03_decomposition.md` | `03_decomposition.md` | Section 4.2 Table 3, Appendix C "Judge ablation details" |
+| `assemble_decomposition_report.py` | git + run records | `python scripts/assemble_decomposition_report.py --problem-md reanalysis/analyses/03_decomposition.md --candidate-csv reanalysis/analyses/03_decomposition_candidate.csv --out release/analyses/03_decomposition.md` | `03_decomposition.md` | Section 4.2 Table 3, Appendix C "Judge ablation details" |
 | `gate_arm_composition.py` | git + run records | `python scripts/gate_arm_composition.py --arm <rr>/outputs/e1/arms/gate.jsonl --build-summary artifacts/e1/libraries/skill_library_gate.build_summary.json` | `03_0_gate_arm_composition.md` | Section 4.2 (27 problems / 69 candidates / 8 poisoned, precision 0.936), Appendix C |
-| `poison_provenance.py` | git + run records | `python scripts/poison_provenance.py --arm <rr>/outputs/e1/arms/gate.jsonl --runs artifacts/e1/certify_runs --vault datasets/vault/optmath-train-300-labels.jsonl --build-summary artifacts/e1/libraries/skill_library_gate.build_summary.json --admitted release/reviewer_round/admitted_ids_wild_138.txt --eval-root <rr>/outputs/e1/eval --out reanalysis/reviewer_round` | `03_0_poison_provenance.md` | Section 4.2 (27 problems / 69 candidates / 8 poisoned, precision 0.936), Appendix C |
-| `corrected_bootstrap.py` | git + run records | `python scripts/corrected_bootstrap.py run --arm gt=<rr>/outputs/e1/eval/gt --arm vote=<rr>/outputs/e1/eval/vote --arm runsok=<rr>/outputs/e1/eval/runsok --arm gate=<rr>/outputs/e1/eval/gate --reps 10000 --seed 42 --score-eval scripts/score_eval.py --out release/reviewer_round` | stdout (`04_bootstrap_raw.txt`), `excluded_ids.txt` | Section 4.2 intervals, Appendix C |
+| `poison_provenance.py` | git + run records | `python scripts/poison_provenance.py --arm <rr>/outputs/e1/arms/gate.jsonl --runs artifacts/e1/certify_runs --vault datasets/vault/optmath-train-300-labels.jsonl --build-summary artifacts/e1/libraries/skill_library_gate.build_summary.json --admitted release/analyses/admitted_ids_wild_138.txt --eval-root <rr>/outputs/e1/eval --out reanalysis/analyses` | `03_0_poison_provenance.md` | Section 4.2 (27 problems / 69 candidates / 8 poisoned, precision 0.936), Appendix C |
+| `corrected_bootstrap.py` | git + run records | `python scripts/corrected_bootstrap.py run --arm gt=<rr>/outputs/e1/eval/gt --arm vote=<rr>/outputs/e1/eval/vote --arm runsok=<rr>/outputs/e1/eval/runsok --arm gate=<rr>/outputs/e1/eval/gate --reps 10000 --seed 42 --score-eval scripts/score_eval.py --out release/analyses` | stdout (`04_bootstrap_raw.txt`), `excluded_ids.txt` | Section 4.2 intervals, Appendix C |
 | `format_bootstrap_report.py` | git | `python scripts/format_bootstrap_report.py` | `04_bootstrap.md` | Section 4.2 intervals, Appendix C |
 | `retrieval_final.py` | git + run records | `python scripts/retrieval_final.py --eval-root <rr>/outputs/e1/eval` | `05_retrieval.md`, `05_retrieval.csv` | Section 4.2 (19 vs 30 files, 45%), Appendix C Table 10 |
 | `retrieval_stats.py` | git + run records | `python scripts/retrieval_stats.py --eval-root <rr>/outputs/e1/eval` | `05b_retrieval_concentration.md` | Section 4.2 (19 vs 30 files, 45%), Appendix C Table 10 |
 | `disjointness_audit.py` | git | `python scripts/disjointness_audit.py` | `06_provenance.md`, `06_similarity_pairs.md`, `06_max_similarity.csv` | Section 4 setup, Appendix C "Stream provenance and disjointness" |
-| `numeric_coverage.py` | git + run records | `python scripts/numeric_coverage.py --runs <rr>/outputs/e1/certify_runs --workorder <rr>/outputs/e1/gate_workorder.jsonl --admitted release/reviewer_round/admitted_ids_wild_138.txt --k3 release/k3_attribution.csv --calib-runs <rr>/outputs/e3/certify_runs --calib-labels <rr>/outputs/e3/e3_labels.jsonl --out reanalysis/reviewer_round` | `07_coverage.md`, `07_coverage.csv` | Section 4.3 (9 / 15 etc.), Appendix B.1 |
-| `two_extractor_run.py` | git + run records | `python scripts/two_extractor_run.py --family claude-sonnet-4-6 --workorder <rr>/outputs/e1/gate_workorder.jsonl` (and `--family gpt-5.4`; model calls, credentials from `OPTSKILL_BASE_URL` / `OPTSKILL_API_KEY`; outputs shipped under `release/reviewer_round/09_extractions/`) | `09_extractions/` | Section 4.3 (22/22, 21/22 vs 18/22), Appendix B.1 Table 4 |
+| `numeric_coverage.py` | git + run records | `python scripts/numeric_coverage.py --runs <rr>/outputs/e1/certify_runs --workorder <rr>/outputs/e1/gate_workorder.jsonl --admitted release/analyses/admitted_ids_wild_138.txt --k3 release/k3_attribution.csv --calib-runs <rr>/outputs/e3/certify_runs --calib-labels <rr>/outputs/e3/e3_labels.jsonl --out reanalysis/analyses` | `07_coverage.md`, `07_coverage.csv` | Section 4.3 (9 / 15 etc.), Appendix B.1 |
+| `two_extractor_run.py` | git + run records | `python scripts/two_extractor_run.py --family claude-sonnet-4-6 --workorder <rr>/outputs/e1/gate_workorder.jsonl` (and `--family gpt-5.4`; model calls, credentials from `OPTSKILL_BASE_URL` / `OPTSKILL_API_KEY`; outputs shipped under `release/analyses/09_extractions/`) | `09_extractions/` | Section 4.3 (22/22, 21/22 vs 18/22), Appendix B.1 Table 4 |
 | `two_extractor_agreement.py` | git + run records | `python scripts/two_extractor_agreement.py --runs <rr>/outputs/e1/certify_runs --workorder <rr>/outputs/e1/gate_workorder.jsonl` | `09_two_extractor.md`, `09_two_extractor.csv` | Section 4.3 (22/22, 21/22 vs 18/22), Appendix B.1 Table 4 |
 | `feasibility_resampling.py` | git + run records | `python scripts/feasibility_resampling.py --runs <rr>/outputs/e1/certify_runs` (re-solves the candidate programs; outputs shipped as recorded) | `11_feasibility_resampling.md`, `.csv` | Section 4.2 (8 of 57), Appendix C |
 | `runlog_phase_audit.py` | git + run records + ledger | `python scripts/runlog_phase_audit.py --runlog host_llm.scrubbed.jsonl --outputs <rr>/outputs` | `01_3_runlog_phases.md`, `.csv` | Appendix B pins paragraph |
 | `serving_variant_join.py` | git + run records | `python scripts/serving_variant_join.py --eval-root <rr>/outputs/e1/eval --cache <rr>/outputs/e1/llm_cache_eval` | `05b_serving_variant_join.md`, `.csv` | Appendix B pins paragraph |
 | `code_facts.py` | git + run records | `python scripts/code_facts.py --stream-runs <rr>/outputs/e1/certify_runs --calib-runs <rr>/outputs/e3/certify_runs --collect <rr>/outputs/e1/collect/trajectories.jsonl` | `01_code_facts_data.md` | Section 3 Step 2 and Step 3 (informative rule, tolerance), Appendix A remark (5) (173 of 298) |
-| `review_packet.py` | git + run records | `python scripts/review_packet.py --report artifacts/e3/e3_report_v06.json --e1-runs <rr>/outputs/e1/certify_runs --workorder <rr>/outputs/e1/gate_workorder.jsonl --out packets` | `release/k3_packets/`, classes in `release/k3_attribution.csv` | Section 4.3 audit, `release/k3_attribution.csv` |
-| `admitor_reanalysis.py` | git | `python scripts/admitor_reanalysis.py score --only-samples release/reviewer_round/admitted_ids_wild_138.txt` | stdout, `admitted_rows.json` | Section 4.3 (no continuous statistic reaches FDR <= 5% at >= 50% coverage) |
+| `case_packet.py` | git + run records | `python scripts/case_packet.py --report artifacts/e3/e3_report_v06.json --e1-runs <rr>/outputs/e1/certify_runs --workorder <rr>/outputs/e1/gate_workorder.jsonl --out packets` | `release/case_packets/`, classes in `release/k3_attribution.csv` | Section 4.3 audit, `release/k3_attribution.csv` |
+| `admitor_reanalysis.py` | git | `python scripts/admitor_reanalysis.py score --only-samples release/analyses/admitted_ids_wild_138.txt` | stdout, `admitted_rows.json` | Section 4.3 (no continuous statistic reaches FDR <= 5% at >= 50% coverage) |
 
 Release hygiene tools, not tied to a paper number: `scripts/secret_sweep.py`,
 `scripts/release_content_check.py`, `release_tools/scrub_logs.py`,

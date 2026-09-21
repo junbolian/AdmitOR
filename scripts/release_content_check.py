@@ -4,7 +4,7 @@ Purpose: before a release commit, check that (1) no shipped file under
 `release/` carries the answer vault (the vault file itself, a JSON `answer`
 key holding a vault value, or a CSV column that reproduces all 300 vault
 answers), (2) no shipped text file contains an absolute Windows path, and
-(3) no file under `release/reviewer_round/09_extractions/` stores a request
+(3) no file under `release/analyses/09_extractions/` stores a request
 header with credentials.
 
 Inputs (all in git):

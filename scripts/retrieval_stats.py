@@ -7,7 +7,7 @@ items that retrieved it.
 
 Inputs
     --eval-root  <host>/outputs/e1/eval (private, not distributed)
-    --out        default reanalysis/reviewer_round
+    --out        default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -33,7 +33,7 @@ PLATES = ["complexor", "industryor", "mamo_c", "optmath", "optibench"]
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--eval-root", required=True)
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     L = ["# Task 5(b). Retrieval concentration", "",

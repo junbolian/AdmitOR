@@ -35,10 +35,10 @@ not distributed" = kept by the authors (<host> below is the OptSkills host
 clone the experiments ran in).
 
 Reproduce (from the repository root)
-    python scripts/corrected_bootstrap.py run --arm gt=<host>/outputs/e1/eval/gt --arm vote=<host>/outputs/e1/eval/vote --arm runsok=<host>/outputs/e1/eval/runsok --arm gate=<host>/outputs/e1/eval/gate --reps 10000 --seed 42 --score-eval scripts/score_eval.py --out reanalysis/reviewer_round
+    python scripts/corrected_bootstrap.py run --arm gt=<host>/outputs/e1/eval/gt --arm vote=<host>/outputs/e1/eval/vote --arm runsok=<host>/outputs/e1/eval/runsok --arm gate=<host>/outputs/e1/eval/gate --reps 10000 --seed 42 --score-eval scripts/score_eval.py --out reanalysis/analyses
 
 Outputs
-    intervals on stdout (captured as release/reviewer_round/04_bootstrap_raw.txt);
+    intervals on stdout (captured as release/analyses/04_bootstrap_raw.txt);
     <out>/excluded_ids.txt
 
 Paper location

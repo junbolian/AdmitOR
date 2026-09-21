@@ -23,7 +23,7 @@ Inputs (all required on the command line)
                     (private, not distributed)
     --workorder     <host>/outputs/e1/gate_workorder.jsonl, the problem text
                     as the extractor saw it (private, not distributed)
-    --admitted      release/reviewer_round/admitted_ids_wild_138.txt (in git)
+    --admitted      release/analyses/admitted_ids_wild_138.txt (in git)
     --k3            release/k3_attribution.csv (in git)
     --calib-runs    <host>/outputs/e3/certify_runs, control population
                     (private, not distributed)
@@ -36,7 +36,7 @@ not distributed" = kept by the authors (<host> below is the OptSkills host
 clone the experiments ran in).
 
 Reproduce (from the repository root)
-    python scripts/numeric_coverage.py --runs <host>/outputs/e1/certify_runs --workorder <host>/outputs/e1/gate_workorder.jsonl --admitted release/reviewer_round/admitted_ids_wild_138.txt --k3 release/k3_attribution.csv --calib-runs <host>/outputs/e3/certify_runs --calib-labels <host>/outputs/e3/e3_labels.jsonl --out reanalysis/reviewer_round
+    python scripts/numeric_coverage.py --runs <host>/outputs/e1/certify_runs --workorder <host>/outputs/e1/gate_workorder.jsonl --admitted release/analyses/admitted_ids_wild_138.txt --k3 release/k3_attribution.csv --calib-runs <host>/outputs/e3/certify_runs --calib-labels <host>/outputs/e3/e3_labels.jsonl --out reanalysis/analyses
 
 Outputs
     <out>/07_coverage.md, 07_coverage.csv

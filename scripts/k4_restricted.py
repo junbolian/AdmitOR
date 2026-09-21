@@ -9,7 +9,7 @@ seed 42).
 
 Inputs
     --matrix  artifacts/e3/k4_matrix.json (in git)
-    --out     default reanalysis/reviewer_round
+    --out     default reanalysis/analyses
 
 Input availability key: "in git" = shipped in this repository; "release
 asset" = the v1.0.0 GitHub release asset admitor-v1.0.0-runlogs.zip; "private,
@@ -91,7 +91,7 @@ def fisher_freeman_halton(obs, reps=200000, seed=42):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--matrix", default="artifacts/e3/k4_matrix.json")
-    ap.add_argument("--out", default="reanalysis/reviewer_round")
+    ap.add_argument("--out", default="reanalysis/analyses")
     a = ap.parse_args()
     m = json.load(open(a.matrix, encoding="utf-8"))["matrix"]
     arms = sorted(m)

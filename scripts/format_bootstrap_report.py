@@ -1,4 +1,4 @@
-"""Format the paired-bootstrap stdout into release/reviewer_round/04_bootstrap.md.
+"""Format the paired-bootstrap stdout into release/analyses/04_bootstrap.md.
 
 Purpose
     corrected_bootstrap.py prints its intervals to stdout, captured as
@@ -12,8 +12,8 @@ Purpose
     intervals and the script stops if they no longer hold.
 
 Inputs
-    --raw   release/reviewer_round/04_bootstrap_raw.txt (in git)
-    --out   default release/reviewer_round/04_bootstrap.md
+    --raw   release/analyses/04_bootstrap_raw.txt (in git)
+    --out   default release/analyses/04_bootstrap.md
 
 Reproduce (from the repository root)
     python scripts/format_bootstrap_report.py
@@ -40,7 +40,7 @@ python scripts/corrected_bootstrap.py run `
     --arm runsok=<run-records>/outputs/e1/eval/runsok `
     --arm gate=<run-records>/outputs/e1/eval/gate `
     --rule-arm gt --rule-plate optibench --reps 10000 --seed 42 `
-    --score-eval scripts/score_eval.py --out release/reviewer_round
+    --score-eval scripts/score_eval.py --out release/analyses
 ```"""
 
 
@@ -82,8 +82,8 @@ def excludes_zero(lo, hi):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--raw", default="release/reviewer_round/04_bootstrap_raw.txt")
-    ap.add_argument("--out", default="release/reviewer_round/04_bootstrap.md")
+    ap.add_argument("--raw", default="release/analyses/04_bootstrap_raw.txt")
+    ap.add_argument("--out", default="release/analyses/04_bootstrap.md")
     a = ap.parse_args()
     b = parse(open(a.raw, encoding="utf-8").read())
     if set(b) != {"R0", "R1"} or any(len(b[k]["pairs"]) != 3 for k in b):
