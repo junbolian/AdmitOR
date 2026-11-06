@@ -1,0 +1,64 @@
+{
+ "theta0_values_count_nondev": {
+  "0": 26,
+  "1": 19,
+  "2": 36,
+  "3": 212
+ },
+ "theta0_statuses_when_no_value": {
+  "crash": 53,
+  "infeasible": 5,
+  "infeasible_or_unbounded": 15,
+  "status_4": 3,
+  "failed": 1,
+  "missing transport costs": 1
+ },
+ "certified_value_constant_vs_varies": {
+  "as_deployed": [
+   4,
+   166
+  ],
+  "three_family": [
+   2,
+   136
+  ]
+ },
+ "base2_divergence_cases": [
+  {
+   "sample_id": "sample_20",
+   "base_value": 6.0,
+   "label": "6.0",
+   "base_value_correct": true
+  },
+  {
+   "sample_id": "sample_28",
+   "base_value": 3.0,
+   "label": "4.0",
+   "base_value_correct": false
+  },
+  {
+   "sample_id": "sample_93",
+   "base_value": 7.0,
+   "label": "7.0",
+   "base_value_correct": true
+  },
+  {
+   "sample_id": "sample_147",
+   "base_value": 2927.0,
+   "label": "3140.0",
+   "base_value_correct": false
+  },
+  {
+   "sample_id": "sample_165",
+   "base_value": 4.0,
+   "label": "4.0",
+   "base_value_correct": true
+  },
+  {
+   "sample_id": "sample_267",
+   "base_value": 3775.0,
+   "label": "3898.0",
+   "base_value_correct": false
+  }
+ ]
+}

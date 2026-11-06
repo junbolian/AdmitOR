@@ -424,6 +424,18 @@ the 1,100 evaluation items exactly, after normalization, or as a near duplicate 
 at least 0.8); maximum Jaccard 0.2059 (stream) and 0.0201 (calibration). Hashes in
 `release/analyses/06_provenance.md`. Script: `disjointness_audit.py`.
 
+## Additional analyses (November 2026)
+
+All analyses in this section read stored records only; no model is called.
+
+| Script | Inputs | Output in `release/analyses/additional_2026-11/` | Content |
+|---|---|---|---|
+| `scripts/judge_suite.py` | git | `problem_level.md`, `stream_facts.json` | Problem-level certificate accuracy of 31 judges computed from the stored per-instance values: one, two or three families at the stated instance, two families with resampling, the number of resampled instances, the `min_informative` parameter, and the split of the stated-instance judges by the gate's outcome |
+| `scripts/e1_relabel.py`, `scripts/candidate_crosstab.py`, `scripts/merge_tables.py` | git + run records | `judge_suite_table.md` | Candidate-level admissions of the same judges, with the Table 3 rows as reconciliation gates |
+| `scripts/paired_items.py` | run records | `paired_items.md` | For each benchmark and pair of libraries, the items that only one library answers correctly, with exact McNemar p-values |
+| `scripts/divergence_packets.py` | git + run records | `divergence_packets/` | Problems in which resampled instances separate candidates that agree at the stated instance: values, statuses, sampled parameters, specification and programs |
+| `scripts/cost_ledger.py` | run records | `cost_ledger.md`, `cost_ledger_solves.csv` | Model calls, text volume and solver time of one certification |
+
 ## Model pins and the response-side audit
 
 | Component | Pin | How pinned | Response-side record |
