@@ -426,7 +426,7 @@ at least 0.8); maximum Jaccard 0.2059 (stream) and 0.0201 (calibration). Hashes 
 
 ## Additional analyses (November 2026)
 
-All analyses in this section read stored records only; no model is called.
+All analyses in this section read stored records only and call no model, except `scripts/llm_judge.py`, which makes one model call per judged trajectory and stores every response as returned.
 
 | Script | Inputs | Output in `release/analyses/additional_2026-11/` | Content |
 |---|---|---|---|
@@ -435,6 +435,8 @@ All analyses in this section read stored records only; no model is called.
 | `scripts/paired_items.py` | run records | `paired_items.md` | For each benchmark and pair of libraries, the items that only one library answers correctly, with exact McNemar p-values |
 | `scripts/divergence_packets.py` | git + run records | `divergence_packets/` | Problems in which resampled instances separate candidates that agree at the stated instance: values, statuses, sampled parameters, specification and programs |
 | `scripts/cost_ledger.py` | run records | `cost_ledger.md`, `cost_ledger_solves.csv` | Model calls, text volume and solver time of one certification |
+| `scripts/perturbation_screen.py` | git | `release/analyses/additional_2026-11b/screen_problem_level.md`, `screen_table.md` | One program per family with a perturbation screen on the stored resampled instances, used as an admission rule, without agreement across families |
+| `scripts/llm_judge.py` | git + run records + model calls | `release/analyses/additional_2026-11b/llm_judge_row.md`, `llm_judge_cache.jsonl` | One model judges each host trajectory as correct or incorrect; candidate-level admissions, with every response stored |
 
 ## Model pins and the response-side audit
 
