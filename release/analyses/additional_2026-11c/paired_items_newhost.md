@@ -1,0 +1,14 @@
+| Pair | Benchmark | n | both right | target only | other only | both wrong | McNemar p |
+|---|---|---:|---:|---:|---:|---:|---:|
+| gate_asdeployed vs panel_base_3of3 | ComplexOR | 18 | 12 | 0 | 1 | 5 | 1.0000 |
+| gate_asdeployed vs panel_base_3of3 | IndustryOR | 100 | 31 | 6 | 3 | 60 | 0.5078 |
+| gate_asdeployed vs panel_base_3of3 | Mamo.C | 211 | 102 | 14 | 11 | 84 | 0.6900 |
+| gate_asdeployed vs panel_base_3of3 | OptMATH | 166 | 76 | 19 | 17 | 54 | 0.8679 |
+| gate_asdeployed vs panel_base_3of3 | OptiBench | 605 | 383 | 31 | 25 | 166 | 0.5044 |
+| gate_asdeployed vs panel_base_3of3 | all items | 1100 | 604 | 70 | 57 | 369 | 0.2869 |
+| gate_asdeployed vs vote | ComplexOR | 18 | 12 | 0 | 1 | 5 | 1.0000 |
+| gate_asdeployed vs vote | IndustryOR | 100 | 31 | 6 | 1 | 62 | 0.1250 |
+| gate_asdeployed vs vote | Mamo.C | 211 | 98 | 18 | 10 | 85 | 0.1849 |
+| gate_asdeployed vs vote | OptMATH | 166 | 73 | 22 | 15 | 56 | 0.3240 |
+| gate_asdeployed vs vote | OptiBench | 605 | 381 | 33 | 33 | 158 | 1.0000 |
+| gate_asdeployed vs vote | all items | 1100 | 595 | 79 | 60 | 366 | 0.1265 |

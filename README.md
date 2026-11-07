@@ -426,7 +426,7 @@ at least 0.8); maximum Jaccard 0.2059 (stream) and 0.0201 (calibration). Hashes 
 
 ## Additional analyses (November 2026)
 
-All analyses in this section read stored records only and call no model, except `scripts/llm_judge.py`, which makes one model call per judged trajectory and stores every response as returned.
+All analyses in this section read stored records only and call no model, except two: `scripts/llm_judge.py`, which makes one model call per judged trajectory and stores every response as returned, and the downstream comparison on a second host (`release/analyses/additional_2026-11c/`), which rebuilds three libraries and evaluates them with a current host model, as described in its PROVENANCE.md.
 
 | Script | Inputs | Output in `release/analyses/additional_2026-11/` | Content |
 |---|---|---|---|
@@ -437,6 +437,7 @@ All analyses in this section read stored records only and call no model, except 
 | `scripts/cost_ledger.py` | run records | `cost_ledger.md`, `cost_ledger_solves.csv` | Model calls, text volume and solver time of one certification |
 | `scripts/perturbation_screen.py` | git | `release/analyses/additional_2026-11b/screen_problem_level.md`, `screen_table.md` | One program per family with a perturbation screen on the stored resampled instances, used as an admission rule, without agreement across families |
 | `scripts/llm_judge.py` | git + run records + model calls | `release/analyses/additional_2026-11b/llm_judge_row.md`, `llm_judge_cache.jsonl` | One model judges each host trajectory as correct or incorrect; candidate-level admissions, with every response stored |
+| `scripts/paired_items_newhost.py` | run records + model calls | `release/analyses/additional_2026-11c/accuracy_newhost.md`, `paired_items_newhost.md`, `corrected_bootstrap.md`, `PROVENANCE.md` | Downstream comparison on a second host (`deepseek-v4-flash`): the gate_asdeployed, panel_base_3of3 and vote libraries rebuilt from the stored E1 trajectories and evaluated on the 1,100 items, with paired items, McNemar tests and the paired bootstrap |
 
 ## Model pins and the response-side audit
 
