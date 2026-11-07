@@ -1,0 +1,143 @@
+{
+  "problems": 148,
+  "accepts": 103,
+  "true_cliques": 93,
+  "false_cliques": 10,
+  "false_cliques_without_theta0_value": [
+    "e3_MCMF_easy_131"
+  ],
+  "accept_without_theta0_value": 1,
+  "accept_without_theta0_ids": [
+    "e3_MCMF_easy_131"
+  ],
+  "decisions": {
+    "ABSTAIN": 9,
+    "ACCEPT": 103,
+    "UNINFORMATIVE": 36
+  },
+  "values_at_theta0": {
+    "0": 4,
+    "1": 12,
+    "2": 29,
+    "3": 103
+  },
+  "base2": {
+    "base": {
+      "judge": "panel_base_2of3",
+      "certified": 123,
+      "wrong": 11,
+      "correct": 112,
+      "false_pct": 8.9,
+      "coverage_pct": 83.1
+    },
+    "kept": {
+      "judge": "base2_kept",
+      "certified": 102,
+      "wrong": 9,
+      "correct": 93,
+      "false_pct": 8.8,
+      "coverage_pct": 68.9
+    },
+    "lost_divergence": {
+      "judge": "base2_lost_divergence",
+      "certified": 2,
+      "wrong": 1,
+      "correct": 1,
+      "false_pct": 50.0,
+      "coverage_pct": 1.4
+    },
+    "lost_uninformative": {
+      "judge": "base2_lost_uninformative",
+      "certified": 18,
+      "wrong": 0,
+      "correct": 18,
+      "false_pct": 0.0,
+      "coverage_pct": 12.2
+    },
+    "lost_failure": {
+      "judge": "base2_lost_failure",
+      "certified": 1,
+      "wrong": 1,
+      "correct": 0,
+      "false_pct": 100.0,
+      "coverage_pct": 0.7
+    },
+    "fisher_one_sided_p_divergence_vs_kept": 0.1839058999253174
+  },
+  "base3": {
+    "base": {
+      "judge": "panel_base_3of3",
+      "certified": 78,
+      "wrong": 2,
+      "correct": 76,
+      "false_pct": 2.6,
+      "coverage_pct": 52.7
+    },
+    "kept": {
+      "judge": "base3_kept",
+      "certified": 63,
+      "wrong": 1,
+      "correct": 62,
+      "false_pct": 1.6,
+      "coverage_pct": 42.6
+    },
+    "lost_divergence": {
+      "judge": "base3_lost_divergence",
+      "certified": 0,
+      "wrong": 0,
+      "correct": 0,
+      "false_pct": "",
+      "coverage_pct": 0.0
+    },
+    "lost_uninformative": {
+      "judge": "base3_lost_uninformative",
+      "certified": 9,
+      "wrong": 0,
+      "correct": 9,
+      "false_pct": 0.0,
+      "coverage_pct": 6.1
+    },
+    "lost_failure": {
+      "judge": "base3_lost_failure",
+      "certified": 0,
+      "wrong": 0,
+      "correct": 0,
+      "false_pct": "",
+      "coverage_pct": 0.0
+    }
+  },
+  "matched": {
+    "panel_base_2of3": {
+      "judge": "panel_base_2of3",
+      "certified": 123,
+      "wrong": 11,
+      "correct": 112,
+      "false_pct": 8.9,
+      "coverage_pct": 83.1
+    },
+    "gate_mi1": {
+      "judge": "gate_mi1",
+      "certified": 120,
+      "wrong": 9,
+      "correct": 111,
+      "false_pct": 7.5,
+      "coverage_pct": 81.1
+    },
+    "panel_base_3of3": {
+      "judge": "panel_base_3of3",
+      "certified": 78,
+      "wrong": 2,
+      "correct": 76,
+      "false_pct": 2.6,
+      "coverage_pct": 52.7
+    },
+    "gate3_mi1": {
+      "judge": "gate3_mi1",
+      "certified": 72,
+      "wrong": 1,
+      "correct": 71,
+      "false_pct": 1.4,
+      "coverage_pct": 48.6
+    }
+  }
+}
