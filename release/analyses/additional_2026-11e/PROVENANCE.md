@@ -9,3 +9,5 @@ This folder holds two solver-only analyses run on 2026-11-17. No model was calle
 Gates passed in every run: variant `orig` reproduces every stored decision, clique, informative set and objective value; the stated-instance judges are identical across variants; and for the stream the candidate-level reconciliation of `scripts/candidate_crosstab.py` passed, with `orig` equal to the stored deployed gate (413 admitted, 30 wrong).
 
 Inputs: the specifications and candidate programs of the certification runs, part of the release asset `admitor-v1.1.0-run-records-core.zip` (`outputs/e1/certify_runs`, `outputs/e3/certify_runs`).
+
+Absolute local paths in solver status strings were replaced with `<PATH>\` in the released copies of results.jsonl; no other content differs from the run outputs.
