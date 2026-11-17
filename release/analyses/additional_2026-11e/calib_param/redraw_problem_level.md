@@ -1,0 +1,47 @@
+| Variant | Judge | Certified | Wrong | Correct | False % | Coverage % |
+|---|---|---:|---:|---:|---:|---:|
+| `orig` | `panel_base_2of3` | 123 | 11 | 112 | 8.9 | 83.1 |
+| `orig` | `panel_base_3of3` | 78 | 2 | 76 | 2.6 | 52.7 |
+| `orig` | `gate_mi3` | 102 | 9 | 93 | 8.8 | 68.9 |
+| `orig` | `gate_mi1` | 120 | 9 | 111 | 7.5 | 81.1 |
+| `orig` | `gate3_mi3` | 63 | 1 | 62 | 1.6 | 42.6 |
+| `orig` | `gate3_mi1` | 72 | 1 | 71 | 1.4 | 48.6 |
+| `orig` | `base2_kept` | 102 | 9 | 93 | 8.8 | 68.9 |
+| `orig` | `base2_lost_uninformative` | 18 | 0 | 18 | 0.0 | 12.2 |
+| `orig` | `base2_lost_failure` | 1 | 1 | 0 | 100.0 | 0.7 |
+| `orig` | `base2_lost_divergence` | 2 | 1 | 1 | 50.0 | 1.4 |
+| `orig` | `base3_kept` | 63 | 1 | 62 | 1.6 | 42.6 |
+| `orig` | `base3_lost_uninformative` | 9 | 0 | 9 | 0.0 | 6.1 |
+| `orig` | `base3_lost_failure` | 0 | 0 | 0 |  | 0.0 |
+| `orig` | `base3_lost_divergence` | 0 | 0 | 0 |  | 0.0 |
+| `orig` | `base3_lost_shrink` | 6 | 1 | 5 | 16.7 | 4.1 |
+| `pscreen_all` | `panel_base_2of3` | 123 | 11 | 112 | 8.9 | 83.1 |
+| `pscreen_all` | `panel_base_3of3` | 78 | 2 | 76 | 2.6 | 52.7 |
+| `pscreen_all` | `gate_mi3` | 112 | 10 | 102 | 8.9 | 75.7 |
+| `pscreen_all` | `gate_mi1` | 121 | 10 | 111 | 8.3 | 81.8 |
+| `pscreen_all` | `gate3_mi3` | 70 | 1 | 69 | 1.4 | 47.3 |
+| `pscreen_all` | `gate3_mi1` | 76 | 1 | 75 | 1.3 | 51.4 |
+| `pscreen_all` | `base2_kept` | 112 | 10 | 102 | 8.9 | 75.7 |
+| `pscreen_all` | `base2_lost_uninformative` | 9 | 0 | 9 | 0.0 | 6.1 |
+| `pscreen_all` | `base2_lost_failure` | 0 | 0 | 0 |  | 0.0 |
+| `pscreen_all` | `base2_lost_divergence` | 2 | 1 | 1 | 50.0 | 1.4 |
+| `pscreen_all` | `base3_kept` | 70 | 1 | 69 | 1.4 | 47.3 |
+| `pscreen_all` | `base3_lost_uninformative` | 6 | 0 | 6 | 0.0 | 4.1 |
+| `pscreen_all` | `base3_lost_failure` | 0 | 0 | 0 |  | 0.0 |
+| `pscreen_all` | `base3_lost_divergence` | 0 | 0 | 0 |  | 0.0 |
+| `pscreen_all` | `base3_lost_shrink` | 2 | 1 | 1 | 50.0 | 1.4 |
+| `pscreen_two` | `panel_base_2of3` | 123 | 11 | 112 | 8.9 | 83.1 |
+| `pscreen_two` | `panel_base_3of3` | 78 | 2 | 76 | 2.6 | 52.7 |
+| `pscreen_two` | `gate_mi3` | 113 | 10 | 103 | 8.8 | 76.4 |
+| `pscreen_two` | `gate_mi1` | 120 | 10 | 110 | 8.3 | 81.1 |
+| `pscreen_two` | `gate3_mi3` | 70 | 1 | 69 | 1.4 | 47.3 |
+| `pscreen_two` | `gate3_mi1` | 75 | 1 | 74 | 1.3 | 50.7 |
+| `pscreen_two` | `base2_kept` | 113 | 10 | 103 | 8.8 | 76.4 |
+| `pscreen_two` | `base2_lost_uninformative` | 7 | 0 | 7 | 0.0 | 4.7 |
+| `pscreen_two` | `base2_lost_failure` | 1 | 0 | 1 | 0.0 | 0.7 |
+| `pscreen_two` | `base2_lost_divergence` | 2 | 1 | 1 | 50.0 | 1.4 |
+| `pscreen_two` | `base3_kept` | 70 | 1 | 69 | 1.4 | 47.3 |
+| `pscreen_two` | `base3_lost_uninformative` | 5 | 0 | 5 | 0.0 | 3.4 |
+| `pscreen_two` | `base3_lost_failure` | 0 | 0 | 0 |  | 0.0 |
+| `pscreen_two` | `base3_lost_divergence` | 0 | 0 | 0 |  | 0.0 |
+| `pscreen_two` | `base3_lost_shrink` | 3 | 1 | 2 | 33.3 | 2.0 |

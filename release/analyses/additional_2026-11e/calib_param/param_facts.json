@@ -1,0 +1,24 @@
+{
+  "set": "calib",
+  "problems": 148,
+  "problems_with_two_values_at_theta0": 132,
+  "testable_parameters": 387,
+  "untested_parameters": 0,
+  "variants": {
+    "pscreen_all": {
+      "safe_parameters": 345,
+      "problems_without_safe_parameter": 8,
+      "problems_all_parameters_safe": 95,
+      "certificates_value_changes_across_instances": 104,
+      "certificates_value_constant_across_instances": 8
+    },
+    "pscreen_two": {
+      "safe_parameters": 347,
+      "problems_without_safe_parameter": 6,
+      "problems_all_parameters_safe": 96,
+      "certificates_value_changes_across_instances": 105,
+      "certificates_value_constant_across_instances": 8
+    }
+  },
+  "solve_seconds_total": 4453.1
+}

@@ -1,0 +1,24 @@
+{
+  "set": "stream",
+  "problems": 298,
+  "problems_with_two_values_at_theta0": 252,
+  "testable_parameters": 1800,
+  "untested_parameters": 0,
+  "variants": {
+    "pscreen_all": {
+      "safe_parameters": 1628,
+      "problems_without_safe_parameter": 10,
+      "problems_all_parameters_safe": 161,
+      "certificates_value_changes_across_instances": 224,
+      "certificates_value_constant_across_instances": 3
+    },
+    "pscreen_two": {
+      "safe_parameters": 1634,
+      "problems_without_safe_parameter": 9,
+      "problems_all_parameters_safe": 164,
+      "certificates_value_changes_across_instances": 225,
+      "certificates_value_constant_across_instances": 3
+    }
+  },
+  "solve_seconds_total": 11529.3
+}
