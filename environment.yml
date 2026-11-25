@@ -34,5 +34,7 @@ dependencies:
       - requests==2.34.2
       - openai==2.53.0
       - pytest==8.4.2
+      # Figures only (scripts/make_figures.py), not used by the experiments:
+      - matplotlib>=3.7
       # Optional commercial solver, not required by the core gate or tests:
       # - gurobipy==13.0.1

@@ -102,8 +102,9 @@ def main():
     L += ["",
           "Stream source: the OptMATH training split shipped with the host as "
           "`datasets/train_set/optmath-train-300.jsonl`. Index range %d to %d, "
-          "contiguous: %s, so the selection rule is the first 300 by index "
-          "rather than a seeded sample. The blind file is that file with the "
+          "contiguous: %s; the file is a uniform random sample of 300 records "
+          "(seed 42) of OptMATH-Train, so the index is the position in the "
+          "sample and `source_index` the record number. The blind file is that file with the "
           "answer column removed and the vault is its idx/answer projection; "
           "both regenerate byte-identically via `scripts/regen_derived.py`."
           % (min(idx), max(idx), "yes" if contiguous else "no"),

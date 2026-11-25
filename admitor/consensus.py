@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""AdmitOR core -- consensus.py (v0.6.3)
+"""AdmitOR core -- consensus.py (v0.7.0)
 
 L3: cross-family resampled differential consensus (the load-bearing wall).
 
@@ -31,6 +31,7 @@ Verdict semantics:
                 candidate pool) must be repaired before any admission claim.
 """
 import random
+import time
 from dataclasses import dataclass, field
 from itertools import combinations
 from typing import Callable, Dict, List, Optional
@@ -139,9 +140,16 @@ def run_l3(
     tol_rel: float = 1e-4,
     seed: int = 42,
     min_informative: int = 3,
+    draws: Optional[List[Optional[dict]]] = None,
 ) -> L3Verdict:
     rng = random.Random(seed)
-    insts = [sample_params(spec, rng) for _ in range(m)]
+    if draws is None:
+        insts = [sample_params(spec, rng) for _ in range(m)]
+    else:
+        # Resampled instances supplied by the caller (see run_l3_param_screen).
+        # A None entry means that no resampled instance could be formed; every
+        # candidate gets no value on it, with status "unperturbed".
+        insts = list(draws)
     bp = base_params(spec)
     if bp is not None:
         insts.insert(0, bp)  # instance 0 = the original problem
@@ -151,6 +159,10 @@ def run_l3(
     for c in candidates:
         orow, srow = [], []
         for p in insts:
+            if p is None:
+                orow.append(None)
+                srow.append("unperturbed")
+                continue
             try:
                 r = c.solve(p)
                 ok = r.status == "optimal" and r.objective is not None
@@ -224,6 +236,156 @@ def run_l3(
         if ks:
             v.disagreements.append(f"{a} vs {b}: diverge on instance(s) {ks}")
     return v
+
+
+# ---------------------------------------------------------------------------
+# Resampling over solvability-preserving parameters
+# ---------------------------------------------------------------------------
+def _flat(x):
+    if isinstance(x, (list, tuple)):
+        for y in x:
+            yield from _flat(y)
+    else:
+        yield x
+
+
+def _numeric_entries(base):
+    out = []
+    for val in _flat(base):
+        if isinstance(val, bool) or not isinstance(val, (int, float)):
+            return None
+        out.append(float(val))
+    return out
+
+
+def domain_of(base):
+    """(is_indicator, is_nonneg), read from the base value alone.
+
+    A list-valued parameter whose entries are all 0 or 1 (at least two
+    entries) is an indicator structure. A parameter whose entries are all
+    >= 0 is non-negative."""
+    ent = _numeric_entries(base)
+    if not ent:
+        return False, False
+    indicator = isinstance(base, (list, tuple)) and len(ent) >= 2 and all(x in (0.0, 1.0) for x in ent)
+    return indicator, all(x >= 0 for x in ent)
+
+
+def sample_domain(spec: Dict[str, dict], rng: random.Random) -> dict:
+    """sample_params restricted to the value domain of the stated data:
+    indicator structures keep their base value, and a non-negative parameter
+    is never drawn below 0 (an absolute range [lo, hi] becomes
+    [max(lo, 0), max(hi, 0)])."""
+    out = {}
+    for name, s in spec.items():
+        nonneg = False
+        if "base" in s:
+            indicator, nonneg = domain_of(s["base"])
+            if indicator:
+                out[name] = s["base"]
+                continue
+        if "perturb" in s:
+            cfg = dict(s["perturb"])
+            if nonneg and cfg.get("mode") != "rel":
+                lo, hi = sorted((cfg["lo"], cfg["hi"]))
+                cfg["lo"], cfg["hi"] = max(lo, 0), max(hi, 0)
+            out[name] = _sample_one(s["base"], cfg, rng)
+        elif s.get("mode") == "rel":
+            out[name] = _sample_one(s["base"], {"mode": "rel", "r": s.get("r", 0.3)}, rng)
+        elif s.get("mode") == "range":
+            n = s.get("size", 1)
+            lo, hi = sorted((s["lo"], s["hi"]))
+            vals = [rng.uniform(lo, hi) for _ in range(n)]
+            if s.get("integer"):
+                vals = [round(x) for x in vals]
+            out[name] = vals if n > 1 else vals[0]
+        else:
+            raise ValueError(f"unknown spec for {name}")
+    return out
+
+
+def _returns_value(c: Candidate, params: dict) -> bool:
+    try:
+        r = c.solve(params)
+        return r.status == "optimal" and r.objective is not None
+    except Exception:  # pragma: no cover
+        return False
+
+
+def select_parameters(
+    candidates: List[Candidate],
+    spec: Dict[str, dict],
+    seed: int = 42,
+    k_test: int = 2,
+    time_budget_s: float = 900.0,
+) -> dict:
+    """Parameters whose single perturbation keeps the candidates solvable.
+
+    Each parameter with a base value that is not an indicator structure is
+    perturbed alone, k_test times, with every other parameter at its base
+    value. It is kept when every candidate that returns a value on the stated
+    instance returns a value on each test draw. The test uses only whether a
+    candidate returns a value, never the value. The test draws use the
+    generator random.Random(seed + 1). The tests of one problem stop after
+    time_budget_s seconds; parameters not reached are not kept and are
+    listed under "untested"."""
+    bp = base_params(spec)
+    info = {"alive": [], "testable": [], "safe": [], "tests": {}, "untested": []}
+    t0 = time.time()
+    if bp is None:
+        return info
+    alive = [c for c in candidates if _returns_value(c, bp)]
+    info["alive"] = [c.id for c in alive]
+    names = [n for n, s in spec.items() if "base" in s and not domain_of(s["base"])[0]]
+    info["testable"] = names
+    if len(alive) < 2:
+        return info
+    rng = random.Random(seed + 1)
+    for n in names:
+        if time.time() - t0 > time_budget_s:
+            info["untested"].append(n)
+            continue
+        counts = []
+        for _ in range(k_test):
+            p = dict(bp)
+            p[n] = sample_domain({n: spec[n]}, rng)[n]
+            counts.append(sum(1 for c in alive if _returns_value(c, p)))
+        info["tests"][n] = counts
+        if all(k == len(alive) for k in counts):
+            info["safe"].append(n)
+    return info
+
+
+def run_l3_param_screen(
+    candidates: List[Candidate],
+    spec: Dict[str, dict],
+    m: int = 5,
+    tol_rel: float = 1e-4,
+    seed: int = 42,
+    min_informative: int = 3,
+    k_test: int = 2,
+):
+    """run_l3 with resampled instances that perturb only the parameters
+    selected by select_parameters, jointly and within the value domain of the
+    stated data; all other parameters keep their base values. Without a
+    selected parameter no resampled instance is formed. Returns (verdict,
+    info); the decision rule is that of run_l3."""
+    info = select_parameters(candidates, spec, seed=seed, k_test=k_test)
+    bp = base_params(spec)
+    safe = info["safe"]
+    if bp is None or not safe:
+        draws = [None] * m
+    else:
+        rng = random.Random(seed)
+        sub = {n: spec[n] for n in safe}
+        draws = []
+        for _ in range(m):
+            d = dict(bp)
+            d.update(sample_domain(sub, rng))
+            draws.append(d)
+    v = run_l3(candidates, spec, m=m, tol_rel=tol_rel, seed=seed,
+               min_informative=min_informative, draws=draws)
+    return v, info
 
 
 def _short(val, nd=2):

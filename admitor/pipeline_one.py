@@ -23,8 +23,22 @@ Outputs
     A human-readable summary is printed to stdout.
 
 Environment (live mode only, never read from a file)
-    ADMITOR_API_KEY   required, credential for the OpenAI-compatible endpoint
-    ADMITOR_BASE_URL  required, chat-completions base URL of that endpoint
+    ADMITOR_API_KEY   credential for the OpenAI-compatible endpoint; required
+                      unless ADMITOR_API_KEY_A/_B/_C are all set
+    ADMITOR_BASE_URL  chat-completions base URL of that endpoint; required
+                      unless ADMITOR_BASE_URL_A/_B/_C are all set
+    ADMITOR_API_KEY_A / _B / _C    optional, credential for family A, B or C;
+                      falls back to ADMITOR_API_KEY
+    ADMITOR_BASE_URL_A / _B / _C   optional, base URL for family A, B or C;
+                      falls back to ADMITOR_BASE_URL
+    ADMITOR_EXTRA_JSON_A / _B / _C optional, JSON object sent as the extra
+                      request body of every call of family A, B or C (the
+                      extractor uses family A); default none
+    ADMITOR_USAGE_LOG optional, path of a jsonl file; one line per model call
+                      (family, requested and response-side model, max_tokens,
+                      usage, seconds); default none
+    ADMITOR_CANDIDATES_PER_FAMILY  optional, candidates generated per family
+                      (default 1)
     ADMITOR_MODEL_A   family A model id (default deepseek-v3.2)
     ADMITOR_MODEL_B   family B model id (default gpt-5.4)
     ADMITOR_MODEL_C   family C model id (default claude-sonnet-4-6)
@@ -91,32 +105,50 @@ def live_run(question: str):
 
     # Both are required and are read from the environment only. The gate never
     # reads credentials or endpoints from a file, and no endpoint is baked in:
-    # the three candidate families are reached through whichever
-    # OpenAI-compatible endpoint the operator points ADMITOR_BASE_URL at.
-    api_key = os.environ.get("ADMITOR_API_KEY")
-    base_url = os.environ.get("ADMITOR_BASE_URL")
-    if not api_key or not base_url:
-        raise SystemExit(
-            "live mode needs ADMITOR_API_KEY and ADMITOR_BASE_URL in the "
-            "environment (ADMITOR_BASE_URL is the OpenAI-compatible "
-            "chat-completions base URL, for example https://api.openai.com/v1). "
-            "Use --mock for the offline self-test, which needs neither."
-        )
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    # each candidate family is reached through the OpenAI-compatible endpoint
+    # given by ADMITOR_BASE_URL_<family>, or by ADMITOR_BASE_URL when the
+    # per-family variable is not set.
+    def _env(name, fam):
+        return os.environ.get("%s_%s" % (name, fam)) or os.environ.get(name)
+
+    clients, extra = {}, {}
+    for fam in ("A", "B", "C"):
+        api_key, base_url = _env("ADMITOR_API_KEY", fam), _env("ADMITOR_BASE_URL", fam)
+        if not api_key or not base_url:
+            raise SystemExit(
+                "live mode needs ADMITOR_API_KEY and ADMITOR_BASE_URL in the "
+                "environment, or ADMITOR_API_KEY_%s and ADMITOR_BASE_URL_%s for "
+                "family %s. Use --mock for the offline self-test, which needs "
+                "neither." % (fam, fam, fam)
+            )
+        clients[fam] = OpenAI(api_key=api_key, base_url=base_url)
+        raw = os.environ.get("ADMITOR_EXTRA_JSON_%s" % fam)
+        extra[fam] = json.loads(raw) if raw else None
     models = {
         "A": os.environ.get("ADMITOR_MODEL_A", "deepseek-v3.2"),
         "B": os.environ.get("ADMITOR_MODEL_B", "gpt-5.4"),
         "C": os.environ.get("ADMITOR_MODEL_C", "claude-sonnet-4-6"),
     }
+    usage_log = os.environ.get("ADMITOR_USAGE_LOG")
 
-    def call(model, max_tokens=3000):
+    def call(fam, max_tokens=3000):
         def f(prompt):
-            r = client.chat.completions.create(
-                model=model,
+            t0 = time.time()
+            kw = {"extra_body": extra[fam]} if extra[fam] else {}
+            r = clients[fam].chat.completions.create(
+                model=models[fam],
                 temperature=0,
                 max_tokens=max_tokens,
                 messages=[{"role": "user", "content": prompt}],
+                **kw,
             )
+            if usage_log:
+                u = r.usage.model_dump() if getattr(r, "usage", None) else {}
+                with open(usage_log, "a", encoding="utf-8") as fh:
+                    fh.write(json.dumps({"family": fam, "requested": models[fam],
+                                         "response_model": getattr(r, "model", None),
+                                         "max_tokens": max_tokens, "usage": u,
+                                         "seconds": round(time.time() - t0, 2)}) + "\n")
             return r.choices[0].message.content or ""
 
         return f
@@ -124,7 +156,7 @@ def live_run(question: str):
     # Extraction must emit every base value (matrices included); 3000 tokens
     # truncates large-instance specs mid-JSON. Candidates stay at 3000 --
     # their code reads values from params and stays small.
-    spec = extract_spec(question, call(models["A"], max_tokens=8192))
+    spec = extract_spec(question, call("A", max_tokens=8192))
     probe = base_params(spec["spec"])
     pd = "\n".join(f"  {k}: {v.get('meaning', '')}" for k, v in spec["raw"]["params"].items())
     plan = [
@@ -132,23 +164,28 @@ def live_run(question: str):
             "A-direct",
             "deepseek",
             "direct",
-            models["A"],
+            "A",
             "pyomo with the HiGHS solver. Solve EXACTLY like this: from pyomo.contrib.appsi.solvers.highs import Highs; Highs().solve(model); then obj_val = float(pyo.value(<your objective component>)) and return {'objective': obj_val, 'status': 'optimal'}. Determine success ONLY by whether the objective value is retrievable (pyo.value raises otherwise); NEVER compare termination-condition enums",
         ),
         (
             "B-structured",
             "gpt",
             "structured",
-            models["B"],
+            "B",
             "pyomo with the HiGHS solver. Solve EXACTLY like this: from pyomo.contrib.appsi.solvers.highs import Highs; Highs().solve(model); then obj_val = float(pyo.value(<your objective component>)) and return {'objective': obj_val, 'status': 'optimal'}. Determine success ONLY by whether the objective value is retrievable (pyo.value raises otherwise); NEVER compare termination-condition enums",
         ),
-        ("C-direct", "claude", "direct", models["C"], "gurobipy"),
+        ("C-direct", "claude", "direct", "C", "gurobipy"),
     ]
+    # ADMITOR_CANDIDATES_PER_FAMILY > 1 asks each family for that many
+    # candidates (ids "<id>", "<id>-2", ...); the default is one per family.
+    n_per = int(os.environ.get("ADMITOR_CANDIDATES_PER_FAMILY", "1"))
     cands = [
         gen_candidate(
-            question, pd, fam, strat, stack, call(mdl), cid, probe_params=probe, retries=1
+            question, pd, fam, strat, stack, call(fam_letter),
+            cid if rep == 1 else "%s-%d" % (cid, rep), probe_params=probe, retries=1
         )
-        for cid, fam, strat, mdl, stack in plan
+        for cid, fam, strat, fam_letter, stack in plan
+        for rep in range(1, n_per + 1)
     ]
     return spec, cands
 

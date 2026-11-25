@@ -41,3 +41,10 @@ desktop.ini
 
 # Private re-analysis output (vault-joined correctness tables). Never commit.
 reanalysis/
+
+# Model-call caches, ledgers and usage logs of runs (never committed)
+cache/
+llm_cache*/
+ledgers/
+usage*.jsonl
+!artifacts/v2/*/runs/

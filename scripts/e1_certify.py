@@ -21,6 +21,8 @@ Inputs
     --m             number of resampled instantiations (default 5)
     --limit         stop after this many certifications (0 means no limit)
     --only          comma-separated sample_ids to (re)certify
+    --sampler       independent (default) or param_screen
+    --both          also store the verdict of the other sampler
 
 Outputs
     <verdicts-dir>/<sample_id>.json   compact verdict, the GateOracle format
@@ -30,7 +32,11 @@ Outputs
     A one-line JSON summary is printed at the end.
 
 Environment (live mode, read from the environment only)
-    ADMITOR_API_KEY / ADMITOR_BASE_URL / ADMITOR_MODEL_A / _B / _C
+    ADMITOR_API_KEY / ADMITOR_BASE_URL / ADMITOR_MODEL_A / _B / _C, or per
+    family ADMITOR_API_KEY_A / _B / _C and ADMITOR_BASE_URL_A / _B / _C (the
+    shared variables are the fallback); optional ADMITOR_EXTRA_JSON_A / _B / _C,
+    ADMITOR_USAGE_LOG and ADMITOR_CANDIDATES_PER_FAMILY (see
+    admitor/pipeline_one.py)
 
 Cost: this step calls the model. It is the expensive step of E1.
 
@@ -52,11 +58,12 @@ from dataclasses import asdict
 # Make the repository root importable so `admitor` resolves no matter which
 # directory the script is invoked from.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from admitor.consensus import run_l3  # noqa: E402
+from admitor.consensus import run_l3, run_l3_param_screen  # noqa: E402
 from admitor.pipeline_one import live_run  # noqa: E402
 
 
-def certify_one(question: str, m: int, run_dir: str) -> dict:
+def certify_one(question: str, m: int, run_dir: str, sampler: str = "independent",
+                both: bool = False) -> dict:
     spec, cands = live_run(question)
     os.makedirs(run_dir, exist_ok=True)
     json.dump(
@@ -68,13 +75,26 @@ def certify_one(question: str, m: int, run_dir: str) -> dict:
     for c in cands:
         if getattr(c, "code", None):
             open(os.path.join(run_dir, f"{c.id}.py"), "w", encoding="utf-8").write(c.code)
-    v = run_l3(cands, spec["spec"], m=m, seed=42)
-    json.dump(
-        asdict(v),
-        open(os.path.join(run_dir, "verdict_full.json"), "w", encoding="utf-8"),
-        ensure_ascii=False,
-        indent=2,
-    )
+    def _dump(obj, name):
+        json.dump(obj, open(os.path.join(run_dir, name), "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=2)
+
+    # verdict_full.json holds the verdict of the chosen sampler. With --both
+    # the other sampler is run on the same candidates and stored next to it
+    # (verdict_independent.json or verdict_param_screen.json).
+    v_ind = v_ps = info = None
+    if sampler == "independent" or both:
+        v_ind = run_l3(cands, spec["spec"], m=m, seed=42)
+    if sampler == "param_screen" or both:
+        v_ps, info = run_l3_param_screen(cands, spec["spec"], m=m, seed=42)
+        _dump(info, "param_screen.json")
+    v = v_ps if sampler == "param_screen" else v_ind
+    _dump(asdict(v), "verdict_full.json")
+    if both:
+        if sampler == "param_screen":
+            _dump(asdict(v_ind), "verdict_independent.json")
+        else:
+            _dump(asdict(v_ps), "verdict_param_screen.json")
     clique_value = None
     if v.decision == "ACCEPT" and v.clique:
         try:
@@ -100,11 +120,18 @@ def main() -> None:
     ap.add_argument("--m", type=int, default=5)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", default="", help="comma-separated sample_ids to (re)certify")
+    ap.add_argument("--sampler", choices=["independent", "param_screen"], default="independent",
+                    help="resampling of the instances: independent draws of every parameter, "
+                         "or joint draws over the parameters that keep the candidates solvable")
+    ap.add_argument("--both", action="store_true",
+                    help="also run the other sampler on the same candidates and store its verdict")
     a = ap.parse_args()
 
     # Preflight: a missing key would fail every sample instantly and litter
     # the verdicts dir with 300 ERROR files. Refuse up front instead.
-    if not os.environ.get("ADMITOR_API_KEY"):
+    if not os.environ.get("ADMITOR_API_KEY") and not all(
+        os.environ.get("ADMITOR_API_KEY_" + f) for f in ("A", "B", "C")
+    ):
         raise SystemExit(
             "ADMITOR_API_KEY is not set in this shell -- set ADMITOR_API_KEY "
             "/ ADMITOR_BASE_URL / ADMITOR_MODEL_A/B/C (see the Quickstart "
@@ -134,7 +161,8 @@ def main() -> None:
         t0 = time.time()
         run_dir = os.path.join(a.runs_dir, sid)
         try:
-            verdict = certify_one(str(item.get("question", "")), a.m, run_dir)
+            verdict = certify_one(str(item.get("question", "")), a.m, run_dir,
+                                  sampler=a.sampler, both=a.both)
         except Exception as exc:  # sample-fatal only, never batch-fatal
             verdict = {
                 "decision": "ERROR",
@@ -153,6 +181,7 @@ def main() -> None:
                 "elapsed_s": round(time.time() - t0, 1),
                 "m": a.m,
                 "seed": 42,
+                "sampler": a.sampler,
             }
         )
         tmp = out_path + ".tmp"

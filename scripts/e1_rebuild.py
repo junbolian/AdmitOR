@@ -15,6 +15,9 @@ Inputs
                     library geometry, see the warning below
     --draft-budget  max characters of a cluster's draft inputs before
                     deterministic member subsampling (default 300000)
+    --analysis-cap  max characters of a skill_analysis request body; a
+                    longer serialized trajectory keeps its head, loses its
+                    tail and gets a truncation marker (default 98000)
 
 Outputs
     <library>/                        the rebuilt skill library
@@ -113,6 +116,104 @@ def _install_size_guard(budget_chars: int) -> None:
     print(f"[size_guard] installed, budget={budget_chars} chars")
 
 
+def _install_analysis_cap(cap_chars: int) -> None:
+    """Cap the request body of each per-candidate skill_analysis call.
+
+    The relay answers request bodies of about 134k characters with an
+    empty, non-JSON body, so an oversized candidate fails the whole build
+    after the retries ("Expecting value: line 1 column 1 (char 0)").
+
+    The body is measured exactly as llm/llm_caller.py sends it:
+    json.dumps(payload).encode("utf-8"), with the payload that LLMCaller.chat
+    builds from the analyzer's config. At or under the cap the call is
+    untouched. Over the cap, the serialized trajectory is truncated
+    deterministically: keep the longest head for which the body, with the
+    marker appended, stays within the cap; cut the tail; append
+      "\\n[trajectory truncated for LLM context: original_chars=N.]"
+    (the wording of the host's own deterministic truncation marker).
+    Prompts, models and retries are otherwise unchanged; host files are
+    unmodified (the patch lives in this driver).
+    """
+    import threading
+
+    from skill_core import trajectory_analyzer as ta
+
+    original = ta.TrajectoryAnalyzer.analyze_candidate
+    local = threading.local()
+
+    def _body_len(llm, prompt: str) -> int:
+        cfg = llm.config
+        payload = {
+            "model": cfg.model,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": cfg.temperature,
+            "max_tokens": cfg.max_tokens,
+        }
+        if cfg.top_p is not None:
+            payload["top_p"] = cfg.top_p
+        if cfg.extra:
+            payload.update(cfg.extra)
+        payload = llm._apply_non_thinking_default(payload)
+        return len(json.dumps(payload).encode("utf-8"))
+
+    def _install_chat_hook(llm) -> None:
+        if getattr(llm, "_admitor_analysis_cap", False):
+            return
+        chat = llm.chat
+
+        def hooked(prompt, *args, **kwargs):
+            swap = getattr(local, "swap", None)
+            if swap is not None and prompt == swap[0]:
+                prompt = swap[1]
+            return chat(prompt, *args, **kwargs)
+
+        llm.chat = hooked
+        llm._admitor_analysis_cap = True
+
+    def capped(self, ingredients, candidate):
+        metrics = candidate.get("objective_metrics", {})
+        if not isinstance(metrics, dict):
+            metrics = {}
+        label = self._objective_label(candidate) or self.default_label(candidate)
+        indicators = {
+            "label": label,
+            "success": bool(metrics.get("success")),
+            "runtime_s": metrics.get("runtime_s"),
+            "num_tool_calls": metrics.get("num_tool_calls"),
+        }
+        head = ta.SKILL_ANALYSIS_PROMPT.replace(
+            "{keywords}", json.dumps(ingredients, ensure_ascii=False, indent=2)
+        ).replace("{Indicators}", json.dumps(indicators, ensure_ascii=False, indent=2))
+        traj = json.dumps(self._sanitize_candidate(candidate), ensure_ascii=False, indent=2)
+        full = head.replace("{trajectory}", traj)
+        if _body_len(self.llm, full) <= cap_chars:
+            return original(self, ingredients, candidate)
+        marker = f"\n[trajectory truncated for LLM context: original_chars={len(traj)}.]"
+        lo, hi = 0, len(traj)
+        while lo < hi:
+            mid = (lo + hi + 1) // 2
+            if _body_len(self.llm, head.replace("{trajectory}", traj[:mid] + marker)) <= cap_chars:
+                lo = mid
+            else:
+                hi = mid - 1
+        cut = head.replace("{trajectory}", traj[:lo] + marker)
+        cid = str(candidate.get("candidate_id", "")).strip()
+        print(
+            f"[analysis_cap] {cid}: body {_body_len(self.llm, full)} > {cap_chars} chars; "
+            f"trajectory {len(traj)} -> {lo + len(marker)} chars "
+            f"(body {_body_len(self.llm, cut)})"
+        )
+        _install_chat_hook(self.llm)
+        local.swap = (full, cut)
+        try:
+            return original(self, ingredients, candidate)
+        finally:
+            local.swap = None
+
+    ta.TrajectoryAnalyzer.analyze_candidate = capped
+    print(f"[analysis_cap] installed, cap={cap_chars} chars")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--relabeled", required=True)
@@ -129,6 +230,13 @@ def main() -> None:
         default=300000,
         help="max chars of a cluster's draft inputs before " "deterministic member subsampling",
     )
+    ap.add_argument(
+        "--analysis-cap",
+        type=int,
+        default=98000,
+        help="max chars of a skill_analysis request body; longer "
+        "serialized trajectories are truncated deterministically",
+    )
     a = ap.parse_args()
 
     sys.path.insert(0, os.getcwd())  # run from OptSkills-main
@@ -140,6 +248,7 @@ def main() -> None:
             f"host checkout as the current working directory"
         ) from err
     _install_size_guard(a.draft_budget)
+    _install_analysis_cap(a.analysis_cap)
 
     with open(a.relabeled, encoding="utf-8") as f:
         records = [json.loads(line) for line in f if line.strip()]
