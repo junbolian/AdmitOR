@@ -1,6 +1,6 @@
 # AdmitOR analysis round, report
 
-Issued against the consolidated work order of 2026-09-16 and its amendments.
+Written against the consolidated task list of 2026-09-16 and its amendments.
 Every number carries the script and the output file that produced it. All
 work is zero-token except Task 9.
 
@@ -12,9 +12,9 @@ Scripts live in `admitor-infra\`; outputs in
 
 ## 1. Premises found false
 
-| # | Premise in the work order | What is actually the case | Evidence |
+| # | Premise in the task list | What is actually the case | Evidence |
 |---|---|---|---|
-| 1 | `e3_certificate_numbers.py`, `disjointness_audit.py` and `CLAUDE_CODE_E5MINI.md` exist in the repo | None of the three was present. They were delivered in chat in August and never placed on disk. All three were written from the task descriptions. | `00_inventory.md` section 4 |
+| 1 | `e3_certificate_numbers.py`, `disjointness_audit.py` and the E5-mini task description exist in the repo | None of the three was present. They were delivered in chat in August and never placed on disk. All three were written from the task descriptions. | `00_inventory.md` section 4 |
 | 2 | Per-arm rebuild attribution is recoverable from the runlog | It is not. `e1_rebuild.py` writes no runtime event stream, and 5,025 of the 60,000 ledger records fall in no window. Only 1,225 sit inside the library-build span; 3,800 cluster in Aug 10 06:00 to 12:00 with no surviving log or cache entry. Reported as one unattributed bucket. | `01_3_runlog_phases.md` |
 | 3 | 5(c) can replay stored requests from the runlog | No request body survives anywhere. `runlog.py` stores a 16-hex digest of a sorted-keys dump; the caches store responses only, keyed by a one-way hash. Replay is possible only by reconstructing requests from `function_agent.messages`. 5(c) was later dropped. | `05b_serving_variant_join.md` method table |
 | 4 | Arm B is pinned in code | `admitor-core/pipeline_one.py` defaults `ADMITOR_MODEL_B` to `gpt-5.1`, and no `.env` sets it. The operator later confirmed `gpt-5.4` was exported at run time. No response-side record exists for the candidate arms, so this cannot be verified from artifacts. | `01_code_facts_data.md`, operator confirmation |
@@ -397,7 +397,7 @@ added roughly 400 tokens.
 
 ---
 
-## 17. Open questions for Jacob
+## 17. Open questions
 
 1. **`gate_asdeployed` against `gate_tau` in the manuscript.** Table 2's
    downstream number belongs to the first rule; the K3 analysis to the second.

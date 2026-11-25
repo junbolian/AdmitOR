@@ -58,8 +58,8 @@ Coverage / label precision ± binomial standard error.
 | Two families, verified | 0.756 / 0.915 ± 0.019 | 0.765 / 0.922 ± 0.022 | 0.907 / 0.919 ± 0.023 | 0.937 / 0.876 ± 0.035 |
 | Three families, verified | 0.681 / 0.930 ± 0.018 | 0.715 / 0.916 ± 0.023 | 0.673 / 0.980 ± 0.014 | 0.716 / 0.926 ± 0.032 |
 
-Family A is `deepseek-v4-flash` (it also extracts the data), family B is `gpt-6.1-sol`, and family C
-is `claude-sonnet-5-5`. Label precision understates the precision of the certifier here, because most
+Family A is DeepSeek-V4-Flash (it also extracts the data), family B is GPT-6.1 Sol, and family C is
+Claude Sonnet 5.5. Label precision understates the precision of the certifier here, because most
 remaining label misses are benchmark defects (see the [audit](artifacts/v2/audit/AUDIT.md)).
 
 ![Outcome of data verification per set](figures/fig2_verification_outcome.png)

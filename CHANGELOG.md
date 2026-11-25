@@ -2,7 +2,7 @@
 
 ## v2.0.0
 
-- All experiments rerun with `deepseek-v4-flash`, `gpt-6.1-sol`, and `claude-sonnet-5-5`.
+- All experiments rerun with DeepSeek-V4-Flash, GPT-6.1 Sol, and Claude Sonnet 5.5.
 - Certification by agreement of three model families at the stated instance, with data verification: the two families that did not perform the extraction compare the extracted data with the problem text.
 - OptMATH-200 added, a second sample of OptMATH-Train drawn after the verification rule was set.
 - Audit of every certificate whose value misses the label, with classes and evidence per problem (`artifacts/v2/audit/AUDIT.md`).

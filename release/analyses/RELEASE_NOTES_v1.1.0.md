@@ -8,7 +8,7 @@ The run records unpack into one directory, `admitor-v1.1.0-run-records/`, with t
 
 | File | Contents | Files | Uncompressed bytes | Zipped bytes | sha256 |
 |---|---|---:|---:|---:|---|
-| `admitor-v1.1.0-run-records-core.zip` | relabeled arms, collection, gate work order, E1 certification runs (specifications, candidate programs, verdicts), E3 calibration runs and labels, runtime event streams | 2,330 | 849,470,251 | 93,940,328 | `ff5f80a5bc6a26ce037cbe0e34c7c03a108a81b571f79ceb902561d4bff176bb` |
+| `admitor-v1.1.0-run-records-core.zip` | relabeled arms, collection, gate problem list, E1 certification runs (specifications, candidate programs, verdicts), E3 calibration runs and labels, runtime event streams | 2,330 | 849,470,251 | 93,940,328 | `ff5f80a5bc6a26ce037cbe0e34c7c03a108a81b571f79ceb902561d4bff176bb` |
 | `admitor-v1.1.0-run-records-eval.zip` | E1 evaluation trajectories, four arms x five plates | 20 | 735,883,632 | 100,333,853 | `d72c2ad67195f6c0151c102da9748495cdd6adc40a689b3ac2affaeb2deaa5ba` |
 | `admitor-v1.1.0-run-records-e0.zip` | E0 host-reproduction trajectories and the 17-item OptMATH recheck | 6 | 173,263,054 | 22,242,226 | `4510871a975a9943e541890ba9c900f48e9cdd14c47e05ca6dbfb302cc5269be` |
 | `admitor-v1.1.0-run-records-cache.zip` | E1 evaluation response cache | 40,208 | 162,549,387 | 71,862,628 | `f65e9541e6f4d209a59aae6e8b617103675d80e8a7b11934281961c17885127e` |

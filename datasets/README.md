@@ -32,6 +32,7 @@ which no experiment here uses and which are not copied.
 | `optmath-train-300.jsonl` | 300 | OptMATH-Train, the mining pool, with answers |
 | `optmath-train-300-blind.jsonl` | 300 | the same pool with the answer column removed, which is what E1 actually mines |
 | `nano-co.jsonl` | 245 | NANO-CO, the solver-verified set used for E3 conformal calibration |
+| `../artifacts/v2/optmath_200/workorder.jsonl` | 200 | OptMATH-Train, a second uniform random sample (seed 42) drawn from the records outside the first 300, with answers in `problems.csv` |
 
 ## Sealed vault
 
@@ -57,6 +58,10 @@ python scripts/regen_derived.py --source datasets/train_set/optmath-train-300.js
 |---|---|
 | `optmath-train-300-blind.jsonl` | `48bb45321f977d5a883eb70979afa68733565cd417857ee0277e2617941e0a2b` |
 | `optmath-train-300-labels.jsonl` | `c05faaa8777e04cdd61eb29239c1b5b14e5d227d8ae46a7cf5c5881b3357c155` |
+
+The identifier file of OptMATH-200, `artifacts/v2/optmath_200/ids.json`, has sha256
+`8b95268bb0785a4d44e515ae10443962505dead124e2529dc09219d9b2b8b67e`; `scripts/confirm_draw.py`
+reproduces it from the OptMATH-Train file (`OptMATH-Train.jsonl` of the Hugging Face dataset `shushulei/OptMATH-Train`).
 
 Confirm the mining pool does not overlap any evaluation benchmark, which is a
 hard gate before E0 runs:
