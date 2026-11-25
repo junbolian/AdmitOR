@@ -249,7 +249,7 @@ def main():
     td = os.path.join(R, "admitor-infra")
     named = ["k4_matrix.py", "admitor_reanalysis.py", "e3_certificate_numbers.py",
              "case_packet.py", "disjointness_audit.py", "corrected_bootstrap.py",
-             "CLAUDE_CODE_E5MINI.md"]
+             "E5MINI_TASK.md"]
     w("| Work order asserts | Present |")
     w("|---|---|")
     for f in named:
