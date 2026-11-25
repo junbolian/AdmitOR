@@ -22,6 +22,16 @@ reads these data and returns the optimal value. The value is certified when the 
 it and when the two families that did not perform the extraction find no difference between the
 extracted data and the problem text. Otherwise AdmitOR abstains.
 
+![The certifier and the stage at which each error enters](figures/fig0_framework.png)
+
+**(a)** The certifier. Family A extracts the data, each family writes and solves a program, and the
+value is certified when the three programs agree and families B and C find no difference between the
+extracted data and the text. A data error enters before the programs and is shared by all of them. A
+modeling error enters in a single program. **(b)** Optimal value as a function of one parameter.
+Resampled instances that fall where an incorrect program differs separate it from the correct ones.
+When the extracted data differ from the text, all programs agree at the extracted data, and neither
+agreement nor resampling reveals the error.
+
 ![Label misses with and without three-family agreement, and their sources](figures/fig1_agreement_audit.png)
 
 **(a)** Share of returned values that miss the benchmark label, on the problems where the three

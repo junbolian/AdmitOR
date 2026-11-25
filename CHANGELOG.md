@@ -8,6 +8,7 @@
 - Audit of every certificate whose value misses the label, with classes and evidence per problem (`artifacts/v2/audit/AUDIT.md`).
 - Scripts that recompute every table and figure from the stored records (`scripts/paper_tables.py`, `scripts/make_figures.py`).
 - Description of the first OptMATH-Train sample corrected: it is a uniform random sample with seed 42, not the first 300 records by index.
+- Framework figure of the certifier added to the README (`figures/fig0_framework.png`, script `scripts/make_framework_figure.py`).
 
 ## v1.1.0 and v1.0.0
 
