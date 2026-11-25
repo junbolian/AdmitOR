@@ -1,0 +1,95 @@
+{
+ "spec": {
+  "resource_weights": {
+   "base": [
+    37,
+    37,
+    33,
+    40,
+    38,
+    37
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "center_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "num_resources": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_centers_available": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_resources] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_centers_available] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "resource_weights": {
+    "meaning": "Weight (units) of each of the six resources",
+    "base": [
+     37,
+     37,
+     33,
+     40,
+     38,
+     37
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "center_capacity": {
+    "meaning": "Uniform capacity (units) of each distribution center",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "num_resources": {
+    "meaning": "Number of resources (index-set size; must not be perturbed)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_centers_available": {
+    "meaning": "Number of distribution centers available (index-set size; frozen upper bound)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

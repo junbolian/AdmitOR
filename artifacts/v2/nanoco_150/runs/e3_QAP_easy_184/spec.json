@@ -1,0 +1,230 @@
+{
+ "spec": {
+  "flow_matrix": {
+   "base": [
+    [
+     0,
+     3,
+     8,
+     3
+    ],
+    [
+     3,
+     0,
+     3,
+     9
+    ],
+    [
+     8,
+     3,
+     0,
+     1
+    ],
+    [
+     3,
+     9,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     33,
+     53,
+     51
+    ],
+    [
+     33,
+     0,
+     75,
+     66
+    ],
+    [
+     53,
+     75,
+     0,
+     18
+    ],
+    [
+     51,
+     66,
+     18,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "room_coordinates": {
+   "base": [
+    [
+     77,
+     26
+    ],
+    [
+     47,
+     13
+    ],
+    [
+     85,
+     78
+    ],
+    [
+     67,
+     76
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "num_units": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_rooms": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_units] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_rooms] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "flow_matrix": {
+    "meaning": "average daily staff travel frequency between medical units (4x4, off-diagonal entries; diagonal is 0)",
+    "base": [
+     [
+      0,
+      3,
+      8,
+      3
+     ],
+     [
+      3,
+      0,
+      3,
+      9
+     ],
+     [
+      8,
+      3,
+      0,
+      1
+     ],
+     [
+      3,
+      9,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_matrix": {
+    "meaning": "integer Euclidean physical distance between candidate rooms (4x4, off-diagonal entries; diagonal is 0)",
+    "base": [
+     [
+      0,
+      33,
+      53,
+      51
+     ],
+     [
+      33,
+      0,
+      75,
+      66
+     ],
+     [
+      53,
+      75,
+      0,
+      18
+     ],
+     [
+      51,
+      66,
+      18,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "room_coordinates": {
+    "meaning": "fixed surveyed coordinates of the four candidate rooms",
+    "base": [
+     [
+      77,
+      26
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      85,
+      78
+     ],
+     [
+      67,
+      76
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "num_units": {
+    "meaning": "number of distinct medical units (index-set size; frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_rooms": {
+    "meaning": "number of available rooms (index-set size; frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

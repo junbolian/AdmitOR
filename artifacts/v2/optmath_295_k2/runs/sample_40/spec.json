@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    [
+     12,
+     19,
+     16
+    ],
+    [
+     16,
+     20,
+     12
+    ],
+    [
+     18,
+     18,
+     16
+    ],
+    [
+     20,
+     20,
+     15
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "profit_c0": {
+   "base": [
+    [
+     3,
+     4,
+     6
+    ],
+    [
+     8,
+     3,
+     10
+    ],
+    [
+     7,
+     4,
+     3
+    ],
+    [
+     5,
+     5,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_c1": {
+   "base": [
+    [
+     3,
+     7,
+     7
+    ],
+    [
+     4,
+     5,
+     4
+    ],
+    [
+     7,
+     6,
+     5
+    ],
+    [
+     4,
+     7,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Demand per product per market (must be exactly satisfied)",
+    "base": [
+     [
+      12,
+      19,
+      16
+     ],
+     [
+      16,
+      20,
+      12
+     ],
+     [
+      18,
+      18,
+      16
+     ],
+     [
+      20,
+      20,
+      15
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "profit_c0": {
+    "meaning": "Unit profit for Company 0 per market and product",
+    "base": [
+     [
+      3,
+      4,
+      6
+     ],
+     [
+      8,
+      3,
+      10
+     ],
+     [
+      7,
+      4,
+      3
+     ],
+     [
+      5,
+      5,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_c1": {
+    "meaning": "Unit profit for Company 1 per market and product",
+    "base": [
+     [
+      3,
+      7,
+      7
+     ],
+     [
+      4,
+      5,
+      4
+     ],
+     [
+      7,
+      6,
+      5
+     ],
+     [
+      4,
+      7,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,273 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "proc_time": [
+    [
+     10,
+     42,
+     30
+    ],
+    [
+     46,
+     17,
+     26
+    ],
+    [
+     28,
+     48,
+     10
+    ],
+    [
+     17,
+     27,
+     42
+    ]
+   ]
+  },
+  {
+   "proc_time": [
+    [
+     10.836560790747303,
+     30.030271031611203,
+     25.950527730644144
+    ],
+    [
+     38.36061637290751,
+     19.412006384472928,
+     28.75651200379742
+    ],
+    [
+     34.5886167374414,
+     36.103838379727186,
+     9.531530918111622
+    ],
+    [
+     12.203931638268317,
+     22.441935191818374,
+     42.13495326020473
+    ]
+   ]
+  },
+  {
+   "proc_time": [
+    [
+     7.159215818103181,
+     34.41070879730354,
+     32.697919880031414
+    ],
+    [
+     47.24038486464878,
+     14.148494344815106,
+     27.392544668464176
+    ],
+    [
+     33.19843167218749,
+     33.787164278728156,
+     11.834915510996847
+    ],
+    [
+     19.021021828879913,
+     24.41205836759147,
+     33.31808339525689
+    ]
+   ]
+  },
+  {
+   "proc_time": [
+    [
+     12.743278433240688,
+     37.882182536838194,
+     22.669425180842662
+    ],
+    [
+     34.869372000603605,
+     20.54444253674409,
+     27.618126089323503
+    ],
+    [
+     33.15975499100959,
+     54.616275456781956,
+     10.217368548728205
+    ],
+    [
+     21.825780792589583,
+     25.032256910775324,
+     43.31142390808532
+    ]
+   ]
+  },
+  {
+   "proc_time": [
+    [
+     11.97642798551797,
+     44.986697759579,
+     36.51072420559399
+    ],
+    [
+     48.13491920908663,
+     19.086632729392218,
+     18.91486038502833
+    ],
+    [
+     23.428691030945984,
+     41.93437335174069,
+     7.478751861541765
+    ],
+    [
+     14.274467040882508,
+     20.53622315643761,
+     36.40493479837432
+    ]
+   ]
+  },
+  {
+   "proc_time": [
+    [
+     10.8141066655864,
+     38.59377091004612,
+     27.663257408103885
+    ],
+    [
+     37.982394049293056,
+     14.623173784900954,
+     32.81181156831491
+    ],
+    [
+     30.486994472142772,
+     51.14297296320926,
+     8.026831889188582
+    ],
+    [
+     19.33709333909356,
+     21.54712039894324,
+     38.962277132292726
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "B-structured": [
+   159.999999,
+   141.62509483720333,
+   148.16009319709863,
+   167.43183022295364,
+   148.29714589957376,
+   157.7903933785136
+  ],
+  "B-structured-2": [
+   159.999999,
+   141.62509483720333,
+   148.16009319709863,
+   167.43183022295364,
+   148.29714589957376,
+   157.7903933785136
+  ],
+  "C-direct": [
+   160.0,
+   141.6250948371954,
+   148.16009319709764,
+   167.43183022295358,
+   148.29714589957283,
+   157.79039337851276
+  ],
+  "C-direct-2": [
+   160.0,
+   141.62509483720314,
+   148.16009319709866,
+   167.4318302229534,
+   148.29714589957376,
+   157.79039337851364
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)",
+   "crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)",
+   "crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)",
+   "crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)",
+   "crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)",
+   "crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)', 'crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)', 'crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)', 'crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)', 'crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)', 'crash:Expecting a tuple or relational expression. Examples: | sum(model.costs) == model.income | (0, model.price[item], 50)']",
+  "A-direct-2": "diverges from consensus by 167.4 on instance 3 (params: {'proc_time': [[12.74, 37.88, 22.67], [34.87, 20.54, 27.62], [33.16, 54.62, 10.22], [21.83, 25.03, 43.31]]})"
+ },
+ "disagreements": [],
+ "notes": []
+}

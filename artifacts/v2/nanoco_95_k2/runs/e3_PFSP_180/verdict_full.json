@@ -1,0 +1,274 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "p": [
+    [
+     38,
+     10,
+     14
+    ],
+    [
+     41,
+     23,
+     39
+    ],
+    [
+     37,
+     16,
+     25
+    ],
+    [
+     38,
+     31,
+     35
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     41.178931004839754,
+     7.150064531336001,
+     12.1102462743006
+    ],
+    [
+     34.19098415846104,
+     26.26330275546337,
+     43.13476800569613
+    ],
+    [
+     45.70638640304757,
+     12.034612793242395,
+     23.828827295279055
+    ],
+    [
+     27.279376603188005,
+     25.76666633134702,
+     35.112461050170616
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     27.20502010879209,
+     8.19302590411989,
+     15.259029277347995
+    ],
+    [
+     42.10556042283913,
+     19.14208058416161,
+     41.08881700269627
+    ],
+    [
+     43.86935613824775,
+     11.262388092909385,
+     29.587288777492116
+    ],
+    [
+     42.51757820573157,
+     28.02865960723465,
+     27.765069496047413
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     48.42445804631461,
+     9.01956727067576,
+     10.579065084393243
+    ],
+    [
+     31.079222870103216,
+     27.795422255594946,
+     41.42718913398525
+    ],
+    [
+     43.81824766669124,
+     18.205425152260652,
+     25.543421371820514
+    ],
+    [
+     48.787039418729655,
+     28.74073941607537,
+     36.09285325673776
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     45.51042634496829,
+     10.711118514185475,
+     17.038337962610527
+    ],
+    [
+     42.90286277331634,
+     25.82309133976594,
+     28.372290577542497
+    ],
+    [
+     30.959341719464337,
+     13.978124450580228,
+     18.696879653854413
+    ],
+    [
+     31.907632209031487,
+     23.57862658702096,
+     30.337445665311932
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     41.093605329228325,
+     9.188993073820505,
+     12.909520123781814
+    ],
+    [
+     33.85387295697859,
+     19.784293944277763,
+     49.21771735247236
+    ],
+    [
+     40.28638555247438,
+     17.047657654403086,
+     20.067079722971453
+    ],
+    [
+     43.22409099326796,
+     24.73928638397187,
+     32.468564276910605
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   181.99999999999983,
+   167.61598897517297,
+   185.26318578669287,
+   191.70760035690773,
+   179.02971952357646,
+   180.55646802955158
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   182.0,
+   167.61598897517297,
+   185.2631857866929,
+   191.70760035690776,
+   179.0297195235765,
+   180.55646802955158
+  ],
+  "B-structured-2": [
+   182.00000000000003,
+   167.61598897517297,
+   185.26318578669284,
+   191.70760035690773,
+   179.02971952357643,
+   180.55646802955158
+  ],
+  "C-direct": [
+   182.0,
+   167.61598897517106,
+   185.263185786692,
+   191.70760035690597,
+   179.02971952357464,
+   180.55646802954993
+  ],
+  "C-direct-2": [
+   182.0,
+   167.61598897517305,
+   185.26318578669287,
+   191.70760035690722,
+   179.02971950557338,
+   180.55646802955158
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '(0, -1)' is not valid for indexed co",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '(0, -1)' is not valid for indexed co",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '(0, -1)' is not valid for indexed co",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '(0, -1)' is not valid for indexed co",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '(0, -1)' is not valid for indexed co",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '(0, -1)' is not valid for indexed co"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index \\'(0, -1)\\' is not valid for indexed co', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index \\'(0, -1)\\' is not valid for indexed co', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index \\'(0, -1)\\' is not valid for indexed co', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index \\'(0, -1)\\' is not valid for indexed co', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index \\'(0, -1)\\' is not valid for indexed co', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index \\'(0, -1)\\' is not valid for indexed co']"
+ },
+ "disagreements": [],
+ "notes": []
+}

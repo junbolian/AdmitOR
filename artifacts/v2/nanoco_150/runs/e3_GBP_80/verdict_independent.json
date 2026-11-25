@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "wafer_width": 20,
+   "wafer_height": 20,
+   "ic1_width": 4,
+   "ic1_height": 4,
+   "ic2_width": 7,
+   "ic2_height": 5,
+   "ic3_width": 7,
+   "ic3_height": 7,
+   "ic4_width": 4,
+   "ic4_height": 5,
+   "ic5_width": 7,
+   "ic5_height": 6
+  },
+  {
+   "wafer_width": 23.11541438766307,
+   "wafer_height": 18.200086041781336,
+   "ic1_width": 3.8250879551073576,
+   "ic1_height": 3.669632214446468,
+   "ic2_width": 8.682356070820063,
+   "ic2_height": 6.706797949691645,
+   "ic3_width": 9.460897838524227,
+   "ic3_height": 5.434694163147081,
+   "ic4_width": 4.265765459055811,
+   "ic4_height": 4.119188877752281,
+   "ic5_width": 6.093189874018017,
+   "ic5_height": 6.526776440516812
+  },
+  {
+   "wafer_width": 18.21228775747091,
+   "wafer_height": 19.59070120549319,
+   "ic1_width": 4.94965331333857,
+   "ic1_height": 4.63482444180965,
+   "ic2_width": 6.102203110203483,
+   "ic2_height": 6.357062735503635,
+   "ic3_width": 9.047152283389133,
+   "ic3_height": 5.0324937983903055,
+   "ic4_width": 5.417457755498424,
+   "ic4_height": 6.792557579952907,
+   "ic5_width": 6.70125258258996,
+   "ic5_height": 4.777397499058908
+  },
+  {
+   "wafer_width": 25.65770457765425,
+   "wafer_height": 20.692756360901015,
+   "ic1_width": 3.278237530140444,
+   "ic1_height": 3.2901491305003923,
+   "ic2_width": 9.237471831737299,
+   "ic2_height": 6.414904125467564,
+   "ic3_width": 9.035641366371902,
+   "ic3_height": 8.64865893346909,
+   "ic4_width": 4.608684274364102,
+   "ic4_height": 7.892463055917482,
+   "ic5_width": 6.892671886041768,
+   "ic5_height": 6.760203156366135
+  },
+  {
+   "wafer_width": 24.63523731402396,
+   "wafer_height": 22.94815801891397,
+   "ic1_width": 5.585120700932332,
+   "ic1_height": 4.732056435770286,
+   "ic2_width": 8.522859181074617,
+   "ic2_height": 4.183297534622649,
+   "ic3_width": 6.139491378257734,
+   "ic3_height": 6.446939818010536,
+   "ic4_width": 3.2393759307708825,
+   "ic4_height": 4.931163545444121,
+   "ic5_width": 5.505007147048645,
+   "ic5_height": 5.38986801555046
+  },
+  {
+   "wafer_width": 23.085475554115202,
+   "wafer_height": 20.918657431760675,
+   "ic1_width": 4.110542901350648,
+   "ic1_height": 3.628521092314463,
+   "ic2_width": 6.334889110245567,
+   "ic2_height": 7.746618350849976,
+   "ic3_width": 8.240176926232968,
+   "ic3_height": 8.045655028334942,
+   "ic4_width": 3.513415944594291,
+   "ic4_height": 6.916507191801397,
+   "ic5_width": 5.817012468809642,
+   "ic5_height": 5.897277208788239
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "C-direct": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: 'ConcreteModel' object has no",
+   "crash:File \"<PATH>/block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: 'ConcreteModel' object has no",
+   "crash:File \"<PATH>/block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: 'ConcreteModel' object has no",
+   "crash:File \"<PATH>/block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: 'ConcreteModel' object has no",
+   "crash:File \"<PATH>/block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: 'ConcreteModel' object has no",
+   "crash:File \"<PATH>/block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: 'ConcreteModel' object has no"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: \\'ConcreteModel\\' object has no', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: \\'ConcreteModel\\' object has no', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: \\'ConcreteModel\\' object has no', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: \\'ConcreteModel\\' object has no', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: \\'ConcreteModel\\' object has no', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\block.py\", line 706, in __delattr__ | super(BlockData, self).__delattr__(name) | AttributeError: \\'ConcreteModel\\' object has no']"
+ },
+ "disagreements": [],
+ "notes": []
+}

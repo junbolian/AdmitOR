@@ -1,0 +1,409 @@
+{
+ "spec": {
+  "dist_0_1": {
+   "base": 85,
+   "perturb": {
+    "mode": "abs",
+    "lo": 42.5,
+    "hi": 127.5,
+    "integer": false
+   }
+  },
+  "dist_0_2": {
+   "base": 75,
+   "perturb": {
+    "mode": "abs",
+    "lo": 37.5,
+    "hi": 112.5,
+    "integer": false
+   }
+  },
+  "dist_0_3": {
+   "base": 78,
+   "perturb": {
+    "mode": "abs",
+    "lo": 39.0,
+    "hi": 117.0,
+    "integer": false
+   }
+  },
+  "dist_0_4": {
+   "base": 96,
+   "perturb": {
+    "mode": "abs",
+    "lo": 48.0,
+    "hi": 144.0,
+    "integer": false
+   }
+  },
+  "dist_0_5": {
+   "base": 37,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.5,
+    "hi": 55.5,
+    "integer": false
+   }
+  },
+  "dist_0_6": {
+   "base": 33,
+   "perturb": {
+    "mode": "abs",
+    "lo": 16.5,
+    "hi": 49.5,
+    "integer": false
+   }
+  },
+  "dist_1_2": {
+   "base": 65,
+   "perturb": {
+    "mode": "abs",
+    "lo": 32.5,
+    "hi": 97.5,
+    "integer": false
+   }
+  },
+  "dist_1_3": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.5,
+    "hi": 19.5,
+    "integer": false
+   }
+  },
+  "dist_1_4": {
+   "base": 84,
+   "perturb": {
+    "mode": "abs",
+    "lo": 42.0,
+    "hi": 126.0,
+    "integer": false
+   }
+  },
+  "dist_1_5": {
+   "base": 93,
+   "perturb": {
+    "mode": "abs",
+    "lo": 46.5,
+    "hi": 139.5,
+    "integer": false
+   }
+  },
+  "dist_1_6": {
+   "base": 102,
+   "perturb": {
+    "mode": "abs",
+    "lo": 51.0,
+    "hi": 153.0,
+    "integer": false
+   }
+  },
+  "dist_2_3": {
+   "base": 71,
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.5,
+    "hi": 106.5,
+    "integer": false
+   }
+  },
+  "dist_2_4": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 36.0,
+    "integer": false
+   }
+  },
+  "dist_2_5": {
+   "base": 54,
+   "perturb": {
+    "mode": "abs",
+    "lo": 27.0,
+    "hi": 81.0,
+    "integer": false
+   }
+  },
+  "dist_2_6": {
+   "base": 68,
+   "perturb": {
+    "mode": "abs",
+    "lo": 34.0,
+    "hi": 102.0,
+    "integer": false
+   }
+  },
+  "dist_3_4": {
+   "base": 92,
+   "perturb": {
+    "mode": "abs",
+    "lo": 46.0,
+    "hi": 138.0,
+    "integer": false
+   }
+  },
+  "dist_3_5": {
+   "base": 91,
+   "perturb": {
+    "mode": "abs",
+    "lo": 45.5,
+    "hi": 136.5,
+    "integer": false
+   }
+  },
+  "dist_3_6": {
+   "base": 98,
+   "perturb": {
+    "mode": "abs",
+    "lo": 49.0,
+    "hi": 147.0,
+    "integer": false
+   }
+  },
+  "dist_4_5": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.0,
+    "hi": 105.0,
+    "integer": false
+   }
+  },
+  "dist_4_6": {
+   "base": 84,
+   "perturb": {
+    "mode": "abs",
+    "lo": 42.0,
+    "hi": 126.0,
+    "integer": false
+   }
+  },
+  "dist_5_6": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "dist_0_1": {
+    "meaning": "Distance from Node 0 to Node 1 (symmetric, also 1->0)",
+    "base": 85,
+    "perturb": {
+     "mode": "abs",
+     "lo": 42.5,
+     "hi": 127.5,
+     "integer": false
+    }
+   },
+   "dist_0_2": {
+    "meaning": "Distance from Node 0 to Node 2 (symmetric, also 2->0)",
+    "base": 75,
+    "perturb": {
+     "mode": "abs",
+     "lo": 37.5,
+     "hi": 112.5,
+     "integer": false
+    }
+   },
+   "dist_0_3": {
+    "meaning": "Distance from Node 0 to Node 3 (symmetric, also 3->0)",
+    "base": 78,
+    "perturb": {
+     "mode": "abs",
+     "lo": 39.0,
+     "hi": 117.0,
+     "integer": false
+    }
+   },
+   "dist_0_4": {
+    "meaning": "Distance from Node 0 to Node 4 (symmetric, also 4->0)",
+    "base": 96,
+    "perturb": {
+     "mode": "abs",
+     "lo": 48.0,
+     "hi": 144.0,
+     "integer": false
+    }
+   },
+   "dist_0_5": {
+    "meaning": "Distance from Node 0 to Node 5 (symmetric, also 5->0)",
+    "base": 37,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18.5,
+     "hi": 55.5,
+     "integer": false
+    }
+   },
+   "dist_0_6": {
+    "meaning": "Distance from Node 0 to Node 6 (symmetric, also 6->0)",
+    "base": 33,
+    "perturb": {
+     "mode": "abs",
+     "lo": 16.5,
+     "hi": 49.5,
+     "integer": false
+    }
+   },
+   "dist_1_2": {
+    "meaning": "Distance from Node 1 to Node 2 (symmetric, also 2->1)",
+    "base": 65,
+    "perturb": {
+     "mode": "abs",
+     "lo": 32.5,
+     "hi": 97.5,
+     "integer": false
+    }
+   },
+   "dist_1_3": {
+    "meaning": "Distance from Node 1 to Node 3 (symmetric, also 3->1); delivery pair 3 arc",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6.5,
+     "hi": 19.5,
+     "integer": false
+    }
+   },
+   "dist_1_4": {
+    "meaning": "Distance from Node 1 to Node 4 (symmetric, also 4->1)",
+    "base": 84,
+    "perturb": {
+     "mode": "abs",
+     "lo": 42.0,
+     "hi": 126.0,
+     "integer": false
+    }
+   },
+   "dist_1_5": {
+    "meaning": "Distance from Node 1 to Node 5 (symmetric, also 5->1)",
+    "base": 93,
+    "perturb": {
+     "mode": "abs",
+     "lo": 46.5,
+     "hi": 139.5,
+     "integer": false
+    }
+   },
+   "dist_1_6": {
+    "meaning": "Distance from Node 1 to Node 6 (symmetric, also 6->1)",
+    "base": 102,
+    "perturb": {
+     "mode": "abs",
+     "lo": 51.0,
+     "hi": 153.0,
+     "integer": false
+    }
+   },
+   "dist_2_3": {
+    "meaning": "Distance from Node 2 to Node 3 (symmetric, also 3->2)",
+    "base": 71,
+    "perturb": {
+     "mode": "abs",
+     "lo": 35.5,
+     "hi": 106.5,
+     "integer": false
+    }
+   },
+   "dist_2_4": {
+    "meaning": "Distance from Node 2 to Node 4 (symmetric, also 4->2); delivery pair 2 arc",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12.0,
+     "hi": 36.0,
+     "integer": false
+    }
+   },
+   "dist_2_5": {
+    "meaning": "Distance from Node 2 to Node 5 (symmetric, also 5->2)",
+    "base": 54,
+    "perturb": {
+     "mode": "abs",
+     "lo": 27.0,
+     "hi": 81.0,
+     "integer": false
+    }
+   },
+   "dist_2_6": {
+    "meaning": "Distance from Node 2 to Node 6 (symmetric, also 6->2); delivery pair 1 arc",
+    "base": 68,
+    "perturb": {
+     "mode": "abs",
+     "lo": 34.0,
+     "hi": 102.0,
+     "integer": false
+    }
+   },
+   "dist_3_4": {
+    "meaning": "Distance from Node 3 to Node 4 (symmetric, also 4->3)",
+    "base": 92,
+    "perturb": {
+     "mode": "abs",
+     "lo": 46.0,
+     "hi": 138.0,
+     "integer": false
+    }
+   },
+   "dist_3_5": {
+    "meaning": "Distance from Node 3 to Node 5 (symmetric, also 5->3)",
+    "base": 91,
+    "perturb": {
+     "mode": "abs",
+     "lo": 45.5,
+     "hi": 136.5,
+     "integer": false
+    }
+   },
+   "dist_3_6": {
+    "meaning": "Distance from Node 3 to Node 6 (symmetric, also 6->3)",
+    "base": 98,
+    "perturb": {
+     "mode": "abs",
+     "lo": 49.0,
+     "hi": 147.0,
+     "integer": false
+    }
+   },
+   "dist_4_5": {
+    "meaning": "Distance from Node 4 to Node 5 (symmetric, also 5->4)",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 35.0,
+     "hi": 105.0,
+     "integer": false
+    }
+   },
+   "dist_4_6": {
+    "meaning": "Distance from Node 4 to Node 6 (symmetric, also 6->4)",
+    "base": 84,
+    "perturb": {
+     "mode": "abs",
+     "lo": 42.0,
+     "hi": 126.0,
+     "integer": false
+    }
+   },
+   "dist_5_6": {
+    "meaning": "Distance from Node 5 to Node 6 (symmetric, also 6->5); pickup pair 2 arc",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7.0,
+     "hi": 21.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "sample_id": "sample_283",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"revenue\", \"extracted\": [1465, 818, 986, 1182, 892, 1040, 1201, 709, 869, 1050, 1294, 955, 1225, 1413, 1200, 925, 1000, 725, 1386, 1436, 1023, 1525, 852], \"stated\": \"Package 17 generates $1000 per unit\", \"evidence\": \"Package 17 generates $1000 per unit\"}], \"not_stated\": []}",
+ "mismatch": [
+  {
+   "parameter": "revenue",
+   "extracted": [
+    1465,
+    818,
+    986,
+    1182,
+    892,
+    1040,
+    1201,
+    709,
+    869,
+    1050,
+    1294,
+    955,
+    1225,
+    1413,
+    1200,
+    925,
+    1000,
+    725,
+    1386,
+    1436,
+    1023,
+    1525,
+    852
+   ],
+   "stated": "Package 17 generates $1000 per unit",
+   "evidence": "Package 17 generates $1000 per unit"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

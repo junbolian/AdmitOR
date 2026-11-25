@@ -1,0 +1,71 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:participants = params[\"participants\"] | ~~~~~~^^^^^^^^^^^^^^^^ | KeyError: 'participants'",
+   "crash:participants = params[\"participants\"] | ~~~~~~^^^^^^^^^^^^^^^^ | KeyError: 'participants'",
+   "crash:participants = params[\"participants\"] | ~~~~~~^^^^^^^^^^^^^^^^ | KeyError: 'participants'",
+   "crash:participants = params[\"participants\"] | ~~~~~~^^^^^^^^^^^^^^^^ | KeyError: 'participants'",
+   "crash:participants = params[\"participants\"] | ~~~~~~^^^^^^^^^^^^^^^^ | KeyError: 'participants'",
+   "crash:participants = params[\"participants\"] | ~~~~~~^^^^^^^^^^^^^^^^ | KeyError: 'participants'"
+  ],
+  "B-structured": [
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

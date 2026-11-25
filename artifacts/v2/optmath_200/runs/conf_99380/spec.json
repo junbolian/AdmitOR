@@ -1,0 +1,319 @@
+{
+ "spec": {
+  "demand_A": {
+   "base": [
+    60,
+    160,
+    238,
+    313,
+    363,
+    418,
+    469
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand_B": {
+   "base": [
+    80,
+    164,
+    244,
+    294,
+    354,
+    412,
+    465
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "prod_cost_A": {
+   "base": [
+    41,
+    41,
+    42,
+    42,
+    42,
+    42,
+    48
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "prod_cost_B": {
+   "base": [
+    41,
+    41,
+    41,
+    41,
+    41,
+    45,
+    47
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "setup_cost_A": {
+   "base": [
+    1176,
+    1176,
+    1176,
+    1176,
+    1176,
+    1176,
+    1426
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost_B": {
+   "base": [
+    1020,
+    1020,
+    1020,
+    1020,
+    1020,
+    1020,
+    1348
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "hold_cost_A": {
+   "base": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "hold_cost_B": {
+   "base": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_usage_A": {
+   "base": 1.5946,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "resource_usage_B": {
+   "base": 1.7974,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "resource_capacity": {
+   "base": [
+    1112,
+    1085,
+    1090,
+    1196,
+    1060,
+    1084,
+    1124
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_A": {
+    "meaning": "Cumulative demand for Product A in each period",
+    "base": [
+     60,
+     160,
+     238,
+     313,
+     363,
+     418,
+     469
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand_B": {
+    "meaning": "Cumulative demand for Product B in each period",
+    "base": [
+     80,
+     164,
+     244,
+     294,
+     354,
+     412,
+     465
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "prod_cost_A": {
+    "meaning": "Production cost per unit of Product A in each period",
+    "base": [
+     41,
+     41,
+     42,
+     42,
+     42,
+     42,
+     48
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "prod_cost_B": {
+    "meaning": "Production cost per unit of Product B in each period",
+    "base": [
+     41,
+     41,
+     41,
+     41,
+     41,
+     45,
+     47
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "setup_cost_A": {
+    "meaning": "Setup cost for Product A in each period",
+    "base": [
+     1176,
+     1176,
+     1176,
+     1176,
+     1176,
+     1176,
+     1426
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "Setup cost for Product B in each period",
+    "base": [
+     1020,
+     1020,
+     1020,
+     1020,
+     1020,
+     1020,
+     1348
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "hold_cost_A": {
+    "meaning": "Inventory holding cost per unit of Product A in each period",
+    "base": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "hold_cost_B": {
+    "meaning": "Inventory holding cost per unit of Product B in each period",
+    "base": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_usage_A": {
+    "meaning": "Shared resource consumption per unit of Product A",
+    "base": 1.5946,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "resource_usage_B": {
+    "meaning": "Shared resource consumption per unit of Product B",
+    "base": 1.7974,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "resource_capacity": {
+    "meaning": "Available shared resource capacity in each period",
+    "base": [
+     1112,
+     1085,
+     1090,
+     1196,
+     1060,
+     1084,
+     1124
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

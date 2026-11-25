@@ -1,0 +1,72 @@
+{
+ "spec": {
+  "member_capacity": {
+   "base": [
+    18,
+    19,
+    19,
+    16,
+    18,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "project_requirement": {
+   "base": [
+    0,
+    0,
+    17,
+    20,
+    16,
+    17,
+    20,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "member_capacity": {
+    "meaning": "Total time available for each team member (Person 0..5)",
+    "base": [
+     18,
+     19,
+     19,
+     16,
+     18,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "project_requirement": {
+    "meaning": "Total effort required by each project (Project 0..7)",
+    "base": [
+     0,
+     0,
+     17,
+     20,
+     16,
+     17,
+     20,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

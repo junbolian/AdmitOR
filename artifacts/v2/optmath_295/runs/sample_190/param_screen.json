@@ -1,0 +1,42 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "food_cost",
+  "max_buy_per_food",
+  "nutrient_min",
+  "nutrient_max",
+  "nutrient_coefficients"
+ ],
+ "safe": [
+  "food_cost",
+  "max_buy_per_food",
+  "nutrient_coefficients"
+ ],
+ "tests": {
+  "food_cost": [
+   3,
+   3
+  ],
+  "max_buy_per_food": [
+   3,
+   3
+  ],
+  "nutrient_min": [
+   0,
+   3
+  ],
+  "nutrient_max": [
+   0,
+   0
+  ],
+  "nutrient_coefficients": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

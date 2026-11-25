@@ -1,0 +1,111 @@
+{
+ "spec": {
+  "capacity": {
+   "base": 20585,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12000.0,
+    "hi": 30000.0,
+    "integer": true
+   }
+  },
+  "values": {
+   "base": [
+    157,
+    560,
+    140,
+    805,
+    713,
+    717,
+    438,
+    20,
+    731,
+    198,
+    980,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights": {
+   "base": [
+    463,
+    3110,
+    4354,
+    381,
+    3160,
+    3543,
+    1657,
+    1440,
+    435,
+    2775,
+    3358,
+    4732
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "vehicle maximum weight capacity",
+    "base": 20585,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12000,
+     "hi": 30000,
+     "integer": true
+    }
+   },
+   "values": {
+    "meaning": "unit value of each item",
+    "base": [
+     157,
+     560,
+     140,
+     805,
+     713,
+     717,
+     438,
+     20,
+     731,
+     198,
+     980,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights": {
+    "meaning": "unit weight of each item",
+    "base": [
+     463,
+     3110,
+     4354,
+     381,
+     3160,
+     3543,
+     1657,
+     1440,
+     435,
+     2775,
+     3358,
+     4732
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

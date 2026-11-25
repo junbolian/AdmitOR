@@ -1,0 +1,163 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "shipping_cost_per_unit": 5,
+   "joint_capacity": 123,
+   "product_capacity_0_0to1": 74,
+   "product_capacity_1_0to1": 70,
+   "product_capacity_0_1to0": 71,
+   "product_capacity_1_1to0": 72,
+   "product_capacity_generic_low": 70,
+   "product_capacity_generic_high": 75,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  },
+  {
+   "shipping_cost_per_unit": 9.182803953736514,
+   "joint_capacity": 35,
+   "product_capacity_0_0to1": 49,
+   "product_capacity_1_0to1": 41,
+   "product_capacity_0_1to0": 113,
+   "product_capacity_1_1to0": 105,
+   "product_capacity_generic_low": 135,
+   "product_capacity_generic_high": 23,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": -9,
+   "demand_city2_product0": -3,
+   "supply_city2_product1": 5,
+   "supply_city3_product0": -9,
+   "demand_city3_product1": -9
+  },
+  {
+   "shipping_cost_per_unit": 9.496533133385697,
+   "joint_capacity": 134,
+   "product_capacity_0_0to1": 41,
+   "product_capacity_1_0to1": 92,
+   "product_capacity_0_1to0": 123,
+   "product_capacity_1_1to0": 11,
+   "product_capacity_generic_low": 123,
+   "product_capacity_generic_high": 115,
+   "demand_city1_product0": 0,
+   "demand_city1_product1": -5,
+   "demand_city2_product0": 19,
+   "supply_city2_product1": 0,
+   "supply_city3_product0": -7,
+   "demand_city3_product1": -12
+  },
+  {
+   "shipping_cost_per_unit": 15.424830990423793,
+   "joint_capacity": 145,
+   "product_capacity_0_0to1": 123,
+   "product_capacity_1_0to1": 112,
+   "product_capacity_0_1to0": 85,
+   "product_capacity_1_1to0": 146,
+   "product_capacity_generic_low": 63,
+   "product_capacity_generic_high": 93,
+   "demand_city1_product0": 15,
+   "demand_city1_product1": 9,
+   "demand_city2_product0": 16,
+   "supply_city2_product1": 7,
+   "supply_city3_product0": 15,
+   "demand_city3_product1": -14
+  },
+  {
+   "shipping_cost_per_unit": -3.163051730453594,
+   "joint_capacity": 85,
+   "product_capacity_0_0to1": 21,
+   "product_capacity_1_0to1": 43,
+   "product_capacity_0_1to0": 24,
+   "product_capacity_1_1to0": 49,
+   "product_capacity_generic_low": 99,
+   "product_capacity_generic_high": 65,
+   "demand_city1_product0": 1,
+   "demand_city1_product1": -4,
+   "demand_city2_product0": -2,
+   "supply_city2_product1": 18,
+   "supply_city3_product0": 13,
+   "demand_city3_product1": 3
+  },
+  {
+   "shipping_cost_per_unit": -4.86584055405709,
+   "joint_capacity": 169,
+   "product_capacity_0_0to1": 33,
+   "product_capacity_1_0to1": 63,
+   "product_capacity_0_1to0": 149,
+   "product_capacity_1_1to0": 100,
+   "product_capacity_generic_low": 88,
+   "product_capacity_generic_high": 113,
+   "demand_city1_product0": 15,
+   "demand_city1_product1": 13,
+   "demand_city2_product0": -3,
+   "supply_city2_product1": -9,
+   "supply_city3_product0": 1,
+   "demand_city3_product1": -7
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   25.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   25.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   25.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "solver_failed",
+   "solver_failed",
+   "solver_failed",
+   "solver_failed",
+   "solver_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "solver_status_4",
+   "solver_status_4"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

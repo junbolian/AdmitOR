@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "d01": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d02": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d03": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d10": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d12": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d13": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d20": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d21": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d23": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d30": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d31": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "d32": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "d01": {
+    "meaning": "dispersion Node 0 -> Node 1",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d02": {
+    "meaning": "dispersion Node 0 -> Node 2",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d03": {
+    "meaning": "dispersion Node 0 -> Node 3",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d10": {
+    "meaning": "dispersion Node 1 -> Node 0",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d12": {
+    "meaning": "dispersion Node 1 -> Node 2",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d13": {
+    "meaning": "dispersion Node 1 -> Node 3",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d20": {
+    "meaning": "dispersion Node 2 -> Node 0",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d21": {
+    "meaning": "dispersion Node 2 -> Node 1",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d23": {
+    "meaning": "dispersion Node 2 -> Node 3",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d30": {
+    "meaning": "dispersion Node 3 -> Node 0",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d31": {
+    "meaning": "dispersion Node 3 -> Node 1",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "d32": {
+    "meaning": "dispersion Node 3 -> Node 2",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

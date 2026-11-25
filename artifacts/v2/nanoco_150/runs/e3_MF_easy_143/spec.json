@@ -1,0 +1,112 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    7,
+    14,
+    11,
+    4,
+    11,
+    14,
+    5,
+    11,
+    14,
+    5,
+    14,
+    4,
+    4,
+    8,
+    9,
+    13,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost": {
+   "base": [
+    5,
+    4,
+    6,
+    5,
+    8,
+    5,
+    4,
+    8,
+    9,
+    10,
+    8,
+    4,
+    10,
+    10,
+    4,
+    9,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "maximum throughput capacity of each of the 17 pipelines, in order (0-1,0-2,0-3,0-7,1-2,1-5,2-3,2-5,2-6,3-4,3-5,4-5,4-6,4-7,5-6,5-7,6-7)",
+    "base": [
+     7,
+     14,
+     11,
+     4,
+     11,
+     14,
+     5,
+     11,
+     14,
+     5,
+     14,
+     4,
+     4,
+     8,
+     9,
+     13,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost": {
+    "meaning": "pumping cost per unit of flow on each of the 17 pipelines, same order",
+    "base": [
+     5,
+     4,
+     6,
+     5,
+     8,
+     5,
+     4,
+     8,
+     9,
+     10,
+     8,
+     4,
+     10,
+     10,
+     4,
+     9,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

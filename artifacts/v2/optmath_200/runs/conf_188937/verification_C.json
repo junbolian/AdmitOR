@@ -1,0 +1,37 @@
+{
+ "sample_id": "conf_188937",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement gives only ranges for all cost parameters and demand — it never lists specific per-period values. The extracted arrays are therefore not_stated for every cost vector and the demand vector. The production_capacity value matches. The setup_cost array also contains 650 as its last entry, which falls outside the stated range of 643–1189 (650 is within range, so no mismatch there), but the values themselves are not stated regardless.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"production_cost\",\n      \"evidence\": \"variable production costs ranging from 20 to 40 units per item produced\"\n    },\n    {\n      \"parameter\": \"holding_cost\",\n      \"evidence\": \"inventory holding costs ranging from 15 to 25 units per item stored\"\n    },\n    {\n      \"parameter\": \"backlog_cost\",\n      \"evidence\": \"backlogging penalty costs ranging from 51 to 79 units per backlogged item\"\n    },\n    {\n      \"parameter\": \"setup_cost\",\n      \"evidence\": \"fixed setup costs ranging from 643 to 1189 units per period when production is initiated\"\n    },\n    {\n      \"parameter\": \"demand\",\n      \"evidence\": \"demand for that period, which varies across periods from 302 to 596 units\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "production_cost",
+   "evidence": "variable production costs ranging from 20 to 40 units per item produced"
+  },
+  {
+   "parameter": "holding_cost",
+   "evidence": "inventory holding costs ranging from 15 to 25 units per item stored"
+  },
+  {
+   "parameter": "backlog_cost",
+   "evidence": "backlogging penalty costs ranging from 51 to 79 units per backlogged item"
+  },
+  {
+   "parameter": "setup_cost",
+   "evidence": "fixed setup costs ranging from 643 to 1189 units per period when production is initiated"
+  },
+  {
+   "parameter": "demand",
+   "evidence": "demand for that period, which varies across periods from 302 to 596 units"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

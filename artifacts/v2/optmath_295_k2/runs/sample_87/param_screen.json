@@ -1,0 +1,36 @@
+{
+ "alive": [
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "expected_returns",
+  "min_return",
+  "max_weight",
+  "budget_sum_weights"
+ ],
+ "safe": [
+  "expected_returns",
+  "max_weight",
+  "budget_sum_weights"
+ ],
+ "tests": {
+  "expected_returns": [
+   2,
+   2
+  ],
+  "min_return": [
+   2,
+   0
+  ],
+  "max_weight": [
+   2,
+   2
+  ],
+  "budget_sum_weights": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

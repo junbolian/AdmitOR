@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    288,
+    286,
+    350,
+    257,
+    314
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost": {
+   "base": [
+    5,
+    4,
+    4,
+    6,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_production": {
+   "base": [
+    35,
+    36,
+    37,
+    36,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_production": {
+   "base": [
+    88,
+    95,
+    85,
+    90,
+    89
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    183,
+    189,
+    176,
+    176,
+    182
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost per month to operate each factory (indexed by factory 0..4)",
+    "base": [
+     288,
+     286,
+     350,
+     257,
+     314
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable cost per unit produced for each factory (indexed by factory 0..4)",
+    "base": [
+     5,
+     4,
+     4,
+     6,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production if factory is operational, per factory (indexed by factory 0..4)",
+    "base": [
+     35,
+     36,
+     37,
+     36,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity if factory is operational, per factory (indexed by factory 0..4)",
+    "base": [
+     88,
+     95,
+     85,
+     90,
+     89
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Minimum total production required each month (indexed by month 0..4)",
+    "base": [
+     183,
+     189,
+     176,
+     176,
+     182
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

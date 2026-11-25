@@ -1,0 +1,735 @@
+{
+ "spec": {
+  "participant_count": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "car_count": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "preference_p0_car0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p0_car1": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p0_car2": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p0_car3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p0_car4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p0_car5": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1_car0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1_car1": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1_car2": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1_car3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1_car4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1_car5": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2_car0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2_car1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2_car2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2_car3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2_car4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2_car5": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3_car0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3_car1": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3_car2": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3_car3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3_car4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3_car5": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4_car0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4_car1": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4_car2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4_car3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4_car4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4_car5": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p5_car0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p5_car1": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p5_car2": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p5_car3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p5_car4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p5_car5": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[participant_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "participant_count": {
+    "meaning": "number of participants (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "car_count": {
+    "meaning": "number of cars (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "preference_p0_car0": {
+    "meaning": "participant 0 willing to use car 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p0_car1": {
+    "meaning": "participant 0 willing to use car 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p0_car2": {
+    "meaning": "participant 0 willing to use car 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p0_car3": {
+    "meaning": "participant 0 willing to use car 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p0_car4": {
+    "meaning": "participant 0 willing to use car 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p0_car5": {
+    "meaning": "participant 0 willing to use car 5",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1_car0": {
+    "meaning": "participant 1 willing to use car 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1_car1": {
+    "meaning": "participant 1 willing to use car 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1_car2": {
+    "meaning": "participant 1 willing to use car 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1_car3": {
+    "meaning": "participant 1 willing to use car 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1_car4": {
+    "meaning": "participant 1 willing to use car 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1_car5": {
+    "meaning": "participant 1 willing to use car 5",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2_car0": {
+    "meaning": "participant 2 willing to use car 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2_car1": {
+    "meaning": "participant 2 willing to use car 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2_car2": {
+    "meaning": "participant 2 willing to use car 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2_car3": {
+    "meaning": "participant 2 willing to use car 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2_car4": {
+    "meaning": "participant 2 willing to use car 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2_car5": {
+    "meaning": "participant 2 willing to use car 5",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3_car0": {
+    "meaning": "participant 3 willing to use car 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3_car1": {
+    "meaning": "participant 3 willing to use car 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3_car2": {
+    "meaning": "participant 3 willing to use car 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3_car3": {
+    "meaning": "participant 3 willing to use car 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3_car4": {
+    "meaning": "participant 3 willing to use car 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3_car5": {
+    "meaning": "participant 3 willing to use car 5",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4_car0": {
+    "meaning": "participant 4 willing to use car 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4_car1": {
+    "meaning": "participant 4 willing to use car 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4_car2": {
+    "meaning": "participant 4 willing to use car 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4_car3": {
+    "meaning": "participant 4 willing to use car 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4_car4": {
+    "meaning": "participant 4 willing to use car 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4_car5": {
+    "meaning": "participant 4 willing to use car 5",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p5_car0": {
+    "meaning": "participant 5 willing to use car 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p5_car1": {
+    "meaning": "participant 5 willing to use car 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p5_car2": {
+    "meaning": "participant 5 willing to use car 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p5_car3": {
+    "meaning": "participant 5 willing to use car 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p5_car4": {
+    "meaning": "participant 5 willing to use car 4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p5_car5": {
+    "meaning": "participant 5 willing to use car 5",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

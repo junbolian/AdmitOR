@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "demand_hub0": {
+   "base": 345,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_hub1": {
+   "base": 655,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_hub2": {
+   "base": 774,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_hub3": {
+   "base": 142,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_hub4": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_range": {
+   "base": [
+    1901,
+    2075
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_range": {
+   "base": [
+    19,
+    21
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_range": {
+   "base": [
+    539,
+    990
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_hub0": {
+    "meaning": "Demand at hub 0 (net inflow requirement)",
+    "base": 345,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_hub1": {
+    "meaning": "Demand at hub 1 (net inflow requirement)",
+    "base": 655,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_hub2": {
+    "meaning": "Supply available at hub 2",
+    "base": 774,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_hub3": {
+    "meaning": "Supply available at hub 3",
+    "base": 142,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_hub4": {
+    "meaning": "Supply available at hub 4",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_range": {
+    "meaning": "Fixed cost per established connection, range across hub pairs [min, max]",
+    "base": [
+     1901,
+     2075
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_range": {
+    "meaning": "Variable shipping cost per unit shipped, range across hub pairs [min, max]",
+    "base": [
+     19,
+     21
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_range": {
+    "meaning": "Maximum flow capacity per connection, range across hub pairs [min, max]",
+    "base": [
+     539,
+     990
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

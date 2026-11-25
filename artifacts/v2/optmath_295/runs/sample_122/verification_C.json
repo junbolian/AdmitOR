@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_122",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The capacities, contract demands, min_contributors, and min_delivery_per_producer values all match the statement exactly.\n\nThe production_cost matrix is never given in full — the statement provides only two explicit rows (Producer 0 and Producer 1) as examples and says \"similar cost structures apply to all other producers and contracts\" for the rest.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"production_cost\",\n      \"evidence\": \"Similar cost structures apply to all other producers and contracts.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "production_cost",
+   "evidence": "Similar cost structures apply to all other producers and contracts."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

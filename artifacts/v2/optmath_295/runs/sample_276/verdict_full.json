@@ -1,0 +1,205 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "capacity_demand": [
+    266,
+    286,
+    270,
+    299,
+    236,
+    233
+   ],
+   "aircraft_availability": [
+    4,
+    4,
+    4,
+    4,
+    5,
+    4,
+    4
+   ],
+   "capacity_contribution": [
+    [
+     87,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     113,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     110,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "assignment_cost": [
+    [
+     3635,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     3781,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     3365,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "solve_failed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,277 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    106,
+    151,
+    143
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "holding_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "machine_hours_per_unit": {
+   "base": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "grinder_capacity": {
+   "base": [
+    240,
+    120,
+    240,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "drill_capacity": {
+   "base": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "borer_capacity": {
+   "base": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "inventory_capacity": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "sales_limit": {
+   "base": [
+    [
+     44,
+     46,
+     27
+    ],
+    [
+     42,
+     34,
+     37
+    ],
+    [
+     24,
+     50,
+     48
+    ],
+    [
+     42,
+     29,
+     43
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "target_inventory": {
+   "base": [
+    10,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Profit per unit sold for each product (revenue minus cost, before holding cost)",
+    "base": [
+     106,
+     151,
+     143
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "holding_cost": {
+    "meaning": "Cost per unit of inventory held per period",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "machine_hours_per_unit": {
+    "meaning": "Machine hours consumed per unit by each machine type and product: [grinder_hours, drill_hours, borer_hours] for product_0, product_1, product_2",
+    "base": [
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      2,
+      1,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "grinder_capacity": {
+    "meaning": "Available grinder hours in periods 0,1,2,3",
+    "base": [
+     240,
+     120,
+     240,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "drill_capacity": {
+    "meaning": "Available drill hours in periods 0,1,2,3",
+    "base": [
+     120,
+     120,
+     120,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "borer_capacity": {
+    "meaning": "Available borer hours in periods 0,1,2,3",
+    "base": [
+     120,
+     120,
+     120,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "inventory_capacity": {
+    "meaning": "Maximum inventory for each product in any period",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "sales_limit": {
+    "meaning": "Maximum units sellable per product per period; rows are periods 0-3, columns are products 0-2",
+    "base": [
+     [
+      44,
+      46,
+      27
+     ],
+     [
+      42,
+      34,
+      37
+     ],
+     [
+      24,
+      50,
+      48
+     ],
+     [
+      42,
+      29,
+      43
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "target_inventory": {
+    "meaning": "Required final inventory at end of period 3 for each product",
+    "base": [
+     10,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     38,
+     10,
+     14
+    ],
+    [
+     41,
+     23,
+     39
+    ],
+    [
+     37,
+     16,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Processing time of each job on each station (minutes), rows = jobs 0..2, columns = stations 0..2",
+    "base": [
+     [
+      38,
+      10,
+      14
+     ],
+     [
+      41,
+      23,
+      39
+     ],
+     [
+      37,
+      16,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

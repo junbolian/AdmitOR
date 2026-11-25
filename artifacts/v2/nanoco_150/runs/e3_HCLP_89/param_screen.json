@@ -1,0 +1,43 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "establishment_cost",
+  "efficiency_gain",
+  "R1",
+  "R2",
+  "demand"
+ ],
+ "safe": [
+  "establishment_cost",
+  "efficiency_gain",
+  "R2",
+  "demand"
+ ],
+ "tests": {
+  "establishment_cost": [
+   3,
+   3
+  ],
+  "efficiency_gain": [
+   3,
+   3
+  ],
+  "R1": [
+   3,
+   0
+  ],
+  "R2": [
+   3,
+   3
+  ],
+  "demand": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

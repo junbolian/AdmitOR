@@ -1,0 +1,67 @@
+{
+ "spec": {
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.02,
+    "hi": 0.25,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "budget": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.95,
+    "hi": 1.05,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "min_return": {
+    "meaning": "minimum required expected portfolio return (decimal fraction)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.02,
+     "hi": 0.25,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "maximum allowed weight of any single asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "budget": {
+    "meaning": "total budget / sum of weights must equal this value",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.95,
+     "hi": 1.05,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

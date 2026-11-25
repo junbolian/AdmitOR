@@ -1,0 +1,277 @@
+{
+ "spec": {
+  "capacity_VM1": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "capacity_VM2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "capacity_VM3": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "usage_VM1": {
+   "base": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "usage_VM2": {
+   "base": [
+    4,
+    5,
+    1,
+    6,
+    7,
+    2,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "usage_VM3": {
+   "base": [
+    1,
+    4,
+    4,
+    4,
+    7,
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cost_VM1": {
+   "base": [
+    21,
+    15,
+    41,
+    32,
+    16,
+    46,
+    26
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "cost_VM2": {
+   "base": [
+    10,
+    27,
+    31,
+    42,
+    28,
+    37,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "cost_VM3": {
+   "base": [
+    29,
+    30,
+    11,
+    15,
+    20,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_VM1": {
+    "meaning": "CPU/memory capacity of VM1",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "capacity_VM2": {
+    "meaning": "CPU/memory capacity of VM2",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "capacity_VM3": {
+    "meaning": "CPU/memory capacity of VM3",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "usage_VM1": {
+    "meaning": "CPU/memory usage of tasks 1-7 on VM1",
+    "base": [
+     2,
+     2,
+     3,
+     3,
+     4,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "usage_VM2": {
+    "meaning": "CPU/memory usage of tasks 1-7 on VM2",
+    "base": [
+     4,
+     5,
+     1,
+     6,
+     7,
+     2,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "usage_VM3": {
+    "meaning": "CPU/memory usage of tasks 1-7 on VM3",
+    "base": [
+     1,
+     4,
+     4,
+     4,
+     7,
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cost_VM1": {
+    "meaning": "Operational cost of tasks 1-7 on VM1",
+    "base": [
+     21,
+     15,
+     41,
+     32,
+     16,
+     46,
+     26
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "cost_VM2": {
+    "meaning": "Operational cost of tasks 1-7 on VM2",
+    "base": [
+     10,
+     27,
+     31,
+     42,
+     28,
+     37,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "cost_VM3": {
+    "meaning": "Operational cost of tasks 1-7 on VM3",
+    "base": [
+     29,
+     30,
+     11,
+     15,
+     20,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

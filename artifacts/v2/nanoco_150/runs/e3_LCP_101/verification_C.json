@@ -1,0 +1,21 @@
+{
+ "sample_id": "e3_LCP_101",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"num_frequency_bands\", \"evidence\": \"minimize the Maximum Frequency Band Index utilized across the entire network; no explicit count or upper bound of available bands is given\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "num_frequency_bands",
+   "evidence": "minimize the Maximum Frequency Band Index utilized across the entire network; no explicit count or upper bound of available bands is given"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

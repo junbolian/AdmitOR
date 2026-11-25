@@ -1,0 +1,98 @@
+{
+ "spec": {
+  "expected_returns": {
+   "base": [
+    0.0979,
+    0.1102,
+    0.1471,
+    0.0683,
+    0.1372
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.03,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.06,
+    "hi": 0.15,
+    "integer": false
+   }
+  },
+  "budget": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.95,
+    "hi": 1.05,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "expected_returns": {
+    "meaning": "Expected return of each asset (fractions)",
+    "base": [
+     0.0979,
+     0.1102,
+     0.1471,
+     0.0683,
+     0.1372
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.03,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio expected return (fraction)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.06,
+     "hi": 0.15,
+     "integer": false
+    }
+   },
+   "budget": {
+    "meaning": "Total portfolio weights that must sum to this value",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.95,
+     "hi": 1.05,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "Upper bound on the weight of any single asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 1.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

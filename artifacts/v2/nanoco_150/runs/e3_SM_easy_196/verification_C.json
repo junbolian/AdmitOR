@@ -1,0 +1,25 @@
+{
+ "sample_id": "e3_SM_easy_196",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"friction_cost_architect_rank_weight\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"friction_cost_engineer_rank_weight\", \"evidence\": \"no value in the statement\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "friction_cost_architect_rank_weight",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "friction_cost_engineer_rank_weight",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

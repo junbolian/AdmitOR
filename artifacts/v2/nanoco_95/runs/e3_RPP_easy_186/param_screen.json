@@ -1,0 +1,57 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "distance_matrix",
+  "asymmetric_pair_2_4",
+  "asymmetric_pair_4_2",
+  "num_graph_edges",
+  "num_required_edges",
+  "required_edge_ratio",
+  "required_edge_set",
+  "non_required_edge_set"
+ ],
+ "safe": [
+  "num_graph_edges",
+  "num_required_edges",
+  "required_edge_ratio"
+ ],
+ "tests": {
+  "distance_matrix": [
+   2,
+   2
+  ],
+  "asymmetric_pair_2_4": [
+   2,
+   2
+  ],
+  "asymmetric_pair_4_2": [
+   2,
+   2
+  ],
+  "num_graph_edges": [
+   3,
+   3
+  ],
+  "num_required_edges": [
+   3,
+   3
+  ],
+  "required_edge_ratio": [
+   3,
+   3
+  ],
+  "required_edge_set": [
+   0,
+   0
+  ],
+  "non_required_edge_set": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

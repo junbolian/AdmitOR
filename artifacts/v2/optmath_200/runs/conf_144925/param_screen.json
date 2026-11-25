@@ -1,0 +1,50 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "fixed_setup_cost",
+  "variable_production_cost",
+  "inventory_holding_cost",
+  "backlog_penalty",
+  "production_capacity",
+  "demand"
+ ],
+ "safe": [
+  "fixed_setup_cost",
+  "variable_production_cost",
+  "inventory_holding_cost",
+  "backlog_penalty",
+  "production_capacity",
+  "demand"
+ ],
+ "tests": {
+  "fixed_setup_cost": [
+   3,
+   3
+  ],
+  "variable_production_cost": [
+   3,
+   3
+  ],
+  "inventory_holding_cost": [
+   3,
+   3
+  ],
+  "backlog_penalty": [
+   3,
+   3
+  ],
+  "production_capacity": [
+   3,
+   3
+  ],
+  "demand": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

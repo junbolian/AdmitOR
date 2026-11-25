@@ -1,0 +1,143 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    322,
+    327,
+    319,
+    325,
+    303
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "var_cost": {
+   "base": [
+    5,
+    5,
+    4,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_prod": {
+   "base": [
+    40,
+    39,
+    36,
+    35,
+    38
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.45
+   }
+  },
+  "max_prod": {
+   "base": [
+    89,
+    92,
+    88,
+    88,
+    89
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    170,
+    161,
+    161,
+    183
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost per month for operating each factory",
+    "base": [
+     322,
+     327,
+     319,
+     325,
+     303
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "var_cost": {
+    "meaning": "Variable production cost per unit for each factory",
+    "base": [
+     5,
+     5,
+     4,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_prod": {
+    "meaning": "Minimum production units per operating factory per month",
+    "base": [
+     40,
+     39,
+     36,
+     35,
+     38
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.45
+    }
+   },
+   "max_prod": {
+    "meaning": "Maximum production capacity per operating factory per month",
+    "base": [
+     89,
+     92,
+     88,
+     88,
+     89
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand units that total production must meet",
+    "base": [
+     170,
+     161,
+     161,
+     183
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

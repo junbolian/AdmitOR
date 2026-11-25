@@ -1,0 +1,147 @@
+{
+ "spec": {
+  "population": {
+   "base": [
+    1863,
+    1697,
+    1943,
+    2546,
+    3212,
+    2479,
+    3458,
+    2902,
+    3412,
+    3156,
+    3299,
+    1595,
+    3137,
+    2615,
+    2839,
+    2015,
+    2092,
+    1574,
+    2073,
+    2846,
+    2744,
+    1669
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tower_cost": {
+   "base": [
+    283,
+    200,
+    249,
+    279,
+    225,
+    155,
+    190,
+    267,
+    334,
+    260,
+    237,
+    189,
+    244,
+    291,
+    158,
+    158,
+    236,
+    169,
+    177,
+    326
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "budget": {
+   "base": 1619,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 2600.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "population": {
+    "meaning": "Population of each of the 22 areas",
+    "base": [
+     1863,
+     1697,
+     1943,
+     2546,
+     3212,
+     2479,
+     3458,
+     2902,
+     3412,
+     3156,
+     3299,
+     1595,
+     3137,
+     2615,
+     2839,
+     2015,
+     2092,
+     1574,
+     2073,
+     2846,
+     2744,
+     1669
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tower_cost": {
+    "meaning": "Construction cost of each of the 20 potential tower locations",
+    "base": [
+     283,
+     200,
+     249,
+     279,
+     225,
+     155,
+     190,
+     267,
+     334,
+     260,
+     237,
+     189,
+     244,
+     291,
+     158,
+     158,
+     236,
+     169,
+     177,
+     326
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "budget": {
+    "meaning": "Total construction budget",
+    "base": 1619,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 2600,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

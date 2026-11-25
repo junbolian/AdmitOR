@@ -1,0 +1,147 @@
+{
+ "spec": {
+  "assignment_allowance": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_assignment_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_assignment_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "assignment_allowance": {
+    "meaning": "Binary eligibility coefficient a[i][j]: 1 if participant i may be assigned to car j, 0 otherwise; rows participant_0..3, columns car_0..4",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_assignment_capacity": {
+    "meaning": "Maximum number of cars assignable to each participant, per participant (4 entries)",
+    "base": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_assignment_capacity": {
+    "meaning": "Maximum number of participants assignable to each car, per car (5 entries)",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

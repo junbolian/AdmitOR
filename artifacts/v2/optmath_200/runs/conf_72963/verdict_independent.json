@@ -1,0 +1,216 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "base_cost_per_generator_per_period": 89,
+   "power_cost_per_mw": 3,
+   "startup_cost_type0": 390,
+   "startup_cost_type1": 389,
+   "demand_per_period": [
+    195,
+    202,
+    205
+   ],
+   "capacity_margin_demand": [
+    224.25,
+    232.3,
+    235.75
+   ],
+   "min_output_type0": 30,
+   "max_output_type0": 147,
+   "min_output_type1": 29,
+   "max_output_type1": 148,
+   "max_generators_per_type_per_period": 3,
+   "type0_period0_operating_limit_offset": 1,
+   "type1_period0_operating_limit_offset": 3
+  },
+  {
+   "base_cost_per_generator_per_period": 101.40898506275164,
+   "power_cost_per_mw": 1.290038718801601,
+   "startup_cost_type0": 284.71372099674784,
+   "startup_cost_type1": 259.7947725678705,
+   "demand_per_period": [
+    218.05594338099124,
+    219.84664822971402,
+    245.19840568974666
+   ],
+   "capacity_margin_demand": [
+    187.19841328685865,
+    225.04497548515533,
+    191.40987779301003
+   ],
+   "min_output_type0": 21.559139244108103,
+   "max_output_type0": 147.47233641071657,
+   "min_output_type1": 15.269543120832045,
+   "max_output_type1": 121.25678338097438,
+   "max_generators_per_type_per_period": 3,
+   "type0_period0_operating_limit_offset": 1,
+   "type1_period0_operating_limit_offset": 3
+  },
+  {
+   "base_cost_per_generator_per_period": 96.94464586495587,
+   "power_cost_per_mw": 4.113949644040177,
+   "startup_cost_type0": 159.04141952933256,
+   "startup_cost_type1": 531.7564267555548,
+   "demand_per_period": [
+    214.3185910113521,
+    185.86530216831719,
+    169.6866487307076
+   ],
+   "capacity_margin_demand": [
+    265.2620125769483,
+    217.1163651318653,
+    197.34593303074794
+   ],
+   "min_output_type0": 17.90149130500392,
+   "max_output_type0": 177.64900311184596,
+   "min_output_type1": 32.00805490963984,
+   "max_output_type1": 175.27299066676497,
+   "max_generators_per_type_per_period": 3,
+   "type0_period0_operating_limit_offset": 1,
+   "type1_period0_operating_limit_offset": 3
+  },
+  {
+   "base_cost_per_generator_per_period": 78.18955957154346,
+   "power_cost_per_mw": 3.1873462725836177,
+   "startup_cost_type0": 544.1613828704017,
+   "startup_cost_type1": 444.3250204036301,
+   "demand_per_period": [
+    230.2664227803008,
+    209.81256667093297,
+    225.96861321202968
+   ],
+   "capacity_margin_demand": [
+    183.5104472139129,
+    207.01630777354174,
+    215.88928496767872
+   ],
+   "min_output_type0": 17.393759307708827,
+   "max_output_type0": 123.43215617704286,
+   "min_output_type1": 17.429041452882146,
+   "max_output_type1": 128.28405595617616,
+   "max_generators_per_type_per_period": 3,
+   "type0_period0_operating_limit_offset": 1,
+   "type1_period0_operating_limit_offset": 3
+  },
+  {
+   "base_cost_per_generator_per_period": 63.146125738662406,
+   "power_cost_per_mw": 2.161120159376808,
+   "startup_cost_type0": 594.3543470494473,
+   "startup_cost_type1": 458.10291783310987,
+   "demand_per_period": [
+    205.64027305253137,
+    168.7850034680078,
+    228.4854967899108
+   ],
+   "capacity_margin_demand": [
+    194.05720369044496,
+    221.09899964812064,
+    281.9120519650309
+   ],
+   "min_output_type0": 34.19999279562279,
+   "max_output_type0": 152.0229674009238,
+   "min_output_type1": 34.35381327870636,
+   "max_output_type1": 178.44525051285513,
+   "max_generators_per_type_per_period": 3,
+   "type0_period0_operating_limit_offset": 1,
+   "type1_period0_operating_limit_offset": 3
+  },
+  {
+   "base_cost_per_generator_per_period": 72.5753212772583,
+   "power_cost_per_mw": 2.1638671535125305,
+   "startup_cost_type0": 254.73997079840083,
+   "startup_cost_type1": 595.7502546516035,
+   "demand_per_period": [
+    231.69584358108523,
+    183.28246596064625,
+    220.93246319272518
+   ],
+   "capacity_margin_demand": [
+    214.88818152514156,
+    270.81976203869135,
+    231.8697296989917
+   ],
+   "min_output_type0": 22.946404994941574,
+   "max_output_type0": 124.65254617860934,
+   "min_output_type1": 30.77967589073137,
+   "max_output_type1": 126.93145483683666,
+   "max_generators_per_type_per_period": 3,
+   "type0_period0_operating_limit_offset": 1,
+   "type1_period0_operating_limit_offset": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2339.999999,
+   1489.6806457460807,
+   2926.0865882309126,
+   2592.061701141268,
+   1681.8393809386487,
+   1956.6290039029288
+  ],
+  "B-structured": [
+   2340.0,
+   1489.6806457460807,
+   2926.0865882309126,
+   2592.061701141268,
+   1681.8393809386487,
+   1956.6290039029288
+  ],
+  "C-direct": [
+   2340.0,
+   1489.6806457460807,
+   2926.086588230913,
+   2592.0617011412683,
+   1681.8393809386484,
+   1956.629003902929
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

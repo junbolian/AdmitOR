@@ -1,0 +1,125 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    158,
+    162,
+    107
+   ],
+   "holding_cost": 10,
+   "grinder_capacity": [
+    240,
+    240,
+    240,
+    240
+   ],
+   "drill_capacity": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "borer_capacity": [
+    120,
+    120,
+    0,
+    120
+   ],
+   "max_inventory": 50,
+   "max_sales_p0": [
+    25,
+    45,
+    30,
+    30
+   ],
+   "max_sales_p1": [
+    24,
+    47,
+    48,
+    25
+   ],
+   "max_sales_p2": [
+    49,
+    28,
+    43,
+    45
+   ],
+   "final_inventory_target": 10,
+   "grinder_time_p0": 1,
+   "drill_time_p0": 1,
+   "borer_time_p0": 2,
+   "grinder_time_p1": 1,
+   "drill_time_p1": 2,
+   "borer_time_p1": 1,
+   "grinder_time_p2": 2,
+   "drill_time_p2": 2,
+   "borer_time_p2": 1
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   32780.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return sum(gtime[p] * mdl.prod[p, t] for p in mdl.P) <= grinder_cap | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpressio",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:grinder_capacity = float(params[\"grinder_capacity\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

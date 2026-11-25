@@ -1,0 +1,255 @@
+{
+ "spec": {
+  "preference_P0": {
+   "base": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_P1": {
+   "base": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_P2": {
+   "base": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_P3": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_P4": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_P5": {
+   "base": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_P6": {
+   "base": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference_P0": {
+    "meaning": "Cars participant 0 is interested in (binary indicator per car 0..6)",
+    "base": [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_P1": {
+    "meaning": "Cars participant 1 is interested in (binary indicator per car 0..6)",
+    "base": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_P2": {
+    "meaning": "Cars participant 2 is interested in (binary indicator per car 0..6)",
+    "base": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_P3": {
+    "meaning": "Cars participant 3 is interested in (binary indicator per car 0..6)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_P4": {
+    "meaning": "Cars participant 4 is interested in (binary indicator per car 0..6)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_P5": {
+    "meaning": "Cars participant 5 is interested in (binary indicator per car 0..6)",
+    "base": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_P6": {
+    "meaning": "Cars participant 6 is interested in (binary indicator per car 0..6)",
+    "base": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

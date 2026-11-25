@@ -1,0 +1,272 @@
+{
+ "spec": {
+  "unit_cost": {
+   "base": [
+    6,
+    6,
+    6,
+    6,
+    3,
+    6,
+    3,
+    10,
+    7,
+    7,
+    6,
+    7,
+    5,
+    4,
+    4,
+    10,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_flow": {
+   "base": [
+    2,
+    0,
+    0,
+    1,
+    1,
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  },
+  "capacity": {
+   "base": [
+    5,
+    2,
+    6,
+    4,
+    6,
+    9,
+    10,
+    9,
+    7,
+    3,
+    8,
+    7,
+    5,
+    4,
+    2,
+    6,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "node_x": {
+   "base": [
+    36,
+    85,
+    93,
+    12,
+    21,
+    37
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 36.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "node_y": {
+   "base": [
+    39,
+    51,
+    90,
+    89,
+    43,
+    8
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 39.0,
+    "hi": 39.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_pipes": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 17.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[node_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_pipes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "unit_cost": {
+    "meaning": "Unit pumping energy cost per pipe, ordered as given: 0->1, 0->2, 0->5, 1->0, 1->2, 2->0, 2->1, 2->3, 3->2, 3->4, 4->1, 4->2, 4->3, 4->5, 5->0, 5->3, 5->4",
+    "base": [
+     6,
+     6,
+     6,
+     6,
+     3,
+     6,
+     3,
+     10,
+     7,
+     7,
+     6,
+     7,
+     5,
+     4,
+     4,
+     10,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_flow": {
+    "meaning": "Mandatory minimum flow per pipe, ordered as given: 0->1, 0->2, 0->5, 1->0, 1->2, 2->0, 2->1, 2->3, 3->2, 3->4, 4->1, 4->2, 4->3, 4->5, 5->0, 5->3, 5->4",
+    "base": [
+     2,
+     0,
+     0,
+     1,
+     1,
+     0,
+     2,
+     2,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum hydraulic capacity per pipe, ordered as given: 0->1, 0->2, 0->5, 1->0, 1->2, 2->0, 2->1, 2->3, 3->2, 3->4, 4->1, 4->2, 4->3, 4->5, 5->0, 5->3, 5->4",
+    "base": [
+     5,
+     2,
+     6,
+     4,
+     6,
+     9,
+     10,
+     9,
+     7,
+     3,
+     8,
+     7,
+     5,
+     4,
+     2,
+     6,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "node_x": {
+    "meaning": "X-coordinates of junctions 0..5 (geometry only; not used in LP coefficients)",
+    "base": [
+     36,
+     85,
+     93,
+     12,
+     21,
+     37
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 36,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "node_y": {
+    "meaning": "Y-coordinates of junctions 0..5 (geometry only; not used in LP coefficients)",
+    "base": [
+     39,
+     51,
+     90,
+     89,
+     43,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 39,
+     "hi": 39,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of cooling junctions (index-set size; frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_pipes": {
+    "meaning": "Number of feasible pipes (index-set size; frozen)",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 17,
+     "hi": 17,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

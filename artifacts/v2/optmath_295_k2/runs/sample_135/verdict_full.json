@@ -1,0 +1,381 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_per_unit_p0": 174,
+   "profit_per_unit_p1": 116,
+   "holding_cost_per_unit_per_period": 10,
+   "grinder_capacity_period": [
+    360,
+    360,
+    240,
+    360
+   ],
+   "drill_capacity_period": [
+    120,
+    120,
+    120,
+    0
+   ],
+   "borer_capacity_period": [
+    120,
+    120,
+    0,
+    120
+   ],
+   "grinder_hours_per_unit_p0": 1,
+   "grinder_hours_per_unit_p1": 2,
+   "drill_hours_per_unit": 1,
+   "borer_hours_per_unit": 1,
+   "max_inventory_per_product_per_period": 50,
+   "max_sales_p0_period": [
+    30,
+    33,
+    47,
+    48
+   ],
+   "max_sales_p1_period": [
+    25,
+    36,
+    46,
+    21
+   ],
+   "final_inventory_p0": 10,
+   "final_inventory_p1": 10
+  },
+  {
+   "profit_per_unit_p0": 198.26026293167175,
+   "profit_per_unit_p1": 60.90124760582936,
+   "holding_cost_per_unit_per_period": 6.400469093905907,
+   "grinder_capacity_period": [
+    280.28469258686096,
+    428.1037096792356,
+    273.9263015851989,
+    472.9477154989955
+   ],
+   "drill_capacity_period": [
+    16,
+    76,
+    5,
+    39
+   ],
+   "borer_capacity_period": [
+    91,
+    5,
+    36,
+    117
+   ],
+   "grinder_hours_per_unit_p0": 1.0449414806032167,
+   "grinder_hours_per_unit_p1": 1.4408812440813934,
+   "drill_hours_per_unit": 1.0892656838759087,
+   "borer_hours_per_unit": 1.3094304566778265,
+   "max_inventory_per_product_per_period": 25.32493798390305,
+   "max_sales_p0_period": [
+    35.50474653299054,
+    36.923160020766886,
+    42.495064565807375,
+    38.07780959457931
+   ],
+   "max_sales_p1_period": [
+    31.85819608310172,
+    32.47044217443273,
+    34.75978527729208,
+    15.918626348101647
+   ],
+   "final_inventory_p0": 17,
+   "final_inventory_p1": 12
+  },
+  {
+   "profit_per_unit_p0": 227.44031954974213,
+   "profit_per_unit_p1": 142.64888725648285,
+   "holding_cost_per_unit_per_period": 10.579649463275212,
+   "grinder_capacity_period": [
+    496.25734002605867,
+    325.0179006360058,
+    249.99180120445956,
+    454.86854330486244
+   ],
+   "drill_capacity_period": [
+    111,
+    155,
+    104,
+    127
+   ],
+   "borer_capacity_period": [
+    8,
+    41,
+    52,
+    14
+   ],
+   "grinder_hours_per_unit_p0": 0.7327908863610302,
+   "grinder_hours_per_unit_p1": 1.2020028588194582,
+   "drill_hours_per_unit": 0.7779736031100921,
+   "borer_hours_per_unit": 1.1356844442644003,
+   "max_inventory_per_product_per_period": 43.241608948504215,
+   "max_sales_p0_period": [
+    27.663257408103885,
+    27.248239209275454,
+    40.42877458178499,
+    60.575652126119834
+   ],
+   "max_sales_p1_period": [
+    27.220530778698905,
+    38.35722972240694,
+    36.923426690267476,
+    23.886997654174397
+   ],
+   "final_inventory_p0": 3,
+   "final_inventory_p1": 8
+  },
+  {
+   "profit_per_unit_p0": 259.1770630107676,
+   "profit_per_unit_p1": 132.2399721430748,
+   "holding_cost_per_unit_per_period": 10.91119590039434,
+   "grinder_capacity_period": [
+    413.1689042850839,
+    458.74135301466515,
+    292.991983016879,
+    281.965844725662
+   ],
+   "drill_capacity_period": [
+    6,
+    57,
+    48,
+    38
+   ],
+   "borer_capacity_period": [
+    170,
+    158,
+    57,
+    118
+   ],
+   "grinder_hours_per_unit_p0": 0.8956319010606643,
+   "grinder_hours_per_unit_p1": 2.829095179481087,
+   "drill_hours_per_unit": 0.9588518525873988,
+   "borer_hours_per_unit": 0.7648801664980525,
+   "max_inventory_per_product_per_period": 37.33137538469917,
+   "max_sales_p0_period": [
+    31.104626414936714,
+    28.30228384875412,
+    49.385324924303845,
+    59.457299047751334
+   ],
+   "max_sales_p1_period": [
+    23.49100757710596,
+    29.93732839779732,
+    59.73203793926504,
+    21.12003130032345
+   ],
+   "final_inventory_p0": 2,
+   "final_inventory_p1": 1
+  },
+  {
+   "profit_per_unit_p0": 106.0789486810147,
+   "profit_per_unit_p1": 130.78374083755844,
+   "holding_cost_per_unit_per_period": 14.673269829807428,
+   "grinder_capacity_period": [
+    337.582070438309,
+    234.29597937176362,
+    217.27090300925505,
+    502.8829575091478
+   ],
+   "drill_capacity_period": [
+    95,
+    175,
+    155,
+    2
+   ],
+   "borer_capacity_period": [
+    130,
+    123,
+    97,
+    48
+   ],
+   "grinder_hours_per_unit_p0": 1.140961798579808,
+   "grinder_hours_per_unit_p1": 1.2231043471917529,
+   "drill_hours_per_unit": 0.934765250669105,
+   "borer_hours_per_unit": 0.9537237063292064,
+   "max_inventory_per_product_per_period": 72.690796376054,
+   "max_sales_p0_period": [
+    36.765352926807495,
+    28.315103204871598,
+    47.01652838801841,
+    38.74517415926778
+   ],
+   "max_sales_p1_period": [
+    31.189417590172308,
+    44.00320110847417,
+    40.43707624398226,
+    22.750763635311667
+   ],
+   "final_inventory_p0": 12,
+   "final_inventory_p1": 3
+  },
+  {
+   "profit_per_unit_p0": 219.67687921307632,
+   "profit_per_unit_p1": 120.56796749387658,
+   "holding_cost_per_unit_per_period": 14.458023658088932,
+   "grinder_capacity_period": [
+    368.7418575922111,
+    216.16470608484775,
+    206.23796294489722,
+    221.6093018071197
+   ],
+   "drill_capacity_period": [
+    167,
+    158,
+    150,
+    55
+   ],
+   "borer_capacity_period": [
+    10,
+    158,
+    170,
+    15
+   ],
+   "grinder_hours_per_unit_p0": 0.9859904633166138,
+   "grinder_hours_per_unit_p1": 1.1384250369367672,
+   "drill_hours_per_unit": 1.2606021652572315,
+   "borer_hours_per_unit": 1.2658344293069876,
+   "max_inventory_per_product_per_period": 31.41957322498814,
+   "max_sales_p0_period": [
+    29.555082805777165,
+    33.986111151199886,
+    40.37459693610966,
+    58.72607158325542
+   ],
+   "max_sales_p1_period": [
+    23.8470691030133,
+    29.774841237548973,
+    47.08457205031305,
+    23.8971314705337
+   ],
+   "final_inventory_p0": 4,
+   "final_inventory_p1": 6
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   27748.0,
+   5742.652590356719,
+   20168.48343469437,
+   37832.181113006314,
+   31855.354632328173,
+   37383.63223730719
+  ],
+  "A-direct-2": [
+   27748.0,
+   5742.652590356719,
+   20168.483434694368,
+   37832.18111300631,
+   31855.35463232817,
+   37383.632237307196
+  ],
+  "B-structured": [
+   27748.0,
+   5742.652590356719,
+   20168.48343469437,
+   37832.18111300631,
+   31855.35463232817,
+   37383.632237307196
+  ],
+  "B-structured-2": [
+   27748.0,
+   5742.652590356719,
+   20168.48343469437,
+   37832.18111300631,
+   31855.35463232817,
+   37383.632237307196
+  ],
+  "C-direct": [
+   27748.0,
+   5742.652590356718,
+   20168.483434694375,
+   37832.181113006314,
+   31855.354632328166,
+   37383.63223730718
+  ],
+  "C-direct-2": [
+   27748.0,
+   5742.652590356718,
+   20168.483434694368,
+   37832.181113006314,
+   31855.35463232817,
+   37383.63223730719
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

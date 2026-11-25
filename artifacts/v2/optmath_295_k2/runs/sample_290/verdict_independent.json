@@ -1,0 +1,382 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct-2",
+  "B-structured-2",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "fixed_cost": [
+    102829,
+    100573,
+    101725,
+    99989,
+    103197,
+    104176
+   ],
+   "capacity": [
+    1035,
+    1021,
+    959,
+    1006,
+    1011,
+    998
+   ],
+   "demand": [
+    422,
+    378,
+    389,
+    408,
+    420,
+    380,
+    381,
+    384,
+    385,
+    390,
+    397,
+    393
+   ],
+   "transport_cost": [
+    66,
+    63,
+    61,
+    70,
+    64,
+    63
+   ],
+   "num_facilities": 6,
+   "num_customers": 12
+  },
+  {
+   "fixed_cost": [
+    117166.11825862572,
+    52801.90668500928,
+    78839.85741109865,
+    72313.11849676263,
+    127600.11988808359,
+    122583.8458017692
+   ],
+   "capacity": [
+    1440.905852574515,
+    599.2645481146338,
+    884.1230250781744,
+    532.9760027546988,
+    726.542992526443,
+    1003.3445775271556
+   ],
+   "demand": [
+    222.19817920659045,
+    264.16063195955314,
+    447.30504629623454,
+    426.3361240861124,
+    302.5850612570926,
+    413.9209598728453,
+    498.8930039942519,
+    194.49552371637543,
+    502.7404119556311,
+    467.27436404540845,
+    333.57945505764275,
+    257.60344342603014
+   ],
+   "transport_cost": [
+    96.17606276564757,
+    52.70545634209549,
+    36.15749644618902,
+    41.77014637834248,
+    86.23963944623742,
+    69.53473997611414
+   ],
+   "num_facilities": 6,
+   "num_customers": 12
+  },
+  {
+   "fixed_cost": [
+    106554.29841619541,
+    148155.67173069724,
+    89368.90952151976,
+    105192.49068037869,
+    137190.5731369163,
+    116522.9137222977
+   ],
+   "capacity": [
+    1409.3666418216546,
+    1099.976540307154,
+    1155.1843909301117,
+    549.0993299575962,
+    735.9051566837139,
+    787.809187674903
+   ],
+   "demand": [
+    244.6722142617708,
+    276.9949550444694,
+    233.78955604038464,
+    317.4132300689176,
+    476.98746659104813,
+    328.63622800863203,
+    331.5389484715323,
+    272.45069981625124,
+    295.2864614889086,
+    560.2952892078727,
+    455.7700479428976,
+    435.8884852271264
+   ],
+   "transport_cost": [
+    44.2951507810744,
+    77.43498827087201,
+    40.46755211947763,
+    61.561880923035346,
+    95.3294944407421,
+    71.81998487080786
+   ],
+   "num_facilities": 6,
+   "num_customers": 12
+  },
+  {
+   "fixed_cost": [
+    138084.12010119794,
+    128331.13910394048,
+    74162.41512054851,
+    53204.171287720834,
+    84152.30820055307,
+    79980.1734956448
+   ],
+   "capacity": [
+    735.8672431118479,
+    1473.2108183360906,
+    1319.9365537872895,
+    819.5659480832688,
+    1168.1484906131236,
+    893.840637258543
+   ],
+   "demand": [
+    596.9390828705093,
+    362.44600027803676,
+    297.5383847677424,
+    304.62402313914527,
+    445.7746163485233,
+    289.8418112387154,
+    413.227262275169,
+    536.7639873033512,
+    346.26919447905294,
+    280.5350960713405,
+    594.5224297785587,
+    396.7438334148506
+   ],
+   "transport_cost": [
+    39.000021203470396,
+    34.46833165175828,
+    37.18859695139021,
+    78.9212229192163,
+    82.6930793192297,
+    58.096077908380096
+   ],
+   "num_facilities": 6,
+   "num_customers": 12
+  },
+  {
+   "fixed_cost": [
+    153844.6654087089,
+    103501.11702965552,
+    149645.4479627453,
+    136063.00164672523,
+    52783.30702143316,
+    127169.91625366763
+   ],
+   "capacity": [
+    1223.070231942505,
+    1058.74670734738,
+    735.3853571644885,
+    1147.8075693712867,
+    618.279247505431,
+    932.8957201677667
+   ],
+   "demand": [
+    402.47140407092513,
+    549.5424206029683,
+    535.2067938071175,
+    311.462732706445,
+    420.24616748112527,
+    257.88771460144994,
+    538.2112067903765,
+    526.2791308173184,
+    307.40124470772366,
+    444.19030299774204,
+    440.2611739409544,
+    256.56583254000645
+   ],
+   "transport_cost": [
+    83.32571280495998,
+    65.48087889753643,
+    77.99621519646406,
+    72.12475705366244,
+    32.036601352188384,
+    51.921831591294406
+   ],
+   "num_facilities": 6,
+   "num_customers": 12
+  },
+  {
+   "fixed_cost": [
+    141772.59197468022,
+    133929.5972844419,
+    82144.37440658573,
+    55786.379472587316,
+    142206.4566090594,
+    150737.40541336383
+   ],
+   "capacity": [
+    606.1513228902545,
+    1006.6962630462626,
+    545.8748052111799,
+    1268.1657782487748,
+    1279.7586080293645,
+    627.1346815707633
+   ],
+   "demand": [
+    411.56916355766464,
+    396.8257583410888,
+    297.607028657683,
+    559.952680762785,
+    387.7179348843725,
+    270.4833180679912,
+    395.9718098249736,
+    472.2935305305508,
+    269.94315940503293,
+    316.56935360734906,
+    593.5742945943751,
+    451.9020766523052
+   ],
+   "transport_cost": [
+    61.914605538357264,
+    64.1072779852422,
+    37.881255947964206,
+    50.728813592209015,
+    53.63747597743714,
+    68.5634492628057
+   ],
+   "num_facilities": 6,
+   "num_customers": 12
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   811608.0,
+   725410.5780617769,
+   694296.4514093561,
+   665965.3696448541,
+   1021031.1525526097,
+   970371.2327730769
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   811608.0,
+   725410.5780617769,
+   694296.4514093561,
+   665965.3696448541,
+   1021031.1525526097,
+   970371.2327730769
+  ],
+  "C-direct": [
+   811608.0,
+   725410.5780617769,
+   694296.4514093562,
+   665965.3696448541,
+   1021031.1525526098,
+   970371.2327730769
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "insufficient_transport_data",
+   "insufficient_transport_data",
+   "insufficient_transport_data",
+   "insufficient_transport_data",
+   "insufficient_transport_data",
+   "insufficient_transport_data"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers']",
+  "B-structured": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data']",
+  "C-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range']"
+ },
+ "disagreements": [],
+ "notes": []
+}

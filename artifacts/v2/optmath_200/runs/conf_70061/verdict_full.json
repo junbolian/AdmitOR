@@ -1,0 +1,105 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "fixed_cost_facility": [
+    96973,
+    102445,
+    97638,
+    97886,
+    95371,
+    100886
+   ],
+   "capacity_facility": [
+    1003,
+    966,
+    964,
+    1010,
+    1001,
+    1029
+   ],
+   "demand_customer": [
+    397,
+    391,
+    378,
+    406,
+    380,
+    412,
+    401,
+    409,
+    384,
+    411,
+    421
+   ],
+   "shipping_cost_per_unit": [
+    67,
+    70
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   488754.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:File \"candidate.py\", line 43, in _shipping_coefficients | raise ValueError(\"Unexpected flat shipping-cost vector length\") | ValueError: Unexpected flat shipping-cost vector length",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:ship_cost_dict[(f, c)] = ship_cost[i][j] | ~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

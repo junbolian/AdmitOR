@@ -1,0 +1,264 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     54,
+     28,
+     32,
+     56,
+     69,
+     38
+    ],
+    [
+     54,
+     0,
+     73,
+     81,
+     27,
+     120,
+     67
+    ],
+    [
+     28,
+     73,
+     0,
+     46,
+     82,
+     72,
+     64
+    ],
+    [
+     32,
+     81,
+     46,
+     0,
+     74,
+     39,
+     28
+    ],
+    [
+     56,
+     27,
+     82,
+     74,
+     0,
+     112,
+     52
+    ],
+    [
+     69,
+     120,
+     72,
+     39,
+     112,
+     0,
+     61
+    ],
+    [
+     38,
+     67,
+     64,
+     28,
+     52,
+     61,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "pickup_delivery_pairs": {
+   "base": [
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_pairs": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[pickup_delivery_pairs] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_pairs] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "7x7 fuel-cost/distance matrix between all node pairs (symmetric in the given data); row i, column j is the cost to travel from node i to node j",
+    "base": [
+     [
+      0,
+      54,
+      28,
+      32,
+      56,
+      69,
+      38
+     ],
+     [
+      54,
+      0,
+      73,
+      81,
+      27,
+      120,
+      67
+     ],
+     [
+      28,
+      73,
+      0,
+      46,
+      82,
+      72,
+      64
+     ],
+     [
+      32,
+      81,
+      46,
+      0,
+      74,
+      39,
+      28
+     ],
+     [
+      56,
+      27,
+      82,
+      74,
+      0,
+      112,
+      52
+     ],
+     [
+      69,
+      120,
+      72,
+      39,
+      112,
+      0,
+      61
+     ],
+     [
+      38,
+      67,
+      64,
+      28,
+      52,
+      61,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "pickup_delivery_pairs": {
+    "meaning": "index pairs [pickup_node, delivery_node] that must be served in visiting order (index set / cardinality num_pairs=3, frozen)",
+    "base": [
+     [
+      4,
+      5
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       4,
+       5
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       2,
+       3
+      ]
+     ],
+     "hi": [
+      [
+       4,
+       5
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       2,
+       3
+      ]
+     ],
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "number of nodes in the network (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_pairs": {
+    "meaning": "number of pickup-delivery precedence pairs (index-set size, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

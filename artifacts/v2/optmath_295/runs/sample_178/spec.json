@@ -1,0 +1,60 @@
+{
+ "spec": {
+  "supply_weights": {
+   "base": [
+    28,
+    29,
+    27,
+    27,
+    25,
+    31,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "hospital_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 115.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_weights": {
+    "meaning": "Weight of each of the 7 medical supply types (index 0..6)",
+    "base": [
+     28,
+     29,
+     27,
+     27,
+     25,
+     31,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "hospital_capacity": {
+    "meaning": "Maximum total weight storable in any single hospital (homogeneous across all hospitals)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 115,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

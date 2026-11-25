@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "processing_time": {
+   "base": [
+    [
+     22,
+     31,
+     14,
+     28,
+     25
+    ],
+    [
+     17,
+     33,
+     10,
+     27,
+     34
+    ],
+    [
+     35,
+     25,
+     4,
+     24,
+     39
+    ],
+    [
+     10,
+     13,
+     21,
+     4,
+     7
+    ],
+    [
+     40,
+     6,
+     36,
+     11,
+     26
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time": {
+    "meaning": "Inspection duration in minutes for each machine-job pair; matrix rows are machines 0-4, columns are jobs 0-4",
+    "base": [
+     [
+      22,
+      31,
+      14,
+      28,
+      25
+     ],
+     [
+      17,
+      33,
+      10,
+      27,
+      34
+     ],
+     [
+      35,
+      25,
+      4,
+      24,
+      39
+     ],
+     [
+      10,
+      13,
+      21,
+      4,
+      7
+     ],
+     [
+      40,
+      6,
+      36,
+      11,
+      26
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

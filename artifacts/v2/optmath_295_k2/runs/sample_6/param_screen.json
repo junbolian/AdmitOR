@@ -1,0 +1,39 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "warehouse_supply",
+  "store_demand",
+  "transport_cost",
+  "route_capacity"
+ ],
+ "safe": [
+  "transport_cost",
+  "route_capacity"
+ ],
+ "tests": {
+  "warehouse_supply": [
+   0,
+   0
+  ],
+  "store_demand": [
+   0,
+   0
+  ],
+  "transport_cost": [
+   6,
+   6
+  ],
+  "route_capacity": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

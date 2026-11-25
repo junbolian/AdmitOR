@@ -1,0 +1,47 @@
+{
+ "spec": {
+  "worker_costs": {
+   "base": [
+    24,
+    12,
+    43,
+    43,
+    27,
+    16,
+    29,
+    49,
+    31,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "worker_costs": {
+    "meaning": "Fixed cost incurred once if a worker is selected (indexed by worker 1..10)",
+    "base": [
+     24,
+     12,
+     43,
+     43,
+     27,
+     16,
+     29,
+     49,
+     31,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

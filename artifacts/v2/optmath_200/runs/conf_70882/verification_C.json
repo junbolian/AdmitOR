@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_70882",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I need to check each extracted parameter against the statement.\n\n**fixed_cost**: [2028,2824,1402,2064,1227,1729,1047,2507,2471,2089,2721,1767] — matches the statement exactly.\n\n**operational_cost**: [157,142,111,118,149,295,255,193,214,147,274,186] — matches exactly.\n\n**penalty_cost**: [706,741,547,763,589,552,654,537,502,515,504,679,555,770,700] — matches the listed OD pairs in order.\n\n**vehicle_time_per_frequency**: [88,90,0,0,0,0,0,0,0,0,0,0] — the statement says \"L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on\" but gives no values for L_2 through L_11. The zeros for L_2–L_11 are not stated; only L_0 and L_1 are given as examples.\n\n**total_vehicle_capacity**: 60 — matches \"capped at 60\".\n\n**min_frequency_if_selected**: 2 — matches.\n\n**max_frequency_if_selected**: 10 — matches.\n\n**min_od_frequency**: 2 — matches \"combined frequency of at least 2 units\".\n\n**min_transfer_hub_lines**: 2 — matches \"at least two transit lines\".\n\n**example_od_7_4_demand**: 21 — matches \"requires at least 21 passengers\".\n\nThe only problem is `vehicle_time_per_frequency`: values for L_2–L_11 are not stated (only examples for L_0 and L_1 are given, with \"and so on\" for the rest).\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"vehicle_time_per_frequency\",\n      \"evidence\": \"L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on, with the total across all lines capped at 60\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "vehicle_time_per_frequency",
+   "evidence": "L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on, with the total across all lines capped at 60"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

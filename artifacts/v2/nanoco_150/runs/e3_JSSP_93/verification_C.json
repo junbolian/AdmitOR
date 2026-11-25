@@ -1,0 +1,35 @@
+{
+ "sample_id": "e3_JSSP_93",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**Batch 0:** Unit 1 (28h) → Unit 2 (29h) → Unit 0 (35h)\n- `processing_time_B0_on_U1_stage1`: 28 ✓\n- `processing_time_B0_on_U0_stage2`: extracted 29, but stage 2 is Unit 2 (29h) and stage 3 is Unit 0 (35h) — wrong unit assigned, and the value for Unit 0 should be 35\n- `processing_time_B0_on_U2_stage3`: extracted 29, but stage 3 is Unit 0 (35h), not Unit 2 — wrong unit assigned\n\n**Batch 1:** Unit 1 (20h) → Unit 0 (31h) → Unit 2 (28h)\n- `processing_time_B1_on_U1_stage1`: 20 ✓\n- `processing_time_B1_on_U0_stage2`: extracted 28, but stage 2 on Unit 0 is 31h\n- `processing_time_B1_on_U2_stage3`: extracted 28, but stage 3 on Unit 2 is 28h ✓ (value coincidentally matches)\n\n**Batch 2:** Unit 2 (34h) → Unit 1 (49h) → Unit 0 (20h)\n- All three match ✓\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"processing_time_B0_on_U0_stage2\",\n      \"extracted\": 29,\n      \"stated\": 35,\n      \"evidence\": \"finally completed on Unit 0, requiring 35 hours\"\n    },\n    {\n      \"parameter\": \"processing_time_B0_on_U2_stage3\",\n      \"extracted\": 29,\n      \"stated\": 29,\n      \"evidence\": \"subsequently transferred to Unit 2 for 29 hours — this is stage 2, not stage 3; stage 3 is Unit 0 for 35 hours\"\n    },\n    {\n      \"parameter\": \"processing_time_B1_on_U0_stage2\",\n      \"extracted\": 28,\n      \"stated\": 31,\n      \"evidence\": \"followed by 31 hours on Unit 0\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "processing_time_B0_on_U0_stage2",
+   "extracted": 29,
+   "stated": 35,
+   "evidence": "finally completed on Unit 0, requiring 35 hours"
+  },
+  {
+   "parameter": "processing_time_B0_on_U2_stage3",
+   "extracted": 29,
+   "stated": 29,
+   "evidence": "subsequently transferred to Unit 2 for 29 hours — this is stage 2, not stage 3; stage 3 is Unit 0 for 35 hours"
+  },
+  {
+   "parameter": "processing_time_B1_on_U0_stage2",
+   "extracted": 28,
+   "stated": 31,
+   "evidence": "followed by 31 hours on Unit 0"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

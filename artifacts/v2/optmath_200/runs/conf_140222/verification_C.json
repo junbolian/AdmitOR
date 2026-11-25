@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_140222",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll compare each extracted parameter against the statement.\n\n**shipping_cost**: The statement says costs \"range from 8 to 10 units,\" giving only a range, not a single fixed value. The extracted value of 9 is a point within that range, not a stated value.\n\n**throughput_cost**: The statement gives costs per zone (930, 1032, 1020, 972) but says these apply to \"both DC 0 and DC 1\" identically. The extracted matrix has the same values for both rows, which matches the statement. No problem here.\n\n**demand**: The statement says demand ranges from 50 to 59, gives two specific examples (Commodity 0 / Zone 0 = 54, Commodity 2 / Zone 2 = 59), and says \"similar constraints apply for all.\" All other entries in the extracted table are filled in without being stated.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"shipping_cost\",\n      \"evidence\": \"The variable shipping costs range from 8 to 10 units per commodity, plant, distribution center, and zone combination.\"\n    },\n    {\n      \"parameter\": \"demand\",\n      \"evidence\": \"The demand for each commodity in each zone ranges from 50 to 59 units. For example, the demand for Commodity 0 in Zone 0 is 54 units, while the demand for Commodity 2 in Zone 2 is 59 units.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_cost",
+   "evidence": "The variable shipping costs range from 8 to 10 units per commodity, plant, distribution center, and zone combination."
+  },
+  {
+   "parameter": "demand",
+   "evidence": "The demand for each commodity in each zone ranges from 50 to 59 units. For example, the demand for Commodity 0 in Zone 0 is 54 units, while the demand for Commodity 2 in Zone 2 is 59 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

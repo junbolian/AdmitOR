@@ -1,0 +1,222 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "processing_time": [
+    [
+     10,
+     42,
+     30
+    ],
+    [
+     46,
+     17,
+     26
+    ],
+    [
+     28,
+     48,
+     10
+    ],
+    [
+     17,
+     27,
+     42
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     11.115414387663069,
+     26.04036137548161,
+     24.60070364085886
+    ],
+    [
+     35.81415516387668,
+     20.21600851263057,
+     29.67534933839655
+    ],
+    [
+     36.78482231658854,
+     32.13845117296958,
+     9.375374557482164
+    ],
+    [
+     10.605242184357756,
+     20.922580255757833,
+     42.17993768027297
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     6.212287757470909,
+     31.880945063071387,
+     33.59722650670856
+    ],
+    [
+     47.653846486198375,
+     13.197992459753474,
+     27.856726224618903
+    ],
+    [
+     34.93124222958332,
+     29.049552371637546,
+     12.446554014662464
+    ],
+    [
+     19.694695771839886,
+     23.549411156788622,
+     30.42411119367586
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     13.657704577654249,
+     36.509576715784256,
+     20.225900241123547
+    ],
+    [
+     31.159162667471477,
+     21.72592338232545,
+     28.15750145243133
+    ],
+    [
+     34.87967332134612,
+     56.82170060904261,
+     10.289824731637605
+    ],
+    [
+     23.434374390119437,
+     24.376342547700432,
+     43.74856521078043
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     12.635237314023957,
+     45.98226367943866,
+     38.680965607458646
+    ],
+    [
+     48.846558945448834,
+     19.782176972522958,
+     16.553147180037776
+    ],
+    [
+     21.90492137459465,
+     39.912497802320914,
+     6.638335815389019
+    ],
+    [
+     13.365956054510011,
+     18.381630875250146,
+     34.539913064499096
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     11.0854755541152,
+     37.45836121339483,
+     26.884343210805184
+    ],
+    [
+     35.309858732390744,
+     13.83089837986794,
+     35.08241542441987
+    ],
+    [
+     31.315992629523695,
+     52.19063061761234,
+     7.369109185584776
+    ],
+    [
+     20.116124452124748,
+     19.729493865257652,
+     37.94970284305696
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   159.999999,
+   137.35918765712614,
+   149.54679092946483,
+   170.2424392972715,
+   144.06286119943178,
+   157.3871911713515
+  ],
+  "C-direct": [
+   160.0,
+   137.3591876571261,
+   149.54679092946486,
+   170.2424402972715,
+   144.0628611994317,
+   157.3871911713499
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str', 'crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str', 'crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str', 'crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str', 'crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str', 'crash:p = [[pt[batches[b]][units[u]] for u in range(m)] for b in range(n)] | ~~^^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str']"
+ },
+ "disagreements": [],
+ "notes": []
+}

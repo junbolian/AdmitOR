@@ -1,0 +1,574 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct-2",
+  "B-structured",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    220,
+    281,
+    239,
+    220
+   ],
+   "holding_cost_per_unit_per_period": 15,
+   "machine_capacity_per_period": [
+    480,
+    320,
+    160
+   ],
+   "machine_time_per_unit": [
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     1
+    ]
+   ],
+   "period0_borer_capacity": 0,
+   "inventory_limit_per_product_per_period": 80,
+   "sales_limit": [
+    [
+     51,
+     69,
+     50,
+     67,
+     53
+    ],
+    [
+     44,
+     48,
+     44,
+     61,
+     67
+    ],
+    [
+     56,
+     57,
+     70,
+     49,
+     53
+    ],
+    [
+     64,
+     46,
+     51,
+     66,
+     52
+    ]
+   ],
+   "target_inventory_end_period4": [
+    20,
+    20,
+    20,
+    20
+   ]
+  },
+  {
+   "profit_per_unit": [
+    241.4717269625141,
+    187.56961555229861,
+    201.36240496315366,
+    177.3744536749187
+   ],
+   "holding_cost_per_unit_per_period": 33.931790994888516,
+   "machine_capacity_per_period": [
+    530.8894523777985,
+    395.2984769993303,
+    120.34612793242395
+   ],
+   "machine_time_per_unit": [
+    [
+     0.9609609098426353,
+     0.7648986097190351,
+     1.7186379748036034
+    ],
+    [
+     2.0053552881033623,
+     1.5265359696838636,
+     1.6988376506866485
+    ],
+    [
+     1.0749422188897615,
+     2.0449414806032165,
+     1.7204406220406967
+    ],
+    [
+     2.089265683875909,
+     2.3094304566778265,
+     0.7532493798390305
+    ]
+   ],
+   "period0_borer_capacity": 32.23277007331232,
+   "inventory_limit_per_product_per_period": 110,
+   "sales_limit": [
+    [
+     47.741110536967035,
+     59.49123419480517,
+     59.14426144413562,
+     62.620733809018404,
+     44.36621187965914
+    ],
+    [
+     36.90220823226897,
+     54.67189183387122,
+     45.825578152057275,
+     68.49392986789488,
+     73.15681188339431
+    ],
+    [
+     56.811509248585295,
+     67.78703941872965,
+     66.5989625618339,
+     50.01999637295525,
+     59.983378882163485
+    ],
+    [
+     67.0341056605247,
+     52.6554069657183,
+     52.577983763237945,
+     71.40069647607397,
+     42.553147180037776
+    ]
+   ],
+   "target_inventory_end_period4": [
+    9,
+    12,
+    3,
+    9
+   ]
+  },
+  {
+   "profit_per_unit": [
+    158.5542201290983,
+    237.32740773175513,
+    261.70000752543416,
+    199.184155561393
+   ],
+   "holding_cost_per_unit_per_period": 18.547600618909073,
+   "machine_capacity_per_period": [
+    396.33802486218843,
+    275.25974183342976,
+    201.91884042039945
+   ],
+   "machine_time_per_unit": [
+    [
+     1.0740176926232967,
+     1.0545655028334942,
+     1.671138648198097
+    ],
+    [
+     2.2291267979503493,
+     1.6634024937619283,
+     1.879455441757648
+    ],
+    [
+     1.2447616753182977,
+     2.139999759854093,
+     2.0569497437746462
+    ],
+    [
+     2.1846142509898745,
+     2.3428519201898097,
+     1.1379999557731224
+    ]
+   ],
+   "period0_borer_capacity": 9.161922878564175,
+   "inventory_limit_per_product_per_period": 43,
+   "sales_limit": [
+    [
+     47.235242180405265,
+     62.5896481769294,
+     44.21965687172653,
+     78.86998034417947,
+     60.97899368122058
+    ],
+    [
+     40.73833070205321,
+     50.9844223736617,
+     42.16312145866769,
+     71.11496118966927,
+     65.89722964934228
+    ],
+    [
+     50.733315729556374,
+     51.223107175422825,
+     71.71830775656822,
+     44.34973552704953,
+     54.79322299273906
+    ],
+    [
+     74.1842658202234,
+     44.14896929458331,
+     45.27414348680858,
+     79.1349928114709,
+     52.19814690847046
+    ]
+   ],
+   "target_inventory_end_period4": [
+    4,
+    2,
+    4,
+    25
+   ]
+  },
+  {
+   "profit_per_unit": [
+    264.9802221118965,
+    265.68886546949784,
+    165.97818523922243,
+    201.76937012200668
+   ],
+   "holding_cost_per_unit_per_period": 44.837097970084066,
+   "machine_capacity_per_period": [
+    488.3849313885515,
+    410.4470485018147,
+    194.6348514145118
+   ],
+   "machine_time_per_unit": [
+    [
+     0.7557405109714098,
+     1.1103609096800973,
+     2.181710369026575
+    ],
+    [
+     2.036970330408795,
+     1.766825189952543,
+     2.140961798579808
+    ],
+    [
+     0.8057760867979382,
+     1.934765250669105,
+     1.9537237063292063
+    ],
+    [
+     2.45381592752108,
+     2.375852940378194,
+     0.8816945253755454
+    ]
+   ],
+   "period0_borer_capacity": 20.023444522011932,
+   "inventory_limit_per_product_per_period": 58,
+   "sales_limit": [
+    [
+     59.41760792263433,
+     79.22631252749477,
+     45.968895828972656,
+     70.72384646240894,
+     55.31016848248925
+    ],
+    [
+     37.889971126473576,
+     53.04020736144291,
+     44.693070930105414,
+     67.79848607858561,
+     67.81347841483075
+    ],
+    [
+     44.81281047326594,
+     52.99075809970655,
+     56.5453487868033,
+     57.4103328787865,
+     61.028903809851506
+    ],
+    [
+     72.49063755164619,
+     42.45825990740897,
+     41.98167339648143,
+     75.97945341898667,
+     61.296548462198274
+    ]
+   ],
+   "target_inventory_end_period4": [
+    3,
+    19,
+    3,
+    30
+   ]
+  },
+  {
+   "profit_per_unit": [
+    260.9385021132762,
+    207.90460106710336,
+    234.86474185591774,
+    227.6697533982214
+   ],
+   "holding_cost_per_unit_per_period": 14.132378415482481,
+   "machine_capacity_per_period": [
+    587.2607158325542,
+    305.2424845185703,
+    132.33262772243987
+   ],
+   "machine_time_per_unit": [
+    [
+     1.0196480443897291,
+     1.114965534544988,
+     1.701151063389696
+    ],
+    [
+     1.811716291300895,
+     2.4951493566608947,
+     2.1498780576394534
+    ],
+    [
+     0.9690500419572521,
+     2.0175758410355904,
+     1.6210041958682657
+    ],
+    [
+     1.7246973370315573,
+     1.8380855621474552,
+     1.0441543592286167
+    ]
+   ],
+   "period0_borer_capacity": 9.20458930386308,
+   "inventory_limit_per_product_per_period": 62,
+   "sales_limit": [
+    [
+     42.248258954584266,
+     72.61844162065474,
+     44.578835676223086,
+     77.86525634856423,
+     60.62427048537943
+    ],
+    [
+     36.4470893580403,
+     42.96968897988471,
+     46.97400889801453,
+     54.0273780998387,
+     57.14595754583067
+    ],
+    [
+     65.75551898900703,
+     58.61978252781648,
+     69.23478873673024,
+     54.57854071609877,
+     59.51893635265283
+    ],
+    [
+     56.07449380766407,
+     38.58352698181035,
+     49.5934441210901,
+     63.982475647725906,
+     51.31411309516284
+    ]
+   ],
+   "target_inventory_end_period4": [
+    29,
+    27,
+    39,
+    4
+   ]
+  },
+  {
+   "profit_per_unit": [
+    205.0036774437494,
+    249.39082248118928,
+    299.507815331822,
+    181.293075423724
+   ],
+   "holding_cost_per_unit_per_period": 10.988774154514083,
+   "machine_capacity_per_period": [
+    465.200701775942,
+    305.0012748482056,
+    138.74033388802627
+   ],
+   "machine_time_per_unit": [
+    [
+     0.8749032239410502,
+     1.2116327996380063,
+     1.943130745053457
+    ],
+    [
+     2.3613491047618305,
+     2.050325312449848,
+     1.5505883295248812
+    ],
+    [
+     1.2496412342063632,
+     2.336027585079952,
+     2.4689962572847515
+    ],
+    [
+     2.4263669830081276,
+     2.3486957344143056,
+     0.833155555301957
+    ]
+   ],
+   "period0_borer_capacity": 19.42564501802874,
+   "inventory_limit_per_product_per_period": 61,
+   "sales_limit": [
+    [
+     48.98122196800883,
+     56.81833703923214,
+     47.57946237953832,
+     80.00627701329665,
+     48.02230483324962
+    ],
+    [
+     48.999642594294826,
+     47.13616065291155,
+     42.64493175342687,
+     72.15855043697601,
+     80.27732807840474
+    ],
+    [
+     57.24921044428585,
+     61.979708676756225,
+     60.3343111076738,
+     45.01547337969346,
+     62.93663853734616
+    ],
+    [
+     66.02701544489616,
+     46.77639170528665,
+     56.058701431732906,
+     54.30916320475756,
+     53.7508939647466
+    ]
+   ],
+   "target_inventory_end_period4": [
+    20,
+    34,
+    6,
+    38
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   85475.0,
+   83071.58635002591,
+   109171.88113632245,
+   109058.22465181803,
+   67831.25862681492,
+   79520.73844837042
+  ],
+  "B-structured": [
+   85475.0,
+   83071.58635002591,
+   109171.88113632245,
+   109058.22465181803,
+   67831.2586268149,
+   79520.73844837041
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   85475.0,
+   83071.58635002593,
+   109171.88113632245,
+   109058.22465181805,
+   67831.25862681489,
+   79520.73844837042
+  ],
+  "C-direct-2": [
+   85475.0,
+   83071.58635002593,
+   109171.88113632245,
+   109058.22465181805,
+   67831.25862681489,
+   79520.73844837042
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[20, 20, 20, 20]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[9, 12, 3, 9]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[4, 2, 4, 25]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[3, 19, 3, 30]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[29, 27, 39, 4]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[20, 34, 6, 38]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:return mc_time[p][m] | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str']",
+  "B-structured-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[20, 20, 20, 20]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals\", \"crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[9, 12, 3, 9]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals\", \"crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[4, 2, 4, 25]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals\", \"crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[3, 19, 3, 30]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals\", \"crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[29, 27, 39, 4]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals\", \"crash:raise ValueError( | ValueError: Invalid parameter value: ending_inventory_target[None] = '[20, 34, 6, 38]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

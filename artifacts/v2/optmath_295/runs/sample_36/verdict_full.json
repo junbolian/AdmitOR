@@ -1,0 +1,218 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 30,
+   "cost_max": 50,
+   "assignment_limit_min": 7,
+   "assignment_limit_max": 12
+  },
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 34.18280395373651,
+   "cost_max": 26.250537761133348,
+   "assignment_limit_min": 5.425205228583835,
+   "assignment_limit_max": 8.678528857785873
+  },
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 37.09413642492037,
+   "cost_max": 58.83497437114556,
+   "assignment_limit_min": 9.745256973933918,
+   "assignment_limit_max": 7.043265991552994
+  },
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 27.657654590558113,
+   "cost_max": 26.489860971903518,
+   "assignment_limit_min": 5.0304658236252235,
+   "assignment_limit_max": 12.064263457240347
+  },
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 15.796079090515908,
+   "cost_max": 34.94188253433242,
+   "assignment_limit_min": 8.049191064456663,
+   "assignment_limit_max": 12.539297767238601
+  },
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 21.613218661220902,
+   "cost_max": 54.46328419379544,
+   "assignment_limit_min": 9.166013196744785,
+   "assignment_limit_max": 6.077985116136732
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5168.089957605,
+   4297.616741460555,
+   6298.618039084856,
+   4066.7346015151215,
+   2959.5956667220426,
+   4363.93984115461
+  ],
+  "B-structured": [
+   5417.576140798111,
+   null,
+   null,
+   null,
+   3186.3062142929452,
+   null
+  ],
+  "C-direct": [
+   5188.0,
+   null,
+   null,
+   null,
+   2846.0,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "invalid_bounds",
+   "invalid_bounds",
+   "invalid_bounds",
+   "optimal",
+   "invalid_bounds"
+  ],
+  "C-direct": [
+   "optimal",
+   "crash:File \"<PATH>/random.py\", line 319, in randrange | raise ValueError(f\"empty range in randrange({start}, {stop})\") | ValueError: empty range in randrange(34, 27)",
+   "crash:File \"<PATH>/random.py\", line 319, in randrange | raise ValueError(f\"empty range in randrange({start}, {stop})\") | ValueError: empty range in randrange(9, 8)",
+   "crash:File \"<PATH>/random.py\", line 319, in randrange | raise ValueError(f\"empty range in randrange({start}, {stop})\") | ValueError: empty range in randrange(27, 27)",
+   "optimal",
+   "crash:File \"<PATH>/random.py\", line 319, in randrange | raise ValueError(f\"empty range in randrange({start}, {stop})\") | ValueError: empty range in randrange(9, 7)"
+  ]
+ },
+ "informative": [
+  0,
+  4
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

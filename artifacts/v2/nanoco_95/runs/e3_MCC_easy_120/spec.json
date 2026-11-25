@@ -1,0 +1,264 @@
+{
+ "spec": {
+  "coordinates": {
+   "base": [
+    [
+     9,
+     62
+    ],
+    [
+     26,
+     59
+    ],
+    [
+     82,
+     55
+    ],
+    [
+     12,
+     30
+    ],
+    [
+     57,
+     43
+    ],
+    [
+     51,
+     14
+    ],
+    [
+     33,
+     15
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "lower_bounds": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "upper_bounds": {
+   "base": [
+    3,
+    2,
+    9,
+    6,
+    5,
+    5,
+    7,
+    10,
+    5,
+    4,
+    7,
+    3,
+    4,
+    3,
+    5,
+    5,
+    2,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "costs": {
+   "base": [
+    4,
+    5,
+    6,
+    4,
+    7,
+    6,
+    4,
+    6,
+    7,
+    8,
+    6,
+    2,
+    7,
+    5,
+    4,
+    3,
+    7,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[coordinates] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "coordinates": {
+    "meaning": "2D plane coordinates of each digestion unit",
+    "base": [
+     [
+      9,
+      62
+     ],
+     [
+      26,
+      59
+     ],
+     [
+      82,
+      55
+     ],
+     [
+      12,
+      30
+     ],
+     [
+      57,
+      43
+     ],
+     [
+      51,
+      14
+     ],
+     [
+      33,
+      15
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0
+     ],
+     "hi": [
+      100,
+      100
+     ],
+     "integer": false
+    }
+   },
+   "lower_bounds": {
+    "meaning": "mandatory minimum recirculation flow on each pipeline",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "upper_bounds": {
+    "meaning": "maximum throughput capacity of each pipeline",
+    "base": [
+     3,
+     2,
+     9,
+     6,
+     5,
+     5,
+     7,
+     10,
+     5,
+     4,
+     7,
+     3,
+     4,
+     3,
+     5,
+     5,
+     2,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "costs": {
+    "meaning": "pumping energy cost per unit volume for each pipeline",
+    "base": [
+     4,
+     5,
+     6,
+     4,
+     7,
+     6,
+     4,
+     6,
+     7,
+     8,
+     6,
+     2,
+     7,
+     5,
+     4,
+     3,
+     7,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

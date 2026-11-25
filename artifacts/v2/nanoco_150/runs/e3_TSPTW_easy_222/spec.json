@@ -1,0 +1,426 @@
+{
+ "spec": {
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "coords": {
+   "base": [
+    [
+     64,
+     41
+    ],
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ],
+    [
+     76,
+     96
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     34,
+     65
+    ],
+    [
+     39,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -100.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     54,
+     28,
+     32,
+     56,
+     69,
+     38,
+     41
+    ],
+    [
+     54,
+     0,
+     73,
+     81,
+     27,
+     120,
+     67,
+     94
+    ],
+    [
+     28,
+     73,
+     0,
+     46,
+     82,
+     72,
+     64,
+     33
+    ],
+    [
+     32,
+     81,
+     46,
+     0,
+     74,
+     39,
+     28,
+     29
+    ],
+    [
+     56,
+     27,
+     82,
+     74,
+     0,
+     112,
+     52,
+     95
+    ],
+    [
+     69,
+     120,
+     72,
+     39,
+     112,
+     0,
+     61,
+     39
+    ],
+    [
+     38,
+     67,
+     64,
+     28,
+     52,
+     61,
+     0,
+     56
+    ],
+    [
+     41,
+     94,
+     33,
+     29,
+     95,
+     39,
+     56,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_windows": {
+   "base": [
+    [
+     0,
+     611
+    ],
+    [
+     439,
+     546
+    ],
+    [
+     135,
+     246
+    ],
+    [
+     344,
+     411
+    ],
+    [
+     46,
+     107
+    ],
+    [
+     228,
+     335
+    ],
+    [
+     297,
+     371
+    ],
+    [
+     172,
+     273
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "service_times": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "horizon": {
+   "base": 611,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_nodes": {
+    "meaning": "number of locations (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "coords": {
+    "meaning": "x,y coordinates of each node (node 0 hub, 1-7 stations)",
+    "base": [
+     [
+      64,
+      41
+     ],
+     [
+      99,
+      82
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      76,
+      96
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      34,
+      65
+     ],
+     [
+      39,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -100,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "pairwise symmetric transport distance between nodes",
+    "base": [
+     [
+      0,
+      54,
+      28,
+      32,
+      56,
+      69,
+      38,
+      41
+     ],
+     [
+      54,
+      0,
+      73,
+      81,
+      27,
+      120,
+      67,
+      94
+     ],
+     [
+      28,
+      73,
+      0,
+      46,
+      82,
+      72,
+      64,
+      33
+     ],
+     [
+      32,
+      81,
+      46,
+      0,
+      74,
+      39,
+      28,
+      29
+     ],
+     [
+      56,
+      27,
+      82,
+      74,
+      0,
+      112,
+      52,
+      95
+     ],
+     [
+      69,
+      120,
+      72,
+      39,
+      112,
+      0,
+      61,
+      39
+     ],
+     [
+      38,
+      67,
+      64,
+      28,
+      52,
+      61,
+      0,
+      56
+     ],
+     [
+      41,
+      94,
+      33,
+      29,
+      95,
+      39,
+      56,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_windows": {
+    "meaning": "earliest/latest arrival time per node",
+    "base": [
+     [
+      0,
+      611
+     ],
+     [
+      439,
+      546
+     ],
+     [
+      135,
+      246
+     ],
+     [
+      344,
+      411
+     ],
+     [
+      46,
+      107
+     ],
+     [
+      228,
+      335
+     ],
+     [
+      297,
+      371
+     ],
+     [
+      172,
+      273
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "service_times": {
+    "meaning": "unloading/handover duration at each node",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "horizon": {
+    "meaning": "global time limit for the complete supply sequence",
+    "base": 611,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

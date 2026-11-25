@@ -1,0 +1,293 @@
+{
+ "spec": {
+  "fixed_ordering_cost": {
+   "base": [
+    152,
+    287,
+    200,
+    220,
+    180,
+    250,
+    210,
+    190,
+    230,
+    240,
+    160,
+    270,
+    170,
+    260,
+    175,
+    285,
+    195,
+    205,
+    225,
+    235,
+    165,
+    245,
+    215,
+    255,
+    185
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_purchase_cost": {
+   "base": [
+    15,
+    30,
+    22,
+    18,
+    25,
+    20,
+    28,
+    16,
+    24,
+    19,
+    27,
+    21,
+    17,
+    29,
+    23,
+    26,
+    15,
+    30,
+    22,
+    18,
+    25,
+    20,
+    28,
+    16,
+    24
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost": {
+   "base": [
+    10,
+    20,
+    15,
+    12,
+    18,
+    16,
+    14,
+    19,
+    11,
+    17,
+    13,
+    20,
+    15,
+    12,
+    18,
+    16,
+    14,
+    19,
+    11,
+    17,
+    13,
+    10,
+    20,
+    15,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    128,
+    96,
+    81,
+    88,
+    102,
+    97,
+    102,
+    110,
+    108,
+    102,
+    125,
+    90,
+    130,
+    119,
+    142,
+    137,
+    118,
+    87,
+    148,
+    98,
+    138,
+    95,
+    111,
+    102,
+    101
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "order_limit": {
+   "base": 2755,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_ordering_cost": {
+    "meaning": "Fixed cost incurred in each week if an order is placed (varies by week)",
+    "base": [
+     152,
+     287,
+     200,
+     220,
+     180,
+     250,
+     210,
+     190,
+     230,
+     240,
+     160,
+     270,
+     170,
+     260,
+     175,
+     285,
+     195,
+     205,
+     225,
+     235,
+     165,
+     245,
+     215,
+     255,
+     185
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_purchase_cost": {
+    "meaning": "Per-unit purchase cost in each week (varies by week)",
+    "base": [
+     15,
+     30,
+     22,
+     18,
+     25,
+     20,
+     28,
+     16,
+     24,
+     19,
+     27,
+     21,
+     17,
+     29,
+     23,
+     26,
+     15,
+     30,
+     22,
+     18,
+     25,
+     20,
+     28,
+     16,
+     24
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost": {
+    "meaning": "Cost per unit of inventory carried over from one week to the next (varies by week)",
+    "base": [
+     10,
+     20,
+     15,
+     12,
+     18,
+     16,
+     14,
+     19,
+     11,
+     17,
+     13,
+     20,
+     15,
+     12,
+     18,
+     16,
+     14,
+     19,
+     11,
+     17,
+     13,
+     10,
+     20,
+     15,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Customer demand in units for each week",
+    "base": [
+     128,
+     96,
+     81,
+     88,
+     102,
+     97,
+     102,
+     110,
+     108,
+     102,
+     125,
+     90,
+     130,
+     119,
+     142,
+     137,
+     118,
+     87,
+     148,
+     98,
+     138,
+     95,
+     111,
+     102,
+     101
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "order_limit": {
+    "meaning": "Maximum number of units that can be ordered in any week if an order is placed (equals total demand)",
+    "base": 2755,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

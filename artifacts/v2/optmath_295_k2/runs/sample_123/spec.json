@@ -1,0 +1,93 @@
+{
+ "spec": {
+  "population": {
+   "base": [
+    1039,
+    471,
+    659,
+    540,
+    705,
+    779,
+    985,
+    609,
+    899,
+    848
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "tower_cost": {
+   "base": [
+    103,
+    118,
+    55,
+    74,
+    43,
+    85,
+    56
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget": {
+   "base": 293,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "population": {
+    "meaning": "Population of each region (objective coefficients)",
+    "base": [
+     1039,
+     471,
+     659,
+     540,
+     705,
+     779,
+     985,
+     609,
+     899,
+     848
+    ],
+    "perturb": {
+     "mode": "r",
+     "r": 0.5
+    }
+   },
+   "tower_cost": {
+    "meaning": "Construction cost of each tower",
+    "base": [
+     103,
+     118,
+     55,
+     74,
+     43,
+     85,
+     56
+    ],
+    "perturb": {
+     "mode": "r",
+     "r": 0.5
+    }
+   },
+   "budget": {
+    "meaning": "Total budget available for tower construction",
+    "base": 293,
+    "perturb": {
+     "mode": "r",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

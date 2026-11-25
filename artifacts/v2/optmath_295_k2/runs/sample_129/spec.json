@@ -1,0 +1,210 @@
+{
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    101438,
+    103268,
+    95575,
+    99433
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demands": {
+   "base": [
+    182,
+    216,
+    204,
+    209,
+    198,
+    209,
+    203,
+    208,
+    192,
+    201
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "shipping_costs": {
+   "base": [
+    [
+     26,
+     32,
+     30,
+     29,
+     28,
+     28,
+     25,
+     28,
+     32,
+     33
+    ],
+    [
+     34,
+     29,
+     29,
+     34,
+     35,
+     27,
+     35,
+     25,
+     29,
+     26
+    ],
+    [
+     25,
+     25,
+     33,
+     29,
+     28,
+     34,
+     25,
+     27,
+     30,
+     35
+    ],
+    [
+     32,
+     30,
+     34,
+     29,
+     29,
+     25,
+     27,
+     35,
+     29,
+     28
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacities": {
+   "base": [
+    1026,
+    988,
+    952,
+    963
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "Fixed cost to open each facility",
+    "base": [
+     101438,
+     103268,
+     95575,
+     99433
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demands": {
+    "meaning": "Demand of each customer",
+    "base": [
+     182,
+     216,
+     204,
+     209,
+     198,
+     209,
+     203,
+     208,
+     192,
+     201
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "shipping_costs": {
+    "meaning": "Per-unit shipping cost from each facility to each customer, row = facility, column = customer",
+    "base": [
+     [
+      26,
+      32,
+      30,
+      29,
+      28,
+      28,
+      25,
+      28,
+      32,
+      33
+     ],
+     [
+      34,
+      29,
+      29,
+      34,
+      35,
+      27,
+      35,
+      25,
+      29,
+      26
+     ],
+     [
+      25,
+      25,
+      33,
+      29,
+      28,
+      34,
+      25,
+      27,
+      30,
+      35
+     ],
+     [
+      32,
+      30,
+      34,
+      29,
+      29,
+      25,
+      27,
+      35,
+      29,
+      28
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum units each facility can handle",
+    "base": [
+     1026,
+     988,
+     952,
+     963
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

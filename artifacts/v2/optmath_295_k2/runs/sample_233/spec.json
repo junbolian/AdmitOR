@@ -1,0 +1,191 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     20,
+     34,
+     26,
+     28,
+     30
+    ],
+    [
+     34,
+     33,
+     28,
+     36,
+     38
+    ],
+    [
+     23,
+     29,
+     28,
+     30,
+     34
+    ],
+    [
+     28,
+     21,
+     22,
+     31,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity": {
+   "base": [
+    1204,
+    1596,
+    1653,
+    1303
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    950,
+    989,
+    860,
+    795,
+    899
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "min_producers": {
+   "base": [
+    3,
+    3,
+    3,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_delivery": {
+   "base": [
+    240,
+    319,
+    330,
+    260
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Unit production cost per producer-contract pair",
+    "base": [
+     [
+      20,
+      34,
+      26,
+      28,
+      30
+     ],
+     [
+      34,
+      33,
+      28,
+      36,
+      38
+     ],
+     [
+      23,
+      29,
+      28,
+      30,
+      34
+     ],
+     [
+      28,
+      21,
+      22,
+      31,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum generation capacity per producer",
+    "base": [
+     1204,
+     1596,
+     1653,
+     1303
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Minimum electricity delivery requirement per contract",
+    "base": [
+     950,
+     989,
+     860,
+     795,
+     899
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "min_producers": {
+    "meaning": "Minimum number of contributing producers per contract (cardinality constraint)",
+    "base": [
+     3,
+     3,
+     3,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum amount delivered per producer if assigned to a contract",
+    "base": [
+     240,
+     319,
+     330,
+     260
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

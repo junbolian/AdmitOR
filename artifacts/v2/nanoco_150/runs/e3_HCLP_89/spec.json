@@ -1,0 +1,231 @@
+{
+ "spec": {
+  "establishment_cost": {
+   "base": [
+    826,
+    849,
+    910,
+    738,
+    646,
+    739,
+    673,
+    553,
+    744,
+    640
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "efficiency_gain": {
+   "base": [
+    506,
+    644,
+    368,
+    506,
+    644,
+    598,
+    529,
+    667,
+    552,
+    667,
+    529,
+    529,
+    690,
+    230,
+    368,
+    460,
+    690,
+    483,
+    276,
+    345,
+    529,
+    276,
+    276,
+    322,
+    322,
+    506,
+    391,
+    299
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "R1": {
+   "base": 57,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 75.0,
+    "integer": false
+   }
+  },
+  "R2": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "demand": {
+   "base": [
+    22,
+    28,
+    16,
+    22,
+    28,
+    26,
+    23,
+    29,
+    24,
+    29,
+    23,
+    23,
+    30,
+    10,
+    16,
+    20,
+    30,
+    21,
+    12,
+    15,
+    23,
+    12,
+    12,
+    14,
+    14,
+    22,
+    17,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "establishment_cost": {
+    "meaning": "one-time depot establishment cost per candidate site",
+    "base": [
+     826,
+     849,
+     910,
+     738,
+     646,
+     739,
+     673,
+     553,
+     744,
+     640
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "efficiency_gain": {
+    "meaning": "operational efficiency gain per community when eligible for rapid delivery",
+    "base": [
+     506,
+     644,
+     368,
+     506,
+     644,
+     598,
+     529,
+     667,
+     552,
+     667,
+     529,
+     529,
+     690,
+     230,
+     368,
+     460,
+     690,
+     483,
+     276,
+     345,
+     529,
+     276,
+     276,
+     322,
+     322,
+     506,
+     391,
+     299
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "R1": {
+    "meaning": "maximum logistical window (hard coverage distance) for every community",
+    "base": 57,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 75,
+     "integer": false
+    }
+   },
+   "R2": {
+    "meaning": "proximity threshold for rapid-delivery efficiency bonus eligibility",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "demand": {
+    "meaning": "demand per vulnerable community",
+    "base": [
+     22,
+     28,
+     16,
+     22,
+     28,
+     26,
+     23,
+     29,
+     24,
+     29,
+     23,
+     23,
+     30,
+     10,
+     16,
+     20,
+     30,
+     21,
+     12,
+     15,
+     23,
+     12,
+     12,
+     14,
+     14,
+     22,
+     17,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,319 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    232,
+    198,
+    210
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost_per_unit": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "grinder_time": {
+   "base": [
+    1,
+    1,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "drill_time": {
+   "base": [
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "borer_time": {
+   "base": [
+    1,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "grinder_capacity": {
+   "base": [
+    240,
+    240,
+    240,
+    120,
+    240,
+    240
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "drill_capacity": {
+   "base": [
+    120,
+    120,
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 180.0,
+    "integer": false
+   }
+  },
+  "borer_capacity": {
+   "base": [
+    0,
+    120,
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 180.0,
+    "integer": false
+   }
+  },
+  "max_inventory": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "max_sales": {
+   "base": [
+    [
+     43,
+     35,
+     22,
+     39,
+     45,
+     20
+    ],
+    [
+     31,
+     41,
+     41,
+     48,
+     37,
+     44
+    ],
+    [
+     24,
+     38,
+     47,
+     33,
+     20,
+     50
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "final_inventory": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Revenue/profit per unit sold for each product",
+    "base": [
+     232,
+     198,
+     210
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost_per_unit": {
+    "meaning": "Holding cost per unit of inventory per period",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "grinder_time": {
+    "meaning": "Grinder hours consumed per unit of each product",
+    "base": [
+     1,
+     1,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "drill_time": {
+    "meaning": "Drill hours consumed per unit of each product",
+    "base": [
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "borer_time": {
+    "meaning": "Borer hours consumed per unit of each product",
+    "base": [
+     1,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "grinder_capacity": {
+    "meaning": "Grinder capacity hours per period (periods 0..5)",
+    "base": [
+     240,
+     240,
+     240,
+     120,
+     240,
+     240
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "drill_capacity": {
+    "meaning": "Drill capacity hours per period (periods 0..5)",
+    "base": [
+     120,
+     120,
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 180,
+     "integer": false
+    }
+   },
+   "borer_capacity": {
+    "meaning": "Borer capacity hours per period (periods 0..5)",
+    "base": [
+     0,
+     120,
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 180,
+     "integer": false
+    }
+   },
+   "max_inventory": {
+    "meaning": "Maximum inventory capacity per product per period",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "max_sales": {
+    "meaning": "Maximum units sellable per product per period; rows = product 0..2, cols = period 0..5",
+    "base": [
+     [
+      43,
+      35,
+      22,
+      39,
+      45,
+      20
+     ],
+     [
+      31,
+      41,
+      41,
+      48,
+      37,
+      44
+     ],
+     [
+      24,
+      38,
+      47,
+      33,
+      20,
+      50
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "final_inventory": {
+    "meaning": "Required ending inventory for each product after the sixth period",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

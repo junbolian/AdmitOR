@@ -1,0 +1,239 @@
+{
+ "spec": {
+  "vehicle_capacity": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "service_demand_0_2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "service_demand_0_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "service_demand_0_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "service_demand_3_4": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "service_demand_3_5": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    0,
+    59,
+    42,
+    22,
+    53,
+    62,
+    22,
+    59,
+    0,
+    73,
+    81,
+    27,
+    120,
+    67,
+    42,
+    73,
+    0,
+    46,
+    82,
+    72,
+    64,
+    22,
+    81,
+    46,
+    0,
+    74,
+    39,
+    28,
+    53,
+    27,
+    82,
+    74,
+    0,
+    112,
+    52,
+    62,
+    120,
+    72,
+    39,
+    112,
+    0,
+    61,
+    22,
+    67,
+    64,
+    28,
+    52,
+    61,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "vehicle_capacity": {
+    "meaning": "maximum debris hopper capacity per street sweeper",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "service_demand_0_2": {
+    "meaning": "debris demand of mandatory segment (0,2)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "service_demand_0_5": {
+    "meaning": "debris demand of mandatory segment (0,5)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "service_demand_0_6": {
+    "meaning": "debris demand of mandatory segment (0,6)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "service_demand_3_4": {
+    "meaning": "debris demand of mandatory segment (3,4)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "service_demand_3_5": {
+    "meaning": "debris demand of mandatory segment (3,5)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "direct travel distance between each ordered pair of nodes (row-major 7x7)",
+    "base": [
+     0,
+     59,
+     42,
+     22,
+     53,
+     62,
+     22,
+     59,
+     0,
+     73,
+     81,
+     27,
+     120,
+     67,
+     42,
+     73,
+     0,
+     46,
+     82,
+     72,
+     64,
+     22,
+     81,
+     46,
+     0,
+     74,
+     39,
+     28,
+     53,
+     27,
+     82,
+     74,
+     0,
+     112,
+     52,
+     62,
+     120,
+     72,
+     39,
+     112,
+     0,
+     61,
+     22,
+     67,
+     64,
+     28,
+     52,
+     61,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

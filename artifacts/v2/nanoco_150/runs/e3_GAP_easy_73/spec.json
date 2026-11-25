@@ -1,0 +1,253 @@
+{
+ "spec": {
+  "capacity_T1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_T2": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "capacity_T3": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 19.0,
+    "integer": true
+   }
+  },
+  "usage_T1": {
+   "base": [
+    4,
+    3,
+    2,
+    6,
+    3,
+    4,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "usage_T2": {
+   "base": [
+    8,
+    1,
+    4,
+    7,
+    5,
+    1,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "usage_T3": {
+   "base": [
+    7,
+    1,
+    2,
+    3,
+    5,
+    5,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_T1": {
+   "base": [
+    27,
+    40,
+    15,
+    22,
+    8,
+    15,
+    25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_T2": {
+   "base": [
+    37,
+    39,
+    10,
+    34,
+    8,
+    32,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_T3": {
+   "base": [
+    34,
+    13,
+    8,
+    11,
+    32,
+    15,
+    24
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_T1": {
+    "meaning": "Bandwidth capacity of cell tower T1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_T2": {
+    "meaning": "Bandwidth capacity of cell tower T2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "capacity_T3": {
+    "meaning": "Bandwidth capacity of cell tower T3",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 19,
+     "integer": true
+    }
+   },
+   "usage_T1": {
+    "meaning": "Bandwidth usage of packets 1-7 on tower T1",
+    "base": [
+     4,
+     3,
+     2,
+     6,
+     3,
+     4,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "usage_T2": {
+    "meaning": "Bandwidth usage of packets 1-7 on tower T2",
+    "base": [
+     8,
+     1,
+     4,
+     7,
+     5,
+     1,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "usage_T3": {
+    "meaning": "Bandwidth usage of packets 1-7 on tower T3",
+    "base": [
+     7,
+     1,
+     2,
+     3,
+     5,
+     5,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_T1": {
+    "meaning": "Routing cost of packets 1-7 on tower T1",
+    "base": [
+     27,
+     40,
+     15,
+     22,
+     8,
+     15,
+     25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_T2": {
+    "meaning": "Routing cost of packets 1-7 on tower T2",
+    "base": [
+     37,
+     39,
+     10,
+     34,
+     8,
+     32,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_T3": {
+    "meaning": "Routing cost of packets 1-7 on tower T3",
+    "base": [
+     34,
+     13,
+     8,
+     11,
+     32,
+     15,
+     24
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_37513",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"demand_1_0\", \"evidence\": \"the combined capacity of Plane 0 and Plane 1 deployed from Location 1 to Location 0 must be at least 22 passengers\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "demand_1_0",
+   "evidence": "the combined capacity of Plane 0 and Plane 1 deployed from Location 1 to Location 0 must be at least 22 passengers"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

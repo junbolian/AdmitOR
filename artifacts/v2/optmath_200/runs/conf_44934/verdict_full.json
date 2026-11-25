@@ -1,0 +1,151 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "fixed_cost": [
+    1343,
+    1485,
+    1653,
+    1885,
+    1107,
+    1137,
+    1549,
+    1930,
+    1791,
+    1349
+   ],
+   "operational_cost_per_freq": [
+    145,
+    121,
+    189,
+    183,
+    185,
+    103,
+    131,
+    155,
+    146,
+    167
+   ],
+   "capacity_per_trip": [
+    60,
+    78,
+    65,
+    83,
+    88,
+    86,
+    85,
+    82,
+    75,
+    90
+   ],
+   "resource_usage_per_trip": [
+    50,
+    38,
+    54,
+    83,
+    33,
+    56,
+    47,
+    77,
+    44,
+    39
+   ],
+   "min_frequency": 2,
+   "max_frequency": 10,
+   "demand": [
+    17,
+    18,
+    11,
+    17,
+    10,
+    18,
+    16,
+    19,
+    18,
+    10,
+    14,
+    19
+   ],
+   "penalty_unmet": [
+    590,
+    600,
+    631,
+    605,
+    523,
+    700,
+    571,
+    527,
+    651,
+    559,
+    532,
+    617
+   ],
+   "total_resource_budget": 50
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   111514.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:model.LINES, rule=lambda mdl, l: mdl.freq[l] <= max_freq[l] * mdl.select[l] | ~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "infeasible_or_failed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

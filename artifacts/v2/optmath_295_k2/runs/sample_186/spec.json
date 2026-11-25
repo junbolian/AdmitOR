@@ -1,0 +1,261 @@
+{
+ "spec": {
+  "producer_capacity": {
+   "base": [
+    2799,
+    2401,
+    2047,
+    2726,
+    2379,
+    1823
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "contract_demand": {
+   "base": [
+    928,
+    1041,
+    985,
+    1034,
+    1026,
+    1007,
+    989
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_contributors": {
+   "base": [
+    3,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "producer_min_delivery": {
+   "base": [
+    615,
+    528,
+    450,
+    599,
+    523,
+    401
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     47,
+     50,
+     44,
+     49,
+     45,
+     48,
+     46
+    ],
+    [
+     44,
+     43,
+     46,
+     41,
+     45,
+     42,
+     44
+    ],
+    [
+     50,
+     45,
+     40,
+     47,
+     43,
+     49,
+     46
+    ],
+    [
+     42,
+     47,
+     44,
+     40,
+     46,
+     43,
+     45
+    ],
+    [
+     48,
+     41,
+     45,
+     44,
+     47,
+     42,
+     46
+    ],
+    [
+     40,
+     49,
+     46,
+     50,
+     44,
+     45,
+     47
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[min_contributors] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "producer_capacity": {
+    "meaning": "Maximum daily production capacity per producer (MWh)",
+    "base": [
+     2799,
+     2401,
+     2047,
+     2726,
+     2379,
+     1823
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "contract_demand": {
+    "meaning": "Minimum electricity demand per contract (MWh)",
+    "base": [
+     928,
+     1041,
+     985,
+     1034,
+     1026,
+     1007,
+     989
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers per contract (cardinality-like, frozen)",
+    "base": [
+     3,
+     3,
+     3,
+     2,
+     2,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "producer_min_delivery": {
+    "meaning": "Minimum delivery per producer if it contributes to a contract (MWh)",
+    "base": [
+     615,
+     528,
+     450,
+     599,
+     523,
+     401
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_matrix": {
+    "meaning": "Production cost per MWh for each producer-contract pair (units/MWh); structured as 6 producers x 7 contracts",
+    "base": [
+     [
+      47,
+      50,
+      44,
+      49,
+      45,
+      48,
+      46
+     ],
+     [
+      44,
+      43,
+      46,
+      41,
+      45,
+      42,
+      44
+     ],
+     [
+      50,
+      45,
+      40,
+      47,
+      43,
+      49,
+      46
+     ],
+     [
+      42,
+      47,
+      44,
+      40,
+      46,
+      43,
+      45
+     ],
+     [
+      48,
+      41,
+      45,
+      44,
+      47,
+      42,
+      46
+     ],
+     [
+      40,
+      49,
+      46,
+      50,
+      44,
+      45,
+      47
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

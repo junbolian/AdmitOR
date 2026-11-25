@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "cost_0_1": {
+   "base": 115,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "cost_0_2": {
+   "base": 105,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "cost_1_0": {
+   "base": 476,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "cost_1_2": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "cost_2_0": {
+   "base": 145,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "cost_2_1": {
+   "base": 181,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "pos1_lower": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "pos1_upper": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "pos2_lower": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "pos2_upper": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[pos1_lower] degenerate abs range (lo == hi); perturbation has no effect",
+  "[pos1_upper] degenerate abs range (lo == hi); perturbation has no effect",
+  "[pos2_lower] degenerate abs range (lo == hi); perturbation has no effect",
+  "[pos2_upper] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_0_1": {
+    "meaning": "Travel cost from City 0 to City 1",
+    "base": 115,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Travel cost from City 0 to City 2",
+    "base": 105,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "cost_1_0": {
+    "meaning": "Travel cost from City 1 to City 0",
+    "base": 476,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Travel cost from City 1 to City 2",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "cost_2_0": {
+    "meaning": "Travel cost from City 2 to City 0",
+    "base": 145,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "cost_2_1": {
+    "meaning": "Travel cost from City 2 to City 1",
+    "base": 181,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "pos1_lower": {
+    "meaning": "Lower bound on position variable of City 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "pos1_upper": {
+    "meaning": "Upper bound on position variable of City 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "pos2_lower": {
+    "meaning": "Lower bound on position variable of City 2",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "pos2_upper": {
+    "meaning": "Upper bound on position variable of City 2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

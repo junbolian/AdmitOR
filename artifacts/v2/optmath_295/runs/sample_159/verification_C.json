@@ -1,0 +1,16 @@
+{
+ "sample_id": "sample_159",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each entry of the extracted cost matrix against the statement:\n\n- Row 0: 0, 168, 167, 154, 161 ✓\n- Row 1: 169, 0, 165, 170, 168 ✓\n- Row 2: 152, 169, 0, 150, 165 ✓\n- Row 3: 158, 167, 157, 0, 156 ✓\n- Row 4: 165, 167, 167, 165, 0 ✓\n\nAll values match the statement exactly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

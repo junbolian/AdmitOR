@@ -1,0 +1,58 @@
+{
+ "spec": {
+  "supply_weights": {
+   "base": [
+    38,
+    37,
+    31,
+    31,
+    37,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "hospital_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_weights": {
+    "meaning": "Weight of each medical supply (units)",
+    "base": [
+     38,
+     37,
+     31,
+     31,
+     37,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "hospital_capacity": {
+    "meaning": "Uniform storage capacity of each hospital (units)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

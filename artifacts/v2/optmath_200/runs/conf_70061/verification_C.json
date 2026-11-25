@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_70061",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"shipping_cost_per_unit\", \"evidence\": \"\\\"Shipping from Facility_0 to Customer_0 costs 67 units, to Customer_1 costs 70 units, and so on, with all costs provided in the detailed data\\\" — only two values are given explicitly; the rest are not stated in the problem text\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_cost_per_unit",
+   "evidence": "\"Shipping from Facility_0 to Customer_0 costs 67 units, to Customer_1 costs 70 units, and so on, with all costs provided in the detailed data\" — only two values are given explicitly; the rest are not stated in the problem text"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_287",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity\",\"evidence\":\"Each aircraft type has a specific capacity for each route, measured in the number of passengers it can transport. For example:\"},{\"parameter\":\"cost\",\"evidence\":\"Assigning an aircraft to a route incurs a specific cost. For example: ... Similar costs apply for other aircraft types and routes, with values ranging from 1909 to 2092 units per assignment.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "Each aircraft type has a specific capacity for each route, measured in the number of passengers it can transport. For example:"
+  },
+  {
+   "parameter": "cost",
+   "evidence": "Assigning an aircraft to a route incurs a specific cost. For example: ... Similar costs apply for other aircraft types and routes, with values ranging from 1909 to 2092 units per assignment."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

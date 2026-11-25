@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_6965",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll compare each extracted parameter against the statement systematically.\n\n**select_limit = 2**: The statement says \"exactly 2 facilities.\" This matches.\n\n**dispersion matrix**: Checking each row against the stated values:\n\n- Row 0 (Node 0 as i): [0, 16, 10, 13, 13] — matches stated values.\n- Row 1 (Node 1 as i): [18, 0, 17, 17, 17] — statement says Node 1→Node 0: 18 ✓, Node 1→Node 2: 17 ✓, Node 1→Node 3: 17 ✓, Node 1→Node 4: 17 ✓. Matches.\n- Row 2 (Node 2 as i): [20, 14, 0, 15, 14] — statement says Node 2→Node 0: 20 ✓, Node 2→Node 1: 14 ✓, Node 2→Node 3: 15 ✓, Node 2→Node 4: 14 ✓. Matches.\n- Row 3 (Node 3 as i): [14, 16, 17, 0, 15] — statement says Node 3→Node 0: 14 ✓, Node 3→Node 1: 16 ✓, Node 3→Node 2: 17 ✓, Node 3→Node 4: 15 ✓. Matches.\n- Row 4 (Node 4 as i): [20, 11, 11, 18, 0] — statement says Node 4→Node 0: 20 ✓, Node 4→Node 1: 11 ✓, Node 4→Node 2: 11 ✓, Node 4→Node 3: 18 ✓. Matches.\n\nAll values match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

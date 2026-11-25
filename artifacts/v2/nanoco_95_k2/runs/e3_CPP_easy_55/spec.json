@@ -1,0 +1,304 @@
+{
+ "spec": {
+  "node_coords": {
+   "base": [
+    [
+     50,
+     50
+    ],
+    [
+     9,
+     62
+    ],
+    [
+     26,
+     59
+    ],
+    [
+     82,
+     55
+    ],
+    [
+     12,
+     30
+    ],
+    [
+     57,
+     43
+    ],
+    [
+     51,
+     14
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "num_graph_edges": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_required_edges": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "service_costs": {
+   "base": [
+    43,
+    26,
+    73,
+    51,
+    74,
+    28,
+    51,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_matrix": {
+   "base": [
+    [
+     0,
+     43,
+     26,
+     32,
+     43,
+     10,
+     36
+    ],
+    [
+     43,
+     0,
+     17,
+     73,
+     32,
+     52,
+     64
+    ],
+    [
+     26,
+     17,
+     0,
+     56,
+     32,
+     35,
+     51
+    ],
+    [
+     32,
+     73,
+     56,
+     0,
+     74,
+     28,
+     51
+    ],
+    [
+     43,
+     32,
+     32,
+     74,
+     0,
+     47,
+     42
+    ],
+    [
+     10,
+     52,
+     35,
+     28,
+     47,
+     0,
+     30
+    ],
+    [
+     36,
+     64,
+     51,
+     51,
+     42,
+     30,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [
+  "[num_graph_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_edges] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "node_coords": {
+    "meaning": "Spatial coordinates of nodes 0-6 as (x, y) pairs",
+    "base": [
+     [
+      50,
+      50
+     ],
+     [
+      9,
+      62
+     ],
+     [
+      26,
+      59
+     ],
+     [
+      82,
+      55
+     ],
+     [
+      12,
+      30
+     ],
+     [
+      57,
+      43
+     ],
+     [
+      51,
+      14
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "num_graph_edges": {
+    "meaning": "Total number of edges in the underlying network graph (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_required_edges": {
+    "meaning": "Number of mandatory service segments (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "service_costs": {
+    "meaning": "Sweeping (service) cost for each required edge in order [(0,1),(0,2),(1,3),(2,6),(3,4),(3,5),(3,6),(5,6)]",
+    "base": [
+     43,
+     26,
+     73,
+     51,
+     74,
+     28,
+     51,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_matrix": {
+    "meaning": "Pairwise deadhead travel cost matrix for all 7 nodes (rows = from node 0-6)",
+    "base": [
+     [
+      0,
+      43,
+      26,
+      32,
+      43,
+      10,
+      36
+     ],
+     [
+      43,
+      0,
+      17,
+      73,
+      32,
+      52,
+      64
+     ],
+     [
+      26,
+      17,
+      0,
+      56,
+      32,
+      35,
+      51
+     ],
+     [
+      32,
+      73,
+      56,
+      0,
+      74,
+      28,
+      51
+     ],
+     [
+      43,
+      32,
+      32,
+      74,
+      0,
+      47,
+      42
+     ],
+     [
+      10,
+      52,
+      35,
+      28,
+      47,
+      0,
+      30
+     ],
+     [
+      36,
+      64,
+      51,
+      51,
+      42,
+      30,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

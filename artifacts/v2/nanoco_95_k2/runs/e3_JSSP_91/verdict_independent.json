@@ -1,0 +1,195 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "p_0_1": 33,
+   "p_0_0": 13,
+   "p_0_2": 15,
+   "p_1_1": 46,
+   "p_1_0": 50,
+   "p_1_2": 20,
+   "p_2_1": 26,
+   "p_2_0": 39,
+   "p_2_2": 19
+  },
+  {
+   "p_0_1": 42,
+   "p_0_0": 6,
+   "p_0_2": 14,
+   "p_1_1": 39,
+   "p_1_0": 63,
+   "p_1_2": 25,
+   "p_2_1": 42,
+   "p_2_0": 28,
+   "p_2_2": 18
+  },
+  {
+   "p_0_1": 21,
+   "p_0_0": 9,
+   "p_0_2": 18,
+   "p_1_1": 31,
+   "p_1_0": 39,
+   "p_1_2": 24,
+   "p_2_1": 31,
+   "p_2_0": 33,
+   "p_2_2": 22
+  },
+  {
+   "p_0_1": 48,
+   "p_0_0": 5,
+   "p_0_2": 24,
+   "p_1_1": 58,
+   "p_1_0": 45,
+   "p_1_2": 13,
+   "p_2_1": 44,
+   "p_2_0": 37,
+   "p_2_2": 12
+  },
+  {
+   "p_0_1": 23,
+   "p_0_0": 22,
+   "p_0_2": 20,
+   "p_1_1": 62,
+   "p_1_0": 63,
+   "p_1_2": 22,
+   "p_2_1": 44,
+   "p_2_0": 38,
+   "p_2_2": 21
+  },
+  {
+   "p_0_1": 49,
+   "p_0_0": 17,
+   "p_0_2": 25,
+   "p_1_1": 53,
+   "p_1_0": 62,
+   "p_1_2": 11,
+   "p_2_1": 22,
+   "p_2_0": 35,
+   "p_2_2": 12
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   153.99999999999997,
+   160.999999,
+   134.0,
+   167.0,
+   206.0,
+   166.0
+  ],
+  "B-structured": [
+   157.0,
+   162.0,
+   138.0,
+   179.0,
+   205.0,
+   178.999999
+  ],
+  "B-structured-2": [
+   157.0,
+   162.00000000000003,
+   138.0,
+   179.0,
+   204.99999999999997,
+   178.999999
+  ],
+  "C-direct": [
+   157.0,
+   162.0,
+   138.0,
+   179.0,
+   205.0,
+   179.0
+  ],
+  "C-direct-2": [
+   157.0,
+   162.0,
+   138.0,
+   179.0,
+   205.0,
+   179.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disj_con[0]' does not have a proper value",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disj_con[0]' does not have a proper value",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disj_con[0]' does not have a proper value",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disj_con[0]' does not have a proper value",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disj_con[0]' does not have a proper value",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disj_con[0]' does not have a proper value"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disj_con[0]\\' does not have a proper value', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disj_con[0]\\' does not have a proper value', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disj_con[0]\\' does not have a proper value', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disj_con[0]\\' does not have a proper value', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disj_con[0]\\' does not have a proper value', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disj_con[0]\\' does not have a proper value']",
+  "A-direct-2": "diverges from consensus by 13 on instance 5 (params: {'p_0_1': 49, 'p_0_0': 17, 'p_0_2': 25, 'p_1_1': 53, 'p_1_0': 62, 'p_1_2': 11, 'p_2_1': 22, 'p_2_0': 35, 'p_2_2': 12})"
+ },
+ "disagreements": [],
+ "notes": []
+}

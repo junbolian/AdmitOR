@@ -1,0 +1,95 @@
+{
+ "spec": {
+  "population": {
+   "base": [
+    1136,
+    931,
+    1022,
+    1041,
+    1145,
+    511,
+    754,
+    1000,
+    740,
+    640,
+    1193
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "tower_cost": {
+   "base": [
+    57,
+    54,
+    83,
+    58,
+    79,
+    87,
+    72
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "budget": {
+   "base": 269,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "population": {
+    "meaning": "Population of each region (11 regions)",
+    "base": [
+     1136,
+     931,
+     1022,
+     1041,
+     1145,
+     511,
+     754,
+     1000,
+     740,
+     640,
+     1193
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "tower_cost": {
+    "meaning": "Cost to build each tower (7 tower locations)",
+    "base": [
+     57,
+     54,
+     83,
+     58,
+     79,
+     87,
+     72
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "budget": {
+    "meaning": "Total available budget for building towers",
+    "base": 269,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

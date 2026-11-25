@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_170127",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity\",\n      \"evidence\": \"\\\"Similar capacity contributions are defined for all other aircraft types across all routes.\\\" Only Aircraft_0 to Route_0 (100), Aircraft_0 to Route_1 (106), and Aircraft_1 to Route_0 (101) are given; all other values are not stated.\"\n    },\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"\\\"Similar costs are defined for all other aircraft-route combinations.\\\" Only Aircraft_0/Route_0 (2154), Aircraft_0/Route_1 (2970), and Aircraft_1/Route_0 (2661) are given; all other values are not stated.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "\"Similar capacity contributions are defined for all other aircraft types across all routes.\" Only Aircraft_0 to Route_0 (100), Aircraft_0 to Route_1 (106), and Aircraft_1 to Route_0 (101) are given; all other values are not stated."
+  },
+  {
+   "parameter": "cost",
+   "evidence": "\"Similar costs are defined for all other aircraft-route combinations.\" Only Aircraft_0/Route_0 (2154), Aircraft_0/Route_1 (2970), and Aircraft_1/Route_0 (2661) are given; all other values are not stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,39 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "supply_origin",
+  "demand_destination",
+  "cost_matrix",
+  "capacity_matrix"
+ ],
+ "safe": [
+  "cost_matrix",
+  "capacity_matrix"
+ ],
+ "tests": {
+  "supply_origin": [
+   0,
+   0
+  ],
+  "demand_destination": [
+   0,
+   0
+  ],
+  "cost_matrix": [
+   6,
+   6
+  ],
+  "capacity_matrix": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

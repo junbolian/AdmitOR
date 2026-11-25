@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_167",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"For example: Producer 0 incurs a cost of 43 units per unit of electricity delivered to Contract 0, 46 units for Contract 1, and so on. ... Similar cost structures apply to the other producers, with costs ranging from 40 to 50 units per unit of electricity.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "For example: Producer 0 incurs a cost of 43 units per unit of electricity delivered to Contract 0, 46 units for Contract 1, and so on. ... Similar cost structures apply to the other producers, with costs ranging from 40 to 50 units per unit of electricity."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

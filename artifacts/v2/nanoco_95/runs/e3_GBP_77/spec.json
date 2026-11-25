@@ -1,0 +1,106 @@
+{
+ "spec": {
+  "sheet_width": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 26.0,
+    "integer": false
+   }
+  },
+  "sheet_height": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 26.0,
+    "integer": false
+   }
+  },
+  "part_widths": {
+   "base": [
+    8,
+    8,
+    6,
+    8
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "part_heights": {
+   "base": [
+    6,
+    4,
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "sheet_width": {
+    "meaning": "width of each raw steel sheet (mm)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 26,
+     "integer": false
+    }
+   },
+   "sheet_height": {
+    "meaning": "height of each raw steel sheet (mm)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 26,
+     "integer": false
+    }
+   },
+   "part_widths": {
+    "meaning": "fixed widths of parts 1-4 (mm), non-rotatable",
+    "base": [
+     8,
+     8,
+     6,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "part_heights": {
+    "meaning": "fixed heights of parts 1-4 (mm), non-rotatable",
+    "base": [
+     6,
+     4,
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 12,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

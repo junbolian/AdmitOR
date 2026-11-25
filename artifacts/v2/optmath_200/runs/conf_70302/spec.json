@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1579,
+    1552,
+    1550,
+    1598
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "contract_demand": {
+   "base": [
+    804,
+    827,
+    816,
+    830,
+    832
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_delivery": {
+   "base": [
+    394,
+    388,
+    387,
+    399
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     32,
+     30,
+     31,
+     30,
+     31
+    ],
+    [
+     30,
+     30,
+     31,
+     30,
+     31
+    ],
+    [
+     32,
+     32,
+     31,
+     30,
+     30
+    ],
+    [
+     30,
+     31,
+     31,
+     32,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum generation capacity per producer (units)",
+    "base": [
+     1579,
+     1552,
+     1550,
+     1598
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "contract_demand": {
+    "meaning": "Minimum required delivery per contract (units)",
+    "base": [
+     804,
+     827,
+     816,
+     830,
+     832
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum amount a producer must deliver if it contributes to any contract (units)",
+    "base": [
+     394,
+     388,
+     387,
+     399
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "Generation cost per unit of electricity for each producer-contract pair (producers x contracts)",
+    "base": [
+     [
+      32,
+      30,
+      31,
+      30,
+      31
+     ],
+     [
+      30,
+      30,
+      31,
+      30,
+      31
+     ],
+     [
+      32,
+      32,
+      31,
+      30,
+      30
+     ],
+     [
+      30,
+      31,
+      31,
+      32,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

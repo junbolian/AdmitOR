@@ -1,0 +1,155 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_returns": [
+    0.1437,
+    0.0965,
+    0.0578,
+    0.0707,
+    0.0732,
+    0.0938,
+    0.057,
+    0.0573
+   ],
+   "min_return": 0.1,
+   "budget": 1.0,
+   "max_weight": 0.3
+  },
+  {
+   "expected_returns": [
+    0.14971068928151937,
+    0.0827490613636962,
+    0.05389900838052052,
+    0.06482929975613654,
+    0.0783929078630417,
+    0.0987723235760807,
+    0.06370627060775286,
+    0.05019947853289966
+   ],
+   "min_return": 0.09797296377167433,
+   "budget": 0.9059594438876141,
+   "max_weight": 0.22652329118126116
+  },
+  {
+   "expected_returns": [
+    0.14393086647013595,
+    0.08279321632234786,
+    0.05257784486290648,
+    0.07387904892530368,
+    0.07418691491404664,
+    0.0859331991042252,
+    0.058526443194278036,
+    0.06261910955029183
+   ],
+   "min_return": 0.06058488837102549,
+   "budget": 1.0611638503665617,
+   "max_weight": 0.3943487882458794
+  },
+  {
+   "expected_returns": [
+    0.1368131997670906,
+    0.08652613151955107,
+    0.06572807467206558,
+    0.06723417030183881,
+    0.06425669872062804,
+    0.08245159884409367,
+    0.06294215366454156,
+    0.05908305047919685
+   ],
+   "min_return": 0.1326415445946942,
+   "budget": 1.0459463573387637,
+   "max_weight": 0.33767983200914525
+  },
+  {
+   "expected_returns": [
+    0.16409602058515066,
+    0.09298357022018183,
+    0.05870238454627775,
+    0.07768667292880602,
+    0.07580269376191884,
+    0.10397843217474527,
+    0.058322721683890626,
+    0.060816589864534525
+   ],
+   "min_return": 0.0641241945290096,
+   "budget": 0.9455796551303094,
+   "max_weight": 0.25128578726073747
+  },
+  {
+   "expected_returns": [
+    0.12558483212517757,
+    0.08876429616015183,
+    0.0508813647859647,
+    0.06599082012196505,
+    0.07617963039604622,
+    0.08999637751621815,
+    0.05478009453769869,
+    0.05230642585896187
+   ],
+   "min_return": 0.0840280039844202,
+   "budget": 1.087330917542499,
+   "max_weight": 0.37681238483630775
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.0008265065448672579,
+   null,
+   0.0005383000393896769,
+   null,
+   0.0004274209018568277,
+   0.0006172275838942126
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "missing_covariance_matrix",
+   "missing_covariance_matrix",
+   "missing_covariance_matrix",
+   "missing_covariance_matrix",
+   "missing_covariance_matrix",
+   "missing_covariance_matrix"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

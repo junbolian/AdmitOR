@@ -1,0 +1,142 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    20,
+    28,
+    32,
+    36,
+    31,
+    48,
+    44,
+    38,
+    39,
+    46,
+    23
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "resource_consumption_per_unit": {
+   "base": [
+    0.2,
+    0.25,
+    1,
+    0.25,
+    0.25,
+    1,
+    1,
+    0.25,
+    1,
+    0.2,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_capacity": {
+   "base": 562,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "production_upper_limits": {
+   "base": [
+    106,
+    128,
+    192,
+    106,
+    154,
+    197,
+    162,
+    102,
+    102,
+    178,
+    105
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Profit contribution per unit for each item",
+    "base": [
+     20,
+     28,
+     32,
+     36,
+     31,
+     48,
+     44,
+     38,
+     39,
+     46,
+     23
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "resource_consumption_per_unit": {
+    "meaning": "Shared resource units consumed per unit of each item",
+    "base": [
+     0.2,
+     0.25,
+     1,
+     0.25,
+     0.25,
+     1,
+     1,
+     0.25,
+     1,
+     0.2,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_capacity": {
+    "meaning": "Maximum total shared resource available",
+    "base": 562,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "production_upper_limits": {
+    "meaning": "Maximum production quantity per item",
+    "base": [
+     106,
+     128,
+     192,
+     106,
+     154,
+     197,
+     162,
+     102,
+     102,
+     178,
+     105
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,355 @@
+{
+ "spec": {
+  "production_cost": {
+   "base": [
+    [
+     43,
+     42,
+     44,
+     42,
+     45
+    ],
+    [
+     41,
+     45,
+     43,
+     42,
+     42
+    ],
+    [
+     45,
+     42,
+     44,
+     43,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost": {
+   "base": [
+    [
+     1053,
+     1495,
+     1271,
+     1213,
+     1214
+    ],
+    [
+     1036,
+     1150,
+     1091,
+     1411,
+     1167
+    ],
+    [
+     1046,
+     1334,
+     1418,
+     1271,
+     1038
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost": {
+   "base": [
+    [
+     4,
+     4,
+     5,
+     4,
+     5
+    ],
+    [
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    [
+     5,
+     4,
+     5,
+     5,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cumulative_demand": {
+   "base": [
+    [
+     89,
+     184,
+     237,
+     301,
+     397
+    ],
+    [
+     89,
+     171,
+     236,
+     300,
+     394
+    ],
+    [
+     85,
+     180,
+     272,
+     350,
+     425
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "resource_capacity": {
+   "base": [
+    1108,
+    1071,
+    1065,
+    1023,
+    1053
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "resource_consumption": {
+   "base": [
+    1.915074138365338,
+    1.733811282039902,
+    1.737803128944962
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_production_if_setup": {
+   "base": [
+    [
+     397,
+     308,
+     213,
+     160,
+     96
+    ],
+    [
+     394,
+     305,
+     223,
+     158,
+     94
+    ],
+    [
+     425,
+     340,
+     245,
+     153,
+     75
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "production_cost": {
+    "meaning": "Production cost per unit for each product (0,1,2) in each period (0-4)",
+    "base": [
+     [
+      43,
+      42,
+      44,
+      42,
+      45
+     ],
+     [
+      41,
+      45,
+      43,
+      42,
+      42
+     ],
+     [
+      45,
+      42,
+      44,
+      43,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost": {
+    "meaning": "Fixed setup cost for each product in each period",
+    "base": [
+     [
+      1053,
+      1495,
+      1271,
+      1213,
+      1214
+     ],
+     [
+      1036,
+      1150,
+      1091,
+      1411,
+      1167
+     ],
+     [
+      1046,
+      1334,
+      1418,
+      1271,
+      1038
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost": {
+    "meaning": "Inventory holding cost per unit per period for each product",
+    "base": [
+     [
+      4,
+      4,
+      5,
+      4,
+      5
+     ],
+     [
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     [
+      5,
+      4,
+      5,
+      5,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cumulative_demand": {
+    "meaning": "Cumulative demand by period for each product",
+    "base": [
+     [
+      89,
+      184,
+      237,
+      301,
+      397
+     ],
+     [
+      89,
+      171,
+      236,
+      300,
+      394
+     ],
+     [
+      85,
+      180,
+      272,
+      350,
+      425
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "resource_capacity": {
+    "meaning": "Total resource availability in each period",
+    "base": [
+     1108,
+     1071,
+     1065,
+     1023,
+     1053
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "resource_consumption": {
+    "meaning": "Resource usage per unit produced for each product",
+    "base": [
+     1.915074138365338,
+     1.733811282039902,
+     1.737803128944962
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_production_if_setup": {
+    "meaning": "Maximum production quantity for each product in each period if setup is initiated",
+    "base": [
+     [
+      397,
+      308,
+      213,
+      160,
+      96
+     ],
+     [
+      394,
+      305,
+      223,
+      158,
+      94
+     ],
+     [
+      425,
+      340,
+      245,
+      153,
+      75
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,405 @@
+{
+ "spec": {
+  "num_nodes": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "source": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "sink": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "coords": {
+   "base": [
+    [
+     77,
+     26
+    ],
+    [
+     47,
+     13
+    ],
+    [
+     85,
+     78
+    ],
+    [
+     67,
+     76
+    ],
+    [
+     19,
+     56
+    ],
+    [
+     20,
+     17
+    ],
+    [
+     66,
+     4
+    ],
+    [
+     50,
+     69
+    ],
+    [
+     84,
+     46
+    ],
+    [
+     55,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arcs": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    13,
+    13,
+    12,
+    11,
+    9,
+    4,
+    5,
+    12,
+    13,
+    7,
+    14,
+    8,
+    9,
+    11,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    5,
+    7,
+    7,
+    2,
+    9,
+    4,
+    7,
+    6,
+    10,
+    8,
+    7,
+    9,
+    6,
+    6,
+    7
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[source] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink] degenerate abs range (lo == hi); perturbation has no effect",
+  "[coords] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[arcs] rel rate r=0.0 outside (0,1]; clamped to 0.3"
+ ],
+ "raw": {
+  "params": {
+   "num_nodes": {
+    "meaning": "total number of nodes in the network (index-set size, frozen)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "source": {
+    "meaning": "source node ID (assembly point), frozen",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "sink": {
+    "meaning": "sink node ID (safe destination), frozen",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "coords": {
+    "meaning": "spatial coordinates of nodes (not used in cut objective; frozen)",
+    "base": [
+     [
+      77,
+      26
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      85,
+      78
+     ],
+     [
+      67,
+      76
+     ],
+     [
+      19,
+      56
+     ],
+     [
+      20,
+      17
+     ],
+     [
+      66,
+      4
+     ],
+     [
+      50,
+      69
+     ],
+     [
+      84,
+      46
+     ],
+     [
+      55,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "arcs": {
+    "meaning": "directed evacuation arcs (topology, frozen)",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "arc_capacities": {
+    "meaning": "maximum traffic volume limit per arc (throughput constraints)",
+    "base": [
+     13,
+     13,
+     12,
+     11,
+     9,
+     4,
+     5,
+     12,
+     13,
+     7,
+     14,
+     8,
+     9,
+     11,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "logistical cost per unit of flow for each arc (cut objective coefficients; may turn negative economically)",
+    "base": [
+     5,
+     7,
+     7,
+     2,
+     9,
+     4,
+     7,
+     6,
+     10,
+     8,
+     7,
+     9,
+     6,
+     6,
+     7
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

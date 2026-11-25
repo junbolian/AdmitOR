@@ -1,0 +1,85 @@
+{
+ "sample_id": "conf_173602",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"objective_coefficient\",\"extracted\":[[0,0,0,0],[0,1,1,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],\"stated\":[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]],\"evidence\":\"The objective is to maximize the sum of all assignments while respecting these constraints.\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "objective_coefficient",
+   "extracted": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "stated": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "evidence": "The objective is to maximize the sum of all assignments while respecting these constraints."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

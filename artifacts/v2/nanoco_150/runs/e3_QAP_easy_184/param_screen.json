@@ -1,0 +1,43 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "flow_matrix",
+  "distance_matrix",
+  "room_coordinates",
+  "num_units",
+  "num_rooms"
+ ],
+ "safe": [
+  "flow_matrix",
+  "room_coordinates",
+  "num_units",
+  "num_rooms"
+ ],
+ "tests": {
+  "flow_matrix": [
+   3,
+   3
+  ],
+  "distance_matrix": [
+   2,
+   2
+  ],
+  "room_coordinates": [
+   3,
+   3
+  ],
+  "num_units": [
+   3,
+   3
+  ],
+  "num_rooms": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

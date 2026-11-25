@@ -1,0 +1,121 @@
+{
+ "spec": {
+  "supplies": {
+   "base": [
+    7,
+    10,
+    0,
+    0,
+    -6,
+    -11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities": {
+   "base": [
+    17,
+    17,
+    17,
+    17,
+    17,
+    17,
+    17,
+    17,
+    8,
+    8,
+    8,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "costs": {
+   "base": [
+    6,
+    2,
+    5,
+    2,
+    8,
+    6,
+    4,
+    8,
+    4,
+    10,
+    8,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supplies": {
+    "meaning": "Net supply (positive injection, negative demand) at nodes 0..5",
+    "base": [
+     7,
+     10,
+     0,
+     0,
+     -6,
+     -11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities": {
+    "meaning": "Max flow per arc, ordered as (0,2),(0,3),(1,2),(1,3),(2,4),(2,5),(3,4),(3,5),(0,4),(0,5),(1,4),(1,5)",
+    "base": [
+     17,
+     17,
+     17,
+     17,
+     17,
+     17,
+     17,
+     17,
+     8,
+     8,
+     8,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "costs": {
+    "meaning": "Unit transmission cost per arc, same arc order as capacities",
+    "base": [
+     6,
+     2,
+     5,
+     2,
+     8,
+     6,
+     4,
+     8,
+     4,
+     10,
+     8,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

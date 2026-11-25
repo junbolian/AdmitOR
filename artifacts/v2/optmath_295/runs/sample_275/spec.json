@@ -1,0 +1,130 @@
+{
+ "spec": {
+  "facility_cost": {
+   "base": [
+    76,
+    42,
+    73,
+    54,
+    76,
+    41,
+    47,
+    69,
+    55,
+    71,
+    75,
+    40,
+    70,
+    67,
+    70,
+    61,
+    59,
+    79,
+    78,
+    47,
+    52
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_facilities": {
+   "base": 21,
+   "perturb": {
+    "mode": "abs",
+    "lo": 21.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "num_service_areas": {
+   "base": 36,
+   "perturb": {
+    "mode": "abs",
+    "lo": 36.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "coverage_requirement": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_service_areas] degenerate abs range (lo == hi); perturbation has no effect",
+  "[coverage_requirement] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "facility_cost": {
+    "meaning": "Activation cost of each facility (Facility 1 through Facility 21)",
+    "base": [
+     76,
+     42,
+     73,
+     54,
+     76,
+     41,
+     47,
+     69,
+     55,
+     71,
+     75,
+     40,
+     70,
+     67,
+     70,
+     61,
+     59,
+     79,
+     78,
+     47,
+     52
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of facilities (index-set size, frozen)",
+    "base": 21,
+    "perturb": {
+     "mode": "abs",
+     "lo": 21,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "num_service_areas": {
+    "meaning": "Number of service areas (index-set size, frozen)",
+    "base": 36,
+    "perturb": {
+     "mode": "abs",
+     "lo": 36,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "coverage_requirement": {
+    "meaning": "Minimum number of active facilities required to cover each service area",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "proc_time": {
+   "base": [
+    [
+     42,
+     30,
+     46
+    ],
+    [
+     28,
+     48,
+     10
+    ],
+    [
+     42,
+     29,
+     14
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "robot_assignment": {
+   "base": [
+    [
+     1,
+     0,
+     2
+    ],
+    [
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "proc_time": {
+    "meaning": "Processing time (minutes) of each operation, indexed as [task][stage] with stage 0 = first, 1 = second, 2 = third robot in the route",
+    "base": [
+     [
+      42,
+      30,
+      46
+     ],
+     [
+      28,
+      48,
+      10
+     ],
+     [
+      42,
+      29,
+      14
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "robot_assignment": {
+    "meaning": "Robot (0-2) assigned to each operation, indexed as [task][stage]",
+    "base": [
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      2,
+      1,
+      0
+     ],
+     [
+      2,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

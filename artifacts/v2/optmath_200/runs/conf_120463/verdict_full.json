@@ -1,0 +1,278 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "supply": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "demand": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "cost_0_0": 28,
+   "cost_0_1": 28,
+   "cost_1_0": 30,
+   "cost_2_9": 26,
+   "cap_0_0": 444,
+   "cap_0_1": 483,
+   "cap_1_0": 484,
+   "cap_2_9": 478,
+   "num_facilities": 8,
+   "num_dcs": 10
+  },
+  {
+   "supply": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "demand": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "cost_0_0": 38,
+   "cost_0_1": 2,
+   "cost_1_0": 17,
+   "cost_2_9": 13,
+   "cap_0_0": 521,
+   "cap_0_1": 503,
+   "cap_1_0": 568,
+   "cap_2_9": 326,
+   "num_facilities": 8,
+   "num_dcs": 10
+  },
+  {
+   "supply": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "demand": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "cost_0_0": 13,
+   "cost_0_1": 30,
+   "cost_1_0": 2,
+   "cost_2_9": 12,
+   "cap_0_0": 495,
+   "cap_0_1": 463,
+   "cap_1_0": 366,
+   "cap_2_9": 477,
+   "num_facilities": 8,
+   "num_dcs": 10
+  },
+  {
+   "supply": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "demand": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "cost_0_0": 48,
+   "cost_0_1": 42,
+   "cost_1_0": 20,
+   "cost_2_9": 9,
+   "cap_0_0": 587,
+   "cap_0_1": 401,
+   "cap_1_0": 328,
+   "cap_2_9": 329,
+   "num_facilities": 8,
+   "num_dcs": 10
+  },
+  {
+   "supply": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "demand": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "cost_0_0": 48,
+   "cost_0_1": 44,
+   "cost_1_0": 32,
+   "cost_2_9": 58,
+   "cap_0_0": 414,
+   "cap_0_1": 466,
+   "cap_1_0": 549,
+   "cap_2_9": 486,
+   "num_facilities": 8,
+   "num_dcs": 10
+  },
+  {
+   "supply": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "demand": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "cost_0_0": 42,
+   "cost_0_1": 3,
+   "cost_1_0": 14,
+   "cost_2_9": 17,
+   "cap_0_0": 324,
+   "cap_0_1": 370,
+   "cap_1_0": 330,
+   "cap_2_9": 383,
+   "num_facilities": 8,
+   "num_dcs": 10
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   865490.0,
+   1087974.0,
+   850970.0,
+   1389563.0,
+   1663314.0,
+   1196103.0
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   310090.0,
+   295014.0,
+   295570.0,
+   313023.0,
+   330354.0,
+   296263.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "incomplete_input",
+   "incomplete_input",
+   "incomplete_input",
+   "incomplete_input",
+   "incomplete_input",
+   "incomplete_input"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

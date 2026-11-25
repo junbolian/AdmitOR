@@ -1,0 +1,260 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    7,
+    1,
+    5,
+    6,
+    1,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    384,
+    214,
+    309,
+    492
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capability": {
+   "base": [
+    [
+     75,
+     200,
+     130,
+     132
+    ],
+    [
+     97,
+     87,
+     161,
+     113
+    ],
+    [
+     193,
+     126,
+     182,
+     78
+    ],
+    [
+     122,
+     122,
+     169,
+     108
+    ],
+    [
+     59,
+     142,
+     84,
+     140
+    ],
+    [
+     197,
+     161,
+     132,
+     89
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     4722,
+     3530,
+     2715,
+     3600
+    ],
+    [
+     4706,
+     4340,
+     1210,
+     1338
+    ],
+    [
+     3044,
+     2338,
+     1146,
+     3892
+    ],
+    [
+     3827,
+     1634,
+     1592,
+     1866
+    ],
+    [
+     1095,
+     3228,
+     3883,
+     4917
+    ],
+    [
+     2829,
+     4001,
+     4154,
+     4792
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [
+  "[availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "Maximum number of aircraft assignable per aircraft type (aircraft_0..aircraft_5)",
+    "base": [
+     7,
+     1,
+     5,
+     6,
+     1,
+     9
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      0,
+      2,
+      3,
+      0,
+      5
+     ],
+     "hi": [
+      14,
+      3,
+      10,
+      12,
+      3,
+      18
+     ],
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Minimum total capability required per route (route_0..route_3)",
+    "base": [
+     384,
+     214,
+     309,
+     492
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capability": {
+    "meaning": "Capability units provided by one aircraft of each type on each route; rows=aircraft_0..5, cols=route_0..3",
+    "base": [
+     [
+      75,
+      200,
+      130,
+      132
+     ],
+     [
+      97,
+      87,
+      161,
+      113
+     ],
+     [
+      193,
+      126,
+      182,
+      78
+     ],
+     [
+      122,
+      122,
+      169,
+      108
+     ],
+     [
+      59,
+      142,
+      84,
+      140
+     ],
+     [
+      197,
+      161,
+      132,
+      89
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "Operational cost per aircraft assigned to each route; rows=aircraft_0..5, cols=route_0..3",
+    "base": [
+     [
+      4722,
+      3530,
+      2715,
+      3600
+     ],
+     [
+      4706,
+      4340,
+      1210,
+      1338
+     ],
+     [
+      3044,
+      2338,
+      1146,
+      3892
+     ],
+     [
+      3827,
+      1634,
+      1592,
+      1866
+     ],
+     [
+      1095,
+      3228,
+      3883,
+      4917
+     ],
+     [
+      2829,
+      4001,
+      4154,
+      4792
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

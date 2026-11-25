@@ -1,0 +1,96 @@
+{
+ "spec": {
+  "distance": {
+   "base": [
+    0,
+    19,
+    21,
+    22,
+    24,
+    17,
+    0,
+    21,
+    21,
+    17,
+    16,
+    23,
+    0,
+    22,
+    25,
+    22,
+    17,
+    21,
+    0,
+    22,
+    22,
+    18,
+    23,
+    15,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_facilities_open": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "distance": {
+    "meaning": "Pairwise directed dispersion distance between ordered node pairs (row=from, col=to) in given order",
+    "base": [
+     0,
+     19,
+     21,
+     22,
+     24,
+     17,
+     0,
+     21,
+     21,
+     17,
+     16,
+     23,
+     0,
+     22,
+     25,
+     22,
+     17,
+     21,
+     0,
+     22,
+     22,
+     18,
+     23,
+     15,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_facilities_open": {
+    "meaning": "Exact number of facilities to open",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

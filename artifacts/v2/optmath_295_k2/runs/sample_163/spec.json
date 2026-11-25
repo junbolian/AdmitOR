@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "pairwise_benefits": {
+   "base": [
+    12,
+    19,
+    16,
+    18,
+    11,
+    16,
+    15,
+    10,
+    16,
+    10,
+    14,
+    20,
+    20,
+    10,
+    16,
+    14,
+    10,
+    13,
+    16,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_selected": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_selected] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "pairwise_benefits": {
+    "meaning": "Ordered pairwise coverage benefit w[i][j] for selecting both node i and node j (i != j), row-major over the 20 ordered pairs listed",
+    "base": [
+     12,
+     19,
+     16,
+     18,
+     11,
+     16,
+     15,
+     10,
+     16,
+     10,
+     14,
+     20,
+     20,
+     10,
+     16,
+     14,
+     10,
+     13,
+     16,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_selected": {
+    "meaning": "Exact number of locations to select (cardinality constraint, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "sample_id": "conf_57581",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at the statement carefully:\n\n**selection_cost**: The extracted values [2,1,3,3,5,2,3,3,1,1,2,5] match the stated costs for Locations 1–12 exactly. No issue.\n\n**coverage_requirement**: The statement describes 20 constraints (\"The selection must satisfy 20 constraints\") but then lists 21 (through the twenty-first constraint). That's an internal inconsistency in the statement, but the extracted parameter claims 21 constraints. I need to check the minimum values against each stated constraint.\n\nChecking each in order:\n1. ≥3 ✓, 2. ≥3 — stated \"at least 3 of Locations 7, 9, 11, and 12\" ✓, 3. ≥2 ✓, 4. ≥2 ✓, 5. ≥2 ✓, 6. ≥3 ✓, 7. ≥2 ✓, 8. ≥2 ✓, 9. ≥1 ✓, 10. ≥3 ✓, 11. ≥2 ✓, 12. ≥1 ✓, 13. ≥3 ✓, 14. ≥1 ✓, 15. ≥2 ✓, 16. ≥1 ✓, 17. ≥1 ✓, 18. ≥3 ✓, 19. ≥3 ✓, 20. ≥1 ✓, 21. ≥1 ✓\n\nAll 21 minimum values match. The only issue is the statement says \"20 constraints\" but describes 21.\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"coverage_requirement\",\n      \"extracted\": 21,\n      \"stated\": 20,\n      \"evidence\": \"The selection must satisfy 20 constraints\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "coverage_requirement",
+   "extracted": 21,
+   "stated": 20,
+   "evidence": "The selection must satisfy 20 constraints"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

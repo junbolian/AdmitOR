@@ -1,0 +1,112 @@
+{
+ "spec": {
+  "expected_returns": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_allocation": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.15,
+    "hi": 0.45,
+    "integer": false
+   }
+  },
+  "total_allocation": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.8,
+    "hi": 1.2,
+    "integer": false
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "covariance_0_1": {
+   "base": 0.0758,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "covariance_0_2": {
+   "base": -0.0093,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "expected_returns": {
+    "meaning": "Expected return of each asset",
+    "base": 0.1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_allocation": {
+    "meaning": "Maximum allocation limit per asset (30%)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.15,
+     "hi": 0.45,
+     "integer": false
+    }
+   },
+   "total_allocation": {
+    "meaning": "Total allocation sum constraint (100%)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.8,
+     "hi": 1.2,
+     "integer": false
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio expected return (10%)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "covariance_0_1": {
+    "meaning": "Covariance between Asset 0 and Asset 1",
+    "base": 0.0758,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "covariance_0_2": {
+    "meaning": "Covariance between Asset 0 and Asset 2",
+    "base": -0.0093,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

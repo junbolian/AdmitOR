@@ -1,0 +1,171 @@
+{
+ "spec": {
+  "capacity": {
+   "base": 650,
+   "perturb": {
+    "mode": "abs",
+    "lo": 400.0,
+    "hi": 900.0,
+    "integer": false
+   }
+  },
+  "values": {
+   "base": [
+    307,
+    260,
+    279,
+    166,
+    331,
+    309,
+    258,
+    153,
+    163,
+    288,
+    242,
+    151,
+    281,
+    275,
+    343,
+    216,
+    204,
+    206,
+    189,
+    159,
+    170,
+    153,
+    348,
+    251,
+    220,
+    338,
+    345
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weights": {
+   "base": [
+    28,
+    53,
+    47,
+    31,
+    32,
+    29,
+    54,
+    46,
+    28,
+    25,
+    54,
+    37,
+    33,
+    41,
+    47,
+    41,
+    27,
+    25,
+    31,
+    55,
+    34,
+    26,
+    44,
+    41,
+    25,
+    34,
+    32
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Knapsack maximum weight capacity",
+    "base": 650,
+    "perturb": {
+     "mode": "abs",
+     "lo": 400,
+     "hi": 900,
+     "integer": false
+    }
+   },
+   "values": {
+    "meaning": "Value (utility) of each item, item_0 through item_26",
+    "base": [
+     307,
+     260,
+     279,
+     166,
+     331,
+     309,
+     258,
+     153,
+     163,
+     288,
+     242,
+     151,
+     281,
+     275,
+     343,
+     216,
+     204,
+     206,
+     189,
+     159,
+     170,
+     153,
+     348,
+     251,
+     220,
+     338,
+     345
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weights": {
+    "meaning": "Weight (resource consumption) of each item, item_0 through item_26",
+    "base": [
+     28,
+     53,
+     47,
+     31,
+     32,
+     29,
+     54,
+     46,
+     28,
+     25,
+     54,
+     37,
+     33,
+     41,
+     47,
+     41,
+     27,
+     25,
+     31,
+     55,
+     34,
+     26,
+     44,
+     41,
+     25,
+     34,
+     32
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

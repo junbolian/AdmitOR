@@ -1,0 +1,502 @@
+{
+ "spec": {
+  "arc_capacity_01_10": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_05_50": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_07_70": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_08_80": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_09_90": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_12_21": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_23_32": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_29_92": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_34_43": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_45_54": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_56_65": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_67_76": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_69_96": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_78_87": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacity_89_98": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_01_10": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_05_50": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_07_70": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_08_80": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_09_90": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "unit_cost_12_21": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_23_32": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_29_92": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_34_43": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_45_54": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_56_65": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_67_76": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_69_96": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_78_87": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost_89_98": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_flow1_5_to_4": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "demand_flow2_3_to_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_capacity_01_10": {
+    "meaning": "Capacity of bidirectional link [0,1] (each direction)",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_05_50": {
+    "meaning": "Capacity of bidirectional link [0,5] (each direction)",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_07_70": {
+    "meaning": "Capacity of bidirectional link [0,7] (each direction)",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_08_80": {
+    "meaning": "Capacity of bidirectional link [0,8] (each direction)",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_09_90": {
+    "meaning": "Capacity of bidirectional link [0,9] (each direction)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_12_21": {
+    "meaning": "Capacity of bidirectional link [1,2] (each direction)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_23_32": {
+    "meaning": "Capacity of bidirectional link [2,3] (each direction)",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_29_92": {
+    "meaning": "Capacity of bidirectional link [2,9] (each direction)",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_34_43": {
+    "meaning": "Capacity of bidirectional link [3,4] (each direction)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_45_54": {
+    "meaning": "Capacity of bidirectional link [4,5] (each direction)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_56_65": {
+    "meaning": "Capacity of bidirectional link [5,6] (each direction)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_67_76": {
+    "meaning": "Capacity of bidirectional link [6,7] (each direction)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_69_96": {
+    "meaning": "Capacity of bidirectional link [6,9] (each direction)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_78_87": {
+    "meaning": "Capacity of bidirectional link [7,8] (each direction)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacity_89_98": {
+    "meaning": "Capacity of bidirectional link [8,9] (each direction)",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_01_10": {
+    "meaning": "Unit transmission cost on link [0,1] (each direction)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_05_50": {
+    "meaning": "Unit transmission cost on link [0,5] (each direction)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_07_70": {
+    "meaning": "Unit transmission cost on link [0,7] (each direction)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_08_80": {
+    "meaning": "Unit transmission cost on link [0,8] (each direction)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_09_90": {
+    "meaning": "Unit transmission cost on link [0,9] (each direction)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "unit_cost_12_21": {
+    "meaning": "Unit transmission cost on link [1,2] (each direction)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_23_32": {
+    "meaning": "Unit transmission cost on link [2,3] (each direction)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_29_92": {
+    "meaning": "Unit transmission cost on link [2,9] (each direction)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_34_43": {
+    "meaning": "Unit transmission cost on link [3,4] (each direction)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_45_54": {
+    "meaning": "Unit transmission cost on link [4,5] (each direction)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_56_65": {
+    "meaning": "Unit transmission cost on link [5,6] (each direction)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_67_76": {
+    "meaning": "Unit transmission cost on link [6,7] (each direction)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_69_96": {
+    "meaning": "Unit transmission cost on link [6,9] (each direction)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_78_87": {
+    "meaning": "Unit transmission cost on link [7,8] (each direction)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost_89_98": {
+    "meaning": "Unit transmission cost on link [8,9] (each direction)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_flow1_5_to_4": {
+    "meaning": "Traffic demand of flow 1 from source 5 to destination 4",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "demand_flow2_3_to_0": {
+    "meaning": "Traffic demand of flow 2 from source 3 to destination 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

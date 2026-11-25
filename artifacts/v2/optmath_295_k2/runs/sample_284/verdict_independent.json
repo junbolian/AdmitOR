@@ -1,0 +1,136 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
+ ],
+ "objectives": {
+  "A-direct": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "B-structured-2": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "C-direct": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "C-direct-2": [
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'preferences\\'', 'crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'preferences\\'', 'crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'preferences\\'', 'crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'preferences\\'', 'crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'preferences\\'', 'crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'preferences\\'']"
+ },
+ "disagreements": [],
+ "notes": []
+}

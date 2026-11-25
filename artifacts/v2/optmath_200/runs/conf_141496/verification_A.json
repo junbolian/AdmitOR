@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_141496",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"num_teams\",\n      \"evidence\": \"For example: Project 0 can be assigned to Team 0, Team 1, Team 2, Team 3, Team 4, Team 5, or Team 6\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "num_teams",
+   "evidence": "For example: Project 0 can be assigned to Team 0, Team 1, Team 2, Team 3, Team 4, Team 5, or Team 6"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

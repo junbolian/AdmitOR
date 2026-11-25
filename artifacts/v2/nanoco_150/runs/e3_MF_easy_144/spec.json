@@ -1,0 +1,205 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    13,
+    13,
+    12,
+    11,
+    9,
+    4,
+    5,
+    12,
+    13,
+    7,
+    14,
+    8,
+    9,
+    11,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_costs": {
+   "base": [
+    5,
+    7,
+    7,
+    2,
+    9,
+    4,
+    7,
+    6,
+    10,
+    8,
+    7,
+    9,
+    6,
+    6,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "node_coordinates": {
+   "base": [
+    [
+     77,
+     26
+    ],
+    [
+     47,
+     13
+    ],
+    [
+     85,
+     78
+    ],
+    [
+     67,
+     76
+    ],
+    [
+     19,
+     56
+    ],
+    [
+     20,
+     17
+    ],
+    [
+     66,
+     4
+    ],
+    [
+     50,
+     69
+    ],
+    [
+     84,
+     46
+    ],
+    [
+     55,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Maximum power transmission capacity (units of load) for each of the 15 directed lines, in the order: (0,1),(1,2),(1,4),(1,5),(1,7),(2,3),(3,4),(4,5),(4,8),(4,9),(5,6),(5,7),(6,7),(7,8),(8,9)",
+    "base": [
+     13,
+     13,
+     12,
+     11,
+     9,
+     4,
+     5,
+     12,
+     13,
+     7,
+     14,
+     8,
+     9,
+     11,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_costs": {
+    "meaning": "Electricity transmission cost per kWh (unit cost) for each of the 15 directed lines, same order as capacities",
+    "base": [
+     5,
+     7,
+     7,
+     2,
+     9,
+     4,
+     7,
+     6,
+     10,
+     8,
+     7,
+     9,
+     6,
+     6,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "node_coordinates": {
+    "meaning": "Spatial coordinates (x, y) of the 10 grid interconnection points, indexed 0 through 9. Frozen: they define the fixed geometry and do not affect flow feasibility or objective directly.",
+    "base": [
+     [
+      77,
+      26
+     ],
+     [
+      47,
+      13
+     ],
+     [
+      85,
+      78
+     ],
+     [
+      67,
+      76
+     ],
+     [
+      19,
+      56
+     ],
+     [
+      20,
+      17
+     ],
+     [
+      66,
+      4
+     ],
+     [
+      50,
+      69
+     ],
+     [
+      84,
+      46
+     ],
+     [
+      55,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     38,
+     10,
+     14
+    ],
+    [
+     41,
+     23,
+     39
+    ],
+    [
+     37,
+     16,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_jobs": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_stations": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_jobs] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_stations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Treatment duration of each job on each station (rows: jobs 0-2, columns: stations 0-2), in minutes",
+    "base": [
+     [
+      38,
+      10,
+      14
+     ],
+     [
+      41,
+      23,
+      39
+     ],
+     [
+      37,
+      16,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_jobs": {
+    "meaning": "Number of jobs (fixed cardinality)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_stations": {
+    "meaning": "Number of serial stations (fixed cardinality)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

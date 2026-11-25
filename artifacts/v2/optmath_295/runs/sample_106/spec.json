@@ -1,0 +1,111 @@
+{
+ "spec": {
+  "returns": {
+   "base": [
+    0.1217884071582754,
+    0.0822617167874527,
+    0.1170508998471323,
+    0.0746576079025595
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.16,
+    "integer": false
+   }
+  },
+  "weight_sum_target": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.95,
+    "hi": 1.05,
+    "integer": false
+   }
+  },
+  "weight_upper_bound": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.15,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "weight_lower_bound": {
+   "base": 0.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.1,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "returns": {
+    "meaning": "Expected return coefficients for Asset 0 through Asset 3 in the minimum-return constraint",
+    "base": [
+     0.1217884071582754,
+     0.0822617167874527,
+     0.1170508998471323,
+     0.0746576079025595
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio return",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.16,
+     "integer": false
+    }
+   },
+   "weight_sum_target": {
+    "meaning": "Total allocation across all assets (budget fully invested)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.95,
+     "hi": 1.05,
+     "integer": false
+    }
+   },
+   "weight_upper_bound": {
+    "meaning": "Maximum weight allowed for any single asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.15,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "weight_lower_bound": {
+    "meaning": "Minimum weight allowed for any single asset",
+    "base": 0.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.1,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

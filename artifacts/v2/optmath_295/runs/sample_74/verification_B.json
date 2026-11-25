@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_74",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"preference_matrix\",\"evidence\":\"For example, Participant 1 is only interested in Car 0, and Participant 4 is only interested in Car 4.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "preference_matrix",
+   "evidence": "For example, Participant 1 is only interested in Car 0, and Participant 4 is only interested in Car 4."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

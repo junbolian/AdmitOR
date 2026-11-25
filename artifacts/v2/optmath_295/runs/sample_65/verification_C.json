@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_65",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"shipping_costs_col0\", \"evidence\": \"Similar costs apply for all other retail stores and distribution centers.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_costs_col0",
+   "evidence": "Similar costs apply for all other retail stores and distribution centers."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

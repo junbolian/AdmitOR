@@ -1,0 +1,192 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "pref_0_2": 1,
+   "pref_0_5": 1,
+   "pref_1_0": 1,
+   "pref_1_1": 1,
+   "pref_1_3": 1,
+   "pref_2_0": 1,
+   "pref_2_2": 1,
+   "pref_3_1": 1,
+   "pref_3_3": 1,
+   "pref_3_4": 1,
+   "pref_5_0": 1,
+   "pref_5_3": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "assignment_coefficient": 1
+  },
+  {
+   "pref_0_2": 1,
+   "pref_0_5": 0,
+   "pref_1_0": 0,
+   "pref_1_1": 0,
+   "pref_1_3": 1,
+   "pref_2_0": 1,
+   "pref_2_2": 1,
+   "pref_3_1": 0,
+   "pref_3_3": 0,
+   "pref_3_4": 0,
+   "pref_5_0": 0,
+   "pref_5_3": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "assignment_coefficient": -0.1182375118372132
+  },
+  {
+   "pref_0_2": 1,
+   "pref_0_5": 1,
+   "pref_1_0": 0,
+   "pref_1_1": 1,
+   "pref_1_3": 1,
+   "pref_2_0": 0,
+   "pref_2_2": 0,
+   "pref_3_1": 1,
+   "pref_3_3": 0,
+   "pref_3_4": 0,
+   "pref_5_0": 0,
+   "pref_5_3": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "assignment_coefficient": 2.8924630559174824
+  },
+  {
+   "pref_0_2": 0,
+   "pref_0_5": 1,
+   "pref_1_0": 1,
+   "pref_1_1": 1,
+   "pref_1_3": 1,
+   "pref_2_0": 1,
+   "pref_2_2": 1,
+   "pref_3_1": 0,
+   "pref_3_3": 0,
+   "pref_3_4": 0,
+   "pref_5_0": 0,
+   "pref_5_3": 0,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "assignment_coefficient": 0.48072386846753057
+  },
+  {
+   "pref_0_2": 0,
+   "pref_0_5": 0,
+   "pref_1_0": 1,
+   "pref_1_1": 1,
+   "pref_1_3": 1,
+   "pref_2_0": 0,
+   "pref_2_2": 1,
+   "pref_3_1": 0,
+   "pref_3_3": 0,
+   "pref_3_4": 1,
+   "pref_5_0": 1,
+   "pref_5_3": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "assignment_coefficient": -0.871599024383849
+  },
+  {
+   "pref_0_2": 0,
+   "pref_0_5": 0,
+   "pref_1_0": 0,
+   "pref_1_1": 1,
+   "pref_1_3": 1,
+   "pref_2_0": 0,
+   "pref_2_2": 1,
+   "pref_3_1": 0,
+   "pref_3_3": 1,
+   "pref_3_4": 0,
+   "pref_5_0": 0,
+   "pref_5_3": 0,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "assignment_coefficient": 0.5976020205615891
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   -0.0,
+   8.677389167752448,
+   1.4421716054025917,
+   -0.0,
+   1.7928060616847672
+  ],
+  "B-structured": [
+   5.0,
+   -0.0,
+   8.677389167752448,
+   1.4421716054025917,
+   -0.0,
+   1.7928060616847672
+  ],
+  "C-direct": [
+   5.0,
+   -0.0,
+   8.677389167752448,
+   1.4421716054025917,
+   -0.0,
+   1.7928060616847672
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

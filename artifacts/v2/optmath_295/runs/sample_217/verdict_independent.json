@@ -1,0 +1,297 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "team_cost": [
+    4,
+    2,
+    4,
+    4,
+    3,
+    3,
+    1,
+    5,
+    4,
+    2,
+    2
+   ],
+   "req_min_teams": [
+    3,
+    2,
+    1,
+    1,
+    1,
+    2,
+    3,
+    1,
+    1,
+    1,
+    2,
+    1,
+    3,
+    3,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "team_cost": [
+    5,
+    0,
+    2,
+    2,
+    6,
+    5,
+    7,
+    1,
+    3,
+    0,
+    2
+   ],
+   "req_min_teams": [
+    3,
+    1,
+    2,
+    3,
+    3,
+    2,
+    3,
+    3,
+    1,
+    3,
+    3,
+    2,
+    1,
+    4,
+    2,
+    1,
+    1,
+    4,
+    3,
+    3
+   ]
+  },
+  {
+   "team_cost": [
+    6,
+    4,
+    8,
+    3,
+    4,
+    7,
+    5,
+    7,
+    5,
+    6,
+    0
+   ],
+   "req_min_teams": [
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    3,
+    2,
+    2,
+    2,
+    2,
+    4,
+    3,
+    3,
+    2,
+    3,
+    1,
+    2,
+    4,
+    3
+   ]
+  },
+  {
+   "team_cost": [
+    4,
+    5,
+    7,
+    6,
+    2,
+    0,
+    3,
+    2,
+    2,
+    8,
+    7
+   ],
+   "req_min_teams": [
+    2,
+    3,
+    2,
+    4,
+    2,
+    2,
+    2,
+    3,
+    2,
+    3,
+    4,
+    2,
+    2,
+    4,
+    3,
+    1,
+    1,
+    1,
+    3,
+    3
+   ]
+  },
+  {
+   "team_cost": [
+    3,
+    1,
+    3,
+    8,
+    4,
+    8,
+    7,
+    0,
+    6,
+    5,
+    4
+   ],
+   "req_min_teams": [
+    2,
+    3,
+    1,
+    2,
+    2,
+    4,
+    4,
+    2,
+    3,
+    2,
+    4,
+    4,
+    2,
+    3,
+    3,
+    1,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  {
+   "team_cost": [
+    0,
+    3,
+    0,
+    7,
+    7,
+    7,
+    2,
+    0,
+    7,
+    8,
+    1
+   ],
+   "req_min_teams": [
+    2,
+    1,
+    3,
+    3,
+    1,
+    2,
+    3,
+    2,
+    4,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    4,
+    3,
+    2,
+    3,
+    1
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   22.0,
+   null,
+   34.0,
+   32.0,
+   null,
+   null
+  ],
+  "B-structured": [
+   22.0,
+   null,
+   34.0,
+   32.0,
+   null,
+   null
+  ],
+  "C-direct": [
+   22.0,
+   null,
+   34.0,
+   32.0,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "infeasible_or_failed",
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

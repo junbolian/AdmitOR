@@ -1,0 +1,150 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_team1": 1,
+   "cost_team2": 3,
+   "cost_team3": 2,
+   "rhs_1_3": 2,
+   "rhs_1_2": 2,
+   "rhs_2_only": 1,
+   "rhs_1_2_3": 3,
+   "rhs_3_only": 1,
+   "rhs_2_3": 2,
+   "rhs_1_only": 1
+  },
+  {
+   "cost_team1": 2.475987589205186,
+   "cost_team2": -0.7749032029959976,
+   "cost_team3": 0.47526386532207354,
+   "rhs_1_3": 1,
+   "rhs_1_2": 2,
+   "rhs_2_only": 1,
+   "rhs_1_2_3": 3,
+   "rhs_3_only": 1,
+   "rhs_2_3": 1,
+   "rhs_1_only": 1
+  },
+  {
+   "cost_team1": -0.46953417637477646,
+   "cost_team2": 3.5481975929302614,
+   "cost_team3": -1.7611762728452274,
+   "rhs_1_3": 1,
+   "rhs_1_2": 2,
+   "rhs_2_only": 1,
+   "rhs_1_2_3": 2,
+   "rhs_3_only": 1,
+   "rhs_2_3": 2,
+   "rhs_1_only": 1
+  },
+  {
+   "cost_team1": 3.6407347628296556,
+   "cost_team2": 5.283254554894041,
+   "cost_team3": 1.062254648661927,
+   "rhs_1_3": 1,
+   "rhs_1_2": 2,
+   "rhs_2_only": 1,
+   "rhs_1_2_3": 2,
+   "rhs_3_only": 1,
+   "rhs_2_3": 2,
+   "rhs_1_only": 1
+  },
+  {
+   "cost_team1": 3.649897912920661,
+   "cost_team2": 5.567586080244361,
+   "cost_team3": 2.826052823092307,
+   "rhs_1_3": 2,
+   "rhs_1_2": 1,
+   "rhs_2_only": 1,
+   "rhs_1_2_3": 3,
+   "rhs_3_only": 1,
+   "rhs_2_3": 2,
+   "rhs_1_only": 1
+  },
+  {
+   "cost_team1": 2.932002853504464,
+   "cost_team2": -0.5875805470990401,
+   "cost_team3": 0.05108448086392148,
+   "rhs_1_3": 1,
+   "rhs_1_2": 1,
+   "rhs_2_only": 1,
+   "rhs_1_2_3": 2,
+   "rhs_3_only": 1,
+   "rhs_2_3": 2,
+   "rhs_1_only": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6.0,
+   2.176348251531262,
+   1.3174871437102575,
+   9.986243966385624,
+   12.04353681625733,
+   2.395506787269346
+  ],
+  "B-structured": [
+   6.0,
+   2.176348251531262,
+   1.3174871437102575,
+   9.986243966385624,
+   12.04353681625733,
+   2.395506787269346
+  ],
+  "C-direct": [
+   6.0,
+   2.176348251531262,
+   1.3174871437102575,
+   9.986243966385624,
+   12.04353681625733,
+   2.395506787269346
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

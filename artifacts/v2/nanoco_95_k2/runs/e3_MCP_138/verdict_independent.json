@@ -1,0 +1,415 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "durations": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    4,
+    1,
+    2,
+    2,
+    4,
+    4,
+    5,
+    1
+   ],
+   "conflict_edges": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    1,
+    1,
+    4,
+    3,
+    4,
+    4,
+    3,
+    5
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    5,
+    4,
+    3,
+    2,
+    4,
+    2,
+    3
+   ],
+   "conflict_edges": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    2,
+    3,
+    2,
+    3,
+    5,
+    3,
+    2
+   ],
+   "conflict_edges": [
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    4,
+    1,
+    3,
+    3,
+    5,
+    5,
+    2
+   ],
+   "conflict_edges": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "crash:File \"<PATH>/block.py\", line 949, in add_component | raise RuntimeError( | RuntimeError: Cannot add component 'prec_0_0' (type <class 'pyom",
+   "crash:File \"<PATH>/block.py\", line 949, in add_component | raise RuntimeError( | RuntimeError: Cannot add component 'prec_1_1' (type <class 'pyom",
+   "crash:File \"<PATH>/block.py\", line 949, in add_component | raise RuntimeError( | RuntimeError: Cannot add component 'prec_1_1' (type <class 'pyom",
+   "crash:File \"<PATH>/block.py\", line 949, in add_component | raise RuntimeError( | RuntimeError: Cannot add component 'prec_0_0' (type <class 'pyom",
+   "crash:File \"<PATH>/block.py\", line 949, in add_component | raise RuntimeError( | RuntimeError: Cannot add component 'prec_1_0' (type <class 'pyom"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

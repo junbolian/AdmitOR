@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_261",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"nutrient_content\", \"evidence\": \"\\\"For example: Food_0 provides 62 units of nutrient_0, 55 units of nutrient_1, 47 units of nutrient_2, and so on. [...] This pattern continues for all 15 food items and 9 nutrients.\\\"\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "nutrient_content",
+   "evidence": "\"For example: Food_0 provides 62 units of nutrient_0, 55 units of nutrient_1, 47 units of nutrient_2, and so on. [...] This pattern continues for all 15 food items and 9 nutrients.\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

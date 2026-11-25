@@ -1,0 +1,219 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "capacity": 7125,
+   "item_values": [
+    400,
+    616,
+    691,
+    654
+   ],
+   "item_weights": [
+    82,
+    102,
+    114,
+    115
+   ]
+  },
+  {
+   "capacity": 7621.70796950621,
+   "item_values": [
+    343.00129062672,
+    574.4254180346132,
+    633.6215860182509,
+    700.3956522189792
+   ],
+   "item_weights": [
+    84.89787159373574,
+    110.00046318117884,
+    104.5822053839507,
+    113.20420185276123
+   ]
+  },
+  {
+   "capacity": 5449.902594248125,
+   "item_values": [
+    366.2365569764324,
+    616.9896572415013,
+    592.8509065154649,
+    594.9119470647204
+   ],
+   "item_weights": [
+    84.45810477958419,
+    102.91680620430562,
+    107.62604618252789,
+    117.0531107291459
+   ]
+  },
+  {
+   "capacity": 8227.346001914757,
+   "item_values": [
+    340.77985116136733,
+    672.5153977387029,
+    732.0742965810593,
+    622.65715134083
+   ],
+   "item_weights": [
+    76.34986379691321,
+    111.32714667301833,
+    110.27435562856789,
+    105.63315439774341
+   ]
+  },
+  {
+   "capacity": 5688.3020924692155,
+   "item_values": [
+    441.6993239616952,
+    635.1685705966014,
+    754.6676910497789,
+    699.0733765493271
+   ],
+   "item_weights": [
+    82.59414069985709,
+    111.65156158517918,
+    111.23058380035047,
+    116.19693451928421
+   ]
+  },
+  {
+   "capacity": 8298.504116401295,
+   "item_values": [
+    414.2223702837095,
+    682.8434351774316,
+    707.0350997117267,
+    694.136994265368
+   ],
+   "item_weights": [
+    74.55151989195286,
+    96.44912482329156,
+    109.19804557012804,
+    105.33521546924344
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2361.0,
+   2251.4439468985634,
+   2170.989067798119,
+   2368.0266968219594,
+   2530.608962157403,
+   2498.2378994382357
+  ],
+  "A-direct-2": [
+   2361.0,
+   2251.4439468985634,
+   2170.989067798119,
+   2368.0266968219594,
+   2530.608962157403,
+   2498.2378994382357
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   2361.0,
+   2251.443946898564,
+   2170.989067798119,
+   2368.0266968219594,
+   2530.608962157403,
+   2498.237899438236
+  ],
+  "C-direct-2": [
+   2361.0,
+   2251.443946898564,
+   2170.989067798119,
+   2368.0266968219594,
+   2530.608962157403,
+   2498.237899438236
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range"
+  ],
+  "B-structured-2": [
+   "crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:i: params[\"item_values\"][i] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range']",
+  "B-structured-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"item_values\"][i], | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range']"
+ },
+ "disagreements": [],
+ "notes": []
+}

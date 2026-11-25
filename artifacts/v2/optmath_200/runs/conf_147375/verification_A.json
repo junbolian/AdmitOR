@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_147375",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"product_capacity_generic_low\", \"evidence\": \"Similar constraints exist for all other city pairs and products, with varying limits.\"}, {\"parameter\": \"product_capacity_generic_high\", \"evidence\": \"Product-Specific Capacities: Vary by city pair and product, ranging from 70 units to 75 units.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "product_capacity_generic_low",
+   "evidence": "Similar constraints exist for all other city pairs and products, with varying limits."
+  },
+  {
+   "parameter": "product_capacity_generic_high",
+   "evidence": "Product-Specific Capacities: Vary by city pair and product, ranging from 70 units to 75 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

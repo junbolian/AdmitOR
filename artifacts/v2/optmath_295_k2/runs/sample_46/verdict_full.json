@@ -1,0 +1,501 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "fixed_cost": [
+    1064,
+    1506,
+    1828,
+    1320,
+    1236,
+    1013,
+    1467,
+    1472,
+    1282
+   ],
+   "operational_cost": [
+    166,
+    196,
+    148,
+    196,
+    152,
+    130,
+    173,
+    179,
+    156
+   ],
+   "penalty_cost": [
+    632,
+    580,
+    517,
+    646,
+    646,
+    643,
+    533,
+    655,
+    519,
+    582
+   ],
+   "demand": [
+    18,
+    17,
+    12,
+    17,
+    16,
+    13,
+    17,
+    20,
+    11,
+    20
+   ],
+   "min_frequency": 2,
+   "max_frequency": 10,
+   "vehicle_capacity": 45,
+   "vehicle_usage": [
+    88,
+    47,
+    85,
+    41,
+    65,
+    42,
+    41,
+    41,
+    85
+   ]
+  },
+  {
+   "fixed_cost": [
+    1212.3501135591882,
+    790.6661973653364,
+    1416.75359397875,
+    954.638174356446,
+    1528.2784207067193,
+    1191.9965807594092,
+    2042.3274258230083,
+    863.9739616305005,
+    1181.9037728365167
+   ],
+   "operational_cost": [
+    87.94633842671968,
+    140.85304306150627,
+    148.79258263929762,
+    103.20105005803727,
+    106.22332290437058,
+    149.484976911338,
+    180.77487614435648,
+    128.9588713452847,
+    169.92544668464177
+   ],
+   "penalty_cost": [
+    827.5600486203864,
+    293.7692806132754,
+    675.1085531975617,
+    773.9980491623945,
+    542.8018336706227,
+    421.47331837897553,
+    776.6945674862144,
+    547.9694270487705,
+    307.6350927142968,
+    347.28893131707605
+   ],
+   "demand": [
+    24.254898594254275,
+    18.763342533237147,
+    15.685539279292561,
+    20.905440373794903,
+    16.57964946327521,
+    19.150504931731817,
+    14.93508441254201,
+    21.04081262546454,
+    14.623451306782943,
+    22.370395047284923
+   ],
+   "min_frequency": 4,
+   "max_frequency": 11,
+   "vehicle_capacity": 69,
+   "vehicle_usage": [
+    48.03254576169827,
+    34.211218955622705,
+    67.09797690617911,
+    23.771471053868726,
+    47.63140761346696,
+    25.242060035208624,
+    31.896917727513777,
+    46.563062214840414,
+    73.51073521245716
+   ]
+  },
+  {
+   "fixed_cost": [
+    925.8725490123632,
+    1068.5175883418606,
+    1402.0354587057793,
+    1896.3840557804922,
+    1418.9717361647895,
+    1123.549708740659,
+    984.5603969066083,
+    1809.274646582914,
+    850.4819970027922
+   ],
+   "operational_cost": [
+    145.98960333176953,
+    291.9465767247727,
+    168.71996445840577,
+    207.16214977983066,
+    180.0613661504609,
+    174.57074962467527,
+    220.74798469750036,
+    130.49960488157467,
+    83.0076380490299
+   ],
+   "penalty_cost": [
+    515.3663263733398,
+    445.2897080659076,
+    367.5781301341308,
+    932.1196754604451,
+    889.1334867013442,
+    523.8378773534213,
+    615.8488086021711,
+    586.6388951947351,
+    734.1501990753421,
+    558.0517782058661
+   ],
+   "demand": [
+    13.767842996964944,
+    12.692667630797718,
+    12.736417609957808,
+    12.9666073448899,
+    17.35337584357665,
+    18.1716974868322,
+    15.289808587386753,
+    14.386415183145667,
+    16.472913671446214,
+    20.190525873529293
+   ],
+   "min_frequency": 1,
+   "max_frequency": 6,
+   "vehicle_capacity": 28,
+   "vehicle_usage": [
+    99.21525166987192,
+    60.72773012505931,
+    78.38359717797314,
+    23.104635952230243,
+    57.30525362292489,
+    62.837097970084066,
+    42.19368814906462,
+    60.31421348215834,
+    115.66627468993234
+   ]
+  },
+  {
+   "fixed_cost": [
+    544.2158073471601,
+    1838.407059956453,
+    2160.166554580579,
+    1368.8008361396096,
+    947.7959347813429,
+    1155.7943019613454,
+    897.1470386651507,
+    1375.9744489849224,
+    1222.6737915140427
+   ],
+   "operational_cost": [
+    241.3334439684993,
+    269.66717631412604,
+    112.98157951116143,
+    196.11487815785844,
+    103.15508584057997,
+    183.64161911482665,
+    237.09971258176066,
+    142.92161766930528,
+    177.67612119909683
+   ],
+   "penalty_cost": [
+    700.869173628925,
+    378.6467757587882,
+    652.7180836388532,
+    671.4388534572782,
+    825.9927051953407,
+    662.5174112214992,
+    266.8048206361939,
+    539.8222173380609,
+    269.60842929824696,
+    831.7353946660071
+   ],
+   "demand": [
+    24.816993800817315,
+    22.63831399914005,
+    9.690169504831937,
+    9.484727830401189,
+    22.04815358726465,
+    18.810342788873925,
+    9.95610868515394,
+    19.719809266332277,
+    6.26133770315222,
+    25.21204330514463
+   ],
+   "min_frequency": 3,
+   "max_frequency": 7,
+   "vehicle_capacity": 53,
+   "vehicle_usage": [
+    92.38271622755506,
+    35.95766156018278,
+    116.65680849224688,
+    37.848655548236366,
+    46.26688335373533,
+    43.65043572873724,
+    50.42717383268902,
+    28.747193598977532,
+    68.99588476057608
+   ]
+  },
+  {
+   "fixed_cost": [
+    1590.838915487192,
+    1731.7163548050169,
+    1714.8469533957134,
+    1343.2001101669796,
+    767.5611860931764,
+    734.1184024129676,
+    1229.4715196703169,
+    1601.9904335690474,
+    936.0070871888117
+   ],
+   "operational_cost": [
+    119.55608581895888,
+    111.91464485777038,
+    167.40323767597465,
+    142.87258962698627,
+    213.62384197693146,
+    176.75260203298706,
+    98.75832153073705,
+    132.10282955205014,
+    182.3605334142198
+   ],
+   "penalty_cost": [
+    451.3976622581172,
+    366.7408722605145,
+    742.1608623802068,
+    691.8938382881337,
+    628.345482997419,
+    826.0102898189544,
+    696.895899809621,
+    452.2184939070299,
+    309.8070925847593,
+    541.8717881605118
+   ],
+   "demand": [
+    16.624415214358574,
+    16.439419356623475,
+    14.748910193518206,
+    19.94719730398613,
+    23.746643381855456,
+    7.779432324975465,
+    15.344561795738569,
+    16.786052107899263,
+    14.9783978998807,
+    14.973126678405713
+   ],
+   "min_frequency": 2,
+   "max_frequency": 10,
+   "vehicle_capacity": 50,
+   "vehicle_usage": [
+    68.51197273069076,
+    35.240903050458726,
+    120.97757593846109,
+    38.66836054719173,
+    88.48769180951898,
+    44.11366312289363,
+    22.57412151052013,
+    61.47058120492179,
+    113.56234473179592
+   ]
+  },
+  {
+   "fixed_cost": [
+    1563.0120177509752,
+    2148.10867641024,
+    2465.4158025093507,
+    879.5306659971665,
+    1218.252431057088,
+    723.026014088771,
+    1321.826109170047,
+    822.3113087590474,
+    1126.8435385284065
+   ],
+   "operational_cost": [
+    246.5612680674345,
+    149.9797994017418,
+    190.04244908838828,
+    187.1816399984721,
+    140.29713787050477,
+    189.4512933117575,
+    258.7081252822395,
+    188.98252988960567,
+    190.07169094622685
+   ],
+   "penalty_cost": [
+    413.8315935732085,
+    462.0905387868472,
+    759.3227416890552,
+    697.1504678673015,
+    673.258100087781,
+    802.4482853237382,
+    296.96909045968846,
+    710.1363243706262,
+    520.4793487352275,
+    787.2829771721022
+   ],
+   "demand": [
+    11.833789102910698,
+    24.833241355665656,
+    6.961337582887042,
+    11.659024336672294,
+    17.520561703200443,
+    15.277763196853174,
+    12.49846621501583,
+    12.397732278942485,
+    15.293160455423811,
+    14.924306955772497
+   ],
+   "min_frequency": 3,
+   "max_frequency": 12,
+   "vehicle_capacity": 49,
+   "vehicle_usage": [
+    95.36316145762777,
+    48.070787630002066,
+    121.95003190759631,
+    28.874627176364992,
+    79.05246705131196,
+    31.024810009865533,
+    36.72721971844143,
+    48.039299141358825,
+    67.99975178289479
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   96627.0,
+   104822.9798403531,
+   94114.64505652203,
+   105291.93499323748,
+   89722.74056691737,
+   86067.03803786966
+  ],
+  "B-structured-2": [
+   96627.0,
+   104822.9798403531,
+   94114.64505652203,
+   105291.93499323748,
+   89722.74056691737,
+   86067.03803786966
+  ],
+  "C-direct": [
+   96627.0,
+   104822.97983546407,
+   94114.64505652204,
+   105291.93497951554,
+   89722.7405669174,
+   86067.0380293001
+  ],
+  "C-direct-2": [
+   96627.0,
+   104822.97983546407,
+   94114.64505652204,
+   105291.93497951554,
+   89722.7405669174,
+   86067.0380293001
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'",
+   "crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'",
+   "crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'",
+   "crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'",
+   "crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'",
+   "crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'"
+  ],
+  "A-direct-2": [
+   "crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'\", \"crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'\", \"crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'\", \"crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'\", \"crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'\", \"crash:return expr >= demand[od] | ^^^^^^^^^^^^^^^^^^ | TypeError: '>=' not supported between instances of 'LinearExpression' and 'list'\"]",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:model.fixed_cost = pyo.Param(model.L, initialize=lambda m, l: fixed_cost[l]) | ~~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str']"
+ },
+ "disagreements": [],
+ "notes": []
+}

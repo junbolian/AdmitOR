@@ -1,0 +1,465 @@
+{
+ "spec": {
+  "supply_p0_origins": {
+   "base": [
+    0,
+    0,
+    0,
+    51,
+    72,
+    48
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_p1_origins": {
+   "base": [
+    0,
+    0,
+    0,
+    35,
+    47,
+    53
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_p0_dests": {
+   "base": [
+    29,
+    16,
+    37,
+    36,
+    14,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_p1_dests": {
+   "base": [
+    34,
+    20,
+    22,
+    33,
+    13,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_p0": {
+   "base": [
+    [
+     19,
+     12,
+     16,
+     20,
+     19,
+     14
+    ],
+    [
+     19,
+     13,
+     18,
+     12,
+     11,
+     10
+    ],
+    [
+     18,
+     10,
+     11,
+     19,
+     15,
+     18
+    ],
+    [
+     18,
+     15,
+     20,
+     10,
+     20,
+     18
+    ],
+    [
+     19,
+     12,
+     15,
+     15,
+     11,
+     19
+    ],
+    [
+     18,
+     13,
+     15,
+     13,
+     16,
+     13
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_p1": {
+   "base": [
+    [
+     20,
+     19,
+     13,
+     15,
+     13,
+     14
+    ],
+    [
+     18,
+     16,
+     10,
+     17,
+     11,
+     12
+    ],
+    [
+     13,
+     12,
+     17,
+     10,
+     15,
+     16
+    ],
+    [
+     16,
+     18,
+     19,
+     11,
+     12,
+     20
+    ],
+    [
+     11,
+     19,
+     20,
+     14,
+     11,
+     18
+    ],
+    [
+     20,
+     12,
+     20,
+     14,
+     14,
+     12
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     64,
+     102,
+     54,
+     82,
+     95,
+     149
+    ],
+    [
+     127,
+     92,
+     58,
+     67,
+     148,
+     68
+    ],
+    [
+     78,
+     77,
+     110,
+     138,
+     89,
+     83
+    ],
+    [
+     122,
+     112,
+     65,
+     93,
+     76,
+     125
+    ],
+    [
+     124,
+     73,
+     54,
+     126,
+     82,
+     52
+    ],
+    [
+     65,
+     129,
+     64,
+     132,
+     122,
+     146
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_p0_origins": {
+    "meaning": "Supply of Product 0 at each origin (0-5)",
+    "base": [
+     0,
+     0,
+     0,
+     51,
+     72,
+     48
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_p1_origins": {
+    "meaning": "Supply of Product 1 at each origin (0-5)",
+    "base": [
+     0,
+     0,
+     0,
+     35,
+     47,
+     53
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_p0_dests": {
+    "meaning": "Demand of Product 0 at each destination (0-5)",
+    "base": [
+     29,
+     16,
+     37,
+     36,
+     14,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_p1_dests": {
+    "meaning": "Demand of Product 1 at each destination (0-5)",
+    "base": [
+     34,
+     20,
+     22,
+     33,
+     13,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_p0": {
+    "meaning": "Shipping cost per unit of Product 0 from origin i to destination j (6x6 matrix)",
+    "base": [
+     [
+      19,
+      12,
+      16,
+      20,
+      19,
+      14
+     ],
+     [
+      19,
+      13,
+      18,
+      12,
+      11,
+      10
+     ],
+     [
+      18,
+      10,
+      11,
+      19,
+      15,
+      18
+     ],
+     [
+      18,
+      15,
+      20,
+      10,
+      20,
+      18
+     ],
+     [
+      19,
+      12,
+      15,
+      15,
+      11,
+      19
+     ],
+     [
+      18,
+      13,
+      15,
+      13,
+      16,
+      13
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_p1": {
+    "meaning": "Shipping cost per unit of Product 1 from origin i to destination j (6x6 matrix)",
+    "base": [
+     [
+      20,
+      19,
+      13,
+      15,
+      13,
+      14
+     ],
+     [
+      18,
+      16,
+      10,
+      17,
+      11,
+      12
+     ],
+     [
+      13,
+      12,
+      17,
+      10,
+      15,
+      16
+     ],
+     [
+      16,
+      18,
+      19,
+      11,
+      12,
+      20
+     ],
+     [
+      11,
+      19,
+      20,
+      14,
+      11,
+      18
+     ],
+     [
+      20,
+      12,
+      20,
+      14,
+      14,
+      12
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total units (both products combined) that can be shipped from origin i to destination j (6x6 matrix)",
+    "base": [
+     [
+      64,
+      102,
+      54,
+      82,
+      95,
+      149
+     ],
+     [
+      127,
+      92,
+      58,
+      67,
+      148,
+      68
+     ],
+     [
+      78,
+      77,
+      110,
+      138,
+      89,
+      83
+     ],
+     [
+      122,
+      112,
+      65,
+      93,
+      76,
+      125
+     ],
+     [
+      124,
+      73,
+      54,
+      126,
+      82,
+      52
+     ],
+     [
+      65,
+      129,
+      64,
+      132,
+      122,
+      146
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    100,
+    100
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "weights": {
+   "base": [
+    [
+     10,
+     26
+    ],
+    [
+     20,
+     34
+    ],
+    [
+     30,
+     28
+    ],
+    [
+     13,
+     38
+    ],
+    [
+     18,
+     38
+    ],
+    [
+     19,
+     29
+    ],
+    [
+     34,
+     10
+    ],
+    [
+     13,
+     18
+    ],
+    [
+     26,
+     19
+    ],
+    [
+     12,
+     11
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Per-slot capacity for each resource dimension [Staff Hours, Equipment Units]",
+    "base": [
+     100,
+     100
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "weights": {
+    "meaning": "Resource requirements [Staff Hours, Equipment Units] per procedure (10 rows)",
+    "base": [
+     [
+      10,
+      26
+     ],
+     [
+      20,
+      34
+     ],
+     [
+      30,
+      28
+     ],
+     [
+      13,
+      38
+     ],
+     [
+      18,
+      38
+     ],
+     [
+      19,
+      29
+     ],
+     [
+      34,
+      10
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      26,
+      19
+     ],
+     [
+      12,
+      11
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

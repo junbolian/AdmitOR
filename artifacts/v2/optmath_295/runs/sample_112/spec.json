@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "distances": {
+   "base": [
+    11,
+    19,
+    18,
+    19,
+    16,
+    10,
+    14,
+    15,
+    15,
+    13,
+    12,
+    13,
+    10,
+    11,
+    14,
+    16,
+    10,
+    16,
+    15,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "num_selected": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_selected] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distances": {
+    "meaning": "Pairwise directed distances between the 5 facility locations (20 ordered pairs, given in the problem order: (0,1),(0,2),(0,3),(0,4),(1,0),(1,2),(1,3),(1,4),(2,0),(2,1),(2,3),(2,4),(3,0),(3,1),(3,2),(3,4),(4,0),(4,1),(4,2),(4,3))",
+    "base": [
+     11,
+     19,
+     18,
+     19,
+     16,
+     10,
+     14,
+     15,
+     15,
+     13,
+     12,
+     13,
+     10,
+     11,
+     14,
+     16,
+     10,
+     16,
+     15,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "num_selected": {
+    "meaning": "Exact number of facilities that must be selected",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of potential facility locations (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

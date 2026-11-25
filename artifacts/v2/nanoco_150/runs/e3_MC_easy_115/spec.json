@@ -1,0 +1,100 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    12,
+    8,
+    5,
+    5,
+    11,
+    7,
+    6,
+    7,
+    6,
+    7,
+    6,
+    7,
+    14,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost": {
+   "base": [
+    3,
+    10,
+    8,
+    8,
+    9,
+    8,
+    9,
+    6,
+    8,
+    6,
+    5,
+    7,
+    5,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Throughput capacity of each of the 14 directed road segments, in order (0-1, 0-2, 0-6, 0-8, 1-2, 1-5, 2-3, 2-6, 3-4, 4-5, 5-6, 6-7, 6-8, 7-8)",
+    "base": [
+     12,
+     8,
+     5,
+     5,
+     11,
+     7,
+     6,
+     7,
+     6,
+     7,
+     6,
+     7,
+     14,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost": {
+    "meaning": "Transportation cost per unit on each of the 14 directed road segments, in the same edge order as capacity",
+    "base": [
+     3,
+     10,
+     8,
+     8,
+     9,
+     8,
+     9,
+     6,
+     8,
+     6,
+     5,
+     7,
+     5,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

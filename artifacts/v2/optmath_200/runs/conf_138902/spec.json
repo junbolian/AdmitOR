@@ -1,0 +1,58 @@
+{
+ "spec": {
+  "bin_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "item_weights": {
+   "base": [
+    39,
+    36,
+    39,
+    36,
+    34,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "bin_capacity": {
+    "meaning": "uniform capacity of each storage bin",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "item_weights": {
+    "meaning": "weights of Items 0 through 5 in order",
+    "base": [
+     39,
+     36,
+     39,
+     36,
+     34,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "sample_id": "conf_166697",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"demand_P0_P0\",\n      \"evidence\": \"For example, in Period 0, the demand for Product 0 is 17.98544619742671 units\"\n    },\n    {\n      \"parameter\": \"demand_P1_P0\",\n      \"evidence\": \"For example, in Period 0 ... for Product 1, it is 18.32393100834268 units.\"\n    },\n    {\n      \"parameter\": \"demand_P0_P1\",\n      \"evidence\": \"In the demand example: 'In Period 1, the demand for Product 0 is 17.03967664739992 units'\"\n    },\n    {\n      \"parameter\": \"demand_P1_P1\",\n      \"evidence\": \"In the demand example: 'In Period 1 ... for Product 1, it is 19.40392047975378 units.'\"\n    },\n    {\n      \"parameter\": \"demand_P0_P2\",\n      \"evidence\": \"In the demand example: 'In Period 2, the demand for Product 0 is 16.26686727068964 units'\"\n    },\n    {\n      \"parameter\": \"demand_P1_P2\",\n      \"evidence\": \"In the demand example: 'In Period 2 ... for Product 1, it is 11.01145075110233 units.'\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "demand_P0_P0",
+   "evidence": "For example, in Period 0, the demand for Product 0 is 17.98544619742671 units"
+  },
+  {
+   "parameter": "demand_P1_P0",
+   "evidence": "For example, in Period 0 ... for Product 1, it is 18.32393100834268 units."
+  },
+  {
+   "parameter": "demand_P0_P1",
+   "evidence": "In the demand example: 'In Period 1, the demand for Product 0 is 17.03967664739992 units'"
+  },
+  {
+   "parameter": "demand_P1_P1",
+   "evidence": "In the demand example: 'In Period 1 ... for Product 1, it is 19.40392047975378 units.'"
+  },
+  {
+   "parameter": "demand_P0_P2",
+   "evidence": "In the demand example: 'In Period 2, the demand for Product 0 is 16.26686727068964 units'"
+  },
+  {
+   "parameter": "demand_P1_P2",
+   "evidence": "In the demand example: 'In Period 2 ... for Product 1, it is 11.01145075110233 units.'"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

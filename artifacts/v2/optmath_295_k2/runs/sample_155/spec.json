@@ -1,0 +1,47 @@
+{
+ "spec": {
+  "team_costs": {
+   "base": [
+    35,
+    16,
+    25,
+    36,
+    40,
+    36,
+    37,
+    38,
+    23,
+    22
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "team_costs": {
+    "meaning": "Deployment cost for each of the 10 teams",
+    "base": [
+     35,
+     16,
+     25,
+     36,
+     40,
+     36,
+     37,
+     38,
+     23,
+     22
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

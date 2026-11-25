@@ -1,0 +1,135 @@
+{
+ "spec": {
+  "activation_cost": {
+   "base": [
+    411,
+    362,
+    154,
+    264
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_cost": {
+   "base": [
+    7,
+    6,
+    6,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_production": {
+   "base": [
+    33,
+    32,
+    31,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_production": {
+   "base": [
+    84,
+    105,
+    93,
+    103
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    146,
+    147,
+    178,
+    129
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "activation_cost": {
+    "meaning": "Fixed cost to activate each factory per month (index: factory 0..3)",
+    "base": [
+     411,
+     362,
+     154,
+     264
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_cost": {
+    "meaning": "Variable cost per unit produced by each factory (index: factory 0..3)",
+    "base": [
+     7,
+     6,
+     6,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production if factory is activated (index: factory 0..3)",
+    "base": [
+     33,
+     32,
+     31,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity if factory is activated (index: factory 0..3)",
+    "base": [
+     84,
+     105,
+     93,
+     103
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand that total production must meet or exceed (index: month 0..3)",
+    "base": [
+     146,
+     147,
+     178,
+     129
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

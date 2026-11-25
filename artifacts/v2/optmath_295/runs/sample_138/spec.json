@@ -1,0 +1,241 @@
+{
+ "spec": {
+  "supply_demand": {
+   "base": [
+    51,
+    17,
+    -23,
+    -30,
+    4,
+    -19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "costs": {
+   "base": [
+    [
+     6,
+     2,
+     7,
+     5,
+     6
+    ],
+    [
+     4,
+     4,
+     2,
+     6,
+     8
+    ],
+    [
+     7,
+     5,
+     2,
+     4,
+     4
+    ],
+    [
+     8,
+     8,
+     7,
+     4,
+     7
+    ],
+    [
+     3,
+     5,
+     7,
+     4,
+     3
+    ],
+    [
+     4,
+     5,
+     7,
+     3,
+     2
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacities": {
+   "base": [
+    [
+     17,
+     46,
+     31,
+     21,
+     17
+    ],
+    [
+     18,
+     31,
+     39,
+     36,
+     39
+    ],
+    [
+     29,
+     28,
+     27,
+     50,
+     31
+    ],
+    [
+     24,
+     49,
+     36,
+     23,
+     11
+    ],
+    [
+     49,
+     28,
+     44,
+     11,
+     24
+    ],
+    [
+     44,
+     20,
+     16,
+     25,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_demand": {
+    "meaning": "Net requirement per city (negative = surplus/supply available, positive = demand required), indexed 0..5",
+    "base": [
+     51,
+     17,
+     -23,
+     -30,
+     4,
+     -19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "costs": {
+    "meaning": "Per-unit transportation cost c[i][j] from city i to city j (row i, ordered by destination 0..5 skipping i)",
+    "base": [
+     [
+      6,
+      2,
+      7,
+      5,
+      6
+     ],
+     [
+      4,
+      4,
+      2,
+      6,
+      8
+     ],
+     [
+      7,
+      5,
+      2,
+      4,
+      4
+     ],
+     [
+      8,
+      8,
+      7,
+      4,
+      7
+     ],
+     [
+      3,
+      5,
+      7,
+      4,
+      3
+     ],
+     [
+      4,
+      5,
+      7,
+      3,
+      2
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum flow u[i][j] on route i->j (same row/column ordering as costs)",
+    "base": [
+     [
+      17,
+      46,
+      31,
+      21,
+      17
+     ],
+     [
+      18,
+      31,
+      39,
+      36,
+      39
+     ],
+     [
+      29,
+      28,
+      27,
+      50,
+      31
+     ],
+     [
+      24,
+      49,
+      36,
+      23,
+      11
+     ],
+     [
+      49,
+      28,
+      44,
+      11,
+      24
+     ],
+     [
+      44,
+      20,
+      16,
+      25,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

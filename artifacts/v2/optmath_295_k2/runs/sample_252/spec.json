@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0.344,
+     0.512,
+     0.421,
+     0.589,
+     0.633,
+     0.478
+    ],
+    [
+     0.455,
+     0.367,
+     0.601,
+     0.412,
+     0.52,
+     0.644
+    ],
+    [
+     0.598,
+     0.423,
+     0.389,
+     0.655,
+     0.477,
+     0.531
+    ],
+    [
+     0.409,
+     0.556,
+     0.612,
+     0.361,
+     0.488,
+     0.673
+    ],
+    [
+     0.521,
+     0.634,
+     0.447,
+     0.495,
+     0.358,
+     0.402
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "exact_assignments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[noe_parameters] non-numeric base dropped",
+  "[exact_assignments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Cost of assigning each spectral peak (rows, Peak 0-4) to each amino acid (columns, AA 0-5)",
+    "base": [
+     [
+      0.344,
+      0.512,
+      0.421,
+      0.589,
+      0.633,
+      0.478
+     ],
+     [
+      0.455,
+      0.367,
+      0.601,
+      0.412,
+      0.52,
+      0.644
+     ],
+     [
+      0.598,
+      0.423,
+      0.389,
+      0.655,
+      0.477,
+      0.531
+     ],
+     [
+      0.409,
+      0.556,
+      0.612,
+      0.361,
+      0.488,
+      0.673
+     ],
+     [
+      0.521,
+      0.634,
+      0.447,
+      0.495,
+      0.358,
+      0.402
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "exact_assignments": {
+    "meaning": "Required total number of peak-to-amino-acid assignments",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "noe_parameters": {
+    "meaning": "Binary indicators that spatial distance between amino-acid pairs is below the NOE threshold (1 = proximity constraint active)",
+    "base": [
+     {
+      "peak_a": 0,
+      "aa_a": 0,
+      "peak_b": 4,
+      "aa_b": 1,
+      "value": 1
+     },
+     {
+      "peak_a": 1,
+      "aa_a": 0,
+      "peak_b": 2,
+      "aa_b": 1,
+      "value": 1
+     }
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

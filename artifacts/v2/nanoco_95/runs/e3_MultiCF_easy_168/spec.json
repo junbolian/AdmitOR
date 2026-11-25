@@ -1,0 +1,201 @@
+{
+ "spec": {
+  "arc_capacities": {
+   "base": [
+    17,
+    17,
+    12,
+    12,
+    12,
+    12,
+    16,
+    16,
+    17,
+    17,
+    21,
+    21,
+    21,
+    21,
+    23,
+    23,
+    14,
+    14,
+    22,
+    22,
+    15,
+    15,
+    12,
+    12,
+    24,
+    24,
+    16,
+    16,
+    18,
+    18,
+    15,
+    15,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    5,
+    5,
+    6,
+    6,
+    9,
+    9,
+    6,
+    6,
+    2,
+    2,
+    7,
+    7,
+    1,
+    1,
+    4,
+    4,
+    5,
+    5,
+    7,
+    7,
+    8,
+    8,
+    5,
+    5,
+    12,
+    12,
+    12,
+    12,
+    5,
+    5,
+    9,
+    9,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "demands": {
+   "base": [
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_capacities": {
+    "meaning": "Transmission capacity limit (MW) of each directed arc, in the fixed order given in the problem",
+    "base": [
+     17,
+     17,
+     12,
+     12,
+     12,
+     12,
+     16,
+     16,
+     17,
+     17,
+     21,
+     21,
+     21,
+     21,
+     23,
+     23,
+     14,
+     14,
+     22,
+     22,
+     15,
+     15,
+     12,
+     12,
+     24,
+     24,
+     16,
+     16,
+     18,
+     18,
+     15,
+     15,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Unit transmission loss cost (currency/MWh) of each directed arc, in the fixed order given in the problem",
+    "base": [
+     5,
+     5,
+     6,
+     6,
+     9,
+     9,
+     6,
+     6,
+     2,
+     2,
+     7,
+     7,
+     1,
+     1,
+     4,
+     4,
+     5,
+     5,
+     7,
+     7,
+     8,
+     8,
+     5,
+     5,
+     12,
+     12,
+     12,
+     12,
+     5,
+     5,
+     9,
+     9,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "demands": {
+    "meaning": "Required delivery amount for each commodity (commodity 1 then commodity 2)",
+    "base": [
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

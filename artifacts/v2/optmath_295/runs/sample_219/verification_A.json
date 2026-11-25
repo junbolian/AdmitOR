@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_219",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"costs\", \"evidence\": \"such as assigning Peak 0 to Amino Acid 0 costing 0.5003 units, Peak 0 to Amino Acid 1 costing 0.6370 units, and so on for all combinations\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "costs",
+   "evidence": "such as assigning Peak 0 to Amino Acid 0 costing 0.5003 units, Peak 0 to Amino Acid 1 costing 0.6370 units, and so on for all combinations"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

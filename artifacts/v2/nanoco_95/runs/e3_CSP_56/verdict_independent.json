@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "segment_lengths": [
+    18,
+    20,
+    56
+   ],
+   "segment_demands": [
+    3,
+    3,
+    3
+   ],
+   "standard_rebar_length": 100
+  },
+  {
+   "segment_lengths": [
+    18.75290471167257,
+    17.150064531336,
+    52.2204925486012
+   ],
+   "segment_demands": [
+    2,
+    4,
+    4
+   ],
+   "standard_rebar_length": 123.53077406229073
+  },
+  {
+   "segment_lengths": [
+    15.769469696198847,
+    19.53153091811162,
+    48.10059328655958
+   ],
+   "segment_demands": [
+    2,
+    3,
+    1
+   ],
+   "standard_rebar_length": 81.93025904119891
+  },
+  {
+   "segment_lengths": [
+    18.809375964009426,
+    20.269648883619297,
+    51.3034024502837
+   ],
+   "segment_demands": [
+    3,
+    4,
+    1
+   ],
+   "standard_rebar_length": 118.34915510996848
+  },
+  {
+   "segment_lengths": [
+    19.069952732936425,
+    19.04150309910795,
+    50.21205559683793
+   ],
+   "segment_demands": [
+    5,
+    2,
+    1
+   ],
+   "standard_rebar_length": 75.80298261000785
+  },
+  {
+   "segment_lengths": [
+    19.876469578276282,
+    20.622356188201344,
+    61.15975499100958
+   ],
+   "segment_demands": [
+    4,
+    3,
+    5
+   ],
+   "standard_rebar_length": 92.71206263250122
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   6.0
+  ],
+  "B-structured": [
+   3.0,
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   6.0
+  ],
+  "C-direct": [
+   3.0,
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   6.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

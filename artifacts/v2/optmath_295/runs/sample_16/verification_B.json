@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_16",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity\",\"evidence\":\"For example: From Origin 0 to Destination 0, no more than 192 units can be transported. From Origin 0 to Destination 1, no more than 198 units can be transported. Similar limits apply to all other origin-destination pairs, with specific maximum capacities provided in the data.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "For example: From Origin 0 to Destination 0, no more than 192 units can be transported. From Origin 0 to Destination 1, no more than 198 units can be transported. Similar limits apply to all other origin-destination pairs, with specific maximum capacities provided in the data."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,75 @@
+{
+ "spec": {
+  "capacity": {
+   "base": 7125,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "values": {
+   "base": [
+    400,
+    616,
+    691,
+    654
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weights": {
+   "base": [
+    82,
+    102,
+    114,
+    115
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum total weight the vehicle can carry (kg)",
+    "base": 7125,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "values": {
+    "meaning": "Revenue generated per item if selected (93 items; only first three and last given explicitly)",
+    "base": [
+     400,
+     616,
+     691,
+     654
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weights": {
+    "meaning": "Weight in kg per item (93 items; only first three and last given explicitly)",
+    "base": [
+     82,
+     102,
+     114,
+     115
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

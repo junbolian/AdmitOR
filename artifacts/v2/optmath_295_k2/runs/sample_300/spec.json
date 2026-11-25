@@ -1,0 +1,413 @@
+{
+ "spec": {
+  "supply_product0": {
+   "base": [
+    0,
+    32,
+    62,
+    34,
+    76
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_product1": {
+   "base": [
+    17,
+    62,
+    31,
+    39,
+    37
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_product0": {
+   "base": [
+    41,
+    23,
+    46,
+    33,
+    25,
+    36
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_product1": {
+   "base": [
+    17,
+    20,
+    44,
+    36,
+    38,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_cost_product0": {
+   "base": [
+    [
+     16,
+     19,
+     12,
+     16,
+     11,
+     15
+    ],
+    [
+     13,
+     10,
+     16,
+     10,
+     10,
+     14
+    ],
+    [
+     20,
+     17,
+     12,
+     15,
+     17,
+     10
+    ],
+    [
+     18,
+     18,
+     17,
+     16,
+     20,
+     14
+    ],
+    [
+     10,
+     16,
+     15,
+     14,
+     15,
+     14
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_cost_product1": {
+   "base": [
+    [
+     11,
+     20,
+     12,
+     13,
+     20,
+     12
+    ],
+    [
+     16,
+     17,
+     18,
+     19,
+     15,
+     15
+    ],
+    [
+     10,
+     17,
+     15,
+     11,
+     15,
+     12
+    ],
+    [
+     16,
+     19,
+     19,
+     16,
+     11,
+     11
+    ],
+    [
+     13,
+     13,
+     11,
+     16,
+     20,
+     19
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "link_capacity": {
+   "base": [
+    [
+     126,
+     88,
+     95,
+     126,
+     121,
+     92
+    ],
+    [
+     137,
+     109,
+     149,
+     117,
+     59,
+     149
+    ],
+    [
+     123,
+     94,
+     126,
+     97,
+     90,
+     64
+    ],
+    [
+     66,
+     74,
+     95,
+     132,
+     102,
+     73
+    ],
+    [
+     146,
+     121,
+     84,
+     141,
+     119,
+     145
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_product0": {
+    "meaning": "Supply of Product 0 at each warehouse (W0..W4)",
+    "base": [
+     0,
+     32,
+     62,
+     34,
+     76
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_product1": {
+    "meaning": "Supply of Product 1 at each warehouse (W0..W4)",
+    "base": [
+     17,
+     62,
+     31,
+     39,
+     37
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_product0": {
+    "meaning": "Demand for Product 0 at each store (S0..S5)",
+    "base": [
+     41,
+     23,
+     46,
+     33,
+     25,
+     36
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_product1": {
+    "meaning": "Demand for Product 1 at each store (S0..S5)",
+    "base": [
+     17,
+     20,
+     44,
+     36,
+     38,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_cost_product0": {
+    "meaning": "Cost per unit of Product 0 from each warehouse (rows W0..W4) to each store (cols S0..S5)",
+    "base": [
+     [
+      16,
+      19,
+      12,
+      16,
+      11,
+      15
+     ],
+     [
+      13,
+      10,
+      16,
+      10,
+      10,
+      14
+     ],
+     [
+      20,
+      17,
+      12,
+      15,
+      17,
+      10
+     ],
+     [
+      18,
+      18,
+      17,
+      16,
+      20,
+      14
+     ],
+     [
+      10,
+      16,
+      15,
+      14,
+      15,
+      14
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_cost_product1": {
+    "meaning": "Cost per unit of Product 1 from each warehouse (rows W0..W4) to each store (cols S0..S5)",
+    "base": [
+     [
+      11,
+      20,
+      12,
+      13,
+      20,
+      12
+     ],
+     [
+      16,
+      17,
+      18,
+      19,
+      15,
+      15
+     ],
+     [
+      10,
+      17,
+      15,
+      11,
+      15,
+      12
+     ],
+     [
+      16,
+      19,
+      19,
+      16,
+      11,
+      11
+     ],
+     [
+      13,
+      13,
+      11,
+      16,
+      20,
+      19
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "link_capacity": {
+    "meaning": "Maximum total shipping capacity (both products combined) from each warehouse (rows W0..W4) to each store (cols S0..S5)",
+    "base": [
+     [
+      126,
+      88,
+      95,
+      126,
+      121,
+      92
+     ],
+     [
+      137,
+      109,
+      149,
+      117,
+      59,
+      149
+     ],
+     [
+      123,
+      94,
+      126,
+      97,
+      90,
+      64
+     ],
+     [
+      66,
+      74,
+      95,
+      132,
+      102,
+      73
+     ],
+     [
+      146,
+      121,
+      84,
+      141,
+      119,
+      145
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

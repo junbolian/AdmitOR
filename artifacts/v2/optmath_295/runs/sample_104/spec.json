@@ -1,0 +1,136 @@
+{
+ "spec": {
+  "populations": {
+   "base": [
+    1015,
+    867,
+    1110,
+    1172,
+    1113,
+    696,
+    1010,
+    1155,
+    499,
+    1022
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "tower_costs": {
+   "base": [
+    109000,
+    113000,
+    105000,
+    95000,
+    67000,
+    80000,
+    110000,
+    68000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "budget": {
+   "base": 410000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "num_regions": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_towers": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_regions] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_towers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "populations": {
+    "meaning": "population size of each of the ten regions, in people",
+    "base": [
+     1015,
+     867,
+     1110,
+     1172,
+     1113,
+     696,
+     1010,
+     1155,
+     499,
+     1022
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "tower_costs": {
+    "meaning": "construction cost of each of the eight potential tower locations, in dollars",
+    "base": [
+     109000,
+     113000,
+     105000,
+     95000,
+     67000,
+     80000,
+     110000,
+     68000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "budget": {
+    "meaning": "total available budget for building towers, in dollars",
+    "base": 410000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "num_regions": {
+    "meaning": "number of regions (index-set size, frozen)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_towers": {
+    "meaning": "number of potential tower locations (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

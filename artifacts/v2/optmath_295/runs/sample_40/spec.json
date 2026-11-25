@@ -1,0 +1,141 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    12,
+    19,
+    16,
+    16,
+    20,
+    12,
+    18,
+    18,
+    16,
+    20,
+    20,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_company0": {
+   "base": [
+    3,
+    4,
+    6,
+    8,
+    3,
+    10,
+    7,
+    4,
+    3,
+    5,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "profit_company1": {
+   "base": [
+    3,
+    7,
+    7,
+    4,
+    5,
+    4,
+    7,
+    6,
+    5,
+    4,
+    7,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required units of each product per market (market-major, product-minor; 4 markets x 3 products)",
+    "base": [
+     12,
+     19,
+     16,
+     16,
+     20,
+     12,
+     18,
+     18,
+     16,
+     20,
+     20,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_company0": {
+    "meaning": "Unit profit for Company 0 by market and product (market-major, product-minor; 4 markets x 3 products)",
+    "base": [
+     3,
+     4,
+     6,
+     8,
+     3,
+     10,
+     7,
+     4,
+     3,
+     5,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "profit_company1": {
+    "meaning": "Unit profit for Company 1 by market and product (market-major, product-minor; 4 markets x 3 products)",
+    "base": [
+     3,
+     7,
+     7,
+     4,
+     5,
+     4,
+     7,
+     6,
+     5,
+     4,
+     7,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "supplies": {
+   "base": [
+    7,
+    9,
+    -5,
+    -11,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "coordinates": {
+   "base": [
+    [
+     46,
+     6
+    ],
+    [
+     11,
+     83
+    ],
+    [
+     76,
+     75
+    ],
+    [
+     5,
+     72
+    ],
+    [
+     95,
+     89
+    ],
+    [
+     80,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_costs": {
+   "base": [
+    8,
+    8,
+    7,
+    1,
+    2,
+    5,
+    9,
+    9,
+    12,
+    6,
+    10,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    8,
+    8,
+    8,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[supplies] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[coordinates] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[arc_capacities] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "supplies": {
+    "meaning": "Net supply at each node (donor inventories positive, community demands negative, staging zero)",
+    "base": [
+     7,
+     9,
+     -5,
+     -11,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      -14,
+      -18,
+      -10,
+      -22,
+      0,
+      0
+     ],
+     "hi": [
+      14,
+      18,
+      10,
+      22,
+      0,
+      0
+     ],
+     "integer": true
+    }
+   },
+   "coordinates": {
+    "meaning": "Geographic coordinates (x,y) of each node; distance proxy affects costs",
+    "base": [
+     [
+      46,
+      6
+     ],
+     [
+      11,
+      83
+     ],
+     [
+      76,
+      75
+     ],
+     [
+      5,
+      72
+     ],
+     [
+      95,
+      89
+     ],
+     [
+      80,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0
+     ],
+     "hi": [
+      100,
+      100
+     ],
+     "integer": true
+    }
+   },
+   "arc_costs": {
+    "meaning": "Logistical delivery cost per unit on each directed arc, in arc order 0-2..1-5",
+    "base": [
+     8,
+     8,
+     7,
+     1,
+     2,
+     5,
+     9,
+     9,
+     12,
+     6,
+     10,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Vehicle load limit (max flow) on each directed arc, same arc order",
+    "base": [
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     8,
+     8,
+     8,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      4,
+      4,
+      4,
+      4
+     ],
+     "hi": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      16,
+      16,
+      16,
+      16
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

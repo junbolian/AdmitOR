@@ -1,0 +1,139 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "node_0_supply": 1,
+   "node_6_demand": 1,
+   "cost_0_1": 13,
+   "cost_0_2": 13,
+   "cost_0_3": 14,
+   "cost_0_4": 10,
+   "cost_0_5": 11,
+   "cost_0_6": 13,
+   "cost_1_2": 12,
+   "cost_1_3": 15
+  },
+  {
+   "node_0_supply": 2,
+   "node_6_demand": 0,
+   "cost_0_1": 10.07538113879855,
+   "cost_0_2": 9.401739595934696,
+   "cost_0_3": 17.310596998296173,
+   "cost_0_4": 11.766994874229113,
+   "cost_0_5": 15.3139752447533,
+   "cost_0_6": 7.63020482418241,
+   "cost_1_2": 11.063061836223245,
+   "cost_1_3": 7.946958291571055
+  },
+  {
+   "node_0_supply": 1,
+   "node_6_demand": 2,
+   "cost_0_1": 6.844967605890227,
+   "cost_0_2": 9.08488945892643,
+   "cost_0_3": 16.098382128913325,
+   "cost_0_4": 10.449414806032166,
+   "cost_0_5": 7.924846842447664,
+   "cost_0_6": 14.160453890386814,
+   "cost_1_2": 15.713165480133918,
+   "cost_1_3": 7.597481395170915
+  },
+  {
+   "node_0_supply": 2,
+   "node_6_demand": 2,
+   "cost_0_1": 10.923256714733894,
+   "cost_0_2": 8.52123349755316,
+   "cost_0_3": 20.40098301089494,
+   "cost_0_4": 8.365945451126267,
+   "cost_0_5": 6.520204277181627,
+   "cost_0_6": 7.757312898835032,
+   "cost_1_2": 16.169932396169514,
+   "cost_1_3": 16.555890470503368
+  },
+  {
+   "node_0_supply": 2,
+   "node_6_demand": 2,
+   "cost_0_1": 13.470965188911109,
+   "cost_0_2": 19.150504931731817,
+   "cost_0_3": 12.299481280916948,
+   "cost_0_4": 10.52040631273227,
+   "cost_0_5": 14.623451306782943,
+   "cost_0_6": 14.5407567807352,
+   "cost_1_2": 16.34048280372933,
+   "cost_1_3": 16.160282178851432
+  },
+  {
+   "node_0_supply": 2,
+   "node_6_demand": 0,
+   "cost_0_1": 9.462677583470109,
+   "cost_0_2": 10.262043526827393,
+   "cost_0_3": 8.117087676930785,
+   "cost_0_4": 7.327908863610302,
+   "cost_0_5": 6.611015723507021,
+   "cost_0_6": 10.113656840431197,
+   "cost_1_2": 13.628213331172804,
+   "cost_1_3": 12.972482684551263
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   13.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   13.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   13.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

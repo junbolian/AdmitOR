@@ -1,0 +1,631 @@
+{
+ "spec": {
+  "fixed_cost_0_1": {
+   "base": 708,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_0_2": {
+   "base": 796,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_0_3": {
+   "base": 699,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_1_0": {
+   "base": 605,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_1_2": {
+   "base": 683,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_1_3": {
+   "base": 751,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_2_0": {
+   "base": 692,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_2_1": {
+   "base": 619,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_2_3": {
+   "base": 687,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_3_0": {
+   "base": 790,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_3_1": {
+   "base": 668,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_3_2": {
+   "base": 790,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_0_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_0_2": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_0_3": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_1_0": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_1_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_1_3": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_2_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_2_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_2_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_3_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_3_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_3_2": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_1": {
+   "base": 184,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_0_2": {
+   "base": 227,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_0_3": {
+   "base": 197,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_1_0": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_1_2": {
+   "base": 229,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_1_3": {
+   "base": 240,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_2_0": {
+   "base": 233,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_2_1": {
+   "base": 215,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_2_3": {
+   "base": 139,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_3_0": {
+   "base": 164,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_3_1": {
+   "base": 208,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_3_2": {
+   "base": 189,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "net_outflow_node0": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "net_outflow_node1": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "net_outflow_node2": {
+   "base": -227,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "net_outflow_node3": {
+   "base": -23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_nodes": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "fixed_cost_0_1": {
+    "meaning": "Fixed cost for establishing route Node 0 -> Node 1",
+    "base": 708,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_0_2": {
+    "meaning": "Fixed cost for establishing route Node 0 -> Node 2",
+    "base": 796,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_0_3": {
+    "meaning": "Fixed cost for establishing route Node 0 -> Node 3",
+    "base": 699,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_1_0": {
+    "meaning": "Fixed cost for establishing route Node 1 -> Node 0",
+    "base": 605,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_1_2": {
+    "meaning": "Fixed cost for establishing route Node 1 -> Node 2",
+    "base": 683,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_1_3": {
+    "meaning": "Fixed cost for establishing route Node 1 -> Node 3",
+    "base": 751,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_2_0": {
+    "meaning": "Fixed cost for establishing route Node 2 -> Node 0",
+    "base": 692,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_2_1": {
+    "meaning": "Fixed cost for establishing route Node 2 -> Node 1",
+    "base": 619,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_2_3": {
+    "meaning": "Fixed cost for establishing route Node 2 -> Node 3",
+    "base": 687,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_3_0": {
+    "meaning": "Fixed cost for establishing route Node 3 -> Node 0",
+    "base": 790,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_3_1": {
+    "meaning": "Fixed cost for establishing route Node 3 -> Node 1",
+    "base": 668,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_3_2": {
+    "meaning": "Fixed cost for establishing route Node 3 -> Node 2",
+    "base": 790,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_0_1": {
+    "meaning": "Variable cost per unit shipped from Node 0 to Node 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_0_2": {
+    "meaning": "Variable cost per unit shipped from Node 0 to Node 2",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_0_3": {
+    "meaning": "Variable cost per unit shipped from Node 0 to Node 3",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_1_0": {
+    "meaning": "Variable cost per unit shipped from Node 1 to Node 0",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_1_2": {
+    "meaning": "Variable cost per unit shipped from Node 1 to Node 2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_1_3": {
+    "meaning": "Variable cost per unit shipped from Node 1 to Node 3",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_2_0": {
+    "meaning": "Variable cost per unit shipped from Node 2 to Node 0",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_2_1": {
+    "meaning": "Variable cost per unit shipped from Node 2 to Node 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_2_3": {
+    "meaning": "Variable cost per unit shipped from Node 2 to Node 3",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_3_0": {
+    "meaning": "Variable cost per unit shipped from Node 3 to Node 0",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_3_1": {
+    "meaning": "Variable cost per unit shipped from Node 3 to Node 1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_3_2": {
+    "meaning": "Variable cost per unit shipped from Node 3 to Node 2",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_1": {
+    "meaning": "Capacity limit on route Node 0 -> Node 1",
+    "base": 184,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_0_2": {
+    "meaning": "Capacity limit on route Node 0 -> Node 2",
+    "base": 227,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_0_3": {
+    "meaning": "Capacity limit on route Node 0 -> Node 3",
+    "base": 197,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_1_0": {
+    "meaning": "Capacity limit on route Node 1 -> Node 0",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_1_2": {
+    "meaning": "Capacity limit on route Node 1 -> Node 2",
+    "base": 229,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_1_3": {
+    "meaning": "Capacity limit on route Node 1 -> Node 3",
+    "base": 240,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_2_0": {
+    "meaning": "Capacity limit on route Node 2 -> Node 0",
+    "base": 233,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_2_1": {
+    "meaning": "Capacity limit on route Node 2 -> Node 1",
+    "base": 215,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_2_3": {
+    "meaning": "Capacity limit on route Node 2 -> Node 3",
+    "base": 139,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_3_0": {
+    "meaning": "Capacity limit on route Node 3 -> Node 0",
+    "base": 164,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_3_1": {
+    "meaning": "Capacity limit on route Node 3 -> Node 1",
+    "base": 208,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_3_2": {
+    "meaning": "Capacity limit on route Node 3 -> Node 2",
+    "base": 189,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "net_outflow_node0": {
+    "meaning": "Net outflow (supply) at Node 0",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "net_outflow_node1": {
+    "meaning": "Net outflow (supply) at Node 1",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "net_outflow_node2": {
+    "meaning": "Net outflow at Node 2 (negative value means net inflow/demand)",
+    "base": -227,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "net_outflow_node3": {
+    "meaning": "Net outflow at Node 3 (negative value means net inflow/demand)",
+    "base": -23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of nodes in the network (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

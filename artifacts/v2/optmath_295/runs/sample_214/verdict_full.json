@@ -1,0 +1,192 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "pref_0_0": 1,
+   "pref_0_6": 1,
+   "pref_1_5": 1,
+   "pref_2_3": 1,
+   "pref_2_6": 1,
+   "pref_3_3": 1,
+   "pref_3_6": 1,
+   "pref_4_1": 1,
+   "pref_4_2": 1,
+   "pref_4_3": 1,
+   "pref_5_1": 1,
+   "pref_5_2": 1,
+   "pref_5_4": 1,
+   "pref_5_5": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "assignment_value": 1
+  },
+  {
+   "pref_0_0": 1,
+   "pref_0_6": 1,
+   "pref_1_5": 0,
+   "pref_2_3": 0,
+   "pref_2_6": 0,
+   "pref_3_3": 1,
+   "pref_3_6": 1,
+   "pref_4_1": 1,
+   "pref_4_2": 0,
+   "pref_4_3": 0,
+   "pref_5_1": 0,
+   "pref_5_2": 0,
+   "pref_5_4": 1,
+   "pref_5_5": 0,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "assignment_value": 1.0449414806032167
+  },
+  {
+   "pref_0_0": 1,
+   "pref_0_6": 0,
+   "pref_1_5": 1,
+   "pref_2_3": 1,
+   "pref_2_6": 0,
+   "pref_3_3": 1,
+   "pref_3_6": 1,
+   "pref_4_1": 0,
+   "pref_4_2": 0,
+   "pref_4_3": 1,
+   "pref_5_1": 0,
+   "pref_5_2": 0,
+   "pref_5_4": 0,
+   "pref_5_5": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "assignment_value": 1.2297317866938178
+  },
+  {
+   "pref_0_0": 1,
+   "pref_0_6": 1,
+   "pref_1_5": 1,
+   "pref_2_3": 0,
+   "pref_2_6": 1,
+   "pref_3_3": 1,
+   "pref_3_6": 1,
+   "pref_4_1": 1,
+   "pref_4_2": 1,
+   "pref_4_3": 1,
+   "pref_5_1": 0,
+   "pref_5_2": 0,
+   "pref_5_4": 0,
+   "pref_5_5": 0,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "assignment_value": 0.7779736031100921
+  },
+  {
+   "pref_0_0": 1,
+   "pref_0_6": 1,
+   "pref_1_5": 0,
+   "pref_2_3": 0,
+   "pref_2_6": 0,
+   "pref_3_3": 0,
+   "pref_3_6": 1,
+   "pref_4_1": 1,
+   "pref_4_2": 1,
+   "pref_4_3": 0,
+   "pref_5_1": 1,
+   "pref_5_2": 0,
+   "pref_5_4": 0,
+   "pref_5_5": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "assignment_value": 1.1846142509898745
+  },
+  {
+   "pref_0_0": 1,
+   "pref_0_6": 1,
+   "pref_1_5": 1,
+   "pref_2_3": 0,
+   "pref_2_6": 0,
+   "pref_3_3": 0,
+   "pref_3_6": 0,
+   "pref_4_1": 0,
+   "pref_4_2": 1,
+   "pref_4_3": 1,
+   "pref_5_1": 0,
+   "pref_5_2": 1,
+   "pref_5_4": 0,
+   "pref_5_5": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "assignment_value": 0.7466275076939834
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   6.0,
+   4.179765922412867,
+   4.918927146775271,
+   3.8898680155504604,
+   4.738457003959498,
+   2.986510030775934
+  ],
+  "C-direct": [
+   6.0,
+   4.179765922412867,
+   4.918927146775271,
+   3.8898680155504604,
+   4.738457003959498,
+   2.986510030775934
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [1, 2, 3, 4, 5]: ['crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr']"
+ },
+ "disagreements": [],
+ "notes": []
+}

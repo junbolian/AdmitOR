@@ -1,0 +1,30 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "supply_node0",
+  "demand_node7",
+  "route_costs"
+ ],
+ "safe": [
+  "route_costs"
+ ],
+ "tests": {
+  "supply_node0": [
+   0,
+   0
+  ],
+  "demand_node7": [
+   0,
+   3
+  ],
+  "route_costs": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

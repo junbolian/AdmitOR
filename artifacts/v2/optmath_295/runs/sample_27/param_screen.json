@@ -1,0 +1,90 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "plane0_capacity",
+  "plane0_trip_cost",
+  "plane0_same_loc_cost",
+  "plane1_capacity",
+  "plane1_trip_cost",
+  "plane1_same_loc_cost",
+  "initial_idle_plane0",
+  "initial_idle_plane1",
+  "max_idle_plane0",
+  "max_idle_plane1",
+  "demand_1_to_0",
+  "max_trips_plane0_1to0",
+  "max_trips_plane1_1to0"
+ ],
+ "safe": [
+  "plane0_capacity",
+  "plane0_trip_cost",
+  "plane0_same_loc_cost",
+  "plane1_capacity",
+  "plane1_trip_cost",
+  "plane1_same_loc_cost",
+  "initial_idle_plane1",
+  "max_idle_plane0",
+  "demand_1_to_0",
+  "max_trips_plane0_1to0",
+  "max_trips_plane1_1to0"
+ ],
+ "tests": {
+  "plane0_capacity": [
+   3,
+   3
+  ],
+  "plane0_trip_cost": [
+   3,
+   3
+  ],
+  "plane0_same_loc_cost": [
+   3,
+   3
+  ],
+  "plane1_capacity": [
+   3,
+   3
+  ],
+  "plane1_trip_cost": [
+   3,
+   3
+  ],
+  "plane1_same_loc_cost": [
+   3,
+   3
+  ],
+  "initial_idle_plane0": [
+   3,
+   1
+  ],
+  "initial_idle_plane1": [
+   3,
+   3
+  ],
+  "max_idle_plane0": [
+   3,
+   3
+  ],
+  "max_idle_plane1": [
+   3,
+   1
+  ],
+  "demand_1_to_0": [
+   3,
+   3
+  ],
+  "max_trips_plane0_1to0": [
+   3,
+   3
+  ],
+  "max_trips_plane1_1to0": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

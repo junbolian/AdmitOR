@@ -1,0 +1,161 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "transport_cost_per_unit": 5,
+   "net_supply_product0_city0": 1,
+   "net_supply_product1_city0": 1,
+   "net_supply_product0_city1": 1,
+   "net_supply_product1_city1": 0,
+   "net_supply_product0_city2": 1,
+   "net_supply_product1_city2": 1,
+   "net_supply_product0_city3": -3,
+   "net_supply_product1_city3": 0,
+   "total_shipping_capacity_any_pair": 124,
+   "capacity_product0_city0_city1": 75,
+   "capacity_product1_city0_city1": 74,
+   "capacity_product0_city2_city3": 75,
+   "capacity_product1_city2_city3": 75
+  },
+  {
+   "transport_cost_per_unit": 13.149109170699791,
+   "net_supply_product0_city0": -3,
+   "net_supply_product1_city0": -1,
+   "net_supply_product0_city1": -2,
+   "net_supply_product1_city1": 1,
+   "net_supply_product0_city2": 1,
+   "net_supply_product1_city2": 2,
+   "net_supply_product0_city3": -5,
+   "net_supply_product1_city3": 0,
+   "total_shipping_capacity_any_pair": 64,
+   "capacity_product0_city0_city1": 51,
+   "capacity_product1_city0_city1": 78,
+   "capacity_product0_city2_city3": 32,
+   "capacity_product1_city2_city3": 49
+  },
+  {
+   "transport_cost_per_unit": 13.34780431781094,
+   "net_supply_product0_city0": 0,
+   "net_supply_product1_city0": -2,
+   "net_supply_product0_city1": 1,
+   "net_supply_product1_city1": 2,
+   "net_supply_product0_city2": -3,
+   "net_supply_product1_city2": 2,
+   "net_supply_product0_city3": 0,
+   "net_supply_product1_city3": -1,
+   "total_shipping_capacity_any_pair": 82,
+   "capacity_product0_city0_city1": 120,
+   "capacity_product1_city0_city1": 62,
+   "capacity_product0_city2_city3": 39,
+   "capacity_product1_city2_city3": 39
+  },
+  {
+   "transport_cost_per_unit": 17.102392960601737,
+   "net_supply_product0_city0": 1,
+   "net_supply_product1_city0": 2,
+   "net_supply_product0_city1": 1,
+   "net_supply_product1_city1": 0,
+   "net_supply_product0_city2": 3,
+   "net_supply_product1_city2": -1,
+   "net_supply_product0_city3": -1,
+   "net_supply_product1_city3": 2,
+   "total_shipping_capacity_any_pair": 147,
+   "capacity_product0_city0_city1": 111,
+   "capacity_product1_city0_city1": 84,
+   "capacity_product0_city2_city3": 96,
+   "capacity_product1_city2_city3": 34
+  },
+  {
+   "transport_cost_per_unit": 5.3300672373793905,
+   "net_supply_product0_city0": -1,
+   "net_supply_product1_city0": -3,
+   "net_supply_product0_city1": -2,
+   "net_supply_product1_city1": -2,
+   "net_supply_product0_city2": -1,
+   "net_supply_product1_city2": 1,
+   "net_supply_product0_city3": -3,
+   "net_supply_product1_city3": -1,
+   "total_shipping_capacity_any_pair": 89,
+   "capacity_product0_city0_city1": 55,
+   "capacity_product1_city0_city1": 118,
+   "capacity_product0_city2_city3": 91,
+   "capacity_product1_city2_city3": 87
+  },
+  {
+   "transport_cost_per_unit": 4.251634315763843,
+   "net_supply_product0_city0": 1,
+   "net_supply_product1_city0": -2,
+   "net_supply_product0_city1": -1,
+   "net_supply_product1_city1": 3,
+   "net_supply_product0_city2": 1,
+   "net_supply_product1_city2": 0,
+   "net_supply_product0_city3": 0,
+   "net_supply_product1_city3": 2,
+   "total_shipping_capacity_any_pair": 169,
+   "capacity_product0_city0_city1": 52,
+   "capacity_product1_city0_city1": 33,
+   "capacity_product0_city2_city3": 60,
+   "capacity_product1_city2_city3": 55
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   15.0,
+   null,
+   null,
+   34.204785921203474,
+   null,
+   12.754902947291528
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "solve_failed",
+   "optimal",
+   "solve_failed",
+   "optimal"
+  ],
+  "C-direct": [
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

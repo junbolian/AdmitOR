@@ -1,0 +1,157 @@
+{
+ "spec": {
+  "assignment_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "participant_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[participant_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "assignment_value": {
+    "meaning": "objective contribution of a single feasible participant-car assignment",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "participant_capacity": {
+    "meaning": "maximum number of cars assignable to each participant",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "maximum number of participants assignable to each car",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference": {
+    "meaning": "binary preference matrix: preference[i][j] = 1 if participant i is willing to be assigned to car j",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,635 @@
+{
+ "spec": {
+  "cap_0_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "cap_0_2": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "cap_0_6": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "cap_0_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "cap_1_2": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "cap_1_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_2_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cap_2_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_3_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cap_4_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_5_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cap_6_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_6_8": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "cap_7_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "cost_0_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_0_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "cost_0_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "cost_1_2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "cost_1_5": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "cost_2_3": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "cost_2_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_3_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "cost_4_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_5_6": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "cost_6_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "cost_6_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "cost_7_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "node_coords": {
+   "base": [
+    [
+     9,
+     62
+    ],
+    [
+     26,
+     59
+    ],
+    [
+     82,
+     55
+    ],
+    [
+     12,
+     30
+    ],
+    [
+     57,
+     43
+    ],
+    [
+     51,
+     14
+    ],
+    [
+     33,
+     15
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     72,
+     33
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cap_0_1": {
+    "meaning": "Bandwidth capacity of arc 0->1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "cap_0_2": {
+    "meaning": "Bandwidth capacity of arc 0->2",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "cap_0_6": {
+    "meaning": "Bandwidth capacity of arc 0->6",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "cap_0_8": {
+    "meaning": "Bandwidth capacity of arc 0->8",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "cap_1_2": {
+    "meaning": "Bandwidth capacity of arc 1->2",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "cap_1_5": {
+    "meaning": "Bandwidth capacity of arc 1->5",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_2_3": {
+    "meaning": "Bandwidth capacity of arc 2->3",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cap_2_6": {
+    "meaning": "Bandwidth capacity of arc 2->6",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_3_4": {
+    "meaning": "Bandwidth capacity of arc 3->4",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cap_4_5": {
+    "meaning": "Bandwidth capacity of arc 4->5",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_5_6": {
+    "meaning": "Bandwidth capacity of arc 5->6",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cap_6_7": {
+    "meaning": "Bandwidth capacity of arc 6->7",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_6_8": {
+    "meaning": "Bandwidth capacity of arc 6->8",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "cap_7_8": {
+    "meaning": "Bandwidth capacity of arc 7->8",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "Unit transmission cost of arc 0->1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Unit transmission cost of arc 0->2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_0_6": {
+    "meaning": "Unit transmission cost of arc 0->6",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "cost_0_8": {
+    "meaning": "Unit transmission cost of arc 0->8",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Unit transmission cost of arc 1->2",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Unit transmission cost of arc 1->5",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Unit transmission cost of arc 2->3",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "cost_2_6": {
+    "meaning": "Unit transmission cost of arc 2->6",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Unit transmission cost of arc 3->4",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "cost_4_5": {
+    "meaning": "Unit transmission cost of arc 4->5",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_5_6": {
+    "meaning": "Unit transmission cost of arc 5->6",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "cost_6_7": {
+    "meaning": "Unit transmission cost of arc 6->7",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "cost_6_8": {
+    "meaning": "Unit transmission cost of arc 6->8",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "cost_7_8": {
+    "meaning": "Unit transmission cost of arc 7->8",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "node_coords": {
+    "meaning": "Logical coordinates of the nine nodes (geometry only; not an optimization coefficient)",
+    "base": [
+     [
+      9,
+      62
+     ],
+     [
+      26,
+      59
+     ],
+     [
+      82,
+      55
+     ],
+     [
+      12,
+      30
+     ],
+     [
+      57,
+      43
+     ],
+     [
+      51,
+      14
+     ],
+     [
+      33,
+      15
+     ],
+     [
+      100,
+      0
+     ],
+     [
+      72,
+      33
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

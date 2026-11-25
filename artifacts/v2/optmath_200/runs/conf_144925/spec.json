@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "fixed_setup_cost": {
+   "base": [
+    113,
+    119,
+    112,
+    139,
+    131
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_production_cost": {
+   "base": [
+    4,
+    5,
+    8,
+    6,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "inventory_holding_cost": {
+   "base": [
+    2,
+    4,
+    4,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "backlog_penalty": {
+   "base": [
+    14,
+    14,
+    14,
+    10,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "production_capacity": {
+   "base": 250,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    64,
+    41,
+    44,
+    50,
+    51
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_setup_cost": {
+    "meaning": "fixed setup cost per period (5 periods)",
+    "base": [
+     113,
+     119,
+     112,
+     139,
+     131
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_production_cost": {
+    "meaning": "variable production cost per unit per period (5 periods)",
+    "base": [
+     4,
+     5,
+     8,
+     6,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "inventory_holding_cost": {
+    "meaning": "inventory holding cost per unit per period (5 periods)",
+    "base": [
+     2,
+     4,
+     4,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "backlog_penalty": {
+    "meaning": "backlogging penalty per unit per period (5 periods)",
+    "base": [
+     14,
+     14,
+     14,
+     10,
+     14
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "production_capacity": {
+    "meaning": "maximum production per period when setup is on",
+    "base": 250,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "demand per period (5 periods)",
+    "base": [
+     64,
+     41,
+     44,
+     50,
+     51
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

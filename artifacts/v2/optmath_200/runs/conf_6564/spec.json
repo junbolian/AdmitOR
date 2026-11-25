@@ -1,0 +1,260 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    255,
+    96,
+    121,
+    106,
+    132
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    121,
+    81,
+    127,
+    96,
+    137,
+    148
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     22,
+     24,
+     27,
+     23,
+     23,
+     22
+    ],
+    [
+     20,
+     25,
+     22,
+     26,
+     23,
+     27
+    ],
+    [
+     22,
+     20,
+     22,
+     28,
+     28,
+     22
+    ],
+    [
+     22,
+     30,
+     20,
+     26,
+     24,
+     20
+    ],
+    [
+     30,
+     21,
+     28,
+     30,
+     24,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     132,
+     146,
+     123,
+     140,
+     137,
+     147
+    ],
+    [
+     136,
+     133,
+     109,
+     118,
+     128,
+     117
+    ],
+    [
+     108,
+     113,
+     103,
+     117,
+     102,
+     133
+    ],
+    [
+     146,
+     136,
+     149,
+     126,
+     118,
+     117
+    ],
+    [
+     144,
+     108,
+     119,
+     144,
+     123,
+     116
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "resource availability at each of the 5 production facilities",
+    "base": [
+     255,
+     96,
+     121,
+     106,
+     132
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "resource requirement at each of the 6 distribution centers",
+    "base": [
+     121,
+     81,
+     127,
+     96,
+     137,
+     148
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "per-unit transportation cost matrix, 5 origins x 6 destinations",
+    "base": [
+     [
+      22,
+      24,
+      27,
+      23,
+      23,
+      22
+     ],
+     [
+      20,
+      25,
+      22,
+      26,
+      23,
+      27
+     ],
+     [
+      22,
+      20,
+      22,
+      28,
+      28,
+      22
+     ],
+     [
+      22,
+      30,
+      20,
+      26,
+      24,
+      20
+     ],
+     [
+      30,
+      21,
+      28,
+      30,
+      24,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "maximum transportable amount on each origin-destination link, 5 origins x 6 destinations",
+    "base": [
+     [
+      132,
+      146,
+      123,
+      140,
+      137,
+      147
+     ],
+     [
+      136,
+      133,
+      109,
+      118,
+      128,
+      117
+     ],
+     [
+      108,
+      113,
+      103,
+      117,
+      102,
+      133
+     ],
+     [
+      146,
+      136,
+      149,
+      126,
+      118,
+      117
+     ],
+     [
+      144,
+      108,
+      119,
+      144,
+      123,
+      116
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

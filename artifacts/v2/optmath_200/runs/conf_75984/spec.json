@@ -1,0 +1,143 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    262,
+    284,
+    309,
+    329
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "variable_cost": {
+   "base": [
+    4,
+    5,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "min_production": {
+   "base": [
+    36,
+    36,
+    36,
+    36
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "max_production": {
+   "base": [
+    91,
+    85,
+    92,
+    86
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 55.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    178,
+    175,
+    182,
+    162
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed operating cost per factory per month",
+    "base": [
+     262,
+     284,
+     309,
+     329
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable production cost per unit produced, per factory",
+    "base": [
+     4,
+     5,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production per factory per month if operating",
+    "base": [
+     36,
+     36,
+     36,
+     36
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production per factory per month if operating",
+    "base": [
+     91,
+     85,
+     92,
+     86
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 55,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand that must be met by total production",
+    "base": [
+     178,
+     175,
+     182,
+     162
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

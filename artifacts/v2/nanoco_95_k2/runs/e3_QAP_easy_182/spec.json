@@ -1,0 +1,230 @@
+{
+ "spec": {
+  "flow_matrix": {
+   "base": [
+    [
+     0,
+     10,
+     1,
+     2
+    ],
+    [
+     10,
+     0,
+     5,
+     9
+    ],
+    [
+     1,
+     5,
+     0,
+     5
+    ],
+    [
+     2,
+     9,
+     5,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     54,
+     28,
+     32
+    ],
+    [
+     54,
+     0,
+     73,
+     81
+    ],
+    [
+     28,
+     73,
+     0,
+     46
+    ],
+    [
+     32,
+     81,
+     46,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_facilities": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_locations": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "location_coords": {
+   "base": [
+    [
+     64,
+     41
+    ],
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_locations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "flow_matrix": {
+    "meaning": "Symmetric inter-rack communication traffic volumes (gigabits) between rack pairs",
+    "base": [
+     [
+      0,
+      10,
+      1,
+      2
+     ],
+     [
+      10,
+      0,
+      5,
+      9
+     ],
+     [
+      1,
+      5,
+      0,
+      5
+     ],
+     [
+      2,
+      9,
+      5,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Symmetric physical distances (cable length / propagation) between rack slots",
+    "base": [
+     [
+      0,
+      54,
+      28,
+      32
+     ],
+     [
+      54,
+      0,
+      73,
+      81
+     ],
+     [
+      28,
+      73,
+      0,
+      46
+     ],
+     [
+      32,
+      81,
+      46,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of server racks (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_locations": {
+    "meaning": "Number of rack slots (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "location_coords": {
+    "meaning": "Physical coordinates of the four rack slots",
+    "base": [
+     [
+      64,
+      41
+     ],
+     [
+      99,
+      82
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      32,
+      37
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

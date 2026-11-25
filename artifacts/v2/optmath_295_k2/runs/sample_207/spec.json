@@ -1,0 +1,389 @@
+{
+ "spec": {
+  "demand_A": {
+   "base": [
+    61,
+    86,
+    76,
+    51,
+    66,
+    89,
+    97
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_B": {
+   "base": [
+    95,
+    55,
+    77,
+    63,
+    72,
+    96,
+    63
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "prod_cost_A": {
+   "base": [
+    42,
+    50,
+    45,
+    44,
+    40,
+    44,
+    42
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "prod_cost_B": {
+   "base": [
+    50,
+    47,
+    48,
+    41,
+    47,
+    40,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost_A": {
+   "base": [
+    1030,
+    1169,
+    1135,
+    1491,
+    1341,
+    1135,
+    1289
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "setup_cost_B": {
+   "base": [
+    1038,
+    1339,
+    1250,
+    1294,
+    1049,
+    1255,
+    1275
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "hold_cost_A": {
+   "base": [
+    5,
+    4,
+    5,
+    4,
+    4,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "hold_cost_B": {
+   "base": [
+    5,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "capacity": {
+   "base": [
+    1113,
+    1069,
+    1186,
+    1169,
+    1134,
+    1016,
+    1021
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "resource_use_A": {
+   "base": 1.555476812240042,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "resource_use_B": {
+   "base": 1.960813585441127,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_prod_A": {
+   "base": [
+    526,
+    465,
+    379,
+    303,
+    252,
+    186,
+    97
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "max_prod_B": {
+   "base": [
+    521,
+    426,
+    371,
+    294,
+    231,
+    159,
+    63
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_A": {
+    "meaning": "Weekly demand for Product A, weeks 1-7",
+    "base": [
+     61,
+     86,
+     76,
+     51,
+     66,
+     89,
+     97
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_B": {
+    "meaning": "Weekly demand for Product B, weeks 1-7",
+    "base": [
+     95,
+     55,
+     77,
+     63,
+     72,
+     96,
+     63
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "prod_cost_A": {
+    "meaning": "Production cost per unit of Product A, weeks 1-7",
+    "base": [
+     42,
+     50,
+     45,
+     44,
+     40,
+     44,
+     42
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "prod_cost_B": {
+    "meaning": "Production cost per unit of Product B, weeks 1-7",
+    "base": [
+     50,
+     47,
+     48,
+     41,
+     47,
+     40,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost_A": {
+    "meaning": "Fixed setup cost for Product A if produced in week, weeks 1-7",
+    "base": [
+     1030,
+     1169,
+     1135,
+     1491,
+     1341,
+     1135,
+     1289
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "Fixed setup cost for Product B if produced in week, weeks 1-7",
+    "base": [
+     1038,
+     1339,
+     1250,
+     1294,
+     1049,
+     1255,
+     1275
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "hold_cost_A": {
+    "meaning": "Inventory holding cost per unit of Product A carried from week, weeks 1-7",
+    "base": [
+     5,
+     4,
+     5,
+     4,
+     4,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "hold_cost_B": {
+    "meaning": "Inventory holding cost per unit of Product B carried from week, weeks 1-7",
+    "base": [
+     5,
+     4,
+     4,
+     4,
+     4,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "capacity": {
+    "meaning": "Weekly resource capacity, weeks 1-7",
+    "base": [
+     1113,
+     1069,
+     1186,
+     1169,
+     1134,
+     1016,
+     1021
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "resource_use_A": {
+    "meaning": "Resource consumption per unit of Product A",
+    "base": 1.555476812240042,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "resource_use_B": {
+    "meaning": "Resource consumption per unit of Product B",
+    "base": 1.960813585441127,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_prod_A": {
+    "meaning": "Maximum production of Product A in week (cumulative demand from week onward), weeks 1-7",
+    "base": [
+     526,
+     465,
+     379,
+     303,
+     252,
+     186,
+     97
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "max_prod_B": {
+    "meaning": "Maximum production of Product B in week (cumulative demand from week onward), weeks 1-7",
+    "base": [
+     521,
+     426,
+     371,
+     294,
+     231,
+     159,
+     63
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

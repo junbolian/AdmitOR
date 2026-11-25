@@ -1,0 +1,99 @@
+{
+ "spec": {
+  "population": {
+   "base": [
+    673,
+    924,
+    715,
+    477,
+    453,
+    749,
+    1192,
+    771,
+    764
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tower_cost": {
+   "base": [
+    104,
+    81,
+    112,
+    54,
+    72,
+    77,
+    116,
+    40,
+    54
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "budget": {
+   "base": 390,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "population": {
+    "meaning": "Population size of each of the nine areas",
+    "base": [
+     673,
+     924,
+     715,
+     477,
+     453,
+     749,
+     1192,
+     771,
+     764
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tower_cost": {
+    "meaning": "Construction cost of each of the nine potential cell towers",
+    "base": [
+     104,
+     81,
+     112,
+     54,
+     72,
+     77,
+     116,
+     40,
+     54
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "budget": {
+    "meaning": "Total available budget for building cell towers",
+    "base": 390,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 600,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

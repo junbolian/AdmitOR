@@ -1,0 +1,150 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "project_workload_0": 35,
+   "project_workload_1": 31,
+   "project_workload_2": 32,
+   "project_workload_3": 39,
+   "project_workload_4": 37,
+   "project_workload_5": 31,
+   "project_workload_6": 32,
+   "team_capacity": 100,
+   "num_teams": 7,
+   "num_projects": 7
+  },
+  {
+   "project_workload_0": 49,
+   "project_workload_1": 26,
+   "project_workload_2": 33,
+   "project_workload_3": 38,
+   "project_workload_4": 52,
+   "project_workload_5": 45,
+   "project_workload_6": 52,
+   "team_capacity": 87,
+   "num_teams": 7,
+   "num_projects": 7
+  },
+  {
+   "project_workload_0": 37,
+   "project_workload_1": 40,
+   "project_workload_2": 26,
+   "project_workload_3": 37,
+   "project_workload_4": 49,
+   "project_workload_5": 41,
+   "project_workload_6": 32,
+   "team_capacity": 127,
+   "num_teams": 7,
+   "num_projects": 7
+  },
+  {
+   "project_workload_0": 54,
+   "project_workload_1": 46,
+   "project_workload_2": 35,
+   "project_workload_3": 35,
+   "project_workload_4": 59,
+   "project_workload_5": 35,
+   "project_workload_6": 28,
+   "team_capacity": 88,
+   "num_teams": 7,
+   "num_projects": 7
+  },
+  {
+   "project_workload_0": 54,
+   "project_workload_1": 47,
+   "project_workload_2": 41,
+   "project_workload_3": 64,
+   "project_workload_4": 41,
+   "project_workload_5": 42,
+   "project_workload_6": 50,
+   "team_capacity": 129,
+   "num_teams": 7,
+   "num_projects": 7
+  },
+  {
+   "project_workload_0": 51,
+   "project_workload_1": 26,
+   "project_workload_2": 32,
+   "project_workload_3": 40,
+   "project_workload_4": 32,
+   "project_workload_5": 32,
+   "project_workload_6": 28,
+   "team_capacity": 102,
+   "num_teams": 7,
+   "num_projects": 7
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   4.0,
+   3.0,
+   4.0,
+   3.0,
+   3.0
+  ],
+  "B-structured": [
+   3.0,
+   4.0,
+   3.0,
+   4.0,
+   3.0,
+   3.0
+  ],
+  "C-direct": [
+   3.0,
+   4.0,
+   3.0,
+   4.0,
+   3.0,
+   3.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

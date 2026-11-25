@@ -1,0 +1,53 @@
+{
+ "spec": {
+  "team_costs": {
+   "base": [
+    32,
+    35,
+    40,
+    34,
+    29,
+    22,
+    30,
+    21,
+    23,
+    34,
+    25,
+    44,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "team_costs": {
+    "meaning": "Deployment cost for each of the 13 patrol teams, in order teams 1..13",
+    "base": [
+     32,
+     35,
+     40,
+     34,
+     29,
+     22,
+     30,
+     21,
+     23,
+     34,
+     25,
+     44,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

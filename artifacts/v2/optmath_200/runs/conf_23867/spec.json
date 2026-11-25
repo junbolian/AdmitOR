@@ -1,0 +1,1305 @@
+{
+ "spec": {
+  "net_supply": {
+   "base": [
+    -32,
+    -4,
+    -11,
+    2,
+    10,
+    -8,
+    43
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -40.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_2": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_5": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_0": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_2": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_3": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_4": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_5": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_0": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_5": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_6": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_4": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_5": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_6": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_0": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_2": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_0": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_1": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_2": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_4": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_1": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_0_2": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_0_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_0_4": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_0_5": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_0_6": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_1_0": {
+   "base": 33,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_1_2": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_1_3": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_1_4": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_1_5": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_1_6": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_2_0": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_2_1": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_2_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_2_4": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_2_5": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_2_6": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_3_0": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_3_1": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_3_2": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_3_4": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_3_5": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_3_6": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_4_0": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_4_1": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_4_2": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_4_3": {
+   "base": 37,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_4_5": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_4_6": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_5_0": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_5_1": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_5_2": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_5_3": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_5_4": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_5_6": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_6_0": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_6_1": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_6_2": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_6_3": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_6_4": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cap_6_5": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "net_supply": {
+    "meaning": "Net supply (positive) or net demand (negative) per city; b[i] = supply_i - demand_i, sum = 0. City 0..6: [-32, -4, -11, 2, 10, -8, 43]",
+    "base": [
+     -32,
+     -4,
+     -11,
+     2,
+     10,
+     -8,
+     43
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -40,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "Unit transportation cost city 0 -> 1",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Unit transportation cost city 0 -> 2",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_3": {
+    "meaning": "Unit transportation cost city 0 -> 3",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_4": {
+    "meaning": "Unit transportation cost city 0 -> 4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_5": {
+    "meaning": "Unit transportation cost city 0 -> 5",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_6": {
+    "meaning": "Unit transportation cost city 0 -> 6",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_0": {
+    "meaning": "Unit transportation cost city 1 -> 0",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Unit transportation cost city 1 -> 2",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Unit transportation cost city 1 -> 3",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_4": {
+    "meaning": "Unit transportation cost city 1 -> 4",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Unit transportation cost city 1 -> 5",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_6": {
+    "meaning": "Unit transportation cost city 1 -> 6",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_0": {
+    "meaning": "Unit transportation cost city 2 -> 0",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_1": {
+    "meaning": "Unit transportation cost city 2 -> 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Unit transportation cost city 2 -> 3",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_4": {
+    "meaning": "Unit transportation cost city 2 -> 4",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_5": {
+    "meaning": "Unit transportation cost city 2 -> 5",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_6": {
+    "meaning": "Unit transportation cost city 2 -> 6",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_0": {
+    "meaning": "Unit transportation cost city 3 -> 0",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_1": {
+    "meaning": "Unit transportation cost city 3 -> 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_2": {
+    "meaning": "Unit transportation cost city 3 -> 2",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Unit transportation cost city 3 -> 4",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_5": {
+    "meaning": "Unit transportation cost city 3 -> 5",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_6": {
+    "meaning": "Unit transportation cost city 3 -> 6",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_0": {
+    "meaning": "Unit transportation cost city 4 -> 0",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_1": {
+    "meaning": "Unit transportation cost city 4 -> 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_2": {
+    "meaning": "Unit transportation cost city 4 -> 2",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_3": {
+    "meaning": "Unit transportation cost city 4 -> 3",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_5": {
+    "meaning": "Unit transportation cost city 4 -> 5",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_6": {
+    "meaning": "Unit transportation cost city 4 -> 6",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_0": {
+    "meaning": "Unit transportation cost city 5 -> 0",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_1": {
+    "meaning": "Unit transportation cost city 5 -> 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_2": {
+    "meaning": "Unit transportation cost city 5 -> 2",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_3": {
+    "meaning": "Unit transportation cost city 5 -> 3",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_4": {
+    "meaning": "Unit transportation cost city 5 -> 4",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_6": {
+    "meaning": "Unit transportation cost city 5 -> 6",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_0": {
+    "meaning": "Unit transportation cost city 6 -> 0",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_1": {
+    "meaning": "Unit transportation cost city 6 -> 1",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_2": {
+    "meaning": "Unit transportation cost city 6 -> 2",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_3": {
+    "meaning": "Unit transportation cost city 6 -> 3",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_4": {
+    "meaning": "Unit transportation cost city 6 -> 4",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_5": {
+    "meaning": "Unit transportation cost city 6 -> 5",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_1": {
+    "meaning": "Maximum flow capacity city 0 -> 1",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_0_2": {
+    "meaning": "Maximum flow capacity city 0 -> 2",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_0_3": {
+    "meaning": "Maximum flow capacity city 0 -> 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_0_4": {
+    "meaning": "Maximum flow capacity city 0 -> 4",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_0_5": {
+    "meaning": "Maximum flow capacity city 0 -> 5",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_0_6": {
+    "meaning": "Maximum flow capacity city 0 -> 6",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_1_0": {
+    "meaning": "Maximum flow capacity city 1 -> 0",
+    "base": 33,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_1_2": {
+    "meaning": "Maximum flow capacity city 1 -> 2",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_1_3": {
+    "meaning": "Maximum flow capacity city 1 -> 3",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_1_4": {
+    "meaning": "Maximum flow capacity city 1 -> 4",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_1_5": {
+    "meaning": "Maximum flow capacity city 1 -> 5",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_1_6": {
+    "meaning": "Maximum flow capacity city 1 -> 6",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_2_0": {
+    "meaning": "Maximum flow capacity city 2 -> 0",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_2_1": {
+    "meaning": "Maximum flow capacity city 2 -> 1",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_2_3": {
+    "meaning": "Maximum flow capacity city 2 -> 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_2_4": {
+    "meaning": "Maximum flow capacity city 2 -> 4",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_2_5": {
+    "meaning": "Maximum flow capacity city 2 -> 5",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_2_6": {
+    "meaning": "Maximum flow capacity city 2 -> 6",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_3_0": {
+    "meaning": "Maximum flow capacity city 3 -> 0",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_3_1": {
+    "meaning": "Maximum flow capacity city 3 -> 1",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_3_2": {
+    "meaning": "Maximum flow capacity city 3 -> 2",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_3_4": {
+    "meaning": "Maximum flow capacity city 3 -> 4",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_3_5": {
+    "meaning": "Maximum flow capacity city 3 -> 5",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_3_6": {
+    "meaning": "Maximum flow capacity city 3 -> 6",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_4_0": {
+    "meaning": "Maximum flow capacity city 4 -> 0",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_4_1": {
+    "meaning": "Maximum flow capacity city 4 -> 1",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_4_2": {
+    "meaning": "Maximum flow capacity city 4 -> 2",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_4_3": {
+    "meaning": "Maximum flow capacity city 4 -> 3",
+    "base": 37,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_4_5": {
+    "meaning": "Maximum flow capacity city 4 -> 5",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_4_6": {
+    "meaning": "Maximum flow capacity city 4 -> 6",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_5_0": {
+    "meaning": "Maximum flow capacity city 5 -> 0",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_5_1": {
+    "meaning": "Maximum flow capacity city 5 -> 1",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_5_2": {
+    "meaning": "Maximum flow capacity city 5 -> 2",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_5_3": {
+    "meaning": "Maximum flow capacity city 5 -> 3",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_5_4": {
+    "meaning": "Maximum flow capacity city 5 -> 4",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_5_6": {
+    "meaning": "Maximum flow capacity city 5 -> 6",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_6_0": {
+    "meaning": "Maximum flow capacity city 6 -> 0",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_6_1": {
+    "meaning": "Maximum flow capacity city 6 -> 1",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_6_2": {
+    "meaning": "Maximum flow capacity city 6 -> 2",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_6_3": {
+    "meaning": "Maximum flow capacity city 6 -> 3",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_6_4": {
+    "meaning": "Maximum flow capacity city 6 -> 4",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cap_6_5": {
+    "meaning": "Maximum flow capacity city 6 -> 5",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

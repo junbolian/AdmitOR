@@ -1,0 +1,234 @@
+{
+ "spec": {
+  "aircraft_availability": {
+   "base": [
+    3,
+    4,
+    4,
+    3,
+    5,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "route_demand": {
+   "base": [
+    464,
+    127,
+    386
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     139,
+     172,
+     142
+    ],
+    [
+     169,
+     166,
+     98
+    ],
+    [
+     86,
+     68,
+     170
+    ],
+    [
+     173,
+     75,
+     185
+    ],
+    [
+     118,
+     127,
+     129
+    ],
+    [
+     108,
+     137,
+     171
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     4779,
+     3666,
+     2506
+    ],
+    [
+     4490,
+     4436,
+     2165
+    ],
+    [
+     1430,
+     3935,
+     4907
+    ],
+    [
+     4801,
+     4582,
+     1085
+    ],
+    [
+     2123,
+     1389,
+     4066
+    ],
+    [
+     2485,
+     2318,
+     4196
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[aircraft_availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "aircraft_availability": {
+    "meaning": "Maximum units available per aircraft type (6 types)",
+    "base": [
+     3,
+     4,
+     4,
+     3,
+     5,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      6,
+      8,
+      8,
+      6,
+      10,
+      2
+     ],
+     "integer": true
+    }
+   },
+   "route_demand": {
+    "meaning": "Minimum total passenger capacity required per route (3 routes)",
+    "base": [
+     464,
+     127,
+     386
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Passengers carried by aircraft type i on route j (6x3 matrix)",
+    "base": [
+     [
+      139,
+      172,
+      142
+     ],
+     [
+      169,
+      166,
+      98
+     ],
+     [
+      86,
+      68,
+      170
+     ],
+     [
+      173,
+      75,
+      185
+     ],
+     [
+      118,
+      127,
+      129
+     ],
+     [
+      108,
+      137,
+      171
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Operational cost of assigning aircraft type i to route j (6x3 matrix)",
+    "base": [
+     [
+      4779,
+      3666,
+      2506
+     ],
+     [
+      4490,
+      4436,
+      2165
+     ],
+     [
+      1430,
+      3935,
+      4907
+     ],
+     [
+      4801,
+      4582,
+      1085
+     ],
+     [
+      2123,
+      1389,
+      4066
+     ],
+     [
+      2485,
+      2318,
+      4196
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

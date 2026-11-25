@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_298",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"cost_2_x (and all costs from node_2 through node_9)\", \"evidence\": \"(Similar detailed costs are provided for all other node pairs.)\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_2_x (and all costs from node_2 through node_9)",
+   "evidence": "(Similar detailed costs are provided for all other node pairs.)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

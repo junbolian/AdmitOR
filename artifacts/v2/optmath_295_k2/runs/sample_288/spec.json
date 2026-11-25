@@ -1,0 +1,54 @@
+{
+ "spec": {
+  "resource_weights": {
+   "base": [
+    37,
+    37,
+    33,
+    40,
+    38,
+    37
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "center_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "resource_weights": {
+    "meaning": "Weight (units) demanded by each of the six resources",
+    "base": [
+     37,
+     37,
+     33,
+     40,
+     38,
+     37
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "center_capacity": {
+    "meaning": "Uniform capacity (units) of each distribution center",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

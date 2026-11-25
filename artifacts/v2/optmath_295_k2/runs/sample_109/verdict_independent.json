@@ -1,0 +1,435 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "base_cost": [
+    79,
+    80,
+    80
+   ],
+   "marginal_cost": [
+    3,
+    3,
+    4
+   ],
+   "startup_cost": [
+    353,
+    345,
+    346
+   ],
+   "demand": [
+    206,
+    227,
+    173,
+    215,
+    222
+   ],
+   "min_output": [
+    34,
+    35,
+    35
+   ],
+   "max_output": [
+    130,
+    125,
+    130
+   ],
+   "max_generators": [
+    2,
+    5,
+    1
+   ],
+   "reserve_requirement": [
+    236.9,
+    261.05,
+    198.95,
+    247.25,
+    255.3
+   ],
+   "initial_startup_bound": [
+    1,
+    5,
+    0
+   ]
+  },
+  {
+   "base_cost": [
+    85.6088302469037,
+    57.20051625068801,
+    69.20140728171772
+   ],
+   "marginal_cost": [
+    2.3357057715571745,
+    3.5675309139936298,
+    4.5654383597533155
+   ],
+   "startup_cost": [
+    491.4393873998104,
+    202.49389725714857,
+    318.98494961110356
+   ],
+   "demand": [
+    147.8829363225455,
+    188.67849216825078,
+    173.55587890512902,
+    153.9231400892184,
+    181.88517507146156
+   ],
+   "min_output": [
+    36.54803544225189,
+    35.78647591055629,
+    30.10771088571219
+   ],
+   "max_output": [
+    134.64181556154725,
+    140.47152283389133,
+    104.33793550325917
+   ],
+   "max_generators": [
+    2.3669831021993692,
+    5.59441818496468,
+    0.9041503099107951
+   ],
+   "reserve_requirement": [
+    187.92985610324664,
+    332.66328349974816,
+    179.44429085009423,
+    186.83384586544494,
+    193.52501460335003
+   ],
+   "initial_startup_bound": [
+    1.208496619808476,
+    5.311178094100674,
+    0.0
+   ]
+  },
+  {
+   "base_cost": [
+    89.88928668928698,
+    81.73894838982564,
+    102.70955667100979
+   ],
+   "marginal_cost": [
+    2.708482505300048,
+    3.1248975150557445,
+    5.054094925609583
+   ],
+   "startup_cost": [
+    394.83747258457885,
+    469.7888806072182,
+    372.76384225883965
+   ],
+   "demand": [
+    231.2850789561645,
+    165.1412810539012,
+    144.75584101263055,
+    187.8310473046718,
+    166.0282913262272
+   ],
+   "min_output": [
+    29.457445068137513,
+    28.017525014670262,
+    31.11453805442661
+   ],
+   "max_output": [
+    137.0555911017488,
+    118.24160894850422,
+    123.2494102900779
+   ],
+   "max_generators": [
+    1.651408436925785,
+    4.30093346614734,
+    1.2619927526274966
+   ],
+   "reserve_requirement": [
+    257.9417496589508,
+    278.14318941762036,
+    159.69382043540682,
+    281.2409604759343,
+    203.7399939944522
+   ],
+   "initial_startup_bound": [
+    0.9276732650545887,
+    6.4685700519097855,
+    0.0
+   ]
+  },
+  {
+   "base_cost": [
+    81.69941785491822,
+    88.86148404751398,
+    96.45689216911087
+   ],
+   "marginal_cost": [
+    3.6623997877109873,
+    2.3497153727138502,
+    2.5027207804929206
+   ],
+   "startup_cost": [
+    287.8549259648559,
+    264.87060221161744,
+    246.00006388086896
+   ],
+   "demand": [
+    260.7436406918127,
+    278.2612707255775,
+    153.763564026882,
+    235.05158782303954,
+    208.09816922128047
+   ],
+   "min_output": [
+    41.047309025589236,
+    34.27990742027948,
+    30.885402913715918
+   ],
+   "max_output": [
+    116.82463040008714,
+    128.06840670815754,
+    117.66256364319264
+   ],
+   "max_generators": [
+    2.1015031882682487,
+    6.193468650807431,
+    0.9396403030842384
+   ],
+   "reserve_requirement": [
+    197.00425270661626,
+    338.9793153053291,
+    200.08715367615955,
+    186.5614112959823,
+    185.92728638756086
+   ],
+   "initial_startup_bound": [
+    0.7657894782103954,
+    5.38233812510927,
+    0.0
+   ]
+  },
+  {
+   "base_cost": [
+    75.31038242630503,
+    59.04932989529394,
+    74.31772575231376
+   ],
+   "marginal_cost": [
+    4.190691312576232,
+    3.069874428237928,
+    5.507450808363577
+   ],
+   "startup_cost": [
+    480.35523488877783,
+    176.46095257027278,
+    422.3697494986273
+   ],
+   "demand": [
+    228.45940161168463,
+    232.03535900167788,
+    148.79645471707394,
+    233.18407201679523,
+    170.25874952297073
+   ],
+   "min_output": [
+    32.89100926137478,
+    34.19016486076111,
+    42.9417787316189
+   ],
+   "max_output": [
+    149.54435289966608,
+    113.16945253755455,
+    130.0304778786155
+   ],
+   "max_generators": [
+    1.6143822566361576,
+    6.237883518034462,
+    1.2223111419020602
+   ],
+   "reserve_requirement": [
+    208.25094265650867,
+    282.8136593808624,
+    211.9577741393746,
+    195.74870548933833,
+    295.5114043555117
+   ],
+   "initial_startup_bound": [
+    1.0236274180717755,
+    5.835879435891675,
+    0.0
+   ]
+  },
+  {
+   "base_cost": [
+    55.32710787646452,
+    71.5594907362243,
+    56.93488363451995
+   ],
+   "marginal_cost": [
+    4.029836679035081,
+    3.908932506775642,
+    5.0613296939557735
+   ],
+   "startup_cost": [
+    285.0524862671395,
+    192.4841824404947,
+    476.7913213245981
+   ],
+   "demand": [
+    261.2429514388321,
+    170.5660001716451,
+    171.5458100922645,
+    159.42841488242146,
+    256.7122084122633
+   ],
+   "min_output": [
+    38.51918529821879,
+    28.49685062874585,
+    34.5674416167278
+   ],
+   "max_output": [
+    132.58978686173708,
+    113.25283144700296,
+    149.36651813643337
+   ],
+   "max_generators": [
+    1.9077655282410642,
+    4.135394616326246,
+    1.023577653267675
+   ],
+   "reserve_requirement": [
+    269.58240216044925,
+    214.24129105872805,
+    176.4745736925878,
+    320.7054070606437,
+    278.2583208692115
+   ],
+   "initial_startup_bound": [
+    0.9628600503487024,
+    5.052727523106773,
+    0.0
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4324.0,
+   3130.8254075104583,
+   3941.2583605927466,
+   3735.422341594558,
+   3994.7062708234107,
+   5058.531011967553
+  ],
+  "A-direct-2": [
+   4324.0,
+   3130.8254075104583,
+   3941.2583605927466,
+   3735.422341594558,
+   3994.7062708234107,
+   5058.531011967553
+  ],
+  "B-structured": [
+   4324.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   4324.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   4324.0,
+   3130.8254075104583,
+   3941.2583605927466,
+   3735.422341594558,
+   3994.7062708234103,
+   5058.531011967554
+  ],
+  "C-direct-2": [
+   4324.0,
+   3130.8254075104583,
+   3941.2583605927466,
+   3735.422341594558,
+   3994.7062708234103,
+   5058.531011967554
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.3669831021993692', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.651408436925785', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.1015031882682487', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.6143822566361576', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.9077655282410642', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.3669831021993692', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.651408436925785', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.1015031882682487', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.6143822566361576', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.9077655282410642', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [1, 2, 3, 4, 5]: [\"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.3669831021993692', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.651408436925785', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.1015031882682487', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.6143822566361576', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.9077655282410642', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\"]",
+  "B-structured-2": "failed on informative instance(s) [1, 2, 3, 4, 5]: [\"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.3669831021993692', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.651408436925785', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '2.1015031882682487', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.6143822566361576', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: max_generators[0] = '1.9077655282410642', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

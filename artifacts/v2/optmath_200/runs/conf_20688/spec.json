@@ -1,0 +1,185 @@
+{
+ "spec": {
+  "participant_preferences": {
+   "base": [
+    [
+     5
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [],
+    [
+     2
+    ],
+    [
+     5
+    ],
+    [
+     0,
+     1,
+     5,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_value": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[participant_preferences] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[participant_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "participant_preferences": {
+    "meaning": "Binary eligibility matrix: for each participant, the set of cars they are interested in",
+    "base": [
+     [
+      5
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      3,
+      5
+     ],
+     [],
+     [
+      2
+     ],
+     [
+      5
+     ],
+     [
+      0,
+      1,
+      5,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "car_capacity": {
+    "meaning": "Maximum number of participants that can be assigned to each car",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "participant_capacity": {
+    "meaning": "Maximum number of cars each participant can be assigned to",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_value": {
+    "meaning": "Objective coefficient: value of successfully assigning a participant to a car",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 2,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

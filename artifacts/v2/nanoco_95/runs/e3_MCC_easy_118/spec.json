@@ -1,0 +1,789 @@
+{
+ "spec": {
+  "min_flow_0_1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "min_flow_1_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_flow_1_2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "min_flow_2_1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "min_flow_2_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "min_flow_3_4": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_flow_4_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cap_0_1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "cap_0_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "cap_0_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cap_1_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cap_1_2": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cap_2_0": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cap_2_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cap_2_3": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "cap_3_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_3_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cap_4_1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_4_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cap_4_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "cap_4_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cap_5_0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "cap_5_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cap_5_4": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_0_2": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_0_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_1_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_1_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "cost_2_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_2_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "cost_2_3": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_3_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "cost_3_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "cost_4_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "cost_4_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "cost_4_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "cost_4_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "cost_5_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "cost_5_3": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_5_4": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "min_flow_0_1": {
+    "meaning": "mandatory minimum flow on pipe Node 0 -> Node 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "min_flow_1_0": {
+    "meaning": "mandatory minimum flow on pipe Node 1 -> Node 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_flow_1_2": {
+    "meaning": "mandatory minimum flow on pipe Node 1 -> Node 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "min_flow_2_1": {
+    "meaning": "mandatory minimum flow on pipe Node 2 -> Node 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "min_flow_2_3": {
+    "meaning": "mandatory minimum flow on pipe Node 2 -> Node 3",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "min_flow_3_4": {
+    "meaning": "mandatory minimum flow on pipe Node 3 -> Node 4",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_flow_4_1": {
+    "meaning": "mandatory minimum flow on pipe Node 4 -> Node 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cap_0_1": {
+    "meaning": "maximum hydraulic capacity on pipe Node 0 -> Node 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "cap_0_2": {
+    "meaning": "maximum hydraulic capacity on pipe Node 0 -> Node 2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "cap_0_5": {
+    "meaning": "maximum hydraulic capacity on pipe Node 0 -> Node 5",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cap_1_0": {
+    "meaning": "maximum hydraulic capacity on pipe Node 1 -> Node 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cap_1_2": {
+    "meaning": "maximum hydraulic capacity on pipe Node 1 -> Node 2",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cap_2_0": {
+    "meaning": "maximum hydraulic capacity on pipe Node 2 -> Node 0",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cap_2_1": {
+    "meaning": "maximum hydraulic capacity on pipe Node 2 -> Node 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cap_2_3": {
+    "meaning": "maximum hydraulic capacity on pipe Node 2 -> Node 3",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "cap_3_2": {
+    "meaning": "maximum hydraulic capacity on pipe Node 3 -> Node 2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_3_4": {
+    "meaning": "maximum hydraulic capacity on pipe Node 3 -> Node 4",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cap_4_1": {
+    "meaning": "maximum hydraulic capacity on pipe Node 4 -> Node 1",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_4_2": {
+    "meaning": "maximum hydraulic capacity on pipe Node 4 -> Node 2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cap_4_3": {
+    "meaning": "maximum hydraulic capacity on pipe Node 4 -> Node 3",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "cap_4_5": {
+    "meaning": "maximum hydraulic capacity on pipe Node 4 -> Node 5",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cap_5_0": {
+    "meaning": "maximum hydraulic capacity on pipe Node 5 -> Node 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "cap_5_3": {
+    "meaning": "maximum hydraulic capacity on pipe Node 5 -> Node 3",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cap_5_4": {
+    "meaning": "maximum hydraulic capacity on pipe Node 5 -> Node 4",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "unit pumping energy cost on pipe Node 0 -> Node 1",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_0_2": {
+    "meaning": "unit pumping energy cost on pipe Node 0 -> Node 2",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_0_5": {
+    "meaning": "unit pumping energy cost on pipe Node 0 -> Node 5",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_1_0": {
+    "meaning": "unit pumping energy cost on pipe Node 1 -> Node 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_1_2": {
+    "meaning": "unit pumping energy cost on pipe Node 1 -> Node 2",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "cost_2_0": {
+    "meaning": "unit pumping energy cost on pipe Node 2 -> Node 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_2_1": {
+    "meaning": "unit pumping energy cost on pipe Node 2 -> Node 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "cost_2_3": {
+    "meaning": "unit pumping energy cost on pipe Node 2 -> Node 3",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_3_2": {
+    "meaning": "unit pumping energy cost on pipe Node 3 -> Node 2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "cost_3_4": {
+    "meaning": "unit pumping energy cost on pipe Node 3 -> Node 4",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "cost_4_1": {
+    "meaning": "unit pumping energy cost on pipe Node 4 -> Node 1",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "cost_4_2": {
+    "meaning": "unit pumping energy cost on pipe Node 4 -> Node 2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "cost_4_3": {
+    "meaning": "unit pumping energy cost on pipe Node 4 -> Node 3",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "cost_4_5": {
+    "meaning": "unit pumping energy cost on pipe Node 4 -> Node 5",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "cost_5_0": {
+    "meaning": "unit pumping energy cost on pipe Node 5 -> Node 0",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "cost_5_3": {
+    "meaning": "unit pumping energy cost on pipe Node 5 -> Node 3",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_5_4": {
+    "meaning": "unit pumping energy cost on pipe Node 5 -> Node 4",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

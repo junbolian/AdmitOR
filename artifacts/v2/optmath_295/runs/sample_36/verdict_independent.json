@@ -1,0 +1,217 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "total_capacity": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "project_demand": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "cost_min": 30,
+   "cost_max": 50,
+   "assignment_limit_min": 7,
+   "assignment_limit_max": 12
+  },
+  {
+   "total_capacity": [
+    0.0,
+    12.075247370121339,
+    18.60070364085886,
+    15.187425501125277,
+    29.675309139936296,
+    24.710689235881137,
+    33.41230962491629,
+    8.804082489441242
+   ],
+   "project_demand": [
+    14.750749114964327,
+    11.125741608199478,
+    14.372759496072067,
+    23.12317162637733,
+    12.110327302728864,
+    16.772103616479562,
+    28.74711094448808
+   ],
+   "cost_min": 31.3482444180965,
+   "cost_max": 36.02203110203484,
+   "assignment_limit_min": 7.624859787131361,
+   "assignment_limit_max": 15.713165480133918
+  },
+  {
+   "total_capacity": [
+    0.0,
+    30.033842792154584,
+    28.755345479717445,
+    17.64526084687783,
+    15.731507995482758,
+    30.601474516342407,
+    20.07826908270304,
+    8.891187650702218
+   ],
+   "project_demand": [
+    9.547462029335424,
+    28.297381693296654,
+    22.074520627337822,
+    30.063950285310742,
+    28.283831093957808,
+    24.869474194912815,
+    36.82789409948427
+   ],
+   "cost_min": 26.356031316250604,
+   "cost_max": 52.60203156366134,
+   "assignment_limit_min": 9.305832649770965,
+   "assignment_limit_max": 13.422237028370953
+  },
+  {
+   "total_capacity": [
+    0.0,
+    24.77909934090553,
+    28.909724069158166,
+    11.462312056768907,
+    17.469558615637126,
+    16.57714723564425,
+    13.91500744616706,
+    10.991863295415452
+   ],
+   "project_demand": [
+    9.616022870555666,
+    16.337445665311936,
+    22.713688885288008,
+    19.891140116311938,
+    20.0141622436883,
+    17.028168738515703,
+    19.174445551227834
+   ],
+   "cost_min": 43.099637631374826,
+   "cost_max": 57.40176926232967,
+   "assignment_limit_min": 7.763917039668918,
+   "assignment_limit_max": 8.053663778377164
+  },
+  {
+   "total_capacity": [
+    0.0,
+    15.258257356524354,
+    21.106930602183546,
+    31.2799903633685,
+    27.35999423649823,
+    22.19594461926757,
+    28.430742023756988,
+    20.142778802847147
+   ],
+   "project_demand": [
+    20.415998584739917,
+    15.310009511246191,
+    10.642004878080755,
+    18.755420105358883,
+    17.658040147441163,
+    17.063588246071834,
+    36.07274285837636
+   ],
+   "cost_min": 41.29102879418007,
+   "cost_max": 40.7338940399239,
+   "assignment_limit_min": 8.08807065706416,
+   "assignment_limit_max": 10.747582812727972
+  },
+  {
+   "total_capacity": [
+    0.0,
+    22.053592609510172,
+    18.35712399595326,
+    15.679177661573652,
+    25.472835219915616,
+    16.017573778981642,
+    26.030063765364975,
+    20.967343254037157
+   ],
+   "project_demand": [
+    14.390408082246356,
+    15.10573594230295,
+    29.950752129902206,
+    23.219104754558685,
+    13.59091647999726,
+    13.13079301019363,
+    15.241228258766478
+   ],
+   "cost_min": 33.8233812510927,
+   "cost_max": 64.6039682181482,
+   "assignment_limit_min": 6.455119767597788,
+   "assignment_limit_max": 6.762332473823486
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5168.089957605,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   5417.576140798111,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   5188.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "solver_failed",
+   "solver_failed",
+   "solver_failed",
+   "invalid_bounds",
+   "solver_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "crash:File \"<PATH>/random.py\", line 319, in randrange | raise ValueError(f\"empty range in randrange({start}, {stop})\") | ValueError: empty range in randrange(41, 41)",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

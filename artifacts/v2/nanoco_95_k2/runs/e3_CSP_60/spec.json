@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "bolt_length": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 95.0,
+    "hi": 105.0,
+    "integer": false
+   }
+  },
+  "strip_length_L1": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "strip_length_L2": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "strip_length_L3": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "strip_length_L4": {
+   "base": 44,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "demand_D1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "demand_D2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "demand_D3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "demand_D4": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "bolt_length": {
+    "meaning": "length of each standard textile bolt in meters",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 95,
+     "hi": 105,
+     "integer": false
+    }
+   },
+   "strip_length_L1": {
+    "meaning": "length of fabric strip type 1 in meters",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "strip_length_L2": {
+    "meaning": "length of fabric strip type 2 in meters",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "strip_length_L3": {
+    "meaning": "length of fabric strip type 3 in meters",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "strip_length_L4": {
+    "meaning": "length of fabric strip type 4 in meters",
+    "base": 44,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "demand_D1": {
+    "meaning": "required number of strips of length 19 meters",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "demand_D2": {
+    "meaning": "required number of strips of length 46 meters",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "demand_D3": {
+    "meaning": "required number of strips of length 28 meters",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "demand_D4": {
+    "meaning": "required number of strips of length 44 meters",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,257 @@
+{
+ "spec": {
+  "arc_costs": {
+   "base": [
+    9,
+    5,
+    9,
+    5,
+    9,
+    8,
+    11,
+    10,
+    9,
+    10,
+    8,
+    12,
+    1,
+    8,
+    5,
+    5,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "node_supplies": {
+   "base": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "node_coordinates": {
+   "base": [
+    [
+     46,
+     6
+    ],
+    [
+     11,
+     83
+    ],
+    [
+     76,
+     75
+    ],
+    [
+     5,
+     72
+    ],
+    [
+     95,
+     89
+    ],
+    [
+     80,
+     21
+    ],
+    [
+     79,
+     7
+    ],
+    [
+     32,
+     59
+    ],
+    [
+     19,
+     8
+    ],
+    [
+     82,
+     55
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [
+  "[arc_capacities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node_supplies] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_costs": {
+    "meaning": "Traversal cost per unit of cargo on each of the 17 directed arcs, in the order listed: (0,1), (0,7), (1,2), (1,7), (2,3), (2,6), (3,4), (3,5), (3,8), (3,9), (4,5), (4,8), (5,6), (6,7), (7,8), (7,9), (8,9)",
+    "base": [
+     9,
+     5,
+     9,
+     5,
+     9,
+     8,
+     11,
+     10,
+     9,
+     10,
+     8,
+     12,
+     1,
+     8,
+     5,
+     5,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Maximum cargo flow on each of the 17 directed arcs",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "node_supplies": {
+    "meaning": "Net supply at each node (source +1, sink -1, all intermediates 0)",
+    "base": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     -1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "node_coordinates": {
+    "meaning": "2D coordinates of the 10 nodes",
+    "base": [
+     [
+      46,
+      6
+     ],
+     [
+      11,
+      83
+     ],
+     [
+      76,
+      75
+     ],
+     [
+      5,
+      72
+     ],
+     [
+      95,
+      89
+     ],
+     [
+      80,
+      21
+     ],
+     [
+      79,
+      7
+     ],
+     [
+      32,
+      59
+     ],
+     [
+      19,
+      8
+     ],
+     [
+      82,
+      55
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

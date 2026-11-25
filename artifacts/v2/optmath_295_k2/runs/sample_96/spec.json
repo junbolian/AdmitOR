@@ -1,0 +1,161 @@
+{
+ "spec": {
+  "noe_rhs_peak1_aa1_peak2_aa0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "noe_rhs_peak1_aa3_peak2_aa0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_assignments": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "peak_count": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "amino_acid_count": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[assignment_cost] non-numeric base dropped",
+  "[num_assignments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[peak_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[amino_acid_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "assignment_cost": {
+    "meaning": "cost of assigning each peak (rows P0-P4) to each amino acid (cols AA0-AA5); known exact entries given, others bounded by row min/max",
+    "base": [
+     [
+      0.4241579671609457,
+      0.4459143481608616,
+      null,
+      0.3249815990529156,
+      null,
+      0.6739971903426926
+     ],
+     [
+      null,
+      null,
+      0.4251877625740568,
+      null,
+      0.6541620015185604,
+      0.328350931703943
+     ],
+     [
+      null,
+      0.3100214814238454,
+      null,
+      null,
+      0.6843458280180249,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      0.3426569330378805,
+      0.5767932853068622,
+      null
+     ],
+     [
+      null,
+      null,
+      0.6701065561383488,
+      null,
+      null,
+      0.3215078381217134
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 2.0,
+     "integer": false
+    }
+   },
+   "noe_rhs_peak1_aa1_peak2_aa0": {
+    "meaning": "RHS of NOE constraint x[1][1] + x[2][0] <= this value",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "noe_rhs_peak1_aa3_peak2_aa0": {
+    "meaning": "RHS of NOE constraint x[1][3] + x[2][0] <= this value",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_assignments": {
+    "meaning": "exact total number of peak-to-amino-acid assignments required",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "peak_count": {
+    "meaning": "number of peaks (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "amino_acid_count": {
+    "meaning": "number of amino acids (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

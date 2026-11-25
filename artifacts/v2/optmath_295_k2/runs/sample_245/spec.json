@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "demand_R0_S0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "demand_R0_S1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "demand_R1_S0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "demand_R1_S1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "pref_cost_E1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "pref_cost_E2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "pref_cost_E3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "pref_cost_E4": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "penalty": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_R0_S0": {
+    "meaning": "Skill-0 employee demand for Restaurant 0, Shift 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "demand_R0_S1": {
+    "meaning": "Skill-0 employee demand for Restaurant 0, Shift 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "demand_R1_S0": {
+    "meaning": "Skill-0 employee demand for Restaurant 1, Shift 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "demand_R1_S1": {
+    "meaning": "Skill-0 employee demand for Restaurant 1, Shift 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "pref_cost_E1": {
+    "meaning": "Preference cost of assigning Employee 1 to any shift",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "pref_cost_E2": {
+    "meaning": "Preference cost of assigning Employee 2 to any shift",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "pref_cost_E3": {
+    "meaning": "Preference cost of assigning Employee 3 to Shift 0 (if available)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "pref_cost_E4": {
+    "meaning": "Preference cost of assigning Employee 4 to any shift",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "penalty": {
+    "meaning": "Penalty cost per unfulfilled position",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 200,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

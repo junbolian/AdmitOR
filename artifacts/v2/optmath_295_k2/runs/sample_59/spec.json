@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "fixed_setup_cost": {
+   "base": [
+    143,
+    134,
+    107,
+    116,
+    130,
+    134
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_production_cost": {
+   "base": [
+    4,
+    4,
+    6,
+    5,
+    5,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "inventory_holding_cost": {
+   "base": [
+    2,
+    3,
+    4,
+    3,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "backlogging_cost": {
+   "base": [
+    15,
+    10,
+    11,
+    10,
+    10,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    76,
+    56,
+    42,
+    48,
+    52,
+    71
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "production_capacity": {
+   "base": 345,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_setup_cost": {
+    "meaning": "Fixed cost incurred if production occurs in period t",
+    "base": [
+     143,
+     134,
+     107,
+     116,
+     130,
+     134
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_production_cost": {
+    "meaning": "Cost per unit produced in period t",
+    "base": [
+     4,
+     4,
+     6,
+     5,
+     5,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "inventory_holding_cost": {
+    "meaning": "Cost per unit held in inventory at end of period t",
+    "base": [
+     2,
+     3,
+     4,
+     3,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "backlogging_cost": {
+    "meaning": "Penalty per unit of demand backlogged at end of period t",
+    "base": [
+     15,
+     10,
+     11,
+     10,
+     10,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Customer demand in period t",
+    "base": [
+     76,
+     56,
+     42,
+     48,
+     52,
+     71
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "production_capacity": {
+    "meaning": "Maximum production quantity in any period if production occurs",
+    "base": 345,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

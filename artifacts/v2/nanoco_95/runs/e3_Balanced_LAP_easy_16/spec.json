@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "costs": {
+   "base": [
+    [
+     7,
+     6,
+     9,
+     39,
+     12
+    ],
+    [
+     12,
+     14,
+     37,
+     27,
+     39
+    ],
+    [
+     36,
+     23,
+     33,
+     22,
+     18
+    ],
+    [
+     17,
+     23,
+     23,
+     24,
+     5
+    ],
+    [
+     37,
+     29,
+     31,
+     12,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "costs": {
+    "meaning": "Cost matrix of assigning each driver (row) to each route (column); total assignment cost is minimized",
+    "base": [
+     [
+      7,
+      6,
+      9,
+      39,
+      12
+     ],
+     [
+      12,
+      14,
+      37,
+      27,
+      39
+     ],
+     [
+      36,
+      23,
+      33,
+      22,
+      18
+     ],
+     [
+      17,
+      23,
+      23,
+      24,
+      5
+     ],
+     [
+      37,
+      29,
+      31,
+      12,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

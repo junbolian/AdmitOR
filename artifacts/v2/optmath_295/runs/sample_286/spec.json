@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "min_distance_lower_bound": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 500.0,
+    "integer": false
+   }
+  },
+  "min_distance_upper_bound": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1000000.0,
+    "integer": false
+   }
+  },
+  "big_M": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100000.0,
+    "hi": 5000000.0,
+    "integer": false
+   }
+  },
+  "exact_selection_count": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[exact_selection_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "min_distance_lower_bound": {
+    "meaning": "Lower bound on the minimum distance between any two selected facilities (decision variable lower bound)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 500,
+     "integer": false
+    }
+   },
+   "min_distance_upper_bound": {
+    "meaning": "Upper bound on the minimum distance between any two selected facilities (decision variable upper bound)",
+    "base": 1000000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1000000,
+     "integer": false
+    }
+   },
+   "big_M": {
+    "meaning": "Large constant used to relax pairwise distance constraints when either facility in a pair is not selected",
+    "base": 1000000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100000,
+     "hi": 5000000,
+     "integer": false
+    }
+   },
+   "exact_selection_count": {
+    "meaning": "Exact number of facilities that must be selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of potential facility locations",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

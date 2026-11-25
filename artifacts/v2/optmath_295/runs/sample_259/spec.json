@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    370,
+    367,
+    362,
+    395,
+    423,
+    372,
+    361,
+    396,
+    365,
+    373,
+    410
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "time_per_unit": {
+   "base": [
+    0.125,
+    0.1667,
+    0.1111,
+    0.125,
+    0.1,
+    0.1667,
+    0.125,
+    0.1667,
+    0.1,
+    0.1,
+    0.1111
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_capacity": {
+   "base": 168,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_production": {
+   "base": [
+    84,
+    83,
+    84,
+    75,
+    90,
+    78,
+    70,
+    70,
+    88,
+    89,
+    71
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "max_production": {
+   "base": [
+    155,
+    144,
+    151,
+    152,
+    153,
+    141,
+    149,
+    150,
+    147,
+    143,
+    143
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "Profit contribution per unit for each of the 11 products",
+    "base": [
+     370,
+     367,
+     362,
+     395,
+     423,
+     372,
+     361,
+     396,
+     365,
+     373,
+     410
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "time_per_unit": {
+    "meaning": "Production time in hours required per unit for each of the 11 products",
+    "base": [
+     0.125,
+     0.1667,
+     0.1111,
+     0.125,
+     0.1,
+     0.1667,
+     0.125,
+     0.1667,
+     0.1,
+     0.1,
+     0.1111
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_capacity": {
+    "meaning": "Total available production time capacity in hours",
+    "base": 168,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum required production quantity for each of the 11 products",
+    "base": [
+     84,
+     83,
+     84,
+     75,
+     90,
+     78,
+     70,
+     70,
+     88,
+     89,
+     71
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum allowed production quantity for each of the 11 products",
+    "base": [
+     155,
+     144,
+     151,
+     152,
+     153,
+     141,
+     149,
+     150,
+     147,
+     143,
+     143
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

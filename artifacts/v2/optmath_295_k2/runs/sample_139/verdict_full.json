@@ -1,0 +1,143 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "net_flow_hub0": 147,
+   "net_flow_hub1": 103,
+   "net_flow_hub2": 0,
+   "net_flow_hub3": 205,
+   "net_flow_hub4": 45,
+   "fixed_cost_0_1": 676,
+   "fixed_cost_0_2": 770,
+   "fixed_cost_other": [
+    612,
+    770
+   ],
+   "capacity_0_1": 197,
+   "capacity_0_2": 157,
+   "capacity_other": [
+    142,
+    249
+   ],
+   "variable_cost_0_1": 7,
+   "variable_cost_0_2": 6,
+   "variable_cost_other": [
+    6,
+    8
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return mdl.flow[(i, j)] <= capacity[(i, j)] * mdl.build[(i, j)] | ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:return m.x[i, j] <= capacity[(i, j)] * m.y[i, j] | ~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:File \"candidate.py\", line 60, in _expand_parameter | raise ValueError( | ValueError: fixed_cost_other must contain 8 unordered connection values or 16 directed arc values.",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "insufficient_arc_data",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

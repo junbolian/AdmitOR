@@ -1,0 +1,162 @@
+{
+ "spec": {
+  "edge_0_1_weight": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "edge_0_2_weight": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "edge_0_4_weight": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "edge_1_2_weight": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "edge_1_6_weight": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "edge_2_3_weight": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "edge_2_6_weight": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "edge_3_5_weight": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "edge_0_1_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 0 and 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "edge_0_2_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 0 and 2",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "edge_0_4_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 0 and 4",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "edge_1_2_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 1 and 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "edge_1_6_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 1 and 6",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "edge_2_3_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 2 and 3",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "edge_2_6_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 2 and 6",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "edge_3_5_weight": {
+    "meaning": "Mandatory isolation distance (weight) between zones 3 and 5",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.0378,
+    0.0675,
+    0.0624,
+    0.0219
+   ],
+   "covariances": [
+    0.0341,
+    0.0433,
+    0.0222,
+    0.0233,
+    0.0182,
+    -0.0036
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 1.0,
+   "max_asset_weight": 0.3
+  },
+  {
+   "expected_returns": [
+    0.15940580923189282,
+    0.04168487621768888,
+    0.0592537049849708,
+    0.08981387789917693
+   ],
+   "variances": [
+    0.0485263342744796,
+    0.08181265848125584,
+    0.09176640602973883,
+    0.011044752521501057
+   ],
+   "covariances": [
+    0.03250252043076063,
+    0.031084131761001065,
+    0.018452257824383998,
+    0.02337486692768501,
+    0.013029772788947791,
+    -0.0029494893254831604
+   ],
+   "min_return": 0.11848959940015708,
+   "budget_fraction": 1.0044941480603218,
+   "max_asset_weight": 0.2596793119673254
+  },
+  {
+   "expected_returns": [
+    0.15497858925888772,
+    0.06912387737459039,
+    0.04821709902276831,
+    0.12746204005343603
+   ],
+   "variances": [
+    0.04678760295666598,
+    0.054560291837957346,
+    0.0366023049459062,
+    0.03391555953759421
+   ],
+   "covariances": [
+    0.03075672439300434,
+    0.03271953701101624,
+    0.01682826213942174,
+    0.02815797124153749,
+    0.019332688262526453,
+    -0.004263397070272661
+   ],
+   "min_return": 0.1256758608024436,
+   "budget_fraction": 1.00362280914547,
+   "max_asset_weight": 0.3951608375162867
+  },
+  {
+   "expected_returns": [
+    0.13637944413240927,
+    0.060120381281937474,
+    0.0820385317007981,
+    0.11535874639777757
+   ],
+   "variances": [
+    0.054207024998096855,
+    0.07376552376579774,
+    0.07771833909577348,
+    0.009964264802470802
+   ],
+   "covariances": [
+    0.028532798719830645,
+    0.03782829929438274,
+    0.016602829132622718,
+    0.019564416591327204,
+    0.013842935609154242,
+    -0.003120422982717799
+   ],
+   "min_return": 0.11721159998379602,
+   "budget_fraction": 0.9864832178970084,
+   "max_asset_weight": 0.28663257408103887
+  },
+  {
+   "expected_returns": [
+    0.1214610905358915,
+    0.05014888421527798,
+    0.08644650355498353,
+    0.11726604659463488
+   ],
+   "variances": [
+    0.04275018241705459,
+    0.04086223050404586,
+    0.07955701463052216,
+    0.013054217536063478
+   ],
+   "covariances": [
+    0.03163365833836147,
+    0.05601781664953874,
+    0.02406479680125652,
+    0.024096157417969555,
+    0.020215987620809433,
+    -0.004340560147609989
+   ],
+   "min_return": 0.12983999203916202,
+   "budget_fraction": 0.9729048071964104,
+   "max_asset_weight": 0.2257780439027268
+  },
+  {
+   "expected_returns": [
+    0.13081188602169458,
+    0.05017557584163008,
+    0.05662139487139802,
+    0.13632082574033122
+   ],
+   "variances": [
+    0.054872035536800264,
+    0.052488908344676725,
+    0.07403924725728063,
+    0.01915720635987426
+   ],
+   "covariances": [
+    0.04258164368609152,
+    0.04223097113022062,
+    0.019068203817754058,
+    0.01975785255756189,
+    0.018870140025061606,
+    -0.00308752187440954
+   ],
+   "min_return": 0.11261273912011864,
+   "budget_fraction": 1.0397822883602477,
+   "max_asset_weight": 0.2918920909252715
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   0.02703640183917402,
+   null,
+   0.027900906335546576,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   0.02703640183917403,
+   null,
+   0.027900906335546604,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.027036403839577644,
+   null,
+   0.028485852311228844,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   0.027036403839577644,
+   null,
+   0.027900906348821444,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "no_feasible_candidate",
+   "optimal",
+   "no_feasible_candidate",
+   "infeasible",
+   "no_feasible_candidate"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  2
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

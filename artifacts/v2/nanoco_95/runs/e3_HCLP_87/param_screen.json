@@ -1,0 +1,49 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "construction_costs",
+  "node_demands",
+  "bonus_values",
+  "R1_safe_range",
+  "R2_ultra_range",
+  "distance_matrix"
+ ],
+ "safe": [
+  "construction_costs",
+  "node_demands",
+  "bonus_values",
+  "R2_ultra_range",
+  "distance_matrix"
+ ],
+ "tests": {
+  "construction_costs": [
+   3,
+   3
+  ],
+  "node_demands": [
+   3,
+   3
+  ],
+  "bonus_values": [
+   3,
+   3
+  ],
+  "R1_safe_range": [
+   3,
+   0
+  ],
+  "R2_ultra_range": [
+   3,
+   3
+  ],
+  "distance_matrix": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

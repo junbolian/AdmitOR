@@ -1,0 +1,120 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_area_1": 9,
+   "cost_area_2": 88,
+   "cost_area_3": 83,
+   "cost_area_4": 26,
+   "cost_area_5": 95
+  },
+  {
+   "cost_area_1": 10.254841186120952,
+   "cost_area_2": 46.20094645959469,
+   "cost_area_3": 64.3274334246369,
+   "cost_area_4": 18.803479191869393,
+   "cost_area_5": 117.46476534558118
+  },
+  {
+   "cost_area_1": 10.590295386806202,
+   "cost_area_2": 122.5118019580264,
+   "cost_area_3": 48.71592310824154,
+   "cost_area_4": 23.96996731181703,
+   "cost_area_5": 50.33073584661668
+  },
+  {
+   "cost_area_1": 6.46774177323243,
+   "cost_area_2": 88.47126535309587,
+   "cost_area_3": 43.70248548376068,
+   "cost_area_4": 18.16977891785286,
+   "cost_area_5": 109.2390215890547
+  },
+  {
+   "cost_area_1": 9.40447332542895,
+   "cost_area_2": 63.39877473958131,
+   "cost_area_3": 90.40905176170043,
+   "cost_area_4": 34.04519187362349,
+   "cost_area_5": 48.1173821694158
+  },
+  {
+   "cost_area_1": 11.752373266495272,
+   "cost_area_2": 105.43626675896397,
+   "cost_area_3": 69.74079287099333,
+   "cost_area_4": 17.04246699510632,
+   "cost_area_5": 138.43524185964424
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   118.0,
+   93.38575380262724,
+   83.27618580686477,
+   68.34000617484597,
+   133.85871696075287,
+   98.53563313259492
+  ],
+  "B-structured": [
+   118.0,
+   93.38575380262724,
+   83.27618580686477,
+   68.34000617484597,
+   133.85871696075287,
+   98.53563313259492
+  ],
+  "C-direct": [
+   118.0,
+   93.38575380262725,
+   83.27618580686477,
+   68.34000617484597,
+   133.85871696075284,
+   98.53563313259492
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

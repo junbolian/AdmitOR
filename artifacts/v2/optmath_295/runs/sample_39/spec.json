@@ -1,0 +1,81 @@
+{
+ "spec": {
+  "package_weights": {
+   "base": [
+    33,
+    33,
+    27,
+    28,
+    28
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "num_available_trucks": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_available_trucks] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "package_weights": {
+    "meaning": "Weight of each package in units",
+    "base": [
+     33,
+     33,
+     27,
+     28,
+     28
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "truck_capacity": {
+    "meaning": "Maximum total weight a single truck can carry",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "num_available_trucks": {
+    "meaning": "Number of trucks available (fixed fleet size, must not change)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

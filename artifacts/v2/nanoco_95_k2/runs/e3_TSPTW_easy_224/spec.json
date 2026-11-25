@@ -1,0 +1,386 @@
+{
+ "spec": {
+  "vault_x": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "vault_y": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "atm_x": {
+   "base": [
+    47,
+    85,
+    67,
+    19,
+    20,
+    66,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "atm_y": {
+   "base": [
+    13,
+    78,
+    76,
+    56,
+    17,
+    4,
+    69
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.05
+   }
+  },
+  "travel_time_0_to_atm": {
+   "base": [
+    33,
+    53,
+    51,
+    65,
+    58,
+    25,
+    51
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "travel_time_atm1_to_atm": {
+   "base": [
+    75,
+    66,
+    51,
+    27,
+    21,
+    56
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "travel_time_atm2_to_atm": {
+   "base": [
+    18,
+    70,
+    89,
+    76,
+    36
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "travel_time_atm3_to_atm": {
+   "base": [
+    52,
+    75,
+    72,
+    18
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "travel_time_atm4_to_atm": {
+   "base": [
+    39,
+    70,
+    34
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "travel_time_atm5_to_atm": {
+   "base": [
+    48,
+    60
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "travel_time_atm6_to_atm7": {
+   "base": 67,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "vault_window_start": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "vault_window_end": {
+   "base": 538,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "atm_window_start": {
+   "base": [
+    22,
+    170,
+    312,
+    226,
+    56,
+    381,
+    122
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "atm_window_end": {
+   "base": [
+    92,
+    235,
+    380,
+    305,
+    156,
+    475,
+    207
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "horizon": {
+   "base": 538,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [
+  "[vault_window_start] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "vault_x": {
+    "meaning": "x-coordinate of Cash Vault (Node 0)",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "vault_y": {
+    "meaning": "y-coordinate of Cash Vault (Node 0)",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "atm_x": {
+    "meaning": "x-coordinates of ATM locations 1 through 7",
+    "base": [
+     47,
+     85,
+     67,
+     19,
+     20,
+     66,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "atm_y": {
+    "meaning": "y-coordinates of ATM locations 1 through 7",
+    "base": [
+     13,
+     78,
+     76,
+     56,
+     17,
+     4,
+     69
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.05
+    }
+   },
+   "travel_time_0_to_atm": {
+    "meaning": "travel times from Cash Vault (Node 0) to ATMs 1-7",
+    "base": [
+     33,
+     53,
+     51,
+     65,
+     58,
+     25,
+     51
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "travel_time_atm1_to_atm": {
+    "meaning": "travel times from ATM 1 to ATMs 2-7",
+    "base": [
+     75,
+     66,
+     51,
+     27,
+     21,
+     56
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "travel_time_atm2_to_atm": {
+    "meaning": "travel times from ATM 2 to ATMs 3-7",
+    "base": [
+     18,
+     70,
+     89,
+     76,
+     36
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "travel_time_atm3_to_atm": {
+    "meaning": "travel times from ATM 3 to ATMs 4-7",
+    "base": [
+     52,
+     75,
+     72,
+     18
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "travel_time_atm4_to_atm": {
+    "meaning": "travel times from ATM 4 to ATMs 5-7",
+    "base": [
+     39,
+     70,
+     34
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "travel_time_atm5_to_atm": {
+    "meaning": "travel times from ATM 5 to ATMs 6-7",
+    "base": [
+     48,
+     60
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "travel_time_atm6_to_atm7": {
+    "meaning": "travel time from ATM 6 to ATM 7",
+    "base": 67,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "vault_window_start": {
+    "meaning": "earliest service time at Cash Vault (Node 0)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "vault_window_end": {
+    "meaning": "latest service time at Cash Vault (Node 0)",
+    "base": 538,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "atm_window_start": {
+    "meaning": "earliest service times for ATMs 1-7",
+    "base": [
+     22,
+     170,
+     312,
+     226,
+     56,
+     381,
+     122
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "atm_window_end": {
+    "meaning": "latest service times for ATMs 1-7",
+    "base": [
+     92,
+     235,
+     380,
+     305,
+     156,
+     475,
+     207
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "horizon": {
+    "meaning": "maximum operational horizon for the entire shift",
+    "base": 538,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

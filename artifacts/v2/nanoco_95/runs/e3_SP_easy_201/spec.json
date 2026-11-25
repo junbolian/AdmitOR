@@ -1,0 +1,330 @@
+{
+ "spec": {
+  "arc_cost_0_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_0_7": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_1_2": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_1_7": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_2_3": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_2_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_3_4": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_3_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_3_8": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_3_9": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_4_5": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_4_8": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_5_6": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "arc_cost_6_7": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_7_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_7_9": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost_8_9": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_source": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "demand_sink": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "intermediate_supply": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[supply_source] degenerate abs range (lo == hi); perturbation has no effect",
+  "[demand_sink] degenerate abs range (lo == hi); perturbation has no effect",
+  "[intermediate_supply] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_cost_0_1": {
+    "meaning": "traversal cost on arc 0->1",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_0_7": {
+    "meaning": "traversal cost on arc 0->7",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_1_2": {
+    "meaning": "traversal cost on arc 1->2",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_1_7": {
+    "meaning": "traversal cost on arc 1->7",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_2_3": {
+    "meaning": "traversal cost on arc 2->3",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_2_6": {
+    "meaning": "traversal cost on arc 2->6",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_3_4": {
+    "meaning": "traversal cost on arc 3->4",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_3_5": {
+    "meaning": "traversal cost on arc 3->5",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_3_8": {
+    "meaning": "traversal cost on arc 3->8",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_3_9": {
+    "meaning": "traversal cost on arc 3->9",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_4_5": {
+    "meaning": "traversal cost on arc 4->5",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_4_8": {
+    "meaning": "traversal cost on arc 4->8",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_5_6": {
+    "meaning": "traversal cost on arc 5->6",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "arc_cost_6_7": {
+    "meaning": "traversal cost on arc 6->7",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_7_8": {
+    "meaning": "traversal cost on arc 7->8",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_7_9": {
+    "meaning": "traversal cost on arc 7->9",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost_8_9": {
+    "meaning": "traversal cost on arc 8->9",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_source": {
+    "meaning": "net supply at source Node 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "demand_sink": {
+    "meaning": "net demand at sink Node 9 (supply = -demand)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "intermediate_supply": {
+    "meaning": "net supply at intermediate Nodes 1-8",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

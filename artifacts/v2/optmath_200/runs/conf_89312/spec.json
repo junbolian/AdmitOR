@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    66,
+    54,
+    75,
+    60,
+    48
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "production_cost": {
+   "base": [
+    5,
+    8,
+    6,
+    6,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "inventory_cost": {
+   "base": [
+    4,
+    2,
+    4,
+    3,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "backlog_cost": {
+   "base": [
+    10,
+    15,
+    11,
+    13,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "setup_cost": {
+   "base": [
+    143,
+    140,
+    124,
+    105,
+    110
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_capacity": {
+   "base": 303,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "monthly customer demand (units), months 1-5",
+    "base": [
+     66,
+     54,
+     75,
+     60,
+     48
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "production_cost": {
+    "meaning": "variable production cost per unit ($/unit), months 1-5",
+    "base": [
+     5,
+     8,
+     6,
+     6,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "inventory_cost": {
+    "meaning": "inventory holding cost per unit ($/unit), months 1-5",
+    "base": [
+     4,
+     2,
+     4,
+     3,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "backlog_cost": {
+    "meaning": "backlogging penalty per unit ($/unit), months 1-5",
+    "base": [
+     10,
+     15,
+     11,
+     13,
+     14
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "setup_cost": {
+    "meaning": "fixed production setup cost ($), months 1-5",
+    "base": [
+     143,
+     140,
+     124,
+     105,
+     110
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_capacity": {
+    "meaning": "max production per month when setup occurs (units)",
+    "base": 303,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 500,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    167,
+    197,
+    160,
+    158,
+    190,
+    168
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    170,
+    186,
+    154,
+    175,
+    158,
+    197
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     16,
+     15,
+     20,
+     17,
+     15,
+     17
+    ],
+    [
+     18,
+     15,
+     17,
+     15,
+     18,
+     19
+    ],
+    [
+     20,
+     16,
+     16,
+     16,
+     19,
+     20
+    ],
+    [
+     16,
+     20,
+     20,
+     18,
+     18,
+     20
+    ],
+    [
+     18,
+     17,
+     16,
+     19,
+     19,
+     19
+    ],
+    [
+     17,
+     20,
+     16,
+     17,
+     19,
+     16
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Units available at each of the six warehouses; must be shipped out entirely",
+    "base": [
+     167,
+     197,
+     160,
+     158,
+     190,
+     168
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "Units required exactly by each of the six retail stores",
+    "base": [
+     170,
+     186,
+     154,
+     175,
+     158,
+     197
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "cost": {
+    "meaning": "Transportation cost per unit shipped, matrix rows = warehouses 0-5, columns = stores 0-5",
+    "base": [
+     [
+      16,
+      15,
+      20,
+      17,
+      15,
+      17
+     ],
+     [
+      18,
+      15,
+      17,
+      15,
+      18,
+      19
+     ],
+     [
+      20,
+      16,
+      16,
+      16,
+      19,
+      20
+     ],
+     [
+      16,
+      20,
+      20,
+      18,
+      18,
+      20
+     ],
+     [
+      18,
+      17,
+      16,
+      19,
+      19,
+      19
+     ],
+     [
+      17,
+      20,
+      16,
+      17,
+      19,
+      16
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

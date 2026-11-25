@@ -1,0 +1,53 @@
+{
+ "spec": {
+  "setup_cost": {
+   "base": [
+    34,
+    28,
+    42,
+    39,
+    12,
+    18,
+    27,
+    24,
+    31,
+    34,
+    49,
+    40,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "setup_cost": {
+    "meaning": "Setup cost of each of the 13 potential emergency response center locations",
+    "base": [
+     34,
+     28,
+     42,
+     39,
+     12,
+     18,
+     27,
+     24,
+     31,
+     34,
+     49,
+     40,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

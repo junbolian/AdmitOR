@@ -1,0 +1,546 @@
+{
+ "spec": {
+  "profit_product_0": {
+   "base": 158,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_product_1": {
+   "base": 162,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_product_2": {
+   "base": 107,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "holding_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "grinder_capacity": {
+   "base": [
+    240,
+    240,
+    240,
+    240
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "drill_capacity": {
+   "base": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "borer_capacity": {
+   "base": [
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 150.0,
+    "integer": false
+   }
+  },
+  "max_inventory": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_sales_period_0_product_0": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 32.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_0_product_1": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 17.0,
+    "hi": 31.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_0_product_2": {
+   "base": 49,
+   "perturb": {
+    "mode": "abs",
+    "lo": 34.0,
+    "hi": 64.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_1_product_0": {
+   "base": 45,
+   "perturb": {
+    "mode": "abs",
+    "lo": 32.0,
+    "hi": 58.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_1_product_1": {
+   "base": 47,
+   "perturb": {
+    "mode": "abs",
+    "lo": 33.0,
+    "hi": 61.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_1_product_2": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_2_product_0": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 21.0,
+    "hi": 39.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_2_product_1": {
+   "base": 48,
+   "perturb": {
+    "mode": "abs",
+    "lo": 34.0,
+    "hi": 62.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_2_product_2": {
+   "base": 43,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 56.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_3_product_0": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 21.0,
+    "hi": 39.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_3_product_1": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 32.0,
+    "integer": true
+   }
+  },
+  "max_sales_period_3_product_2": {
+   "base": 45,
+   "perturb": {
+    "mode": "abs",
+    "lo": 32.0,
+    "hi": 58.0,
+    "integer": true
+   }
+  },
+  "final_inventory_target": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "time_grinder_product_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_grinder_product_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_grinder_product_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_drill_product_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_drill_product_1": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_drill_product_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_borer_product_0": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_borer_product_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "time_borer_product_2": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_product_0": {
+    "meaning": "Profit per unit sold for product_0",
+    "base": 158,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_product_1": {
+    "meaning": "Profit per unit sold for product_1",
+    "base": 162,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_product_2": {
+    "meaning": "Profit per unit sold for product_2",
+    "base": 107,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "holding_cost": {
+    "meaning": "Cost to hold one unit of any product in inventory for one period",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "grinder_capacity": {
+    "meaning": "Grinder capacity in hours per period (same for all periods)",
+    "base": [
+     240,
+     240,
+     240,
+     240
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "drill_capacity": {
+    "meaning": "Drill capacity in hours per period (same for all periods)",
+    "base": [
+     120,
+     120,
+     120,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "borer_capacity": {
+    "meaning": "Borer capacity in hours per period (period 2 is zero due to downtime)",
+    "base": [
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 150,
+     "integer": false
+    }
+   },
+   "max_inventory": {
+    "meaning": "Maximum inventory capacity for each product in any period",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_sales_period_0_product_0": {
+    "meaning": "Maximum units of product_0 that can be sold in period 0",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 32,
+     "integer": true
+    }
+   },
+   "max_sales_period_0_product_1": {
+    "meaning": "Maximum units of product_1 that can be sold in period 0",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 17,
+     "hi": 31,
+     "integer": true
+    }
+   },
+   "max_sales_period_0_product_2": {
+    "meaning": "Maximum units of product_2 that can be sold in period 0",
+    "base": 49,
+    "perturb": {
+     "mode": "abs",
+     "lo": 34,
+     "hi": 64,
+     "integer": true
+    }
+   },
+   "max_sales_period_1_product_0": {
+    "meaning": "Maximum units of product_0 that can be sold in period 1",
+    "base": 45,
+    "perturb": {
+     "mode": "abs",
+     "lo": 32,
+     "hi": 58,
+     "integer": true
+    }
+   },
+   "max_sales_period_1_product_1": {
+    "meaning": "Maximum units of product_1 that can be sold in period 1",
+    "base": 47,
+    "perturb": {
+     "mode": "abs",
+     "lo": 33,
+     "hi": 61,
+     "integer": true
+    }
+   },
+   "max_sales_period_1_product_2": {
+    "meaning": "Maximum units of product_2 that can be sold in period 1",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "max_sales_period_2_product_0": {
+    "meaning": "Maximum units of product_0 that can be sold in period 2",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 21,
+     "hi": 39,
+     "integer": true
+    }
+   },
+   "max_sales_period_2_product_1": {
+    "meaning": "Maximum units of product_1 that can be sold in period 2",
+    "base": 48,
+    "perturb": {
+     "mode": "abs",
+     "lo": 34,
+     "hi": 62,
+     "integer": true
+    }
+   },
+   "max_sales_period_2_product_2": {
+    "meaning": "Maximum units of product_2 that can be sold in period 2",
+    "base": 43,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 56,
+     "integer": true
+    }
+   },
+   "max_sales_period_3_product_0": {
+    "meaning": "Maximum units of product_0 that can be sold in period 3",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 21,
+     "hi": 39,
+     "integer": true
+    }
+   },
+   "max_sales_period_3_product_1": {
+    "meaning": "Maximum units of product_1 that can be sold in period 3",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 32,
+     "integer": true
+    }
+   },
+   "max_sales_period_3_product_2": {
+    "meaning": "Maximum units of product_2 that can be sold in period 3",
+    "base": 45,
+    "perturb": {
+     "mode": "abs",
+     "lo": 32,
+     "hi": 58,
+     "integer": true
+    }
+   },
+   "final_inventory_target": {
+    "meaning": "Required inventory of each product at the end of period 3",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "time_grinder_product_0": {
+    "meaning": "Grinder hours required per unit of product_0",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_grinder_product_1": {
+    "meaning": "Grinder hours required per unit of product_1",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_grinder_product_2": {
+    "meaning": "Grinder hours required per unit of product_2",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_drill_product_0": {
+    "meaning": "Drill hours required per unit of product_0",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_drill_product_1": {
+    "meaning": "Drill hours required per unit of product_1",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_drill_product_2": {
+    "meaning": "Drill hours required per unit of product_2",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_borer_product_0": {
+    "meaning": "Borer hours required per unit of product_0",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_borer_product_1": {
+    "meaning": "Borer hours required per unit of product_1",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "time_borer_product_2": {
+    "meaning": "Borer hours required per unit of product_2",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "spec": {
+  "preference_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference_value": {
+    "meaning": "Binary value indicating whether a participant is interested in (1) or not (0) in a given car",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": 0
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

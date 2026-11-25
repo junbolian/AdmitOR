@@ -1,0 +1,213 @@
+{
+ "spec": {
+  "participant_car_interest_p0": {
+   "base": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_car_interest_p1": {
+   "base": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_car_interest_p2": {
+   "base": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_car_interest_p3": {
+   "base": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_objective_coefficients": {
+   "base": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "participant_car_interest_p0": {
+    "meaning": "Binary interest of Participant 0 in each car (C0..C3)",
+    "base": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_car_interest_p1": {
+    "meaning": "Binary interest of Participant 1 in each car (C0..C3)",
+    "base": [
+     1,
+     0,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_car_interest_p2": {
+    "meaning": "Binary interest of Participant 2 in each car (C0..C3)",
+    "base": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_car_interest_p3": {
+    "meaning": "Binary interest of Participant 3 in each car (C0..C3)",
+    "base": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_objective_coefficients": {
+    "meaning": "Unit weight of each assignment variable in the objective (all ones)",
+    "base": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": false
+    }
+   },
+   "participant_capacity": {
+    "meaning": "Max cars assignable per participant",
+    "base": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "Max participants assignable per car",
+    "base": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

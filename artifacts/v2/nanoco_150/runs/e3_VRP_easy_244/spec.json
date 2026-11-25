@@ -1,0 +1,286 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     57,
+     24,
+     51,
+     33,
+     40,
+     31,
+     37,
+     46
+    ],
+    [
+     57,
+     0,
+     40,
+     15,
+     79,
+     96,
+     80,
+     20,
+     27
+    ],
+    [
+     24,
+     40,
+     0,
+     40,
+     56,
+     57,
+     40,
+     21,
+     22
+    ],
+    [
+     51,
+     15,
+     40,
+     0,
+     67,
+     91,
+     78,
+     19,
+     36
+    ],
+    [
+     33,
+     79,
+     56,
+     67,
+     0,
+     48,
+     52,
+     61,
+     76
+    ],
+    [
+     40,
+     96,
+     57,
+     91,
+     48,
+     0,
+     20,
+     75,
+     78
+    ],
+    [
+     31,
+     80,
+     40,
+     78,
+     52,
+     20,
+     0,
+     60,
+     60
+    ],
+    [
+     37,
+     20,
+     21,
+     19,
+     61,
+     75,
+     60,
+     0,
+     21
+    ],
+    [
+     46,
+     27,
+     22,
+     36,
+     76,
+     78,
+     60,
+     21,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "num_nodes": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "num_customers": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_customers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Symmetric travel distance matrix (meters) between all 9 nodes",
+    "base": [
+     [
+      0,
+      57,
+      24,
+      51,
+      33,
+      40,
+      31,
+      37,
+      46
+     ],
+     [
+      57,
+      0,
+      40,
+      15,
+      79,
+      96,
+      80,
+      20,
+      27
+     ],
+     [
+      24,
+      40,
+      0,
+      40,
+      56,
+      57,
+      40,
+      21,
+      22
+     ],
+     [
+      51,
+      15,
+      40,
+      0,
+      67,
+      91,
+      78,
+      19,
+      36
+     ],
+     [
+      33,
+      79,
+      56,
+      67,
+      0,
+      48,
+      52,
+      61,
+      76
+     ],
+     [
+      40,
+      96,
+      57,
+      91,
+      48,
+      0,
+      20,
+      75,
+      78
+     ],
+     [
+      31,
+      80,
+      40,
+      78,
+      52,
+      20,
+      0,
+      60,
+      60
+     ],
+     [
+      37,
+      20,
+      21,
+      19,
+      61,
+      75,
+      60,
+      0,
+      21
+     ],
+     [
+      46,
+      27,
+      22,
+      36,
+      76,
+      78,
+      60,
+      21,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "num_nodes": {
+    "meaning": "Total number of nodes in the logistics network (frozen structural size)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "num_customers": {
+    "meaning": "Number of customer nodes requiring service (frozen structural size)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of identical internal replenishment shuttles in the fleet (frozen structural size)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

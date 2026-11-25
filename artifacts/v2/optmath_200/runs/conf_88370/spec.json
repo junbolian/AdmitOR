@@ -1,0 +1,231 @@
+{
+ "spec": {
+  "preference_0": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_1": {
+   "base": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_2": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_3": {
+   "base": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_4": {
+   "base": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_5": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_participants": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_cars": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[preference_0] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_1] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_2] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_3] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_4] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_5] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[num_participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_cars] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "preference_0": {
+    "meaning": "Participant 0's acceptability vector over cars 0-5 (1 if interested)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_1": {
+    "meaning": "Participant 1's acceptability vector over cars 0-5",
+    "base": [
+     0,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_2": {
+    "meaning": "Participant 2's acceptability vector over cars 0-5",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_3": {
+    "meaning": "Participant 3's acceptability vector over cars 0-5",
+    "base": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_4": {
+    "meaning": "Participant 4's acceptability vector over cars 0-5",
+    "base": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_5": {
+    "meaning": "Participant 5's acceptability vector over cars 0-5",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "num_participants": {
+    "meaning": "Number of participants (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_cars": {
+    "meaning": "Number of cars (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

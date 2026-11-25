@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "arc_capacity": {
+   "base": [
+    24,
+    24,
+    17,
+    17,
+    18,
+    18,
+    19,
+    19,
+    12,
+    12,
+    16,
+    16,
+    18,
+    18,
+    18,
+    18,
+    20,
+    20,
+    15,
+    15,
+    20,
+    20,
+    20,
+    20,
+    16,
+    16,
+    14,
+    14,
+    22,
+    22
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "arc_cost": {
+   "base": [
+    9,
+    9,
+    8,
+    8,
+    6,
+    6,
+    9,
+    9,
+    3,
+    3,
+    10,
+    10,
+    7,
+    7,
+    4,
+    4,
+    8,
+    8,
+    12,
+    12,
+    6,
+    6,
+    9,
+    9,
+    7,
+    7,
+    5,
+    5,
+    13,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand_commodity_1": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_commodity_2": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_capacity": {
+    "meaning": "Thermal-controlled vehicle capacity for each directed arc (in the same order as listed in the problem: 0->1, 1->0, 0->5, 5->0, 0->7, 7->0, 0->8, 8->0, 0->9, 9->0, 1->2, 2->1, 2->3, 3->2, 2->9, 9->2, 3->4, 4->3, 4->5, 5->4, 5->6, 6->5, 6->7, 7->6, 6->9, 9->6, 7->8, 8->7, 8->9, 9->8)",
+    "base": [
+     24,
+     24,
+     17,
+     17,
+     18,
+     18,
+     19,
+     19,
+     12,
+     12,
+     16,
+     16,
+     18,
+     18,
+     18,
+     18,
+     20,
+     20,
+     15,
+     15,
+     20,
+     20,
+     20,
+     20,
+     16,
+     16,
+     14,
+     14,
+     22,
+     22
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "arc_cost": {
+    "meaning": "Unit cost of temperature-controlled transport for each directed arc (same order as above)",
+    "base": [
+     9,
+     9,
+     8,
+     8,
+     6,
+     6,
+     9,
+     9,
+     3,
+     3,
+     10,
+     10,
+     7,
+     7,
+     4,
+     4,
+     8,
+     8,
+     12,
+     12,
+     6,
+     6,
+     9,
+     9,
+     7,
+     7,
+     5,
+     5,
+     13,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand_commodity_1": {
+    "meaning": "Required units of Commodity 1 from Node 5 to Node 4",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_commodity_2": {
+    "meaning": "Required units of Commodity 2 from Node 3 to Node 0",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

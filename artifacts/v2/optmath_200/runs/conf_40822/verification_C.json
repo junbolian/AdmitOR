@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_40822",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter:\n\n**assignment_allowance**: The matrix rows match the stated preferences exactly. Participant 0 all zeros, participant 1 has 1 at car_2, participant 2 has 1 at car_2, participant 3 has 1 at car_0, car_3, car_4. No issues.\n\n**participant_assignment_capacity**: The statement says \"each participant is assigned to at most one car\" and the examples reinforce this, but no explicit per-participant list of capacity values is given.\n\n**car_assignment_capacity**: Similarly, the statement says \"each car is assigned to at most one participant\" but gives no explicit per-car capacity list.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"participant_assignment_capacity\",\n      \"evidence\": \"Each participant can be assigned to at most one car.\"\n    },\n    {\n      \"parameter\": \"car_assignment_capacity\",\n      \"evidence\": \"Each car can be assigned to at most one participant.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "participant_assignment_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "car_assignment_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

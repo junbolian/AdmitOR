@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cycle_time_J0_M1": 48,
+   "cycle_time_J0_M0": 23,
+   "cycle_time_J0_M2": 33,
+   "cycle_time_J1_M1": 38,
+   "cycle_time_J1_M2": 20,
+   "cycle_time_J1_M0": 18,
+   "cycle_time_J2_M1": 35,
+   "cycle_time_J2_M0": 44,
+   "cycle_time_J2_M2": 33
+  },
+  {
+   "cycle_time_J0_M1": 54.692486325978415,
+   "cycle_time_J0_M0": 12.075247370121339,
+   "cycle_time_J0_M2": 25.575967506180934,
+   "cycle_time_J1_M1": 27.482008049655263,
+   "cycle_time_J1_M2": 24.72942428328025,
+   "cycle_time_J1_M0": 21.180590773612405,
+   "cycle_time_J2_M1": 48.72628486966959,
+   "cycle_time_J2_M0": 25.82530863569431,
+   "cycle_time_J2_M2": 30.423420049613924
+  },
+  {
+   "cycle_time_J0_M1": 25.43026653302738,
+   "cycle_time_J0_M0": 16.52867342048288,
+   "cycle_time_J0_M2": 33.17672450741095,
+   "cycle_time_J1_M1": 20.008366847986817,
+   "cycle_time_J1_M2": 13.97675301373297,
+   "cycle_time_J1_M0": 20.697919880031417,
+   "cycle_time_J2_M1": 36.57295182111258,
+   "cycle_time_J2_M0": 31.699387369790657,
+   "cycle_time_J2_M2": 35.94576756790499
+  },
+  {
+   "cycle_time_J0_M1": 62.852661920535674,
+   "cycle_time_J0_M0": 11.649471472595403,
+   "cycle_time_J0_M2": 43.092035310482665,
+   "cycle_time_J1_M1": 45.52929700955262,
+   "cycle_time_J1_M2": 16.80501033035984,
+   "cycle_time_J1_M0": 11.798630996612069,
+   "cycle_time_J2_M1": 51.00245752723735,
+   "cycle_time_J2_M0": 36.810159984955575,
+   "cycle_time_J2_M2": 19.56061283154488
+  },
+  {
+   "cycle_time_J0_M1": 28.642386088006273,
+   "cycle_time_J0_M0": 30.992370425991574,
+   "cycle_time_J0_M2": 36.422959035107404,
+   "cycle_time_J1_M1": 49.67087438442644,
+   "cycle_time_J1_M2": 24.594635733876355,
+   "cycle_time_J1_M0": 18.652105646184612,
+   "cycle_time_J2_M1": 51.55905173927797,
+   "cycle_time_J2_M0": 38.65551259716755,
+   "cycle_time_J2_M2": 34.71734083201649
+  },
+  {
+   "cycle_time_J0_M1": 63.81142388414375,
+   "cycle_time_J0_M0": 25.72595430437766,
+   "cycle_time_J0_M2": 44.936327710255654,
+   "cycle_time_J1_M1": 40.93938151975696,
+   "cycle_time_J1_M2": 24.09143672429847,
+   "cycle_time_J1_M0": 9.82483890580192,
+   "cycle_time_J2_M1": 25.47643964780414,
+   "cycle_time_J2_M0": 34.733070398492714,
+   "cycle_time_J2_M2": 19.133135238479706
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   173.99999999999986,
+   168.55199412160545,
+   131.93410578376475,
+   195.7500396192302,
+   189.18428877760536,
+   177.69827786155528
+  ],
+  "B-structured": [
+   173.999999,
+   168.55199412160556,
+   131.93410578376472,
+   195.7500396192303,
+   189.18428877760354,
+   177.69827786155517
+  ],
+  "C-direct": [
+   174.0,
+   168.55199412160343,
+   131.93410578376475,
+   195.75003961923028,
+   189.18428877760357,
+   177.6982778615552
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

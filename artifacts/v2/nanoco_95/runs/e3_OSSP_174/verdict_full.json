@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "duration_J0_M0": 43,
+   "duration_J0_M1": 10,
+   "duration_J0_M2": 48,
+   "duration_J1_M0": 23,
+   "duration_J1_M1": 33,
+   "duration_J1_M2": 16,
+   "duration_J2_M0": 49,
+   "duration_J2_M1": 43,
+   "duration_J2_M2": 48
+  },
+  {
+   "duration_J0_M0": 48.995352333689,
+   "duration_J0_M1": 2.4001720835626705,
+   "duration_J0_M2": 37.20140728171772,
+   "duration_J1_M0": 12.814155163876677,
+   "duration_J1_M1": 42.364260080894894,
+   "duration_J1_M2": 20.52350687802653,
+   "duration_J2_M0": 68.21679881753742,
+   "duration_J2_M1": 25.238369803064895,
+   "duration_J2_M2": 44.25224734489298
+  },
+  {
+   "duration_J0_M0": 22.781280435837026,
+   "duration_J0_M1": 5.498207596857654,
+   "duration_J0_M2": 48.25705382896139,
+   "duration_J1_M0": 5.5765236843661805,
+   "duration_J1_M1": 21.073970967191283,
+   "duration_J1_M2": 19.837041607155793,
+   "duration_J2_M0": 51.20213254955762,
+   "duration_J2_M1": 30.97894674774996,
+   "duration_J2_M2": 52.284752826043615
+  },
+  {
+   "duration_J0_M0": 56.30550963714654,
+   "duration_J0_M1": 2.103980154848976,
+   "duration_J0_M2": 62.679324087974784,
+   "duration_J1_M0": 30.291529735566748,
+   "duration_J1_M1": 26.67392045411248,
+   "duration_J1_M2": 7.180275195181608,
+   "duration_J2_M0": 71.40344053813229,
+   "duration_J2_M1": 35.97356543984295,
+   "duration_J2_M2": 28.4518004822471
+  },
+  {
+   "duration_J0_M0": 25.65880420383895,
+   "duration_J0_M1": 15.559909861559358,
+   "duration_J0_M2": 52.97884950561077,
+   "duration_J1_M0": 34.30232045649719,
+   "duration_J1_M1": 42.09737875307519,
+   "duration_J1_M2": 16.927439141240338,
+   "duration_J2_M0": 72.18267243498916,
+   "duration_J2_M1": 37.7769782199592,
+   "duration_J2_M2": 50.49795030111489
+  },
+  {
+   "duration_J0_M0": 57.16440056287878,
+   "duration_J0_M1": 11.896316037827937,
+   "duration_J0_M2": 65.36193121491732,
+   "duration_J1_M0": 25.84655894544884,
+   "duration_J1_M1": 41.10104471411098,
+   "duration_J1_M2": 4.373104221584952,
+   "duration_J2_M0": 35.66701550692579,
+   "duration_J2_M1": 33.94368243489061,
+   "duration_J2_M2": 27.83001489233412
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   139.999999,
+   137.7074149654953,
+   134.4658311233512,
+   158.0004799108456,
+   160.45759995606323,
+   134.42264681562403
+  ],
+  "C-direct": [
+   140.0,
+   137.70741596549487,
+   134.4658321233512,
+   158.0004799108456,
+   160.45760095606326,
+   134.42264781562392
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=(('J0', 'M0'), ('J1', 'M0')) ",
+   "crash:File \"<PATH>/set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=(('J0', 'M0'), ('J1', 'M0')) ",
+   "crash:File \"<PATH>/set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=(('J0', 'M0'), ('J1', 'M0')) ",
+   "crash:File \"<PATH>/set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=(('J0', 'M0'), ('J1', 'M0')) ",
+   "crash:File \"<PATH>/set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=(('J0', 'M0'), ('J1', 'M0')) ",
+   "crash:File \"<PATH>/set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=(('J0', 'M0'), ('J1', 'M0')) "
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=((\\'J0\\', \\'M0\\'), (\\'J1\\', \\'M0\\')) ', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=((\\'J0\\', \\'M0\\'), (\\'J1\\', \\'M0\\')) ', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=((\\'J0\\', \\'M0\\'), (\\'J1\\', \\'M0\\')) ', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=((\\'J0\\', \\'M0\\'), (\\'J1\\', \\'M0\\')) ', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=((\\'J0\\', \\'M0\\'), (\\'J1\\', \\'M0\\')) ', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 1576, in _cb_normalized_dimen_verifier | raise ValueError( | ValueError: The value=((\\'J0\\', \\'M0\\'), (\\'J1\\', \\'M0\\')) ']"
+ },
+ "disagreements": [],
+ "notes": []
+}

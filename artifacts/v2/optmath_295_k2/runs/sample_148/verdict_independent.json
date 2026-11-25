@@ -1,0 +1,215 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "availability": [
+    14,
+    15,
+    13,
+    13,
+    14
+   ],
+   "demand": [
+    225,
+    229,
+    218,
+    212,
+    214,
+    219
+   ]
+  },
+  {
+   "availability": [
+    15.171185107046224,
+    10.725096797004001,
+    11.245228683279128,
+    10.841043757560817,
+    15.986358198977705
+   ],
+   "demand": [
+    248.85443080209305,
+    282.88547260264573,
+    163.97159930792765,
+    202.0684554639664,
+    153.62596297584824,
+    182.02902988919348
+   ]
+  },
+  {
+   "availability": [
+    14.044984420068245,
+    10.738823727154772,
+    10.650933675355859,
+    14.16909861468028,
+    14.37750843706702
+   ],
+   "demand": [
+    187.25948397549402,
+    241.26510496454986,
+    258.4735037334597,
+    149.22664223104934,
+    253.2671919353325,
+    245.035516501453
+   ]
+  },
+  {
+   "availability": [
+    12.658104338751132,
+    11.899315498306034,
+    16.566261963212895,
+    11.725437451878488,
+    10.579065084393243
+   ],
+   "demand": [
+    170.55671087251764,
+    276.74572593614096,
+    231.56736490278936,
+    251.06671636050118,
+    243.49756141148623,
+    223.76037121714768
+   ]
+  },
+  {
+   "availability": [
+    17.974172417426715,
+    13.90680939487518,
+    13.40591692393117,
+    15.56935638117336,
+    14.995565919859667
+   ],
+   "demand": [
+    273.8304315419549,
+    239.6281847582791,
+    244.75799617691197,
+    154.22886160100023,
+    179.0621385936586,
+    191.32557841731688
+   ]
+  },
+  {
+   "availability": [
+    10.470252606158471,
+    12.595117977249272,
+    9.887811149395887,
+    11.268194104258718,
+    15.13974933182096
+   ],
+   "demand": [
+    206.75234416096137,
+    211.16286488185966,
+    180.00351962491058,
+    182.3595789646472,
+    270.0664490622843,
+    238.4518496214024
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'"
+  ],
+  "A-direct-2": [
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'"
+  ],
+  "B-structured": [
+   "missing_data",
+   "missing_data",
+   "missing_data",
+   "missing_data",
+   "missing_data",
+   "missing_data"
+  ],
+  "B-structured-2": [
+   "missing_data",
+   "missing_data",
+   "missing_data",
+   "missing_data",
+   "missing_data",
+   "missing_data"
+  ],
+  "C-direct": [
+   "crash:File \"candidate.py\", line 14, in solve | raise KeyError(\"No capacity matrix found in params. Available keys: \" + str(list(params.keys()))) | KeyError: \"No capacity matrix found in params. Available ke",
+   "crash:File \"candidate.py\", line 14, in solve | raise KeyError(\"No capacity matrix found in params. Available keys: \" + str(list(params.keys()))) | KeyError: \"No capacity matrix found in params. Available ke",
+   "crash:File \"candidate.py\", line 14, in solve | raise KeyError(\"No capacity matrix found in params. Available keys: \" + str(list(params.keys()))) | KeyError: \"No capacity matrix found in params. Available ke",
+   "crash:File \"candidate.py\", line 14, in solve | raise KeyError(\"No capacity matrix found in params. Available keys: \" + str(list(params.keys()))) | KeyError: \"No capacity matrix found in params. Available ke",
+   "crash:File \"candidate.py\", line 14, in solve | raise KeyError(\"No capacity matrix found in params. Available keys: \" + str(list(params.keys()))) | KeyError: \"No capacity matrix found in params. Available ke",
+   "crash:File \"candidate.py\", line 14, in solve | raise KeyError(\"No capacity matrix found in params. Available keys: \" + str(list(params.keys()))) | KeyError: \"No capacity matrix found in params. Available ke"
+  ],
+  "C-direct-2": [
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'",
+   "crash:capacity = params[\"capacity\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'capacity'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

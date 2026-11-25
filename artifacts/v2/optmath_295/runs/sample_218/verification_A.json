@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_218",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"assignment_limit\", \"evidence\": \"Consultant 0 can work up to 8 hours on Project 0, 8 hours on Project 1, 9 hours on Project 2, 10 hours on Project 3, 7 hours on Project 4, and 5 hours on Project 5. Similar limits apply to all other consultants and projects.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "assignment_limit",
+   "evidence": "Consultant 0 can work up to 8 hours on Project 0, 8 hours on Project 1, 9 hours on Project 2, 10 hours on Project 3, 7 hours on Project 4, and 5 hours on Project 5. Similar limits apply to all other consultants and projects."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,38 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "rack_power_capacity",
+  "rack_cooling_capacity",
+  "server_power_demand",
+  "server_cooling_demand"
+ ],
+ "safe": [
+  "rack_power_capacity",
+  "rack_cooling_capacity",
+  "server_power_demand",
+  "server_cooling_demand"
+ ],
+ "tests": {
+  "rack_power_capacity": [
+   3,
+   3
+  ],
+  "rack_cooling_capacity": [
+   3,
+   3
+  ],
+  "server_power_demand": [
+   3,
+   3
+  ],
+  "server_cooling_demand": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

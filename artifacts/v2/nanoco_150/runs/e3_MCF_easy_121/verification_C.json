@@ -1,0 +1,37 @@
+{
+ "sample_id": "e3_MCF_easy_121",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter:\n\n**supplies**: The statement lists donors as nodes 0 and 1 (7 and 9), demands as nodes 4 and 5 (-5 and -11), and staging as nodes 2 and 3 (0). The extracted array is `[7,9,-5,-11,0,0]`, which places the zeros at indices 4 and 5 and the negative values at indices 2 and 3 — the opposite of what the statement says.\n\n**coordinates**: Statement gives Node 0→(46,6), Node 1→(11,83), Node 2→(76,75), Node 3→(5,72), Node 4→(95,89), Node 5→(80,21). Extracted array matches exactly.\n\n**arc_costs** and **arc_capacities**: All values match the statement's explicit arc-by-arc listing.\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"supplies\",\n      \"extracted\": [7, 9, -5, -11, 0, 0],\n      \"stated\": [7, 9, 0, 0, -5, -11],\n      \"evidence\": \"Nodes 4 and 5 are affected communities requiring urgent delivery of 5 and 11 aid packages...Nodes 2 and 3 function solely as intermediate staging areas\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "supplies",
+   "extracted": [
+    7,
+    9,
+    -5,
+    -11,
+    0,
+    0
+   ],
+   "stated": [
+    7,
+    9,
+    0,
+    0,
+    -5,
+    -11
+   ],
+   "evidence": "Nodes 4 and 5 are affected communities requiring urgent delivery of 5 and 11 aid packages...Nodes 2 and 3 function solely as intermediate staging areas"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

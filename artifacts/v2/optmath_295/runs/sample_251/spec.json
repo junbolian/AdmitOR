@@ -1,0 +1,119 @@
+{
+ "spec": {
+  "revenue": {
+   "base": [
+    978,
+    1021,
+    1063,
+    891,
+    678,
+    756,
+    878,
+    685,
+    929,
+    916,
+    952
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    162,
+    204,
+    141,
+    145,
+    213,
+    195,
+    162,
+    179,
+    207,
+    159,
+    147
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity": {
+   "base": [
+    300,
+    275,
+    254,
+    249,
+    234,
+    224,
+    252
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "revenue": {
+    "meaning": "Revenue per unit sold for each of the 11 flight packages",
+    "base": [
+     978,
+     1021,
+     1063,
+     891,
+     678,
+     756,
+     878,
+     685,
+     929,
+     916,
+     952
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Maximum demand (units) for each of the 11 flight packages",
+    "base": [
+     162,
+     204,
+     141,
+     145,
+     213,
+     195,
+     162,
+     179,
+     207,
+     159,
+     147
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity": {
+    "meaning": "Seat capacity for each of the 7 flight legs",
+    "base": [
+     300,
+     275,
+     254,
+     249,
+     234,
+     224,
+     252
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

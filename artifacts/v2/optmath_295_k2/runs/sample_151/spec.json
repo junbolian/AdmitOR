@@ -1,0 +1,346 @@
+{
+ "spec": {
+  "member_time": {
+   "base": [
+    18,
+    19,
+    19,
+    16,
+    18,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "project_effort": {
+   "base": [
+    0,
+    0,
+    17,
+    20,
+    16,
+    17,
+    20,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     25,
+     32,
+     30,
+     28,
+     27,
+     26,
+     31,
+     29
+    ],
+    [
+     33,
+     24,
+     29,
+     31,
+     30,
+     28,
+     27,
+     32
+    ],
+    [
+     26,
+     31,
+     23,
+     30,
+     32,
+     29,
+     28,
+     27
+    ],
+    [
+     30,
+     27,
+     32,
+     22,
+     29,
+     31,
+     30,
+     28
+    ],
+    [
+     28,
+     30,
+     27,
+     31,
+     21,
+     30,
+     32,
+     29
+    ],
+    [
+     32,
+     29,
+     31,
+     27,
+     30,
+     20,
+     28,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "per_pair_capacity": {
+   "base": [
+    [
+     10,
+     7,
+     5,
+     8,
+     6,
+     9,
+     7,
+     6
+    ],
+    [
+     8,
+     10,
+     6,
+     7,
+     9,
+     5,
+     8,
+     7
+    ],
+    [
+     7,
+     6,
+     10,
+     8,
+     5,
+     7,
+     9,
+     6
+    ],
+    [
+     9,
+     8,
+     7,
+     10,
+     6,
+     8,
+     5,
+     7
+    ],
+    [
+     6,
+     9,
+     8,
+     5,
+     10,
+     7,
+     6,
+     8
+    ],
+    [
+     7,
+     5,
+     9,
+     6,
+     8,
+     10,
+     7,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "member_time": {
+    "meaning": "Total time available for each team member (Person 0..5)",
+    "base": [
+     18,
+     19,
+     19,
+     16,
+     18,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "project_effort": {
+    "meaning": "Total effort required for each project (Project 0..7)",
+    "base": [
+     0,
+     0,
+     17,
+     20,
+     16,
+     17,
+     20,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost per unit assigned for each (person, project) pair; example values given, remaining entries treated as explicit cost data on the same scale",
+    "base": [
+     [
+      25,
+      32,
+      30,
+      28,
+      27,
+      26,
+      31,
+      29
+     ],
+     [
+      33,
+      24,
+      29,
+      31,
+      30,
+      28,
+      27,
+      32
+     ],
+     [
+      26,
+      31,
+      23,
+      30,
+      32,
+      29,
+      28,
+      27
+     ],
+     [
+      30,
+      27,
+      32,
+      22,
+      29,
+      31,
+      30,
+      28
+     ],
+     [
+      28,
+      30,
+      27,
+      31,
+      21,
+      30,
+      32,
+      29
+     ],
+     [
+      32,
+      29,
+      31,
+      27,
+      30,
+      20,
+      28,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "per_pair_capacity": {
+    "meaning": "Maximum time each person may contribute to each project; example values given (Person 0 to Projects 0..2 are 10, 7, 5), remaining entries treated as explicit capacity data on the same scale",
+    "base": [
+     [
+      10,
+      7,
+      5,
+      8,
+      6,
+      9,
+      7,
+      6
+     ],
+     [
+      8,
+      10,
+      6,
+      7,
+      9,
+      5,
+      8,
+      7
+     ],
+     [
+      7,
+      6,
+      10,
+      8,
+      5,
+      7,
+      9,
+      6
+     ],
+     [
+      9,
+      8,
+      7,
+      10,
+      6,
+      8,
+      5,
+      7
+     ],
+     [
+      6,
+      9,
+      8,
+      5,
+      10,
+      7,
+      6,
+      8
+     ],
+     [
+      7,
+      5,
+      9,
+      6,
+      8,
+      10,
+      7,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

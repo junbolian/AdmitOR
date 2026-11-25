@@ -1,0 +1,237 @@
+{
+ "spec": {
+  "base_cost_per_generator_per_period": {
+   "base": 89,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "power_cost_per_mw": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "startup_cost_type0": {
+   "base": 390,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "startup_cost_type1": {
+   "base": 389,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "demand_per_period": {
+   "base": [
+    195,
+    202,
+    205
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_margin_demand": {
+   "base": [
+    224.25,
+    232.3,
+    235.75
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_output_type0": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_output_type0": {
+   "base": 147,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_output_type1": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_output_type1": {
+   "base": 148,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_generators_per_type_per_period": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "type0_period0_operating_limit_offset": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "type1_period0_operating_limit_offset": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_generators_per_type_per_period] degenerate abs range (lo == hi); perturbation has no effect",
+  "[type0_period0_operating_limit_offset] degenerate abs range (lo == hi); perturbation has no effect",
+  "[type1_period0_operating_limit_offset] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "base_cost_per_generator_per_period": {
+    "meaning": "Base operating cost per generator per period",
+    "base": 89,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "power_cost_per_mw": {
+    "meaning": "Cost per MW of power produced",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "startup_cost_type0": {
+    "meaning": "Startup cost per Type 0 generator started",
+    "base": 390,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "startup_cost_type1": {
+    "meaning": "Startup cost per Type 1 generator started",
+    "base": 389,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "demand_per_period": {
+    "meaning": "Minimum total power output required in each period",
+    "base": [
+     195,
+     202,
+     205
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_margin_demand": {
+    "meaning": "Minimum total maximum output capacity required in each period (115% of demand)",
+    "base": [
+     224.25,
+     232.3,
+     235.75
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_output_type0": {
+    "meaning": "Minimum MW output per operating Type 0 generator",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_output_type0": {
+    "meaning": "Maximum MW output per operating Type 0 generator",
+    "base": 147,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_output_type1": {
+    "meaning": "Minimum MW output per operating Type 1 generator",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_output_type1": {
+    "meaning": "Maximum MW output per operating Type 1 generator",
+    "base": 148,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_generators_per_type_per_period": {
+    "meaning": "Maximum number of generators of each type operating in any period",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "type0_period0_operating_limit_offset": {
+    "meaning": "Period 0 Type 0 operating count cannot exceed this plus started count",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "type1_period0_operating_limit_offset": {
+    "meaning": "Period 0 Type 1 operating count cannot exceed this plus started count",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

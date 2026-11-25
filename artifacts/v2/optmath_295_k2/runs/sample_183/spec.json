@@ -1,0 +1,268 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     264,
+     309,
+     257,
+     342,
+     264,
+     277,
+     327
+    ],
+    [
+     342,
+     0,
+     301,
+     274,
+     322,
+     327,
+     343,
+     311
+    ],
+    [
+     332,
+     252,
+     0,
+     316,
+     278,
+     286,
+     341,
+     271
+    ],
+    [
+     322,
+     313,
+     325,
+     0,
+     323,
+     340,
+     300,
+     310
+    ],
+    [
+     288,
+     334,
+     339,
+     327,
+     0,
+     282,
+     284,
+     296
+    ],
+    [
+     343,
+     329,
+     254,
+     273,
+     265,
+     0,
+     294,
+     303
+    ],
+    [
+     261,
+     258,
+     252,
+     257,
+     281,
+     344,
+     0,
+     267
+    ],
+    [
+     300,
+     266,
+     256,
+     289,
+     290,
+     345,
+     325,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "num_cities": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "position_lower_bound": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "position_upper_bound": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "start_city": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_cities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_lower_bound] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_upper_bound] degenerate abs range (lo == hi); perturbation has no effect",
+  "[start_city] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Pairwise travel distance between cities (index [i][j] = distance from city i to city j; diagonal entries are unused/zero)",
+    "base": [
+     [
+      0,
+      264,
+      309,
+      257,
+      342,
+      264,
+      277,
+      327
+     ],
+     [
+      342,
+      0,
+      301,
+      274,
+      322,
+      327,
+      343,
+      311
+     ],
+     [
+      332,
+      252,
+      0,
+      316,
+      278,
+      286,
+      341,
+      271
+     ],
+     [
+      322,
+      313,
+      325,
+      0,
+      323,
+      340,
+      300,
+      310
+     ],
+     [
+      288,
+      334,
+      339,
+      327,
+      0,
+      282,
+      284,
+      296
+     ],
+     [
+      343,
+      329,
+      254,
+      273,
+      265,
+      0,
+      294,
+      303
+     ],
+     [
+      261,
+      258,
+      252,
+      257,
+      281,
+      344,
+      0,
+      267
+     ],
+     [
+      300,
+      266,
+      256,
+      289,
+      290,
+      345,
+      325,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "num_cities": {
+    "meaning": "Number of cities in the tour (index-set size; frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "position_lower_bound": {
+    "meaning": "Lower bound on tour position of each city",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "position_upper_bound": {
+    "meaning": "Upper bound on tour position of each city (num_cities - 1)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "start_city": {
+    "meaning": "Fixed starting/ending city of the tour",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_148",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"capacity\", \"evidence\": \"The capacity contributions for all aircraft types and routes are detailed in the data provided.\"},\n    {\"parameter\": \"cost\", \"evidence\": \"The costs for all aircraft types and routes are detailed in the data provided.\"}\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "The capacity contributions for all aircraft types and routes are detailed in the data provided."
+  },
+  {
+   "parameter": "cost",
+   "evidence": "The costs for all aircraft types and routes are detailed in the data provided."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

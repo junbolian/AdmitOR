@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_119116",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n- **profit_per_unit** [137,111,139] — matches.\n- **holding_cost_per_unit** 10 — matches.\n- **grinder_hours_per_unit** [2,2,2] — matches.\n- **drill_hours_per_unit** [2,2,2] — matches.\n- **borer_hours_per_unit** [1,2,2] — matches.\n- **grinder_capacity** [360,360,360,360] — statement gives \"360 hours per period\"; the four identical entries follow directly. No issue.\n- **drill_capacity** [0,120,120,120] — matches (Period 0 down = 0).\n- **borer_capacity** [120,120,120,120] — matches \"120 hours per period\".\n- **inventory_limit** 50 — matches.\n- **sales_limit** [[30,44,33],[49,20,31],[44,40,49],[29,41,29]] — matches period by period.\n- **final_inventory** [10,10,10] — statement says \"exactly 10 units\" for each product. The list form is a completion but the value is stated; no mismatch.\n\nNo mismatches or unstested values found.\n\n{\"mismatch\": [], \"not_stated\": []}",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

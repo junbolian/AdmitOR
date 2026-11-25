@@ -1,0 +1,193 @@
+{
+ "spec": {
+  "profit_margin": {
+   "base": [
+    364,
+    441,
+    388,
+    360,
+    422,
+    391,
+    431,
+    358,
+    351,
+    373,
+    401,
+    447
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "time_per_unit": {
+   "base": [
+    0.1667,
+    0.125,
+    0.1667,
+    0.1,
+    0.1111,
+    0.1667,
+    0.125,
+    0.1429,
+    0.125,
+    0.1667,
+    0.1667,
+    0.1429
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_hours": {
+   "base": 168,
+   "perturb": {
+    "mode": "abs",
+    "lo": 120.0,
+    "hi": 220.0,
+    "integer": false
+   }
+  },
+  "min_production": {
+   "base": [
+    75,
+    70,
+    80,
+    87,
+    78,
+    87,
+    87,
+    81,
+    79,
+    73,
+    90,
+    76
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_production": {
+   "base": [
+    143,
+    150,
+    151,
+    158,
+    141,
+    158,
+    143,
+    154,
+    143,
+    149,
+    147,
+    158
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_margin": {
+    "meaning": "Profit margin per unit for each of the 12 products (index 0..11)",
+    "base": [
+     364,
+     441,
+     388,
+     360,
+     422,
+     391,
+     431,
+     358,
+     351,
+     373,
+     401,
+     447
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "time_per_unit": {
+    "meaning": "Production time in hours required per unit for each product (index 0..11)",
+    "base": [
+     0.1667,
+     0.125,
+     0.1667,
+     0.1,
+     0.1111,
+     0.1667,
+     0.125,
+     0.1429,
+     0.125,
+     0.1667,
+     0.1667,
+     0.1429
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_hours": {
+    "meaning": "Total available production capacity in hours",
+    "base": 168,
+    "perturb": {
+     "mode": "abs",
+     "lo": 120,
+     "hi": 220,
+     "integer": false
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum required production quantity for each product (index 0..11)",
+    "base": [
+     75,
+     70,
+     80,
+     87,
+     78,
+     87,
+     87,
+     81,
+     79,
+     73,
+     90,
+     76
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum allowed production quantity for each product (index 0..11)",
+    "base": [
+     143,
+     150,
+     151,
+     158,
+     141,
+     158,
+     143,
+     154,
+     143,
+     149,
+     147,
+     158
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

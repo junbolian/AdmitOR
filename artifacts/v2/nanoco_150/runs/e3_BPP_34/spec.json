@@ -1,0 +1,74 @@
+{
+ "spec": {
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shipment_weights": {
+   "base": [
+    10,
+    35,
+    29,
+    16,
+    40,
+    21,
+    13,
+    31,
+    36,
+    29,
+    26,
+    29,
+    14,
+    38,
+    24,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "truck_capacity": {
+    "meaning": "maximum weight capacity of each truck in kilograms",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shipment_weights": {
+    "meaning": "weights of the 16 LTL freight shipments in kilograms",
+    "base": [
+     10,
+     35,
+     29,
+     16,
+     40,
+     21,
+     13,
+     31,
+     36,
+     29,
+     26,
+     29,
+     14,
+     38,
+     24,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_58",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"values\",\"evidence\":\"“For example, Item 0 generates 400 units of revenue, Item 1 generates 616 units, and so on, up to Item 92, which generates 654 units.” The statement gives examples, not a complete revenue list.\"},{\"parameter\":\"weights\",\"evidence\":\"“For example, Item 0 weighs 82 kilograms, Item 1 weighs 102 kilograms, and so on, up to Item 92, which weighs 115 kilograms.” The statement gives examples, not a complete weight list.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "values",
+   "evidence": "“For example, Item 0 generates 400 units of revenue, Item 1 generates 616 units, and so on, up to Item 92, which generates 654 units.” The statement gives examples, not a complete revenue list."
+  },
+  {
+   "parameter": "weights",
+   "evidence": "“For example, Item 0 weighs 82 kilograms, Item 1 weighs 102 kilograms, and so on, up to Item 92, which weighs 115 kilograms.” The statement gives examples, not a complete weight list."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

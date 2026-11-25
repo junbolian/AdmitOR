@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_134",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at the parameters:\n\n**aircraft_availability** and **route_demand** match the statement exactly.\n\n**capability**: The statement gives only a few examples (\"Aircraft_0 contributes 129 units to Route_0, 127 units to Route_1, 130 units to Route_2, and so on\" and similarly for Aircraft_1), and explicitly says \"Similar capability contributions are defined for all other aircraft types across all routes.\" The full 7×7 matrix is not stated.\n\n**operational_cost**: The statement gives only three explicit cost values (Aircraft_0→Route_0: 1910, Aircraft_0→Route_1: 1999, Aircraft_1→Route_0: 1907) and says \"Similar costs are defined for all other aircraft-route combinations.\" The full matrix is not stated.\n\nThe three spot-check values that are explicitly stated do match the extracted matrix, so there is no mismatch on those. The issue is simply that the full matrices were filled in beyond what the statement provides.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capability\",\n      \"evidence\": \"Similar capability contributions are defined for all other aircraft types across all routes.\"\n    },\n    {\n      \"parameter\": \"operational_cost\",\n      \"evidence\": \"Similar costs are defined for all other aircraft-route combinations.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capability",
+   "evidence": "Similar capability contributions are defined for all other aircraft types across all routes."
+  },
+  {
+   "parameter": "operational_cost",
+   "evidence": "Similar costs are defined for all other aircraft-route combinations."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

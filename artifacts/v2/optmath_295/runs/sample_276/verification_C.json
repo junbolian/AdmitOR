@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_276",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_contribution\",\n      \"evidence\": \"The statement gives only three example values (aircraft_0/route_0=87, aircraft_1/route_1=113, aircraft_2/route_2=110) and says 'Similar contributions and costs apply for all other combinations'\"\n    },\n    {\n      \"parameter\": \"assignment_cost\",\n      \"evidence\": \"The statement gives only three example values (aircraft_0/route_0=3635, aircraft_1/route_1=3781, aircraft_2/route_2=3365) and says 'Similar contributions and costs apply for all other combinations'\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_contribution",
+   "evidence": "The statement gives only three example values (aircraft_0/route_0=87, aircraft_1/route_1=113, aircraft_2/route_2=110) and says 'Similar contributions and costs apply for all other combinations'"
+  },
+  {
+   "parameter": "assignment_cost",
+   "evidence": "The statement gives only three example values (aircraft_0/route_0=3635, aircraft_1/route_1=3781, aircraft_2/route_2=3365) and says 'Similar contributions and costs apply for all other combinations'"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

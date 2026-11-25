@@ -1,0 +1,16 @@
+{
+ "sample_id": "sample_257",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each route cost against the statement:\n\n- **2→0**: extracted 11, statement says **11** ✓... wait, let me re-read. Statement: \"From Node 2: To Node 0: **11 units**\" — extracted value in position 2→0 is 11. ✓\n- **2→1**: extracted 14, statement says \"To Node 1: **14 units**\" ✓\n\nLet me go through the full extracted array systematically against the statement:\n\n**From Node 0** (positions 1–7): 12,14,12,10,11,14,13 → statement: 12,14,12,10,11,14,13 ✓  \n**From Node 1** (positions 8–14): 12,13,11,10,11,15,11 → statement: 12,13,11,10,11,15,11 ✓  \n**From Node 2** (positions 15–21): 11,14,12,12,11,10,14 → statement: 11,14,12,12,11,10,14 ✓  \n**From Node 3** (positions 22–28): 14,13,10,12,11,10,10 → statement: 14,13,10,12,11,10,10 ✓  \n**From Node 4** (positions 29–35): 13,15,10,10,15,15,14 → statement: 13,15,10,10,15,15,14 ✓  \n**From Node 5** (positions 36–42): 12,11,14,15,12,14,13 → statement: 12,11,14,15,12,14,13 ✓  \n**From Node 6** (positions 43–49): 10,14,14,13,15,14,11 → statement: 10,14,14,13,15,14,11 ✓  \n**From Node 7** (positions 50–56): 13,12,11,14,12,15,12 → statement: 13,12,11,14,12,15,12 ✓  \n\nAll values match. `supply_node0` and `demand_node7` both match the statement directly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

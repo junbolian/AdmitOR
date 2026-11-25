@@ -1,0 +1,298 @@
+{
+ "spec": {
+  "consultant_hours": {
+   "base": [
+    12,
+    11,
+    11,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_hours": {
+   "base": [
+    4,
+    8,
+    11,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ],
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ],
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ],
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     27,
+     20,
+     20,
+     20,
+     20
+    ],
+    [
+     20,
+     20,
+     20,
+     20,
+     20
+    ],
+    [
+     20,
+     20,
+     20,
+     20,
+     20
+    ],
+    [
+     20,
+     20,
+     20,
+     20,
+     20
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[consultant_hours] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[project_hours] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[capacity] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "consultant_hours": {
+    "meaning": "exact total hours each consultant must work",
+    "base": [
+     12,
+     11,
+     11,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      8,
+      7,
+      7,
+      5
+     ],
+     "hi": [
+      16,
+      15,
+      15,
+      12
+     ],
+     "integer": true
+    }
+   },
+   "project_hours": {
+    "meaning": "exact total hours each project must receive",
+    "base": [
+     4,
+     8,
+     11,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      2,
+      5,
+      7,
+      6,
+      7
+     ],
+     "hi": [
+      6,
+      11,
+      15,
+      12,
+      14
+     ],
+     "integer": true
+    }
+   },
+   "capacity": {
+    "meaning": "maximum hours a consultant can work on each project (rows=consultants, cols=projects)",
+    "base": [
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ],
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ],
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ],
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       2,
+       2,
+       1,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       1,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       1,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       1,
+       2,
+       2
+      ]
+     ],
+     "hi": [
+      [
+       12,
+       12,
+       12,
+       12,
+       12
+      ],
+      [
+       12,
+       12,
+       12,
+       12,
+       12
+      ],
+      [
+       12,
+       12,
+       12,
+       12,
+       12
+      ],
+      [
+       12,
+       12,
+       12,
+       12,
+       12
+      ]
+     ],
+     "integer": true
+    }
+   },
+   "cost": {
+    "meaning": "cost of assigning a consultant to a project (rows=consultants, cols=projects; only C0 entries given explicitly, rest assumed uniform placeholder)",
+    "base": [
+     [
+      27,
+      20,
+      20,
+      20,
+      20
+     ],
+     [
+      20,
+      20,
+      20,
+      20,
+      20
+     ],
+     [
+      20,
+      20,
+      20,
+      20,
+      20
+     ],
+     [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

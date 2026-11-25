@@ -1,0 +1,258 @@
+{
+ "spec": {
+  "arc_capacities": {
+   "base": [
+    12,
+    12,
+    20,
+    20,
+    24,
+    24,
+    18,
+    18,
+    22,
+    22,
+    13,
+    13,
+    19,
+    19,
+    15,
+    15,
+    14,
+    14,
+    23,
+    23,
+    12,
+    12,
+    21,
+    21,
+    19,
+    19,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    4,
+    4,
+    5,
+    5,
+    8,
+    8,
+    5,
+    5,
+    12,
+    12,
+    9,
+    9,
+    10,
+    10,
+    8,
+    8,
+    6,
+    6,
+    4,
+    4,
+    4,
+    4,
+    2,
+    2,
+    7,
+    7,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "commodity_supplies": {
+   "base": [
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "node_coordinates_x": {
+   "base": [
+    9,
+    26,
+    82,
+    12,
+    57,
+    51,
+    33,
+    100,
+    72
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "node_coordinates_y": {
+   "base": [
+    62,
+    59,
+    55,
+    30,
+    43,
+    14,
+    15,
+    0,
+    33
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[node_coordinates_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node_coordinates_y] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_capacities": {
+    "meaning": "Maximum refrigerated load limit per directed arc, in order of the 28 arcs listed",
+    "base": [
+     12,
+     12,
+     20,
+     20,
+     24,
+     24,
+     18,
+     18,
+     22,
+     22,
+     13,
+     13,
+     19,
+     19,
+     15,
+     15,
+     14,
+     14,
+     23,
+     23,
+     12,
+     12,
+     21,
+     21,
+     19,
+     19,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Per-unit refrigerated transport cost per directed arc, in order of the 28 arcs listed",
+    "base": [
+     4,
+     4,
+     5,
+     5,
+     8,
+     8,
+     5,
+     5,
+     12,
+     12,
+     9,
+     9,
+     10,
+     10,
+     8,
+     8,
+     6,
+     6,
+     4,
+     4,
+     4,
+     4,
+     2,
+     2,
+     7,
+     7,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "commodity_supplies": {
+    "meaning": "Required shipment volume (units) at the source of each commodity",
+    "base": [
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "node_coordinates_x": {
+    "meaning": "x-coordinate of each hub (fixed network geometry)",
+    "base": [
+     9,
+     26,
+     82,
+     12,
+     57,
+     51,
+     33,
+     100,
+     72
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "node_coordinates_y": {
+    "meaning": "y-coordinate of each hub (fixed network geometry)",
+    "base": [
+     62,
+     59,
+     55,
+     30,
+     43,
+     14,
+     15,
+     0,
+     33
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

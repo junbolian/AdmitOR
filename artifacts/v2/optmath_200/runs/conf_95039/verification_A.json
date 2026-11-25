@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_95039",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"participant_capacity\", \"evidence\": \"each participant is assigned to at most one car\"}, {\"parameter\": \"car_capacity\", \"evidence\": \"each car is assigned to at most one participant\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "participant_capacity",
+   "evidence": "each participant is assigned to at most one car"
+  },
+  {
+   "parameter": "car_capacity",
+   "evidence": "each car is assigned to at most one participant"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

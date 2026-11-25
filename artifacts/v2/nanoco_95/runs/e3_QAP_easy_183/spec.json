@@ -1,0 +1,159 @@
+{
+ "spec": {
+  "flow": {
+   "base": [
+    12,
+    12,
+    2,
+    12,
+    3,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance": {
+   "base": [
+    43,
+    64,
+    21,
+    53,
+    23,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "x_coords": {
+   "base": [
+    91,
+    88,
+    36,
+    85
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "y_coords": {
+   "base": [
+    71,
+    28,
+    39,
+    51
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "n_departments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "n_zones": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n_departments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_zones] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "flow": {
+    "meaning": "pairwise daily customer cross-traffic volumes (hundreds of visitors) between departments",
+    "base": [
+     12,
+     12,
+     2,
+     12,
+     3,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance": {
+    "meaning": "pairwise Euclidean walking distances between zones",
+    "base": [
+     43,
+     64,
+     21,
+     53,
+     23,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "x_coords": {
+    "meaning": "x-coordinates of the four candidate zones",
+    "base": [
+     91,
+     88,
+     36,
+     85
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "y_coords": {
+    "meaning": "y-coordinates of the four candidate zones",
+    "base": [
+     71,
+     28,
+     39,
+     51
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "n_departments": {
+    "meaning": "number of departments (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "n_zones": {
+    "meaning": "number of zones (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

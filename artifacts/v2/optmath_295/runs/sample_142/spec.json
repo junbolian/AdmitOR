@@ -1,0 +1,156 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    102701,
+    104150,
+    103985,
+    101826
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    192,
+    200,
+    192,
+    213,
+    217,
+    205,
+    218,
+    181,
+    211,
+    203
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    964,
+    1047,
+    977,
+    988
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[shipping_cost] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each distribution center (facility_0..facility_3)",
+    "base": [
+     102701,
+     104150,
+     103985,
+     101826
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "Units required by each retail store (customer_0..customer_9)",
+    "base": [
+     192,
+     200,
+     192,
+     213,
+     217,
+     205,
+     218,
+     181,
+     211,
+     203
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum units each distribution center can handle (facility_0..facility_3)",
+    "base": [
+     964,
+     1047,
+     977,
+     988
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "shipping_cost": {
+    "meaning": "Variable shipping cost per unit from each facility to each customer (4x10 matrix; rows facility_0..facility_3, columns customer_0..customer_9; unlisted entries partially unspecified in the problem text)",
+    "base": [
+     [
+      30,
+      30,
+      26,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      31,
+      32,
+      25,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      29,
+      32,
+      26,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      30,
+      28,
+      29,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "spec": {
+  "cost_p0_0_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_p0_1_0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_p1_0_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_p1_1_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "capacity_p0": {
+   "base": 99,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_p1": {
+   "base": 82,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_1_0": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 181.0,
+    "integer": true
+   }
+  },
+  "avail_p0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "avail_p1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_deploy_1_0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_p0_0_1": {
+    "meaning": "deployment cost of Plane 0 from Location 0 to Location 1",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_p0_1_0": {
+    "meaning": "deployment cost of Plane 0 from Location 1 to Location 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_p1_0_1": {
+    "meaning": "deployment cost of Plane 1 from Location 0 to Location 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_p1_1_0": {
+    "meaning": "deployment cost of Plane 1 from Location 1 to Location 0",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "capacity_p0": {
+    "meaning": "passenger capacity of Plane 0",
+    "base": 99,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_p1": {
+    "meaning": "passenger capacity of Plane 1",
+    "base": 82,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_1_0": {
+    "meaning": "passenger demand on route Location 1 to Location 0",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 181,
+     "integer": true
+    }
+   },
+   "avail_p0": {
+    "meaning": "maximum total idle planes of Plane 0 at start of period across locations",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "avail_p1": {
+    "meaning": "maximum total idle planes of Plane 1 at start of period across locations",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_deploy_1_0": {
+    "meaning": "maximum number of planes (each type) deployed from Location 1 to Location 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

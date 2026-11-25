@@ -1,0 +1,67 @@
+{
+ "spec": {
+  "proc_time": {
+   "base": [
+    [
+     10,
+     42,
+     30
+    ],
+    [
+     46,
+     17,
+     26
+    ],
+    [
+     28,
+     48,
+     10
+    ],
+    [
+     17,
+     27,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "proc_time": {
+    "meaning": "Processing time (minutes) of each batch B0..B3 at each unit U0,U1,U2 (rows = batches in order, cols = units)",
+    "base": [
+     [
+      10,
+      42,
+      30
+     ],
+     [
+      46,
+      17,
+      26
+     ],
+     [
+      28,
+      48,
+      10
+     ],
+     [
+      17,
+      27,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

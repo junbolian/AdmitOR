@@ -1,0 +1,135 @@
+{
+ "spec": {
+  "activation_cost": {
+   "base": [
+    265,
+    391,
+    387,
+    225
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_cost": {
+   "base": [
+    4,
+    3,
+    3,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_production": {
+   "base": [
+    31,
+    28,
+    27,
+    26
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_production": {
+   "base": [
+    94,
+    86,
+    98,
+    108
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    178,
+    126,
+    154,
+    156
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "activation_cost": {
+    "meaning": "Fixed cost to activate each factory for a month (per factory index)",
+    "base": [
+     265,
+     391,
+     387,
+     225
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_cost": {
+    "meaning": "Variable cost per unit produced (per factory index)",
+    "base": [
+     4,
+     3,
+     3,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production if a factory is activated in a month (per factory index)",
+    "base": [
+     31,
+     28,
+     27,
+     26
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity per factory per month (per factory index)",
+    "base": [
+     94,
+     86,
+     98,
+     108
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand that total production must meet (per month index)",
+    "base": [
+     178,
+     126,
+     154,
+     156
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

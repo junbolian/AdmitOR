@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_plane0": 7,
+   "cost_plane1": 8,
+   "demand_0to1": 9,
+   "capacity_plane0": 88,
+   "capacity_plane1": 86,
+   "fleet_plane0": 2,
+   "fleet_plane1": 2,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "cost_plane0": 7.975987589205186,
+   "cost_plane1": 4.2000860417813355,
+   "demand_0to1": 6.570316638386489,
+   "capacity_plane0": 63.642544957096405,
+   "capacity_plane1": 106.33652441810507,
+   "fleet_plane0": 2,
+   "fleet_plane1": 2,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "cost_plane0": 3.7085805360664925,
+   "cost_plane1": 5.749103798428827,
+   "demand_0to1": 9.057837111516315,
+   "capacity_plane0": 46.33516533218,
+   "capacity_plane1": 60.10003795905177,
+   "fleet_plane0": 2,
+   "fleet_plane1": 2,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "cost_plane0": 9.166013196744785,
+   "cost_plane1": 4.051990077424488,
+   "demand_0to1": 12.302847919794328,
+   "capacity_plane0": 105.43626675896397,
+   "capacity_plane1": 72.2615444205473,
+   "fleet_plane0": 2,
+   "fleet_plane1": 2,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "cost_plane0": 4.177014637834248,
+   "cost_plane1": 10.779954930779677,
+   "demand_0to1": 10.120241138762426,
+   "capacity_plane0": 115.02728804814545,
+   "capacity_plane1": 105.75693365566833,
+   "fleet_plane0": 2,
+   "fleet_plane1": 2,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "cost_plane0": 9.305832649770965,
+   "cost_plane1": 8.948158018913968,
+   "demand_0to1": 12.906434523356394,
+   "capacity_plane0": 94.80698878259506,
+   "capacity_plane1": 103.59317791448343,
+   "fleet_plane0": 2,
+   "fleet_plane1": 2,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   7.0,
+   4.2000860417813355,
+   3.7085805360664925,
+   4.051990077424488,
+   4.177014637834248,
+   8.948158018913968
+  ],
+  "B-structured": [
+   7.0,
+   4.2000860417813355,
+   3.7085805360664925,
+   4.051990077424488,
+   4.177014637834248,
+   8.948158018913968
+  ],
+  "C-direct": [
+   7.0,
+   4.2000860417813355,
+   3.7085805360664925,
+   4.051990077424488,
+   4.177014637834248,
+   8.948158018913968
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

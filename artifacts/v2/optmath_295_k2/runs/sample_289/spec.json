@@ -1,0 +1,124 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     0.5641263375471741,
+     0.4130089886790078,
+     0.3000019032840542,
+     0.5317842542041415,
+     0.4926803611218522
+    ],
+    [
+     0.5448260796638597,
+     0.6433424851939639,
+     0.4739017236535142,
+     0.4662114340171688,
+     0.356556034150675
+    ],
+    [
+     0.5064550698874446,
+     0.5047532090554707,
+     0.4581864962942434,
+     0.5681751607309229,
+     0.4744310845901966
+    ],
+    [
+     0.5279620574647521,
+     0.6884979142173221,
+     0.4565196754711658,
+     0.505841572608058,
+     0.4910780430709527
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "exactly_assignments": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "noe_forbidden_pairs_count": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 24.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[exactly_assignments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[noe_forbidden_pairs_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Assignment cost for each peak-amino-acid pair (4x5 matrix, row=peak, col=amino acid)",
+    "base": [
+     [
+      0.5641263375471741,
+      0.4130089886790078,
+      0.3000019032840542,
+      0.5317842542041415,
+      0.4926803611218522
+     ],
+     [
+      0.5448260796638597,
+      0.6433424851939639,
+      0.4739017236535142,
+      0.4662114340171688,
+      0.356556034150675
+     ],
+     [
+      0.5064550698874446,
+      0.5047532090554707,
+      0.4581864962942434,
+      0.5681751607309229,
+      0.4744310845901966
+     ],
+     [
+      0.5279620574647521,
+      0.6884979142173221,
+      0.4565196754711658,
+      0.505841572608058,
+      0.4910780430709527
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "exactly_assignments": {
+    "meaning": "Exact total number of peak-amino-acid assignments required",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "noe_forbidden_pairs_count": {
+    "meaning": "Number of NOE-based forbidden assignment pairs (structural cardinality, frozen)",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 24,
+     "hi": 24,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

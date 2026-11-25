@@ -1,0 +1,93 @@
+{
+ "sample_id": "sample_166",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"profit_margin\", \"extracted\": [[[4, 5, 8, 6, 3], [8, 9, 7, 5, 6]], [[5, 10, 6, 7, 4], [6, 4, 9, 8, 5]], [[6, 5, 9, 4, 7], [10, 8, 6, 9, 4]], [[8, 8, 7, 9, 6], [7, 7, 10, 6, 8]]], \"stated\": \"Supplier 0 Product 0: R0=4, R1=5; Product 1: R0=8, R1=9; Supplier 1 Product 0: R0=5, R1=10; Product 1: R0=6, R1=4; Supplier 2 Product 0: R0=6, R1=5; Product 1: R0=10, R1=8; Supplier 3 Product 0: R0=8, R1=8; Product 1: R0=7, R1=7\", \"evidence\": \"Supplier 1 earns 5 for Product 0 in Region 0, 6 for Product 1 in Region 0, 10 for Product 0 in Region 1, 4 for Product 1 in Region 1\"}], \"not_stated\": [{\"parameter\": \"profit_margin\", \"evidence\": \"and so on, with varying margins across all regions and products\"}]}",
+ "mismatch": [
+  {
+   "parameter": "profit_margin",
+   "extracted": [
+    [
+     [
+      4,
+      5,
+      8,
+      6,
+      3
+     ],
+     [
+      8,
+      9,
+      7,
+      5,
+      6
+     ]
+    ],
+    [
+     [
+      5,
+      10,
+      6,
+      7,
+      4
+     ],
+     [
+      6,
+      4,
+      9,
+      8,
+      5
+     ]
+    ],
+    [
+     [
+      6,
+      5,
+      9,
+      4,
+      7
+     ],
+     [
+      10,
+      8,
+      6,
+      9,
+      4
+     ]
+    ],
+    [
+     [
+      8,
+      8,
+      7,
+      9,
+      6
+     ],
+     [
+      7,
+      7,
+      10,
+      6,
+      8
+     ]
+    ]
+   ],
+   "stated": "Supplier 0 Product 0: R0=4, R1=5; Product 1: R0=8, R1=9; Supplier 1 Product 0: R0=5, R1=10; Product 1: R0=6, R1=4; Supplier 2 Product 0: R0=6, R1=5; Product 1: R0=10, R1=8; Supplier 3 Product 0: R0=8, R1=8; Product 1: R0=7, R1=7",
+   "evidence": "Supplier 1 earns 5 for Product 0 in Region 0, 6 for Product 1 in Region 0, 10 for Product 0 in Region 1, 4 for Product 1 in Region 1"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "profit_margin",
+   "evidence": "and so on, with varying margins across all regions and products"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

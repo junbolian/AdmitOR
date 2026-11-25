@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "separation_weight": [
+    1,
+    3,
+    1,
+    2,
+    1,
+    3,
+    2,
+    3,
+    3,
+    1,
+    3,
+    2
+   ]
+  },
+  {
+   "separation_weight": [
+    4,
+    1,
+    2,
+    2,
+    5,
+    4,
+    5,
+    1,
+    3,
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "separation_weight": [
+    1,
+    2,
+    4,
+    4,
+    2,
+    4,
+    5,
+    1,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  {
+   "separation_weight": [
+    6,
+    3,
+    1,
+    1,
+    5,
+    4,
+    5,
+    5,
+    4,
+    6,
+    3,
+    4
+   ]
+  },
+  {
+   "separation_weight": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "separation_weight": [
+    4,
+    3,
+    3,
+    2,
+    2,
+    6,
+    4,
+    4,
+    2,
+    5,
+    2,
+    3
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   7.0,
+   8.0,
+   10.0,
+   7.0,
+   7.0
+  ],
+  "B-structured": [
+   5.0,
+   7.0,
+   8.0,
+   10.0,
+   7.0,
+   7.0
+  ],
+  "C-direct": [
+   5.0,
+   7.0,
+   8.0,
+   10.0,
+   7.0,
+   7.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

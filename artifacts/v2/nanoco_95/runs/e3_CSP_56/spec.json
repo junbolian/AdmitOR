@@ -1,0 +1,79 @@
+{
+ "spec": {
+  "segment_lengths": {
+   "base": [
+    18,
+    20,
+    56
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "segment_demands": {
+   "base": [
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "standard_rebar_length": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "segment_lengths": {
+    "meaning": "Lengths (meters) of the three required cut rebar segment specifications",
+    "base": [
+     18,
+     20,
+     56
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "segment_demands": {
+    "meaning": "Required quantity (number of pieces) of each segment specification",
+    "base": [
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "standard_rebar_length": {
+    "meaning": "Length (meters) of each standard steel rebar in inventory",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

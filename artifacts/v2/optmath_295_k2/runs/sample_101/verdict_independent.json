@@ -1,0 +1,289 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "coverage_scores": [
+    24,
+    21,
+    16,
+    20,
+    20,
+    16,
+    20,
+    22,
+    17,
+    24,
+    24,
+    20,
+    24,
+    18,
+    22,
+    25,
+    22,
+    25,
+    19,
+    16
+   ],
+   "num_centers": 3,
+   "num_nodes": 5
+  },
+  {
+   "coverage_scores": [
+    27.346243162989207,
+    11.025225859676006,
+    12.400469093905908,
+    14.464214762976455,
+    24.72942428328025,
+    18.82719179876658,
+    27.843591354096908,
+    12.912654317847155,
+    15.672670934649597,
+    12.71513326651369,
+    17.24731139528648,
+    20.107105762067246,
+    12.636863272412727,
+    12.579077712359673,
+    25.29745763114951,
+    26.123537015080416,
+    15.849693684895328,
+    27.23164209689772,
+    24.879178676878706,
+    8.103980154848976
+   ],
+   "num_centers": 3,
+   "num_nodes": 5
+  },
+  {
+   "coverage_scores": [
+    20.166012396431803,
+    13.765069496047413,
+    23.3154091553085,
+    16.731890902252534,
+    11.854916867602958,
+    9.547462029335424,
+    26.949887326949195,
+    24.281972690071605,
+    22.22118064566446,
+    29.513562880651627,
+    24.869474194912815,
+    29.46231527958741,
+    21.084825053000483,
+    18.936731362918085,
+    29.246902613565886,
+    27.962993809106152,
+    29.957551806837103,
+    26.93380363141905,
+    22.886864888083547,
+    8.733190138490595
+   ],
+   "num_centers": 3,
+   "num_nodes": 5
+  },
+  {
+   "coverage_scores": [
+    13.91500744616706,
+    15.388608613581633,
+    9.616022870555666,
+    15.559472062201841,
+    22.713688885288008,
+    13.837314863521348,
+    17.403619342337652,
+    15.609154676972729,
+    13.038622974834928,
+    34.479710105099855,
+    27.552849245918242,
+    22.182620113339766,
+    16.107327556754328,
+    22.12428236310629,
+    14.594854862762425,
+    21.986386043941195,
+    32.76951371400509,
+    28.499993996352323,
+    20.082045131718278,
+    18.953828015837992
+   ],
+   "num_centers": 3,
+   "num_nodes": 5
+  },
+  {
+   "coverage_scores": [
+    17.497153727138503,
+    11.174105121984793,
+    13.04724876894531,
+    15.354817519514054,
+    14.21965687172653,
+    23.08655542936087,
+    27.52735252945338,
+    17.922913377566513,
+    19.64245731001296,
+    21.495165625455943,
+    33.949142153773046,
+    19.177037051747977,
+    18.35712399595326,
+    13.439295138491701,
+    23.350098951589317,
+    19.068540213073383,
+    23.860891784917893,
+    34.94557209006193,
+    17.08860959766755,
+    11.509132146516533
+   ],
+   "num_centers": 3,
+   "num_nodes": 5
+  },
+  {
+   "coverage_scores": [
+    14.181825892171053,
+    11.489443883919426,
+    9.754386085610546,
+    22.5489208340618,
+    25.84158728725928,
+    14.754559468794945,
+    11.270554123039142,
+    19.39562430314381,
+    25.434063464081646,
+    24.69874428237929,
+    35.30588106272683,
+    27.21559404468996,
+    12.275544526627671,
+    21.972992748483502,
+    25.997628118584647,
+    25.92425826021988,
+    16.870154178955943,
+    28.5240449644952,
+    11.619491298321652,
+    14.95624401070568
+   ],
+   "num_centers": 3,
+   "num_nodes": 5
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   133.00000000000006,
+   122.53387230888606,
+   143.16174092374644,
+   134.69083888700425,
+   142.84760982812438,
+   141.01909679524866
+  ],
+  "B-structured-2": [
+   133.00000000000006,
+   122.53387230888606,
+   143.16174092374644,
+   134.69083888700425,
+   142.84760982812438,
+   141.01909679524866
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return s[j] | ~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return s[j] | ~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return s[j] | ~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return s[j] | ~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return s[j] | ~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return s[j] | ~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "A-direct-2": [
+   "crash:score_map = {(i, j): float(coverage_scores[i][j]) for (i, j) in pairs} | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:score_map = {(i, j): float(coverage_scores[i][j]) for (i, j) in pairs} | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:score_map = {(i, j): float(coverage_scores[i][j]) for (i, j) in pairs} | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:score_map = {(i, j): float(coverage_scores[i][j]) for (i, j) in pairs} | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:score_map = {(i, j): float(coverage_scores[i][j]) for (i, j) in pairs} | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:score_map = {(i, j): float(coverage_scores[i][j]) for (i, j) in pairs} | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "C-direct-2": [
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return coverage_scores[i][j] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: incomparable (no co-solved instance)",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "A-direct vs C-direct-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "C-direct vs C-direct-2: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

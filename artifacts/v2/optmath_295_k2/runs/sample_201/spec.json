@@ -1,0 +1,152 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand": {
+   "base": [
+    276,
+    208,
+    286,
+    297,
+    263,
+    263,
+    280
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     95,
+     88,
+     80,
+     80,
+     87,
+     109,
+     110
+    ],
+    [
+     105,
+     119,
+     99,
+     112,
+     114,
+     89,
+     112
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[cost] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "maximum number of aircraft assignable per aircraft type",
+    "base": [
+     5,
+     4,
+     5,
+     4,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand": {
+    "meaning": "minimum capacity required per route",
+    "base": [
+     276,
+     208,
+     286,
+     297,
+     263,
+     263,
+     280
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "capacity contribution of aircraft type i to route j (rows aircraft_0..5, cols route_0..6); only the given values for aircraft_0 and aircraft_1 are known, remaining entries are unknown",
+    "base": [
+     [
+      95,
+      88,
+      80,
+      80,
+      87,
+      109,
+      110
+     ],
+     [
+      105,
+      119,
+      99,
+      112,
+      114,
+      89,
+      112
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "operational cost of assigning aircraft type i to route j (rows aircraft_0..5, cols route_0..6); only the given values for aircraft_0 and aircraft_1 are known, remaining entries are unknown",
+    "base": [
+     [
+      3604,
+      3617,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      3308,
+      3501,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

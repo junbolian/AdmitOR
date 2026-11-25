@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_146215",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll check each row of the coverage_matrix against the stated team lists for each area.\n\nGoing through each area:\n\n- Area 1: stated {1,3,4,5,7,8,10,11,15,16,17} → extracted row: teams 1,3,4,5,7,8,10,11,15,16,17 ✓\n- Area 2: stated {1,10,11,16,17,18} → extracted: teams 1,10,11,16,17,18 ✓\n- Area 3: stated {1,2,3,8,9,11,12,13,15,17} → extracted: teams 1,2,3,8,9,11,12,13,15,17 ✓\n- Area 4: stated {8,9,10,18} → extracted: teams 8,9,10,18 ✓\n- Area 5: stated {1,3,5,9,11,13,14,17} → extracted: teams 1,3,5,9,11,13,14,17 ✓\n- Area 6: stated {1,3,5,6,12,13,14,15,16,17} → extracted: teams 1,3,5,6,12,13,14,15,16,17 ✓\n- Area 7: stated {1,2,3,5,9,12,13,15} → extracted: teams 1,2,3,5,9,12,13,15 ✓\n- Area 8: stated {3,4,10,15,17,18} → extracted: teams 3,4,10,15,17,18 ✓\n- Area 9: stated {2,3,4,6,10,11,12,13,14,17} → extracted: teams 2,3,4,6,10,11,12,13,14,17 ✓\n- Area 10: stated {2,5,8,10,12,14} → extracted: teams 2,5,8,10,12,14 ✓\n- Area 11: stated {8,9,12,13,15,18} → extracted: teams 8,9,12,13,15,18 ✓\n- Area 12: stated {2,6,7,14} → extracted: teams 2,6,7,14 ✓\n- Area 13: stated {4,8,10,11,15,16,17,18} → extracted: teams 4,8,10,11,15,16,17,18 ✓\n- Area 14: stated {6,7,11,16} → extracted: teams 6,7,11,16 ✓\n- Area 15: stated {1,2,6,7,9,11,13,16,17} → extracted: teams 1,2,6,7,9,11,13,16,17 ✓\n- Area 16: stated {2,3,6,7,8,9,15,16,17} → extracted: teams 2,3,6,7,8,9,15,16,17 ✓\n- Area 17: stated {5,9,12,13,15,18} → extracted: teams 5,9,12,13,15,18 ✓\n- Area 18: stated {4,5,8,14,15,17,18} → extracted: teams 4,5,8,14,15,17,18 ✓\n- Area 19: stated {3,4,10,12,13} → extracted: teams 3,4,10,12,13 ✓\n- Area 20: stated {4,5,7,15} → extracted: teams 4,5,7,15 ✓\n- Area 21: stated {1,3,6,8,10,11,13,14,15,17} → extracted: teams 1,3,6,8,10,11,13,14,15,17 ✓\n- Area 22: stated {2,8,17} → extracted: teams 2,8,17 ✓\n- Area 23: stated {6,7,8,9,16} → extracted: teams 6,7,8,9,16 ✓\n- Area 24: stated {7,9,14,16,17} → extracted: teams 7,9,14,16,17 ✓\n- Area 25: stated {3,6,8,9,10,11,14,15} → extracted: teams 3,6,8,9,10,11,14,15 ✓\n- Area 26: stated {1,2,5,6,15,16,17,18} → extracted: teams 1,2,5,6,15,16,17,18 ✓\n- Area 27: stated {2,9,11,12,14,15,17,18} → extracted: teams 2,9,11,12,14,15,17,18 ✓\n- Area 28: stated {2,4,6,8,9,11,17} → extracted: teams 2,4,6,8,9,11,17 ✓\n- Area 29: stated {3,4,9,12,13,14} → extracted: teams 3,4,9,12,13,14 ✓\n- Area 30: stated {1,2,3,4,9,10,12,14,16,18} → extracted: teams 1,2,3,4,9,10,12,14,16,18 ✓\n- Area 31: stated {1,3,6,13,14,17} → extracted: teams 1,3,6,13,14,17 ✓\n- Area 32: stated {1,2,7,8,10,14,15,16,18} → extracted: teams 1,2,7,8,10,14,15,16,18 ✓\n- Area 33: stated {1,4,6,7,9,13,18} → extracted: teams 1,4,6,7,9,13,18 ✓\n- Area 34: stated {1,3,5,6,7,8,9,11,12,14,18} → extracted: teams 1,3,5,6,7,8,9,11,12,14,18 ✓\n\nAll rows match. Costs also match the listed values.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

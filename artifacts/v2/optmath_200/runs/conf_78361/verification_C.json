@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_78361",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"assignment_value\", \"evidence\": \"no value in the statement\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "assignment_value",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

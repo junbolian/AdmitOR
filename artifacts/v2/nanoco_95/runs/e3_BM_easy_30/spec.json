@@ -1,0 +1,98 @@
+{
+ "spec": {
+  "link_weights": {
+   "base": [
+    11,
+    10,
+    9,
+    13,
+    14,
+    15,
+    16,
+    7,
+    6,
+    8,
+    19,
+    4,
+    7,
+    17,
+    10,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cell_capacities": {
+   "base": [
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "link_weights": {
+    "meaning": "Expected task execution value (profit) of each of the 16 candidate links, ordered as (0,1),(0,2),(0,3),(0,5),(0,7),(1,5),(1,7),(2,3),(2,6),(2,7),(2,8),(3,7),(4,5),(4,6),(5,7),(5,8)",
+    "base": [
+     11,
+     10,
+     9,
+     13,
+     14,
+     15,
+     16,
+     7,
+     6,
+     8,
+     19,
+     4,
+     7,
+     17,
+     10,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cell_capacities": {
+    "meaning": "Maximum concurrent task (degree) capacity for each cell, indexed 0 through 8",
+    "base": [
+     2,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1,
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

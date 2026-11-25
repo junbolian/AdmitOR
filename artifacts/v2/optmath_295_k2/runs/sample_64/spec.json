@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    27,
+    33,
+    43,
+    44,
+    44,
+    39,
+    33,
+    37,
+    38,
+    43,
+    21,
+    28,
+    33,
+    40,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_consumption": {
+   "base": [
+    0.5,
+    0.5,
+    0.2,
+    0.5,
+    0.2,
+    0.2,
+    0.2,
+    0.25,
+    0.25,
+    0.333,
+    0.2,
+    0.5,
+    0.5,
+    0.2,
+    0.25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_capacity": {
+   "base": 440,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_production": {
+   "base": [
+    150,
+    142,
+    143,
+    193,
+    191,
+    110,
+    179,
+    192,
+    149,
+    103,
+    165,
+    107,
+    183,
+    145,
+    161
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Profit margin per unit produced for each of the 15 items",
+    "base": [
+     27,
+     33,
+     43,
+     44,
+     44,
+     39,
+     33,
+     37,
+     38,
+     43,
+     21,
+     28,
+     33,
+     40,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_consumption": {
+    "meaning": "Resource units consumed per unit produced for each of the 15 items",
+    "base": [
+     0.5,
+     0.5,
+     0.2,
+     0.5,
+     0.2,
+     0.2,
+     0.2,
+     0.25,
+     0.25,
+     0.333,
+     0.2,
+     0.5,
+     0.5,
+     0.2,
+     0.25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_capacity": {
+    "meaning": "Total available resource capacity",
+    "base": 440,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production limit for each of the 15 items",
+    "base": [
+     150,
+     142,
+     143,
+     193,
+     191,
+     110,
+     179,
+     192,
+     149,
+     103,
+     165,
+     107,
+     183,
+     145,
+     161
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

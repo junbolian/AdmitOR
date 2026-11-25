@@ -1,0 +1,177 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "safety_buffer_0_1": 2,
+   "safety_buffer_0_7": 2,
+   "safety_buffer_1_4": 2,
+   "safety_buffer_1_7": 1,
+   "safety_buffer_4_5": 3,
+   "num_nodes": 8
+  },
+  {
+   "safety_buffer_0_1": 4,
+   "safety_buffer_0_7": 1,
+   "safety_buffer_1_4": 2,
+   "safety_buffer_1_7": 2,
+   "safety_buffer_4_5": 5,
+   "num_nodes": 8
+  },
+  {
+   "safety_buffer_0_1": 5,
+   "safety_buffer_0_7": 1,
+   "safety_buffer_1_4": 3,
+   "safety_buffer_1_7": 1,
+   "safety_buffer_4_5": 2,
+   "num_nodes": 8
+  },
+  {
+   "safety_buffer_0_1": 1,
+   "safety_buffer_0_7": 2,
+   "safety_buffer_1_4": 4,
+   "safety_buffer_1_7": 3,
+   "safety_buffer_4_5": 2,
+   "num_nodes": 8
+  },
+  {
+   "safety_buffer_0_1": 4,
+   "safety_buffer_0_7": 1,
+   "safety_buffer_1_4": 4,
+   "safety_buffer_1_7": 3,
+   "safety_buffer_4_5": 3,
+   "num_nodes": 8
+  },
+  {
+   "safety_buffer_0_1": 5,
+   "safety_buffer_0_7": 2,
+   "safety_buffer_1_4": 1,
+   "safety_buffer_1_7": 1,
+   "safety_buffer_4_5": 5,
+   "num_nodes": 8
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0
+  ],
+  "A-direct-2": [
+   3.0,
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0
+  ],
+  "B-structured": [
+   3.0,
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0
+  ],
+  "B-structured-2": [
+   3.0,
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0
+  ],
+  "C-direct": [
+   3.0,
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0
+  ],
+  "C-direct-2": [
+   3.0,
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

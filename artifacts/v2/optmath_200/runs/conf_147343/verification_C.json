@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_147343",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll compare each extracted parameter value against the statement.\n\n**team_costs**: The statement lists costs for teams 1–13 as 32, 35, 40, 34, 29, 22, 30, 21, 23, 34, 25, 44, 45. The extracted array matches exactly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

@@ -1,0 +1,342 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": [
+    12,
+    19,
+    16,
+    16,
+    20,
+    12,
+    18,
+    18,
+    16,
+    20,
+    20,
+    15
+   ],
+   "profit_company0": [
+    3,
+    4,
+    6,
+    8,
+    3,
+    10,
+    7,
+    4,
+    3,
+    5,
+    5,
+    5
+   ],
+   "profit_company1": [
+    3,
+    7,
+    7,
+    4,
+    5,
+    4,
+    7,
+    6,
+    5,
+    4,
+    7,
+    3
+   ]
+  },
+  {
+   "demand": [
+    13.673121581494604,
+    9.975204349230673,
+    12.400469093905908,
+    11.571371810381164,
+    24.72942428328025,
+    14.120393849074937,
+    25.059232218687217,
+    10.56489898732949,
+    14.750749114964327,
+    10.595944388761406,
+    14.372759496072067,
+    15.080329321550433
+   ],
+   "profit_company0": [
+    0,
+    3,
+    10,
+    8,
+    3,
+    9,
+    12,
+    0,
+    12,
+    10,
+    5,
+    2
+   ],
+   "profit_company1": [
+    14,
+    5,
+    1,
+    1,
+    13,
+    9,
+    12,
+    11,
+    8,
+    15,
+    6,
+    8
+   ]
+  },
+  {
+   "demand": [
+    15.952855971035937,
+    21.251875294920676,
+    21.787310404972438,
+    17.237634324108193,
+    24.09143672429847,
+    6.549892603867947,
+    13.102168961727843,
+    14.208983344837929,
+    9.27667163077804,
+    14.655817727220604,
+    12.020028588194583,
+    11.669604046651381
+   ],
+   "profit_company0": [
+    10,
+    5,
+    6,
+    3,
+    4,
+    14,
+    10,
+    9,
+    3,
+    11,
+    2,
+    6
+   ],
+   "profit_company1": [
+    15,
+    10,
+    8,
+    10,
+    13,
+    12,
+    3,
+    0,
+    5,
+    4,
+    3,
+    14
+   ]
+  },
+  {
+   "demand": [
+    16.516411517672026,
+    15.47887973517108,
+    18.48701864471808,
+    14.330110416970628,
+    28.29095179481087,
+    11.506222231048785,
+    13.767842996964944,
+    13.439295138491701,
+    16.98189014661041,
+    15.254832170458705,
+    21.691719804470814,
+    20.967343254037157
+   ],
+   "profit_company0": [
+    6,
+    3,
+    15,
+    8,
+    1,
+    1,
+    2,
+    9,
+    12,
+    6,
+    1,
+    6
+   ],
+   "profit_company1": [
+    15,
+    8,
+    15,
+    13,
+    0,
+    11,
+    10,
+    8,
+    4,
+    10,
+    2,
+    7
+   ]
+  },
+  {
+   "demand": [
+    11.444684475950478,
+    27.62250262290052,
+    22.013647046051105,
+    12.214224812017452,
+    20.011722261005964,
+    8.143822566361576,
+    25.427301108206766,
+    24.669334257061802,
+    12.775116663178126,
+    22.778989897320105,
+    22.179404228763445,
+    9.792589028244523
+   ],
+   "profit_company0": [
+    11,
+    8,
+    12,
+    8,
+    0,
+    5,
+    0,
+    14,
+    13,
+    12,
+    5,
+    1
+   ],
+   "profit_company1": [
+    13,
+    14,
+    1,
+    7,
+    1,
+    11,
+    11,
+    2,
+    7,
+    8,
+    4,
+    13
+   ]
+  },
+  {
+   "demand": [
+    11.077655282410642,
+    13.52416590339956,
+    16.62873742047133,
+    19.678897105439617,
+    14.023021267793919,
+    9.740595495610739,
+    26.912688419896103,
+    20.69780503751016,
+    15.009601342632065,
+    20.35151682071181,
+    12.420083917365314,
+    10.87046005547336
+   ],
+   "profit_company0": [
+    5,
+    9,
+    3,
+    3,
+    1,
+    9,
+    3,
+    14,
+    13,
+    1,
+    4,
+    10
+   ],
+   "profit_company1": [
+    3,
+    2,
+    14,
+    9,
+    7,
+    12,
+    12,
+    3,
+    1,
+    6,
+    6,
+    7
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1258.0,
+   1866.1934718782038,
+   1869.3080281574785,
+   1795.1512541413745,
+   2309.6633341369925,
+   1915.2470162013994
+  ],
+  "B-structured": [
+   1258.0,
+   1866.1934718782038,
+   1869.3080281574785,
+   1795.1512541413745,
+   2309.6633341369925,
+   1915.2470162013994
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return profit_company0[m][p] | ~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

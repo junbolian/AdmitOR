@@ -1,0 +1,176 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    26,
+    32,
+    43,
+    10,
+    36,
+    39,
+    71,
+    56,
+    32,
+    35,
+    51,
+    45,
+    95,
+    74,
+    28,
+    51,
+    63,
+    58,
+    47,
+    42,
+    26,
+    93,
+    30,
+    37,
+    61,
+    18,
+    51,
+    69
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "coordinates_x": {
+   "base": [
+    50,
+    26,
+    82,
+    12,
+    57,
+    51,
+    33,
+    100
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "coordinates_y": {
+   "base": [
+    50,
+    59,
+    55,
+    30,
+    43,
+    14,
+    15,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "required_edge_ratio": {
+   "base": 0.778,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Symmetric 8x8 matrix of direct travel distances between all node pairs (row-major flattened entry list, excluding diagonal zeros)",
+    "base": [
+     26,
+     32,
+     43,
+     10,
+     36,
+     39,
+     71,
+     56,
+     32,
+     35,
+     51,
+     45,
+     95,
+     74,
+     28,
+     51,
+     63,
+     58,
+     47,
+     42,
+     26,
+     93,
+     30,
+     37,
+     61,
+     18,
+     51,
+     69
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "coordinates_x": {
+    "meaning": "X-coordinates of nodes 0-7 (geographic position, with depot at x=50)",
+    "base": [
+     50,
+     26,
+     82,
+     12,
+     57,
+     51,
+     33,
+     100
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "coordinates_y": {
+    "meaning": "Y-coordinates of nodes 0-7 (geographic position, with depot at y=50)",
+    "base": [
+     50,
+     59,
+     55,
+     30,
+     43,
+     14,
+     15,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "required_edge_ratio": {
+    "meaning": "Fraction of physical network segments flagged for mandatory servicing",
+    "base": 0.778,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 1.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

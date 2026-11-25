@@ -1,0 +1,413 @@
+{
+ "spec": {
+  "locker_fixed_costs": {
+   "base": [
+    633,
+    748,
+    522,
+    552,
+    970,
+    578
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "locker_capacities": {
+   "base": [
+    69,
+    206,
+    187,
+    164,
+    222,
+    237
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "customer_demands": {
+   "base": [
+    13,
+    19,
+    17,
+    25,
+    26,
+    10,
+    26,
+    27,
+    16,
+    30,
+    11,
+    30,
+    18,
+    24,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "delivery_cost_matrix": {
+   "base": [
+    [
+     32,
+     37,
+     17,
+     49,
+     60,
+     26
+    ],
+    [
+     34,
+     77,
+     42,
+     29,
+     51,
+     76
+    ],
+    [
+     46,
+     88,
+     62,
+     28,
+     91,
+     96
+    ],
+    [
+     48,
+     25,
+     47,
+     59,
+     113,
+     48
+    ],
+    [
+     40,
+     24,
+     25,
+     58,
+     74,
+     11
+    ],
+    [
+     59,
+     63,
+     46,
+     74,
+     45,
+     43
+    ],
+    [
+     51,
+     93,
+     57,
+     45,
+     46,
+     89
+    ],
+    [
+     14,
+     42,
+     25,
+     20,
+     84,
+     54
+    ],
+    [
+     34,
+     11,
+     25,
+     50,
+     88,
+     25
+    ],
+    [
+     9,
+     43,
+     22,
+     18,
+     80,
+     53
+    ],
+    [
+     22,
+     54,
+     19,
+     33,
+     49,
+     49
+    ],
+    [
+     77,
+     61,
+     62,
+     94,
+     73,
+     38
+    ],
+    [
+     20,
+     42,
+     29,
+     24,
+     90,
+     55
+    ],
+    [
+     9,
+     50,
+     24,
+     11,
+     77,
+     58
+    ],
+    [
+     32,
+     45,
+     19,
+     48,
+     52,
+     34
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_lockers": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_customers": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_lockers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_customers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "locker_fixed_costs": {
+    "meaning": "Fixed installation and setup cost for each of the 6 potential lockers",
+    "base": [
+     633,
+     748,
+     522,
+     552,
+     970,
+     578
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "locker_capacities": {
+    "meaning": "Maximum parcel volume capacity for each of the 6 lockers",
+    "base": [
+     69,
+     206,
+     187,
+     164,
+     222,
+     237
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "customer_demands": {
+    "meaning": "Parcel delivery volume required by each of the 15 customer addresses",
+    "base": [
+     13,
+     19,
+     17,
+     25,
+     26,
+     10,
+     26,
+     27,
+     16,
+     30,
+     11,
+     30,
+     18,
+     24,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "delivery_cost_matrix": {
+    "meaning": "Last-mile delivery cost from each customer address (row) to each locker (column)",
+    "base": [
+     [
+      32,
+      37,
+      17,
+      49,
+      60,
+      26
+     ],
+     [
+      34,
+      77,
+      42,
+      29,
+      51,
+      76
+     ],
+     [
+      46,
+      88,
+      62,
+      28,
+      91,
+      96
+     ],
+     [
+      48,
+      25,
+      47,
+      59,
+      113,
+      48
+     ],
+     [
+      40,
+      24,
+      25,
+      58,
+      74,
+      11
+     ],
+     [
+      59,
+      63,
+      46,
+      74,
+      45,
+      43
+     ],
+     [
+      51,
+      93,
+      57,
+      45,
+      46,
+      89
+     ],
+     [
+      14,
+      42,
+      25,
+      20,
+      84,
+      54
+     ],
+     [
+      34,
+      11,
+      25,
+      50,
+      88,
+      25
+     ],
+     [
+      9,
+      43,
+      22,
+      18,
+      80,
+      53
+     ],
+     [
+      22,
+      54,
+      19,
+      33,
+      49,
+      49
+     ],
+     [
+      77,
+      61,
+      62,
+      94,
+      73,
+      38
+     ],
+     [
+      20,
+      42,
+      29,
+      24,
+      90,
+      55
+     ],
+     [
+      9,
+      50,
+      24,
+      11,
+      77,
+      58
+     ],
+     [
+      32,
+      45,
+      19,
+      48,
+      52,
+      34
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_lockers": {
+    "meaning": "Number of potential locker sites (index-set size)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_customers": {
+    "meaning": "Number of customer addresses (index-set size)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

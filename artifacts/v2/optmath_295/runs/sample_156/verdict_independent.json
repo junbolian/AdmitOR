@@ -1,0 +1,283 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "team_cost": [
+    6,
+    5,
+    10,
+    5,
+    10,
+    6,
+    10,
+    2,
+    10,
+    3,
+    2,
+    2,
+    5
+   ],
+   "area_requirement": [
+    3,
+    2,
+    2,
+    1,
+    1,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    2
+   ]
+  },
+  {
+   "team_cost": [
+    6.836560790747302,
+    2.625053776113335,
+    7.750293183691193,
+    3.616053690744114,
+    12.364712141640124,
+    7.060196924537468,
+    13.921795677048454,
+    1.1738776652588323,
+    9.219218196852704,
+    1.5893916583142111,
+    1.4372759496072067,
+    2.0107105762067246,
+    2.6326798484193183
+   ],
+   "area_requirement": [
+    2,
+    4,
+    3,
+    2,
+    3,
+    4,
+    1,
+    4,
+    4,
+    2,
+    2,
+    5,
+    2,
+    1,
+    1,
+    4,
+    3
+   ]
+  },
+  {
+   "team_cost": [
+    7.8427696396462805,
+    6.148658933469089,
+    10.362280914547007,
+    7.365578819896853,
+    8.785343772083534,
+    6.312243787639361,
+    13.294046642529949,
+    2.237039504728492,
+    13.617069003107773,
+    3.232056435770286,
+    2.409143672429847,
+    1.0916487673113244,
+    3.639491378257734
+   ],
+   "area_requirement": [
+    2,
+    1,
+    2,
+    1,
+    2,
+    4,
+    2,
+    2,
+    2,
+    2,
+    5,
+    4,
+    3,
+    2,
+    4,
+    2,
+    3
+   ]
+  },
+  {
+   "team_cost": [
+    8.937140103819571,
+    5.699998799270465,
+    10.569497437746463,
+    5.923071254949372,
+    13.428519201898098,
+    7.655999469277469,
+    7.290480719641044,
+    1.0642004878080755,
+    8.15453048059082,
+    2.3032226279271084,
+    1.421965687172653,
+    2.885819428670109,
+    6.881838132363345
+   ],
+   "area_requirement": [
+    2,
+    4,
+    3,
+    5,
+    3,
+    2,
+    2,
+    3,
+    2,
+    3,
+    5,
+    3,
+    2,
+    5,
+    3,
+    1,
+    1
+   ]
+  },
+  {
+   "team_cost": [
+    3.6578947821039547,
+    5.63723020851545,
+    12.92079364362964,
+    4.610799833998421,
+    5.635277061519571,
+    5.28971571903922,
+    14.961213802400968,
+    2.0582286901982743,
+    14.71078377613618,
+    4.082339106703494,
+    1.0229620438856393,
+    2.441443638720389,
+    5.908551845132875
+   ],
+   "area_requirement": [
+    3,
+    2,
+    4,
+    1,
+    3,
+    3,
+    5,
+    5,
+    2,
+    3,
+    2,
+    5,
+    4,
+    2,
+    4,
+    3,
+    2
+   ]
+  },
+  {
+   "team_cost": [
+    7.575064800450908,
+    5.196895150598129,
+    12.786264786305583,
+    5.151768360975888,
+    5.005718961279435,
+    4.944936342028038,
+    5.194767423858323,
+    2.858197232529234,
+    13.787218778231843,
+    3.9949965880835383,
+    1.6150282508053229,
+    1.115850332988375,
+    6.890047996020203
+   ],
+   "area_requirement": [
+    5,
+    1,
+    3,
+    1,
+    4,
+    4,
+    2,
+    3,
+    3,
+    2,
+    4,
+    3,
+    2,
+    3,
+    4,
+    2,
+    2
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   57.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   57.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   57.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "failed: A feasible solution was not found, so no solution can be loaded. If using the appsi.solvers.Highs interface, you can set opt.config.load_solution=False. If using the environ.SolverFactory interface, you can set opt.solve(model, load_solutions = False). Then you can check results.termination_condition and results.best_feasible_objective before loading a solution.",
+   "failed: A feasible solution was not found, so no solution can be loaded. If using the appsi.solvers.Highs interface, you can set opt.config.load_solution=False. If using the environ.SolverFactory interface, you can set opt.solve(model, load_solutions = False). Then you can check results.termination_condition and results.best_feasible_objective before loading a solution.",
+   "failed: A feasible solution was not found, so no solution can be loaded. If using the appsi.solvers.Highs interface, you can set opt.config.load_solution=False. If using the environ.SolverFactory interface, you can set opt.solve(model, load_solutions = False). Then you can check results.termination_condition and results.best_feasible_objective before loading a solution.",
+   "failed: A feasible solution was not found, so no solution can be loaded. If using the appsi.solvers.Highs interface, you can set opt.config.load_solution=False. If using the environ.SolverFactory interface, you can set opt.solve(model, load_solutions = False). Then you can check results.termination_condition and results.best_feasible_objective before loading a solution.",
+   "failed: A feasible solution was not found, so no solution can be loaded. If using the appsi.solvers.Highs interface, you can set opt.config.load_solution=False. If using the environ.SolverFactory interface, you can set opt.solve(model, load_solutions = False). Then you can check results.termination_condition and results.best_feasible_objective before loading a solution."
+  ],
+  "B-structured": [
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    169,
+    200,
+    196,
+    237
+   ],
+   "holding_cost": 15,
+   "machine_capacity": [
+    240,
+    120,
+    120
+   ],
+   "time_grinders": [
+    1,
+    1,
+    1,
+    2
+   ],
+   "time_drills": [
+    1,
+    2,
+    2,
+    2
+   ],
+   "time_borers": [
+    1,
+    2,
+    2,
+    1
+   ],
+   "inventory_limit": [
+    80,
+    80,
+    80,
+    80
+   ],
+   "sales_limit": [
+    [
+     48,
+     28,
+     22,
+     42,
+     22,
+     42
+    ],
+    [
+     39,
+     20,
+     50,
+     38,
+     23,
+     32
+    ],
+    [
+     31,
+     42,
+     29,
+     31,
+     24,
+     29
+    ],
+    [
+     25,
+     44,
+     45,
+     47,
+     36,
+     35
+    ]
+   ],
+   "target_inventory": [
+    16,
+    16,
+    16,
+    16
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   80608.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return mdl.inventory[p, t] <= inventory_limit | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'VarData' and 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:inventory_limit = float(params[\"inventory_limit\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

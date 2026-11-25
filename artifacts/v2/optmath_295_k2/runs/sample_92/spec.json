@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "employee_availability": {
+   "base": [
+    8,
+    10,
+    11,
+    8,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_requirement": {
+   "base": [
+    8,
+    9,
+    10,
+    8,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     18,
+     18,
+     21,
+     18,
+     17
+    ],
+    [
+     16,
+     25,
+     17,
+     28,
+     28
+    ],
+    [
+     24,
+     22,
+     19,
+     29,
+     26
+    ],
+    [
+     17,
+     26,
+     28,
+     25,
+     16
+    ],
+    [
+     26,
+     18,
+     22,
+     18,
+     27
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_limit": {
+   "base": [
+    [
+     4,
+     5,
+     7,
+     4,
+     4
+    ],
+    [
+     4,
+     7,
+     7,
+     7,
+     5
+    ],
+    [
+     7,
+     4,
+     8,
+     7,
+     4
+    ],
+    [
+     5,
+     5,
+     6,
+     4,
+     7
+    ],
+    [
+     4,
+     6,
+     5,
+     5,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "employee_availability": {
+    "meaning": "Hours each employee can dedicate in total (Person 0..4)",
+    "base": [
+     8,
+     10,
+     11,
+     8,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "project_requirement": {
+    "meaning": "Exact total hours required by each project (Project 0..4)",
+    "base": [
+     8,
+     9,
+     10,
+     8,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost per unit time for assigning employee i to project j (matrix rows = Person 0..4, cols = Project 0..4)",
+    "base": [
+     [
+      18,
+      18,
+      21,
+      18,
+      17
+     ],
+     [
+      16,
+      25,
+      17,
+      28,
+      28
+     ],
+     [
+      24,
+      22,
+      19,
+      29,
+      26
+     ],
+     [
+      17,
+      26,
+      28,
+      25,
+      16
+     ],
+     [
+      26,
+      18,
+      22,
+      18,
+      27
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "assignment_limit": {
+    "meaning": "Maximum hours an employee i may spend on project j (matrix rows = Person 0..4, cols = Project 0..4)",
+    "base": [
+     [
+      4,
+      5,
+      7,
+      4,
+      4
+     ],
+     [
+      4,
+      7,
+      7,
+      7,
+      5
+     ],
+     [
+      7,
+      4,
+      8,
+      7,
+      4
+     ],
+     [
+      5,
+      5,
+      6,
+      4,
+      7
+     ],
+     [
+      4,
+      6,
+      5,
+      5,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

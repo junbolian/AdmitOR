@@ -1,0 +1,40 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "profit_per_unit",
+  "resource_consumption_per_unit",
+  "resource_availability",
+  "production_limit"
+ ],
+ "safe": [
+  "profit_per_unit",
+  "resource_consumption_per_unit",
+  "resource_availability",
+  "production_limit"
+ ],
+ "tests": {
+  "profit_per_unit": [
+   5,
+   5
+  ],
+  "resource_consumption_per_unit": [
+   5,
+   5
+  ],
+  "resource_availability": [
+   5,
+   5
+  ],
+  "production_limit": [
+   5,
+   5
+  ]
+ },
+ "untested": []
+}

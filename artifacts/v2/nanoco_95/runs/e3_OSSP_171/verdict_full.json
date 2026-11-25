@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "processing_time_J0_M0": 47,
+   "processing_time_J0_M1": 11,
+   "processing_time_J0_M2": 33,
+   "processing_time_J1_M0": 13,
+   "processing_time_J1_M1": 15,
+   "processing_time_J1_M2": 48,
+   "processing_time_J2_M0": 47,
+   "processing_time_J2_M1": 12,
+   "processing_time_J2_M2": 46
+  },
+  {
+   "processing_time_J0_M0": 50.931835716512325,
+   "processing_time_J0_M1": 7.865070984469601,
+   "processing_time_J0_M2": 28.545580503708557,
+   "processing_time_J1_M0": 10.841043757560817,
+   "processing_time_J1_M1": 17.12824092747611,
+   "processing_time_J1_M2": 53.08894523777985,
+   "processing_time_J2_M0": 58.059463809276636,
+   "processing_time_J2_M1": 9.025959594931797,
+   "processing_time_J2_M2": 43.84504222331346
+  },
+  {
+   "processing_time_J0_M0": 33.740281588153586,
+   "processing_time_J0_M1": 9.143010633703781,
+   "processing_time_J0_M2": 33.10603470444658,
+   "processing_time_J1_M0": 9.306980563534136,
+   "processing_time_J1_M1": 12.289538856179835,
+   "processing_time_J1_M2": 52.316671808050266,
+   "processing_time_J2_M0": 48.26734975301071,
+   "processing_time_J2_M1": 9.987172478693015,
+   "processing_time_J2_M2": 48.46373287497508
+  },
+  {
+   "processing_time_J0_M0": 55.725938878314714,
+   "processing_time_J0_M1": 7.742891813875202,
+   "processing_time_J0_M2": 39.05522118628959,
+   "processing_time_J1_M0": 14.54548728090817,
+   "processing_time_J1_M1": 13.562254648661927,
+   "processing_time_J1_M2": 38.07780959457931,
+   "processing_time_J2_M0": 59.893408636231236,
+   "processing_time_J2_M1": 10.823480724810912,
+   "processing_time_J2_M2": 34.75978527729208
+  },
+  {
+   "processing_time_J0_M0": 35.62740182670368,
+   "processing_time_J0_M1": 13.293462817893236,
+   "processing_time_J0_M2": 35.053775421064444,
+   "processing_time_J1_M0": 15.395600531540167,
+   "processing_time_J1_M1": 17.06758608024436,
+   "processing_time_J1_M2": 49.04336903389539,
+   "processing_time_J2_M0": 60.341864544218254,
+   "processing_time_J2_M1": 11.125447515900145,
+   "processing_time_J2_M2": 47.43632142314106
+  },
+  {
+   "processing_time_J0_M0": 56.28921153193446,
+   "processing_time_J0_M1": 11.782230365604024,
+   "processing_time_J0_M2": 40.16179662615339,
+   "processing_time_J1_M0": 13.603346733002743,
+   "processing_time_J1_M1": 16.84114652593431,
+   "processing_time_J1_M2": 34.919742249283075,
+   "processing_time_J2_M0": 39.32673137337362,
+   "processing_time_J2_M1": 10.483593337935172,
+   "processing_time_J2_M2": 34.40225856309212
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   127.0,
+   125.47956796480187,
+   133.88643838747194,
+   130.1648347954541,
+   131.53346587810088,
+   109.48379743852898
+  ],
+  "B-structured": [
+   127.0,
+   125.47956796480187,
+   133.88643938747194,
+   130.16483479545371,
+   131.5334658781009,
+   109.48379743852855
+  ],
+  "C-direct": [
+   127.0,
+   125.47956796480122,
+   133.8864393874716,
+   130.1648347954541,
+   131.53346587810063,
+   109.48379743852857
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

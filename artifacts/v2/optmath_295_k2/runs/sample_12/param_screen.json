@@ -1,0 +1,39 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "employee_availability",
+  "project_requirements",
+  "assignment_costs",
+  "pair_capacities"
+ ],
+ "safe": [
+  "assignment_costs",
+  "pair_capacities"
+ ],
+ "tests": {
+  "employee_availability": [
+   0,
+   0
+  ],
+  "project_requirements": [
+   0,
+   6
+  ],
+  "assignment_costs": [
+   6,
+   6
+  ],
+  "pair_capacities": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

@@ -1,0 +1,67 @@
+{
+ "spec": {
+  "processing_time": {
+   "base": [
+    [
+     10,
+     42,
+     30
+    ],
+    [
+     46,
+     17,
+     26
+    ],
+    [
+     28,
+     48,
+     10
+    ],
+    [
+     17,
+     27,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time": {
+    "meaning": "Processing duration (minutes) of each batch at each unit, indexed [batch][unit] for batches B0-B3 and units U0-U2",
+    "base": [
+     [
+      10,
+      42,
+      30
+     ],
+     [
+      46,
+      17,
+      26
+     ],
+     [
+      28,
+      48,
+      10
+     ],
+     [
+      17,
+      27,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

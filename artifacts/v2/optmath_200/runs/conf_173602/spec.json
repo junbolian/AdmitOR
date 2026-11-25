@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "n_participants": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "n_cars": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "objective_coefficient": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  }
+ },
+ "warnings": [
+  "[n_participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_cars] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "n_participants": {
+    "meaning": "number of participants (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "n_cars": {
+    "meaning": "number of cars (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "maximum number of participants assignable to each car",
+    "base": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "participant_capacity": {
+    "meaning": "maximum number of cars assignable to each participant",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "objective_coefficient": {
+    "meaning": "profit/weight of each participant-car assignment",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

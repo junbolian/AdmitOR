@@ -1,0 +1,36 @@
+{
+ "sample_id": "e3_GCP_81",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll check each parameter against the statement.\n\n**num_courses**: 12 courses indexed 0–11. ✓\n\n**num_edges**: The statement lists edges. Let me enumerate them from the adjacency descriptions:\n\n- Course 3: (3,4), (3,10)\n- Course 5: (5,10), (4,5), (5,9), (1,5), (5,11)\n- Course 8: (8,11), (8,10)\n- Course 0: (0,1), (0,10), (0,3), (0,9), (0,6)\n- Course 9: (9,10), (5,9), (0,9), (2,9)\n- Course 2: (2,4), (1,2), (2,9)\n- Course 1: (0,1), (1,2), (1,5), (1,10)\n- Course 6: (6,7), (6,10)\n- Course 7: (6,7), (7,11)\n- Course 10: (3,10), (5,10), (9,10), (0,10), (6,10), (8,10), (1,10)\n- Course 11: (8,11), (5,11), (7,11)\n\nUnique edges: (0,1),(0,3),(0,6),(0,9),(0,10),(1,2),(1,5),(1,10),(2,4),(2,9),(3,4),(3,10),(4,5),(5,9),(5,10),(5,11),(6,7),(6,10),(7,11),(8,10),(8,11),(9,10) — that is 22 unique edges. The extracted edge_list also has 22 entries. So num_edges = 28 is wrong, and the edge_list length contradicts it too.\n\n**min_slots**: The statement says nothing about a lower bound or clique size guidance.\n\n**max_slots**: The statement does not state a facility capacity upper bound of 12.\n\n**slot_cost**: The statement does not give a cost per slot.\n\n**edge_list**: Cross-checking the extracted list against the statement — (4,5) appears but Course 4 is not listed as sharing students with Course 5 in the statement (Course 5 lists Course 4, so the edge exists). (2,4) appears and Course 2 lists Course 4. All 22 edges check out, but the list is missing no edges and contains no extras based on the statement. ✓\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"num_edges\",\n      \"extracted\": 28,\n      \"stated\": 22,\n      \"evidence\": \"Enumerating all unique pairs from the overlap descriptions yields 22 distinct edges; the extracted edge_list itself contains only 22 entries\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"min_slots\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"max_slots\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"slot_cost\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "num_edges",
+   "extracted": 28,
+   "stated": 22,
+   "evidence": "Enumerating all unique pairs from the overlap descriptions yields 22 distinct edges; the extracted edge_list itself contains only 22 entries"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "min_slots",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "max_slots",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "slot_cost",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

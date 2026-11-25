@@ -1,0 +1,292 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    232,
+    198,
+    210
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "holding_cost": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "grinder_hours": {
+   "base": [
+    240,
+    240,
+    240,
+    120,
+    240,
+    240
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "drill_hours": {
+   "base": [
+    120,
+    120,
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 180.0,
+    "integer": true
+   }
+  },
+  "borer_hours": {
+   "base": [
+    0,
+    120,
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 180.0,
+    "integer": true
+   }
+  },
+  "max_inventory": {
+   "base": [
+    80,
+    80,
+    80
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "max_sales": {
+   "base": [
+    [
+     43,
+     35,
+     22,
+     39,
+     45,
+     20
+    ],
+    [
+     31,
+     41,
+     41,
+     48,
+     37,
+     44
+    ],
+    [
+     24,
+     38,
+     47,
+     33,
+     20,
+     50
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "final_inventory": {
+   "base": [
+    16,
+    16,
+    16
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[machine_hours_per_unit] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Net profit per unit sold for each product (0,1,2)",
+    "base": [
+     232,
+     198,
+     210
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "holding_cost": {
+    "meaning": "Cost to hold one unit of inventory for one period",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "grinder_hours": {
+    "meaning": "Grinder capacity hours per period (Periods 0-5)",
+    "base": [
+     240,
+     240,
+     240,
+     120,
+     240,
+     240
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "drill_hours": {
+    "meaning": "Drill capacity hours per period (Periods 0-5)",
+    "base": [
+     120,
+     120,
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 180,
+     "integer": true
+    }
+   },
+   "borer_hours": {
+    "meaning": "Borer capacity hours per period (Periods 0-5)",
+    "base": [
+     0,
+     120,
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 180,
+     "integer": true
+    }
+   },
+   "machine_hours_per_unit": {
+    "meaning": "Machine hours consumed per unit by product 0/1/2 for grinders, drills, borers",
+    "base": {
+     "grinder": [
+      1,
+      1,
+      2
+     ],
+     "drill": [
+      1,
+      1,
+      1
+     ],
+     "borer": [
+      1,
+      2,
+      2
+     ]
+    },
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_inventory": {
+    "meaning": "Maximum inventory units per product in any period",
+    "base": [
+     80,
+     80,
+     80
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "max_sales": {
+    "meaning": "Maximum sales units per product per period (periods 0-5, products 0-2)",
+    "base": [
+     [
+      43,
+      35,
+      22,
+      39,
+      45,
+      20
+     ],
+     [
+      31,
+      41,
+      41,
+      48,
+      37,
+      44
+     ],
+     [
+      24,
+      38,
+      47,
+      33,
+      20,
+      50
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "final_inventory": {
+    "meaning": "Required ending inventory per product at end of period 5",
+    "base": [
+     16,
+     16,
+     16
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

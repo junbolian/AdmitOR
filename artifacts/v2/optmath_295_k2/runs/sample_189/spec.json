@@ -1,0 +1,208 @@
+{
+ "spec": {
+  "consultant_availability": {
+   "base": [
+    9,
+    11,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "project_requirements": {
+   "base": [
+    0,
+    8,
+    10,
+    9,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     28,
+     27,
+     20,
+     20,
+     27
+    ],
+    [
+     16,
+     17,
+     15,
+     29,
+     30
+    ],
+    [
+     24,
+     24,
+     18,
+     17,
+     30
+    ],
+    [
+     22,
+     17,
+     17,
+     25,
+     15
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assignment_capacity": {
+   "base": [
+    [
+     8,
+     5,
+     5,
+     7,
+     7
+    ],
+    [
+     4,
+     8,
+     5,
+     5,
+     7
+    ],
+    [
+     7,
+     4,
+     7,
+     5,
+     8
+    ],
+    [
+     6,
+     6,
+     7,
+     4,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "consultant_availability": {
+    "meaning": "Total hours available per consultant",
+    "base": [
+     9,
+     11,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "project_requirements": {
+    "meaning": "Hours required per project",
+    "base": [
+     0,
+     8,
+     10,
+     9,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_matrix": {
+    "meaning": "Hourly cost of assigning consultant i to project j",
+    "base": [
+     [
+      28,
+      27,
+      20,
+      20,
+      27
+     ],
+     [
+      16,
+      17,
+      15,
+      29,
+      30
+     ],
+     [
+      24,
+      24,
+      18,
+      17,
+      30
+     ],
+     [
+      22,
+      17,
+      17,
+      25,
+      15
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assignment_capacity": {
+    "meaning": "Maximum hours consultant i can dedicate to project j",
+    "base": [
+     [
+      8,
+      5,
+      5,
+      7,
+      7
+     ],
+     [
+      4,
+      8,
+      5,
+      5,
+      7
+     ],
+     [
+      7,
+      4,
+      7,
+      5,
+      8
+     ],
+     [
+      6,
+      6,
+      7,
+      4,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

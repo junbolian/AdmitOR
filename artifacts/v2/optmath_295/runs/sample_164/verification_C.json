@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_164",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"preference_value\", \"evidence\": \"The preferences are binary: a participant is either interested in a car (1) or not (0), as detailed above.\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "preference_value",
+   "evidence": "The preferences are binary: a participant is either interested in a car (1) or not (0), as detailed above."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

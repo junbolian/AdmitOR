@@ -1,0 +1,85 @@
+{
+ "spec": {
+  "cost_vehicle_1": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_vehicle_2": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_vehicle_3": {
+   "base": 72,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_vehicle_4": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_vehicle_5": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_vehicle_1": {
+    "meaning": "deployment cost of Vehicle 1",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_vehicle_2": {
+    "meaning": "deployment cost of Vehicle 2",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_vehicle_3": {
+    "meaning": "deployment cost of Vehicle 3",
+    "base": 72,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_vehicle_4": {
+    "meaning": "deployment cost of Vehicle 4",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_vehicle_5": {
+    "meaning": "deployment cost of Vehicle 5",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

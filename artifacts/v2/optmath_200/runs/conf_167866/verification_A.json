@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_167866",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"capacity\", \"evidence\": \"From Origin 0 to Destination 0, no more than 469 units can be transported. From Origin 1 to Destination 1, no more than 493 units can be transported. Similar limits apply to all other origin-destination pairs\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "From Origin 0 to Destination 0, no more than 469 units can be transported. From Origin 1 to Destination 1, no more than 493 units can be transported. Similar limits apply to all other origin-destination pairs"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

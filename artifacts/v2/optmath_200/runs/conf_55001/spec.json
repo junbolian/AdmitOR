@@ -1,0 +1,380 @@
+{
+ "spec": {
+  "preference_p0": {
+   "base": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p1": {
+   "base": [
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p2": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p3": {
+   "base": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference_p4": {
+   "base": [
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "objective_weight_per_assignment": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "participant_0_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_1_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_2_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_3_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_4_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "car_0_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_1_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_2_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_3_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_4_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[participant_0_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[participant_1_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[participant_2_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[participant_3_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[participant_4_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "preference_p0": {
+    "meaning": "participant 0 interest in car_0..car_4 (binary)",
+    "base": [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p1": {
+    "meaning": "participant 1 interest in car_0..car_4 (binary)",
+    "base": [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p2": {
+    "meaning": "participant 2 interest in car_0..car_4 (binary)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p3": {
+    "meaning": "participant 3 interest in car_0..car_4 (binary)",
+    "base": [
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference_p4": {
+    "meaning": "participant 4 interest in car_0..car_4 (binary)",
+    "base": [
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "objective_weight_per_assignment": {
+    "meaning": "gain per successful participant-car assignment",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "participant_0_capacity": {
+    "meaning": "max cars assignable to participant 0 (degree cap)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_1_capacity": {
+    "meaning": "max cars assignable to participant 1 (degree cap)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_2_capacity": {
+    "meaning": "max cars assignable to participant 2 (degree cap)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_3_capacity": {
+    "meaning": "max cars assignable to participant 3 (degree cap)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_4_capacity": {
+    "meaning": "max cars assignable to participant 4 (degree cap)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "car_0_capacity": {
+    "meaning": "max participants assignable to car_0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_1_capacity": {
+    "meaning": "max participants assignable to car_1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_2_capacity": {
+    "meaning": "max participants assignable to car_2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_3_capacity": {
+    "meaning": "max participants assignable to car_3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_4_capacity": {
+    "meaning": "max participants assignable to car_4",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

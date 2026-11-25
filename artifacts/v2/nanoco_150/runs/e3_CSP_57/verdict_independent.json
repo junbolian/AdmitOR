@@ -1,0 +1,145 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "master_width": 100,
+   "order_quantities": [
+    1,
+    2,
+    7
+   ],
+   "finished_widths": [
+    35,
+    56,
+    51
+   ]
+  },
+  {
+   "master_width": 109.18280395373651,
+   "order_quantities": [
+    0.7150064531336001,
+    1.730035182042943,
+    5.837485100225056
+   ],
+   "finished_widths": [
+    37.482947748722125,
+    58.96855138870491,
+    57.00034738588413
+   ]
+  },
+  {
+   "master_width": 92.60816497888248,
+   "order_quantities": [
+    0.9531530918111623,
+    1.4357566633256844,
+    5.818279494175134
+   ],
+   "finished_widths": [
+    35.056230525085304,
+    48.045804290688906,
+    46.39221605550572
+   ]
+  },
+  {
+   "master_width": 109.4965331333857,
+   "order_quantities": [
+    1.02696488836193,
+    1.6645287464488359,
+    7.374915872278817
+   ],
+   "finished_widths": [
+    38.24901979511717,
+    47.709179162591425,
+    55.67903455304196
+   ]
+  },
+  {
+   "master_width": 110.94418184964681,
+   "order_quantities": [
+    0.9041503099107951,
+    1.5865753997741379,
+    8.92029490326848
+   ],
+   "finished_widths": [
+    33.28424272368258,
+    49.158130168786485,
+    44.829760565552
+   ]
+  },
+  {
+   "master_width": 115.4248309904238,
+   "order_quantities": [
+    1.0622356188201347,
+    2.3685539279292565,
+    7.964873504114035
+   ],
+   "finished_widths": [
+    35.38039496027436,
+    63.94834483485342,
+    49.14157597128781
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   9.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   9.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   9.0,
+   8.0,
+   8.0,
+   8.0,
+   6.0,
+   7.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:initialize=range(sum(order_quantities)), ordered=True | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:initialize=range(sum(order_quantities)), ordered=True | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:initialize=range(sum(order_quantities)), ordered=True | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:initialize=range(sum(order_quantities)), ordered=True | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:initialize=range(sum(order_quantities)), ordered=True | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

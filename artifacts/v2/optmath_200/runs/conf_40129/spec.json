@@ -1,0 +1,268 @@
+{
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    141442,
+    140944,
+    144074,
+    130733,
+    167893,
+    161126,
+    171993,
+    130919
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacities": {
+   "base": [
+    1639,
+    1458,
+    1614,
+    1348,
+    1665,
+    1421,
+    1623,
+    1688
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demands": {
+   "base": [
+    635,
+    623,
+    680,
+    572,
+    553,
+    587,
+    680
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "shipping_costs": {
+   "base": [
+    [
+     45,
+     86,
+     60,
+     56,
+     45,
+     42,
+     49
+    ],
+    [
+     63,
+     75,
+     71,
+     55,
+     76,
+     86,
+     58
+    ],
+    [
+     57,
+     85,
+     44,
+     50,
+     53,
+     82,
+     63
+    ],
+    [
+     49,
+     61,
+     70,
+     89,
+     85,
+     83,
+     62
+    ],
+    [
+     53,
+     45,
+     50,
+     47,
+     61,
+     62,
+     78
+    ],
+    [
+     86,
+     48,
+     76,
+     89,
+     70,
+     54,
+     47
+    ],
+    [
+     84,
+     84,
+     56,
+     40,
+     68,
+     51,
+     65
+    ],
+    [
+     57,
+     65,
+     49,
+     45,
+     69,
+     79,
+     62
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "Fixed operating cost for opening each distribution center (facility_0..facility_7)",
+    "base": [
+     141442,
+     140944,
+     144074,
+     130733,
+     167893,
+     161126,
+     171993,
+     130919
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum shipping capacity of each distribution center (facility_0..facility_7)",
+    "base": [
+     1639,
+     1458,
+     1614,
+     1348,
+     1665,
+     1421,
+     1623,
+     1688
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demands": {
+    "meaning": "Demand required at each retail store (customer_0..customer_6)",
+    "base": [
+     635,
+     623,
+     680,
+     572,
+     553,
+     587,
+     680
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "shipping_costs": {
+    "meaning": "Per-unit shipping cost from each facility to each customer; rows = facility_0..facility_7, columns = customer_0..customer_6",
+    "base": [
+     [
+      45,
+      86,
+      60,
+      56,
+      45,
+      42,
+      49
+     ],
+     [
+      63,
+      75,
+      71,
+      55,
+      76,
+      86,
+      58
+     ],
+     [
+      57,
+      85,
+      44,
+      50,
+      53,
+      82,
+      63
+     ],
+     [
+      49,
+      61,
+      70,
+      89,
+      85,
+      83,
+      62
+     ],
+     [
+      53,
+      45,
+      50,
+      47,
+      61,
+      62,
+      78
+     ],
+     [
+      86,
+      48,
+      76,
+      89,
+      70,
+      54,
+      47
+     ],
+     [
+      84,
+      84,
+      56,
+      40,
+      68,
+      51,
+      65
+     ],
+     [
+      57,
+      65,
+      49,
+      45,
+      69,
+      79,
+      62
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

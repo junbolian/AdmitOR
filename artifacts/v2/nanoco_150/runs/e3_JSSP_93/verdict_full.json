@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "processing_time_B0_on_U1_stage1": 28,
+   "processing_time_B0_on_U0_stage2": 29,
+   "processing_time_B0_on_U2_stage3": 29,
+   "processing_time_B1_on_U1_stage1": 20,
+   "processing_time_B1_on_U0_stage2": 28,
+   "processing_time_B1_on_U2_stage3": 28,
+   "processing_time_B2_on_U2_stage1": 34,
+   "processing_time_B2_on_U1_stage2": 49,
+   "processing_time_B2_on_U0_stage3": 20
+  },
+  {
+   "processing_time_B0_on_U1_stage1": 31.903950356820744,
+   "processing_time_B0_on_U0_stage2": 15.22531190145734,
+   "processing_time_B0_on_U2_stage3": 22.47585023270446,
+   "processing_time_B1_on_U1_stage1": 14.464214762976455,
+   "processing_time_B1_on_U0_stage2": 34.621193996592346,
+   "processing_time_B1_on_U2_stage3": 32.947585647841514,
+   "processing_time_B2_on_U2_stage1": 47.33410530196474,
+   "processing_time_B2_on_U1_stage2": 28.76000279884139,
+   "processing_time_B2_on_U0_stage3": 18.43843639370541
+  },
+  {
+   "processing_time_B0_on_U1_stage1": 14.83432214426597,
+   "processing_time_B0_on_U0_stage2": 20.840501269304497,
+   "processing_time_B0_on_U2_stage3": 29.155303354997507,
+   "processing_time_B1_on_U1_stage1": 10.530719393677273,
+   "processing_time_B1_on_U0_stage2": 19.567454219226157,
+   "processing_time_B1_on_U2_stage3": 32.19676425782665,
+   "processing_time_B2_on_U2_stage1": 35.52801034050937,
+   "processing_time_B2_on_U1_stage2": 35.30159047999414,
+   "processing_time_B2_on_U0_stage3": 21.785313677518175
+  },
+  {
+   "processing_time_B0_on_U1_stage1": 36.66405278697914,
+   "processing_time_B0_on_U0_stage2": 14.68846403066377,
+   "processing_time_B0_on_U2_stage3": 37.86875830315143,
+   "processing_time_B1_on_U1_stage1": 23.962787899764535,
+   "processing_time_B1_on_U0_stage2": 23.52701446250377,
+   "processing_time_B1_on_U2_stage3": 18.353425994729882,
+   "processing_time_B2_on_U2_stage1": 49.54524445503056,
+   "processing_time_B2_on_U1_stage2": 40.99313271051871,
+   "processing_time_B2_on_U0_stage3": 11.854916867602958
+  },
+  {
+   "processing_time_B0_on_U1_stage1": 16.708058551336993,
+   "processing_time_B0_on_U0_stage2": 39.07733662407633,
+   "processing_time_B0_on_U2_stage3": 32.00805490963984,
+   "processing_time_B1_on_U1_stage1": 26.1425654654876,
+   "processing_time_B1_on_U0_stage2": 34.432490027426894,
+   "processing_time_B1_on_U2_stage3": 29.014386560731616,
+   "processing_time_B2_on_U2_stage1": 50.085935975298604,
+   "processing_time_B2_on_U1_stage2": 43.04818448320932,
+   "processing_time_B2_on_U0_stage3": 21.04081262546454
+  },
+  {
+   "processing_time_B0_on_U1_stage1": 37.22333059908386,
+   "processing_time_B0_on_U0_stage2": 32.43707281856314,
+   "processing_time_B0_on_U2_stage3": 39.489500109012546,
+   "processing_time_B1_on_U1_stage1": 21.547042905135243,
+   "processing_time_B1_on_U0_stage2": 33.72801141401786,
+   "processing_time_B1_on_U2_stage3": 15.283082742358541,
+   "processing_time_B2_on_U2_stage1": 24.748541372152594,
+   "processing_time_B2_on_U1_stage2": 38.68001021650325,
+   "processing_time_B2_on_U0_stage3": 11.59583953847255
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   116.999999,
+   104.50884464011477,
+   96.88007795333353,
+   113.47489026486532,
+   119.23227176357184,
+   124.43298626901807
+  ],
+  "C-direct": [
+   117.0,
+   104.50884464011476,
+   96.88007795333215,
+   113.47489026486534,
+   119.23227176357048,
+   124.43298626901694
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'",
+   "crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'",
+   "crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'",
+   "crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'",
+   "crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'",
+   "crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'\", \"crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'\", \"crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'\", \"crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'\", \"crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'\", \"crash:return params[key] | ~~~~~~^^^^^ | KeyError: 'processing_time_B0_on_U2_stage2'\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,250 @@
+{
+ "spec": {
+  "labor_limit_S1": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "labor_limit_S2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "labor_limit_S3": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "labor_req": {
+   "base": [
+    [
+     2,
+     4,
+     2,
+     2,
+     1,
+     4,
+     4
+    ],
+    [
+     4,
+     7,
+     4,
+     5,
+     1,
+     4,
+     7
+    ],
+    [
+     2,
+     8,
+     2,
+     2,
+     2,
+     8,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "bid_price": {
+   "base": [
+    [
+     9,
+     27,
+     31,
+     10,
+     20,
+     17,
+     37
+    ],
+    [
+     29,
+     35,
+     25,
+     40,
+     37,
+     27,
+     27
+    ],
+    [
+     40,
+     32,
+     30,
+     41,
+     32,
+     18,
+     29
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_subcontractors": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_phases": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_subcontractors] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_phases] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "labor_limit_S1": {
+    "meaning": "Maximum labor capacity of subcontractor S1",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "labor_limit_S2": {
+    "meaning": "Maximum labor capacity of subcontractor S2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "labor_limit_S3": {
+    "meaning": "Maximum labor capacity of subcontractor S3",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "labor_req": {
+    "meaning": "Labor units required by each phase under each subcontractor; rows are S1,S2,S3 and columns are P1..P7",
+    "base": [
+     [
+      2,
+      4,
+      2,
+      2,
+      1,
+      4,
+      4
+     ],
+     [
+      4,
+      7,
+      4,
+      5,
+      1,
+      4,
+      7
+     ],
+     [
+      2,
+      8,
+      2,
+      2,
+      2,
+      8,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "bid_price": {
+    "meaning": "Bid price/cost of assigning each phase to each subcontractor; rows are S1,S2,S3 and columns are P1..P7",
+    "base": [
+     [
+      9,
+      27,
+      31,
+      10,
+      20,
+      17,
+      37
+     ],
+     [
+      29,
+      35,
+      25,
+      40,
+      37,
+      27,
+      27
+     ],
+     [
+      40,
+      32,
+      30,
+      41,
+      32,
+      18,
+      29
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_subcontractors": {
+    "meaning": "Number of subcontractors (index-set size, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_phases": {
+    "meaning": "Number of project phases (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -259,8 +259,8 @@ is used most narrowly.
 Script `disjointness_audit.py`; outputs `06_provenance.md`,
 `06_similarity_pairs.md`, `06_max_similarity.csv`.
 
-Stream: first 300 by index of the host's OptMATH training split, indices
-contiguous, so selection is by index rather than a seeded sample. sha256
+Stream: a uniform random sample of 300 records (seed 42) of the host's OptMATH
+training split; its index field is contiguous from 1 to 300. sha256
 recorded for all four files.
 
 | Set | items | exact | normalized | Jaccard >= 0.8 | max Jaccard |

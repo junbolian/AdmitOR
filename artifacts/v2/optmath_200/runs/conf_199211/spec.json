@@ -1,0 +1,85 @@
+{
+ "spec": {
+  "cost_area_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_area_2": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_area_3": {
+   "base": 83,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_area_4": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_area_5": {
+   "base": 95,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_area_1": {
+    "meaning": "Cost of selecting Protected Area 1",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_area_2": {
+    "meaning": "Cost of selecting Protected Area 2",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_area_3": {
+    "meaning": "Cost of selecting Protected Area 3",
+    "base": 83,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_area_4": {
+    "meaning": "Cost of selecting Protected Area 4",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_area_5": {
+    "meaning": "Cost of selecting Protected Area 5",
+    "base": 95,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

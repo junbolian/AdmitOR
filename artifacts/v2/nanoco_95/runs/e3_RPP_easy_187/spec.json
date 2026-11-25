@@ -1,0 +1,416 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     59,
+     42,
+     22,
+     53,
+     62,
+     22,
+     42,
+     45
+    ],
+    [
+     59,
+     0,
+     73,
+     81,
+     27,
+     120,
+     67,
+     94,
+     101
+    ],
+    [
+     42,
+     73,
+     0,
+     46,
+     82,
+     72,
+     64,
+     33,
+     72
+    ],
+    [
+     22,
+     81,
+     46,
+     0,
+     74,
+     39,
+     28,
+     29,
+     27
+    ],
+    [
+     53,
+     27,
+     82,
+     74,
+     0,
+     112,
+     52,
+     95,
+     88
+    ],
+    [
+     62,
+     120,
+     72,
+     39,
+     112,
+     0,
+     61,
+     39,
+     30
+    ],
+    [
+     22,
+     67,
+     64,
+     28,
+     52,
+     61,
+     0,
+     56,
+     36
+    ],
+    [
+     42,
+     94,
+     33,
+     29,
+     95,
+     39,
+     56,
+     0,
+     47
+    ],
+    [
+     45,
+     101,
+     72,
+     27,
+     88,
+     30,
+     36,
+     47,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "depot_coordinates": {
+   "base": [
+    50,
+    50
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "node_coordinates": {
+   "base": [
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ],
+    [
+     76,
+     96
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     34,
+     65
+    ],
+    [
+     39,
+     9
+    ],
+    [
+     6,
+     43
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 99.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "num_physical_edges": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_required_edges": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "required_edge_ratio": {
+   "base": 0.8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[depot_coordinates] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_physical_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_edges] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "9x9 symmetric direct travel cost matrix between junctions (rows node 0..8)",
+    "base": [
+     [
+      0,
+      59,
+      42,
+      22,
+      53,
+      62,
+      22,
+      42,
+      45
+     ],
+     [
+      59,
+      0,
+      73,
+      81,
+      27,
+      120,
+      67,
+      94,
+      101
+     ],
+     [
+      42,
+      73,
+      0,
+      46,
+      82,
+      72,
+      64,
+      33,
+      72
+     ],
+     [
+      22,
+      81,
+      46,
+      0,
+      74,
+      39,
+      28,
+      29,
+      27
+     ],
+     [
+      53,
+      27,
+      82,
+      74,
+      0,
+      112,
+      52,
+      95,
+      88
+     ],
+     [
+      62,
+      120,
+      72,
+      39,
+      112,
+      0,
+      61,
+      39,
+      30
+     ],
+     [
+      22,
+      67,
+      64,
+      28,
+      52,
+      61,
+      0,
+      56,
+      36
+     ],
+     [
+      42,
+      94,
+      33,
+      29,
+      95,
+      39,
+      56,
+      0,
+      47
+     ],
+     [
+      45,
+      101,
+      72,
+      27,
+      88,
+      30,
+      36,
+      47,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "depot_coordinates": {
+    "meaning": "coordinates of the central depot node 0 (frozen, index structure)",
+    "base": [
+     50,
+     50
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "node_coordinates": {
+    "meaning": "coordinates of service junctions 1..8 (frozen, index structure)",
+    "base": [
+     [
+      99,
+      82
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      76,
+      96
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      34,
+      65
+     ],
+     [
+      39,
+      9
+     ],
+     [
+      6,
+      43
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 99,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "number of junctions including depot (frozen cardinality)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "num_physical_edges": {
+    "meaning": "count of defined physical street segments (frozen cardinality)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_required_edges": {
+    "meaning": "count of mandatory service segments (frozen cardinality)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "required_edge_ratio": {
+    "meaning": "fraction of physical edges requiring service",
+    "base": 0.8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 1.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

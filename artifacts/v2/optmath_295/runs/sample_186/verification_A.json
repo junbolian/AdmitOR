@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_186",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"cost\", \"evidence\": \"Producer 0 has costs ranging from 44 to 50 units per MWh across the contracts. ... Producer 1 has costs ranging from 41 to 46 units per MWh. ... Producer 2 has costs ranging from 40 to 50 units per MWh. ... Producer 3 has costs ranging from 40 to 47 units per MWh. ... Producer 4 has costs ranging from 41 to 48 units per MWh. ... Producer 5 has costs ranging from 40 to 50 units per MWh.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "Producer 0 has costs ranging from 44 to 50 units per MWh across the contracts. ... Producer 1 has costs ranging from 41 to 46 units per MWh. ... Producer 2 has costs ranging from 40 to 50 units per MWh. ... Producer 3 has costs ranging from 40 to 47 units per MWh. ... Producer 4 has costs ranging from 41 to 48 units per MWh. ... Producer 5 has costs ranging from 40 to 50 units per MWh."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

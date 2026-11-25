@@ -1,0 +1,161 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_returns": [
+    0.1253,
+    0.0893,
+    0.055,
+    0.0948,
+    0.0803,
+    0.128
+   ],
+   "min_return": 0.1,
+   "max_weight": 0.3,
+   "budget": 1.0,
+   "cov_0_1": 0.0216,
+   "cov_0_2": 0.0471,
+   "covariance_scale": 1.0
+  },
+  {
+   "expected_returns": [
+    0.1418280395373651,
+    -0.04249677343319992,
+    0.032508795510735766,
+    0.01696322144464682,
+    0.1709413642492037,
+    0.15300984622687336
+   ],
+   "min_return": 0.16274873083277525,
+   "max_weight": 0.17824494936647456,
+   "budget": 0.7109609098426353,
+   "cov_0_1": -0.017616222444954373,
+   "cov_0_2": -0.0025089620157117305,
+   "covariance_scale": 1.2580329321550436
+  },
+  {
+   "expected_returns": [
+    -0.042039209094840914,
+    0.009651295205994545,
+    0.14496533133385697,
+    0.113482444180965,
+    0.016132186612209,
+    0.1267797051627726
+   ],
+   "min_return": 0.14950887306845226,
+   "max_weight": 0.10584888371025492,
+   "budget": 0.902909625916404,
+   "cov_0_1": 0.03585115159905815,
+   "cov_0_2": 0.007220041321439351,
+   "covariance_scale": 0.7332192497176724
+  },
+  {
+   "expected_returns": [
+    0.23716392166203437,
+    0.050978363533788026,
+    -0.02217624698595563,
+    -0.0209850869499608,
+    0.20424830990423792,
+    0.1311178094100673
+   ],
+   "min_return": 0.14914052372390083,
+   "max_weight": 0.7567586080244361,
+   "budget": 0.7681140457273503,
+   "cov_0_1": 0.05784926111834965,
+   "cov_0_2": 0.010282750176668277,
+   "covariance_scale": 1.3280609469098406
+  },
+  {
+   "expected_returns": [
+    0.19882139927589842,
+    0.13555592570927383,
+    0.2085120700932332,
+    0.12320564357702861,
+    0.16137155086447702,
+    -0.03625268490330134
+   ],
+   "min_return": 0.05646372410424749,
+   "max_weight": 0.36044916724189646,
+   "budget": 0.5398959884618137,
+   "cov_0_1": -0.0013767290911175858,
+   "cov_0_2": -0.01191988564722167,
+   "covariance_scale": 0.9169604046651382
+  },
+  {
+   "expected_returns": [
+    0.14070533327932006,
+    0.05944965369102527,
+    0.06105429013506479,
+    0.012852109231446307,
+    0.030093346614734007,
+    0.2309963763137482
+   ],
+   "min_return": 0.12368566163945498,
+   "max_weight": 0.6482179051002893,
+   "budget": 0.5855693240990485,
+   "cov_0_1": 0.03833014383602794,
+   "cov_0_2": -0.00692780049904573,
+   "covariance_scale": 1.0691831626364716
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.01157186073606364,
+   null,
+   null,
+   0.007600894685890364,
+   0.00025594631301024235,
+   0.007154638607860262
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "incomplete_problem_specification",
+   "incomplete_problem_specification",
+   "incomplete_problem_specification",
+   "incomplete_problem_specification",
+   "incomplete_problem_specification",
+   "incomplete_problem_specification"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

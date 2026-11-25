@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_124",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**costs**: The statement gives only ranges (min and max per person), not the full matrix. The individual cell values cannot be verified from the statement.\n\n**supply**, **demand**, **capacity_limits**: These match the statement exactly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"costs\",\n      \"evidence\": \"Costs range from 31 (Project 3) to 45 (Project 7) — statement gives only min/max per person, not individual cell values\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "costs",
+   "evidence": "Costs range from 31 (Project 3) to 45 (Project 7) — statement gives only min/max per person, not individual cell values"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

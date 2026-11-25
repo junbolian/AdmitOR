@@ -1,0 +1,348 @@
+{
+ "spec": {
+  "capacity_demand": {
+   "base": [
+    266,
+    286,
+    270,
+    299,
+    236,
+    233
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "aircraft_availability": {
+   "base": [
+    4,
+    4,
+    4,
+    4,
+    5,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_contribution": {
+   "base": [
+    [
+     87,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     113,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     110,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     3635,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     3781,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     3365,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[aircraft_availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "capacity_demand": {
+    "meaning": "Required capacity (units) for each route (route_0 to route_5)",
+    "base": [
+     266,
+     286,
+     270,
+     299,
+     236,
+     233
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "aircraft_availability": {
+    "meaning": "Maximum number of routes each aircraft type can be assigned to (aircraft_0 to aircraft_6)",
+    "base": [
+     4,
+     4,
+     4,
+     4,
+     5,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      3,
+      3,
+      3,
+      4,
+      3,
+      3
+     ],
+     "hi": [
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      5
+     ],
+     "integer": true
+    }
+   },
+   "capacity_contribution": {
+    "meaning": "Capacity (units) contributed by assigning one aircraft of a given type to a given route; 7x6 matrix, rows aircraft_0..aircraft_6, columns route_0..route_5",
+    "base": [
+     [
+      87,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      113,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      110,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost incurred by assigning one aircraft of a given type to a given route; 7x6 matrix, rows aircraft_0..aircraft_6, columns route_0..route_5",
+    "base": [
+     [
+      3635,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      3781,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      3365,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

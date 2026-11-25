@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "net_flow_hub0": {
+   "base": 147,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "net_flow_hub1": {
+   "base": 103,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "net_flow_hub2": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -30.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "net_flow_hub3": {
+   "base": 205,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "net_flow_hub4": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_0_1": {
+   "base": 676,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fixed_cost_0_2": {
+   "base": 770,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fixed_cost_other": {
+   "base": [
+    612,
+    770
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_0_1": {
+   "base": 197,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_2": {
+   "base": 157,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_other": {
+   "base": [
+    142,
+    249
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_0_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_0_2": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_other": {
+   "base": [
+    6,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "net_flow_hub0": {
+    "meaning": "net outflow (demand) at Hub 0",
+    "base": 147,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "net_flow_hub1": {
+    "meaning": "net outflow (demand) at Hub 1",
+    "base": 103,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "net_flow_hub2": {
+    "meaning": "net flow at Hub 2 (balanced)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -30,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "net_flow_hub3": {
+    "meaning": "net inflow (supply) at Hub 3",
+    "base": 205,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "net_flow_hub4": {
+    "meaning": "net inflow (supply) at Hub 4",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_0_1": {
+    "meaning": "fixed cost to establish connection Hub 0 to Hub 1",
+    "base": 676,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fixed_cost_0_2": {
+    "meaning": "fixed cost to establish connection Hub 0 to Hub 2",
+    "base": 770,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fixed_cost_other": {
+    "meaning": "fixed costs for other connections (range 612 to 770 units)",
+    "base": [
+     612,
+     770
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_0_1": {
+    "meaning": "maximum capacity of connection Hub 0 to Hub 1",
+    "base": 197,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_2": {
+    "meaning": "maximum capacity of connection Hub 0 to Hub 2",
+    "base": 157,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_other": {
+    "meaning": "capacities for other connections (range 142 to 249 units)",
+    "base": [
+     142,
+     249
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_0_1": {
+    "meaning": "variable transport cost per unit on Hub 0 to Hub 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_0_2": {
+    "meaning": "variable transport cost per unit on Hub 0 to Hub 2",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_other": {
+    "meaning": "variable transport costs for other connections (range 6 to 8 units per unit)",
+    "base": [
+     6,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    60,
+    14,
+    45,
+    49,
+    69,
+    33,
+    34,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    15,
+    11,
+    50,
+    36,
+    49,
+    39,
+    45,
+    13,
+    49,
+    47
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    5,
+    9,
+    6,
+    9,
+    6,
+    6,
+    5,
+    7,
+    10,
+    10,
+    10,
+    9,
+    8,
+    9,
+    5,
+    5,
+    7,
+    9,
+    6,
+    6,
+    9,
+    5,
+    8,
+    5,
+    8,
+    5,
+    6,
+    5,
+    10,
+    5,
+    8,
+    5,
+    10,
+    9,
+    8,
+    10,
+    7,
+    7,
+    5,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    72,
+    77,
+    51,
+    72,
+    104,
+    89,
+    107,
+    63,
+    79,
+    116,
+    102,
+    92,
+    106,
+    100,
+    64,
+    110,
+    62,
+    119,
+    52,
+    90
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "units available of each product at each origin, matrix [4][2] (rows origins, cols products); list flattened row-major",
+    "base": [
+     60,
+     14,
+     45,
+     49,
+     69,
+     33,
+     34,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "units required of each product at each destination, matrix [5][2] (rows destinations, cols products); list flattened row-major",
+    "base": [
+     15,
+     11,
+     50,
+     36,
+     49,
+     39,
+     45,
+     13,
+     49,
+     47
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "unit transportation cost per origin-destination-product, matrix [4][5][2]; list flattened row-major (origin, destination, product)",
+    "base": [
+     5,
+     9,
+     6,
+     9,
+     6,
+     6,
+     5,
+     7,
+     10,
+     10,
+     10,
+     9,
+     8,
+     9,
+     5,
+     5,
+     7,
+     9,
+     6,
+     6,
+     9,
+     5,
+     8,
+     5,
+     8,
+     5,
+     6,
+     5,
+     10,
+     5,
+     8,
+     5,
+     10,
+     9,
+     8,
+     10,
+     7,
+     7,
+     5,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "max combined units (both products) per origin-destination pair, matrix [4][5]; list flattened row-major",
+    "base": [
+     72,
+     77,
+     51,
+     72,
+     104,
+     89,
+     107,
+     63,
+     79,
+     116,
+     102,
+     92,
+     106,
+     100,
+     64,
+     110,
+     62,
+     119,
+     52,
+     90
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

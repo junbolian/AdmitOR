@@ -1,0 +1,127 @@
+{
+ "spec": {
+  "preferences": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preferences": {
+    "meaning": "Binary acceptability matrix (1 = participant interested in car, 0 = not interested); rows participant_0..5, cols car_0..5",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

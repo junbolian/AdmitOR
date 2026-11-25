@@ -1,0 +1,305 @@
+{
+ "spec": {
+  "expected_return_0": {
+   "base": 0.1198399540303747,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.3,
+    "integer": false
+   }
+  },
+  "expected_return_1": {
+   "base": 0.1395955829429499,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.3,
+    "integer": false
+   }
+  },
+  "expected_return_2": {
+   "base": 0.1457913995574378,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.3,
+    "integer": false
+   }
+  },
+  "expected_return_3": {
+   "base": 0.1496654487872439,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.3,
+    "integer": false
+   }
+  },
+  "variance_0": {
+   "base": 0.0101879558977498,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variance_1": {
+   "base": 0.0355505169950095,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variance_2": {
+   "base": 0.0560854380672688,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variance_3": {
+   "base": 0.0407491774646337,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "covariance_01": {
+   "base": 0.0158199509980502,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.05,
+    "integer": false
+   }
+  },
+  "covariance_02": {
+   "base": 0.00491024687378598,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.02,
+    "hi": 0.03,
+    "integer": false
+   }
+  },
+  "covariance_03": {
+   "base": 0.015691134415331,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.05,
+    "integer": false
+   }
+  },
+  "covariance_12": {
+   "base": 0.0280846471658999,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "covariance_13": {
+   "base": 0.0272910762602217,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "covariance_23": {
+   "base": 0.0729113393387762,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "sum_weights": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "expected_return_0": {
+    "meaning": "Expected return of Asset 0",
+    "base": 0.1198399540303747,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.3,
+     "integer": false
+    }
+   },
+   "expected_return_1": {
+    "meaning": "Expected return of Asset 1",
+    "base": 0.1395955829429499,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.3,
+     "integer": false
+    }
+   },
+   "expected_return_2": {
+    "meaning": "Expected return of Asset 2",
+    "base": 0.1457913995574378,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.3,
+     "integer": false
+    }
+   },
+   "expected_return_3": {
+    "meaning": "Expected return of Asset 3",
+    "base": 0.1496654487872439,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.3,
+     "integer": false
+    }
+   },
+   "variance_0": {
+    "meaning": "Variance of Asset 0",
+    "base": 0.0101879558977498,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variance_1": {
+    "meaning": "Variance of Asset 1",
+    "base": 0.0355505169950095,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variance_2": {
+    "meaning": "Variance of Asset 2",
+    "base": 0.0560854380672688,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variance_3": {
+    "meaning": "Variance of Asset 3",
+    "base": 0.0407491774646337,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "covariance_01": {
+    "meaning": "Covariance between Asset 0 and Asset 1",
+    "base": 0.0158199509980502,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.05,
+     "integer": false
+    }
+   },
+   "covariance_02": {
+    "meaning": "Covariance between Asset 0 and Asset 2",
+    "base": 0.00491024687378598,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.02,
+     "hi": 0.03,
+     "integer": false
+    }
+   },
+   "covariance_03": {
+    "meaning": "Covariance between Asset 0 and Asset 3",
+    "base": 0.015691134415331,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.05,
+     "integer": false
+    }
+   },
+   "covariance_12": {
+    "meaning": "Covariance between Asset 1 and Asset 2",
+    "base": 0.0280846471658999,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "covariance_13": {
+    "meaning": "Covariance between Asset 1 and Asset 3",
+    "base": 0.0272910762602217,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "covariance_23": {
+    "meaning": "Covariance between Asset 2 and Asset 3",
+    "base": 0.0729113393387762,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio expected return",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "sum_weights": {
+    "meaning": "Total allocation sum constraint",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "Maximum allocation per asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 1.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

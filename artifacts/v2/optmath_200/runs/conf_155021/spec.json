@@ -1,0 +1,187 @@
+{
+ "spec": {
+  "revenue": {
+   "base": [
+    1534,
+    1069,
+    1320,
+    1344,
+    1579,
+    857,
+    1109,
+    1499,
+    1265,
+    892,
+    1533,
+    928,
+    1330,
+    1021,
+    1070,
+    1132,
+    968,
+    1102,
+    1450,
+    1327,
+    1588,
+    1366,
+    1073,
+    1359
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_limit": {
+   "base": [
+    215,
+    181,
+    145,
+    152,
+    189,
+    237,
+    225,
+    183,
+    147,
+    227,
+    144,
+    233,
+    168,
+    218,
+    163,
+    206,
+    238,
+    162,
+    165,
+    219,
+    173,
+    196,
+    154,
+    155
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacity_limit": {
+   "base": [
+    101,
+    61,
+    79,
+    105,
+    91,
+    72,
+    110,
+    69,
+    154,
+    90,
+    125,
+    154,
+    100,
+    151,
+    71
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "revenue": {
+    "meaning": "Revenue per unit delivered for each of the 24 packages, indexed 0..23",
+    "base": [
+     1534,
+     1069,
+     1320,
+     1344,
+     1579,
+     857,
+     1109,
+     1499,
+     1265,
+     892,
+     1533,
+     928,
+     1330,
+     1021,
+     1070,
+     1132,
+     968,
+     1102,
+     1450,
+     1327,
+     1588,
+     1366,
+     1073,
+     1359
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_limit": {
+    "meaning": "Maximum number of units that can be delivered for each package, indexed 0..23",
+    "base": [
+     215,
+     181,
+     145,
+     152,
+     189,
+     237,
+     225,
+     183,
+     147,
+     227,
+     144,
+     233,
+     168,
+     218,
+     163,
+     206,
+     238,
+     162,
+     165,
+     219,
+     173,
+     196,
+     154,
+     155
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacity_limit": {
+    "meaning": "Upper bound on the total units delivered across the packages participating in each of the 15 capacity constraints, indexed 0..14",
+    "base": [
+     101,
+     61,
+     79,
+     105,
+     91,
+     72,
+     110,
+     69,
+     154,
+     90,
+     125,
+     154,
+     100,
+     151,
+     71
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

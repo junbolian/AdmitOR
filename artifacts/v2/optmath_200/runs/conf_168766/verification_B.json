@@ -1,0 +1,29 @@
+{
+ "sample_id": "conf_168766",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"fixed_ordering_cost\",\n      \"evidence\": \"These vary by week, ranging from 152 to 287 units of cost.\"\n    },\n    {\n      \"parameter\": \"unit_purchase_cost\",\n      \"evidence\": \"These also vary by week, ranging from 15 to 30 units of cost.\"\n    },\n    {\n      \"parameter\": \"holding_cost\",\n      \"evidence\": \"These range from 10 to 20 units of cost per unit of inventory carried over to the next week.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_ordering_cost",
+   "evidence": "These vary by week, ranging from 152 to 287 units of cost."
+  },
+  {
+   "parameter": "unit_purchase_cost",
+   "evidence": "These also vary by week, ranging from 15 to 30 units of cost."
+  },
+  {
+   "parameter": "holding_cost",
+   "evidence": "These range from 10 to 20 units of cost per unit of inventory carried over to the next week."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

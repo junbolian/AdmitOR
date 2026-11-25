@@ -1,0 +1,354 @@
+{
+ "spec": {
+  "flow_01": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "flow_02": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "flow_03": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "flow_12": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "flow_13": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "flow_23": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "dist_01": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "dist_02": {
+   "base": 64,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "dist_03": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "dist_12": {
+   "base": 53,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "dist_13": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "dist_23": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "coord_x0": {
+   "base": 91,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "coord_y0": {
+   "base": 71,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "coord_x1": {
+   "base": 88,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "coord_y1": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "coord_x2": {
+   "base": 36,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  },
+  "coord_y2": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  },
+  "coord_x3": {
+   "base": 85,
+   "perturb": {
+    "mode": "abs",
+    "lo": 55.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "coord_y3": {
+   "base": 51,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 85.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "flow_01": {
+    "meaning": "Daily cross-traffic flow between Department 0 and Department 1, in hundreds of visitors",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "flow_02": {
+    "meaning": "Daily cross-traffic flow between Department 0 and Department 2, in hundreds of visitors",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "flow_03": {
+    "meaning": "Daily cross-traffic flow between Department 0 and Department 3, in hundreds of visitors",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "flow_12": {
+    "meaning": "Daily cross-traffic flow between Department 1 and Department 2, in hundreds of visitors",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "flow_13": {
+    "meaning": "Daily cross-traffic flow between Department 1 and Department 3, in hundreds of visitors",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "flow_23": {
+    "meaning": "Daily cross-traffic flow between Department 2 and Department 3, in hundreds of visitors",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "dist_01": {
+    "meaning": "Euclidean walking distance between Zone 0 and Zone 1",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "dist_02": {
+    "meaning": "Euclidean walking distance between Zone 0 and Zone 2",
+    "base": 64,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "dist_03": {
+    "meaning": "Euclidean walking distance between Zone 0 and Zone 3",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "dist_12": {
+    "meaning": "Euclidean walking distance between Zone 1 and Zone 2",
+    "base": 53,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "dist_13": {
+    "meaning": "Euclidean walking distance between Zone 1 and Zone 3",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "dist_23": {
+    "meaning": "Euclidean walking distance between Zone 2 and Zone 3",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "coord_x0": {
+    "meaning": "X-coordinate of candidate Zone 0",
+    "base": 91,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "coord_y0": {
+    "meaning": "Y-coordinate of candidate Zone 0",
+    "base": 71,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "coord_x1": {
+    "meaning": "X-coordinate of candidate Zone 1",
+    "base": 88,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "coord_y1": {
+    "meaning": "Y-coordinate of candidate Zone 1",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "coord_x2": {
+    "meaning": "X-coordinate of candidate Zone 2",
+    "base": 36,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 70,
+     "integer": true
+    }
+   },
+   "coord_y2": {
+    "meaning": "Y-coordinate of candidate Zone 2",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 70,
+     "integer": true
+    }
+   },
+   "coord_x3": {
+    "meaning": "X-coordinate of candidate Zone 3",
+    "base": 85,
+    "perturb": {
+     "mode": "abs",
+     "lo": 55,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "coord_y3": {
+    "meaning": "Y-coordinate of candidate Zone 3",
+    "base": 51,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 85,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

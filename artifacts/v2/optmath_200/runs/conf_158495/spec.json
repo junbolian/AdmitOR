@@ -1,0 +1,382 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    [
+     0,
+     7
+    ],
+    [
+     40,
+     57
+    ],
+    [
+     44,
+     35
+    ],
+    [
+     70,
+     54
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    [
+     16,
+     28
+    ],
+    [
+     49,
+     43
+    ],
+    [
+     24,
+     30
+    ],
+    [
+     15,
+     31
+    ],
+    [
+     50,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     [
+      9,
+      10
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      10,
+      10
+     ]
+    ],
+    [
+     [
+      5,
+      9
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      10,
+      10
+     ],
+     [
+      10,
+      9
+     ]
+    ],
+    [
+     [
+      7,
+      9
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      6,
+      8
+     ]
+    ],
+    [
+     [
+      10,
+      7
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      7,
+      5
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     111,
+     68,
+     99,
+     86,
+     100
+    ],
+    [
+     81,
+     91,
+     118,
+     53,
+     117
+    ],
+    [
+     75,
+     60,
+     102,
+     65,
+     54
+    ],
+    [
+     119,
+     78,
+     76,
+     114,
+     87
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "units of each product available at each origin, indexed [origin][product]",
+    "base": [
+     [
+      0,
+      7
+     ],
+     [
+      40,
+      57
+     ],
+     [
+      44,
+      35
+     ],
+     [
+      70,
+      54
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "units of each product required at each destination, indexed [destination][product]",
+    "base": [
+     [
+      16,
+      28
+     ],
+     [
+      49,
+      43
+     ],
+     [
+      24,
+      30
+     ],
+     [
+      15,
+      31
+     ],
+     [
+      50,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "per-unit transportation cost from each origin to each destination for each product, indexed [origin][destination][product]",
+    "base": [
+     [
+      [
+       9,
+       10
+      ],
+      [
+       5,
+       8
+      ],
+      [
+       8,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       10,
+       10
+      ]
+     ],
+     [
+      [
+       5,
+       9
+      ],
+      [
+       6,
+       9
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       10,
+       10
+      ],
+      [
+       10,
+       9
+      ]
+     ],
+     [
+      [
+       7,
+       9
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       9,
+       8
+      ],
+      [
+       6,
+       8
+      ]
+     ],
+     [
+      [
+       10,
+       7
+      ],
+      [
+       9,
+       9
+      ],
+      [
+       7,
+       6
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       7,
+       5
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "maximum combined units of both products shippable from each origin to each destination, indexed [origin][destination]",
+    "base": [
+     [
+      111,
+      68,
+      99,
+      86,
+      100
+     ],
+     [
+      81,
+      91,
+      118,
+      53,
+      117
+     ],
+     [
+      75,
+      60,
+      102,
+      65,
+      54
+     ],
+     [
+      119,
+      78,
+      76,
+      114,
+      87
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

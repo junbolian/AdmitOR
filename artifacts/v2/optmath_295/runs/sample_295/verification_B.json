@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_295",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"min_production\",\"evidence\":\"If a factory is operational in a given month, it must produce at least a specified minimum quantity. For example:\"},{\"parameter\":\"max_production\",\"evidence\":\"If a factory is operational in a given month, it cannot exceed a specified maximum production capacity. For example:\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "min_production",
+   "evidence": "If a factory is operational in a given month, it must produce at least a specified minimum quantity. For example:"
+  },
+  {
+   "parameter": "max_production",
+   "evidence": "If a factory is operational in a given month, it cannot exceed a specified maximum production capacity. For example:"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

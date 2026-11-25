@@ -1,0 +1,187 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "member_capacity": [
+    18,
+    19,
+    19,
+    16,
+    18,
+    16
+   ],
+   "project_requirement": [
+    0,
+    0,
+    17,
+    20,
+    16,
+    17,
+    20,
+    16
+   ]
+  },
+  {
+   "member_capacity": [
+    19.254841186120952,
+    14.487602174615336,
+    16.862778524506634,
+    13.785685905190583,
+    20.128240927476114,
+    17.41359589938329
+   ],
+   "project_requirement": [
+    0.0,
+    0.0,
+    16.469068373859837,
+    16.238377755504562,
+    14.199283038743062,
+    17.036415959102865,
+    16.21228775747091,
+    14.072560964394551
+   ]
+  },
+  {
+   "member_capacity": [
+    19.348959940015707,
+    19.426944065730556,
+    16.344185909386617,
+    16.71412547100727,
+    20.78487411010044,
+    12.051990077424488
+   ],
+   "project_requirement": [
+    0.0,
+    0.0,
+    15.913703512322344,
+    17.24383599849425,
+    18.9261636621234,
+    15.888842906765863,
+    16.741966747041182,
+    13.41898481173417
+   ]
+  },
+  {
+   "member_capacity": [
+    21.127449297127136,
+    19.985397297985468,
+    21.91771859610661,
+    17.837854293550542,
+    18.326052823092304,
+    19.784926111834963
+   ],
+   "project_requirement": [
+    0.0,
+    0.0,
+    19.239951716920363,
+    20.94815801891397,
+    18.314924161988973,
+    17.525994587745984,
+    21.63657468971939,
+    13.093276055396238
+   ]
+  },
+  {
+   "member_capacity": [
+    15.551084480863922,
+    16.999185654220017,
+    15.008023780774462,
+    13.862327090888241,
+    14.409012864687563,
+    14.223788824880737
+   ],
+   "project_requirement": [
+    0.0,
+    0.0,
+    16.117230576394803,
+    17.676056246171903,
+    14.508658061114327,
+    19.969251196444958,
+    21.184283081972744,
+    16.698438436268724
+   ]
+  },
+  {
+   "member_capacity": [
+    15.040247833782873,
+    21.17670458052832,
+    15.80232369073832,
+    15.035643534061183,
+    22.40571015572936,
+    17.119998078832744
+   ],
+   "project_requirement": [
+    0.0,
+    0.0,
+    19.331393057290704,
+    22.20799929236996,
+    14.265907660570269,
+    13.818281658547457,
+    18.523624384472654,
+    14.513541606244498
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3158.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   1939.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "insufficient_problem_data",
+   "insufficient_problem_data",
+   "insufficient_problem_data",
+   "insufficient_problem_data",
+   "insufficient_problem_data",
+   "insufficient_problem_data"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

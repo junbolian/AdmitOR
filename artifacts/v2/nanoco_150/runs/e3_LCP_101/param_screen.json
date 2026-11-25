@@ -1,0 +1,41 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "num_cells",
+  "num_links",
+  "interference_links",
+  "frequency_pools",
+  "num_frequency_bands"
+ ],
+ "safe": [
+  "num_cells",
+  "num_links",
+  "num_frequency_bands"
+ ],
+ "tests": {
+  "num_cells": [
+   2,
+   2
+  ],
+  "num_links": [
+   2,
+   2
+  ],
+  "interference_links": [
+   0,
+   0
+  ],
+  "frequency_pools": [
+   1,
+   1
+  ],
+  "num_frequency_bands": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

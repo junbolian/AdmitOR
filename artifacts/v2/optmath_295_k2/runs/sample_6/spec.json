@@ -1,0 +1,260 @@
+{
+ "spec": {
+  "warehouse_supply": {
+   "base": [
+    175,
+    115,
+    121,
+    118,
+    113
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "store_demand": {
+   "base": [
+    140,
+    83,
+    149,
+    97,
+    91,
+    82
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     27,
+     29,
+     26,
+     30,
+     24,
+     25
+    ],
+    [
+     20,
+     21,
+     24,
+     22,
+     26,
+     24
+    ],
+    [
+     23,
+     25,
+     25,
+     20,
+     27,
+     25
+    ],
+    [
+     30,
+     24,
+     27,
+     27,
+     25,
+     21
+    ],
+    [
+     23,
+     30,
+     29,
+     24,
+     30,
+     22
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "route_capacity": {
+   "base": [
+    [
+     150,
+     115,
+     109,
+     110,
+     146,
+     123
+    ],
+    [
+     105,
+     102,
+     107,
+     143,
+     104,
+     145
+    ],
+    [
+     133,
+     122,
+     130,
+     101,
+     110,
+     134
+    ],
+    [
+     144,
+     124,
+     108,
+     142,
+     136,
+     105
+    ],
+    [
+     133,
+     142,
+     150,
+     108,
+     101,
+     134
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "warehouse_supply": {
+    "meaning": "Available goods at each warehouse (origin supply)",
+    "base": [
+     175,
+     115,
+     121,
+     118,
+     113
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "store_demand": {
+    "meaning": "Required goods at each retail store (destination demand)",
+    "base": [
+     140,
+     83,
+     149,
+     97,
+     91,
+     82
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "transport_cost": {
+    "meaning": "Unit shipping cost from each warehouse to each store",
+    "base": [
+     [
+      27,
+      29,
+      26,
+      30,
+      24,
+      25
+     ],
+     [
+      20,
+      21,
+      24,
+      22,
+      26,
+      24
+     ],
+     [
+      23,
+      25,
+      25,
+      20,
+      27,
+      25
+     ],
+     [
+      30,
+      24,
+      27,
+      27,
+      25,
+      21
+     ],
+     [
+      23,
+      30,
+      29,
+      24,
+      30,
+      22
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "route_capacity": {
+    "meaning": "Maximum units shippable on each warehouse-to-store route",
+    "base": [
+     [
+      150,
+      115,
+      109,
+      110,
+      146,
+      123
+     ],
+     [
+      105,
+      102,
+      107,
+      143,
+      104,
+      145
+     ],
+     [
+      133,
+      122,
+      130,
+      101,
+      110,
+      134
+     ],
+     [
+      144,
+      124,
+      108,
+      142,
+      136,
+      105
+     ],
+     [
+      133,
+      142,
+      150,
+      108,
+      101,
+      134
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

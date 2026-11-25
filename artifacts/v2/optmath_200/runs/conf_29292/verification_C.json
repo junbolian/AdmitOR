@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_29292",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Reading the statement carefully against the extracted parameters:\n\n**component_cost**: [1,5,2,8,5,7,4,10,1,1,1,8,9,8,1] — matches the stated costs for all 15 components.\n\n**coverage_requirement**: [3,3,2,1,1,3,3,2,3,3,2,3,1,3] — checking each element:\n- Element 1: 3 ✓\n- Element 2: 3 ✓\n- Element 3: 2 ✓\n- Element 4: 1 ✓\n- Element 5: 1 ✓\n- Element 6: 3 ✓\n- Element 7: 3 ✓\n- Element 8: 2 ✓\n- Element 9: 3 ✓\n- Element 10: 3 ✓\n- Element 11: 2 ✓\n- Element 12: 3 ✓\n- Element 13: 1 ✓\n- Element 14: 3 ✓\n\nAll match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

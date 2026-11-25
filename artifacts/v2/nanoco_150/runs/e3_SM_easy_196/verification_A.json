@@ -1,0 +1,25 @@
+{
+ "sample_id": "e3_SM_easy_196",
+ "set": "calibration",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"friction_cost_architect_rank_weight\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"friction_cost_engineer_rank_weight\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "friction_cost_architect_rank_weight",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "friction_cost_engineer_rank_weight",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

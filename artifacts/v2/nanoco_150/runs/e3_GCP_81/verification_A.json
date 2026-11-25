@@ -1,0 +1,54 @@
+{
+ "sample_id": "e3_GCP_81",
+ "set": "calibration",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"num_edges\", \"extracted\": 28, \"stated\": 22, \"evidence\": \"The specific student overlap relationships (edges) are as follows... (22 unique pairs listed)\"}, {\"parameter\": \"min_slots\", \"extracted\": 1, \"stated\": null, \"evidence\": \"no value in the statement\"}, {\"parameter\": \"max_slots\", \"extracted\": 12, \"stated\": null, \"evidence\": \"no value in the statement\"}, {\"parameter\": \"slot_cost\", \"extracted\": 1, \"stated\": null, \"evidence\": \"no value in the statement\"}], \"not_stated\": [{\"parameter\": \"min_slots\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"max_slots\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"slot_cost\", \"evidence\": \"no value in the statement\"}]}",
+ "mismatch": [
+  {
+   "parameter": "num_edges",
+   "extracted": 28,
+   "stated": 22,
+   "evidence": "The specific student overlap relationships (edges) are as follows... (22 unique pairs listed)"
+  },
+  {
+   "parameter": "min_slots",
+   "extracted": 1,
+   "stated": null,
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "max_slots",
+   "extracted": 12,
+   "stated": null,
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "slot_cost",
+   "extracted": 1,
+   "stated": null,
+   "evidence": "no value in the statement"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "min_slots",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "max_slots",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "slot_cost",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

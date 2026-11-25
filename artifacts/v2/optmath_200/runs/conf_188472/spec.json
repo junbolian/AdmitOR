@@ -1,0 +1,226 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    11,
+    11,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand": {
+   "base": [
+    0,
+    3,
+    9,
+    8,
+    10,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "upper_limit": {
+   "base": [
+    [
+     7,
+     8,
+     5,
+     7,
+     5,
+     7
+    ],
+    [
+     4,
+     6,
+     8,
+     8,
+     6,
+     8
+    ],
+    [
+     6,
+     7,
+     4,
+     6,
+     4,
+     4
+    ],
+    [
+     8,
+     7,
+     6,
+     5,
+     5,
+     7
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     16,
+     21,
+     15,
+     28,
+     17,
+     17
+    ],
+    [
+     18,
+     19,
+     23,
+     23,
+     19,
+     30
+    ],
+    [
+     15,
+     21,
+     19,
+     26,
+     21,
+     25
+    ],
+    [
+     18,
+     15,
+     29,
+     21,
+     27,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Total contribution capacity per person (4 persons)",
+    "base": [
+     11,
+     11,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand": {
+    "meaning": "Required contribution per project (6 projects)",
+    "base": [
+     0,
+     3,
+     9,
+     8,
+     10,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "upper_limit": {
+    "meaning": "Per-person per-project contribution cap (4x6 matrix)",
+    "base": [
+     [
+      7,
+      8,
+      5,
+      7,
+      5,
+      7
+     ],
+     [
+      4,
+      6,
+      8,
+      8,
+      6,
+      8
+     ],
+     [
+      6,
+      7,
+      4,
+      6,
+      4,
+      4
+     ],
+     [
+      8,
+      7,
+      6,
+      5,
+      5,
+      7
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost": {
+    "meaning": "Unit assignment cost per person per project (4x6 matrix)",
+    "base": [
+     [
+      16,
+      21,
+      15,
+      28,
+      17,
+      17
+     ],
+     [
+      18,
+      19,
+      23,
+      23,
+      19,
+      30
+     ],
+     [
+      15,
+      21,
+      19,
+      26,
+      21,
+      25
+     ],
+     [
+      18,
+      15,
+      29,
+      21,
+      27,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

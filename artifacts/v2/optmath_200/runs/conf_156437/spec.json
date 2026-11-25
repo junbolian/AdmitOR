@@ -1,0 +1,64 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    15,
+    17,
+    22,
+    24,
+    28
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_margin": {
+   "base": [
+    7,
+    3,
+    8,
+    4,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required supply quantity per market (exact demand satisfaction)",
+    "base": [
+     15,
+     17,
+     22,
+     24,
+     28
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_margin": {
+    "meaning": "Profit per unit supplied to each market",
+    "base": [
+     7,
+     3,
+     8,
+     4,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

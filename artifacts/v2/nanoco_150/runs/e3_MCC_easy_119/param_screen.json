@@ -1,0 +1,37 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "coordinates",
+  "route_cost",
+  "route_min_flow",
+  "route_max_capacity"
+ ],
+ "safe": [
+  "coordinates",
+  "route_cost",
+  "route_max_capacity"
+ ],
+ "tests": {
+  "coordinates": [
+   3,
+   3
+  ],
+  "route_cost": [
+   3,
+   3
+  ],
+  "route_min_flow": [
+   0,
+   0
+  ],
+  "route_max_capacity": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

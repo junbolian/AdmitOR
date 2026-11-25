@@ -1,0 +1,184 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "standard_rebar_length": 100,
+   "demand_18": 3,
+   "demand_20": 3,
+   "demand_56": 3,
+   "piece_length_18": 18,
+   "piece_length_20": 20,
+   "piece_length_56": 56
+  },
+  {
+   "standard_rebar_length": 105.57707193831536,
+   "demand_18": 0,
+   "demand_20": 2,
+   "demand_56": 2,
+   "piece_length_18": 19.276944556485667,
+   "piece_length_20": 21.060196924537465,
+   "piece_length_56": 62.5886167374414
+  },
+  {
+   "standard_rebar_length": 83.47755330517664,
+   "demand_18": 4,
+   "demand_20": 0,
+   "demand_56": 2,
+   "piece_length_18": 18.028918555758157,
+   "piece_length_20": 17.15921581810318,
+   "piece_length_56": 50.94047253153569
+  },
+  {
+   "standard_rebar_length": 105.99537751118092,
+   "demand_18": 5,
+   "demand_20": 2,
+   "demand_56": 5,
+   "piece_length_18": 19.67092446606026,
+   "piece_length_20": 17.038992558068365,
+   "piece_length_56": 61.13776343079117
+  },
+  {
+   "standard_rebar_length": 107.92557579952907,
+   "demand_18": 3,
+   "demand_20": 1,
+   "demand_56": 9,
+   "piece_length_18": 17.117610543608183,
+   "piece_length_20": 17.55647506028089,
+   "piece_length_56": 49.2248351308022
+  },
+  {
+   "standard_rebar_length": 113.89977465389839,
+   "demand_18": 5,
+   "demand_20": 7,
+   "demand_56": 7,
+   "piece_length_18": 18.195631693855383,
+   "piece_length_20": 22.838694583876222,
+   "piece_length_56": 53.95937753710034
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   2.0,
+   3.0,
+   5.0,
+   6.0,
+   6.0
+  ],
+  "A-direct-2": [
+   3.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   3.0,
+   2.0,
+   3.0,
+   5.0,
+   6.0,
+   6.0
+  ],
+  "B-structured-2": [
+   3.0,
+   2.0,
+   3.0,
+   5.0,
+   6.0,
+   6.0
+  ],
+  "C-direct": [
+   3.0,
+   2.0,
+   3.0,
+   5.0,
+   6.0,
+   6.0
+  ],
+  "C-direct-2": [
+   3.0,
+   2.0,
+   3.0,
+   5.0,
+   6.0,
+   6.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer",
+   "crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "failed on informative instance(s) [1, 2, 3, 4, 5]: [\"crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer\", \"crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer\", \"crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer\", \"crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer\", \"crash:for a in range(max_counts[0][0] + 1): | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object cannot be interpreted as an integer\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

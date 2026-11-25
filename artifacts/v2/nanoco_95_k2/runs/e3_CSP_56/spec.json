@@ -1,0 +1,131 @@
+{
+ "spec": {
+  "standard_rebar_length": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "demand_18": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "demand_20": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "demand_56": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "piece_length_18": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "piece_length_20": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "piece_length_56": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "standard_rebar_length": {
+    "meaning": "Length of each standard steel rebar (raw material stock length), in meters",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "demand_18": {
+    "meaning": "Required quantity of 18-meter cut segments",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "demand_20": {
+    "meaning": "Required quantity of 20-meter cut segments",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "demand_56": {
+    "meaning": "Required quantity of 56-meter cut segments",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "piece_length_18": {
+    "meaning": "Length of each 18-meter cut segment",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "piece_length_20": {
+    "meaning": "Length of each 20-meter cut segment",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "piece_length_56": {
+    "meaning": "Length of each 56-meter cut segment",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

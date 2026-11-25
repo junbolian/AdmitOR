@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_12367",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_product0_city0_city1\",\n      \"evidence\": \"For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped.\"\n    },\n    {\n      \"parameter\": \"capacity_product1_city0_city1\",\n      \"evidence\": \"For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_product0_city0_city1",
+   "evidence": "For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped."
+  },
+  {
+   "parameter": "capacity_product1_city0_city1",
+   "evidence": "For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

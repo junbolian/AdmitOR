@@ -1,0 +1,246 @@
+{
+ "spec": {
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "preference": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "participant_capacity": {
+    "meaning": "maximum number of cars assignable to each participant (per-participant assignment cap)",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "maximum number of participants assignable to each car (per-car assignment cap)",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "preference": {
+    "meaning": "binary preference/eligibility matrix: preference[p][c] = 1 if participant p may be assigned to car c, 0 otherwise",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_value": {
+    "meaning": "objective contribution of making each feasible participant-car assignment (unit per successful match)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 3,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    [
+     79,
+     76,
+     93,
+     96,
+     91,
+     81
+    ],
+    [
+     86,
+     81,
+     85,
+     54,
+     80,
+     87
+    ],
+    [
+     95,
+     69,
+     51,
+     76,
+     55,
+     83
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "production_cost": {
+   "base": [
+    [
+     48,
+     41,
+     50,
+     46,
+     44,
+     40
+    ],
+    [
+     43,
+     47,
+     47,
+     40,
+     44,
+     45
+    ],
+    [
+     45,
+     43,
+     44,
+     47,
+     43,
+     45
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost": {
+   "base": [
+    [
+     1095,
+     1071,
+     1391,
+     1222,
+     1313,
+     1101
+    ],
+    [
+     1449,
+     1196,
+     1003,
+     1297,
+     1113,
+     1140
+    ],
+    [
+     1048,
+     1433,
+     1094,
+     1497,
+     1423,
+     1070
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "holding_cost": {
+   "base": [
+    5,
+    5,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    1090,
+    1009,
+    1106,
+    1048,
+    1098,
+    1016
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity_consumption": {
+   "base": [
+    1.877,
+    1.884,
+    1.622
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Monthly demand for each product (3 products x 6 months)",
+    "base": [
+     [
+      79,
+      76,
+      93,
+      96,
+      91,
+      81
+     ],
+     [
+      86,
+      81,
+      85,
+      54,
+      80,
+      87
+     ],
+     [
+      95,
+      69,
+      51,
+      76,
+      55,
+      83
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "production_cost": {
+    "meaning": "Per-unit production cost by product and month (3 x 6)",
+    "base": [
+     [
+      48,
+      41,
+      50,
+      46,
+      44,
+      40
+     ],
+     [
+      43,
+      47,
+      47,
+      40,
+      44,
+      45
+     ],
+     [
+      45,
+      43,
+      44,
+      47,
+      43,
+      45
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost": {
+    "meaning": "Fixed setup cost by product and month (3 x 6)",
+    "base": [
+     [
+      1095,
+      1071,
+      1391,
+      1222,
+      1313,
+      1101
+     ],
+     [
+      1449,
+      1196,
+      1003,
+      1297,
+      1113,
+      1140
+     ],
+     [
+      1048,
+      1433,
+      1094,
+      1497,
+      1423,
+      1070
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "holding_cost": {
+    "meaning": "Inventory holding cost per unit per month by product (3)",
+    "base": [
+     5,
+     5,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Monthly total resource capacity (6 months)",
+    "base": [
+     1090,
+     1009,
+     1106,
+     1048,
+     1098,
+     1016
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity_consumption": {
+    "meaning": "Resource units consumed per unit of each product (3)",
+    "base": [
+     1.877,
+     1.884,
+     1.622
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

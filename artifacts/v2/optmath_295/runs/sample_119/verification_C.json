@@ -1,0 +1,10 @@
+{
+ "sample_id": "sample_119",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "unparsed",
+ "reply": "{\"mismatch\": [{\"parameter\": \"borer_downtime_period\", \"extracted\": 3, \"stated\": 2, \"evidence\": \"except in period 3 when it is completely down for maintenance — but the statement uses 0-based indexing where period 3 is the fourth period; however the statement literally says 'period 3'\"}], \"not_stated\": []}\n\nWait, let me re-examine this carefully. The statement says \"except in period 3 when it is completely down for maintenance.\" The extracted value is 3. That matches directly.\n\n{\"mismatch\": [], \"not_stated\": []}"
+}

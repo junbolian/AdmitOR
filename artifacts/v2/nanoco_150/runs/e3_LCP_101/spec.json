@@ -1,0 +1,691 @@
+{
+ "spec": {
+  "num_cells": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_links": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 13.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "interference_links": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "frequency_pools": {
+   "base": [
+    [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    [
+     0,
+     1,
+     2,
+     5,
+     7,
+     8,
+     9
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8
+    ],
+    [
+     0,
+     1,
+     3,
+     4,
+     5,
+     9
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8
+    ],
+    [
+     1,
+     3,
+     7,
+     8,
+     9
+    ],
+    [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_frequency_bands": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[interference_links] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[frequency_pools] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[num_cells] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_links] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_frequency_bands] looks like an index-set size (matches array dimension 10); frozen at base -- sizes cannot be perturbed without resizing dependent arrays"
+ ],
+ "raw": {
+  "params": {
+   "num_cells": {
+    "meaning": "number of Regional Cellular Network Cells (index set size)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_links": {
+    "meaning": "number of inter-cell interference links (edge set size)",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 13,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "interference_links": {
+    "meaning": "adjacent cell pairs connected by interference links",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       9
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       9
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "hi": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       9
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       9
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "integer": true
+    }
+   },
+   "frequency_pools": {
+    "meaning": "per-cell authorized frequency band sets (indices 0-9)",
+    "base": [
+     [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     [
+      0,
+      1,
+      2,
+      5,
+      7,
+      8,
+      9
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6
+     ],
+     [
+      1,
+      3,
+      4,
+      6,
+      7,
+      8
+     ],
+     [
+      0,
+      1,
+      3,
+      4,
+      5,
+      9
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      1,
+      3,
+      7,
+      8,
+      9
+     ],
+     [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       5,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6
+      ],
+      [
+       1,
+       3,
+       4,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       1,
+       3,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6,
+       9
+      ]
+     ],
+     "hi": [
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       5,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6
+      ],
+      [
+       1,
+       3,
+       4,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       1,
+       3,
+       7,
+       8,
+       9
+      ],
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6,
+       9
+      ]
+     ],
+     "integer": true
+    }
+   },
+   "num_frequency_bands": {
+    "meaning": "maximum frequency band index available / cardinality of band range",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 12,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

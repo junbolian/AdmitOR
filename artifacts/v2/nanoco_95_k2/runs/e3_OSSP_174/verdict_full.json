@@ -1,0 +1,243 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "processing_time": [
+    [
+     43,
+     10,
+     48
+    ],
+    [
+     23,
+     33,
+     16
+    ],
+    [
+     49,
+     43,
+     48
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     48.995352333689,
+     5.25010755222667,
+     37.20140728171772
+    ],
+    [
+     16.633846977422923,
+     40.80355006741241,
+     18.82719179876658
+    ],
+    [
+     68.21679881753742,
+     25.238369803064895,
+     44.25224734489298
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     22.781280435837026,
+     7.186379748036034,
+     48.25705382896139
+    ],
+    [
+     12.110327302728864,
+     23.0616424726594,
+     18.39815100447237
+    ],
+    [
+     51.20213254955762,
+     30.97894674774996,
+     52.284752826043615
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     56.30550963714654,
+     5.06498759678061,
+     62.679324087974784
+    ],
+    [
+     27.557206084729216,
+     27.72826704509373,
+     10.487671996988505
+    ],
+    [
+     71.40344053813229,
+     35.97356543984295,
+     28.4518004822471
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     25.65880420383895,
+     13.474943663474598,
+     52.97884950561077
+    ],
+    [
+     30.063950285310742,
+     40.58114896089599,
+     16.57964946327521
+    ],
+    [
+     72.18267243498916,
+     37.7769782199592,
+     50.49795030111489
+    ]
+   ]
+  },
+  {
+   "processing_time": [
+    [
+     57.16440056287878,
+     11.185197523642461,
+     65.36193121491732
+    ],
+    [
+     24.77909934090553,
+     39.75087059509248,
+     8.733190138490595
+    ],
+    [
+     35.66701550692579,
+     33.94368243489061,
+     27.83001489233412
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   91.00000000000003,
+   69.49061714795788,
+   82.18107929730758,
+   83.86271472187576,
+   88.27492852107406,
+   76.54712873855975
+  ],
+  "B-structured": [
+   139.99999999999972,
+   137.70741596549524,
+   134.46583212335116,
+   155.26615626000805,
+   160.45760095606323,
+   133.71152930143853
+  ],
+  "B-structured-2": [
+   139.99999999999972,
+   137.70741596549524,
+   134.46583212335116,
+   155.26615626000805,
+   160.45760095606323,
+   133.71152930143853
+  ],
+  "C-direct": [
+   140.0,
+   137.70741596549533,
+   134.46583212334934,
+   155.26615626000762,
+   160.45760095606326,
+   133.71152930143856
+  ],
+  "C-direct-2": [
+   140.0,
+   137.70741596549442,
+   134.46583212335116,
+   155.26615626000805,
+   160.45760094995015,
+   133.71152930143856
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given",
+   "crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given",
+   "crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given",
+   "crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given",
+   "crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given",
+   "crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given', 'crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given', 'crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given', 'crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given', 'crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given', 'crash:return self._fcn(parent, *idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.prec_job() takes 3 positional arguments but 5 were given']",
+  "A-direct-2": "diverges from consensus by 72.18 on instance 4 (params: {'processing_time': [[25.66, 13.47, 52.98], [30.06, 40.58, 16.58], [72.18, 37.78, 50.5]]})"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,39 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "consultant_availability",
+  "project_requirements",
+  "cost_matrix",
+  "assignment_capacity"
+ ],
+ "safe": [
+  "cost_matrix",
+  "assignment_capacity"
+ ],
+ "tests": {
+  "consultant_availability": [
+   0,
+   6
+  ],
+  "project_requirements": [
+   0,
+   0
+  ],
+  "cost_matrix": [
+   6,
+   6
+  ],
+  "assignment_capacity": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

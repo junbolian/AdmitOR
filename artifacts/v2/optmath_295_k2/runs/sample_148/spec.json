@@ -1,0 +1,199 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    14,
+    15,
+    13,
+    13,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    225,
+    229,
+    218,
+    212,
+    214,
+    219
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[capacity] non-numeric base dropped",
+  "[cost] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "Available units (aircraft count) per aircraft type aircraft_0..aircraft_4",
+    "base": [
+     14,
+     15,
+     13,
+     13,
+     14
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      10,
+      11,
+      9,
+      9,
+      10
+     ],
+     "hi": [
+      18,
+      19,
+      17,
+      17,
+      18
+     ],
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Minimum capacity required per route route_0..route_5",
+    "base": [
+     225,
+     229,
+     218,
+     212,
+     214,
+     219
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      170,
+      172,
+      164,
+      159,
+      161,
+      164
+     ],
+     "hi": [
+      280,
+      286,
+      273,
+      265,
+      268,
+      274
+     ],
+     "integer": true
+    }
+   },
+   "capacity": {
+    "meaning": "Capacity contribution matrix: rows aircraft_0..aircraft_4, columns route_0..route_5 (only the given entries are known; remaining entries are not provided)",
+    "base": [
+     [
+      126,
+      125,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      129,
+      125,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "cost": {
+    "meaning": "Assignment cost matrix: rows aircraft_0..aircraft_4, columns route_0..route_5 (only the given entries are known; remaining entries are not provided)",
+    "base": [
+     [
+      2053,
+      2090,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      1927,
+      2058,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

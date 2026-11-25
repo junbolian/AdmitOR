@@ -1,0 +1,90 @@
+{
+ "spec": {
+  "sheet_width": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "sheet_height": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "part_widths": {
+   "base": [
+    8,
+    8,
+    6,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "part_heights": {
+   "base": [
+    6,
+    4,
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "sheet_width": {
+    "meaning": "width of each raw steel sheet",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "sheet_height": {
+    "meaning": "height of each raw steel sheet",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "part_widths": {
+    "meaning": "fixed widths of the four steel plate parts",
+    "base": [
+     8,
+     8,
+     6,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "part_heights": {
+    "meaning": "fixed heights of the four steel plate parts",
+    "base": [
+     6,
+     4,
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

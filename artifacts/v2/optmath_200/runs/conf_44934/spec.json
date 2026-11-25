@@ -1,0 +1,297 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    1343,
+    1485,
+    1653,
+    1885,
+    1107,
+    1137,
+    1549,
+    1930,
+    1791,
+    1349
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "operational_cost_per_freq": {
+   "base": [
+    145,
+    121,
+    189,
+    183,
+    185,
+    103,
+    131,
+    155,
+    146,
+    167
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_per_trip": {
+   "base": [
+    60,
+    78,
+    65,
+    83,
+    88,
+    86,
+    85,
+    82,
+    75,
+    90
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_usage_per_trip": {
+   "base": [
+    50,
+    38,
+    54,
+    83,
+    33,
+    56,
+    47,
+    77,
+    44,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_frequency": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_frequency": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    17,
+    18,
+    11,
+    17,
+    10,
+    18,
+    16,
+    19,
+    18,
+    10,
+    14,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "penalty_unmet": {
+   "base": [
+    590,
+    600,
+    631,
+    605,
+    523,
+    700,
+    571,
+    527,
+    651,
+    559,
+    532,
+    617
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.45
+   }
+  },
+  "total_resource_budget": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 75.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost for establishing each transit line L_0..L_9",
+    "base": [
+     1343,
+     1485,
+     1653,
+     1885,
+     1107,
+     1137,
+     1549,
+     1930,
+     1791,
+     1349
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "operational_cost_per_freq": {
+    "meaning": "Operational cost per unit frequency for each line L_0..L_9",
+    "base": [
+     145,
+     121,
+     189,
+     183,
+     185,
+     103,
+     131,
+     155,
+     146,
+     167
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_per_trip": {
+    "meaning": "Passenger capacity contribution per trip for each line L_0..L_9",
+    "base": [
+     60,
+     78,
+     65,
+     83,
+     88,
+     86,
+     85,
+     82,
+     75,
+     90
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_usage_per_trip": {
+    "meaning": "Resource units used per trip for each line L_0..L_9",
+    "base": [
+     50,
+     38,
+     54,
+     83,
+     33,
+     56,
+     47,
+     77,
+     44,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_frequency": {
+    "meaning": "Minimum frequency (trips/hour) if a line is selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_frequency": {
+    "meaning": "Maximum frequency (trips/hour) if a line is selected",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Passenger demand for each OD pair (OD_6_7, OD_6_1, OD_3_0, OD_4_6, OD_1_0, OD_5_3, OD_4_2, OD_4_1, OD_1_4, OD_2_3, OD_4_0, OD_6_4)",
+    "base": [
+     17,
+     18,
+     11,
+     17,
+     10,
+     18,
+     16,
+     19,
+     18,
+     10,
+     14,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "penalty_unmet": {
+    "meaning": "Penalty cost per unit unmet demand for each OD pair in the same order as demand",
+    "base": [
+     590,
+     600,
+     631,
+     605,
+     523,
+     700,
+     571,
+     527,
+     651,
+     559,
+     532,
+     617
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.45
+    }
+   },
+   "total_resource_budget": {
+    "meaning": "Total resource units available across all lines",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 75,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

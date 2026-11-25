@@ -1,0 +1,120 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    100,
+    100
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "weights": {
+   "base": [
+    [
+     10,
+     12
+    ],
+    [
+     25,
+     16
+    ],
+    [
+     24,
+     30
+    ],
+    [
+     23,
+     13
+    ],
+    [
+     17,
+     24
+    ],
+    [
+     40,
+     36
+    ],
+    [
+     20,
+     22
+    ],
+    [
+     39,
+     36
+    ],
+    [
+     13,
+     18
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "per-slot upper bounds for the two resource dimensions [Expected Impressions, Cost]",
+    "base": [
+     100,
+     100
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "weights": {
+    "meaning": "resource demand of each campaign per dimension [Expected Impressions, Cost]",
+    "base": [
+     [
+      10,
+      12
+     ],
+     [
+      25,
+      16
+     ],
+     [
+      24,
+      30
+     ],
+     [
+      23,
+      13
+     ],
+     [
+      17,
+      24
+     ],
+     [
+      40,
+      36
+     ],
+     [
+      20,
+      22
+     ],
+     [
+      39,
+      36
+     ],
+     [
+      13,
+      18
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

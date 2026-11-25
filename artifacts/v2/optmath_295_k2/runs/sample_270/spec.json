@@ -1,0 +1,216 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    0,
+    34,
+    36,
+    38,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    35,
+    44,
+    38,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     9,
+     7,
+     9,
+     10
+    ],
+    [
+     6,
+     6,
+     8,
+     5
+    ],
+    [
+     8,
+     7,
+     10,
+     7
+    ],
+    [
+     6,
+     10,
+     10,
+     8
+    ],
+    [
+     8,
+     8,
+     7,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     55,
+     49,
+     46,
+     46
+    ],
+    [
+     49,
+     53,
+     52,
+     45
+    ],
+    [
+     54,
+     51,
+     54,
+     45
+    ],
+    [
+     48,
+     49,
+     46,
+     46
+    ],
+    [
+     46,
+     51,
+     54,
+     46
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Available goods at each warehouse (5 warehouses, size frozen)",
+    "base": [
+     0,
+     34,
+     36,
+     38,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Required goods at each store (4 stores, size frozen)",
+    "base": [
+     35,
+     44,
+     38,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Unit transportation cost from each warehouse to each store (5x4 matrix)",
+    "base": [
+     [
+      9,
+      7,
+      9,
+      10
+     ],
+     [
+      6,
+      6,
+      8,
+      5
+     ],
+     [
+      8,
+      7,
+      10,
+      7
+     ],
+     [
+      6,
+      10,
+      10,
+      8
+     ],
+     [
+      8,
+      8,
+      7,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum shipment allowed on each warehouse-to-store route (5x4 matrix)",
+    "base": [
+     [
+      55,
+      49,
+      46,
+      46
+     ],
+     [
+      49,
+      53,
+      52,
+      45
+     ],
+     [
+      54,
+      51,
+      54,
+      45
+     ],
+     [
+      48,
+      49,
+      46,
+      46
+     ],
+     [
+      46,
+      51,
+      54,
+      46
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

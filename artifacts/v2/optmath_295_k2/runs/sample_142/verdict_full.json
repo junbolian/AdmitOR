@@ -1,0 +1,164 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "fixed_cost": [
+    102701,
+    104150,
+    103985,
+    101826
+   ],
+   "demand": [
+    192,
+    200,
+    192,
+    213,
+    217,
+    205,
+    218,
+    181,
+    211,
+    203
+   ],
+   "capacity": [
+    964,
+    1047,
+    977,
+    988
+   ],
+   "shipping_cost_f0": [
+    30,
+    30,
+    26
+   ],
+   "shipping_cost_f1": [
+    31,
+    32,
+    25
+   ],
+   "shipping_cost_f2": [
+    29,
+    32,
+    26
+   ],
+   "shipping_cost_f3": [
+    30,
+    28,
+    29
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:+ sum(ship_cost[i][j] * model.x[i, j] for i, j in model.FC), | ~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:return shipping_cost[i][j] | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "missing_shipping_costs",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "insufficient_shipping_data",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:shipping_costs[i][j] * ship[i, j] | ~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "crash:shipping_costs[i][j] * ship[i, j] | ~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

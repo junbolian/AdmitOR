@@ -1,0 +1,276 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    14,
+    15,
+    13,
+    13,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    225,
+    229,
+    218,
+    212,
+    214,
+    219
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     126,
+     125,
+     127,
+     128,
+     126,
+     125
+    ],
+    [
+     129,
+     125,
+     124,
+     130,
+     127,
+     126
+    ],
+    [
+     128,
+     126,
+     125,
+     129,
+     128,
+     124
+    ],
+    [
+     125,
+     129,
+     126,
+     124,
+     130,
+     127
+    ],
+    [
+     127,
+     124,
+     128,
+     126,
+     125,
+     129
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     2053,
+     2090,
+     2067,
+     2040,
+     2101,
+     2075
+    ],
+    [
+     1927,
+     2058,
+     1992,
+     1955,
+     2030,
+     2010
+    ],
+    [
+     2044,
+     2013,
+     1988,
+     2066,
+     1969,
+     2028
+    ],
+    [
+     2010,
+     1950,
+     2077,
+     1994,
+     2022,
+     1977
+    ],
+    [
+     1985,
+     2044,
+     2015,
+     1998,
+     2060,
+     1938
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "maximum number of each aircraft type available",
+    "base": [
+     14,
+     15,
+     13,
+     13,
+     14
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      7,
+      7,
+      6,
+      6,
+      7
+     ],
+     "hi": [
+      21,
+      22,
+      20,
+      20,
+      21
+     ],
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "minimum capacity required by each route",
+    "base": [
+     225,
+     229,
+     218,
+     212,
+     214,
+     219
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "capacity contribution (units) of aircraft type i on route j, rows = aircraft_0..aircraft_4, cols = route_0..route_5",
+    "base": [
+     [
+      126,
+      125,
+      127,
+      128,
+      126,
+      125
+     ],
+     [
+      129,
+      125,
+      124,
+      130,
+      127,
+      126
+     ],
+     [
+      128,
+      126,
+      125,
+      129,
+      128,
+      124
+     ],
+     [
+      125,
+      129,
+      126,
+      124,
+      130,
+      127
+     ],
+     [
+      127,
+      124,
+      128,
+      126,
+      125,
+      129
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost": {
+    "meaning": "operational cost of assigning aircraft type i to route j, rows = aircraft_0..aircraft_4, cols = route_0..route_5",
+    "base": [
+     [
+      2053,
+      2090,
+      2067,
+      2040,
+      2101,
+      2075
+     ],
+     [
+      1927,
+      2058,
+      1992,
+      1955,
+      2030,
+      2010
+     ],
+     [
+      2044,
+      2013,
+      1988,
+      2066,
+      1969,
+      2028
+     ],
+     [
+      2010,
+      1950,
+      2077,
+      1994,
+      2022,
+      1977
+     ],
+     [
+      1985,
+      2044,
+      2015,
+      1998,
+      2060,
+      1938
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    155,
+    232,
+    175,
+    236
+   ],
+   "holding_cost": 15,
+   "grinder_capacity": [
+    240,
+    240,
+    240,
+    240,
+    240,
+    120
+   ],
+   "drill_capacity": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+   ],
+   "borer_capacity": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+   ],
+   "machine_time": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     2,
+     1,
+     1
+    ]
+   ],
+   "max_inventory": 80,
+   "max_sales": [
+    [
+     27,
+     49,
+     49,
+     48,
+     40,
+     47
+    ],
+    [
+     41,
+     49,
+     46,
+     45,
+     37,
+     25
+    ],
+    [
+     23,
+     36,
+     45,
+     21,
+     42,
+     24
+    ],
+    [
+     22,
+     50,
+     21,
+     24,
+     41,
+     30
+    ]
+   ],
+   "final_inventory": [
+    16,
+    16,
+    16,
+    16
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   103396.5,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return sum(machine_time[\"grinder\"][p] * m.produce[p, t] for p in m.P) <= grinder_capacity[t] | ~~~~~~~~~~~~^^^^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return Constraint.Infeasible instead of",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

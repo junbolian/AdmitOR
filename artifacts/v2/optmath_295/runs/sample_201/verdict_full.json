@@ -1,0 +1,164 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "availability": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    5
+   ],
+   "route_demand": [
+    276,
+    208,
+    306,
+    297,
+    263,
+    263,
+    280
+   ],
+   "route6_demand": 280,
+   "a0_capacity": [
+    95,
+    88,
+    80,
+    80,
+    87,
+    109,
+    110
+   ],
+   "a1_capacity": [
+    105,
+    119,
+    99,
+    112,
+    114,
+    89,
+    112
+   ],
+   "operational_cost": [
+    [
+     3604,
+     3617,
+     3600,
+     3550,
+     3520,
+     3580,
+     3560
+    ],
+    [
+     3308,
+     3501,
+     3400,
+     3450,
+     3420,
+     3380,
+     3410
+    ],
+    [
+     3700,
+     3650,
+     3620,
+     3600,
+     3580,
+     3590,
+     3600
+    ],
+    [
+     3450,
+     3480,
+     3430,
+     3410,
+     3390,
+     3420,
+     3400
+    ],
+    [
+     3600,
+     3620,
+     3570,
+     3550,
+     3530,
+     3560,
+     3540
+    ],
+    [
+     3500,
+     3520,
+     3480,
+     3460,
+     3440,
+     3470,
+     3450
+    ]
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   76720.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "underspecified_capacities",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:File \"candidate.py\", line 30, in solve | raise KeyError(f\"Cannot find capacity data for aircraft_{i}\") | KeyError: 'Cannot find capacity data for aircraft_2'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

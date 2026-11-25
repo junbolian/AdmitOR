@@ -1,0 +1,33 @@
+{
+ "sample_id": "sample_36",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"cost_min\", \"evidence\": \"costs ranging from 30 to 50 units\"}, {\"parameter\": \"cost_max\", \"evidence\": \"costs ranging from 30 to 50 units\"}, {\"parameter\": \"assignment_limit_min\", \"evidence\": \"limits ranging from 7 to 12 units\"}, {\"parameter\": \"assignment_limit_max\", \"evidence\": \"limits ranging from 7 to 12 units\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_min",
+   "evidence": "costs ranging from 30 to 50 units"
+  },
+  {
+   "parameter": "cost_max",
+   "evidence": "costs ranging from 30 to 50 units"
+  },
+  {
+   "parameter": "assignment_limit_min",
+   "evidence": "limits ranging from 7 to 12 units"
+  },
+  {
+   "parameter": "assignment_limit_max",
+   "evidence": "limits ranging from 7 to 12 units"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

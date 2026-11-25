@@ -1,0 +1,33 @@
+{
+ "sample_id": "sample_127",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"fixed_ordering_cost\",\"evidence\":\"“For example, placing an order in period 1 costs 97 units”; remaining information gives only a range and selected periods, not the full array.\"},{\"parameter\":\"variable_ordering_cost\",\"evidence\":\"“For instance, ordering in period 1 costs 8 units per item”; remaining information gives only a range and selected periods, not the full array.\"},{\"parameter\":\"inventory_holding_cost\",\"evidence\":\"“For example, holding inventory at the end of period 1 costs 5 units per item”; remaining information gives only a range and selected periods, not the full array.\"},{\"parameter\":\"demand\",\"evidence\":\"“with values such as 51 units in period 1, 66 units in period 2, and so on, up to 63 units in period 14”; no full array is stated.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_ordering_cost",
+   "evidence": "“For example, placing an order in period 1 costs 97 units”; remaining information gives only a range and selected periods, not the full array."
+  },
+  {
+   "parameter": "variable_ordering_cost",
+   "evidence": "“For instance, ordering in period 1 costs 8 units per item”; remaining information gives only a range and selected periods, not the full array."
+  },
+  {
+   "parameter": "inventory_holding_cost",
+   "evidence": "“For example, holding inventory at the end of period 1 costs 5 units per item”; remaining information gives only a range and selected periods, not the full array."
+  },
+  {
+   "parameter": "demand",
+   "evidence": "“with values such as 51 units in period 1, 66 units in period 2, and so on, up to 63 units in period 14”; no full array is stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

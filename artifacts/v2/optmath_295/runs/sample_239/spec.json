@@ -1,0 +1,115 @@
+{
+ "spec": {
+  "value_item0": {
+   "base": 653,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "value_item1": {
+   "base": 960,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "value_item2": {
+   "base": 444,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weight_item0": {
+   "base": 4863,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_item1": {
+   "base": 4293,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_item2": {
+   "base": 395,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": 6685,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "value_item0": {
+    "meaning": "Value of Item 0",
+    "base": 653,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "value_item1": {
+    "meaning": "Value of Item 1",
+    "base": 960,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "value_item2": {
+    "meaning": "Value of Item 2",
+    "base": 444,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weight_item0": {
+    "meaning": "Weight of Item 0",
+    "base": 4863,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_item1": {
+    "meaning": "Weight of Item 1",
+    "base": 4293,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_item2": {
+    "meaning": "Weight of Item 2",
+    "base": 395,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum weight capacity of the delivery vehicle",
+    "base": 6685,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

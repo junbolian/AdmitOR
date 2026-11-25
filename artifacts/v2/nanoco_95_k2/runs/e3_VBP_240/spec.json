@@ -1,0 +1,118 @@
+{
+ "spec": {
+  "capacity_impressions": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "capacity_cost": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "demand_impressions": {
+   "base": [
+    10,
+    25,
+    24,
+    23,
+    17,
+    40,
+    20,
+    39,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_cost": {
+   "base": [
+    12,
+    16,
+    30,
+    13,
+    24,
+    36,
+    22,
+    36,
+    18
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_impressions": {
+    "meaning": "Per-slot upper bound on aggregate Expected Impressions (thousands)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "capacity_cost": {
+    "meaning": "Per-slot upper bound on aggregate Cost (thousands of dollars)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "demand_impressions": {
+    "meaning": "Expected Impressions demand of each campaign (thousands), ordered 1..9",
+    "base": [
+     10,
+     25,
+     24,
+     23,
+     17,
+     40,
+     20,
+     39,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_cost": {
+    "meaning": "Cost demand of each campaign (thousands of dollars), ordered 1..9",
+    "base": [
+     12,
+     16,
+     30,
+     13,
+     24,
+     36,
+     22,
+     36,
+     18
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

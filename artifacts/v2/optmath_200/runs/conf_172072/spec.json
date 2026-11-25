@@ -1,0 +1,770 @@
+{
+ "spec": {
+  "demand_product0_region0": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "demand_product1_region0": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "demand_product0_region1": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "demand_product1_region1": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 27.0,
+    "integer": true
+   }
+  },
+  "demand_product0_region2": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 27.0,
+    "integer": true
+   }
+  },
+  "demand_product1_region2": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "demand_product0_region3": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "demand_product1_region3": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 13.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "demand_product0_region4": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "demand_product1_region4": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 27.0,
+    "integer": true
+   }
+  },
+  "profit_company0_product0_region0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product1_region0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product0_region1": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 17.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product1_region1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product0_region2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 13.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product1_region2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 17.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product0_region3": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product1_region3": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product0_region4": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_company0_product1_region4": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product0_region0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product1_region0": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 17.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product0_region1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product1_region1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 11.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product0_region2": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product1_region2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product0_region3": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product1_region3": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 13.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product0_region4": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 17.0,
+    "integer": false
+   }
+  },
+  "profit_company1_product1_region4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product0_region0": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product1_region0": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product0_region1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product1_region1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product0_region2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product1_region2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product0_region3": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product1_region3": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product0_region4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 11.0,
+    "integer": false
+   }
+  },
+  "profit_company2_product1_region4": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 13.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_product0_region0": {
+    "meaning": "Demand for Product 0 in Region 0",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "demand_product1_region0": {
+    "meaning": "Demand for Product 1 in Region 0",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "demand_product0_region1": {
+    "meaning": "Demand for Product 0 in Region 1",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "demand_product1_region1": {
+    "meaning": "Demand for Product 1 in Region 1",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 27,
+     "integer": true
+    }
+   },
+   "demand_product0_region2": {
+    "meaning": "Demand for Product 0 in Region 2",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 27,
+     "integer": true
+    }
+   },
+   "demand_product1_region2": {
+    "meaning": "Demand for Product 1 in Region 2",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "demand_product0_region3": {
+    "meaning": "Demand for Product 0 in Region 3",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "demand_product1_region3": {
+    "meaning": "Demand for Product 1 in Region 3",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 13,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "demand_product0_region4": {
+    "meaning": "Demand for Product 0 in Region 4",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "demand_product1_region4": {
+    "meaning": "Demand for Product 1 in Region 4",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 27,
+     "integer": true
+    }
+   },
+   "profit_company0_product0_region0": {
+    "meaning": "Profit per unit for Company 0 supplying Product 0 to Region 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "profit_company0_product1_region0": {
+    "meaning": "Profit per unit for Company 0 supplying Product 1 to Region 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_company0_product0_region1": {
+    "meaning": "Profit per unit for Company 0 supplying Product 0 to Region 1",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 17,
+     "integer": false
+    }
+   },
+   "profit_company0_product1_region1": {
+    "meaning": "Profit per unit for Company 0 supplying Product 1 to Region 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_company0_product0_region2": {
+    "meaning": "Profit per unit for Company 0 supplying Product 0 to Region 2",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 13,
+     "integer": false
+    }
+   },
+   "profit_company0_product1_region2": {
+    "meaning": "Profit per unit for Company 0 supplying Product 1 to Region 2",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 17,
+     "integer": false
+    }
+   },
+   "profit_company0_product0_region3": {
+    "meaning": "Profit per unit for Company 0 supplying Product 0 to Region 3",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_company0_product1_region3": {
+    "meaning": "Profit per unit for Company 0 supplying Product 1 to Region 3",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_company0_product0_region4": {
+    "meaning": "Profit per unit for Company 0 supplying Product 0 to Region 4",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_company0_product1_region4": {
+    "meaning": "Profit per unit for Company 0 supplying Product 1 to Region 4",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_company1_product0_region0": {
+    "meaning": "Profit per unit for Company 1 supplying Product 0 to Region 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_company1_product1_region0": {
+    "meaning": "Profit per unit for Company 1 supplying Product 1 to Region 0",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 17,
+     "integer": false
+    }
+   },
+   "profit_company1_product0_region1": {
+    "meaning": "Profit per unit for Company 1 supplying Product 0 to Region 1",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_company1_product1_region1": {
+    "meaning": "Profit per unit for Company 1 supplying Product 1 to Region 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 11,
+     "integer": false
+    }
+   },
+   "profit_company1_product0_region2": {
+    "meaning": "Profit per unit for Company 1 supplying Product 0 to Region 2",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "profit_company1_product1_region2": {
+    "meaning": "Profit per unit for Company 1 supplying Product 1 to Region 2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_company1_product0_region3": {
+    "meaning": "Profit per unit for Company 1 supplying Product 0 to Region 3",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_company1_product1_region3": {
+    "meaning": "Profit per unit for Company 1 supplying Product 1 to Region 3",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 13,
+     "integer": false
+    }
+   },
+   "profit_company1_product0_region4": {
+    "meaning": "Profit per unit for Company 1 supplying Product 0 to Region 4",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 17,
+     "integer": false
+    }
+   },
+   "profit_company1_product1_region4": {
+    "meaning": "Profit per unit for Company 1 supplying Product 1 to Region 4",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "profit_company2_product0_region0": {
+    "meaning": "Profit per unit for Company 2 supplying Product 0 to Region 0",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_company2_product1_region0": {
+    "meaning": "Profit per unit for Company 2 supplying Product 1 to Region 0",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_company2_product0_region1": {
+    "meaning": "Profit per unit for Company 2 supplying Product 0 to Region 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "profit_company2_product1_region1": {
+    "meaning": "Profit per unit for Company 2 supplying Product 1 to Region 1",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_company2_product0_region2": {
+    "meaning": "Profit per unit for Company 2 supplying Product 0 to Region 2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_company2_product1_region2": {
+    "meaning": "Profit per unit for Company 2 supplying Product 1 to Region 2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_company2_product0_region3": {
+    "meaning": "Profit per unit for Company 2 supplying Product 0 to Region 3",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_company2_product1_region3": {
+    "meaning": "Profit per unit for Company 2 supplying Product 1 to Region 3",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_company2_product0_region4": {
+    "meaning": "Profit per unit for Company 2 supplying Product 0 to Region 4",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 11,
+     "integer": false
+    }
+   },
+   "profit_company2_product1_region4": {
+    "meaning": "Profit per unit for Company 2 supplying Product 1 to Region 4",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 13,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    100,
+    100
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "weights": {
+   "base": [
+    [
+     10,
+     26
+    ],
+    [
+     20,
+     34
+    ],
+    [
+     30,
+     28
+    ],
+    [
+     13,
+     38
+    ],
+    [
+     18,
+     38
+    ],
+    [
+     19,
+     29
+    ],
+    [
+     34,
+     10
+    ],
+    [
+     13,
+     18
+    ],
+    [
+     26,
+     19
+    ],
+    [
+     12,
+     11
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Per-slot capacity limits for [Staff Hours, Equipment Units]",
+    "base": [
+     100,
+     100
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "weights": {
+    "meaning": "Resource consumption [Staff Hours, Equipment Units] of each of the 10 procedures",
+    "base": [
+     [
+      10,
+      26
+     ],
+     [
+      20,
+      34
+     ],
+     [
+      30,
+      28
+     ],
+     [
+      13,
+      38
+     ],
+     [
+      18,
+      38
+     ],
+     [
+      19,
+      29
+     ],
+     [
+      34,
+      10
+     ],
+     [
+      13,
+      18
+     ],
+     [
+      26,
+      19
+     ],
+     [
+      12,
+      11
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

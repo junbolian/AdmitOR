@@ -1,0 +1,140 @@
+{
+ "spec": {
+  "flow": {
+   "base": [
+    [
+     0,
+     12,
+     12,
+     11
+    ],
+    [
+     12,
+     0,
+     3,
+     10
+    ],
+    [
+     12,
+     3,
+     0,
+     1
+    ],
+    [
+     11,
+     10,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "distance": {
+   "base": [
+    [
+     0,
+     85,
+     75,
+     78
+    ],
+    [
+     85,
+     0,
+     65,
+     13
+    ],
+    [
+     75,
+     65,
+     0,
+     71
+    ],
+    [
+     78,
+     13,
+     71,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "flow": {
+    "meaning": "Material handling flow volume between ordered pairs of workstations (4x4 matrix, zeros on diagonal)",
+    "base": [
+     [
+      0,
+      12,
+      12,
+      11
+     ],
+     [
+      12,
+      0,
+      3,
+      10
+     ],
+     [
+      12,
+      3,
+      0,
+      1
+     ],
+     [
+      11,
+      10,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "distance": {
+    "meaning": "Pre-calculated physical distance between ordered pairs of candidate locations (4x4 matrix, zeros on diagonal)",
+    "base": [
+     [
+      0,
+      85,
+      75,
+      78
+     ],
+     [
+      85,
+      0,
+      65,
+      13
+     ],
+     [
+      75,
+      65,
+      0,
+      71
+     ],
+     [
+      78,
+      13,
+      71,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

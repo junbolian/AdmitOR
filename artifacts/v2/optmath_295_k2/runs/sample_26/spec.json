@@ -1,0 +1,150 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1531,
+    1580,
+    1513,
+    1582
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    830,
+    829,
+    839,
+    842
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "min_delivery": {
+   "base": [
+    382,
+    395,
+    378,
+    395
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     30,
+     31,
+     32,
+     31
+    ],
+    [
+     32,
+     32,
+     32,
+     31
+    ],
+    [
+     31,
+     32,
+     32,
+     30
+    ],
+    [
+     32,
+     30,
+     31,
+     32
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "maximum generation capacity per producer",
+    "base": [
+     1531,
+     1580,
+     1513,
+     1582
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "minimum required delivery per contract",
+    "base": [
+     830,
+     829,
+     839,
+     842
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "min_delivery": {
+    "meaning": "minimum delivery amount if a producer contributes to a contract",
+    "base": [
+     382,
+     395,
+     378,
+     395
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "cost": {
+    "meaning": "cost per unit of electricity by producer and contract",
+    "base": [
+     [
+      30,
+      31,
+      32,
+      31
+     ],
+     [
+      32,
+      32,
+      32,
+      31
+     ],
+     [
+      31,
+      32,
+      32,
+      30
+     ],
+     [
+      32,
+      30,
+      31,
+      32
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

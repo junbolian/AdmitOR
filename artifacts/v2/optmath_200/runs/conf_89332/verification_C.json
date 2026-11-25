@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_89332",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"serving_cost\",\n      \"evidence\": \"\\\"For example, serving Customer 0 from Facility 0 costs 53 units, while serving Customer 0 from Facility 1 costs 56 units, and so on. These costs are provided for all combinations of customers and facilities.\\\"\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "serving_cost",
+   "evidence": "\"For example, serving Customer 0 from Facility 0 costs 53 units, while serving Customer 0 from Facility 1 costs 56 units, and so on. These costs are provided for all combinations of customers and facilities.\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

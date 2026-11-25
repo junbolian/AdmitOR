@@ -1,0 +1,58 @@
+{
+ "spec": {
+  "bin_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "item_weights": {
+   "base": [
+    33,
+    31,
+    30,
+    30,
+    34,
+    31,
+    34,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "bin_capacity": {
+    "meaning": "maximum total weight a bin can hold",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "item_weights": {
+    "meaning": "weight of each of the 8 items",
+    "base": [
+     33,
+     31,
+     30,
+     30,
+     34,
+     31,
+     34,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

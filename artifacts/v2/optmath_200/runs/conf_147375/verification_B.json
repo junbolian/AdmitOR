@@ -1,0 +1,33 @@
+{
+ "sample_id": "conf_147375",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"product_capacity_0_0to1\",\n      \"evidence\": \"For example: From City 0 to City 1, you can ship a maximum of 74 units of Product 0 and 70 units of Product 1.\"\n    },\n    {\n      \"parameter\": \"product_capacity_1_0to1\",\n      \"evidence\": \"For example: From City 0 to City 1, you can ship a maximum of 74 units of Product 0 and 70 units of Product 1.\"\n    },\n    {\n      \"parameter\": \"product_capacity_0_1to0\",\n      \"evidence\": \"For example: ... From City 1 to City 0, the limits are 71 units for Product 0 and 72 units for Product 1.\"\n    },\n    {\n      \"parameter\": \"product_capacity_1_1to0\",\n      \"evidence\": \"For example: ... From City 1 to City 0, the limits are 71 units for Product 0 and 72 units for Product 1.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "product_capacity_0_0to1",
+   "evidence": "For example: From City 0 to City 1, you can ship a maximum of 74 units of Product 0 and 70 units of Product 1."
+  },
+  {
+   "parameter": "product_capacity_1_0to1",
+   "evidence": "For example: From City 0 to City 1, you can ship a maximum of 74 units of Product 0 and 70 units of Product 1."
+  },
+  {
+   "parameter": "product_capacity_0_1to0",
+   "evidence": "For example: ... From City 1 to City 0, the limits are 71 units for Product 0 and 72 units for Product 1."
+  },
+  {
+   "parameter": "product_capacity_1_1to0",
+   "evidence": "For example: ... From City 1 to City 0, the limits are 71 units for Product 0 and 72 units for Product 1."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

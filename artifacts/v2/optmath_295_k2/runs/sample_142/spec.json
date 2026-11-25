@@ -1,0 +1,189 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    102701,
+    104150,
+    103985,
+    101826
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    192,
+    200,
+    192,
+    213,
+    217,
+    205,
+    218,
+    181,
+    211,
+    203
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    964,
+    1047,
+    977,
+    988
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "shipping_cost_f0": {
+   "base": [
+    30,
+    30,
+    26
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shipping_cost_f1": {
+   "base": [
+    31,
+    32,
+    25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shipping_cost_f2": {
+   "base": [
+    29,
+    32,
+    26
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shipping_cost_f3": {
+   "base": [
+    30,
+    28,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed operating cost of opening each distribution center",
+    "base": [
+     102701,
+     104150,
+     103985,
+     101826
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each retail store",
+    "base": [
+     192,
+     200,
+     192,
+     213,
+     217,
+     205,
+     218,
+     181,
+     211,
+     203
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum units each distribution center can handle if opened",
+    "base": [
+     964,
+     1047,
+     977,
+     988
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "shipping_cost_f0": {
+    "meaning": "Shipping cost from facility_0 to customers 0,1,2",
+    "base": [
+     30,
+     30,
+     26
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shipping_cost_f1": {
+    "meaning": "Shipping cost from facility_1 to customers 0,1,2",
+    "base": [
+     31,
+     32,
+     25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shipping_cost_f2": {
+    "meaning": "Shipping cost from facility_2 to customers 0,1,2",
+    "base": [
+     29,
+     32,
+     26
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shipping_cost_f3": {
+    "meaning": "Shipping cost from facility_3 to customers 0,1,2",
+    "base": [
+     30,
+     28,
+     29
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

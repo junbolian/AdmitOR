@@ -1,0 +1,323 @@
+{
+ "spec": {
+  "demand_A": {
+   "base": [
+    51,
+    50,
+    62,
+    79
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_B": {
+   "base": [
+    56,
+    70,
+    70,
+    68
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "prod_cost_A": {
+   "base": [
+    43,
+    45,
+    41,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "prod_cost_B": {
+   "base": [
+    41,
+    41,
+    40,
+    41
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "setup_cost_A": {
+   "base": [
+    1167,
+    1375,
+    1385,
+    1378
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "setup_cost_B": {
+   "base": [
+    1065,
+    1075,
+    1111,
+    1405
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "hold_cost_A": {
+   "base": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "hold_cost_B": {
+   "base": [
+    4,
+    4,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "capacity": {
+   "base": [
+    852,
+    900,
+    825,
+    875
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "usage_A": {
+   "base": 1.506,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "usage_B": {
+   "base": 1.651,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "prod_ub_A": {
+   "base": [
+    242,
+    191,
+    141,
+    79
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "prod_ub_B": {
+   "base": [
+    264,
+    208,
+    138,
+    68
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_A": {
+    "meaning": "Demand for Item A per period",
+    "base": [
+     51,
+     50,
+     62,
+     79
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_B": {
+    "meaning": "Demand for Item B per period",
+    "base": [
+     56,
+     70,
+     70,
+     68
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "prod_cost_A": {
+    "meaning": "Production cost per unit of Item A per period",
+    "base": [
+     43,
+     45,
+     41,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "prod_cost_B": {
+    "meaning": "Production cost per unit of Item B per period",
+    "base": [
+     41,
+     41,
+     40,
+     41
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "setup_cost_A": {
+    "meaning": "Setup cost for Item A per period",
+    "base": [
+     1167,
+     1375,
+     1385,
+     1378
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "Setup cost for Item B per period",
+    "base": [
+     1065,
+     1075,
+     1111,
+     1405
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "hold_cost_A": {
+    "meaning": "Inventory holding cost per unit of Item A per period",
+    "base": [
+     4,
+     4,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "hold_cost_B": {
+    "meaning": "Inventory holding cost per unit of Item B per period",
+    "base": [
+     4,
+     4,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "capacity": {
+    "meaning": "Available production resource units per period",
+    "base": [
+     852,
+     900,
+     825,
+     875
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "usage_A": {
+    "meaning": "Resource units consumed per unit of Item A",
+    "base": 1.506,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "usage_B": {
+    "meaning": "Resource units consumed per unit of Item B",
+    "base": 1.651,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "prod_ub_A": {
+    "meaning": "Upper bound on Item A production per period when line is set up",
+    "base": [
+     242,
+     191,
+     141,
+     79
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "prod_ub_B": {
+    "meaning": "Upper bound on Item B production per period when line is set up",
+    "base": [
+     264,
+     208,
+     138,
+     68
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

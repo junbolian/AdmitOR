@@ -1,0 +1,48 @@
+{
+ "spec": {
+  "processing_time": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "big_M": {
+   "base": 100000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 100000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time": {
+    "meaning": "Processing time per operation (uniform across all six operations)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "big_M": {
+    "meaning": "Large coefficient used in machine-disjunctive constraints to enforce operation ordering",
+    "base": 100000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 100000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

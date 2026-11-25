@@ -1,0 +1,386 @@
+{
+ "spec": {
+  "participant_count": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "car_count": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "preference": {
+   "base": [
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_value": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[participant_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[preference] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[participant_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "participant_count": {
+    "meaning": "Number of participants (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "car_count": {
+    "meaning": "Number of cars (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "preference": {
+    "meaning": "Binary interest matrix participant x car (1 = interested/allowed, 0 = not)",
+    "base": [
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "participant_capacity": {
+    "meaning": "Maximum cars assignable to each participant",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "Maximum participants assignable to each car",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_value": {
+    "meaning": "Objective weight per successful assignment",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "spec": {
+  "arc_capacities": {
+   "base": [
+    7,
+    14,
+    11,
+    4,
+    11,
+    14,
+    5,
+    11,
+    14,
+    5,
+    14,
+    4,
+    4,
+    8,
+    9,
+    13,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    5,
+    4,
+    6,
+    5,
+    8,
+    5,
+    4,
+    8,
+    9,
+    10,
+    8,
+    4,
+    10,
+    10,
+    4,
+    9,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "source": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "sink": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "coords_x": {
+   "base": [
+    88,
+    36,
+    85,
+    93,
+    12,
+    21,
+    37,
+    99
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "coords_y": {
+   "base": [
+    28,
+    39,
+    51,
+    90,
+    89,
+    43,
+    8,
+    42
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[source] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_capacities": {
+    "meaning": "Traffic volume (capacity) of each of the 17 directed routes, ordered as listed",
+    "base": [
+     7,
+     14,
+     11,
+     4,
+     11,
+     14,
+     5,
+     11,
+     14,
+     5,
+     14,
+     4,
+     4,
+     8,
+     9,
+     13,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Restriction implementation cost per unit of traffic for each route (extraneous to min-cut objective)",
+    "base": [
+     5,
+     4,
+     6,
+     5,
+     8,
+     5,
+     4,
+     8,
+     9,
+     10,
+     8,
+     4,
+     10,
+     10,
+     4,
+     9,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of critical locations in the transmission network",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "source": {
+    "meaning": "Outbreak epicenter location index",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "sink": {
+    "meaning": "Protected urban zone location index",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "coords_x": {
+    "meaning": "X coordinate of each location (0..7)",
+    "base": [
+     88,
+     36,
+     85,
+     93,
+     12,
+     21,
+     37,
+     99
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "coords_y": {
+    "meaning": "Y coordinate of each location (0..7)",
+    "base": [
+     28,
+     39,
+     51,
+     90,
+     89,
+     43,
+     8,
+     42
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

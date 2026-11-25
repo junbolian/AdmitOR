@@ -1,0 +1,276 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.0378,
+    0.0675,
+    0.0624,
+    0.0219
+   ],
+   "covariances": [
+    0.0341,
+    0.0433,
+    0.0222,
+    0.0233,
+    0.0182,
+    -0.0036
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 1.0,
+   "max_asset_weight": 0.3
+  },
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.04412439957804961,
+    0.029025871173036025,
+    0.04555419535947965,
+    0.014625978198551062
+   ],
+   "covariances": [
+    0.03893820104179569,
+    0.047890652683247235,
+    0.02742383184182854,
+    0.01752540488015924,
+    0.017347386270963154,
+    -0.0025843619939862317
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 0.9718637974803603,
+   "max_asset_weight": 0.31096395185860526
+  },
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.016323671584860054,
+    0.04310584970561853,
+    0.07362334670093071,
+    0.023081062110252532
+   ],
+   "covariances": [
+    0.02838021512695265,
+    0.04561912246709611,
+    0.026321613682948653,
+    0.01640085266029929,
+    0.02153954623001426,
+    -0.0040279810931745695
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 0.9840250516517992,
+   "max_asset_weight": 0.2479863099661207
+  },
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.0585391849552996,
+    0.054264158154122784,
+    0.031904808752305475,
+    0.011301706383183435
+   ],
+   "covariances": [
+    0.041209734735469024,
+    0.04599480229491183,
+    0.026290948600014748,
+    0.026511650377979576,
+    0.018595610758685335,
+    -0.0046219300501954405
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 0.9878534377208353,
+   "max_asset_weight": 0.31936731362918086
+  },
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.05274179557051585,
+    0.07710009994150395,
+    0.089484612695271,
+    0.02393281437734771
+   ],
+   "covariances": [
+    0.03828553976895733,
+    0.031500517487374105,
+    0.018575605031678603,
+    0.020355643731157457,
+    0.013611328388006012,
+    -0.003022828314539825
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 0.9601001429409729,
+   "max_asset_weight": 0.2700352485598166
+  },
+  {
+   "expected_returns": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "variances": [
+    0.0439546463918332,
+    0.056551406496576834,
+    0.05267915081771218,
+    0.014265844768674698
+   ],
+   "covariances": [
+    0.029332366239124854,
+    0.0546442861887706,
+    0.02417183133148463,
+    0.024825651459224496,
+    0.014608834038323219,
+    -0.0040949138835727535
+   ],
+   "min_return": 0.1,
+   "budget_fraction": 0.9663402493761928,
+   "max_asset_weight": 0.2883019795163766
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   0.02703640183917402,
+   0.024876891708470513,
+   null,
+   0.024411928641410792,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   0.02703640183917403,
+   0.024876891708470496,
+   null,
+   0.0244119286414108,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.027036403839577644,
+   0.024022617397313782,
+   null,
+   0.02408604547541817,
+   0.026539773471405025,
+   0.025253892726908218
+  ],
+  "C-direct-2": [
+   0.027036403839577644,
+   0.02487689191511714,
+   null,
+   0.024411928641410792,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "no_feasible_candidate",
+   "optimal",
+   "no_feasible_candidate",
+   "no_feasible_candidate"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  3
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 3]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs']",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 3]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs']",
+  "C-direct": "diverges from consensus by 0.0008543 on instance 1 (params: {'expected_returns': [0.15, 0.06, 0.07, 0.11], 'variances': [0.04, 0.03, 0.05, 0.01], 'covariances': [0.04, 0.05, 0.03, 0.02, 0.02, -0.0], 'min_return': 0.1, 'budget_fraction': 0.97, 'max_asset_weight': 0.31})"
+ },
+ "disagreements": [],
+ "notes": []
+}

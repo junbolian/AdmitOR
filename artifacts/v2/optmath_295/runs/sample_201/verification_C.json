@@ -1,0 +1,44 @@
+{
+ "sample_id": "sample_201",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"route_demand\",\n      \"extracted\": [276,208,306,297,263,263,280],\n      \"stated\": [276,208,286,297,263,263,280],\n      \"evidence\": \"Route_2 requires at least 286 units of capacity.\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"operational_cost\",\n      \"evidence\": \"Costs for all other aircraft and route combinations are similarly defined.\"\n    }\n  ]\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "route_demand",
+   "extracted": [
+    276,
+    208,
+    306,
+    297,
+    263,
+    263,
+    280
+   ],
+   "stated": [
+    276,
+    208,
+    286,
+    297,
+    263,
+    263,
+    280
+   ],
+   "evidence": "Route_2 requires at least 286 units of capacity."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "operational_cost",
+   "evidence": "Costs for all other aircraft and route combinations are similarly defined."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

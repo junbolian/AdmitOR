@@ -1,0 +1,64 @@
+{
+ "spec": {
+  "resource_weights": {
+   "base": [
+    38,
+    37,
+    36,
+    34,
+    34,
+    33,
+    36
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 16.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "facility_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 160.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "resource_weights": {
+    "meaning": "Weight of each of the seven resources to be assigned",
+    "base": [
+     38,
+     37,
+     36,
+     34,
+     34,
+     33,
+     36
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 16,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "facility_capacity": {
+    "meaning": "Maximum total weight that can be assigned to any single storage facility (uniform across all facilities)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 160,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

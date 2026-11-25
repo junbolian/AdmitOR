@@ -1,0 +1,273 @@
+{
+ "spec": {
+  "participant_0_preferred_car_3": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "participant_1_preferred_car_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "participant_2_preferred_cars_1_3": {
+   "base": [
+    1,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "participant_3_preferred_cars_2_4": {
+   "base": [
+    2,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "participant_4_preferred_cars_3_5": {
+   "base": [
+    3,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "participant_5_preferred_cars_2_6": {
+   "base": [
+    2,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "participant_6_preferred_car_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "assignment_capacity_per_participant": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_capacity_per_car": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "num_participants": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_cars": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "assignment_variable_domain": {
+   "base": [
+    0,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[assignment_capacity_per_participant] degenerate abs range (lo == hi); perturbation has no effect",
+  "[assignment_capacity_per_car] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_cars] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "participant_0_preferred_car_3": {
+    "meaning": "Participant 0's allowed car index (only Car 3)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "participant_1_preferred_car_1": {
+    "meaning": "Participant 1's allowed car index (only Car 1)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "participant_2_preferred_cars_1_3": {
+    "meaning": "Participant 2's allowed car indices (Cars 1 and 3)",
+    "base": [
+     1,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "participant_3_preferred_cars_2_4": {
+    "meaning": "Participant 3's allowed car indices (Cars 2 and 4)",
+    "base": [
+     2,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "participant_4_preferred_cars_3_5": {
+    "meaning": "Participant 4's allowed car indices (Cars 3 and 5)",
+    "base": [
+     3,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "participant_5_preferred_cars_2_6": {
+    "meaning": "Participant 5's allowed car indices (Cars 2 and 6)",
+    "base": [
+     2,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "participant_6_preferred_car_6": {
+    "meaning": "Participant 6's allowed car index (only Car 6)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "assignment_capacity_per_participant": {
+    "meaning": "Maximum number of cars assignable to one participant",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_capacity_per_car": {
+    "meaning": "Maximum number of participants assignable to one car",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "num_participants": {
+    "meaning": "Number of participants (frozen index-set size)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_cars": {
+    "meaning": "Number of cars (frozen index-set size)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "assignment_variable_domain": {
+    "meaning": "Binary domain for assignment variables (0 or 1)",
+    "base": [
+     0,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "sample_id": "conf_89332",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"serving_cost\", \"extracted\": [[53,56,53,56,53],[53,56,53,56,53],[53,56,53,56,53],[53,56,53,56,53],[53,56,53,56,53],[53,56,53,56,53]], \"evidence\": \"For example, serving Customer 0 from Facility 0 costs 53 units, while serving Customer 0 from Facility 1 costs 56 units, and so on.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "serving_cost",
+   "extracted": [
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ]
+   ],
+   "evidence": "For example, serving Customer 0 from Facility 0 costs 53 units, while serving Customer 0 from Facility 1 costs 56 units, and so on."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

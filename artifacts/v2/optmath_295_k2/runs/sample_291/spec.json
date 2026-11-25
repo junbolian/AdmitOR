@@ -1,0 +1,92 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    [
+     8,
+     10
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     8,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "demand": {
+   "base": [
+    23,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "unit profit for each company-market pair (rows=companies 0-4, cols=markets 0-1)",
+    "base": [
+     [
+      8,
+      10
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      8,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "demand": {
+    "meaning": "required total units supplied to each market",
+    "base": [
+     23,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "fleet_size",
+  "vehicle_capacity",
+  "service_demands",
+  "distance_matrix"
+ ],
+ "safe": [
+  "fleet_size",
+  "distance_matrix"
+ ],
+ "tests": {
+  "fleet_size": [
+   3,
+   3
+  ],
+  "vehicle_capacity": [
+   0,
+   3
+  ],
+  "service_demands": [
+   0,
+   3
+  ],
+  "distance_matrix": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

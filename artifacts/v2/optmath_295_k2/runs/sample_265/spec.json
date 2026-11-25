@@ -1,0 +1,180 @@
+{
+ "spec": {
+  "edge_cost": {
+   "base": [
+    14,
+    7,
+    1,
+    13,
+    9,
+    12,
+    13,
+    15,
+    1,
+    11,
+    6,
+    4,
+    8,
+    4,
+    2,
+    12,
+    9,
+    4,
+    7,
+    5,
+    1,
+    3,
+    7,
+    8,
+    3,
+    14,
+    5,
+    11,
+    12,
+    10,
+    12,
+    12,
+    10,
+    11,
+    7,
+    15,
+    7,
+    14,
+    8,
+    8,
+    15,
+    7,
+    15,
+    7,
+    10,
+    10,
+    7,
+    5,
+    5,
+    4,
+    5,
+    12,
+    3,
+    8,
+    15,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_node_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "demand_node_7": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[supply_node_0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[demand_node_7] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "edge_cost": {
+    "meaning": "Cost per unit of flow on each directed route, listed in row-major order for all 56 ordered pairs (node_0..node_7), excluding self-loops",
+    "base": [
+     14,
+     7,
+     1,
+     13,
+     9,
+     12,
+     13,
+     15,
+     1,
+     11,
+     6,
+     4,
+     8,
+     4,
+     2,
+     12,
+     9,
+     4,
+     7,
+     5,
+     1,
+     3,
+     7,
+     8,
+     3,
+     14,
+     5,
+     11,
+     12,
+     10,
+     12,
+     12,
+     10,
+     11,
+     7,
+     15,
+     7,
+     14,
+     8,
+     8,
+     15,
+     7,
+     15,
+     7,
+     10,
+     10,
+     7,
+     5,
+     5,
+     4,
+     5,
+     12,
+     3,
+     8,
+     15,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_node_0": {
+    "meaning": "Net outflow (supply) required at the starting hub node_0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "demand_node_7": {
+    "meaning": "Net inflow (demand) required at the destination hub node_7",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    2799,
+    2401,
+    2047,
+    2726,
+    2379,
+    1823
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    928,
+    1041,
+    985,
+    1034,
+    1026,
+    1007,
+    989
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_delivery": {
+   "base": [
+    615,
+    528,
+    450,
+    599,
+    523,
+    401
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     44,
+     50,
+     47,
+     45,
+     46,
+     48,
+     49
+    ],
+    [
+     41,
+     43,
+     46,
+     44,
+     45,
+     42,
+     46
+    ],
+    [
+     40,
+     50,
+     45,
+     47,
+     44,
+     46,
+     48
+    ],
+    [
+     40,
+     47,
+     43,
+     46,
+     45,
+     44,
+     47
+    ],
+    [
+     41,
+     48,
+     44,
+     47,
+     43,
+     45,
+     46
+    ],
+    [
+     40,
+     50,
+     45,
+     48,
+     44,
+     47,
+     49
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "min_producers": {
+   "base": [
+    3,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "maximum daily production capacity per producer (MWh)",
+    "base": [
+     2799,
+     2401,
+     2047,
+     2726,
+     2379,
+     1823
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "minimum electricity required per contract (MWh)",
+    "base": [
+     928,
+     1041,
+     985,
+     1034,
+     1026,
+     1007,
+     989
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_delivery": {
+    "meaning": "minimum delivery per producer if selected for a contract (MWh)",
+    "base": [
+     615,
+     528,
+     450,
+     599,
+     523,
+     401
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "production cost per MWh of producer i for contract j",
+    "base": [
+     [
+      44,
+      50,
+      47,
+      45,
+      46,
+      48,
+      49
+     ],
+     [
+      41,
+      43,
+      46,
+      44,
+      45,
+      42,
+      46
+     ],
+     [
+      40,
+      50,
+      45,
+      47,
+      44,
+      46,
+      48
+     ],
+     [
+      40,
+      47,
+      43,
+      46,
+      45,
+      44,
+      47
+     ],
+     [
+      41,
+      48,
+      44,
+      47,
+      43,
+      45,
+      46
+     ],
+     [
+      40,
+      50,
+      45,
+      48,
+      44,
+      47,
+      49
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "min_producers": {
+    "meaning": "minimum number of producers that must fulfill each contract",
+    "base": [
+     3,
+     3,
+     3,
+     2,
+     2,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,299 @@
+{
+ "spec": {
+  "num_courses": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "num_edges": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 28.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "min_slots": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_slots": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "edge_list": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     8,
+     11
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "slot_cost": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[num_courses] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[min_slots] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[edge_list] rel rate r=0.0 outside (0,1]; clamped to 0.3"
+ ],
+ "raw": {
+  "params": {
+   "num_courses": {
+    "meaning": "Number of courses (nodes) in the conflict graph",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "num_edges": {
+    "meaning": "Number of student-overlap conflict edges",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 28,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "min_slots": {
+    "meaning": "Lower bound on distinct time slots (objective lower bound / clique-size guidance)",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "max_slots": {
+    "meaning": "Upper bound on distinct time slots available (facility capacity)",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "edge_list": {
+    "meaning": "Sorted conflict-pair edges (0-indexed) defining adjacency",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      10
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      9
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      10
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      7,
+      11
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      8,
+      11
+     ],
+     [
+      9,
+      10
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "slot_cost": {
+    "meaning": "Cost per distinct time slot employed (facility rental)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 5,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

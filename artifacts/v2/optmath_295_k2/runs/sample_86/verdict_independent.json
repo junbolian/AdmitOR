@@ -1,0 +1,220 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_p0_0to1": 6,
+   "cost_p0_1to0": 6,
+   "cost_p1_0to1": 5,
+   "cost_p1_1to0": 5,
+   "max_planes_p0": 2,
+   "max_planes_p1": 2,
+   "demand_0to1": 19,
+   "capacity_p0": 86,
+   "capacity_p1": 94,
+   "max_ops_p0_0to1": 2,
+   "max_ops_p1_0to1": 2,
+   "max_ops_p0_1to0": 0,
+   "max_ops_p1_1to0": 0
+  },
+  {
+   "cost_p0_0to1": 6.836560790747302,
+   "cost_p0_1to0": 3.1500645313360014,
+   "cost_p1_0to1": 3.8751465918455965,
+   "cost_p1_1to0": 3.616053690744114,
+   "max_planes_p0": 2,
+   "max_planes_p1": 2,
+   "demand_0to1": 33.90282357278413,
+   "capacity_p0": 50.47673960612979,
+   "capacity_p1": 86.66065105041542,
+   "max_ops_p0_0to1": 2,
+   "max_ops_p1_0to1": 2,
+   "max_ops_p0_1to0": 1,
+   "max_ops_p1_1to0": 0
+  },
+  {
+   "cost_p0_0to1": 4.1930259041198905,
+   "cost_p0_1to0": 6.89930662667714,
+   "cost_p1_0to1": 5.224707403016083,
+   "cost_p1_1to0": 3.6022031102034835,
+   "max_planes_p0": 2,
+   "max_planes_p1": 2,
+   "demand_0to1": 0.24695286776631864,
+   "capacity_p0": 112.30045565762148,
+   "capacity_p1": 112.62510312889333,
+   "max_ops_p0_0to1": 2,
+   "max_ops_p1_0to1": 2,
+   "max_ops_p0_1to0": 2,
+   "max_ops_p1_1to0": 1
+  },
+  {
+   "cost_p0_0to1": 3.5564750602808877,
+   "cost_p0_1to0": 3.580298261000784,
+   "cost_p1_0to1": 6.737471831737299,
+   "cost_p1_1to0": 5.518630156834456,
+   "max_planes_p0": 2,
+   "max_planes_p1": 2,
+   "demand_0to1": 20.376667475278627,
+   "capacity_p0": 126.68795570222588,
+   "capacity_p1": 82.58223145758522,
+   "max_ops_p0_0to1": 2,
+   "max_ops_p1_0to1": 2,
+   "max_ops_p0_1to0": 1,
+   "max_ops_p1_1to0": 2
+  },
+  {
+   "cost_p0_0to1": 6.464112871540572,
+   "cost_p0_1to0": 7.2274310172895415,
+   "cost_p1_0to1": 2.7291219182783113,
+   "cost_p1_1to0": 3.639491378257734,
+   "max_planes_p0": 2,
+   "max_planes_p1": 2,
+   "demand_0to1": 8.846053681719146,
+   "capacity_p0": 51.6861229292367,
+   "capacity_p1": 73.12951869234865,
+   "max_ops_p0_0to1": 2,
+   "max_ops_p1_0to1": 2,
+   "max_ops_p0_1to0": 1,
+   "max_ops_p1_1to0": 0
+  },
+  {
+   "cost_p0_0to1": 4.60186693229468,
+   "cost_p0_1to0": 8.619927526274964,
+   "cost_p1_0to1": 5.740176926232968,
+   "cost_p1_1to0": 5.5456550283349415,
+   "max_planes_p0": 2,
+   "max_planes_p1": 2,
+   "demand_0to1": 6.209294762953279,
+   "capacity_p0": 75.6331679911577,
+   "capacity_p1": 140.01519495983996,
+   "max_ops_p0_0to1": 2,
+   "max_ops_p1_0to1": 2,
+   "max_ops_p0_1to0": 1,
+   "max_ops_p1_1to0": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   5.0,
+   3.8751465918455965,
+   4.1930259041198905,
+   3.5564750602808877,
+   2.7291219182783113,
+   4.60186693229468
+  ],
+  "B-structured": [
+   5.0,
+   3.8751465918455965,
+   4.1930259041198905,
+   3.5564750602808877,
+   2.7291219182783113,
+   4.60186693229468
+  ],
+  "B-structured-2": [
+   5.0,
+   3.8751465918455965,
+   4.1930259041198905,
+   3.5564750602808877,
+   2.7291219182783113,
+   4.60186693229468
+  ],
+  "C-direct": [
+   5.0,
+   3.8751465918455965,
+   4.1930259041198905,
+   3.5564750602808877,
+   2.7291219182783113,
+   4.60186693229468
+  ],
+  "C-direct-2": [
+   5.0,
+   3.8751465918455965,
+   4.1930259041198905,
+   3.5564750602808877,
+   2.7291219182783113,
+   4.60186693229468
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

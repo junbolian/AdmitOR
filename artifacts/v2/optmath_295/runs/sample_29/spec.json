@@ -1,0 +1,202 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    88034,
+    88205,
+    88379,
+    85030,
+    89405
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "shipping_cost": {
+   "base": [
+    [
+     59,
+     51,
+     52,
+     55,
+     57,
+     57,
+     51
+    ],
+    [
+     58,
+     51,
+     58,
+     51,
+     57,
+     60,
+     60
+    ],
+    [
+     54,
+     51,
+     55,
+     54,
+     53,
+     59,
+     52
+    ],
+    [
+     51,
+     54,
+     54,
+     53,
+     59,
+     51,
+     56
+    ],
+    [
+     52,
+     55,
+     56,
+     56,
+     53,
+     59,
+     56
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    421,
+    409,
+    437,
+    414,
+    408,
+    410,
+    413
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacity": {
+   "base": [
+    1685,
+    1633,
+    1642,
+    1635,
+    1642
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each facility (facilities 0-4)",
+    "base": [
+     88034,
+     88205,
+     88379,
+     85030,
+     89405
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "shipping_cost": {
+    "meaning": "Per-unit shipping cost from each facility to each customer (5x7 matrix)",
+    "base": [
+     [
+      59,
+      51,
+      52,
+      55,
+      57,
+      57,
+      51
+     ],
+     [
+      58,
+      51,
+      58,
+      51,
+      57,
+      60,
+      60
+     ],
+     [
+      54,
+      51,
+      55,
+      54,
+      53,
+      59,
+      52
+     ],
+     [
+      51,
+      54,
+      54,
+      53,
+      59,
+      51,
+      56
+     ],
+     [
+      52,
+      55,
+      56,
+      56,
+      53,
+      59,
+      56
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each customer (customers 0-6)",
+    "base": [
+     421,
+     409,
+     437,
+     414,
+     408,
+     410,
+     413
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum shipment capacity of each facility (facilities 0-4)",
+    "base": [
+     1685,
+     1633,
+     1642,
+     1635,
+     1642
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

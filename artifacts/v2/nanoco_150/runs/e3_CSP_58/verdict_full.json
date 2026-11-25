@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "stock_length": 100,
+   "segment_lengths": [
+    50,
+    59,
+    29
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  },
+  {
+   "stock_length": 105.57707193831536,
+   "segment_lengths": [
+    35.750322656680005,
+    51.03603787026682,
+    24.183866843789517
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  },
+  {
+   "stock_length": 109.4588485665605,
+   "segment_lengths": [
+    55.300984622687345,
+    72.88315669675153,
+    21.812735687751843
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  },
+  {
+   "stock_length": 96.87687278741082,
+   "segment_lengths": [
+    35.89391658314211,
+    49.03978430804756,
+    29.093182012998508
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  },
+  {
+   "stock_length": 81.06143878735455,
+   "segment_lengths": [
+    40.965129520599454,
+    64.30590909739512,
+    29.78198176249597
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  },
+  {
+   "stock_length": 88.81762488162786,
+   "segment_lengths": [
+    52.67797051627726,
+    69.95383816639507,
+    20.41307841839826
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   4.0,
+   4.0,
+   4.0,
+   6.0,
+   5.0
+  ],
+  "B-structured": [
+   5.0,
+   4.0,
+   4.0,
+   4.0,
+   6.0,
+   5.0
+  ],
+  "C-direct": [
+   5.0,
+   4.0,
+   4.0,
+   4.0,
+   6.0,
+   5.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

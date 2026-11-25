@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "producer_capacity": {
+   "base": [
+    2226,
+    2118,
+    2644,
+    2649,
+    2548,
+    2682
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "contract_demand": {
+   "base": [
+    989,
+    1142,
+    1012,
+    1011,
+    1015,
+    1096
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_producers_per_contract": {
+   "base": [
+    3,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "producer_min_delivery": {
+   "base": [
+    489,
+    465,
+    581,
+    582,
+    560,
+    590
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_min": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_max": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_p0_c0": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_p0_c1": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "producer_capacity": {
+    "meaning": "Maximum electricity generation capacity per producer",
+    "base": [
+     2226,
+     2118,
+     2644,
+     2649,
+     2548,
+     2682
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "contract_demand": {
+    "meaning": "Minimum electricity required per contract",
+    "base": [
+     989,
+     1142,
+     1012,
+     1011,
+     1015,
+     1096
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_producers_per_contract": {
+    "meaning": "Minimum number of producers contributing to each contract",
+    "base": [
+     3,
+     2,
+     2,
+     2,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "producer_min_delivery": {
+    "meaning": "Minimum amount a producer must deliver if it contributes to a contract",
+    "base": [
+     489,
+     465,
+     581,
+     582,
+     560,
+     590
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_min": {
+    "meaning": "Lower bound of per-unit generation cost range",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_max": {
+    "meaning": "Upper bound of per-unit generation cost range",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_p0_c0": {
+    "meaning": "Cost per unit for Producer 0 to Contract 0",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_p0_c1": {
+    "meaning": "Cost per unit for Producer 0 to Contract 1",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

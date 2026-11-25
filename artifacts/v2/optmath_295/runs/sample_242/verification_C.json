@@ -1,0 +1,41 @@
+{
+ "sample_id": "sample_242",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**demand**: The statement says Product 1 ranges from 72 to 99 and Product 2 from 74 to 98. The extracted values match those ranges and are plausible, but the statement gives only ranges, not the specific week-by-week values.\n\n**prod_cost**: The statement gives only a range (46–50), not specific per-product-per-week values.\n\n**setup_cost**: The statement gives only a range (1203–1595), not specific values.\n\n**hold_cost**: Stated explicitly as 5 — matches.\n\n**res_usage**: Stated explicitly per product — matches.\n\n**res_capacity**: The statement gives only a range (1009–1085), not the specific weekly values.\n\n**prod_max**: The statement gives only ranges per product, not the specific weekly values.\n\n**initial_inventory**: No value stated anywhere in the problem.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"demand\",\n      \"evidence\": \"Product 0 has demands ranging from 99 to 100 units per week, Product 1 from 72 to 99 units, and Product 2 from 74 to 98 units\"\n    },\n    {\n      \"parameter\": \"prod_cost\",\n      \"evidence\": \"ranging from 46 to 50 units per item for all products\"\n    },\n    {\n      \"parameter\": \"setup_cost\",\n      \"evidence\": \"setup costs ranging from 1203 to 1595 units depending on the product and week\"\n    },\n    {\n      \"parameter\": \"res_capacity\",\n      \"evidence\": \"total resource availability varies by week, ranging from 1009 to 1085 units\"\n    },\n    {\n      \"parameter\": \"prod_max\",\n      \"evidence\": \"These limits range from 99 to 742 units for Product 0, 86 to 642 units for Product 1, and 87 to 688 units for Product 2\"\n    },\n    {\n      \"parameter\": \"initial_inventory\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "demand",
+   "evidence": "Product 0 has demands ranging from 99 to 100 units per week, Product 1 from 72 to 99 units, and Product 2 from 74 to 98 units"
+  },
+  {
+   "parameter": "prod_cost",
+   "evidence": "ranging from 46 to 50 units per item for all products"
+  },
+  {
+   "parameter": "setup_cost",
+   "evidence": "setup costs ranging from 1203 to 1595 units depending on the product and week"
+  },
+  {
+   "parameter": "res_capacity",
+   "evidence": "total resource availability varies by week, ranging from 1009 to 1085 units"
+  },
+  {
+   "parameter": "prod_max",
+   "evidence": "These limits range from 99 to 742 units for Product 0, 86 to 642 units for Product 1, and 87 to 688 units for Product 2"
+  },
+  {
+   "parameter": "initial_inventory",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

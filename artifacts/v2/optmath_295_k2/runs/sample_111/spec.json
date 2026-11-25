@@ -1,0 +1,101 @@
+{
+ "spec": {
+  "population": {
+   "base": [
+    569,
+    1118,
+    962,
+    1086,
+    922,
+    706,
+    848,
+    550,
+    986,
+    1032,
+    676
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "tower_cost": {
+   "base": [
+    116,
+    53,
+    117,
+    117,
+    106,
+    48,
+    50,
+    70
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget": {
+   "base": 372,
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 700.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "population": {
+    "meaning": "Population of each area; contribution to objective per covered area",
+    "base": [
+     569,
+     1118,
+     962,
+     1086,
+     922,
+     706,
+     848,
+     550,
+     986,
+     1032,
+     676
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "tower_cost": {
+    "meaning": "Construction cost of each tower; consumes budget",
+    "base": [
+     116,
+     53,
+     117,
+     117,
+     106,
+     48,
+     50,
+     70
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "budget": {
+    "meaning": "Total budget available for tower construction",
+    "base": 372,
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 700,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

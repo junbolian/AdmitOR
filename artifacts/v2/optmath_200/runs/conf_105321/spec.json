@@ -1,0 +1,171 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     32,
+     32,
+     30,
+     30
+    ],
+    [
+     31,
+     30,
+     30,
+     32
+    ],
+    [
+     32,
+     30,
+     32,
+     31
+    ],
+    [
+     30,
+     32,
+     32,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    1526,
+    1588,
+    1523,
+    1510
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "contract_demand": {
+   "base": [
+    814,
+    802,
+    824,
+    810
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_delivery": {
+   "base": [
+    381,
+    397,
+    380,
+    377
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_producers_per_contract": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[min_producers_per_contract] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Unit production cost for each producer-contract pair (4x4 matrix, rows=producers, cols=contracts)",
+    "base": [
+     [
+      32,
+      32,
+      30,
+      30
+     ],
+     [
+      31,
+      30,
+      30,
+      32
+     ],
+     [
+      32,
+      30,
+      32,
+      31
+     ],
+     [
+      30,
+      32,
+      32,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum electricity generation capacity per producer",
+    "base": [
+     1526,
+     1588,
+     1523,
+     1510
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "contract_demand": {
+    "meaning": "Minimum electricity required per contract",
+    "base": [
+     814,
+     802,
+     824,
+     810
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum amount a producer must deliver if assigned to a contract",
+    "base": [
+     381,
+     397,
+     380,
+     377
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_producers_per_contract": {
+    "meaning": "Minimum number of distinct producers that must serve each contract",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

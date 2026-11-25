@@ -1,0 +1,202 @@
+{
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    88034,
+    88205,
+    88379,
+    85030,
+    89405
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "shipping_costs": {
+   "base": [
+    [
+     59,
+     51,
+     52,
+     55,
+     57,
+     57,
+     51
+    ],
+    [
+     58,
+     51,
+     58,
+     51,
+     57,
+     60,
+     60
+    ],
+    [
+     54,
+     51,
+     55,
+     54,
+     53,
+     59,
+     52
+    ],
+    [
+     51,
+     54,
+     54,
+     53,
+     59,
+     51,
+     56
+    ],
+    [
+     52,
+     55,
+     56,
+     56,
+     53,
+     59,
+     56
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demands": {
+   "base": [
+    421,
+    409,
+    437,
+    414,
+    408,
+    410,
+    413
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacities": {
+   "base": [
+    1685,
+    1633,
+    1642,
+    1635,
+    1642
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "Fixed cost of opening each facility (facilities 0-4)",
+    "base": [
+     88034,
+     88205,
+     88379,
+     85030,
+     89405
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "shipping_costs": {
+    "meaning": "Unit shipping cost matrix, facility i to customer j",
+    "base": [
+     [
+      59,
+      51,
+      52,
+      55,
+      57,
+      57,
+      51
+     ],
+     [
+      58,
+      51,
+      58,
+      51,
+      57,
+      60,
+      60
+     ],
+     [
+      54,
+      51,
+      55,
+      54,
+      53,
+      59,
+      52
+     ],
+     [
+      51,
+      54,
+      54,
+      53,
+      59,
+      51,
+      56
+     ],
+     [
+      52,
+      55,
+      56,
+      56,
+      53,
+      59,
+      56
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demands": {
+    "meaning": "Required units for each customer 0-6",
+    "base": [
+     421,
+     409,
+     437,
+     414,
+     408,
+     410,
+     413
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum total units each facility can ship (facilities 0-4)",
+    "base": [
+     1685,
+     1633,
+     1642,
+     1635,
+     1642
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

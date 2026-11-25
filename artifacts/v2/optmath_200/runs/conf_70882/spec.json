@@ -1,0 +1,290 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    2028,
+    2824,
+    1402,
+    2064,
+    1227,
+    1729,
+    1047,
+    2507,
+    2471,
+    2089,
+    2721,
+    1767
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "operational_cost": {
+   "base": [
+    157,
+    142,
+    111,
+    118,
+    149,
+    295,
+    255,
+    193,
+    214,
+    147,
+    274,
+    186
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "penalty_cost": {
+   "base": [
+    706,
+    741,
+    547,
+    763,
+    589,
+    552,
+    654,
+    537,
+    502,
+    515,
+    504,
+    679,
+    555,
+    770,
+    700
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "vehicle_time_per_frequency": {
+   "base": [
+    88,
+    90,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "total_vehicle_capacity": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 45.0,
+    "hi": 75.0,
+    "integer": false
+   }
+  },
+  "min_frequency_if_selected": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "max_frequency_if_selected": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "min_od_frequency": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_transfer_hub_lines": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "example_od_7_4_demand": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost for establishing each transit line L_0..L_11",
+    "base": [
+     2028,
+     2824,
+     1402,
+     2064,
+     1227,
+     1729,
+     1047,
+     2507,
+     2471,
+     2089,
+     2721,
+     1767
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "operational_cost": {
+    "meaning": "Operational cost per unit frequency for each line L_0..L_11",
+    "base": [
+     157,
+     142,
+     111,
+     118,
+     149,
+     295,
+     255,
+     193,
+     214,
+     147,
+     274,
+     186
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "penalty_cost": {
+    "meaning": "Penalty cost per unit unsatisfied demand for each OD pair",
+    "base": [
+     706,
+     741,
+     547,
+     763,
+     589,
+     552,
+     654,
+     537,
+     502,
+     515,
+     504,
+     679,
+     555,
+     770,
+     700
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "vehicle_time_per_frequency": {
+    "meaning": "Vehicle time units required per unit frequency for each line L_0..L_11",
+    "base": [
+     88,
+     90,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "total_vehicle_capacity": {
+    "meaning": "Maximum total vehicle usage across all transit lines",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 45,
+     "hi": 75,
+     "integer": false
+    }
+   },
+   "min_frequency_if_selected": {
+    "meaning": "Minimum service frequency for a selected transit line",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "max_frequency_if_selected": {
+    "meaning": "Maximum service frequency for a selected transit line",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "min_od_frequency": {
+    "meaning": "Minimum combined frequency of relevant lines required to serve an OD pair",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_transfer_hub_lines": {
+    "meaning": "Minimum number of selected lines passing through a station for it to be a transfer hub",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "example_od_7_4_demand": {
+    "meaning": "Minimum passenger demand that must be served for OD_7_4",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,359 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "n_participants": 5,
+   "n_cars": 4,
+   "car_capacity": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "participant_capacity": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "objective_coefficient": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "n_participants": 5,
+   "n_cars": 4,
+   "car_capacity": [
+    1,
+    1,
+    4,
+    3
+   ],
+   "participant_capacity": [
+    4,
+    0,
+    2,
+    0,
+    1
+   ],
+   "objective_coefficient": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.4408812440813934,
+     1.1785313677518174,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "n_participants": 5,
+   "n_cars": 4,
+   "car_capacity": [
+    5,
+    2,
+    3,
+    4
+   ],
+   "participant_capacity": [
+    2,
+    3,
+    2,
+    3,
+    0
+   ],
+   "objective_coefficient": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.5559472062201842,
+     1.2713688885288004,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "n_participants": 5,
+   "n_cars": 4,
+   "car_capacity": [
+    4,
+    4,
+    1,
+    0
+   ],
+   "participant_capacity": [
+    1,
+    1,
+    1,
+    4,
+    4
+   ],
+   "objective_coefficient": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.5297603329961049,
+     0.4932550153879669,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "n_participants": 5,
+   "n_cars": 4,
+   "car_capacity": [
+    2,
+    5,
+    3,
+    5
+   ],
+   "participant_capacity": [
+    3,
+    0,
+    3,
+    3,
+    2
+   ],
+   "objective_coefficient": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.9076318550421603,
+     1.7517058807563881,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "n_participants": 5,
+   "n_cars": 4,
+   "car_capacity": [
+    0,
+    5,
+    4,
+    4
+   ],
+   "participant_capacity": [
+    1,
+    0,
+    4,
+    4,
+    0
+   ],
+   "objective_coefficient": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.9505647561974626,
+     1.0996071869898878,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   1.0,
+   0.0,
+   1.8273160947489846,
+   0.5297603329961049,
+   0.0,
+   0.0
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return sum(val) | ^^^^^^^^ | TypeError: unsupported operand type(s) for +: 'int' and 'list'",
+   "crash:return sum(val) | ^^^^^^^^ | TypeError: unsupported operand type(s) for +: 'int' and 'list'",
+   "crash:return sum(val) | ^^^^^^^^ | TypeError: unsupported operand type(s) for +: 'int' and 'list'",
+   "crash:return sum(val) | ^^^^^^^^ | TypeError: unsupported operand type(s) for +: 'int' and 'list'",
+   "crash:return sum(val) | ^^^^^^^^ | TypeError: unsupported operand type(s) for +: 'int' and 'list'",
+   "crash:return sum(val) | ^^^^^^^^ | TypeError: unsupported operand type(s) for +: 'int' and 'list'"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "crash:model.addConstr( | File \"src/gurobipy/_model.pyx\", line 4133, in gurobipy._model.Model.addConstr | TypeError: unsupported operand type(s) for -: 'gurobipy._core.LinExpr' and 'list'",
+   "crash:model.addConstr( | File \"src/gurobipy/_model.pyx\", line 4133, in gurobipy._model.Model.addConstr | TypeError: unsupported operand type(s) for -: 'gurobipy._core.LinExpr' and 'list'",
+   "crash:model.addConstr( | File \"src/gurobipy/_model.pyx\", line 4133, in gurobipy._model.Model.addConstr | TypeError: unsupported operand type(s) for -: 'gurobipy._core.LinExpr' and 'list'",
+   "crash:model.addConstr( | File \"src/gurobipy/_model.pyx\", line 4133, in gurobipy._model.Model.addConstr | TypeError: unsupported operand type(s) for -: 'gurobipy._core.LinExpr' and 'list'",
+   "crash:model.addConstr( | File \"src/gurobipy/_model.pyx\", line 4133, in gurobipy._model.Model.addConstr | TypeError: unsupported operand type(s) for -: 'gurobipy._core.LinExpr' and 'list'",
+   "crash:model.addConstr( | File \"src/gurobipy/_model.pyx\", line 4133, in gurobipy._model.Model.addConstr | TypeError: unsupported operand type(s) for -: 'gurobipy._core.LinExpr' and 'list'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

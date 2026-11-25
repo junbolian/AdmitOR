@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "cost_plane0": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_plane1": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_0to1": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "capacity_plane0": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_plane1": {
+   "base": 86,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fleet_plane0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "fleet_plane1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "max_trips_plane0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "max_trips_plane1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[fleet_plane0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[fleet_plane1] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_trips_plane0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_trips_plane1] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_plane0": {
+    "meaning": "Operating cost per trip of Plane 0 (either direction)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_plane1": {
+    "meaning": "Operating cost per trip of Plane 1 (either direction)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_0to1": {
+    "meaning": "Passenger demand from Location 0 to Location 1 in period 1",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "capacity_plane0": {
+    "meaning": "Passenger capacity per trip of Plane 0",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_plane1": {
+    "meaning": "Passenger capacity per trip of Plane 1",
+    "base": 86,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fleet_plane0": {
+    "meaning": "Available number of Plane 0 aircraft",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "fleet_plane1": {
+    "meaning": "Available number of Plane 1 aircraft",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "max_trips_plane0": {
+    "meaning": "Maximum trips Plane 0 can operate from Location 0 to Location 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "max_trips_plane1": {
+    "meaning": "Maximum trips Plane 1 can operate from Location 0 to Location 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    47,
+    35,
+    23,
+    40,
+    21,
+    42,
+    36,
+    36,
+    48,
+    21,
+    26,
+    44,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "resource_use": {
+   "base": [
+    0.25,
+    1.0,
+    0.5,
+    0.2,
+    0.2,
+    0.25,
+    1.0,
+    0.25,
+    0.333,
+    0.2,
+    0.5,
+    1.0,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "resource_budget": {
+   "base": 566,
+   "perturb": {
+    "mode": "abs",
+    "lo": 340.0,
+    "hi": 850.0,
+    "integer": false
+   }
+  },
+  "capacity": {
+   "base": [
+    121,
+    170,
+    155,
+    110,
+    134,
+    179,
+    142,
+    172,
+    127,
+    188,
+    198,
+    150,
+    118
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "profit per unit for each item (index 0..12)",
+    "base": [
+     47,
+     35,
+     23,
+     40,
+     21,
+     42,
+     36,
+     36,
+     48,
+     21,
+     26,
+     44,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "resource_use": {
+    "meaning": "shared resource consumption per unit for each item (index 0..12)",
+    "base": [
+     0.25,
+     1.0,
+     0.5,
+     0.2,
+     0.2,
+     0.25,
+     1.0,
+     0.25,
+     0.333,
+     0.2,
+     0.5,
+     1.0,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "resource_budget": {
+    "meaning": "total shared resource available (units)",
+    "base": 566,
+    "perturb": {
+     "mode": "abs",
+     "lo": 340,
+     "hi": 850,
+     "integer": false
+    }
+   },
+   "capacity": {
+    "meaning": "maximum production quantity for each item (index 0..12)",
+    "base": [
+     121,
+     170,
+     155,
+     110,
+     134,
+     179,
+     142,
+     172,
+     127,
+     188,
+     198,
+     150,
+     118
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

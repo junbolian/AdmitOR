@@ -1,0 +1,276 @@
+{
+ "spec": {
+  "shipping_cost_per_unit": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "joint_capacity": {
+   "base": 123,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 220.0,
+    "integer": true
+   }
+  },
+  "product_capacity_0_0to1": {
+   "base": 74,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "product_capacity_1_0to1": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "product_capacity_0_1to0": {
+   "base": 71,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "product_capacity_1_1to0": {
+   "base": 72,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "product_capacity_generic_low": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "product_capacity_generic_high": {
+   "base": 75,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 160.0,
+    "integer": true
+   }
+  },
+  "demand_city1_product0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "demand_city1_product1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "demand_city2_product0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "supply_city2_product1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "supply_city3_product0": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "demand_city3_product1": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "shipping_cost_per_unit": {
+    "meaning": "cost per unit shipped between any two cities (both products)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "joint_capacity": {
+    "meaning": "max combined units of both products on any city-pair arc",
+    "base": 123,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 220,
+     "integer": true
+    }
+   },
+   "product_capacity_0_0to1": {
+    "meaning": "Product 0 capacity City 0 -> City 1",
+    "base": 74,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "product_capacity_1_0to1": {
+    "meaning": "Product 1 capacity City 0 -> City 1",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "product_capacity_0_1to0": {
+    "meaning": "Product 0 capacity City 1 -> City 0",
+    "base": 71,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "product_capacity_1_1to0": {
+    "meaning": "Product 1 capacity City 1 -> City 0",
+    "base": 72,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "product_capacity_generic_low": {
+    "meaning": "lower bound of varying product-specific capacities on other arcs",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "product_capacity_generic_high": {
+    "meaning": "upper bound of varying product-specific capacities on other arcs",
+    "base": 75,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 160,
+     "integer": true
+    }
+   },
+   "demand_city1_product0": {
+    "meaning": "net requirement of Product 0 at City 1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "demand_city1_product1": {
+    "meaning": "net requirement of Product 1 at City 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "demand_city2_product0": {
+    "meaning": "net requirement of Product 0 at City 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "supply_city2_product1": {
+    "meaning": "net excess of Product 1 at City 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "supply_city3_product0": {
+    "meaning": "net excess of Product 0 at City 3",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "demand_city3_product1": {
+    "meaning": "net requirement of Product 1 at City 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -15,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

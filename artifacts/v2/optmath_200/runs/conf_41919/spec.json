@@ -1,0 +1,203 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1561,
+    1774,
+    1801,
+    1693
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    711,
+    693,
+    862,
+    853,
+    652,
+    950
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     34,
+     26,
+     33,
+     26,
+     26,
+     30
+    ],
+    [
+     25,
+     29,
+     25,
+     30,
+     26,
+     33
+    ],
+    [
+     33,
+     28,
+     32,
+     26,
+     26,
+     25
+    ],
+    [
+     28,
+     29,
+     26,
+     28,
+     35,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_producers": {
+   "base": [
+    2,
+    2,
+    3,
+    3,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_delivery": {
+   "base": [
+    312,
+    354,
+    360,
+    338
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum energy generation per producer",
+    "base": [
+     1561,
+     1774,
+     1801,
+     1693
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "Minimum energy required per contract",
+    "base": [
+     711,
+     693,
+     862,
+     853,
+     652,
+     950
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "cost": {
+    "meaning": "Unit generation cost per producer-contract pair",
+    "base": [
+     [
+      34,
+      26,
+      33,
+      26,
+      26,
+      30
+     ],
+     [
+      25,
+      29,
+      25,
+      30,
+      26,
+      33
+     ],
+     [
+      33,
+      28,
+      32,
+      26,
+      26,
+      25
+     ],
+     [
+      28,
+      29,
+      26,
+      28,
+      35,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_producers": {
+    "meaning": "Minimum number of producers that must serve each contract",
+    "base": [
+     2,
+     2,
+     3,
+     3,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum energy a producer must deliver if it contributes to any contract",
+    "base": [
+     312,
+     354,
+     360,
+     338
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

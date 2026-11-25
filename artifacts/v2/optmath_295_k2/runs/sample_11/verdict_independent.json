@@ -1,0 +1,152 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "resource_limit": 404
+  },
+  {
+   "resource_limit": 460.328426576985
+  },
+  {
+   "resource_limit": 212.10434510995745
+  },
+  {
+   "resource_limit": 313.1118446211242
+  },
+  {
+   "resource_limit": 292.1771382121244
+  },
+  {
+   "resource_limit": 499.534370522261
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   11848530.0,
+   11848530.0,
+   7527115.8959123185,
+   10391757.01100261,
+   9834893.072006054,
+   11848530.0
+  ],
+  "A-direct-2": [
+   10169997.0,
+   10169997.0,
+   6209569.803250875,
+   8980058.187582908,
+   8413674.205432812,
+   10169997.0
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   10271258.0,
+   10271258.0,
+   6371924.078796881,
+   9081622.493187334,
+   8539521.148024239,
+   10271258.0
+  ],
+  "C-direct-2": [
+   10521874.0,
+   10521874.0,
+   6412043.844766777,
+   9222729.210644,
+   8657660.146698331,
+   10521874.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "missing_item_data",
+   "missing_item_data",
+   "missing_item_data",
+   "missing_item_data",
+   "missing_item_data",
+   "missing_item_data"
+  ],
+  "B-structured-2": [
+   "incomplete_problem_data",
+   "incomplete_problem_data",
+   "incomplete_problem_data",
+   "incomplete_problem_data",
+   "incomplete_problem_data",
+   "incomplete_problem_data"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct-2 vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs B-structured-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "C-direct vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

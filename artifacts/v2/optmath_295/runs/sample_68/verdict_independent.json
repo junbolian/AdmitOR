@@ -1,0 +1,126 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "vehicle_cost_1": 78,
+   "vehicle_cost_2": 56,
+   "vehicle_cost_3": 56,
+   "vehicle_cost_4": 61,
+   "vehicle_cost_5": 67,
+   "vehicle_cost_6": 16
+  },
+  {
+   "vehicle_cost_1": 102.3082877532614,
+   "vehicle_cost_2": 3.501505731173371,
+   "vehicle_cost_3": 38.5041045716767,
+   "vehicle_cost_4": 33.48161072232341,
+   "vehicle_cost_5": 110.47068212460186,
+   "vehicle_cost_6": 54.1359589938329
+  },
+  {
+   "vehicle_cost_1": 142.74873083277527,
+   "vehicle_cost_2": 12.171436568118262,
+   "vehicle_cost_3": 59.06905475593786,
+   "vehicle_cost_4": 4.469582915710552,
+   "vehicle_cost_5": 32.795696220540506,
+   "vehicle_cost_6": 40.42842304826899
+  },
+  {
+   "vehicle_cost_1": 4.24575514941818,
+   "vehicle_cost_2": 27.837271096130788,
+   "vehicle_cost_3": 90.98382128913325,
+   "vehicle_cost_4": 81.7412220904825,
+   "vehicle_cost_5": 33.066093306104506,
+   "vehicle_cost_6": 47.1412547100727
+  },
+  {
+   "vehicle_cost_1": 129.50887306845226,
+   "vehicle_cost_2": 0.9098263549285424,
+   "vehicle_cost_3": 112.81469525659311,
+   "vehicle_cost_4": 104.72090924823402,
+   "vehicle_cost_5": 51.03757747769878,
+   "vehicle_cost_6": 12.438359984942524
+  },
+  {
+   "vehicle_cost_1": 153.15409155308498,
+   "vehicle_cost_2": 47.12323631576775,
+   "vehicle_cost_3": 12.984418073220708,
+   "vehicle_cost_4": 14.507456525019602,
+   "vehicle_cost_5": 127.12415495211897,
+   "vehicle_cost_6": 48.29808250935129
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   133.0,
+   126.121674287833,
+   103.9670607199174,
+   219.86629808968843,
+   229.97396448976966,
+   75.7899571075916
+  ],
+  "B-structured": [
+   133.0,
+   126.121674287833,
+   103.9670607199174,
+   219.86629808968843,
+   229.97396448976966,
+   75.7899571075916
+  ],
+  "C-direct": [
+   133.0,
+   126.121674287833,
+   103.96706071991741,
+   219.86629808968843,
+   229.97396448976966,
+   75.7899571075916
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

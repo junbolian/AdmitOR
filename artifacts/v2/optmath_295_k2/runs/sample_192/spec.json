@@ -1,0 +1,176 @@
+{
+ "spec": {
+  "earliest": {
+   "base": [
+    65,
+    72,
+    60,
+    60
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "latest": {
+   "base": [
+    120,
+    120,
+    107,
+    99
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "target": {
+   "base": [
+    95,
+    102,
+    77,
+    69
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "early_penalty": {
+   "base": [
+    10,
+    12,
+    5,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "late_penalty": {
+   "base": [
+    13,
+    13,
+    12,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "separation": {
+   "base": [
+    15,
+    13,
+    14,
+    12,
+    12,
+    12,
+    13,
+    15,
+    12,
+    12,
+    15,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "earliest": {
+    "meaning": "earliest allowable landing time per aircraft",
+    "base": [
+     65,
+     72,
+     60,
+     60
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "latest": {
+    "meaning": "latest allowable landing time per aircraft",
+    "base": [
+     120,
+     120,
+     107,
+     99
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "target": {
+    "meaning": "target landing time per aircraft",
+    "base": [
+     95,
+     102,
+     77,
+     69
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "early_penalty": {
+    "meaning": "penalty cost per minute of early landing per aircraft",
+    "base": [
+     10,
+     12,
+     5,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "late_penalty": {
+    "meaning": "penalty cost per minute of late landing per aircraft",
+    "base": [
+     13,
+     13,
+     12,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "separation": {
+    "meaning": "minimum separation time for ordered aircraft pairs (0<1, 1<0, 0<2, 2<0, 0<3, 3<0, 1<2, 2<1, 1<3, 3<1, 2<3, 3<2)",
+    "base": [
+     15,
+     13,
+     14,
+     12,
+     12,
+     12,
+     13,
+     15,
+     12,
+     12,
+     15,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

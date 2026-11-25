@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    49,
+    49,
+    43,
+    35,
+    20,
+    28,
+    40,
+    34,
+    47,
+    43,
+    49,
+    33,
+    29,
+    25,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_consumption": {
+   "base": [
+    0.2,
+    0.5,
+    0.2,
+    1.0,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.333,
+    0.5,
+    0.2,
+    0.333,
+    0.333
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_capacity": {
+   "base": 471,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_upper_limits": {
+   "base": [
+    170,
+    101,
+    124,
+    194,
+    167,
+    131,
+    194,
+    167,
+    185,
+    120,
+    141,
+    190,
+    110,
+    177,
+    198
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "profit per unit for each of the 15 items",
+    "base": [
+     49,
+     49,
+     43,
+     35,
+     20,
+     28,
+     40,
+     34,
+     47,
+     43,
+     49,
+     33,
+     29,
+     25,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_consumption": {
+    "meaning": "resource units consumed per unit produced for each item",
+    "base": [
+     0.2,
+     0.5,
+     0.2,
+     1.0,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.333,
+     0.5,
+     0.2,
+     0.333,
+     0.333
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_capacity": {
+    "meaning": "total shared resource available",
+    "base": 471,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_upper_limits": {
+    "meaning": "maximum production quantity for each item",
+    "base": [
+     170,
+     101,
+     124,
+     194,
+     167,
+     131,
+     194,
+     167,
+     185,
+     120,
+     141,
+     190,
+     110,
+     177,
+     198
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

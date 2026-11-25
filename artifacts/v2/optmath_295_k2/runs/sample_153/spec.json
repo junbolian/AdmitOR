@@ -1,0 +1,144 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     0.5622173476276192,
+     0.5974826017404982,
+     0.5909659742694517,
+     0.315776514421404,
+     0.3309461724269336
+    ],
+    [
+     0.3961042624718989,
+     0.4749606625260779,
+     0.3986432902637113,
+     0.3139000401166797,
+     0.4878878047150952
+    ],
+    [
+     0.5973123831326344,
+     0.6510700182847462,
+     0.3621973007201142,
+     0.6181956987028698,
+     0.6058656450088484
+    ],
+    [
+     0.4472161713015153,
+     0.3345050757980126,
+     0.3864971917435466,
+     0.6442206093030911,
+     0.4508259537941808
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_assignments": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_peaks": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_amino_acids": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_assignments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_amino_acids] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "cost of assigning each peak to each amino acid, matrix rows=peaks 0-3, cols=amino acids 0-4",
+    "base": [
+     [
+      0.5622173476276192,
+      0.5974826017404982,
+      0.5909659742694517,
+      0.315776514421404,
+      0.3309461724269336
+     ],
+     [
+      0.3961042624718989,
+      0.4749606625260779,
+      0.3986432902637113,
+      0.3139000401166797,
+      0.4878878047150952
+     ],
+     [
+      0.5973123831326344,
+      0.6510700182847462,
+      0.3621973007201142,
+      0.6181956987028698,
+      0.6058656450088484
+     ],
+     [
+      0.4472161713015153,
+      0.3345050757980126,
+      0.3864971917435466,
+      0.6442206093030911,
+      0.4508259537941808
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_assignments": {
+    "meaning": "exact number of peak-amino acid assignments required",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_peaks": {
+    "meaning": "number of peaks (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_amino_acids": {
+    "meaning": "number of amino acids (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

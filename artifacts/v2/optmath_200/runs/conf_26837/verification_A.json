@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_26837",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"shipping_cost_matrix\", \"evidence\": \"Shipping from facility_0 to customer_0 costs 60 units, to customer_1 costs 55 units, to customer_2 costs 53 units, and so on, with the full cost matrix provided in the data. ... ranging from 50 to 60 units.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_cost_matrix",
+   "evidence": "Shipping from facility_0 to customer_0 costs 60 units, to customer_1 costs 55 units, to customer_2 costs 53 units, and so on, with the full cost matrix provided in the data. ... ranging from 50 to 60 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

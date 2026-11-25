@@ -1,0 +1,41 @@
+{
+ "sample_id": "sample_290",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transport_cost_00\",\n      \"evidence\": \"\\\"For example: Shipping from Facility 0 to Customer 0 costs $66 per unit.\\\" — only an example; full matrix not stated\"\n    },\n    {\n      \"parameter\": \"transport_cost_11\",\n      \"evidence\": \"\\\"Shipping from Facility 1 to Customer 1 costs $63 per unit.\\\" — only an example\"\n    },\n    {\n      \"parameter\": \"transport_cost_22\",\n      \"evidence\": \"\\\"Shipping from Facility 2 to Customer 2 costs $61 per unit.\\\" — only an example\"\n    },\n    {\n      \"parameter\": \"transport_cost_33\",\n      \"evidence\": \"\\\"Shipping from Facility 3 to Customer 3 costs $70 per unit.\\\" — only an example\"\n    },\n    {\n      \"parameter\": \"transport_cost_44\",\n      \"evidence\": \"\\\"Shipping from Facility 4 to Customer 4 costs $64 per unit.\\\" — only an example\"\n    },\n    {\n      \"parameter\": \"transport_cost_55\",\n      \"evidence\": \"\\\"Shipping from Facility 5 to Customer 5 costs $63 per unit.\\\" — only an example\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost_00",
+   "evidence": "\"For example: Shipping from Facility 0 to Customer 0 costs $66 per unit.\" — only an example; full matrix not stated"
+  },
+  {
+   "parameter": "transport_cost_11",
+   "evidence": "\"Shipping from Facility 1 to Customer 1 costs $63 per unit.\" — only an example"
+  },
+  {
+   "parameter": "transport_cost_22",
+   "evidence": "\"Shipping from Facility 2 to Customer 2 costs $61 per unit.\" — only an example"
+  },
+  {
+   "parameter": "transport_cost_33",
+   "evidence": "\"Shipping from Facility 3 to Customer 3 costs $70 per unit.\" — only an example"
+  },
+  {
+   "parameter": "transport_cost_44",
+   "evidence": "\"Shipping from Facility 4 to Customer 4 costs $64 per unit.\" — only an example"
+  },
+  {
+   "parameter": "transport_cost_55",
+   "evidence": "\"Shipping from Facility 5 to Customer 5 costs $63 per unit.\" — only an example"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

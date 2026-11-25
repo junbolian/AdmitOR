@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_243",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"expected_returns\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"covariance_matrix\", \"evidence\": \"Asset 0 and Asset 1 have a covariance of 0.0758 ... Asset 0 and Asset 2 have a covariance of -0.0093\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "expected_returns",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "covariance_matrix",
+   "evidence": "Asset 0 and Asset 1 have a covariance of 0.0758 ... Asset 0 and Asset 2 have a covariance of -0.0093"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

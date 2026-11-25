@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "populations": {
+   "base": [
+    1039,
+    471,
+    659,
+    540,
+    705,
+    779,
+    985,
+    609,
+    899,
+    848
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tower_costs": {
+   "base": [
+    103,
+    118,
+    55,
+    74,
+    43,
+    85,
+    56
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "budget": {
+   "base": 293,
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 450.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "populations": {
+    "meaning": "Population of each of the 10 regions",
+    "base": [
+     1039,
+     471,
+     659,
+     540,
+     705,
+     779,
+     985,
+     609,
+     899,
+     848
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tower_costs": {
+    "meaning": "Construction cost of each of the 7 potential towers",
+    "base": [
+     103,
+     118,
+     55,
+     74,
+     43,
+     85,
+     56
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "budget": {
+    "meaning": "Maximum total construction cost allowed",
+    "base": 293,
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 450,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

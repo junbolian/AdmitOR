@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "participants": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "cars": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "participant_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "preference": {
+   "base": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[cars] degenerate abs range (lo == hi); perturbation has no effect",
+  "[participant_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "participants": {
+    "meaning": "number of participants",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "cars": {
+    "meaning": "number of cars",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "participant_capacity": {
+    "meaning": "max cars assignable to each participant",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "max participants assignable to each car",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "preference": {
+    "meaning": "binary interest matrix rows=participants cols=cars",
+    "base": [
+     [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,368 @@
+{
+ "spec": {
+  "fixed_cost_hub_0": {
+   "base": 864,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_hub_1": {
+   "base": 772,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_hub_2": {
+   "base": 931,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_hub_3": {
+   "base": 718,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fixed_cost_hub_4": {
+   "base": 534,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "response_time": {
+   "base": [
+    [
+     67,
+     23,
+     45,
+     98,
+     12
+    ],
+    [
+     66,
+     55,
+     66,
+     91,
+     39
+    ],
+    [
+     50,
+     36,
+     9,
+     80,
+     41
+    ],
+    [
+     32,
+     42,
+     13,
+     63,
+     39
+    ],
+    [
+     27,
+     75,
+     62,
+     41,
+     61
+    ],
+    [
+     63,
+     77,
+     80,
+     79,
+     61
+    ],
+    [
+     80,
+     47,
+     68,
+     108,
+     36
+    ],
+    [
+     17,
+     50,
+     29,
+     50,
+     41
+    ],
+    [
+     59,
+     9,
+     25,
+     91,
+     11
+    ],
+    [
+     60,
+     44,
+     55,
+     88,
+     28
+    ],
+    [
+     57,
+     15,
+     31,
+     90,
+     2
+    ],
+    [
+     49,
+     86,
+     79,
+     57,
+     70
+    ],
+    [
+     49,
+     20,
+     13,
+     82,
+     20
+    ],
+    [
+     75,
+     36,
+     58,
+     105,
+     25
+    ],
+    [
+     31,
+     49,
+     42,
+     60,
+     34
+    ],
+    [
+     72,
+     86,
+     90,
+     86,
+     69
+    ],
+    [
+     64,
+     72,
+     76,
+     82,
+     55
+    ],
+    [
+     70,
+     28,
+     50,
+     101,
+     17
+    ],
+    [
+     77,
+     46,
+     66,
+     105,
+     34
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost_hub_0": {
+    "meaning": "Fixed station operating budget for Potential Hub 0",
+    "base": 864,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_hub_1": {
+    "meaning": "Fixed station operating budget for Potential Hub 1",
+    "base": 772,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_hub_2": {
+    "meaning": "Fixed station operating budget for Potential Hub 2",
+    "base": 931,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_hub_3": {
+    "meaning": "Fixed station operating budget for Potential Hub 3",
+    "base": 718,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost_hub_4": {
+    "meaning": "Fixed station operating budget for Potential Hub 4",
+    "base": 534,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "response_time": {
+    "meaning": "Response time from each incident location to each potential hub (19x5 matrix)",
+    "base": [
+     [
+      67,
+      23,
+      45,
+      98,
+      12
+     ],
+     [
+      66,
+      55,
+      66,
+      91,
+      39
+     ],
+     [
+      50,
+      36,
+      9,
+      80,
+      41
+     ],
+     [
+      32,
+      42,
+      13,
+      63,
+      39
+     ],
+     [
+      27,
+      75,
+      62,
+      41,
+      61
+     ],
+     [
+      63,
+      77,
+      80,
+      79,
+      61
+     ],
+     [
+      80,
+      47,
+      68,
+      108,
+      36
+     ],
+     [
+      17,
+      50,
+      29,
+      50,
+      41
+     ],
+     [
+      59,
+      9,
+      25,
+      91,
+      11
+     ],
+     [
+      60,
+      44,
+      55,
+      88,
+      28
+     ],
+     [
+      57,
+      15,
+      31,
+      90,
+      2
+     ],
+     [
+      49,
+      86,
+      79,
+      57,
+      70
+     ],
+     [
+      49,
+      20,
+      13,
+      82,
+      20
+     ],
+     [
+      75,
+      36,
+      58,
+      105,
+      25
+     ],
+     [
+      31,
+      49,
+      42,
+      60,
+      34
+     ],
+     [
+      72,
+      86,
+      90,
+      86,
+      69
+     ],
+     [
+      64,
+      72,
+      76,
+      82,
+      55
+     ],
+     [
+      70,
+      28,
+      50,
+      101,
+      17
+     ],
+     [
+      77,
+      46,
+      66,
+      105,
+      34
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

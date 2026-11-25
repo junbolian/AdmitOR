@@ -1,0 +1,134 @@
+{
+ "spec": {
+  "total_capacity": {
+   "base": [
+    0,
+    23,
+    24,
+    21,
+    24,
+    21,
+    24,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "project_demand": {
+   "base": [
+    16,
+    21,
+    20,
+    23,
+    23,
+    24,
+    25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_min": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_max": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assignment_limit_min": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assignment_limit_max": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "total_capacity": {
+    "meaning": "total capacity that must be fully utilized by each person (index 0 is unavailable)",
+    "base": [
+     0,
+     23,
+     24,
+     21,
+     24,
+     21,
+     24,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "project_demand": {
+    "meaning": "demand that must be met for each project",
+    "base": [
+     16,
+     21,
+     20,
+     23,
+     23,
+     24,
+     25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_min": {
+    "meaning": "minimum per-unit assignment cost",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_max": {
+    "meaning": "maximum per-unit assignment cost",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assignment_limit_min": {
+    "meaning": "minimum per-person, per-project contribution limit",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assignment_limit_max": {
+    "meaning": "maximum per-person, per-project contribution limit",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

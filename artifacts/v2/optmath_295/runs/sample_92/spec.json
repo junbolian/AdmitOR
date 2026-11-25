@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "employee_availability": {
+   "base": [
+    8,
+    10,
+    11,
+    8,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "project_requirements": {
+   "base": [
+    8,
+    9,
+    10,
+    8,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "assignment_costs": {
+   "base": [
+    [
+     18,
+     18,
+     21,
+     18,
+     17
+    ],
+    [
+     16,
+     25,
+     17,
+     28,
+     28
+    ],
+    [
+     24,
+     22,
+     19,
+     29,
+     26
+    ],
+    [
+     17,
+     26,
+     28,
+     25,
+     16
+    ],
+    [
+     26,
+     18,
+     22,
+     18,
+     27
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_limits": {
+   "base": [
+    [
+     4,
+     5,
+     7,
+     4,
+     4
+    ],
+    [
+     4,
+     7,
+     7,
+     7,
+     5
+    ],
+    [
+     7,
+     4,
+     8,
+     7,
+     4
+    ],
+    [
+     5,
+     5,
+     6,
+     4,
+     7
+    ],
+    [
+     4,
+     6,
+     5,
+     5,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "employee_availability": {
+    "meaning": "Total hours each employee can dedicate across all projects",
+    "base": [
+     8,
+     10,
+     11,
+     8,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "project_requirements": {
+    "meaning": "Exact total hours of effort required by each project",
+    "base": [
+     8,
+     9,
+     10,
+     8,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "assignment_costs": {
+    "meaning": "Cost per hour of assigning employee i to project j",
+    "base": [
+     [
+      18,
+      18,
+      21,
+      18,
+      17
+     ],
+     [
+      16,
+      25,
+      17,
+      28,
+      28
+     ],
+     [
+      24,
+      22,
+      19,
+      29,
+      26
+     ],
+     [
+      17,
+      26,
+      28,
+      25,
+      16
+     ],
+     [
+      26,
+      18,
+      22,
+      18,
+      27
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "assignment_limits": {
+    "meaning": "Maximum hours employee i can spend on project j",
+    "base": [
+     [
+      4,
+      5,
+      7,
+      4,
+      4
+     ],
+     [
+      4,
+      7,
+      7,
+      7,
+      5
+     ],
+     [
+      7,
+      4,
+      8,
+      7,
+      4
+     ],
+     [
+      5,
+      5,
+      6,
+      4,
+      7
+     ],
+     [
+      4,
+      6,
+      5,
+      5,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

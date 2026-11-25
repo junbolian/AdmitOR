@@ -1,0 +1,13 @@
+set,ruler,candidates_per_family,rule,problems,certificates,coverage,coverage_se,label_matches,label_misses,precision,precision_se
+stream (OptMATH-295),round_aware,1,gate (primary sampler),295,260,0.8814,0.0188,218,42,0.8385,0.0228
+stream (OptMATH-295),round_aware,1,"stated instance, two-family agreement",295,272,0.9220,0.0156,227,45,0.8346,0.0225
+stream (OptMATH-295),round_aware,1,"stated instance, three-family agreement",295,242,0.8203,0.0224,207,35,0.8554,0.0226
+stream (OptMATH-295),round_aware,2,gate (primary sampler),295,259,0.8780,0.0191,213,46,0.8224,0.0237
+stream (OptMATH-295),round_aware,2,"stated instance, two-family agreement",295,268,0.9085,0.0168,221,47,0.8246,0.0232
+stream (OptMATH-295),round_aware,2,"stated instance, three-family agreement",295,245,0.8305,0.0218,208,37,0.8490,0.0229
+heldout (NANO-CO-95),label_match,1,gate (primary sampler),95,80,0.8421,0.0374,71,9,0.8875,0.0353
+heldout (NANO-CO-95),label_match,1,"stated instance, two-family agreement",95,93,0.9789,0.0147,81,12,0.8710,0.0348
+heldout (NANO-CO-95),label_match,1,"stated instance, three-family agreement",95,70,0.7368,0.0452,64,6,0.9143,0.0335
+heldout (NANO-CO-95),label_match,2,gate (primary sampler),95,82,0.8632,0.0353,70,12,0.8537,0.0390
+heldout (NANO-CO-95),label_match,2,"stated instance, two-family agreement",95,90,0.9474,0.0229,79,11,0.8778,0.0345
+heldout (NANO-CO-95),label_match,2,"stated instance, three-family agreement",95,78,0.8211,0.0393,71,7,0.9103,0.0324

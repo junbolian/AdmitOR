@@ -1,0 +1,51 @@
+{
+ "sample_id": "sample_210",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"setup_cost\",\"extracted\":[34,28,42,39,12,18,27,24,31,34,49,40,10],\"stated\":[39,28,42,39,12,18,27,24,31,34,49,40,10],\"evidence\":\"Location 1 costs 39 units\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "setup_cost",
+   "extracted": [
+    34,
+    28,
+    42,
+    39,
+    12,
+    18,
+    27,
+    24,
+    31,
+    34,
+    49,
+    40,
+    10
+   ],
+   "stated": [
+    39,
+    28,
+    42,
+    39,
+    12,
+    18,
+    27,
+    24,
+    31,
+    34,
+    49,
+    40,
+    10
+   ],
+   "evidence": "Location 1 costs 39 units"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

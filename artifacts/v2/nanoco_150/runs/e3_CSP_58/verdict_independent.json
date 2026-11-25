@@ -1,0 +1,145 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "stock_length": 100,
+   "segment_lengths": [
+    50,
+    59,
+    29
+   ],
+   "demands": [
+    2,
+    2,
+    6
+   ]
+  },
+  {
+   "stock_length": 105.57707193831536,
+   "segment_lengths": [
+    35.750322656680005,
+    51.03603787026682,
+    24.183866843789517
+   ],
+   "demands": [
+    2.283765456996815,
+    2.2120393849074937,
+    7.411846443737443
+   ]
+  },
+  {
+   "stock_length": 83.47755330517664,
+   "segment_lengths": [
+    47.65765459055811,
+    42.35482156810769,
+    24.1043007615827
+   ],
+   "demands": [
+    2.006426345724035,
+    1.4318431636206363,
+    4.915815542471934
+   ]
+  },
+  {
+   "stock_length": 105.99537751118092,
+   "segment_lengths": [
+    51.3482444180965,
+    49.10359802024066,
+    30.55322289944081
+   ],
+   "demands": [
+    2.371316548013392,
+    1.407798511613673,
+    7.100949306598108
+   ]
+  },
+  {
+   "stock_length": 107.92557579952907,
+   "segment_lengths": [
+    45.20751549553976,
+    46.80397429333707,
+    36.955507456397996
+   ],
+   "demands": [
+    1.803913454135152,
+    1.5112950120561774,
+    4.54817895660047
+   ]
+  },
+  {
+   "stock_length": 113.89977465389839,
+   "segment_lengths": [
+    53.111780941006735,
+    69.87234087391306,
+    32.99733308847243
+   ],
+   "demands": [
+    2.043473709745641,
+    2.567738916775245,
+    5.562723757950073
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   5.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   5.0,
+   5.0,
+   5.0,
+   6.0,
+   5.0,
+   6.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '15' is not valid for indexed compone",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '12' is not valid for indexed compone",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '14' is not valid for indexed compone",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '10' is not valid for indexed compone",
+   "crash:File \"<PATH>/indexed_component.py\", line 903, in _validate_index | raise KeyError( | KeyError: \"Index '15' is not valid for indexed compone"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:File \"candidate.py\", line 18, in solve | raise ValueError(\"demands must be nonnegative integers.\") | ValueError: demands must be nonnegative integers.",
+   "crash:File \"candidate.py\", line 18, in solve | raise ValueError(\"demands must be nonnegative integers.\") | ValueError: demands must be nonnegative integers.",
+   "crash:File \"candidate.py\", line 18, in solve | raise ValueError(\"demands must be nonnegative integers.\") | ValueError: demands must be nonnegative integers.",
+   "crash:File \"candidate.py\", line 18, in solve | raise ValueError(\"demands must be nonnegative integers.\") | ValueError: demands must be nonnegative integers.",
+   "crash:File \"candidate.py\", line 18, in solve | raise ValueError(\"demands must be nonnegative integers.\") | ValueError: demands must be nonnegative integers."
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "spec": {
+  "master_width": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "order_quantities": {
+   "base": [
+    1,
+    2,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "finished_widths": {
+   "base": [
+    35,
+    56,
+    51
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "master_width": {
+    "meaning": "width of each master (jumbo) paper roll",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "order_quantities": {
+    "meaning": "required number of finished rolls for widths 35, 56, 51",
+    "base": [
+     1,
+     2,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "finished_widths": {
+    "meaning": "widths of the three finished roll specifications (35, 56, 51)",
+    "base": [
+     35,
+     56,
+     51
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

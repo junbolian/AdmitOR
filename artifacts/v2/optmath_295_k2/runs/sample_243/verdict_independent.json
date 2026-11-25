@@ -1,0 +1,161 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_returns": 0.1,
+   "max_allocation": 0.3,
+   "total_allocation": 1.0,
+   "min_return": 0.1,
+   "covariance_0_1": 0.0758,
+   "covariance_0_2": -0.0093
+  },
+  {
+   "expected_returns": 0.11394267984578837,
+   "max_allocation": 0.15750322656680008,
+   "total_allocation": 0.9100117273476477,
+   "min_return": 0.08348161072232342,
+   "covariance_0_1": 0.09372451803363215,
+   "covariance_0_2": -0.010943305233033074
+  },
+  {
+   "expected_returns": 0.13921795677048454,
+   "max_allocation": 0.17608164978882485,
+   "total_allocation": 0.9687687278741082,
+   "min_return": 0.05446958291571055,
+   "covariance_0_1": 0.05447275849011314,
+   "covariance_0_2": -0.009349804179361269
+  },
+  {
+   "expected_returns": 0.05265359696838637,
+   "max_allocation": 0.20965129520599454,
+   "total_allocation": 1.0599537751118093,
+   "min_return": 0.1317412220904825,
+   "covariance_0_1": 0.054609399150684815,
+   "covariance_0_2": -0.01013017086004595
+  },
+  {
+   "expected_returns": 0.13094304566778267,
+   "max_allocation": 0.1519496279034183,
+   "total_allocation": 1.1223277007331232,
+   "min_return": 0.15472090924823406,
+   "covariance_0_1": 0.0636909891520638,
+   "covariance_0_2": -0.006095959348249568
+  },
+  {
+   "expected_returns": 0.14572130722067814,
+   "max_allocation": 0.25097836353378805,
+   "total_allocation": 0.8370983373520592,
+   "min_return": 0.0645074565250196,
+   "covariance_0_1": 0.10214007296913745,
+   "covariance_0_2": -0.010264652091712087
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.1012500912166315,
+   0.08408306261696599,
+   0.09465983168128428,
+   null,
+   null,
+   0.07126003202316888
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "A-direct-2": [
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()"
+  ],
+  "B-structured": [
+   "invalid_expected_returns",
+   "invalid_expected_returns",
+   "invalid_expected_returns",
+   "invalid_expected_returns",
+   "invalid_expected_returns",
+   "invalid_expected_returns"
+  ],
+  "B-structured-2": [
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt",
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt",
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt",
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt",
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt",
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

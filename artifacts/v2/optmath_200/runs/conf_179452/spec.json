@@ -1,0 +1,118 @@
+{
+ "spec": {
+  "dispersion_weights": {
+   "base": [
+    [
+     0,
+     15,
+     18,
+     18,
+     22
+    ],
+    [
+     21,
+     0,
+     16,
+     21,
+     25
+    ],
+    [
+     22,
+     20,
+     0,
+     15,
+     25
+    ],
+    [
+     22,
+     16,
+     21,
+     0,
+     22
+    ],
+    [
+     22,
+     25,
+     17,
+     20,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_facilities_selected": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities_selected] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "dispersion_weights": {
+    "meaning": "Weighted dispersion coefficient for each ordered pair (i,j) of locations; higher = more desirable to separate",
+    "base": [
+     [
+      0,
+      15,
+      18,
+      18,
+      22
+     ],
+     [
+      21,
+      0,
+      16,
+      21,
+      25
+     ],
+     [
+      22,
+      20,
+      0,
+      15,
+      25
+     ],
+     [
+      22,
+      16,
+      21,
+      0,
+      22
+     ],
+     [
+      22,
+      25,
+      17,
+      20,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_facilities_selected": {
+    "meaning": "Exact number of facilities that must be opened (cardinality constraint RHS)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

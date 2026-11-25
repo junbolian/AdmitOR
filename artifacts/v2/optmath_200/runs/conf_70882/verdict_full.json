@@ -1,0 +1,137 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "fixed_cost": [
+    2028,
+    2824,
+    1402,
+    2064,
+    1227,
+    1729,
+    1047,
+    2507,
+    2471,
+    2089,
+    2721,
+    1767
+   ],
+   "operational_cost": [
+    157,
+    142,
+    111,
+    118,
+    149,
+    295,
+    255,
+    193,
+    214,
+    147,
+    274,
+    186
+   ],
+   "penalty_cost": [
+    706,
+    741,
+    547,
+    763,
+    589,
+    552,
+    654,
+    537,
+    502,
+    515,
+    504,
+    679,
+    555,
+    770,
+    700
+   ],
+   "vehicle_time_per_frequency": [
+    88,
+    90,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total_vehicle_capacity": 60,
+   "min_frequency_if_selected": 2,
+   "max_frequency_if_selected": 10,
+   "min_od_frequency": 2,
+   "min_transfer_hub_lines": 2,
+   "example_od_7_4_demand": 21
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   26149.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:+ sum(m.penalty_cost[od] * m.u[od] for od in m.OD)) | ~~~~~~~~~~~~~~~~~~~^~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "insufficient_problem_data",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

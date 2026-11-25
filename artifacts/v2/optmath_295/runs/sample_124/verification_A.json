@@ -1,0 +1,109 @@
+{
+ "sample_id": "sample_124",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"costs\", \"extracted\": [[37,36,33,31,40,35,43,45],[42,50,31,35,38,44,50,40],[30,38,36,42,39,50,34,37],[35,34,30,39,50,33,41,44],[32,43,49,32,38,40,45,37],[36,45,31,39,44,50,42,48],[33,41,32,38,47,40,44,39],[40,34,48,36,34,41,43,45]], \"stated\": \"range only: e.g., Person 0 ranges from 31 (Project 3) to 45 (Project 7); Person 1 from 31 (Project 2) to 50 (Project 1 and Project 6); etc.\", \"evidence\": \"Costs range from 31 (Project 3) to 45 (Project 7)\"}], \"not_stated\": [{\"parameter\": \"costs\", \"evidence\": \"Costs are given only as ranges (min and max per person), not as a full cost matrix\"}]}",
+ "mismatch": [
+  {
+   "parameter": "costs",
+   "extracted": [
+    [
+     37,
+     36,
+     33,
+     31,
+     40,
+     35,
+     43,
+     45
+    ],
+    [
+     42,
+     50,
+     31,
+     35,
+     38,
+     44,
+     50,
+     40
+    ],
+    [
+     30,
+     38,
+     36,
+     42,
+     39,
+     50,
+     34,
+     37
+    ],
+    [
+     35,
+     34,
+     30,
+     39,
+     50,
+     33,
+     41,
+     44
+    ],
+    [
+     32,
+     43,
+     49,
+     32,
+     38,
+     40,
+     45,
+     37
+    ],
+    [
+     36,
+     45,
+     31,
+     39,
+     44,
+     50,
+     42,
+     48
+    ],
+    [
+     33,
+     41,
+     32,
+     38,
+     47,
+     40,
+     44,
+     39
+    ],
+    [
+     40,
+     34,
+     48,
+     36,
+     34,
+     41,
+     43,
+     45
+    ]
+   ],
+   "stated": "range only: e.g., Person 0 ranges from 31 (Project 3) to 45 (Project 7); Person 1 from 31 (Project 2) to 50 (Project 1 and Project 6); etc.",
+   "evidence": "Costs range from 31 (Project 3) to 45 (Project 7)"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "costs",
+   "evidence": "Costs are given only as ranges (min and max per person), not as a full cost matrix"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

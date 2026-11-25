@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_287",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement only gives the full cost matrix for Aircraft Type 0. For Types 1–4, it says only that \"similar costs apply... with values ranging from 1909 to 2092 units per assignment.\" The extracted matrix fills in specific values for those rows that are not stated.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"Similar costs apply for other aircraft types and routes, with values ranging from 1909 to 2092 units per assignment.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "Similar costs apply for other aircraft types and routes, with values ranging from 1909 to 2092 units per assignment."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

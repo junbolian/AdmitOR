@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    87253,
+    87006,
+    86828,
+    86143
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    1619,
+    1627,
+    1697,
+    1643
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    448,
+    410,
+    444,
+    427,
+    421,
+    417
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "shipping_cost": {
+   "base": [
+    [
+     51,
+     59,
+     51,
+     59,
+     60,
+     57
+    ],
+    [
+     60,
+     56,
+     53,
+     50,
+     58,
+     59
+    ],
+    [
+     58,
+     50,
+     53,
+     58,
+     56,
+     54
+    ],
+    [
+     51,
+     50,
+     58,
+     53,
+     53,
+     50
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost to open each facility (facility_0..facility_3)",
+    "base": [
+     87253,
+     87006,
+     86828,
+     86143
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum shipping capacity of each facility (facility_0..facility_3)",
+    "base": [
+     1619,
+     1627,
+     1697,
+     1643
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Product demand of each customer (customer_0..customer_5)",
+    "base": [
+     448,
+     410,
+     444,
+     427,
+     421,
+     417
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "shipping_cost": {
+    "meaning": "Per-unit shipping cost from each facility (rows: facility_0..3) to each customer (columns: customer_0..5)",
+    "base": [
+     [
+      51,
+      59,
+      51,
+      59,
+      60,
+      57
+     ],
+     [
+      60,
+      56,
+      53,
+      50,
+      58,
+      59
+     ],
+     [
+      58,
+      50,
+      53,
+      58,
+      56,
+      54
+     ],
+     [
+      51,
+      50,
+      58,
+      53,
+      53,
+      50
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

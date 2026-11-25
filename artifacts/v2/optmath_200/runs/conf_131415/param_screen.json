@@ -1,0 +1,52 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "supply_p0",
+  "supply_p1",
+  "demand_p0",
+  "demand_p1",
+  "cost_p0",
+  "cost_p1",
+  "route_capacity"
+ ],
+ "safe": [
+  "cost_p0",
+  "cost_p1",
+  "route_capacity"
+ ],
+ "tests": {
+  "supply_p0": [
+   0,
+   3
+  ],
+  "supply_p1": [
+   0,
+   0
+  ],
+  "demand_p0": [
+   0,
+   3
+  ],
+  "demand_p1": [
+   0,
+   0
+  ],
+  "cost_p0": [
+   3,
+   3
+  ],
+  "cost_p1": [
+   3,
+   3
+  ],
+  "route_capacity": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

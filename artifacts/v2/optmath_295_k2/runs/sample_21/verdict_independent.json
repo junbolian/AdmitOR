@@ -1,0 +1,279 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "pairwise_distances": [
+    19,
+    21,
+    22,
+    24,
+    17,
+    21,
+    21,
+    17,
+    16,
+    23,
+    22,
+    25,
+    22,
+    17,
+    21,
+    22,
+    22,
+    18,
+    23,
+    15
+   ],
+   "num_facilities_to_open": 3
+  },
+  {
+   "pairwise_distances": [
+    20.854376419489856,
+    14.017658101773206,
+    18.535451502884438,
+    19.349940400900223,
+    19.81400744855175,
+    23.597482465116798,
+    26.76503964526123,
+    12.084572108290052,
+    15.12552438047503,
+    15.429735232952934,
+    17.66702481197549,
+    25.093717541808847,
+    14.7086539331315,
+    13.416168043171117,
+    23.203301235358992,
+    22.69209880128954,
+    17.69478557942673,
+    19.12474761683645,
+    27.98183035251301,
+    9.818236976619641
+   ],
+   "num_facilities_to_open": 3
+  },
+  {
+   "pairwise_distances": [
+    21.63525395334342,
+    18.65168259281448,
+    16.694384297101436,
+    31.681179613073926,
+    15.05547508684026,
+    15.013363897688174,
+    15.07173073945192,
+    21.135182959534774,
+    17.16173155130918,
+    27.944765199717523,
+    25.537869515084797,
+    25.63399160045726,
+    29.28598276528231,
+    15.554559088779406,
+    21.76499727971644,
+    27.072831829496124,
+    23.825204186409394,
+    22.557506943915797,
+    24.245369538633874,
+    17.1480042802567
+   ],
+   "num_facilities_to_open": 3
+  },
+  {
+   "pairwise_distances": [
+    15.381047066165573,
+    17.904003064950977,
+    15.528796444623865,
+    19.510886890865308,
+    12.251917009975777,
+    17.736211965718354,
+    22.994561330686683,
+    15.391502929744004,
+    14.546026831709085,
+    18.32306319542095,
+    18.411458459556346,
+    32.64145528496864,
+    24.27974493279754,
+    18.29865896743716,
+    16.165738128512025,
+    25.528552688435383,
+    16.816398403933697,
+    16.481138566146363,
+    30.881325945249188,
+    16.469997478467974
+   ],
+   "num_facilities_to_open": 3
+  },
+  {
+   "pairwise_distances": [
+    21.455369538165332,
+    26.0399232267902,
+    26.25039863781217,
+    19.448007608996953,
+    11.431992902458049,
+    18.287159806468505,
+    17.58579087684283,
+    13.560695838677287,
+    20.96058880055261,
+    29.05951878620997,
+    19.146039364296563,
+    27.720176642660398,
+    20.39273127633423,
+    21.933116317912468,
+    20.395122233034762,
+    18.37915456407001,
+    18.098063618487345,
+    18.7732384904557,
+    19.18013989721926,
+    15.888152897347176
+   ],
+   "num_facilities_to_open": 3
+  },
+  {
+   "pairwise_distances": [
+    17.662026718367283,
+    16.874015159612068,
+    29.6620791400247,
+    24.160041733764608,
+    12.131822004868148,
+    14.342610718743598,
+    15.26184221615469,
+    18.516607896266773,
+    19.2712888808652,
+    21.74677546547491,
+    15.27832667474014,
+    22.928337513864395,
+    29.640269255697493,
+    17.346460706679732,
+    27.924852150920188,
+    27.556007414411273,
+    14.476807737919422,
+    20.781094923938454,
+    25.925536941327852,
+    15.38818846929235
+   ],
+   "num_facilities_to_open": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   131.00000000000003,
+   126.4562097195656,
+   145.7075869716199,
+   140.0985279851897,
+   133.1848035388207,
+   140.88339375110982
+  ],
+  "B-structured-2": [
+   131.00000000000003,
+   126.4562097195656,
+   145.7075869716199,
+   140.0985279851897,
+   133.1848035388207,
+   140.88339375110982
+  ],
+  "C-direct": [
+   131.0,
+   126.45620971956554,
+   145.7075869716199,
+   140.09852798518955,
+   133.18480353882055,
+   140.88339375110985
+  ],
+  "C-direct-2": [
+   131.0,
+   126.45620971956554,
+   145.7075869716199,
+   140.09852798518955,
+   133.18480353882055,
+   140.88339375110985
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable int object",
+   "crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object"
+  ],
+  "A-direct-2": [
+   "crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable int object",
+   "crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object",
+   "crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable int object', 'crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:for pair, val in raw_distances: | ^^^^^^^^^ | TypeError: cannot unpack non-iterable float object']",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable int object', 'crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object', 'crash:key, val = entry | ^^^^^^^^ | TypeError: cannot unpack non-iterable float object']"
+ },
+ "disagreements": [],
+ "notes": []
+}

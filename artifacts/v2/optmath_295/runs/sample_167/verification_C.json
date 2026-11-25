@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_167",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement gives only examples and ranges for the cost matrix, never stating the full 6×6 values. All other parameters match the statement exactly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"costs ranging from 40 to 50 units per unit of electricity\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "costs ranging from 40 to 50 units per unit of electricity"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

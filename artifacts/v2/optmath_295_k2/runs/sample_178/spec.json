@@ -1,0 +1,60 @@
+{
+ "spec": {
+  "supply_weights": {
+   "base": [
+    28,
+    29,
+    27,
+    27,
+    25,
+    31,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "hospital_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_weights": {
+    "meaning": "Weight of each of the seven medical supplies",
+    "base": [
+     28,
+     29,
+     27,
+     27,
+     25,
+     31,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "hospital_capacity": {
+    "meaning": "Maximum total weight storable in any hospital",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "spec": {
+  "position_city0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "position_min_others": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "position_max_others": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[cost] non-numeric base dropped",
+  "[position_city0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_min_others] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_max_others] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Asymmetric travel cost matrix c[i][j] from city i to city j (i != j); base given as 4x4 list with null on diagonal",
+    "base": [
+     [
+      null,
+      255,
+      252,
+      278
+     ],
+     [
+      268,
+      null,
+      281,
+      260
+     ],
+     [
+      343,
+      302,
+      null,
+      313
+     ],
+     [
+      267,
+      323,
+      266,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "position_city0": {
+    "meaning": "Fixed position (order) of City 0 in the tour sequence",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "position_min_others": {
+    "meaning": "Lower bound on position for cities 1, 2, 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "position_max_others": {
+    "meaning": "Upper bound on position for cities 1, 2, 3",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

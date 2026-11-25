@@ -1,0 +1,138 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    232,
+    198,
+    210
+   ],
+   "holding_cost": 15,
+   "grinder_hours": [
+    240,
+    240,
+    240,
+    120,
+    240,
+    240
+   ],
+   "drill_hours": [
+    120,
+    120,
+    120,
+    120,
+    0,
+    120
+   ],
+   "borer_hours": [
+    0,
+    120,
+    120,
+    120,
+    0,
+    120
+   ],
+   "max_inventory": [
+    80,
+    80,
+    80
+   ],
+   "max_sales": [
+    [
+     43,
+     35,
+     22,
+     39,
+     45,
+     20
+    ],
+    [
+     31,
+     41,
+     41,
+     48,
+     37,
+     44
+    ],
+    [
+     24,
+     38,
+     47,
+     33,
+     20,
+     50
+    ]
+   ],
+   "final_inventory": [
+    16,
+    16,
+    16
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return m.i[p, t] <= max_inventory | ^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'VarData' and 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "missing_parameter:machine_hours_per_unit",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:File \"candidate.py\", line 63, in solve | raise KeyError( | KeyError: 'Cannot find machine-hours-per-unit data. Available keys: borer_hours, drill_hours, final_inventory, grinder_hours, holding_cost, m",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

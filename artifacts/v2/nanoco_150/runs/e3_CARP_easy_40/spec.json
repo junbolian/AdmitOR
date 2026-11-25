@@ -1,0 +1,343 @@
+{
+ "spec": {
+  "truck_capacity": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_trucks": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "demand_segment_0_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "demand_segment_0_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "demand_segment_2_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "demand_segment_5_7": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     27,
+     33,
+     38,
+     21,
+     7,
+     40,
+     61
+    ],
+    [
+     27,
+     0,
+     56,
+     16,
+     45,
+     31,
+     49,
+     88
+    ],
+    [
+     33,
+     56,
+     0,
+     70,
+     38,
+     35,
+     67,
+     48
+    ],
+    [
+     38,
+     16,
+     70,
+     0,
+     51,
+     41,
+     46,
+     97
+    ],
+    [
+     21,
+     45,
+     38,
+     51,
+     0,
+     14,
+     29,
+     46
+    ],
+    [
+     7,
+     31,
+     35,
+     41,
+     14,
+     0,
+     34,
+     56
+    ],
+    [
+     40,
+     49,
+     67,
+     46,
+     29,
+     34,
+     0,
+     67
+    ],
+    [
+     61,
+     88,
+     48,
+     97,
+     46,
+     56,
+     67,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_mandatory_segments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_mandatory_segments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "truck_capacity": {
+    "meaning": "maximum salt tank capacity per spreader truck",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_trucks": {
+    "meaning": "fleet size (index cardinality; frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "demand_segment_0_3": {
+    "meaning": "salt required by mandatory segment (0,3)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "demand_segment_0_4": {
+    "meaning": "salt required by mandatory segment (0,4)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "demand_segment_2_6": {
+    "meaning": "salt required by mandatory segment (2,6)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "demand_segment_5_7": {
+    "meaning": "salt required by mandatory segment (5,7)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "8x8 node-to-node travel distances (rows 0..7)",
+    "base": [
+     [
+      0,
+      27,
+      33,
+      38,
+      21,
+      7,
+      40,
+      61
+     ],
+     [
+      27,
+      0,
+      56,
+      16,
+      45,
+      31,
+      49,
+      88
+     ],
+     [
+      33,
+      56,
+      0,
+      70,
+      38,
+      35,
+      67,
+      48
+     ],
+     [
+      38,
+      16,
+      70,
+      0,
+      51,
+      41,
+      46,
+      97
+     ],
+     [
+      21,
+      45,
+      38,
+      51,
+      0,
+      14,
+      29,
+      46
+     ],
+     [
+      7,
+      31,
+      35,
+      41,
+      14,
+      0,
+      34,
+      56
+     ],
+     [
+      40,
+      49,
+      67,
+      46,
+      29,
+      34,
+      0,
+      67
+     ],
+     [
+      61,
+      88,
+      48,
+      97,
+      46,
+      56,
+      67,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_nodes": {
+    "meaning": "node count (index cardinality; frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_mandatory_segments": {
+    "meaning": "count of required service segments (index cardinality; frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "min_return": 0.1,
+   "max_weight": 0.3,
+   "budget": 1.0
+  },
+  {
+   "min_return": 0.16706816364531327,
+   "max_weight": 0.11000430208906678,
+   "budget": 0.977502931836912
+  },
+  {
+   "min_return": 0.07133846977422924,
+   "max_weight": 0.394588485665605,
+   "budget": 1.017669948742291
+  },
+  {
+   "min_return": 0.22520130057211443,
+   "max_weight": 0.13477553305176648,
+   "budget": 0.992192181968527
+  },
+  {
+   "min_return": 0.02685336047075618,
+   "max_weight": 0.18745518992144136,
+   "budget": 1.0005355288103361
+  },
+  {
+   "min_return": 0.026103273027288633,
+   "max_weight": 0.1795350602746594,
+   "budget": 1.0149884437779524
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.0024149548905313483,
+   null,
+   0.002269890974715875,
+   null,
+   0.002310459303474092,
+   0.00241187078676129
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "missing_portfolio_data",
+   "missing_portfolio_data",
+   "missing_portfolio_data",
+   "missing_portfolio_data",
+   "missing_portfolio_data",
+   "missing_portfolio_data"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

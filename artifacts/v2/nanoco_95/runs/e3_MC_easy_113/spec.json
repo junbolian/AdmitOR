@@ -1,0 +1,263 @@
+{
+ "spec": {
+  "arc_capacities": {
+   "base": [
+    7,
+    14,
+    11,
+    4,
+    11,
+    14,
+    5,
+    11,
+    14,
+    5,
+    14,
+    4,
+    4,
+    8,
+    9,
+    13,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    5,
+    4,
+    6,
+    5,
+    8,
+    5,
+    4,
+    8,
+    9,
+    10,
+    8,
+    4,
+    10,
+    10,
+    4,
+    9,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coords": {
+   "base": [
+    [
+     88,
+     28
+    ],
+    [
+     36,
+     39
+    ],
+    [
+     85,
+     51
+    ],
+    [
+     93,
+     90
+    ],
+    [
+     12,
+     89
+    ],
+    [
+     21,
+     43
+    ],
+    [
+     37,
+     8
+    ],
+    [
+     99,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[coords] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "arc_capacities": {
+    "meaning": "Traffic volume (capacity) of each of the 17 unidirectional routes, listed in route order 1..17",
+    "base": [
+     7,
+     14,
+     11,
+     4,
+     11,
+     14,
+     5,
+     11,
+     14,
+     5,
+     14,
+     4,
+     4,
+     8,
+     9,
+     13,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Restriction implementation cost per unit of traffic on each route (extraneous to the min-cut objective), listed in route order 1..17",
+    "base": [
+     5,
+     4,
+     6,
+     5,
+     8,
+     5,
+     4,
+     8,
+     9,
+     10,
+     8,
+     4,
+     10,
+     10,
+     4,
+     9,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coords": {
+    "meaning": "Geographical coordinates of the 8 locations (non-optimization data, frozen)",
+    "base": [
+     [
+      88,
+      28
+     ],
+     [
+      36,
+      39
+     ],
+     [
+      85,
+      51
+     ],
+     [
+      93,
+      90
+     ],
+     [
+      12,
+      89
+     ],
+     [
+      21,
+      43
+     ],
+     [
+      37,
+      8
+     ],
+     [
+      99,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       88,
+       28
+      ],
+      [
+       36,
+       39
+      ],
+      [
+       85,
+       51
+      ],
+      [
+       93,
+       90
+      ],
+      [
+       12,
+       89
+      ],
+      [
+       21,
+       43
+      ],
+      [
+       37,
+       8
+      ],
+      [
+       99,
+       42
+      ]
+     ],
+     "hi": [
+      [
+       88,
+       28
+      ],
+      [
+       36,
+       39
+      ],
+      [
+       85,
+       51
+      ],
+      [
+       93,
+       90
+      ],
+      [
+       12,
+       89
+      ],
+      [
+       21,
+       43
+      ],
+      [
+       37,
+       8
+      ],
+      [
+       99,
+       42
+      ]
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

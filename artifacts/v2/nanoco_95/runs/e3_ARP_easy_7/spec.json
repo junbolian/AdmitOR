@@ -1,0 +1,428 @@
+{
+ "spec": {
+  "depot_coordinates": {
+   "base": [
+    50,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "intersection_coordinates": {
+   "base": [
+    [
+     64,
+     41
+    ],
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ],
+    [
+     76,
+     96
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     34,
+     65
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     17,
+     59,
+     42,
+     22,
+     53,
+     62,
+     22
+    ],
+    [
+     17,
+     0,
+     54,
+     28,
+     32,
+     56,
+     69,
+     38
+    ],
+    [
+     59,
+     54,
+     0,
+     73,
+     81,
+     27,
+     120,
+     67
+    ],
+    [
+     42,
+     28,
+     73,
+     0,
+     46,
+     82,
+     72,
+     64
+    ],
+    [
+     22,
+     32,
+     81,
+     46,
+     0,
+     74,
+     39,
+     28
+    ],
+    [
+     53,
+     56,
+     27,
+     82,
+     74,
+     0,
+     112,
+     52
+    ],
+    [
+     62,
+     69,
+     120,
+     72,
+     39,
+     112,
+     0,
+     61
+    ],
+    [
+     22,
+     38,
+     67,
+     64,
+     28,
+     52,
+     61,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "required_segment_relations": {
+   "base": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "num_required_segments": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_intersections": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_trucks": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[required_segment_relations] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_segments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_intersections] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "depot_coordinates": {
+    "meaning": "Geographic coordinates of depot intersection 0",
+    "base": [
+     50,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "intersection_coordinates": {
+    "meaning": "Geographic coordinates of intersections 1 through 7 (x,y pairs)",
+    "base": [
+     [
+      64,
+      41
+     ],
+     [
+      99,
+      82
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      76,
+      96
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      34,
+      65
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Symmetric pairwise travel distances between all 8 intersections (rows 0-7, columns 0-7)",
+    "base": [
+     [
+      0,
+      17,
+      59,
+      42,
+      22,
+      53,
+      62,
+      22
+     ],
+     [
+      17,
+      0,
+      54,
+      28,
+      32,
+      56,
+      69,
+      38
+     ],
+     [
+      59,
+      54,
+      0,
+      73,
+      81,
+      27,
+      120,
+      67
+     ],
+     [
+      42,
+      28,
+      73,
+      0,
+      46,
+      82,
+      72,
+      64
+     ],
+     [
+      22,
+      32,
+      81,
+      46,
+      0,
+      74,
+      39,
+      28
+     ],
+     [
+      53,
+      56,
+      27,
+      82,
+      74,
+      0,
+      112,
+      52
+     ],
+     [
+      62,
+      69,
+      120,
+      72,
+      39,
+      112,
+      0,
+      61
+     ],
+     [
+      22,
+      38,
+      67,
+      64,
+      28,
+      52,
+      61,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "required_segment_relations": {
+    "meaning": "Fixed set of mandatory street segments (endpoint pairs) that must be traversed at least once; treating these as fixed structural data, not perturbed numerically",
+    "base": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      7
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "num_required_segments": {
+    "meaning": "Cardinality of the mandatory segment list (index-set size; frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_intersections": {
+    "meaning": "Number of street intersections (index-set size; frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_trucks": {
+    "meaning": "Number of street sweeping trucks available (capacity parameter; frozen at 1)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "spec": {
+  "resource_limit": {
+   "base": 404,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "resource_limit": {
+    "meaning": "Total available amount of the critical resource",
+    "base": 404,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.1170508998471323,
+   "expected_return_asset3": 0.0746576079025595,
+   "min_portfolio_return": 0.1,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.3,
+   "min_asset_weight": 0.0
+  },
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.12788535969157674,
+   "expected_return_asset3": 0.005002151044533387,
+   "min_portfolio_return": 0.05500586367382385,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.394588485665605,
+   "min_asset_weight": 0.03383497437114557
+  },
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.1784359135409691,
+   "expected_return_asset3": 0.017387766525883232,
+   "min_portfolio_return": 0.08438436393705409,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.18745518992144136,
+   "min_asset_weight": 0.02526776440516812
+  },
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.005307193936772725,
+   "expected_return_asset3": 0.0397675301373297,
+   "min_portfolio_return": 0.12997688755590464,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.1881762488162787,
+   "min_asset_weight": 0.029463284193795437
+  },
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.16188609133556534,
+   "expected_return_asset3": 0.0012997519356122034,
+   "min_portfolio_return": 0.16116385036656158,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.23610020660719677,
+   "min_asset_weight": 0.007773974990589078
+  },
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.19144261444135624,
+   "expected_return_asset3": 0.06731890902252535,
+   "min_portfolio_return": 0.01854916867602958,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.43899774653898394,
+   "min_asset_weight": 0.030186301568344554
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   1.0,
+   1.0,
+   null,
+   null,
+   null,
+   1.0
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.00244029230862027,
+   0.0018296706089815243,
+   null,
+   null,
+   null,
+   0.001742377739603164
+  ],
+  "C-direct-2": [
+   0.0009232793590646074,
+   0.0007278506738028478,
+   null,
+   null,
+   null,
+   0.0006987780562234446
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition"
+  ],
+  "B-structured-2": [
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: incomparable (no co-solved instance)",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "A-direct vs C-direct-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: diverge on instance(s) [0, 1, 5]",
+  "A-direct-2 vs C-direct-2: diverge on instance(s) [0, 1, 5]",
+  "B-structured vs B-structured-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "C-direct vs C-direct-2: diverge on instance(s) [0, 1, 5]"
+ ],
+ "notes": []
+}

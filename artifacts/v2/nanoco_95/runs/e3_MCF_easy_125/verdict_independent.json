@@ -1,0 +1,379 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "supply_0": 13,
+   "supply_1": 10,
+   "supply_2": 0,
+   "supply_3": 0,
+   "demand_4": 11,
+   "demand_5": 12,
+   "coord_x": [
+    1,
+    62,
+    59,
+    55,
+    30,
+    43
+   ],
+   "coord_y": [
+    9,
+    26,
+    82,
+    12,
+    57,
+    51
+   ],
+   "capacity": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    11,
+    11,
+    11,
+    11
+   ],
+   "unit_cost": [
+    9,
+    5,
+    6,
+    2,
+    4,
+    3,
+    5,
+    4,
+    8,
+    8,
+    6,
+    5
+   ]
+  },
+  {
+   "supply_0": 18,
+   "supply_1": 3,
+   "supply_2": -4,
+   "supply_3": -6,
+   "demand_4": 16,
+   "demand_5": 16,
+   "coord_x": [
+    89,
+    9,
+    42,
+    3,
+    22,
+    51
+   ],
+   "coord_y": [
+    3,
+    20,
+    65,
+    54,
+    22,
+    59
+   ],
+   "capacity": [
+    37,
+    3,
+    37,
+    32,
+    17,
+    10,
+    43,
+    17,
+    7,
+    7,
+    39,
+    28
+   ],
+   "unit_cost": [
+    15,
+    13,
+    10,
+    18,
+    7,
+    10,
+    15,
+    11,
+    16,
+    10,
+    13,
+    1
+   ]
+  },
+  {
+   "supply_0": 10,
+   "supply_1": 8,
+   "supply_2": -8,
+   "supply_3": -5,
+   "demand_4": 6,
+   "demand_5": 9,
+   "coord_x": [
+    64,
+    36,
+    37,
+    21,
+    27,
+    94
+   ],
+   "coord_y": [
+    65,
+    61,
+    17,
+    73,
+    16,
+    38
+   ],
+   "capacity": [
+    45,
+    30,
+    26,
+    32,
+    38,
+    36,
+    13,
+    4,
+    16,
+    14,
+    12,
+    43
+   ],
+   "unit_cost": [
+    16,
+    6,
+    12,
+    7,
+    16,
+    8,
+    5,
+    4,
+    10,
+    5,
+    11,
+    16
+   ]
+  },
+  {
+   "supply_0": 13,
+   "supply_1": 7,
+   "supply_2": 10,
+   "supply_3": 0,
+   "demand_4": 5,
+   "demand_5": 5,
+   "coord_x": [
+    11,
+    63,
+    79,
+    42,
+    6,
+    38
+   ],
+   "coord_y": [
+    100,
+    53,
+    97,
+    86,
+    1,
+    72
+   ],
+   "capacity": [
+    32,
+    26,
+    14,
+    30,
+    8,
+    21,
+    22,
+    43,
+    40,
+    14,
+    24,
+    11
+   ],
+   "unit_cost": [
+    16,
+    16,
+    5,
+    12,
+    11,
+    3,
+    14,
+    10,
+    14,
+    10,
+    0,
+    6
+   ]
+  },
+  {
+   "supply_0": 5,
+   "supply_1": 21,
+   "supply_2": 8,
+   "supply_3": 7,
+   "demand_4": 9,
+   "demand_5": 5,
+   "coord_x": [
+    88,
+    95,
+    9,
+    49,
+    7,
+    76
+   ],
+   "coord_y": [
+    77,
+    13,
+    48,
+    55,
+    27,
+    87
+   ],
+   "capacity": [
+    21,
+    12,
+    26,
+    34,
+    11,
+    16,
+    45,
+    30,
+    21,
+    25,
+    8,
+    12
+   ],
+   "unit_cost": [
+    6,
+    11,
+    4,
+    4,
+    1,
+    11,
+    4,
+    16,
+    15,
+    1,
+    4,
+    12
+   ]
+  },
+  {
+   "supply_0": 9,
+   "supply_1": 6,
+   "supply_2": 9,
+   "supply_3": 1,
+   "demand_4": 12,
+   "demand_5": 18,
+   "coord_x": [
+    81,
+    19,
+    10,
+    43,
+    42,
+    47
+   ],
+   "coord_y": [
+    73,
+    67,
+    98,
+    10,
+    40,
+    34
+   ],
+   "capacity": [
+    39,
+    13,
+    11,
+    22,
+    21,
+    15,
+    13,
+    42,
+    22,
+    39,
+    26,
+    5
+   ],
+   "unit_cost": [
+    18,
+    15,
+    17,
+    17,
+    15,
+    3,
+    9,
+    4,
+    7,
+    1,
+    7,
+    18
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   154.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   154.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   154.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

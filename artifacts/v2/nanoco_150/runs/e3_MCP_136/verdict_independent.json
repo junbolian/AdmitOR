@@ -1,0 +1,145 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "bandwidth_demand": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ]
+  },
+  {
+   "bandwidth_demand": [
+    3.250968237224191,
+    1.4300129062672002,
+    0.8650175910214715,
+    1.6678528857785873,
+    2.283765456996815,
+    3.318059077361241,
+    3.7059232218687215,
+    2.256489898732949
+   ]
+  },
+  {
+   "bandwidth_demand": [
+    2.859459275433487,
+    1.4357566633256844,
+    0.831182784882162,
+    2.006426345724035,
+    1.4318431636206363,
+    2.457907771235967,
+    3.2697919880031416,
+    3.08089466508579
+   ]
+  },
+  {
+   "bandwidth_demand": [
+    2.496793119673254,
+    2.1071188206510905,
+    1.185658274006696,
+    1.407798511613673,
+    2.3669831021993692,
+    3.356650910978808,
+    2.7124509297323853,
+    2.3798630996612067
+   ]
+  },
+  {
+   "bandwidth_demand": [
+    3.8229835299722064,
+    1.803913454135152,
+    0.7556475060280887,
+    1.5160596522001568,
+    2.416993239616952,
+    3.186706856460404,
+    3.5528308918938847,
+    3.4135172160488723
+   ]
+  },
+  {
+   "bandwidth_demand": [
+    3.0652105646184618,
+    2.567738916775245,
+    0.927120626325012,
+    2.0624487575278723,
+    2.395285597103594,
+    3.213335554255643,
+    3.651072420559399,
+    3.1392338614621718
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   5.0,
+   4.0,
+   4.0,
+   5.0,
+   5.0
+  ],
+  "B-structured": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   6.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: demand[0] = '3.250968237224191', value type=<class 'float'>. | Value not in parameter domain PositiveIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: demand[0] = '2.859459275433487', value type=<class 'float'>. | Value not in parameter domain PositiveIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: demand[0] = '2.496793119673254', value type=<class 'float'>. | Value not in parameter domain PositiveIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: demand[0] = '3.8229835299722064', value type=<class 'float'>. | Value not in parameter domain PositiveIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: demand[0] = '3.0652105646184618', value type=<class 'float'>. | Value not in parameter domain PositiveIntegers"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

@@ -1,0 +1,101 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand_0": 33,
+   "demand_1": 217,
+   "supply_4": 97,
+   "supply_5": 153
+  },
+  {
+   "demand_0": 37.60108434911016,
+   "demand_1": 134.54186710665496,
+   "supply_4": 75.17784388180456,
+   "supply_5": 110.65124293676988
+  },
+  {
+   "demand_0": 40.80355006741241,
+   "demand_1": 247.67503101661737,
+   "supply_4": 135.04141806737002,
+   "supply_5": 89.80164139230067
+  },
+  {
+   "demand_0": 30.423420049613924,
+   "demand_1": 135.37279729444901,
+   "supply_4": 69.70788355594952,
+   "supply_5": 153.81935907981443
+  },
+  {
+   "demand_0": 17.3756869995675,
+   "demand_1": 164.71821615920217,
+   "supply_4": 111.53879046461375,
+   "supply_5": 159.87604653229215
+  },
+  {
+   "demand_0": 23.774540527342992,
+   "demand_1": 232.49652272085774,
+   "supply_4": 127.01475429774918,
+   "supply_5": 77.49431023074334
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   10810.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:fixed_cost = params[\"fixed_cost\"] | ~~~~~~^^^^^^^^^^^^^^ | KeyError: 'fixed_cost'",
+   "crash:fixed_cost = params[\"fixed_cost\"] | ~~~~~~^^^^^^^^^^^^^^ | KeyError: 'fixed_cost'",
+   "crash:fixed_cost = params[\"fixed_cost\"] | ~~~~~~^^^^^^^^^^^^^^ | KeyError: 'fixed_cost'",
+   "crash:fixed_cost = params[\"fixed_cost\"] | ~~~~~~^^^^^^^^^^^^^^ | KeyError: 'fixed_cost'",
+   "crash:fixed_cost = params[\"fixed_cost\"] | ~~~~~~^^^^^^^^^^^^^^ | KeyError: 'fixed_cost'",
+   "crash:fixed_cost = params[\"fixed_cost\"] | ~~~~~~^^^^^^^^^^^^^^ | KeyError: 'fixed_cost'"
+  ],
+  "B-structured": [
+   "missing_parameter:fixed_cost",
+   "missing_parameter:fixed_cost",
+   "missing_parameter:fixed_cost",
+   "missing_parameter:fixed_cost",
+   "missing_parameter:fixed_cost",
+   "missing_parameter:fixed_cost"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

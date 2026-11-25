@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_203",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity\",\"evidence\":\"\\\"for example, Consultant 0 can work no more than 8 hours on Project 0 ... with similar limits for the other consultants and projects\\\"\"},{\"parameter\":\"cost\",\"evidence\":\"\\\"for example, assigning Consultant 0 to Project 0 costs $27, assigning Consultant 0 to Project 1 costs $20, and so on for all consultant-project pairs\\\"\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "\"for example, Consultant 0 can work no more than 8 hours on Project 0 ... with similar limits for the other consultants and projects\""
+  },
+  {
+   "parameter": "cost",
+   "evidence": "\"for example, assigning Consultant 0 to Project 0 costs $27, assigning Consultant 0 to Project 1 costs $20, and so on for all consultant-project pairs\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

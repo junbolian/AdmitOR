@@ -1,0 +1,41 @@
+{
+ "sample_id": "conf_99380",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement gives only ranges for the per-period cost parameters, not specific values. Every period-by-period array for production costs, setup costs, and holding costs falls into the \"not_stated\" category.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"prod_cost_A\",\n      \"evidence\": \"the production cost per unit of Product A ranges from 41 to 48 units depending on the period\"\n    },\n    {\n      \"parameter\": \"prod_cost_B\",\n      \"evidence\": \"for Product B, it ranges from 41 to 47 units\"\n    },\n    {\n      \"parameter\": \"setup_cost_A\",\n      \"evidence\": \"Setting up production for Product A incurs costs between 1,176 and 1,426 units per period\"\n    },\n    {\n      \"parameter\": \"setup_cost_B\",\n      \"evidence\": \"for Product B, setup costs range from 1,020 to 1,348 units per period\"\n    },\n    {\n      \"parameter\": \"hold_cost_A\",\n      \"evidence\": \"Holding inventory for Product A costs between 4 and 5 units per period\"\n    },\n    {\n      \"parameter\": \"hold_cost_B\",\n      \"evidence\": \"for Product B, it costs 4 or 5 units per period\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "prod_cost_A",
+   "evidence": "the production cost per unit of Product A ranges from 41 to 48 units depending on the period"
+  },
+  {
+   "parameter": "prod_cost_B",
+   "evidence": "for Product B, it ranges from 41 to 47 units"
+  },
+  {
+   "parameter": "setup_cost_A",
+   "evidence": "Setting up production for Product A incurs costs between 1,176 and 1,426 units per period"
+  },
+  {
+   "parameter": "setup_cost_B",
+   "evidence": "for Product B, setup costs range from 1,020 to 1,348 units per period"
+  },
+  {
+   "parameter": "hold_cost_A",
+   "evidence": "Holding inventory for Product A costs between 4 and 5 units per period"
+  },
+  {
+   "parameter": "hold_cost_B",
+   "evidence": "for Product B, it costs 4 or 5 units per period"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

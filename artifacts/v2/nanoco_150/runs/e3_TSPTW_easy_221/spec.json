@@ -1,0 +1,659 @@
+{
+ "spec": {
+  "travel_time_0": {
+   "base": [
+    0,
+    85,
+    75,
+    78,
+    96,
+    37,
+    33,
+    55
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_1": {
+   "base": [
+    85,
+    0,
+    65,
+    13,
+    84,
+    93,
+    102,
+    32
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_2": {
+   "base": [
+    75,
+    65,
+    0,
+    71,
+    24,
+    54,
+    68,
+    47
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_3": {
+   "base": [
+    78,
+    13,
+    71,
+    0,
+    92,
+    91,
+    98,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_4": {
+   "base": [
+    96,
+    84,
+    24,
+    92,
+    0,
+    70,
+    84,
+    70
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_5": {
+   "base": [
+    37,
+    93,
+    54,
+    91,
+    70,
+    0,
+    14,
+    61
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_6": {
+   "base": [
+    33,
+    102,
+    68,
+    98,
+    84,
+    14,
+    0,
+    70
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "travel_time_7": {
+   "base": [
+    55,
+    32,
+    47,
+    30,
+    70,
+    61,
+    70,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "window_0_start": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "window_0_end": {
+   "base": 754,
+   "perturb": {
+    "mode": "abs",
+    "lo": 600.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  },
+  "window_1_start": {
+   "base": 481,
+   "perturb": {
+    "mode": "abs",
+    "lo": 400.0,
+    "hi": 560.0,
+    "integer": true
+   }
+  },
+  "window_1_end": {
+   "base": 591,
+   "perturb": {
+    "mode": "abs",
+    "lo": 510.0,
+    "hi": 680.0,
+    "integer": true
+   }
+  },
+  "window_2_start": {
+   "base": 578,
+   "perturb": {
+    "mode": "abs",
+    "lo": 490.0,
+    "hi": 660.0,
+    "integer": true
+   }
+  },
+  "window_2_end": {
+   "base": 682,
+   "perturb": {
+    "mode": "abs",
+    "lo": 600.0,
+    "hi": 780.0,
+    "integer": true
+   }
+  },
+  "window_3_start": {
+   "base": 55,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 130.0,
+    "integer": true
+   }
+  },
+  "window_3_end": {
+   "base": 148,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 230.0,
+    "integer": true
+   }
+  },
+  "window_4_start": {
+   "base": 397,
+   "perturb": {
+    "mode": "abs",
+    "lo": 320.0,
+    "hi": 470.0,
+    "integer": true
+   }
+  },
+  "window_4_end": {
+   "base": 489,
+   "perturb": {
+    "mode": "abs",
+    "lo": 420.0,
+    "hi": 580.0,
+    "integer": true
+   }
+  },
+  "window_5_start": {
+   "base": 161,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 240.0,
+    "integer": true
+   }
+  },
+  "window_5_end": {
+   "base": 244,
+   "perturb": {
+    "mode": "abs",
+    "lo": 170.0,
+    "hi": 330.0,
+    "integer": true
+   }
+  },
+  "window_6_start": {
+   "base": 318,
+   "perturb": {
+    "mode": "abs",
+    "lo": 240.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "window_6_end": {
+   "base": 418,
+   "perturb": {
+    "mode": "abs",
+    "lo": 350.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "window_7_start": {
+   "base": 239,
+   "perturb": {
+    "mode": "abs",
+    "lo": 170.0,
+    "hi": 310.0,
+    "integer": true
+   }
+  },
+  "window_7_end": {
+   "base": 324,
+   "perturb": {
+    "mode": "abs",
+    "lo": 260.0,
+    "hi": 410.0,
+    "integer": true
+   }
+  },
+  "horizon": {
+   "base": 754,
+   "perturb": {
+    "mode": "abs",
+    "lo": 600.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  },
+  "service_time": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_hospitals": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[window_0_start] degenerate abs range (lo == hi); perturbation has no effect",
+  "[service_time] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_hospitals] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "travel_time_0": {
+    "meaning": "Travel times from node 0 to nodes 0..7 (minutes)",
+    "base": [
+     0,
+     85,
+     75,
+     78,
+     96,
+     37,
+     33,
+     55
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_1": {
+    "meaning": "Travel times from node 1 to nodes 0..7 (minutes)",
+    "base": [
+     85,
+     0,
+     65,
+     13,
+     84,
+     93,
+     102,
+     32
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_2": {
+    "meaning": "Travel times from node 2 to nodes 0..7 (minutes)",
+    "base": [
+     75,
+     65,
+     0,
+     71,
+     24,
+     54,
+     68,
+     47
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_3": {
+    "meaning": "Travel times from node 3 to nodes 0..7 (minutes)",
+    "base": [
+     78,
+     13,
+     71,
+     0,
+     92,
+     91,
+     98,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_4": {
+    "meaning": "Travel times from node 4 to nodes 0..7 (minutes)",
+    "base": [
+     96,
+     84,
+     24,
+     92,
+     0,
+     70,
+     84,
+     70
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_5": {
+    "meaning": "Travel times from node 5 to nodes 0..7 (minutes)",
+    "base": [
+     37,
+     93,
+     54,
+     91,
+     70,
+     0,
+     14,
+     61
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_6": {
+    "meaning": "Travel times from node 6 to nodes 0..7 (minutes)",
+    "base": [
+     33,
+     102,
+     68,
+     98,
+     84,
+     14,
+     0,
+     70
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "travel_time_7": {
+    "meaning": "Travel times from node 7 to nodes 0..7 (minutes)",
+    "base": [
+     55,
+     32,
+     47,
+     30,
+     70,
+     61,
+     70,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "window_0_start": {
+    "meaning": "Reception interval start for hub node 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "window_0_end": {
+    "meaning": "Reception interval end for hub node 0",
+    "base": 754,
+    "perturb": {
+     "mode": "abs",
+     "lo": 600,
+     "hi": 900,
+     "integer": true
+    }
+   },
+   "window_1_start": {
+    "meaning": "Critical reception interval start for hospital 1",
+    "base": 481,
+    "perturb": {
+     "mode": "abs",
+     "lo": 400,
+     "hi": 560,
+     "integer": true
+    }
+   },
+   "window_1_end": {
+    "meaning": "Critical reception interval end for hospital 1",
+    "base": 591,
+    "perturb": {
+     "mode": "abs",
+     "lo": 510,
+     "hi": 680,
+     "integer": true
+    }
+   },
+   "window_2_start": {
+    "meaning": "Critical reception interval start for hospital 2",
+    "base": 578,
+    "perturb": {
+     "mode": "abs",
+     "lo": 490,
+     "hi": 660,
+     "integer": true
+    }
+   },
+   "window_2_end": {
+    "meaning": "Critical reception interval end for hospital 2",
+    "base": 682,
+    "perturb": {
+     "mode": "abs",
+     "lo": 600,
+     "hi": 780,
+     "integer": true
+    }
+   },
+   "window_3_start": {
+    "meaning": "Critical reception interval start for hospital 3",
+    "base": 55,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 130,
+     "integer": true
+    }
+   },
+   "window_3_end": {
+    "meaning": "Critical reception interval end for hospital 3",
+    "base": 148,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 230,
+     "integer": true
+    }
+   },
+   "window_4_start": {
+    "meaning": "Critical reception interval start for hospital 4",
+    "base": 397,
+    "perturb": {
+     "mode": "abs",
+     "lo": 320,
+     "hi": 470,
+     "integer": true
+    }
+   },
+   "window_4_end": {
+    "meaning": "Critical reception interval end for hospital 4",
+    "base": 489,
+    "perturb": {
+     "mode": "abs",
+     "lo": 420,
+     "hi": 580,
+     "integer": true
+    }
+   },
+   "window_5_start": {
+    "meaning": "Critical reception interval start for hospital 5",
+    "base": 161,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 240,
+     "integer": true
+    }
+   },
+   "window_5_end": {
+    "meaning": "Critical reception interval end for hospital 5",
+    "base": 244,
+    "perturb": {
+     "mode": "abs",
+     "lo": 170,
+     "hi": 330,
+     "integer": true
+    }
+   },
+   "window_6_start": {
+    "meaning": "Critical reception interval start for hospital 6",
+    "base": 318,
+    "perturb": {
+     "mode": "abs",
+     "lo": 240,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "window_6_end": {
+    "meaning": "Critical reception interval end for hospital 6",
+    "base": 418,
+    "perturb": {
+     "mode": "abs",
+     "lo": 350,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "window_7_start": {
+    "meaning": "Critical reception interval start for hospital 7",
+    "base": 239,
+    "perturb": {
+     "mode": "abs",
+     "lo": 170,
+     "hi": 310,
+     "integer": true
+    }
+   },
+   "window_7_end": {
+    "meaning": "Critical reception interval end for hospital 7",
+    "base": 324,
+    "perturb": {
+     "mode": "abs",
+     "lo": 260,
+     "hi": 410,
+     "integer": true
+    }
+   },
+   "horizon": {
+    "meaning": "Global shelf-life horizon for completing the route (minutes)",
+    "base": 754,
+    "perturb": {
+     "mode": "abs",
+     "lo": 600,
+     "hi": 900,
+     "integer": true
+    }
+   },
+   "service_time": {
+    "meaning": "Unloading/verification time at each node",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of nodes in the network (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_hospitals": {
+    "meaning": "Number of hospitals/patients to visit (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

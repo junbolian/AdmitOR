@@ -1,0 +1,108 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "producer_capacity": [
+    2226,
+    2118,
+    2644,
+    2649,
+    2548,
+    2682
+   ],
+   "contract_demand": [
+    989,
+    1142,
+    1012,
+    1011,
+    1015,
+    1096
+   ],
+   "min_contributors": [
+    3,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "producer_min_delivery": [
+    489,
+    465,
+    581,
+    582,
+    560,
+    590
+   ],
+   "cost_coefficient": [
+    46,
+    43
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return c[j][i] | ~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:File \"candidate.py\", line 73, in read_cost | raise ValueError( | ValueError: cost_coefficient must be a scalar, a 6-by-6 structure, a pair-keyed mapping, or a flat sequence of 6 or 36 values.",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:val = cost_coefficient[i * num_contracts + j] | ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "spec": {
+  "durations": {
+   "base": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "conflicts": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "durations": {
+    "meaning": "Required contiguous runway occupancy duration for each flight (indexed 0-7)",
+    "base": [
+     3,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "conflicts": {
+    "meaning": "Direct conflicting flight pairs whose time intervals must not overlap",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

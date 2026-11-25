@@ -1,0 +1,678 @@
+{
+ "spec": {
+  "supply_node_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "demand_node_6": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_2": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_3": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_4": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_5": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_6": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_0": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_2": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_3": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_4": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_6": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_0": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_1": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_3": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_4": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_6": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_0": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_1": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_4": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_5": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_6": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_0": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_1": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_2": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_3": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_6": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_0": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_1": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_4": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_6": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_0": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_1": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_4": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_5": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_node_0": {
+    "meaning": "net supply at node_0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "demand_node_6": {
+    "meaning": "net demand at node_6",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "transportation cost from node_0 to node_1",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_2": {
+    "meaning": "transportation cost from node_0 to node_2",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_3": {
+    "meaning": "transportation cost from node_0 to node_3",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_4": {
+    "meaning": "transportation cost from node_0 to node_4",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_5": {
+    "meaning": "transportation cost from node_0 to node_5",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_6": {
+    "meaning": "transportation cost from node_0 to node_6",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_0": {
+    "meaning": "transportation cost from node_1 to node_0",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_2": {
+    "meaning": "transportation cost from node_1 to node_2",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_3": {
+    "meaning": "transportation cost from node_1 to node_3",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_4": {
+    "meaning": "transportation cost from node_1 to node_4",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_5": {
+    "meaning": "transportation cost from node_1 to node_5",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_6": {
+    "meaning": "transportation cost from node_1 to node_6",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_0": {
+    "meaning": "transportation cost from node_2 to node_0",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_1": {
+    "meaning": "transportation cost from node_2 to node_1",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_3": {
+    "meaning": "transportation cost from node_2 to node_3",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_4": {
+    "meaning": "transportation cost from node_2 to node_4",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_5": {
+    "meaning": "transportation cost from node_2 to node_5",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_6": {
+    "meaning": "transportation cost from node_2 to node_6",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_0": {
+    "meaning": "transportation cost from node_3 to node_0",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_1": {
+    "meaning": "transportation cost from node_3 to node_1",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_2": {
+    "meaning": "transportation cost from node_3 to node_2",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_4": {
+    "meaning": "transportation cost from node_3 to node_4",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_5": {
+    "meaning": "transportation cost from node_3 to node_5",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_6": {
+    "meaning": "transportation cost from node_3 to node_6",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_0": {
+    "meaning": "transportation cost from node_4 to node_0",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_1": {
+    "meaning": "transportation cost from node_4 to node_1",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_2": {
+    "meaning": "transportation cost from node_4 to node_2",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_3": {
+    "meaning": "transportation cost from node_4 to node_3",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_5": {
+    "meaning": "transportation cost from node_4 to node_5",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_6": {
+    "meaning": "transportation cost from node_4 to node_6",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_0": {
+    "meaning": "transportation cost from node_5 to node_0",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_1": {
+    "meaning": "transportation cost from node_5 to node_1",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_2": {
+    "meaning": "transportation cost from node_5 to node_2",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_3": {
+    "meaning": "transportation cost from node_5 to node_3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_4": {
+    "meaning": "transportation cost from node_5 to node_4",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_6": {
+    "meaning": "transportation cost from node_5 to node_6",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_0": {
+    "meaning": "transportation cost from node_6 to node_0",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_1": {
+    "meaning": "transportation cost from node_6 to node_1",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_2": {
+    "meaning": "transportation cost from node_6 to node_2",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_3": {
+    "meaning": "transportation cost from node_6 to node_3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_4": {
+    "meaning": "transportation cost from node_6 to node_4",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_5": {
+    "meaning": "transportation cost from node_6 to node_5",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

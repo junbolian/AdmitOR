@@ -1,0 +1,149 @@
+{
+ "spec": {
+  "flow_matrix": {
+   "base": [
+    0,
+    10,
+    1,
+    2,
+    10,
+    0,
+    5,
+    9,
+    1,
+    5,
+    0,
+    5,
+    2,
+    9,
+    5,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    0,
+    54,
+    28,
+    32,
+    54,
+    0,
+    73,
+    81,
+    28,
+    73,
+    0,
+    46,
+    32,
+    81,
+    46,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_facilities": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_locations": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_locations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "flow_matrix": {
+    "meaning": "symmetric inter-rack daily communication traffic volumes (gigabits) for the 4x4 matrix, row-major including diagonal zeros",
+    "base": [
+     0,
+     10,
+     1,
+     2,
+     10,
+     0,
+     5,
+     9,
+     1,
+     5,
+     0,
+     5,
+     2,
+     9,
+     5,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_matrix": {
+    "meaning": "symmetric integer physical distances between rack slots (row-major including diagonal zeros)",
+    "base": [
+     0,
+     54,
+     28,
+     32,
+     54,
+     0,
+     73,
+     81,
+     28,
+     73,
+     0,
+     46,
+     32,
+     81,
+     46,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_facilities": {
+    "meaning": "number of facilities / rack slots (cardinality, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_locations": {
+    "meaning": "number of locations / rack slots (cardinality, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

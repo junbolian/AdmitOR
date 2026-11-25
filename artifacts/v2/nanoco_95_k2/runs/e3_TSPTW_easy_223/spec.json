@@ -1,0 +1,529 @@
+{
+ "spec": {
+  "travel_time": {
+   "base": [
+    [
+     0,
+     43,
+     64,
+     21,
+     19,
+     81,
+     75,
+     83
+    ],
+    [
+     43,
+     0,
+     53,
+     23,
+     62,
+     97,
+     69,
+     55
+    ],
+    [
+     64,
+     53,
+     0,
+     50,
+     76,
+     55,
+     16,
+     31
+    ],
+    [
+     21,
+     23,
+     50,
+     0,
+     40,
+     82,
+     64,
+     64
+    ],
+    [
+     19,
+     62,
+     76,
+     40,
+     0,
+     81,
+     86,
+     99
+    ],
+    [
+     81,
+     97,
+     55,
+     82,
+     81,
+     0,
+     47,
+     85
+    ],
+    [
+     75,
+     69,
+     16,
+     64,
+     86,
+     47,
+     0,
+     38
+    ],
+    [
+     83,
+     55,
+     31,
+     64,
+     99,
+     85,
+     38,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "tw_0_earliest": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "tw_0_latest": {
+   "base": 632,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 800.0,
+    "integer": true
+   }
+  },
+  "tw_1_earliest": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "tw_1_latest": {
+   "base": 112,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 250.0,
+    "integer": true
+   }
+  },
+  "tw_2_earliest": {
+   "base": 223,
+   "perturb": {
+    "mode": "abs",
+    "lo": 120.0,
+    "hi": 340.0,
+    "integer": true
+   }
+  },
+  "tw_2_latest": {
+   "base": 300,
+   "perturb": {
+    "mode": "abs",
+    "lo": 220.0,
+    "hi": 440.0,
+    "integer": true
+   }
+  },
+  "tw_3_earliest": {
+   "base": 368,
+   "perturb": {
+    "mode": "abs",
+    "lo": 240.0,
+    "hi": 480.0,
+    "integer": true
+   }
+  },
+  "tw_3_latest": {
+   "base": 455,
+   "perturb": {
+    "mode": "abs",
+    "lo": 360.0,
+    "hi": 590.0,
+    "integer": true
+   }
+  },
+  "tw_4_earliest": {
+   "base": 306,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 420.0,
+    "integer": true
+   }
+  },
+  "tw_4_latest": {
+   "base": 376,
+   "perturb": {
+    "mode": "abs",
+    "lo": 290.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "tw_5_earliest": {
+   "base": 139,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 250.0,
+    "integer": true
+   }
+  },
+  "tw_5_latest": {
+   "base": 192,
+   "perturb": {
+    "mode": "abs",
+    "lo": 130.0,
+    "hi": 320.0,
+    "integer": true
+   }
+  },
+  "tw_6_earliest": {
+   "base": 179,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "tw_6_latest": {
+   "base": 278,
+   "perturb": {
+    "mode": "abs",
+    "lo": 190.0,
+    "hi": 410.0,
+    "integer": true
+   }
+  },
+  "tw_7_earliest": {
+   "base": 441,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 560.0,
+    "integer": true
+   }
+  },
+  "tw_7_latest": {
+   "base": 549,
+   "perturb": {
+    "mode": "abs",
+    "lo": 450.0,
+    "hi": 700.0,
+    "integer": true
+   }
+  },
+  "service_time": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "max_shelf_life_window": {
+   "base": 632,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 800.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "travel_time": {
+    "meaning": "Refrigerated transit duration between any two locations (symmetric matrix, time units); given as full 8x8 matrix",
+    "base": [
+     [
+      0,
+      43,
+      64,
+      21,
+      19,
+      81,
+      75,
+      83
+     ],
+     [
+      43,
+      0,
+      53,
+      23,
+      62,
+      97,
+      69,
+      55
+     ],
+     [
+      64,
+      53,
+      0,
+      50,
+      76,
+      55,
+      16,
+      31
+     ],
+     [
+      21,
+      23,
+      50,
+      0,
+      40,
+      82,
+      64,
+      64
+     ],
+     [
+      19,
+      62,
+      76,
+      40,
+      0,
+      81,
+      86,
+      99
+     ],
+     [
+      81,
+      97,
+      55,
+      82,
+      81,
+      0,
+      47,
+      85
+     ],
+     [
+      75,
+      69,
+      16,
+      64,
+      86,
+      47,
+      0,
+      38
+     ],
+     [
+      83,
+      55,
+      31,
+      64,
+      99,
+      85,
+      38,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "tw_0_earliest": {
+    "meaning": "Earliest service start at depot Node 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "tw_0_latest": {
+    "meaning": "Latest service start at depot Node 0 / route must return by this time",
+    "base": 632,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 800,
+     "integer": true
+    }
+   },
+   "tw_1_earliest": {
+    "meaning": "Earliest service start at Store 1",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "tw_1_latest": {
+    "meaning": "Latest service start at Store 1",
+    "base": 112,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 250,
+     "integer": true
+    }
+   },
+   "tw_2_earliest": {
+    "meaning": "Earliest service start at Store 2",
+    "base": 223,
+    "perturb": {
+     "mode": "abs",
+     "lo": 120,
+     "hi": 340,
+     "integer": true
+    }
+   },
+   "tw_2_latest": {
+    "meaning": "Latest service start at Store 2",
+    "base": 300,
+    "perturb": {
+     "mode": "abs",
+     "lo": 220,
+     "hi": 440,
+     "integer": true
+    }
+   },
+   "tw_3_earliest": {
+    "meaning": "Earliest service start at Store 3",
+    "base": 368,
+    "perturb": {
+     "mode": "abs",
+     "lo": 240,
+     "hi": 480,
+     "integer": true
+    }
+   },
+   "tw_3_latest": {
+    "meaning": "Latest service start at Store 3",
+    "base": 455,
+    "perturb": {
+     "mode": "abs",
+     "lo": 360,
+     "hi": 590,
+     "integer": true
+    }
+   },
+   "tw_4_earliest": {
+    "meaning": "Earliest service start at Store 4",
+    "base": 306,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 420,
+     "integer": true
+    }
+   },
+   "tw_4_latest": {
+    "meaning": "Latest service start at Store 4",
+    "base": 376,
+    "perturb": {
+     "mode": "abs",
+     "lo": 290,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "tw_5_earliest": {
+    "meaning": "Earliest service start at Store 5",
+    "base": 139,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 250,
+     "integer": true
+    }
+   },
+   "tw_5_latest": {
+    "meaning": "Latest service start at Store 5",
+    "base": 192,
+    "perturb": {
+     "mode": "abs",
+     "lo": 130,
+     "hi": 320,
+     "integer": true
+    }
+   },
+   "tw_6_earliest": {
+    "meaning": "Earliest service start at Store 6",
+    "base": 179,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "tw_6_latest": {
+    "meaning": "Latest service start at Store 6",
+    "base": 278,
+    "perturb": {
+     "mode": "abs",
+     "lo": 190,
+     "hi": 410,
+     "integer": true
+    }
+   },
+   "tw_7_earliest": {
+    "meaning": "Earliest service start at Store 7",
+    "base": 441,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 560,
+     "integer": true
+    }
+   },
+   "tw_7_latest": {
+    "meaning": "Latest service start at Store 7",
+    "base": 549,
+    "perturb": {
+     "mode": "abs",
+     "lo": 450,
+     "hi": 700,
+     "integer": true
+    }
+   },
+   "service_time": {
+    "meaning": "Unloading and shelf-stocking time at every location",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "max_shelf_life_window": {
+    "meaning": "Maximum total route duration allowed (time units)",
+    "base": 632,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 800,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

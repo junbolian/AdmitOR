@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    523,
+    563,
+    312,
+    217
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost": {
+   "base": [
+    3,
+    8,
+    8,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_production": {
+   "base": [
+    49,
+    38,
+    45,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "max_production": {
+   "base": [
+    130,
+    121,
+    123,
+    126
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    223,
+    245,
+    217,
+    243,
+    190
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost per month for keeping each factory operational (F0..F3)",
+    "base": [
+     523,
+     563,
+     312,
+     217
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable production cost per unit at each factory (F0..F3)",
+    "base": [
+     3,
+     8,
+     8,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production if factory is operational, per factory (F0..F3)",
+    "base": [
+     49,
+     38,
+     45,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production if factory is operational, per factory (F0..F3)",
+    "base": [
+     130,
+     121,
+     123,
+     126
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand that total production must meet or exceed (Month 0..4)",
+    "base": [
+     223,
+     245,
+     217,
+     243,
+     190
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

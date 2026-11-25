@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_114142",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each extracted value against the statement:\n\n**dispersion_weights**: I'll check each pair systematically.\n\n- (0,1): extracted 17, stated 17 ✓\n- (0,2): extracted 14, stated 14 ✓\n- (0,3): extracted 11, stated 11 ✓\n- (0,4): extracted 17, stated 17 ✓\n- (1,0): extracted 14, stated 14 ✓\n- (1,2): extracted 10, stated 10 ✓\n- (1,3): extracted 19, stated 19 ✓\n- (1,4): extracted 12, stated 12 ✓\n- (2,0): extracted 15, stated 15 ✓\n- (2,1): extracted 20, stated 20 ✓\n- (2,3): extracted 14, stated 14 ✓\n- (2,4): extracted 15, stated 15 ✓\n- (3,0): extracted 15, stated 15 ✓\n- (3,1): extracted 14, stated 14 ✓\n- (3,2): extracted 14, stated 14 ✓\n- (3,4): extracted 19, stated 19 ✓\n- (4,0): extracted 14, stated 14 ✓\n- (4,1): extracted 14, stated 14 ✓\n- (4,2): extracted 14, stated 14 ✓\n- (4,3): extracted 10, stated 10 ✓\n\n**total_facilities**: extracted 3, stated 3 ✓\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

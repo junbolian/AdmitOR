@@ -1,0 +1,581 @@
+{
+ "spec": {
+  "team_cost_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_2": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_5": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_6": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_7": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_9": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_10": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_11": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_12": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_13": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "team_cost_14": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_req_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "coverage_req_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_5": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "coverage_req_6": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "coverage_req_7": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_8": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_9": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_10": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_11": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_12": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "coverage_req_13": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_14": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_15": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_16": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_17": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "coverage_req_18": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "coverage_req_19": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "team_cost_1": {
+    "meaning": "cost of selecting Team 1",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_2": {
+    "meaning": "cost of selecting Team 2",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_3": {
+    "meaning": "cost of selecting Team 3",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_4": {
+    "meaning": "cost of selecting Team 4",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_5": {
+    "meaning": "cost of selecting Team 5",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_6": {
+    "meaning": "cost of selecting Team 6",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_7": {
+    "meaning": "cost of selecting Team 7",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_8": {
+    "meaning": "cost of selecting Team 8",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_9": {
+    "meaning": "cost of selecting Team 9",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_10": {
+    "meaning": "cost of selecting Team 10",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_11": {
+    "meaning": "cost of selecting Team 11",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_12": {
+    "meaning": "cost of selecting Team 12",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_13": {
+    "meaning": "cost of selecting Team 13",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "team_cost_14": {
+    "meaning": "cost of selecting Team 14",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_req_1": {
+    "meaning": "minimum teams from {4,5,9,12,13,14}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_2": {
+    "meaning": "minimum teams from {4,5,8}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "coverage_req_3": {
+    "meaning": "minimum teams from {1,4,8,10,12}",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_4": {
+    "meaning": "minimum teams from {3,7,8,11,12,14}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_5": {
+    "meaning": "minimum teams from {4,5,9,14}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "coverage_req_6": {
+    "meaning": "minimum teams from {4,5,9,10,11,12,13}",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "coverage_req_7": {
+    "meaning": "minimum teams from {2,4,6,7,11}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_8": {
+    "meaning": "minimum teams from {1,4,6,7,11,12}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_9": {
+    "meaning": "minimum teams from {1,3,5,6,7,12}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_10": {
+    "meaning": "minimum teams from {1,7,8,9,10,13}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_11": {
+    "meaning": "minimum teams from {1,5,7,10,13,14}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_12": {
+    "meaning": "minimum teams from {1,2,8,10,12,13,14}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "coverage_req_13": {
+    "meaning": "minimum teams from {4,5,6,7,8,11}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_14": {
+    "meaning": "minimum teams from {1,3,6,7,10}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_15": {
+    "meaning": "minimum teams from {3,4,9,12,13,14}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_16": {
+    "meaning": "minimum teams from {1,2,3,8,10,11}",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_17": {
+    "meaning": "minimum teams from {1,2,3,4,13}",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "coverage_req_18": {
+    "meaning": "minimum teams from {1,2,3,7,12,14}",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "coverage_req_19": {
+    "meaning": "minimum teams from {1,2,3,5,7,9,12}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

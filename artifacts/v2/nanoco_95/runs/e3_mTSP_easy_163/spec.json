@@ -1,0 +1,363 @@
+{
+ "spec": {
+  "node_coordinates": {
+   "base": [
+    [
+     91,
+     71
+    ],
+    [
+     88,
+     28
+    ],
+    [
+     36,
+     39
+    ],
+    [
+     85,
+     51
+    ],
+    [
+     93,
+     90
+    ],
+    [
+     12,
+     89
+    ],
+    [
+     21,
+     43
+    ],
+    [
+     37,
+     8
+    ],
+    [
+     99,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -50.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     43,
+     64,
+     21,
+     19,
+     81,
+     75,
+     83,
+     30
+    ],
+    [
+     43,
+     0,
+     53,
+     23,
+     62,
+     97,
+     69,
+     55,
+     18
+    ],
+    [
+     64,
+     53,
+     0,
+     50,
+     76,
+     55,
+     16,
+     31,
+     63
+    ],
+    [
+     21,
+     23,
+     50,
+     0,
+     40,
+     82,
+     64,
+     64,
+     17
+    ],
+    [
+     19,
+     62,
+     76,
+     40,
+     0,
+     81,
+     86,
+     99,
+     48
+    ],
+    [
+     81,
+     97,
+     55,
+     82,
+     81,
+     0,
+     47,
+     85,
+     99
+    ],
+    [
+     75,
+     69,
+     16,
+     64,
+     86,
+     47,
+     0,
+     38,
+     78
+    ],
+    [
+     83,
+     55,
+     31,
+     64,
+     99,
+     85,
+     38,
+     0,
+     71
+    ],
+    [
+     30,
+     18,
+     63,
+     17,
+     48,
+     99,
+     78,
+     71,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_clinic_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_clinic_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "node_coordinates": {
+    "meaning": "2D coordinates of all nine nodes (depot 0 and clinics 1-8)",
+    "base": [
+     [
+      91,
+      71
+     ],
+     [
+      88,
+      28
+     ],
+     [
+      36,
+      39
+     ],
+     [
+      85,
+      51
+     ],
+     [
+      93,
+      90
+     ],
+     [
+      12,
+      89
+     ],
+     [
+      21,
+      43
+     ],
+     [
+      37,
+      8
+     ],
+     [
+      99,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -50,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Symmetric travel distance between every pair of nodes (9x9)",
+    "base": [
+     [
+      0,
+      43,
+      64,
+      21,
+      19,
+      81,
+      75,
+      83,
+      30
+     ],
+     [
+      43,
+      0,
+      53,
+      23,
+      62,
+      97,
+      69,
+      55,
+      18
+     ],
+     [
+      64,
+      53,
+      0,
+      50,
+      76,
+      55,
+      16,
+      31,
+      63
+     ],
+     [
+      21,
+      23,
+      50,
+      0,
+      40,
+      82,
+      64,
+      64,
+      17
+     ],
+     [
+      19,
+      62,
+      76,
+      40,
+      0,
+      81,
+      86,
+      99,
+      48
+     ],
+     [
+      81,
+      97,
+      55,
+      82,
+      81,
+      0,
+      47,
+      85,
+      99
+     ],
+     [
+      75,
+      69,
+      16,
+      64,
+      86,
+      47,
+      0,
+      38,
+      78
+     ],
+     [
+      83,
+      55,
+      31,
+      64,
+      99,
+      85,
+      38,
+      0,
+      71
+     ],
+     [
+      30,
+      18,
+      63,
+      17,
+      48,
+      99,
+      78,
+      71,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of identical delivery vans based at depot",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_clinic_nodes": {
+    "meaning": "Number of clinic branches to be served (nodes 1-8)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

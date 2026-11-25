@@ -1,0 +1,203 @@
+{
+ "spec": {
+  "project_workload_0": {
+   "base": 35,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "project_workload_1": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "project_workload_2": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "project_workload_3": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 65.0,
+    "integer": true
+   }
+  },
+  "project_workload_4": {
+   "base": 37,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "project_workload_5": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "project_workload_6": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "team_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 160.0,
+    "integer": true
+   }
+  },
+  "num_teams": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_projects": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_teams] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_projects] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "project_workload_0": {
+    "meaning": "Workload required by Project 0",
+    "base": 35,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "project_workload_1": {
+    "meaning": "Workload required by Project 1",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "project_workload_2": {
+    "meaning": "Workload required by Project 2",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "project_workload_3": {
+    "meaning": "Workload required by Project 3",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 65,
+     "integer": true
+    }
+   },
+   "project_workload_4": {
+    "meaning": "Workload required by Project 4",
+    "base": 37,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "project_workload_5": {
+    "meaning": "Workload required by Project 5",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "project_workload_6": {
+    "meaning": "Workload required by Project 6",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "team_capacity": {
+    "meaning": "Maximum workload capacity per team",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 160,
+     "integer": true
+    }
+   },
+   "num_teams": {
+    "meaning": "Number of available teams",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_projects": {
+    "meaning": "Number of projects to assign",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

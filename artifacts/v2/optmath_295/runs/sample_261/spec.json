@@ -1,0 +1,189 @@
+{
+ "spec": {
+  "cost_per_serving": {
+   "base": [
+    15,
+    14,
+    15,
+    11,
+    18,
+    12,
+    19,
+    12,
+    10,
+    11,
+    11,
+    10,
+    18,
+    14,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "nutrient_min": {
+   "base": [
+    221,
+    228,
+    232,
+    234,
+    214,
+    198,
+    222,
+    209,
+    215
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "nutrient_max": {
+   "base": [
+    589,
+    610,
+    620,
+    624,
+    572,
+    529,
+    594,
+    559,
+    575
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "volume_per_serving": {
+   "base": [
+    8,
+    4,
+    4,
+    4,
+    6,
+    8,
+    8,
+    4,
+    8,
+    7,
+    6,
+    5,
+    5,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "total_volume_capacity": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_per_serving": {
+    "meaning": "Cost per serving for each of the 15 food items",
+    "base": [
+     15,
+     14,
+     15,
+     11,
+     18,
+     12,
+     19,
+     12,
+     10,
+     11,
+     11,
+     10,
+     18,
+     14,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "nutrient_min": {
+    "meaning": "Minimum required amount for each of the 9 nutrients",
+    "base": [
+     221,
+     228,
+     232,
+     234,
+     214,
+     198,
+     222,
+     209,
+     215
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "nutrient_max": {
+    "meaning": "Maximum allowed amount for each of the 9 nutrients",
+    "base": [
+     589,
+     610,
+     620,
+     624,
+     572,
+     529,
+     594,
+     559,
+     575
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "volume_per_serving": {
+    "meaning": "Volume per serving for each of the 15 food items",
+    "base": [
+     8,
+     4,
+     4,
+     4,
+     6,
+     8,
+     8,
+     4,
+     8,
+     7,
+     6,
+     5,
+     5,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "total_volume_capacity": {
+    "meaning": "Maximum total volume allowed for the diet plan",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

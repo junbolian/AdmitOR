@@ -1,0 +1,135 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0
+  ],
+  "B-structured-2": [
+   3.000000000000006,
+   3.000000000000006,
+   3.000000000000006,
+   3.000000000000006,
+   3.000000000000006,
+   3.000000000000006
+  ],
+  "C-direct": [
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0
+  ],
+  "C-direct-2": [
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "A-direct-2": [
+   "crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'num_species'",
+   "crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'num_species'",
+   "crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'num_species'",
+   "crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'num_species'",
+   "crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'num_species'",
+   "crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'num_species'"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'num_species\\'', 'crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'num_species\\'', 'crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'num_species\\'', 'crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'num_species\\'', 'crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'num_species\\'', 'crash:num_species = params[\"num_species\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: \\'num_species\\'']"
+ },
+ "disagreements": [],
+ "notes": []
+}

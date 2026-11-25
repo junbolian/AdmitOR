@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "cycle_time": {
+   "base": [
+    [
+     55,
+     20,
+     21,
+     69,
+     54
+    ],
+    [
+     17,
+     15,
+     38,
+     38,
+     53
+    ],
+    [
+     66,
+     19,
+     25,
+     29,
+     42
+    ],
+    [
+     17,
+     29,
+     60,
+     18,
+     44
+    ],
+    [
+     37,
+     34,
+     55,
+     48,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cycle_time": {
+    "meaning": "Cycle time for each robotic arm to complete each assembly station (5x5 cost matrix, rows=arms 0-4, cols=stations 0-4)",
+    "base": [
+     [
+      55,
+      20,
+      21,
+      69,
+      54
+     ],
+     [
+      17,
+      15,
+      38,
+      38,
+      53
+     ],
+     [
+      66,
+      19,
+      25,
+      29,
+      42
+     ],
+     [
+      17,
+      29,
+      60,
+      18,
+      44
+     ],
+     [
+      37,
+      34,
+      55,
+      48,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,626 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "distance_0_0",
+  "distance_0_1",
+  "distance_0_2",
+  "distance_0_3",
+  "distance_0_4",
+  "distance_0_5",
+  "distance_0_6",
+  "distance_0_7",
+  "distance_0_8",
+  "distance_1_0",
+  "distance_1_1",
+  "distance_1_2",
+  "distance_1_3",
+  "distance_1_4",
+  "distance_1_5",
+  "distance_1_6",
+  "distance_1_7",
+  "distance_1_8",
+  "distance_2_0",
+  "distance_2_1",
+  "distance_2_2",
+  "distance_2_3",
+  "distance_2_4",
+  "distance_2_5",
+  "distance_2_6",
+  "distance_2_7",
+  "distance_2_8",
+  "distance_3_0",
+  "distance_3_1",
+  "distance_3_2",
+  "distance_3_3",
+  "distance_3_4",
+  "distance_3_5",
+  "distance_3_6",
+  "distance_3_7",
+  "distance_3_8",
+  "distance_4_0",
+  "distance_4_1",
+  "distance_4_2",
+  "distance_4_3",
+  "distance_4_4",
+  "distance_4_5",
+  "distance_4_6",
+  "distance_4_7",
+  "distance_4_8",
+  "distance_5_0",
+  "distance_5_1",
+  "distance_5_2",
+  "distance_5_3",
+  "distance_5_4",
+  "distance_5_5",
+  "distance_5_6",
+  "distance_5_7",
+  "distance_5_8",
+  "distance_6_0",
+  "distance_6_1",
+  "distance_6_2",
+  "distance_6_3",
+  "distance_6_4",
+  "distance_6_5",
+  "distance_6_6",
+  "distance_6_7",
+  "distance_6_8",
+  "distance_7_0",
+  "distance_7_1",
+  "distance_7_2",
+  "distance_7_3",
+  "distance_7_4",
+  "distance_7_5",
+  "distance_7_6",
+  "distance_7_7",
+  "distance_7_8",
+  "distance_8_0",
+  "distance_8_1",
+  "distance_8_2",
+  "distance_8_3",
+  "distance_8_4",
+  "distance_8_5",
+  "distance_8_6",
+  "distance_8_7",
+  "distance_8_8",
+  "coord_0_x",
+  "coord_0_y",
+  "coord_1_x",
+  "coord_1_y",
+  "coord_2_x",
+  "coord_2_y",
+  "coord_3_x",
+  "coord_3_y",
+  "coord_4_x",
+  "coord_4_y",
+  "coord_5_x",
+  "coord_5_y",
+  "coord_6_x",
+  "coord_6_y",
+  "coord_7_x",
+  "coord_7_y",
+  "coord_8_x",
+  "coord_8_y",
+  "num_nodes",
+  "num_customers",
+  "num_vehicles"
+ ],
+ "safe": [
+  "distance_0_0",
+  "distance_0_1",
+  "distance_0_2",
+  "distance_0_3",
+  "distance_0_4",
+  "distance_0_5",
+  "distance_0_6",
+  "distance_0_7",
+  "distance_0_8",
+  "distance_1_0",
+  "distance_1_1",
+  "distance_1_2",
+  "distance_1_3",
+  "distance_1_4",
+  "distance_1_5",
+  "distance_1_6",
+  "distance_1_7",
+  "distance_1_8",
+  "distance_2_0",
+  "distance_2_1",
+  "distance_2_2",
+  "distance_2_3",
+  "distance_2_4",
+  "distance_2_5",
+  "distance_2_6",
+  "distance_2_7",
+  "distance_2_8",
+  "distance_3_0",
+  "distance_3_1",
+  "distance_3_2",
+  "distance_3_3",
+  "distance_3_4",
+  "distance_3_5",
+  "distance_3_6",
+  "distance_3_7",
+  "distance_3_8",
+  "distance_4_0",
+  "distance_4_1",
+  "distance_4_2",
+  "distance_4_3",
+  "distance_4_4",
+  "distance_4_5",
+  "distance_4_6",
+  "distance_4_7",
+  "distance_4_8",
+  "distance_5_0",
+  "distance_5_1",
+  "distance_5_2",
+  "distance_5_3",
+  "distance_5_4",
+  "distance_5_5",
+  "distance_5_6",
+  "distance_5_7",
+  "distance_5_8",
+  "distance_6_0",
+  "distance_6_1",
+  "distance_6_2",
+  "distance_6_3",
+  "distance_6_4",
+  "distance_6_5",
+  "distance_6_6",
+  "distance_6_7",
+  "distance_6_8",
+  "distance_7_0",
+  "distance_7_1",
+  "distance_7_2",
+  "distance_7_3",
+  "distance_7_4",
+  "distance_7_5",
+  "distance_7_6",
+  "distance_7_7",
+  "distance_7_8",
+  "distance_8_0",
+  "distance_8_1",
+  "distance_8_2",
+  "distance_8_3",
+  "distance_8_4",
+  "distance_8_5",
+  "distance_8_6",
+  "distance_8_7",
+  "distance_8_8",
+  "coord_0_x",
+  "coord_0_y",
+  "coord_1_x",
+  "coord_1_y",
+  "coord_2_x",
+  "coord_2_y",
+  "coord_3_x",
+  "coord_3_y",
+  "coord_4_x",
+  "coord_4_y",
+  "coord_5_x",
+  "coord_5_y",
+  "coord_6_x",
+  "coord_6_y",
+  "coord_7_x",
+  "coord_7_y",
+  "coord_8_x",
+  "coord_8_y",
+  "num_nodes",
+  "num_customers",
+  "num_vehicles"
+ ],
+ "tests": {
+  "distance_0_0": [
+   3,
+   3
+  ],
+  "distance_0_1": [
+   3,
+   3
+  ],
+  "distance_0_2": [
+   3,
+   3
+  ],
+  "distance_0_3": [
+   3,
+   3
+  ],
+  "distance_0_4": [
+   3,
+   3
+  ],
+  "distance_0_5": [
+   3,
+   3
+  ],
+  "distance_0_6": [
+   3,
+   3
+  ],
+  "distance_0_7": [
+   3,
+   3
+  ],
+  "distance_0_8": [
+   3,
+   3
+  ],
+  "distance_1_0": [
+   3,
+   3
+  ],
+  "distance_1_1": [
+   3,
+   3
+  ],
+  "distance_1_2": [
+   3,
+   3
+  ],
+  "distance_1_3": [
+   3,
+   3
+  ],
+  "distance_1_4": [
+   3,
+   3
+  ],
+  "distance_1_5": [
+   3,
+   3
+  ],
+  "distance_1_6": [
+   3,
+   3
+  ],
+  "distance_1_7": [
+   3,
+   3
+  ],
+  "distance_1_8": [
+   3,
+   3
+  ],
+  "distance_2_0": [
+   3,
+   3
+  ],
+  "distance_2_1": [
+   3,
+   3
+  ],
+  "distance_2_2": [
+   3,
+   3
+  ],
+  "distance_2_3": [
+   3,
+   3
+  ],
+  "distance_2_4": [
+   3,
+   3
+  ],
+  "distance_2_5": [
+   3,
+   3
+  ],
+  "distance_2_6": [
+   3,
+   3
+  ],
+  "distance_2_7": [
+   3,
+   3
+  ],
+  "distance_2_8": [
+   3,
+   3
+  ],
+  "distance_3_0": [
+   3,
+   3
+  ],
+  "distance_3_1": [
+   3,
+   3
+  ],
+  "distance_3_2": [
+   3,
+   3
+  ],
+  "distance_3_3": [
+   3,
+   3
+  ],
+  "distance_3_4": [
+   3,
+   3
+  ],
+  "distance_3_5": [
+   3,
+   3
+  ],
+  "distance_3_6": [
+   3,
+   3
+  ],
+  "distance_3_7": [
+   3,
+   3
+  ],
+  "distance_3_8": [
+   3,
+   3
+  ],
+  "distance_4_0": [
+   3,
+   3
+  ],
+  "distance_4_1": [
+   3,
+   3
+  ],
+  "distance_4_2": [
+   3,
+   3
+  ],
+  "distance_4_3": [
+   3,
+   3
+  ],
+  "distance_4_4": [
+   3,
+   3
+  ],
+  "distance_4_5": [
+   3,
+   3
+  ],
+  "distance_4_6": [
+   3,
+   3
+  ],
+  "distance_4_7": [
+   3,
+   3
+  ],
+  "distance_4_8": [
+   3,
+   3
+  ],
+  "distance_5_0": [
+   3,
+   3
+  ],
+  "distance_5_1": [
+   3,
+   3
+  ],
+  "distance_5_2": [
+   3,
+   3
+  ],
+  "distance_5_3": [
+   3,
+   3
+  ],
+  "distance_5_4": [
+   3,
+   3
+  ],
+  "distance_5_5": [
+   3,
+   3
+  ],
+  "distance_5_6": [
+   3,
+   3
+  ],
+  "distance_5_7": [
+   3,
+   3
+  ],
+  "distance_5_8": [
+   3,
+   3
+  ],
+  "distance_6_0": [
+   3,
+   3
+  ],
+  "distance_6_1": [
+   3,
+   3
+  ],
+  "distance_6_2": [
+   3,
+   3
+  ],
+  "distance_6_3": [
+   3,
+   3
+  ],
+  "distance_6_4": [
+   3,
+   3
+  ],
+  "distance_6_5": [
+   3,
+   3
+  ],
+  "distance_6_6": [
+   3,
+   3
+  ],
+  "distance_6_7": [
+   3,
+   3
+  ],
+  "distance_6_8": [
+   3,
+   3
+  ],
+  "distance_7_0": [
+   3,
+   3
+  ],
+  "distance_7_1": [
+   3,
+   3
+  ],
+  "distance_7_2": [
+   3,
+   3
+  ],
+  "distance_7_3": [
+   3,
+   3
+  ],
+  "distance_7_4": [
+   3,
+   3
+  ],
+  "distance_7_5": [
+   3,
+   3
+  ],
+  "distance_7_6": [
+   3,
+   3
+  ],
+  "distance_7_7": [
+   3,
+   3
+  ],
+  "distance_7_8": [
+   3,
+   3
+  ],
+  "distance_8_0": [
+   3,
+   3
+  ],
+  "distance_8_1": [
+   3,
+   3
+  ],
+  "distance_8_2": [
+   3,
+   3
+  ],
+  "distance_8_3": [
+   3,
+   3
+  ],
+  "distance_8_4": [
+   3,
+   3
+  ],
+  "distance_8_5": [
+   3,
+   3
+  ],
+  "distance_8_6": [
+   3,
+   3
+  ],
+  "distance_8_7": [
+   3,
+   3
+  ],
+  "distance_8_8": [
+   3,
+   3
+  ],
+  "coord_0_x": [
+   3,
+   3
+  ],
+  "coord_0_y": [
+   3,
+   3
+  ],
+  "coord_1_x": [
+   3,
+   3
+  ],
+  "coord_1_y": [
+   3,
+   3
+  ],
+  "coord_2_x": [
+   3,
+   3
+  ],
+  "coord_2_y": [
+   3,
+   3
+  ],
+  "coord_3_x": [
+   3,
+   3
+  ],
+  "coord_3_y": [
+   3,
+   3
+  ],
+  "coord_4_x": [
+   3,
+   3
+  ],
+  "coord_4_y": [
+   3,
+   3
+  ],
+  "coord_5_x": [
+   3,
+   3
+  ],
+  "coord_5_y": [
+   3,
+   3
+  ],
+  "coord_6_x": [
+   3,
+   3
+  ],
+  "coord_6_y": [
+   3,
+   3
+  ],
+  "coord_7_x": [
+   3,
+   3
+  ],
+  "coord_7_y": [
+   3,
+   3
+  ],
+  "coord_8_x": [
+   3,
+   3
+  ],
+  "coord_8_y": [
+   3,
+   3
+  ],
+  "num_nodes": [
+   3,
+   3
+  ],
+  "num_customers": [
+   3,
+   3
+  ],
+  "num_vehicles": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

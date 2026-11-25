@@ -1,0 +1,171 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "num_participants": 5,
+   "num_cars": 4,
+   "participant_0_4_interest": 0,
+   "participant_4_car_1_interest": 1,
+   "participant_4_forbidden_interest": 0
+  },
+  {
+   "num_participants": 5,
+   "num_cars": 4,
+   "participant_0_4_interest": 0,
+   "participant_4_car_1_interest": 0,
+   "participant_4_forbidden_interest": 1
+  },
+  {
+   "num_participants": 5,
+   "num_cars": 4,
+   "participant_0_4_interest": 0,
+   "participant_4_car_1_interest": 0,
+   "participant_4_forbidden_interest": 0
+  },
+  {
+   "num_participants": 5,
+   "num_cars": 4,
+   "participant_0_4_interest": 0,
+   "participant_4_car_1_interest": 0,
+   "participant_4_forbidden_interest": 1
+  },
+  {
+   "num_participants": 5,
+   "num_cars": 4,
+   "participant_0_4_interest": 1,
+   "participant_4_car_1_interest": 1,
+   "participant_4_forbidden_interest": 0
+  },
+  {
+   "num_participants": 5,
+   "num_cars": 4,
+   "participant_0_4_interest": 0,
+   "participant_4_car_1_interest": 0,
+   "participant_4_forbidden_interest": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1.0,
+   0.0,
+   1.0,
+   0.0,
+   4.0,
+   0.0
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   4.0,
+   null
+  ],
+  "B-structured": [
+   1.0,
+   1.0,
+   0.0,
+   1.0,
+   4.0,
+   1.0
+  ],
+  "B-structured-2": [
+   1.0,
+   1.0,
+   0.0,
+   1.0,
+   4.0,
+   1.0
+  ],
+  "C-direct": [
+   1.0,
+   1.0,
+   -0.0,
+   1.0,
+   4.0,
+   1.0
+  ],
+  "C-direct-2": [
+   1.0,
+   1.0,
+   -0.0,
+   1.0,
+   4.0,
+   1.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "optimal",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1 on instance 1 (params: {'num_participants': 5, 'num_cars': 4, 'participant_0_4_interest': 0, 'participant_4_car_1_interest': 0, 'participant_4_forbidden_interest': 1})",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 5]: ['crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr']"
+ },
+ "disagreements": [],
+ "notes": []
+}

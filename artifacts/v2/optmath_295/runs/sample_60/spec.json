@@ -1,0 +1,101 @@
+{
+ "spec": {
+  "package_weights": {
+   "base": [
+    31,
+    31,
+    31,
+    39,
+    32,
+    32,
+    36
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "num_trucks": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_packages": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_packages] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "package_weights": {
+    "meaning": "Weight of each package (indexed 0..6)",
+    "base": [
+     31,
+     31,
+     31,
+     39,
+     32,
+     32,
+     36
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "truck_capacity": {
+    "meaning": "Maximum weight capacity per truck",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "num_trucks": {
+    "meaning": "Number of available trucks (fleet size)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_packages": {
+    "meaning": "Number of packages (index-set size)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

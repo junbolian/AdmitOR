@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "capacity": 7125,
+   "values": [
+    400,
+    616,
+    691,
+    654
+   ],
+   "weights": [
+    82,
+    102,
+    114,
+    115
+   ]
+  },
+  {
+   "capacity": 7621.70796950621,
+   "values": [
+    286.00258125344004,
+    532.8508360692264,
+    576.2431720365018,
+    746.7913044379585
+   ],
+   "weights": [
+    89.24467898433936,
+    122.00115795294711,
+    90.45551345987671,
+    110.51050463190306
+   ]
+  },
+  {
+   "capacity": 5449.902594248125,
+   "values": [
+    332.4731139528648,
+    617.9793144830028,
+    494.7018130309299,
+    535.8238941294409
+   ],
+   "weights": [
+    88.14526194896044,
+    104.29201551076405,
+    98.06511545631972,
+    120.13277682286477
+   ]
+  },
+  {
+   "capacity": 8227.346001914757,
+   "values": [
+    281.5597023227346,
+    729.0307954774057,
+    773.1485931621188,
+    591.31430268166
+   ],
+   "weights": [
+    67.87465949228304,
+    125.31786668254584,
+    104.68588907141974,
+    91.58288599435849
+   ]
+  },
+  {
+   "capacity": 5688.3020924692155,
+   "values": [
+    483.39864792339034,
+    654.337141193203,
+    818.3353820995582,
+    744.1467530986541
+   ],
+   "weights": [
+    83.48535174964273,
+    126.12890396294789,
+    107.07645950087615,
+    117.99233629821055
+   ]
+  },
+  {
+   "capacity": 8298.504116401295,
+   "values": [
+    428.44474056741905,
+    749.6868703548632,
+    723.0701994234535,
+    734.2739885307359
+   ],
+   "weights": [
+    63.378799729882154,
+    88.12281205822889,
+    101.9951139253201,
+    90.83803867310858
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2361.0,
+   2141.8878937971267,
+   1980.9781355962384,
+   2375.053393643919,
+   2700.2179243148057,
+   2635.475798876472
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   2361.0,
+   2141.8878937971267,
+   1980.9781355962384,
+   2375.053393643919,
+   2700.2179243148057,
+   2635.4757988764713
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range', 'crash:initialize=lambda mdl, i: params[\"values\"][i], | ~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range']"
+ },
+ "disagreements": [],
+ "notes": []
+}

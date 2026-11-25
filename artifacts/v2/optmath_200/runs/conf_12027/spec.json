@@ -1,0 +1,209 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1284,
+    1653,
+    1205,
+    1224,
+    1585
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    933,
+    799,
+    614,
+    813,
+    843
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_producers": {
+   "base": [
+    2,
+    3,
+    2,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "min_delivery": {
+   "base": [
+    256,
+    330,
+    241,
+    244,
+    317
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     22,
+     25,
+     21,
+     21,
+     20
+    ],
+    [
+     24,
+     37,
+     39,
+     20,
+     36
+    ],
+    [
+     34,
+     22,
+     27,
+     27,
+     39
+    ],
+    [
+     21,
+     32,
+     25,
+     37,
+     38
+    ],
+    [
+     25,
+     33,
+     33,
+     28,
+     35
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum electricity producer can generate",
+    "base": [
+     1284,
+     1653,
+     1205,
+     1224,
+     1585
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Minimum electricity required by each contract",
+    "base": [
+     933,
+     799,
+     614,
+     813,
+     843
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_producers": {
+    "meaning": "Minimum number of producers per contract",
+    "base": [
+     2,
+     3,
+     2,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum electricity if producer contributes to a contract",
+    "base": [
+     256,
+     330,
+     241,
+     244,
+     317
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "Cost per unit for producer i serving contract j",
+    "base": [
+     [
+      22,
+      25,
+      21,
+      21,
+      20
+     ],
+     [
+      24,
+      37,
+      39,
+      20,
+      36
+     ],
+     [
+      34,
+      22,
+      27,
+      27,
+      39
+     ],
+     [
+      21,
+      32,
+      25,
+      37,
+      38
+     ],
+     [
+      25,
+      33,
+      33,
+      28,
+      35
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

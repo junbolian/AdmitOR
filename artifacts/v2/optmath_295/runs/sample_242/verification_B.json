@@ -1,0 +1,41 @@
+{
+ "sample_id": "sample_242",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"demand\",\"evidence\":\"Product 0 has demands ranging from 99 to 100 units per week, Product 1 from 72 to 99 units, and Product 2 from 74 to 98 units.\"},{\"parameter\":\"prod_cost\",\"evidence\":\"The unit production cost varies by product and week, ranging from 46 to 50 units per item for all products.\"},{\"parameter\":\"setup_cost\",\"evidence\":\"setup costs ranging from 1203 to 1595 units depending on the product and week\"},{\"parameter\":\"res_capacity\",\"evidence\":\"The total resource availability varies by week, ranging from 1009 to 1085 units.\"},{\"parameter\":\"prod_max\",\"evidence\":\"These limits range from 99 to 742 units for Product 0, 86 to 642 units for Product 1, and 87 to 688 units for Product 2.\"},{\"parameter\":\"initial_inventory\",\"evidence\":\"no value in the statement\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "demand",
+   "evidence": "Product 0 has demands ranging from 99 to 100 units per week, Product 1 from 72 to 99 units, and Product 2 from 74 to 98 units."
+  },
+  {
+   "parameter": "prod_cost",
+   "evidence": "The unit production cost varies by product and week, ranging from 46 to 50 units per item for all products."
+  },
+  {
+   "parameter": "setup_cost",
+   "evidence": "setup costs ranging from 1203 to 1595 units depending on the product and week"
+  },
+  {
+   "parameter": "res_capacity",
+   "evidence": "The total resource availability varies by week, ranging from 1009 to 1085 units."
+  },
+  {
+   "parameter": "prod_max",
+   "evidence": "These limits range from 99 to 742 units for Product 0, 86 to 642 units for Product 1, and 87 to 688 units for Product 2."
+  },
+  {
+   "parameter": "initial_inventory",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

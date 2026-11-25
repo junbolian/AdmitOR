@@ -1,0 +1,99 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "package_weight": 28,
+   "truck_capacity": 100
+  },
+  {
+   "package_weight": 71.1541438766307,
+   "truck_capacity": 30.801204584938695
+  },
+  {
+   "package_weight": 42.002345469529544,
+   "truck_capacity": 52.999602672668146
+  },
+  {
+   "package_weight": 78.917697133121,
+   "truck_capacity": 103.79034259136607
+  },
+  {
+   "package_weight": 91.37436541638763,
+   "truck_capacity": 37.73714925449461
+  },
+  {
+   "package_weight": 53.753745574821636,
+   "truck_capacity": 31.33728857706388
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4.0,
+   null,
+   10.0,
+   10.0,
+   null,
+   null
+  ],
+  "B-structured": [
+   4.0,
+   null,
+   10.0,
+   10.0,
+   null,
+   null
+  ],
+  "C-direct": [
+   4.0,
+   null,
+   10.0,
+   10.0,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "infeasible_or_failed",
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

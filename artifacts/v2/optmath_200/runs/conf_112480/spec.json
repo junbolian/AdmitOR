@@ -1,0 +1,135 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    272,
+    166,
+    157,
+    370
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost": {
+   "base": [
+    6,
+    5,
+    8,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_production": {
+   "base": [
+    28,
+    33,
+    26,
+    34
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "max_production": {
+   "base": [
+    110,
+    84,
+    108,
+    106
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    142,
+    144,
+    130,
+    140
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost per month for running each factory (indexed by factory 0..3)",
+    "base": [
+     272,
+     166,
+     157,
+     370
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable cost per unit produced for each factory (indexed by factory 0..3)",
+    "base": [
+     6,
+     5,
+     8,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production per month if factory is running (indexed by factory 0..3)",
+    "base": [
+     28,
+     33,
+     26,
+     34
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity per month if factory is running (indexed by factory 0..3)",
+    "base": [
+     110,
+     84,
+     108,
+     106
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand that total production must meet or exceed (Month 0..3)",
+    "base": [
+     142,
+     144,
+     130,
+     140
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

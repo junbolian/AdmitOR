@@ -1,0 +1,29 @@
+{
+ "sample_id": "sample_11",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"profit_margins\",\"evidence\":\"\\\"For example\\\" and \\\"and so on, up to Item 44\\\" do not specify the full vector.\"},{\"parameter\":\"resource_coefficients\",\"evidence\":\"\\\"For instance\\\" and \\\"and so on, up to Item 44\\\" do not specify the full vector.\"},{\"parameter\":\"production_capacities\",\"evidence\":\"\\\"For example\\\" and \\\"and so on, up to Item 44\\\" do not specify the full vector.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "profit_margins",
+   "evidence": "\"For example\" and \"and so on, up to Item 44\" do not specify the full vector."
+  },
+  {
+   "parameter": "resource_coefficients",
+   "evidence": "\"For instance\" and \"and so on, up to Item 44\" do not specify the full vector."
+  },
+  {
+   "parameter": "production_capacities",
+   "evidence": "\"For example\" and \"and so on, up to Item 44\" do not specify the full vector."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

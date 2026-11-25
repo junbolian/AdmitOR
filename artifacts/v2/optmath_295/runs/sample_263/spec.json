@@ -1,0 +1,339 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    0,
+    83,
+    148,
+    148,
+    147,
+    107
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    81,
+    80,
+    139,
+    96,
+    110,
+    127
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     29,
+     27,
+     22,
+     22,
+     20,
+     28
+    ],
+    [
+     22,
+     20,
+     27,
+     21,
+     21,
+     21
+    ],
+    [
+     26,
+     22,
+     26,
+     27,
+     30,
+     23
+    ],
+    [
+     21,
+     22,
+     30,
+     28,
+     30,
+     21
+    ],
+    [
+     30,
+     22,
+     22,
+     26,
+     24,
+     20
+    ],
+    [
+     30,
+     22,
+     25,
+     29,
+     20,
+     23
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     148,
+     133,
+     118,
+     140,
+     101,
+     109
+    ],
+    [
+     136,
+     134,
+     139,
+     148,
+     150,
+     143
+    ],
+    [
+     114,
+     114,
+     103,
+     125,
+     145,
+     123
+    ],
+    [
+     119,
+     144,
+     116,
+     105,
+     140,
+     131
+    ],
+    [
+     118,
+     148,
+     115,
+     116,
+     108,
+     148
+    ],
+    [
+     122,
+     140,
+     146,
+     146,
+     132,
+     114
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "num_origins": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_destinations": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_origins] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_destinations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Available units at each production facility (6 origins, index 0-5)",
+    "base": [
+     0,
+     83,
+     148,
+     148,
+     147,
+     107
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Required units at each distribution center (6 destinations, index 0-5)",
+    "base": [
+     81,
+     80,
+     139,
+     96,
+     110,
+     127
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "Unit transportation cost from each origin i to each destination j (6x6 matrix)",
+    "base": [
+     [
+      29,
+      27,
+      22,
+      22,
+      20,
+      28
+     ],
+     [
+      22,
+      20,
+      27,
+      21,
+      21,
+      21
+     ],
+     [
+      26,
+      22,
+      26,
+      27,
+      30,
+      23
+     ],
+     [
+      21,
+      22,
+      30,
+      28,
+      30,
+      21
+     ],
+     [
+      30,
+      22,
+      22,
+      26,
+      24,
+      20
+     ],
+     [
+      30,
+      22,
+      25,
+      29,
+      20,
+      23
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum units transportable from each origin i to each destination j (6x6 matrix)",
+    "base": [
+     [
+      148,
+      133,
+      118,
+      140,
+      101,
+      109
+     ],
+     [
+      136,
+      134,
+      139,
+      148,
+      150,
+      143
+     ],
+     [
+      114,
+      114,
+      103,
+      125,
+      145,
+      123
+     ],
+     [
+      119,
+      144,
+      116,
+      105,
+      140,
+      131
+     ],
+     [
+      118,
+      148,
+      115,
+      116,
+      108,
+      148
+     ],
+     [
+      122,
+      140,
+      146,
+      146,
+      132,
+      114
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "num_origins": {
+    "meaning": "Number of production facilities (structural, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_destinations": {
+    "meaning": "Number of distribution centers (structural, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

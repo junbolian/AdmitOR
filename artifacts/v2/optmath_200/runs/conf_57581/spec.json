@@ -1,0 +1,114 @@
+{
+ "spec": {
+  "selection_cost": {
+   "base": [
+    2,
+    1,
+    3,
+    3,
+    5,
+    2,
+    3,
+    3,
+    1,
+    1,
+    2,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_requirement": {
+   "base": [
+    3,
+    3,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    1,
+    3,
+    2,
+    1,
+    3,
+    1,
+    2,
+    1,
+    1,
+    3,
+    3,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "selection_cost": {
+    "meaning": "Cost of selecting each of the 12 locations",
+    "base": [
+     2,
+     1,
+     3,
+     3,
+     5,
+     2,
+     3,
+     3,
+     1,
+     1,
+     2,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_requirement": {
+    "meaning": "Minimum number of selected locations required in each of the 21 coverage constraints, in order",
+    "base": [
+     3,
+     3,
+     2,
+     2,
+     2,
+     3,
+     2,
+     2,
+     1,
+     3,
+     2,
+     1,
+     3,
+     1,
+     2,
+     1,
+     1,
+     3,
+     3,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

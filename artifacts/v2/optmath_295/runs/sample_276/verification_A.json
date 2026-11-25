@@ -1,0 +1,48 @@
+{
+ "sample_id": "sample_276",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"aircraft_availability\",\n      \"extracted\": [4,4,4,4,5,4,4],\n      \"stated\": [4,4,4,4,5,4,4],\n      \"evidence\": \"aircraft_0, aircraft_1, aircraft_2, aircraft_3, aircraft_5, and aircraft_6 can each be assigned to no more than 4 routes, while aircraft_4 can be assigned to no more than 5 routes\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_contribution\",\n      \"evidence\": \"Only examples for aircraft_0 to route_0, aircraft_1 to route_1, and aircraft_2 to route_2 are given; the rest are filled with zeros\"\n    },\n    {\n      \"parameter\": \"assignment_cost\",\n      \"evidence\": \"Only examples for aircraft_0 to route_0, aircraft_1 to route_1, and aircraft_2 to route_2 are given; the rest are filled with zeros\"\n    }\n  ]\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "aircraft_availability",
+   "extracted": [
+    4,
+    4,
+    4,
+    4,
+    5,
+    4,
+    4
+   ],
+   "stated": [
+    4,
+    4,
+    4,
+    4,
+    5,
+    4,
+    4
+   ],
+   "evidence": "aircraft_0, aircraft_1, aircraft_2, aircraft_3, aircraft_5, and aircraft_6 can each be assigned to no more than 4 routes, while aircraft_4 can be assigned to no more than 5 routes"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "capacity_contribution",
+   "evidence": "Only examples for aircraft_0 to route_0, aircraft_1 to route_1, and aircraft_2 to route_2 are given; the rest are filled with zeros"
+  },
+  {
+   "parameter": "assignment_cost",
+   "evidence": "Only examples for aircraft_0 to route_0, aircraft_1 to route_1, and aircraft_2 to route_2 are given; the rest are filled with zeros"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,579 @@
+{
+ "spec": {
+  "num_slots": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "num_brands": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "adjacency_links": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "allowed_brands_per_slot": {
+   "base": [
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    [
+     0,
+     3,
+     5,
+     6
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8
+    ],
+    [
+     0,
+     3,
+     5,
+     7,
+     8
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8
+    ],
+    [
+     3,
+     4,
+     5,
+     7,
+     8
+    ],
+    [
+     0,
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[adjacency_links] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[allowed_brands_per_slot] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[num_slots] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_brands] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_slots": {
+    "meaning": "number of retail shelf slots (index set size; frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "num_brands": {
+    "meaning": "number of available product brands (brand identifier range size; frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "adjacency_links": {
+    "meaning": "direct adjacency links between shelf slots (topology; frozen)",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      1,
+      8
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       0,
+       1
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       1,
+       8
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       4,
+       8
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       1,
+       3
+      ]
+     ],
+     "hi": [
+      [
+       0,
+       1
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       1,
+       8
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       4,
+       8
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       1,
+       3
+      ]
+     ],
+     "integer": true
+    }
+   },
+   "allowed_brands_per_slot": {
+    "meaning": "permitted brand list for each slot (categorical domain; frozen)",
+    "base": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      0,
+      3,
+      5,
+      6
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8
+     ],
+     [
+      0,
+      3,
+      5,
+      7,
+      8
+     ],
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8
+     ],
+     [
+      3,
+      4,
+      5,
+      7,
+      8
+     ],
+     [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       3,
+       5,
+       6
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       3,
+       5,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6,
+       7,
+       8
+      ],
+      [
+       3,
+       4,
+       5,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       2,
+       4,
+       5,
+       6,
+       7,
+       8
+      ]
+     ],
+     "hi": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       3,
+       5,
+       6
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       0,
+       3,
+       5,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6,
+       7,
+       8
+      ],
+      [
+       3,
+       4,
+       5,
+       7,
+       8
+      ],
+      [
+       0,
+       1,
+       2,
+       4,
+       5,
+       6,
+       7,
+       8
+      ]
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "spec": {
+  "preferences": {
+   "base": [
+    [
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[participant_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "preferences": {
+    "meaning": "Binary eligibility matrix: preferences[participant][car] = 1 if the participant is interested in the car, else 0.",
+    "base": [
+     [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_capacity": {
+    "meaning": "Maximum number of cars assignable to each participant (cardinality of participant set — frozen).",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "Maximum number of participants assignable to each car (cardinality of car set — frozen).",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

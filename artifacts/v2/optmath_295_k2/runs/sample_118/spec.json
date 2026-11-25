@@ -1,0 +1,261 @@
+{
+ "spec": {
+  "employee_availability": {
+   "base": [
+    10,
+    9,
+    10,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_demand": {
+   "base": [
+    0,
+    0,
+    8,
+    9,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     17,
+     20,
+     29,
+     15,
+     22,
+     19
+    ],
+    [
+     29,
+     16,
+     25,
+     17,
+     17,
+     28
+    ],
+    [
+     30,
+     17,
+     27,
+     23,
+     25,
+     19
+    ],
+    [
+     15,
+     15,
+     19,
+     22,
+     17,
+     19
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     6,
+     4,
+     6,
+     8,
+     8,
+     5
+    ],
+    [
+     6,
+     8,
+     5,
+     8,
+     7,
+     7
+    ],
+    [
+     7,
+     6,
+     8,
+     8,
+     6,
+     5
+    ],
+    [
+     8,
+     8,
+     6,
+     8,
+     8,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[employee_availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[project_demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "employee_availability": {
+    "meaning": "Maximum total time each employee can contribute across all projects",
+    "base": [
+     10,
+     9,
+     10,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      6,
+      5,
+      6,
+      4
+     ],
+     "hi": [
+      14,
+      13,
+      14,
+      12
+     ],
+     "integer": true
+    }
+   },
+   "project_demand": {
+    "meaning": "Exact amount of work required for each project",
+    "base": [
+     0,
+     0,
+     8,
+     9,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      4,
+      5,
+      6,
+      6
+     ],
+     "hi": [
+      0,
+      0,
+      12,
+      13,
+      14,
+      14
+     ],
+     "integer": true
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost of assigning one unit of time from an employee to a project",
+    "base": [
+     [
+      17,
+      20,
+      29,
+      15,
+      22,
+      19
+     ],
+     [
+      29,
+      16,
+      25,
+      17,
+      17,
+      28
+     ],
+     [
+      30,
+      17,
+      27,
+      23,
+      25,
+      19
+     ],
+     [
+      15,
+      15,
+      19,
+      22,
+      17,
+      19
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum units of time an employee can assign to a specific project",
+    "base": [
+     [
+      6,
+      4,
+      6,
+      8,
+      8,
+      5
+     ],
+     [
+      6,
+      8,
+      5,
+      8,
+      7,
+      7
+     ],
+     [
+      7,
+      6,
+      8,
+      8,
+      6,
+      5
+     ],
+     [
+      8,
+      8,
+      6,
+      8,
+      8,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

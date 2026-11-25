@@ -1,0 +1,213 @@
+{
+ "spec": {
+  "node_coordinates": {
+   "base": [
+    [
+     25,
+     75
+    ],
+    [
+     39,
+     76
+    ],
+    [
+     15,
+     68
+    ],
+    [
+     39,
+     63
+    ],
+    [
+     11,
+     47
+    ],
+    [
+     65,
+     6
+    ],
+    [
+     58,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "farm_supply": {
+   "base": [
+    10,
+    7,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "retail_demand": {
+   "base": [
+    10,
+    4,
+    9,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    10,
+    10,
+    10,
+    10,
+    7,
+    7,
+    7,
+    7,
+    11,
+    11,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    4,
+    6,
+    9,
+    10,
+    4,
+    6,
+    10,
+    9,
+    2,
+    5,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "node_coordinates": {
+    "meaning": "Geographic coordinates (x,y) for the seven nodes 0..6",
+    "base": [
+     [
+      25,
+      75
+     ],
+     [
+      39,
+      76
+     ],
+     [
+      15,
+      68
+     ],
+     [
+      39,
+      63
+     ],
+     [
+      11,
+      47
+     ],
+     [
+      65,
+      6
+     ],
+     [
+      58,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "farm_supply": {
+    "meaning": "Harvest yield available at farms 0,1,2 (must be fully dispatched)",
+    "base": [
+     10,
+     7,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "retail_demand": {
+    "meaning": "Required units at retail centers 3,4,5,6 (must be exactly satisfied)",
+    "base": [
+     10,
+     4,
+     9,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Max truck capacity per arc, ordered (0,3),(0,4),(0,5),(0,6),(1,3),(1,4),(1,5),(1,6),(2,3),(2,4),(2,5),(2,6)",
+    "base": [
+     10,
+     10,
+     10,
+     10,
+     7,
+     7,
+     7,
+     7,
+     11,
+     11,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Spoilage-adjusted unit transport cost per arc, same arc order",
+    "base": [
+     4,
+     6,
+     9,
+     10,
+     4,
+     6,
+     10,
+     9,
+     2,
+     5,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

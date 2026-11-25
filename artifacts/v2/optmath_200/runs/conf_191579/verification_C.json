@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_191579",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"hold_cost_A\", \"evidence\": \"Holding one unit of Item A in inventory costs $4 per period — a single value is stated, not four separate period values\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "hold_cost_A",
+   "evidence": "Holding one unit of Item A in inventory costs $4 per period — a single value is stated, not four separate period values"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

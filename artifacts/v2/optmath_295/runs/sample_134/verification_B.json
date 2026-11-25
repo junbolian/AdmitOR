@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_134",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capability\",\"evidence\":\"Each aircraft type contributes differently to each route's capability. For example:\"},{\"parameter\":\"operational_cost\",\"evidence\":\"The cost of assigning an aircraft to a route varies. For example:\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capability",
+   "evidence": "Each aircraft type contributes differently to each route's capability. For example:"
+  },
+  {
+   "parameter": "operational_cost",
+   "evidence": "The cost of assigning an aircraft to a route varies. For example:"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_time": {
+   "base": [
+    [
+     10,
+     42,
+     30
+    ],
+    [
+     46,
+     17,
+     26
+    ],
+    [
+     28,
+     48,
+     10
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time": {
+    "meaning": "Reaction time (minutes) of each batch on each station; rows = batches 0,1,2, columns = stations 0,1,2",
+    "base": [
+     [
+      10,
+      42,
+      30
+     ],
+     [
+      46,
+      17,
+      26
+     ],
+     [
+      28,
+      48,
+      10
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,241 @@
+{
+ "spec": {
+  "plane0_capacity": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "plane0_trip_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "plane0_same_loc_cost": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": false
+   }
+  },
+  "plane1_capacity": {
+   "base": 89,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "plane1_trip_cost": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "plane1_same_loc_cost": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": false
+   }
+  },
+  "initial_idle_plane0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "initial_idle_plane1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_idle_plane0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_idle_plane1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "demand_1_to_0": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_trips_plane0_1to0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_trips_plane1_1to0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[plane0_same_loc_cost] degenerate abs range (lo == hi); perturbation has no effect",
+  "[plane1_same_loc_cost] degenerate abs range (lo == hi); perturbation has no effect",
+  "[demand_1_to_0] rel rate r=1.5 outside (0,1]; clamped to 0.3"
+ ],
+ "raw": {
+  "params": {
+   "plane0_capacity": {
+    "meaning": "passenger capacity of Plane 0",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "plane0_trip_cost": {
+    "meaning": "cost per trip between locations for Plane 0",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "plane0_same_loc_cost": {
+    "meaning": "cost for same-location trips by Plane 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": false
+    }
+   },
+   "plane1_capacity": {
+    "meaning": "passenger capacity of Plane 1",
+    "base": 89,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "plane1_trip_cost": {
+    "meaning": "cost per trip between locations for Plane 1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "plane1_same_loc_cost": {
+    "meaning": "cost for same-location trips by Plane 1",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": false
+    }
+   },
+   "initial_idle_plane0": {
+    "meaning": "total initial idle planes of type 0 (distribution unspecified)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "initial_idle_plane1": {
+    "meaning": "total initial idle planes of type 1 (distribution unspecified)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_idle_plane0": {
+    "meaning": "maximum idle planes of type 0 allowed",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_idle_plane1": {
+    "meaning": "maximum idle planes of type 1 allowed",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "demand_1_to_0": {
+    "meaning": "passenger demand from Location 1 to Location 0",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 1.5
+    }
+   },
+   "max_trips_plane0_1to0": {
+    "meaning": "maximum trips Plane 0 may make from Location 1 to Location 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_trips_plane1_1to0": {
+    "meaning": "maximum trips Plane 1 may make from Location 1 to Location 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

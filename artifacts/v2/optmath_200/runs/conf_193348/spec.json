@@ -1,0 +1,203 @@
+{
+ "spec": {
+  "producer_capacity": {
+   "base": [
+    1885,
+    1693,
+    1439,
+    1538
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "contract_demand": {
+   "base": [
+    606,
+    660,
+    658,
+    998,
+    918,
+    884
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "contract_min_producers": {
+   "base": [
+    3,
+    3,
+    2,
+    3,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "producer_min_delivery": {
+   "base": [
+    377,
+    338,
+    287,
+    307
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     32,
+     22,
+     38,
+     32,
+     25,
+     26
+    ],
+    [
+     20,
+     24,
+     33,
+     40,
+     37,
+     37
+    ],
+    [
+     40,
+     23,
+     38,
+     25,
+     40,
+     30
+    ],
+    [
+     31,
+     20,
+     31,
+     28,
+     22,
+     22
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "producer_capacity": {
+    "meaning": "Maximum generation capacity per producer (P0..P3)",
+    "base": [
+     1885,
+     1693,
+     1439,
+     1538
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "contract_demand": {
+    "meaning": "Required total units delivered per contract (C0..C5)",
+    "base": [
+     606,
+     660,
+     658,
+     998,
+     918,
+     884
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "contract_min_producers": {
+    "meaning": "Minimum number of distinct producers per contract (C0..C5)",
+    "base": [
+     3,
+     3,
+     2,
+     3,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "producer_min_delivery": {
+    "meaning": "Minimum units delivered if a producer serves a contract (P0..P3)",
+    "base": [
+     377,
+     338,
+     287,
+     307
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost": {
+    "meaning": "Unit generation cost matrix, producer-major (P0C0..P0C5, P1C0.., ...)",
+    "base": [
+     [
+      32,
+      22,
+      38,
+      32,
+      25,
+      26
+     ],
+     [
+      20,
+      24,
+      33,
+      40,
+      37,
+      37
+     ],
+     [
+      40,
+      23,
+      38,
+      25,
+      40,
+      30
+     ],
+     [
+      31,
+      20,
+      31,
+      28,
+      22,
+      22
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

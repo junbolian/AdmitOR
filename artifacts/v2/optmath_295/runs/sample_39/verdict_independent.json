@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "package_weights": [
+    33,
+    33,
+    27,
+    28,
+    28
+   ],
+   "truck_capacity": 100,
+   "num_available_trucks": 5
+  },
+  {
+   "package_weights": [
+    36,
+    21,
+    27,
+    26,
+    38
+   ],
+   "truck_capacity": 117,
+   "num_available_trucks": 5
+  },
+  {
+   "package_weights": [
+    22,
+    31,
+    21,
+    25,
+    33
+   ],
+   "truck_capacity": 72,
+   "num_available_trucks": 5
+  },
+  {
+   "package_weights": [
+    36,
+    34,
+    26,
+    35,
+    40
+   ],
+   "truck_capacity": 70,
+   "num_available_trucks": 5
+  },
+  {
+   "package_weights": [
+    37,
+    29,
+    24,
+    44,
+    28
+   ],
+   "truck_capacity": 76,
+   "num_available_trucks": 5
+  },
+  {
+   "package_weights": [
+    41,
+    35,
+    40,
+    38,
+    33
+   ],
+   "truck_capacity": 138,
+   "num_available_trucks": 5
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2.0,
+   2.0,
+   2.0,
+   3.0,
+   3.0,
+   2.0
+  ],
+  "B-structured": [
+   2.0,
+   2.0,
+   2.0,
+   3.0,
+   3.0,
+   2.0
+  ],
+  "C-direct": [
+   2.0,
+   2.0,
+   2.0,
+   3.0,
+   3.0,
+   2.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

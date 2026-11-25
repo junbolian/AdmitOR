@@ -1,0 +1,223 @@
+{
+ "spec": {
+  "preference_matrix": {
+   "base": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assignment_capacity_per_participant": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_capacity_per_car": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "num_participants": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_cars": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "objective_weight_per_assignment": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[assignment_capacity_per_participant] degenerate abs range (lo == hi); perturbation has no effect",
+  "[assignment_capacity_per_car] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_cars] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "preference_matrix": {
+    "meaning": "Binary interest/preference of each participant (rows) for each car (columns); 1 = willing to ride, 0 = not willing. Participants indexed 0-5, cars indexed 0-5.",
+    "base": [
+     [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assignment_capacity_per_participant": {
+    "meaning": "Maximum number of cars a participant may be assigned to (one-car-per-participant constraint).",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_capacity_per_car": {
+    "meaning": "Maximum number of participants a car may be assigned to (one-participant-per-car constraint).",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "num_participants": {
+    "meaning": "Count of participants (index-set size; frozen).",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_cars": {
+    "meaning": "Count of cars (index-set size; frozen).",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "objective_weight_per_assignment": {
+    "meaning": "Contribution (value) of each successful participant-car assignment to the objective.",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

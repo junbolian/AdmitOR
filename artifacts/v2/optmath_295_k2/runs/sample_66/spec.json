@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "activation_cost": {
+   "base": [
+    526,
+    635,
+    606,
+    607,
+    518,
+    575
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_cost": {
+   "base": [
+    11,
+    7,
+    11,
+    9,
+    8,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_production": {
+   "base": [
+    62,
+    65,
+    61,
+    70,
+    68,
+    61
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_production": {
+   "base": [
+    154,
+    151,
+    168,
+    156,
+    168,
+    149
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    293,
+    269,
+    288,
+    279,
+    270
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "num_factories": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_months": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_factories] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_months] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "activation_cost": {
+    "meaning": "Fixed activation cost per factory per month (indexed by factory 0..5)",
+    "base": [
+     526,
+     635,
+     606,
+     607,
+     518,
+     575
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_cost": {
+    "meaning": "Variable production cost per unit produced (indexed by factory 0..5)",
+    "base": [
+     11,
+     7,
+     11,
+     9,
+     8,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production level if factory activated (indexed by factory 0..5)",
+    "base": [
+     62,
+     65,
+     61,
+     70,
+     68,
+     61
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity if factory activated (indexed by factory 0..5)",
+    "base": [
+     154,
+     151,
+     168,
+     156,
+     168,
+     149
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand (Month 0..4)",
+    "base": [
+     293,
+     269,
+     288,
+     279,
+     270
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "num_factories": {
+    "meaning": "Number of factories (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_months": {
+    "meaning": "Number of months (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "sample_id": "conf_66014",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"profit_margins\",\n      \"evidence\": \"“The profit margins for the items range from $300 to $399 per unit. For example” introduces values for Items 0–2 only; no individual values are supplied for Items 3–48.\"\n    },\n    {\n      \"parameter\": \"resource_capacities\",\n      \"evidence\": \"“For instance” introduces approximate consumption rates for Items 0–1, and the example uses 0.0135 for Item 2. No consumption rates are supplied for Items 3–48.\"\n    },\n    {\n      \"parameter\": \"production_limits\",\n      \"evidence\": \"“Item 0 can be produced up to 733 units”, “Item 1 ... 759 units”, and “Item 2 ... 717 units.” No maximum production quantities are supplied for Items 3–48.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "profit_margins",
+   "evidence": "“The profit margins for the items range from $300 to $399 per unit. For example” introduces values for Items 0–2 only; no individual values are supplied for Items 3–48."
+  },
+  {
+   "parameter": "resource_capacities",
+   "evidence": "“For instance” introduces approximate consumption rates for Items 0–1, and the example uses 0.0135 for Item 2. No consumption rates are supplied for Items 3–48."
+  },
+  {
+   "parameter": "production_limits",
+   "evidence": "“Item 0 can be produced up to 733 units”, “Item 1 ... 759 units”, and “Item 2 ... 717 units.” No maximum production quantities are supplied for Items 3–48."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

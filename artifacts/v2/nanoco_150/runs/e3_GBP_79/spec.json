@@ -1,0 +1,98 @@
+{
+ "spec": {
+  "sheet_width": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "sheet_length": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "billboard_widths": {
+   "base": [
+    8,
+    6,
+    8,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "billboard_heights": {
+   "base": [
+    5,
+    4,
+    8,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "sheet_width": {
+    "meaning": "Width capacity of each standard printing roll sheet",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "sheet_length": {
+    "meaning": "Length (height) capacity of each standard printing roll sheet",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "billboard_widths": {
+    "meaning": "Widths of billboards 1-4 (non-rotatable)",
+    "base": [
+     8,
+     6,
+     8,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "billboard_heights": {
+    "meaning": "Heights of billboards 1-4 (non-rotatable)",
+    "base": [
+     5,
+     4,
+     8,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

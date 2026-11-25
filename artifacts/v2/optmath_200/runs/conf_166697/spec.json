@@ -1,0 +1,220 @@
+{
+ "spec": {
+  "setup_cost": {
+   "base": 119.2452272556062,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "startup_cost": {
+   "base": 51.62843229735171,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": 54.71656840593785,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "startup_time": {
+   "base": 5.052545319577741,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost_P0": {
+   "base": 1.16500754228231,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost_P1": {
+   "base": 1.133351111575698,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "backlog_cost_P0": {
+   "base": 5.5489454586642,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "backlog_cost_P1": {
+   "base": 5.911868962460598,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_P0_P0": {
+   "base": 17.98544619742671,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_P1_P0": {
+   "base": 18.32393100834268,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_P0_P1": {
+   "base": 17.03967664739992,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_P1_P1": {
+   "base": 19.40392047975378,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_P0_P2": {
+   "base": 16.26686727068964,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_P1_P2": {
+   "base": 11.01145075110233,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "setup_cost": {
+    "meaning": "Setup cost per period for producing a product",
+    "base": 119.2452272556062,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "startup_cost": {
+    "meaning": "Startup cost for starting machine for a product",
+    "base": 51.62843229735171,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Machine capacity per period (production quantity limit)",
+    "base": 54.71656840593785,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "startup_time": {
+    "meaning": "Time consumed for startup, reducing available capacity",
+    "base": 5.052545319577741,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost_P0": {
+    "meaning": "Inventory holding cost per unit per period for Product 0",
+    "base": 1.16500754228231,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost_P1": {
+    "meaning": "Inventory holding cost per unit per period for Product 1",
+    "base": 1.133351111575698,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "backlog_cost_P0": {
+    "meaning": "Backlogging cost per unit per period for Product 0",
+    "base": 5.5489454586642,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "backlog_cost_P1": {
+    "meaning": "Backlogging cost per unit per period for Product 1",
+    "base": 5.911868962460598,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_P0_P0": {
+    "meaning": "Demand for Product 0 in Period 0",
+    "base": 17.98544619742671,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_P1_P0": {
+    "meaning": "Demand for Product 1 in Period 0",
+    "base": 18.32393100834268,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_P0_P1": {
+    "meaning": "Demand for Product 0 in Period 1",
+    "base": 17.03967664739992,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_P1_P1": {
+    "meaning": "Demand for Product 1 in Period 1",
+    "base": 19.40392047975378,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_P0_P2": {
+    "meaning": "Demand for Product 0 in Period 2",
+    "base": 16.26686727068964,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_P1_P2": {
+    "meaning": "Demand for Product 1 in Period 2",
+    "base": 11.01145075110233,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

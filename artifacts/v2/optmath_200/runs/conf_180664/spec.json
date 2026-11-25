@@ -1,0 +1,351 @@
+{
+ "spec": {
+  "dist_0_1": {
+   "base": 169,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_2": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_3": {
+   "base": 153,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_4": {
+   "base": 167,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_0": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_2": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_3": {
+   "base": 167,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_4": {
+   "base": 167,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_0": {
+   "base": 164,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_1": {
+   "base": 165,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_3": {
+   "base": 154,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_4": {
+   "base": 168,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_0": {
+   "base": 153,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_1": {
+   "base": 152,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_2": {
+   "base": 154,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_4": {
+   "base": 163,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_0": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_1": {
+   "base": 153,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_2": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_3": {
+   "base": 158,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "u_min": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "u_max": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[u_min] degenerate abs range (lo == hi); perturbation has no effect",
+  "[u_max] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "dist_0_1": {
+    "meaning": "distance City 0 to City 1",
+    "base": 169,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_2": {
+    "meaning": "distance City 0 to City 2",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_3": {
+    "meaning": "distance City 0 to City 3",
+    "base": 153,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_4": {
+    "meaning": "distance City 0 to City 4",
+    "base": 167,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_0": {
+    "meaning": "distance City 1 to City 0",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_2": {
+    "meaning": "distance City 1 to City 2",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_3": {
+    "meaning": "distance City 1 to City 3",
+    "base": 167,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_4": {
+    "meaning": "distance City 1 to City 4",
+    "base": 167,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_0": {
+    "meaning": "distance City 2 to City 0",
+    "base": 164,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_1": {
+    "meaning": "distance City 2 to City 1",
+    "base": 165,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_3": {
+    "meaning": "distance City 2 to City 3",
+    "base": 154,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_4": {
+    "meaning": "distance City 2 to City 4",
+    "base": 168,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_0": {
+    "meaning": "distance City 3 to City 0",
+    "base": 153,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_1": {
+    "meaning": "distance City 3 to City 1",
+    "base": 152,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_2": {
+    "meaning": "distance City 3 to City 2",
+    "base": 154,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_4": {
+    "meaning": "distance City 3 to City 4",
+    "base": 163,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_0": {
+    "meaning": "distance City 4 to City 0",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_1": {
+    "meaning": "distance City 4 to City 1",
+    "base": 153,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_2": {
+    "meaning": "distance City 4 to City 2",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_3": {
+    "meaning": "distance City 4 to City 3",
+    "base": 158,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "u_min": {
+    "meaning": "lower bound for position u_i of cities 1..4",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "u_max": {
+    "meaning": "upper bound for position u_i of cities 1..4",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

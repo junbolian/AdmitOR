@@ -1,0 +1,179 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    102829,
+    100573,
+    101725,
+    99989,
+    103197,
+    104176
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    1035,
+    1021,
+    959,
+    1006,
+    1011,
+    998
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    422,
+    378,
+    389,
+    408,
+    420,
+    380,
+    381,
+    384,
+    385,
+    390,
+    397,
+    393
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_cost": {
+   "base": [
+    66,
+    63,
+    61,
+    70,
+    64,
+    63
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_facilities": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_customers": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_customers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed operating cost for each facility (Facility 0..5)",
+    "base": [
+     102829,
+     100573,
+     101725,
+     99989,
+     103197,
+     104176
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum shipping capacity for each facility (Facility 0..5)",
+    "base": [
+     1035,
+     1021,
+     959,
+     1006,
+     1011,
+     998
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Demand for each retail store (Customer 0..11)",
+    "base": [
+     422,
+     378,
+     389,
+     408,
+     420,
+     380,
+     381,
+     384,
+     385,
+     390,
+     397,
+     393
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_cost": {
+    "meaning": "Per-unit transportation cost from each facility to each customer; only diagonal entries are explicitly given, off-diagonal entries are unknown",
+    "base": [
+     66,
+     63,
+     61,
+     70,
+     64,
+     63
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of distribution centers",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_customers": {
+    "meaning": "Number of retail stores",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 12,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

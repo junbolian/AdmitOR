@@ -1,0 +1,42 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "num_nodes",
+  "coords",
+  "distance_matrix",
+  "time_windows",
+  "horizon"
+ ],
+ "safe": [
+  "num_nodes",
+  "coords",
+  "distance_matrix",
+  "horizon"
+ ],
+ "tests": {
+  "num_nodes": [
+   2,
+   2
+  ],
+  "coords": [
+   2,
+   2
+  ],
+  "distance_matrix": [
+   2,
+   2
+  ],
+  "time_windows": [
+   0,
+   0
+  ],
+  "horizon": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

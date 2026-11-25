@@ -1,0 +1,208 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    86,
+    45,
+    38,
+    38
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    36,
+    42,
+    43,
+    42,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     5,
+     10,
+     7,
+     9,
+     7
+    ],
+    [
+     8,
+     8,
+     5,
+     9,
+     10
+    ],
+    [
+     10,
+     7,
+     8,
+     8,
+     7
+    ],
+    [
+     10,
+     8,
+     7,
+     5,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     48,
+     51,
+     45,
+     54,
+     54
+    ],
+    [
+     54,
+     47,
+     51,
+     46,
+     45
+    ],
+    [
+     50,
+     53,
+     48,
+     52,
+     49
+    ],
+    [
+     45,
+     47,
+     46,
+     52,
+     53
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "available supply at each warehouse (units)",
+    "base": [
+     86,
+     45,
+     38,
+     38
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "required demand at each retail store (units)",
+    "base": [
+     36,
+     42,
+     43,
+     42,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "unit transportation cost from warehouse i to store j",
+    "base": [
+     [
+      5,
+      10,
+      7,
+      9,
+      7
+     ],
+     [
+      8,
+      8,
+      5,
+      9,
+      10
+     ],
+     [
+      10,
+      7,
+      8,
+      8,
+      7
+     ],
+     [
+      10,
+      8,
+      7,
+      5,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity": {
+    "meaning": "maximum shipment capacity from warehouse i to store j (units)",
+    "base": [
+     [
+      48,
+      51,
+      45,
+      54,
+      54
+     ],
+     [
+      54,
+      47,
+      51,
+      46,
+      45
+     ],
+     [
+      50,
+      53,
+      48,
+      52,
+      49
+     ],
+     [
+      45,
+      47,
+      46,
+      52,
+      53
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

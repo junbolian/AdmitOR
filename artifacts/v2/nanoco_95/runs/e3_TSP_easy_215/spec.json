@@ -1,0 +1,414 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     63,
+     93,
+     54,
+     56,
+     59,
+     27,
+     92,
+     63
+    ],
+    [
+     63,
+     0,
+     56,
+     16,
+     45,
+     31,
+     49,
+     88,
+     77
+    ],
+    [
+     93,
+     56,
+     0,
+     70,
+     38,
+     35,
+     67,
+     48,
+     60
+    ],
+    [
+     54,
+     16,
+     70,
+     0,
+     51,
+     41,
+     46,
+     97,
+     81
+    ],
+    [
+     56,
+     45,
+     38,
+     51,
+     0,
+     14,
+     29,
+     46,
+     34
+    ],
+    [
+     59,
+     31,
+     35,
+     41,
+     14,
+     0,
+     34,
+     56,
+     48
+    ],
+    [
+     27,
+     49,
+     67,
+     46,
+     29,
+     34,
+     0,
+     67,
+     41
+    ],
+    [
+     92,
+     88,
+     48,
+     97,
+     46,
+     56,
+     67,
+     0,
+     32
+    ],
+    [
+     63,
+     77,
+     60,
+     81,
+     34,
+     48,
+     41,
+     32,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "node0_coords": {
+   "base": [
+    1,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node1_coords": {
+   "base": [
+    62,
+    26
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node2_coords": {
+   "base": [
+    59,
+    82
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node3_coords": {
+   "base": [
+    55,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node4_coords": {
+   "base": [
+    30,
+    57
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node5_coords": {
+   "base": [
+    43,
+    51
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node6_coords": {
+   "base": [
+    14,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node7_coords": {
+   "base": [
+    15,
+    100
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "node8_coords": {
+   "base": [
+    0,
+    72
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "9x9 matrix of precomputed refrigerated transit distances between all node pairs (rows and columns 0..8)",
+    "base": [
+     [
+      0,
+      63,
+      93,
+      54,
+      56,
+      59,
+      27,
+      92,
+      63
+     ],
+     [
+      63,
+      0,
+      56,
+      16,
+      45,
+      31,
+      49,
+      88,
+      77
+     ],
+     [
+      93,
+      56,
+      0,
+      70,
+      38,
+      35,
+      67,
+      48,
+      60
+     ],
+     [
+      54,
+      16,
+      70,
+      0,
+      51,
+      41,
+      46,
+      97,
+      81
+     ],
+     [
+      56,
+      45,
+      38,
+      51,
+      0,
+      14,
+      29,
+      46,
+      34
+     ],
+     [
+      59,
+      31,
+      35,
+      41,
+      14,
+      0,
+      34,
+      56,
+      48
+     ],
+     [
+      27,
+      49,
+      67,
+      46,
+      29,
+      34,
+      0,
+      67,
+      41
+     ],
+     [
+      92,
+      88,
+      48,
+      97,
+      46,
+      56,
+      67,
+      0,
+      32
+     ],
+     [
+      63,
+      77,
+      60,
+      81,
+      34,
+      48,
+      41,
+      32,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "node0_coords": {
+    "meaning": "warehouse coordinates (x, y)",
+    "base": [
+     1,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node1_coords": {
+    "meaning": "retail outlet 1 coordinates (x, y)",
+    "base": [
+     62,
+     26
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node2_coords": {
+    "meaning": "retail outlet 2 coordinates (x, y)",
+    "base": [
+     59,
+     82
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node3_coords": {
+    "meaning": "retail outlet 3 coordinates (x, y)",
+    "base": [
+     55,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node4_coords": {
+    "meaning": "retail outlet 4 coordinates (x, y)",
+    "base": [
+     30,
+     57
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node5_coords": {
+    "meaning": "retail outlet 5 coordinates (x, y)",
+    "base": [
+     43,
+     51
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node6_coords": {
+    "meaning": "retail outlet 6 coordinates (x, y)",
+    "base": [
+     14,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node7_coords": {
+    "meaning": "retail outlet 7 coordinates (x, y)",
+    "base": [
+     15,
+     100
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "node8_coords": {
+    "meaning": "retail outlet 8 coordinates (x, y)",
+    "base": [
+     0,
+     72
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

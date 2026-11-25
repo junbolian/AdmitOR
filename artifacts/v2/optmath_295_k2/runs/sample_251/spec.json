@@ -1,0 +1,324 @@
+{
+ "spec": {
+  "revenue": {
+   "base": [
+    978,
+    1021,
+    1063,
+    891,
+    678,
+    756,
+    878,
+    685,
+    929,
+    916,
+    952
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    162,
+    204,
+    141,
+    145,
+    213,
+    195,
+    162,
+    179,
+    207,
+    159,
+    147
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": [
+    300,
+    275,
+    254,
+    249,
+    234,
+    224,
+    252
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "leg_utilization": {
+   "base": [
+    [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[leg_utilization] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "revenue": {
+    "meaning": "Revenue per unit sold for each flight package",
+    "base": [
+     978,
+     1021,
+     1063,
+     891,
+     678,
+     756,
+     878,
+     685,
+     929,
+     916,
+     952
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Maximum demand (units) for each flight package",
+    "base": [
+     162,
+     204,
+     141,
+     145,
+     213,
+     195,
+     162,
+     179,
+     207,
+     159,
+     147
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "Seat capacity for each flight leg",
+    "base": [
+     300,
+     275,
+     254,
+     249,
+     234,
+     224,
+     252
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "leg_utilization": {
+    "meaning": "Binary matrix (7 legs x 11 packages) indicating which packages use each leg; frozen",
+    "base": [
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

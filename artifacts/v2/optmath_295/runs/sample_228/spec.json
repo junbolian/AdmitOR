@@ -1,0 +1,118 @@
+{
+ "spec": {
+  "facility_costs": {
+   "base": [
+    45,
+    52,
+    57,
+    45,
+    73,
+    68,
+    41,
+    49,
+    41,
+    74,
+    55,
+    62,
+    53,
+    71,
+    40,
+    68,
+    46,
+    72,
+    71,
+    54,
+    57,
+    60,
+    44,
+    63,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_facilities": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "num_service_areas": {
+   "base": 36,
+   "perturb": {
+    "mode": "abs",
+    "lo": 36.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_service_areas] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "facility_costs": {
+    "meaning": "Operational cost of selecting each of the 25 facilities (index 1..25)",
+    "base": [
+     45,
+     52,
+     57,
+     45,
+     73,
+     68,
+     41,
+     49,
+     41,
+     74,
+     55,
+     62,
+     53,
+     71,
+     40,
+     68,
+     46,
+     72,
+     71,
+     54,
+     57,
+     60,
+     44,
+     63,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of facilities (index-set size, frozen)",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "num_service_areas": {
+    "meaning": "Number of service areas (index-set size, frozen)",
+    "base": 36,
+    "perturb": {
+     "mode": "abs",
+     "lo": 36,
+     "hi": 36,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_50483",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"objective_coefficients\", \"evidence\": \"The objective function is the sum of all assignment variables\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "objective_coefficients",
+   "evidence": "The objective function is the sum of all assignment variables"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

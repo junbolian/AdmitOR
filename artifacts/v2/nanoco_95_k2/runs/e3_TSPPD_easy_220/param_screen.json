@@ -1,0 +1,46 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "distance_matrix",
+  "coords",
+  "num_nodes",
+  "num_pairs",
+  "pickup_delivery_pairs"
+ ],
+ "safe": [
+  "distance_matrix",
+  "coords",
+  "num_nodes",
+  "num_pairs"
+ ],
+ "tests": {
+  "distance_matrix": [
+   6,
+   6
+  ],
+  "coords": [
+   6,
+   6
+  ],
+  "num_nodes": [
+   6,
+   6
+  ],
+  "num_pairs": [
+   6,
+   6
+  ],
+  "pickup_delivery_pairs": [
+   0,
+   0
+  ]
+ },
+ "untested": []
+}

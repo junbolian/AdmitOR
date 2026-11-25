@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "dispersion_weights": {
+   "base": [
+    17,
+    14,
+    11,
+    17,
+    14,
+    10,
+    19,
+    12,
+    15,
+    20,
+    14,
+    15,
+    15,
+    14,
+    14,
+    19,
+    14,
+    14,
+    14,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "total_facilities": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[total_facilities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "dispersion_weights": {
+    "meaning": "Weighted dispersion for each ordered pair (i,j), i!=j, listed in order (0,1),(0,2),(0,3),(0,4),(1,0),(1,2),(1,3),(1,4),(2,0),(2,1),(2,3),(2,4),(3,0),(3,1),(3,2),(3,4),(4,0),(4,1),(4,2),(4,3)",
+    "base": [
+     17,
+     14,
+     11,
+     17,
+     14,
+     10,
+     19,
+     12,
+     15,
+     20,
+     14,
+     15,
+     15,
+     14,
+     14,
+     19,
+     14,
+     14,
+     14,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "total_facilities": {
+    "meaning": "Exact number of facilities that must be selected",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "pairwise_distances": {
+   "base": [
+    19,
+    21,
+    22,
+    24,
+    17,
+    21,
+    21,
+    17,
+    16,
+    23,
+    22,
+    25,
+    22,
+    17,
+    21,
+    22,
+    22,
+    18,
+    23,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "num_facilities_to_open": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities_to_open] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "pairwise_distances": {
+    "meaning": "Dispersion value for each ordered pair of facilities (i,j), listed as (0,1),(0,2),(0,3),(0,4),(1,0),(1,2),(1,3),(1,4),(2,0),(2,1),(2,3),(2,4),(3,0),(3,1),(3,2),(3,4),(4,0),(4,1),(4,2),(4,3)",
+    "base": [
+     19,
+     21,
+     22,
+     24,
+     17,
+     21,
+     21,
+     17,
+     16,
+     23,
+     22,
+     25,
+     22,
+     17,
+     21,
+     22,
+     22,
+     18,
+     23,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "num_facilities_to_open": {
+    "meaning": "Exact number of facilities that must be opened",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

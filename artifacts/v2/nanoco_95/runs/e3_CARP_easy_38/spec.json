@@ -1,0 +1,201 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     18,
+     35,
+     59,
+     54,
+     30,
+     44
+    ],
+    [
+     18,
+     0,
+     50,
+     76,
+     55,
+     16,
+     31
+    ],
+    [
+     35,
+     50,
+     0,
+     40,
+     82,
+     64,
+     64
+    ],
+    [
+     59,
+     76,
+     40,
+     0,
+     81,
+     86,
+     99
+    ],
+    [
+     54,
+     55,
+     82,
+     81,
+     0,
+     47,
+     85
+    ],
+    [
+     30,
+     16,
+     64,
+     86,
+     47,
+     0,
+     38
+    ],
+    [
+     44,
+     31,
+     64,
+     99,
+     85,
+     38,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "segment_demands": {
+   "base": [
+    3,
+    4,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "vehicle_capacity": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Symmetric 7x7 matrix of direct travel distances between all node pairs (index 0-6)",
+    "base": [
+     [
+      0,
+      18,
+      35,
+      59,
+      54,
+      30,
+      44
+     ],
+     [
+      18,
+      0,
+      50,
+      76,
+      55,
+      16,
+      31
+     ],
+     [
+      35,
+      50,
+      0,
+      40,
+      82,
+      64,
+      64
+     ],
+     [
+      59,
+      76,
+      40,
+      0,
+      81,
+      86,
+      99
+     ],
+     [
+      54,
+      55,
+      82,
+      81,
+      0,
+      47,
+      85
+     ],
+     [
+      30,
+      16,
+      64,
+      86,
+      47,
+      0,
+      38
+     ],
+     [
+      44,
+      31,
+      64,
+      99,
+      85,
+      38,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "segment_demands": {
+    "meaning": "Material workload units required by each mandatory service segment, ordered [(0,3), (0,4), (2,3), (3,4)]",
+    "base": [
+     3,
+     4,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "vehicle_capacity": {
+    "meaning": "Maximum material carrying capacity per maintenance vehicle",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 14,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

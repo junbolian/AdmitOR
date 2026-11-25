@@ -1,0 +1,351 @@
+{
+ "spec": {
+  "travel_time": {
+   "base": [
+    [
+     0,
+     63,
+     93,
+     54,
+     56,
+     59,
+     27,
+     92,
+     63
+    ],
+    [
+     63,
+     0,
+     56,
+     16,
+     45,
+     31,
+     49,
+     88,
+     77
+    ],
+    [
+     93,
+     56,
+     0,
+     70,
+     38,
+     35,
+     67,
+     48,
+     60
+    ],
+    [
+     54,
+     16,
+     70,
+     0,
+     51,
+     41,
+     46,
+     97,
+     81
+    ],
+    [
+     56,
+     45,
+     38,
+     51,
+     0,
+     14,
+     29,
+     46,
+     34
+    ],
+    [
+     59,
+     31,
+     35,
+     41,
+     14,
+     0,
+     34,
+     56,
+     48
+    ],
+    [
+     27,
+     49,
+     67,
+     46,
+     29,
+     34,
+     0,
+     67,
+     41
+    ],
+    [
+     92,
+     88,
+     48,
+     97,
+     46,
+     56,
+     67,
+     0,
+     32
+    ],
+    [
+     63,
+     77,
+     60,
+     81,
+     34,
+     48,
+     41,
+     32,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "time_window_start": {
+   "base": [
+    0,
+    231,
+    441,
+    39,
+    386,
+    488,
+    170,
+    327,
+    138
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "time_window_end": {
+   "base": [
+    670,
+    291,
+    513,
+    142,
+    452,
+    602,
+    261,
+    416,
+    196
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "planning_horizon": {
+   "base": 670,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "service_time": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[service_time] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "travel_time": {
+    "meaning": "Symmetric travel time matrix between the 9 locations (time units)",
+    "base": [
+     [
+      0,
+      63,
+      93,
+      54,
+      56,
+      59,
+      27,
+      92,
+      63
+     ],
+     [
+      63,
+      0,
+      56,
+      16,
+      45,
+      31,
+      49,
+      88,
+      77
+     ],
+     [
+      93,
+      56,
+      0,
+      70,
+      38,
+      35,
+      67,
+      48,
+      60
+     ],
+     [
+      54,
+      16,
+      70,
+      0,
+      51,
+      41,
+      46,
+      97,
+      81
+     ],
+     [
+      56,
+      45,
+      38,
+      51,
+      0,
+      14,
+      29,
+      46,
+      34
+     ],
+     [
+      59,
+      31,
+      35,
+      41,
+      14,
+      0,
+      34,
+      56,
+      48
+     ],
+     [
+      27,
+      49,
+      67,
+      46,
+      29,
+      34,
+      0,
+      67,
+      41
+     ],
+     [
+      92,
+      88,
+      48,
+      97,
+      46,
+      56,
+      67,
+      0,
+      32
+     ],
+     [
+      63,
+      77,
+      60,
+      81,
+      34,
+      48,
+      41,
+      32,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "time_window_start": {
+    "meaning": "Earliest permissible arrival time at each node",
+    "base": [
+     0,
+     231,
+     441,
+     39,
+     386,
+     488,
+     170,
+     327,
+     138
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "time_window_end": {
+    "meaning": "Latest permissible arrival time at each node",
+    "base": [
+     670,
+     291,
+     513,
+     142,
+     452,
+     602,
+     261,
+     416,
+     196
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "planning_horizon": {
+    "meaning": "Maximum total route duration including travel and waiting",
+    "base": 670,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "service_time": {
+    "meaning": "Document handover/signature duration at each node",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

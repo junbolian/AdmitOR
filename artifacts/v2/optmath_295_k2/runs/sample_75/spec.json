@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    47,
+    35,
+    23,
+    40,
+    21,
+    42,
+    36,
+    36,
+    48,
+    21,
+    26,
+    44,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_rate": {
+   "base": [
+    0.25,
+    1,
+    0.5,
+    0.2,
+    0.2,
+    0.25,
+    1,
+    0.25,
+    0.333,
+    0.2,
+    0.5,
+    1,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "resource_capacity": {
+   "base": 566,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "production_capacity": {
+   "base": [
+    121,
+    170,
+    155,
+    110,
+    134,
+    179,
+    142,
+    172,
+    127,
+    188,
+    198,
+    150,
+    118
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "Profit margin per unit for each item (item_0..item_12)",
+    "base": [
+     47,
+     35,
+     23,
+     40,
+     21,
+     42,
+     36,
+     36,
+     48,
+     21,
+     26,
+     44,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_rate": {
+    "meaning": "Shared resource consumption per unit for each item (item_0..item_12)",
+    "base": [
+     0.25,
+     1,
+     0.5,
+     0.2,
+     0.2,
+     0.25,
+     1,
+     0.25,
+     0.333,
+     0.2,
+     0.5,
+     1,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "resource_capacity": {
+    "meaning": "Total shared resource budget available",
+    "base": 566,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "production_capacity": {
+    "meaning": "Maximum production limit per item (item_0..item_12)",
+    "base": [
+     121,
+     170,
+     155,
+     110,
+     134,
+     179,
+     142,
+     172,
+     127,
+     188,
+     198,
+     150,
+     118
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "spec": {
+  "vehicle_cost_1": {
+   "base": 78,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 160.0,
+    "integer": false
+   }
+  },
+  "vehicle_cost_2": {
+   "base": 56,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "vehicle_cost_3": {
+   "base": 56,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "vehicle_cost_4": {
+   "base": 61,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": false
+   }
+  },
+  "vehicle_cost_5": {
+   "base": 67,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": false
+   }
+  },
+  "vehicle_cost_6": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "vehicle_cost_1": {
+    "meaning": "Deployment cost of Vehicle 1",
+    "base": 78,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 160,
+     "integer": false
+    }
+   },
+   "vehicle_cost_2": {
+    "meaning": "Deployment cost of Vehicle 2",
+    "base": 56,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "vehicle_cost_3": {
+    "meaning": "Deployment cost of Vehicle 3",
+    "base": 56,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "vehicle_cost_4": {
+    "meaning": "Deployment cost of Vehicle 4 (forced by routes 8 and, via route 6/11, significant)",
+    "base": 61,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": false
+    }
+   },
+   "vehicle_cost_5": {
+    "meaning": "Deployment cost of Vehicle 5",
+    "base": 67,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": false
+    }
+   },
+   "vehicle_cost_6": {
+    "meaning": "Deployment cost of Vehicle 6 (forced by route 1)",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

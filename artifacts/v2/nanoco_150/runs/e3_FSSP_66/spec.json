@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     47,
+     11,
+     33
+    ],
+    [
+     13,
+     15,
+     48
+    ],
+    [
+     47,
+     12,
+     46
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Assembly time (minutes) of each job on each workstation; rows=jobs 0..2, cols=workstations 0..2",
+    "base": [
+     [
+      47,
+      11,
+      33
+     ],
+     [
+      13,
+      15,
+      48
+     ],
+     [
+      47,
+      12,
+      46
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

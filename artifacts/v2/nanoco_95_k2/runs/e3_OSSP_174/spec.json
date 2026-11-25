@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_time": {
+   "base": [
+    [
+     43,
+     10,
+     48
+    ],
+    [
+     23,
+     33,
+     16
+    ],
+    [
+     49,
+     43,
+     48
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time": {
+    "meaning": "Task duration matrix (minutes) indexed by component J0..J2 × workstation M0..M2",
+    "base": [
+     [
+      43,
+      10,
+      48
+     ],
+     [
+      23,
+      33,
+      16
+     ],
+     [
+      49,
+      43,
+      48
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

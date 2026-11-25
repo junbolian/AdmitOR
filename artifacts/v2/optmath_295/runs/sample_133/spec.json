@@ -1,0 +1,256 @@
+{
+ "spec": {
+  "p": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "n_nodes": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "big_M": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "dist_0_1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_0_2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_0_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_0_4": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_1_2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_1_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_1_4": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_2_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_2_4": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  },
+  "dist_3_4": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2000000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[p] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "p": {
+    "meaning": "Number of facilities to select",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "n_nodes": {
+    "meaning": "Number of potential facility locations",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "big_M": {
+    "meaning": "Large constant used in pairwise constraints",
+    "base": 1000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "dist_0_1": {
+    "meaning": "Distance between node 0 and node 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_0_2": {
+    "meaning": "Distance between node 0 and node 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_0_3": {
+    "meaning": "Distance between node 0 and node 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_0_4": {
+    "meaning": "Distance between node 0 and node 4",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_1_2": {
+    "meaning": "Distance between node 1 and node 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_1_3": {
+    "meaning": "Distance between node 1 and node 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_1_4": {
+    "meaning": "Distance between node 1 and node 4",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_2_3": {
+    "meaning": "Distance between node 2 and node 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_2_4": {
+    "meaning": "Distance between node 2 and node 4",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   },
+   "dist_3_4": {
+    "meaning": "Distance between node 3 and node 4",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2000000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

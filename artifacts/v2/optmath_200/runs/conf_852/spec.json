@@ -1,0 +1,29 @@
+{
+ "spec": {
+  "objective_coefficient": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "objective_coefficient": {
+    "meaning": "value contributed by each valid participant-car assignment",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

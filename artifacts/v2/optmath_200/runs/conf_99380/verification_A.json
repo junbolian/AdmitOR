@@ -1,0 +1,41 @@
+{
+ "sample_id": "conf_99380",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"prod_cost_A\", \"evidence\": \"ranges from 41 to 48 units depending on the period\"}, {\"parameter\": \"prod_cost_B\", \"evidence\": \"ranges from 41 to 47 units\"}, {\"parameter\": \"setup_cost_A\", \"evidence\": \"costs between 1,176 and 1,426 units per period\"}, {\"parameter\": \"setup_cost_B\", \"evidence\": \"setup costs range from 1,020 to 1,348 units per period\"}, {\"parameter\": \"hold_cost_A\", \"evidence\": \"costs between 4 and 5 units per period\"}, {\"parameter\": \"hold_cost_B\", \"evidence\": \"it costs 4 or 5 units per period\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "prod_cost_A",
+   "evidence": "ranges from 41 to 48 units depending on the period"
+  },
+  {
+   "parameter": "prod_cost_B",
+   "evidence": "ranges from 41 to 47 units"
+  },
+  {
+   "parameter": "setup_cost_A",
+   "evidence": "costs between 1,176 and 1,426 units per period"
+  },
+  {
+   "parameter": "setup_cost_B",
+   "evidence": "setup costs range from 1,020 to 1,348 units per period"
+  },
+  {
+   "parameter": "hold_cost_A",
+   "evidence": "costs between 4 and 5 units per period"
+  },
+  {
+   "parameter": "hold_cost_B",
+   "evidence": "it costs 4 or 5 units per period"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

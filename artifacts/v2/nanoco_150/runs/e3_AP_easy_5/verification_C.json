@@ -1,0 +1,37 @@
+{
+ "sample_id": "e3_AP_easy_5",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement lists Truck 0's costs for Routes 0–5 as **5, 37, 44, 32, 32, 67**. The extracted matrix has Truck 0's row as `[5, 37, 32, 32, 67, 32]`, which drops the value 44 at index 2 and shifts subsequent entries, also introducing a spurious 32 at the end.\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"cost_matrix\",\n      \"extracted\": [5, 37, 32, 32, 67, 32],\n      \"stated\": [5, 37, 44, 32, 32, 67],\n      \"evidence\": \"Truck 0 incurs costs of 5, 37, 44, 32, 32, and 67 for Routes 0 through 5 respectively\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "cost_matrix",
+   "extracted": [
+    5,
+    37,
+    32,
+    32,
+    67,
+    32
+   ],
+   "stated": [
+    5,
+    37,
+    44,
+    32,
+    32,
+    67
+   ],
+   "evidence": "Truck 0 incurs costs of 5, 37, 44, 32, 32, and 67 for Routes 0 through 5 respectively"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

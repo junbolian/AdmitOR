@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    165,
+    167,
+    170,
+    199,
+    181,
+    163
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    177,
+    173,
+    185,
+    163,
+    179,
+    168
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     15,
+     18,
+     20,
+     20,
+     15,
+     17
+    ],
+    [
+     16,
+     19,
+     17,
+     15,
+     17,
+     19
+    ],
+    [
+     20,
+     20,
+     18,
+     18,
+     16,
+     16
+    ],
+    [
+     17,
+     20,
+     15,
+     17,
+     19,
+     15
+    ],
+    [
+     19,
+     20,
+     16,
+     18,
+     20,
+     15
+    ],
+    [
+     20,
+     20,
+     19,
+     15,
+     18,
+     17
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Units available at each of the six warehouses",
+    "base": [
+     165,
+     167,
+     170,
+     199,
+     181,
+     163
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Units required at each of the six retail stores",
+    "base": [
+     177,
+     173,
+     185,
+     163,
+     179,
+     168
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_matrix": {
+    "meaning": "Per-unit transportation cost from warehouse i to retail store j",
+    "base": [
+     [
+      15,
+      18,
+      20,
+      20,
+      15,
+      17
+     ],
+     [
+      16,
+      19,
+      17,
+      15,
+      17,
+      19
+     ],
+     [
+      20,
+      20,
+      18,
+      18,
+      16,
+      16
+     ],
+     [
+      17,
+      20,
+      15,
+      17,
+      19,
+      15
+     ],
+     [
+      19,
+      20,
+      16,
+      18,
+      20,
+      15
+     ],
+     [
+      20,
+      20,
+      19,
+      15,
+      18,
+      17
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

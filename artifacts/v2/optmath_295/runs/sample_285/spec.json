@@ -1,0 +1,139 @@
+{
+ "spec": {
+  "preference": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference": {
+    "meaning": "Binary participant-car interest matrix (1 if interested, 0 otherwise), rows = participants 0..5, cols = cars 0..6",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "num_facilities_selected": 2,
+   "big_M": 1000000
+  },
+  {
+   "num_facilities_selected": 2,
+   "big_M": 525010.7552226669
+  },
+  {
+   "num_facilities_selected": 2,
+   "big_M": 723210.7381488228
+  },
+  {
+   "num_facilities_selected": 2,
+   "big_M": 1176699.4874229112
+  },
+  {
+   "num_facilities_selected": 2,
+   "big_M": 586938.8326294161
+  },
+  {
+   "num_facilities_selected": 2,
+   "big_M": 529797.2194380703
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   40.0,
+   40.0,
+   40.0,
+   40.0,
+   40.0,
+   40.0
+  ],
+  "A-direct-2": [
+   30.0,
+   30.0,
+   30.0,
+   30.0,
+   30.0,
+   30.0
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478
+  ],
+  "C-direct-2": [
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "missing_distance_data",
+   "missing_distance_data",
+   "missing_distance_data",
+   "missing_distance_data",
+   "missing_distance_data",
+   "missing_distance_data"
+  ],
+  "B-structured-2": [
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct-2 vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs B-structured-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

@@ -1,0 +1,430 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "durations": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    4,
+    1,
+    2,
+    2,
+    4,
+    4,
+    5,
+    1
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    3,
+    1,
+    2,
+    3,
+    1,
+    2,
+    4,
+    3
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    3,
+    4,
+    1,
+    4,
+    4,
+    2,
+    2
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    5,
+    2,
+    1,
+    1,
+    4,
+    3,
+    4,
+    4
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    3,
+    5,
+    3,
+    3,
+    4,
+    3,
+    4,
+    3
+   ],
+   "conflict_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6.0,
+   8.0,
+   8.0,
+   8.999999,
+   8.000000000000002,
+   9.0
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   6.0,
+   8.0,
+   8.0,
+   8.999999,
+   8.000000000000002,
+   9.0
+  ],
+  "B-structured-2": [
+   6.0,
+   8.0,
+   8.0,
+   8.999999,
+   8.000000000000002,
+   9.0
+  ],
+  "C-direct": [
+   6.0,
+   8.0,
+   8.0,
+   9.0,
+   8.0,
+   9.0
+  ],
+  "C-direct-2": [
+   6.0,
+   8.0,
+   8.0,
+   9.0,
+   8.0,
+   9.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca",
+   "crash:File \"<PATH>/set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\set.py\", line 2401, in _getitem_when_not_present | raise ValueError( | ValueError: Cannot tuplize list data for set PAIRS beca']"
+ },
+ "disagreements": [],
+ "notes": []
+}

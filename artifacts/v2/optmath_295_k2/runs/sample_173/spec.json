@@ -1,0 +1,179 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1516,
+    1599,
+    1574,
+    1502
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    812,
+    826,
+    800,
+    839,
+    835
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "min_contributors": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_delivery": {
+   "base": [
+    379,
+    399,
+    393,
+    375
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     32,
+     30,
+     30,
+     31,
+     32
+    ],
+    [
+     31,
+     31,
+     30,
+     31,
+     31
+    ],
+    [
+     30,
+     32,
+     32,
+     32,
+     30
+    ],
+    [
+     30,
+     30,
+     30,
+     32,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum energy output per producer",
+    "base": [
+     1516,
+     1599,
+     1574,
+     1502
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "Minimum energy required per contract",
+    "base": [
+     812,
+     826,
+     800,
+     839,
+     835
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers supplying each contract",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum amount a producer must deliver if it contributes to a contract",
+    "base": [
+     379,
+     399,
+     393,
+     375
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Unit production cost of producer i for contract j",
+    "base": [
+     [
+      32,
+      30,
+      30,
+      31,
+      32
+     ],
+     [
+      31,
+      31,
+      30,
+      31,
+      31
+     ],
+     [
+      30,
+      32,
+      32,
+      32,
+      30
+     ],
+     [
+      30,
+      30,
+      30,
+      32,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

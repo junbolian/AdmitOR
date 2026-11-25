@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "hub_costs": {
+   "base": [
+    34,
+    45,
+    14,
+    28,
+    19,
+    44,
+    50,
+    15,
+    26,
+    21,
+    23,
+    46,
+    35,
+    15,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "hub_costs": {
+    "meaning": "Activation cost for each of the 15 hubs, ordered Hub 1 through Hub 15",
+    "base": [
+     34,
+     45,
+     14,
+     28,
+     19,
+     44,
+     50,
+     15,
+     26,
+     21,
+     23,
+     46,
+     35,
+     15,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

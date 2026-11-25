@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_167866",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity\",\"evidence\":\"\\\"For example:\\\" gives limits of 469 and 493; \\\"Similar limits apply to all other origin-destination pairs, as specified in the data.\\\" The full capacity table and the values 1000000000.0 are not stated.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "\"For example:\" gives limits of 469 and 493; \"Similar limits apply to all other origin-destination pairs, as specified in the data.\" The full capacity table and the values 1000000000.0 are not stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

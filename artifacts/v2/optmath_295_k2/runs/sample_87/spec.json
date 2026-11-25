@@ -1,0 +1,96 @@
+{
+ "spec": {
+  "expected_returns": {
+   "base": [
+    0.0979,
+    0.1102,
+    0.1471,
+    0.0683,
+    0.1372
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.16,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.15,
+    "hi": 0.9,
+    "integer": false
+   }
+  },
+  "budget_sum_weights": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[budget_sum_weights] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "expected_returns": {
+    "meaning": "Expected return of each of the five assets",
+    "base": [
+     0.0979,
+     0.1102,
+     0.1471,
+     0.0683,
+     0.1372
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio expected return (10%)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.16,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "Upper bound on each asset's weight (30% cap)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.15,
+     "hi": 0.9,
+     "integer": false
+    }
+   },
+   "budget_sum_weights": {
+    "meaning": "Total allocation across all assets that must sum to 1 (frozen, a pure scale normalization)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 1.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "sample_id": "e3_GCP_81",
+ "set": "calibration",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"num_edges\",\"extracted\":28,\"stated\":22,\"evidence\":\"The specific student overlap relationships (edges) are as follows: [the listed relationships comprise 22 distinct undirected pairs].\"}],\"not_stated\":[{\"parameter\":\"max_slots\",\"evidence\":\"no value in the statement for facility capacity or the number of available time slots\"},{\"parameter\":\"slot_cost\",\"evidence\":\"This reduction aims to lower facility rental costs\"}]}",
+ "mismatch": [
+  {
+   "parameter": "num_edges",
+   "extracted": 28,
+   "stated": 22,
+   "evidence": "The specific student overlap relationships (edges) are as follows: [the listed relationships comprise 22 distinct undirected pairs]."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "max_slots",
+   "evidence": "no value in the statement for facility capacity or the number of available time slots"
+  },
+  {
+   "parameter": "slot_cost",
+   "evidence": "This reduction aims to lower facility rental costs"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

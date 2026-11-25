@@ -1,0 +1,228 @@
+{
+ "spec": {
+  "num_trucks": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_sites": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "travel_cost": {
+   "base": [
+    [
+     0,
+     64,
+     27,
+     33,
+     38,
+     21,
+     7,
+     40
+    ],
+    [
+     64,
+     0,
+     63,
+     93,
+     54,
+     56,
+     59,
+     27
+    ],
+    [
+     27,
+     63,
+     0,
+     56,
+     16,
+     45,
+     31,
+     49
+    ],
+    [
+     33,
+     93,
+     56,
+     0,
+     70,
+     38,
+     35,
+     67
+    ],
+    [
+     38,
+     54,
+     16,
+     70,
+     0,
+     51,
+     41,
+     46
+    ],
+    [
+     21,
+     56,
+     45,
+     38,
+     51,
+     0,
+     14,
+     29
+    ],
+    [
+     7,
+     59,
+     31,
+     35,
+     41,
+     14,
+     0,
+     34
+    ],
+    [
+     40,
+     27,
+     49,
+     67,
+     46,
+     29,
+     34,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_sites] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_trucks": {
+    "meaning": "number of available trucks",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_sites": {
+    "meaning": "number of community sites to serve",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "travel_cost": {
+    "meaning": "travel time/fuel cost matrix between nodes",
+    "base": [
+     [
+      0,
+      64,
+      27,
+      33,
+      38,
+      21,
+      7,
+      40
+     ],
+     [
+      64,
+      0,
+      63,
+      93,
+      54,
+      56,
+      59,
+      27
+     ],
+     [
+      27,
+      63,
+      0,
+      56,
+      16,
+      45,
+      31,
+      49
+     ],
+     [
+      33,
+      93,
+      56,
+      0,
+      70,
+      38,
+      35,
+      67
+     ],
+     [
+      38,
+      54,
+      16,
+      70,
+      0,
+      51,
+      41,
+      46
+     ],
+     [
+      21,
+      56,
+      45,
+      38,
+      51,
+      0,
+      14,
+      29
+     ],
+     [
+      7,
+      59,
+      31,
+      35,
+      41,
+      14,
+      0,
+      34
+     ],
+     [
+      40,
+      27,
+      49,
+      67,
+      46,
+      29,
+      34,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "wafer_width": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 26.0,
+    "integer": false
+   }
+  },
+  "wafer_height": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 26.0,
+    "integer": false
+   }
+  },
+  "ic1_width": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "ic1_height": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "ic2_width": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "ic2_height": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "ic3_width": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "ic3_height": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "ic4_width": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "ic4_height": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "ic5_width": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "ic5_height": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 9.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "wafer_width": {
+    "meaning": "Width of each square wafer substrate",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 26,
+     "integer": false
+    }
+   },
+   "wafer_height": {
+    "meaning": "Height of each square wafer substrate",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 26,
+     "integer": false
+    }
+   },
+   "ic1_width": {
+    "meaning": "Width of integrated circuit 1",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "ic1_height": {
+    "meaning": "Height of integrated circuit 1",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "ic2_width": {
+    "meaning": "Width of integrated circuit 2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "ic2_height": {
+    "meaning": "Height of integrated circuit 2",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "ic3_width": {
+    "meaning": "Width of integrated circuit 3",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "ic3_height": {
+    "meaning": "Height of integrated circuit 3",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "ic4_width": {
+    "meaning": "Width of integrated circuit 4",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "ic4_height": {
+    "meaning": "Height of integrated circuit 4",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "ic5_width": {
+    "meaning": "Width of integrated circuit 5",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "ic5_height": {
+    "meaning": "Height of integrated circuit 5",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 9,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    [
+     79,
+     76,
+     93,
+     96,
+     91,
+     81
+    ],
+    [
+     86,
+     81,
+     85,
+     54,
+     80,
+     87
+    ],
+    [
+     95,
+     69,
+     51,
+     76,
+     55,
+     83
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "production_cost": {
+   "base": [
+    [
+     48,
+     41,
+     50,
+     46,
+     44,
+     40
+    ],
+    [
+     43,
+     47,
+     47,
+     40,
+     44,
+     45
+    ],
+    [
+     45,
+     43,
+     44,
+     47,
+     43,
+     45
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost": {
+   "base": [
+    [
+     1095,
+     1071,
+     1391,
+     1222,
+     1313,
+     1101
+    ],
+    [
+     1449,
+     1196,
+     1003,
+     1297,
+     1113,
+     1140
+    ],
+    [
+     1048,
+     1433,
+     1094,
+     1497,
+     1423,
+     1070
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost": {
+   "base": [
+    5,
+    5,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    1090,
+    1009,
+    1106,
+    1048,
+    1098,
+    1016
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacity_consumption": {
+   "base": [
+    1.877,
+    1.884,
+    1.622
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "monthly demand per product (rows: products 0-2; cols: months 1-6)",
+    "base": [
+     [
+      79,
+      76,
+      93,
+      96,
+      91,
+      81
+     ],
+     [
+      86,
+      81,
+      85,
+      54,
+      80,
+      87
+     ],
+     [
+      95,
+      69,
+      51,
+      76,
+      55,
+      83
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "production_cost": {
+    "meaning": "per-unit production cost per product per month",
+    "base": [
+     [
+      48,
+      41,
+      50,
+      46,
+      44,
+      40
+     ],
+     [
+      43,
+      47,
+      47,
+      40,
+      44,
+      45
+     ],
+     [
+      45,
+      43,
+      44,
+      47,
+      43,
+      45
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost": {
+    "meaning": "fixed setup cost per product per month",
+    "base": [
+     [
+      1095,
+      1071,
+      1391,
+      1222,
+      1313,
+      1101
+     ],
+     [
+      1449,
+      1196,
+      1003,
+      1297,
+      1113,
+      1140
+     ],
+     [
+      1048,
+      1433,
+      1094,
+      1497,
+      1423,
+      1070
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost": {
+    "meaning": "per-unit inventory holding cost per month for each product",
+    "base": [
+     5,
+     5,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "monthly resource capacity (months 1-6)",
+    "base": [
+     1090,
+     1009,
+     1106,
+     1048,
+     1098,
+     1016
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacity_consumption": {
+    "meaning": "resource units consumed per unit of each product",
+    "base": [
+     1.877,
+     1.884,
+     1.622
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

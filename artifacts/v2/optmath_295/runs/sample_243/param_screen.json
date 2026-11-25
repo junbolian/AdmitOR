@@ -1,0 +1,47 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "target_return",
+  "max_allocation",
+  "total_allocation",
+  "expected_returns",
+  "covariance_matrix",
+  "asset_count"
+ ],
+ "safe": [
+  "max_allocation",
+  "total_allocation",
+  "covariance_matrix",
+  "asset_count"
+ ],
+ "tests": {
+  "target_return": [
+   1,
+   0
+  ],
+  "max_allocation": [
+   2,
+   2
+  ],
+  "total_allocation": [
+   2,
+   2
+  ],
+  "expected_returns": [
+   2,
+   1
+  ],
+  "covariance_matrix": [
+   2,
+   2
+  ],
+  "asset_count": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

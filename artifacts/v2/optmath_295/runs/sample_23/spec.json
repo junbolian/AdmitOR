@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    7,
+    1,
+    5,
+    6,
+    1,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    384,
+    214,
+    309,
+    492
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capability": {
+   "base": [
+    [
+     75,
+     200,
+     130,
+     132
+    ],
+    [
+     97,
+     87,
+     161,
+     113
+    ],
+    [
+     193,
+     126,
+     182,
+     78
+    ],
+    [
+     122,
+     122,
+     169,
+     108
+    ],
+    [
+     59,
+     142,
+     84,
+     140
+    ],
+    [
+     197,
+     161,
+     132,
+     89
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     4722,
+     3530,
+     2715,
+     3600
+    ],
+    [
+     4706,
+     4340,
+     1210,
+     1338
+    ],
+    [
+     3044,
+     2338,
+     1146,
+     3892
+    ],
+    [
+     3827,
+     1634,
+     1592,
+     1866
+    ],
+    [
+     1095,
+     3228,
+     3883,
+     4917
+    ],
+    [
+     2829,
+     4001,
+     4154,
+     4792
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "max aircraft of each type across all routes",
+    "base": [
+     7,
+     1,
+     5,
+     6,
+     1,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "required capability units per route",
+    "base": [
+     384,
+     214,
+     309,
+     492
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capability": {
+    "meaning": "capability units contributed by aircraft type i on route j (rows: aircraft 0-5, cols: routes 0-3)",
+    "base": [
+     [
+      75,
+      200,
+      130,
+      132
+     ],
+     [
+      97,
+      87,
+      161,
+      113
+     ],
+     [
+      193,
+      126,
+      182,
+      78
+     ],
+     [
+      122,
+      122,
+      169,
+      108
+     ],
+     [
+      59,
+      142,
+      84,
+      140
+     ],
+     [
+      197,
+      161,
+      132,
+      89
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost": {
+    "meaning": "operational cost per aircraft of type i on route j (rows: aircraft 0-5, cols: routes 0-3)",
+    "base": [
+     [
+      4722,
+      3530,
+      2715,
+      3600
+     ],
+     [
+      4706,
+      4340,
+      1210,
+      1338
+     ],
+     [
+      3044,
+      2338,
+      1146,
+      3892
+     ],
+     [
+      3827,
+      1634,
+      1592,
+      1866
+     ],
+     [
+      1095,
+      3228,
+      3883,
+      4917
+     ],
+     [
+      2829,
+      4001,
+      4154,
+      4792
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

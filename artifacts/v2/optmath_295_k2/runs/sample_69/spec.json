@@ -1,0 +1,251 @@
+{
+ "spec": {
+  "travel_cost_0_1": {
+   "base": 314,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_0_2": {
+   "base": 326,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_0_3": {
+   "base": 341,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_1_0": {
+   "base": 294,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_1_2": {
+   "base": 340,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_1_3": {
+   "base": 271,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_2_0": {
+   "base": 339,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_2_1": {
+   "base": 332,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_2_3": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_3_0": {
+   "base": 287,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_3_1": {
+   "base": 279,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "travel_cost_3_2": {
+   "base": 305,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "u_bound_lower": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "u_bound_upper": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "u_depot_fixed": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[u_bound_lower] degenerate abs range (lo == hi); perturbation has no effect",
+  "[u_bound_upper] degenerate abs range (lo == hi); perturbation has no effect",
+  "[u_depot_fixed] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "travel_cost_0_1": {
+    "meaning": "distance from City 0 to City 1",
+    "base": 314,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_0_2": {
+    "meaning": "distance from City 0 to City 2",
+    "base": 326,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_0_3": {
+    "meaning": "distance from City 0 to City 3",
+    "base": 341,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_1_0": {
+    "meaning": "distance from City 1 to City 0",
+    "base": 294,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_1_2": {
+    "meaning": "distance from City 1 to City 2",
+    "base": 340,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_1_3": {
+    "meaning": "distance from City 1 to City 3",
+    "base": 271,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_2_0": {
+    "meaning": "distance from City 2 to City 0",
+    "base": 339,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_2_1": {
+    "meaning": "distance from City 2 to City 1",
+    "base": 332,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_2_3": {
+    "meaning": "distance from City 2 to City 3",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_3_0": {
+    "meaning": "distance from City 3 to City 0",
+    "base": 287,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_3_1": {
+    "meaning": "distance from City 3 to City 1",
+    "base": 279,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "travel_cost_3_2": {
+    "meaning": "distance from City 3 to City 2",
+    "base": 305,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "u_bound_lower": {
+    "meaning": "lower bound on position variables u[city] for non-depot cities",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "u_bound_upper": {
+    "meaning": "upper bound on position variables u[city] for non-depot cities",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "u_depot_fixed": {
+    "meaning": "fixed position of depot City 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

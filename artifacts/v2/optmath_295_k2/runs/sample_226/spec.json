@@ -1,0 +1,295 @@
+{
+ "spec": {
+  "demand_p0_m0": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m0": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "demand_p0_m1": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 16.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m1": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 16.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "demand_p0_m2": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m2": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "demand_p0_m3": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 33.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m3": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "profit": {
+   "base": [
+    [
+     [
+      6,
+      3,
+      8,
+      9
+     ],
+     [
+      5,
+      7,
+      10,
+      7
+     ]
+    ],
+    [
+     [
+      7,
+      7,
+      4,
+      9
+     ],
+     [
+      6,
+      4,
+      10,
+      4
+     ]
+    ],
+    [
+     [
+      5,
+      4,
+      8,
+      7
+     ],
+     [
+      7,
+      9,
+      7,
+      9
+     ]
+    ],
+    [
+     [
+      4,
+      8,
+      10,
+      5
+     ],
+     [
+      4,
+      6,
+      7,
+      7
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_p0_m0": {
+    "meaning": "Market 0 demand for Product 0",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "demand_p1_m0": {
+    "meaning": "Market 0 demand for Product 1",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "demand_p0_m1": {
+    "meaning": "Market 1 demand for Product 0",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 16,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "demand_p1_m1": {
+    "meaning": "Market 1 demand for Product 1",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 16,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "demand_p0_m2": {
+    "meaning": "Market 2 demand for Product 0",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "demand_p1_m2": {
+    "meaning": "Market 2 demand for Product 1",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "demand_p0_m3": {
+    "meaning": "Market 3 demand for Product 0",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 33,
+     "integer": true
+    }
+   },
+   "demand_p1_m3": {
+    "meaning": "Market 3 demand for Product 1",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "profit": {
+    "meaning": "Profit coefficients: profit[company][product][market], companies 0..3, products 0..1, markets 0..3",
+    "base": [
+     [
+      [
+       6,
+       3,
+       8,
+       9
+      ],
+      [
+       5,
+       7,
+       10,
+       7
+      ]
+     ],
+     [
+      [
+       7,
+       7,
+       4,
+       9
+      ],
+      [
+       6,
+       4,
+       10,
+       4
+      ]
+     ],
+     [
+      [
+       5,
+       4,
+       8,
+       7
+      ],
+      [
+       7,
+       9,
+       7,
+       9
+      ]
+     ],
+     [
+      [
+       4,
+       8,
+       10,
+       5
+      ],
+      [
+       4,
+       6,
+       7,
+       7
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 14,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

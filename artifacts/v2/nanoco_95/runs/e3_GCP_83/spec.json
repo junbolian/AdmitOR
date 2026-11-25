@@ -1,0 +1,229 @@
+{
+ "spec": {
+  "num_variables": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "interference_pairs": {
+   "base": [
+    [
+     5,
+     8
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[interference_pairs] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[num_variables] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_variables": {
+    "meaning": "Number of variables to allocate registers to (index set size)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "interference_pairs": {
+    "meaning": "Pairs of variables that are simultaneously active and must receive distinct registers",
+    "base": [
+     [
+      5,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       5,
+       8
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       3,
+       9
+      ],
+      [
+       5,
+       9
+      ],
+      [
+       6,
+       9
+      ]
+     ],
+     "hi": [
+      [
+       5,
+       8
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       3,
+       9
+      ],
+      [
+       5,
+       9
+      ],
+      [
+       6,
+       9
+      ]
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

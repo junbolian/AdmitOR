@@ -1,0 +1,361 @@
+{
+ "spec": {
+  "supply_p0": {
+   "base": [
+    16,
+    54,
+    48,
+    71
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_p1": {
+   "base": [
+    37,
+    36,
+    69,
+    73
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_p0": {
+   "base": [
+    44,
+    31,
+    23,
+    19,
+    46,
+    26
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_p1": {
+   "base": [
+    27,
+    18,
+    40,
+    42,
+    39,
+    49
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_p0": {
+   "base": [
+    [
+     20,
+     14,
+     14,
+     15,
+     12,
+     13
+    ],
+    [
+     10,
+     20,
+     13,
+     17,
+     15,
+     12
+    ],
+    [
+     18,
+     16,
+     20,
+     18,
+     13,
+     20
+    ],
+    [
+     15,
+     15,
+     17,
+     15,
+     12,
+     11
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_p1": {
+   "base": [
+    [
+     20,
+     14,
+     13,
+     16,
+     19,
+     13
+    ],
+    [
+     17,
+     11,
+     17,
+     12,
+     16,
+     16
+    ],
+    [
+     12,
+     15,
+     20,
+     16,
+     15,
+     20
+    ],
+    [
+     16,
+     19,
+     20,
+     15,
+     12,
+     13
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "route_capacity": {
+   "base": [
+    [
+     93,
+     64,
+     123,
+     60,
+     52,
+     131
+    ],
+    [
+     50,
+     109,
+     109,
+     73,
+     65,
+     126
+    ],
+    [
+     149,
+     104,
+     51,
+     101,
+     104,
+     65
+    ],
+    [
+     52,
+     75,
+     66,
+     117,
+     131,
+     128
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_p0": {
+    "meaning": "Supply of Product 0 at Origins 0..3",
+    "base": [
+     16,
+     54,
+     48,
+     71
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_p1": {
+    "meaning": "Supply of Product 1 at Origins 0..3",
+    "base": [
+     37,
+     36,
+     69,
+     73
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_p0": {
+    "meaning": "Demand for Product 0 at Destinations 0..5",
+    "base": [
+     44,
+     31,
+     23,
+     19,
+     46,
+     26
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_p1": {
+    "meaning": "Demand for Product 1 at Destinations 0..5",
+    "base": [
+     27,
+     18,
+     40,
+     42,
+     39,
+     49
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_p0": {
+    "meaning": "Transport cost per unit of Product 0 for origins 0..3 x destinations 0..5",
+    "base": [
+     [
+      20,
+      14,
+      14,
+      15,
+      12,
+      13
+     ],
+     [
+      10,
+      20,
+      13,
+      17,
+      15,
+      12
+     ],
+     [
+      18,
+      16,
+      20,
+      18,
+      13,
+      20
+     ],
+     [
+      15,
+      15,
+      17,
+      15,
+      12,
+      11
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_p1": {
+    "meaning": "Transport cost per unit of Product 1 for origins 0..3 x destinations 0..5",
+    "base": [
+     [
+      20,
+      14,
+      13,
+      16,
+      19,
+      13
+     ],
+     [
+      17,
+      11,
+      17,
+      12,
+      16,
+      16
+     ],
+     [
+      12,
+      15,
+      20,
+      16,
+      15,
+      20
+     ],
+     [
+      16,
+      19,
+      20,
+      15,
+      12,
+      13
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "route_capacity": {
+    "meaning": "Maximum total units (both products) per route, origins 0..3 x destinations 0..5",
+    "base": [
+     [
+      93,
+      64,
+      123,
+      60,
+      52,
+      131
+     ],
+     [
+      50,
+      109,
+      109,
+      73,
+      65,
+      126
+     ],
+     [
+      149,
+      104,
+      51,
+      101,
+      104,
+      65
+     ],
+     [
+      52,
+      75,
+      66,
+      117,
+      131,
+      128
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

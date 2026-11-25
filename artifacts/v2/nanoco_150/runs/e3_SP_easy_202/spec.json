@@ -1,0 +1,252 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "costs": {
+   "base": [
+    6,
+    5,
+    5,
+    7,
+    8,
+    6,
+    3,
+    9,
+    11,
+    9,
+    9,
+    8,
+    10,
+    8,
+    6,
+    7,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplies": {
+   "base": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "coordinates": {
+   "base": [
+    [
+     64,
+     41
+    ],
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ],
+    [
+     76,
+     96
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     34,
+     65
+    ],
+    [
+     39,
+     9
+    ],
+    [
+     6,
+     43
+    ],
+    [
+     99,
+     46
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [
+  "[supplies] rel rate r=0.0 outside (0,1]; clamped to 0.3"
+ ],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Maximum flow allowed on each of the 17 directed arcs, in the arc order listed",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "costs": {
+    "meaning": "Unit response time cost on each of the 17 directed arcs, in the arc order listed",
+    "base": [
+     6,
+     5,
+     5,
+     7,
+     8,
+     6,
+     3,
+     9,
+     11,
+     9,
+     9,
+     8,
+     10,
+     8,
+     6,
+     7,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplies": {
+    "meaning": "Net supply/demand at nodes 0 through 9",
+    "base": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     -1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "coordinates": {
+    "meaning": "Geographical (x, y) coordinates of the 10 nodes",
+    "base": [
+     [
+      64,
+      41
+     ],
+     [
+      99,
+      82
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      76,
+      96
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      34,
+      65
+     ],
+     [
+      39,
+      9
+     ],
+     [
+      6,
+      43
+     ],
+     [
+      99,
+      46
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

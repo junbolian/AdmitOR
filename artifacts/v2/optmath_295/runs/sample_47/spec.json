@@ -1,0 +1,191 @@
+{
+ "spec": {
+  "expected_returns": {
+   "base": [
+    0.1471,
+    0.0583,
+    0.0685,
+    0.1077
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "sum_allocation": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "variances": {
+   "base": [
+    0.0378,
+    0.0675,
+    0.0624,
+    0.0219
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "covariances": {
+   "base": [
+    0.0341,
+    0.0433,
+    0.0222,
+    0.0233,
+    0.0182,
+    -0.0036
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[expected_returns] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[variances] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[covariances] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[sum_allocation] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "expected_returns": {
+    "meaning": "Expected return of each asset (fractions, not percent)",
+    "base": [
+     0.1471,
+     0.0583,
+     0.0685,
+     0.1077
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "hi": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+     ],
+     "integer": false
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio return",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "sum_allocation": {
+    "meaning": "Required total allocation across all assets",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "Maximum allocation allowed for any single asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "variances": {
+    "meaning": "Diagonal variance terms of the covariance matrix",
+    "base": [
+     0.0378,
+     0.0675,
+     0.0624,
+     0.0219
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0.005,
+      0.005,
+      0.005,
+      0.005
+     ],
+     "hi": [
+      0.12,
+      0.12,
+      0.12,
+      0.12
+     ],
+     "integer": false
+    }
+   },
+   "covariances": {
+    "meaning": "Off-diagonal covariance terms: (0,1), (0,2), (0,3), (1,2), (1,3), (2,3)",
+    "base": [
+     0.0341,
+     0.0433,
+     0.0222,
+     0.0233,
+     0.0182,
+     -0.0036
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      -0.05,
+      -0.05,
+      -0.05,
+      -0.05,
+      -0.05,
+      -0.05
+     ],
+     "hi": [
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.08
+     ],
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

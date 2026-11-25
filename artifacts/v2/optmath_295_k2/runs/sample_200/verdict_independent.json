@@ -1,0 +1,201 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "processing_time_j0_o0": 1,
+   "processing_time_j0_o1": 1,
+   "processing_time_j1_o0": 1,
+   "processing_time_j1_o1": 1,
+   "processing_time_j2_o0": 1,
+   "processing_time_j2_o1": 1,
+   "precedence_lag_j0": 1,
+   "precedence_lag_j1": 1,
+   "precedence_lag_j2": 1,
+   "machine_disjunctive_bigM": 100000
+  },
+  {
+   "processing_time_j0_o0": 3,
+   "processing_time_j0_o1": 0,
+   "processing_time_j1_o0": 1,
+   "processing_time_j1_o1": 1,
+   "processing_time_j2_o0": 4,
+   "processing_time_j2_o1": 3,
+   "precedence_lag_j0": 4,
+   "precedence_lag_j1": 0,
+   "precedence_lag_j2": 2,
+   "machine_disjunctive_bigM": 29894
+  },
+  {
+   "processing_time_j0_o0": 1,
+   "processing_time_j0_o1": 3,
+   "processing_time_j1_o0": 0,
+   "processing_time_j1_o1": 1,
+   "processing_time_j2_o0": 3,
+   "processing_time_j2_o1": 3,
+   "precedence_lag_j0": 1,
+   "precedence_lag_j1": 3,
+   "precedence_lag_j2": 4,
+   "machine_disjunctive_bigM": 6598
+  },
+  {
+   "processing_time_j0_o0": 4,
+   "processing_time_j0_o1": 3,
+   "processing_time_j1_o0": 2,
+   "processing_time_j1_o1": 1,
+   "processing_time_j2_o0": 5,
+   "processing_time_j2_o1": 2,
+   "precedence_lag_j0": 0,
+   "precedence_lag_j1": 0,
+   "precedence_lag_j2": 4,
+   "machine_disjunctive_bigM": 603766
+  },
+  {
+   "processing_time_j0_o0": 4,
+   "processing_time_j0_o1": 4,
+   "processing_time_j1_o0": 3,
+   "processing_time_j1_o1": 5,
+   "processing_time_j2_o0": 2,
+   "processing_time_j2_o1": 3,
+   "precedence_lag_j0": 4,
+   "precedence_lag_j1": 3,
+   "precedence_lag_j2": 4,
+   "machine_disjunctive_bigM": 577394
+  },
+  {
+   "processing_time_j0_o0": 4,
+   "processing_time_j0_o1": 0,
+   "processing_time_j1_o0": 1,
+   "processing_time_j1_o1": 1,
+   "processing_time_j2_o0": 0,
+   "processing_time_j2_o1": 1,
+   "precedence_lag_j0": 1,
+   "precedence_lag_j1": 1,
+   "precedence_lag_j2": 3,
+   "machine_disjunctive_bigM": 364896
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6.0,
+   11.999999999999998,
+   11.0,
+   17.0,
+   21.0,
+   7.0
+  ],
+  "A-direct-2": [
+   3.0,
+   7.0,
+   7.0,
+   9.0,
+   13.0,
+   5.0
+  ],
+  "B-structured": [
+   6.0,
+   11.999999999999998,
+   11.0,
+   17.0,
+   21.0,
+   7.0
+  ],
+  "B-structured-2": [
+   6.0,
+   11.999999999999998,
+   11.0,
+   17.0,
+   21.0,
+   7.0
+  ],
+  "C-direct": [
+   3.0,
+   12.0,
+   11.0,
+   11.0,
+   12.0,
+   6.0
+  ],
+  "C-direct-2": [
+   3.0,
+   11.0,
+   11.0,
+   11.0,
+   12.0,
+   6.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "diverges from consensus by 8 on instance 3 (params: {'processing_time_j0_o0': 4, 'processing_time_j0_o1': 3, 'processing_time_j1_o0': 2, 'processing_time_j1_o1': 1, 'processing_time_j2_o0': 5, 'processing_time_j2_o1': 2, 'precedence_lag_j0': 0, 'precedence_lag_j1': 0, 'precedence_lag_j2': 4, 'machine_disjunctive_bigM': 603766})",
+  "C-direct": "diverges from consensus by 9 on instance 4 (params: {'processing_time_j0_o0': 4, 'processing_time_j0_o1': 4, 'processing_time_j1_o0': 3, 'processing_time_j1_o1': 5, 'processing_time_j2_o0': 2, 'processing_time_j2_o1': 3, 'precedence_lag_j0': 4, 'precedence_lag_j1': 3, 'precedence_lag_j2': 4, 'machine_disjunctive_bigM': 577394})",
+  "C-direct-2": "diverges from consensus by 9 on instance 4 (params: {'processing_time_j0_o0': 4, 'processing_time_j0_o1': 4, 'processing_time_j1_o0': 3, 'processing_time_j1_o1': 5, 'processing_time_j2_o0': 2, 'processing_time_j2_o1': 3, 'precedence_lag_j0': 4, 'precedence_lag_j1': 3, 'precedence_lag_j2': 4, 'machine_disjunctive_bigM': 577394})"
+ },
+ "disagreements": [],
+ "notes": []
+}

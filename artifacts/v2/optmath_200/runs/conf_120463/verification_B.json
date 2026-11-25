@@ -1,0 +1,49 @@
+{
+ "sample_id": "conf_120463",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"cost_0_0\",\"evidence\":\"Transportation costs are introduced with 'For example'; Facility 0 to Distribution Center 0 costs 28 units.\"},{\"parameter\":\"cost_0_1\",\"evidence\":\"Transportation costs are introduced with 'For example'; Facility 0 to Distribution Center 1 costs 28 units.\"},{\"parameter\":\"cost_1_0\",\"evidence\":\"Transportation costs are introduced with 'For example'; Facility 1 to Distribution Center 0 costs 30 units.\"},{\"parameter\":\"cost_2_9\",\"evidence\":\"Transportation costs are introduced with 'For example'; Facility 2 to Distribution Center 9 costs 26 units.\"},{\"parameter\":\"cap_0_0\",\"evidence\":\"Transportation limits are introduced with 'For example'; Facility 0 to Distribution Center 0 has a maximum of 444 units.\"},{\"parameter\":\"cap_0_1\",\"evidence\":\"Transportation limits are introduced with 'For example'; Facility 0 to Distribution Center 1 has a maximum of 483 units.\"},{\"parameter\":\"cap_1_0\",\"evidence\":\"Transportation limits are introduced with 'For example'; Facility 1 to Distribution Center 0 has a maximum of 484 units.\"},{\"parameter\":\"cap_2_9\",\"evidence\":\"Transportation limits are introduced with 'For example'; Facility 2 to Distribution Center 9 has a maximum of 478 units.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_0_0",
+   "evidence": "Transportation costs are introduced with 'For example'; Facility 0 to Distribution Center 0 costs 28 units."
+  },
+  {
+   "parameter": "cost_0_1",
+   "evidence": "Transportation costs are introduced with 'For example'; Facility 0 to Distribution Center 1 costs 28 units."
+  },
+  {
+   "parameter": "cost_1_0",
+   "evidence": "Transportation costs are introduced with 'For example'; Facility 1 to Distribution Center 0 costs 30 units."
+  },
+  {
+   "parameter": "cost_2_9",
+   "evidence": "Transportation costs are introduced with 'For example'; Facility 2 to Distribution Center 9 costs 26 units."
+  },
+  {
+   "parameter": "cap_0_0",
+   "evidence": "Transportation limits are introduced with 'For example'; Facility 0 to Distribution Center 0 has a maximum of 444 units."
+  },
+  {
+   "parameter": "cap_0_1",
+   "evidence": "Transportation limits are introduced with 'For example'; Facility 0 to Distribution Center 1 has a maximum of 483 units."
+  },
+  {
+   "parameter": "cap_1_0",
+   "evidence": "Transportation limits are introduced with 'For example'; Facility 1 to Distribution Center 0 has a maximum of 484 units."
+  },
+  {
+   "parameter": "cap_2_9",
+   "evidence": "Transportation limits are introduced with 'For example'; Facility 2 to Distribution Center 9 has a maximum of 478 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

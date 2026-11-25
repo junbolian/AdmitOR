@@ -1,0 +1,71 @@
+{
+ "spec": {
+  "facility_open_cost": {
+   "base": [
+    50,
+    79,
+    40,
+    59,
+    53,
+    59,
+    62,
+    72,
+    68,
+    78,
+    49,
+    57,
+    53,
+    52,
+    50,
+    67,
+    56,
+    68,
+    68,
+    42,
+    76,
+    53
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "facility_open_cost": {
+    "meaning": "Cost to open/operate each of the 22 facilities (indexed 1..22)",
+    "base": [
+     50,
+     79,
+     40,
+     59,
+     53,
+     59,
+     62,
+     72,
+     68,
+     78,
+     49,
+     57,
+     53,
+     52,
+     50,
+     67,
+     56,
+     68,
+     68,
+     42,
+     76,
+     53
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

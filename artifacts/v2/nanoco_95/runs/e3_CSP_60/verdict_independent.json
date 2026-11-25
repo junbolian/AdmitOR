@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "bolt_length": 100,
+   "strip_lengths": [
+    19,
+    46,
+    28,
+    44
+   ],
+   "demands": [
+    3,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "bolt_length": 104.18280395373651,
+   "strip_lengths": [
+    17.195040869846135,
+    43.930269728995896,
+    26.44998013363341,
+    46.08094668464331
+   ],
+   "demands": [
+    3.530098462268734,
+    2.784359135409691,
+    0.5869388326294162,
+    1.8438436393705409
+   ]
+  },
+  {
+   "bolt_length": 85.8939165831421,
+   "strip_lengths": [
+    17.930824304253694,
+    46.049268650550935,
+    25.348601430229635,
+    41.34977132604251
+   ],
+   "demands": [
+    3.44965331333857,
+    2.0898829612064334,
+    0.7204406220406967,
+    2.1785313677518174
+   ]
+  },
+  {
+   "bolt_length": 109.28291370033479,
+   "strip_lengths": [
+    17.12469528677663,
+    48.81353711686184,
+    29.10958061193407,
+    42.59420454535833
+   ],
+   "demands": [
+    1.9664384994353448,
+    2.9144261444135626,
+    0.8365945451126268,
+    1.1854916867602958
+   ]
+  },
+  {
+   "bolt_length": 87.90149130500392,
+   "strip_lengths": [
+    20.32047859212035,
+    46.954279488575395,
+    29.719918330336533,
+    46.021639722905604
+   ],
+   "demands": [
+    3.108684274364102,
+    2.946231527958741,
+    0.8785343772083535,
+    2.104081262546454
+   ]
+  },
+  {
+   "bolt_length": 109.88213992758983,
+   "strip_lengths": [
+    19.450375058984136,
+    49.32770348285916,
+    28.433172013437872,
+    45.80023215869133
+   ],
+   "demands": [
+    1.6374731509669866,
+    1.4557965513030937,
+    0.7893879636021072,
+    1.159583953847255
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   4.0,
+   5.0,
+   3.0,
+   6.0,
+   3.0
+  ],
+  "B-structured": [
+   3.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   3.0,
+   4.0,
+   5.0,
+   3.0,
+   6.0,
+   3.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "invalid_parameters",
+   "invalid_parameters",
+   "invalid_parameters",
+   "invalid_parameters",
+   "invalid_parameters"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [1, 2, 3, 4, 5]: ['invalid_parameters', 'invalid_parameters', 'invalid_parameters', 'invalid_parameters', 'invalid_parameters']"
+ },
+ "disagreements": [],
+ "notes": []
+}

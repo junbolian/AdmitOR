@@ -1,0 +1,293 @@
+{
+ "spec": {
+  "warehouse_supply": {
+   "base": [
+    0,
+    0,
+    31,
+    69,
+    78
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "store_demand": {
+   "base": [
+    33,
+    42,
+    49,
+    15,
+    18,
+    21
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "shipping_cost": {
+   "base": [
+    [
+     20,
+     19,
+     14,
+     10,
+     17,
+     13
+    ],
+    [
+     14,
+     15,
+     14,
+     17,
+     17,
+     15
+    ],
+    [
+     10,
+     12,
+     14,
+     13,
+     15,
+     14
+    ],
+    [
+     19,
+     18,
+     17,
+     11,
+     17,
+     16
+    ],
+    [
+     11,
+     20,
+     10,
+     14,
+     19,
+     12
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "route_capacity": {
+   "base": [
+    [
+     84,
+     146,
+     53,
+     70,
+     148,
+     67
+    ],
+    [
+     112,
+     71,
+     124,
+     131,
+     111,
+     142
+    ],
+    [
+     60,
+     118,
+     52,
+     65,
+     104,
+     62
+    ],
+    [
+     107,
+     70,
+     88,
+     142,
+     94,
+     107
+    ],
+    [
+     63,
+     98,
+     145,
+     87,
+     79,
+     54
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [
+  "[warehouse_supply] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[store_demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "warehouse_supply": {
+    "meaning": "Available stock at each warehouse (origin_0 to origin_4)",
+    "base": [
+     0,
+     0,
+     31,
+     69,
+     78
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      178,
+      178,
+      178,
+      178,
+      178
+     ],
+     "integer": true
+    }
+   },
+   "store_demand": {
+    "meaning": "Units needed at each store (destination_0 to destination_5)",
+    "base": [
+     33,
+     42,
+     49,
+     15,
+     18,
+     21
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      178,
+      178,
+      178,
+      178,
+      178,
+      178
+     ],
+     "integer": true
+    }
+   },
+   "shipping_cost": {
+    "meaning": "Cost per unit shipped from each warehouse to each store",
+    "base": [
+     [
+      20,
+      19,
+      14,
+      10,
+      17,
+      13
+     ],
+     [
+      14,
+      15,
+      14,
+      17,
+      17,
+      15
+     ],
+     [
+      10,
+      12,
+      14,
+      13,
+      15,
+      14
+     ],
+     [
+      19,
+      18,
+      17,
+      11,
+      17,
+      16
+     ],
+     [
+      11,
+      20,
+      10,
+      14,
+      19,
+      12
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "route_capacity": {
+    "meaning": "Maximum units that can be shipped from each warehouse to each store",
+    "base": [
+     [
+      84,
+      146,
+      53,
+      70,
+      148,
+      67
+     ],
+     [
+      112,
+      71,
+      124,
+      131,
+      111,
+      142
+     ],
+     [
+      60,
+      118,
+      52,
+      65,
+      104,
+      62
+     ],
+     [
+      107,
+      70,
+      88,
+      142,
+      94,
+      107
+     ],
+     [
+      63,
+      98,
+      145,
+      87,
+      79,
+      54
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

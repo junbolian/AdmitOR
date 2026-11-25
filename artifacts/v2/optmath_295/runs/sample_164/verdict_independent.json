@@ -1,0 +1,83 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "preference_value": 1
+  },
+  {
+   "preference_value": 0.6394267984578837
+  },
+  {
+   "preference_value": 0.025010755222666936
+  },
+  {
+   "preference_value": 0.27502931836911926
+  },
+  {
+   "preference_value": 0.22321073814882275
+  },
+  {
+   "preference_value": 0.7364712141640124
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   5.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:allowed[(i, j)] = pref[i][j] | ~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:allowed[(i, j)] = pref[i][j] | ~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:allowed[(i, j)] = pref[i][j] | ~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:allowed[(i, j)] = pref[i][j] | ~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:allowed[(i, j)] = pref[i][j] | ~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:allowed[(i, j)] = pref[i][j] | ~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "B-structured": [
+   "optimal",
+   "invalid_preference_value",
+   "invalid_preference_value",
+   "invalid_preference_value",
+   "invalid_preference_value",
+   "invalid_preference_value"
+  ],
+  "C-direct": [
+   "crash:return preference_value[i][j] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return preference_value[i][j] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return preference_value[i][j] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return preference_value[i][j] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return preference_value[i][j] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return preference_value[i][j] | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

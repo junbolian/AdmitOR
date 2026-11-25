@@ -1,0 +1,178 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    675,
+    234,
+    183,
+    155,
+    209,
+    249,
+    234,
+    183,
+    174,
+    219
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    232,
+    208,
+    217,
+    209,
+    170,
+    187,
+    217,
+    239,
+    206,
+    199,
+    202,
+    229
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_f0_c0": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_f0_c1": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_f1_c0": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_f2_c1": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_range_low": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_range_high": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Units each production facility must ship out (facilities 0-9)",
+    "base": [
+     675,
+     234,
+     183,
+     155,
+     209,
+     249,
+     234,
+     183,
+     174,
+     219
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Units each distribution center must receive (centers 0-11)",
+    "base": [
+     232,
+     208,
+     217,
+     209,
+     170,
+     187,
+     217,
+     239,
+     206,
+     199,
+     202,
+     229
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_f0_c0": {
+    "meaning": "Unit transport cost facility 0 to center 0",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_f0_c1": {
+    "meaning": "Unit transport cost facility 0 to center 1",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_f1_c0": {
+    "meaning": "Unit transport cost facility 1 to center 0",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_f2_c1": {
+    "meaning": "Unit transport cost facility 2 to center 1",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_range_low": {
+    "meaning": "Lower bound of unit transport costs across all routes",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_range_high": {
+    "meaning": "Upper bound of unit transport costs across all routes",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

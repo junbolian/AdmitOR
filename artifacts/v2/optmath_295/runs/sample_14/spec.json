@@ -1,0 +1,288 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    220,
+    281,
+    239,
+    220
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "holding_cost_per_unit": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "machine_hours_grinders": {
+   "base": 480,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "machine_hours_drills": {
+   "base": 320,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "machine_hours_borers": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "borer_hours_period0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "time_per_unit": {
+   "base": [
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "inventory_capacity": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "sales_limit": {
+   "base": [
+    [
+     51,
+     69,
+     50,
+     67,
+     53
+    ],
+    [
+     44,
+     48,
+     44,
+     61,
+     67
+    ],
+    [
+     56,
+     57,
+     70,
+     49,
+     53
+    ],
+    [
+     64,
+     46,
+     51,
+     66,
+     52
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "target_inventory_end": {
+   "base": [
+    20,
+    20,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "profit per unit sold for each product (P0..P3)",
+    "base": [
+     220,
+     281,
+     239,
+     220
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "holding_cost_per_unit": {
+    "meaning": "cost to hold one unit of inventory for one period",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "machine_hours_grinders": {
+    "meaning": "grinder capacity (hours per period)",
+    "base": 480,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "machine_hours_drills": {
+    "meaning": "drill capacity (hours per period)",
+    "base": 320,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "machine_hours_borers": {
+    "meaning": "borer capacity (hours per period, except Period 0 where it is 0)",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "borer_hours_period0": {
+    "meaning": "borer capacity in Period 0 (maintenance → 0)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "time_per_unit": {
+    "meaning": "machine hours required per unit of each product on grinders, drills, borers; rows = product 0..3, cols = machine type",
+    "base": [
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      1,
+      2,
+      2
+     ],
+     [
+      2,
+      2,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "inventory_capacity": {
+    "meaning": "maximum inventory capacity for any product in any period (units)",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "sales_limit": {
+    "meaning": "maximum units sellable per product per period; rows = product 0..3, cols = period 0..4",
+    "base": [
+     [
+      51,
+      69,
+      50,
+      67,
+      53
+     ],
+     [
+      44,
+      48,
+      44,
+      61,
+      67
+     ],
+     [
+      56,
+      57,
+      70,
+      49,
+      53
+     ],
+     [
+      64,
+      46,
+      51,
+      66,
+      52
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "target_inventory_end": {
+    "meaning": "required inventory at end of Period 4 for each product (P0..P3)",
+    "base": [
+     20,
+     20,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 35,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

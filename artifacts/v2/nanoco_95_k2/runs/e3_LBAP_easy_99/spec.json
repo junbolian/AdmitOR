@@ -1,0 +1,101 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     27,
+     13,
+     20,
+     9,
+     39
+    ],
+    [
+     17,
+     7,
+     35,
+     26,
+     20
+    ],
+    [
+     17,
+     14,
+     21,
+     9,
+     35
+    ],
+    [
+     25,
+     25,
+     23,
+     9,
+     9
+    ],
+    [
+     20,
+     39,
+     37,
+     25,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Mitigation duration (minutes) for each analyst-incident pair; rows = analysts 0-4, columns = incidents 0-4",
+    "base": [
+     [
+      27,
+      13,
+      20,
+      9,
+      39
+     ],
+     [
+      17,
+      7,
+      35,
+      26,
+      20
+     ],
+     [
+      17,
+      14,
+      21,
+      9,
+      35
+     ],
+     [
+      25,
+      25,
+      23,
+      9,
+      9
+     ],
+     [
+      20,
+      39,
+      37,
+      25,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 45,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

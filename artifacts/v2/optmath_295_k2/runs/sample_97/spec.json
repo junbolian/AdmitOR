@@ -1,0 +1,283 @@
+{
+ "spec": {
+  "earliest": {
+   "base": [
+    69,
+    60,
+    60,
+    60,
+    60
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "latest": {
+   "base": [
+    100,
+    100,
+    100,
+    92,
+    97
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "target": {
+   "base": [
+    99,
+    76,
+    88,
+    62,
+    67
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "early_cost": {
+   "base": [
+    12,
+    15,
+    15,
+    12,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "late_cost": {
+   "base": [
+    19,
+    15,
+    16,
+    14,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "separation": {
+   "base": [
+    7,
+    8,
+    5,
+    6,
+    5,
+    6,
+    5,
+    6,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[earliest] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[latest] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[target] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[early_cost] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[late_cost] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[separation] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "earliest": {
+    "meaning": "Earliest possible landing time for each aircraft (minutes)",
+    "base": [
+     69,
+     60,
+     60,
+     60,
+     60
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      60,
+      52,
+      52,
+      52,
+      52
+     ],
+     "hi": [
+      78,
+      69,
+      69,
+      69,
+      69
+     ],
+     "integer": false
+    }
+   },
+   "latest": {
+    "meaning": "Latest possible landing time for each aircraft (minutes)",
+    "base": [
+     100,
+     100,
+     100,
+     92,
+     97
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      92,
+      92,
+      92,
+      84,
+      89
+     ],
+     "hi": [
+      120,
+      120,
+      120,
+      112,
+      117
+     ],
+     "integer": false
+    }
+   },
+   "target": {
+    "meaning": "Target landing time for each aircraft (minutes)",
+    "base": [
+     99,
+     76,
+     88,
+     62,
+     67
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      85,
+      64,
+      74,
+      52,
+      56
+     ],
+     "hi": [
+      108,
+      88,
+      100,
+      76,
+      80
+     ],
+     "integer": false
+    }
+   },
+   "early_cost": {
+    "meaning": "Penalty cost per minute of landing early for each aircraft",
+    "base": [
+     12,
+     15,
+     15,
+     12,
+     16
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      6,
+      7,
+      7,
+      6,
+      8
+     ],
+     "hi": [
+      24,
+      30,
+      30,
+      24,
+      32
+     ],
+     "integer": false
+    }
+   },
+   "late_cost": {
+    "meaning": "Penalty cost per minute of landing late for each aircraft",
+    "base": [
+     19,
+     15,
+     16,
+     14,
+     14
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      9,
+      7,
+      8,
+      7,
+      7
+     ],
+     "hi": [
+      38,
+      30,
+      32,
+      28,
+      28
+     ],
+     "integer": false
+    }
+   },
+   "separation": {
+    "meaning": "Minimum required separation time between ordered pairs of aircraft (minutes): (0,1),(0,2),(0,3),(0,4),(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)",
+    "base": [
+     7,
+     8,
+     5,
+     6,
+     5,
+     6,
+     5,
+     6,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      3
+     ],
+     "hi": [
+      11,
+      12,
+      8,
+      9,
+      8,
+      9,
+      8,
+      9,
+      12,
+      9
+     ],
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "spec": {
+  "capacity": {
+   "base": 22599,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "values": {
+   "base": [
+    644,
+    528,
+    461,
+    344,
+    476,
+    639,
+    853,
+    757,
+    666,
+    885,
+    312,
+    441
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights": {
+   "base": [
+    2021,
+    1285,
+    2394,
+    3602,
+    3295,
+    2793,
+    3509,
+    2691,
+    3049,
+    2058,
+    3372,
+    2216
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "maximum total weight the vehicle can carry (kg)",
+    "base": 22599,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "values": {
+    "meaning": "revenue per item if delivered",
+    "base": [
+     644,
+     528,
+     461,
+     344,
+     476,
+     639,
+     853,
+     757,
+     666,
+     885,
+     312,
+     441
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights": {
+    "meaning": "weight/space occupied per item (kg)",
+    "base": [
+     2021,
+     1285,
+     2394,
+     3602,
+     3295,
+     2793,
+     3509,
+     2691,
+     3049,
+     2058,
+     3372,
+     2216
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    420,
+    444,
+    380,
+    332
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "variable_cost": {
+   "base": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "min_production": {
+   "base": [
+    31,
+    35,
+    25,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_production": {
+   "base": [
+    93,
+    103,
+    108,
+    92
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    178,
+    150,
+    161
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost per month for operating each factory (Factory 0..3)",
+    "base": [
+     420,
+     444,
+     380,
+     332
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable production cost per unit for each factory (Factory 0..3)",
+    "base": [
+     4,
+     4,
+     4,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production per month if factory is operational (Factory 0..3)",
+    "base": [
+     31,
+     35,
+     25,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production per month if factory is operational (Factory 0..3)",
+    "base": [
+     93,
+     103,
+     108,
+     92
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand for products (Month 0..2)",
+    "base": [
+     178,
+     150,
+     161
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

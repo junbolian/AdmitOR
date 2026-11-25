@@ -1,0 +1,29 @@
+{
+ "sample_id": "conf_168766",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"fixed_ordering_cost\", \"evidence\": \"These vary by week, ranging from 152 to 287 units of cost.\"}, {\"parameter\": \"unit_purchase_cost\", \"evidence\": \"These also vary by week, ranging from 15 to 30 units of cost.\"}, {\"parameter\": \"holding_cost\", \"evidence\": \"These range from 10 to 20 units of cost per unit of inventory carried over to the next week.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_ordering_cost",
+   "evidence": "These vary by week, ranging from 152 to 287 units of cost."
+  },
+  {
+   "parameter": "unit_purchase_cost",
+   "evidence": "These also vary by week, ranging from 15 to 30 units of cost."
+  },
+  {
+   "parameter": "holding_cost",
+   "evidence": "These range from 10 to 20 units of cost per unit of inventory carried over to the next week."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

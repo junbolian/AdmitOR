@@ -1,0 +1,580 @@
+{
+ "spec": {
+  "demand_p0_m0": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m0": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "demand_p0_m1": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m1": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "demand_p0_m2": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "demand_p1_m2": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "profit_c0_p0_m0": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_c0_p1_m0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_c0_p0_m1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_c0_p1_m1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "profit_c0_p0_m2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "profit_c0_p1_m2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "profit_c1_p0_m0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "profit_c1_p1_m0": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "profit_c1_p0_m1": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_c1_p1_m1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "profit_c1_p0_m2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "profit_c1_p1_m2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "profit_c2_p0_m0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_c2_p1_m0": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_c2_p0_m1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_c2_p1_m1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_c2_p0_m2": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_c2_p1_m2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_c3_p0_m0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_c3_p1_m0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_c3_p0_m1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -3.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "profit_c3_p1_m1": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_c3_p0_m2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_c3_p1_m2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_p0_m0": {
+    "meaning": "Market 0 demand for Product 0",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "demand_p1_m0": {
+    "meaning": "Market 0 demand for Product 1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "demand_p0_m1": {
+    "meaning": "Market 1 demand for Product 0",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "demand_p1_m1": {
+    "meaning": "Market 1 demand for Product 1",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "demand_p0_m2": {
+    "meaning": "Market 2 demand for Product 0",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "demand_p1_m2": {
+    "meaning": "Market 2 demand for Product 1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "profit_c0_p0_m0": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 0 to Market 0",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_c0_p1_m0": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 0 to Market 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_c0_p0_m1": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 0 to Market 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_c0_p1_m1": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 0 to Market 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "profit_c0_p0_m2": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 0 to Market 2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "profit_c0_p1_m2": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 0 to Market 2",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "profit_c1_p0_m0": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 1 to Market 0",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "profit_c1_p1_m0": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 1 to Market 0",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "profit_c1_p0_m1": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 1 to Market 1",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_c1_p1_m1": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 1 to Market 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "profit_c1_p0_m2": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 1 to Market 2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "profit_c1_p1_m2": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 1 to Market 2",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "profit_c2_p0_m0": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 2 to Market 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_c2_p1_m0": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 2 to Market 0",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_c2_p0_m1": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 2 to Market 1",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_c2_p1_m1": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 2 to Market 1",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_c2_p0_m2": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 2 to Market 2",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_c2_p1_m2": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 2 to Market 2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_c3_p0_m0": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 3 to Market 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_c3_p1_m0": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 3 to Market 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_c3_p0_m1": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 3 to Market 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -3,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "profit_c3_p1_m1": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 3 to Market 1",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_c3_p0_m2": {
+    "meaning": "Profit per unit of Product 0 supplied by Company 3 to Market 2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_c3_p1_m2": {
+    "meaning": "Profit per unit of Product 1 supplied by Company 3 to Market 2",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 6,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

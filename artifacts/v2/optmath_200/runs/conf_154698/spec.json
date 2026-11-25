@@ -1,0 +1,279 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    34,
+    41,
+    43,
+    38,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    40,
+    39,
+    37,
+    40,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     5,
+     10,
+     7,
+     7,
+     10
+    ],
+    [
+     5,
+     6,
+     6,
+     6,
+     9
+    ],
+    [
+     6,
+     6,
+     10,
+     8,
+     6
+    ],
+    [
+     6,
+     9,
+     10,
+     6,
+     10
+    ],
+    [
+     9,
+     10,
+     8,
+     10,
+     10
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     51,
+     55,
+     45,
+     48,
+     51
+    ],
+    [
+     53,
+     49,
+     47,
+     49,
+     54
+    ],
+    [
+     47,
+     54,
+     49,
+     48,
+     54
+    ],
+    [
+     53,
+     53,
+     45,
+     50,
+     47
+    ],
+    [
+     49,
+     54,
+     45,
+     45,
+     55
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "n_origins": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "n_destinations": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n_origins] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_destinations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Units available at each production facility (origin 0..4)",
+    "base": [
+     34,
+     41,
+     43,
+     38,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Units required at each distribution center (destination 0..4)",
+    "base": [
+     40,
+     39,
+     37,
+     40,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "Per-unit transportation cost from facility i to center j (rows = origins 0..4, cols = destinations 0..4)",
+    "base": [
+     [
+      5,
+      10,
+      7,
+      7,
+      10
+     ],
+     [
+      5,
+      6,
+      6,
+      6,
+      9
+     ],
+     [
+      6,
+      6,
+      10,
+      8,
+      6
+     ],
+     [
+      6,
+      9,
+      10,
+      6,
+      10
+     ],
+     [
+      9,
+      10,
+      8,
+      10,
+      10
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum units transportable from facility i to center j (rows = origins 0..4, cols = destinations 0..4)",
+    "base": [
+     [
+      51,
+      55,
+      45,
+      48,
+      51
+     ],
+     [
+      53,
+      49,
+      47,
+      49,
+      54
+     ],
+     [
+      47,
+      54,
+      49,
+      48,
+      54
+     ],
+     [
+      53,
+      53,
+      45,
+      50,
+      47
+     ],
+     [
+      49,
+      54,
+      45,
+      45,
+      55
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "n_origins": {
+    "meaning": "Number of production facilities (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "n_destinations": {
+    "meaning": "Number of distribution centers (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

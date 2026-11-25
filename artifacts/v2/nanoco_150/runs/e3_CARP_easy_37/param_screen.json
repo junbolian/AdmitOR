@@ -1,0 +1,55 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "vehicle_capacity",
+  "service_demand_0_2",
+  "service_demand_0_5",
+  "service_demand_0_6",
+  "service_demand_3_4",
+  "service_demand_3_5",
+  "distance_matrix"
+ ],
+ "safe": [
+  "service_demand_0_2",
+  "service_demand_0_5",
+  "service_demand_0_6",
+  "service_demand_3_4",
+  "service_demand_3_5",
+  "distance_matrix"
+ ],
+ "tests": {
+  "vehicle_capacity": [
+   0,
+   3
+  ],
+  "service_demand_0_2": [
+   3,
+   3
+  ],
+  "service_demand_0_5": [
+   3,
+   3
+  ],
+  "service_demand_0_6": [
+   3,
+   3
+  ],
+  "service_demand_3_4": [
+   3,
+   3
+  ],
+  "service_demand_3_5": [
+   3,
+   3
+  ],
+  "distance_matrix": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

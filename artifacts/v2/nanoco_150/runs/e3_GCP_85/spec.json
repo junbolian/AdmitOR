@@ -1,0 +1,216 @@
+{
+ "spec": {
+  "num_substances": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "num_incompatibility_edges": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "edge_list": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     1,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[num_substances] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_incompatibility_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[edge_list] degenerate abs range (lo == hi); perturbation has no effect",
+  "[edge_list] abs range [-1.0, -1.0] is disjoint from base span [0, 10]; replaced with rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "num_substances": {
+    "meaning": "Number of reactive substances (index set size; frozen, not perturbed)",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "num_incompatibility_edges": {
+    "meaning": "Number of reactivity incompatibility pairs (edge set size; frozen, not perturbed)",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "edge_list": {
+    "meaning": "Reactivity pairs that must be isolated into distinct sections (structure; frozen)",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      10
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      1,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": -1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

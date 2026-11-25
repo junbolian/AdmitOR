@@ -1,0 +1,165 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "profit_product_0": 158,
+   "profit_product_1": 162,
+   "profit_product_2": 107,
+   "holding_cost": 10,
+   "grinder_capacity": [
+    240,
+    240,
+    240,
+    240
+   ],
+   "drill_capacity": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "borer_capacity": [
+    120,
+    120,
+    0,
+    120
+   ],
+   "max_inventory": 50,
+   "max_sales_period_0_product_0": 25,
+   "max_sales_period_0_product_1": 24,
+   "max_sales_period_0_product_2": 49,
+   "max_sales_period_1_product_0": 45,
+   "max_sales_period_1_product_1": 47,
+   "max_sales_period_1_product_2": 28,
+   "max_sales_period_2_product_0": 30,
+   "max_sales_period_2_product_1": 48,
+   "max_sales_period_2_product_2": 43,
+   "max_sales_period_3_product_0": 30,
+   "max_sales_period_3_product_1": 25,
+   "max_sales_period_3_product_2": 45,
+   "final_inventory_target": 10,
+   "time_grinder_product_0": 1,
+   "time_grinder_product_1": 1,
+   "time_grinder_product_2": 2,
+   "time_drill_product_0": 1,
+   "time_drill_product_1": 2,
+   "time_drill_product_2": 2,
+   "time_borer_product_0": 2,
+   "time_borer_product_1": 1,
+   "time_borer_product_2": 1
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   32780.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return sum(tg[j] * mdl.produce[t, j] for j in mdl.J) <= grinder_cap[t] | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExp",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:return sum(time_grinder[p] * mdl.produce[t, p] for p in P) <= grinder_cap | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'Lin",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "crash:File \"candidate.py\", line 11, in _scalar | raise ValueError(\"Each parameter must contain exactly one numeric value.\") | ValueError: Each parameter must contain exactly one numeric value.",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:grinder_cap = float(params[\"grinder_capacity\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "crash:grinder_cap = float(params[\"grinder_capacity\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

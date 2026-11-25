@@ -1,0 +1,139 @@
+{
+ "spec": {
+  "production_cost": {
+   "base": 150.1409915422891,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "startup_cost": {
+   "base": 100.0821369467442,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "startup_scaling_factor": {
+   "base": 10.00723193346443,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "machine_capacity": {
+   "base": 80.13191751080457,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "holding_cost": {
+   "base": [
+    1.001887559564105,
+    1.008465044664585,
+    1.004424272477156
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "backlog_cost": {
+   "base": [
+    8.001645451260206,
+    8.019811444970745,
+    8.019590051695724
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_period0": {
+   "base": [
+    20.18494518721846,
+    20.18494518721846,
+    20.18494518721846
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "production_cost": {
+    "meaning": "Cost per production decision (per item per period when produced)",
+    "base": 150.1409915422891,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "startup_cost": {
+    "meaning": "Cost incurred when switching to an item not produced in the previous period",
+    "base": 100.0821369467442,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "startup_scaling_factor": {
+    "meaning": "Capacity consumed (scaling) per startup decision",
+    "base": 10.00723193346443,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "machine_capacity": {
+    "meaning": "Maximum total production plus startup-scaled load per period",
+    "base": 80.13191751080457,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "holding_cost": {
+    "meaning": "Per-period holding cost per item (Item 0, Item 1, Item 2)",
+    "base": [
+     1.001887559564105,
+     1.008465044664585,
+     1.004424272477156
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "backlog_cost": {
+    "meaning": "Per-period backlog cost per item (Item 0, Item 1, Item 2)",
+    "base": [
+     8.001645451260206,
+     8.019811444970745,
+     8.019590051695724
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_period0": {
+    "meaning": "Demand for each item in Period 0 (Item 0, Item 1, Item 2); other periods' demands not numerically given",
+    "base": [
+     20.18494518721846,
+     20.18494518721846,
+     20.18494518721846
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

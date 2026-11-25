@@ -1,0 +1,139 @@
+{
+ "spec": {
+  "revenue": {
+   "base": [
+    914,
+    670,
+    996,
+    865,
+    518,
+    887,
+    699,
+    802,
+    513,
+    538,
+    544,
+    599,
+    572,
+    960,
+    980,
+    544,
+    739
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    18,
+    22,
+    23,
+    28,
+    43,
+    22,
+    14,
+    18,
+    31,
+    50,
+    48,
+    49,
+    25,
+    22,
+    48,
+    49,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "flight_capacity": {
+   "base": [
+    467,
+    475,
+    291,
+    374,
+    466
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "revenue": {
+    "meaning": "Revenue per unit sold for each of the 17 vacation packages",
+    "base": [
+     914,
+     670,
+     996,
+     865,
+     518,
+     887,
+     699,
+     802,
+     513,
+     538,
+     544,
+     599,
+     572,
+     960,
+     980,
+     544,
+     739
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "Maximum units that can be sold for each package",
+    "base": [
+     18,
+     22,
+     23,
+     28,
+     43,
+     22,
+     14,
+     18,
+     31,
+     50,
+     48,
+     49,
+     25,
+     22,
+     48,
+     49,
+     29
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "flight_capacity": {
+    "meaning": "Available seats on each of the 5 flight legs",
+    "base": [
+     467,
+     475,
+     291,
+     374,
+     466
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

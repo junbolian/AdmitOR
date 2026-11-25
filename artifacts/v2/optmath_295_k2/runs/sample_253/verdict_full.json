@@ -1,0 +1,345 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    120,
+    156
+   ],
+   "holding_cost": 10,
+   "grinder_capacity": 240,
+   "drill_capacity": 120,
+   "borer_capacity": 120,
+   "grinder_hours_per_unit": [
+    2,
+    1
+   ],
+   "drill_hours_per_unit": [
+    1,
+    1
+   ],
+   "borer_hours_per_unit": [
+    2,
+    2
+   ],
+   "inventory_limit": 50,
+   "sales_limit_product0": [
+    21,
+    33,
+    34,
+    36
+   ],
+   "sales_limit_product1": [
+    37,
+    43,
+    24,
+    33
+   ],
+   "target_inventory": 10
+  },
+  {
+   "profit_per_unit": [
+    133.38497265195684,
+    96.72134225178883
+   ],
+   "holding_cost": 8.250879551073577,
+   "grinder_capacity": 193.49940400900223,
+   "drill_capacity": 139.86358198977706,
+   "borer_capacity": 134.84275694352456,
+   "grinder_hours_per_unit": [
+    2.4706154812458143,
+    0.7521632995776497
+   ],
+   "drill_hours_per_unit": [
+    1,
+    1
+   ],
+   "borer_hours_per_unit": [
+    1.9063061836223245,
+    1.4357566633256844
+   ],
+   "inventory_limit": 33,
+   "sales_limit_product0": [
+    21.067476630102366,
+    23.6254121997405,
+    27.85628807400763,
+    39.2375038560377
+   ],
+   "sales_limit_product1": [
+    37.99770086939141,
+    35.787368048649974,
+    25.285425847813087,
+    39.12672304222097
+   ],
+   "target_inventory": 0
+  },
+  {
+   "profit_per_unit": [
+    149.35864817594955,
+    180.7277964945307
+   ],
+   "holding_cost": 10.207515495539756,
+   "grinder_capacity": 182.1205559683793,
+   "drill_capacity": 158.40589806536963,
+   "borer_capacity": 106.27394178946065,
+   "grinder_hours_per_unit": [
+    1.5112950120561774,
+    0.7580298261000784
+   ],
+   "drill_hours_per_unit": [
+    1,
+    1
+   ],
+   "borer_hours_per_unit": [
+    2.416993239616952,
+    2.1244712376402695
+   ],
+   "inventory_limit": 68,
+   "sales_limit_product0": [
+    23.894620512342104,
+    33.71731621080308,
+    43.65156158517917,
+    33.37634254770043
+   ],
+   "sales_limit_product1": [
+    38.15530201426564,
+    51.498640337727274,
+    25.706684434045144,
+    40.16179662615339
+   ],
+   "target_inventory": 14
+  },
+  {
+   "profit_per_unit": [
+    139.63889627663266,
+    99.31888308022664
+   ],
+   "holding_cost": 6.836948269546406,
+   "grinder_capacity": 204.617177885154,
+   "drill_capacity": 84.70252606158472,
+   "borer_capacity": 97.55443445432654,
+   "grinder_hours_per_unit": [
+    1.5212017152916748,
+    0.8667841618660552
+   ],
+   "drill_hours_per_unit": [
+    1,
+    1
+   ],
+   "borer_hours_per_unit": [
+    2.16282133311728,
+    1.837798614764101
+   ],
+   "inventory_limit": 42,
+   "sales_limit_product0": [
+    17.339788587720744,
+    28.386160876572443,
+    42.90775358933488,
+    39.197564321326425
+   ],
+   "sales_limit_product1": [
+    39.422708325807136,
+    34.5153771235109,
+    27.299425890485026,
+    26.33536937648618
+   ],
+   "target_inventory": 9
+  },
+  {
+   "profit_per_unit": [
+    166.99424166111314,
+    173.47197002979078
+   ],
+   "holding_cost": 16.708492313239386,
+   "grinder_capacity": 271.01519416629895,
+   "drill_capacity": 148.79956129594402,
+   "borer_capacity": 143.18399256988457,
+   "grinder_hours_per_unit": [
+    1.6748576863569253,
+    0.7192601463424226
+   ],
+   "drill_hours_per_unit": [
+    1,
+    1
+   ],
+   "borer_hours_per_unit": [
+    1.7785436576708982,
+    1.7212890511708432
+   ],
+   "inventory_limit": 33,
+   "sales_limit_product0": [
+    26.580662400621684,
+    40.45207900415885,
+    30.21942876828895,
+    39.35747517036941
+   ],
+   "sales_limit_product1": [
+    34.68302820354674,
+    53.69532781530603,
+    23.407466677258544,
+    28.34462729666144
+   ],
+   "target_inventory": 6
+  },
+  {
+   "profit_per_unit": [
+    125.89134087966245,
+    126.39015274366231
+   ],
+   "holding_cost": 17.537579706706214,
+   "grinder_capacity": 306.83424444521614,
+   "drill_capacity": 111.54964243179337,
+   "borer_capacity": 96.42294376921181,
+   "grinder_hours_per_unit": [
+    2.597045127794132,
+    1.0057157762058786
+   ],
+   "drill_hours_per_unit": [
+    1,
+    1
+   ],
+   "borer_hours_per_unit": [
+    1.5090912946085526,
+    1.4565396505096815
+   ],
+   "inventory_limit": 27,
+   "sales_limit_product0": [
+    22.605820125458937,
+    38.78317141438669,
+    32.41206332271356,
+    26.572198452882272
+   ],
+   "sales_limit_product1": [
+    34.371948160445115,
+    55.7999316101945,
+    24.419246569427575,
+    42.327351876749645
+   ],
+   "target_inventory": 22
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   31092.0,
+   28277.283757870588,
+   29543.809070102547,
+   21796.350671764274,
+   46722.18682653574,
+   26383.72871826145
+  ],
+  "A-direct-2": [
+   31092.0,
+   28277.283757870588,
+   29543.809070102547,
+   21796.350671764274,
+   46722.18682653574,
+   26383.72871826145
+  ],
+  "B-structured": [
+   31092.0,
+   28277.283757870588,
+   29543.809070102547,
+   21796.350671764274,
+   46722.18682653573,
+   26383.72871826145
+  ],
+  "B-structured-2": [
+   31092.0,
+   28277.283757870588,
+   29543.809070102547,
+   21796.350671764274,
+   46722.18682653573,
+   26383.72871826145
+  ],
+  "C-direct": [
+   31092.0,
+   28277.283757870584,
+   29543.809070102547,
+   21796.350671764274,
+   46722.18682653574,
+   26383.72871826145
+  ],
+  "C-direct-2": [
+   31092.0,
+   28277.283757870584,
+   29543.809070102547,
+   21796.350671764274,
+   46722.18682653574,
+   26383.72871826145
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

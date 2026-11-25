@@ -1,0 +1,190 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "plane0_capacity": 80,
+   "plane1_capacity": 89,
+   "plane0_cost": 5,
+   "plane1_cost": 6,
+   "initial_planes_per_type": 2,
+   "demand_period1": 17,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "plane0_capacity": 86,
+   "plane1_capacity": 66,
+   "plane0_cost": 4,
+   "plane1_cost": 4.727659059818525,
+   "initial_planes_per_type": 3,
+   "demand_period1": 29,
+   "max_trips_plane0": 3,
+   "max_trips_plane1": 1
+  },
+  {
+   "plane0_capacity": 77,
+   "plane1_capacity": 66,
+   "plane0_cost": 4,
+   "plane1_cost": 6.279454084568493,
+   "initial_planes_per_type": 1,
+   "demand_period1": 12,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 2
+  },
+  {
+   "plane0_capacity": 69,
+   "plane1_capacity": 92,
+   "plane0_cost": 7,
+   "plane1_cost": 3.5357431782293354,
+   "initial_planes_per_type": 3,
+   "demand_period1": 29,
+   "max_trips_plane0": 2,
+   "max_trips_plane1": 1
+  },
+  {
+   "plane0_capacity": 98,
+   "plane1_capacity": 80,
+   "plane0_cost": 3,
+   "plane1_cost": 4.031940072584052,
+   "initial_planes_per_type": 4,
+   "demand_period1": 26,
+   "max_trips_plane0": 3,
+   "max_trips_plane1": 2
+  },
+  {
+   "plane0_capacity": 81,
+   "plane1_capacity": 109,
+   "plane0_cost": 5,
+   "plane1_cost": 6.536223472002749,
+   "initial_planes_per_type": 3,
+   "demand_period1": 27,
+   "max_trips_plane0": 3,
+   "max_trips_plane1": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1.0625,
+   1.3488372093023255,
+   0.6233766233766234,
+   1.114527740963595,
+   0.7959183673469388,
+   1.6190645297621489
+  ],
+  "A-direct-2": [
+   5.0,
+   4.0,
+   4.0,
+   3.5357431782293354,
+   3.0,
+   5.0
+  ],
+  "B-structured": [
+   5.0,
+   4.0,
+   4.0,
+   3.5357431782293354,
+   3.0,
+   5.0
+  ],
+  "B-structured-2": [
+   5.0,
+   4.0,
+   4.0,
+   3.5357431782293354,
+   3.0,
+   5.0
+  ],
+  "C-direct": [
+   5.0,
+   4.0,
+   4.0,
+   3.5357431782293354,
+   3.0,
+   5.0
+  ],
+  "C-direct-2": [
+   5.0,
+   4.0,
+   4.0,
+   3.5357431782293354,
+   3.0,
+   5.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 3.938 on instance 0 (params: {'plane0_capacity': 80, 'plane1_capacity': 89, 'plane0_cost': 5, 'plane1_cost': 6, 'initial_planes_per_type': 2, 'demand_period1': 17, 'max_trips_plane0': 2, 'max_trips_plane1': 2})"
+ },
+ "disagreements": [],
+ "notes": []
+}

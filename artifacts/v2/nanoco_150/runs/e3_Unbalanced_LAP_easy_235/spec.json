@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     33,
+     13,
+     34,
+     35,
+     20,
+     4
+    ],
+    [
+     16,
+     19,
+     8,
+     20,
+     15,
+     29
+    ],
+    [
+     9,
+     6,
+     26,
+     30,
+     34,
+     26
+    ],
+    [
+     27,
+     21,
+     20,
+     14,
+     34,
+     21
+    ],
+    [
+     19,
+     31,
+     32,
+     8,
+     34,
+     10
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_doctors": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_patients": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_doctors] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_patients] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Incompatibility cost for assigning doctor i to patient j (rows = doctors 0-4, cols = patients 0-5)",
+    "base": [
+     [
+      33,
+      13,
+      34,
+      35,
+      20,
+      4
+     ],
+     [
+      16,
+      19,
+      8,
+      20,
+      15,
+      29
+     ],
+     [
+      9,
+      6,
+      26,
+      30,
+      34,
+      26
+     ],
+     [
+      27,
+      21,
+      20,
+      14,
+      34,
+      21
+     ],
+     [
+      19,
+      31,
+      32,
+      8,
+      34,
+      10
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_doctors": {
+    "meaning": "Number of available specialist doctors",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_patients": {
+    "meaning": "Number of high-priority patients",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

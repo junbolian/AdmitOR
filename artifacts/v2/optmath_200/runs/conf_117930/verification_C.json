@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_117930",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement explicitly provides costs for node_0 to all other nodes, plus node_1 to node_2 (12) and node_1 to node_3 (15). All other costs are described only as \"and so on\" or \"a full list is provided\" without specific values.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"cost_1_2\", \"evidence\": \"\\\"12 units from node_1 to node_2\\\" — stated in section 1 but only as an example in a list that says \\\"and so on. A full list of costs is provided for all possible routes\\\"\"},\n    {\"parameter\": \"cost_1_3\", \"evidence\": \"\\\"15 units from node_1 to node_3\\\" — stated in section 1 but only as an example in a list that says \\\"and so on. A full list of costs is provided for all possible routes\\\"\"}\n  ]\n}\n```\n\nWait, re-reading carefully: cost_1_2 (12) and cost_1_3 (15) are explicitly stated in the problem text in section 1, not merely implied. They are given as named examples with specific numbers. The statement does give these values directly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_1_2",
+   "evidence": "\"12 units from node_1 to node_2\" — stated in section 1 but only as an example in a list that says \"and so on. A full list of costs is provided for all possible routes\""
+  },
+  {
+   "parameter": "cost_1_3",
+   "evidence": "\"15 units from node_1 to node_3\" — stated in section 1 but only as an example in a list that says \"and so on. A full list of costs is provided for all possible routes\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

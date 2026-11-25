@@ -1,0 +1,348 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    4,
+    4,
+    4,
+    4,
+    5,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    266,
+    286,
+    270,
+    299,
+    236,
+    233
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     87,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     113,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     110,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     3635,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     3781,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     3365,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [
+  "[availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "maximum number of routes each aircraft type can be assigned to (aircraft_0..aircraft_6)",
+    "base": [
+     4,
+     4,
+     4,
+     4,
+     5,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "hi": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+     ],
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "required capacity units per route (route_0..route_5)",
+    "base": [
+     266,
+     286,
+     270,
+     299,
+     236,
+     233
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity": {
+    "meaning": "capacity contribution matrix: capacity[i][j] = units contributed by aircraft type i on route j",
+    "base": [
+     [
+      87,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      113,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      110,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "cost matrix: cost[i][j] = cost of assigning aircraft type i to route j",
+    "base": [
+     [
+      3635,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      3781,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      3365,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "spec": {
+  "team_costs": {
+   "base": [
+    4,
+    2,
+    4,
+    4,
+    3,
+    3,
+    1,
+    5,
+    4,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "requirement_thresholds": {
+   "base": [
+    3,
+    2,
+    1,
+    1,
+    1,
+    2,
+    3,
+    1,
+    1,
+    1,
+    2,
+    1,
+    3,
+    3,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[team_costs] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "team_costs": {
+    "meaning": "deployment cost for each of the 11 teams, in order Team 1 through Team 11",
+    "base": [
+     4,
+     2,
+     4,
+     4,
+     3,
+     3,
+     1,
+     5,
+     4,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     "hi": [
+      8,
+      4,
+      8,
+      8,
+      6,
+      6,
+      3,
+      10,
+      8,
+      4,
+      4
+     ],
+     "integer": true
+    }
+   },
+   "requirement_thresholds": {
+    "meaning": "minimum number of teams that must be deployed from each coverage set, for requirements 1 through 20 in the order given",
+    "base": [
+     3,
+     2,
+     1,
+     1,
+     1,
+     2,
+     3,
+     1,
+     1,
+     1,
+     2,
+     1,
+     3,
+     3,
+     2,
+     2,
+     1,
+     2,
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

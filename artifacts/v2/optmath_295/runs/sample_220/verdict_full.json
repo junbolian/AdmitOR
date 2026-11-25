@@ -1,0 +1,187 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    1901,
+    2075
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    539,
+    990
+   ]
+  },
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    2166.050343868437,
+    1089.3973170870338
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    441.9926420807642,
+    770.7829046138676
+   ]
+  },
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    2350.5317781257877,
+    2441.651436402541
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    708.1078295943294,
+    662.8555554424976
+   ]
+  },
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    1752.573379221699,
+    1099.329230333996
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    417.6766947353138,
+    994.2413881778629
+   ]
+  },
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    1000.9448783690248,
+    1450.0881251747956
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    603.6301695705305,
+    1025.5936526377477
+   ]
+  },
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    1369.5576224993645,
+    2260.2262940425107
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    672.4264129194788,
+    599.1470176650244
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   28028.0,
+   24790.589268348132,
+   29395.12711250315,
+   26030.758867493078,
+   24001.7795134761,
+   25476.23048999746
+  ],
+  "B-structured": [
+   28057.684210526317,
+   null,
+   null,
+   null,
+   25109.118782226607,
+   null
+  ],
+  "C-direct": [
+   28057.684210526313,
+   26042.480730277646,
+   29659.515776842833,
+   25435.952727533004,
+   25109.118782226607,
+   27676.16516847034
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "invalid_parameters",
+   "invalid_parameters",
+   "invalid_parameters",
+   "optimal",
+   "invalid_parameters"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 4]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

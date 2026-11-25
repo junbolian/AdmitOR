@@ -1,0 +1,126 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_returns": 0.1,
+   "max_allocation": 0.3,
+   "total_allocation": 1.0,
+   "min_return": 0.1,
+   "covariance_0_1": 0.0758,
+   "covariance_0_2": -0.0093
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.1012500912166315,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:expr=sum(expected_returns[i] * model.weights[i] for i in model.assets) | ~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:n = len(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "invalid_expected_returns",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "crash:File \"candidate.py\", line 4, in <module> | from pyomo.contrib.appsi.base import DegreeError | ImportError: cannot import name 'DegreeError' from 'pyomo.contrib.appsi.base' (<PATH>/opt",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "crash:expected_returns = list(expected_returns) | ^^^^^^^^^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

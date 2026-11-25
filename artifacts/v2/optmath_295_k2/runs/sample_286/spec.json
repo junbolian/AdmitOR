@@ -1,0 +1,46 @@
+{
+ "spec": {
+  "num_facilities_selected": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "big_M": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities_selected] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_facilities_selected": {
+    "meaning": "Number of facilities to select",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "big_M": {
+    "meaning": "Large constant used to relax pairwise constraints when nodes are not selected",
+    "base": 1000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

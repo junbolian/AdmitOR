@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_65",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"shipping_costs_col0\",\"evidence\":\"Shipping costs vary depending on the distribution center and retail store. For example:\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_costs_col0",
+   "evidence": "Shipping costs vary depending on the distribution center and retail store. For example:"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

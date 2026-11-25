@@ -1,0 +1,186 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    6,
+    7,
+    12,
+    12,
+    14,
+    4,
+    10,
+    6,
+    13,
+    13,
+    9,
+    5,
+    4,
+    8,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_costs": {
+   "base": [
+    10,
+    7,
+    5,
+    10,
+    8,
+    9,
+    8,
+    9,
+    10,
+    10,
+    3,
+    10,
+    5,
+    7,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "node_coords_x": {
+   "base": [
+    46,
+    11,
+    76,
+    5,
+    95,
+    80,
+    79,
+    32,
+    19,
+    82
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "node_coords_y": {
+   "base": [
+    6,
+    83,
+    75,
+    72,
+    89,
+    21,
+    7,
+    59,
+    8,
+    55
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Maximum throughput (units) on each of the 15 directed arcs, in the order listed: (0->1),(1->2),(1->7),(2->3),(2->6),(3->4),(3->8),(3->9),(4->5),(4->8),(5->6),(6->7),(7->8),(7->9),(8->9)",
+    "base": [
+     6,
+     7,
+     12,
+     12,
+     14,
+     4,
+     10,
+     6,
+     13,
+     13,
+     9,
+     5,
+     4,
+     8,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_costs": {
+    "meaning": "Fuel and logistics cost per unit of aid on each of the 15 directed arcs, same order as capacities",
+    "base": [
+     10,
+     7,
+     5,
+     10,
+     8,
+     9,
+     8,
+     9,
+     10,
+     10,
+     3,
+     10,
+     5,
+     7,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "node_coords_x": {
+    "meaning": "X coordinate of each waypoint node 0..9 (defines network geometry; not directly in LP but fixed)",
+    "base": [
+     46,
+     11,
+     76,
+     5,
+     95,
+     80,
+     79,
+     32,
+     19,
+     82
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "node_coords_y": {
+    "meaning": "Y coordinate of each waypoint node 0..9 (defines network geometry; not directly in LP but fixed)",
+    "base": [
+     6,
+     83,
+     75,
+     72,
+     89,
+     21,
+     7,
+     59,
+     8,
+     55
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

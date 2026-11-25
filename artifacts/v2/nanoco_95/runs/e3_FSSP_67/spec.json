@@ -1,0 +1,86 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    10,
+    42,
+    30,
+    46,
+    17,
+    26,
+    28,
+    48,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_stations": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_batches": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_stations] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_batches] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "processing time of each batch on each station (batch-major: Batch0 S0,S1,S2; Batch1 S0,S1,S2; Batch2 S0,S1,S2)",
+    "base": [
+     10,
+     42,
+     30,
+     46,
+     17,
+     26,
+     28,
+     48,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_stations": {
+    "meaning": "number of serial processing stations (index-set size, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_batches": {
+    "meaning": "number of production batches (index-set size, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    14,
+    10,
+    20,
+    13,
+    19,
+    16,
+    10,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit": {
+   "base": [
+    9,
+    3,
+    10,
+    10,
+    4,
+    6,
+    10,
+    9,
+    7,
+    7,
+    4,
+    6,
+    9,
+    6,
+    6,
+    7,
+    8,
+    6,
+    8,
+    6,
+    5,
+    5,
+    8,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required units per market and product (market-major, product-minor)",
+    "base": [
+     14,
+     10,
+     20,
+     13,
+     19,
+     16,
+     10,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit": {
+    "meaning": "Profit per unit by company, market, product (company-major, then market, product-minor)",
+    "base": [
+     9,
+     3,
+     10,
+     10,
+     4,
+     6,
+     10,
+     9,
+     7,
+     7,
+     4,
+     6,
+     9,
+     6,
+     6,
+     7,
+     8,
+     6,
+     8,
+     6,
+     5,
+     5,
+     8,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

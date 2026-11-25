@@ -1,0 +1,49 @@
+{
+ "alive": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "expected_returns",
+  "variances",
+  "covariances",
+  "min_return",
+  "budget_fraction",
+  "max_asset_weight"
+ ],
+ "safe": [
+  "variances",
+  "covariances",
+  "budget_fraction",
+  "max_asset_weight"
+ ],
+ "tests": {
+  "expected_returns": [
+   0,
+   4
+  ],
+  "variances": [
+   4,
+   4
+  ],
+  "covariances": [
+   4,
+   4
+  ],
+  "min_return": [
+   4,
+   0
+  ],
+  "budget_fraction": [
+   4,
+   4
+  ],
+  "max_asset_weight": [
+   4,
+   4
+  ]
+ },
+ "untested": []
+}

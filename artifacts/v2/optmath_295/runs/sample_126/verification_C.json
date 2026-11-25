@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_126",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"cost\",\"evidence\":\"For example: Producer 0 incurs a cost of 50 units ... to Contract 0, 48 units for Contract 1, and so on, up to 44 units for Contract 6 ... Producer 4 has costs ranging from 42 units for Contract 0 to 44 units for Contract 6\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "For example: Producer 0 incurs a cost of 50 units ... to Contract 0, 48 units for Contract 1, and so on, up to 44 units for Contract 6 ... Producer 4 has costs ranging from 42 units for Contract 0 to 44 units for Contract 6"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

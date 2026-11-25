@@ -1,0 +1,339 @@
+{
+ "spec": {
+  "vehicle_capacity": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "demands": {
+   "base": [
+    3,
+    4,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_service_segments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     18,
+     35,
+     59,
+     54,
+     30,
+     44
+    ],
+    [
+     18,
+     0,
+     50,
+     76,
+     55,
+     16,
+     31
+    ],
+    [
+     35,
+     50,
+     0,
+     40,
+     82,
+     64,
+     64
+    ],
+    [
+     59,
+     76,
+     40,
+     0,
+     81,
+     86,
+     99
+    ],
+    [
+     54,
+     55,
+     82,
+     81,
+     0,
+     47,
+     85
+    ],
+    [
+     30,
+     16,
+     64,
+     86,
+     47,
+     0,
+     38
+    ],
+    [
+     44,
+     31,
+     64,
+     99,
+     85,
+     38,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "node_coordinates": {
+   "base": [
+    [
+     50,
+     50
+    ],
+    [
+     36,
+     39
+    ],
+    [
+     85,
+     51
+    ],
+    [
+     93,
+     90
+    ],
+    [
+     12,
+     89
+    ],
+    [
+     21,
+     43
+    ],
+    [
+     37,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_service_segments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "vehicle_capacity": {
+    "meaning": "Maximum material carrying capacity per maintenance vehicle",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "demands": {
+    "meaning": "Workload demand per required service segment (in given segment order)",
+    "base": [
+     3,
+     4,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of maintenance vehicles in the fleet",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_service_segments": {
+    "meaning": "Number of mandatory service segments",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of nodes in the routing network",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Complete 7x7 node-to-node travel distance matrix (rows 0-6)",
+    "base": [
+     [
+      0,
+      18,
+      35,
+      59,
+      54,
+      30,
+      44
+     ],
+     [
+      18,
+      0,
+      50,
+      76,
+      55,
+      16,
+      31
+     ],
+     [
+      35,
+      50,
+      0,
+      40,
+      82,
+      64,
+      64
+     ],
+     [
+      59,
+      76,
+      40,
+      0,
+      81,
+      86,
+      99
+     ],
+     [
+      54,
+      55,
+      82,
+      81,
+      0,
+      47,
+      85
+     ],
+     [
+      30,
+      16,
+      64,
+      86,
+      47,
+      0,
+      38
+     ],
+     [
+      44,
+      31,
+      64,
+      99,
+      85,
+      38,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "node_coordinates": {
+    "meaning": "Coordinates of nodes 0-6 as (x, y) pairs",
+    "base": [
+     [
+      50,
+      50
+     ],
+     [
+      36,
+      39
+     ],
+     [
+      85,
+      51
+     ],
+     [
+      93,
+      90
+     ],
+     [
+      12,
+      89
+     ],
+     [
+      21,
+      43
+     ],
+     [
+      37,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

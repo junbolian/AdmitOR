@@ -1,0 +1,33 @@
+{
+ "sample_id": "conf_12367",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement says City 0 \"requires a net supply of 1 unit of Product 0\" — meaning City 0 needs to *receive* 1 unit, so it is a demand node, not a supply node. The extracted value of +1 treats it as a supply node. Same logic applies to City 1 and City 2 for Product 0, and City 0 and City 2 for Product 1. City 3 \"has a net demand of 3 units of Product 0,\" which the extraction correctly renders as -3.\n\nRe-reading more carefully: \"requires a net supply\" is ambiguous phrasing, but the problem is internally consistent — Cities 0, 1, 2 each require 1 unit of Product 0, and City 3 demands 3 units, so the sign convention used in the extraction (positive = supply/source) would make Cities 0–2 negative and City 3 negative as well, which doesn't balance. Under the extraction's sign convention (+1 for Cities 0–2, -3 for City 3), the net sums to 0, which is consistent. The statement's phrasing \"requires a net supply\" most naturally means the city *has* a net supply to offer. So the extraction is internally consistent and matches the numbers stated.\n\nFor the per-product capacities between other city pairs, the statement says \"for example\" for City 0–1 and City 2–3, and gives no values for the remaining pairs.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_product0_city0_city1\",\n      \"evidence\": \"\\\"For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped\\\" — introduced as an example only\"\n    },\n    {\n      \"parameter\": \"capacity_product1_city0_city1\",\n      \"evidence\": \"\\\"For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped\\\" — introduced as an example only\"\n    },\n    {\n      \"parameter\": \"capacity_product0_city2_city3\",\n      \"evidence\": \"\\\"Between City 2 and City 3, up to 75 units of Product 0 and 75 units of Product 1 can be shipped\\\" — introduced as a second example only\"\n    },\n    {\n      \"parameter\": \"capacity_product1_city2_city3\",\n      \"evidence\": \"\\\"Between City 2 and City 3, up to 75 units of Product 0 and 75 units of Product 1 can be shipped\\\" — introduced as a second example only\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_product0_city0_city1",
+   "evidence": "\"For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped\" — introduced as an example only"
+  },
+  {
+   "parameter": "capacity_product1_city0_city1",
+   "evidence": "\"For example, between City 0 and City 1, up to 75 units of Product 0 and 74 units of Product 1 can be shipped\" — introduced as an example only"
+  },
+  {
+   "parameter": "capacity_product0_city2_city3",
+   "evidence": "\"Between City 2 and City 3, up to 75 units of Product 0 and 75 units of Product 1 can be shipped\" — introduced as a second example only"
+  },
+  {
+   "parameter": "capacity_product1_city2_city3",
+   "evidence": "\"Between City 2 and City 3, up to 75 units of Product 0 and 75 units of Product 1 can be shipped\" — introduced as a second example only"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

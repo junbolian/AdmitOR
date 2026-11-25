@@ -1,0 +1,126 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "participant_preferences": [
+    [
+     5
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     3,
+     5
+    ],
+    [],
+    [
+     2
+    ],
+    [
+     5
+    ],
+    [
+     0,
+     1,
+     5,
+     6
+    ]
+   ],
+   "car_capacity": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "participant_capacity": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "assignment_value": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return sum(assignment_value * m.x[p, c] for p in m.P for c in m.C) | ~~~~~~~~~~~~~~~~~^~~~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'VarData'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:raise ValueError( | ValueError: Invalid parameter value: car_capacity_data[None] = '[1, 1, 1, 1, 1, 1, 1]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:gp.quicksum(assignment_value * x[i, j] for (i, j) in x), | ~~~~~~~~~~~~~~~~~^~~~~~~~~ | TypeError: can't multiply sequence by non-int of type 'Var'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

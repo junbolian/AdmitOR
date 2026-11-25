@@ -1,0 +1,335 @@
+{
+ "spec": {
+  "production_cost": {
+   "base": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    40
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "holding_cost": {
+   "base": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    20,
+    18,
+    16,
+    15,
+    17,
+    19,
+    21
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "backlog_cost": {
+   "base": [
+    51,
+    55,
+    58,
+    60,
+    63,
+    65,
+    67,
+    69,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    70,
+    65
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "setup_cost": {
+   "base": [
+    643,
+    700,
+    750,
+    800,
+    850,
+    900,
+    950,
+    1000,
+    1050,
+    1100,
+    1150,
+    1189,
+    1000,
+    900,
+    800,
+    750,
+    700,
+    650
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 2200.0,
+    "integer": false
+   }
+  },
+  "production_capacity": {
+   "base": 7939,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3000.0,
+    "hi": 12000.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    302,
+    350,
+    400,
+    450,
+    500,
+    550,
+    596,
+    580,
+    560,
+    520,
+    480,
+    440,
+    400,
+    360,
+    330,
+    310,
+    305,
+    302
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  },
+  "period_count": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[period_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "production_cost": {
+    "meaning": "Variable production cost per item produced in each period (18 values ranging 20-40)",
+    "base": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     40
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "holding_cost": {
+    "meaning": "Inventory holding cost per item stored per period (18 values ranging 15-25)",
+    "base": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     20,
+     18,
+     16,
+     15,
+     17,
+     19,
+     21
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "backlog_cost": {
+    "meaning": "Backlogging penalty cost per backlogged item per period (18 values ranging 51-79)",
+    "base": [
+     51,
+     55,
+     58,
+     60,
+     63,
+     65,
+     67,
+     69,
+     71,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     70,
+     65
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "setup_cost": {
+    "meaning": "Fixed setup cost incurred in a period when production is initiated (18 values ranging 643-1189)",
+    "base": [
+     643,
+     700,
+     750,
+     800,
+     850,
+     900,
+     950,
+     1000,
+     1050,
+     1100,
+     1150,
+     1189,
+     1000,
+     900,
+     800,
+     750,
+     700,
+     650
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 2200,
+     "integer": false
+    }
+   },
+   "production_capacity": {
+    "meaning": "Maximum production quantity in a period if production is initiated",
+    "base": 7939,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3000,
+     "hi": 12000,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Demand per period (18 values ranging 302-596)",
+    "base": [
+     302,
+     350,
+     400,
+     450,
+     500,
+     550,
+     596,
+     580,
+     560,
+     520,
+     480,
+     440,
+     400,
+     360,
+     330,
+     310,
+     305,
+     302
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 900,
+     "integer": true
+    }
+   },
+   "period_count": {
+    "meaning": "Number of periods in the planning horizon (index-set size, frozen)",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 18,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

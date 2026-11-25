@@ -1,0 +1,29 @@
+{
+ "sample_id": "conf_70882",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"vehicle_time_per_frequency\",\n      \"evidence\": \"“For example, L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on”; no values are given for L_2 through L_11.\"\n    },\n    {\n      \"parameter\": \"min_od_frequency\",\n      \"evidence\": \"“For example, OD_7_4 must be served by a combined frequency of at least 2 units from the relevant lines.”\"\n    },\n    {\n      \"parameter\": \"example_od_7_4_demand\",\n      \"evidence\": \"“For example, OD_7_4 requires at least 21 passengers to be served.”\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "vehicle_time_per_frequency",
+   "evidence": "“For example, L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on”; no values are given for L_2 through L_11."
+  },
+  {
+   "parameter": "min_od_frequency",
+   "evidence": "“For example, OD_7_4 must be served by a combined frequency of at least 2 units from the relevant lines.”"
+  },
+  {
+   "parameter": "example_od_7_4_demand",
+   "evidence": "“For example, OD_7_4 requires at least 21 passengers to be served.”"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

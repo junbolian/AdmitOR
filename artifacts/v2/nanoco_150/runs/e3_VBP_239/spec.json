@@ -1,0 +1,122 @@
+{
+ "spec": {
+  "rack_power_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  },
+  "rack_cooling_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  },
+  "server_power_demand": {
+   "base": [
+    10,
+    29,
+    40,
+    13,
+    36,
+    26,
+    14,
+    24,
+    14,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "server_cooling_demand": {
+   "base": [
+    35,
+    16,
+    21,
+    31,
+    29,
+    29,
+    38,
+    15,
+    26,
+    38
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "rack_power_capacity": {
+    "meaning": "maximum total power per rack (kW)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": false
+    }
+   },
+   "rack_cooling_capacity": {
+    "meaning": "maximum total cooling per rack (thermal units)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": false
+    }
+   },
+   "server_power_demand": {
+    "meaning": "power demand of each server (kW), servers 1..10",
+    "base": [
+     10,
+     29,
+     40,
+     13,
+     36,
+     26,
+     14,
+     24,
+     14,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "server_cooling_demand": {
+    "meaning": "cooling demand of each server (thermal units), servers 1..10",
+    "base": [
+     35,
+     16,
+     21,
+     31,
+     29,
+     29,
+     38,
+     15,
+     26,
+     38
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

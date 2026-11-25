@@ -1,0 +1,199 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    102829,
+    100573,
+    101725,
+    99989,
+    103197,
+    104176
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    1035,
+    1021,
+    959,
+    1006,
+    1011,
+    998
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    422,
+    378,
+    389,
+    408,
+    420,
+    380,
+    381,
+    384,
+    385,
+    390,
+    397,
+    393
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "transport_cost_00": {
+   "base": 66,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transport_cost_11": {
+   "base": 63,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transport_cost_22": {
+   "base": 61,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transport_cost_33": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transport_cost_44": {
+   "base": 64,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transport_cost_55": {
+   "base": 63,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed operating cost for each facility (Facility 0 to Facility 5), in dollars",
+    "base": [
+     102829,
+     100573,
+     101725,
+     99989,
+     103197,
+     104176
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum shipping capacity for each facility (Facility 0 to Facility 5), in units",
+    "base": [
+     1035,
+     1021,
+     959,
+     1006,
+     1011,
+     998
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Demand for each customer (Customer 0 to Customer 11), in units",
+    "base": [
+     422,
+     378,
+     389,
+     408,
+     420,
+     380,
+     381,
+     384,
+     385,
+     390,
+     397,
+     393
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "transport_cost_00": {
+    "meaning": "Transportation cost per unit from Facility 0 to Customer 0",
+    "base": 66,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_cost_11": {
+    "meaning": "Transportation cost per unit from Facility 1 to Customer 1",
+    "base": 63,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_cost_22": {
+    "meaning": "Transportation cost per unit from Facility 2 to Customer 2",
+    "base": 61,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_cost_33": {
+    "meaning": "Transportation cost per unit from Facility 3 to Customer 3",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_cost_44": {
+    "meaning": "Transportation cost per unit from Facility 4 to Customer 4",
+    "base": 64,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_cost_55": {
+    "meaning": "Transportation cost per unit from Facility 5 to Customer 5",
+    "base": 63,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_16",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity\",\n      \"evidence\": \"only (0,0)=192 and (0,1)=198 are given; statement says 'Similar limits apply to all other origin-destination pairs, with specific maximum capacities provided in the data' but provides no further values\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "only (0,0)=192 and (0,1)=198 are given; statement says 'Similar limits apply to all other origin-destination pairs, with specific maximum capacities provided in the data' but provides no further values"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

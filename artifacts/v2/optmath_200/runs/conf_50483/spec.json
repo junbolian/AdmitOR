@@ -1,0 +1,232 @@
+{
+ "spec": {
+  "participant_preferences": {
+   "base": [
+    [
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "max_assignments_per_participant": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "max_participants_per_car": {
+   "base": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "objective_coefficients": {
+   "base": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "participant_preferences": {
+    "meaning": "Binary eligibility matrix: 1 if participant is interested in a car, 0 otherwise",
+    "base": [
+     [
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "max_assignments_per_participant": {
+    "meaning": "Maximum number of cars a participant can be assigned (capacity, each participant)",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "max_participants_per_car": {
+    "meaning": "Maximum number of participants a car can hold (capacity, each car)",
+    "base": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "objective_coefficients": {
+    "meaning": "Unit reward for each successful assignment variable",
+    "base": [
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 2,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "num_nodes",
+  "depot",
+  "coords",
+  "distance_matrix",
+  "num_graph_edges",
+  "graph_edges",
+  "num_required_edges",
+  "required_edges",
+  "edge_costs"
+ ],
+ "safe": [
+  "num_nodes",
+  "depot",
+  "coords",
+  "distance_matrix",
+  "num_graph_edges",
+  "num_required_edges"
+ ],
+ "tests": {
+  "num_nodes": [
+   3,
+   3
+  ],
+  "depot": [
+   3,
+   3
+  ],
+  "coords": [
+   3,
+   3
+  ],
+  "distance_matrix": [
+   3,
+   3
+  ],
+  "num_graph_edges": [
+   3,
+   3
+  ],
+  "graph_edges": [
+   2,
+   2
+  ],
+  "num_required_edges": [
+   3,
+   3
+  ],
+  "required_edges": [
+   1,
+   1
+  ],
+  "edge_costs": [
+   0,
+   1
+  ]
+ },
+ "untested": []
+}

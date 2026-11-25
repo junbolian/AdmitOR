@@ -1,0 +1,269 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    203,
+    252,
+    281,
+    227
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "holding_cost_per_unit_period": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "grinder_capacity": {
+   "base": [
+    480,
+    320,
+    480,
+    480,
+    320
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "drill_capacity": {
+   "base": [
+    160,
+    320,
+    320,
+    320,
+    320
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "borer_capacity": {
+   "base": [
+    160,
+    160,
+    160,
+    160,
+    160
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "max_inventory": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "target_inventory_period4": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "sales_limit_product0": {
+   "base": [
+    56,
+    42,
+    65,
+    43,
+    41
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sales_limit_product1": {
+   "base": [
+    56,
+    40,
+    55,
+    68,
+    62
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sales_limit_product2": {
+   "base": [
+    67,
+    65,
+    70,
+    54,
+    53
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sales_limit_product3": {
+   "base": [
+    50,
+    62,
+    59,
+    58,
+    59
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Revenue per unit sold for each product (Product 0 to Product 3)",
+    "base": [
+     203,
+     252,
+     281,
+     227
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "holding_cost_per_unit_period": {
+    "meaning": "Cost to hold one unit of inventory for one period",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "grinder_capacity": {
+    "meaning": "Available grinder hours per period for Periods 0 to 4",
+    "base": [
+     480,
+     320,
+     480,
+     480,
+     320
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "drill_capacity": {
+    "meaning": "Available drill hours per period for Periods 0 to 4",
+    "base": [
+     160,
+     320,
+     320,
+     320,
+     320
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "borer_capacity": {
+    "meaning": "Available borer hours per period for Periods 0 to 4",
+    "base": [
+     160,
+     160,
+     160,
+     160,
+     160
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "max_inventory": {
+    "meaning": "Maximum inventory units per product in any period",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "target_inventory_period4": {
+    "meaning": "Required ending inventory of each product at the end of Period 4",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "sales_limit_product0": {
+    "meaning": "Maximum sales of Product 0 per period for Periods 0 to 4",
+    "base": [
+     56,
+     42,
+     65,
+     43,
+     41
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sales_limit_product1": {
+    "meaning": "Maximum sales of Product 1 per period for Periods 0 to 4",
+    "base": [
+     56,
+     40,
+     55,
+     68,
+     62
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sales_limit_product2": {
+    "meaning": "Maximum sales of Product 2 per period for Periods 0 to 4",
+    "base": [
+     67,
+     65,
+     70,
+     54,
+     53
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sales_limit_product3": {
+    "meaning": "Maximum sales of Product 3 per period for Periods 0 to 4",
+    "base": [
+     50,
+     62,
+     59,
+     58,
+     59
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

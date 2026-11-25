@@ -1,0 +1,118 @@
+{
+ "spec": {
+  "dispersion_weights": {
+   "base": [
+    0,
+    16,
+    14,
+    15,
+    17,
+    18,
+    0,
+    20,
+    11,
+    19,
+    18,
+    13,
+    0,
+    20,
+    20,
+    15,
+    14,
+    18,
+    0,
+    18,
+    18,
+    18,
+    15,
+    11,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_facilities_to_select": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_locations": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities_to_select] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_locations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "dispersion_weights": {
+    "meaning": "Weighted dispersion coefficients for each ordered pair of locations (flattened 5x5 matrix in node order 0..4, row-major; diagonal entries unused)",
+    "base": [
+     0,
+     16,
+     14,
+     15,
+     17,
+     18,
+     0,
+     20,
+     11,
+     19,
+     18,
+     13,
+     0,
+     20,
+     20,
+     15,
+     14,
+     18,
+     0,
+     18,
+     18,
+     18,
+     15,
+     11,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_facilities_to_select": {
+    "meaning": "Exact number of facilities/locations to select",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_locations": {
+    "meaning": "Total number of locations/nodes in the network (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

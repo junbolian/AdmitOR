@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     27,
+     13,
+     20,
+     9,
+     39
+    ],
+    [
+     17,
+     7,
+     35,
+     26,
+     20
+    ],
+    [
+     17,
+     14,
+     21,
+     9,
+     35
+    ],
+    [
+     25,
+     25,
+     23,
+     9,
+     9
+    ],
+    [
+     20,
+     39,
+     37,
+     25,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Operational cost for each harvester (rows 0-4) to harvest each field (columns 0-4)",
+    "base": [
+     [
+      27,
+      13,
+      20,
+      9,
+      39
+     ],
+     [
+      17,
+      7,
+      35,
+      26,
+      20
+     ],
+     [
+      17,
+      14,
+      21,
+      9,
+      35
+     ],
+     [
+      25,
+      25,
+      23,
+      9,
+      9
+     ],
+     [
+      20,
+      39,
+      37,
+      25,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

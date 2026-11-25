@@ -1,0 +1,200 @@
+{
+ "spec": {
+  "processing_time_j0_o0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "processing_time_j0_o1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "processing_time_j1_o0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "processing_time_j1_o1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "processing_time_j2_o0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "processing_time_j2_o1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "precedence_lag_j0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "precedence_lag_j1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "precedence_lag_j2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "machine_disjunctive_bigM": {
+   "base": 100000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1000000.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time_j0_o0": {
+    "meaning": "Processing time of operation 0 of job 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "processing_time_j0_o1": {
+    "meaning": "Processing time of operation 1 of job 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "processing_time_j1_o0": {
+    "meaning": "Processing time of operation 0 of job 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "processing_time_j1_o1": {
+    "meaning": "Processing time of operation 1 of job 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "processing_time_j2_o0": {
+    "meaning": "Processing time of operation 0 of job 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "processing_time_j2_o1": {
+    "meaning": "Processing time of operation 1 of job 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "precedence_lag_j0": {
+    "meaning": "Minimum lag between completion of operation 0 and start of operation 1 for job 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "precedence_lag_j1": {
+    "meaning": "Minimum lag between completion of operation 0 and start of operation 1 for job 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "precedence_lag_j2": {
+    "meaning": "Minimum lag between completion of operation 0 and start of operation 1 for job 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "machine_disjunctive_bigM": {
+    "meaning": "Large coefficient used in machine capacity constraints to enforce order of operations",
+    "base": 100000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1000000,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

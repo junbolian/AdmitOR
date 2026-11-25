@@ -1,0 +1,408 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     44,
+     51,
+     36,
+     50,
+     60,
+     42,
+     52
+    ],
+    [
+     44,
+     0,
+     85,
+     75,
+     78,
+     96,
+     37,
+     33
+    ],
+    [
+     51,
+     85,
+     0,
+     65,
+     13,
+     84,
+     93,
+     102
+    ],
+    [
+     36,
+     75,
+     65,
+     0,
+     71,
+     24,
+     54,
+     68
+    ],
+    [
+     50,
+     78,
+     13,
+     71,
+     0,
+     92,
+     91,
+     98
+    ],
+    [
+     60,
+     96,
+     84,
+     24,
+     92,
+     0,
+     70,
+     84
+    ],
+    [
+     42,
+     37,
+     93,
+     54,
+     91,
+     70,
+     0,
+     14
+    ],
+    [
+     52,
+     33,
+     102,
+     68,
+     98,
+     84,
+     14,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "junction_coords_x": {
+   "base": [
+    50,
+    46,
+    11,
+    76,
+    5,
+    95,
+    80,
+    79
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "junction_coords_y": {
+   "base": [
+    50,
+    6,
+    83,
+    75,
+    72,
+    89,
+    21,
+    7
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "num_junctions": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_required_segments": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "depot_junction": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "required_segments": {
+   "base": [
+    [
+     0,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_junctions] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_segments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[depot_junction] degenerate abs range (lo == hi); perturbation has no effect",
+  "[required_segments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Travel distance between junctions (rows/cols ordered 0..7)",
+    "base": [
+     [
+      0,
+      44,
+      51,
+      36,
+      50,
+      60,
+      42,
+      52
+     ],
+     [
+      44,
+      0,
+      85,
+      75,
+      78,
+      96,
+      37,
+      33
+     ],
+     [
+      51,
+      85,
+      0,
+      65,
+      13,
+      84,
+      93,
+      102
+     ],
+     [
+      36,
+      75,
+      65,
+      0,
+      71,
+      24,
+      54,
+      68
+     ],
+     [
+      50,
+      78,
+      13,
+      71,
+      0,
+      92,
+      91,
+      98
+     ],
+     [
+      60,
+      96,
+      84,
+      24,
+      92,
+      0,
+      70,
+      84
+     ],
+     [
+      42,
+      37,
+      93,
+      54,
+      91,
+      70,
+      0,
+      14
+     ],
+     [
+      52,
+      33,
+      102,
+      68,
+      98,
+      84,
+      14,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "junction_coords_x": {
+    "meaning": "X-coordinate of each junction (indices 0..7)",
+    "base": [
+     50,
+     46,
+     11,
+     76,
+     5,
+     95,
+     80,
+     79
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "junction_coords_y": {
+    "meaning": "Y-coordinate of each junction (indices 0..7)",
+    "base": [
+     50,
+     6,
+     83,
+     75,
+     72,
+     89,
+     21,
+     7
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "num_junctions": {
+    "meaning": "Number of road junctions",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_required_segments": {
+    "meaning": "Number of mandatory roadway segments to service",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "depot_junction": {
+    "meaning": "Index of the depot / start-end junction",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "required_segments": {
+    "meaning": "Mandatory segments (pairs of junctions) that must be serviced at least once",
+    "base": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

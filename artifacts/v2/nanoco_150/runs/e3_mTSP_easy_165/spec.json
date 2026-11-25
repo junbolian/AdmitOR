@@ -1,0 +1,1106 @@
+{
+ "spec": {
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "node0_x": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "node0_y": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "node1_x": {
+   "base": 62,
+   "perturb": {
+    "mode": "abs",
+    "lo": 62.0,
+    "hi": 62.0,
+    "integer": true
+   }
+  },
+  "node1_y": {
+   "base": 26,
+   "perturb": {
+    "mode": "abs",
+    "lo": 26.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "node2_x": {
+   "base": 59,
+   "perturb": {
+    "mode": "abs",
+    "lo": 59.0,
+    "hi": 59.0,
+    "integer": true
+   }
+  },
+  "node2_y": {
+   "base": 82,
+   "perturb": {
+    "mode": "abs",
+    "lo": 82.0,
+    "hi": 82.0,
+    "integer": true
+   }
+  },
+  "node3_x": {
+   "base": 55,
+   "perturb": {
+    "mode": "abs",
+    "lo": 55.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "node3_y": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "node4_x": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "node4_y": {
+   "base": 57,
+   "perturb": {
+    "mode": "abs",
+    "lo": 57.0,
+    "hi": 57.0,
+    "integer": true
+   }
+  },
+  "node5_x": {
+   "base": 43,
+   "perturb": {
+    "mode": "abs",
+    "lo": 43.0,
+    "hi": 43.0,
+    "integer": true
+   }
+  },
+  "node5_y": {
+   "base": 51,
+   "perturb": {
+    "mode": "abs",
+    "lo": 51.0,
+    "hi": 51.0,
+    "integer": true
+   }
+  },
+  "node6_x": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "node6_y": {
+   "base": 33,
+   "perturb": {
+    "mode": "abs",
+    "lo": 33.0,
+    "hi": 33.0,
+    "integer": true
+   }
+  },
+  "node7_x": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "node7_y": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "node8_x": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "node8_y": {
+   "base": 72,
+   "perturb": {
+    "mode": "abs",
+    "lo": 72.0,
+    "hi": 72.0,
+    "integer": true
+   }
+  },
+  "node9_x": {
+   "base": 33,
+   "perturb": {
+    "mode": "abs",
+    "lo": 33.0,
+    "hi": 33.0,
+    "integer": true
+   }
+  },
+  "node9_y": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "dist_0_1": {
+   "base": 63,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_2": {
+   "base": 93,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_3": {
+   "base": 54,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_4": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_5": {
+   "base": 59,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_6": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_7": {
+   "base": 92,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_8": {
+   "base": 63,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_0_9": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_2": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_3": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_4": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_5": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_6": {
+   "base": 49,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_7": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_8": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_1_9": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_3": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_4": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_5": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_6": {
+   "base": 67,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_7": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_8": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_2_9": {
+   "base": 67,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_4": {
+   "base": 51,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_5": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_6": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_7": {
+   "base": 97,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_8": {
+   "base": 81,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_3_9": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_5": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_6": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_7": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_8": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_4_9": {
+   "base": 37,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_5_6": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_5_7": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_5_8": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_5_9": {
+   "base": 33,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_6_7": {
+   "base": 67,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_6_8": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_6_9": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_7_8": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_7_9": {
+   "base": 82,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dist_8_9": {
+   "base": 62,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node0_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node0_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node1_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node1_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node2_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node2_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node3_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node3_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node4_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node4_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node5_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node5_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node6_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node6_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node7_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node7_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node8_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node8_y] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node9_x] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node9_y] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_vehicles": {
+    "meaning": "number of identical mobile library vans (index-set size, frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "node0_x": {
+    "meaning": "x-coordinate of base station node 0 (unused by given distance matrix, frozen)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "node0_y": {
+    "meaning": "y-coordinate of base station node 0 (unused by given distance matrix, frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "node1_x": {
+    "meaning": "x-coordinate of node 1 (unused by given distance matrix, frozen)",
+    "base": 62,
+    "perturb": {
+     "mode": "abs",
+     "lo": 62,
+     "hi": 62,
+     "integer": true
+    }
+   },
+   "node1_y": {
+    "meaning": "y-coordinate of node 1 (unused by given distance matrix, frozen)",
+    "base": 26,
+    "perturb": {
+     "mode": "abs",
+     "lo": 26,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "node2_x": {
+    "meaning": "x-coordinate of node 2 (unused by given distance matrix, frozen)",
+    "base": 59,
+    "perturb": {
+     "mode": "abs",
+     "lo": 59,
+     "hi": 59,
+     "integer": true
+    }
+   },
+   "node2_y": {
+    "meaning": "y-coordinate of node 2 (unused by given distance matrix, frozen)",
+    "base": 82,
+    "perturb": {
+     "mode": "abs",
+     "lo": 82,
+     "hi": 82,
+     "integer": true
+    }
+   },
+   "node3_x": {
+    "meaning": "x-coordinate of node 3 (unused by given distance matrix, frozen)",
+    "base": 55,
+    "perturb": {
+     "mode": "abs",
+     "lo": 55,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "node3_y": {
+    "meaning": "y-coordinate of node 3 (unused by given distance matrix, frozen)",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "node4_x": {
+    "meaning": "x-coordinate of node 4 (unused by given distance matrix, frozen)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "node4_y": {
+    "meaning": "y-coordinate of node 4 (unused by given distance matrix, frozen)",
+    "base": 57,
+    "perturb": {
+     "mode": "abs",
+     "lo": 57,
+     "hi": 57,
+     "integer": true
+    }
+   },
+   "node5_x": {
+    "meaning": "x-coordinate of node 5 (unused by given distance matrix, frozen)",
+    "base": 43,
+    "perturb": {
+     "mode": "abs",
+     "lo": 43,
+     "hi": 43,
+     "integer": true
+    }
+   },
+   "node5_y": {
+    "meaning": "y-coordinate of node 5 (unused by given distance matrix, frozen)",
+    "base": 51,
+    "perturb": {
+     "mode": "abs",
+     "lo": 51,
+     "hi": 51,
+     "integer": true
+    }
+   },
+   "node6_x": {
+    "meaning": "x-coordinate of node 6 (unused by given distance matrix, frozen)",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "node6_y": {
+    "meaning": "y-coordinate of node 6 (unused by given distance matrix, frozen)",
+    "base": 33,
+    "perturb": {
+     "mode": "abs",
+     "lo": 33,
+     "hi": 33,
+     "integer": true
+    }
+   },
+   "node7_x": {
+    "meaning": "x-coordinate of node 7 (unused by given distance matrix, frozen)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "node7_y": {
+    "meaning": "y-coordinate of node 7 (unused by given distance matrix, frozen)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "node8_x": {
+    "meaning": "x-coordinate of node 8 (unused by given distance matrix, frozen)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "node8_y": {
+    "meaning": "y-coordinate of node 8 (unused by given distance matrix, frozen)",
+    "base": 72,
+    "perturb": {
+     "mode": "abs",
+     "lo": 72,
+     "hi": 72,
+     "integer": true
+    }
+   },
+   "node9_x": {
+    "meaning": "x-coordinate of node 9 (unused by given distance matrix, frozen)",
+    "base": 33,
+    "perturb": {
+     "mode": "abs",
+     "lo": 33,
+     "hi": 33,
+     "integer": true
+    }
+   },
+   "node9_y": {
+    "meaning": "y-coordinate of node 9 (unused by given distance matrix, frozen)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "dist_0_1": {
+    "meaning": "symmetric road distance between node 0 and node 1 (base↔stop1)",
+    "base": 63,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_2": {
+    "meaning": "symmetric road distance between node 0 and node 2 (base↔stop2)",
+    "base": 93,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_3": {
+    "meaning": "symmetric road distance between node 0 and node 3 (base↔stop3)",
+    "base": 54,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_4": {
+    "meaning": "symmetric road distance between node 0 and node 4 (base↔stop4)",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_5": {
+    "meaning": "symmetric road distance between node 0 and node 5 (base↔stop5)",
+    "base": 59,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_6": {
+    "meaning": "symmetric road distance between node 0 and node 6 (base↔stop6)",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_7": {
+    "meaning": "symmetric road distance between node 0 and node 7 (base↔stop7)",
+    "base": 92,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_8": {
+    "meaning": "symmetric road distance between node 0 and node 8 (base↔stop8)",
+    "base": 63,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_0_9": {
+    "meaning": "symmetric road distance between node 0 and node 9 (base↔stop9)",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_2": {
+    "meaning": "symmetric road distance between node 1 and node 2",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_3": {
+    "meaning": "symmetric road distance between node 1 and node 3",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_4": {
+    "meaning": "symmetric road distance between node 1 and node 4",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_5": {
+    "meaning": "symmetric road distance between node 1 and node 5",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_6": {
+    "meaning": "symmetric road distance between node 1 and node 6",
+    "base": 49,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_7": {
+    "meaning": "symmetric road distance between node 1 and node 7",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_8": {
+    "meaning": "symmetric road distance between node 1 and node 8",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_1_9": {
+    "meaning": "symmetric road distance between node 1 and node 9",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_3": {
+    "meaning": "symmetric road distance between node 2 and node 3",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_4": {
+    "meaning": "symmetric road distance between node 2 and node 4",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_5": {
+    "meaning": "symmetric road distance between node 2 and node 5",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_6": {
+    "meaning": "symmetric road distance between node 2 and node 6",
+    "base": 67,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_7": {
+    "meaning": "symmetric road distance between node 2 and node 7",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_8": {
+    "meaning": "symmetric road distance between node 2 and node 8",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_2_9": {
+    "meaning": "symmetric road distance between node 2 and node 9",
+    "base": 67,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_4": {
+    "meaning": "symmetric road distance between node 3 and node 4",
+    "base": 51,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_5": {
+    "meaning": "symmetric road distance between node 3 and node 5",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_6": {
+    "meaning": "symmetric road distance between node 3 and node 6",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_7": {
+    "meaning": "symmetric road distance between node 3 and node 7",
+    "base": 97,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_8": {
+    "meaning": "symmetric road distance between node 3 and node 8",
+    "base": 81,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_3_9": {
+    "meaning": "symmetric road distance between node 3 and node 9",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_5": {
+    "meaning": "symmetric road distance between node 4 and node 5",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_6": {
+    "meaning": "symmetric road distance between node 4 and node 6",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_7": {
+    "meaning": "symmetric road distance between node 4 and node 7",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_8": {
+    "meaning": "symmetric road distance between node 4 and node 8",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_4_9": {
+    "meaning": "symmetric road distance between node 4 and node 9",
+    "base": 37,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_5_6": {
+    "meaning": "symmetric road distance between node 5 and node 6",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_5_7": {
+    "meaning": "symmetric road distance between node 5 and node 7",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_5_8": {
+    "meaning": "symmetric road distance between node 5 and node 8",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_5_9": {
+    "meaning": "symmetric road distance between node 5 and node 9",
+    "base": 33,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_6_7": {
+    "meaning": "symmetric road distance between node 6 and node 7",
+    "base": 67,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_6_8": {
+    "meaning": "symmetric road distance between node 6 and node 8",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_6_9": {
+    "meaning": "symmetric road distance between node 6 and node 9",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_7_8": {
+    "meaning": "symmetric road distance between node 7 and node 8",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_7_9": {
+    "meaning": "symmetric road distance between node 7 and node 9",
+    "base": 82,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dist_8_9": {
+    "meaning": "symmetric road distance between node 8 and node 9",
+    "base": 62,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

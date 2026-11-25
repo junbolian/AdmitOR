@@ -1,0 +1,184 @@
+{
+ "spec": {
+  "early_penalty": {
+   "base": [
+    10,
+    12,
+    5,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "late_penalty": {
+   "base": [
+    13,
+    13,
+    12,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "earliest_landing": {
+   "base": [
+    65,
+    72,
+    60,
+    60
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "latest_landing": {
+   "base": [
+    120,
+    120,
+    107,
+    99
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 180.0,
+    "integer": false
+   }
+  },
+  "target_landing": {
+   "base": [
+    95,
+    102,
+    77,
+    69
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[separation_i_before_j] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "early_penalty": {
+    "meaning": "Penalty per minute for landing early, by aircraft",
+    "base": [
+     10,
+     12,
+     5,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "late_penalty": {
+    "meaning": "Penalty per minute for landing late, by aircraft",
+    "base": [
+     13,
+     13,
+     12,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "earliest_landing": {
+    "meaning": "Earliest allowable landing time by aircraft",
+    "base": [
+     65,
+     72,
+     60,
+     60
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "latest_landing": {
+    "meaning": "Latest allowable landing time by aircraft",
+    "base": [
+     120,
+     120,
+     107,
+     99
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 180,
+     "integer": false
+    }
+   },
+   "target_landing": {
+    "meaning": "Target landing time by aircraft",
+    "base": [
+     95,
+     102,
+     77,
+     69
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": false
+    }
+   },
+   "separation_i_before_j": {
+    "meaning": "Minimum separation time when aircraft i lands before aircraft j",
+    "base": [
+     [
+      null,
+      15,
+      14,
+      12
+     ],
+     [
+      13,
+      null,
+      13,
+      12
+     ],
+     [
+      12,
+      15,
+      null,
+      15
+     ],
+     [
+      12,
+      12,
+      15,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

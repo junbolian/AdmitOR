@@ -1,0 +1,89 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_return_0": 0.1198399540303747,
+   "expected_return_1": 0.1395955829429499,
+   "expected_return_2": 0.1457913995574378,
+   "expected_return_3": 0.1496654487872439,
+   "variance_0": 0.0101879558977498,
+   "variance_1": 0.0355505169950095,
+   "variance_2": 0.0560854380672688,
+   "variance_3": 0.0407491774646337,
+   "covariance_01": 0.0158199509980502,
+   "covariance_02": 0.00491024687378598,
+   "covariance_03": 0.015691134415331,
+   "covariance_12": 0.0280846471658999,
+   "covariance_13": 0.0272910762602217,
+   "covariance_23": 0.0729113393387762,
+   "min_return": 0.1,
+   "sum_weights": 1.0,
+   "max_weight": 0.3
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.025283506016794306,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "unsupported_quadratic_objective",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

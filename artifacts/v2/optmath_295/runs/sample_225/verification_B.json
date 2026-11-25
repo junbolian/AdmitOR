@@ -1,0 +1,33 @@
+{
+ "sample_id": "sample_225",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"production_cost_A\",\"evidence\":\"for Product A, they range from 40 to 45 units per unit produced\"},{\"parameter\":\"production_cost_B\",\"evidence\":\"for Product B, they range from 40 to 45 units per unit produced\"},{\"parameter\":\"setup_cost_A\",\"evidence\":\"for Product A, they range from 1074 to 1454 units per setup\"},{\"parameter\":\"setup_cost_B\",\"evidence\":\"for Product B, they range from 1068 to 1196 units per setup\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "production_cost_A",
+   "evidence": "for Product A, they range from 40 to 45 units per unit produced"
+  },
+  {
+   "parameter": "production_cost_B",
+   "evidence": "for Product B, they range from 40 to 45 units per unit produced"
+  },
+  {
+   "parameter": "setup_cost_A",
+   "evidence": "for Product A, they range from 1074 to 1454 units per setup"
+  },
+  {
+   "parameter": "setup_cost_B",
+   "evidence": "for Product B, they range from 1068 to 1196 units per setup"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

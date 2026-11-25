@@ -1,0 +1,16 @@
+{
+ "sample_id": "e3_HCLP_87",
+ "set": "heldout",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I need to verify each parameter against the statement.\n\n- construction_costs: statement lists 524, 769, 837, 814, 922, 645, 574, 592, 619, 851, 785, 825, 672, 903 — matches.\n- node_demands: 18,10,17,11,12,17,26,30,20,20,20,29,29,23,10,26,29,14,27,29 — matches.\n- bonus_values: 450,250,425,275,300,425,650,750,500,500,500,725,725,575,250,650,725,350,675,725 — matches.\n- R1_safe_range: 34 — matches.\n- R2_ultra_range: 17 — matches.\n- distance_matrix: need to spot-check. Rows appear to match the statement. Checking row 1: 7,50,103,64,66,55,25,92,10,48,48,47,78,36 — matches. Row 20: 75,74,81,108,40,50,72,18,68,52,63,33,17,42 — matches.\n\nAll standard parameters match. No mismatches or not-stated issues found.\n\n{\"mismatch\": [], \"not_stated\": []}",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

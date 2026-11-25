@@ -1,0 +1,363 @@
+{
+ "spec": {
+  "coordinates": {
+   "base": [
+    [
+     50,
+     50
+    ],
+    [
+     0,
+     64
+    ],
+    [
+     41,
+     99
+    ],
+    [
+     82,
+     72
+    ],
+    [
+     14,
+     32
+    ],
+    [
+     37,
+     76
+    ],
+    [
+     96,
+     0
+    ],
+    [
+     14,
+     34
+    ],
+    [
+     65,
+     39
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -50.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     52,
+     50,
+     39,
+     40,
+     29,
+     68,
+     39,
+     19
+    ],
+    [
+     52,
+     0,
+     54,
+     82,
+     35,
+     39,
+     115,
+     33,
+     70
+    ],
+    [
+     50,
+     54,
+     0,
+     49,
+     72,
+     23,
+     113,
+     70,
+     65
+    ],
+    [
+     39,
+     82,
+     49,
+     0,
+     79,
+     45,
+     73,
+     78,
+     37
+    ],
+    [
+     40,
+     35,
+     72,
+     79,
+     0,
+     50,
+     88,
+     2,
+     51
+    ],
+    [
+     29,
+     39,
+     23,
+     45,
+     50,
+     0,
+     96,
+     48,
+     46
+    ],
+    [
+     68,
+     115,
+     113,
+     73,
+     88,
+     96,
+     0,
+     89,
+     50
+    ],
+    [
+     39,
+     33,
+     70,
+     78,
+     2,
+     48,
+     89,
+     0,
+     51
+    ],
+    [
+     19,
+     70,
+     65,
+     37,
+     51,
+     46,
+     50,
+     51,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_clinics": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_clinics] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "coordinates": {
+    "meaning": "Node coordinates [x, y] for warehouse (0) and clinics (1-8)",
+    "base": [
+     [
+      50,
+      50
+     ],
+     [
+      0,
+      64
+     ],
+     [
+      41,
+      99
+     ],
+     [
+      82,
+      72
+     ],
+     [
+      14,
+      32
+     ],
+     [
+      37,
+      76
+     ],
+     [
+      96,
+      0
+     ],
+     [
+      14,
+      34
+     ],
+     [
+      65,
+      39
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -50,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Symmetric pairwise route distances between all 9 nodes",
+    "base": [
+     [
+      0,
+      52,
+      50,
+      39,
+      40,
+      29,
+      68,
+      39,
+      19
+     ],
+     [
+      52,
+      0,
+      54,
+      82,
+      35,
+      39,
+      115,
+      33,
+      70
+     ],
+     [
+      50,
+      54,
+      0,
+      49,
+      72,
+      23,
+      113,
+      70,
+      65
+     ],
+     [
+      39,
+      82,
+      49,
+      0,
+      79,
+      45,
+      73,
+      78,
+      37
+     ],
+     [
+      40,
+      35,
+      72,
+      79,
+      0,
+      50,
+      88,
+      2,
+      51
+     ],
+     [
+      29,
+      39,
+      23,
+      45,
+      50,
+      0,
+      96,
+      48,
+      46
+     ],
+     [
+      68,
+      115,
+      113,
+      73,
+      88,
+      96,
+      0,
+      89,
+      50
+     ],
+     [
+      39,
+      33,
+      70,
+      78,
+      2,
+      48,
+      89,
+      0,
+      51
+     ],
+     [
+      19,
+      70,
+      65,
+      37,
+      51,
+      46,
+      50,
+      51,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of identical refrigerated vans available",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_clinics": {
+    "meaning": "Number of local clinics to be served exactly once",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "spec": {
+  "demand_p0": {
+   "base": [
+    25,
+    25,
+    25,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_p1": {
+   "base": [
+    20,
+    23,
+    25,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "profit_company0_product0": {
+   "base": [
+    8,
+    7,
+    3,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_company0_product1": {
+   "base": [
+    7,
+    4,
+    5,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_company1_product0": {
+   "base": [
+    6,
+    5,
+    3,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_company1_product1": {
+   "base": [
+    5,
+    4,
+    7,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_company2_product0": {
+   "base": [
+    8,
+    5,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_company2_product1": {
+   "base": [
+    9,
+    8,
+    4,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_p0": {
+    "meaning": "Units of Product 0 demanded in each market (Market 0..3)",
+    "base": [
+     25,
+     25,
+     25,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_p1": {
+    "meaning": "Units of Product 1 demanded in each market (Market 0..3)",
+    "base": [
+     20,
+     23,
+     25,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "profit_company0_product0": {
+    "meaning": "Profit per unit for Company 0, Product 0 across markets (Market 0..3)",
+    "base": [
+     8,
+     7,
+     3,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_company0_product1": {
+    "meaning": "Profit per unit for Company 0, Product 1 across markets (Market 0..3)",
+    "base": [
+     7,
+     4,
+     5,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_company1_product0": {
+    "meaning": "Profit per unit for Company 1, Product 0 across markets (Market 0..3)",
+    "base": [
+     6,
+     5,
+     3,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_company1_product1": {
+    "meaning": "Profit per unit for Company 1, Product 1 across markets (Market 0..3)",
+    "base": [
+     5,
+     4,
+     7,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_company2_product0": {
+    "meaning": "Profit per unit for Company 2, Product 0 across markets (Market 0..3)",
+    "base": [
+     8,
+     5,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_company2_product1": {
+    "meaning": "Profit per unit for Company 2, Product 1 across markets (Market 0..3)",
+    "base": [
+     9,
+     8,
+     4,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

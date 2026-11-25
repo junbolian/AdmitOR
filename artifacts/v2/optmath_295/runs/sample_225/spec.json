@@ -1,0 +1,309 @@
+{
+ "spec": {
+  "cumulative_demand_A": {
+   "base": [
+    90,
+    162,
+    247,
+    337,
+    437,
+    519
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cumulative_demand_B": {
+   "base": [
+    56,
+    151,
+    235,
+    286,
+    341,
+    428
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "production_cost_A": {
+   "base": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "production_cost_B": {
+   "base": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost_A": {
+   "base": [
+    1074,
+    1150,
+    1226,
+    1302,
+    1378,
+    1454
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "setup_cost_B": {
+   "base": [
+    1068,
+    1093,
+    1119,
+    1144,
+    1170,
+    1196
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "holding_cost_A": {
+   "base": [
+    5,
+    5,
+    5,
+    4,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "holding_cost_B": {
+   "base": [
+    4,
+    4,
+    5,
+    5,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "resource_usage_A": {
+   "base": 1.625,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_usage_B": {
+   "base": 1.953,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_capacity": {
+   "base": [
+    1137,
+    1018,
+    1130,
+    1113,
+    1106,
+    1105
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cumulative_demand_A": {
+    "meaning": "Cumulative demand for Product A at each month (M0..M5)",
+    "base": [
+     90,
+     162,
+     247,
+     337,
+     437,
+     519
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cumulative_demand_B": {
+    "meaning": "Cumulative demand for Product B at each month (M0..M5)",
+    "base": [
+     56,
+     151,
+     235,
+     286,
+     341,
+     428
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "production_cost_A": {
+    "meaning": "Production cost per unit of Product A by month (M0..M5)",
+    "base": [
+     40,
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "production_cost_B": {
+    "meaning": "Production cost per unit of Product B by month (M0..M5)",
+    "base": [
+     40,
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost_A": {
+    "meaning": "Setup cost for Product A by month (M0..M5), ramping 1074..1454",
+    "base": [
+     1074,
+     1150,
+     1226,
+     1302,
+     1378,
+     1454
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "Setup cost for Product B by month (M0..M5), ramping 1068..1196",
+    "base": [
+     1068,
+     1093,
+     1119,
+     1144,
+     1170,
+     1196
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "holding_cost_A": {
+    "meaning": "Inventory holding cost per unit of Product A by month (M0..M5): 5 for first three, 4 after",
+    "base": [
+     5,
+     5,
+     5,
+     4,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "holding_cost_B": {
+    "meaning": "Inventory holding cost per unit of Product B by month (M0..M5): 4 for first two, 5 after",
+    "base": [
+     4,
+     4,
+     5,
+     5,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "resource_usage_A": {
+    "meaning": "Shared resource consumed per unit of Product A",
+    "base": 1.625,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_usage_B": {
+    "meaning": "Shared resource consumed per unit of Product B",
+    "base": 1.953,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_capacity": {
+    "meaning": "Available shared resource capacity by month (M0..M5)",
+    "base": [
+     1137,
+     1018,
+     1130,
+     1113,
+     1106,
+     1105
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

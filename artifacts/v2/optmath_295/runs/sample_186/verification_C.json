@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_186",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The `capacity`, `demand`, `min_delivery`, and `min_producers` parameters all match the statement exactly. The `cost` matrix cannot be verified because the statement gives only ranges per producer, not the individual per-contract values.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"Producer 0 has costs ranging from 44 to 50 units per MWh across the contracts.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "Producer 0 has costs ranging from 44 to 50 units per MWh across the contracts."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

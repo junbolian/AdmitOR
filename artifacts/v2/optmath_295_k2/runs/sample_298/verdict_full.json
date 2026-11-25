@@ -1,0 +1,150 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "supply_node0": 1,
+   "demand_node9": 1,
+   "intermediate_net_flow": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "cost_node0_to_node1": 20,
+   "cost_node0_to_node2": 25,
+   "cost_node0_to_node3": 22,
+   "cost_node0_to_node4": 22,
+   "cost_node0_to_node5": 20,
+   "cost_node0_to_node6": 20,
+   "cost_node0_to_node7": 16,
+   "cost_node0_to_node8": 20,
+   "cost_node0_to_node9": 20,
+   "cost_node1_to_node0": 15,
+   "cost_node1_to_node2": 19,
+   "cost_node1_to_node3": 16,
+   "cost_node1_to_node4": 24,
+   "cost_node1_to_node5": 18,
+   "cost_node1_to_node6": 23,
+   "cost_node1_to_node7": 20,
+   "cost_node1_to_node8": 24,
+   "cost_node1_to_node9": 23
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   20.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return Constraint.Infeasible instead of",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return Constraint.Infeasible instead of",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:bound = float(bound) | ^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "crash:File \"candidate.py\", line 10, in _scalar | raise ValueError(\"Expected a numeric scalar or a singleton sequence.\") | ValueError: Expected a numeric scalar or a singleton sequence.",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:model.addConstr(lhs == rhs, name=f\"flow_conservation_{node}\") | File \"src/gurobipy/_model.pyx\", line 4129, in gurobipy._model.Model.addConstr | gurobipy._exception.GurobiError: Range constraint requir",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

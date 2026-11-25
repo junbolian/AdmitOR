@@ -1,0 +1,532 @@
+{
+ "spec": {
+  "supply_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "supply_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "supply_2": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "supply_3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "supply_4": {
+   "base": -5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -8.0,
+    "hi": -3.0,
+    "integer": true
+   }
+  },
+  "supply_5": {
+   "base": -11,
+   "perturb": {
+    "mode": "abs",
+    "lo": -14.0,
+    "hi": -7.0,
+    "integer": true
+   }
+  },
+  "capacity_0_2": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_0_3": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_1_2": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_1_3": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_2_4": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_2_5": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_3_4": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_3_5": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "capacity_0_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "capacity_0_5": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "capacity_1_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "capacity_1_5": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "cost_0_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_3": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_3": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_5": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_4": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_5": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_0": {
+    "meaning": "net supply at facility 0 (collection center)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "supply_1": {
+    "meaning": "net supply at facility 1 (collection center)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "supply_2": {
+    "meaning": "net supply at facility 2 (transshipment depot)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "supply_3": {
+    "meaning": "net supply at facility 3 (transshipment depot)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "supply_4": {
+    "meaning": "net supply at facility 4 (hospital demand, negative)",
+    "base": -5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -8,
+     "hi": -3,
+     "integer": true
+    }
+   },
+   "supply_5": {
+    "meaning": "net supply at facility 5 (hospital demand, negative)",
+    "base": -11,
+    "perturb": {
+     "mode": "abs",
+     "lo": -14,
+     "hi": -7,
+     "integer": true
+    }
+   },
+   "capacity_0_2": {
+    "meaning": "capacity route 0->2",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_0_3": {
+    "meaning": "capacity route 0->3",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_1_2": {
+    "meaning": "capacity route 1->2",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_1_3": {
+    "meaning": "capacity route 1->3",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_2_4": {
+    "meaning": "capacity route 2->4",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_2_5": {
+    "meaning": "capacity route 2->5",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_3_4": {
+    "meaning": "capacity route 3->4",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_3_5": {
+    "meaning": "capacity route 3->5",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "capacity_0_4": {
+    "meaning": "capacity route 0->4",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "capacity_0_5": {
+    "meaning": "capacity route 0->5",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "capacity_1_4": {
+    "meaning": "capacity route 1->4",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "capacity_1_5": {
+    "meaning": "capacity route 1->5",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "cost_0_2": {
+    "meaning": "unit cost route 0->2",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_3": {
+    "meaning": "unit cost route 0->3",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_2": {
+    "meaning": "unit cost route 1->2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_3": {
+    "meaning": "unit cost route 1->3",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_4": {
+    "meaning": "unit cost route 2->4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_5": {
+    "meaning": "unit cost route 2->5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_4": {
+    "meaning": "unit cost route 3->4",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_5": {
+    "meaning": "unit cost route 3->5",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_4": {
+    "meaning": "unit cost route 0->4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_5": {
+    "meaning": "unit cost route 0->5",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_4": {
+    "meaning": "unit cost route 1->4",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_5": {
+    "meaning": "unit cost route 1->5",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

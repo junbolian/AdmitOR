@@ -1,0 +1,185 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    19,
+    19,
+    24,
+    24,
+    20,
+    20,
+    18,
+    18,
+    14,
+    14,
+    16,
+    16,
+    24,
+    24,
+    22,
+    22,
+    24,
+    24,
+    12,
+    12,
+    17,
+    17,
+    22,
+    22,
+    21,
+    21,
+    21,
+    21,
+    17,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_costs": {
+   "base": [
+    9,
+    9,
+    10,
+    10,
+    7,
+    7,
+    10,
+    10,
+    11,
+    11,
+    10,
+    10,
+    12,
+    12,
+    9,
+    9,
+    7,
+    7,
+    11,
+    11,
+    2,
+    2,
+    8,
+    8,
+    10,
+    10,
+    9,
+    9,
+    9,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    4,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Throughput capacity per directed arc, in arc-list order",
+    "base": [
+     19,
+     19,
+     24,
+     24,
+     20,
+     20,
+     18,
+     18,
+     14,
+     14,
+     16,
+     16,
+     24,
+     24,
+     22,
+     22,
+     24,
+     24,
+     12,
+     12,
+     17,
+     17,
+     22,
+     22,
+     21,
+     21,
+     21,
+     21,
+     17,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_costs": {
+    "meaning": "Unit transportation cost per directed arc (network attribute, not in objective), in arc-list order",
+    "base": [
+     9,
+     9,
+     10,
+     10,
+     7,
+     7,
+     10,
+     10,
+     11,
+     11,
+     10,
+     10,
+     12,
+     12,
+     9,
+     9,
+     7,
+     7,
+     11,
+     11,
+     2,
+     2,
+     8,
+     8,
+     10,
+     10,
+     9,
+     9,
+     9,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "Required flow volume for each commodity: commodity 1 from node 1 to node 7, commodity 2 from node 0 to node 4",
+    "base": [
+     4,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

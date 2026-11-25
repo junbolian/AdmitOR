@@ -1,0 +1,143 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "position_city0": 0,
+   "position_min_others": 1,
+   "position_max_others": 3
+  },
+  {
+   "position_city0": 0,
+   "position_min_others": 1,
+   "position_max_others": 3
+  },
+  {
+   "position_city0": 0,
+   "position_min_others": 1,
+   "position_max_others": 3
+  },
+  {
+   "position_city0": 0,
+   "position_min_others": 1,
+   "position_max_others": 3
+  },
+  {
+   "position_city0": 0,
+   "position_min_others": 1,
+   "position_max_others": 3
+  },
+  {
+   "position_city0": 0,
+   "position_min_others": 1,
+   "position_max_others": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'"
+  ],
+  "A-direct-2": [
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'"
+  ],
+  "B-structured": [
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost"
+  ],
+  "B-structured-2": [
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost",
+   "missing_parameter:cost"
+  ],
+  "C-direct": [
+   "crash:File \"candidate.py\", line 9, in get_param | raise KeyError(f\"None of {keys} found. Available keys: {list(prm.keys())}\") | KeyError: \"None of ('cost', 'costs', 'cost_matrix', 'c', 'C', 'travel_cost', '",
+   "crash:File \"candidate.py\", line 9, in get_param | raise KeyError(f\"None of {keys} found. Available keys: {list(prm.keys())}\") | KeyError: \"None of ('cost', 'costs', 'cost_matrix', 'c', 'C', 'travel_cost', '",
+   "crash:File \"candidate.py\", line 9, in get_param | raise KeyError(f\"None of {keys} found. Available keys: {list(prm.keys())}\") | KeyError: \"None of ('cost', 'costs', 'cost_matrix', 'c', 'C', 'travel_cost', '",
+   "crash:File \"candidate.py\", line 9, in get_param | raise KeyError(f\"None of {keys} found. Available keys: {list(prm.keys())}\") | KeyError: \"None of ('cost', 'costs', 'cost_matrix', 'c', 'C', 'travel_cost', '",
+   "crash:File \"candidate.py\", line 9, in get_param | raise KeyError(f\"None of {keys} found. Available keys: {list(prm.keys())}\") | KeyError: \"None of ('cost', 'costs', 'cost_matrix', 'c', 'C', 'travel_cost', '",
+   "crash:File \"candidate.py\", line 9, in get_param | raise KeyError(f\"None of {keys} found. Available keys: {list(prm.keys())}\") | KeyError: \"None of ('cost', 'costs', 'cost_matrix', 'c', 'C', 'travel_cost', '"
+  ],
+  "C-direct-2": [
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

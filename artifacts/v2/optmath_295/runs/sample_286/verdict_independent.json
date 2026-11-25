@@ -1,0 +1,109 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 1000000,
+   "big_M": 1000000,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 319.71339922894185,
+   "min_distance_upper_bound": 25108.25414714467,
+   "big_M": 1447643.6600086843,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 338.34974371145563,
+   "min_distance_upper_bound": 892190.3497480749,
+   "big_M": 526000.2798841391,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 109.31898740180168,
+   "min_distance_upper_bound": 505404.752574552,
+   "big_M": 230026.25145093177,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 272.4707403016083,
+   "min_distance_upper_bound": 220518.57797849263,
+   "big_M": 2987401.8509919527,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 402.90962591640397,
+   "min_distance_upper_bound": 698169.5810487281,
+   "big_M": 1767227.5309381601,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   40.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   1.4142135623842478,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

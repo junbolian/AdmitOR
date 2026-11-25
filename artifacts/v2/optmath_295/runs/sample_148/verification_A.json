@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_148",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"capacity\", \"evidence\": \"The capacity contributions for all aircraft types and routes are detailed in the data provided.\"}, {\"parameter\": \"cost\", \"evidence\": \"The costs for all aircraft types and routes are detailed in the data provided.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "The capacity contributions for all aircraft types and routes are detailed in the data provided."
+  },
+  {
+   "parameter": "cost",
+   "evidence": "The costs for all aircraft types and routes are detailed in the data provided."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

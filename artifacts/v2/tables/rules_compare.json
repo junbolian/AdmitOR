@@ -1,0 +1,678 @@
+{
+ "OptMATH-295": {
+  "unparsed_or_error": {
+   "C": 2,
+   "A": 0,
+   "B": 0
+  },
+  "replies": {
+   "C": 294,
+   "A": 294,
+   "B": 272
+  },
+  "cert": {
+   "panel_base_3of3": {
+    "certificates": 242,
+    "misses": 35,
+    "precision": 0.8554,
+    "missing_reply": {
+     "C": 0,
+     "A": 0,
+     "B": 0
+    },
+    "rules": {
+     "B or C": {
+      "certificates_after": 201,
+      "misses_after": 14,
+      "precision_after": 0.9303,
+      "withdrawn": 41,
+      "withdrawn_miss": 21,
+      "flag_mismatch": [
+       3,
+       3,
+       204,
+       32
+      ],
+      "flag_not_stated": [
+       18,
+       20,
+       189,
+       15
+      ],
+      "flag_any": [
+       20,
+       21,
+       187,
+       14
+      ]
+     },
+     "B and C": {
+      "certificates_after": 216,
+      "misses_after": 15,
+      "precision_after": 0.9306,
+      "withdrawn": 26,
+      "withdrawn_miss": 20,
+      "flag_mismatch": [
+       1,
+       0,
+       206,
+       35
+      ],
+      "flag_not_stated": [
+       4,
+       20,
+       203,
+       15
+      ],
+      "flag_any": [
+       6,
+       20,
+       201,
+       15
+      ]
+     },
+     "C": {
+      "certificates_after": 210,
+      "misses_after": 15,
+      "precision_after": 0.9286,
+      "withdrawn": 32,
+      "withdrawn_miss": 20,
+      "flag_mismatch": [
+       3,
+       1,
+       204,
+       34
+      ],
+      "flag_not_stated": [
+       9,
+       20,
+       198,
+       15
+      ],
+      "flag_any": [
+       12,
+       20,
+       195,
+       15
+      ]
+     },
+     "B": {
+      "certificates_after": 207,
+      "misses_after": 14,
+      "precision_after": 0.9324,
+      "withdrawn": 35,
+      "withdrawn_miss": 21,
+      "flag_mismatch": [
+       1,
+       2,
+       206,
+       33
+      ],
+      "flag_not_stated": [
+       13,
+       20,
+       194,
+       15
+      ],
+      "flag_any": [
+       14,
+       21,
+       193,
+       14
+      ]
+     },
+     "A": {
+      "certificates_after": 209,
+      "misses_after": 16,
+      "precision_after": 0.9234,
+      "withdrawn": 33,
+      "withdrawn_miss": 19,
+      "flag_mismatch": [
+       2,
+       2,
+       205,
+       33
+      ],
+      "flag_not_stated": [
+       12,
+       19,
+       195,
+       16
+      ],
+      "flag_any": [
+       14,
+       19,
+       193,
+       16
+      ]
+     },
+     "at least two of A, B, C": {
+      "certificates_after": 212,
+      "misses_after": 15,
+      "precision_after": 0.9292,
+      "withdrawn": 30,
+      "withdrawn_miss": 20,
+      "flag_mismatch": [
+       1,
+       1,
+       206,
+       34
+      ],
+      "flag_not_stated": [
+       8,
+       20,
+       199,
+       15
+      ],
+      "flag_any": [
+       10,
+       20,
+       197,
+       15
+      ]
+     }
+    }
+   },
+   "panel_base_2of3": {
+    "certificates": 272,
+    "misses": 45,
+    "precision": 0.8346,
+    "missing_reply": {
+     "C": 0,
+     "A": 0,
+     "B": 0
+    },
+    "rules": {
+     "B or C": {
+      "certificates_after": 223,
+      "misses_after": 19,
+      "precision_after": 0.9148,
+      "withdrawn": 49,
+      "withdrawn_miss": 26,
+      "flag_mismatch": [
+       3,
+       3,
+       224,
+       42
+      ],
+      "flag_not_stated": [
+       21,
+       25,
+       206,
+       20
+      ],
+      "flag_any": [
+       23,
+       26,
+       204,
+       19
+      ]
+     },
+     "B and C": {
+      "certificates_after": 241,
+      "misses_after": 20,
+      "precision_after": 0.917,
+      "withdrawn": 31,
+      "withdrawn_miss": 25,
+      "flag_mismatch": [
+       1,
+       0,
+       226,
+       45
+      ],
+      "flag_not_stated": [
+       4,
+       25,
+       223,
+       20
+      ],
+      "flag_any": [
+       6,
+       25,
+       221,
+       20
+      ]
+     },
+     "C": {
+      "certificates_after": 233,
+      "misses_after": 20,
+      "precision_after": 0.9142,
+      "withdrawn": 39,
+      "withdrawn_miss": 25,
+      "flag_mismatch": [
+       3,
+       1,
+       224,
+       44
+      ],
+      "flag_not_stated": [
+       11,
+       25,
+       216,
+       20
+      ],
+      "flag_any": [
+       14,
+       25,
+       213,
+       20
+      ]
+     },
+     "B": {
+      "certificates_after": 231,
+      "misses_after": 19,
+      "precision_after": 0.9177,
+      "withdrawn": 41,
+      "withdrawn_miss": 26,
+      "flag_mismatch": [
+       1,
+       2,
+       226,
+       43
+      ],
+      "flag_not_stated": [
+       14,
+       25,
+       213,
+       20
+      ],
+      "flag_any": [
+       15,
+       26,
+       212,
+       19
+      ]
+     },
+     "A": {
+      "certificates_after": 234,
+      "misses_after": 22,
+      "precision_after": 0.906,
+      "withdrawn": 38,
+      "withdrawn_miss": 23,
+      "flag_mismatch": [
+       2,
+       3,
+       225,
+       42
+      ],
+      "flag_not_stated": [
+       13,
+       22,
+       214,
+       23
+      ],
+      "flag_any": [
+       15,
+       23,
+       212,
+       22
+      ]
+     },
+     "at least two of A, B, C": {
+      "certificates_after": 236,
+      "misses_after": 20,
+      "precision_after": 0.9153,
+      "withdrawn": 36,
+      "withdrawn_miss": 25,
+      "flag_mismatch": [
+       1,
+       1,
+       226,
+       44
+      ],
+      "flag_not_stated": [
+       9,
+       25,
+       218,
+       20
+      ],
+      "flag_any": [
+       11,
+       25,
+       216,
+       20
+      ]
+     }
+    }
+   }
+  }
+ },
+ "OptMATH-200": {
+  "unparsed_or_error": {
+   "C": 3,
+   "A": 0,
+   "B": 0
+  },
+  "replies": {
+   "C": 196,
+   "A": 196,
+   "B": 196
+  },
+  "cert": {
+   "panel_base_3of3": {
+    "certificates": 163,
+    "misses": 18,
+    "precision": 0.8896,
+    "missing_reply": {
+     "C": 0,
+     "A": 0,
+     "B": 0
+    },
+    "rules": {
+     "B or C": {
+      "certificates_after": 143,
+      "misses_after": 12,
+      "precision_after": 0.9161,
+      "withdrawn": 20,
+      "withdrawn_miss": 6,
+      "flag_mismatch": [
+       1,
+       0,
+       144,
+       18
+      ],
+      "flag_not_stated": [
+       13,
+       6,
+       132,
+       12
+      ],
+      "flag_any": [
+       14,
+       6,
+       131,
+       12
+      ]
+     },
+     "B and C": {
+      "certificates_after": 153,
+      "misses_after": 12,
+      "precision_after": 0.9216,
+      "withdrawn": 10,
+      "withdrawn_miss": 6,
+      "flag_mismatch": [
+       0,
+       0,
+       145,
+       18
+      ],
+      "flag_not_stated": [
+       4,
+       6,
+       141,
+       12
+      ],
+      "flag_any": [
+       4,
+       6,
+       141,
+       12
+      ]
+     },
+     "C": {
+      "certificates_after": 148,
+      "misses_after": 12,
+      "precision_after": 0.9189,
+      "withdrawn": 15,
+      "withdrawn_miss": 6,
+      "flag_mismatch": [
+       1,
+       0,
+       144,
+       18
+      ],
+      "flag_not_stated": [
+       8,
+       6,
+       137,
+       12
+      ],
+      "flag_any": [
+       9,
+       6,
+       136,
+       12
+      ]
+     },
+     "B": {
+      "certificates_after": 148,
+      "misses_after": 12,
+      "precision_after": 0.9189,
+      "withdrawn": 15,
+      "withdrawn_miss": 6,
+      "flag_mismatch": [
+       0,
+       0,
+       145,
+       18
+      ],
+      "flag_not_stated": [
+       9,
+       6,
+       136,
+       12
+      ],
+      "flag_any": [
+       9,
+       6,
+       136,
+       12
+      ]
+     },
+     "A": {
+      "certificates_after": 145,
+      "misses_after": 12,
+      "precision_after": 0.9172,
+      "withdrawn": 18,
+      "withdrawn_miss": 6,
+      "flag_mismatch": [
+       0,
+       0,
+       145,
+       18
+      ],
+      "flag_not_stated": [
+       12,
+       6,
+       133,
+       12
+      ],
+      "flag_any": [
+       12,
+       6,
+       133,
+       12
+      ]
+     },
+     "at least two of A, B, C": {
+      "certificates_after": 150,
+      "misses_after": 12,
+      "precision_after": 0.92,
+      "withdrawn": 13,
+      "withdrawn_miss": 6,
+      "flag_mismatch": [
+       0,
+       0,
+       145,
+       18
+      ],
+      "flag_not_stated": [
+       7,
+       6,
+       138,
+       12
+      ],
+      "flag_any": [
+       7,
+       6,
+       138,
+       12
+      ]
+     }
+    }
+   },
+   "panel_base_2of3": {
+    "certificates": 180,
+    "misses": 21,
+    "precision": 0.8833,
+    "missing_reply": {
+     "C": 0,
+     "A": 0,
+     "B": 0
+    },
+    "rules": {
+     "B or C": {
+      "certificates_after": 153,
+      "misses_after": 12,
+      "precision_after": 0.9216,
+      "withdrawn": 27,
+      "withdrawn_miss": 9,
+      "flag_mismatch": [
+       1,
+       0,
+       158,
+       21
+      ],
+      "flag_not_stated": [
+       17,
+       9,
+       142,
+       12
+      ],
+      "flag_any": [
+       18,
+       9,
+       141,
+       12
+      ]
+     },
+     "B and C": {
+      "certificates_after": 168,
+      "misses_after": 13,
+      "precision_after": 0.9226,
+      "withdrawn": 12,
+      "withdrawn_miss": 8,
+      "flag_mismatch": [
+       0,
+       0,
+       159,
+       21
+      ],
+      "flag_not_stated": [
+       4,
+       8,
+       155,
+       13
+      ],
+      "flag_any": [
+       4,
+       8,
+       155,
+       13
+      ]
+     },
+     "C": {
+      "certificates_after": 161,
+      "misses_after": 13,
+      "precision_after": 0.9193,
+      "withdrawn": 19,
+      "withdrawn_miss": 8,
+      "flag_mismatch": [
+       1,
+       0,
+       158,
+       21
+      ],
+      "flag_not_stated": [
+       10,
+       8,
+       149,
+       13
+      ],
+      "flag_any": [
+       11,
+       8,
+       148,
+       13
+      ]
+     },
+     "B": {
+      "certificates_after": 160,
+      "misses_after": 12,
+      "precision_after": 0.925,
+      "withdrawn": 20,
+      "withdrawn_miss": 9,
+      "flag_mismatch": [
+       0,
+       0,
+       159,
+       21
+      ],
+      "flag_not_stated": [
+       11,
+       9,
+       148,
+       12
+      ],
+      "flag_any": [
+       11,
+       9,
+       148,
+       12
+      ]
+     },
+     "A": {
+      "certificates_after": 158,
+      "misses_after": 13,
+      "precision_after": 0.9177,
+      "withdrawn": 22,
+      "withdrawn_miss": 8,
+      "flag_mismatch": [
+       0,
+       1,
+       159,
+       20
+      ],
+      "flag_not_stated": [
+       14,
+       8,
+       145,
+       13
+      ],
+      "flag_any": [
+       14,
+       8,
+       145,
+       13
+      ]
+     },
+     "at least two of A, B, C": {
+      "certificates_after": 163,
+      "misses_after": 13,
+      "precision_after": 0.9202,
+      "withdrawn": 17,
+      "withdrawn_miss": 8,
+      "flag_mismatch": [
+       0,
+       0,
+       159,
+       21
+      ],
+      "flag_not_stated": [
+       9,
+       8,
+       150,
+       13
+      ],
+      "flag_any": [
+       9,
+       8,
+       150,
+       13
+      ]
+     }
+    }
+   }
+  }
+ }
+}

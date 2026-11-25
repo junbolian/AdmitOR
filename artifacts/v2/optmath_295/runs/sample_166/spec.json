@@ -1,0 +1,192 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    24,
+    19,
+    18,
+    20,
+    20,
+    22,
+    17,
+    15,
+    22,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_margin": {
+   "base": [
+    [
+     [
+      4,
+      5,
+      8,
+      6,
+      3
+     ],
+     [
+      8,
+      9,
+      7,
+      5,
+      6
+     ]
+    ],
+    [
+     [
+      5,
+      10,
+      6,
+      7,
+      4
+     ],
+     [
+      6,
+      4,
+      9,
+      8,
+      5
+     ]
+    ],
+    [
+     [
+      6,
+      5,
+      9,
+      4,
+      7
+     ],
+     [
+      10,
+      8,
+      6,
+      9,
+      4
+     ]
+    ],
+    [
+     [
+      8,
+      8,
+      7,
+      9,
+      6
+     ],
+     [
+      7,
+      7,
+      10,
+      6,
+      8
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required units of each product in each region (product-major: [P0 for Regions 0-4, P1 for Regions 0-4])",
+    "base": [
+     24,
+     19,
+     18,
+     20,
+     20,
+     22,
+     17,
+     15,
+     22,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_margin": {
+    "meaning": "Profit per unit for supplier s, product p, region r; indexed [supplier][product][region]",
+    "base": [
+     [
+      [
+       4,
+       5,
+       8,
+       6,
+       3
+      ],
+      [
+       8,
+       9,
+       7,
+       5,
+       6
+      ]
+     ],
+     [
+      [
+       5,
+       10,
+       6,
+       7,
+       4
+      ],
+      [
+       6,
+       4,
+       9,
+       8,
+       5
+      ]
+     ],
+     [
+      [
+       6,
+       5,
+       9,
+       4,
+       7
+      ],
+      [
+       10,
+       8,
+       6,
+       9,
+       4
+      ]
+     ],
+     [
+      [
+       8,
+       8,
+       7,
+       9,
+       6
+      ],
+      [
+       7,
+       7,
+       10,
+       6,
+       8
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

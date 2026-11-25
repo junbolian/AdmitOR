@@ -1,0 +1,206 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_returns": [
+    0.0979,
+    0.1102,
+    0.1471,
+    0.0683,
+    0.1372
+   ],
+   "min_return": 0.1,
+   "max_weight": 0.3,
+   "budget_sum_weights": 1.0
+  },
+  {
+   "expected_returns": [
+    0.11154988356902681,
+    0.0578561852255379,
+    0.11400681273209745,
+    0.049395293415564596,
+    0.16964385058330247
+   ],
+   "min_return": 0.12443694361652025,
+   "max_weight": 0.8191346757786341,
+   "budget_sum_weights": 1.0
+  },
+  {
+   "expected_returns": [
+    0.09025614614718798,
+    0.058383653582075354,
+    0.10571164609361006,
+    0.06866576617745965,
+    0.07224073504062609
+   ],
+   "min_return": 0.07187214157553135,
+   "max_weight": 0.6374133283346424,
+   "budget_sum_weights": 1.0
+  },
+  {
+   "expected_returns": [
+    0.0705311368977842,
+    0.12003707836312515,
+    0.19261722017730828,
+    0.03459386528601157,
+    0.17915840135146124
+   ],
+   "min_return": 0.12679533344870497,
+   "max_weight": 0.4051878873884939,
+   "budget_sum_weights": 1.0
+  },
+  {
+   "expected_returns": [
+    0.1426611597690439,
+    0.09219271887141148,
+    0.08719291356121976,
+    0.04075572853772559,
+    0.18487622706287146
+   ],
+   "min_return": 0.11640986345035802,
+   "max_weight": 0.7553462049557852,
+   "budget_sum_weights": 1.0
+  },
+  {
+   "expected_returns": [
+    0.1014467301534152,
+    0.16233735719052664,
+    0.1292324068873488,
+    0.07185437511596139,
+    0.1823943199355109
+   ],
+   "min_return": 0.11803717276006707,
+   "max_weight": 0.7962801752330829,
+   "budget_sum_weights": 1.0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.01240639964795072,
+   0.018087181536127726,
+   0.007529178415161027,
+   0.018106698988862826,
+   0.015589660770639224,
+   0.016095958827590583
+  ],
+  "C-direct-2": [
+   0.002845945607485986,
+   0.004449376063670417,
+   0.002714158553349178,
+   0.0036219511979829573,
+   0.0031485367726332113,
+   0.0027468197239394706
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "missing_covariance_data",
+   "missing_covariance_data",
+   "missing_covariance_data",
+   "missing_covariance_data",
+   "missing_covariance_data",
+   "missing_covariance_data"
+  ],
+  "B-structured-2": [
+   "missing_covariances",
+   "missing_covariances",
+   "missing_covariances",
+   "missing_covariances",
+   "missing_covariances",
+   "missing_covariances"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: incomparable (no co-solved instance)",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "A-direct vs C-direct-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured vs B-structured-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "C-direct vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

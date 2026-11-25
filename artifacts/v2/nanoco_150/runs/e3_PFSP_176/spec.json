@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     47,
+     11,
+     33
+    ],
+    [
+     13,
+     15,
+     48
+    ],
+    [
+     47,
+     12,
+     46
+    ],
+    [
+     50,
+     20,
+     49
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_vehicles": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_workstations": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_workstations] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Assembly duration (minutes) for each vehicle order at each workstation; rows correspond to vehicles V0-V3, columns to workstations W0-W2",
+    "base": [
+     [
+      47,
+      11,
+      33
+     ],
+     [
+      13,
+      15,
+      48
+     ],
+     [
+      47,
+      12,
+      46
+     ],
+     [
+      50,
+      20,
+      49
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of vehicle production orders (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_workstations": {
+    "meaning": "Number of assembly workstations (index-set size, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

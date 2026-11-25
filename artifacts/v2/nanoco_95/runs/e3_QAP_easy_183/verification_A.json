@@ -1,0 +1,25 @@
+{
+ "sample_id": "e3_QAP_easy_183",
+ "set": "heldout",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"x_coords\", \"evidence\": \"coordinates ... are given as (91, 71), (88, 28), (36, 39), and (85, 51)\"}, {\"parameter\": \"y_coords\", \"evidence\": \"coordinates ... are given as (91, 71), (88, 28), (36, 39), and (85, 51)\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "x_coords",
+   "evidence": "coordinates ... are given as (91, 71), (88, 28), (36, 39), and (85, 51)"
+  },
+  {
+   "parameter": "y_coords",
+   "evidence": "coordinates ... are given as (91, 71), (88, 28), (36, 39), and (85, 51)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

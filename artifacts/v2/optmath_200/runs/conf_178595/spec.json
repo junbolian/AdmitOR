@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    101440,
+    98331,
+    104553,
+    95257,
+    104150
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity": {
+   "base": [
+    1022,
+    999,
+    958,
+    1046,
+    1041
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    209,
+    213,
+    218,
+    217,
+    212,
+    212,
+    180,
+    194,
+    216
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "shipping_cost": {
+   "base": [
+    [
+     27,
+     27,
+     28,
+     27,
+     34
+    ],
+    [
+     35,
+     35,
+     26,
+     26,
+     35
+    ],
+    [
+     28,
+     29,
+     31,
+     33,
+     26
+    ],
+    [
+     25,
+     35,
+     28,
+     32,
+     34
+    ],
+    [
+     30,
+     28,
+     33,
+     31,
+     26
+    ],
+    [
+     29,
+     35,
+     28,
+     33,
+     25
+    ],
+    [
+     34,
+     26,
+     30,
+     32,
+     30
+    ],
+    [
+     26,
+     34,
+     35,
+     27,
+     30
+    ],
+    [
+     27,
+     33,
+     27,
+     35,
+     29
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost to open each facility (facilities 0-4)",
+    "base": [
+     101440,
+     98331,
+     104553,
+     95257,
+     104150
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum capacity of each facility (facilities 0-4)",
+    "base": [
+     1022,
+     999,
+     958,
+     1046,
+     1041
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each customer (customers 0-8)",
+    "base": [
+     209,
+     213,
+     218,
+     217,
+     212,
+     212,
+     180,
+     194,
+     216
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "shipping_cost": {
+    "meaning": "Shipping cost per unit from facility j to customer i; list indexed by customer, each sublist facilities 0-4",
+    "base": [
+     [
+      27,
+      27,
+      28,
+      27,
+      34
+     ],
+     [
+      35,
+      35,
+      26,
+      26,
+      35
+     ],
+     [
+      28,
+      29,
+      31,
+      33,
+      26
+     ],
+     [
+      25,
+      35,
+      28,
+      32,
+      34
+     ],
+     [
+      30,
+      28,
+      33,
+      31,
+      26
+     ],
+     [
+      29,
+      35,
+      28,
+      33,
+      25
+     ],
+     [
+      34,
+      26,
+      30,
+      32,
+      30
+     ],
+     [
+      26,
+      34,
+      35,
+      27,
+      30
+     ],
+     [
+      27,
+      33,
+      27,
+      35,
+      29
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

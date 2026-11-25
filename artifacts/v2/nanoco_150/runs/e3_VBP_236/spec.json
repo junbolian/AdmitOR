@@ -1,0 +1,114 @@
+{
+ "spec": {
+  "cpu_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mem_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cpu_demand": {
+   "base": [
+    10,
+    35,
+    12,
+    29,
+    35,
+    11,
+    39,
+    32,
+    15,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mem_demand": {
+   "base": [
+    21,
+    11,
+    30,
+    40,
+    28,
+    28,
+    33,
+    30,
+    29,
+    18
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cpu_capacity": {
+    "meaning": "Per-server CPU capacity upper bound",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mem_capacity": {
+    "meaning": "Per-server Memory capacity upper bound",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cpu_demand": {
+    "meaning": "CPU demand per VM (VM1..VM10)",
+    "base": [
+     10,
+     35,
+     12,
+     29,
+     35,
+     11,
+     39,
+     32,
+     15,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mem_demand": {
+    "meaning": "Memory demand per VM (VM1..VM10)",
+    "base": [
+     21,
+     11,
+     30,
+     40,
+     28,
+     28,
+     33,
+     30,
+     29,
+     18
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,471 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "preference_matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "assignment_capacity_per_participant": 1,
+   "assignment_capacity_per_car": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "objective_weight_per_assignment": 1
+  },
+  {
+   "preference_matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "assignment_capacity_per_participant": 1,
+   "assignment_capacity_per_car": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "objective_weight_per_assignment": 1.4729424283280248
+  },
+  {
+   "preference_matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "assignment_capacity_per_participant": 1,
+   "assignment_capacity_per_car": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "objective_weight_per_assignment": 0.05959443887614069
+  },
+  {
+   "preference_matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "assignment_capacity_per_participant": 1,
+   "assignment_capacity_per_car": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "objective_weight_per_assignment": 1.2997688755590464
+  },
+  {
+   "preference_matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "assignment_capacity_per_participant": 1,
+   "assignment_capacity_per_car": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "objective_weight_per_assignment": 0.012997519356122034
+  },
+  {
+   "preference_matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "assignment_capacity_per_participant": 1,
+   "assignment_capacity_per_car": 1,
+   "num_participants": 6,
+   "num_cars": 6,
+   "objective_weight_per_assignment": 1.9144261444135624
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4.0,
+   5.891769713312099,
+   0.23837775550456275,
+   5.199075502236186,
+   0.051990077424488135,
+   7.65770457765425
+  ],
+  "A-direct-2": [
+   4.0,
+   5.891769713312099,
+   0.23837775550456275,
+   5.199075502236186,
+   0.051990077424488135,
+   7.65770457765425
+  ],
+  "B-structured": [
+   4.0,
+   5.891769713312099,
+   0.23837775550456275,
+   5.199075502236186,
+   0.051990077424488135,
+   7.65770457765425
+  ],
+  "B-structured-2": [
+   4.0,
+   5.891769713312099,
+   0.23837775550456275,
+   5.199075502236186,
+   0.051990077424488135,
+   7.65770457765425
+  ],
+  "C-direct": [
+   4.0,
+   5.891769713312099,
+   0.23837775550456275,
+   5.199075502236186,
+   0.051990077424488135,
+   7.65770457765425
+  ],
+  "C-direct-2": [
+   4.0,
+   5.891769713312099,
+   0.23837775550456275,
+   5.199075502236186,
+   0.051990077424488135,
+   7.65770457765425
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

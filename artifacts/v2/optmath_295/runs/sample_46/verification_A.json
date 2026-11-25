@@ -1,0 +1,37 @@
+{
+ "sample_id": "sample_46",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"demand\", \"evidence\": \"For example, OD pair 3-2 requires at least 18 passengers to be served\"}, {\"parameter\": \"min_frequency\", \"evidence\": \"The same frequency bounds apply to all other lines (L_1 to L_8)\"}, {\"parameter\": \"max_frequency\", \"evidence\": \"The same frequency bounds apply to all other lines (L_1 to L_8)\"}, {\"parameter\": \"total_vehicle_limit\", \"evidence\": \"The total usage across all lines must be ≤ 45\"}, {\"parameter\": \"vehicle_usage_per_frequency\", \"evidence\": \"For example, line L_0 uses 88 vehicle units per frequency\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "demand",
+   "evidence": "For example, OD pair 3-2 requires at least 18 passengers to be served"
+  },
+  {
+   "parameter": "min_frequency",
+   "evidence": "The same frequency bounds apply to all other lines (L_1 to L_8)"
+  },
+  {
+   "parameter": "max_frequency",
+   "evidence": "The same frequency bounds apply to all other lines (L_1 to L_8)"
+  },
+  {
+   "parameter": "total_vehicle_limit",
+   "evidence": "The total usage across all lines must be ≤ 45"
+  },
+  {
+   "parameter": "vehicle_usage_per_frequency",
+   "evidence": "For example, line L_0 uses 88 vehicle units per frequency"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

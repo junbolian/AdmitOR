@@ -1,0 +1,267 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "base_cost_type0": 75,
+   "base_cost_type1": 79,
+   "var_cost_type0": 4,
+   "var_cost_type1": 3,
+   "startup_cost_type0": 381,
+   "startup_cost_type1": 360,
+   "max_units_type0": 3,
+   "max_units_type1": 4,
+   "demand": [
+    165,
+    181,
+    203,
+    216
+   ],
+   "min_output_type0": 50,
+   "max_output_type0": 131,
+   "min_output_type1": 48,
+   "max_output_type1": 145,
+   "reserve_margin": 0.15,
+   "max_startup_type0_period0": 2,
+   "max_startup_type1_period0": 1
+  },
+  {
+   "base_cost_type0": 81.27420593060477,
+   "base_cost_type1": 56.48550979755441,
+   "var_cost_type0": 3.100117273476477,
+   "var_cost_type1": 2.169632214446468,
+   "startup_cost_type0": 453.076426077191,
+   "startup_cost_type1": 410.8894523777984,
+   "max_units_type0": 3,
+   "max_units_type1": 4,
+   "demand": [
+    158.5585501240348,
+    138.44664835914534,
+    174.44175444256575,
+    216.57837111516312
+   ],
+   "min_output_type0": 35.79607909051591,
+   "max_output_type0": 107.32863934397056,
+   "min_output_type1": 52.316671808050266,
+   "max_output_type1": 148.90990881247984,
+   "reserve_margin": 0.07715421771424384,
+   "max_startup_type0_period0": 2,
+   "max_startup_type1_period0": 1
+  },
+  {
+   "base_cost_type0": 52.79244418551274,
+   "base_cost_type1": 93.49583253687508,
+   "var_cost_type0": 4.792557579952907,
+   "var_cost_type1": 2.5207515495539754,
+   "startup_cost_type0": 275.990151542631,
+   "startup_cost_type1": 491.67736479555293,
+   "max_units_type0": 3,
+   "max_units_type1": 4,
+   "demand": [
+    131.72910108876079,
+    212.4482401544451,
+    213.52819218373946,
+    249.16985351363306
+   ],
+   "min_output_type0": 56.89195360081454,
+   "max_output_type0": 133.8475279883395,
+   "min_output_type1": 61.62573400260588,
+   "max_output_type1": 134.43249081712673,
+   "reserve_margin": 0.19321422094562943,
+   "max_startup_type0_period0": 2,
+   "max_startup_type1_period0": 1
+  },
+  {
+   "base_cost_type0": 91.27681051398497,
+   "base_cost_type1": 82.66649168517051,
+   "var_cost_type0": 4.818287344859694,
+   "var_cost_type1": 1.6374731509669866,
+   "startup_cost_type0": 298.0633944185915,
+   "startup_cost_type1": 299.34373351740686,
+   "max_units_type0": 3,
+   "max_units_type1": 4,
+   "demand": [
+    132.08261792630267,
+    160.90661108146332,
+    216.77197109283662,
+    201.4018753287691
+   ],
+   "min_output_type0": 46.10542901350648,
+   "max_output_type0": 108.16725261863893,
+   "min_output_type1": 41.28896127501446,
+   "max_output_type1": 182.988949130987,
+   "reserve_margin": 0.22681238483630772,
+   "max_startup_type0_period0": 2,
+   "max_startup_type1_period0": 1
+  },
+  {
+   "base_cost_type0": 85.31070590776571,
+   "base_cost_type1": 63.04527820431541,
+   "var_cost_type0": 3.517821767030591,
+   "var_cost_type1": 4.4685700519097855,
+   "startup_cost_type0": 423.67192680352747,
+   "startup_cost_type1": 376.4015262070981,
+   "max_units_type0": 3,
+   "max_units_type1": 4,
+   "demand": [
+    187.7699927025652,
+    156.47885051275145,
+    155.50817475625982,
+    196.06892919038083
+   ],
+   "min_output_type0": 43.03222627927108,
+   "max_output_type0": 108.28325150588526,
+   "min_output_type1": 60.755799772849564,
+   "max_output_type1": 177.7439835031222,
+   "reserve_margin": 0.11013725827946726,
+   "max_startup_type0_period0": 2,
+   "max_startup_type1_period0": 1
+  },
+  {
+   "base_cost_type0": 93.65464153832447,
+   "base_cost_type1": 77.04957781264271,
+   "var_cost_type0": 3.05952066599221,
+   "var_cost_type1": 2.2398825230819503,
+   "startup_cost_type0": 399.7050072929283,
+   "startup_cost_type1": 291.6695832546053,
+   "max_units_type0": 3,
+   "max_units_type1": 4,
+   "demand": [
+    156.70054167408279,
+    155.59852870373416,
+    253.50006705925372,
+    217.0288397170582
+   ],
+   "min_output_type0": 37.72728236521382,
+   "max_output_type0": 95.40334710838414,
+   "min_output_type1": 36.75789495409898,
+   "max_output_type1": 156.08780562816884,
+   "reserve_margin": 0.2772277775270374,
+   "max_startup_type0_period0": 2,
+   "max_startup_type1_period0": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2927.0,
+   1944.6459857745615,
+   2875.394874759302,
+   1743.1758837708996,
+   3191.4739650451784,
+   2446.888904920914
+  ],
+  "A-direct-2": [
+   2927.0,
+   1944.6459857745615,
+   3289.855530117491,
+   1825.8423754560702,
+   3315.7765096592084,
+   2600.9880605461994
+  ],
+  "B-structured": [
+   3881.0,
+   3070.6542921986793,
+   4462.37085779472,
+   2341.8633508057133,
+   4115.849962669834,
+   3572.5164288647225
+  ],
+  "B-structured-2": [
+   3881.0,
+   3070.6542921986793,
+   4462.37085779472,
+   2341.8633508057133,
+   4115.849962669834,
+   3572.5164288647225
+  ],
+  "C-direct": [
+   2927.0,
+   1944.6459857745617,
+   2875.394874759302,
+   1743.1758837708996,
+   3191.473965045178,
+   2446.888904920914
+  ],
+  "C-direct-2": [
+   2927.0,
+   1944.6459857745617,
+   2875.394874759302,
+   1743.1758837708996,
+   3191.473965045178,
+   2446.888904920914
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "diverges from consensus by 414.5 on instance 2 (params: {'base_cost_type0': 52.79, 'base_cost_type1': 93.5, 'var_cost_type0': 4.79, 'var_cost_type1': 2.52, 'startup_cost_type0': 275.99, 'startup_cost_type1': 491.68, 'max_units_type0': 3, 'max_units_type1': 4, 'demand': [131.73, 212.45, 213.53, 249.17], 'min_output_type0': 56.89, 'max_output_type0': 133.85, 'min_output_type1': 61.63, 'max_output_type1': 134.43, 'reserve_margin': 0.19, 'max_startup_type0_period0': 2, 'max_startup_type1_period0': 1})",
+  "B-structured": "diverges from consensus by 1587 on instance 2 (params: {'base_cost_type0': 52.79, 'base_cost_type1': 93.5, 'var_cost_type0': 4.79, 'var_cost_type1': 2.52, 'startup_cost_type0': 275.99, 'startup_cost_type1': 491.68, 'max_units_type0': 3, 'max_units_type1': 4, 'demand': [131.73, 212.45, 213.53, 249.17], 'min_output_type0': 56.89, 'max_output_type0': 133.85, 'min_output_type1': 61.63, 'max_output_type1': 134.43, 'reserve_margin': 0.19, 'max_startup_type0_period0': 2, 'max_startup_type1_period0': 1})",
+  "B-structured-2": "diverges from consensus by 1587 on instance 2 (params: {'base_cost_type0': 52.79, 'base_cost_type1': 93.5, 'var_cost_type0': 4.79, 'var_cost_type1': 2.52, 'startup_cost_type0': 275.99, 'startup_cost_type1': 491.68, 'max_units_type0': 3, 'max_units_type1': 4, 'demand': [131.73, 212.45, 213.53, 249.17], 'min_output_type0': 56.89, 'max_output_type0': 133.85, 'min_output_type1': 61.63, 'max_output_type1': 134.43, 'reserve_margin': 0.19, 'max_startup_type0_period0': 2, 'max_startup_type1_period0': 1})"
+ },
+ "disagreements": [],
+ "notes": []
+}

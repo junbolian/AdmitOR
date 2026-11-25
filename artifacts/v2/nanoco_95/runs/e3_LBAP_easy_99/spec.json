@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "duration_matrix": {
+   "base": [
+    [
+     27,
+     13,
+     20,
+     9,
+     39
+    ],
+    [
+     17,
+     7,
+     35,
+     26,
+     20
+    ],
+    [
+     17,
+     14,
+     21,
+     9,
+     35
+    ],
+    [
+     25,
+     25,
+     23,
+     9,
+     9
+    ],
+    [
+     20,
+     39,
+     37,
+     25,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "duration_matrix": {
+    "meaning": "Mitigation duration (minutes) for each analyst (rows 0-4) performing each incident (columns 0-4)",
+    "base": [
+     [
+      27,
+      13,
+      20,
+      9,
+      39
+     ],
+     [
+      17,
+      7,
+      35,
+      26,
+      20
+     ],
+     [
+      17,
+      14,
+      21,
+      9,
+      35
+     ],
+     [
+      25,
+      25,
+      23,
+      9,
+      9
+     ],
+     [
+      20,
+      39,
+      37,
+      25,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

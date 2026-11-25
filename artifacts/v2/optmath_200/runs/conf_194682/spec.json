@@ -1,0 +1,48 @@
+{
+ "spec": {
+  "package_weight": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 28.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "package_weight": {
+    "meaning": "Weight of each identical package (units)",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "truck_capacity": {
+    "meaning": "Maximum weight capacity per truck (units)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 28,
+     "hi": 140,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

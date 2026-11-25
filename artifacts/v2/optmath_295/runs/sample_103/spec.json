@@ -1,0 +1,143 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     0.6345,
+     0.3799,
+     0.6411,
+     0.5612,
+     0.6908
+    ],
+    [
+     0.3703,
+     0.5965,
+     0.4636,
+     0.4187,
+     0.696
+    ],
+    [
+     0.3983,
+     0.4061,
+     0.3755,
+     0.4623,
+     0.3749
+    ],
+    [
+     0.4167,
+     0.3458,
+     0.6115,
+     0.4942,
+     0.4896
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_assignments": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "num_peaks": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_amino_acids": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_peaks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_amino_acids] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Assignment cost for each peak-amino acid pair, indexed [peak][amino acid]",
+    "base": [
+     [
+      0.6345,
+      0.3799,
+      0.6411,
+      0.5612,
+      0.6908
+     ],
+     [
+      0.3703,
+      0.5965,
+      0.4636,
+      0.4187,
+      0.696
+     ],
+     [
+      0.3983,
+      0.4061,
+      0.3755,
+      0.4623,
+      0.3749
+     ],
+     [
+      0.4167,
+      0.3458,
+      0.6115,
+      0.4942,
+      0.4896
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_assignments": {
+    "meaning": "Exact number of peak-amino acid assignments required",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "num_peaks": {
+    "meaning": "Number of distinct peaks (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_amino_acids": {
+    "meaning": "Number of candidate amino acids (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

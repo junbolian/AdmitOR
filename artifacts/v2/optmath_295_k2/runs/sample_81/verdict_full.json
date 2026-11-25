@@ -1,0 +1,150 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "crate_weight": 28,
+   "truck_capacity": 100
+  },
+  {
+   "crate_weight": 64,
+   "truck_capacity": 34
+  },
+  {
+   "crate_weight": 28,
+   "truck_capacity": 84
+  },
+  {
+   "crate_weight": 74,
+   "truck_capacity": 199
+  },
+  {
+   "crate_weight": 89,
+   "truck_capacity": 50
+  },
+  {
+   "crate_weight": 43,
+   "truck_capacity": 36
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4.0,
+   null,
+   4.0,
+   5.0,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   4.0,
+   null,
+   4.0,
+   5.0,
+   null,
+   null
+  ],
+  "B-structured": [
+   4.0,
+   null,
+   4.0,
+   5.0,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   4.0,
+   null,
+   4.0,
+   5.0,
+   null,
+   null
+  ],
+  "C-direct": [
+   4.0,
+   null,
+   4.0,
+   5.0,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   4.0,
+   null,
+   4.0,
+   5.0,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_feasible_solution",
+   "optimal",
+   "optimal",
+   "no_feasible_solution",
+   "no_feasible_solution"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "solve_failed",
+   "optimal",
+   "optimal",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

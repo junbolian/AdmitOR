@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_130",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement explicitly gives only a few example cost values and says \"similar cost structures apply,\" so the full cost matrix cannot be verified from the statement. The capacity, demand, and min_delivery values all check out against the statement.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"Producer 1 has costs ranging from 30 to 32 units depending on the contract. Similar cost structures apply to Producers 2 and 3.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "Producer 1 has costs ranging from 30 to 32 units depending on the contract. Similar cost structures apply to Producers 2 and 3."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

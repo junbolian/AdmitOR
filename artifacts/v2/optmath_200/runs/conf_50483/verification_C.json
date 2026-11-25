@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_50483",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll check each parameter against the statement.\n\n**participant_preferences**: The statement says participant 2 is interested in car_0, car_1, and car_3. That maps to [1,1,0,1]. The extracted value for participant 2 is [1,1,0,1]. ✓ All rows check out.\n\n**max_assignments_per_participant**: The statement says \"at most one car\" per participant. All five entries are 1. This follows directly from the stated constraint — but the individual values per participant are not listed separately; they are uniform by rule. This is a constant derived directly from the statement, so no issue.\n\n**max_participants_per_car**: The statement says \"each car can be assigned to at most one participant,\" implying capacity 1 per car. The extracted value has 4 entries (one per car), all 1. ✓ But wait — there are 4 cars, and the vector has 4 entries. That's consistent. No issue.\n\n**objective_coefficients**: The statement says \"the sum of all assignment variables,\" implying each coefficient is 1. The 5×4 matrix of all ones is consistent with that. Not explicitly listed in the statement, but it follows directly from the objective definition.\n\nNo mismatches or not_stated issues arise from values that were contradicted or silently fabricated. All entries are either confirmed by the statement or follow directly from it.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

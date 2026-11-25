@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_74",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"assignment_value\", \"evidence\": \"no value in the statement\"},\n    {\"parameter\": \"preference_matrix\", \"evidence\": \"For example, Participant 1 is only interested in Car 0, and Participant 4 is only interested in Car 4.\"}\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "assignment_value",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "preference_matrix",
+   "evidence": "For example, Participant 1 is only interested in Car 0, and Participant 4 is only interested in Car 4."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

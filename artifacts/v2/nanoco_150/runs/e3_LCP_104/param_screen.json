@@ -1,0 +1,42 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "num_tasks",
+  "num_nodes",
+  "num_conflict_pairs",
+  "conflict_pairs",
+  "allowable_nodes"
+ ],
+ "safe": [
+  "num_tasks",
+  "num_nodes",
+  "num_conflict_pairs"
+ ],
+ "tests": {
+  "num_tasks": [
+   3,
+   3
+  ],
+  "num_nodes": [
+   3,
+   3
+  ],
+  "num_conflict_pairs": [
+   3,
+   3
+  ],
+  "conflict_pairs": [
+   1,
+   1
+  ],
+  "allowable_nodes": [
+   0,
+   0
+  ]
+ },
+ "untested": []
+}

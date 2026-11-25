@@ -1,0 +1,29 @@
+{
+ "sample_id": "sample_74",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"assignment_value\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"participant_capacity\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"car_capacity\", \"evidence\": \"no value in the statement\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "assignment_value",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "participant_capacity",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "car_capacity",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

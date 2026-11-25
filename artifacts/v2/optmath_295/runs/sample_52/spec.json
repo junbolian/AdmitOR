@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    95800,
+    101873,
+    99294,
+    99542
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    217,
+    197,
+    194,
+    216,
+    200,
+    192,
+    181,
+    209,
+    192,
+    220
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    950,
+    1009,
+    1040,
+    1020
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each facility (Facility 0..3)",
+    "base": [
+     95800,
+     101873,
+     99294,
+     99542
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each customer (Customer 0..9)",
+    "base": [
+     217,
+     197,
+     194,
+     216,
+     200,
+     192,
+     181,
+     209,
+     192,
+     220
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Capacity of each facility (Facility 0..3)",
+    "base": [
+     950,
+     1009,
+     1040,
+     1020
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

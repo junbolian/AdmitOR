@@ -1,0 +1,269 @@
+{
+ "spec": {
+  "preference": {
+   "base": [
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "n_participants": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "n_cars": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "objective_coeff": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[participant_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[car_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_cars] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "preference": {
+    "meaning": "Binary coefficients indicating whether each participant (6) is interested in each car (7); 1 = allowed/unlocks a unit of objective, 0 = disallowed. Row index = participant, column index = car.",
+    "base": [
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_capacity": {
+    "meaning": "Maximum number of cars assignable to each participant (per-participant assignment capacity).",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "Maximum number of participants assignable to each car (per-car assignment capacity).",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "n_participants": {
+    "meaning": "Number of participants (index-set size). Structural; frozen.",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "n_cars": {
+    "meaning": "Number of cars (index-set size). Structural; frozen.",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "objective_coeff": {
+    "meaning": "Unit reward per successful assignment (coefficient of each assignment variable in the objective).",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

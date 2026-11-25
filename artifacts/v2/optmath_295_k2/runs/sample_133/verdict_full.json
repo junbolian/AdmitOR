@@ -1,0 +1,213 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "num_facilities_to_select": 2,
+   "distance_01": 10,
+   "distance_02": 20,
+   "distance_03": 30,
+   "distance_04": 40,
+   "distance_12": 15,
+   "distance_13": 25,
+   "distance_14": 35,
+   "distance_23": 12,
+   "distance_24": 22,
+   "distance_34": 18,
+   "large_constant_M": 1000000
+  },
+  {
+   "num_facilities_to_select": 2,
+   "distance_01": 5.25010755222667,
+   "distance_02": 15.500586367382386,
+   "distance_03": 21.696322144464684,
+   "distance_04": 49.4588485665605,
+   "distance_12": 17.65049231134367,
+   "distance_13": 34.80448919262113,
+   "distance_14": 20.542859142029567,
+   "distance_23": 11.063061836223245,
+   "distance_24": 11.655538827637548,
+   "distance_34": 12.93548354646486,
+   "large_constant_M": 1001071.0576206725
+  },
+  {
+   "num_facilities_to_select": 2,
+   "distance_01": 6.988376506866485,
+   "distance_02": 22.997688755590463,
+   "distance_03": 31.3482444180965,
+   "distance_04": 28.817624881627868,
+   "distance_12": 16.33898525813863,
+   "distance_13": 32.735761416945664,
+   "distance_14": 17.727456588732135,
+   "distance_23": 15.669831021993696,
+   "distance_24": 26.35906668974099,
+   "distance_34": 15.124509297323854,
+   "large_constant_M": 931095.8999623563
+  },
+  {
+   "num_facilities_to_select": 2,
+   "distance_01": 8.365945451126267,
+   "distance_02": 11.854916867602958,
+   "distance_03": 17.90149130500392,
+   "distance_04": 53.89977465389839,
+   "distance_12": 16.555890470503368,
+   "distance_13": 32.678206831859505,
+   "distance_14": 43.040612534283625,
+   "distance_23": 12.434737097456408,
+   "distance_24": 32.40854680754615,
+   "distance_34": 15.813618789750363,
+   "large_constant_M": 1010408.1262546454
+  },
+  {
+   "num_facilities_to_select": 2,
+   "distance_01": 11.185197523642461,
+   "distance_02": 27.234138006215545,
+   "distance_03": 32.320564357702864,
+   "distance_04": 48.18287344859694,
+   "distance_12": 8.187365754834934,
+   "distance_13": 18.19745689128867,
+   "distance_14": 27.62857872607375,
+   "distance_23": 6.95750372308353,
+   "distance_24": 16.121399499942665,
+   "distance_34": 10.818025729375124,
+   "large_constant_M": 955594.7206220184
+  },
+  {
+   "num_facilities_to_select": 2,
+   "distance_01": 8.648321789700843,
+   "distance_02": 17.403619342337652,
+   "distance_03": 21.285210923144632,
+   "distance_04": 30.679112881964535,
+   "distance_12": 21.549818815687413,
+   "distance_13": 28.700884631164836,
+   "distance_14": 38.81958519834459,
+   "distance_23": 8.053663778377164,
+   "distance_24": 27.040789554907683,
+   "distance_34": 11.941244887714712,
+   "large_constant_M": 975891.0883515296
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   40.0,
+   49.45884856651537,
+   32.735761416959576,
+   53.8997746539535,
+   48.18287344858982,
+   38.819585198303685
+  ],
+  "A-direct-2": [
+   40.0,
+   49.45884856651537,
+   32.735761416959576,
+   53.8997746539535,
+   48.18287344858982,
+   38.819585198303685
+  ],
+  "B-structured": [
+   40.0,
+   49.45884856651537,
+   32.735761416959576,
+   53.8997746539535,
+   48.18287344858982,
+   38.819585198303685
+  ],
+  "B-structured-2": [
+   40.0,
+   49.45884856651537,
+   32.735761416959576,
+   53.8997746539535,
+   48.18287344858982,
+   38.819585198303685
+  ],
+  "C-direct": [
+   40.0,
+   49.45884856651537,
+   32.735761416959576,
+   53.8997746539535,
+   48.18287344858982,
+   38.819585198303685
+  ],
+  "C-direct-2": [
+   40.0,
+   49.45884856651537,
+   32.735761416959576,
+   53.8997746539535,
+   48.18287344858982,
+   38.819585198303685
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

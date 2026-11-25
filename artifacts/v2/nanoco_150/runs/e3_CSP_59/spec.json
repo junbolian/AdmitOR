@@ -1,0 +1,135 @@
+{
+ "spec": {
+  "bar_length": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "order_28": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "order_38": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "order_21": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "piece_length_28": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "piece_length_38": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "piece_length_21": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [
+  "[order_28] degenerate abs range (lo == hi); perturbation has no effect",
+  "[order_38] degenerate abs range (lo == hi); perturbation has no effect",
+  "[order_21] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "bar_length": {
+    "meaning": "length of one standard aluminum extrusion bar",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "order_28": {
+    "meaning": "required number of 28-unit segments (demand coefficient, not an index-set size)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "order_38": {
+    "meaning": "required number of 38-unit segments (demand coefficient, not an index-set size)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "order_21": {
+    "meaning": "required number of 21-unit segments (demand coefficient, not an index-set size)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "piece_length_28": {
+    "meaning": "length of a 28-unit profile segment",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "piece_length_38": {
+    "meaning": "length of a 38-unit profile segment",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "piece_length_21": {
+    "meaning": "length of a 21-unit profile segment",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

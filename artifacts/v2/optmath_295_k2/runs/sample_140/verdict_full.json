@@ -1,0 +1,202 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assignment_value": 1,
+   "preference_p0_c5": 1,
+   "preference_p1_c2": 1,
+   "preference_p1_c3": 1,
+   "preference_p2_c4": 1,
+   "preference_p3_any": 0,
+   "preference_p4_any": 0,
+   "preference_p5_any": 0,
+   "num_participants": 6,
+   "num_cars": 6
+  },
+  {
+   "assignment_value": 1.1394267984578836,
+   "preference_p0_c5": 0,
+   "preference_p1_c2": 0,
+   "preference_p1_c3": 0,
+   "preference_p2_c4": 1,
+   "preference_p3_any": 1,
+   "preference_p4_any": 1,
+   "preference_p5_any": 0,
+   "num_participants": 6,
+   "num_cars": 6
+  },
+  {
+   "assignment_value": 0.7186379748036034,
+   "preference_p0_c5": 1,
+   "preference_p1_c2": 0,
+   "preference_p1_c3": 0,
+   "preference_p2_c4": 1,
+   "preference_p3_any": 1,
+   "preference_p4_any": 0,
+   "preference_p5_any": 1,
+   "num_participants": 6,
+   "num_cars": 6
+  },
+  {
+   "assignment_value": 1.305819251832808,
+   "preference_p0_c5": 1,
+   "preference_p1_c2": 0,
+   "preference_p1_c3": 0,
+   "preference_p2_c4": 1,
+   "preference_p3_any": 0,
+   "preference_p4_any": 0,
+   "preference_p5_any": 0,
+   "num_participants": 6,
+   "num_cars": 6
+  },
+  {
+   "assignment_value": 1.30712827327438,
+   "preference_p0_c5": 1,
+   "preference_p1_c2": 1,
+   "preference_p1_c3": 1,
+   "preference_p2_c4": 0,
+   "preference_p3_any": 1,
+   "preference_p4_any": 1,
+   "preference_p5_any": 1,
+   "num_participants": 6,
+   "num_cars": 6
+  },
+  {
+   "assignment_value": 1.2045718362149236,
+   "preference_p0_c5": 0,
+   "preference_p1_c2": 0,
+   "preference_p1_c3": 0,
+   "preference_p2_c4": 0,
+   "preference_p3_any": 0,
+   "preference_p4_any": 0,
+   "preference_p5_any": 0,
+   "num_participants": 6,
+   "num_cars": 6
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   3.418280395373651,
+   2.8745518992144135,
+   2.611638503665616,
+   6.5356413663719,
+   0.0
+  ],
+  "A-direct-2": [
+   3.0,
+   3.418280395373651,
+   2.8745518992144135,
+   2.611638503665616,
+   6.5356413663719,
+   null
+  ],
+  "B-structured": [
+   3.0,
+   3.418280395373651,
+   2.8745518992144135,
+   2.611638503665616,
+   6.5356413663719,
+   0.0
+  ],
+  "B-structured-2": [
+   3.0,
+   3.418280395373651,
+   2.8745518992144135,
+   2.611638503665616,
+   6.5356413663719,
+   0.0
+  ],
+  "C-direct": [
+   3.0,
+   3.418280395373651,
+   2.8745518992144135,
+   2.611638503665616,
+   6.5356413663719,
+   -0.0
+  ],
+  "C-direct-2": [
+   3.0,
+   3.418280395373651,
+   2.8745518992144135,
+   2.611638503665616,
+   6.5356413663719,
+   -0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct-2": "failed on informative instance(s) [5]: ['infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_147375",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"product_capacity_generic_low\", \"evidence\": \"\\\"Similar constraints exist for all other city pairs and products, with varying limits.\\\" — no specific lower bound value given for other arcs\"}, {\"parameter\": \"product_capacity_generic_high\", \"evidence\": \"\\\"varying limits\\\" and \\\"ranging from 70 units to 75 units\\\" — the range is stated but individual arc values are not, so the high bound 75 is only implied by a summary range, not assigned to any specific arc\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "product_capacity_generic_low",
+   "evidence": "\"Similar constraints exist for all other city pairs and products, with varying limits.\" — no specific lower bound value given for other arcs"
+  },
+  {
+   "parameter": "product_capacity_generic_high",
+   "evidence": "\"varying limits\" and \"ranging from 70 units to 75 units\" — the range is stated but individual arc values are not, so the high bound 75 is only implied by a summary range, not assigned to any specific arc"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

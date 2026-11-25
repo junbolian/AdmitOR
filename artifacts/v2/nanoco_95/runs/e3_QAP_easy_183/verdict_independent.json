@@ -1,0 +1,257 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "flow": [
+    12,
+    12,
+    2,
+    12,
+    3,
+    6
+   ],
+   "distance": [
+    43,
+    64,
+    21,
+    53,
+    23,
+    50
+   ],
+   "x_coords": [
+    91,
+    88,
+    36,
+    85
+   ],
+   "y_coords": [
+    71,
+    28,
+    39,
+    51
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  },
+  {
+   "flow": [
+    13.673121581494604,
+    6.300129062672003,
+    1.5500586367382385,
+    8.678528857785873,
+    3.709413642492037,
+    7.060196924537468
+   ],
+   "distance": [
+    54.80460498791585,
+    45.49485970179784,
+    19.852250749373475,
+    35.55547684115241,
+    18.470071394338014,
+    50.18743508361769
+   ],
+   "x_coords": [
+    65.14886394473895,
+    72.09862795625503,
+    39.2375038560377,
+    87.29201551076405
+   ],
+   "y_coords": [
+    59.09077049893367,
+    29.499663489115267,
+    46.24067268626115,
+    35.898862046148665
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  },
+  {
+   "flow": [
+    10.083006198215902,
+    7.865753997741379,
+    2.9144261444135626,
+    10.03913454135152,
+    1.7782375301404438,
+    3.580298261000784
+   ],
+   "distance": [
+    53.45958042705854,
+    68.64692620523672,
+    25.51478561713339,
+    61.52304928634065,
+    23.583272272420682,
+    66.55905173927798
+   ],
+   "x_coords": [
+    84.3679769955761,
+    90.74774533122638,
+    43.11514074786469,
+    91.04450737057654
+   ],
+   "y_coords": [
+    86.40871395323911,
+    29.299516040313602,
+    43.7869809674292,
+    37.10222613986326
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  },
+  {
+   "flow": [
+    6.95750372308353,
+    8.793490636332361,
+    1.2020028588194582,
+    9.335683237321106,
+    3.407053332793201,
+    5.188993073820505
+   ],
+   "distance": [
+    39.09244711021817,
+    50.98591497856265,
+    17.57457398412197,
+    69.19988520413352,
+    25.38336970247016,
+    53.81958519834459
+   ],
+   "x_coords": [
+    73.04417019161609,
+    100.09789493177843,
+    28.729493865257652,
+    78.85222752964003
+   ],
+   "y_coords": [
+    91.85369473711896,
+    30.35199596554876,
+    40.33262400432672,
+    56.64919608029017
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  },
+  {
+   "flow": [
+    8.748576863569252,
+    6.385202926848454,
+    1.6309060961181638,
+    9.212890511708434,
+    2.1329485307589793,
+    8.657458286010327
+   ],
+   "distance": [
+    54.32866555682734,
+    55.697569059771816,
+    23.284948379834734,
+    49.127943529350645,
+    29.674216194822748,
+    48.55981484055896
+   ],
+   "x_coords": [
+    78.16245709079367,
+    74.62193240624232,
+    37.325551697924055,
+    72.8998220346697
+   ],
+   "y_coords": [
+    74.60336318352283,
+    34.68342444452161,
+    36.6459718202853,
+    42.41121523021287
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  },
+  {
+   "flow": [
+    7.090912946085527,
+    6.565396505096815,
+    1.2192982607013183,
+    13.529352500437081,
+    3.876238093088892,
+    5.532959800798104
+   ],
+   "distance": [
+    29.86218395517391,
+    58.69654403549285,
+    28.292984289529425,
+    54.080142203177985,
+    30.58436187957925,
+    62.62728957820743
+   ],
+   "x_coords": [
+    64.32686379807795,
+    99.65411206221827,
+    39.92494397097401,
+    86.88548685084855
+   ],
+   "y_coords": [
+    61.06675309197832,
+    30.368158216140774,
+    29.910320862143507,
+    49.00381667047461
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range"
+  ],
+  "C-direct": [
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

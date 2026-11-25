@@ -1,0 +1,102 @@
+{
+ "spec": {
+  "route_revenue": {
+   "base": [
+    17,
+    6,
+    20,
+    8,
+    10,
+    9,
+    5,
+    20,
+    13,
+    8,
+    9,
+    11,
+    14,
+    12,
+    4,
+    11,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "airport_capacity": {
+   "base": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "route_revenue": {
+    "meaning": "Revenue potential of each of the 17 listed routes, in the stated edge order",
+    "base": [
+     17,
+     6,
+     20,
+     8,
+     10,
+     9,
+     5,
+     20,
+     13,
+     8,
+     9,
+     11,
+     14,
+     12,
+     4,
+     11,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "airport_capacity": {
+    "meaning": "Maximum flight movements per hour (slot capacity) at each airport, indexed 0 through 9",
+    "base": [
+     2,
+     2,
+     2,
+     2,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

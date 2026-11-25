@@ -1,0 +1,168 @@
+{
+ "spec": {
+  "supplies": {
+   "base": [
+    13,
+    11,
+    0,
+    0,
+    -10,
+    -14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    12,
+    12,
+    12,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    2,
+    8,
+    4,
+    6,
+    9,
+    8,
+    5,
+    5,
+    12,
+    10,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[supplies] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[arc_capacities] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "supplies": {
+    "meaning": "Net supply at each node (positive = donor surplus, negative = food bank demand)",
+    "base": [
+     13,
+     11,
+     0,
+     0,
+     -10,
+     -14
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      -13,
+      -11,
+      0,
+      0,
+      -30,
+      -34
+     ],
+     "hi": [
+      39,
+      33,
+      0,
+      0,
+      0,
+      0
+     ],
+     "integer": true
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Vehicle load limit on each of the 12 arcs, in route order",
+    "base": [
+     24,
+     24,
+     24,
+     24,
+     24,
+     24,
+     24,
+     24,
+     12,
+     12,
+     12,
+     12
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      3,
+      3,
+      3,
+      3
+     ],
+     "hi": [
+      72,
+      72,
+      72,
+      72,
+      72,
+      72,
+      72,
+      72,
+      36,
+      36,
+      36,
+      36
+     ],
+     "integer": true
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Logistics and spoilage mitigation unit cost on each of the 12 arcs, in route order",
+    "base": [
+     2,
+     8,
+     4,
+     6,
+     9,
+     8,
+     5,
+     5,
+     12,
+     10,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

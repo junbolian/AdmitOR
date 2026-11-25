@@ -1,0 +1,390 @@
+{
+ "spec": {
+  "supply_node0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "demand_node9": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "cost_0_2": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.5,
+    "hi": 50.0,
+    "integer": false
+   }
+  },
+  "cost_0_3": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 44.0,
+    "integer": false
+   }
+  },
+  "cost_0_4": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 44.0,
+    "integer": false
+   }
+  },
+  "cost_0_5": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "cost_0_6": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "cost_0_7": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 32.0,
+    "integer": false
+   }
+  },
+  "cost_0_8": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "cost_0_9": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "cost_1_0": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.5,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "cost_1_2": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.5,
+    "hi": 38.0,
+    "integer": false
+   }
+  },
+  "cost_1_3": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 32.0,
+    "integer": false
+   }
+  },
+  "cost_1_4": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 48.0,
+    "integer": false
+   }
+  },
+  "cost_1_5": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 36.0,
+    "integer": false
+   }
+  },
+  "cost_1_6": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.5,
+    "hi": 46.0,
+    "integer": false
+   }
+  },
+  "cost_1_7": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "cost_1_8": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 48.0,
+    "integer": false
+   }
+  },
+  "cost_1_9": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.5,
+    "hi": 46.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_node0": {
+    "meaning": "Supply that node_0 must send out",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "demand_node9": {
+    "meaning": "Demand that node_9 must receive",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "Transportation cost from node_0 to node_1",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Transportation cost from node_0 to node_2",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12.5,
+     "hi": 50,
+     "integer": false
+    }
+   },
+   "cost_0_3": {
+    "meaning": "Transportation cost from node_0 to node_3",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 44,
+     "integer": false
+    }
+   },
+   "cost_0_4": {
+    "meaning": "Transportation cost from node_0 to node_4",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 44,
+     "integer": false
+    }
+   },
+   "cost_0_5": {
+    "meaning": "Transportation cost from node_0 to node_5",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "cost_0_6": {
+    "meaning": "Transportation cost from node_0 to node_6",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "cost_0_7": {
+    "meaning": "Transportation cost from node_0 to node_7",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 32,
+     "integer": false
+    }
+   },
+   "cost_0_8": {
+    "meaning": "Transportation cost from node_0 to node_8",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "cost_0_9": {
+    "meaning": "Transportation cost from node_0 to node_9",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "cost_1_0": {
+    "meaning": "Transportation cost from node_1 to node_0",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7.5,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Transportation cost from node_1 to node_2",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9.5,
+     "hi": 38,
+     "integer": false
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Transportation cost from node_1 to node_3",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 32,
+     "integer": false
+    }
+   },
+   "cost_1_4": {
+    "meaning": "Transportation cost from node_1 to node_4",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 48,
+     "integer": false
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Transportation cost from node_1 to node_5",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 36,
+     "integer": false
+    }
+   },
+   "cost_1_6": {
+    "meaning": "Transportation cost from node_1 to node_6",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11.5,
+     "hi": 46,
+     "integer": false
+    }
+   },
+   "cost_1_7": {
+    "meaning": "Transportation cost from node_1 to node_7",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "cost_1_8": {
+    "meaning": "Transportation cost from node_1 to node_8",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 48,
+     "integer": false
+    }
+   },
+   "cost_1_9": {
+    "meaning": "Transportation cost from node_1 to node_9",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11.5,
+     "hi": 46,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

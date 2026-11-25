@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    101180,
+    96454,
+    104732,
+    103154
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    203,
+    188,
+    215,
+    215,
+    209,
+    210,
+    181,
+    191
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "ship_cost": {
+   "base": [
+    [
+     31,
+     32,
+     30,
+     30,
+     30,
+     27,
+     29,
+     35
+    ],
+    [
+     33,
+     31,
+     34,
+     26,
+     34,
+     32,
+     35,
+     33
+    ],
+    [
+     26,
+     33,
+     28,
+     29,
+     31,
+     31,
+     31,
+     29
+    ],
+    [
+     34,
+     35,
+     32,
+     25,
+     27,
+     29,
+     32,
+     29
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    1047,
+    1050,
+    997,
+    951
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each facility (Facility 0..3)",
+    "base": [
+     101180,
+     96454,
+     104732,
+     103154
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "Units demanded by each customer (Customer 0..7)",
+    "base": [
+     203,
+     188,
+     215,
+     215,
+     209,
+     210,
+     181,
+     191
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "ship_cost": {
+    "meaning": "Per-unit shipping cost matrix, rows = facilities 0..3, columns = customers 0..7",
+    "base": [
+     [
+      31,
+      32,
+      30,
+      30,
+      30,
+      27,
+      29,
+      35
+     ],
+     [
+      33,
+      31,
+      34,
+      26,
+      34,
+      32,
+      35,
+      33
+     ],
+     [
+      26,
+      33,
+      28,
+      29,
+      31,
+      31,
+      31,
+      29
+     ],
+     [
+      34,
+      35,
+      32,
+      25,
+      27,
+      29,
+      32,
+      29
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total units shippable from each facility (Facility 0..3)",
+    "base": [
+     1047,
+     1050,
+     997,
+     951
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

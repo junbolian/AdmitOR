@@ -1,0 +1,246 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    1064,
+    1506,
+    1828,
+    1320,
+    1236,
+    1013,
+    1467,
+    1472,
+    1282
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "operational_cost": {
+   "base": [
+    166,
+    196,
+    148,
+    196,
+    152,
+    130,
+    173,
+    179,
+    156
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "penalty_cost": {
+   "base": [
+    632,
+    580,
+    517,
+    646,
+    646,
+    643,
+    533,
+    655,
+    519,
+    582
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    18,
+    17,
+    12,
+    17,
+    16,
+    13,
+    17,
+    20,
+    11,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_frequency": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_frequency": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "vehicle_capacity": {
+   "base": 45,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "vehicle_usage": {
+   "base": [
+    88,
+    47,
+    85,
+    41,
+    65,
+    42,
+    41,
+    41,
+    85
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost for establishing each transit line L_0..L_8",
+    "base": [
+     1064,
+     1506,
+     1828,
+     1320,
+     1236,
+     1013,
+     1467,
+     1472,
+     1282
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "operational_cost": {
+    "meaning": "Operational cost per frequency unit for each line L_0..L_8",
+    "base": [
+     166,
+     196,
+     148,
+     196,
+     152,
+     130,
+     173,
+     179,
+     156
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "penalty_cost": {
+    "meaning": "Penalty cost per unit of unmet demand for each OD pair (OD_3_2, OD_2_0, OD_0_1, OD_1_3, OD_3_4, OD_1_0, OD_1_4, OD_2_3, OD_4_3, OD_4_0)",
+    "base": [
+     632,
+     580,
+     517,
+     646,
+     646,
+     643,
+     533,
+     655,
+     519,
+     582
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Minimum passenger demand for each OD pair (OD_3_2, OD_2_0, OD_0_1, OD_1_3, OD_3_4, OD_1_0, OD_1_4, OD_2_3, OD_4_3, OD_4_0)",
+    "base": [
+     18,
+     17,
+     12,
+     17,
+     16,
+     13,
+     17,
+     20,
+     11,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_frequency": {
+    "meaning": "Minimum frequency per selected line (same for L_0..L_8)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_frequency": {
+    "meaning": "Maximum frequency per selected line (same for L_0..L_8)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "vehicle_capacity": {
+    "meaning": "Total number of vehicles available across all lines",
+    "base": 45,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "vehicle_usage": {
+    "meaning": "Vehicle units consumed per frequency unit for each line L_0..L_8",
+    "base": [
+     88,
+     47,
+     85,
+     41,
+     65,
+     42,
+     41,
+     41,
+     85
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

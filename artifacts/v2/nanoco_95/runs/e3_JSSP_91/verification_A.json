@@ -1,0 +1,55 @@
+{
+ "sample_id": "e3_JSSP_91",
+ "set": "heldout",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"processing_times\", \"extracted\": [[13, 33, 15], [50, 46, 20], [39, 26, 19]], \"stated\": [[33, 13, 15], [46, 50, 20], [26, 39, 19]], \"evidence\": \"L0 must first be processed on Tool 1 for 33 minutes, subsequently transferred to Tool 0 for 13 minutes, and finally completed on Tool 2, requiring 15 minutes\"}] , \"not_stated\": []}",
+ "mismatch": [
+  {
+   "parameter": "processing_times",
+   "extracted": [
+    [
+     13,
+     33,
+     15
+    ],
+    [
+     50,
+     46,
+     20
+    ],
+    [
+     39,
+     26,
+     19
+    ]
+   ],
+   "stated": [
+    [
+     33,
+     13,
+     15
+    ],
+    [
+     46,
+     50,
+     20
+    ],
+    [
+     26,
+     39,
+     19
+    ]
+   ],
+   "evidence": "L0 must first be processed on Tool 1 for 33 minutes, subsequently transferred to Tool 0 for 13 minutes, and finally completed on Tool 2, requiring 15 minutes"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

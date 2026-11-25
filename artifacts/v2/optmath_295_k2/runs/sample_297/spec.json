@@ -1,0 +1,278 @@
+{
+ "spec": {
+  "num_facilities": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "big_M": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100000.0,
+    "hi": 2000000.0,
+    "integer": true
+   }
+  },
+  "distance_0_1": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "distance_0_2": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "distance_0_3": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "distance_1_0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "distance_1_2": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "distance_1_3": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "distance_2_0": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "distance_2_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "distance_2_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "distance_3_0": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "distance_3_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "distance_3_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_facilities": {
+    "meaning": "Exact number of facilities that must be selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "big_M": {
+    "meaning": "Large constant added to distance for unselected pairs in distance constraints",
+    "base": 1000000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100000,
+     "hi": 2000000,
+     "integer": true
+    }
+   },
+   "distance_0_1": {
+    "meaning": "Distance from Node 0 to Node 1",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "distance_0_2": {
+    "meaning": "Distance from Node 0 to Node 2",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "distance_0_3": {
+    "meaning": "Distance from Node 0 to Node 3",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "distance_1_0": {
+    "meaning": "Distance from Node 1 to Node 0",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "distance_1_2": {
+    "meaning": "Distance from Node 1 to Node 2",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "distance_1_3": {
+    "meaning": "Distance from Node 1 to Node 3",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "distance_2_0": {
+    "meaning": "Distance from Node 2 to Node 0",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "distance_2_1": {
+    "meaning": "Distance from Node 2 to Node 1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "distance_2_3": {
+    "meaning": "Distance from Node 2 to Node 3",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "distance_3_0": {
+    "meaning": "Distance from Node 3 to Node 0",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "distance_3_1": {
+    "meaning": "Distance from Node 3 to Node 1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "distance_3_2": {
+    "meaning": "Distance from Node 3 to Node 2",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

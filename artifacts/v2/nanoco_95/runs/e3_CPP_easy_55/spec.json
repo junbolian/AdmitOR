@@ -1,0 +1,526 @@
+{
+ "spec": {
+  "edge_cost_0_1": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_0_2": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_1_3": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_2_6": {
+   "base": 51,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_3_4": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_3_5": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_3_6": {
+   "base": 51,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "edge_cost_5_6": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_0_1": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_0_2": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_0_3": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_0_4": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_0_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_0_6": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_1_2": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_1_3": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_1_4": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_1_5": {
+   "base": 52,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_1_6": {
+   "base": 64,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_2_3": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_2_4": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_2_5": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_2_6": {
+   "base": 51,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_3_4": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_3_5": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_3_6": {
+   "base": 51,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_4_5": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_4_6": {
+   "base": 42,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "deadhead_cost_5_6": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_graph_edges": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_required_edges": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "garage_node": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_graph_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[garage_node] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "edge_cost_0_1": {
+    "meaning": "service/sweeping cost of required edge (0,1)",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_0_2": {
+    "meaning": "service/sweeping cost of required edge (0,2)",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_1_3": {
+    "meaning": "service/sweeping cost of required edge (1,3)",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_2_6": {
+    "meaning": "service/sweeping cost of required edge (2,6)",
+    "base": 51,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_3_4": {
+    "meaning": "service/sweeping cost of required edge (3,4)",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_3_5": {
+    "meaning": "service/sweeping cost of required edge (3,5)",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_3_6": {
+    "meaning": "service/sweeping cost of required edge (3,6)",
+    "base": 51,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "edge_cost_5_6": {
+    "meaning": "service/sweeping cost of required edge (5,6)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_0_1": {
+    "meaning": "deadhead travel cost between nodes 0 and 1",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_0_2": {
+    "meaning": "deadhead travel cost between nodes 0 and 2",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_0_3": {
+    "meaning": "deadhead travel cost between nodes 0 and 3",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_0_4": {
+    "meaning": "deadhead travel cost between nodes 0 and 4",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_0_5": {
+    "meaning": "deadhead travel cost between nodes 0 and 5",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_0_6": {
+    "meaning": "deadhead travel cost between nodes 0 and 6",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_1_2": {
+    "meaning": "deadhead travel cost between nodes 1 and 2",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_1_3": {
+    "meaning": "deadhead travel cost between nodes 1 and 3",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_1_4": {
+    "meaning": "deadhead travel cost between nodes 1 and 4",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_1_5": {
+    "meaning": "deadhead travel cost between nodes 1 and 5",
+    "base": 52,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_1_6": {
+    "meaning": "deadhead travel cost between nodes 1 and 6",
+    "base": 64,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_2_3": {
+    "meaning": "deadhead travel cost between nodes 2 and 3",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_2_4": {
+    "meaning": "deadhead travel cost between nodes 2 and 4",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_2_5": {
+    "meaning": "deadhead travel cost between nodes 2 and 5",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_2_6": {
+    "meaning": "deadhead travel cost between nodes 2 and 6",
+    "base": 51,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_3_4": {
+    "meaning": "deadhead travel cost between nodes 3 and 4",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_3_5": {
+    "meaning": "deadhead travel cost between nodes 3 and 5",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_3_6": {
+    "meaning": "deadhead travel cost between nodes 3 and 6",
+    "base": 51,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_4_5": {
+    "meaning": "deadhead travel cost between nodes 4 and 5",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_4_6": {
+    "meaning": "deadhead travel cost between nodes 4 and 6",
+    "base": 42,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "deadhead_cost_5_6": {
+    "meaning": "deadhead travel cost between nodes 5 and 6",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_nodes": {
+    "meaning": "number of network nodes (frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_graph_edges": {
+    "meaning": "number of valid undirected graph edges (frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_required_edges": {
+    "meaning": "number of mandatory service edges (frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "garage_node": {
+    "meaning": "depot node index where tour starts and ends (frozen)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

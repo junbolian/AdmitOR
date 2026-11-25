@@ -1,0 +1,195 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "resource_weights": [
+    37,
+    37,
+    33,
+    40,
+    38,
+    37
+   ],
+   "center_capacity": 100
+  },
+  {
+   "resource_weights": [
+    40.611154080059194,
+    24.697778560267075,
+    27.803177254326656,
+    32.24990066816704,
+    44.29013429676274,
+    41.5765167242534
+   ],
+   "center_capacity": 119.60897838524227
+  },
+  {
+   "resource_weights": [
+    26.30171576510188,
+    34.9777751298485,
+    22.138315769019428,
+    32.1218632945009,
+    38.14245066354945,
+    24.73728161481207
+   ],
+   "center_capacity": 84.94188253433242
+  },
+  {
+   "resource_weights": [
+    40.88200693848965,
+    38.16398434762331,
+    26.542178369140096,
+    42.49943914852545,
+    46.23085014763019,
+    24.21831787566178
+   ],
+   "center_capacity": 115.2909625916404
+  },
+  {
+   "resource_weights": [
+    42.13181033019508,
+    32.86248837781599,
+    25.041576445652154,
+    52.80196602178988,
+    33.65341489999587,
+    26.45211734354583
+   ],
+   "center_capacity": 79.8358188416732
+  },
+  {
+   "resource_weights": [
+    46.00010408839921,
+    39.68650421240248,
+    40.09466311263819,
+    46.43249002742691,
+    38.96366723269504,
+    49.2536982870657
+   ],
+   "center_capacity": 93.92671886041768
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   2.0,
+   3.0,
+   2.0,
+   3.0,
+   3.0
+  ],
+  "A-direct-2": [
+   3.0,
+   2.0,
+   3.0,
+   2.0,
+   3.0,
+   3.0
+  ],
+  "B-structured": [
+   3.0,
+   2.0,
+   3.0,
+   2.0,
+   3.0,
+   3.0
+  ],
+  "B-structured-2": [
+   3.0,
+   2.0,
+   3.0,
+   2.0,
+   3.0,
+   3.0
+  ],
+  "C-direct": [
+   3.0,
+   2.0,
+   3.0,
+   2.0,
+   3.0,
+   3.0
+  ],
+  "C-direct-2": [
+   3.0,
+   2.0,
+   3.0,
+   2.0,
+   3.0,
+   3.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

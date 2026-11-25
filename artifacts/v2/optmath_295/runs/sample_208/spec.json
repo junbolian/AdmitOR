@@ -1,0 +1,64 @@
+{
+ "spec": {
+  "resource_weights": {
+   "base": [
+    38,
+    37,
+    36,
+    34,
+    34,
+    33,
+    36
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "facility_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "resource_weights": {
+    "meaning": "Weight (size) of each of the seven resources",
+    "base": [
+     38,
+     37,
+     36,
+     34,
+     34,
+     33,
+     36
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "facility_capacity": {
+    "meaning": "Uniform capacity of each storage facility in units",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

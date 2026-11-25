@@ -1,0 +1,466 @@
+{
+ "spec": {
+  "profit_p1_s1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "profit_p2_s1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_p3_s1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_p1_s2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_p2_s2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_p3_s2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_p1_s3": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "profit_p2_s3": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "profit_p3_s3": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_p1_s4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "profit_p2_s4": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "profit_p3_s4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "demand_p1_s1": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "demand_p2_s1": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 35.0,
+    "integer": false
+   }
+  },
+  "demand_p3_s1": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 17.0,
+    "hi": 23.0,
+    "integer": false
+   }
+  },
+  "demand_p1_s2": {
+   "base": 26,
+   "perturb": {
+    "mode": "abs",
+    "lo": 22.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "demand_p2_s2": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "demand_p3_s2": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 24.0,
+    "hi": 32.0,
+    "integer": false
+   }
+  },
+  "demand_p1_s3": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 35.0,
+    "integer": false
+   }
+  },
+  "demand_p2_s3": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "demand_p3_s3": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 24.0,
+    "hi": 32.0,
+    "integer": false
+   }
+  },
+  "demand_p1_s4": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "demand_p2_s4": {
+   "base": 29,
+   "perturb": {
+    "mode": "abs",
+    "lo": 24.0,
+    "hi": 34.0,
+    "integer": false
+   }
+  },
+  "demand_p3_s4": {
+   "base": 26,
+   "perturb": {
+    "mode": "abs",
+    "lo": 22.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_p1_s1": {
+    "meaning": "profit per unit of Product 1 supplied to School 1",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "profit_p2_s1": {
+    "meaning": "profit per unit of Product 2 supplied to School 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_p3_s1": {
+    "meaning": "profit per unit of Product 3 supplied to School 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_p1_s2": {
+    "meaning": "profit per unit of Product 1 supplied to School 2",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_p2_s2": {
+    "meaning": "profit per unit of Product 2 supplied to School 2",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_p3_s2": {
+    "meaning": "profit per unit of Product 3 supplied to School 2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_p1_s3": {
+    "meaning": "profit per unit of Product 1 supplied to School 3",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "profit_p2_s3": {
+    "meaning": "profit per unit of Product 2 supplied to School 3",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "profit_p3_s3": {
+    "meaning": "profit per unit of Product 3 supplied to School 3",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_p1_s4": {
+    "meaning": "profit per unit of Product 1 supplied to School 4",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "profit_p2_s4": {
+    "meaning": "profit per unit of Product 2 supplied to School 4",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "profit_p3_s4": {
+    "meaning": "profit per unit of Product 3 supplied to School 4",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "demand_p1_s1": {
+    "meaning": "required units of Product 1 at School 1",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "demand_p2_s1": {
+    "meaning": "required units of Product 2 at School 1",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 35,
+     "integer": false
+    }
+   },
+   "demand_p3_s1": {
+    "meaning": "required units of Product 3 at School 1",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 17,
+     "hi": 23,
+     "integer": false
+    }
+   },
+   "demand_p1_s2": {
+    "meaning": "required units of Product 1 at School 2",
+    "base": 26,
+    "perturb": {
+     "mode": "abs",
+     "lo": 22,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "demand_p2_s2": {
+    "meaning": "required units of Product 2 at School 2",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "demand_p3_s2": {
+    "meaning": "required units of Product 3 at School 2",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 24,
+     "hi": 32,
+     "integer": false
+    }
+   },
+   "demand_p1_s3": {
+    "meaning": "required units of Product 1 at School 3",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 35,
+     "integer": false
+    }
+   },
+   "demand_p2_s3": {
+    "meaning": "required units of Product 2 at School 3",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "demand_p3_s3": {
+    "meaning": "required units of Product 3 at School 3",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 24,
+     "hi": 32,
+     "integer": false
+    }
+   },
+   "demand_p1_s4": {
+    "meaning": "required units of Product 1 at School 4",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "demand_p2_s4": {
+    "meaning": "required units of Product 2 at School 4",
+    "base": 29,
+    "perturb": {
+     "mode": "abs",
+     "lo": 24,
+     "hi": 34,
+     "integer": false
+    }
+   },
+   "demand_p3_s4": {
+    "meaning": "required units of Product 3 at School 4",
+    "base": 26,
+    "perturb": {
+     "mode": "abs",
+     "lo": 22,
+     "hi": 30,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

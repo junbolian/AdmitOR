@@ -1,0 +1,151 @@
+{
+ "sample_id": "e3_SM_easy_197",
+ "set": "heldout",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"supplier_pref_positions\",\"extracted\":[[6,2,4,0,5,1,3],[5,1,3,2,6,4,0],[6,2,4,0,3,1,5],[5,1,0,6,2,3,4],[5,2,1,4,0,6,3],[3,1,2,4,5,6,0],[1,0,6,5,2,3,4]],\"stated\":[[6,2,4,0,5,1,3],[5,1,3,2,6,4,0],[6,2,4,0,3,1,5],[5,4,1,6,2,0,3],[5,2,1,4,0,6,3],[3,1,2,4,5,6,0],[1,0,6,5,2,3,4]],\"evidence\":\"Supplier 3 ranks the plants: Plant 5, Plant 2, Plant 4, Plant 6, Plant 1, Plant 0, Plant 3.\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "supplier_pref_positions",
+   "extracted": [
+    [
+     6,
+     2,
+     4,
+     0,
+     5,
+     1,
+     3
+    ],
+    [
+     5,
+     1,
+     3,
+     2,
+     6,
+     4,
+     0
+    ],
+    [
+     6,
+     2,
+     4,
+     0,
+     3,
+     1,
+     5
+    ],
+    [
+     5,
+     1,
+     0,
+     6,
+     2,
+     3,
+     4
+    ],
+    [
+     5,
+     2,
+     1,
+     4,
+     0,
+     6,
+     3
+    ],
+    [
+     3,
+     1,
+     2,
+     4,
+     5,
+     6,
+     0
+    ],
+    [
+     1,
+     0,
+     6,
+     5,
+     2,
+     3,
+     4
+    ]
+   ],
+   "stated": [
+    [
+     6,
+     2,
+     4,
+     0,
+     5,
+     1,
+     3
+    ],
+    [
+     5,
+     1,
+     3,
+     2,
+     6,
+     4,
+     0
+    ],
+    [
+     6,
+     2,
+     4,
+     0,
+     3,
+     1,
+     5
+    ],
+    [
+     5,
+     4,
+     1,
+     6,
+     2,
+     0,
+     3
+    ],
+    [
+     5,
+     2,
+     1,
+     4,
+     0,
+     6,
+     3
+    ],
+    [
+     3,
+     1,
+     2,
+     4,
+     5,
+     6,
+     0
+    ],
+    [
+     1,
+     0,
+     6,
+     5,
+     2,
+     3,
+     4
+    ]
+   ],
+   "evidence": "Supplier 3 ranks the plants: Plant 5, Plant 2, Plant 4, Plant 6, Plant 1, Plant 0, Plant 3."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

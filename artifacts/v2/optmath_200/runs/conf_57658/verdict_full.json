@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "pref_p0_c0": 1,
+   "pref_p0_c1": 1,
+   "pref_p1_c4": 1,
+   "pref_p2_none": 0,
+   "pref_p3_none": 0,
+   "pref_p4_c0": 1,
+   "pref_p4_c2": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1
+  },
+  {
+   "pref_p0_c0": 1,
+   "pref_p0_c1": 0,
+   "pref_p1_c4": 0,
+   "pref_p2_none": 0,
+   "pref_p3_none": 0,
+   "pref_p4_c0": 1,
+   "pref_p4_c2": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1
+  },
+  {
+   "pref_p0_c0": 0,
+   "pref_p0_c1": 0,
+   "pref_p1_c4": 1,
+   "pref_p2_none": 0,
+   "pref_p3_none": 0,
+   "pref_p4_c0": 1,
+   "pref_p4_c2": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1
+  },
+  {
+   "pref_p0_c0": 1,
+   "pref_p0_c1": 0,
+   "pref_p1_c4": 1,
+   "pref_p2_none": 0,
+   "pref_p3_none": 0,
+   "pref_p4_c0": 0,
+   "pref_p4_c2": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1
+  },
+  {
+   "pref_p0_c0": 0,
+   "pref_p0_c1": 1,
+   "pref_p1_c4": 1,
+   "pref_p2_none": 0,
+   "pref_p3_none": 0,
+   "pref_p4_c0": 1,
+   "pref_p4_c2": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1
+  },
+  {
+   "pref_p0_c0": 1,
+   "pref_p0_c1": 1,
+   "pref_p1_c4": 1,
+   "pref_p2_none": 0,
+   "pref_p3_none": 0,
+   "pref_p4_c0": 0,
+   "pref_p4_c2": 0,
+   "participant_capacity": 1,
+   "car_capacity": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0
+  ],
+  "B-structured": [
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   3.0,
+   2.0
+  ],
+  "C-direct": [
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   3.0,
+   2.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1 on instance 1 (params: {'pref_p0_c0': 1, 'pref_p0_c1': 0, 'pref_p1_c4': 0, 'pref_p2_none': 0, 'pref_p3_none': 0, 'pref_p4_c0': 1, 'pref_p4_c2': 1, 'participant_capacity': 1, 'car_capacity': 1})"
+ },
+ "disagreements": [],
+ "notes": []
+}

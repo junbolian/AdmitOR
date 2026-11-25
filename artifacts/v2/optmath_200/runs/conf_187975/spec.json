@@ -1,0 +1,615 @@
+{
+ "spec": {
+  "supply_0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "supply_1": {
+   "base": 110,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_2": {
+   "base": 235,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "supply_3": {
+   "base": 137,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_4": {
+   "base": 168,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_5": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_6": {
+   "base": 193,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_0": {
+   "base": 204,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand_1": {
+   "base": 179,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand_2": {
+   "base": 122,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand_3": {
+   "base": 206,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand_4": {
+   "base": 157,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand_5": {
+   "base": 141,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_0": {
+   "base": [
+    31,
+    50,
+    45,
+    26,
+    48,
+    49
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1": {
+   "base": [
+    31,
+    50,
+    45,
+    26,
+    48,
+    49
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2": {
+   "base": [
+    47,
+    35,
+    25,
+    45,
+    33,
+    37
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3": {
+   "base": [
+    47,
+    27,
+    47,
+    28,
+    28,
+    43
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4": {
+   "base": [
+    26,
+    44,
+    38,
+    32,
+    44,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5": {
+   "base": [
+    44,
+    27,
+    25,
+    30,
+    48,
+    46
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6": {
+   "base": [
+    44,
+    47,
+    45,
+    49,
+    43,
+    49
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0": {
+   "base": [
+    160,
+    233,
+    145,
+    206,
+    223,
+    175
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_1": {
+   "base": [
+    168,
+    237,
+    176,
+    171,
+    233,
+    131
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_2": {
+   "base": [
+    171,
+    157,
+    216,
+    220,
+    138,
+    202
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_3": {
+   "base": [
+    196,
+    126,
+    198,
+    127,
+    217,
+    162
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_4": {
+   "base": [
+    142,
+    160,
+    157,
+    227,
+    139,
+    190
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_5": {
+   "base": [
+    127,
+    161,
+    140,
+    120,
+    220,
+    186
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_6": {
+   "base": [
+    180,
+    176,
+    129,
+    182,
+    133,
+    158
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_0": {
+    "meaning": "available resources at facility 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "supply_1": {
+    "meaning": "available resources at facility 1",
+    "base": 110,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_2": {
+    "meaning": "available resources at facility 2",
+    "base": 235,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "supply_3": {
+    "meaning": "available resources at facility 3",
+    "base": 137,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_4": {
+    "meaning": "available resources at facility 4",
+    "base": 168,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_5": {
+    "meaning": "available resources at facility 5",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_6": {
+    "meaning": "available resources at facility 6",
+    "base": 193,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_0": {
+    "meaning": "required units at center 0",
+    "base": 204,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand_1": {
+    "meaning": "required units at center 1",
+    "base": 179,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand_2": {
+    "meaning": "required units at center 2",
+    "base": 122,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand_3": {
+    "meaning": "required units at center 3",
+    "base": 206,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand_4": {
+    "meaning": "required units at center 4",
+    "base": 157,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand_5": {
+    "meaning": "required units at center 5",
+    "base": 141,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_0": {
+    "meaning": "transportation cost per unit from facility 0 to each center (centers 0..5)",
+    "base": [
+     31,
+     50,
+     45,
+     26,
+     48,
+     49
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1": {
+    "meaning": "transportation cost per unit from facility 1 to each center (centers 0..5)",
+    "base": [
+     31,
+     50,
+     45,
+     26,
+     48,
+     49
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2": {
+    "meaning": "transportation cost per unit from facility 2 to each center (centers 0..5)",
+    "base": [
+     47,
+     35,
+     25,
+     45,
+     33,
+     37
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3": {
+    "meaning": "transportation cost per unit from facility 3 to each center (centers 0..5)",
+    "base": [
+     47,
+     27,
+     47,
+     28,
+     28,
+     43
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4": {
+    "meaning": "transportation cost per unit from facility 4 to each center (centers 0..5)",
+    "base": [
+     26,
+     44,
+     38,
+     32,
+     44,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5": {
+    "meaning": "transportation cost per unit from facility 5 to each center (centers 0..5)",
+    "base": [
+     44,
+     27,
+     25,
+     30,
+     48,
+     46
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6": {
+    "meaning": "transportation cost per unit from facility 6 to each center (centers 0..5)",
+    "base": [
+     44,
+     47,
+     45,
+     49,
+     43,
+     49
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0": {
+    "meaning": "maximum units transportable from facility 0 to each center (centers 0..5)",
+    "base": [
+     160,
+     233,
+     145,
+     206,
+     223,
+     175
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_1": {
+    "meaning": "maximum units transportable from facility 1 to each center (centers 0..5)",
+    "base": [
+     168,
+     237,
+     176,
+     171,
+     233,
+     131
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_2": {
+    "meaning": "maximum units transportable from facility 2 to each center (centers 0..5)",
+    "base": [
+     171,
+     157,
+     216,
+     220,
+     138,
+     202
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_3": {
+    "meaning": "maximum units transportable from facility 3 to each center (centers 0..5)",
+    "base": [
+     196,
+     126,
+     198,
+     127,
+     217,
+     162
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_4": {
+    "meaning": "maximum units transportable from facility 4 to each center (centers 0..5)",
+    "base": [
+     142,
+     160,
+     157,
+     227,
+     139,
+     190
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_5": {
+    "meaning": "maximum units transportable from facility 5 to each center (centers 0..5)",
+    "base": [
+     127,
+     161,
+     140,
+     120,
+     220,
+     186
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_6": {
+    "meaning": "maximum units transportable from facility 6 to each center (centers 0..5)",
+    "base": [
+     180,
+     176,
+     129,
+     182,
+     133,
+     158
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

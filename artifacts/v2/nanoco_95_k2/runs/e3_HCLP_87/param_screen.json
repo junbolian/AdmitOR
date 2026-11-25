@@ -1,0 +1,46 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "construction_cost",
+  "demand",
+  "bonus",
+  "R1",
+  "R2"
+ ],
+ "safe": [
+  "construction_cost",
+  "demand",
+  "bonus",
+  "R2"
+ ],
+ "tests": {
+  "construction_cost": [
+   6,
+   6
+  ],
+  "demand": [
+   6,
+   6
+  ],
+  "bonus": [
+   6,
+   6
+  ],
+  "R1": [
+   6,
+   0
+  ],
+  "R2": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

@@ -1,0 +1,146 @@
+{
+ "spec": {
+  "preference_matrix": {
+   "base": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "unit_assignment_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference_matrix": {
+    "meaning": "Binary compatibility/eligibility matrix: pref[p][c] = 1 if participant p is willing to ride car c, 0 otherwise. Rows = participants 0..5, cols = cars 0..5.",
+    "base": [
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "unit_assignment_value": {
+    "meaning": "Objective coefficient contributed by each successful participant-car assignment (all assignments weighted equally).",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

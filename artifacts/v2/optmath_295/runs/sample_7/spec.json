@@ -1,0 +1,274 @@
+{
+ "spec": {
+  "transport_cost": {
+   "base": [
+    3,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    3,
+    2,
+    3,
+    3,
+    1,
+    2,
+    3,
+    3,
+    2,
+    3,
+    2,
+    1,
+    3,
+    2,
+    2,
+    1,
+    2,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "node_net_demand": {
+   "base": [
+    1,
+    0,
+    1,
+    0,
+    -2,
+    1,
+    -1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "node_capacity": {
+   "base": [
+    14,
+    16,
+    16,
+    14,
+    15,
+    19,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "link_capacity": {
+   "base": [
+    9,
+    8,
+    9,
+    7,
+    7,
+    8,
+    7,
+    7,
+    8,
+    8,
+    7,
+    7,
+    7,
+    7,
+    9,
+    8,
+    7,
+    7,
+    7,
+    9,
+    7,
+    9,
+    9,
+    9,
+    7,
+    9,
+    9,
+    9,
+    8,
+    7,
+    9,
+    9,
+    9,
+    9,
+    7,
+    7,
+    9,
+    8,
+    9,
+    7,
+    8,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "transport_cost": {
+    "meaning": "Unit cost of shipping on each directed link, ordered as (0→1,0→2,...,0→6,1→0,...,6→5)",
+    "base": [
+     3,
+     3,
+     2,
+     3,
+     2,
+     3,
+     2,
+     3,
+     1,
+     1,
+     2,
+     1,
+     1,
+     2,
+     1,
+     2,
+     2,
+     1,
+     2,
+     1,
+     2,
+     2,
+     1,
+     3,
+     2,
+     3,
+     3,
+     1,
+     2,
+     3,
+     3,
+     2,
+     3,
+     2,
+     1,
+     3,
+     2,
+     2,
+     1,
+     2,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "node_net_demand": {
+    "meaning": "Net demand (positive = requires inflow, negative = surplus/supply) for cities 0..6",
+    "base": [
+     1,
+     0,
+     1,
+     0,
+     -2,
+     1,
+     -1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "node_capacity": {
+    "meaning": "Maximum receiving capacity at each city 0..6",
+    "base": [
+     14,
+     16,
+     16,
+     14,
+     15,
+     19,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "link_capacity": {
+    "meaning": "Maximum flow capacity on each directed link, ordered as (0→1,...,0→6,1→0,...,6→5)",
+    "base": [
+     9,
+     8,
+     9,
+     7,
+     7,
+     8,
+     7,
+     7,
+     8,
+     8,
+     7,
+     7,
+     7,
+     7,
+     9,
+     8,
+     7,
+     7,
+     7,
+     9,
+     7,
+     9,
+     9,
+     9,
+     7,
+     9,
+     9,
+     9,
+     8,
+     7,
+     9,
+     9,
+     9,
+     9,
+     7,
+     7,
+     9,
+     8,
+     9,
+     7,
+     8,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

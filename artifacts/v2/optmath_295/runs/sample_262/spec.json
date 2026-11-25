@@ -1,0 +1,225 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    101180,
+    96454,
+    104732,
+    103154
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    203,
+    188,
+    215,
+    215,
+    209,
+    210,
+    181,
+    191
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shipping_cost_f0": {
+   "base": [
+    31,
+    32,
+    30,
+    30,
+    30,
+    27,
+    29,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "shipping_cost_f1": {
+   "base": [
+    33,
+    31,
+    34,
+    26,
+    34,
+    32,
+    35,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "shipping_cost_f2": {
+   "base": [
+    26,
+    33,
+    28,
+    29,
+    31,
+    31,
+    31,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "shipping_cost_f3": {
+   "base": [
+    34,
+    35,
+    32,
+    25,
+    27,
+    29,
+    32,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    1047,
+    1050,
+    997,
+    951
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each facility (Facilities 0-3)",
+    "base": [
+     101180,
+     96454,
+     104732,
+     103154
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each customer (Customers 0-7)",
+    "base": [
+     203,
+     188,
+     215,
+     215,
+     209,
+     210,
+     181,
+     191
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shipping_cost_f0": {
+    "meaning": "Shipping cost per unit from Facility 0 to Customers 0-7",
+    "base": [
+     31,
+     32,
+     30,
+     30,
+     30,
+     27,
+     29,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "shipping_cost_f1": {
+    "meaning": "Shipping cost per unit from Facility 1 to Customers 0-7",
+    "base": [
+     33,
+     31,
+     34,
+     26,
+     34,
+     32,
+     35,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "shipping_cost_f2": {
+    "meaning": "Shipping cost per unit from Facility 2 to Customers 0-7",
+    "base": [
+     26,
+     33,
+     28,
+     29,
+     31,
+     31,
+     31,
+     29
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "shipping_cost_f3": {
+    "meaning": "Shipping cost per unit from Facility 3 to Customers 0-7",
+    "base": [
+     34,
+     35,
+     32,
+     25,
+     27,
+     29,
+     32,
+     29
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total units shippable from each facility (Facilities 0-3)",
+    "base": [
+     1047,
+     1050,
+     997,
+     951
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

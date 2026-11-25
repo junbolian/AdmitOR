@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    708,
+    796,
+    699,
+    605,
+    683,
+    751,
+    692,
+    619,
+    687,
+    790,
+    668,
+    790
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost": {
+   "base": [
+    7,
+    6,
+    8,
+    8,
+    7,
+    8,
+    7,
+    7,
+    7,
+    7,
+    6,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "capacity": {
+   "base": [
+    184,
+    227,
+    197,
+    160,
+    229,
+    240,
+    233,
+    215,
+    139,
+    164,
+    208,
+    189
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "net_outflow": {
+   "base": [
+    150,
+    100,
+    -227,
+    -23
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost for establishing each directed route, ordered 0->1,0->2,0->3,1->0,1->2,1->3,2->0,2->1,2->3,3->0,3->1,3->2",
+    "base": [
+     708,
+     796,
+     699,
+     605,
+     683,
+     751,
+     692,
+     619,
+     687,
+     790,
+     668,
+     790
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost": {
+    "meaning": "Per-unit shipping cost on each directed route, same ordering as fixed_cost",
+    "base": [
+     7,
+     6,
+     8,
+     8,
+     7,
+     8,
+     7,
+     7,
+     7,
+     7,
+     6,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum flow allowed on each directed route, same ordering as fixed_cost",
+    "base": [
+     184,
+     227,
+     197,
+     160,
+     229,
+     240,
+     233,
+     215,
+     139,
+     164,
+     208,
+     189
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "net_outflow": {
+    "meaning": "Net supply (positive) or demand (negative) at nodes 0,1,2,3; sum is zero",
+    "base": [
+     150,
+     100,
+     -227,
+     -23
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

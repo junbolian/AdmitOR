@@ -1,0 +1,150 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_0_1": 115,
+   "cost_0_2": 105,
+   "cost_1_0": 476,
+   "cost_1_2": 90,
+   "cost_2_0": 145,
+   "cost_2_1": 181,
+   "position_lb_city1": 0,
+   "position_ub_city1": 2,
+   "position_lb_city2": 0,
+   "position_ub_city2": 2
+  },
+  {
+   "cost_0_1": 131.03408182265662,
+   "cost_0_2": 55.12612929838003,
+   "cost_1_0": 368.91395554370075,
+   "cost_1_2": 65.08896643339405,
+   "cost_2_0": 179.2883260537818,
+   "cost_2_1": 212.98260722354695,
+   "position_lb_city1": 0,
+   "position_ub_city1": 2,
+   "position_lb_city2": 0,
+   "position_ub_city2": 2
+  },
+  {
+   "cost_0_1": 82.64336710241439,
+   "cost_0_2": 105.56230525085304,
+   "cost_1_0": 250.63112156951908,
+   "cost_1_2": 62.89538856179836,
+   "cost_2_0": 166.73324347803086,
+   "cost_2_1": 189.13440798918222,
+   "position_lb_city1": 0,
+   "position_ub_city1": 2,
+   "position_lb_city2": 0,
+   "position_ub_city2": 2
+  },
+  {
+   "cost_0_1": 150.1692139607729,
+   "cost_0_2": 125.80463647376382,
+   "cost_1_0": 399.95924586256416,
+   "cost_1_2": 58.99315498306034,
+   "cost_2_0": 211.2958954699833,
+   "cost_2_1": 151.42361266538543,
+   "position_lb_city1": 0,
+   "position_ub_city1": 2,
+   "position_lb_city2": 0,
+   "position_ub_city2": 2
+  },
+  {
+   "cost_0_1": 150.31975142655372,
+   "cost_0_2": 129.12183760285086,
+   "cost_1_0": 493.2445715324375,
+   "cost_1_2": 132.58041875814337,
+   "cost_2_0": 127.38748469521126,
+   "cost_2_1": 190.41935426045407,
+   "position_lb_city1": 0,
+   "position_ub_city1": 2,
+   "position_lb_city2": 0,
+   "position_ub_city2": 2
+  },
+  {
+   "cost_0_1": 138.52576116471622,
+   "cost_0_2": 57.311560283844535,
+   "cost_1_0": 346.4795792101363,
+   "cost_1_2": 71.04491672418965,
+   "cost_2_0": 84.06983665392599,
+   "cost_2_1": 132.63515043134646,
+   "position_lb_city1": 0,
+   "position_ub_city1": 2,
+   "position_lb_city2": 0,
+   "position_ub_city2": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   350.0,
+   375.41137430983247,
+   312.2719991422436,
+   420.45826441381655,
+   410.28765487990836,
+   293.64051454283185
+  ],
+  "C-direct": [
+   350.0,
+   375.41137430983247,
+   312.2719991422436,
+   420.45826441381655,
+   410.28765487990836,
+   293.64051454283185
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

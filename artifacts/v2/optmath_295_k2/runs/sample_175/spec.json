@@ -1,0 +1,43 @@
+{
+ "spec": {
+  "strategy_costs": {
+   "base": [
+    8,
+    33,
+    88,
+    21,
+    15,
+    95,
+    89,
+    59
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "strategy_costs": {
+    "meaning": "Cost of implementing each promotional strategy (Strategies 1-8)",
+    "base": [
+     8,
+     33,
+     88,
+     21,
+     15,
+     95,
+     89,
+     59
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

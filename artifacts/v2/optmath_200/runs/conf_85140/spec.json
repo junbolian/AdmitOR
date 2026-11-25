@@ -1,0 +1,92 @@
+{
+ "spec": {
+  "dispersion_scores": {
+   "base": [
+    14,
+    16,
+    11,
+    13,
+    14,
+    14,
+    14,
+    10,
+    19,
+    17,
+    17,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "facilities_to_select": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_facilities": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[facilities_to_select] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "dispersion_scores": {
+    "meaning": "Dispersion score for each ordered pair (i,j) as listed: (0,1),(0,2),(0,3),(1,0),(1,2),(1,3),(2,0),(2,1),(2,3),(3,0),(3,1),(3,2)",
+    "base": [
+     14,
+     16,
+     11,
+     13,
+     14,
+     14,
+     14,
+     10,
+     19,
+     17,
+     17,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "facilities_to_select": {
+    "meaning": "Exact number of facilities that must be selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of potential facility locations (index-set size)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

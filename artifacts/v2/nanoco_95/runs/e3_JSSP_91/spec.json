@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     13,
+     33,
+     15
+    ],
+    [
+     50,
+     46,
+     20
+    ],
+    [
+     39,
+     26,
+     19
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Processing time (minutes) for each lot on each machine; rows are lots L0,L1,L2 and columns are machines 0,1,2 following the fixed routing (L0: M1->M0->M2, L1: M1->M0->M2, L2: M1->M0->M2)",
+    "base": [
+     [
+      13,
+      33,
+      15
+     ],
+     [
+      50,
+      46,
+      20
+     ],
+     [
+      39,
+      26,
+      19
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "spec": {
+  "num_participants": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_cars": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "preference_p0": {
+   "base": [
+    5,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p1": {
+   "base": [
+    1,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p2": {
+   "base": [
+    3,
+    4,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p3": {
+   "base": [
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p4": {
+   "base": [
+    0,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p5": {
+   "base": [
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p6": {
+   "base": [
+    4,
+    5,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "preference_p7": {
+   "base": [
+    2,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[num_participants] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_cars] degenerate abs range (lo == hi); perturbation has no effect",
+  "[preference_p0] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p1] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p2] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p3] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p4] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p5] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p6] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[preference_p7] rel rate r=0.0 outside (0,1]; clamped to 0.3"
+ ],
+ "raw": {
+  "params": {
+   "num_participants": {
+    "meaning": "number of participants (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_cars": {
+    "meaning": "number of cars (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "preference_p0": {
+    "meaning": "cars participant 0 is interested in",
+    "base": [
+     5,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p1": {
+    "meaning": "cars participant 1 is interested in",
+    "base": [
+     1,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p2": {
+    "meaning": "cars participant 2 is interested in",
+    "base": [
+     3,
+     4,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p3": {
+    "meaning": "cars participant 3 is interested in",
+    "base": [
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p4": {
+    "meaning": "cars participant 4 is interested in",
+    "base": [
+     0,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p5": {
+    "meaning": "cars participant 5 is interested in",
+    "base": [
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p6": {
+    "meaning": "cars participant 6 is interested in",
+    "base": [
+     4,
+     5,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "preference_p7": {
+    "meaning": "cars participant 7 is interested in",
+    "base": [
+     2,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

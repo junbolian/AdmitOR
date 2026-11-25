@@ -1,0 +1,41 @@
+{
+ "sample_id": "sample_225",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"production_cost_A\", \"evidence\": \"they range from 40 to 45 units per unit produced\"}, {\"parameter\": \"production_cost_B\", \"evidence\": \"they range from 40 to 45 units per unit produced\"}, {\"parameter\": \"setup_cost_A\", \"evidence\": \"they range from 1074 to 1454 units per setup\"}, {\"parameter\": \"setup_cost_B\", \"evidence\": \"they range from 1068 to 1196 units per setup\"}, {\"parameter\": \"holding_cost_A\", \"evidence\": \"5 units per unit of Product A held for the first three months and 4 units for the remaining months\"}, {\"parameter\": \"holding_cost_B\", \"evidence\": \"4 units per unit for the first two months and 5 units for the remaining months\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "production_cost_A",
+   "evidence": "they range from 40 to 45 units per unit produced"
+  },
+  {
+   "parameter": "production_cost_B",
+   "evidence": "they range from 40 to 45 units per unit produced"
+  },
+  {
+   "parameter": "setup_cost_A",
+   "evidence": "they range from 1074 to 1454 units per setup"
+  },
+  {
+   "parameter": "setup_cost_B",
+   "evidence": "they range from 1068 to 1196 units per setup"
+  },
+  {
+   "parameter": "holding_cost_A",
+   "evidence": "5 units per unit of Product A held for the first three months and 4 units for the remaining months"
+  },
+  {
+   "parameter": "holding_cost_B",
+   "evidence": "4 units per unit for the first two months and 5 units for the remaining months"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

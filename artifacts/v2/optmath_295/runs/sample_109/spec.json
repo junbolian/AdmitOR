@@ -1,0 +1,239 @@
+{
+ "spec": {
+  "base_cost": {
+   "base": [
+    79,
+    80,
+    80
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "per_mw_cost": {
+   "base": [
+    3,
+    3,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "startup_cost": {
+   "base": [
+    353,
+    345,
+    346
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    206,
+    227,
+    173,
+    215,
+    222
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "reserve_demand": {
+   "base": [
+    236.9,
+    261.05,
+    198.95,
+    247.25,
+    255.3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_output": {
+   "base": [
+    34,
+    35,
+    35
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 50.0,
+    "integer": false
+   }
+  },
+  "max_output": {
+   "base": [
+    130,
+    125,
+    130
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "max_generators": {
+   "base": [
+    2,
+    5,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "initial_startup_allowance": {
+   "base": [
+    1,
+    5,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_generators] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_generators] abs range [0.0, 0.0] is disjoint from base span [1, 5]; replaced with rel +/-30% around base",
+  "[initial_startup_allowance] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "base_cost": {
+    "meaning": "Base operating cost per generator per period for types 0, 1, 2",
+    "base": [
+     79,
+     80,
+     80
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "per_mw_cost": {
+    "meaning": "Cost per MW of power output for types 0, 1, 2",
+    "base": [
+     3,
+     3,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "startup_cost": {
+    "meaning": "Startup cost per activation for types 0, 1, 2",
+    "base": [
+     353,
+     345,
+     346
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Minimum power demand per period (periods 0-4)",
+    "base": [
+     206,
+     227,
+     173,
+     215,
+     222
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "reserve_demand": {
+    "meaning": "Required total maximum capacity (demand with 15% reserve) per period",
+    "base": [
+     236.9,
+     261.05,
+     198.95,
+     247.25,
+     255.3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_output": {
+    "meaning": "Minimum power output per generator for types 0, 1, 2",
+    "base": [
+     34,
+     35,
+     35
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 50,
+     "integer": false
+    }
+   },
+   "max_output": {
+    "meaning": "Maximum power output per generator for types 0, 1, 2",
+    "base": [
+     130,
+     125,
+     130
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "max_generators": {
+    "meaning": "Maximum number of generators available per period for types 0, 1, 2",
+    "base": [
+     2,
+     5,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "initial_startup_allowance": {
+    "meaning": "Period 0 startup offset constant for types 0, 1, 2 (gen count <= startups + allowance)",
+    "base": [
+     1,
+     5,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

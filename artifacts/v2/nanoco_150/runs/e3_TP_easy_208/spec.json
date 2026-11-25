@@ -1,0 +1,193 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    5,
+    7,
+    9,
+    -5,
+    -3,
+    -7,
+    -6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    5,
+    5,
+    5,
+    5,
+    7,
+    7,
+    7,
+    7,
+    9,
+    9,
+    9,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_cost": {
+   "base": [
+    2,
+    7,
+    6,
+    2,
+    8,
+    11,
+    5,
+    2,
+    4,
+    7,
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coords_x": {
+   "base": [
+    54,
+    9,
+    43,
+    69,
+    81,
+    10,
+    33
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "coords_y": {
+   "base": [
+    65,
+    64,
+    54,
+    75,
+    0,
+    41,
+    62
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Available parts stock at each node (positive supply, negative demand)",
+    "base": [
+     5,
+     7,
+     9,
+     -5,
+     -3,
+     -7,
+     -6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Truck load capacity on each of the 12 directed arcs",
+    "base": [
+     5,
+     5,
+     5,
+     5,
+     7,
+     7,
+     7,
+     7,
+     9,
+     9,
+     9,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_cost": {
+    "meaning": "Cost per part shipped on each of the 12 directed arcs",
+    "base": [
+     2,
+     7,
+     6,
+     2,
+     8,
+     11,
+     5,
+     2,
+     4,
+     7,
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coords_x": {
+    "meaning": "X-coordinate of each of the 7 logistics locations",
+    "base": [
+     54,
+     9,
+     43,
+     69,
+     81,
+     10,
+     33
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "coords_y": {
+    "meaning": "Y-coordinate of each of the 7 logistics locations",
+    "base": [
+     65,
+     64,
+     54,
+     75,
+     0,
+     41,
+     62
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,460 @@
+{
+ "spec": {
+  "capacity_0_1": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_6": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_1_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_2_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_2_7": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_3_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_4_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_4_7": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_4_8": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_5_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_6_7": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_6_8": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_7_8": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_8_9": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_0_1": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_0_6": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_0_8": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_1_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_2_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_2_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_3_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_4_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_4_7": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_4_8": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_5_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_6_7": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_6_8": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_7_8": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "latency_8_9": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_0_1": {
+    "meaning": "Bandwidth capacity of link 0->1",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_6": {
+    "meaning": "Bandwidth capacity of link 0->6",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_8": {
+    "meaning": "Bandwidth capacity of link 0->8",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_1_2": {
+    "meaning": "Bandwidth capacity of link 1->2",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_2_3": {
+    "meaning": "Bandwidth capacity of link 2->3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_2_7": {
+    "meaning": "Bandwidth capacity of link 2->7",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_3_4": {
+    "meaning": "Bandwidth capacity of link 3->4",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_4_5": {
+    "meaning": "Bandwidth capacity of link 4->5",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_4_7": {
+    "meaning": "Bandwidth capacity of link 4->7",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_4_8": {
+    "meaning": "Bandwidth capacity of link 4->8",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_5_6": {
+    "meaning": "Bandwidth capacity of link 5->6",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_6_7": {
+    "meaning": "Bandwidth capacity of link 6->7",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_6_8": {
+    "meaning": "Bandwidth capacity of link 6->8",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_7_8": {
+    "meaning": "Bandwidth capacity of link 7->8",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_8_9": {
+    "meaning": "Bandwidth capacity of link 8->9",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_0_1": {
+    "meaning": "Latency cost of link 0->1 (descriptive, not in objective)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_0_6": {
+    "meaning": "Latency cost of link 0->6 (descriptive, not in objective)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_0_8": {
+    "meaning": "Latency cost of link 0->8 (descriptive, not in objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_1_2": {
+    "meaning": "Latency cost of link 1->2 (descriptive, not in objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_2_3": {
+    "meaning": "Latency cost of link 2->3 (descriptive, not in objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_2_7": {
+    "meaning": "Latency cost of link 2->7 (descriptive, not in objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_3_4": {
+    "meaning": "Latency cost of link 3->4 (descriptive, not in objective)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_4_5": {
+    "meaning": "Latency cost of link 4->5 (descriptive, not in objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_4_7": {
+    "meaning": "Latency cost of link 4->7 (descriptive, not in objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_4_8": {
+    "meaning": "Latency cost of link 4->8 (descriptive, not in objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_5_6": {
+    "meaning": "Latency cost of link 5->6 (descriptive, not in objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_6_7": {
+    "meaning": "Latency cost of link 6->7 (descriptive, not in objective)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_6_8": {
+    "meaning": "Latency cost of link 6->8 (descriptive, not in objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_7_8": {
+    "meaning": "Latency cost of link 7->8 (descriptive, not in objective)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "latency_8_9": {
+    "meaning": "Latency cost of link 8->9 (descriptive, not in objective)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

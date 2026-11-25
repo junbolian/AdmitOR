@@ -1,0 +1,67 @@
+{
+ "spec": {
+  "distances": {
+   "base": [
+    11,
+    19,
+    18,
+    19,
+    16,
+    10,
+    14,
+    15,
+    15,
+    13,
+    12,
+    13,
+    10,
+    11,
+    14,
+    16,
+    10,
+    16,
+    15,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "distances": {
+    "meaning": "Pairwise distances between ordered facility pairs (i,j), i.e., distance from Node i to Node j; the problem lists 20 directed values although dispersion sums each unordered pair once",
+    "base": [
+     11,
+     19,
+     18,
+     19,
+     16,
+     10,
+     14,
+     15,
+     15,
+     13,
+     12,
+     13,
+     10,
+     11,
+     14,
+     16,
+     10,
+     16,
+     15,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

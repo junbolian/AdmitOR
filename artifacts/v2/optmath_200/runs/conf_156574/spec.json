@@ -1,0 +1,123 @@
+{
+ "spec": {
+  "expected_return": {
+   "base": [
+    0.0989,
+    0.1486,
+    0.0801,
+    0.0884,
+    0.057,
+    0.0968,
+    0.1343,
+    0.0623,
+    0.0502,
+    0.0638
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "portfolio_return_min": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.04,
+    "hi": 0.18,
+    "integer": false
+   }
+  },
+  "weight_sum_target": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.98,
+    "hi": 1.02,
+    "integer": false
+   }
+  },
+  "weight_upper_bound": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.15,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "weight_lower_bound": {
+   "base": 0.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.1,
+    "hi": 0.05,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "expected_return": {
+    "meaning": "Expected return per asset (fraction), vector of 10 assets",
+    "base": [
+     0.0989,
+     0.1486,
+     0.0801,
+     0.0884,
+     0.057,
+     0.0968,
+     0.1343,
+     0.0623,
+     0.0502,
+     0.0638
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "portfolio_return_min": {
+    "meaning": "Minimum required portfolio return (fraction)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.04,
+     "hi": 0.18,
+     "integer": false
+    }
+   },
+   "weight_sum_target": {
+    "meaning": "Total allocation sum target (fully invested)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.98,
+     "hi": 1.02,
+     "integer": false
+    }
+   },
+   "weight_upper_bound": {
+    "meaning": "Maximum weight per asset (diversification cap)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.15,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "weight_lower_bound": {
+    "meaning": "Minimum weight per asset (no short selling)",
+    "base": 0.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.1,
+     "hi": 0.05,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_122",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"production_cost\", \"evidence\": \"Producer 0 incurs a cost of 40 units for Contract 0, 46 units for Contract 1, and so on.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "production_cost",
+   "evidence": "Producer 0 incurs a cost of 40 units for Contract 0, 46 units for Contract 1, and so on."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

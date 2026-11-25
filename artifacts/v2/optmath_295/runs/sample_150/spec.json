@@ -1,0 +1,245 @@
+{
+ "spec": {
+  "demand_0": {
+   "base": 33,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_1": {
+   "base": 217,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "supply_4": {
+   "base": 97,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_5": {
+   "base": 153,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[fixed_cost] non-numeric base dropped",
+  "[variable_cost] non-numeric base dropped",
+  "[capacity] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "demand_0": {
+    "meaning": "net demand at center 0 (units)",
+    "base": 33,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_1": {
+    "meaning": "net demand at center 1 (units)",
+    "base": 217,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "supply_4": {
+    "meaning": "net supply at center 4 (units)",
+    "base": 97,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_5": {
+    "meaning": "net supply at center 5 (units)",
+    "base": 153,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fixed_cost": {
+    "meaning": "fixed cost of establishing each directed connection (6x6 off-diagonal matrix, row=from, col=to)",
+    "base": [
+     [
+      null,
+      1955,
+      2050,
+      1953,
+      1952,
+      2046
+     ],
+     [
+      2009,
+      null,
+      1994,
+      1999,
+      2023,
+      2042
+     ],
+     [
+      1973,
+      2020,
+      null,
+      1990,
+      2011,
+      2008
+     ],
+     [
+      2026,
+      1991,
+      2006,
+      null,
+      1979,
+      1967
+     ],
+     [
+      2046,
+      2041,
+      2002,
+      2030,
+      null,
+      2015
+     ],
+     [
+      2020,
+      1973,
+      2022,
+      1966,
+      1951,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "variable_cost": {
+    "meaning": "variable transport cost per unit on each directed connection (6x6 off-diagonal matrix)",
+    "base": [
+     [
+      null,
+      20,
+      20,
+      19,
+      21,
+      20
+     ],
+     [
+      21,
+      null,
+      19,
+      21,
+      19,
+      20
+     ],
+     [
+      21,
+      21,
+      null,
+      20,
+      19,
+      19
+     ],
+     [
+      20,
+      20,
+      19,
+      null,
+      20,
+      19
+     ],
+     [
+      19,
+      19,
+      21,
+      20,
+      null,
+      21
+     ],
+     [
+      21,
+      19,
+      19,
+      20,
+      20,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "maximum flow capacity on each directed connection (6x6 off-diagonal matrix)",
+    "base": [
+     [
+      null,
+      129,
+      131,
+      246,
+      208,
+      152
+     ],
+     [
+      149,
+      null,
+      147,
+      164,
+      135,
+      229
+     ],
+     [
+      250,
+      131,
+      null,
+      177,
+      144,
+      170
+     ],
+     [
+      163,
+      196,
+      228,
+      null,
+      150,
+      185
+     ],
+     [
+      225,
+      205,
+      215,
+      240,
+      null,
+      243
+     ],
+     [
+      154,
+      230,
+      182,
+      248,
+      146,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

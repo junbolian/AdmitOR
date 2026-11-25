@@ -1,0 +1,33 @@
+{
+ "sample_id": "conf_189571",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"cost_f0_c0\", \"evidence\": \"\\\"For example: Transporting from Facility 0 to Center 0 costs 22 units.\\\" — given only as an example\"}, {\"parameter\": \"cost_f0_c1\", \"evidence\": \"\\\"Transporting from Facility 0 to Center 1 costs 24 units.\\\" — given only as an example\"}, {\"parameter\": \"cost_f1_c0\", \"evidence\": \"\\\"Transporting from Facility 1 to Center 0 costs 16 units.\\\" — given only as an example\"}, {\"parameter\": \"cost_f2_c1\", \"evidence\": \"\\\"Transporting from Facility 2 to Center 1 costs 23 units.\\\" — given only as an example\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_f0_c0",
+   "evidence": "\"For example: Transporting from Facility 0 to Center 0 costs 22 units.\" — given only as an example"
+  },
+  {
+   "parameter": "cost_f0_c1",
+   "evidence": "\"Transporting from Facility 0 to Center 1 costs 24 units.\" — given only as an example"
+  },
+  {
+   "parameter": "cost_f1_c0",
+   "evidence": "\"Transporting from Facility 1 to Center 0 costs 16 units.\" — given only as an example"
+  },
+  {
+   "parameter": "cost_f2_c1",
+   "evidence": "\"Transporting from Facility 2 to Center 1 costs 23 units.\" — given only as an example"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

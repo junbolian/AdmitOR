@@ -1,0 +1,139 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   -0.0,
+   -0.0,
+   -0.0,
+   -0.0,
+   -0.0,
+   -0.0
+  ],
+  "C-direct-2": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'"
+  ],
+  "A-direct-2": [
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'",
+   "crash:preferences = params[\"preferences\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'preferences'"
+  ],
+  "B-structured": [
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences"
+  ],
+  "B-structured-2": [
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences",
+   "missing_preferences"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: incomparable (no co-solved instance)",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "A-direct vs C-direct-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured vs B-structured-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

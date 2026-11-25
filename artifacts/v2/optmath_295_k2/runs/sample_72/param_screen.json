@@ -1,0 +1,39 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "assignment_cost",
+  "employee_total_capacity",
+  "employee_project_limit",
+  "project_demand"
+ ],
+ "safe": [
+  "assignment_cost",
+  "employee_project_limit"
+ ],
+ "tests": {
+  "assignment_cost": [
+   6,
+   6
+  ],
+  "employee_total_capacity": [
+   0,
+   0
+  ],
+  "employee_project_limit": [
+   6,
+   6
+  ],
+  "project_demand": [
+   0,
+   0
+  ]
+ },
+ "untested": []
+}

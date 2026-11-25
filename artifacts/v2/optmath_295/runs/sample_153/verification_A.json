@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_153",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"peak_capacity\",\n      \"evidence\": \"Each peak can be assigned to at most one amino acid\"\n    },\n    {\n      \"parameter\": \"amino_acid_capacity\",\n      \"evidence\": \"each amino acid can be assigned to at most one peak\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "peak_capacity",
+   "evidence": "Each peak can be assigned to at most one amino acid"
+  },
+  {
+   "parameter": "amino_acid_capacity",
+   "evidence": "each amino acid can be assigned to at most one peak"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,73 @@
+{
+ "spec": {
+  "package_weights": {
+   "base": [
+    33,
+    33,
+    27,
+    28,
+    28
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "num_trucks": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "package_weights": {
+    "meaning": "Weight of each package (units)",
+    "base": [
+     33,
+     33,
+     27,
+     28,
+     28
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "truck_capacity": {
+    "meaning": "Maximum total weight a truck can carry (units)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "num_trucks": {
+    "meaning": "Number of available trucks (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

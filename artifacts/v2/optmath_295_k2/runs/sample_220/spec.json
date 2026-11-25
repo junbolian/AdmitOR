@@ -1,0 +1,175 @@
+{
+ "spec": {
+  "demand_0": {
+   "base": 345,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_1": {
+   "base": 655,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_2": {
+   "base": 774,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_3": {
+   "base": 142,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_4": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "fixed_cost_min": {
+   "base": 1901,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "fixed_cost_max": {
+   "base": 2075,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "variable_cost_min": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost_max": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_min": {
+   "base": 539,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_max": {
+   "base": 990,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_0": {
+    "meaning": "net demand of hub 0 (positive = consumes)",
+    "base": 345,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_1": {
+    "meaning": "net demand of hub 1",
+    "base": 655,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_2": {
+    "meaning": "net supply of hub 2 (positive = produces)",
+    "base": 774,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_3": {
+    "meaning": "net supply of hub 3",
+    "base": 142,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_4": {
+    "meaning": "net supply of hub 4",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "fixed_cost_min": {
+    "meaning": "low end of the fixed connection establishment cost range",
+    "base": 1901,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "fixed_cost_max": {
+    "meaning": "high end of the fixed connection establishment cost range",
+    "base": 2075,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "variable_cost_min": {
+    "meaning": "low end of per-unit variable shipping cost range",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost_max": {
+    "meaning": "high end of per-unit variable shipping cost range",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_min": {
+    "meaning": "low end of connection capacity range",
+    "base": 539,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_max": {
+    "meaning": "high end of connection capacity range",
+    "base": 990,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_167866",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity\",\n      \"evidence\": \"\\\"Similar limits apply to all other origin-destination pairs, as specified in the data.\\\" — only the O0-D0 (469) and O1-D1 (493) limits are given; all other capacity values are not stated in the problem text\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "\"Similar limits apply to all other origin-destination pairs, as specified in the data.\" — only the O0-D0 (469) and O1-D1 (493) limits are given; all other capacity values are not stated in the problem text"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

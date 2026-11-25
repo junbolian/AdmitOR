@@ -1,0 +1,86 @@
+{
+ "sample_id": "conf_66014",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"profit_margins\",\n      \"extracted\": [346, 397, 387, 300, 399, 350, 320, 310, 390, 360, 370, 330, 340, 380, 395, 305, 315, 325, 335, 345, 355, 365, 375, 385, 398, 302, 312, 322, 332, 342, 352, 362, 372, 382, 392, 303, 313, 323, 333, 343, 353, 363, 373, 383, 393, 304, 314, 324, 334],\n      \"stated\": \"Item 0 yields $346, Item 1 yields $397, Item 2 yields $387, and the pattern continues with margins ranging from $300 to $399\",\n      \"evidence\": \"Item 0 yields $346 per unit. Item 1 yields $397 per unit. Item 2 yields $387 per unit. This pattern continues for all 49 items\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"profit_margins\",\n      \"evidence\": \"For example: Item 0 yields $346 per unit. Item 1 yields $397 per unit. Item 2 yields $387 per unit.\"\n    },\n    {\n      \"parameter\": \"resource_capacities\",\n      \"evidence\": \"For instance: Producing one unit of Item 0 consumes approximately 0.0132 units of the resource. Producing one unit of Item 1 consumes approximately 0.0149 units of the resource.\"\n    },\n    {\n      \"parameter\": \"production_limits\",\n      \"evidence\": \"Item 0 can be produced up to 733 units. Item 1 can be produced up to 759 units. Item 2 can be produced up to 717 units.\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "profit_margins",
+   "extracted": [
+    346,
+    397,
+    387,
+    300,
+    399,
+    350,
+    320,
+    310,
+    390,
+    360,
+    370,
+    330,
+    340,
+    380,
+    395,
+    305,
+    315,
+    325,
+    335,
+    345,
+    355,
+    365,
+    375,
+    385,
+    398,
+    302,
+    312,
+    322,
+    332,
+    342,
+    352,
+    362,
+    372,
+    382,
+    392,
+    303,
+    313,
+    323,
+    333,
+    343,
+    353,
+    363,
+    373,
+    383,
+    393,
+    304,
+    314,
+    324,
+    334
+   ],
+   "stated": "Item 0 yields $346, Item 1 yields $397, Item 2 yields $387, and the pattern continues with margins ranging from $300 to $399",
+   "evidence": "Item 0 yields $346 per unit. Item 1 yields $397 per unit. Item 2 yields $387 per unit. This pattern continues for all 49 items"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "profit_margins",
+   "evidence": "For example: Item 0 yields $346 per unit. Item 1 yields $397 per unit. Item 2 yields $387 per unit."
+  },
+  {
+   "parameter": "resource_capacities",
+   "evidence": "For instance: Producing one unit of Item 0 consumes approximately 0.0132 units of the resource. Producing one unit of Item 1 consumes approximately 0.0149 units of the resource."
+  },
+  {
+   "parameter": "production_limits",
+   "evidence": "Item 0 can be produced up to 733 units. Item 1 can be produced up to 759 units. Item 2 can be produced up to 717 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,180 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_0_1": 314,
+   "cost_0_2": 326,
+   "cost_0_3": 341,
+   "cost_1_0": 294,
+   "cost_1_2": 340,
+   "cost_1_3": 271,
+   "cost_2_0": 339,
+   "cost_2_1": 332,
+   "cost_2_3": 300,
+   "cost_3_0": 287,
+   "cost_3_1": 279,
+   "cost_3_2": 305,
+   "u_bound_lower": 1,
+   "u_bound_upper": 3,
+   "u_city0": 0
+  },
+  {
+   "cost_0_1": 420,
+   "cost_0_2": 113,
+   "cost_0_3": 238,
+   "cost_1_0": 212,
+   "cost_1_2": 468,
+   "cost_1_3": 438,
+   "cost_2_0": 546,
+   "cost_2_1": 143,
+   "cost_2_3": 311,
+   "cost_3_0": 115,
+   "cost_3_1": 209,
+   "cost_3_2": 353,
+   "u_bound_lower": 1,
+   "u_bound_upper": 3,
+   "u_city0": 0
+  },
+  {
+   "cost_0_1": 372,
+   "cost_0_2": 210,
+   "cost_0_3": 395,
+   "cost_1_0": 505,
+   "cost_1_2": 103,
+   "cost_1_3": 503,
+   "cost_2_0": 449,
+   "cost_2_1": 270,
+   "cost_2_3": 178,
+   "cost_3_0": 579,
+   "cost_3_1": 268,
+   "cost_3_2": 146,
+   "u_bound_lower": 1,
+   "u_bound_upper": 3,
+   "u_city0": 0
+  },
+  {
+   "cost_0_1": 504,
+   "cost_0_2": 465,
+   "cost_0_3": 368,
+   "cost_1_0": 587,
+   "cost_1_2": 289,
+   "cost_1_3": 376,
+   "cost_2_0": 515,
+   "cost_2_1": 409,
+   "cost_2_3": 531,
+   "cost_3_0": 389,
+   "cost_3_1": 452,
+   "cost_3_2": 123,
+   "u_bound_lower": 1,
+   "u_bound_upper": 3,
+   "u_city0": 0
+  },
+  {
+   "cost_0_1": 216,
+   "cost_0_2": 151,
+   "cost_0_3": 239,
+   "cost_1_0": 418,
+   "cost_1_2": 282,
+   "cost_1_3": 285,
+   "cost_2_0": 205,
+   "cost_2_1": 233,
+   "cost_2_3": 568,
+   "cost_3_0": 424,
+   "cost_3_1": 405,
+   "cost_3_2": 186,
+   "u_bound_lower": 1,
+   "u_bound_upper": 3,
+   "u_city0": 0
+  },
+  {
+   "cost_0_1": 595,
+   "cost_0_2": 420,
+   "cost_0_3": 378,
+   "cost_1_0": 442,
+   "cost_1_2": 521,
+   "cost_1_3": 488,
+   "cost_2_0": 215,
+   "cost_2_1": 116,
+   "cost_2_3": 258,
+   "cost_3_0": 234,
+   "cost_3_1": 205,
+   "cost_3_2": 571,
+   "u_bound_lower": 1,
+   "u_bound_upper": 3,
+   "u_city0": 0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   1199.0,
+   809.0,
+   1161.0,
+   1487.0,
+   892.0,
+   1258.0
+  ],
+  "C-direct": [
+   1199.0,
+   809.0,
+   1161.0,
+   1487.0,
+   892.0,
+   1258.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

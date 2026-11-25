@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_235",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"assignment_cost\",\n      \"evidence\": \"39 units, Project 1: 31 units, Project 2: 45 units...\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "assignment_cost",
+   "evidence": "39 units, Project 1: 31 units, Project 2: 45 units..."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_70882",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"vehicle_time_per_frequency\", \"evidence\": \"L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on\"}, {\"parameter\": \"min_od_frequency\", \"evidence\": \"For example, OD_7_4 must be served by a combined frequency of at least 2 units from the relevant lines\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "vehicle_time_per_frequency",
+   "evidence": "L_0 requires 88 units of vehicle time per frequency, L_1 requires 90, and so on"
+  },
+  {
+   "parameter": "min_od_frequency",
+   "evidence": "For example, OD_7_4 must be served by a combined frequency of at least 2 units from the relevant lines"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

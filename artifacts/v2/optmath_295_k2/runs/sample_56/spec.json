@@ -1,0 +1,428 @@
+{
+ "spec": {
+  "capacity_P0": {
+   "base": 1546,
+   "perturb": {
+    "mode": "abs",
+    "lo": 600.0,
+    "hi": 2600.0,
+    "integer": true
+   }
+  },
+  "capacity_P1": {
+   "base": 1545,
+   "perturb": {
+    "mode": "abs",
+    "lo": 600.0,
+    "hi": 2600.0,
+    "integer": true
+   }
+  },
+  "capacity_P2": {
+   "base": 1517,
+   "perturb": {
+    "mode": "abs",
+    "lo": 600.0,
+    "hi": 2600.0,
+    "integer": true
+   }
+  },
+  "demand_C0": {
+   "base": 822,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1400.0,
+    "integer": true
+   }
+  },
+  "demand_C1": {
+   "base": 819,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1400.0,
+    "integer": true
+   }
+  },
+  "demand_C2": {
+   "base": 816,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1400.0,
+    "integer": true
+   }
+  },
+  "demand_C3": {
+   "base": 815,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 1400.0,
+    "integer": true
+   }
+  },
+  "min_delivery_P0": {
+   "base": 386,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "min_delivery_P1": {
+   "base": 386,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "min_delivery_P2": {
+   "base": 379,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "cost_P0_C0": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P0_C1": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P0_C2": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P0_C3": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P1_C0": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P1_C1": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P1_C2": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P1_C3": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P2_C0": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P2_C1": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P2_C2": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_P2_C3": {
+   "base": 32,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_P0": {
+    "meaning": "Max generation capacity of Producer 0",
+    "base": 1546,
+    "perturb": {
+     "mode": "abs",
+     "lo": 600,
+     "hi": 2600,
+     "integer": true
+    }
+   },
+   "capacity_P1": {
+    "meaning": "Max generation capacity of Producer 1",
+    "base": 1545,
+    "perturb": {
+     "mode": "abs",
+     "lo": 600,
+     "hi": 2600,
+     "integer": true
+    }
+   },
+   "capacity_P2": {
+    "meaning": "Max generation capacity of Producer 2",
+    "base": 1517,
+    "perturb": {
+     "mode": "abs",
+     "lo": 600,
+     "hi": 2600,
+     "integer": true
+    }
+   },
+   "demand_C0": {
+    "meaning": "Minimum demand of Contract 0",
+    "base": 822,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1400,
+     "integer": true
+    }
+   },
+   "demand_C1": {
+    "meaning": "Minimum demand of Contract 1",
+    "base": 819,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1400,
+     "integer": true
+    }
+   },
+   "demand_C2": {
+    "meaning": "Minimum demand of Contract 2",
+    "base": 816,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1400,
+     "integer": true
+    }
+   },
+   "demand_C3": {
+    "meaning": "Minimum demand of Contract 3",
+    "base": 815,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 1400,
+     "integer": true
+    }
+   },
+   "min_delivery_P0": {
+    "meaning": "Minimum nonzero delivery from Producer 0 to any contract it serves",
+    "base": 386,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "min_delivery_P1": {
+    "meaning": "Minimum nonzero delivery from Producer 1 to any contract it serves",
+    "base": 386,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "min_delivery_P2": {
+    "meaning": "Minimum nonzero delivery from Producer 2 to any contract it serves",
+    "base": 379,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "cost_P0_C0": {
+    "meaning": "Unit production cost of Producer 0 delivering to Contract 0",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P0_C1": {
+    "meaning": "Unit production cost of Producer 0 delivering to Contract 1",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P0_C2": {
+    "meaning": "Unit production cost of Producer 0 delivering to Contract 2",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P0_C3": {
+    "meaning": "Unit production cost of Producer 0 delivering to Contract 3",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P1_C0": {
+    "meaning": "Unit production cost of Producer 1 delivering to Contract 0",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P1_C1": {
+    "meaning": "Unit production cost of Producer 1 delivering to Contract 1",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P1_C2": {
+    "meaning": "Unit production cost of Producer 1 delivering to Contract 2",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P1_C3": {
+    "meaning": "Unit production cost of Producer 1 delivering to Contract 3",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P2_C0": {
+    "meaning": "Unit production cost of Producer 2 delivering to Contract 0",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P2_C1": {
+    "meaning": "Unit production cost of Producer 2 delivering to Contract 1",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P2_C2": {
+    "meaning": "Unit production cost of Producer 2 delivering to Contract 2",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_P2_C3": {
+    "meaning": "Unit production cost of Producer 2 delivering to Contract 3",
+    "base": 32,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

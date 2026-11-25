@@ -1,0 +1,211 @@
+{
+ "spec": {
+  "weights_01": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_02": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_03": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_10": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_12": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_13": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_20": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_21": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_23": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_30": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_31": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weights_32": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "facilities_to_select": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[facilities_to_select] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "weights_01": {
+    "meaning": "dispersion weight for ordered pair (0,1)",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_02": {
+    "meaning": "dispersion weight for ordered pair (0,2)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_03": {
+    "meaning": "dispersion weight for ordered pair (0,3)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_10": {
+    "meaning": "dispersion weight for ordered pair (1,0)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_12": {
+    "meaning": "dispersion weight for ordered pair (1,2)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_13": {
+    "meaning": "dispersion weight for ordered pair (1,3)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_20": {
+    "meaning": "dispersion weight for ordered pair (2,0)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_21": {
+    "meaning": "dispersion weight for ordered pair (2,1)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_23": {
+    "meaning": "dispersion weight for ordered pair (2,3)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_30": {
+    "meaning": "dispersion weight for ordered pair (3,0)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_31": {
+    "meaning": "dispersion weight for ordered pair (3,1)",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weights_32": {
+    "meaning": "dispersion weight for ordered pair (3,2)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "facilities_to_select": {
+    "meaning": "exact number of facilities selected",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

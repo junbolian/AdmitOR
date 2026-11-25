@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "assignment_cost": {
+   "base": [
+    [
+     25,
+     21,
+     26,
+     23,
+     27
+    ],
+    [
+     25,
+     25,
+     29,
+     23,
+     19
+    ],
+    [
+     30,
+     24,
+     18,
+     16,
+     24
+    ],
+    [
+     19,
+     21,
+     26,
+     27,
+     24
+    ],
+    [
+     30,
+     27,
+     15,
+     24,
+     17
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "employee_total_capacity": {
+   "base": [
+    11,
+    9,
+    8,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "employee_project_limit": {
+   "base": [
+    [
+     5,
+     5,
+     8,
+     6,
+     6
+    ],
+    [
+     5,
+     6,
+     6,
+     4,
+     6
+    ],
+    [
+     4,
+     7,
+     5,
+     5,
+     7
+    ],
+    [
+     8,
+     5,
+     7,
+     5,
+     7
+    ],
+    [
+     8,
+     7,
+     5,
+     7,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_demand": {
+   "base": [
+    4,
+    12,
+    10,
+    12,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "assignment_cost": {
+    "meaning": "Cost per unit assigned for each employee-project pair (5x5 matrix, rows=employees 0-4, cols=projects 0-4)",
+    "base": [
+     [
+      25,
+      21,
+      26,
+      23,
+      27
+     ],
+     [
+      25,
+      25,
+      29,
+      23,
+      19
+     ],
+     [
+      30,
+      24,
+      18,
+      16,
+      24
+     ],
+     [
+      19,
+      21,
+      26,
+      27,
+      24
+     ],
+     [
+      30,
+      27,
+      15,
+      24,
+      17
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "employee_total_capacity": {
+    "meaning": "Maximum (and exact required) total units each employee can contribute across all projects",
+    "base": [
+     11,
+     9,
+     8,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "employee_project_limit": {
+    "meaning": "Maximum units each employee can contribute to each specific project (5x5 matrix, rows=employees 0-4, cols=projects 0-4)",
+    "base": [
+     [
+      5,
+      5,
+      8,
+      6,
+      6
+     ],
+     [
+      5,
+      6,
+      6,
+      4,
+      6
+     ],
+     [
+      4,
+      7,
+      5,
+      5,
+      7
+     ],
+     [
+      8,
+      5,
+      7,
+      5,
+      7
+     ],
+     [
+      8,
+      7,
+      5,
+      7,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "project_demand": {
+    "meaning": "Exact total units required by each project",
+    "base": [
+     4,
+     12,
+     10,
+     12,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

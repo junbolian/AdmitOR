@@ -1,0 +1,222 @@
+{
+ "spec": {
+  "fleet_size": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "vehicle_capacity": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "service_demands": {
+   "base": [
+    2,
+    4,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     51,
+     36,
+     50,
+     60,
+     42,
+     52
+    ],
+    [
+     51,
+     0,
+     65,
+     13,
+     84,
+     93,
+     102
+    ],
+    [
+     36,
+     65,
+     0,
+     71,
+     24,
+     54,
+     68
+    ],
+    [
+     50,
+     13,
+     71,
+     0,
+     92,
+     91,
+     98
+    ],
+    [
+     60,
+     84,
+     24,
+     92,
+     0,
+     70,
+     84
+    ],
+    [
+     42,
+     93,
+     54,
+     91,
+     70,
+     0,
+     14
+    ],
+    [
+     52,
+     102,
+     68,
+     98,
+     84,
+     14,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[fleet_size] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "fleet_size": {
+    "meaning": "Number of snowplows (fleet cardinality; frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "vehicle_capacity": {
+    "meaning": "Maximum snow carrying capacity per snowplow",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "service_demands": {
+    "meaning": "Snow removal workload per mandatory segment, in order: (0,5), (2,5), (2,6), (4,6)",
+    "base": [
+     2,
+     4,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Symmetric Euclidean travel distances between all node pairs (7x7 matrix)",
+    "base": [
+     [
+      0,
+      51,
+      36,
+      50,
+      60,
+      42,
+      52
+     ],
+     [
+      51,
+      0,
+      65,
+      13,
+      84,
+      93,
+      102
+     ],
+     [
+      36,
+      65,
+      0,
+      71,
+      24,
+      54,
+      68
+     ],
+     [
+      50,
+      13,
+      71,
+      0,
+      92,
+      91,
+      98
+     ],
+     [
+      60,
+      84,
+      24,
+      92,
+      0,
+      70,
+      84
+     ],
+     [
+      42,
+      93,
+      54,
+      91,
+      70,
+      0,
+      14
+     ],
+     [
+      52,
+      102,
+      68,
+      98,
+      84,
+      14,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

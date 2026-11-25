@@ -1,0 +1,351 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "A-direct-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "num_participants": 8,
+   "num_cars": 8,
+   "preference_p0": [
+    5,
+    6
+   ],
+   "preference_p1": [
+    1,
+    2
+   ],
+   "preference_p2": [
+    3,
+    4,
+    6
+   ],
+   "preference_p3": [
+    0
+   ],
+   "preference_p4": [
+    0,
+    6
+   ],
+   "preference_p5": [
+    4
+   ],
+   "preference_p6": [
+    4,
+    5,
+    7
+   ],
+   "preference_p7": [
+    2,
+    4,
+    5
+   ]
+  },
+  {
+   "num_participants": 8,
+   "num_cars": 8,
+   "preference_p0": [
+    4.3250879551073576,
+    5.003558657335762
+   ],
+   "preference_p1": [
+    1,
+    2
+   ],
+   "preference_p2": [
+    3,
+    4,
+    6
+   ],
+   "preference_p3": [
+    0.0
+   ],
+   "preference_p4": [
+    0.0,
+    7.411846443737443
+   ],
+   "preference_p5": [
+    3.008653198310599
+   ],
+   "preference_p6": [
+    4,
+    5,
+    7
+   ],
+   "preference_p7": [
+    1.9063061836223245,
+    2.871513326651369,
+    4.15591392441081
+   ]
+  },
+  {
+   "num_participants": 8,
+   "num_cars": 8,
+   "preference_p0": [
+    4.096512952059945,
+    6.539583976006283
+   ],
+   "preference_p1": [
+    1,
+    2
+   ],
+   "preference_p2": [
+    3,
+    4,
+    6
+   ],
+   "preference_p3": [
+    0.0
+   ],
+   "preference_p4": [
+    0.0,
+    6.321356461953272
+   ],
+   "preference_p5": [
+    4.742633096026784
+   ],
+   "preference_p6": [
+    4,
+    5,
+    7
+   ],
+   "preference_p7": [
+    1.407798511613673,
+    4.7339662043987385,
+    5.59441818496468
+   ]
+  },
+  {
+   "num_participants": 8,
+   "num_cars": 8,
+   "preference_p0": [
+    6.371639216620344,
+    5.411740362405456
+   ],
+   "preference_p1": [
+    1,
+    2
+   ],
+   "preference_p2": [
+    3,
+    4,
+    6
+   ],
+   "preference_p3": [
+    0.0
+   ],
+   "preference_p4": [
+    0.0,
+    7.250979718850855
+   ],
+   "preference_p5": [
+    4.248942475280539
+   ],
+   "preference_p6": [
+    4,
+    5,
+    7
+   ],
+   "preference_p7": [
+    2.3685539279292565,
+    4.551356288065163,
+    5.108684274364102
+   ]
+  },
+  {
+   "num_participants": 8,
+   "num_cars": 8,
+   "preference_p0": [
+    5.15612189381968,
+    7.185856791310782
+   ],
+   "preference_p1": [
+    1,
+    2
+   ],
+   "preference_p2": [
+    3,
+    4,
+    6
+   ],
+   "preference_p3": [
+    0.0
+   ],
+   "preference_p4": [
+    0.0,
+    6.2784677229243435
+   ],
+   "preference_p5": [
+    4.490972406915816
+   ],
+   "preference_p6": [
+    4,
+    5,
+    7
+   ],
+   "preference_p7": [
+    1.4549892603867947,
+    3.3469558615637123,
+    4.368163890806321
+   ]
+  },
+  {
+   "num_participants": 8,
+   "num_cars": 8,
+   "preference_p0": [
+    3.803004288229187,
+    5.200704971196331
+   ],
+   "preference_p1": [
+    1,
+    2
+   ],
+   "preference_p2": [
+    3,
+    4,
+    6
+   ],
+   "preference_p3": [
+    0.0
+   ],
+   "preference_p4": [
+    0.0,
+    5.5326514816207775
+   ],
+   "preference_p5": [
+    3.30281687385157
+   ],
+   "preference_p6": [
+    4,
+    5,
+    7
+   ],
+   "preference_p7": [
+    1.720373386458936,
+    5.047971010509986,
+    5.444106155739781
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0
+  ],
+  "A-direct-2": [
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0
+  ],
+  "B-structured": [
+   8.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "B-structured-2": [
+   8.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0,
+   4.0
+  ],
+  "C-direct": [
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0
+  ],
+  "C-direct-2": [
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0,
+   8.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 4 on instance 1 (params: {'num_participants': 8, 'num_cars': 8, 'preference_p0': [4.33, 5.0], 'preference_p1': [1, 2], 'preference_p2': [3, 4, 6], 'preference_p3': [0.0], 'preference_p4': [0.0, 7.41], 'preference_p5': [3.01], 'preference_p6': [4, 5, 7], 'preference_p7': [1.91, 2.87, 4.16]})",
+  "B-structured-2": "diverges from consensus by 4 on instance 1 (params: {'num_participants': 8, 'num_cars': 8, 'preference_p0': [4.33, 5.0], 'preference_p1': [1, 2], 'preference_p2': [3, 4, 6], 'preference_p3': [0.0], 'preference_p4': [0.0, 7.41], 'preference_p5': [3.01], 'preference_p6': [4, 5, 7], 'preference_p7': [1.91, 2.87, 4.16]})"
+ },
+ "disagreements": [],
+ "notes": []
+}

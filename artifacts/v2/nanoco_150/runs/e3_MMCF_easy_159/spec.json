@@ -1,0 +1,271 @@
+{
+ "spec": {
+  "arc_capacity": {
+   "base": [
+    13,
+    13,
+    14,
+    14,
+    12,
+    12,
+    21,
+    21,
+    21,
+    21,
+    12,
+    12,
+    16,
+    16,
+    18,
+    18,
+    17,
+    17,
+    21,
+    21,
+    21,
+    21,
+    20,
+    20,
+    19,
+    19,
+    17,
+    17,
+    12,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "arc_cost": {
+   "base": [
+    7,
+    7,
+    10,
+    10,
+    9,
+    9,
+    8,
+    8,
+    6,
+    6,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    6,
+    6,
+    3,
+    3,
+    8,
+    8,
+    4,
+    4,
+    8,
+    8,
+    6,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "node_x": {
+   "base": [
+    77,
+    47,
+    85,
+    67,
+    19,
+    20,
+    66,
+    50,
+    84,
+    55
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "node_y": {
+   "base": [
+    26,
+    13,
+    78,
+    76,
+    56,
+    17,
+    4,
+    69,
+    46,
+    21
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "demand": {
+   "base": [
+    8,
+    8
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_capacity": {
+    "meaning": "Thermal capacity of each directed arc (in the same order as listed: 0->1,1->0,0->4,4->0,1->2,2->1,1->3,3->1,1->5,5->1,1->6,6->1,2->3,3->2,3->4,4->3,4->5,5->4,5->6,6->5,5->9,9->5,6->7,7->6,7->8,8->7,7->9,9->7,8->9,9->8)",
+    "base": [
+     13,
+     13,
+     14,
+     14,
+     12,
+     12,
+     21,
+     21,
+     21,
+     21,
+     12,
+     12,
+     16,
+     16,
+     18,
+     18,
+     17,
+     17,
+     21,
+     21,
+     21,
+     21,
+     20,
+     20,
+     19,
+     19,
+     17,
+     17,
+     12,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "arc_cost": {
+    "meaning": "Unit cost / resistance loss coefficient per unit flow on each directed arc (same arc order as above)",
+    "base": [
+     7,
+     7,
+     10,
+     10,
+     9,
+     9,
+     8,
+     8,
+     6,
+     6,
+     6,
+     6,
+     5,
+     5,
+     5,
+     5,
+     4,
+     4,
+     6,
+     6,
+     3,
+     3,
+     8,
+     8,
+     4,
+     4,
+     8,
+     8,
+     6,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "node_x": {
+    "meaning": "X coordinate of each of the 10 grid nodes (index 0..9)",
+    "base": [
+     77,
+     47,
+     85,
+     67,
+     19,
+     20,
+     66,
+     50,
+     84,
+     55
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "node_y": {
+    "meaning": "Y coordinate of each of the 10 grid nodes (index 0..9)",
+    "base": [
+     26,
+     13,
+     78,
+     76,
+     56,
+     17,
+     4,
+     69,
+     46,
+     21
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "demand": {
+    "meaning": "Power demand volume (kWh) for the two EV requests: request 1 from node 1 to node 4, request 2 from node 7 to node 9",
+    "base": [
+     8,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 20,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

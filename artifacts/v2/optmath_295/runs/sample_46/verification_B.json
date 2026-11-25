@@ -1,0 +1,33 @@
+{
+ "sample_id": "sample_46",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"demand\",\"evidence\":\"For example, OD pair 3-2 requires at least 18 passengers to be served\"},{\"parameter\":\"min_frequency\",\"evidence\":\"For example, line L_0 must run at least 2 times and no more than 10 times if selected.\"},{\"parameter\":\"max_frequency\",\"evidence\":\"For example, line L_0 must run at least 2 times and no more than 10 times if selected.\"},{\"parameter\":\"vehicle_usage_per_frequency\",\"evidence\":\"For example, line L_0 uses 88 vehicle units per frequency, L_1 uses 47, L_2 uses 85\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "demand",
+   "evidence": "For example, OD pair 3-2 requires at least 18 passengers to be served"
+  },
+  {
+   "parameter": "min_frequency",
+   "evidence": "For example, line L_0 must run at least 2 times and no more than 10 times if selected."
+  },
+  {
+   "parameter": "max_frequency",
+   "evidence": "For example, line L_0 must run at least 2 times and no more than 10 times if selected."
+  },
+  {
+   "parameter": "vehicle_usage_per_frequency",
+   "evidence": "For example, line L_0 uses 88 vehicle units per frequency, L_1 uses 47, L_2 uses 85"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,281 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    120,
+    156
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost": {
+   "base": [
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "grinder_hours_per_unit": {
+   "base": [
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "drill_hours_per_unit": {
+   "base": [
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "borer_hours_per_unit": {
+   "base": [
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "grinder_capacity": {
+   "base": [
+    240,
+    240,
+    240,
+    240
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "drill_capacity": {
+   "base": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "borer_capacity": {
+   "base": [
+    120,
+    120,
+    120,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "inventory_limit": {
+   "base": [
+    50,
+    50,
+    50,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "sales_limit": {
+   "base": [
+    [
+     21,
+     33,
+     34,
+     36
+    ],
+    [
+     37,
+     43,
+     24,
+     33
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "target_inventory": {
+   "base": [
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "profit (revenue net of production cost) per unit sold for each product",
+    "base": [
+     120,
+     156
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost": {
+    "meaning": "cost per unit of inventory held one period for each product",
+    "base": [
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "grinder_hours_per_unit": {
+    "meaning": "grinder hours required per unit of each product",
+    "base": [
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "drill_hours_per_unit": {
+    "meaning": "drill hours required per unit of each product",
+    "base": [
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "borer_hours_per_unit": {
+    "meaning": "borer hours required per unit of each product",
+    "base": [
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "grinder_capacity": {
+    "meaning": "available grinder hours per period",
+    "base": [
+     240,
+     240,
+     240,
+     240
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "drill_capacity": {
+    "meaning": "available drill hours per period",
+    "base": [
+     120,
+     120,
+     120,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "borer_capacity": {
+    "meaning": "available borer hours per period",
+    "base": [
+     120,
+     120,
+     120,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "inventory_limit": {
+    "meaning": "maximum end-of-period inventory per product (units)",
+    "base": [
+     50,
+     50,
+     50,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "sales_limit": {
+    "meaning": "maximum sales per period per product (units), rows = product 0, product 1",
+    "base": [
+     [
+      21,
+      33,
+      34,
+      36
+     ],
+     [
+      37,
+      43,
+      24,
+      33
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "target_inventory": {
+    "meaning": "required end-of-horizon inventory per product (units)",
+    "base": [
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

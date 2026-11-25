@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    49,
+    41,
+    39,
+    44,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    42,
+    44,
+    45,
+    43,
+    38
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     8,
+     9,
+     8,
+     10,
+     9
+    ],
+    [
+     10,
+     10,
+     8,
+     9,
+     8
+    ],
+    [
+     10,
+     10,
+     8,
+     8,
+     9
+    ],
+    [
+     6,
+     9,
+     7,
+     9,
+     6
+    ],
+    [
+     10,
+     8,
+     10,
+     10,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     50,
+     45,
+     53,
+     54,
+     47
+    ],
+    [
+     50,
+     52,
+     54,
+     54,
+     45
+    ],
+    [
+     51,
+     55,
+     47,
+     52,
+     53
+    ],
+    [
+     45,
+     51,
+     54,
+     51,
+     48
+    ],
+    [
+     50,
+     55,
+     49,
+     55,
+     48
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Resources available at each supply hub (origin)",
+    "base": [
+     49,
+     41,
+     39,
+     44,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Resource requirements at each demand center (destination)",
+    "base": [
+     42,
+     44,
+     45,
+     43,
+     38
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Per-unit transportation cost matrix (rows=origins, cols=destinations)",
+    "base": [
+     [
+      8,
+      9,
+      8,
+      10,
+      9
+     ],
+     [
+      10,
+      10,
+      8,
+      9,
+      8
+     ],
+     [
+      10,
+      10,
+      8,
+      8,
+      9
+     ],
+     [
+      6,
+      9,
+      7,
+      9,
+      6
+     ],
+     [
+      10,
+      8,
+      10,
+      10,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Per-route maximum transport capacity matrix (rows=origins, cols=destinations)",
+    "base": [
+     [
+      50,
+      45,
+      53,
+      54,
+      47
+     ],
+     [
+      50,
+      52,
+      54,
+      54,
+      45
+     ],
+     [
+      51,
+      55,
+      47,
+      52,
+      53
+     ],
+     [
+      45,
+      51,
+      54,
+      51,
+      48
+     ],
+     [
+      50,
+      55,
+      49,
+      55,
+      48
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

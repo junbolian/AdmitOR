@@ -1,0 +1,29 @@
+{
+ "sample_id": "conf_168766",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement gives only ranges for fixed_ordering_cost, unit_purchase_cost, and holding_cost — no specific per-week values are listed. The demand vector and order_limit can be verified directly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"fixed_ordering_cost\",\n      \"evidence\": \"ranging from 152 to 287 units of cost\"\n    },\n    {\n      \"parameter\": \"unit_purchase_cost\",\n      \"evidence\": \"ranging from 15 to 30 units of cost\"\n    },\n    {\n      \"parameter\": \"holding_cost\",\n      \"evidence\": \"ranging from 10 to 20 units of cost per unit of inventory\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_ordering_cost",
+   "evidence": "ranging from 152 to 287 units of cost"
+  },
+  {
+   "parameter": "unit_purchase_cost",
+   "evidence": "ranging from 15 to 30 units of cost"
+  },
+  {
+   "parameter": "holding_cost",
+   "evidence": "ranging from 10 to 20 units of cost per unit of inventory"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

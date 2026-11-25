@@ -1,0 +1,348 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assignment_allowance": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "participant_assignment_capacity": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "car_assignment_capacity": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "assignment_allowance": [
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "participant_assignment_capacity": [
+    2,
+    1,
+    1,
+    0
+   ],
+   "car_assignment_capacity": [
+    2,
+    1,
+    0,
+    0,
+    2
+   ]
+  },
+  {
+   "assignment_allowance": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "participant_assignment_capacity": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "car_assignment_capacity": [
+    2,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "assignment_allowance": [
+    [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "participant_assignment_capacity": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "car_assignment_capacity": [
+    1,
+    2,
+    1,
+    0,
+    2
+   ]
+  },
+  {
+   "assignment_allowance": [
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "participant_assignment_capacity": [
+    1,
+    1,
+    2,
+    2
+   ],
+   "car_assignment_capacity": [
+    1,
+    1,
+    0,
+    2,
+    2
+   ]
+  },
+  {
+   "assignment_allowance": [
+    [
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "participant_assignment_capacity": [
+    0,
+    2,
+    2,
+    0
+   ],
+   "car_assignment_capacity": [
+    1,
+    1,
+    1,
+    2,
+    1
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2.0,
+   4.0,
+   3.0,
+   3.0,
+   5.0,
+   4.0
+  ],
+  "B-structured": [
+   2.0,
+   4.0,
+   3.0,
+   3.0,
+   5.0,
+   4.0
+  ],
+  "C-direct": [
+   2.0,
+   4.0,
+   3.0,
+   3.0,
+   5.0,
+   4.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

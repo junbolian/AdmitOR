@@ -1,0 +1,87 @@
+{
+ "sample_id": "e3_VRP_easy_243",
+ "set": "calibration",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"distance_matrix\", \"extracted\": [[0,46,44,18,35,59,54],[46,0,43,64,21,19,81],[44,43,0,53,23,62,97],[18,53,50,0,50,76,55],[35,21,23,50,0,40,82],[59,19,62,76,40,0,81],[54,81,97,55,82,81,0]], \"stated\": \"row 3 (Node 3): to Node 2 is 53, to Node 4 is 50 → [18,64,53,0,50,76,55]\", \"evidence\": \"From Node 3: to Node 0 is 18; to Node 1 is 64; to Node 2 is 53; to Node 3 is 0; to Node 4 is 50; to Node 5 is 76; to Node 6 is 55 — extracted row 3 is [18,53,50,0,50,76,55], swapping the Node 1 and Node 2 values\"}], \"not_stated\": []}",
+ "mismatch": [
+  {
+   "parameter": "distance_matrix",
+   "extracted": [
+    [
+     0,
+     46,
+     44,
+     18,
+     35,
+     59,
+     54
+    ],
+    [
+     46,
+     0,
+     43,
+     64,
+     21,
+     19,
+     81
+    ],
+    [
+     44,
+     43,
+     0,
+     53,
+     23,
+     62,
+     97
+    ],
+    [
+     18,
+     53,
+     50,
+     0,
+     50,
+     76,
+     55
+    ],
+    [
+     35,
+     21,
+     23,
+     50,
+     0,
+     40,
+     82
+    ],
+    [
+     59,
+     19,
+     62,
+     76,
+     40,
+     0,
+     81
+    ],
+    [
+     54,
+     81,
+     97,
+     55,
+     82,
+     81,
+     0
+    ]
+   ],
+   "stated": "row 3 (Node 3): to Node 2 is 53, to Node 4 is 50 → [18,64,53,0,50,76,55]",
+   "evidence": "From Node 3: to Node 0 is 18; to Node 1 is 64; to Node 2 is 53; to Node 3 is 0; to Node 4 is 50; to Node 5 is 76; to Node 6 is 55 — extracted row 3 is [18,53,50,0,50,76,55], swapping the Node 1 and Node 2 values"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

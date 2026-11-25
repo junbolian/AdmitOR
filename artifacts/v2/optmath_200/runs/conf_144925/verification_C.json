@@ -1,0 +1,10 @@
+{
+ "sample_id": "conf_144925",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "unparsed",
+ "reply": "{\"mismatch\": [{\"parameter\": \"backlog_penalty\", \"extracted\": [14,14,14,10,14], \"stated\": [14,14,14,10,14], \"evidence\": \"The backlogging penalties are $14 per unit in periods 1, 2, 3, and 5, and $10 per unit in period 4.\"}], \"not_stated\": []}\n\nWait, let me recheck the backlog_penalty carefully.\n\nStatement: \"$14 per unit in periods 1, 2, 3, and 5, and $10 per unit in period 4.\"\n\nSo the order is: period 1=14, period 2=14, period 3=14, period 4=10, period 5=14.\n\nExtracted: [14,14,14,10,14] — this matches exactly.\n\n{\"mismatch\": [], \"not_stated\": []}"
+}

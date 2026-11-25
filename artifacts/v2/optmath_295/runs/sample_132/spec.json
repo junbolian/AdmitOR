@@ -1,0 +1,204 @@
+{
+ "spec": {
+  "cost_team1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "cost_team2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "cost_team3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 7.0,
+    "integer": false
+   }
+  },
+  "rhs_1_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_1_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_2_only": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "rhs_1_2_3": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "rhs_3_only": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "rhs_2_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_1_only": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[rhs_2_only] degenerate abs range (lo == hi); perturbation has no effect",
+  "[rhs_3_only] degenerate abs range (lo == hi); perturbation has no effect",
+  "[rhs_1_only] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_team1": {
+    "meaning": "Deployment cost of Team 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "cost_team2": {
+    "meaning": "Deployment cost of Team 2",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "cost_team3": {
+    "meaning": "Deployment cost of Team 3",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 7,
+     "integer": false
+    }
+   },
+   "rhs_1_3": {
+    "meaning": "Right-hand side for constraints of form Selected[1]+Selected[3] >= rhs (MultiCover_e1,e6,e9,e23)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_1_2": {
+    "meaning": "Right-hand side for constraints of form Selected[1]+Selected[2] >= rhs (MultiCover_e2,e5,e14,e19,e20)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_2_only": {
+    "meaning": "Right-hand side for constraints Selected[2] >= rhs (MultiCover_e3,e8,e10,e25,e26)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "rhs_1_2_3": {
+    "meaning": "Right-hand side for constraints Selected[1]+Selected[2]+Selected[3] >= rhs (MultiCover_e4,e7,e13,e17,e21,e22,e24,e27)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "rhs_3_only": {
+    "meaning": "Right-hand side for constraints Selected[3] >= rhs (MultiCover_e11,e16,e18)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "rhs_2_3": {
+    "meaning": "Right-hand side for constraint Selected[2]+Selected[3] >= rhs (MultiCover_e12)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_1_only": {
+    "meaning": "Right-hand side for constraints Selected[1] >= rhs (MultiCover_e15,e20)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

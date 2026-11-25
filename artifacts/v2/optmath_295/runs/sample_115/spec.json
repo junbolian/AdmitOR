@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "supplies": {
+   "base": [
+    167,
+    197,
+    160,
+    158,
+    190,
+    168
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demands": {
+   "base": [
+    170,
+    186,
+    154,
+    175,
+    158,
+    197
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "costs": {
+   "base": [
+    [
+     16,
+     15,
+     20,
+     17,
+     15,
+     17
+    ],
+    [
+     18,
+     15,
+     17,
+     15,
+     18,
+     19
+    ],
+    [
+     20,
+     16,
+     16,
+     16,
+     19,
+     20
+    ],
+    [
+     16,
+     20,
+     20,
+     18,
+     18,
+     20
+    ],
+    [
+     18,
+     17,
+     16,
+     19,
+     19,
+     19
+    ],
+    [
+     17,
+     20,
+     16,
+     17,
+     19,
+     16
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supplies": {
+    "meaning": "Units of goods available at each warehouse (origins), must be shipped entirely; indexed by warehouse 0..5",
+    "base": [
+     167,
+     197,
+     160,
+     158,
+     190,
+     168
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demands": {
+    "meaning": "Units of goods required by each store (destinations), must be met exactly; indexed by store 0..5",
+    "base": [
+     170,
+     186,
+     154,
+     175,
+     158,
+     197
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "costs": {
+    "meaning": "Transportation cost per unit shipped from each warehouse (row) to each store (column), 6x6 matrix in warehouse order 0..5",
+    "base": [
+     [
+      16,
+      15,
+      20,
+      17,
+      15,
+      17
+     ],
+     [
+      18,
+      15,
+      17,
+      15,
+      18,
+      19
+     ],
+     [
+      20,
+      16,
+      16,
+      16,
+      19,
+      20
+     ],
+     [
+      16,
+      20,
+      20,
+      18,
+      18,
+      20
+     ],
+     [
+      18,
+      17,
+      16,
+      19,
+      19,
+      19
+     ],
+     [
+      17,
+      20,
+      16,
+      17,
+      19,
+      16
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

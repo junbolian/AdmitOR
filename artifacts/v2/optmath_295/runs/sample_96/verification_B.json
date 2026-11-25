@@ -1,0 +1,105 @@
+{
+ "sample_id": "sample_96",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost_peak0_aa0\",\n      \"evidence\": \"For example, assigning Peak 0 to Amino Acid 0 costs 0.4241579671609457\"\n    },\n    {\n      \"parameter\": \"cost_peak0_aa1\",\n      \"evidence\": \"For example, assigning Peak 0 to Amino Acid 0 costs 0.4241579671609457, while assigning it to Amino Acid 1 costs 0.4459143481608616.\"\n    },\n    {\n      \"parameter\": \"cost_peak0_aa2\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak0_aa4\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak1_aa0\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak1_aa1\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak1_aa2\",\n      \"evidence\": \"Assigning Peak 1 to Amino Acid 2 costs 0.4251877625740568, and so on.\"\n    },\n    {\n      \"parameter\": \"cost_peak1_aa3\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak2_aa0\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak2_aa2\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak2_aa3\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak2_aa5\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak3_aa0\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak3_aa1\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak3_aa2\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak3_aa5\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak4_aa0\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak4_aa1\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak4_aa3\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"cost_peak4_aa4\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"noe_pair_p1aa1_p2aa0_rhs\",\n      \"evidence\": \"For example, if Peak 1 is assigned to Amino Acid 1 and Peak 2 is assigned to Amino Acid 0, the sum of these assignments must not exceed 2.\"\n    },\n    {\n      \"parameter\": \"noe_pair_p1aa3_p2aa0_rhs\",\n      \"evidence\": \"Similarly, if Peak 1 is assigned to Amino Acid 3 and Peak 2 is assigned to Amino Acid 0, the sum of these assignments must not exceed 1.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_peak0_aa0",
+   "evidence": "For example, assigning Peak 0 to Amino Acid 0 costs 0.4241579671609457"
+  },
+  {
+   "parameter": "cost_peak0_aa1",
+   "evidence": "For example, assigning Peak 0 to Amino Acid 0 costs 0.4241579671609457, while assigning it to Amino Acid 1 costs 0.4459143481608616."
+  },
+  {
+   "parameter": "cost_peak0_aa2",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak0_aa4",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak1_aa0",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak1_aa1",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak1_aa2",
+   "evidence": "Assigning Peak 1 to Amino Acid 2 costs 0.4251877625740568, and so on."
+  },
+  {
+   "parameter": "cost_peak1_aa3",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak2_aa0",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak2_aa2",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak2_aa3",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak2_aa5",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak3_aa0",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak3_aa1",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak3_aa2",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak3_aa5",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak4_aa0",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak4_aa1",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak4_aa3",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "cost_peak4_aa4",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "noe_pair_p1aa1_p2aa0_rhs",
+   "evidence": "For example, if Peak 1 is assigned to Amino Acid 1 and Peak 2 is assigned to Amino Acid 0, the sum of these assignments must not exceed 2."
+  },
+  {
+   "parameter": "noe_pair_p1aa3_p2aa0_rhs",
+   "evidence": "Similarly, if Peak 1 is assigned to Amino Acid 3 and Peak 2 is assigned to Amino Acid 0, the sum of these assignments must not exceed 1."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

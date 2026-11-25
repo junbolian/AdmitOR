@@ -1,0 +1,177 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    100274,
+    96413,
+    103573,
+    103557,
+    104460,
+    97217
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "shipping_cost_row0": {
+   "base": [
+    61,
+    65,
+    68,
+    63,
+    62,
+    69
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    400,
+    387,
+    398,
+    404,
+    389,
+    384,
+    412,
+    410,
+    417,
+    402,
+    397
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity": {
+   "base": [
+    964,
+    973,
+    983,
+    1041,
+    963,
+    1003
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "num_facilities": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_stores": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_stores] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost to open each distribution center (6 facilities)",
+    "base": [
+     100274,
+     96413,
+     103573,
+     103557,
+     104460,
+     97217
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "shipping_cost_row0": {
+    "meaning": "Variable shipping cost from each DC to retail store 0",
+    "base": [
+     61,
+     65,
+     68,
+     63,
+     62,
+     69
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Required units at each of the 11 retail stores",
+    "base": [
+     400,
+     387,
+     398,
+     404,
+     389,
+     384,
+     412,
+     410,
+     417,
+     402,
+     397
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total shipment capacity of each DC if opened",
+    "base": [
+     964,
+     973,
+     983,
+     1041,
+     963,
+     1003
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "num_facilities": {
+    "meaning": "Number of distribution centers (frozen index-set size)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_stores": {
+    "meaning": "Number of retail stores (frozen index-set size)",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 11,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

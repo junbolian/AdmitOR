@@ -1,0 +1,169 @@
+{
+ "spec": {
+  "arc_cost": {
+   "base": [
+    14,
+    10,
+    15,
+    14,
+    11,
+    14,
+    15,
+    13,
+    14,
+    11,
+    14,
+    15,
+    13,
+    10,
+    12,
+    11,
+    12,
+    12,
+    15,
+    14,
+    10,
+    13,
+    10,
+    11,
+    12,
+    12,
+    14,
+    15,
+    10,
+    14,
+    15,
+    14,
+    15,
+    11,
+    10,
+    14,
+    12,
+    12,
+    15,
+    12,
+    12,
+    15,
+    14,
+    10,
+    15,
+    11,
+    13,
+    15,
+    12,
+    10,
+    11,
+    14,
+    14,
+    10,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "net_outflow_node_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "net_inflow_node_7": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_cost": {
+    "meaning": "Cost per unit on each directed route, listed row-major by source node_0..node_7 and target node, omitting self-loops",
+    "base": [
+     14,
+     10,
+     15,
+     14,
+     11,
+     14,
+     15,
+     13,
+     14,
+     11,
+     14,
+     15,
+     13,
+     10,
+     12,
+     11,
+     12,
+     12,
+     15,
+     14,
+     10,
+     13,
+     10,
+     11,
+     12,
+     12,
+     14,
+     15,
+     10,
+     14,
+     15,
+     14,
+     15,
+     11,
+     10,
+     14,
+     12,
+     12,
+     15,
+     12,
+     12,
+     15,
+     14,
+     10,
+     15,
+     11,
+     13,
+     15,
+     12,
+     10,
+     11,
+     14,
+     14,
+     10,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "net_outflow_node_0": {
+    "meaning": "Required net outflow (supply) at source hub node_0",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "net_inflow_node_7": {
+    "meaning": "Required net inflow (demand) at destination hub node_7",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

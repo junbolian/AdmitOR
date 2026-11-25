@@ -1,0 +1,276 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "route_demand": {
+   "base": [
+    276,
+    208,
+    306,
+    297,
+    263,
+    263,
+    280
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "route6_demand": {
+   "base": 280,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "a0_capacity": {
+   "base": [
+    95,
+    88,
+    80,
+    80,
+    87,
+    109,
+    110
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "a1_capacity": {
+   "base": [
+    105,
+    119,
+    99,
+    112,
+    114,
+    89,
+    112
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "operational_cost": {
+   "base": [
+    [
+     3604,
+     3617,
+     3600,
+     3550,
+     3520,
+     3580,
+     3560
+    ],
+    [
+     3308,
+     3501,
+     3400,
+     3450,
+     3420,
+     3380,
+     3410
+    ],
+    [
+     3700,
+     3650,
+     3620,
+     3600,
+     3580,
+     3590,
+     3600
+    ],
+    [
+     3450,
+     3480,
+     3430,
+     3410,
+     3390,
+     3420,
+     3400
+    ],
+    [
+     3600,
+     3620,
+     3570,
+     3550,
+     3530,
+     3560,
+     3540
+    ],
+    [
+     3500,
+     3520,
+     3480,
+     3460,
+     3440,
+     3470,
+     3450
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "Maximum number of each aircraft type that can be assigned (per aircraft_0..aircraft_5)",
+    "base": [
+     5,
+     4,
+     5,
+     4,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "route_demand": {
+    "meaning": "Minimum capacity units required for each route (route_0..route_6)",
+    "base": [
+     276,
+     208,
+     306,
+     297,
+     263,
+     263,
+     280
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "route6_demand": {
+    "meaning": "Minimum capacity units required for route_6",
+    "base": 280,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "a0_capacity": {
+    "meaning": "Capacity contribution of aircraft_0 to route_0..route_6",
+    "base": [
+     95,
+     88,
+     80,
+     80,
+     87,
+     109,
+     110
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "a1_capacity": {
+    "meaning": "Capacity contribution of aircraft_1 to route_0..route_6",
+    "base": [
+     105,
+     119,
+     99,
+     112,
+     114,
+     89,
+     112
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "operational_cost": {
+    "meaning": "Cost of assigning each aircraft type to each route; base rows are aircraft_0..aircraft_5, columns route_0..route_6. Given entries for aircraft_0 and aircraft_1 are exact; remaining entries are illustrative placeholders consistent with the stated structure.",
+    "base": [
+     [
+      3604,
+      3617,
+      3600,
+      3550,
+      3520,
+      3580,
+      3560
+     ],
+     [
+      3308,
+      3501,
+      3400,
+      3450,
+      3420,
+      3380,
+      3410
+     ],
+     [
+      3700,
+      3650,
+      3620,
+      3600,
+      3580,
+      3590,
+      3600
+     ],
+     [
+      3450,
+      3480,
+      3430,
+      3410,
+      3390,
+      3420,
+      3400
+     ],
+     [
+      3600,
+      3620,
+      3570,
+      3550,
+      3530,
+      3560,
+      3540
+     ],
+     [
+      3500,
+      3520,
+      3480,
+      3460,
+      3440,
+      3470,
+      3450
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

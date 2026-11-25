@@ -1,0 +1,257 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "early_penalty": [
+    10,
+    12,
+    5,
+    7
+   ],
+   "late_penalty": [
+    13,
+    13,
+    12,
+    8
+   ],
+   "earliest_landing": [
+    65,
+    72,
+    60,
+    60
+   ],
+   "latest_landing": [
+    120,
+    120,
+    107,
+    99
+   ],
+   "target_landing": [
+    95,
+    102,
+    77,
+    69
+   ]
+  },
+  {
+   "early_penalty": [
+    11.394267984578835,
+    6.300129062672003,
+    3.8751465918455965,
+    5.062475167041759
+   ],
+   "late_penalty": [
+    16.07412578413216,
+    15.297093336497847,
+    16.706154812458145,
+    4.695510661035329
+   ],
+   "earliest_landing": [
+    50.630618362232454,
+    3.5756663325684412,
+    26.236556976432404,
+    60.64263457240349
+   ],
+   "latest_landing": [
+    4.7764745430954525,
+    35.790777123596726,
+    116.97919880031418,
+    98.08946650857901
+   ],
+   "target_landing": [
+    33.066093306104506,
+    88.38985258138631,
+    121.414568501674,
+    0.9748139517091525
+   ]
+  },
+  {
+   "early_penalty": [
+    13.058192518328081,
+    14.377672739858722,
+    4.20125258258996,
+    4.5883564986824705
+   ],
+   "late_penalty": [
+    18.943769938688156,
+    10.875729086464148,
+    7.112950120561775,
+    4.773731014667712
+   ],
+   "earliest_landing": [
+    101.69932396169517,
+    72.44712376402693,
+    96.85539279292563,
+    87.56781440325814
+   ],
+   "latest_landing": [
+    96.52105646184613,
+    175.1608375162867,
+    68.13618789750363,
+    99.36731362918086
+   ],
+   "target_landing": [
+    124.41069963794924,
+    92.77796285463691,
+    129.25603504661657,
+    86.6028217885143
+   ]
+  },
+  {
+   "early_penalty": [
+    12.045718362149236,
+    6.549892603867947,
+    3.639491378257734,
+    5.52571574521475
+   ],
+   "late_penalty": [
+    7.537295700007157,
+    9.526281522693392,
+    7.212017152916749,
+    6.223788824880737
+   ],
+   "earliest_landing": [
+    76.28213331172802,
+    43.77986147641011,
+    44.421716054025914,
+    25.14084369257852
+   ],
+   "latest_landing": [
+    48.056007968840404,
+    168.5978257882489,
+    116.64636934438684,
+    109.64358102005788
+   ],
+   "target_landing": [
+    25.670797229714548,
+    109.36901969255237,
+    24.51037406428926,
+    56.91831626364717
+   ]
+  },
+  {
+   "early_penalty": [
+    14.895233506365953,
+    13.679997118249116,
+    5.284748718873232,
+    8.292299756929122
+   ],
+   "late_penalty": [
+    17.457074962467527,
+    16.587998850101183,
+    8.748576863569252,
+    4.256801951232302
+   ],
+   "earliest_landing": [
+    37.85436576708983,
+    32.12890511708433,
+    25.317941230359175,
+    113.14916572020653
+   ],
+   "latest_landing": [
+    157.7461727650804,
+    56.642018543726024,
+    117.97895975307841,
+    71.21374219091956
+   ],
+   "target_landing": [
+    137.18213846108154,
+    68.82777788810982,
+    39.73202497470787,
+    36.994126154097515
+   ]
+  },
+  {
+   "early_penalty": [
+    10.613681341631507,
+    9.152899302275223,
+    5.422929951117704,
+    9.78476018521734
+   ],
+   "late_penalty": [
+    11.692206566825165,
+    9.351169869044684,
+    17.970451277941322,
+    8.076210349411717
+   ],
+   "earliest_landing": [
+    10.909129460855267,
+    5.653965050968148,
+    13.157895642079097,
+    75.2935250043708
+   ],
+   "latest_landing": [
+    142.57428558533354,
+    75.98879402394313,
+    11.434987107352283,
+    68.69147157117662
+   ],
+   "target_landing": [
+    149.4182070360145,
+    79.36715176487056,
+    145.66175664204272,
+    129.1169553351747
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'"
+  ],
+  "B-structured": [
+   "missing_parameter:separation_i_before_j",
+   "missing_parameter:separation_i_before_j",
+   "missing_parameter:separation_i_before_j",
+   "missing_parameter:separation_i_before_j",
+   "missing_parameter:separation_i_before_j",
+   "missing_parameter:separation_i_before_j"
+  ],
+  "C-direct": [
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

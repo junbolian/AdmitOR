@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_273",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each parameter against the statement:\n\n**preference_matrix**: The statement lists interests for all 8 participants explicitly and repeatedly. Cross-checking each row against those lists, every row matches. For example, participant_3's row [1,0,1,0,0,1,1,1] correctly reflects car_0, car_2, car_5, car_6, car_7.\n\n**participant_capacity**: The statement says each participant can be assigned to \"at most one car\" but never states the value 1 numerically for each participant, nor lists the vector explicitly.\n\n**car_capacity**: The statement says each car can be assigned to \"at most one participant\" but similarly never states the numerical value 1 per car explicitly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"participant_capacity\",\n      \"evidence\": \"Each participant can be assigned to at most one car.\"\n    },\n    {\n      \"parameter\": \"car_capacity\",\n      \"evidence\": \"Each car can be assigned to at most one participant.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "participant_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "car_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

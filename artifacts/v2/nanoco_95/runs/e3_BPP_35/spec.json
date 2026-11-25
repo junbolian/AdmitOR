@@ -1,0 +1,76 @@
+{
+ "spec": {
+  "skill_scores": {
+   "base": [
+    10,
+    12,
+    25,
+    16,
+    24,
+    30,
+    23,
+    13,
+    17,
+    24,
+    40,
+    36,
+    20,
+    22,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "shift_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "skill_scores": {
+    "meaning": "Skill proficiency score for each of the 15 staff members",
+    "base": [
+     10,
+     12,
+     25,
+     16,
+     24,
+     30,
+     23,
+     13,
+     17,
+     24,
+     40,
+     36,
+     20,
+     22,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "shift_capacity": {
+    "meaning": "Maximum total skill load allowed per shift",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

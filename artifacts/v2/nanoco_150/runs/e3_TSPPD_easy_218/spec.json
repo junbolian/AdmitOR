@@ -1,0 +1,460 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     43,
+     64,
+     21,
+     19,
+     81,
+     75
+    ],
+    [
+     43,
+     0,
+     53,
+     23,
+     62,
+     97,
+     69
+    ],
+    [
+     64,
+     53,
+     0,
+     50,
+     76,
+     55,
+     16
+    ],
+    [
+     21,
+     23,
+     50,
+     0,
+     40,
+     82,
+     64
+    ],
+    [
+     19,
+     62,
+     76,
+     40,
+     0,
+     81,
+     86
+    ],
+    [
+     81,
+     97,
+     55,
+     82,
+     81,
+     0,
+     47
+    ],
+    [
+     75,
+     69,
+     16,
+     64,
+     86,
+     47,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "depot_x": {
+   "base": 91,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "depot_y": {
+   "base": 71,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "node1_x": {
+   "base": 88,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "node1_y": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "node2_x": {
+   "base": 36,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "node2_y": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "node3_x": {
+   "base": 85,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "node3_y": {
+   "base": 51,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "node4_x": {
+   "base": 93,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "node4_y": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "node5_x": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "node5_y": {
+   "base": 89,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "node6_x": {
+   "base": 21,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "node6_y": {
+   "base": 43,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_requisitions": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_requisitions] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "7x7 inter-facility travel distance matrix (symmetric), row i = distances from node i to nodes 0..6",
+    "base": [
+     [
+      0,
+      43,
+      64,
+      21,
+      19,
+      81,
+      75
+     ],
+     [
+      43,
+      0,
+      53,
+      23,
+      62,
+      97,
+      69
+     ],
+     [
+      64,
+      53,
+      0,
+      50,
+      76,
+      55,
+      16
+     ],
+     [
+      21,
+      23,
+      50,
+      0,
+      40,
+      82,
+      64
+     ],
+     [
+      19,
+      62,
+      76,
+      40,
+      0,
+      81,
+      86
+     ],
+     [
+      81,
+      97,
+      55,
+      82,
+      81,
+      0,
+      47
+     ],
+     [
+      75,
+      69,
+      16,
+      64,
+      86,
+      47,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "depot_x": {
+    "meaning": "x-coordinate of depot node 0",
+    "base": 91,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "depot_y": {
+    "meaning": "y-coordinate of depot node 0",
+    "base": 71,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "node1_x": {
+    "meaning": "x-coordinate of node 1",
+    "base": 88,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "node1_y": {
+    "meaning": "y-coordinate of node 1",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "node2_x": {
+    "meaning": "x-coordinate of node 2",
+    "base": 36,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "node2_y": {
+    "meaning": "y-coordinate of node 2",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "node3_x": {
+    "meaning": "x-coordinate of node 3",
+    "base": 85,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "node3_y": {
+    "meaning": "y-coordinate of node 3",
+    "base": 51,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "node4_x": {
+    "meaning": "x-coordinate of node 4",
+    "base": 93,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "node4_y": {
+    "meaning": "y-coordinate of node 4",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "node5_x": {
+    "meaning": "x-coordinate of node 5",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "node5_y": {
+    "meaning": "y-coordinate of node 5",
+    "base": 89,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "node6_x": {
+    "meaning": "x-coordinate of node 6",
+    "base": 21,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "node6_y": {
+    "meaning": "y-coordinate of node 6",
+    "base": 43,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "num_nodes": {
+    "meaning": "number of network locations (fixed index-set size)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_requisitions": {
+    "meaning": "number of pickup-delivery pairs (fixed index-set size)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

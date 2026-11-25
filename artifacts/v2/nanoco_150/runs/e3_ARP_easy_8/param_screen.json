@@ -1,0 +1,49 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "distance_matrix",
+  "mandatory_segments",
+  "num_nodes",
+  "num_mandatory_segments",
+  "num_vehicles",
+  "depot"
+ ],
+ "safe": [
+  "distance_matrix",
+  "num_nodes",
+  "num_mandatory_segments",
+  "num_vehicles",
+  "depot"
+ ],
+ "tests": {
+  "distance_matrix": [
+   3,
+   3
+  ],
+  "mandatory_segments": [
+   0,
+   0
+  ],
+  "num_nodes": [
+   3,
+   3
+  ],
+  "num_mandatory_segments": [
+   3,
+   3
+  ],
+  "num_vehicles": [
+   3,
+   3
+  ],
+  "depot": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

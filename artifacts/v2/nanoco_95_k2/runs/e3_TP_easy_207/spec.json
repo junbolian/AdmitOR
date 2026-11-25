@@ -1,0 +1,551 @@
+{
+ "spec": {
+  "supply_hub0": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "supply_hub1": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "supply_hub2": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "demand_area3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "demand_area4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "demand_area5": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "demand_area6": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_0_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_0_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_0_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_0_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_1_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_1_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_1_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_1_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_2_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_2_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_2_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "capacity_arc_2_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "cost_arc_0_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_0_4": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_0_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_0_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_1_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_1_4": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_1_5": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_1_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_2_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_2_4": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_2_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_arc_2_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_hub0": {
+    "meaning": "Available relief stock at Hub 0",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "supply_hub1": {
+    "meaning": "Available relief stock at Hub 1",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "supply_hub2": {
+    "meaning": "Available relief stock at Hub 2",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "demand_area3": {
+    "meaning": "Required supply at disaster Area 3 (positive magnitude)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "demand_area4": {
+    "meaning": "Required supply at disaster Area 4 (positive magnitude)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "demand_area5": {
+    "meaning": "Required supply at disaster Area 5 (positive magnitude)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "demand_area6": {
+    "meaning": "Required supply at disaster Area 6 (positive magnitude)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "capacity_arc_0_3": {
+    "meaning": "Flight payload limit on corridor Hub 0 -> Area 3",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "capacity_arc_0_4": {
+    "meaning": "Flight payload limit on corridor Hub 0 -> Area 4",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "capacity_arc_0_5": {
+    "meaning": "Flight payload limit on corridor Hub 0 -> Area 5",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "capacity_arc_0_6": {
+    "meaning": "Flight payload limit on corridor Hub 0 -> Area 6",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "capacity_arc_1_3": {
+    "meaning": "Flight payload limit on corridor Hub 1 -> Area 3",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_1_4": {
+    "meaning": "Flight payload limit on corridor Hub 1 -> Area 4",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_1_5": {
+    "meaning": "Flight payload limit on corridor Hub 1 -> Area 5",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_1_6": {
+    "meaning": "Flight payload limit on corridor Hub 1 -> Area 6",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_2_3": {
+    "meaning": "Flight payload limit on corridor Hub 2 -> Area 3",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_2_4": {
+    "meaning": "Flight payload limit on corridor Hub 2 -> Area 4",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_2_5": {
+    "meaning": "Flight payload limit on corridor Hub 2 -> Area 5",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "capacity_arc_2_6": {
+    "meaning": "Flight payload limit on corridor Hub 2 -> Area 6",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "cost_arc_0_3": {
+    "meaning": "Unit cost on corridor Hub 0 -> Area 3",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_0_4": {
+    "meaning": "Unit cost on corridor Hub 0 -> Area 4",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_0_5": {
+    "meaning": "Unit cost on corridor Hub 0 -> Area 5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_0_6": {
+    "meaning": "Unit cost on corridor Hub 0 -> Area 6",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_1_3": {
+    "meaning": "Unit cost on corridor Hub 1 -> Area 3",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_1_4": {
+    "meaning": "Unit cost on corridor Hub 1 -> Area 4",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_1_5": {
+    "meaning": "Unit cost on corridor Hub 1 -> Area 5",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_1_6": {
+    "meaning": "Unit cost on corridor Hub 1 -> Area 6",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_2_3": {
+    "meaning": "Unit cost on corridor Hub 2 -> Area 3",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_2_4": {
+    "meaning": "Unit cost on corridor Hub 2 -> Area 4",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_2_5": {
+    "meaning": "Unit cost on corridor Hub 2 -> Area 5",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_arc_2_6": {
+    "meaning": "Unit cost on corridor Hub 2 -> Area 6",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

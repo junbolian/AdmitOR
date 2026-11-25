@@ -1,0 +1,358 @@
+{
+ "spec": {
+  "person_availability": {
+   "base": [
+    10,
+    25,
+    18,
+    24,
+    18,
+    25,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "project_requirement": {
+   "base": [
+    19,
+    21,
+    20,
+    22,
+    25,
+    16,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     38,
+     46,
+     37,
+     34,
+     38,
+     49,
+     36
+    ],
+    [
+     37,
+     36,
+     30,
+     44,
+     46,
+     38,
+     40
+    ],
+    [
+     41,
+     40,
+     35,
+     46,
+     46,
+     49,
+     50
+    ],
+    [
+     44,
+     42,
+     47,
+     44,
+     42,
+     47,
+     42
+    ],
+    [
+     46,
+     47,
+     43,
+     31,
+     33,
+     44,
+     48
+    ],
+    [
+     32,
+     32,
+     34,
+     47,
+     48,
+     31,
+     33
+    ],
+    [
+     43,
+     43,
+     42,
+     45,
+     37,
+     42,
+     45
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_upper_limit": {
+   "base": [
+    [
+     10,
+     11,
+     9,
+     8,
+     9,
+     12,
+     11
+    ],
+    [
+     8,
+     10,
+     11,
+     12,
+     11,
+     12,
+     10
+    ],
+    [
+     10,
+     7,
+     12,
+     12,
+     8,
+     10,
+     8
+    ],
+    [
+     9,
+     10,
+     11,
+     12,
+     12,
+     10,
+     12
+    ],
+    [
+     7,
+     7,
+     11,
+     10,
+     9,
+     11,
+     8
+    ],
+    [
+     8,
+     10,
+     8,
+     12,
+     7,
+     12,
+     10
+    ],
+    [
+     10,
+     9,
+     9,
+     8,
+     11,
+     10,
+     7
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "person_availability": {
+    "meaning": "Hours each of the 7 persons can dedicate (indexed by person)",
+    "base": [
+     10,
+     25,
+     18,
+     24,
+     18,
+     25,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "project_requirement": {
+    "meaning": "Exact hours of effort required by each of the 7 projects (indexed by project)",
+    "base": [
+     19,
+     21,
+     20,
+     22,
+     25,
+     16,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost per unit-hour (or per assignment unit) of person i to project j; 7x7 matrix rows = persons, cols = projects",
+    "base": [
+     [
+      38,
+      46,
+      37,
+      34,
+      38,
+      49,
+      36
+     ],
+     [
+      37,
+      36,
+      30,
+      44,
+      46,
+      38,
+      40
+     ],
+     [
+      41,
+      40,
+      35,
+      46,
+      46,
+      49,
+      50
+     ],
+     [
+      44,
+      42,
+      47,
+      44,
+      42,
+      47,
+      42
+     ],
+     [
+      46,
+      47,
+      43,
+      31,
+      33,
+      44,
+      48
+     ],
+     [
+      32,
+      32,
+      34,
+      47,
+      48,
+      31,
+      33
+     ],
+     [
+      43,
+      43,
+      42,
+      45,
+      37,
+      42,
+      45
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "assignment_upper_limit": {
+    "meaning": "Max hours person i may contribute to project j; 7x7 matrix rows = persons, cols = projects",
+    "base": [
+     [
+      10,
+      11,
+      9,
+      8,
+      9,
+      12,
+      11
+     ],
+     [
+      8,
+      10,
+      11,
+      12,
+      11,
+      12,
+      10
+     ],
+     [
+      10,
+      7,
+      12,
+      12,
+      8,
+      10,
+      8
+     ],
+     [
+      9,
+      10,
+      11,
+      12,
+      12,
+      10,
+      12
+     ],
+     [
+      7,
+      7,
+      11,
+      10,
+      9,
+      11,
+      8
+     ],
+     [
+      8,
+      10,
+      8,
+      12,
+      7,
+      12,
+      10
+     ],
+     [
+      10,
+      9,
+      9,
+      8,
+      11,
+      10,
+      7
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

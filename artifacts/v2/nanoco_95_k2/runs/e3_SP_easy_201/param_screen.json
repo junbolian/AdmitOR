@@ -1,0 +1,34 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "arc_costs",
+  "node_supplies",
+  "node_coordinates"
+ ],
+ "safe": [
+  "arc_costs",
+  "node_coordinates"
+ ],
+ "tests": {
+  "arc_costs": [
+   6,
+   6
+  ],
+  "node_supplies": [
+   0,
+   0
+  ],
+  "node_coordinates": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

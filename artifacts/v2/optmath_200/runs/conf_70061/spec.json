@@ -1,0 +1,128 @@
+{
+ "spec": {
+  "fixed_cost_facility": {
+   "base": [
+    96973,
+    102445,
+    97638,
+    97886,
+    95371,
+    100886
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity_facility": {
+   "base": [
+    1003,
+    966,
+    964,
+    1010,
+    1001,
+    1029
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_customer": {
+   "base": [
+    397,
+    391,
+    378,
+    406,
+    380,
+    412,
+    401,
+    409,
+    384,
+    411,
+    421
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "shipping_cost_per_unit": {
+   "base": [
+    67,
+    70
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost_facility": {
+    "meaning": "Fixed operating cost if each distribution center is opened (facility_0..facility_5)",
+    "base": [
+     96973,
+     102445,
+     97638,
+     97886,
+     95371,
+     100886
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity_facility": {
+    "meaning": "Maximum total units each distribution center can handle (facility_0..facility_5)",
+    "base": [
+     1003,
+     966,
+     964,
+     1010,
+     1001,
+     1029
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_customer": {
+    "meaning": "Required units for each retail store (customer_0..customer_10)",
+    "base": [
+     397,
+     391,
+     378,
+     406,
+     380,
+     412,
+     401,
+     409,
+     384,
+     411,
+     421
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "shipping_cost_per_unit": {
+    "meaning": "Per-unit shipping cost from each facility to each customer; only Facility_0 row is fully given, other rows are described as 'provided in the detailed data' and are treated as unobserved coefficients therefore omitted from perturbation",
+    "base": [
+     67,
+     70
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

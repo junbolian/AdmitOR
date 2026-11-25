@@ -1,0 +1,181 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand_hub0": 345,
+   "demand_hub1": 655,
+   "supply_hub2": 774,
+   "supply_hub3": 142,
+   "supply_hub4": 84,
+   "fixed_cost_range": [
+    1901,
+    2075
+   ],
+   "variable_cost_range": [
+    19,
+    21
+   ],
+   "capacity_range": [
+    539,
+    990
+   ]
+  },
+  {
+   "demand_hub0": 393.10224546796985,
+   "demand_hub1": 343.8820446708468,
+   "supply_hub2": 599.8726924176983,
+   "supply_hub3": 102.69592481713283,
+   "supply_hub4": 103.86358198977705,
+   "fixed_cost_range": [
+    2236.9057255909543,
+    2888.7726029875544
+   ],
+   "variable_cost_range": [
+    11.151837819958907,
+    19.36035821339068
+   ],
+   "capacity_range": [
+    336.24856102169593,
+    767.1612760444539
+   ]
+  },
+  {
+   "demand_hub0": 346.84757439566,
+   "demand_hub1": 344.88106014293066,
+   "supply_hub2": 540.900341631466,
+   "supply_hub3": 163.2835901646923,
+   "supply_hub4": 87.7750843706702,
+   "fixed_cost_range": [
+    1369.5576224993645,
+    2260.2262940425107
+   ],
+   "variable_cost_range": [
+    24.879178676878706,
+    10.636473953239282
+   ],
+   "capacity_range": [
+    670.8692613903067,
+    1146.9264008306757
+   ]
+  },
+  {
+   "demand_hub0": 289.8864281987072,
+   "demand_hub1": 429.3390723767169,
+   "supply_hub2": 1127.8829178880487,
+   "supply_hub3": 118.796425405993,
+   "supply_hub4": 49.790650843932426,
+   "fixed_cost_range": [
+    1134.3578323604152,
+    2796.050810170979
+   ],
+   "variable_cost_range": [
+    20.97079459597093,
+    27.449693738761983
+   ],
+   "capacity_range": [
+    638.0603464223742,
+    1018.6926484321228
+   ]
+  },
+  {
+   "demand_hub0": 508.2249385728829,
+   "demand_hub1": 575.4400170714715,
+   "supply_hub2": 814.2794486054776,
+   "supply_hub3": 188.77546232392527,
+   "supply_hub4": 93.95565919859666,
+   "fixed_cost_range": [
+    2588.604817490788,
+    2235.505701407781
+   ],
+   "variable_cost_range": [
+    22.886864888083547,
+    11.462312056768907
+   ],
+   "capacity_range": [
+    421.669736460947,
+    823.1952671728689
+   ]
+  },
+  {
+   "demand_hub0": 200.02823203865148,
+   "demand_hub1": 479.9780305664748,
+   "supply_hub2": 465.17510636313034,
+   "supply_hub3": 110.47225164163308,
+   "supply_hub4": 95.39749331820963,
+   "fixed_cost_range": [
+    1644.04597222213,
+    1805.6255067675315
+   ],
+   "variable_cost_range": [
+    13.480633584658266,
+    16.10653426303138
+   ],
+   "capacity_range": [
+    727.2854582216273,
+    1107.244025115302
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   28028.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   28057.684210526317,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   28057.684210526313,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "solver failure: A feasible solution was not found, so no solution can be loa",
+   "solver failure: A feasible solution was not found, so no solution can be loa",
+   "solver failure: A feasible solution was not found, so no solution can be loa",
+   "solver failure: A feasible solution was not found, so no solution can be loa",
+   "solver failure: A feasible solution was not found, so no solution can be loa"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_solution",
+   "invalid_parameters",
+   "no_solution",
+   "invalid_parameters",
+   "no_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "spec": {
+  "activation_cost": {
+   "base": [
+    76,
+    42,
+    73,
+    54,
+    76,
+    41,
+    47,
+    69,
+    55,
+    71,
+    75,
+    40,
+    70,
+    67,
+    70,
+    61,
+    59,
+    79,
+    78,
+    47,
+    52
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "activation_cost": {
+    "meaning": "Activation cost for each of the 21 facilities (facility 1 through 21)",
+    "base": [
+     76,
+     42,
+     73,
+     54,
+     76,
+     41,
+     47,
+     69,
+     55,
+     71,
+     75,
+     40,
+     70,
+     67,
+     70,
+     61,
+     59,
+     79,
+     78,
+     47,
+     52
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

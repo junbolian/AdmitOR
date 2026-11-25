@@ -1,0 +1,245 @@
+{
+ "spec": {
+  "fixed_ordering_costs": {
+   "base": [
+    97,
+    147,
+    122,
+    111,
+    132,
+    142,
+    116,
+    135,
+    147,
+    128,
+    92,
+    118,
+    138,
+    104
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_ordering_costs": {
+   "base": [
+    8,
+    15,
+    12,
+    10,
+    14,
+    13,
+    9,
+    15,
+    11,
+    7,
+    6,
+    12,
+    9,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "inventory_holding_costs": {
+   "base": [
+    5,
+    7,
+    10,
+    8,
+    9,
+    10,
+    6,
+    8,
+    9,
+    7,
+    10,
+    6,
+    8,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.9
+   }
+  },
+  "demand": {
+   "base": [
+    51,
+    66,
+    60,
+    72,
+    58,
+    69,
+    54,
+    74,
+    61,
+    67,
+    70,
+    56,
+    65,
+    63
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "order_capacity": {
+   "base": 878,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "initial_inventory": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "final_inventory": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[final_inventory] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "fixed_ordering_costs": {
+    "meaning": "Fixed cost incurred in period t if an order is placed (currency units)",
+    "base": [
+     97,
+     147,
+     122,
+     111,
+     132,
+     142,
+     116,
+     135,
+     147,
+     128,
+     92,
+     118,
+     138,
+     104
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_ordering_costs": {
+    "meaning": "Variable cost per unit ordered in period t (currency units/unit)",
+    "base": [
+     8,
+     15,
+     12,
+     10,
+     14,
+     13,
+     9,
+     15,
+     11,
+     7,
+     6,
+     12,
+     9,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "inventory_holding_costs": {
+    "meaning": "Cost per unit held in inventory at the end of period t (currency units/unit)",
+    "base": [
+     5,
+     7,
+     10,
+     8,
+     9,
+     10,
+     6,
+     8,
+     9,
+     7,
+     10,
+     6,
+     8,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.9
+    }
+   },
+   "demand": {
+    "meaning": "Customer demand that must be satisfied in period t (units)",
+    "base": [
+     51,
+     66,
+     60,
+     72,
+     58,
+     69,
+     54,
+     74,
+     61,
+     67,
+     70,
+     56,
+     65,
+     63
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "order_capacity": {
+    "meaning": "Maximum quantity that can be ordered in any period when an order is placed (units)",
+    "base": 878,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Inventory available at the start of period 1 (units)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "final_inventory": {
+    "meaning": "Required inventory remaining at the end of period 14 (units)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

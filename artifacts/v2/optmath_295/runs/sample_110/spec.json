@@ -1,0 +1,267 @@
+{
+ "spec": {
+  "base_cost_type0": {
+   "base": 76,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "base_cost_type1": {
+   "base": 79,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "power_cost_type0": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "power_cost_type1": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "startup_cost_type0": {
+   "base": 387,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "startup_cost_type1": {
+   "base": 360,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    198,
+    165,
+    224,
+    204,
+    152
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_output_type0": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_output_type0": {
+   "base": 135,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_output_type1": {
+   "base": 49,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_output_type1": {
+   "base": 125,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "reserve_margin": {
+   "base": 0.15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "max_active_per_type": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_startups_first_period_type0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "max_startups_first_period_type1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_active_per_type] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_startups_first_period_type0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_startups_first_period_type1] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "base_cost_type0": {
+    "meaning": "fixed base cost per active Type 0 generator per period",
+    "base": 76,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "base_cost_type1": {
+    "meaning": "fixed base cost per active Type 1 generator per period",
+    "base": 79,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "power_cost_type0": {
+    "meaning": "cost per MW output for Type 0 generators",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "power_cost_type1": {
+    "meaning": "cost per MW output for Type 1 generators",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "startup_cost_type0": {
+    "meaning": "cost to start a Type 0 generator",
+    "base": 387,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "startup_cost_type1": {
+    "meaning": "cost to start a Type 1 generator",
+    "base": 360,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "power demand per period (periods 0-4)",
+    "base": [
+     198,
+     165,
+     224,
+     204,
+     152
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_output_type0": {
+    "meaning": "minimum output per active Type 0 generator",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_output_type0": {
+    "meaning": "maximum output per active Type 0 generator",
+    "base": 135,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_output_type1": {
+    "meaning": "minimum output per active Type 1 generator",
+    "base": 49,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_output_type1": {
+    "meaning": "maximum output per active Type 1 generator",
+    "base": 125,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "reserve_margin": {
+    "meaning": "required excess of total max capacity over demand (15% buffer)",
+    "base": 0.15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "max_active_per_type": {
+    "meaning": "maximum number of active generators of each type per period",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_startups_first_period_type0": {
+    "meaning": "maximum startups of Type 0 in period 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "max_startups_first_period_type1": {
+    "meaning": "maximum startups of Type 1 in period 0",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

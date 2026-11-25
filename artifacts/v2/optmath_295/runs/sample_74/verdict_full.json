@@ -1,0 +1,384 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "num_participants": 6,
+   "num_cars": 5,
+   "assignment_value": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference_matrix": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "num_participants": 6,
+   "num_cars": 5,
+   "assignment_value": 0.5500586367382385,
+   "participant_capacity": 1,
+   "car_capacity": 2,
+   "preference_matrix": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "num_participants": 6,
+   "num_cars": 5,
+   "assignment_value": 0.1738776652588323,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference_matrix": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "num_participants": 6,
+   "num_cars": 5,
+   "assignment_value": 0.05307193936772725,
+   "participant_capacity": 1,
+   "car_capacity": 2,
+   "preference_matrix": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "num_participants": 6,
+   "num_cars": 5,
+   "assignment_value": 1.1785313677518174,
+   "participant_capacity": 2,
+   "car_capacity": 1,
+   "preference_matrix": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "num_participants": 6,
+   "num_cars": 5,
+   "assignment_value": 0.6805010330359837,
+   "participant_capacity": 1,
+   "car_capacity": 2,
+   "preference_matrix": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2.0,
+   1.100117273476477,
+   0.3477553305176646,
+   0.1061438787354545,
+   2.357062735503635,
+   1.3610020660719675
+  ],
+  "B-structured": [
+   2.0,
+   1.100117273476477,
+   0.3477553305176646,
+   0.1061438787354545,
+   2.357062735503635,
+   1.3610020660719675
+  ],
+  "C-direct": [
+   2.0,
+   1.100117273476477,
+   0.3477553305176646,
+   0.1061438787354545,
+   2.357062735503635,
+   1.3610020660719675
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

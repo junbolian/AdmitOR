@@ -1,0 +1,49 @@
+{
+ "sample_id": "conf_117930",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost_0_1\",\n      \"evidence\": \"For example: Sending a package from node_0 to node_1 costs 13 units.\"\n    },\n    {\n      \"parameter\": \"cost_0_2\",\n      \"evidence\": \"For example: Sending a package from node_0 to node_2 costs 13 units.\"\n    },\n    {\n      \"parameter\": \"cost_0_3\",\n      \"evidence\": \"For example: Sending a package from node_0 to node_3 costs 14 units.\"\n    },\n    {\n      \"parameter\": \"cost_0_4\",\n      \"evidence\": \"For example: Sending a package from node_0 to node_4 costs 10 units.\"\n    },\n    {\n      \"parameter\": \"cost_0_5\",\n      \"evidence\": \"For example: Sending a package from node_0 to node_5 costs 11 units.\"\n    },\n    {\n      \"parameter\": \"cost_0_6\",\n      \"evidence\": \"For example: Sending a package from node_0 to node_6 costs 13 units.\"\n    },\n    {\n      \"parameter\": \"cost_1_2\",\n      \"evidence\": \"such as 12 units from node_1 to node_2\"\n    },\n    {\n      \"parameter\": \"cost_1_3\",\n      \"evidence\": \"such as ... 15 units from node_1 to node_3, and so on\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_0_1",
+   "evidence": "For example: Sending a package from node_0 to node_1 costs 13 units."
+  },
+  {
+   "parameter": "cost_0_2",
+   "evidence": "For example: Sending a package from node_0 to node_2 costs 13 units."
+  },
+  {
+   "parameter": "cost_0_3",
+   "evidence": "For example: Sending a package from node_0 to node_3 costs 14 units."
+  },
+  {
+   "parameter": "cost_0_4",
+   "evidence": "For example: Sending a package from node_0 to node_4 costs 10 units."
+  },
+  {
+   "parameter": "cost_0_5",
+   "evidence": "For example: Sending a package from node_0 to node_5 costs 11 units."
+  },
+  {
+   "parameter": "cost_0_6",
+   "evidence": "For example: Sending a package from node_0 to node_6 costs 13 units."
+  },
+  {
+   "parameter": "cost_1_2",
+   "evidence": "such as 12 units from node_1 to node_2"
+  },
+  {
+   "parameter": "cost_1_3",
+   "evidence": "such as ... 15 units from node_1 to node_3, and so on"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

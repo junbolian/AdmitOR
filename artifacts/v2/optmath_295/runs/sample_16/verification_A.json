@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_16",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"capacity\", \"evidence\": \"Similar limits apply to all other origin-destination pairs, with specific maximum capacities provided in the data.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "Similar limits apply to all other origin-destination pairs, with specific maximum capacities provided in the data."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

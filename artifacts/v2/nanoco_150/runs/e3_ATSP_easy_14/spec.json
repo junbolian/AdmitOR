@@ -1,0 +1,380 @@
+{
+ "spec": {
+  "cost_0": {
+   "base": [
+    0,
+    36,
+    15,
+    69,
+    97,
+    78,
+    17,
+    23,
+    67,
+    45
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_1": {
+   "base": [
+    43,
+    0,
+    37,
+    56,
+    62,
+    38,
+    20,
+    19,
+    62,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_2": {
+   "base": [
+    13,
+    39,
+    0,
+    62,
+    97,
+    75,
+    17,
+    27,
+    58,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_3": {
+   "base": [
+    86,
+    55,
+    69,
+    0,
+    54,
+    50,
+    53,
+    63,
+    23,
+    32
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_4": {
+   "base": [
+    95,
+    56,
+    86,
+    46,
+    0,
+    19,
+    59,
+    58,
+    66,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_5": {
+   "base": [
+    87,
+    43,
+    83,
+    51,
+    21,
+    0,
+    51,
+    50,
+    65,
+    34
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_6": {
+   "base": [
+    23,
+    24,
+    23,
+    67,
+    95,
+    71,
+    0,
+    21,
+    67,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_7": {
+   "base": [
+    33,
+    27,
+    44,
+    86,
+    97,
+    69,
+    21,
+    0,
+    89,
+    43
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_8": {
+   "base": [
+    68,
+    54,
+    58,
+    20,
+    66,
+    65,
+    41,
+    57,
+    0,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_9": {
+   "base": [
+    55,
+    27,
+    46,
+    33,
+    57,
+    36,
+    31,
+    38,
+    39,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_0": {
+    "meaning": "Energy cost from Node 0 to each node (row 0 of cost matrix)",
+    "base": [
+     0,
+     36,
+     15,
+     69,
+     97,
+     78,
+     17,
+     23,
+     67,
+     45
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_1": {
+    "meaning": "Energy cost from Node 1 to each node (row 1)",
+    "base": [
+     43,
+     0,
+     37,
+     56,
+     62,
+     38,
+     20,
+     19,
+     62,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_2": {
+    "meaning": "Energy cost from Node 2 to each node (row 2)",
+    "base": [
+     13,
+     39,
+     0,
+     62,
+     97,
+     75,
+     17,
+     27,
+     58,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_3": {
+    "meaning": "Energy cost from Node 3 to each node (row 3)",
+    "base": [
+     86,
+     55,
+     69,
+     0,
+     54,
+     50,
+     53,
+     63,
+     23,
+     32
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_4": {
+    "meaning": "Energy cost from Node 4 to each node (row 4)",
+    "base": [
+     95,
+     56,
+     86,
+     46,
+     0,
+     19,
+     59,
+     58,
+     66,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_5": {
+    "meaning": "Energy cost from Node 5 to each node (row 5)",
+    "base": [
+     87,
+     43,
+     83,
+     51,
+     21,
+     0,
+     51,
+     50,
+     65,
+     34
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_6": {
+    "meaning": "Energy cost from Node 6 to each node (row 6)",
+    "base": [
+     23,
+     24,
+     23,
+     67,
+     95,
+     71,
+     0,
+     21,
+     67,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_7": {
+    "meaning": "Energy cost from Node 7 to each node (row 7)",
+    "base": [
+     33,
+     27,
+     44,
+     86,
+     97,
+     69,
+     21,
+     0,
+     89,
+     43
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_8": {
+    "meaning": "Energy cost from Node 8 to each node (row 8)",
+    "base": [
+     68,
+     54,
+     58,
+     20,
+     66,
+     65,
+     41,
+     57,
+     0,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_9": {
+    "meaning": "Energy cost from Node 9 to each node (row 9)",
+    "base": [
+     55,
+     27,
+     46,
+     33,
+     57,
+     36,
+     31,
+     38,
+     39,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

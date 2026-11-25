@@ -1,0 +1,325 @@
+{
+ "spec": {
+  "lab_preferences": {
+   "base": [
+    [
+     2,
+     1,
+     4,
+     3,
+     5,
+     0
+    ],
+    [
+     2,
+     1,
+     4,
+     0,
+     3,
+     5
+    ],
+    [
+     5,
+     4,
+     1,
+     0,
+     3,
+     2
+    ],
+    [
+     3,
+     1,
+     5,
+     2,
+     4,
+     0
+    ],
+    [
+     2,
+     3,
+     5,
+     4,
+     0,
+     1
+    ],
+    [
+     5,
+     2,
+     1,
+     4,
+     0,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "site_preferences": {
+   "base": [
+    [
+     3,
+     4,
+     1,
+     5,
+     2,
+     0
+    ],
+    [
+     4,
+     1,
+     5,
+     0,
+     3,
+     2
+    ],
+    [
+     1,
+     5,
+     4,
+     3,
+     2,
+     0
+    ],
+    [
+     4,
+     0,
+     5,
+     2,
+     1,
+     3
+    ],
+    [
+     2,
+     5,
+     3,
+     4,
+     1,
+     0
+    ],
+    [
+     3,
+     0,
+     2,
+     5,
+     1,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "rank_index_min": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "rank_index_max": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_labs": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_sites": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[rank_index_min] degenerate abs range (lo == hi); perturbation has no effect",
+  "[rank_index_max] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_labs] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_sites] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "lab_preferences": {
+    "meaning": "Ranking of sites by each lab (row=lab, value = site, position = rank 0..5)",
+    "base": [
+     [
+      2,
+      1,
+      4,
+      3,
+      5,
+      0
+     ],
+     [
+      2,
+      1,
+      4,
+      0,
+      3,
+      5
+     ],
+     [
+      5,
+      4,
+      1,
+      0,
+      3,
+      2
+     ],
+     [
+      3,
+      1,
+      5,
+      2,
+      4,
+      0
+     ],
+     [
+      2,
+      3,
+      5,
+      4,
+      0,
+      1
+     ],
+     [
+      5,
+      2,
+      1,
+      4,
+      0,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "site_preferences": {
+    "meaning": "Ranking of labs by each site (row=site, value = lab, position = rank 0..5)",
+    "base": [
+     [
+      3,
+      4,
+      1,
+      5,
+      2,
+      0
+     ],
+     [
+      4,
+      1,
+      5,
+      0,
+      3,
+      2
+     ],
+     [
+      1,
+      5,
+      4,
+      3,
+      2,
+      0
+     ],
+     [
+      4,
+      0,
+      5,
+      2,
+      1,
+      3
+     ],
+     [
+      2,
+      5,
+      3,
+      4,
+      1,
+      0
+     ],
+     [
+      3,
+      0,
+      2,
+      5,
+      1,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "rank_index_min": {
+    "meaning": "Minimum zero-indexed rank value",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "rank_index_max": {
+    "meaning": "Maximum zero-indexed rank value (n-1 where n=6)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_labs": {
+    "meaning": "Number of research labs (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_sites": {
+    "meaning": "Number of clinical trial sites (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

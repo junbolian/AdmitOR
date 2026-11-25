@@ -1,0 +1,124 @@
+{
+ "spec": {
+  "value": {
+   "base": [
+    107,
+    883,
+    346,
+    108,
+    222,
+    2,
+    393,
+    660,
+    346,
+    576,
+    984
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "weight": {
+   "base": [
+    4464,
+    3938,
+    3726,
+    4355,
+    1683,
+    2824,
+    1512,
+    4603,
+    172,
+    23,
+    4141
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacity": {
+   "base": 22008,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "num_packages": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_packages] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "value": {
+    "meaning": "value of each package",
+    "base": [
+     107,
+     883,
+     346,
+     108,
+     222,
+     2,
+     393,
+     660,
+     346,
+     576,
+     984
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "weight": {
+    "meaning": "weight of each package",
+    "base": [
+     4464,
+     3938,
+     3726,
+     4355,
+     1683,
+     2824,
+     1512,
+     4603,
+     172,
+     23,
+     4141
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacity": {
+    "meaning": "maximum weight capacity of the delivery vehicle",
+    "base": 22008,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "num_packages": {
+    "meaning": "number of packages (index-set size, frozen)",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 11,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

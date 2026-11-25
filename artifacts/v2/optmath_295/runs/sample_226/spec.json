@@ -1,0 +1,180 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    [
+     [
+      6,
+      8,
+      5,
+      10
+     ],
+     [
+      3,
+      9,
+      7,
+      7
+     ]
+    ],
+    [
+     [
+      7,
+      4,
+      6,
+      10
+     ],
+     [
+      7,
+      9,
+      4,
+      4
+     ]
+    ],
+    [
+     [
+      5,
+      8,
+      7,
+      7
+     ],
+     [
+      4,
+      7,
+      9,
+      9
+     ]
+    ],
+    [
+     [
+      4,
+      10,
+      4,
+      7
+     ],
+     [
+      8,
+      5,
+      6,
+      7
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    [
+     16,
+     25,
+     17,
+     23
+    ],
+    [
+     15,
+     25,
+     15,
+     24
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "Profit per unit for each company/product/market combination, indexed [company][product][market]",
+    "base": [
+     [
+      [
+       6,
+       8,
+       5,
+       10
+      ],
+      [
+       3,
+       9,
+       7,
+       7
+      ]
+     ],
+     [
+      [
+       7,
+       4,
+       6,
+       10
+      ],
+      [
+       7,
+       9,
+       4,
+       4
+      ]
+     ],
+     [
+      [
+       5,
+       8,
+       7,
+       7
+      ],
+      [
+       4,
+       7,
+       9,
+       9
+      ]
+     ],
+     [
+      [
+       4,
+       10,
+       4,
+       7
+      ],
+      [
+       8,
+       5,
+       6,
+       7
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Required units of each product in each market, indexed [product][market]",
+    "base": [
+     [
+      16,
+      25,
+      17,
+      23
+     ],
+     [
+      15,
+      25,
+      15,
+      24
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

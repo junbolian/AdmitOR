@@ -1,0 +1,29 @@
+{
+ "sample_id": "conf_66014",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**profit_margins**: The statement gives Item 0 = $346, Item 1 = $397, Item 2 = $387, and says \"this pattern continues for all 49 items, with each item having its own unique profit margin.\" Only three values are explicitly stated; the rest are not given.\n\n**resource_capacities**: The statement gives Item 0 ≈ 0.0132, Item 1 ≈ 0.0149, Item 2 ≈ 0.0135 (confirmed in the example calculation). The remaining 46 values are not stated.\n\n**resource_budget**: 433 is explicitly stated.\n\n**production_limits**: The statement gives Item 0 = 733, Item 1 = 759, Item 2 = 717. The remaining 46 values are not stated.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"profit_margins\",\n      \"evidence\": \"This pattern continues for all 49 items, with each item having its own unique profit margin.\"\n    },\n    {\n      \"parameter\": \"resource_capacities\",\n      \"evidence\": \"These consumption rates vary across all items, with some items consuming more or less of the resource.\"\n    },\n    {\n      \"parameter\": \"production_limits\",\n      \"evidence\": \"These upper bounds are specific to each item and must not be exceeded.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "profit_margins",
+   "evidence": "This pattern continues for all 49 items, with each item having its own unique profit margin."
+  },
+  {
+   "parameter": "resource_capacities",
+   "evidence": "These consumption rates vary across all items, with some items consuming more or less of the resource."
+  },
+  {
+   "parameter": "production_limits",
+   "evidence": "These upper bounds are specific to each item and must not be exceeded."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

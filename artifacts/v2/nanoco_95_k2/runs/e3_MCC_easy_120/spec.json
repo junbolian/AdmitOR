@@ -1,0 +1,288 @@
+{
+ "spec": {
+  "lower_bounds": {
+   "base": [
+    0,
+    2,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "upper_bounds": {
+   "base": [
+    3,
+    2,
+    9,
+    6,
+    5,
+    5,
+    7,
+    10,
+    5,
+    4,
+    7,
+    3,
+    4,
+    3,
+    5,
+    5,
+    2,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "energy_costs": {
+   "base": [
+    4,
+    5,
+    6,
+    4,
+    7,
+    6,
+    4,
+    6,
+    7,
+    8,
+    6,
+    2,
+    7,
+    5,
+    4,
+    3,
+    7,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_coords": {
+   "base": [
+    [
+     9,
+     62
+    ],
+    [
+     26,
+     59
+    ],
+    [
+     82,
+     55
+    ],
+    [
+     12,
+     30
+    ],
+    [
+     57,
+     43
+    ],
+    [
+     51,
+     14
+    ],
+    [
+     33,
+     15
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_units": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_pipelines": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[unit_coords] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[num_units] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_pipelines] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "lower_bounds": {
+    "meaning": "Mandatory minimum recirculation flow (units) on each of the 18 pipelines, in definition order",
+    "base": [
+     0,
+     2,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "upper_bounds": {
+    "meaning": "Pipeline hydraulic capacity / maximum throughput (units) on each of the 18 pipelines, in definition order",
+    "base": [
+     3,
+     2,
+     9,
+     6,
+     5,
+     5,
+     7,
+     10,
+     5,
+     4,
+     7,
+     3,
+     4,
+     3,
+     5,
+     5,
+     2,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "energy_costs": {
+    "meaning": "Pumping energy cost per unit volume for each of the 18 pipelines, in definition order",
+    "base": [
+     4,
+     5,
+     6,
+     4,
+     7,
+     6,
+     4,
+     6,
+     7,
+     8,
+     6,
+     2,
+     7,
+     5,
+     4,
+     3,
+     7,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_coords": {
+    "meaning": "2D spatial coordinates of the seven digestion units (index = unit id)",
+    "base": [
+     [
+      9,
+      62
+     ],
+     [
+      26,
+      59
+     ],
+     [
+      82,
+      55
+     ],
+     [
+      12,
+      30
+     ],
+     [
+      57,
+      43
+     ],
+     [
+      51,
+      14
+     ],
+     [
+      33,
+      15
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "num_units": {
+    "meaning": "Number of anaerobic digestion processing units (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_pipelines": {
+    "meaning": "Number of feasible unidirectional transfer pipelines (index-set size, frozen)",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 18,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

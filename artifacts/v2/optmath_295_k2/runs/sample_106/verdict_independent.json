@@ -1,0 +1,176 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_return_asset0": 0.1217884071582754,
+   "expected_return_asset1": 0.0822617167874527,
+   "expected_return_asset2": 0.1170508998471323,
+   "expected_return_asset3": 0.0746576079025595,
+   "min_portfolio_return": 0.1,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.3,
+   "min_asset_weight": 0.0
+  },
+  {
+   "expected_return_asset0": 0.12788535969157674,
+   "expected_return_asset1": 0.005002151044533387,
+   "expected_return_asset2": 0.05500586367382385,
+   "expected_return_asset3": 0.04464214762976455,
+   "min_portfolio_return": 0.14729424283280249,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.4568718270819382,
+   "min_asset_weight": 0.004346941631470808
+  },
+  {
+   "expected_return_asset0": 0.08438436393705409,
+   "expected_return_asset1": 0.005959443887614069,
+   "expected_return_asset2": 0.04372759496072068,
+   "expected_return_asset3": 0.10107105762067248,
+   "min_portfolio_return": 0.005307193936772725,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.35995377511180926,
+   "min_asset_weight": 0.027247074030160835
+  },
+  {
+   "expected_return_asset0": 0.04408812440813934,
+   "expected_return_asset1": 0.11785313677518175,
+   "expected_return_asset2": 0.16188609133556534,
+   "expected_return_asset3": 0.0012997519356122034,
+   "min_portfolio_return": 0.16116385036656158,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.23610020660719677,
+   "min_asset_weight": 0.007773974990589078
+  },
+  {
+   "expected_return_asset0": 0.19144261444135624,
+   "expected_return_asset1": 0.06731890902252535,
+   "expected_return_asset2": 0.01854916867602958,
+   "expected_return_asset3": 0.019343275366692805,
+   "min_portfolio_return": 0.16949887326949198,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.4228513093097521,
+   "min_asset_weight": 0.03648658933469089
+  },
+  {
+   "expected_return_asset0": 0.10724561829094015,
+   "expected_return_asset1": 0.19462315279587414,
+   "expected_return_asset2": 0.0757068754416707,
+   "expected_return_asset3": 0.11040812625464541,
+   "min_portfolio_return": 0.165880932850599,
+   "budget_sum": 1.0,
+   "max_asset_weight": 0.44468276012431096,
+   "min_asset_weight": 0.028867607262838102
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   1.0,
+   null,
+   0.9999999999999999,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.00244029230862027,
+   null,
+   0.0019243529522032234,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   0.0009232793590646074,
+   null,
+   0.0007555352410905965,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition"
+  ],
+  "B-structured-2": [
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition",
+   "missing_variance_definition"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  2
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

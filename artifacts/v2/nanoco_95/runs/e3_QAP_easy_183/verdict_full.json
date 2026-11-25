@@ -1,0 +1,102 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "flow": [
+    12,
+    12,
+    2,
+    12,
+    3,
+    6
+   ],
+   "distance": [
+    43,
+    64,
+    21,
+    53,
+    23,
+    50
+   ],
+   "x_coords": [
+    91,
+    88,
+    36,
+    85
+   ],
+   "y_coords": [
+    71,
+    28,
+    39,
+    51
+   ],
+   "n_departments": 4,
+   "n_zones": 4
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:return data[row * width + column] | ~~~~^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:return lambda i, j: raw[i * n + j] | ~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

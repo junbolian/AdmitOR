@@ -1,0 +1,337 @@
+{
+ "spec": {
+  "demand_A": {
+   "base": [
+    92,
+    155,
+    245,
+    313,
+    374
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_B": {
+   "base": [
+    55,
+    138,
+    191,
+    277,
+    347
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "prod_cost_A": {
+   "base": [
+    42,
+    42,
+    41,
+    43,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "prod_cost_B": {
+   "base": [
+    44,
+    42,
+    43,
+    41,
+    43
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost_A": {
+   "base": [
+    1355,
+    1399,
+    1090,
+    1474,
+    1227
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "setup_cost_B": {
+   "base": [
+    1226,
+    1261,
+    1445,
+    1456,
+    1496
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "hold_cost_A": {
+   "base": [
+    4,
+    4,
+    5,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "hold_cost_B": {
+   "base": [
+    5,
+    5,
+    5,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "resource_use_A": {
+   "base": 1.541957944134609,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_use_B": {
+   "base": 1.859190427006453,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_capacity": {
+   "base": [
+    1023,
+    1165,
+    1010,
+    1119,
+    1051
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_prod_A": {
+   "base": [
+    374,
+    282,
+    219,
+    129,
+    61
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_prod_B": {
+   "base": [
+    347,
+    292,
+    209,
+    156,
+    70
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_A": {
+    "meaning": "cumulative demand for Product A by end of periods 0-4",
+    "base": [
+     92,
+     155,
+     245,
+     313,
+     374
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_B": {
+    "meaning": "cumulative demand for Product B by end of periods 0-4",
+    "base": [
+     55,
+     138,
+     191,
+     277,
+     347
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "prod_cost_A": {
+    "meaning": "unit production cost of Product A in periods 0-4",
+    "base": [
+     42,
+     42,
+     41,
+     43,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "prod_cost_B": {
+    "meaning": "unit production cost of Product B in periods 0-4",
+    "base": [
+     44,
+     42,
+     43,
+     41,
+     43
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost_A": {
+    "meaning": "setup cost for Product A in periods 0-4",
+    "base": [
+     1355,
+     1399,
+     1090,
+     1474,
+     1227
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "setup cost for Product B in periods 0-4",
+    "base": [
+     1226,
+     1261,
+     1445,
+     1456,
+     1496
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "hold_cost_A": {
+    "meaning": "unit inventory holding cost of Product A in periods 0-4",
+    "base": [
+     4,
+     4,
+     5,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "hold_cost_B": {
+    "meaning": "unit inventory holding cost of Product B in periods 0-4",
+    "base": [
+     5,
+     5,
+     5,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "resource_use_A": {
+    "meaning": "shared resource units consumed per unit of Product A",
+    "base": 1.541957944134609,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_use_B": {
+    "meaning": "shared resource units consumed per unit of Product B",
+    "base": 1.859190427006453,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_capacity": {
+    "meaning": "available shared resource capacity in periods 0-4",
+    "base": [
+     1023,
+     1165,
+     1010,
+     1119,
+     1051
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_prod_A": {
+    "meaning": "maximum production limit for Product A in periods 0-4",
+    "base": [
+     374,
+     282,
+     219,
+     129,
+     61
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_prod_B": {
+    "meaning": "maximum production limit for Product B in periods 0-4",
+    "base": [
+     347,
+     292,
+     209,
+     156,
+     70
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

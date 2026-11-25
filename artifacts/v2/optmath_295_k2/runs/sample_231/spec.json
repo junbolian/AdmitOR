@@ -1,0 +1,85 @@
+{
+ "spec": {
+  "cost_v1": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_v2": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_v3": {
+   "base": 72,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_v4": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_v5": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_v1": {
+    "meaning": "Deployment cost of Vehicle 1",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_v2": {
+    "meaning": "Deployment cost of Vehicle 2",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_v3": {
+    "meaning": "Deployment cost of Vehicle 3",
+    "base": 72,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_v4": {
+    "meaning": "Deployment cost of Vehicle 4",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_v5": {
+    "meaning": "Deployment cost of Vehicle 5",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

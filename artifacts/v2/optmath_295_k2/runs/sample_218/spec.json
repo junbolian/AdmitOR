@@ -1,0 +1,332 @@
+{
+ "spec": {
+  "consultant_availability": {
+   "base": [
+    0,
+    14,
+    20,
+    15,
+    19,
+    16,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_requirements": {
+   "base": [
+    20,
+    18,
+    15,
+    19,
+    16,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     33,
+     34,
+     25,
+     31,
+     34,
+     25
+    ],
+    [
+     31,
+     30,
+     28,
+     29,
+     25,
+     33
+    ],
+    [
+     35,
+     30,
+     30,
+     28,
+     30,
+     28
+    ],
+    [
+     34,
+     35,
+     31,
+     32,
+     25,
+     25
+    ],
+    [
+     28,
+     30,
+     32,
+     35,
+     27,
+     29
+    ],
+    [
+     30,
+     29,
+     27,
+     35,
+     35,
+     26
+    ],
+    [
+     35,
+     31,
+     33,
+     25,
+     30,
+     33
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "assignment_limits": {
+   "base": [
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "consultant_availability": {
+    "meaning": "Maximum hours each consultant can work across all projects",
+    "base": [
+     0,
+     14,
+     20,
+     15,
+     19,
+     16,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "project_requirements": {
+    "meaning": "Exact hours required by each project",
+    "base": [
+     20,
+     18,
+     15,
+     19,
+     16,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost per hour for each consultant-project pair",
+    "base": [
+     [
+      33,
+      34,
+      25,
+      31,
+      34,
+      25
+     ],
+     [
+      31,
+      30,
+      28,
+      29,
+      25,
+      33
+     ],
+     [
+      35,
+      30,
+      30,
+      28,
+      30,
+      28
+     ],
+     [
+      34,
+      35,
+      31,
+      32,
+      25,
+      25
+     ],
+     [
+      28,
+      30,
+      32,
+      35,
+      27,
+      29
+     ],
+     [
+      30,
+      29,
+      27,
+      35,
+      35,
+      26
+     ],
+     [
+      35,
+      31,
+      33,
+      25,
+      30,
+      33
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "assignment_limits": {
+    "meaning": "Maximum hours a consultant can work on a specific project",
+    "base": [
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "sample_id": "sample_201",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"route_demand\", \"extracted\": [276, 208, 306, 297, 263, 263, 280], \"stated\": [276, 208, 286, 297, 263, 263, 280], \"evidence\": \"Route_2 requires at least 286 units of capacity.\"}], \"not_stated\": [{\"parameter\": \"operational_cost\", \"extracted\": [[3604, 3617, 3600, 3550, 3520, 3580, 3560], [3308, 3501, 3400, 3450, 3420, 3380, 3410], [3700, 3650, 3620, 3600, 3580, 3590, 3600], [3450, 3480, 3430, 3410, 3390, 3420, 3400], [3600, 3620, 3570, 3550, 3530, 3560, 3540], [3500, 3520, 3480, 3460, 3440, 3470, 3450]], \"evidence\": \"Costs for all other aircraft and route combinations are similarly defined.\"}]}",
+ "mismatch": [
+  {
+   "parameter": "route_demand",
+   "extracted": [
+    276,
+    208,
+    306,
+    297,
+    263,
+    263,
+    280
+   ],
+   "stated": [
+    276,
+    208,
+    286,
+    297,
+    263,
+    263,
+    280
+   ],
+   "evidence": "Route_2 requires at least 286 units of capacity."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "operational_cost",
+   "extracted": [
+    [
+     3604,
+     3617,
+     3600,
+     3550,
+     3520,
+     3580,
+     3560
+    ],
+    [
+     3308,
+     3501,
+     3400,
+     3450,
+     3420,
+     3380,
+     3410
+    ],
+    [
+     3700,
+     3650,
+     3620,
+     3600,
+     3580,
+     3590,
+     3600
+    ],
+    [
+     3450,
+     3480,
+     3430,
+     3410,
+     3390,
+     3420,
+     3400
+    ],
+    [
+     3600,
+     3620,
+     3570,
+     3550,
+     3530,
+     3560,
+     3540
+    ],
+    [
+     3500,
+     3520,
+     3480,
+     3460,
+     3440,
+     3470,
+     3450
+    ]
+   ],
+   "evidence": "Costs for all other aircraft and route combinations are similarly defined."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

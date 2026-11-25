@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "weights": {
+   "base": [
+    20,
+    15,
+    17,
+    17,
+    18,
+    24,
+    20,
+    16,
+    21,
+    15,
+    22,
+    15,
+    25,
+    22,
+    23,
+    24,
+    17,
+    25,
+    16,
+    23
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "num_facilities": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "weights": {
+    "meaning": "Weighted dispersion benefit for each ordered node pair (i,j), i.e., separation benefit of selecting both i and j",
+    "base": [
+     20,
+     15,
+     17,
+     17,
+     18,
+     24,
+     20,
+     16,
+     21,
+     15,
+     22,
+     15,
+     25,
+     22,
+     23,
+     24,
+     17,
+     25,
+     16,
+     23
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "num_facilities": {
+    "meaning": "Exact number of facilities to select",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    523,
+    563,
+    312,
+    217
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "variable_cost": {
+   "base": [
+    3,
+    8,
+    8,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  },
+  "min_production": {
+   "base": [
+    49,
+    38,
+    45,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_production": {
+   "base": [
+    130,
+    121,
+    123,
+    126
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    223,
+    245,
+    217,
+    243,
+    190
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost per month for operating each factory (factories 0-3)",
+    "base": [
+     523,
+     563,
+     312,
+     217
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable production cost per unit at each factory (factories 0-3)",
+    "base": [
+     3,
+     8,
+     8,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   },
+   "min_production": {
+    "meaning": "Minimum production quantity per month if factory is operational (factories 0-3)",
+    "base": [
+     49,
+     38,
+     45,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity per month if factory is operational (factories 0-3)",
+    "base": [
+     130,
+     121,
+     123,
+     126
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand that total production must meet or exceed (months 0-4)",
+    "base": [
+     223,
+     245,
+     217,
+     243,
+     190
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

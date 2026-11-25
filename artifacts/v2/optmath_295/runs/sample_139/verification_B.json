@@ -1,0 +1,257 @@
+{
+ "sample_id": "sample_139",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"fixed_cost_0_1\", \"evidence\": \"such as 676 units for Hub 0 to Hub 1\"},\n    {\"parameter\": \"fixed_cost_0_2\", \"evidence\": \"such as 676 units for Hub 0 to Hub 1, 770 units for Hub 0 to Hub 2\"},\n    {\"parameter\": \"fixed_cost_0_3\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_0_4\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_1_0\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_1_2\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_1_3\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_1_4\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_2_0\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_2_1\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_2_3\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_2_4\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_3_0\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_3_1\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_3_2\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_3_4\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_4_0\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_4_1\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_4_2\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"fixed_cost_4_3\", \"evidence\": \"similar costs for other connections ranging from 612 to 770 units\"},\n    {\"parameter\": \"capacity_0_1\", \"evidence\": \"such as 197 units for Hub 0 to Hub 1\"},\n    {\"parameter\": \"capacity_0_2\", \"evidence\": \"such as 197 units for Hub 0 to Hub 1, 157 units for Hub 0 to Hub 2\"},\n    {\"parameter\": \"capacity_0_3\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_0_4\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_1_0\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_1_2\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_1_3\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_1_4\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_2_0\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_2_1\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_2_3\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_2_4\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_3_0\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_3_1\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_3_2\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_3_4\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_4_0\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_4_1\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_4_2\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"capacity_4_3\", \"evidence\": \"capacities for other connections ranging from 142 to 249 units\"},\n    {\"parameter\": \"variable_cost_0_1\", \"evidence\": \"such as 7 units for Hub 0 to Hub 1\"},\n    {\"parameter\": \"variable_cost_0_2\", \"evidence\": \"such as 7 units for Hub 0 to Hub 1, 6 units for Hub 0 to Hub 2\"},\n    {\"parameter\": \"variable_cost_0_3\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_0_4\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_1_0\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_1_2\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_1_3\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_1_4\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_2_0\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_2_1\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_2_3\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_2_4\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_3_0\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_3_1\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_3_2\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_3_4\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_4_0\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_4_1\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_4_2\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"},\n    {\"parameter\": \"variable_cost_4_3\", \"evidence\": \"similar costs for other connections ranging from 6 to 8 units per unit of product\"}\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_cost_0_1",
+   "evidence": "such as 676 units for Hub 0 to Hub 1"
+  },
+  {
+   "parameter": "fixed_cost_0_2",
+   "evidence": "such as 676 units for Hub 0 to Hub 1, 770 units for Hub 0 to Hub 2"
+  },
+  {
+   "parameter": "fixed_cost_0_3",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_0_4",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_1_0",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_1_2",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_1_3",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_1_4",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_2_0",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_2_1",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_2_3",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_2_4",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_3_0",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_3_1",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_3_2",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_3_4",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_4_0",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_4_1",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_4_2",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "fixed_cost_4_3",
+   "evidence": "similar costs for other connections ranging from 612 to 770 units"
+  },
+  {
+   "parameter": "capacity_0_1",
+   "evidence": "such as 197 units for Hub 0 to Hub 1"
+  },
+  {
+   "parameter": "capacity_0_2",
+   "evidence": "such as 197 units for Hub 0 to Hub 1, 157 units for Hub 0 to Hub 2"
+  },
+  {
+   "parameter": "capacity_0_3",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_0_4",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_1_0",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_1_2",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_1_3",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_1_4",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_2_0",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_2_1",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_2_3",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_2_4",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_3_0",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_3_1",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_3_2",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_3_4",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_4_0",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_4_1",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_4_2",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "capacity_4_3",
+   "evidence": "capacities for other connections ranging from 142 to 249 units"
+  },
+  {
+   "parameter": "variable_cost_0_1",
+   "evidence": "such as 7 units for Hub 0 to Hub 1"
+  },
+  {
+   "parameter": "variable_cost_0_2",
+   "evidence": "such as 7 units for Hub 0 to Hub 1, 6 units for Hub 0 to Hub 2"
+  },
+  {
+   "parameter": "variable_cost_0_3",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_0_4",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_1_0",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_1_2",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_1_3",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_1_4",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_2_0",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_2_1",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_2_3",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_2_4",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_3_0",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_3_1",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_3_2",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_3_4",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_4_0",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_4_1",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_4_2",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  },
+  {
+   "parameter": "variable_cost_4_3",
+   "evidence": "similar costs for other connections ranging from 6 to 8 units per unit of product"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

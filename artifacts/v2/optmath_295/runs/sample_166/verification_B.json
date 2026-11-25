@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_166",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"profit_margin\",\"evidence\":\"Margins are specified only for Regions 0 and 1 for each supplier; the remaining entries are described only as \\\"and so on.\\\"\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "profit_margin",
+   "evidence": "Margins are specified only for Regions 0 and 1 for each supplier; the remaining entries are described only as \"and so on.\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

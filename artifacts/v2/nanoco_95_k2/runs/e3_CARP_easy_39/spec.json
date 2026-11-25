@@ -1,0 +1,377 @@
+{
+ "spec": {
+  "demand_0_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "demand_0_6": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "demand_2_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "demand_2_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "truck_capacity": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "num_trucks": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_service_segments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    0,
+    37,
+    45,
+    31,
+    32,
+    45,
+    49,
+    37,
+    0,
+    75,
+    66,
+    51,
+    27,
+    21,
+    45,
+    75,
+    0,
+    18,
+    70,
+    89,
+    76,
+    31,
+    66,
+    18,
+    0,
+    52,
+    75,
+    72,
+    32,
+    51,
+    70,
+    52,
+    0,
+    39,
+    70,
+    45,
+    27,
+    89,
+    75,
+    39,
+    0,
+    48,
+    49,
+    21,
+    76,
+    72,
+    70,
+    48,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "depot_coord_x": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "depot_coord_y": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "node_coords_x": {
+   "base": [
+    47,
+    85,
+    67,
+    19,
+    20,
+    66
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "node_coords_y": {
+   "base": [
+    13,
+    78,
+    76,
+    56,
+    17,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_service_segments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "demand_0_2": {
+    "meaning": "Mail volume (demand) of mandatory service segment between Node 0 and Node 2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "demand_0_6": {
+    "meaning": "Mail volume (demand) of mandatory service segment between Node 0 and Node 6",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "demand_2_3": {
+    "meaning": "Mail volume (demand) of mandatory service segment between Node 2 and Node 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "demand_2_4": {
+    "meaning": "Mail volume (demand) of mandatory service segment between Node 2 and Node 4",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "truck_capacity": {
+    "meaning": "Maximum cargo capacity per mail collection truck",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "num_trucks": {
+    "meaning": "Number of mail collection trucks in the fleet (index/cardinality — frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_service_segments": {
+    "meaning": "Number of mandatory service segments (index/cardinality — frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of nodes in the city network (index/cardinality — frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "7x7 shortest-path travel distance matrix between nodes (row-major, symmetric)",
+    "base": [
+     0,
+     37,
+     45,
+     31,
+     32,
+     45,
+     49,
+     37,
+     0,
+     75,
+     66,
+     51,
+     27,
+     21,
+     45,
+     75,
+     0,
+     18,
+     70,
+     89,
+     76,
+     31,
+     66,
+     18,
+     0,
+     52,
+     75,
+     72,
+     32,
+     51,
+     70,
+     52,
+     0,
+     39,
+     70,
+     45,
+     27,
+     89,
+     75,
+     39,
+     0,
+     48,
+     49,
+     21,
+     76,
+     72,
+     70,
+     48,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "depot_coord_x": {
+    "meaning": "X-coordinate of Depot 0",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "depot_coord_y": {
+    "meaning": "Y-coordinate of Depot 0",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "node_coords_x": {
+    "meaning": "X-coordinates of nodes 1 through 6 (Node 0 is the depot given separately)",
+    "base": [
+     47,
+     85,
+     67,
+     19,
+     20,
+     66
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "node_coords_y": {
+    "meaning": "Y-coordinates of nodes 1 through 6 (Node 0 is the depot given separately)",
+    "base": [
+     13,
+     78,
+     76,
+     56,
+     17,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

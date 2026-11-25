@@ -1,0 +1,184 @@
+{
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    87143,
+    85301,
+    85003,
+    86192
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "shipping_cost_matrix": {
+   "base": [
+    [
+     60,
+     55,
+     53,
+     55,
+     55,
+     55,
+     55
+    ],
+    [
+     55,
+     55,
+     55,
+     55,
+     55,
+     55,
+     55
+    ],
+    [
+     55,
+     55,
+     55,
+     55,
+     55,
+     55,
+     55
+    ],
+    [
+     55,
+     55,
+     55,
+     55,
+     55,
+     55,
+     55
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 45.0,
+    "hi": 65.0,
+    "integer": true
+   }
+  },
+  "demands": {
+   "base": [
+    428,
+    444,
+    406,
+    448,
+    412,
+    444,
+    440
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacities": {
+   "base": [
+    1637,
+    1612,
+    1605,
+    1675
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "Fixed cost to open each distribution center (facility_0..facility_3)",
+    "base": [
+     87143,
+     85301,
+     85003,
+     86192
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "shipping_cost_matrix": {
+    "meaning": "Unit shipping cost from each facility to each customer; rows facility_0..facility_3, columns customer_0..customer_6. Only row 0 (60,55,53,...) is explicitly given; other entries lie in [50,60]. Base uses row-0 given values and mid-range 55 for unspecified entries.",
+    "base": [
+     [
+      60,
+      55,
+      53,
+      55,
+      55,
+      55,
+      55
+     ],
+     [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+     ],
+     [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+     ],
+     [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 45,
+     "hi": 65,
+     "integer": true
+    }
+   },
+   "demands": {
+    "meaning": "Required units at each retail store (customer_0..customer_6)",
+    "base": [
+     428,
+     444,
+     406,
+     448,
+     412,
+     444,
+     440
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum throughput of each distribution center if opened (facility_0..facility_3)",
+    "base": [
+     1637,
+     1612,
+     1605,
+     1675
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

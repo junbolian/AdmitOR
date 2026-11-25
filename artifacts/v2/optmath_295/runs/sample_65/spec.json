@@ -1,0 +1,136 @@
+{
+ "spec": {
+  "fixed_costs": {
+   "base": [
+    100274,
+    96413,
+    103573,
+    103557,
+    104460,
+    97217
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "shipping_costs_col0": {
+   "base": [
+    61,
+    65,
+    68,
+    63,
+    62,
+    69
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demands": {
+   "base": [
+    400,
+    387,
+    398,
+    404,
+    389,
+    384,
+    412,
+    410,
+    417,
+    402,
+    397
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacities": {
+   "base": [
+    964,
+    973,
+    983,
+    1041,
+    963,
+    1003
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_costs": {
+    "meaning": "Fixed cost of opening each distribution center (index 0..5)",
+    "base": [
+     100274,
+     96413,
+     103573,
+     103557,
+     104460,
+     97217
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "shipping_costs_col0": {
+    "meaning": "Variable shipping cost from each distribution center to retail store 0 (index 0..5)",
+    "base": [
+     61,
+     65,
+     68,
+     63,
+     62,
+     69
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demands": {
+    "meaning": "Required units for retail stores 0..10",
+    "base": [
+     400,
+     387,
+     398,
+     404,
+     389,
+     384,
+     412,
+     410,
+     417,
+     402,
+     397
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum units shippable by each distribution center if opened (index 0..5)",
+    "base": [
+     964,
+     973,
+     983,
+     1041,
+     963,
+     1003
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

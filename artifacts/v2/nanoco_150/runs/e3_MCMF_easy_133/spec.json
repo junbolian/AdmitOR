@@ -1,0 +1,112 @@
+{
+ "spec": {
+  "arc_capacity": {
+   "base": [
+    7,
+    14,
+    11,
+    4,
+    11,
+    14,
+    5,
+    11,
+    14,
+    5,
+    14,
+    4,
+    4,
+    8,
+    9,
+    13,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_cost": {
+   "base": [
+    5,
+    4,
+    6,
+    5,
+    8,
+    5,
+    4,
+    8,
+    9,
+    10,
+    8,
+    4,
+    10,
+    10,
+    4,
+    9,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_capacity": {
+    "meaning": "Maximum throughput capacity of each of the 17 directed pipeline arcs, ordered as listed in the problem",
+    "base": [
+     7,
+     14,
+     11,
+     4,
+     11,
+     14,
+     5,
+     11,
+     14,
+     5,
+     14,
+     4,
+     4,
+     8,
+     9,
+     13,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_cost": {
+    "meaning": "Pumping energy cost per unit transported along each of the 17 directed pipeline arcs, ordered as listed in the problem",
+    "base": [
+     5,
+     4,
+     6,
+     5,
+     8,
+     5,
+     4,
+     8,
+     9,
+     10,
+     8,
+     4,
+     10,
+     10,
+     4,
+     9,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max-min"
+ }
+}

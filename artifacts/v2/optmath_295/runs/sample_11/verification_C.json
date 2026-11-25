@@ -1,0 +1,29 @@
+{
+ "sample_id": "sample_11",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter:\n\n**profit_margins**: The statement says Item 44 yields 381 units. The extracted array ends with `...381,336,381` (index 43 is 336, index 44 is 381). That matches. The pattern 381,336,352 repeating is consistent with the examples given. However, index 43 in the extracted array is 336, but the second-to-last value at position 43 should be 336 — this is fine. No mismatch there.\n\nBut the statement only gives explicit values for Items 0, 1, 2, and 44, and says \"and so on\" for the rest. The interior values (indices 3–43, excluding 44) are not individually stated.\n\n**resource_coefficients**: The statement gives explicit values for Item 0 (0.012048), Item 1 (0.012821), and Item 44 (0.012821). The rest are \"and so on.\" The extracted last entry is 0.012821, matching Item 44. But the interior values are not individually stated.\n\n**production_capacities**: The statement gives Item 0 = 716, Item 1 = 606, Item 2 = 635, Item 44 = 618. The extracted array's last value is 618, matching. Interior values not individually stated.\n\nThe key issue: for `profit_margins`, the extracted array has index 43 = 336 and index 44 = 381, but index 42 = 381, 43 = 336, 44 = 381. The statement says Item 44 yields 381 — that matches. No mismatch there, but the interior values are not stated.\n\nFor `resource_coefficients`, the extracted last value is 0.012821, matching the statement for Item 44. But the statement says Item 44 consumes 0.012821 — the extracted value is 0.012821. Match.\n\nThe interior (not explicitly stated) values for all three array parameters are filled in by inference/pattern, not directly stated.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"profit_margins\",\n      \"evidence\": \"Item 0 yields 381, Item 1 yields 336, Item 2 yields 352, Item 44 yields 381 — values for items 3 through 43 are not individually stated ('and so on')\"\n    },\n    {\n      \"parameter\": \"resource_coefficients\",\n      \"evidence\": \"Item 0 consumes 0.012048, Item 1 consumes 0.012821, Item 44 consumes 0.012821 — values for items 2 through 43 are not individually stated ('and so on')\"\n    },\n    {\n      \"parameter\": \"production_capacities\",\n      \"evidence\": \"Item 0 up to 716, Item 1 up to 606, Item 2 up to 635, Item 44 up to 618 — values for items 3 through 43 are not individually stated ('and so on')\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "profit_margins",
+   "evidence": "Item 0 yields 381, Item 1 yields 336, Item 2 yields 352, Item 44 yields 381 — values for items 3 through 43 are not individually stated ('and so on')"
+  },
+  {
+   "parameter": "resource_coefficients",
+   "evidence": "Item 0 consumes 0.012048, Item 1 consumes 0.012821, Item 44 consumes 0.012821 — values for items 2 through 43 are not individually stated ('and so on')"
+  },
+  {
+   "parameter": "production_capacities",
+   "evidence": "Item 0 up to 716, Item 1 up to 606, Item 2 up to 635, Item 44 up to 618 — values for items 3 through 43 are not individually stated ('and so on')"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

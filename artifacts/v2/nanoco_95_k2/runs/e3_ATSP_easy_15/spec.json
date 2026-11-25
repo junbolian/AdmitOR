@@ -1,0 +1,340 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     59,
+     97,
+     44,
+     46,
+     49,
+     32,
+     91,
+     65
+    ],
+    [
+     65,
+     0,
+     62,
+     11,
+     40,
+     28,
+     51,
+     91,
+     78
+    ],
+    [
+     86,
+     53,
+     0,
+     55,
+     30,
+     30,
+     70,
+     46,
+     57
+    ],
+    [
+     66,
+     21,
+     90,
+     0,
+     51,
+     41,
+     61,
+     111,
+     93
+    ],
+    [
+     69,
+     51,
+     50,
+     50,
+     0,
+     18,
+     34,
+     51,
+     41
+    ],
+    [
+     66,
+     34,
+     41,
+     40,
+     11,
+     0,
+     44,
+     60,
+     56
+    ],
+    [
+     28,
+     42,
+     66,
+     35,
+     23,
+     29,
+     0,
+     59,
+     37
+    ],
+    [
+     97,
+     88,
+     50,
+     85,
+     42,
+     52,
+     71,
+     0,
+     31
+    ],
+    [
+     64,
+     72,
+     68,
+     64,
+     28,
+     45,
+     42,
+     28,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "checkpoint_coordinates": {
+   "base": [
+    [
+     1,
+     9
+    ],
+    [
+     62,
+     26
+    ],
+    [
+     59,
+     82
+    ],
+    [
+     55,
+     12
+    ],
+    [
+     30,
+     57
+    ],
+    [
+     43,
+     51
+    ],
+    [
+     14,
+     33
+    ],
+    [
+     15,
+     100
+    ],
+    [
+     0,
+     72
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "num_checkpoints": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[checkpoint_coordinates] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_checkpoints] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "asymmetric 9x9 transition cost between checkpoints (rows = from, cols = to), diagonal zero",
+    "base": [
+     [
+      0,
+      59,
+      97,
+      44,
+      46,
+      49,
+      32,
+      91,
+      65
+     ],
+     [
+      65,
+      0,
+      62,
+      11,
+      40,
+      28,
+      51,
+      91,
+      78
+     ],
+     [
+      86,
+      53,
+      0,
+      55,
+      30,
+      30,
+      70,
+      46,
+      57
+     ],
+     [
+      66,
+      21,
+      90,
+      0,
+      51,
+      41,
+      61,
+      111,
+      93
+     ],
+     [
+      69,
+      51,
+      50,
+      50,
+      0,
+      18,
+      34,
+      51,
+      41
+     ],
+     [
+      66,
+      34,
+      41,
+      40,
+      11,
+      0,
+      44,
+      60,
+      56
+     ],
+     [
+      28,
+      42,
+      66,
+      35,
+      23,
+      29,
+      0,
+      59,
+      37
+     ],
+     [
+      97,
+      88,
+      50,
+      85,
+      42,
+      52,
+      71,
+      0,
+      31
+     ],
+     [
+      64,
+      72,
+      68,
+      64,
+      28,
+      45,
+      42,
+      28,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "checkpoint_coordinates": {
+    "meaning": "physical (x, y) grid coordinates of each checkpoint 0..8 (fixed layout, not perturbed)",
+    "base": [
+     [
+      1,
+      9
+     ],
+     [
+      62,
+      26
+     ],
+     [
+      59,
+      82
+     ],
+     [
+      55,
+      12
+     ],
+     [
+      30,
+      57
+     ],
+     [
+      43,
+      51
+     ],
+     [
+      14,
+      33
+     ],
+     [
+      15,
+      100
+     ],
+     [
+      0,
+      72
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "num_checkpoints": {
+    "meaning": "number of checkpoints including command center (index-set size, frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

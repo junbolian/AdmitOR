@@ -1,0 +1,224 @@
+{
+ "spec": {
+  "consultant_hours": {
+   "base": [
+    12,
+    11,
+    11,
+    8
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "project_hours": {
+   "base": [
+    4,
+    8,
+    11,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ],
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ],
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ],
+    [
+     8,
+     7,
+     4,
+     7,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     27,
+     20,
+     15,
+     18,
+     22
+    ],
+    [
+     25,
+     19,
+     14,
+     17,
+     21
+    ],
+    [
+     26,
+     18,
+     13,
+     16,
+     20
+    ],
+    [
+     24,
+     17,
+     12,
+     15,
+     19
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "consultant_hours": {
+    "meaning": "Exact total hours each consultant works",
+    "base": [
+     12,
+     11,
+     11,
+     8
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "project_hours": {
+    "meaning": "Exact total hours each project requires",
+    "base": [
+     4,
+     8,
+     11,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum hours a consultant can work on a given project (4x5 matrix)",
+    "base": [
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ],
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ],
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ],
+     [
+      8,
+      7,
+      4,
+      7,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "cost": {
+    "meaning": "Cost of assigning a consultant to a project (4x5 matrix)",
+    "base": [
+     [
+      27,
+      20,
+      15,
+      18,
+      22
+     ],
+     [
+      25,
+      19,
+      14,
+      17,
+      21
+     ],
+     [
+      26,
+      18,
+      13,
+      16,
+      20
+     ],
+     [
+      24,
+      17,
+      12,
+      15,
+      19
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

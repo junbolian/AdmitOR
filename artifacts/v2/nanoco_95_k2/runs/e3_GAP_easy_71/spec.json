@@ -1,0 +1,179 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    14,
+    3,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "resource_usage": {
+   "base": [
+    [
+     2,
+     2,
+     3,
+     3,
+     4,
+     4,
+     4
+    ],
+    [
+     4,
+     5,
+     1,
+     6,
+     7,
+     2,
+     4
+    ],
+    [
+     1,
+     4,
+     4,
+     4,
+     7,
+     2,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     21,
+     15,
+     41,
+     32,
+     16,
+     46,
+     26
+    ],
+    [
+     10,
+     27,
+     31,
+     42,
+     28,
+     37,
+     10
+    ],
+    [
+     29,
+     30,
+     11,
+     15,
+     20,
+     20,
+     20
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "CPU/memory capacity limit of each virtual machine (VM1, VM2, VM3)",
+    "base": [
+     14,
+     3,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "resource_usage": {
+    "meaning": "CPU/memory usage of each task on each VM, rows=VM1..VM3, columns=Task1..Task7",
+    "base": [
+     [
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      4
+     ],
+     [
+      4,
+      5,
+      1,
+      6,
+      7,
+      2,
+      4
+     ],
+     [
+      1,
+      4,
+      4,
+      4,
+      7,
+      2,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Operational cost of assigning each task to each VM, rows=VM1..VM3, columns=Task1..Task7",
+    "base": [
+     [
+      21,
+      15,
+      41,
+      32,
+      16,
+      46,
+      26
+     ],
+     [
+      10,
+      27,
+      31,
+      42,
+      28,
+      37,
+      10
+     ],
+     [
+      29,
+      30,
+      11,
+      15,
+      20,
+      20,
+      20
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 70,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

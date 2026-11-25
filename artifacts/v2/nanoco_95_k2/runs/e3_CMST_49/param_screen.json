@@ -1,0 +1,40 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "cost_matrix",
+  "max_turbines_per_feeder",
+  "num_nodes",
+  "num_turbines"
+ ],
+ "safe": [
+  "cost_matrix",
+  "num_nodes",
+  "num_turbines"
+ ],
+ "tests": {
+  "cost_matrix": [
+   6,
+   6
+  ],
+  "max_turbines_per_feeder": [
+   5,
+   6
+  ],
+  "num_nodes": [
+   6,
+   6
+  ],
+  "num_turbines": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

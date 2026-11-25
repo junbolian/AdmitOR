@@ -1,0 +1,150 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "truck_capacity": 100,
+   "shipment_weights": [
+    37,
+    40,
+    32,
+    34,
+    34,
+    32
+   ],
+   "num_trucks": 6
+  },
+  {
+   "truck_capacity": 115.57707193831536,
+   "shipment_weights": [
+    31.7276193829716,
+    37.30035182042943,
+    29.342823086228698,
+    36.412006384472924,
+    35.802334771713696,
+    35.764923849966515
+   ],
+   "num_trucks": 6
+  },
+  {
+   "truck_capacity": 106.87687278741082,
+   "shipment_weights": [
+    31.78074913576258,
+    36.623655697643244,
+    32.051410765792276,
+    29.170666890775408,
+    30.928144037003815,
+    33.43889060268342
+   ],
+   "num_trucks": 6
+  },
+  {
+   "truck_capacity": 98.81762488162786,
+   "shipment_weights": [
+    37.99084909102258,
+    43.71316548013391,
+    27.262388092909386,
+    37.11935636869464,
+    36.02102182887991,
+    30.46640495857272
+   ],
+   "num_trucks": 6
+  },
+  {
+   "truck_capacity": 128.28852288827125,
+   "shipment_weights": [
+    35.18619945075015,
+    35.11295012056178,
+    28.128477217601255,
+    37.54444253674409,
+    35.058005519942284,
+    34.948431423434045
+   ],
+   "num_trucks": 6
+  },
+  {
+   "truck_capacity": 111.44912365818803,
+   "shipment_weights": [
+    42.25158498017101,
+    38.54241252650024,
+    32.49959006022298,
+    37.359927575380546,
+    35.20890147411531,
+    35.47238624298346
+   ],
+   "num_trucks": 6
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   2.0,
+   2.0
+  ],
+  "B-structured": [
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   2.0,
+   2.0
+  ],
+  "C-direct": [
+   3.0,
+   2.0,
+   2.0,
+   3.0,
+   2.0,
+   2.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

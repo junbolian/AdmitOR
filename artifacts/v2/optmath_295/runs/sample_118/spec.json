@@ -1,0 +1,226 @@
+{
+ "spec": {
+  "employee_availability": {
+   "base": [
+    10,
+    9,
+    10,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "project_demand": {
+   "base": [
+    0,
+    0,
+    8,
+    9,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     17,
+     20,
+     29,
+     15,
+     22,
+     19
+    ],
+    [
+     29,
+     16,
+     25,
+     17,
+     17,
+     28
+    ],
+    [
+     30,
+     17,
+     27,
+     23,
+     25,
+     19
+    ],
+    [
+     15,
+     15,
+     19,
+     22,
+     17,
+     19
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "pair_capacity": {
+   "base": [
+    [
+     6,
+     4,
+     6,
+     8,
+     8,
+     5
+    ],
+    [
+     6,
+     8,
+     5,
+     8,
+     7,
+     7
+    ],
+    [
+     7,
+     6,
+     8,
+     8,
+     6,
+     5
+    ],
+    [
+     8,
+     8,
+     6,
+     8,
+     8,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "employee_availability": {
+    "meaning": "Total time each employee can contribute across all projects",
+    "base": [
+     10,
+     9,
+     10,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "project_demand": {
+    "meaning": "Required work units for each project",
+    "base": [
+     0,
+     0,
+     8,
+     9,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost per unit assigned for each employee-project pair",
+    "base": [
+     [
+      17,
+      20,
+      29,
+      15,
+      22,
+      19
+     ],
+     [
+      29,
+      16,
+      25,
+      17,
+      17,
+      28
+     ],
+     [
+      30,
+      17,
+      27,
+      23,
+      25,
+      19
+     ],
+     [
+      15,
+      15,
+      19,
+      22,
+      17,
+      19
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "pair_capacity": {
+    "meaning": "Maximum units an employee can contribute to each project",
+    "base": [
+     [
+      6,
+      4,
+      6,
+      8,
+      8,
+      5
+     ],
+     [
+      6,
+      8,
+      5,
+      8,
+      7,
+      7
+     ],
+     [
+      7,
+      6,
+      8,
+      8,
+      6,
+      5
+     ],
+     [
+      8,
+      8,
+      6,
+      8,
+      8,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

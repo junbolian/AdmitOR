@@ -1,0 +1,98 @@
+{
+ "spec": {
+  "hide_width": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "hide_height": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "patch_widths": {
+   "base": [
+    6,
+    4,
+    8,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "patch_heights": {
+   "base": [
+    4,
+    8,
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "hide_width": {
+    "meaning": "width of each standard hide",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "hide_height": {
+    "meaning": "height of each standard hide",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "patch_widths": {
+    "meaning": "widths of patches 1-4 (no rotation allowed)",
+    "base": [
+     6,
+     4,
+     8,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "patch_heights": {
+    "meaning": "heights of patches 1-4 (no rotation allowed)",
+    "base": [
+     4,
+     8,
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

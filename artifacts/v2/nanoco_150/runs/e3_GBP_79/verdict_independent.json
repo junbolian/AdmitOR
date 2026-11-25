@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "sheet_width": 20,
+   "sheet_length": 20,
+   "billboard_widths": [
+    8,
+    6,
+    8,
+    8
+   ],
+   "billboard_heights": [
+    5,
+    4,
+    8,
+    5
+   ]
+  },
+  {
+   "sheet_width": 23,
+   "sheet_length": 11,
+   "billboard_widths": [
+    7.100117273476477,
+    5.169632214446469,
+    8.94588485665605,
+    8.706797949691644
+   ],
+   "billboard_heights": [
+    5.9804489192621135,
+    3.173877665258832,
+    7.687687278741082,
+    3.8244930485951754
+   ]
+  },
+  {
+   "sheet_width": 14,
+   "sheet_length": 20,
+   "billboard_widths": [
+    6.1061438787354545,
+    5.096512952059945,
+    8.599537751118092,
+    8.179765922412866
+   ],
+   "billboard_heights": [
+    4.3011015551017415,
+    4.178531367751818,
+    9.237721826711306,
+    3.7662468991951528
+   ]
+  },
+  {
+   "sheet_width": 26,
+   "sheet_length": 24,
+   "billboard_widths": [
+    7.3610020660719675,
+    4.966438499435345,
+    9.828852288827125,
+    7.3463781804505075
+   ],
+   "billboard_heights": [
+    3.9818646084503695,
+    3.193432753666928,
+    9.389977465389839,
+    5.259315078417228
+   ]
+  },
+  {
+   "sheet_width": 26,
+   "sheet_length": 25,
+   "billboard_widths": [
+    8.144912365818803,
+    7.419347291938111,
+    7.514137508833414,
+    8.208162525092908
+   ],
+   "billboard_heights": [
+    5.823511660632487,
+    4.237039504728492,
+    9.44682760124311,
+    5.193380363141905
+   ]
+  },
+  {
+   "sheet_width": 24,
+   "sheet_length": 11,
+   "billboard_widths": [
+    6.911593102606187,
+    5.368163890806321,
+    6.31916790769451,
+    6.931163545444121
+   ],
+   "billboard_heights": [
+    4.002503573524323,
+    3.5559472062201842,
+    8.542737777057601,
+    4.662080447425211
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4.0,
+   null,
+   null,
+   4.0,
+   4.0,
+   null
+  ],
+  "B-structured": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "C-direct": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [1, 2, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

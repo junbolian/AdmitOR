@@ -1,0 +1,312 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     63,
+     93,
+     54,
+     56,
+     59,
+     27
+    ],
+    [
+     63,
+     0,
+     56,
+     16,
+     45,
+     31,
+     49
+    ],
+    [
+     93,
+     56,
+     0,
+     70,
+     38,
+     35,
+     67
+    ],
+    [
+     54,
+     16,
+     70,
+     0,
+     51,
+     41,
+     46
+    ],
+    [
+     56,
+     45,
+     38,
+     51,
+     0,
+     14,
+     29
+    ],
+    [
+     59,
+     31,
+     35,
+     41,
+     14,
+     0,
+     34
+    ],
+    [
+     27,
+     49,
+     67,
+     46,
+     29,
+     34,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "coords": {
+   "base": [
+    [
+     1,
+     9
+    ],
+    [
+     62,
+     26
+    ],
+    [
+     59,
+     82
+    ],
+    [
+     55,
+     12
+    ],
+    [
+     30,
+     57
+    ],
+    [
+     43,
+     51
+    ],
+    [
+     14,
+     33
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_pairs": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "pickup_delivery_pairs": {
+   "base": [
+    [
+     4,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     5,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_pairs] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Symmetric pairwise travel distances between all 7 nodes (row-major 7x7 matrix)",
+    "base": [
+     [
+      0,
+      63,
+      93,
+      54,
+      56,
+      59,
+      27
+     ],
+     [
+      63,
+      0,
+      56,
+      16,
+      45,
+      31,
+      49
+     ],
+     [
+      93,
+      56,
+      0,
+      70,
+      38,
+      35,
+      67
+     ],
+     [
+      54,
+      16,
+      70,
+      0,
+      51,
+      41,
+      46
+     ],
+     [
+      56,
+      45,
+      38,
+      51,
+      0,
+      14,
+      29
+     ],
+     [
+      59,
+      31,
+      35,
+      41,
+      14,
+      0,
+      34
+     ],
+     [
+      27,
+      49,
+      67,
+      46,
+      29,
+      34,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "coords": {
+    "meaning": "Cartesian coordinates of the 7 nodes",
+    "base": [
+     [
+      1,
+      9
+     ],
+     [
+      62,
+      26
+     ],
+     [
+      59,
+      82
+     ],
+     [
+      55,
+      12
+     ],
+     [
+      30,
+      57
+     ],
+     [
+      43,
+      51
+     ],
+     [
+      14,
+      33
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "num_nodes": {
+    "meaning": "Total number of locations (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_pairs": {
+    "meaning": "Number of pickup-delivery request pairs (index-set size, frozen)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "pickup_delivery_pairs": {
+    "meaning": "Pickup and delivery node index pairs with precedence constraints",
+    "base": [
+     [
+      4,
+      3
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

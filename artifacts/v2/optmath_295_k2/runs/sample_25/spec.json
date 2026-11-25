@@ -1,0 +1,309 @@
+{
+ "spec": {
+  "cost_0_1": {
+   "base": 806,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_0_2": {
+   "base": 990,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_0_3": {
+   "base": 360,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_0": {
+   "base": 536,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_1_2": {
+   "base": 565,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_1_3": {
+   "base": 217,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cost_2_0": {
+   "base": 167,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cost_2_1": {
+   "base": 806,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_2_3": {
+   "base": 237,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cost_3_0": {
+   "base": 167,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cost_3_1": {
+   "base": 803,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_3_2": {
+   "base": 539,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "n_cities": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "position_city_0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "position_lower_bound": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "position_upper_bound": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "mtz_big_M": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "mtz_rhs": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n_cities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_city_0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_lower_bound] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_upper_bound] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_0_1": {
+    "meaning": "travel cost from City 0 to City 1",
+    "base": 806,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_0_2": {
+    "meaning": "travel cost from City 0 to City 2",
+    "base": 990,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_0_3": {
+    "meaning": "travel cost from City 0 to City 3",
+    "base": 360,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_0": {
+    "meaning": "travel cost from City 1 to City 0",
+    "base": 536,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_1_2": {
+    "meaning": "travel cost from City 1 to City 2",
+    "base": 565,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_1_3": {
+    "meaning": "travel cost from City 1 to City 3",
+    "base": 217,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cost_2_0": {
+    "meaning": "travel cost from City 2 to City 0",
+    "base": 167,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cost_2_1": {
+    "meaning": "travel cost from City 2 to City 1",
+    "base": 806,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_2_3": {
+    "meaning": "travel cost from City 2 to City 3",
+    "base": 237,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cost_3_0": {
+    "meaning": "travel cost from City 3 to City 0",
+    "base": 167,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cost_3_1": {
+    "meaning": "travel cost from City 3 to City 1",
+    "base": 803,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_3_2": {
+    "meaning": "travel cost from City 3 to City 2",
+    "base": 539,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "n_cities": {
+    "meaning": "number of cities (index-set size, frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "position_city_0": {
+    "meaning": "fixed route position of City 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "position_lower_bound": {
+    "meaning": "lower bound on positions of Cities 1, 2, 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "position_upper_bound": {
+    "meaning": "upper bound on positions of Cities 1, 2, 3",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "mtz_big_M": {
+    "meaning": "MTZ subtour-elimination coefficient (n_cities) appearing in position constraints",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "mtz_rhs": {
+    "meaning": "right-hand side of MTZ constraints: M*x_ij + u_i - u_j <= M-1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,160 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1524,
+    1541,
+    1553,
+    1505
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    841,
+    812,
+    837,
+    850,
+    818
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_delivery": {
+   "base": [
+    381,
+    385,
+    388,
+    376
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     31,
+     31,
+     31,
+     31,
+     31
+    ],
+    [
+     30,
+     30,
+     32,
+     30,
+     32
+    ],
+    [
+     32,
+     32,
+     30,
+     30,
+     30
+    ],
+    [
+     30,
+     32,
+     32,
+     30,
+     32
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "maximum total production capacity per producer (units of energy)",
+    "base": [
+     1524,
+     1541,
+     1553,
+     1505
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "minimum energy requirement per contract (units)",
+    "base": [
+     841,
+     812,
+     837,
+     850,
+     818
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_delivery": {
+    "meaning": "minimum delivery per contract if a producer contributes (units)",
+    "base": [
+     381,
+     385,
+     388,
+     376
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "production cost per unit of energy delivered from producer i to contract j",
+    "base": [
+     [
+      31,
+      31,
+      31,
+      31,
+      31
+     ],
+     [
+      30,
+      30,
+      32,
+      30,
+      32
+     ],
+     [
+      32,
+      32,
+      30,
+      30,
+      30
+     ],
+     [
+      30,
+      32,
+      32,
+      30,
+      32
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

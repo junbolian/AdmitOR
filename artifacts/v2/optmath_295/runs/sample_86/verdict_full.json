@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_P0_L0_to_L1": 6,
+   "cost_P0_L1_to_L0": 6,
+   "cost_P1_L0_to_L1": 5,
+   "cost_P1_L1_to_L0": 5,
+   "cost_idle": 0,
+   "max_planes_P0": 2,
+   "max_planes_P1": 2,
+   "demand_L0_to_L1_period1": 19,
+   "capacity_P0": 86,
+   "capacity_P1": 94,
+   "max_route_P0_L0_to_L1": 2,
+   "max_route_P1_L0_to_L1": 2,
+   "max_route_P0_L1_to_L0": 0,
+   "max_route_P1_L1_to_L0": 0
+  },
+  {
+   "cost_P0_L0_to_L1": 6.836560790747302,
+   "cost_P0_L1_to_L0": 3.1500645313360014,
+   "cost_P1_L0_to_L1": 3.8751465918455965,
+   "cost_P1_L1_to_L0": 3.616053690744114,
+   "cost_idle": 2.209413642492037,
+   "max_planes_P0": 2,
+   "max_planes_P1": 2,
+   "demand_L0_to_L1_period1": 3.303675639917814,
+   "capacity_P0": 79.28527649293326,
+   "capacity_P1": 49.80093862717861,
+   "max_route_P0_L0_to_L1": 2,
+   "max_route_P1_L0_to_L1": 2,
+   "max_route_P0_L1_to_L0": 0,
+   "max_route_P1_L1_to_L0": 0
+  },
+  {
+   "cost_P0_L0_to_L1": 6.89930662667714,
+   "cost_P0_L1_to_L0": 6.2696488836193005,
+   "cost_P1_L0_to_L1": 3.6022031102034835,
+   "cost_P1_L1_to_L0": 5.446328419379544,
+   "cost_idle": 2.42829137003348,
+   "max_planes_P0": 2,
+   "max_planes_P1": 2,
+   "demand_L0_to_L1_period1": 26.52929700955262,
+   "capacity_P0": 72.2615444205473,
+   "capacity_P1": 61.61507298230747,
+   "max_route_P0_L0_to_L1": 2,
+   "max_route_P1_L0_to_L1": 2,
+   "max_route_P0_L1_to_L0": 0,
+   "max_route_P1_L1_to_L0": 0
+  },
+  {
+   "cost_P0_L0_to_L1": 8.084966198084757,
+   "cost_P0_L1_to_L0": 6.622356188201346,
+   "cost_P1_L0_to_L1": 6.5356413663719,
+   "cost_P1_L1_to_L0": 6.148658933469089,
+   "cost_idle": 1.6086842743641023,
+   "max_planes_P0": 2,
+   "max_planes_P1": 2,
+   "demand_L0_to_L1_period1": 20.977543988382624,
+   "capacity_P0": 114.32880112575756,
+   "capacity_P1": 105.14085672223914,
+   "max_route_P0_L0_to_L1": 2,
+   "max_route_P1_L0_to_L1": 2,
+   "max_route_P0_L1_to_L0": 0,
+   "max_route_P1_L1_to_L0": 0
+  },
+  {
+   "cost_P0_L0_to_L1": 4.367389653909282,
+   "cost_P0_L1_to_L0": 4.736327781612643,
+   "cost_P1_L0_to_L1": 2.8989598846181375,
+   "cost_P1_L1_to_L0": 3.663954431805151,
+   "cost_idle": 0.30300428822918735,
+   "max_planes_P0": 2,
+   "max_planes_P1": 2,
+   "demand_L0_to_L1_period1": 13.863622800863201,
+   "capacity_P0": 74.8355631720519,
+   "capacity_P1": 66.69366089251984,
+   "max_route_P0_L0_to_L1": 2,
+   "max_route_P1_L0_to_L1": 2,
+   "max_route_P0_L1_to_L0": 0,
+   "max_route_P1_L1_to_L0": 0
+  },
+  {
+   "cost_P0_L0_to_L1": 4.026831889188582,
+   "cost_P0_L1_to_L0": 7.374760787702096,
+   "cost_P1_L0_to_L1": 3.317012468809642,
+   "cost_P1_L1_to_L0": 4.397277208788239,
+   "cost_idle": 2.9685700519097855,
+   "max_planes_P0": 2,
+   "max_planes_P1": 2,
+   "demand_L0_to_L1_period1": 26.015341537615235,
+   "capacity_P0": 115.48526513632363,
+   "capacity_P1": 119.94399168534702,
+   "max_route_P0_L0_to_L1": 2,
+   "max_route_P1_L0_to_L1": 2,
+   "max_route_P0_L1_to_L0": 0,
+   "max_route_P1_L1_to_L0": 0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   3.8751465918455965,
+   3.6022031102034835,
+   6.5356413663719,
+   2.8989598846181375,
+   3.317012468809642
+  ],
+  "B-structured": [
+   5.0,
+   3.8751465918455965,
+   3.6022031102034835,
+   6.5356413663719,
+   2.8989598846181375,
+   3.317012468809642
+  ],
+  "C-direct": [
+   5.0,
+   3.8751465918455965,
+   3.6022031102034835,
+   6.5356413663719,
+   2.8989598846181375,
+   3.317012468809642
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

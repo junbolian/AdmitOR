@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    17,
+    17,
+    12,
+    12,
+    12,
+    12,
+    16,
+    16,
+    17,
+    17,
+    21,
+    21,
+    21,
+    21,
+    23,
+    23,
+    14,
+    14,
+    22,
+    22,
+    15,
+    15,
+    12,
+    12,
+    24,
+    24,
+    16,
+    16,
+    18,
+    18,
+    15,
+    15,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "costs": {
+   "base": [
+    5,
+    5,
+    6,
+    6,
+    9,
+    9,
+    6,
+    6,
+    2,
+    2,
+    7,
+    7,
+    1,
+    1,
+    4,
+    4,
+    5,
+    5,
+    7,
+    7,
+    8,
+    8,
+    5,
+    5,
+    12,
+    12,
+    12,
+    12,
+    5,
+    5,
+    9,
+    9,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_commodities": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_commodities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Maximum flow capacity per directed arc (same order as arc list)",
+    "base": [
+     17,
+     17,
+     12,
+     12,
+     12,
+     12,
+     16,
+     16,
+     17,
+     17,
+     21,
+     21,
+     21,
+     21,
+     23,
+     23,
+     14,
+     14,
+     22,
+     22,
+     15,
+     15,
+     12,
+     12,
+     24,
+     24,
+     16,
+     16,
+     18,
+     18,
+     15,
+     15,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "costs": {
+    "meaning": "Unit pumping cost per directed arc (not in objective; kept for completeness)",
+    "base": [
+     5,
+     5,
+     6,
+     6,
+     9,
+     9,
+     6,
+     6,
+     2,
+     2,
+     7,
+     7,
+     1,
+     1,
+     4,
+     4,
+     5,
+     5,
+     7,
+     7,
+     8,
+     8,
+     5,
+     5,
+     12,
+     12,
+     12,
+     12,
+     5,
+     5,
+     9,
+     9,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "Required throughput volumes for the two commodities (commodity 1: 3->7, commodity 2: 1->5)",
+    "base": [
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of pipeline junctions/stations (fixed structural size)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_commodities": {
+    "meaning": "Number of distinct product batches (fixed structural size)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

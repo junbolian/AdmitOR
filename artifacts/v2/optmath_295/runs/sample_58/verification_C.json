@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_58",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"values\", \"evidence\": \"Item 0 generates 400 units of revenue, Item 1 generates 616 units, and so on, up to Item 92, which generates 654 units\"},\n    {\"parameter\": \"weights\", \"evidence\": \"Item 0 weighs 82 kilograms, Item 1 weighs 102 kilograms, and so on, up to Item 92, which weighs 115 kilograms\"}\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "values",
+   "evidence": "Item 0 generates 400 units of revenue, Item 1 generates 616 units, and so on, up to Item 92, which generates 654 units"
+  },
+  {
+   "parameter": "weights",
+   "evidence": "Item 0 weighs 82 kilograms, Item 1 weighs 102 kilograms, and so on, up to Item 92, which weighs 115 kilograms"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

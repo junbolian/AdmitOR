@@ -1,0 +1,16 @@
+{
+ "sample_id": "sample_141",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n- `weights_01`: extracted 19, statement says \"Node 0 and Node 1: 19\" ✓\n- `weights_02`: extracted 14, statement says \"Node 0 and Node 2: 14\" ✓\n- `weights_03`: extracted 15, statement says \"Node 0 and Node 3: 15\" ✓\n- `weights_10`: extracted 20, statement says \"Node 1 and Node 0: 20\" ✓\n- `weights_12`: extracted 14, statement says \"Node 1 and Node 2: 14\" ✓\n- `weights_13`: extracted 13, statement says \"Node 1 and Node 3: 13\" ✓\n- `weights_20`: extracted 13, statement says \"Node 2 and Node 0: 13\" ✓\n- `weights_21`: extracted 13, statement says \"Node 2 and Node 1: 13\" ✓\n- `weights_23`: extracted 16, statement says \"Node 2 and Node 3: 16\" ✓\n- `weights_30`: extracted 13, statement says \"Node 3 and Node 0: 13\" ✓\n- `weights_31`: extracted 11, statement says \"Node 3 and Node 1: 11\" ✓\n- `weights_32`: extracted 16, statement says \"Node 3 and Node 2: 16\" ✓\n- `facilities_to_select`: extracted 3, statement says \"exactly three\" ✓\n\nAll values match exactly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

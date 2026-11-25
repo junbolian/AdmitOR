@@ -1,0 +1,53 @@
+{
+ "spec": {},
+ "warnings": [
+  "[preferences] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "preferences": {
+    "meaning": "Adjacency list of allowed participant-car assignments; keys are participant indices, values are lists of acceptable car indices",
+    "base": {
+     "0": [
+      1,
+      2,
+      3
+     ],
+     "1": [
+      0,
+      1,
+      2
+     ],
+     "2": [
+      0,
+      1,
+      5,
+      6
+     ],
+     "3": [],
+     "4": [
+      5,
+      6
+     ],
+     "5": [
+      0,
+      1,
+      5,
+      6
+     ],
+     "6": [
+      2,
+      5
+     ]
+    },
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

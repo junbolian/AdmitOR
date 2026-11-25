@@ -1,0 +1,241 @@
+{
+ "spec": {
+  "net_demand": {
+   "base": [
+    51,
+    17,
+    -23,
+    -30,
+    4,
+    -19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     6,
+     2,
+     7,
+     5,
+     6
+    ],
+    [
+     4,
+     4,
+     2,
+     6,
+     8
+    ],
+    [
+     7,
+     5,
+     2,
+     4,
+     4
+    ],
+    [
+     8,
+     8,
+     7,
+     4,
+     7
+    ],
+    [
+     3,
+     5,
+     7,
+     4,
+     3
+    ],
+    [
+     4,
+     5,
+     7,
+     3,
+     2
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     17,
+     46,
+     31,
+     21,
+     17
+    ],
+    [
+     18,
+     31,
+     39,
+     36,
+     39
+    ],
+    [
+     29,
+     28,
+     27,
+     50,
+     31
+    ],
+    [
+     24,
+     49,
+     36,
+     23,
+     11
+    ],
+    [
+     49,
+     28,
+     44,
+     11,
+     24
+    ],
+    [
+     44,
+     20,
+     16,
+     25,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "net_demand": {
+    "meaning": "Net demand (positive) or surplus (negative) per city, cities 0..5",
+    "base": [
+     51,
+     17,
+     -23,
+     -30,
+     4,
+     -19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "Unit transportation cost for each ordered route (5 entries per source city, skipped self-route), rows 0..5",
+    "base": [
+     [
+      6,
+      2,
+      7,
+      5,
+      6
+     ],
+     [
+      4,
+      4,
+      2,
+      6,
+      8
+     ],
+     [
+      7,
+      5,
+      2,
+      4,
+      4
+     ],
+     [
+      8,
+      8,
+      7,
+      4,
+      7
+     ],
+     [
+      3,
+      5,
+      7,
+      4,
+      3
+     ],
+     [
+      4,
+      5,
+      7,
+      3,
+      2
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum flow capacity for each ordered route (5 entries per source city, skipped self-route), rows 0..5",
+    "base": [
+     [
+      17,
+      46,
+      31,
+      21,
+      17
+     ],
+     [
+      18,
+      31,
+      39,
+      36,
+      39
+     ],
+     [
+      29,
+      28,
+      27,
+      50,
+      31
+     ],
+     [
+      24,
+      49,
+      36,
+      23,
+      11
+     ],
+     [
+      49,
+      28,
+      44,
+      11,
+      24
+     ],
+     [
+      44,
+      20,
+      16,
+      25,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "spec": {
+  "route_cost": {
+   "base": [
+    9,
+    9,
+    8,
+    8,
+    8,
+    7,
+    6,
+    10,
+    10,
+    9,
+    4,
+    9,
+    3,
+    3,
+    8,
+    6,
+    10,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "route_min": {
+   "base": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "route_max": {
+   "base": [
+    4,
+    4,
+    11,
+    2,
+    4,
+    8,
+    9,
+    6,
+    9,
+    10,
+    5,
+    5,
+    5,
+    3,
+    2,
+    9,
+    7,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "route_cost": {
+    "meaning": "cost per pallet moved on each of the 18 routes, in the route order defined",
+    "base": [
+     9,
+     9,
+     8,
+     8,
+     8,
+     7,
+     6,
+     10,
+     10,
+     9,
+     4,
+     9,
+     3,
+     3,
+     8,
+     6,
+     10,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "route_min": {
+    "meaning": "minimum contractual pallet transfer obligation on each route",
+    "base": [
+     0,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "route_max": {
+    "meaning": "pallet capacity limit on each route",
+    "base": [
+     4,
+     4,
+     11,
+     2,
+     4,
+     8,
+     9,
+     6,
+     9,
+     10,
+     5,
+     5,
+     5,
+     3,
+     2,
+     9,
+     7,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

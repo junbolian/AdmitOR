@@ -1,0 +1,176 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "noe_rhs_peak1_aa1_peak2_aa0": 2,
+   "noe_rhs_peak1_aa3_peak2_aa0": 1,
+   "num_assignments": 3,
+   "peak_count": 5,
+   "amino_acid_count": 6
+  },
+  {
+   "noe_rhs_peak1_aa1_peak2_aa0": 1,
+   "noe_rhs_peak1_aa3_peak2_aa0": 0,
+   "num_assignments": 3,
+   "peak_count": 5,
+   "amino_acid_count": 6
+  },
+  {
+   "noe_rhs_peak1_aa1_peak2_aa0": 1,
+   "noe_rhs_peak1_aa3_peak2_aa0": 2,
+   "num_assignments": 3,
+   "peak_count": 5,
+   "amino_acid_count": 6
+  },
+  {
+   "noe_rhs_peak1_aa1_peak2_aa0": 0,
+   "noe_rhs_peak1_aa3_peak2_aa0": 1,
+   "num_assignments": 3,
+   "peak_count": 5,
+   "amino_acid_count": 6
+  },
+  {
+   "noe_rhs_peak1_aa1_peak2_aa0": 1,
+   "noe_rhs_peak1_aa3_peak2_aa0": 0,
+   "num_assignments": 3,
+   "peak_count": 5,
+   "amino_acid_count": 6
+  },
+  {
+   "noe_rhs_peak1_aa1_peak2_aa0": 2,
+   "noe_rhs_peak1_aa3_peak2_aa0": 1,
+   "num_assignments": 3,
+   "peak_count": 5,
+   "amino_acid_count": 6
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   1.309070838907374,
+   1.309070838907374,
+   1.309070838907374,
+   1.309070838907374,
+   1.309070838907374,
+   1.309070838907374
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "C-direct-2": [
+   0.9565109185984744,
+   0.9565109185984744,
+   0.9565109185984744,
+   0.9565109185984744,
+   0.9565109185984744,
+   0.9565109185984744
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:expr=sum(cost[i][j] * model.x[i, j] for i in peaks for j in aas), | ~~~~^^^ | TypeError: 'NoneType' object is not subscriptable",
+   "crash:expr=sum(cost[i][j] * model.x[i, j] for i in peaks for j in aas), | ~~~~^^^ | TypeError: 'NoneType' object is not subscriptable",
+   "crash:expr=sum(cost[i][j] * model.x[i, j] for i in peaks for j in aas), | ~~~~^^^ | TypeError: 'NoneType' object is not subscriptable",
+   "crash:expr=sum(cost[i][j] * model.x[i, j] for i in peaks for j in aas), | ~~~~^^^ | TypeError: 'NoneType' object is not subscriptable",
+   "crash:expr=sum(cost[i][j] * model.x[i, j] for i in peaks for j in aas), | ~~~~^^^ | TypeError: 'NoneType' object is not subscriptable",
+   "crash:expr=sum(cost[i][j] * model.x[i, j] for i in peaks for j in aas), | ~~~~^^^ | TypeError: 'NoneType' object is not subscriptable"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "missing_parameter:assignment_cost",
+   "missing_parameter:assignment_cost",
+   "missing_parameter:assignment_cost",
+   "missing_parameter:assignment_cost",
+   "missing_parameter:assignment_cost",
+   "missing_parameter:assignment_cost"
+  ],
+  "B-structured-2": [
+   "missing_assignment_cost",
+   "missing_assignment_cost",
+   "missing_assignment_cost",
+   "missing_assignment_cost",
+   "missing_assignment_cost",
+   "missing_assignment_cost"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: incomparable (no co-solved instance)",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "A-direct vs C-direct-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct-2 vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs B-structured-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "C-direct vs C-direct-2: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

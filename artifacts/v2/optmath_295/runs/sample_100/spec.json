@@ -1,0 +1,237 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1661,
+    1801,
+    1784,
+    1646,
+    1853
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    658,
+    899,
+    810,
+    811,
+    862,
+    805
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     35,
+     29,
+     31,
+     27,
+     30,
+     35
+    ],
+    [
+     26,
+     26,
+     27,
+     28,
+     29,
+     25
+    ],
+    [
+     26,
+     30,
+     33,
+     28,
+     33,
+     25
+    ],
+    [
+     33,
+     28,
+     26,
+     25,
+     30,
+     30
+    ],
+    [
+     28,
+     29,
+     31,
+     31,
+     29,
+     34
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "min_delivery": {
+   "base": [
+    332,
+    360,
+    356,
+    329,
+    370
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_contributors": {
+   "base": [
+    2,
+    3,
+    3,
+    3,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[min_contributors] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum electricity generation capacity for each producer (contract-independent)",
+    "base": [
+     1661,
+     1801,
+     1784,
+     1646,
+     1853
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "Minimum electricity required by each contract",
+    "base": [
+     658,
+     899,
+     810,
+     811,
+     862,
+     805
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "Cost per unit of electricity for producer i serving contract j (5x6 matrix)",
+    "base": [
+     [
+      35,
+      29,
+      31,
+      27,
+      30,
+      35
+     ],
+     [
+      26,
+      26,
+      27,
+      28,
+      29,
+      25
+     ],
+     [
+      26,
+      30,
+      33,
+      28,
+      33,
+      25
+     ],
+     [
+      33,
+      28,
+      26,
+      25,
+      30,
+      30
+     ],
+     [
+      28,
+      29,
+      31,
+      31,
+      29,
+      34
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum amount producer i must deliver if it contributes to any contract",
+    "base": [
+     332,
+     360,
+     356,
+     329,
+     370
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers required to contribute to each contract (integer; index-aligned list)",
+    "base": [
+     2,
+     3,
+     3,
+     3,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "hi": [
+      3,
+      4,
+      4,
+      4,
+      3,
+      3
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

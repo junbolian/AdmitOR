@@ -1,0 +1,146 @@
+{
+ "spec": {
+  "preference": {
+   "base": [
+    [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "assignment_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference": {
+    "meaning": "Binary preference matrix: 1 if participant is interested in car, 0 otherwise; rows are participants 0-5, columns are cars 0-5",
+    "base": [
+     [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "assignment_value": {
+    "meaning": "Objective coefficient per successful participant-car assignment",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": 3,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

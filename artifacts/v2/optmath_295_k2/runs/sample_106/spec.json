@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "expected_return_asset0": {
+   "base": 0.1217884071582754,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "expected_return_asset1": {
+   "base": 0.0822617167874527,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "expected_return_asset2": {
+   "base": 0.1170508998471323,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "expected_return_asset3": {
+   "base": 0.0746576079025595,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "min_portfolio_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "budget_sum": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "max_asset_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "min_asset_weight": {
+   "base": 0.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.05,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[budget_sum] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "expected_return_asset0": {
+    "meaning": "expected return coefficient for Asset 0 in the linear return constraint",
+    "base": 0.1217884071582754,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "expected_return_asset1": {
+    "meaning": "expected return coefficient for Asset 1 in the linear return constraint",
+    "base": 0.0822617167874527,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "expected_return_asset2": {
+    "meaning": "expected return coefficient for Asset 2 in the linear return constraint",
+    "base": 0.1170508998471323,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "expected_return_asset3": {
+    "meaning": "expected return coefficient for Asset 3 in the linear return constraint",
+    "base": 0.0746576079025595,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "min_portfolio_return": {
+    "meaning": "minimum required portfolio return (RHS of return constraint)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "budget_sum": {
+    "meaning": "total portfolio weight that all asset weights must sum to",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "max_asset_weight": {
+    "meaning": "upper bound on each individual asset weight (30% cap)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "min_asset_weight": {
+    "meaning": "lower bound on each individual asset weight (0% floor)",
+    "base": 0.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.05,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

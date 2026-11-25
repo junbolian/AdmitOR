@@ -1,0 +1,401 @@
+{
+ "spec": {
+  "employee_availability": {
+   "base": [
+    13,
+    20,
+    17,
+    15,
+    19,
+    17,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_requirements": {
+   "base": [
+    15,
+    15,
+    20,
+    16,
+    18,
+    17,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_costs": {
+   "base": [
+    [
+     25,
+     32,
+     33,
+     34,
+     35,
+     31,
+     34
+    ],
+    [
+     35,
+     28,
+     29,
+     29,
+     29,
+     27,
+     35
+    ],
+    [
+     25,
+     33,
+     25,
+     26,
+     31,
+     29,
+     33
+    ],
+    [
+     33,
+     26,
+     33,
+     27,
+     34,
+     30,
+     31
+    ],
+    [
+     28,
+     27,
+     28,
+     26,
+     30,
+     34,
+     30
+    ],
+    [
+     26,
+     32,
+     29,
+     27,
+     31,
+     33,
+     32
+    ],
+    [
+     25,
+     30,
+     32,
+     31,
+     26,
+     28,
+     25
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "capacity_limits": {
+   "base": [
+    [
+     9,
+     10,
+     7,
+     5,
+     7,
+     10,
+     8
+    ],
+    [
+     8,
+     10,
+     10,
+     8,
+     10,
+     10,
+     9
+    ],
+    [
+     6,
+     7,
+     9,
+     6,
+     9,
+     8,
+     6
+    ],
+    [
+     9,
+     10,
+     5,
+     9,
+     9,
+     5,
+     7
+    ],
+    [
+     9,
+     6,
+     9,
+     8,
+     6,
+     5,
+     5
+    ],
+    [
+     9,
+     5,
+     5,
+     8,
+     6,
+     6,
+     5
+    ],
+    [
+     7,
+     7,
+     5,
+     6,
+     5,
+     9,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[employee_availability] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[project_requirements] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "employee_availability": {
+    "meaning": "Hours each employee must contribute in total",
+    "base": [
+     13,
+     20,
+     17,
+     15,
+     19,
+     17,
+     19
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      7,
+      12,
+      10,
+      9,
+      11,
+      10,
+      11
+     ],
+     "hi": [
+      19,
+      28,
+      24,
+      21,
+      27,
+      24,
+      27
+     ],
+     "integer": true
+    }
+   },
+   "project_requirements": {
+    "meaning": "Hours required to complete each project",
+    "base": [
+     15,
+     15,
+     20,
+     16,
+     18,
+     17,
+     19
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      8,
+      8,
+      11,
+      9,
+      10,
+      9,
+      10
+     ],
+     "hi": [
+      22,
+      22,
+      28,
+      23,
+      26,
+      24,
+      27
+     ],
+     "integer": true
+    }
+   },
+   "assignment_costs": {
+    "meaning": "Cost per hour of assigning employee i to project j",
+    "base": [
+     [
+      25,
+      32,
+      33,
+      34,
+      35,
+      31,
+      34
+     ],
+     [
+      35,
+      28,
+      29,
+      29,
+      29,
+      27,
+      35
+     ],
+     [
+      25,
+      33,
+      25,
+      26,
+      31,
+      29,
+      33
+     ],
+     [
+      33,
+      26,
+      33,
+      27,
+      34,
+      30,
+      31
+     ],
+     [
+      28,
+      27,
+      28,
+      26,
+      30,
+      34,
+      30
+     ],
+     [
+      26,
+      32,
+      29,
+      27,
+      31,
+      33,
+      32
+     ],
+     [
+      25,
+      30,
+      32,
+      31,
+      26,
+      28,
+      25
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "capacity_limits": {
+    "meaning": "Maximum hours employee i may contribute to project j",
+    "base": [
+     [
+      9,
+      10,
+      7,
+      5,
+      7,
+      10,
+      8
+     ],
+     [
+      8,
+      10,
+      10,
+      8,
+      10,
+      10,
+      9
+     ],
+     [
+      6,
+      7,
+      9,
+      6,
+      9,
+      8,
+      6
+     ],
+     [
+      9,
+      10,
+      5,
+      9,
+      9,
+      5,
+      7
+     ],
+     [
+      9,
+      6,
+      9,
+      8,
+      6,
+      5,
+      5
+     ],
+     [
+      9,
+      5,
+      5,
+      8,
+      6,
+      6,
+      5
+     ],
+     [
+      7,
+      7,
+      5,
+      6,
+      5,
+      9,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

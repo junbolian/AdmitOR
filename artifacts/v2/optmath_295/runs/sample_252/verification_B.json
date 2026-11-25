@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_252",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"cost_matrix\",\"evidence\":\"costs ranging from 0.344 to 0.673, as detailed in the cost matrix\"},{\"parameter\":\"noe_pairs\",\"evidence\":\"For example, if Peak 0 is assigned to Amino Acid 0, then Peak 4 cannot be assigned to Amino Acid 1, and if Peak 1 is assigned to Amino Acid 0, then Peak 2 cannot be assigned to Amino Acid 1.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_matrix",
+   "evidence": "costs ranging from 0.344 to 0.673, as detailed in the cost matrix"
+  },
+  {
+   "parameter": "noe_pairs",
+   "evidence": "For example, if Peak 0 is assigned to Amino Acid 0, then Peak 4 cannot be assigned to Amino Acid 1, and if Peak 1 is assigned to Amino Acid 0, then Peak 2 cannot be assigned to Amino Acid 1."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

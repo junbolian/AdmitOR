@@ -1,0 +1,103 @@
+{
+ "spec": {
+  "value": {
+   "base": [
+    662,
+    212,
+    359,
+    114,
+    713,
+    911,
+    748,
+    798,
+    253,
+    990,
+    993
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "salary": {
+   "base": [
+    4205,
+    273,
+    642,
+    4324,
+    610,
+    4909,
+    1170,
+    4200,
+    3789,
+    2897,
+    2278
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "budget": {
+   "base": 20507,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "value": {
+    "meaning": "value contributed by each candidate",
+    "base": [
+     662,
+     212,
+     359,
+     114,
+     713,
+     911,
+     748,
+     798,
+     253,
+     990,
+     993
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "salary": {
+    "meaning": "salary requirement for each candidate",
+    "base": [
+     4205,
+     273,
+     642,
+     4324,
+     610,
+     4909,
+     1170,
+     4200,
+     3789,
+     2897,
+     2278
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "budget": {
+    "meaning": "total available salary budget",
+    "base": 20507,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

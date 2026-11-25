@@ -1,0 +1,43 @@
+{
+ "spec": {
+  "durations": {
+   "base": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "durations": {
+    "meaning": "Transmission duration requirement of each device (index 0..7)",
+    "base": [
+     3,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

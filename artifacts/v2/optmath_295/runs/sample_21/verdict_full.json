@@ -1,0 +1,100 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "distance": [
+    0,
+    19,
+    21,
+    22,
+    24,
+    17,
+    0,
+    21,
+    21,
+    17,
+    16,
+    23,
+    0,
+    22,
+    25,
+    22,
+    17,
+    21,
+    0,
+    22,
+    22,
+    18,
+    23,
+    15,
+    0
+   ],
+   "num_facilities_open": 3
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   131.00000000000003,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return distance[i][j] | ~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:dist = [[distance[i * n + j] for j in nodes] for i in nodes] | ~~~~~~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

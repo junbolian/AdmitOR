@@ -1,0 +1,231 @@
+{
+ "spec": {
+  "shipping_cost": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "fixed_cost_dc": {
+   "base": [
+    2811,
+    2956
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "throughput_cost": {
+   "base": [
+    [
+     930,
+     1032,
+     1020,
+     972
+    ],
+    [
+     930,
+     1032,
+     1020,
+     972
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "plant_supply": {
+   "base": [
+    [
+     387,
+     352,
+     390
+    ],
+    [
+     357,
+     356,
+     394
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    [
+     54,
+     50,
+     51,
+     52
+    ],
+    [
+     53,
+     55,
+     56,
+     54
+    ],
+    [
+     57,
+     58,
+     59,
+     50
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "dc_min_throughput": {
+   "base": [
+    211,
+    216
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "dc_max_throughput": {
+   "base": [
+    711,
+    749
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 550.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "shipping_cost": {
+    "meaning": "variable shipping cost per commodity, plant, DC, zone combination",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "fixed_cost_dc": {
+    "meaning": "fixed cost to operate each DC (DC0, DC1)",
+    "base": [
+     2811,
+     2956
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "throughput_cost": {
+    "meaning": "unit throughput cost per DC and zone (rows: DC0, DC1; cols: Zone0-3)",
+    "base": [
+     [
+      930,
+      1032,
+      1020,
+      972
+     ],
+     [
+      930,
+      1032,
+      1020,
+      972
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "plant_supply": {
+    "meaning": "supply capacity per plant and commodity (rows: Plant0, Plant1; cols: Commodity0-2)",
+    "base": [
+     [
+      387,
+      352,
+      390
+     ],
+     [
+      357,
+      356,
+      394
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "demand per commodity and zone (rows: Commodity0-2; cols: Zone0-3); base[0][0]=54, base[2][2]=59",
+    "base": [
+     [
+      54,
+      50,
+      51,
+      52
+     ],
+     [
+      53,
+      55,
+      56,
+      54
+     ],
+     [
+      57,
+      58,
+      59,
+      50
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "dc_min_throughput": {
+    "meaning": "minimum throughput if DC selected (DC0, DC1)",
+    "base": [
+     211,
+     216
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "dc_max_throughput": {
+    "meaning": "maximum throughput capacity (DC0, DC1)",
+    "base": [
+     711,
+     749
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 550,
+     "hi": 900,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "sample_id": "sample_94",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"demand\",\"extracted\":[[21,22,16],[25,16,23],[24,18,22]],\"stated\":[[21,25,24],[22,16,18],[16,23,22]],\"evidence\":\"Product 0 demand is “21 units” in Market 0, “25 units” in Market 1, and “24 units” in Market 2. The extracted rows are markets, but the parameter specifies products × markets.\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "demand",
+   "extracted": [
+    [
+     21,
+     22,
+     16
+    ],
+    [
+     25,
+     16,
+     23
+    ],
+    [
+     24,
+     18,
+     22
+    ]
+   ],
+   "stated": [
+    [
+     21,
+     25,
+     24
+    ],
+    [
+     22,
+     16,
+     18
+    ],
+    [
+     16,
+     23,
+     22
+    ]
+   ],
+   "evidence": "Product 0 demand is “21 units” in Market 0, “25 units” in Market 1, and “24 units” in Market 2. The extracted rows are markets, but the parameter specifies products × markets."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

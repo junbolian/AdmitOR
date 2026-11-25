@@ -1,0 +1,273 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    1224,
+    410,
+    381,
+    411,
+    407,
+    365,
+    411,
+    352
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    398,
+    405,
+    406,
+    377,
+    361,
+    396,
+    407,
+    391,
+    383,
+    437
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_0_0": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "cost_1_0": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "cost_2_9": {
+   "base": 26,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "cap_0_0": {
+   "base": 444,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "cap_0_1": {
+   "base": 483,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "cap_1_0": {
+   "base": 484,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "cap_2_9": {
+   "base": 478,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "num_facilities": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_dcs": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_dcs] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "units of resource available at each of the 8 facilities (facility 0..7)",
+    "base": [
+     1224,
+     410,
+     381,
+     411,
+     407,
+     365,
+     411,
+     352
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "units of resource required at each of the 10 distribution centers (DC 0..9)",
+    "base": [
+     398,
+     405,
+     406,
+     377,
+     361,
+     396,
+     407,
+     391,
+     383,
+     437
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_0_0": {
+    "meaning": "transportation cost per unit from facility 0 to distribution center 0",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "transportation cost per unit from facility 0 to distribution center 1",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "cost_1_0": {
+    "meaning": "transportation cost per unit from facility 1 to distribution center 0",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "cost_2_9": {
+    "meaning": "transportation cost per unit from facility 2 to distribution center 9",
+    "base": 26,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "cap_0_0": {
+    "meaning": "maximum units transportable from facility 0 to distribution center 0",
+    "base": 444,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "cap_0_1": {
+    "meaning": "maximum units transportable from facility 0 to distribution center 1",
+    "base": 483,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "cap_1_0": {
+    "meaning": "maximum units transportable from facility 1 to distribution center 0",
+    "base": 484,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "cap_2_9": {
+    "meaning": "maximum units transportable from facility 2 to distribution center 9",
+    "base": 478,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "num_facilities": {
+    "meaning": "number of origin facilities (fixed, not perturbed)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_dcs": {
+    "meaning": "number of distribution centers (fixed, not perturbed)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

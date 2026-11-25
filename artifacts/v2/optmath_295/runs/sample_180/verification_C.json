@@ -1,0 +1,16 @@
+{
+ "sample_id": "sample_180",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each parameter against the statement:\n\n**profit_per_unit**: matches.\n\n**stage_hours**: matches.\n\n**min_production**: matches.\n\n**max_demand**: matches.\n\n**time_coeffs**: Checking row by row (each row is one stage, columns are Products 0–5):\n\n- Stage 0: Statement says Product 3 requires 0.333, Product 5 requires 0.25. Extracted: [0.25, 0.25, 0.25, 0.333, 0.25, 0.25] ✓\n- Stage 1: Statement says Product 0/1/4 → 0.25, Product 2/3 → 0.167, Product 5 → 0.2. Extracted: [0.25, 0.25, 0.167, 0.167, 0.25, 0.2] ✓\n- Stage 2: Statement says Product 0/1 → 0.333, Product 2 → 0.25, Product 3/5 → 0.2, Product 4 → 0.167. Extracted: [0.333, 0.333, 0.25, 0.2, 0.167, 0.2] ✓\n- Stage 3: Statement says Product 0/1 → 0.167, Product 2/3 → 0.25, Product 4 → 0.2, Product 5 → 0.167. Extracted: [0.167, 0.167, 0.25, 0.25, 0.2, 0.167] ✓\n- Stage 4: Statement says Product 0 → 0.333, Product 1 → 0.167, Product 2 → 0.2, Product 3/4 → 0.25, Product 5 → 0.25. Extracted: [0.333, 0.167, 0.2, 0.25, 0.25, 0.25] ✓\n- Stage 5: Statement says Product 0 → 0.25, Product 1/2/3/4 → 0.2, Product 5 → 0.333. Extracted: [0.25, 0.2, 0.2, 0.2, 0.2, 0.333] ✓\n- Stage 6: Statement says Product 0 → 0.2, Product 1 → 0.167, Product 2 → 0.25, Product 3/4 → 0.167, Product 5 → 0.333. Extracted: [0.2, 0.167, 0.25, 0.167, 0.167, 0.333] ✓\n- Stage 7: Statement says Product 0/1 → 0.167, Product 2 → 0.333, Product 3/4/5 → 0.2. Extracted: [0.167, 0.167, 0.333, 0.2, 0.2, 0.2] ✓\n- Stage 8: Statement says Product 0 → 0.2, Product 1 → 0.333, Product 2 → 0.167, Product 3/4 → 0.2, Product 5 → 0.333. Extracted: [0.2, 0.333, 0.167, 0.2, 0.2, 0.333] ✓\n- Stage 9: Statement says Product 0 → 0.333, Product 1 → 0.2, Product 2 → 0.2, Product 3/4 → 0.167, Product 5 → 0.333. Extracted: [0.333, 0.2, 0.2, 0.167, 0.167, 0.333] ✓\n- Stage 10: Statement says Product 0/1 → 0.2, Product 2 → 0.167, Product 3 → 0.25, Product 4/5 → 0.2. Extracted: [0.2, 0.2, 0.167, 0.25, 0.2, 0.2] ✓\n\nAll values match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

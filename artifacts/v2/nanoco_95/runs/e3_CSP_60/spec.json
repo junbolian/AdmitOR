@@ -1,0 +1,75 @@
+{
+ "spec": {
+  "bolt_length": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "strip_lengths": {
+   "base": [
+    19,
+    46,
+    28,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "demands": {
+   "base": [
+    3,
+    2,
+    1,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "bolt_length": {
+    "meaning": "length of each standard textile bolt (meters)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "strip_lengths": {
+    "meaning": "required lengths of each fabric strip specification (meters), ordered as [19, 46, 28, 44]",
+    "base": [
+     19,
+     46,
+     28,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "demands": {
+    "meaning": "required quantity of each strip specification, ordered as [19, 46, 28, 44]",
+    "base": [
+     3,
+     2,
+     1,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

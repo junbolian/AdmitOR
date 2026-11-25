@@ -1,0 +1,521 @@
+{
+ "spec": {
+  "travel_cost_0_1": {
+   "base": 286,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_0_2": {
+   "base": 325,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_0_3": {
+   "base": 298,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_0_4": {
+   "base": 287,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_0_5": {
+   "base": 297,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_1_0": {
+   "base": 306,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_1_2": {
+   "base": 314,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_1_3": {
+   "base": 289,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_1_4": {
+   "base": 313,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_1_5": {
+   "base": 324,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_2_0": {
+   "base": 307,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_2_1": {
+   "base": 321,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_2_3": {
+   "base": 299,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_2_4": {
+   "base": 279,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_2_5": {
+   "base": 317,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_3_0": {
+   "base": 305,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_3_1": {
+   "base": 281,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_3_2": {
+   "base": 312,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_3_4": {
+   "base": 320,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_3_5": {
+   "base": 289,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_4_0": {
+   "base": 301,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_4_1": {
+   "base": 318,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_4_2": {
+   "base": 304,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_4_3": {
+   "base": 319,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_4_5": {
+   "base": 305,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_5_0": {
+   "base": 308,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_5_1": {
+   "base": 277,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_5_2": {
+   "base": 325,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_5_3": {
+   "base": 277,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "travel_cost_5_4": {
+   "base": 295,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "num_cities": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "u_lower": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "u_upper": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_cities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[u_lower] degenerate abs range (lo == hi); perturbation has no effect",
+  "[u_upper] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "travel_cost_0_1": {
+    "meaning": "cost from City 0 to City 1",
+    "base": 286,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_0_2": {
+    "meaning": "cost from City 0 to City 2",
+    "base": 325,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_0_3": {
+    "meaning": "cost from City 0 to City 3",
+    "base": 298,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_0_4": {
+    "meaning": "cost from City 0 to City 4",
+    "base": 287,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_0_5": {
+    "meaning": "cost from City 0 to City 5",
+    "base": 297,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_1_0": {
+    "meaning": "cost from City 1 to City 0",
+    "base": 306,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_1_2": {
+    "meaning": "cost from City 1 to City 2",
+    "base": 314,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_1_3": {
+    "meaning": "cost from City 1 to City 3",
+    "base": 289,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_1_4": {
+    "meaning": "cost from City 1 to City 4",
+    "base": 313,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_1_5": {
+    "meaning": "cost from City 1 to City 5",
+    "base": 324,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_2_0": {
+    "meaning": "cost from City 2 to City 0",
+    "base": 307,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_2_1": {
+    "meaning": "cost from City 2 to City 1",
+    "base": 321,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_2_3": {
+    "meaning": "cost from City 2 to City 3",
+    "base": 299,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_2_4": {
+    "meaning": "cost from City 2 to City 4",
+    "base": 279,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_2_5": {
+    "meaning": "cost from City 2 to City 5",
+    "base": 317,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_3_0": {
+    "meaning": "cost from City 3 to City 0",
+    "base": 305,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_3_1": {
+    "meaning": "cost from City 3 to City 1",
+    "base": 281,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_3_2": {
+    "meaning": "cost from City 3 to City 2",
+    "base": 312,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_3_4": {
+    "meaning": "cost from City 3 to City 4",
+    "base": 320,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_3_5": {
+    "meaning": "cost from City 3 to City 5",
+    "base": 289,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_4_0": {
+    "meaning": "cost from City 4 to City 0",
+    "base": 301,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_4_1": {
+    "meaning": "cost from City 4 to City 1",
+    "base": 318,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_4_2": {
+    "meaning": "cost from City 4 to City 2",
+    "base": 304,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_4_3": {
+    "meaning": "cost from City 4 to City 3",
+    "base": 319,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_4_5": {
+    "meaning": "cost from City 4 to City 5",
+    "base": 305,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_5_0": {
+    "meaning": "cost from City 5 to City 0",
+    "base": 308,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_5_1": {
+    "meaning": "cost from City 5 to City 1",
+    "base": 277,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_5_2": {
+    "meaning": "cost from City 5 to City 2",
+    "base": 325,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_5_3": {
+    "meaning": "cost from City 5 to City 3",
+    "base": 277,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "travel_cost_5_4": {
+    "meaning": "cost from City 5 to City 4",
+    "base": 295,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "num_cities": {
+    "meaning": "number of cities (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "u_lower": {
+    "meaning": "lower bound on order variables u_i (frozen: min index)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "u_upper": {
+    "meaning": "upper bound on order variables u_i (frozen: equals number of cities)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

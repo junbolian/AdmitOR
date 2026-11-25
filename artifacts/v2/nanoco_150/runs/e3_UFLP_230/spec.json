@@ -1,0 +1,347 @@
+{
+ "spec": {
+  "installation_costs": {
+   "base": [
+    934,
+    906,
+    850,
+    914,
+    906
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "walking_distances": {
+   "base": [
+    [
+     64,
+     29,
+     21,
+     70,
+     35
+    ],
+    [
+     46,
+     14,
+     29,
+     56,
+     18
+    ],
+    [
+     16,
+     49,
+     78,
+     47,
+     38
+    ],
+    [
+     60,
+     28,
+     53,
+     51,
+     42
+    ],
+    [
+     13,
+     24,
+     62,
+     29,
+     19
+    ],
+    [
+     36,
+     38,
+     81,
+     9,
+     44
+    ],
+    [
+     47,
+     33,
+     72,
+     27,
+     43
+    ],
+    [
+     53,
+     82,
+     123,
+     42,
+     80
+    ],
+    [
+     11,
+     41,
+     80,
+     22,
+     37
+    ],
+    [
+     50,
+     14,
+     34,
+     54,
+     25
+    ],
+    [
+     56,
+     44,
+     82,
+     31,
+     55
+    ],
+    [
+     64,
+     29,
+     22,
+     70,
+     36
+    ],
+    [
+     72,
+     50,
+     17,
+     91,
+     46
+    ],
+    [
+     41,
+     49,
+     92,
+     9,
+     54
+    ],
+    [
+     56,
+     20,
+     32,
+     59,
+     31
+    ],
+    [
+     22,
+     58,
+     93,
+     40,
+     50
+    ],
+    [
+     67,
+     32,
+     43,
+     63,
+     44
+    ],
+    [
+     73,
+     37,
+     22,
+     77,
+     44
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_stops": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "num_sites": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_stops] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_sites] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "installation_costs": {
+    "meaning": "fixed installation cost for each of the 5 potential locker sites (sites 0-4)",
+    "base": [
+     934,
+     906,
+     850,
+     914,
+     906
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "walking_distances": {
+    "meaning": "walking distance in meters from each transit stop (rows 0-17) to each site (cols 0-4)",
+    "base": [
+     [
+      64,
+      29,
+      21,
+      70,
+      35
+     ],
+     [
+      46,
+      14,
+      29,
+      56,
+      18
+     ],
+     [
+      16,
+      49,
+      78,
+      47,
+      38
+     ],
+     [
+      60,
+      28,
+      53,
+      51,
+      42
+     ],
+     [
+      13,
+      24,
+      62,
+      29,
+      19
+     ],
+     [
+      36,
+      38,
+      81,
+      9,
+      44
+     ],
+     [
+      47,
+      33,
+      72,
+      27,
+      43
+     ],
+     [
+      53,
+      82,
+      123,
+      42,
+      80
+     ],
+     [
+      11,
+      41,
+      80,
+      22,
+      37
+     ],
+     [
+      50,
+      14,
+      34,
+      54,
+      25
+     ],
+     [
+      56,
+      44,
+      82,
+      31,
+      55
+     ],
+     [
+      64,
+      29,
+      22,
+      70,
+      36
+     ],
+     [
+      72,
+      50,
+      17,
+      91,
+      46
+     ],
+     [
+      41,
+      49,
+      92,
+      9,
+      54
+     ],
+     [
+      56,
+      20,
+      32,
+      59,
+      31
+     ],
+     [
+      22,
+      58,
+      93,
+      40,
+      50
+     ],
+     [
+      67,
+      32,
+      43,
+      63,
+      44
+     ],
+     [
+      73,
+      37,
+      22,
+      77,
+      44
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_stops": {
+    "meaning": "number of transit stops (clients); index-set size kept fixed",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "num_sites": {
+    "meaning": "number of potential locker sites; index-set size kept fixed",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

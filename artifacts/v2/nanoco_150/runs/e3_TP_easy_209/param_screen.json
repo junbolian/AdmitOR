@@ -1,0 +1,41 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "node_coordinates",
+  "farm_supply",
+  "retail_demand",
+  "arc_capacities",
+  "arc_unit_costs"
+ ],
+ "safe": [
+  "node_coordinates",
+  "arc_capacities",
+  "arc_unit_costs"
+ ],
+ "tests": {
+  "node_coordinates": [
+   2,
+   2
+  ],
+  "farm_supply": [
+   0,
+   0
+  ],
+  "retail_demand": [
+   0,
+   0
+  ],
+  "arc_capacities": [
+   2,
+   2
+  ],
+  "arc_unit_costs": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

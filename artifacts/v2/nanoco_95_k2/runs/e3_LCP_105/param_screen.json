@@ -1,0 +1,39 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "num_slots",
+  "num_brands",
+  "adjacency_links",
+  "allowed_brands_per_slot"
+ ],
+ "safe": [
+  "num_slots",
+  "num_brands"
+ ],
+ "tests": {
+  "num_slots": [
+   6,
+   6
+  ],
+  "num_brands": [
+   6,
+   6
+  ],
+  "adjacency_links": [
+   1,
+   1
+  ],
+  "allowed_brands_per_slot": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

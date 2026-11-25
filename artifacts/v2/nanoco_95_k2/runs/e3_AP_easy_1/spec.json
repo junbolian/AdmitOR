@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     28,
+     15,
+     51,
+     19,
+     72
+    ],
+    [
+     46,
+     44,
+     24,
+     14,
+     55
+    ],
+    [
+     14,
+     18,
+     35,
+     61,
+     30
+    ],
+    [
+     34,
+     41,
+     26,
+     50,
+     37
+    ],
+    [
+     40,
+     53,
+     15,
+     62,
+     15
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Cost of assigning each VM instance (row) to each physical server node (column)",
+    "base": [
+     [
+      28,
+      15,
+      51,
+      19,
+      72
+     ],
+     [
+      46,
+      44,
+      24,
+      14,
+      55
+     ],
+     [
+      14,
+      18,
+      35,
+      61,
+      30
+     ],
+     [
+      34,
+      41,
+      26,
+      50,
+      37
+     ],
+     [
+      40,
+      53,
+      15,
+      62,
+      15
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

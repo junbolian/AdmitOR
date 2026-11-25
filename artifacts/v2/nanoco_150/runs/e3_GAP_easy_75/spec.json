@@ -1,0 +1,187 @@
+{
+ "spec": {
+  "crew_capacities": {
+   "base": [
+    10,
+    14,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "fuel_costs": {
+   "base": [
+    [
+     8,
+     1,
+     2,
+     4,
+     3,
+     4,
+     4
+    ],
+    [
+     4,
+     2,
+     3,
+     4,
+     4,
+     4,
+     3
+    ],
+    [
+     6,
+     4,
+     2,
+     7,
+     6,
+     4,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "operating_costs": {
+   "base": [
+    [
+     7,
+     9,
+     32,
+     30,
+     36,
+     34,
+     20
+    ],
+    [
+     19,
+     20,
+     17,
+     36,
+     40,
+     20,
+     26
+    ],
+    [
+     35,
+     13,
+     14,
+     6,
+     33,
+     12,
+     27
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [
+  "[crew_capacities] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "crew_capacities": {
+    "meaning": "Maximum total fuel expense (equipment capacity) allowed per harvesting crew",
+    "base": [
+     10,
+     14,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      17,
+      7,
+      42
+     ],
+     "hi": [
+      19,
+      9,
+      43
+     ],
+     "integer": true
+    }
+   },
+   "fuel_costs": {
+    "meaning": "Fuel expense (resource consumption) for assigning each field zone to each crew; rows = crews 1-3, columns = zones 1-7",
+    "base": [
+     [
+      8,
+      1,
+      2,
+      4,
+      3,
+      4,
+      4
+     ],
+     [
+      4,
+      2,
+      3,
+      4,
+      4,
+      4,
+      3
+     ],
+     [
+      6,
+      4,
+      2,
+      7,
+      6,
+      4,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "operating_costs": {
+    "meaning": "Operating cost for assigning each field zone to each crew; rows = crews 1-3, columns = zones 1-7",
+    "base": [
+     [
+      7,
+      9,
+      32,
+      30,
+      36,
+      34,
+      20
+     ],
+     [
+      19,
+      20,
+      17,
+      36,
+      40,
+      20,
+      26
+     ],
+     [
+      35,
+      13,
+      14,
+      6,
+      33,
+      12,
+      27
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

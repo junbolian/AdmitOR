@@ -1,0 +1,138 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assignment_value": 1,
+   "pref_p0_c5": 1,
+   "pref_p1_c2": 1,
+   "pref_p1_c3": 1,
+   "pref_p2_c4": 1,
+   "pref_zero_p3": 0,
+   "pref_zero_p4": 0,
+   "pref_zero_p5": 0
+  },
+  {
+   "assignment_value": 1.4591401976868257,
+   "pref_p0_c5": 0,
+   "pref_p1_c2": 0,
+   "pref_p1_c3": 0,
+   "pref_p2_c4": 1,
+   "pref_zero_p3": 1,
+   "pref_zero_p4": 1,
+   "pref_zero_p5": 0
+  },
+  {
+   "assignment_value": 1.1328827295279056,
+   "pref_p0_c5": 0,
+   "pref_p1_c2": 0,
+   "pref_p1_c3": 1,
+   "pref_p2_c4": 0,
+   "pref_zero_p3": 0,
+   "pref_zero_p4": 1,
+   "pref_zero_p5": 1
+  },
+  {
+   "assignment_value": 0.830660933061045,
+   "pref_p0_c5": 1,
+   "pref_p1_c2": 1,
+   "pref_p1_c3": 0,
+   "pref_p2_c4": 1,
+   "pref_zero_p3": 1,
+   "pref_zero_p4": 0,
+   "pref_zero_p5": 0
+  },
+  {
+   "assignment_value": 1.9358196083101717,
+   "pref_p0_c5": 0,
+   "pref_p1_c2": 0,
+   "pref_p1_c3": 0,
+   "pref_p2_c4": 1,
+   "pref_zero_p3": 1,
+   "pref_zero_p4": 1,
+   "pref_zero_p5": 1
+  },
+  {
+   "assignment_value": 1.3043421371820512,
+   "pref_p0_c5": 1,
+   "pref_p1_c2": 0,
+   "pref_p1_c3": 1,
+   "pref_p2_c4": 1,
+   "pref_zero_p3": 1,
+   "pref_zero_p4": 1,
+   "pref_zero_p5": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   4.377420593060477,
+   3.3986481885837168,
+   3.32264373224418,
+   7.743278433240687,
+   7.826052823092307
+  ],
+  "B-structured": [
+   3.0,
+   4.377420593060477,
+   3.3986481885837168,
+   3.32264373224418,
+   7.743278433240687,
+   7.826052823092307
+  ],
+  "C-direct": [
+   3.0,
+   4.377420593060477,
+   3.3986481885837168,
+   3.32264373224418,
+   7.743278433240687,
+   7.826052823092306
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

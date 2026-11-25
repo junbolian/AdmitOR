@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "arc_capacities": {
+   "base": [
+    19,
+    19,
+    24,
+    24,
+    20,
+    20,
+    18,
+    18,
+    14,
+    14,
+    16,
+    16,
+    24,
+    24,
+    22,
+    22,
+    24,
+    24,
+    12,
+    12,
+    17,
+    17,
+    22,
+    22,
+    21,
+    21,
+    21,
+    21,
+    17,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "arc_costs": {
+   "base": [
+    9,
+    9,
+    10,
+    10,
+    7,
+    7,
+    10,
+    10,
+    11,
+    11,
+    10,
+    10,
+    12,
+    12,
+    9,
+    9,
+    7,
+    7,
+    11,
+    11,
+    2,
+    2,
+    8,
+    8,
+    10,
+    10,
+    9,
+    9,
+    9,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "commodity_sources": {
+   "base": [
+    1,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "commodity_sinks": {
+   "base": [
+    7,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "commodity_demands": {
+   "base": [
+    4,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[commodity_sources] inverted abs range (lo > hi); swapped",
+  "[commodity_sinks] inverted abs range (lo > hi); swapped"
+ ],
+ "raw": {
+  "params": {
+   "arc_capacities": {
+    "meaning": "Per-arc capacity limits (shared across commodities), in the order of the listed directed arcs",
+    "base": [
+     19,
+     19,
+     24,
+     24,
+     20,
+     20,
+     18,
+     18,
+     14,
+     14,
+     16,
+     16,
+     24,
+     24,
+     22,
+     22,
+     24,
+     24,
+     12,
+     12,
+     17,
+     17,
+     22,
+     22,
+     21,
+     21,
+     21,
+     21,
+     17,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "arc_costs": {
+    "meaning": "Per-arc unit cost (freight + duty + handling) per unit flow",
+    "base": [
+     9,
+     9,
+     10,
+     10,
+     7,
+     7,
+     10,
+     10,
+     11,
+     11,
+     10,
+     10,
+     12,
+     12,
+     9,
+     9,
+     7,
+     7,
+     11,
+     11,
+     2,
+     2,
+     8,
+     8,
+     10,
+     10,
+     9,
+     9,
+     9,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "commodity_sources": {
+    "meaning": "Source node for each commodity (commodity 0, commodity 1)",
+    "base": [
+     1,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "commodity_sinks": {
+    "meaning": "Sink node for each commodity (commodity 0, commodity 1)",
+    "base": [
+     7,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "commodity_demands": {
+    "meaning": "Required demand (net flow) for each commodity from source to sink",
+    "base": [
+     4,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

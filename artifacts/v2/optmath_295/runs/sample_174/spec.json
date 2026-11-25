@@ -1,0 +1,323 @@
+{
+ "spec": {
+  "profit_product0": {
+   "base": 111,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_product1": {
+   "base": 142,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.9
+   }
+  },
+  "grinder_req_product0": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "grinder_req_product1": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "drill_req_product0": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "drill_req_product1": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "borer_req_product0": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "borer_req_product1": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "grinder_capacity": {
+   "base": [
+    240,
+    240,
+    0,
+    240
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "drill_capacity": {
+   "base": [
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "borer_capacity": {
+   "base": [
+    120,
+    120,
+    0,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "inventory_limit": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "sales_limit_product0": {
+   "base": [
+    45,
+    27,
+    48,
+    23
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "sales_limit_product1": {
+   "base": [
+    48,
+    21,
+    42,
+    22
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "target_inventory_product0": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "target_inventory_product1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_product0": {
+    "meaning": "Profit per unit sold of Product 0",
+    "base": 111,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_product1": {
+    "meaning": "Profit per unit sold of Product 1",
+    "base": 142,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost": {
+    "meaning": "Inventory holding cost per unit per period (both products)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.9
+    }
+   },
+   "grinder_req_product0": {
+    "meaning": "Grinding hours required per unit of Product 0",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "grinder_req_product1": {
+    "meaning": "Grinding hours required per unit of Product 1",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "drill_req_product0": {
+    "meaning": "Drilling hours required per unit of Product 0",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "drill_req_product1": {
+    "meaning": "Drilling hours required per unit of Product 1",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "borer_req_product0": {
+    "meaning": "Boring hours required per unit of Product 0",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "borer_req_product1": {
+    "meaning": "Boring hours required per unit of Product 1",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "grinder_capacity": {
+    "meaning": "Grinding capacity per period (hours): periods 0..3",
+    "base": [
+     240,
+     240,
+     0,
+     240
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "drill_capacity": {
+    "meaning": "Drilling capacity per period (hours): periods 0..3",
+    "base": [
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "borer_capacity": {
+    "meaning": "Boring capacity per period (hours): periods 0..3",
+    "base": [
+     120,
+     120,
+     0,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "inventory_limit": {
+    "meaning": "Maximum inventory per product per period (units)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "sales_limit_product0": {
+    "meaning": "Maximum sales of Product 0 per period: periods 0..3",
+    "base": [
+     45,
+     27,
+     48,
+     23
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "sales_limit_product1": {
+    "meaning": "Maximum sales of Product 1 per period: periods 0..3",
+    "base": [
+     48,
+     21,
+     42,
+     22
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "target_inventory_product0": {
+    "meaning": "Required ending inventory of Product 0 after period 3 (units)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "target_inventory_product1": {
+    "meaning": "Required ending inventory of Product 1 after period 3 (units)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50,
+     "integer": true
+    }
+   }
+  },
+  "objective_sent": "max"
+ }
+}

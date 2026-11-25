@@ -1,0 +1,255 @@
+{
+ "spec": {
+  "cost_P0_L0_to_L1": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_P0_L1_to_L0": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_P1_L0_to_L1": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_P1_L1_to_L0": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_idle": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "max_planes_P0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "max_planes_P1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "demand_L0_to_L1_period1": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  },
+  "capacity_P0": {
+   "base": 86,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_P1": {
+   "base": 94,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_route_P0_L0_to_L1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "max_route_P1_L0_to_L1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "max_route_P0_L1_to_L0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "max_route_P1_L1_to_L0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_planes_P0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_planes_P1] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_route_P0_L0_to_L1] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_route_P1_L0_to_L1] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_route_P0_L1_to_L0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_route_P1_L1_to_L0] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_P0_L0_to_L1": {
+    "meaning": "Operational cost of flying Plane 0 from Location 0 to Location 1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_P0_L1_to_L0": {
+    "meaning": "Operational cost of flying Plane 0 from Location 1 to Location 0",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_P1_L0_to_L1": {
+    "meaning": "Operational cost of flying Plane 1 from Location 0 to Location 1",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_P1_L1_to_L0": {
+    "meaning": "Operational cost of flying Plane 1 from Location 1 to Location 0",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_idle": {
+    "meaning": "Cost of keeping a plane idle at any location",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "max_planes_P0": {
+    "meaning": "Maximum number of Plane 0 available across both locations",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "max_planes_P1": {
+    "meaning": "Maximum number of Plane 1 available across both locations",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "demand_L0_to_L1_period1": {
+    "meaning": "Passenger demand from Location 0 to Location 1 in the first time period",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   },
+   "capacity_P0": {
+    "meaning": "Passenger capacity of Plane 0 per trip",
+    "base": 86,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_P1": {
+    "meaning": "Passenger capacity of Plane 1 per trip",
+    "base": 94,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_route_P0_L0_to_L1": {
+    "meaning": "Maximum number of Plane 0 that can be operated from Location 0 to Location 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "max_route_P1_L0_to_L1": {
+    "meaning": "Maximum number of Plane 1 that can be operated from Location 0 to Location 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "max_route_P0_L1_to_L0": {
+    "meaning": "Maximum number of Plane 0 that can be operated from Location 1 to Location 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "max_route_P1_L1_to_L0": {
+    "meaning": "Maximum number of Plane 1 that can be operated from Location 1 to Location 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

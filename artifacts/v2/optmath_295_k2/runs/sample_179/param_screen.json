@@ -1,0 +1,63 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "producer_capacity",
+  "contract_demand",
+  "min_producers_per_contract",
+  "producer_min_delivery",
+  "cost_min",
+  "cost_max",
+  "cost_p0_c0",
+  "cost_p0_c1"
+ ],
+ "safe": [
+  "producer_capacity",
+  "contract_demand",
+  "min_producers_per_contract",
+  "producer_min_delivery",
+  "cost_p0_c0",
+  "cost_p0_c1"
+ ],
+ "tests": {
+  "producer_capacity": [
+   6,
+   6
+  ],
+  "contract_demand": [
+   6,
+   6
+  ],
+  "min_producers_per_contract": [
+   6,
+   6
+  ],
+  "producer_min_delivery": [
+   6,
+   6
+  ],
+  "cost_min": [
+   5,
+   5
+  ],
+  "cost_max": [
+   5,
+   5
+  ],
+  "cost_p0_c0": [
+   6,
+   6
+  ],
+  "cost_p0_c1": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

@@ -1,0 +1,118 @@
+{
+ "spec": {
+  "select_limit": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "dispersion": {
+   "base": [
+    [
+     0,
+     16,
+     10,
+     13,
+     13
+    ],
+    [
+     18,
+     0,
+     17,
+     17,
+     17
+    ],
+    [
+     20,
+     14,
+     0,
+     15,
+     14
+    ],
+    [
+     14,
+     16,
+     17,
+     0,
+     15
+    ],
+    [
+     20,
+     11,
+     11,
+     18,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[select_limit] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "select_limit": {
+    "meaning": "Exactly this many facilities must be selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "dispersion": {
+    "meaning": "Pairwise dispersion value for ordered pair (i,j) of locations",
+    "base": [
+     [
+      0,
+      16,
+      10,
+      13,
+      13
+     ],
+     [
+      18,
+      0,
+      17,
+      17,
+      17
+     ],
+     [
+      20,
+      14,
+      0,
+      15,
+      14
+     ],
+     [
+      14,
+      16,
+      17,
+      0,
+      15
+     ],
+     [
+      20,
+      11,
+      11,
+      18,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

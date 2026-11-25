@@ -1,0 +1,65 @@
+{
+ "spec": {
+  "bandwidth_demand": {
+   "base": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[bandwidth_demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "bandwidth_demand": {
+    "meaning": "Required contiguous FSUs per node (indices 0..7)",
+    "base": [
+     3,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+     ],
+     "hi": [
+      5,
+      4,
+      3,
+      4,
+      4,
+      5,
+      5,
+      5
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

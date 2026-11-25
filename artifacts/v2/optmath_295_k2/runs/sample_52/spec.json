@@ -1,0 +1,210 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    95800,
+    101873,
+    99294,
+    99542
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    217,
+    197,
+    194,
+    216,
+    200,
+    192,
+    181,
+    209,
+    192,
+    220
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacity": {
+   "base": [
+    950,
+    1009,
+    1040,
+    1020
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "variable_cost": {
+   "base": [
+    [
+     34,
+     27,
+     33,
+     31,
+     25,
+     30,
+     28,
+     29,
+     35,
+     26
+    ],
+    [
+     26,
+     32,
+     35,
+     25,
+     29,
+     31,
+     27,
+     34,
+     30,
+     28
+    ],
+    [
+     32,
+     28,
+     26,
+     34,
+     31,
+     25,
+     33,
+     30,
+     27,
+     35
+    ],
+    [
+     32,
+     30,
+     29,
+     28,
+     35,
+     34,
+     26,
+     31,
+     33,
+     27
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each facility (Facility 0..3)",
+    "base": [
+     95800,
+     101873,
+     99294,
+     99542
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Demand required by each customer (Customer 0..9)",
+    "base": [
+     217,
+     197,
+     194,
+     216,
+     200,
+     192,
+     181,
+     209,
+     192,
+     220
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacity": {
+    "meaning": "Capacity of each facility (Facility 0..3)",
+    "base": [
+     950,
+     1009,
+     1040,
+     1020
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "variable_cost": {
+    "meaning": "Cost per unit of demand served for each facility-customer pair; rows are facilities 0..3, columns are customers 0..9. Given values are exact for customer 0 and lie in [25,35] for others; representative base values used, all within the stated range.",
+    "base": [
+     [
+      34,
+      27,
+      33,
+      31,
+      25,
+      30,
+      28,
+      29,
+      35,
+      26
+     ],
+     [
+      26,
+      32,
+      35,
+      25,
+      29,
+      31,
+      27,
+      34,
+      30,
+      28
+     ],
+     [
+      32,
+      28,
+      26,
+      34,
+      31,
+      25,
+      33,
+      30,
+      27,
+      35
+     ],
+     [
+      32,
+      30,
+      29,
+      28,
+      35,
+      34,
+      26,
+      31,
+      33,
+      27
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

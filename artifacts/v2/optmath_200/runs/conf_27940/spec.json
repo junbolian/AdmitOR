@@ -1,0 +1,315 @@
+{
+ "spec": {
+  "target_times": {
+   "base": [
+    60,
+    73,
+    62,
+    66
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "earliest_times": {
+   "base": [
+    55,
+    55,
+    55,
+    55
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "latest_times": {
+   "base": [
+    75,
+    75,
+    75,
+    75
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "early_penalties": {
+   "base": [
+    29,
+    25,
+    29,
+    34
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "late_penalties": {
+   "base": [
+    30,
+    29,
+    34,
+    27
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "separation_0_1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "separation_0_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "separation_0_3": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "separation_1_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "separation_1_3": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "separation_2_3": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[target_times] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[earliest_times] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[latest_times] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[early_penalties] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[late_penalties] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "target_times": {
+    "meaning": "Target landing time for each aircraft (minutes)",
+    "base": [
+     60,
+     73,
+     62,
+     66
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      45,
+      55,
+      45,
+      50
+     ],
+     "hi": [
+      75,
+      85,
+      75,
+      80
+     ],
+     "integer": false
+    }
+   },
+   "earliest_times": {
+    "meaning": "Earliest possible landing time for each aircraft (minutes)",
+    "base": [
+     55,
+     55,
+     55,
+     55
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      40,
+      40,
+      40,
+      40
+     ],
+     "hi": [
+      65,
+      65,
+      65,
+      65
+     ],
+     "integer": false
+    }
+   },
+   "latest_times": {
+    "meaning": "Latest possible landing time for each aircraft (minutes)",
+    "base": [
+     75,
+     75,
+     75,
+     75
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      70,
+      70,
+      70,
+      70
+     ],
+     "hi": [
+      100,
+      100,
+      100,
+      100
+     ],
+     "integer": false
+    }
+   },
+   "early_penalties": {
+    "meaning": "Penalty cost per minute early for each aircraft ($/min)",
+    "base": [
+     29,
+     25,
+     29,
+     34
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      70,
+      70,
+      70,
+      70
+     ],
+     "integer": false
+    }
+   },
+   "late_penalties": {
+    "meaning": "Penalty cost per minute late for each aircraft ($/min)",
+    "base": [
+     30,
+     29,
+     34,
+     27
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      70,
+      70,
+      70,
+      70
+     ],
+     "integer": false
+    }
+   },
+   "separation_0_1": {
+    "meaning": "Minimum separation between aircraft 0 and 1 (min)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "separation_0_2": {
+    "meaning": "Minimum separation between aircraft 0 and 2 (min)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "separation_0_3": {
+    "meaning": "Minimum separation between aircraft 0 and 3 (min)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "separation_1_2": {
+    "meaning": "Minimum separation between aircraft 1 and 2 (min)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "separation_1_3": {
+    "meaning": "Minimum separation between aircraft 1 and 3 (min)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "separation_2_3": {
+    "meaning": "Minimum separation between aircraft 2 and 3 (min)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 12,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,573 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "flow_matrix": [
+    [
+     0,
+     10,
+     1,
+     2
+    ],
+    [
+     10,
+     0,
+     5,
+     9
+    ],
+    [
+     1,
+     5,
+     0,
+     5
+    ],
+    [
+     2,
+     9,
+     5,
+     0
+    ]
+   ],
+   "distance_matrix": [
+    [
+     0,
+     54,
+     28,
+     32
+    ],
+    [
+     54,
+     0,
+     73,
+     81
+    ],
+    [
+     28,
+     73,
+     0,
+     46
+    ],
+    [
+     32,
+     81,
+     46,
+     0
+    ]
+   ],
+   "num_facilities": 4,
+   "num_locations": 4,
+   "location_coords": [
+    [
+     64,
+     41
+    ],
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ]
+   ]
+  },
+  {
+   "flow_matrix": [
+    [
+     0.0,
+     5.25010755222667,
+     0.7750293183691193,
+     1.4464214762976455
+    ],
+    [
+     12.364712141640124,
+     0.0,
+     6.960897838524227,
+     5.282449493664745
+    ],
+    [
+     0.9219218196852704,
+     2.6489860971903516,
+     0.0,
+     5.026776440516811
+    ],
+    [
+     1.0530719393677272,
+     6.289538856179837,
+     5.749422188897616,
+     0.0
+    ]
+   ],
+   "distance_matrix": [
+    [
+     0.0,
+     56.89220815757944,
+     33.19843167218749,
+     22.52477618581877
+    ],
+    [
+     63.90854375938297,
+     0.0,
+     66.00297262348805,
+     64.25630369085259
+    ],
+    [
+     35.68117961307392,
+     65.84284107593305,
+     0.0,
+     34.869372000603605
+    ],
+    [
+     38.67189183387123,
+     86.04108512443091,
+     54.4767403423729,
+     0.0
+    ]
+   ],
+   "num_facilities": 4,
+   "num_locations": 4,
+   "location_coords": [
+    [
+     60.890480056533846,
+     41.85346635288092
+    ],
+    [
+     112.04442470441859,
+     85.88744787754727
+    ],
+    [
+     82.41715872895038,
+     14.433172013437868
+    ],
+    [
+     34.61851950355102,
+     30.2782008781038
+    ]
+   ]
+  },
+  {
+   "flow_matrix": [
+    [
+     0.0,
+     7.8938796360210715,
+     0.5797919769236275,
+     1.4655817727220604
+    ],
+    [
+     6.010014294097291,
+     0.0,
+     5.678422221322002,
+     7.783489610730758
+    ],
+    [
+     0.8701809671168826,
+     3.5475351538574387,
+     0.0,
+     7.183272938562471
+    ],
+    [
+     2.296070770493187,
+     9.982179051002895,
+     3.355693240990485,
+     0.0
+    ]
+   ],
+   "distance_matrix": [
+    [
+     0.0,
+     50.09435631294779,
+     36.223992290694795,
+     34.68799538919858
+    ],
+    [
+     55.845171698298536,
+     0.0,
+     88.01691410431367,
+     94.4135957011475
+    ],
+    [
+     23.448007608996953,
+     52.50599068299685,
+     0.0,
+     39.589648176929394
+    ],
+    [
+     26.450870596857467,
+     102.52541211668364,
+     56.38774649064566,
+     0.0
+    ]
+   ],
+   "num_facilities": 4,
+   "num_locations": 4,
+   "location_coords": [
+    [
+     74.61241829735792,
+     40.32517038243334
+    ],
+    [
+     89.68925459332289,
+     73.68938225236266
+    ],
+    [
+     73.76740226389873,
+     12.671353007728438
+    ],
+    [
+     33.08270067486132,
+     42.88777867731665
+    ]
+   ]
+  },
+  {
+   "flow_matrix": [
+    [
+     0.0,
+     7.1932075915728335,
+     1.4975376064951103,
+     2.0190525873529293
+    ],
+    [
+     5.9090941217379385,
+     0.0,
+     3.048245651753296,
+     10.14701437532781
+    ],
+    [
+     1.292079364362964,
+     4.610799833998421,
+     0.0,
+     4.408096432532684
+    ],
+    [
+     2.9922427604801936,
+     9.262029105892234,
+     7.35539188806809,
+     0.0
+    ]
+   ],
+   "distance_matrix": [
+    [
+     0.0,
+     61.1513869472703,
+     31.05273419964645,
+     32.709830343848864
+    ],
+    [
+     46.44513615446238,
+     0.0,
+     55.98598520349939,
+     77.8295911825185
+    ],
+    [
+     27.22255826633067,
+     92.87713762542332,
+     0.0,
+     39.46953780073011
+    ],
+    [
+     32.011253370565726,
+     65.38248139376438,
+     57.38852836591705,
+     0.0
+    ]
+   ],
+   "num_facilities": 4,
+   "num_locations": 4,
+   "location_coords": [
+    [
+     66.78963741281721,
+     35.30656400421402
+    ],
+    [
+     109.39542768297599,
+     83.29163218792372
+    ],
+    [
+     80.02444258456008,
+     14.169980564292993
+    ],
+    [
+     25.60732027043768,
+     34.39750964366916
+    ]
+   ]
+  },
+  {
+   "flow_matrix": [
+    [
+     0.0,
+     14.29098616264617,
+     1.3787218778231842,
+     2.663331058722359
+    ],
+    [
+     8.075141254026615,
+     0.0,
+     6.890047996020203,
+     13.022545007681947
+    ],
+    [
+     0.5856534520678788,
+     4.929952316583069,
+     0.0,
+     6.303010826286157
+    ],
+    [
+     2.5316688586139753,
+     5.655523180497865,
+     4.876411890493657,
+     0.0
+    ]
+   ],
+   "distance_matrix": [
+    [
+     0.0,
+     66.06683053116234,
+     26.708717395374897,
+     26.466525544487975
+    ],
+    [
+     55.27319327645445,
+     0.0,
+     59.91041657646868,
+     71.84941175722349
+    ],
+    [
+     36.31850919190303,
+     79.56465892460807,
+     0.0,
+     46.485093212582306
+    ],
+    [
+     24.723280560670702,
+     67.62029057973369,
+     41.531161515269766,
+     0.0
+    ]
+   ],
+   "num_facilities": 4,
+   "num_locations": 4,
+   "location_coords": [
+    [
+     53.01742300183123,
+     43.150088499229625
+    ],
+    [
+     88.26609463892171,
+     95.297776426601
+    ],
+    [
+     82.35749952730791,
+     11.59680115937646
+    ],
+    [
+     28.64645931992314,
+     39.50087111878495
+    ]
+   ]
+  },
+  {
+   "flow_matrix": [
+    [
+     0.0,
+     6.32311848725025,
+     1.435514240580671,
+     2.1420861866505687
+    ],
+    [
+     9.72671026311794,
+     0.0,
+     6.537484988833217,
+     6.213689229256899
+    ],
+    [
+     0.5969308142288233,
+     4.655255912031888,
+     0.0,
+     4.835123340183375
+    ],
+    [
+     2.458151698919701,
+     10.560280925639715,
+     7.42082605682983,
+     0.0
+    ]
+   ],
+   "distance_matrix": [
+    [
+     0.0,
+     48.79340441479681,
+     34.076098610726895,
+     27.17420161126948
+    ],
+    [
+     43.96276863348229,
+     0.0,
+     69.5784158247469,
+     70.2372940308133
+    ],
+    [
+     23.796748324419287,
+     91.53903324828937,
+     0.0,
+     55.973235291426526
+    ],
+    [
+     32.966245999037085,
+     59.15859281490922,
+     59.78019612819125,
+     0.0
+    ]
+   ],
+   "num_facilities": 4,
+   "num_locations": 4,
+   "location_coords": [
+    [
+     72.92661080100622,
+     35.52750221390419
+    ],
+    [
+     98.43138856784846,
+     72.61091141373316
+    ],
+    [
+     69.14996042542424,
+     11.528358239844202
+    ],
+    [
+     30.450855922904527,
+     44.182570887939946
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   2760.0,
+   2398.425277477253,
+   2480.1312675420527,
+   2645.2423252546096,
+   2977.165056608336,
+   2740.945925323913
+  ],
+  "B-structured-2": [
+   2760.0,
+   2398.425277477253,
+   2480.1312675420527,
+   2645.2423252546096,
+   2977.165056608336,
+   2740.945925323913
+  ],
+  "C-direct": [
+   2760.0,
+   2009.9601725337611,
+   2729.0428273656144,
+   2301.3919092544375,
+   3475.5919574708023,
+   2381.15692515209
+  ],
+  "C-direct-2": [
+   2760.0,
+   2398.4252774772535,
+   2480.131267542065,
+   2645.2423252546096,
+   2977.1650566083354,
+   2740.9459253239133
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs']",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs']",
+  "C-direct": "diverges from consensus by 498.4 on instance 4 (params: {'flow_matrix': [[0.0, 14.29, 1.38, 2.66], [8.08, 0.0, 6.89, 13.02], [0.59, 4.93, 0.0, 6.3], [2.53, 5.66, 4.88, 0.0]], 'distance_matrix': [[0.0, 66.07, 26.71, 26.47], [55.27, 0.0, 59.91, 71.85], [36.32, 79.56, 0.0, 46.49], [24.72, 67.62, 41.53, 0.0]], 'num_facilities': 4, 'num_locations': 4, 'location_coords': [[53.02, 43.15], [88.27, 95.3], [82.36, 11.6], [28.65, 39.5]]})"
+ },
+ "disagreements": [],
+ "notes": []
+}

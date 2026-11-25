@@ -1,0 +1,79 @@
+{
+ "spec": {
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  },
+  "shipment_weights": {
+   "base": [
+    37,
+    40,
+    32,
+    34,
+    34,
+    32
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "num_trucks": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "truck_capacity": {
+    "meaning": "Maximum weight capacity of each truck",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 130,
+     "integer": false
+    }
+   },
+   "shipment_weights": {
+    "meaning": "Weight of each shipment (Shipments 1 through 6)",
+    "base": [
+     37,
+     40,
+     32,
+     34,
+     34,
+     32
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "num_trucks": {
+    "meaning": "Number of available trucks (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,274 @@
+{
+ "spec": {
+  "profit_per_unit": {
+   "base": [
+    220,
+    281,
+    239,
+    220
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "holding_cost_per_unit_per_period": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "machine_capacity_per_period": {
+   "base": [
+    480,
+    320,
+    160
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "machine_time_per_unit": {
+   "base": [
+    [
+     1,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "period0_borer_capacity": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "inventory_limit_per_product_per_period": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "sales_limit": {
+   "base": [
+    [
+     51,
+     69,
+     50,
+     67,
+     53
+    ],
+    [
+     44,
+     48,
+     44,
+     61,
+     67
+    ],
+    [
+     56,
+     57,
+     70,
+     49,
+     53
+    ],
+    [
+     64,
+     46,
+     51,
+     66,
+     52
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "target_inventory_end_period4": {
+   "base": [
+    20,
+    20,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit": {
+    "meaning": "Revenue/profit per unit sold for Product 0,1,2,3",
+    "base": [
+     220,
+     281,
+     239,
+     220
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "holding_cost_per_unit_per_period": {
+    "meaning": "Cost to hold one unit of any product for one period",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "machine_capacity_per_period": {
+    "meaning": "Capacity hours per period for grinders, drills, borers (borers unavailable in Period 0)",
+    "base": [
+     480,
+     320,
+     160
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "machine_time_per_unit": {
+    "meaning": "Machine hours required per unit by machine type (grinders, drills, borers) for Products 0-3",
+    "base": [
+     [
+      1,
+      1,
+      2
+     ],
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      1,
+      2,
+      2
+     ],
+     [
+      2,
+      2,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "period0_borer_capacity": {
+    "meaning": "Borer capacity in Period 0 (maintenance unavailable)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "inventory_limit_per_product_per_period": {
+    "meaning": "Maximum inventory of any product at end of any period",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "sales_limit": {
+    "meaning": "Maximum units sold per product per period; rows Products 0-3, columns Periods 0-4",
+    "base": [
+     [
+      51,
+      69,
+      50,
+      67,
+      53
+     ],
+     [
+      44,
+      48,
+      44,
+      61,
+      67
+     ],
+     [
+      56,
+      57,
+      70,
+      49,
+      53
+     ],
+     [
+      64,
+      46,
+      51,
+      66,
+      52
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "target_inventory_end_period4": {
+    "meaning": "Required ending inventory for each product at end of Period 4",
+    "base": [
+     20,
+     20,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "sample_id": "e3_JSSP_93",
+ "set": "calibration",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"processing_time_B0_on_U0_stage2\",\"extracted\":29,\"stated\":{\"unit\":\"Unit 2\",\"hours\":29},\"evidence\":\"subsequently transferred to Unit 2 for 29 hours\"},{\"parameter\":\"processing_time_B0_on_U2_stage3\",\"extracted\":29,\"stated\":{\"unit\":\"Unit 0\",\"hours\":35},\"evidence\":\"finally completed on Unit 0, requiring 35 hours\"},{\"parameter\":\"processing_time_B1_on_U0_stage2\",\"extracted\":28,\"stated\":31,\"evidence\":\"followed by 31 hours on Unit 0\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "processing_time_B0_on_U0_stage2",
+   "extracted": 29,
+   "stated": {
+    "unit": "Unit 2",
+    "hours": 29
+   },
+   "evidence": "subsequently transferred to Unit 2 for 29 hours"
+  },
+  {
+   "parameter": "processing_time_B0_on_U2_stage3",
+   "extracted": 29,
+   "stated": {
+    "unit": "Unit 0",
+    "hours": 35
+   },
+   "evidence": "finally completed on Unit 0, requiring 35 hours"
+  },
+  {
+   "parameter": "processing_time_B1_on_U0_stage2",
+   "extracted": 28,
+   "stated": 31,
+   "evidence": "followed by 31 hours on Unit 0"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true
+}

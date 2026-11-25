@@ -1,0 +1,43 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "profit_margin",
+  "time_per_unit",
+  "capacity_hours",
+  "min_production",
+  "max_production"
+ ],
+ "safe": [
+  "profit_margin",
+  "time_per_unit",
+  "min_production",
+  "max_production"
+ ],
+ "tests": {
+  "profit_margin": [
+   3,
+   3
+  ],
+  "time_per_unit": [
+   3,
+   3
+  ],
+  "capacity_hours": [
+   3,
+   0
+  ],
+  "min_production": [
+   3,
+   3
+  ],
+  "max_production": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

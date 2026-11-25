@@ -1,0 +1,292 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost": [
+    5,
+    2,
+    4,
+    2,
+    1,
+    3,
+    5,
+    4,
+    2,
+    5,
+    1,
+    3
+   ],
+   "req": [
+    1,
+    2,
+    3,
+    1,
+    1,
+    2,
+    1,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1
+   ]
+  },
+  {
+   "cost": [
+    6,
+    0,
+    2,
+    2,
+    7,
+    6,
+    8,
+    1,
+    4,
+    0,
+    2,
+    5
+   ],
+   "req": [
+    1,
+    2,
+    3,
+    3,
+    2,
+    3,
+    3,
+    1,
+    3,
+    3,
+    2,
+    1,
+    4,
+    2,
+    1,
+    1,
+    4,
+    3
+   ]
+  },
+  {
+   "cost": [
+    7,
+    7,
+    5,
+    9,
+    3,
+    5,
+    7,
+    6,
+    8,
+    5,
+    6,
+    0
+   ],
+   "req": [
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    3,
+    2,
+    2,
+    2,
+    2,
+    4,
+    3,
+    3,
+    2,
+    3,
+    1,
+    2
+   ]
+  },
+  {
+   "cost": [
+    9,
+    6,
+    5,
+    6,
+    8,
+    7,
+    2,
+    0,
+    3,
+    2,
+    2,
+    8
+   ],
+   "req": [
+    4,
+    2,
+    3,
+    2,
+    4,
+    2,
+    2,
+    2,
+    3,
+    2,
+    3,
+    4,
+    2,
+    2,
+    4,
+    3,
+    1,
+    1
+   ]
+  },
+  {
+   "cost": [
+    1,
+    6,
+    7,
+    4,
+    1,
+    3,
+    9,
+    5,
+    9,
+    8,
+    0,
+    6
+   ],
+   "req": [
+    3,
+    3,
+    2,
+    3,
+    1,
+    2,
+    2,
+    4,
+    4,
+    2,
+    3,
+    2,
+    4,
+    4,
+    2,
+    3,
+    3,
+    1
+   ]
+  },
+  {
+   "cost": [
+    7,
+    5,
+    7,
+    5,
+    0,
+    3,
+    0,
+    8,
+    8,
+    7,
+    3,
+    1
+   ],
+   "req": [
+    4,
+    4,
+    1,
+    2,
+    1,
+    3,
+    3,
+    1,
+    2,
+    3,
+    2,
+    4,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   26.0,
+   null,
+   39.0,
+   36.0,
+   null,
+   29.0
+  ],
+  "B-structured": [
+   26.0,
+   null,
+   39.0,
+   36.0,
+   null,
+   29.0
+  ],
+  "C-direct": [
+   26.0,
+   null,
+   39.0,
+   36.0,
+   null,
+   29.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_failed",
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_feasible_solution",
+   "optimal",
+   "optimal",
+   "no_feasible_solution",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

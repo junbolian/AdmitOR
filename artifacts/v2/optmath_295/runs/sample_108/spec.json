@@ -1,0 +1,340 @@
+{
+ "spec": {
+  "capacity_0": {
+   "base": 1591,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity_1": {
+   "base": 1578,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity_2": {
+   "base": 1502,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand_0": {
+   "base": 839,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand_1": {
+   "base": 814,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand_2": {
+   "base": 806,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand_3": {
+   "base": 810,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_delivery_0": {
+   "base": 397,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_delivery_1": {
+   "base": 394,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_delivery_2": {
+   "base": 375,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_0_0": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_0_1": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_0_2": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_0_3": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_1_0": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_1_1": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_1_2": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_1_3": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_2_0": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_2_1": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_2_2": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_2_3": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_0": {
+    "meaning": "Generation capacity of Producer 0",
+    "base": 1591,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity_1": {
+    "meaning": "Generation capacity of Producer 1",
+    "base": 1578,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity_2": {
+    "meaning": "Generation capacity of Producer 2",
+    "base": 1502,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand_0": {
+    "meaning": "Energy demand of Contract 0",
+    "base": 839,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand_1": {
+    "meaning": "Energy demand of Contract 1",
+    "base": 814,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand_2": {
+    "meaning": "Energy demand of Contract 2",
+    "base": 806,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand_3": {
+    "meaning": "Energy demand of Contract 3",
+    "base": 810,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_delivery_0": {
+    "meaning": "Minimum delivery threshold for Producer 0 if participating",
+    "base": 397,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_delivery_1": {
+    "meaning": "Minimum delivery threshold for Producer 1 if participating",
+    "base": 394,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_delivery_2": {
+    "meaning": "Minimum delivery threshold for Producer 2 if participating",
+    "base": 375,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_0_0": {
+    "meaning": "Unit production cost Producer 0 to Contract 0",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_0_1": {
+    "meaning": "Unit production cost Producer 0 to Contract 1",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Unit production cost Producer 0 to Contract 2",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_0_3": {
+    "meaning": "Unit production cost Producer 0 to Contract 3",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_1_0": {
+    "meaning": "Unit production cost Producer 1 to Contract 0",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_1_1": {
+    "meaning": "Unit production cost Producer 1 to Contract 1",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Unit production cost Producer 1 to Contract 2",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Unit production cost Producer 1 to Contract 3",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_2_0": {
+    "meaning": "Unit production cost Producer 2 to Contract 0",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_2_1": {
+    "meaning": "Unit production cost Producer 2 to Contract 1",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_2_2": {
+    "meaning": "Unit production cost Producer 2 to Contract 2",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Unit production cost Producer 2 to Contract 3",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

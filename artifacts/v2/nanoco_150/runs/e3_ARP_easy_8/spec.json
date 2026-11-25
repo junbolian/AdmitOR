@@ -1,0 +1,274 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     18,
+     35,
+     59,
+     54,
+     30
+    ],
+    [
+     18,
+     0,
+     50,
+     76,
+     55,
+     16
+    ],
+    [
+     35,
+     50,
+     0,
+     40,
+     82,
+     64
+    ],
+    [
+     59,
+     76,
+     40,
+     0,
+     81,
+     86
+    ],
+    [
+     54,
+     55,
+     82,
+     81,
+     0,
+     47
+    ],
+    [
+     30,
+     16,
+     64,
+     86,
+     47,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "mandatory_segments": {
+   "base": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_mandatory_segments": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "depot": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[mandatory_segments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_mandatory_segments] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[depot] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Symmetric travel distance between all node pairs (6x6 matrix, rows from node 0 to 5)",
+    "base": [
+     [
+      0,
+      18,
+      35,
+      59,
+      54,
+      30
+     ],
+     [
+      18,
+      0,
+      50,
+      76,
+      55,
+      16
+     ],
+     [
+      35,
+      50,
+      0,
+      40,
+      82,
+      64
+     ],
+     [
+      59,
+      76,
+      40,
+      0,
+      81,
+      86
+     ],
+     [
+      54,
+      55,
+      82,
+      81,
+      0,
+      47
+     ],
+     [
+      30,
+      16,
+      64,
+      86,
+      47,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "mandatory_segments": {
+    "meaning": "Required arcs that must be traversed at least once (undirected pairs)",
+    "base": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of junction points (index set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_mandatory_segments": {
+    "meaning": "Number of mandatory arcs (cardinality, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Number of inspection patrol vehicles (fleet size, frozen)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "depot": {
+    "meaning": "Start and end node of the patrol (dispatch garage, frozen)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

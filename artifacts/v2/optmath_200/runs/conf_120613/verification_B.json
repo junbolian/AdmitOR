@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_120613",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_0_3\",\n      \"evidence\": \"For example, installing a facility on the route from Location 0 to Location 3 costs 961 units and provides a capacity of 607 units.\"\n    },\n    {\n      \"parameter\": \"capacity_1_2\",\n      \"evidence\": \"Similarly, installing a facility on the route from Location 1 to Location 2 costs 853 units and provides a capacity of 594 units.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_0_3",
+   "evidence": "For example, installing a facility on the route from Location 0 to Location 3 costs 961 units and provides a capacity of 607 units."
+  },
+  {
+   "parameter": "capacity_1_2",
+   "evidence": "Similarly, installing a facility on the route from Location 1 to Location 2 costs 853 units and provides a capacity of 594 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

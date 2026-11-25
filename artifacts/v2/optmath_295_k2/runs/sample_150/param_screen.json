@@ -1,0 +1,562 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "supply_demand",
+  "fixed_cost_0_1",
+  "fixed_cost_0_2",
+  "fixed_cost_0_3",
+  "fixed_cost_0_4",
+  "fixed_cost_0_5",
+  "fixed_cost_1_0",
+  "fixed_cost_1_2",
+  "fixed_cost_1_3",
+  "fixed_cost_1_4",
+  "fixed_cost_1_5",
+  "fixed_cost_2_0",
+  "fixed_cost_2_1",
+  "fixed_cost_2_3",
+  "fixed_cost_2_4",
+  "fixed_cost_2_5",
+  "fixed_cost_3_0",
+  "fixed_cost_3_1",
+  "fixed_cost_3_2",
+  "fixed_cost_3_4",
+  "fixed_cost_3_5",
+  "fixed_cost_4_0",
+  "fixed_cost_4_1",
+  "fixed_cost_4_2",
+  "fixed_cost_4_3",
+  "fixed_cost_4_5",
+  "fixed_cost_5_0",
+  "fixed_cost_5_1",
+  "fixed_cost_5_2",
+  "fixed_cost_5_3",
+  "fixed_cost_5_4",
+  "variable_cost_0_1",
+  "variable_cost_0_2",
+  "variable_cost_0_3",
+  "variable_cost_0_4",
+  "variable_cost_0_5",
+  "variable_cost_1_0",
+  "variable_cost_1_2",
+  "variable_cost_1_3",
+  "variable_cost_1_4",
+  "variable_cost_1_5",
+  "variable_cost_2_0",
+  "variable_cost_2_1",
+  "variable_cost_2_3",
+  "variable_cost_2_4",
+  "variable_cost_2_5",
+  "variable_cost_3_0",
+  "variable_cost_3_1",
+  "variable_cost_3_2",
+  "variable_cost_3_4",
+  "variable_cost_3_5",
+  "variable_cost_4_0",
+  "variable_cost_4_1",
+  "variable_cost_4_2",
+  "variable_cost_4_3",
+  "variable_cost_4_5",
+  "variable_cost_5_0",
+  "variable_cost_5_1",
+  "variable_cost_5_2",
+  "variable_cost_5_3",
+  "variable_cost_5_4",
+  "capacity_0_1",
+  "capacity_0_2",
+  "capacity_0_3",
+  "capacity_0_4",
+  "capacity_0_5",
+  "capacity_1_0",
+  "capacity_1_2",
+  "capacity_1_3",
+  "capacity_1_4",
+  "capacity_1_5",
+  "capacity_2_0",
+  "capacity_2_1",
+  "capacity_2_3",
+  "capacity_2_4",
+  "capacity_2_5",
+  "capacity_3_0",
+  "capacity_3_1",
+  "capacity_3_2",
+  "capacity_3_4",
+  "capacity_3_5",
+  "capacity_4_0",
+  "capacity_4_1",
+  "capacity_4_2",
+  "capacity_4_3",
+  "capacity_4_5",
+  "capacity_5_0",
+  "capacity_5_1",
+  "capacity_5_2",
+  "capacity_5_3",
+  "capacity_5_4"
+ ],
+ "safe": [
+  "fixed_cost_0_1",
+  "fixed_cost_0_2",
+  "fixed_cost_0_3",
+  "fixed_cost_0_4",
+  "fixed_cost_0_5",
+  "fixed_cost_1_0",
+  "fixed_cost_1_2",
+  "fixed_cost_1_3",
+  "fixed_cost_1_4",
+  "fixed_cost_1_5",
+  "fixed_cost_2_0",
+  "fixed_cost_2_1",
+  "fixed_cost_2_3",
+  "fixed_cost_2_4",
+  "fixed_cost_2_5",
+  "fixed_cost_3_0",
+  "fixed_cost_3_1",
+  "fixed_cost_3_2",
+  "fixed_cost_3_4",
+  "fixed_cost_3_5",
+  "fixed_cost_4_0",
+  "fixed_cost_4_1",
+  "fixed_cost_4_2",
+  "fixed_cost_4_3",
+  "fixed_cost_4_5",
+  "fixed_cost_5_0",
+  "fixed_cost_5_1",
+  "fixed_cost_5_2",
+  "fixed_cost_5_3",
+  "fixed_cost_5_4",
+  "variable_cost_0_1",
+  "variable_cost_0_2",
+  "variable_cost_0_3",
+  "variable_cost_0_4",
+  "variable_cost_0_5",
+  "variable_cost_1_0",
+  "variable_cost_1_2",
+  "variable_cost_1_3",
+  "variable_cost_1_4",
+  "variable_cost_1_5",
+  "variable_cost_2_0",
+  "variable_cost_2_1",
+  "variable_cost_2_3",
+  "variable_cost_2_4",
+  "variable_cost_2_5",
+  "variable_cost_3_0",
+  "variable_cost_3_1",
+  "variable_cost_3_2",
+  "variable_cost_3_4",
+  "variable_cost_3_5",
+  "variable_cost_4_0",
+  "variable_cost_4_1",
+  "variable_cost_4_2",
+  "variable_cost_4_3",
+  "variable_cost_4_5",
+  "variable_cost_5_0",
+  "variable_cost_5_1",
+  "variable_cost_5_2",
+  "variable_cost_5_3",
+  "variable_cost_5_4",
+  "capacity_0_1",
+  "capacity_0_2",
+  "capacity_0_3",
+  "capacity_0_4",
+  "capacity_0_5",
+  "capacity_1_0",
+  "capacity_1_2",
+  "capacity_1_3",
+  "capacity_1_4",
+  "capacity_1_5",
+  "capacity_2_0",
+  "capacity_2_1",
+  "capacity_2_3",
+  "capacity_2_4",
+  "capacity_2_5",
+  "capacity_3_0",
+  "capacity_3_1",
+  "capacity_3_2",
+  "capacity_3_4",
+  "capacity_3_5",
+  "capacity_4_0",
+  "capacity_4_1",
+  "capacity_4_2",
+  "capacity_4_3",
+  "capacity_4_5",
+  "capacity_5_0",
+  "capacity_5_1",
+  "capacity_5_2",
+  "capacity_5_3",
+  "capacity_5_4"
+ ],
+ "tests": {
+  "supply_demand": [
+   0,
+   0
+  ],
+  "fixed_cost_0_1": [
+   6,
+   6
+  ],
+  "fixed_cost_0_2": [
+   6,
+   6
+  ],
+  "fixed_cost_0_3": [
+   6,
+   6
+  ],
+  "fixed_cost_0_4": [
+   6,
+   6
+  ],
+  "fixed_cost_0_5": [
+   6,
+   6
+  ],
+  "fixed_cost_1_0": [
+   6,
+   6
+  ],
+  "fixed_cost_1_2": [
+   6,
+   6
+  ],
+  "fixed_cost_1_3": [
+   6,
+   6
+  ],
+  "fixed_cost_1_4": [
+   6,
+   6
+  ],
+  "fixed_cost_1_5": [
+   6,
+   6
+  ],
+  "fixed_cost_2_0": [
+   6,
+   6
+  ],
+  "fixed_cost_2_1": [
+   6,
+   6
+  ],
+  "fixed_cost_2_3": [
+   6,
+   6
+  ],
+  "fixed_cost_2_4": [
+   6,
+   6
+  ],
+  "fixed_cost_2_5": [
+   6,
+   6
+  ],
+  "fixed_cost_3_0": [
+   6,
+   6
+  ],
+  "fixed_cost_3_1": [
+   6,
+   6
+  ],
+  "fixed_cost_3_2": [
+   6,
+   6
+  ],
+  "fixed_cost_3_4": [
+   6,
+   6
+  ],
+  "fixed_cost_3_5": [
+   6,
+   6
+  ],
+  "fixed_cost_4_0": [
+   6,
+   6
+  ],
+  "fixed_cost_4_1": [
+   6,
+   6
+  ],
+  "fixed_cost_4_2": [
+   6,
+   6
+  ],
+  "fixed_cost_4_3": [
+   6,
+   6
+  ],
+  "fixed_cost_4_5": [
+   6,
+   6
+  ],
+  "fixed_cost_5_0": [
+   6,
+   6
+  ],
+  "fixed_cost_5_1": [
+   6,
+   6
+  ],
+  "fixed_cost_5_2": [
+   6,
+   6
+  ],
+  "fixed_cost_5_3": [
+   6,
+   6
+  ],
+  "fixed_cost_5_4": [
+   6,
+   6
+  ],
+  "variable_cost_0_1": [
+   6,
+   6
+  ],
+  "variable_cost_0_2": [
+   6,
+   6
+  ],
+  "variable_cost_0_3": [
+   6,
+   6
+  ],
+  "variable_cost_0_4": [
+   6,
+   6
+  ],
+  "variable_cost_0_5": [
+   6,
+   6
+  ],
+  "variable_cost_1_0": [
+   6,
+   6
+  ],
+  "variable_cost_1_2": [
+   6,
+   6
+  ],
+  "variable_cost_1_3": [
+   6,
+   6
+  ],
+  "variable_cost_1_4": [
+   6,
+   6
+  ],
+  "variable_cost_1_5": [
+   6,
+   6
+  ],
+  "variable_cost_2_0": [
+   6,
+   6
+  ],
+  "variable_cost_2_1": [
+   6,
+   6
+  ],
+  "variable_cost_2_3": [
+   6,
+   6
+  ],
+  "variable_cost_2_4": [
+   6,
+   6
+  ],
+  "variable_cost_2_5": [
+   6,
+   6
+  ],
+  "variable_cost_3_0": [
+   6,
+   6
+  ],
+  "variable_cost_3_1": [
+   6,
+   6
+  ],
+  "variable_cost_3_2": [
+   6,
+   6
+  ],
+  "variable_cost_3_4": [
+   6,
+   6
+  ],
+  "variable_cost_3_5": [
+   6,
+   6
+  ],
+  "variable_cost_4_0": [
+   6,
+   6
+  ],
+  "variable_cost_4_1": [
+   6,
+   6
+  ],
+  "variable_cost_4_2": [
+   6,
+   6
+  ],
+  "variable_cost_4_3": [
+   6,
+   6
+  ],
+  "variable_cost_4_5": [
+   6,
+   6
+  ],
+  "variable_cost_5_0": [
+   6,
+   6
+  ],
+  "variable_cost_5_1": [
+   6,
+   6
+  ],
+  "variable_cost_5_2": [
+   6,
+   6
+  ],
+  "variable_cost_5_3": [
+   6,
+   6
+  ],
+  "variable_cost_5_4": [
+   6,
+   6
+  ],
+  "capacity_0_1": [
+   6,
+   6
+  ],
+  "capacity_0_2": [
+   6,
+   6
+  ],
+  "capacity_0_3": [
+   6,
+   6
+  ],
+  "capacity_0_4": [
+   6,
+   6
+  ],
+  "capacity_0_5": [
+   6,
+   6
+  ],
+  "capacity_1_0": [
+   6,
+   6
+  ],
+  "capacity_1_2": [
+   6,
+   6
+  ],
+  "capacity_1_3": [
+   6,
+   6
+  ],
+  "capacity_1_4": [
+   6,
+   6
+  ],
+  "capacity_1_5": [
+   6,
+   6
+  ],
+  "capacity_2_0": [
+   6,
+   6
+  ],
+  "capacity_2_1": [
+   6,
+   6
+  ],
+  "capacity_2_3": [
+   6,
+   6
+  ],
+  "capacity_2_4": [
+   6,
+   6
+  ],
+  "capacity_2_5": [
+   6,
+   6
+  ],
+  "capacity_3_0": [
+   6,
+   6
+  ],
+  "capacity_3_1": [
+   6,
+   6
+  ],
+  "capacity_3_2": [
+   6,
+   6
+  ],
+  "capacity_3_4": [
+   6,
+   6
+  ],
+  "capacity_3_5": [
+   6,
+   6
+  ],
+  "capacity_4_0": [
+   6,
+   6
+  ],
+  "capacity_4_1": [
+   6,
+   6
+  ],
+  "capacity_4_2": [
+   6,
+   6
+  ],
+  "capacity_4_3": [
+   6,
+   6
+  ],
+  "capacity_4_5": [
+   6,
+   6
+  ],
+  "capacity_5_0": [
+   6,
+   6
+  ],
+  "capacity_5_1": [
+   6,
+   6
+  ],
+  "capacity_5_2": [
+   6,
+   6
+  ],
+  "capacity_5_3": [
+   6,
+   6
+  ],
+  "capacity_5_4": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

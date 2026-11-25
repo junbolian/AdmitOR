@@ -1,0 +1,67 @@
+{
+ "spec": {
+  "p": {
+   "base": [
+    [
+     38,
+     10,
+     14
+    ],
+    [
+     41,
+     23,
+     39
+    ],
+    [
+     37,
+     16,
+     25
+    ],
+    [
+     38,
+     31,
+     35
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "p": {
+    "meaning": "processing times (minutes) for jobs J0-J3 at machines M0,M1,M2; rows = jobs, columns = machines",
+    "base": [
+     [
+      38,
+      10,
+      14
+     ],
+     [
+      41,
+      23,
+      39
+     ],
+     [
+      37,
+      16,
+      25
+     ],
+     [
+      38,
+      31,
+      35
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

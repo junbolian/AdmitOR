@@ -1,0 +1,102 @@
+{
+ "spec": {
+  "processing_time_W0": {
+   "base": [
+    17,
+    45,
+    24
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "processing_time_W1": {
+   "base": [
+    28,
+    29,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "processing_time_W2": {
+   "base": [
+    16,
+    20,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "processing_time_W3": {
+   "base": [
+    28,
+    14,
+    31
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time_W0": {
+    "meaning": "Processing time of wafer lot W0 at layers L0, L1, L2 (minutes)",
+    "base": [
+     17,
+     45,
+     24
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "processing_time_W1": {
+    "meaning": "Processing time of wafer lot W1 at layers L0, L1, L2 (minutes)",
+    "base": [
+     28,
+     29,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "processing_time_W2": {
+    "meaning": "Processing time of wafer lot W2 at layers L0, L1, L2 (minutes)",
+    "base": [
+     16,
+     20,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "processing_time_W3": {
+    "meaning": "Processing time of wafer lot W3 at layers L0, L1, L2 (minutes)",
+    "base": [
+     28,
+     14,
+     31
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

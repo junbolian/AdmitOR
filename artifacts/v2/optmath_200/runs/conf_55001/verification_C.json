@@ -1,0 +1,61 @@
+{
+ "sample_id": "conf_55001",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"objective_weight_per_assignment\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"participant_0_capacity\", \"evidence\": \"\\\"each participant is only assigned to one car\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"participant_1_capacity\", \"evidence\": \"\\\"each participant is only assigned to one car\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"participant_2_capacity\", \"evidence\": \"\\\"each participant is only assigned to one car\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"participant_3_capacity\", \"evidence\": \"\\\"each participant is only assigned to one car\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"participant_4_capacity\", \"evidence\": \"\\\"each participant is only assigned to one car\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"car_0_capacity\", \"evidence\": \"\\\"each car can accommodate at most one participant\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"car_1_capacity\", \"evidence\": \"\\\"each car can accommodate at most one participant\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"car_2_capacity\", \"evidence\": \"\\\"each car can accommodate at most one participant\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"car_3_capacity\", \"evidence\": \"\\\"each car can accommodate at most one participant\\\" — stated as a constraint, no numeric capacity value given\"}, {\"parameter\": \"car_4_capacity\", \"evidence\": \"\\\"each car can accommodate at most one participant\\\" — stated as a constraint, no numeric capacity value given\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "objective_weight_per_assignment",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "participant_0_capacity",
+   "evidence": "\"each participant is only assigned to one car\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "participant_1_capacity",
+   "evidence": "\"each participant is only assigned to one car\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "participant_2_capacity",
+   "evidence": "\"each participant is only assigned to one car\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "participant_3_capacity",
+   "evidence": "\"each participant is only assigned to one car\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "participant_4_capacity",
+   "evidence": "\"each participant is only assigned to one car\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "car_0_capacity",
+   "evidence": "\"each car can accommodate at most one participant\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "car_1_capacity",
+   "evidence": "\"each car can accommodate at most one participant\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "car_2_capacity",
+   "evidence": "\"each car can accommodate at most one participant\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "car_3_capacity",
+   "evidence": "\"each car can accommodate at most one participant\" — stated as a constraint, no numeric capacity value given"
+  },
+  {
+   "parameter": "car_4_capacity",
+   "evidence": "\"each car can accommodate at most one participant\" — stated as a constraint, no numeric capacity value given"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,16 @@
+{
+ "sample_id": "sample_193",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each parameter against the statement:\n\n**supply**: [60,14,45,49,69,33,34,50] — matches all four origins in order. ✓\n\n**demand**: [15,11,50,36,49,39,45,13,49,47] — matches all five destinations in order. ✓\n\n**cost**: Flattened order is (origin, destination, product). Checking row by row:\n- Origin 0: [5,9, 6,9, 6,6, 5,7, 10,10] ✓\n- Origin 1: [10,9, 8,9, 5,5, 7,9, 6,6] ✓\n- Origin 2: [9,5, 8,5, 8,5, 6,5, 10,5] ✓\n- Origin 3: [8,5, 10,9, 8,10, 7,7, 5,9] ✓\n\nAll match. ✓\n\n**capacity**: Checking row by row:\n- Origin 0: [72,77,51,72,104] ✓\n- Origin 1: [89,107,63,79,116] ✓\n- Origin 2: [102,92,106,100,64] ✓\n- Origin 3: [110,62,119,52,90] ✓\n\nAll match. ✓\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

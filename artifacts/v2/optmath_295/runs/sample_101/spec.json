@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "coverage_scores": {
+   "base": [
+    24,
+    21,
+    16,
+    20,
+    20,
+    16,
+    20,
+    22,
+    17,
+    24,
+    24,
+    20,
+    24,
+    18,
+    22,
+    25,
+    22,
+    25,
+    19,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_centers": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_centers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "coverage_scores": {
+    "meaning": "Pairwise coverage effectiveness score d_{i,j} for each ordered pair of nodes (i,j), i != j, in row-major order over the 5x5 node matrix excluding diagonal",
+    "base": [
+     24,
+     21,
+     16,
+     20,
+     20,
+     16,
+     20,
+     22,
+     17,
+     24,
+     24,
+     20,
+     24,
+     18,
+     22,
+     25,
+     22,
+     25,
+     19,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_centers": {
+    "meaning": "Exact number of emergency response centers to establish (sum of x_i)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

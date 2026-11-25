@@ -1,0 +1,78 @@
+{
+ "spec": {
+  "vm_demands": {
+   "base": [
+    10,
+    21,
+    35,
+    11,
+    12,
+    30,
+    29,
+    40,
+    35,
+    28,
+    11,
+    28,
+    39,
+    33,
+    32,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "server_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 85.0,
+    "hi": 115.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "vm_demands": {
+    "meaning": "Resource demand of each of the 16 virtual machines",
+    "base": [
+     10,
+     21,
+     35,
+     11,
+     12,
+     30,
+     29,
+     40,
+     35,
+     28,
+     11,
+     28,
+     39,
+     33,
+     32,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "server_capacity": {
+    "meaning": "Maximum total resource demand allowed per powered-on server",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 85,
+     "hi": 115,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

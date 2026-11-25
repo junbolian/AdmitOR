@@ -1,0 +1,246 @@
+{
+ "spec": {
+  "arc_capacity": {
+   "base": [
+    19,
+    19,
+    24,
+    24,
+    20,
+    20,
+    18,
+    18,
+    14,
+    14,
+    16,
+    16,
+    24,
+    24,
+    22,
+    22,
+    24,
+    24,
+    12,
+    12,
+    17,
+    17,
+    22,
+    22,
+    21,
+    21,
+    21,
+    21,
+    17,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "arc_cost": {
+   "base": [
+    9,
+    9,
+    10,
+    10,
+    7,
+    7,
+    10,
+    10,
+    11,
+    11,
+    10,
+    10,
+    12,
+    12,
+    9,
+    9,
+    7,
+    7,
+    11,
+    11,
+    2,
+    2,
+    8,
+    8,
+    10,
+    10,
+    9,
+    9,
+    9,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "commodity_demand": {
+   "base": [
+    4,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_nodes": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_arcs": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "num_commodities": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_arcs] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_commodities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_capacity": {
+    "meaning": "Customs clearance and shipping volume limit per directed arc, ordered as listed",
+    "base": [
+     19,
+     19,
+     24,
+     24,
+     20,
+     20,
+     18,
+     18,
+     14,
+     14,
+     16,
+     16,
+     24,
+     24,
+     22,
+     22,
+     24,
+     24,
+     12,
+     12,
+     17,
+     17,
+     22,
+     22,
+     21,
+     21,
+     21,
+     21,
+     17,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "arc_cost": {
+    "meaning": "Duty, tariff, and freight cost per unit per directed arc, ordered as listed",
+    "base": [
+     9,
+     9,
+     10,
+     10,
+     7,
+     7,
+     10,
+     10,
+     11,
+     11,
+     10,
+     10,
+     12,
+     12,
+     9,
+     9,
+     7,
+     7,
+     11,
+     11,
+     2,
+     2,
+     8,
+     8,
+     10,
+     10,
+     9,
+     9,
+     9,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "commodity_demand": {
+    "meaning": "Required shipped quantity for each commodity (commodity 0 then commodity 1)",
+    "base": [
+     4,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of network nodes (index-set size, frozen)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_arcs": {
+    "meaning": "Number of directed arcs (index-set size, frozen)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "num_commodities": {
+    "meaning": "Number of commodities (index-set size, frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

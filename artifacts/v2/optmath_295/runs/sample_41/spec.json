@@ -1,0 +1,209 @@
+{
+ "spec": {
+  "profit_per_unit_sold": {
+   "base": [
+    193,
+    167,
+    178
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "inventory_holding_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "machine_hours_per_unit": {
+   "base": [
+    [
+     1,
+     2,
+     2
+    ],
+    [
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "machine_capacity_per_period": {
+   "base": [
+    360,
+    120,
+    120
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "inventory_capacity_per_product": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "sales_limit": {
+   "base": [
+    [
+     28,
+     33,
+     47,
+     35
+    ],
+    [
+     20,
+     43,
+     34,
+     35
+    ],
+    [
+     43,
+     45,
+     37,
+     30
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "target_final_inventory": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_unit_sold": {
+    "meaning": "Unit profit (revenue minus production cost) for each product, indexed by product (0,1,2)",
+    "base": [
+     193,
+     167,
+     178
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "inventory_holding_cost": {
+    "meaning": "Cost per unit of inventory held at end of a period",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "machine_hours_per_unit": {
+    "meaning": "Hours required per unit of each product on each machine type: rows = [Grinder, Drill, Borer], columns = products [0,1,2]",
+    "base": [
+     [
+      1,
+      2,
+      2
+     ],
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      2,
+      2,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "machine_capacity_per_period": {
+    "meaning": "Available machine hours per period for [Grinder, Drill, Borer]",
+    "base": [
+     360,
+     120,
+     120
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "inventory_capacity_per_product": {
+    "meaning": "Maximum inventory units of each product that can be held at the end of any period",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "sales_limit": {
+    "meaning": "Maximum units of each product that can be sold in each period; rows = products [0,1,2], columns = periods [0,1,2,3]",
+    "base": [
+     [
+      28,
+      33,
+      47,
+      35
+     ],
+     [
+      20,
+      43,
+      34,
+      35
+     ],
+     [
+      43,
+      45,
+      37,
+      30
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "target_final_inventory": {
+    "meaning": "Required inventory of each product at the end of the final period",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

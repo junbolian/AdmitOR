@@ -1,0 +1,328 @@
+{
+ "spec": {
+  "consultant_availability": {
+   "base": [
+    0,
+    14,
+    20,
+    15,
+    19,
+    16,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "project_requirement": {
+   "base": [
+    20,
+    18,
+    15,
+    19,
+    16,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "assignment_cost": {
+   "base": [
+    [
+     33,
+     34,
+     25,
+     31,
+     34,
+     25
+    ],
+    [
+     31,
+     30,
+     28,
+     29,
+     25,
+     33
+    ],
+    [
+     35,
+     30,
+     30,
+     28,
+     30,
+     28
+    ],
+    [
+     34,
+     35,
+     31,
+     32,
+     25,
+     25
+    ],
+    [
+     28,
+     30,
+     32,
+     35,
+     27,
+     29
+    ],
+    [
+     30,
+     29,
+     27,
+     35,
+     35,
+     26
+    ],
+    [
+     35,
+     31,
+     33,
+     25,
+     30,
+     33
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "assignment_limit": {
+   "base": [
+    [
+     8,
+     8,
+     9,
+     10,
+     7,
+     5
+    ],
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "consultant_availability": {
+    "meaning": "Maximum total hours each consultant i can be assigned across all projects",
+    "base": [
+     0,
+     14,
+     20,
+     15,
+     19,
+     16,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "project_requirement": {
+    "meaning": "Exact total hours required by each project j",
+    "base": [
+     20,
+     18,
+     15,
+     19,
+     16,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "assignment_cost": {
+    "meaning": "Cost per hour for consultant i assigned to project j (7x6 matrix, rows consultants 0-6, columns projects 0-5)",
+    "base": [
+     [
+      33,
+      34,
+      25,
+      31,
+      34,
+      25
+     ],
+     [
+      31,
+      30,
+      28,
+      29,
+      25,
+      33
+     ],
+     [
+      35,
+      30,
+      30,
+      28,
+      30,
+      28
+     ],
+     [
+      34,
+      35,
+      31,
+      32,
+      25,
+      25
+     ],
+     [
+      28,
+      30,
+      32,
+      35,
+      27,
+      29
+     ],
+     [
+      30,
+      29,
+      27,
+      35,
+      35,
+      26
+     ],
+     [
+      35,
+      31,
+      33,
+      25,
+      30,
+      33
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "assignment_limit": {
+    "meaning": "Maximum hours consultant i can work on a single project j (7x6 matrix, rows consultants 0-6, columns projects 0-5). The problem explicitly gives only the first row; the remaining rows are not uniquely specified, and 8 is used here as a placeholder that must be adjusted to actual data if known.",
+    "base": [
+     [
+      8,
+      8,
+      9,
+      10,
+      7,
+      5
+     ],
+     [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ],
+     [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

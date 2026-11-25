@@ -1,0 +1,155 @@
+{
+ "spec": {
+  "min_production": {
+   "base": [
+    64,
+    65,
+    69,
+    70,
+    64,
+    64
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_production": {
+   "base": [
+    158,
+    162,
+    144,
+    164,
+    143,
+    160
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    263,
+    280,
+    255,
+    263,
+    295,
+    293
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "fixed_cost": {
+   "base": [
+    528,
+    596,
+    668,
+    557,
+    689,
+    547
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "variable_cost": {
+   "base": [
+    7,
+    7,
+    12,
+    12,
+    8,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "min_production": {
+    "meaning": "Minimum production per factory if operational (units)",
+    "base": [
+     64,
+     65,
+     69,
+     70,
+     64,
+     64
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_production": {
+    "meaning": "Maximum production capacity per factory (units)",
+    "base": [
+     158,
+     162,
+     144,
+     164,
+     143,
+     160
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand to satisfy (units)",
+    "base": [
+     263,
+     280,
+     255,
+     263,
+     295,
+     293
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "fixed_cost": {
+    "meaning": "Fixed cost per factory per month if operated",
+    "base": [
+     528,
+     596,
+     668,
+     557,
+     689,
+     547
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable cost per unit produced per factory",
+    "base": [
+     7,
+     7,
+     12,
+     12,
+     8,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

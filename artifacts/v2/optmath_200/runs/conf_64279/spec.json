@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "production_cost": {
+   "base": [
+    7,
+    5,
+    4,
+    7,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "fixed_order_cost": {
+   "base": [
+    142,
+    138,
+    122,
+    115,
+    127,
+    143
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 300.0,
+    "integer": false
+   }
+  },
+  "holding_cost": {
+   "base": [
+    2,
+    4,
+    2,
+    2,
+    3,
+    4
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "backlog_cost": {
+   "base": [
+    11,
+    12,
+    10,
+    14,
+    12,
+    15
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "demand": {
+   "base": [
+    79,
+    79,
+    65,
+    65,
+    72,
+    73
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "production_capacity": {
+   "base": 433,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "production_cost": {
+    "meaning": "per-unit production cost by month",
+    "base": [
+     7,
+     5,
+     4,
+     7,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "fixed_order_cost": {
+    "meaning": "fixed cost of placing a production order by month",
+    "base": [
+     142,
+     138,
+     122,
+     115,
+     127,
+     143
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 300,
+     "integer": false
+    }
+   },
+   "holding_cost": {
+    "meaning": "per-unit end-of-month inventory holding cost by month",
+    "base": [
+     2,
+     4,
+     2,
+     2,
+     3,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "backlog_cost": {
+    "meaning": "per-unit backlogging cost by month",
+    "base": [
+     11,
+     12,
+     10,
+     14,
+     12,
+     15
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "demand": {
+    "meaning": "customer demand to be met each month",
+    "base": [
+     79,
+     79,
+     65,
+     65,
+     72,
+     73
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "production_capacity": {
+    "meaning": "maximum production per month if an order is placed",
+    "base": 433,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 600,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "expected_return": [
+    0.0989,
+    0.1486,
+    0.0801,
+    0.0884,
+    0.057,
+    0.0968,
+    0.1343,
+    0.0623,
+    0.0502,
+    0.0638
+   ],
+   "portfolio_return_min": 0.1,
+   "weight_sum_target": 1.0,
+   "weight_upper_bound": 0.3,
+   "weight_lower_bound": 0.0
+  },
+  {
+   "expected_return": [
+    0.1085525172572393,
+    0.09919161875826184,
+    0.06748589388095652,
+    0.07127228047664916,
+    0.0664352014451441,
+    0.10877315726777648,
+    0.17116880115993252,
+    0.04428640249096884,
+    0.047456332743740406,
+    0.04280074382010422
+   ],
+   "portfolio_return_min": 0.07060931647250447,
+   "weight_sum_target": 1.0002142115241346,
+   "weight_upper_bound": 0.17255557423128406,
+   "weight_lower_bound": 0.009941882534332425
+  },
+  {
+   "expected_return": [
+    0.10927649962747639,
+    0.15327481281234662,
+    0.06442510567782186,
+    0.09392376051824125,
+    0.06934627522144529,
+    0.06336035595578542,
+    0.16305006786480228,
+    0.07094085901543658,
+    0.04458640315044224,
+    0.04841371446159416
+   ],
+   "portfolio_return_min": 0.17400983010894935,
+   "weight_sum_target": 0.9934637818045051,
+   "weight_upper_bound": 0.2288339668731257,
+   "weight_lower_bound": 0.004835818841673201
+  },
+  {
+   "expected_return": [
+    0.12295703498223465,
+    0.15938958178278403,
+    0.0973206822824945,
+    0.10261580296061347,
+    0.05844550084904256,
+    0.12885832416724216,
+    0.12288101680135732,
+    0.06456949192982545,
+    0.06177527990185024,
+    0.06909309214058723
+   ],
+   "portfolio_return_min": 0.1606389660435088,
+   "weight_sum_target": 1.0030940858102704,
+   "weight_upper_bound": 0.7488860607826849,
+   "weight_lower_bound": 0.002291219182783111
+  },
+  {
+   "expected_return": [
+    0.0800623976233566,
+    0.1266921359738912,
+    0.056538936146107804,
+    0.07186510004802055,
+    0.041079957033448196,
+    0.08175549134673984,
+    0.14705569460529627,
+    0.05640533132488538,
+    0.045638159184487256,
+    0.05082658399425464
+   ],
+   "portfolio_return_min": 0.07737689508687587,
+   "weight_sum_target": 1.0174661835084997,
+   "weight_upper_bound": 0.7008300774596046,
+   "weight_lower_bound": 0.030456550283349412
+  },
+  {
+   "expected_return": [
+    0.07613292861475426,
+    0.17243376952279535,
+    0.06122697782523133,
+    0.08094070273596325,
+    0.07653198169040017,
+    0.10628638372771333,
+    0.1396538454122545,
+    0.07035102748566843,
+    0.06224781647546991,
+    0.0761261560496553
+   ],
+   "portfolio_return_min": 0.0720667300749746,
+   "weight_sum_target": 0.9812840097561615,
+   "weight_upper_bound": 0.4181350908502196,
+   "weight_lower_bound": 0.013387043798785137
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   0.0,
+   0.0010062016683634045,
+   null,
+   null,
+   0.009442982813551106,
+   0.001824387746206622
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   0.0006746006172209821,
+   0.0006676557206873938,
+   null,
+   null,
+   0.0006565287791994837,
+   0.0006805535115791478
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "missing_covariance",
+   "missing_covariance",
+   "missing_covariance",
+   "missing_covariance",
+   "missing_covariance",
+   "missing_covariance"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 4, 5]",
+  "B-structured vs C-direct: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

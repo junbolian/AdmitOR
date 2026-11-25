@@ -1,0 +1,157 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "availability": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    5
+   ],
+   "demand": [
+    276,
+    208,
+    286,
+    297,
+    263,
+    263,
+    280
+   ],
+   "capacity": [
+    [
+     95,
+     88,
+     80,
+     80,
+     87,
+     109,
+     110
+    ],
+    [
+     105,
+     119,
+     99,
+     112,
+     114,
+     89,
+     112
+    ]
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"candidate.py\", line 64, in to_matrix | raise ValueError(\"Unsupported matrix structure for capacity/cost.\") | ValueError: Unsupported matrix structure for capacity/cost.",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:cost = params[\"cost\"] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "missing_parameter",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "missing_cost",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:File \"candidate.py\", line 17, in solve | raise KeyError(f\"No cost key found in params. Available keys: {list(params.keys())}\") | KeyError: \"No cost key found in params. Available keys: ['availability'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "crash:cost_matrix = params[\"cost\"]           # 2D: cost[i][j] | ~~~~~~^^^^^^^^ | KeyError: 'cost'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,330 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assignment_value": 1,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference": [
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "assignment_value": 1.1394267984578836,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference": [
+    [
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "assignment_value": 1.3474943663474597,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "assignment_value": 0.671138648198097,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "assignment_value": 0.8994005051403973,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference": [
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0
+    ]
+   ]
+  },
+  {
+   "assignment_value": 1.0005861130502982,
+   "participant_capacity": 1,
+   "car_capacity": 1,
+   "preference": [
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   5.697133992289418,
+   5.389977465389839,
+   3.355693240990485,
+   4.497002525701986,
+   5.002930565251491
+  ],
+  "B-structured": [
+   3.0,
+   5.697133992289418,
+   5.389977465389839,
+   3.355693240990485,
+   4.497002525701986,
+   5.002930565251491
+  ],
+  "C-direct": [
+   3.0,
+   5.697133992289418,
+   5.389977465389839,
+   3.355693240990485,
+   4.497002525701986,
+   5.002930565251491
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

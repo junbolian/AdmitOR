@@ -1,0 +1,79 @@
+{
+ "spec": {
+  "preference": {
+   "base": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference": {
+    "meaning": "Binary preference matrix: preference[i][j] = 1 if participant i is willing to drive car j, else 0",
+    "base": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

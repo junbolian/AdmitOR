@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    103636,
+    104858,
+    103025,
+    103401,
+    95101
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    210,
+    190,
+    185,
+    189,
+    204,
+    200,
+    216,
+    201,
+    186,
+    213
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shipping_cost": {
+   "base": [
+    [
+     29,
+     28,
+     35,
+     25,
+     32,
+     29,
+     28,
+     27,
+     25,
+     30
+    ],
+    [
+     27,
+     30,
+     28,
+     35,
+     32,
+     26,
+     25,
+     32,
+     35,
+     26
+    ],
+    [
+     32,
+     26,
+     31,
+     28,
+     29,
+     31,
+     32,
+     34,
+     28,
+     32
+    ],
+    [
+     27,
+     34,
+     25,
+     29,
+     28,
+     31,
+     27,
+     31,
+     30,
+     32
+    ],
+    [
+     30,
+     25,
+     32,
+     32,
+     35,
+     30,
+     33,
+     26,
+     25,
+     33
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    1022,
+    1039,
+    956,
+    989,
+    958
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "fixed operating cost of each distribution center if opened",
+    "base": [
+     103636,
+     104858,
+     103025,
+     103401,
+     95101
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "product demand of each retail store (units)",
+    "base": [
+     210,
+     190,
+     185,
+     189,
+     204,
+     200,
+     216,
+     201,
+     186,
+     213
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shipping_cost": {
+    "meaning": "cost per unit shipped from each facility (rows) to each customer (columns)",
+    "base": [
+     [
+      29,
+      28,
+      35,
+      25,
+      32,
+      29,
+      28,
+      27,
+      25,
+      30
+     ],
+     [
+      27,
+      30,
+      28,
+      35,
+      32,
+      26,
+      25,
+      32,
+      35,
+      26
+     ],
+     [
+      32,
+      26,
+      31,
+      28,
+      29,
+      31,
+      32,
+      34,
+      28,
+      32
+     ],
+     [
+      27,
+      34,
+      25,
+      29,
+      28,
+      31,
+      27,
+      31,
+      30,
+      32
+     ],
+     [
+      30,
+      25,
+      32,
+      32,
+      35,
+      30,
+      33,
+      26,
+      25,
+      33
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "maximum total units shippable from each distribution center",
+    "base": [
+     1022,
+     1039,
+     956,
+     989,
+     958
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

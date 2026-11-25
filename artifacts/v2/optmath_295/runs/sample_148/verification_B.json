@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_148",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity\",\"evidence\":\"Each aircraft type has a specific capacity contribution when assigned to a route. For example:\"},{\"parameter\":\"cost\",\"evidence\":\"Assigning an aircraft to a route incurs a specific cost. For example:\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "Each aircraft type has a specific capacity contribution when assigned to a route. For example:"
+  },
+  {
+   "parameter": "cost",
+   "evidence": "Assigning an aircraft to a route incurs a specific cost. For example:"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

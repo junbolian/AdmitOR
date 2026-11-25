@@ -1,0 +1,246 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit": [
+    [
+     8,
+     10
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     8,
+     5
+    ]
+   ],
+   "demand": [
+    23,
+    20
+   ]
+  },
+  {
+   "profit": [
+    [
+     10,
+     0
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     11,
+     10
+    ],
+    [
+     13,
+     1
+    ],
+    [
+     6,
+     0
+    ]
+   ],
+   "demand": [
+    17,
+    25
+   ]
+  },
+  {
+   "profit": [
+    [
+     0,
+     3
+    ],
+    [
+     10,
+     8
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     12,
+     0
+    ],
+    [
+     12,
+     10
+    ]
+   ],
+   "demand": [
+    20,
+    15
+   ]
+  },
+  {
+   "profit": [
+    [
+     14,
+     5
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     13,
+     9
+    ],
+    [
+     12,
+     11
+    ],
+    [
+     8,
+     15
+    ]
+   ],
+   "demand": [
+    21,
+    27
+   ]
+  },
+  {
+   "profit": [
+    [
+     12,
+     9
+    ],
+    [
+     13,
+     9
+    ],
+    [
+     11,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "demand": [
+    13,
+    18
+   ]
+  },
+  {
+   "profit": [
+    [
+     10,
+     5
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     4,
+     14
+    ],
+    [
+     10,
+     9
+    ],
+    [
+     3,
+     11
+    ]
+   ],
+   "demand": [
+    15,
+    21
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   384.0,
+   471.0,
+   390.0,
+   699.0,
+   331.0,
+   444.0
+  ],
+  "B-structured": [
+   384.0,
+   471.0,
+   390.0,
+   699.0,
+   331.0,
+   444.0
+  ],
+  "C-direct": [
+   384.0,
+   471.0,
+   390.0,
+   699.0,
+   331.0,
+   444.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

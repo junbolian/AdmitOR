@@ -1,0 +1,61 @@
+{
+ "sample_id": "conf_55001",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"objective_weight_per_assignment\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"participant_0_capacity\", \"evidence\": \"Each participant can be assigned to at most one car.\"}, {\"parameter\": \"participant_1_capacity\", \"evidence\": \"Each participant can be assigned to at most one car.\"}, {\"parameter\": \"participant_2_capacity\", \"evidence\": \"Each participant can be assigned to at most one car.\"}, {\"parameter\": \"participant_3_capacity\", \"evidence\": \"Each participant can be assigned to at most one car.\"}, {\"parameter\": \"participant_4_capacity\", \"evidence\": \"Each participant can be assigned to at most one car.\"}, {\"parameter\": \"car_0_capacity\", \"evidence\": \"Each car can be assigned to at most one participant.\"}, {\"parameter\": \"car_1_capacity\", \"evidence\": \"Each car can be assigned to at most one participant.\"}, {\"parameter\": \"car_2_capacity\", \"evidence\": \"Each car can be assigned to at most one participant.\"}, {\"parameter\": \"car_3_capacity\", \"evidence\": \"Each car can be assigned to at most one participant.\"}, {\"parameter\": \"car_4_capacity\", \"evidence\": \"Each car can be assigned to at most one participant.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "objective_weight_per_assignment",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "participant_0_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "participant_1_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "participant_2_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "participant_3_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "participant_4_capacity",
+   "evidence": "Each participant can be assigned to at most one car."
+  },
+  {
+   "parameter": "car_0_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  },
+  {
+   "parameter": "car_1_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  },
+  {
+   "parameter": "car_2_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  },
+  {
+   "parameter": "car_3_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  },
+  {
+   "parameter": "car_4_capacity",
+   "evidence": "Each car can be assigned to at most one participant."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

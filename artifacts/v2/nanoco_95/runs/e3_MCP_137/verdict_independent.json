@@ -1,0 +1,367 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "durations": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "interference_edges": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  {
+   "durations": [
+    4,
+    1,
+    2,
+    2,
+    5,
+    4,
+    5,
+    1
+   ],
+   "interference_edges": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    1,
+    1,
+    5,
+    4,
+    5,
+    5,
+    4,
+    6
+   ],
+   "interference_edges": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    6,
+    4,
+    4,
+    2,
+    5,
+    2,
+    3
+   ],
+   "interference_edges": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    2,
+    4,
+    2,
+    4,
+    5,
+    3,
+    2
+   ],
+   "interference_edges": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "durations": [
+    2,
+    4,
+    2,
+    3,
+    3,
+    6,
+    5,
+    2
+   ],
+   "interference_edges": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "crash:return m.start[i] + durations[i] <= m.start[j] + m.M * (1 - m.y[i, j]) | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:return m.start[i] + durations[i] <= m.start[j] + m.M * (1 - m.y[i, j]) | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:return m.start[i] + durations[i] <= m.start[j] + m.M * (1 - m.y[i, j]) | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:return m.start[i] + durations[i] <= m.start[j] + m.M * (1 - m.y[i, j]) | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:return m.start[i] + durations[i] <= m.start[j] + m.M * (1 - m.y[i, j]) | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_solution",
+   "no_solution",
+   "no_solution",
+   "no_solution",
+   "no_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "crash:start[i] + durations[i] <= start[j] + T_ub * (1 - b[(i, j)]), | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:start[i] + durations[i] <= start[j] + T_ub * (1 - b[(i, j)]), | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:start[i] + durations[i] <= start[j] + T_ub * (1 - b[(i, j)]), | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:start[i] + durations[i] <= start[j] + T_ub * (1 - b[(i, j)]), | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float",
+   "crash:start[i] + durations[i] <= start[j] + T_ub * (1 - b[(i, j)]), | ~~~~~~~~~^^^ | TypeError: list indices must be integers or slices, not float"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

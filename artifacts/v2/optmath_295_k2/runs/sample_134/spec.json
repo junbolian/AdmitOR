@@ -1,0 +1,403 @@
+{
+ "spec": {
+  "availability": {
+   "base": [
+    15,
+    13,
+    13,
+    13,
+    13,
+    14,
+    14
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    212,
+    226,
+    224,
+    216,
+    229,
+    200,
+    205
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     1910,
+     1999,
+     1950,
+     1970,
+     1930,
+     1960,
+     1940
+    ],
+    [
+     1907,
+     1980,
+     1960,
+     1940,
+     1950,
+     1970,
+     1930
+    ],
+    [
+     1920,
+     1975,
+     1945,
+     1965,
+     1925,
+     1955,
+     1935
+    ],
+    [
+     1915,
+     1985,
+     1955,
+     1975,
+     1935,
+     1965,
+     1945
+    ],
+    [
+     1925,
+     1990,
+     1965,
+     1980,
+     1940,
+     1970,
+     1950
+    ],
+    [
+     1930,
+     1995,
+     1970,
+     1985,
+     1945,
+     1975,
+     1955
+    ],
+    [
+     1935,
+     2000,
+     1975,
+     1990,
+     1950,
+     1980,
+     1960
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capability": {
+   "base": [
+    [
+     129,
+     127,
+     130,
+     128,
+     126,
+     131,
+     129
+    ],
+    [
+     125,
+     128,
+     130,
+     127,
+     129,
+     126,
+     128
+    ],
+    [
+     128,
+     126,
+     129,
+     131,
+     127,
+     130,
+     125
+    ],
+    [
+     130,
+     129,
+     127,
+     126,
+     131,
+     128,
+     129
+    ],
+    [
+     127,
+     130,
+     128,
+     129,
+     125,
+     131,
+     127
+    ],
+    [
+     126,
+     127,
+     131,
+     130,
+     128,
+     129,
+     126
+    ],
+    [
+     131,
+     125,
+     126,
+     128,
+     130,
+     127,
+     130
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "num_aircraft_types": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_routes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_aircraft_types] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_routes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "availability": {
+    "meaning": "Maximum number of aircraft of each type that may be assigned (per type, index 0..6)",
+    "base": [
+     15,
+     13,
+     13,
+     13,
+     13,
+     14,
+     14
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Minimum capability units required by each route (index 0..6)",
+    "base": [
+     212,
+     226,
+     224,
+     216,
+     229,
+     200,
+     205
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost": {
+    "meaning": "Operational cost of assigning one aircraft of a type to a route (rows: aircraft 0..6, cols: routes 0..6). Values beyond the three explicitly stated entries are representative placeholders because the full cost matrix is not provided.",
+    "base": [
+     [
+      1910,
+      1999,
+      1950,
+      1970,
+      1930,
+      1960,
+      1940
+     ],
+     [
+      1907,
+      1980,
+      1960,
+      1940,
+      1950,
+      1970,
+      1930
+     ],
+     [
+      1920,
+      1975,
+      1945,
+      1965,
+      1925,
+      1955,
+      1935
+     ],
+     [
+      1915,
+      1985,
+      1955,
+      1975,
+      1935,
+      1965,
+      1945
+     ],
+     [
+      1925,
+      1990,
+      1965,
+      1980,
+      1940,
+      1970,
+      1950
+     ],
+     [
+      1930,
+      1995,
+      1970,
+      1985,
+      1945,
+      1975,
+      1955
+     ],
+     [
+      1935,
+      2000,
+      1975,
+      1990,
+      1950,
+      1980,
+      1960
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capability": {
+    "meaning": "Capability units contributed by one aircraft of a type to a route (rows: aircraft 0..6, cols: routes 0..6). Values beyond the first few stated entries are representative placeholders because the full capability matrix is not provided.",
+    "base": [
+     [
+      129,
+      127,
+      130,
+      128,
+      126,
+      131,
+      129
+     ],
+     [
+      125,
+      128,
+      130,
+      127,
+      129,
+      126,
+      128
+     ],
+     [
+      128,
+      126,
+      129,
+      131,
+      127,
+      130,
+      125
+     ],
+     [
+      130,
+      129,
+      127,
+      126,
+      131,
+      128,
+      129
+     ],
+     [
+      127,
+      130,
+      128,
+      129,
+      125,
+      131,
+      127
+     ],
+     [
+      126,
+      127,
+      131,
+      130,
+      128,
+      129,
+      126
+     ],
+     [
+      131,
+      125,
+      126,
+      128,
+      130,
+      127,
+      130
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "num_aircraft_types": {
+    "meaning": "Number of aircraft types (index-set size; frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_routes": {
+    "meaning": "Number of routes (index-set size; frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

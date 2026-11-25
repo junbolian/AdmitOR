@@ -1,0 +1,351 @@
+{
+ "spec": {
+  "num_trucks": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_required_segments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "truck_capacity": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "demand_segment_0_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "demand_segment_0_6": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "demand_segment_2_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "demand_segment_2_4": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "coord_x": {
+   "base": [
+    50,
+    47,
+    85,
+    67,
+    19,
+    20,
+    66
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "coord_y": {
+   "base": [
+    50,
+    13,
+    78,
+    76,
+    56,
+    17,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     37,
+     45,
+     31,
+     32,
+     45,
+     49
+    ],
+    [
+     37,
+     0,
+     75,
+     66,
+     51,
+     27,
+     21
+    ],
+    [
+     45,
+     75,
+     0,
+     18,
+     70,
+     89,
+     76
+    ],
+    [
+     31,
+     66,
+     18,
+     0,
+     52,
+     75,
+     72
+    ],
+    [
+     32,
+     51,
+     70,
+     52,
+     0,
+     39,
+     70
+    ],
+    [
+     45,
+     27,
+     89,
+     75,
+     39,
+     0,
+     48
+    ],
+    [
+     49,
+     21,
+     76,
+     72,
+     70,
+     48,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [
+  "[num_trucks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_segments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_trucks": {
+    "meaning": "Number of mail collection trucks in the fleet",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_required_segments": {
+    "meaning": "Number of mandatory service segments (drop box connections) to be covered exactly once",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "truck_capacity": {
+    "meaning": "Maximum cargo capacity per truck (sum of demands of segments served must not exceed this)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "demand_segment_0_2": {
+    "meaning": "Mail volume demand on required segment (0,2)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "demand_segment_0_6": {
+    "meaning": "Mail volume demand on required segment (0,6)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "demand_segment_2_3": {
+    "meaning": "Mail volume demand on required segment (2,3)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "demand_segment_2_4": {
+    "meaning": "Mail volume demand on required segment (2,4)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "coord_x": {
+    "meaning": "X-coordinates of nodes 0 through 6",
+    "base": [
+     50,
+     47,
+     85,
+     67,
+     19,
+     20,
+     66
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "coord_y": {
+    "meaning": "Y-coordinates of nodes 0 through 6",
+    "base": [
+     50,
+     13,
+     78,
+     76,
+     56,
+     17,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "distance_matrix": {
+    "meaning": "7x7 symmetric shortest-path travel distance matrix between all node pairs (rows 0..6)",
+    "base": [
+     [
+      0,
+      37,
+      45,
+      31,
+      32,
+      45,
+      49
+     ],
+     [
+      37,
+      0,
+      75,
+      66,
+      51,
+      27,
+      21
+     ],
+     [
+      45,
+      75,
+      0,
+      18,
+      70,
+      89,
+      76
+     ],
+     [
+      31,
+      66,
+      18,
+      0,
+      52,
+      75,
+      72
+     ],
+     [
+      32,
+      51,
+      70,
+      52,
+      0,
+      39,
+      70
+     ],
+     [
+      45,
+      27,
+      89,
+      75,
+      39,
+      0,
+      48
+     ],
+     [
+      49,
+      21,
+      76,
+      72,
+      70,
+      48,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

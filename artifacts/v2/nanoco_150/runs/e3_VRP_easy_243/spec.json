@@ -1,0 +1,287 @@
+{
+ "spec": {
+  "coordinates": {
+   "base": [
+    [
+     50,
+     50
+    ],
+    [
+     91,
+     71
+    ],
+    [
+     88,
+     28
+    ],
+    [
+     36,
+     39
+    ],
+    [
+     85,
+     51
+    ],
+    [
+     93,
+     90
+    ],
+    [
+     12,
+     89
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     46,
+     44,
+     18,
+     35,
+     59,
+     54
+    ],
+    [
+     46,
+     0,
+     43,
+     64,
+     21,
+     19,
+     81
+    ],
+    [
+     44,
+     43,
+     0,
+     53,
+     23,
+     62,
+     97
+    ],
+    [
+     18,
+     53,
+     50,
+     0,
+     50,
+     76,
+     55
+    ],
+    [
+     35,
+     21,
+     23,
+     50,
+     0,
+     40,
+     82
+    ],
+    [
+     59,
+     19,
+     62,
+     76,
+     40,
+     0,
+     81
+    ],
+    [
+     54,
+     81,
+     97,
+     55,
+     82,
+     81,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "num_collection_points": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_collection_points] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "coordinates": {
+    "meaning": "Node coordinates [x,y]; Node 0 is depot, Nodes 1-6 are collection points (length frozen)",
+    "base": [
+     [
+      50,
+      50
+     ],
+     [
+      91,
+      71
+     ],
+     [
+      88,
+      28
+     ],
+     [
+      36,
+      39
+     ],
+     [
+      85,
+      51
+     ],
+     [
+      93,
+      90
+     ],
+     [
+      12,
+      89
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "distance_matrix": {
+    "meaning": "Symmetric travel distance between all node pairs (7x7 matrix); vehicles route on these distances",
+    "base": [
+     [
+      0,
+      46,
+      44,
+      18,
+      35,
+      59,
+      54
+     ],
+     [
+      46,
+      0,
+      43,
+      64,
+      21,
+      19,
+      81
+     ],
+     [
+      44,
+      43,
+      0,
+      53,
+      23,
+      62,
+      97
+     ],
+     [
+      18,
+      53,
+      50,
+      0,
+      50,
+      76,
+      55
+     ],
+     [
+      35,
+      21,
+      23,
+      50,
+      0,
+      40,
+      82
+     ],
+     [
+      59,
+      19,
+      62,
+      76,
+      40,
+      0,
+      81
+     ],
+     [
+      54,
+      81,
+      97,
+      55,
+      82,
+      81,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "num_vehicles": {
+    "meaning": "Maximum number of identical garbage trucks available (fleet utilization cap)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "Total nodes including depot (index set size; frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "num_collection_points": {
+    "meaning": "Number of collection points to serve exactly once (index set size; frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

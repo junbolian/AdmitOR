@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "p_0_1": {
+   "base": 33,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "p_0_0": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "p_0_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "p_1_1": {
+   "base": 46,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  },
+  "p_1_0": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 75.0,
+    "integer": true
+   }
+  },
+  "p_1_2": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 32.0,
+    "integer": true
+   }
+  },
+  "p_2_1": {
+   "base": 26,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "p_2_0": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "p_2_2": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "p_0_1": {
+    "meaning": "processing time of lot L0 on Tool 1 (first step)",
+    "base": 33,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "p_0_0": {
+    "meaning": "processing time of lot L0 on Tool 0 (second step)",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "p_0_2": {
+    "meaning": "processing time of lot L0 on Tool 2 (third step)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "p_1_1": {
+    "meaning": "processing time of lot L1 on Tool 1 (first step)",
+    "base": 46,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 70,
+     "integer": true
+    }
+   },
+   "p_1_0": {
+    "meaning": "processing time of lot L1 on Tool 0 (second step)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 75,
+     "integer": true
+    }
+   },
+   "p_1_2": {
+    "meaning": "processing time of lot L1 on Tool 2 (third step)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 32,
+     "integer": true
+    }
+   },
+   "p_2_1": {
+    "meaning": "processing time of lot L2 on Tool 1 (first step)",
+    "base": 26,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "p_2_0": {
+    "meaning": "processing time of lot L2 on Tool 0 (second step)",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "p_2_2": {
+    "meaning": "processing time of lot L2 on Tool 2 (third step)",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

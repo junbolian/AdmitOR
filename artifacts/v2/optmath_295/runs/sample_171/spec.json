@@ -1,0 +1,348 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    665,
+    189,
+    156,
+    186,
+    121,
+    173
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    135,
+    198,
+    135,
+    234,
+    183,
+    196,
+    218,
+    191
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     49,
+     38,
+     42,
+     47,
+     47,
+     47,
+     44,
+     35
+    ],
+    [
+     49,
+     29,
+     49,
+     26,
+     42,
+     28,
+     32,
+     49
+    ],
+    [
+     38,
+     34,
+     37,
+     29,
+     25,
+     43,
+     50,
+     48
+    ],
+    [
+     31,
+     31,
+     27,
+     34,
+     30,
+     29,
+     46,
+     37
+    ],
+    [
+     29,
+     48,
+     36,
+     38,
+     45,
+     45,
+     50,
+     27
+    ],
+    [
+     40,
+     48,
+     48,
+     45,
+     47,
+     34,
+     50,
+     44
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     182,
+     152,
+     131,
+     181,
+     233,
+     197,
+     205,
+     160
+    ],
+    [
+     217,
+     150,
+     146,
+     202,
+     200,
+     178,
+     173,
+     142
+    ],
+    [
+     128,
+     184,
+     131,
+     137,
+     236,
+     209,
+     229,
+     238
+    ],
+    [
+     136,
+     127,
+     147,
+     232,
+     199,
+     128,
+     164,
+     131
+    ],
+    [
+     141,
+     216,
+     237,
+     152,
+     129,
+     165,
+     164,
+     127
+    ],
+    [
+     148,
+     188,
+     137,
+     142,
+     232,
+     238,
+     130,
+     167
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "units of goods available at each warehouse (origin) 0..5",
+    "base": [
+     665,
+     189,
+     156,
+     186,
+     121,
+     173
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "units of goods required by each retail store (destination) 0..7",
+    "base": [
+     135,
+     198,
+     135,
+     234,
+     183,
+     196,
+     218,
+     191
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "transportation cost per unit from warehouse i (row) to retail store j (column)",
+    "base": [
+     [
+      49,
+      38,
+      42,
+      47,
+      47,
+      47,
+      44,
+      35
+     ],
+     [
+      49,
+      29,
+      49,
+      26,
+      42,
+      28,
+      32,
+      49
+     ],
+     [
+      38,
+      34,
+      37,
+      29,
+      25,
+      43,
+      50,
+      48
+     ],
+     [
+      31,
+      31,
+      27,
+      34,
+      30,
+      29,
+      46,
+      37
+     ],
+     [
+      29,
+      48,
+      36,
+      38,
+      45,
+      45,
+      50,
+      27
+     ],
+     [
+      40,
+      48,
+      48,
+      45,
+      47,
+      34,
+      50,
+      44
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    },
+    "note": "absolute lower bound implicitly 0; negative costs are not economically plausible for per-unit transport"
+   },
+   "capacity": {
+    "meaning": "maximum units shippable from warehouse i (row) to retail store j (column)",
+    "base": [
+     [
+      182,
+      152,
+      131,
+      181,
+      233,
+      197,
+      205,
+      160
+     ],
+     [
+      217,
+      150,
+      146,
+      202,
+      200,
+      178,
+      173,
+      142
+     ],
+     [
+      128,
+      184,
+      131,
+      137,
+      236,
+      209,
+      229,
+      238
+     ],
+     [
+      136,
+      127,
+      147,
+      232,
+      199,
+      128,
+      164,
+      131
+     ],
+     [
+      141,
+      216,
+      237,
+      152,
+      129,
+      165,
+      164,
+      127
+     ],
+     [
+      148,
+      188,
+      137,
+      142,
+      232,
+      238,
+      130,
+      167
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    },
+    "note": "capacities must stay positive and on same order as lane demands; large cuts can force infeasibility or activate capacity constraints/binding"
+   }
+  },
+  "objective_sense": "min"
+ }
+}

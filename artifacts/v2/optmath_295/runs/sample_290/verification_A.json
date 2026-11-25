@@ -1,0 +1,41 @@
+{
+ "sample_id": "sample_290",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"transport_cost_00\", \"evidence\": \"Shipping from Facility 0 to Customer 0 costs $66 per unit. ... Similar costs apply for all other combinations of facilities and customers.\"}, {\"parameter\": \"transport_cost_11\", \"evidence\": \"Shipping from Facility 1 to Customer 1 costs $63 per unit. ... Similar costs apply for all other combinations of facilities and customers.\"}, {\"parameter\": \"transport_cost_22\", \"evidence\": \"Shipping from Facility 2 to Customer 2 costs $61 per unit. ... Similar costs apply for all other combinations of facilities and customers.\"}, {\"parameter\": \"transport_cost_33\", \"evidence\": \"Shipping from Facility 3 to Customer 3 costs $70 per unit. ... Similar costs apply for all other combinations of facilities and customers.\"}, {\"parameter\": \"transport_cost_44\", \"evidence\": \"Shipping from Facility 4 to Customer 4 costs $64 per unit. ... Similar costs apply for all other combinations of facilities and customers.\"}, {\"parameter\": \"transport_cost_55\", \"evidence\": \"Shipping from Facility 5 to Customer 5 costs $63 per unit. ... Similar costs apply for all other combinations of facilities and customers.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost_00",
+   "evidence": "Shipping from Facility 0 to Customer 0 costs $66 per unit. ... Similar costs apply for all other combinations of facilities and customers."
+  },
+  {
+   "parameter": "transport_cost_11",
+   "evidence": "Shipping from Facility 1 to Customer 1 costs $63 per unit. ... Similar costs apply for all other combinations of facilities and customers."
+  },
+  {
+   "parameter": "transport_cost_22",
+   "evidence": "Shipping from Facility 2 to Customer 2 costs $61 per unit. ... Similar costs apply for all other combinations of facilities and customers."
+  },
+  {
+   "parameter": "transport_cost_33",
+   "evidence": "Shipping from Facility 3 to Customer 3 costs $70 per unit. ... Similar costs apply for all other combinations of facilities and customers."
+  },
+  {
+   "parameter": "transport_cost_44",
+   "evidence": "Shipping from Facility 4 to Customer 4 costs $64 per unit. ... Similar costs apply for all other combinations of facilities and customers."
+  },
+  {
+   "parameter": "transport_cost_55",
+   "evidence": "Shipping from Facility 5 to Customer 5 costs $63 per unit. ... Similar costs apply for all other combinations of facilities and customers."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

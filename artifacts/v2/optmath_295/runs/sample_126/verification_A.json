@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_126",
+ "set": "stream",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"cost\", \"evidence\": \"Producer 0 incurs a cost of 50 units per unit of electricity to Contract 0, 48 units for Contract 1, and so on, up to 44 units for Contract 6. Similarly, Producer 4 has costs ranging from 42 units for Contract 0 to 44 units for Contract 6.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost",
+   "evidence": "Producer 0 incurs a cost of 50 units per unit of electricity to Contract 0, 48 units for Contract 1, and so on, up to 44 units for Contract 6. Similarly, Producer 4 has costs ranging from 42 units for Contract 0 to 44 units for Contract 6."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

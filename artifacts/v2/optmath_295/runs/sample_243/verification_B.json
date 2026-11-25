@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_243",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"expected_returns\",\"evidence\":\"Each asset has a specific expected return\"},{\"parameter\":\"covariance_matrix\",\"evidence\":\"For example, Asset 0 and Asset 1 have a covariance of 0.0758 ... Asset 0 and Asset 2 have a covariance of -0.0093\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "expected_returns",
+   "evidence": "Each asset has a specific expected return"
+  },
+  {
+   "parameter": "covariance_matrix",
+   "evidence": "For example, Asset 0 and Asset 1 have a covariance of 0.0758 ... Asset 0 and Asset 2 have a covariance of -0.0093"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

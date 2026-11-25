@@ -1,0 +1,204 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "base_cost_type0": 90,
+   "base_cost_type1": 89,
+   "var_cost": 3,
+   "startup_cost_type0": 384,
+   "startup_cost_type1": 388,
+   "demand": [
+    198,
+    202,
+    198,
+    203
+   ],
+   "min_output_type0": 30,
+   "max_output_type0": 150,
+   "min_output_type1": 29,
+   "max_output_type1": 149,
+   "reserve_margin": 0.15,
+   "max_operating_type0": 5,
+   "max_operating_type1": 3,
+   "type1_initial_slack": 2
+  },
+  {
+   "base_cost_type0": 93.76452355836287,
+   "base_cost_type1": 76.3177871644452,
+   "var_cost": 2.3250879551073576,
+   "startup_cost_type0": 330.856461724574,
+   "startup_cost_type1": 433.8754155478184,
+   "demand": [
+    204.99729970194727,
+    217.84405453527577,
+    181.6427777721249,
+    199.830025879222
+   ],
+   "min_output_type0": 25.76817497494263,
+   "max_output_type0": 141.5591392441081,
+   "min_output_type1": 29.046591006499252,
+   "max_output_type1": 134.89077189657914,
+   "reserve_margin": 0.10482564760299727,
+   "max_operating_type0": 5,
+   "max_operating_type1": 3,
+   "type1_initial_slack": 2
+  },
+  {
+   "base_cost_type0": 92.41017346464953,
+   "base_cost_type1": 97.26179319329796,
+   "var_cost": 1.519496279034183,
+   "startup_cost_type0": 442.7172963518991,
+   "startup_cost_type1": 426.439042627716,
+   "demand": [
+    191.67392045411248,
+    188.08137179239597,
+    216.10563765938855,
+    196.36573853157265
+   ],
+   "min_output_type0": 26.33471259042133,
+   "max_output_type0": 137.90149130500393,
+   "min_output_type1": 32.0232009872229,
+   "max_output_type1": 152.09103573473334,
+   "reserve_margin": 0.196069240991157,
+   "max_operating_type0": 5,
+   "max_operating_type1": 3,
+   "type1_initial_slack": 2
+  },
+  {
+   "base_cost_type0": 86.72042818462555,
+   "base_cost_type1": 90.38948485499516,
+   "var_cost": 3.9882139927589844,
+   "startup_cost_type0": 406.7557924539352,
+   "startup_cost_type1": 458.1711386602908,
+   "demand": [
+    201.0631449521678,
+    210.26470218308293,
+    180.01464559276423,
+    191.9526699914528
+   ],
+   "min_output_type0": 28.104491672418963,
+   "max_output_type0": 137.39375930770885,
+   "min_output_type1": 26.675280711340964,
+   "max_output_type1": 137.10984259640992,
+   "reserve_margin": 0.11669604046651381,
+   "max_operating_type0": 5,
+   "max_operating_type1": 3,
+   "type1_initial_slack": 2
+  },
+  {
+   "base_cost_type0": 82.15668983083017,
+   "base_cost_type1": 82.77830784871132,
+   "var_cost": 4.309963763137482,
+   "startup_cost_type0": 412.4227939673459,
+   "startup_cost_type1": 409.17141509939574,
+   "demand": [
+    184.97709046864463,
+    211.25672263719412,
+    184.67073875297237,
+    198.10589093536052
+   ],
+   "min_output_type0": 34.40571015572936,
+   "max_output_type0": 154.19999279562282,
+   "min_output_type1": 29.495462770839417,
+   "max_output_type1": 154.50150467949828,
+   "reserve_margin": 0.20142778802847144,
+   "max_operating_type0": 5,
+   "max_operating_type1": 3,
+   "type1_initial_slack": 2
+  },
+  {
+   "base_cost_type0": 85.01723229759521,
+   "base_cost_type1": 82.79868138855126,
+   "var_cost": 2.1329485307589793,
+   "startup_cost_type0": 469.03866515233045,
+   "startup_cost_type1": 461.01531953569776,
+   "demand": [
+    190.66124407961973,
+    208.27972207791316,
+    193.86702328200232,
+    219.83063214346606
+   ],
+   "min_output_type0": 29.629666673286586,
+   "max_output_type0": 142.9464049949416,
+   "min_output_type1": 26.795659316937655,
+   "max_output_type1": 150.8287703980619,
+   "reserve_margin": 0.11441124127844028,
+   "max_operating_type0": 5,
+   "max_operating_type1": 3,
+   "type1_initial_slack": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3115.0,
+   2480.643457944593,
+   1981.8798203887663,
+   3847.064607258168,
+   4019.7332423382545,
+   2395.705805051875
+  ],
+  "B-structured": [
+   3115.0,
+   2480.643457944593,
+   1981.8798203887663,
+   3847.064607258168,
+   4019.7332423382545,
+   2395.705805051875
+  ],
+  "C-direct": [
+   3115.0,
+   2480.643457944593,
+   1981.8798203887661,
+   3847.064607258168,
+   4019.7332423382545,
+   2395.7058050518744
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

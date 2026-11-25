@@ -1,0 +1,16 @@
+{
+ "sample_id": "sample_101",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each extracted value against the statement:\n\n**coverage_scores**: The statement lists 20 ordered pairs explicitly. Comparing the extracted array (in the order the statement lists them) against the stated values:\n\nStatement order and values:\n(0,1)=24, (0,2)=21, (0,3)=16, (0,4)=20,\n(1,0)=20, (1,2)=16, (1,3)=20, (1,4)=22,\n(2,0)=17, (2,1)=24, (2,2) skipped, (2,3)=24, (2,4)=20,\n(3,0)=24, (3,1)=18, (3,2)=22, (3,3) skipped, (3,4)=25,\n(4,0)=22, (4,1)=25, (4,2)=19, (4,3)=16\n\nThat gives: [24,21,16,20, 20,16,20,22, 17,24,24,20, 24,18,22,25, 22,25,19,16] — matches exactly.\n\n**num_centers**: Stated explicitly as 3.\n\nBoth parameters match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

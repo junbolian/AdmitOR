@@ -1,0 +1,142 @@
+{
+ "spec": {
+  "durations": {
+   "base": [
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "interference_edges": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[interference_edges] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "durations": {
+    "meaning": "transmission duration required by each device (index 0..7)",
+    "base": [
+     3,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "interference_edges": {
+    "meaning": "set of device pairs whose time-slot intervals must not overlap; structural/relational — frozen",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

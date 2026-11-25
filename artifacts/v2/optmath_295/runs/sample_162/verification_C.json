@@ -1,0 +1,33 @@
+{
+ "sample_id": "sample_162",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"fixed_cost\", \"evidence\": \"\\\"For example: Running Factory 0 in any month costs 440 units.\\\" — values are introduced with \\\"for example\\\"\"}, {\"parameter\": \"variable_cost\", \"evidence\": \"\\\"For example: Producing at Factory 0 costs 12 units per unit of production.\\\" — values are introduced with \\\"for example\\\"\"}, {\"parameter\": \"min_production\", \"evidence\": \"\\\"For example: Factory 0 must produce at least 39 units if running.\\\" — values are introduced with \\\"for example\\\"\"}, {\"parameter\": \"max_production\", \"evidence\": \"\\\"For example: Factory 0 cannot produce more than 104 units.\\\" — values are introduced with \\\"for example\\\"\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_cost",
+   "evidence": "\"For example: Running Factory 0 in any month costs 440 units.\" — values are introduced with \"for example\""
+  },
+  {
+   "parameter": "variable_cost",
+   "evidence": "\"For example: Producing at Factory 0 costs 12 units per unit of production.\" — values are introduced with \"for example\""
+  },
+  {
+   "parameter": "min_production",
+   "evidence": "\"For example: Factory 0 must produce at least 39 units if running.\" — values are introduced with \"for example\""
+  },
+  {
+   "parameter": "max_production",
+   "evidence": "\"For example: Factory 0 cannot produce more than 104 units.\" — values are introduced with \"for example\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,147 @@
+{
+ "spec": {
+  "population": {
+   "base": [
+    2348,
+    3204,
+    2514,
+    3127,
+    2863,
+    3014,
+    2639,
+    2093,
+    1724,
+    2818,
+    1799,
+    1908,
+    3053,
+    2485,
+    2767,
+    3457,
+    1953,
+    2338,
+    1966,
+    3304,
+    3384,
+    3118,
+    2939,
+    3375
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tower_cost": {
+   "base": [
+    266,
+    156,
+    162,
+    176,
+    272,
+    273,
+    325,
+    314,
+    190,
+    231,
+    220,
+    208,
+    232,
+    166,
+    220,
+    230,
+    153,
+    161
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "budget": {
+   "base": 1384,
+   "perturb": {
+    "mode": "abs",
+    "lo": 900.0,
+    "hi": 1900.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "population": {
+    "meaning": "Population served in each of the 24 areas",
+    "base": [
+     2348,
+     3204,
+     2514,
+     3127,
+     2863,
+     3014,
+     2639,
+     2093,
+     1724,
+     2818,
+     1799,
+     1908,
+     3053,
+     2485,
+     2767,
+     3457,
+     1953,
+     2338,
+     1966,
+     3304,
+     3384,
+     3118,
+     2939,
+     3375
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tower_cost": {
+    "meaning": "Cost to build each of the 18 potential cell towers",
+    "base": [
+     266,
+     156,
+     162,
+     176,
+     272,
+     273,
+     325,
+     314,
+     190,
+     231,
+     220,
+     208,
+     232,
+     166,
+     220,
+     230,
+     153,
+     161
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "budget": {
+    "meaning": "Maximum total cost allowed for selected towers",
+    "base": 1384,
+    "perturb": {
+     "mode": "abs",
+     "lo": 900,
+     "hi": 1900,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

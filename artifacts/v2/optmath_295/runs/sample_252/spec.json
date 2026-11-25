@@ -1,0 +1,208 @@
+{
+ "spec": {
+  "peak_count": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "amino_acid_count": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "required_assignments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     0.344,
+     0.512,
+     0.601,
+     0.455,
+     0.389,
+     0.522
+    ],
+    [
+     0.417,
+     0.388,
+     0.561,
+     0.634,
+     0.472,
+     0.349
+    ],
+    [
+     0.598,
+     0.361,
+     0.443,
+     0.512,
+     0.667,
+     0.401
+    ],
+    [
+     0.455,
+     0.629,
+     0.372,
+     0.418,
+     0.536,
+     0.584
+    ],
+    [
+     0.387,
+     0.474,
+     0.638,
+     0.359,
+     0.421,
+     0.673
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "noe_pairs": {
+   "base": [
+    [
+     0,
+     0,
+     4,
+     1
+    ],
+    [
+     1,
+     0,
+     2,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[peak_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[amino_acid_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "peak_count": {
+    "meaning": "number of spectral peaks (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "amino_acid_count": {
+    "meaning": "number of amino acids (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "required_assignments": {
+    "meaning": "exact number of peak-to-amino-acid assignments required",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "cost_matrix": {
+    "meaning": "cost of assigning each peak (row 0..4) to each amino acid (col 0..5)",
+    "base": [
+     [
+      0.344,
+      0.512,
+      0.601,
+      0.455,
+      0.389,
+      0.522
+     ],
+     [
+      0.417,
+      0.388,
+      0.561,
+      0.634,
+      0.472,
+      0.349
+     ],
+     [
+      0.598,
+      0.361,
+      0.443,
+      0.512,
+      0.667,
+      0.401
+     ],
+     [
+      0.455,
+      0.629,
+      0.372,
+      0.418,
+      0.536,
+      0.584
+     ],
+     [
+      0.387,
+      0.474,
+      0.638,
+      0.359,
+      0.421,
+      0.673
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "noe_pairs": {
+    "meaning": "restricted assignment pairs from NOE binary proximity indicators, each as [peak_a, amino_a, peak_b, amino_b] forbidding simultaneous assignment",
+    "base": [
+     [
+      0,
+      0,
+      4,
+      1
+     ],
+     [
+      1,
+      0,
+      2,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

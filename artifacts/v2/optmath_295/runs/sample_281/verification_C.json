@@ -1,0 +1,69 @@
+{
+ "sample_id": "sample_281",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"assignment_cost\", \"extracted\": [[0.3509,0.3812,0.4126,0.4431,0.4748,0.5053],[0.3915,0.4227,0.4521,0.4839,0.5142,0.5456],[0.4302,0.4618,0.4934,0.5241,0.5557,0.5863],[0.4689,0.4995,0.5312,0.5628,0.5934,0.6241],[0.5076,0.5382,0.5699,0.6015,0.6321,0.6976]], \"stated\": \"range 0.3509 to 0.6976, individual values not stated\", \"evidence\": \"Each assignment of a peak to an amino acid has an associated cost, ranging from 0.3509 to 0.6976 units\"}], \"not_stated\": [{\"parameter\": \"assignment_cost\", \"evidence\": \"Each assignment of a peak to an amino acid has an associated cost, ranging from 0.3509 to 0.6976 units\"}]}",
+ "mismatch": [
+  {
+   "parameter": "assignment_cost",
+   "extracted": [
+    [
+     0.3509,
+     0.3812,
+     0.4126,
+     0.4431,
+     0.4748,
+     0.5053
+    ],
+    [
+     0.3915,
+     0.4227,
+     0.4521,
+     0.4839,
+     0.5142,
+     0.5456
+    ],
+    [
+     0.4302,
+     0.4618,
+     0.4934,
+     0.5241,
+     0.5557,
+     0.5863
+    ],
+    [
+     0.4689,
+     0.4995,
+     0.5312,
+     0.5628,
+     0.5934,
+     0.6241
+    ],
+    [
+     0.5076,
+     0.5382,
+     0.5699,
+     0.6015,
+     0.6321,
+     0.6976
+    ]
+   ],
+   "stated": "range 0.3509 to 0.6976, individual values not stated",
+   "evidence": "Each assignment of a peak to an amino acid has an associated cost, ranging from 0.3509 to 0.6976 units"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "assignment_cost",
+   "evidence": "Each assignment of a peak to an amino acid has an associated cost, ranging from 0.3509 to 0.6976 units"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

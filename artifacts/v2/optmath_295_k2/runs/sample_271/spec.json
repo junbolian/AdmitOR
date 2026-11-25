@@ -1,0 +1,107 @@
+{
+ "spec": {
+  "expected_returns": {
+   "base": [
+    0.1253,
+    0.0893,
+    0.055,
+    0.0948,
+    0.0803,
+    0.128
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_expected_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.04,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "covariance_0_1": {
+   "base": 0.0216,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "covariance_0_2": {
+   "base": 0.0471,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "expected_returns": {
+    "meaning": "Expected return per asset",
+    "base": [
+     0.1253,
+     0.0893,
+     0.055,
+     0.0948,
+     0.0803,
+     0.128
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_expected_return": {
+    "meaning": "Minimum required portfolio expected return",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.04,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "Maximum allocation per asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "covariance_0_1": {
+    "meaning": "Covariance between Asset 0 and Asset 1",
+    "base": 0.0216,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "covariance_0_2": {
+    "meaning": "Covariance between Asset 0 and Asset 2",
+    "base": 0.0471,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "net_demand",
+  "fixed_cost",
+  "variable_cost",
+  "capacity",
+  "num_nodes"
+ ],
+ "safe": [
+  "fixed_cost",
+  "variable_cost",
+  "capacity",
+  "num_nodes"
+ ],
+ "tests": {
+  "net_demand": [
+   0,
+   0
+  ],
+  "fixed_cost": [
+   3,
+   3
+  ],
+  "variable_cost": [
+   3,
+   3
+  ],
+  "capacity": [
+   3,
+   3
+  ],
+  "num_nodes": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

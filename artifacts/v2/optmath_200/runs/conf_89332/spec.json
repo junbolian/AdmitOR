@@ -1,0 +1,198 @@
+{
+ "spec": {
+  "fixed_cost": {
+   "base": [
+    86926,
+    88135,
+    86228,
+    88006,
+    89543
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    416,
+    427,
+    449,
+    405,
+    414,
+    405
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "capacity": {
+   "base": [
+    1619,
+    1671,
+    1603,
+    1671,
+    1610
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "serving_cost": {
+   "base": [
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ],
+    [
+     53,
+     56,
+     53,
+     56,
+     53
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fixed_cost": {
+    "meaning": "Fixed cost of opening each facility (Facility 0..4)",
+    "base": [
+     86926,
+     88135,
+     86228,
+     88006,
+     89543
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each customer (Customer 0..5)",
+    "base": [
+     416,
+     427,
+     449,
+     405,
+     414,
+     405
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total units each facility can serve (Facility 0..4)",
+    "base": [
+     1619,
+     1671,
+     1603,
+     1671,
+     1610
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "serving_cost": {
+    "meaning": "Variable cost of serving each customer from each facility; rows = customers 0..5, columns = facilities 0..4. Only illustrative entries are given for Customer 0 (Facility 0: 53, Facility 1: 56); the remaining entries are not explicitly provided and are therefore represented by a placeholder base value with a wide absolute perturbation range.",
+    "base": [
+     [
+      53,
+      56,
+      53,
+      56,
+      53
+     ],
+     [
+      53,
+      56,
+      53,
+      56,
+      53
+     ],
+     [
+      53,
+      56,
+      53,
+      56,
+      53
+     ],
+     [
+      53,
+      56,
+      53,
+      56,
+      53
+     ],
+     [
+      53,
+      56,
+      53,
+      56,
+      53
+     ],
+     [
+      53,
+      56,
+      53,
+      56,
+      53
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 200,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

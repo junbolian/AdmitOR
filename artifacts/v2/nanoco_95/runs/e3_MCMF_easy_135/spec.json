@@ -1,0 +1,597 @@
+{
+ "spec": {
+  "capacity_0_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_2": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_6": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_1_2": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_1_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_2_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_2_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_3_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_4_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_5_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_6_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_6_8": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_7_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "cost_0_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "cost_0_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "cost_0_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "cost_1_2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "cost_1_5": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "cost_2_3": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  },
+  "cost_2_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_3_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "cost_4_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_5_6": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "cost_6_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_6_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "cost_7_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "node_coords_x": {
+   "base": [
+    9,
+    26,
+    82,
+    12,
+    57,
+    51,
+    33,
+    100,
+    72
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "node_coords_y": {
+   "base": [
+    62,
+    59,
+    55,
+    30,
+    43,
+    14,
+    15,
+    0,
+    33
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "num_nodes": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "num_arcs": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 14.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_arcs] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "capacity_0_1": {
+    "meaning": "Bandwidth capacity of arc 0->1",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_2": {
+    "meaning": "Bandwidth capacity of arc 0->2",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_6": {
+    "meaning": "Bandwidth capacity of arc 0->6",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_8": {
+    "meaning": "Bandwidth capacity of arc 0->8",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_1_2": {
+    "meaning": "Bandwidth capacity of arc 1->2",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_1_5": {
+    "meaning": "Bandwidth capacity of arc 1->5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_2_3": {
+    "meaning": "Bandwidth capacity of arc 2->3",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_2_6": {
+    "meaning": "Bandwidth capacity of arc 2->6",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_3_4": {
+    "meaning": "Bandwidth capacity of arc 3->4",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_4_5": {
+    "meaning": "Bandwidth capacity of arc 4->5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_5_6": {
+    "meaning": "Bandwidth capacity of arc 5->6",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_6_7": {
+    "meaning": "Bandwidth capacity of arc 6->7",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_6_8": {
+    "meaning": "Bandwidth capacity of arc 6->8",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_7_8": {
+    "meaning": "Bandwidth capacity of arc 7->8",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_1": {
+    "meaning": "Unit transmission cost of arc 0->1",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Unit transmission cost of arc 0->2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "cost_0_6": {
+    "meaning": "Unit transmission cost of arc 0->6",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "cost_0_8": {
+    "meaning": "Unit transmission cost of arc 0->8",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Unit transmission cost of arc 1->2",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Unit transmission cost of arc 1->5",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Unit transmission cost of arc 2->3",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 24,
+     "integer": true
+    }
+   },
+   "cost_2_6": {
+    "meaning": "Unit transmission cost of arc 2->6",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Unit transmission cost of arc 3->4",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "cost_4_5": {
+    "meaning": "Unit transmission cost of arc 4->5",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_5_6": {
+    "meaning": "Unit transmission cost of arc 5->6",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "cost_6_7": {
+    "meaning": "Unit transmission cost of arc 6->7",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_6_8": {
+    "meaning": "Unit transmission cost of arc 6->8",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "cost_7_8": {
+    "meaning": "Unit transmission cost of arc 7->8",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "node_coords_x": {
+    "meaning": "X coordinates of nodes 0-8",
+    "base": [
+     9,
+     26,
+     82,
+     12,
+     57,
+     51,
+     33,
+     100,
+     72
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "node_coords_y": {
+    "meaning": "Y coordinates of nodes 0-8",
+    "base": [
+     62,
+     59,
+     55,
+     30,
+     43,
+     14,
+     15,
+     0,
+     33
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of network nodes",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "num_arcs": {
+    "meaning": "Number of directed links",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 14,
+     "hi": 14,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

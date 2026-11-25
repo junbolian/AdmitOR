@@ -1,0 +1,246 @@
+{
+ "spec": {
+  "arc_costs": {
+   "base": [
+    6,
+    3,
+    8,
+    5,
+    2,
+    7,
+    3,
+    7,
+    6,
+    8,
+    8,
+    8,
+    9,
+    6,
+    10,
+    12,
+    5,
+    10,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "source_supply": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "sink_supply": {
+   "base": -1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": -1.0,
+    "integer": true
+   }
+  },
+  "node_coordinates": {
+   "base": [
+    [
+     88,
+     28
+    ],
+    [
+     36,
+     39
+    ],
+    [
+     85,
+     51
+    ],
+    [
+     93,
+     90
+    ],
+    [
+     12,
+     89
+    ],
+    [
+     21,
+     43
+    ],
+    [
+     37,
+     8
+    ],
+    [
+     99,
+     42
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [
+  "[source_supply] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink_supply] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_costs": {
+    "meaning": "Transmission latency cost for each of the 19 directed arcs (ordered as listed)",
+    "base": [
+     6,
+     3,
+     8,
+     5,
+     2,
+     7,
+     3,
+     7,
+     6,
+     8,
+     8,
+     8,
+     9,
+     6,
+     10,
+     12,
+     5,
+     10,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Bandwidth upper bound for each of the 19 directed arcs (ordered as listed)",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "source_supply": {
+    "meaning": "Supply of data payload at source Node 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "sink_supply": {
+    "meaning": "Supply of data payload at sink Node 7 (negative denotes demand of one unit)",
+    "base": -1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": -1,
+     "integer": true
+    }
+   },
+   "node_coordinates": {
+    "meaning": "Coordinates (x, y) for Nodes 0 through 7, used only in problem context (not in the optimization model)",
+    "base": [
+     [
+      88,
+      28
+     ],
+     [
+      36,
+      39
+     ],
+     [
+      85,
+      51
+     ],
+     [
+      93,
+      90
+     ],
+     [
+      12,
+      89
+     ],
+     [
+      21,
+      43
+     ],
+     [
+      37,
+      8
+     ],
+     [
+      99,
+      42
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

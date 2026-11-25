@@ -1,0 +1,455 @@
+{
+ "spec": {
+  "revenue_0_3": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_0_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_1_8": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_2_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_2_6": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_2_7": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_3_6": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_3_7": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_3_8": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_3_9": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_4_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_4_6": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_4_7": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_4_8": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_4_9": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_5_7": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_6_7": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "capacity_1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "capacity_2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "capacity_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "capacity_4": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "capacity_5": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "capacity_6": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "capacity_7": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "capacity_8": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "capacity_9": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "revenue_0_3": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 0 and Station 3",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_0_4": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 0 and Station 4",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_1_8": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 1 and Station 8",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_2_3": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 2 and Station 3",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_2_6": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 2 and Station 6",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_2_7": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 2 and Station 7",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_3_6": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 3 and Station 6",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_3_7": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 3 and Station 7",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_3_8": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 3 and Station 8",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_3_9": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 3 and Station 9",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_4_5": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 4 and Station 5",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_4_6": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 4 and Station 6",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_4_7": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 4 and Station 7",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_4_8": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 4 and Station 8",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_4_9": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 4 and Station 9",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_5_7": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 5 and Station 7",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_6_7": {
+    "meaning": "projected bandwidth revenue for candidate link between Station 6 and Station 7",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0": {
+    "meaning": "maximum number of active fiber interfaces at Station 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "capacity_1": {
+    "meaning": "maximum number of active fiber interfaces at Station 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "capacity_2": {
+    "meaning": "maximum number of active fiber interfaces at Station 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "capacity_3": {
+    "meaning": "maximum number of active fiber interfaces at Station 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "capacity_4": {
+    "meaning": "maximum number of active fiber interfaces at Station 4",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "capacity_5": {
+    "meaning": "maximum number of active fiber interfaces at Station 5",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "capacity_6": {
+    "meaning": "maximum number of active fiber interfaces at Station 6",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "capacity_7": {
+    "meaning": "maximum number of active fiber interfaces at Station 7",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "capacity_8": {
+    "meaning": "maximum number of active fiber interfaces at Station 8",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "capacity_9": {
+    "meaning": "maximum number of active fiber interfaces at Station 9",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

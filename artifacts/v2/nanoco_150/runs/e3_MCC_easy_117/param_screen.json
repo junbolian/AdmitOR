@@ -1,0 +1,48 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "coordinates",
+  "arc_min_flow",
+  "arc_max_flow",
+  "arc_unit_cost",
+  "num_nodes",
+  "num_arcs"
+ ],
+ "safe": [
+  "coordinates",
+  "arc_unit_cost",
+  "num_nodes",
+  "num_arcs"
+ ],
+ "tests": {
+  "coordinates": [
+   3,
+   3
+  ],
+  "arc_min_flow": [
+   0,
+   0
+  ],
+  "arc_max_flow": [
+   0,
+   3
+  ],
+  "arc_unit_cost": [
+   3,
+   3
+  ],
+  "num_nodes": [
+   3,
+   3
+  ],
+  "num_arcs": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

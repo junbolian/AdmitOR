@@ -1,0 +1,208 @@
+{
+ "spec": {
+  "consultant_capacity": {
+   "base": [
+    9,
+    11,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "project_requirement": {
+   "base": [
+    0,
+    8,
+    10,
+    9,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     28,
+     27,
+     20,
+     20,
+     27
+    ],
+    [
+     16,
+     17,
+     15,
+     29,
+     30
+    ],
+    [
+     24,
+     24,
+     18,
+     17,
+     30
+    ],
+    [
+     22,
+     17,
+     17,
+     25,
+     15
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "assignment_capacity": {
+   "base": [
+    [
+     8,
+     5,
+     5,
+     7,
+     7
+    ],
+    [
+     4,
+     8,
+     5,
+     5,
+     7
+    ],
+    [
+     7,
+     4,
+     7,
+     5,
+     8
+    ],
+    [
+     6,
+     6,
+     7,
+     4,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "consultant_capacity": {
+    "meaning": "Total available hours per consultant (index set fixed at 4)",
+    "base": [
+     9,
+     11,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "project_requirement": {
+    "meaning": "Required hours per project (index set fixed at 5)",
+    "base": [
+     0,
+     8,
+     10,
+     9,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost": {
+    "meaning": "Hourly cost matrix [consultant][project]",
+    "base": [
+     [
+      28,
+      27,
+      20,
+      20,
+      27
+     ],
+     [
+      16,
+      17,
+      15,
+      29,
+      30
+     ],
+     [
+      24,
+      24,
+      18,
+      17,
+      30
+     ],
+     [
+      22,
+      17,
+      17,
+      25,
+      15
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "assignment_capacity": {
+    "meaning": "Max hours per consultant-project pair [consultant][project]",
+    "base": [
+     [
+      8,
+      5,
+      5,
+      7,
+      7
+     ],
+     [
+      4,
+      8,
+      5,
+      5,
+      7
+     ],
+     [
+      7,
+      4,
+      7,
+      5,
+      8
+     ],
+     [
+      6,
+      6,
+      7,
+      4,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

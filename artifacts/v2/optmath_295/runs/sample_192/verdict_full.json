@@ -1,0 +1,102 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "early_penalty": [
+    10,
+    12,
+    5,
+    7
+   ],
+   "late_penalty": [
+    13,
+    13,
+    12,
+    8
+   ],
+   "earliest_landing": [
+    65,
+    72,
+    60,
+    60
+   ],
+   "latest_landing": [
+    120,
+    120,
+    107,
+    99
+   ],
+   "target_landing": [
+    95,
+    102,
+    77,
+    69
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:sep_raw = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "missing_parameter:separation_i_before_j",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:separation = params[\"separation_i_before_j\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'separation_i_before_j'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

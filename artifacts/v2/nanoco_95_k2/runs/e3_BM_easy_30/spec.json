@@ -1,0 +1,94 @@
+{
+ "spec": {
+  "edge_weights": {
+   "base": [
+    11,
+    10,
+    9,
+    13,
+    14,
+    15,
+    16,
+    7,
+    6,
+    8,
+    19,
+    4,
+    7,
+    17,
+    10,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cell_capacities": {
+   "base": [
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "edge_weights": {
+    "meaning": "Expected task execution value (weight) for each of the 16 candidate links, in the stated edge order",
+    "base": [
+     11,
+     10,
+     9,
+     13,
+     14,
+     15,
+     16,
+     7,
+     6,
+     8,
+     19,
+     4,
+     7,
+     17,
+     10,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cell_capacities": {
+    "meaning": "Maximum concurrent task capacity (upper bound on selected incident edges) for cells 0 through 8",
+    "base": [
+     2,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1,
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

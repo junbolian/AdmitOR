@@ -1,0 +1,280 @@
+{
+ "spec": {
+  "preference": {
+   "base": [
+    [
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "participant_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "car_capacity": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "assignment_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference": {
+    "meaning": "Binary interest matrix; 1 if participant is interested in car (rows = participants 0-7, columns = cars 0-7)",
+    "base": [
+     [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "participant_capacity": {
+    "meaning": "Maximum cars assignable to each participant",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "car_capacity": {
+    "meaning": "Maximum participants assignable to each car",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "assignment_value": {
+    "meaning": "Objective contribution of a successful participant-car assignment",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

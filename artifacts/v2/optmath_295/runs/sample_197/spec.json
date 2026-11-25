@@ -1,0 +1,271 @@
+{
+ "spec": {
+  "cost_0_1": {
+   "base": 255,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_0_2": {
+   "base": 252,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_0_3": {
+   "base": 278,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_1_0": {
+   "base": 268,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_1_2": {
+   "base": 281,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_1_3": {
+   "base": 260,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_2_0": {
+   "base": 343,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_2_1": {
+   "base": 302,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_2_3": {
+   "base": 313,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_3_0": {
+   "base": 267,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_3_1": {
+   "base": 323,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_3_2": {
+   "base": 266,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "num_cities": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "city0_position": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "position_lower_bound": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "position_upper_bound": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_cities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[city0_position] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_lower_bound] degenerate abs range (lo == hi); perturbation has no effect",
+  "[position_upper_bound] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_0_1": {
+    "meaning": "Travel cost from City 0 to City 1",
+    "base": 255,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Travel cost from City 0 to City 2",
+    "base": 252,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_0_3": {
+    "meaning": "Travel cost from City 0 to City 3",
+    "base": 278,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_1_0": {
+    "meaning": "Travel cost from City 1 to City 0",
+    "base": 268,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Travel cost from City 1 to City 2",
+    "base": 281,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Travel cost from City 1 to City 3",
+    "base": 260,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_2_0": {
+    "meaning": "Travel cost from City 2 to City 0",
+    "base": 343,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_2_1": {
+    "meaning": "Travel cost from City 2 to City 1",
+    "base": 302,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Travel cost from City 2 to City 3",
+    "base": 313,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_3_0": {
+    "meaning": "Travel cost from City 3 to City 0",
+    "base": 267,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_3_1": {
+    "meaning": "Travel cost from City 3 to City 1",
+    "base": 323,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_3_2": {
+    "meaning": "Travel cost from City 3 to City 2",
+    "base": 266,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "num_cities": {
+    "meaning": "Number of cities (fixed)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "city0_position": {
+    "meaning": "Fixed position of City 0 in the sequence (fixed)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "position_lower_bound": {
+    "meaning": "Lower bound for positions of Cities 1,2,3 (fixed)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "position_upper_bound": {
+    "meaning": "Upper bound for positions of Cities 1,2,3 (fixed)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

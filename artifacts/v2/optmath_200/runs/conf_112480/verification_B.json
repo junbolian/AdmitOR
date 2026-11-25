@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_112480",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"fixed_cost\",\n      \"evidence\": \"Fixed Costs: Costs incurred for running each factory, which vary by factory. For example:\"\n    },\n    {\n      \"parameter\": \"variable_cost\",\n      \"evidence\": \"Variable Costs: Costs associated with the actual production output, which also vary by factory. For example:\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "fixed_cost",
+   "evidence": "Fixed Costs: Costs incurred for running each factory, which vary by factory. For example:"
+  },
+  {
+   "parameter": "variable_cost",
+   "evidence": "Variable Costs: Costs associated with the actual production output, which also vary by factory. For example:"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

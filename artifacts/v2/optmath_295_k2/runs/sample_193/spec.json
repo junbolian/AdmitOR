@@ -1,0 +1,618 @@
+{
+ "spec": {
+  "supply_origin0_product0": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "supply_origin0_product1": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "supply_origin1_product0": {
+   "base": 45,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 75.0,
+    "integer": true
+   }
+  },
+  "supply_origin1_product1": {
+   "base": 49,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "supply_origin2_product0": {
+   "base": 69,
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "supply_origin2_product1": {
+   "base": 33,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 65.0,
+    "integer": true
+   }
+  },
+  "supply_origin3_product0": {
+   "base": 34,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 65.0,
+    "integer": true
+   }
+  },
+  "supply_origin3_product1": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "demand_dest0_product0": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "demand_dest0_product1": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "demand_dest1_product0": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "demand_dest1_product1": {
+   "base": 36,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  },
+  "demand_dest2_product0": {
+   "base": 49,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "demand_dest2_product1": {
+   "base": 39,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 75.0,
+    "integer": true
+   }
+  },
+  "demand_dest3_product0": {
+   "base": 45,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 75.0,
+    "integer": true
+   }
+  },
+  "demand_dest3_product1": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "demand_dest4_product0": {
+   "base": 49,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "demand_dest4_product1": {
+   "base": 47,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     [
+      5,
+      9
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      10,
+      10
+     ]
+    ],
+    [
+     [
+      10,
+      9
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      6,
+      6
+     ]
+    ],
+    [
+     [
+      9,
+      5
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      10,
+      5
+     ]
+    ],
+    [
+     [
+      8,
+      5
+     ],
+     [
+      10,
+      9
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      5,
+      9
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_matrix": {
+   "base": [
+    [
+     72,
+     77,
+     51,
+     72,
+     104
+    ],
+    [
+     89,
+     107,
+     63,
+     79,
+     116
+    ],
+    [
+     102,
+     92,
+     106,
+     100,
+     64
+    ],
+    [
+     110,
+     62,
+     119,
+     52,
+     90
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_origin0_product0": {
+    "meaning": "Supply of Product 0 at Origin 0",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "supply_origin0_product1": {
+    "meaning": "Supply of Product 1 at Origin 0",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "supply_origin1_product0": {
+    "meaning": "Supply of Product 0 at Origin 1",
+    "base": 45,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 75,
+     "integer": true
+    }
+   },
+   "supply_origin1_product1": {
+    "meaning": "Supply of Product 1 at Origin 1",
+    "base": 49,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "supply_origin2_product0": {
+    "meaning": "Supply of Product 0 at Origin 2",
+    "base": 69,
+    "perturb": {
+     "mode": "abs",
+     "lo": 35,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "supply_origin2_product1": {
+    "meaning": "Supply of Product 1 at Origin 2",
+    "base": 33,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 65,
+     "integer": true
+    }
+   },
+   "supply_origin3_product0": {
+    "meaning": "Supply of Product 0 at Origin 3",
+    "base": 34,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 65,
+     "integer": true
+    }
+   },
+   "supply_origin3_product1": {
+    "meaning": "Supply of Product 1 at Origin 3",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "demand_dest0_product0": {
+    "meaning": "Demand for Product 0 at Destination 0",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "demand_dest0_product1": {
+    "meaning": "Demand for Product 1 at Destination 0",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "demand_dest1_product0": {
+    "meaning": "Demand for Product 0 at Destination 1",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "demand_dest1_product1": {
+    "meaning": "Demand for Product 1 at Destination 1",
+    "base": 36,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 70,
+     "integer": true
+    }
+   },
+   "demand_dest2_product0": {
+    "meaning": "Demand for Product 0 at Destination 2",
+    "base": 49,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "demand_dest2_product1": {
+    "meaning": "Demand for Product 1 at Destination 2",
+    "base": 39,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 75,
+     "integer": true
+    }
+   },
+   "demand_dest3_product0": {
+    "meaning": "Demand for Product 0 at Destination 3",
+    "base": 45,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 75,
+     "integer": true
+    }
+   },
+   "demand_dest3_product1": {
+    "meaning": "Demand for Product 1 at Destination 3",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "demand_dest4_product0": {
+    "meaning": "Demand for Product 0 at Destination 4",
+    "base": 49,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "demand_dest4_product1": {
+    "meaning": "Demand for Product 1 at Destination 4",
+    "base": 47,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "cost_matrix": {
+    "meaning": "Transportation cost per unit: [origin][destination][product]",
+    "base": [
+     [
+      [
+       5,
+       9
+      ],
+      [
+       6,
+       9
+      ],
+      [
+       6,
+       6
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       10,
+       10
+      ]
+     ],
+     [
+      [
+       10,
+       9
+      ],
+      [
+       8,
+       9
+      ],
+      [
+       5,
+       5
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       6,
+       6
+      ]
+     ],
+     [
+      [
+       9,
+       5
+      ],
+      [
+       8,
+       5
+      ],
+      [
+       8,
+       5
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       10,
+       5
+      ]
+     ],
+     [
+      [
+       8,
+       5
+      ],
+      [
+       10,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       7,
+       7
+      ],
+      [
+       5,
+       9
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_matrix": {
+    "meaning": "Total per-pair capacity (both products combined): [origin][destination]",
+    "base": [
+     [
+      72,
+      77,
+      51,
+      72,
+      104
+     ],
+     [
+      89,
+      107,
+      63,
+      79,
+      116
+     ],
+     [
+      102,
+      92,
+      106,
+      100,
+      64
+     ],
+     [
+      110,
+      62,
+      119,
+      52,
+      90
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,552 @@
+{
+ "spec": {
+  "transport_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "joint_capacity": {
+   "base": 123,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "product0_capacity_01": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_01": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_02": {
+   "base": 72,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_02": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_03": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_03": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_10": {
+   "base": 72,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_10": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_12": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_12": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_13": {
+   "base": 75,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_13": {
+   "base": 75,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_20": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_20": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_21": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_21": {
+   "base": 75,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_23": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_23": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_30": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_30": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_31": {
+   "base": 75,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_31": {
+   "base": 75,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product0_capacity_32": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "product1_capacity_32": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "net_flow_0_product0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "net_flow_0_product1": {
+   "base": -1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "net_flow_1_product0": {
+   "base": -1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "net_flow_1_product1": {
+   "base": -1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -4.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "net_flow_2_product0": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "net_flow_2_product1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "net_flow_3_product0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "net_flow_3_product1": {
+   "base": -3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -6.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "transport_cost": {
+    "meaning": "Cost per unit shipped between any pair of cities for either product",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "joint_capacity": {
+    "meaning": "Maximum total units of both products shipped between any ordered pair of cities",
+    "base": 123,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "product0_capacity_01": {
+    "meaning": "Max units of Product 0 from City 0 to City 1",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_01": {
+    "meaning": "Max units of Product 1 from City 0 to City 1",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_02": {
+    "meaning": "Max units of Product 0 from City 0 to City 2",
+    "base": 72,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_02": {
+    "meaning": "Max units of Product 1 from City 0 to City 2",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_03": {
+    "meaning": "Max units of Product 0 from City 0 to City 3",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_03": {
+    "meaning": "Max units of Product 1 from City 0 to City 3",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_10": {
+    "meaning": "Max units of Product 0 from City 1 to City 0",
+    "base": 72,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_10": {
+    "meaning": "Max units of Product 1 from City 1 to City 0",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_12": {
+    "meaning": "Max units of Product 0 from City 1 to City 2",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_12": {
+    "meaning": "Max units of Product 1 from City 1 to City 2",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_13": {
+    "meaning": "Max units of Product 0 from City 1 to City 3",
+    "base": 75,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_13": {
+    "meaning": "Max units of Product 1 from City 1 to City 3",
+    "base": 75,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_20": {
+    "meaning": "Max units of Product 0 from City 2 to City 0",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_20": {
+    "meaning": "Max units of Product 1 from City 2 to City 0",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_21": {
+    "meaning": "Max units of Product 0 from City 2 to City 1",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_21": {
+    "meaning": "Max units of Product 1 from City 2 to City 1",
+    "base": 75,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_23": {
+    "meaning": "Max units of Product 0 from City 2 to City 3",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_23": {
+    "meaning": "Max units of Product 1 from City 2 to City 3",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_30": {
+    "meaning": "Max units of Product 0 from City 3 to City 0",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_30": {
+    "meaning": "Max units of Product 1 from City 3 to City 0",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_31": {
+    "meaning": "Max units of Product 0 from City 3 to City 1",
+    "base": 75,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_31": {
+    "meaning": "Max units of Product 1 from City 3 to City 1",
+    "base": 75,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product0_capacity_32": {
+    "meaning": "Max units of Product 0 from City 3 to City 2",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "product1_capacity_32": {
+    "meaning": "Max units of Product 1 from City 3 to City 2",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "net_flow_0_product0": {
+    "meaning": "Net supply (outflow minus inflow) for City 0, Product 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "net_flow_0_product1": {
+    "meaning": "Net supply (outflow minus inflow) for City 0, Product 1",
+    "base": -1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "net_flow_1_product0": {
+    "meaning": "Net supply (outflow minus inflow) for City 1, Product 0",
+    "base": -1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "net_flow_1_product1": {
+    "meaning": "Net supply (outflow minus inflow) for City 1, Product 1",
+    "base": -1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -4,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "net_flow_2_product0": {
+    "meaning": "Net supply (outflow minus inflow) for City 2, Product 0",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "net_flow_2_product1": {
+    "meaning": "Net supply (outflow minus inflow) for City 2, Product 1",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "net_flow_3_product0": {
+    "meaning": "Net supply (outflow minus inflow) for City 3, Product 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "net_flow_3_product1": {
+    "meaning": "Net supply (outflow minus inflow) for City 3, Product 1",
+    "base": -3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -6,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

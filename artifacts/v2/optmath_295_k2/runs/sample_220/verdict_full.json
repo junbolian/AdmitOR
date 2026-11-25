@@ -1,0 +1,207 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 1901,
+   "fixed_cost_max": 2075,
+   "variable_cost_min": 19,
+   "variable_cost_max": 21,
+   "capacity_min": 539,
+   "capacity_max": 990
+  },
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 2086.5352407079063,
+   "fixed_cost_max": 1385.078121960924,
+   "variable_cost_min": 14.725557049013267,
+   "variable_cost_max": 15.187425501125277,
+   "capacity_min": 640.9663875475221,
+   "capacity_max": 1129.9459940389456
+  },
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 2422.873350744838,
+   "fixed_cost_max": 1475.028654394227,
+   "variable_cost_min": 17.51651457402014,
+   "variable_cost_max": 11.125741608199478,
+   "capacity_min": 417.6766947353138,
+   "capacity_max": 994.2413881778629
+  },
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 1270.9614148583173,
+   "fixed_cost_max": 1637.5616876223569,
+   "variable_cost_min": 21.84780431781094,
+   "variable_cost_max": 21.94377109266755,
+   "capacity_min": 418.45399622394837,
+   "capacity_max": 1060.6984216297196
+  },
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 2312.7591087011842,
+   "fixed_cost_max": 1358.1894484323836,
+   "variable_cost_min": 24.810565784823353,
+   "variable_cost_max": 25.160927294752764,
+   "capacity_min": 470.11602272255806,
+   "capacity_max": 717.139763850931
+  },
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 2509.4134351855637,
+   "fixed_cost_max": 1837.6535767760906,
+   "variable_cost_min": 11.26217102422281,
+   "variable_cost_max": 12.531043913502744,
+   "capacity_min": 688.8395707690246,
+   "capacity_max": 1072.1510168425775
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   27665.0,
+   21482.71131715537,
+   22228.7706272898,
+   27527.85435525858,
+   31800.081946245922,
+   20072.778303969677
+  ],
+  "A-direct-2": [
+   28057.684210526313,
+   21577.050840925953,
+   21535.09222830085,
+   27849.892267327785,
+   31882.76290754765,
+   20298.918654132416
+  ],
+  "B-structured": [
+   27525.11111111111,
+   21992.73193192435,
+   23197.419465369218,
+   27373.904856721518,
+   32492.082150818973,
+   20567.313762502865
+  ],
+  "B-structured-2": [
+   27525.11111111111,
+   21992.73193192435,
+   23197.419465369218,
+   27373.904856721518,
+   32492.082150818973,
+   20567.313762502865
+  ],
+  "C-direct": [
+   28057.684210526313,
+   21577.050840925956,
+   21535.092228300855,
+   27849.892267327785,
+   31882.76290952903,
+   20298.918654132416
+  ],
+  "C-direct-2": [
+   28057.684210526313,
+   21577.050840925956,
+   21535.092228300855,
+   27849.892267327785,
+   31882.76290952903,
+   20298.918654132416
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 693.7 on instance 2 (params: {'demand_0': 345, 'demand_1': 655, 'supply_2': 774, 'supply_3': 142, 'supply_4': 84, 'fixed_cost_min': 2422.87, 'fixed_cost_max': 1475.03, 'variable_cost_min': 17.52, 'variable_cost_max': 11.13, 'capacity_min': 417.68, 'capacity_max': 994.24})",
+  "B-structured": "diverges from consensus by 1662 on instance 2 (params: {'demand_0': 345, 'demand_1': 655, 'supply_2': 774, 'supply_3': 142, 'supply_4': 84, 'fixed_cost_min': 2422.87, 'fixed_cost_max': 1475.03, 'variable_cost_min': 17.52, 'variable_cost_max': 11.13, 'capacity_min': 417.68, 'capacity_max': 994.24})",
+  "B-structured-2": "diverges from consensus by 1662 on instance 2 (params: {'demand_0': 345, 'demand_1': 655, 'supply_2': 774, 'supply_3': 142, 'supply_4': 84, 'fixed_cost_min': 2422.87, 'fixed_cost_max': 1475.03, 'variable_cost_min': 17.52, 'variable_cost_max': 11.13, 'capacity_min': 417.68, 'capacity_max': 994.24})"
+ },
+ "disagreements": [],
+ "notes": []
+}

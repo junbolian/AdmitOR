@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     17,
+     45,
+     24
+    ],
+    [
+     28,
+     29,
+     35
+    ],
+    [
+     16,
+     20,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Test duration in minutes for each batch on each station; rows J0-J2, columns M0-M2",
+    "base": [
+     [
+      17,
+      45,
+      24
+     ],
+     [
+      28,
+      29,
+      35
+     ],
+     [
+      16,
+      20,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

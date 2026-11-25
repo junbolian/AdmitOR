@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "arc_capacities": {
+   "base": [
+    17,
+    17,
+    12,
+    12,
+    12,
+    12,
+    16,
+    16,
+    17,
+    17,
+    21,
+    21,
+    21,
+    21,
+    23,
+    23,
+    14,
+    14,
+    22,
+    22,
+    15,
+    15,
+    12,
+    12,
+    24,
+    24,
+    16,
+    16,
+    18,
+    18,
+    15,
+    15,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "arc_unit_costs": {
+   "base": [
+    5,
+    5,
+    6,
+    6,
+    9,
+    9,
+    6,
+    6,
+    2,
+    2,
+    7,
+    7,
+    1,
+    1,
+    4,
+    4,
+    5,
+    5,
+    7,
+    7,
+    8,
+    8,
+    5,
+    5,
+    12,
+    12,
+    12,
+    12,
+    5,
+    5,
+    9,
+    9,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demands": {
+   "base": [
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_commodities": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_commodities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_capacities": {
+    "meaning": "Thermal capacity limit (MW) for each of the 34 directed arcs, indexed in the order listed",
+    "base": [
+     17,
+     17,
+     12,
+     12,
+     12,
+     12,
+     16,
+     16,
+     17,
+     17,
+     21,
+     21,
+     21,
+     21,
+     23,
+     23,
+     14,
+     14,
+     22,
+     22,
+     15,
+     15,
+     12,
+     12,
+     24,
+     24,
+     16,
+     16,
+     18,
+     18,
+     15,
+     15,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "arc_unit_costs": {
+    "meaning": "Unit transmission loss cost (currency per MWh) for each of the 34 directed arcs, indexed in the order listed",
+    "base": [
+     5,
+     5,
+     6,
+     6,
+     9,
+     9,
+     6,
+     6,
+     2,
+     2,
+     7,
+     7,
+     1,
+     1,
+     4,
+     4,
+     5,
+     5,
+     7,
+     7,
+     8,
+     8,
+     5,
+     5,
+     12,
+     12,
+     12,
+     12,
+     5,
+     5,
+     9,
+     9,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demands": {
+    "meaning": "Required delivery quantity for each commodity: Commodity 1 source 3 sink 7, Commodity 2 source 1 sink 5",
+    "base": [
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_nodes": {
+    "meaning": "Number of balancing areas / substations (index set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_commodities": {
+    "meaning": "Number of distinct energy batches (index set size, frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

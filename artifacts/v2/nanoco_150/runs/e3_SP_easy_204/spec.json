@@ -1,0 +1,394 @@
+{
+ "spec": {
+  "arc_cost_0_1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "arc_cost_1_2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "arc_cost_1_4": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_1_5": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "arc_cost_1_6": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "arc_cost_1_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_2_3": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "arc_cost_3_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_4_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "arc_cost_4_8": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "arc_cost_4_9": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_5_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_5_7": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "arc_cost_6_7": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "arc_cost_7_8": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_7_9": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "arc_cost_8_9": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "arc_capacity": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "source_supply": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "sink_supply": {
+   "base": -1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": -1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[arc_capacity] degenerate abs range (lo == hi); perturbation has no effect",
+  "[source_supply] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink_supply] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_cost_0_1": {
+    "meaning": "Temperature maintenance and fuel cost on arc (0,1)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "arc_cost_1_2": {
+    "meaning": "Temperature maintenance and fuel cost on arc (1,2)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "arc_cost_1_4": {
+    "meaning": "Temperature maintenance and fuel cost on arc (1,4)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_1_5": {
+    "meaning": "Temperature maintenance and fuel cost on arc (1,5)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "arc_cost_1_6": {
+    "meaning": "Temperature maintenance and fuel cost on arc (1,6)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "arc_cost_1_7": {
+    "meaning": "Temperature maintenance and fuel cost on arc (1,7)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_2_3": {
+    "meaning": "Temperature maintenance and fuel cost on arc (2,3)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "arc_cost_3_4": {
+    "meaning": "Temperature maintenance and fuel cost on arc (3,4)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_4_5": {
+    "meaning": "Temperature maintenance and fuel cost on arc (4,5)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "arc_cost_4_8": {
+    "meaning": "Temperature maintenance and fuel cost on arc (4,8)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "arc_cost_4_9": {
+    "meaning": "Temperature maintenance and fuel cost on arc (4,9)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_5_6": {
+    "meaning": "Temperature maintenance and fuel cost on arc (5,6)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_5_7": {
+    "meaning": "Temperature maintenance and fuel cost on arc (5,7)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "arc_cost_6_7": {
+    "meaning": "Temperature maintenance and fuel cost on arc (6,7)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "arc_cost_7_8": {
+    "meaning": "Temperature maintenance and fuel cost on arc (7,8)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_7_9": {
+    "meaning": "Temperature maintenance and fuel cost on arc (7,9)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "arc_cost_8_9": {
+    "meaning": "Temperature maintenance and fuel cost on arc (8,9)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "arc_capacity": {
+    "meaning": "Maximum number of refrigerated delivery vehicles per arc",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "source_supply": {
+    "meaning": "Net supply at source node 0 (must ship exactly one unit)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "sink_supply": {
+    "meaning": "Net supply at sink node 9 (must receive exactly one unit)",
+    "base": -1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": -1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

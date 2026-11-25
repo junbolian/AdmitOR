@@ -1,0 +1,331 @@
+{
+ "spec": {
+  "coverage_benefit_01": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_02": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_03": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_04": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_10": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_12": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_13": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_14": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_20": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_21": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_23": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_24": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_30": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_31": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_32": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_34": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_40": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_41": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_42": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coverage_benefit_43": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_centers_to_select": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_centers_to_select] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "coverage_benefit_01": {
+    "meaning": "pairwise coverage benefit Node 0 -> Node 1",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_02": {
+    "meaning": "pairwise coverage benefit Node 0 -> Node 2",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_03": {
+    "meaning": "pairwise coverage benefit Node 0 -> Node 3",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_04": {
+    "meaning": "pairwise coverage benefit Node 0 -> Node 4",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_10": {
+    "meaning": "pairwise coverage benefit Node 1 -> Node 0",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_12": {
+    "meaning": "pairwise coverage benefit Node 1 -> Node 2",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_13": {
+    "meaning": "pairwise coverage benefit Node 1 -> Node 3",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_14": {
+    "meaning": "pairwise coverage benefit Node 1 -> Node 4",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_20": {
+    "meaning": "pairwise coverage benefit Node 2 -> Node 0",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_21": {
+    "meaning": "pairwise coverage benefit Node 2 -> Node 1",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_23": {
+    "meaning": "pairwise coverage benefit Node 2 -> Node 3",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_24": {
+    "meaning": "pairwise coverage benefit Node 2 -> Node 4",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_30": {
+    "meaning": "pairwise coverage benefit Node 3 -> Node 0",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_31": {
+    "meaning": "pairwise coverage benefit Node 3 -> Node 1",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_32": {
+    "meaning": "pairwise coverage benefit Node 3 -> Node 2",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_34": {
+    "meaning": "pairwise coverage benefit Node 3 -> Node 4",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_40": {
+    "meaning": "pairwise coverage benefit Node 4 -> Node 0",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_41": {
+    "meaning": "pairwise coverage benefit Node 4 -> Node 1",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_42": {
+    "meaning": "pairwise coverage benefit Node 4 -> Node 2",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coverage_benefit_43": {
+    "meaning": "pairwise coverage benefit Node 4 -> Node 3",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_centers_to_select": {
+    "meaning": "exact number of locations that must be selected",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

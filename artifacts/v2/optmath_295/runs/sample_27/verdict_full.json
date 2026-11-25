@@ -1,0 +1,165 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "plane0_capacity": 80,
+   "plane0_trip_cost": 5,
+   "plane0_same_loc_cost": 0,
+   "plane1_capacity": 89,
+   "plane1_trip_cost": 6,
+   "plane1_same_loc_cost": 0,
+   "initial_idle_plane0": 2,
+   "initial_idle_plane1": 2,
+   "max_idle_plane0": 2,
+   "max_idle_plane1": 2,
+   "demand_1_to_0": 17,
+   "max_trips_plane0_1to0": 2,
+   "max_trips_plane1_1to0": 2
+  },
+  {
+   "plane0_capacity": 91.15414387663068,
+   "plane0_trip_cost": 2.150064531336002,
+   "plane0_same_loc_cost": 0.0,
+   "plane1_capacity": 64.36575569524523,
+   "plane1_trip_cost": 7.702592741980889,
+   "plane1_same_loc_cost": 0.0,
+   "initial_idle_plane0": 2,
+   "initial_idle_plane1": 4,
+   "max_idle_plane0": 0,
+   "max_idle_plane1": 2,
+   "demand_1_to_0": 16.203602560789758,
+   "max_trips_plane0_1to0": 0,
+   "max_trips_plane1_1to0": 1
+  },
+  {
+   "plane0_capacity": 80.42842304826898,
+   "plane0_trip_cost": 2.1592158181031817,
+   "plane0_same_loc_cost": 0.0,
+   "plane1_capacity": 102.33971496237757,
+   "plane1_trip_cost": 6.32357866034316,
+   "plane1_same_loc_cost": 0.0,
+   "initial_idle_plane0": 2,
+   "initial_idle_plane1": 2,
+   "max_idle_plane0": 3,
+   "max_idle_plane1": 2,
+   "demand_1_to_0": 11.966287348716222,
+   "max_trips_plane0_1to0": 3,
+   "max_trips_plane1_1to0": 3
+  },
+  {
+   "plane0_capacity": 67.22004132143935,
+   "plane0_trip_cost": 2.9328769988706895,
+   "plane0_same_loc_cost": 0.0,
+   "plane1_capacity": 74.45691451502378,
+   "plane1_trip_cost": 3.0677700723370656,
+   "plane1_same_loc_cost": 0.0,
+   "initial_idle_plane0": 2,
+   "initial_idle_plane1": 3,
+   "max_idle_plane0": 2,
+   "max_idle_plane1": 2,
+   "demand_1_to_0": 20.13270838739868,
+   "max_trips_plane0_1to0": 3,
+   "max_trips_plane1_1to0": 2
+  },
+  {
+   "plane0_capacity": 117.84926111834965,
+   "plane0_trip_cost": 4.2712062632501215,
+   "plane0_same_loc_cost": 0.0,
+   "plane1_capacity": 118.31701511851654,
+   "plane1_trip_cost": 6.853342217022572,
+   "plane1_same_loc_cost": 0.0,
+   "initial_idle_plane0": 2,
+   "initial_idle_plane1": 2,
+   "max_idle_plane0": 3,
+   "max_idle_plane1": 2,
+   "demand_1_to_0": 12.367408713287755,
+   "max_trips_plane0_1to0": 1,
+   "max_trips_plane1_1to0": 1
+  },
+  {
+   "plane0_capacity": 46.3833581538902,
+   "plane0_trip_cost": 3.396745318166181,
+   "plane0_same_loc_cost": 0.0,
+   "plane1_capacity": 69.23965067679819,
+   "plane1_trip_cost": 6.976927998703681,
+   "plane1_same_loc_cost": 0.0,
+   "initial_idle_plane0": 2,
+   "initial_idle_plane1": 1,
+   "max_idle_plane0": 1,
+   "max_idle_plane1": 2,
+   "demand_1_to_0": 14.623173784900954,
+   "max_trips_plane0_1to0": 4,
+   "max_trips_plane1_1to0": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   7.702592741980889,
+   2.1592158181031817,
+   2.9328769988706895,
+   4.2712062632501215,
+   3.396745318166181
+  ],
+  "B-structured": [
+   5.0,
+   null,
+   2.1592158181031817,
+   null,
+   4.2712062632501215,
+   null
+  ],
+  "C-direct": [
+   5.0,
+   null,
+   2.1592158181031817,
+   null,
+   4.2712062632501215,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_objective",
+   "optimal",
+   "no_objective",
+   "optimal",
+   "no_objective"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  4
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

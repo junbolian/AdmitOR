@@ -1,0 +1,976 @@
+{
+ "spec": {
+  "num_nodes": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_commodities": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "node_coords_x": {
+   "base": [
+    88,
+    36,
+    85,
+    93,
+    12,
+    21,
+    37,
+    99
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "node_coords_y": {
+   "base": [
+    28,
+    39,
+    51,
+    90,
+    89,
+    43,
+    8,
+    42
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arcs": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     0,
+     7
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_capacity": {
+   "base": [
+    17,
+    17,
+    12,
+    12,
+    12,
+    12,
+    16,
+    16,
+    17,
+    17,
+    21,
+    21,
+    21,
+    21,
+    23,
+    23,
+    14,
+    14,
+    22,
+    22,
+    15,
+    15,
+    12,
+    12,
+    24,
+    24,
+    16,
+    16,
+    18,
+    18,
+    15,
+    15,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "arc_cost": {
+   "base": [
+    5,
+    5,
+    6,
+    6,
+    9,
+    9,
+    6,
+    6,
+    2,
+    2,
+    7,
+    7,
+    1,
+    1,
+    4,
+    4,
+    5,
+    5,
+    7,
+    7,
+    8,
+    8,
+    5,
+    5,
+    12,
+    12,
+    12,
+    12,
+    5,
+    5,
+    9,
+    9,
+    11,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "commodity_demand": {
+   "base": [
+    4,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "commodity_source": {
+   "base": [
+    3,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "commodity_sink": {
+   "base": [
+    7,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[node_coords_x] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[node_coords_y] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[arcs] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[commodity_source] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[commodity_sink] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_commodities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_nodes": {
+    "meaning": "number of pipeline junctions/stations (index-set size; frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_commodities": {
+    "meaning": "number of distinct product batches/commodities (index-set size; frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "node_coords_x": {
+    "meaning": "x-coordinate of each station (geometry only, not used in LP but kept frozen)",
+    "base": [
+     88,
+     36,
+     85,
+     93,
+     12,
+     21,
+     37,
+     99
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      88,
+      36,
+      85,
+      93,
+      12,
+      21,
+      37,
+      99
+     ],
+     "hi": [
+      88,
+      36,
+      85,
+      93,
+      12,
+      21,
+      37,
+      99
+     ],
+     "integer": true
+    }
+   },
+   "node_coords_y": {
+    "meaning": "y-coordinate of each station (geometry only, not used in LP but kept frozen)",
+    "base": [
+     28,
+     39,
+     51,
+     90,
+     89,
+     43,
+     8,
+     42
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      28,
+      39,
+      51,
+      90,
+      89,
+      43,
+      8,
+      42
+     ],
+     "hi": [
+      28,
+      39,
+      51,
+      90,
+      89,
+      43,
+      8,
+      42
+     ],
+     "integer": true
+    }
+   },
+   "arcs": {
+    "meaning": "directed arc list (topology; frozen, must not be resized)",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      0,
+      7
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       3,
+       0
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       5,
+       0
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       6,
+       0
+      ],
+      [
+       0,
+       7
+      ],
+      [
+       7,
+       0
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       1
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       5,
+       1
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       3,
+       2
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       6,
+       2
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       4,
+       3
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       4
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       4
+      ],
+      [
+       4,
+       7
+      ],
+      [
+       7,
+       4
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       7,
+       5
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       6
+      ]
+     ],
+     "hi": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       3,
+       0
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       5,
+       0
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       6,
+       0
+      ],
+      [
+       0,
+       7
+      ],
+      [
+       7,
+       0
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       1
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       5,
+       1
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       6,
+       1
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       3,
+       2
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       6,
+       2
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       4,
+       3
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       4
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       4
+      ],
+      [
+       4,
+       7
+      ],
+      [
+       7,
+       4
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       5
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       7,
+       5
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       6
+      ]
+     ],
+     "integer": true
+    }
+   },
+   "arc_capacity": {
+    "meaning": "maximum safe flow (capacity) on each directed arc, in arc-list order",
+    "base": [
+     17,
+     17,
+     12,
+     12,
+     12,
+     12,
+     16,
+     16,
+     17,
+     17,
+     21,
+     21,
+     21,
+     21,
+     23,
+     23,
+     14,
+     14,
+     22,
+     22,
+     15,
+     15,
+     12,
+     12,
+     24,
+     24,
+     16,
+     16,
+     18,
+     18,
+     15,
+     15,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "arc_cost": {
+    "meaning": "unit pumping cost on each directed arc (not in objective; kept as data)",
+    "base": [
+     5,
+     5,
+     6,
+     6,
+     9,
+     9,
+     6,
+     6,
+     2,
+     2,
+     7,
+     7,
+     1,
+     1,
+     4,
+     4,
+     5,
+     5,
+     7,
+     7,
+     8,
+     8,
+     5,
+     5,
+     12,
+     12,
+     12,
+     12,
+     5,
+     5,
+     9,
+     9,
+     11,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "commodity_demand": {
+    "meaning": "required throughput volume per product batch",
+    "base": [
+     4,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "commodity_source": {
+    "meaning": "injection station for each commodity (index; frozen)",
+    "base": [
+     3,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      1
+     ],
+     "hi": [
+      3,
+      1
+     ],
+     "integer": true
+    }
+   },
+   "commodity_sink": {
+    "meaning": "delivery terminal for each commodity (index; frozen)",
+    "base": [
+     7,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      7,
+      5
+     ],
+     "hi": [
+      7,
+      5
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

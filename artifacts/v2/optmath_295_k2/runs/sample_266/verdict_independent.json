@@ -1,0 +1,603 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_per_unit": [
+    173,
+    249,
+    154
+   ],
+   "holding_cost_per_unit_per_period": 15,
+   "grinder_hours_per_unit": [
+    2,
+    2,
+    2
+   ],
+   "drill_hours_per_unit": [
+    2,
+    2,
+    1
+   ],
+   "borer_hours_per_unit": [
+    1,
+    1,
+    1
+   ],
+   "grinder_capacity_per_period": [
+    240,
+    240,
+    240,
+    240,
+    240,
+    240
+   ],
+   "drill_capacity_per_period": [
+    120,
+    120,
+    0,
+    120,
+    120,
+    120
+   ],
+   "borer_capacity_per_period": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+   ],
+   "max_inventory_per_product": 80,
+   "max_sales": [
+    [
+     27,
+     21,
+     42,
+     38,
+     37,
+     43
+    ],
+    [
+     37,
+     43,
+     36,
+     48,
+     20,
+     36
+    ],
+    [
+     50,
+     29,
+     21,
+     44,
+     31,
+     29
+    ]
+   ],
+   "final_inventory_target": [
+    16,
+    16,
+    16
+   ]
+  },
+  {
+   "profit_per_unit": [
+    197.12083613321386,
+    130.72767805044407,
+    119.35451502884436
+   ],
+   "holding_cost_per_unit_per_period": 10.044483216697024,
+   "grinder_hours_per_unit": [
+    2.472942428328025,
+    2.3533989748458226,
+    2.784359135409691
+   ],
+   "drill_hours_per_unit": [
+    1.1738776652588323,
+    1.8438436393705409,
+    0.5297972194380703
+   ],
+   "borer_hours_per_unit": [
+    0.7186379748036034,
+    1.0053552881033623,
+    0.5265359696838636
+   ],
+   "grinder_capacity_per_period": [
+    182.1768289318365,
+    268.77781205366847,
+    248.62876427581762,
+    186.32459943181377,
+    257.13901130417446,
+    299.4106476821427
+   ],
+   "drill_capacity_per_period": [
+    1.169776742050983,
+    145.0474653299054,
+    125.66509109788083,
+    61.245092973238535,
+    27.98630996612068,
+    172.2983529972206
+   ],
+   "borer_capacity_per_period": [
+    104.31307633081217,
+    80.90360096449419,
+    81.28477217601255,
+    153.35945916935614,
+    129.9576990112215,
+    149.4843142343405
+   ],
+   "max_inventory_per_product": 98,
+   "max_sales": [
+    [
+     27.782526775421534,
+     28.948344834853422,
+     37.918755074200675,
+     39.582035190706094,
+     46.75037806188864,
+     47.07707948133006
+    ],
+    [
+     47.706524249199,
+     45.66091379683261,
+     41.8916688829898,
+     30.55965633237743,
+     15.64637241042475,
+     29.934373351740685
+    ],
+    [
+     33.1916790769451,
+     22.8007485635759,
+     14.296824014083448,
+     36.184670829475245,
+     34.36497421775712,
+     25.864106552105955
+    ]
+   ],
+   "final_inventory_target": [
+    15,
+    8,
+    11
+   ]
+  },
+  {
+   "profit_per_unit": [
+    248.54124367426147,
+    285.86081092640177,
+    170.8061748727162
+   ],
+   "holding_cost_per_unit_per_period": 7.701239168914364,
+   "grinder_hours_per_unit": [
+    2.4582535959006986,
+    1.3268049875238568,
+    1.7589108835152956
+   ],
+   "drill_hours_per_unit": [
+    2.9790467012731905,
+    2.279999519708186,
+    1.0569497437746462
+   ],
+   "borer_hours_per_unit": [
+    1.1846142509898745,
+    1.3428519201898097,
+    1.2759999115462448
+   ],
+   "grinder_capacity_per_period": [
+    187.97722981710803,
+    150.16324682957523,
+    204.5669852273437,
+    195.4062481873349,
+    184.50870596857467,
+    325.03866515233045
+   ],
+   "drill_capacity_per_period": [
+    157.7461727650804,
+    56.642018543726024,
+    117.97895975307841,
+    71.21374219091956,
+    164.61856615329782,
+    82.59333346573179
+   ],
+   "borer_capacity_per_period": [
+    97.42849598381302,
+    95.67624073862241,
+    125.89134087966245,
+    97.22319441820177,
+    128.1202550614599,
+    158.19099682583777
+   ],
+   "max_inventory_per_product": 72,
+   "max_sales": [
+    [
+     20.93732839779732,
+     29.35863178911785,
+     42.32008346752921,
+     25.56364613008333,
+     23.594644712572144,
+     29.571930084062675
+    ],
+    [
+     40.77240283441146,
+     53.04753013408596,
+     33.7582070438309,
+     31.239463916235152,
+     18.105908584104586,
+     50.288295750914784
+    ],
+    [
+     51.164573803965474,
+     39.929018360635936,
+     27.061098997539567,
+     26.80413197238725,
+     36.47390112013282,
+     33.215680561416534
+    ]
+   ],
+   "final_inventory_target": [
+    21,
+    11,
+    26
+   ]
+  },
+  {
+   "profit_per_unit": [
+    105.79852603208663,
+    232.75654741660713,
+    146.8734507746978
+   ],
+   "holding_cost_per_unit_per_period": 42.92171673844861,
+   "grinder_hours_per_unit": [
+    2.751705880756388,
+    1.5267781015021815,
+    2.0011722261005964
+   ],
+   "drill_hours_per_unit": [
+    1.3573037610602627,
+    2.825255678689641,
+    1.3705185698367668
+   ],
+   "borer_hours_per_unit": [
+    0.7984447914486329,
+    1.1389494948660053,
+    1.1089702114381723
+   ],
+   "grinder_capacity_per_period": [
+    173.34513956152986,
+    290.40207361442907,
+    247.5607737829681,
+    293.49628389706714,
+    245.82790506147407,
+    144.10980405656517
+   ],
+   "drill_capacity_per_period": [
+    58.348090260841154,
+    3.5058136294498143,
+    167.23775092763108,
+    158.16993800817315,
+    149.6997952850123,
+    55.35254257247906
+   ],
+   "borer_capacity_per_period": [
+    77.560815983442,
+    156.2889215235879,
+    162.9071467486074,
+    80.22273139851636,
+    118.65508447839491,
+    78.64440177296483
+   ],
+   "max_inventory_per_product": 101,
+   "max_sales": [
+    [
+     32.74202367303093,
+     14.756976603596014,
+     41.16948790411737,
+     39.51402924224629,
+     30.045676216625747,
+     55.81169661333285
+    ],
+    [
+     34.72488302994625,
+     33.08585826720762,
+     37.1317273568484,
+     56.82935305305509,
+     15.218417014235133,
+     30.57742918946577
+    ],
+    [
+     69.80597426643578,
+     32.47717093723532,
+     19.960081409763667,
+     44.61866960445279,
+     21.60090405753299,
+     22.61297821913213
+    ]
+   ],
+   "final_inventory_target": [
+    14,
+    24,
+    9
+   ]
+  },
+  {
+   "profit_per_unit": [
+    124.59760751011979,
+    142.1772784162491,
+    174.18985541959526
+   ],
+   "holding_cost_per_unit_per_period": 10.302380271501947,
+   "grinder_hours_per_unit": [
+    2.810840026012256,
+    2.719270800507493,
+    1.1417146997773069
+   ],
+   "drill_hours_per_unit": [
+    1.4760092687379904,
+    2.3379555565925614,
+    0.7142368073704386
+   ],
+   "borer_hours_per_unit": [
+    0.632311848725025,
+    1.435514240580671,
+    1.0710430933252844
+   ],
+   "grinder_capacity_per_period": [
+    234.75283705186445,
+    294.6469294638247,
+    299.0394235711955,
+    180.55870355748053,
+    162.61071633193407,
+    226.76182702202448
+   ],
+   "drill_capacity_per_period": [
+    76.24415214358574,
+    84.06444024660149,
+    131.23365290277312,
+    121.20561851279427,
+    177.1497380458739,
+    17.715216807352597
+   ],
+   "borer_capacity_per_period": [
+    110.6516430818178,
+    104.57305011791645,
+    154.7205634898679,
+    95.87100805634742,
+    90.2600552103179,
+    115.06690059198066
+   ],
+   "max_inventory_per_product": 74,
+   "max_sales": [
+    [
+     22.216575124805914,
+     16.796748324419287,
+     56.22172413567402,
+     36.27117464962509,
+     47.69593350095018,
+     44.73119074827477
+    ],
+    [
+     23.697414553936486,
+     60.175316913397786,
+     45.677594450302614,
+     66.00945627973445,
+     26.821871728130038,
+     46.042437151132
+    ],
+    [
+     36.65244442415656,
+     28.666874110456668,
+     16.19095462654625,
+     40.51661829774073,
+     20.054157919310036,
+     26.19217636026445
+    ]
+   ],
+   "final_inventory_target": [
+    39,
+    11,
+    31
+   ]
+  },
+  {
+   "profit_per_unit": [
+    165.21644754967178,
+    229.82886401155056,
+    224.42691669238965
+   ],
+   "holding_cost_per_unit_per_period": 44.79402102717212,
+   "grinder_hours_per_unit": [
+    2.1115366468112367,
+    2.436816550592652,
+    1.3095936505481283
+   ],
+   "drill_hours_per_unit": [
+    1.5934156509891284,
+    2.937418729938318,
+    1.0791802908162562
+   ],
+   "borer_hours_per_unit": [
+    1.0421952013742741,
+    1.247975560379064,
+    0.5571652729074831
+   ],
+   "grinder_capacity_per_period": [
+    256.1620981361225,
+    240.54727352054658,
+    307.72221927327075,
+    174.22708376438078,
+    328.46954942869445,
+    159.38140132619267
+   ],
+   "drill_capacity_per_period": [
+    33.448492976530176,
+    107.10631916100498,
+    121.53825964873623,
+    42.336701100167616,
+    21.579590510482355,
+    160.25171654329876
+   ],
+   "borer_capacity_per_period": [
+    95.63667338770799,
+    129.07383873921034,
+    131.4606249918819,
+    112.24559187224375,
+    128.03253977195754,
+    122.18714069106804
+   ],
+   "max_inventory_per_product": 115,
+   "max_sales": [
+    [
+     20.611998707548384,
+     24.632022253262168,
+     33.21984800789242,
+     34.83188974245414,
+     42.082030599615145,
+     36.119899545077416
+    ],
+    [
+     31.558845009646877,
+     51.66413853905543,
+     23.68924169740293,
+     46.3981640685537,
+     27.975271053671076,
+     50.28757769822672
+    ],
+    [
+     32.93042884398532,
+     22.345180044595338,
+     17.05536696780674,
+     59.25073010537855,
+     40.44543150742369,
+     37.79906962564139
+    ]
+   ],
+   "final_inventory_target": [
+    15,
+    6,
+    33
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   69355.5,
+   64843.192962515976,
+   72850.18487025776,
+   41929.88342065539,
+   50663.969073849985,
+   56920.789185881185
+  ],
+  "C-direct": [
+   69355.5,
+   64843.192962515976,
+   72850.18487025776,
+   41929.88342065538,
+   50663.969073849985,
+   56920.78918588119
+  ],
+  "C-direct-2": [
+   69355.5,
+   64843.192962515976,
+   72850.18487025776,
+   41929.88342065538,
+   50663.969073849985,
+   56920.78918588119
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+  ],
+  "A-direct-2": [
+   "crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+  ],
+  "B-structured": [
+   "crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'",
+   "crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not 'list'"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:return mdl.invent[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\"]",
+  "A-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:model.P, model.T, rule=lambda mm, p, t: mm.inventory[p, t] <= max_inv[p] | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\"]",
+  "B-structured": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not \\'list\\'', 'crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not \\'list\\'', 'crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not \\'list\\'', 'crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not \\'list\\'', 'crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not \\'list\\'', 'crash:initialize=float(params[\"final_inventory_target\"]) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: float() argument must be a string or a real number, not \\'list\\'']"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,208 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    86,
+    45,
+    38,
+    38
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    36,
+    42,
+    43,
+    42,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     5,
+     10,
+     7,
+     9,
+     7
+    ],
+    [
+     8,
+     8,
+     5,
+     9,
+     10
+    ],
+    [
+     10,
+     7,
+     8,
+     8,
+     7
+    ],
+    [
+     10,
+     8,
+     7,
+     5,
+     9
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     48,
+     51,
+     45,
+     54,
+     54
+    ],
+    [
+     54,
+     47,
+     51,
+     46,
+     45
+    ],
+    [
+     50,
+     53,
+     48,
+     52,
+     49
+    ],
+    [
+     45,
+     47,
+     46,
+     52,
+     53
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Units available at each warehouse (W0..W3)",
+    "base": [
+     86,
+     45,
+     38,
+     38
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "Units required at each retail store (S0..S4)",
+    "base": [
+     36,
+     42,
+     43,
+     42,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "cost": {
+    "meaning": "Per-unit transportation cost matrix, rows warehouses W0..W3, cols stores S0..S4",
+    "base": [
+     [
+      5,
+      10,
+      7,
+      9,
+      7
+     ],
+     [
+      8,
+      8,
+      5,
+      9,
+      10
+     ],
+     [
+      10,
+      7,
+      8,
+      8,
+      7
+     ],
+     [
+      10,
+      8,
+      7,
+      5,
+      9
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Per-lane shipment capacity matrix, rows warehouses W0..W3, cols stores S0..S4",
+    "base": [
+     [
+      48,
+      51,
+      45,
+      54,
+      54
+     ],
+     [
+      54,
+      47,
+      51,
+      46,
+      45
+     ],
+     [
+      50,
+      53,
+      48,
+      52,
+      49
+     ],
+     [
+      45,
+      47,
+      46,
+      52,
+      53
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

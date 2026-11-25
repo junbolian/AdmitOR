@@ -1,0 +1,56 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "supply_product0",
+  "supply_product1",
+  "demand_product0",
+  "demand_product1",
+  "transport_cost_product0",
+  "transport_cost_product1",
+  "link_capacity"
+ ],
+ "safe": [
+  "supply_product1",
+  "transport_cost_product0",
+  "transport_cost_product1",
+  "link_capacity"
+ ],
+ "tests": {
+  "supply_product0": [
+   0,
+   0
+  ],
+  "supply_product1": [
+   6,
+   6
+  ],
+  "demand_product0": [
+   0,
+   6
+  ],
+  "demand_product1": [
+   0,
+   0
+  ],
+  "transport_cost_product0": [
+   6,
+   6
+  ],
+  "transport_cost_product1": [
+   6,
+   6
+  ],
+  "link_capacity": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

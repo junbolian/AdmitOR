@@ -1,0 +1,272 @@
+{
+ "spec": {
+  "employee_supply": {
+   "base": [
+    1,
+    11,
+    10,
+    8,
+    9,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "project_demand": {
+   "base": [
+    9,
+    9,
+    11,
+    10,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     15,
+     27,
+     19,
+     26,
+     23
+    ],
+    [
+     19,
+     27,
+     24,
+     20,
+     18
+    ],
+    [
+     19,
+     29,
+     23,
+     28,
+     20
+    ],
+    [
+     26,
+     24,
+     24,
+     27,
+     17
+    ],
+    [
+     30,
+     26,
+     30,
+     25,
+     29
+    ],
+    [
+     24,
+     20,
+     19,
+     25,
+     17
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "assignment_capacity": {
+   "base": [
+    [
+     7,
+     7,
+     6,
+     5,
+     4
+    ],
+    [
+     7,
+     7,
+     4,
+     5,
+     5
+    ],
+    [
+     4,
+     7,
+     5,
+     7,
+     7
+    ],
+    [
+     4,
+     5,
+     6,
+     6,
+     6
+    ],
+    [
+     8,
+     6,
+     4,
+     7,
+     5
+    ],
+    [
+     5,
+     8,
+     8,
+     5,
+     6
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "employee_supply": {
+    "meaning": "Required total hours contributed by each employee",
+    "base": [
+     1,
+     11,
+     10,
+     8,
+     9,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "project_demand": {
+    "meaning": "Required total hours received by each project",
+    "base": [
+     9,
+     9,
+     11,
+     10,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "Cost per hour assigned for each employee-project pair (rows=employees, cols=projects)",
+    "base": [
+     [
+      15,
+      27,
+      19,
+      26,
+      23
+     ],
+     [
+      19,
+      27,
+      24,
+      20,
+      18
+     ],
+     [
+      19,
+      29,
+      23,
+      28,
+      20
+     ],
+     [
+      26,
+      24,
+      24,
+      27,
+      17
+     ],
+     [
+      30,
+      26,
+      30,
+      25,
+      29
+     ],
+     [
+      24,
+      20,
+      19,
+      25,
+      17
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "assignment_capacity": {
+    "meaning": "Maximum hours assignable for each employee-project pair (rows=employees, cols=projects)",
+    "base": [
+     [
+      7,
+      7,
+      6,
+      5,
+      4
+     ],
+     [
+      7,
+      7,
+      4,
+      5,
+      5
+     ],
+     [
+      4,
+      7,
+      5,
+      7,
+      7
+     ],
+     [
+      4,
+      5,
+      6,
+      6,
+      6
+     ],
+     [
+      8,
+      6,
+      4,
+      7,
+      5
+     ],
+     [
+      5,
+      8,
+      8,
+      5,
+      6
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

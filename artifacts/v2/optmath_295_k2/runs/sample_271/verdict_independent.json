@@ -1,0 +1,210 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured-2",
+  "C-direct-2"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "expected_returns": [
+    0.1253,
+    0.0893,
+    0.055,
+    0.0948,
+    0.0803,
+    0.128
+   ],
+   "min_expected_return": 0.1,
+   "max_weight": 0.3,
+   "covariance_0_1": 0.0216,
+   "covariance_0_2": 0.0471
+  },
+  {
+   "expected_returns": [
+    0.1357821067080637,
+    0.0638500762648305,
+    0.047575967506180934,
+    0.07905622678590503,
+    0.09169318309842212,
+    0.1415705206340796
+   ],
+   "min_expected_return": 0.18274873083277526,
+   "max_weight": 0.13259189099794533,
+   "covariance_0_1": 0.01991351130520184,
+   "covariance_0_2": 0.024953449035533114
+  },
+  {
+   "expected_returns": [
+    0.1041472029457349,
+    0.08958693633657817,
+    0.0393756869995675,
+    0.07766988557105656,
+    0.08752143221221742,
+    0.13145150571032704
+   ],
+   "min_expected_return": 0.07527049952651146,
+   "max_weight": 0.6098023996821132,
+   "covariance_0_1": 0.028283697864241054,
+   "covariance_0_2": 0.023856091580836677
+  },
+  {
+   "expected_returns": [
+    0.1482914913527905,
+    0.09991630878346919,
+    0.049728267045093734,
+    0.07520367394929413,
+    0.10232852581892272,
+    0.11545046106464973
+   ],
+   "min_expected_return": 0.054839334940823665,
+   "max_weight": 0.1418805579917908,
+   "covariance_0_1": 0.02910587831310513,
+   "covariance_0_2": 0.05198549607738057
+  },
+  {
+   "expected_returns": [
+    0.14838990358476792,
+    0.10160902913105477,
+    0.05619552701800513,
+    0.1217108246551466,
+    0.07444778629389846,
+    0.13199672048178382
+   ],
+   "min_expected_return": 0.1727047462804792,
+   "max_weight": 0.6375937647460338,
+   "covariance_0_1": 0.02941286904671279,
+   "covariance_0_2": 0.0507432860415935
+  },
+  {
+   "expected_returns": [
+    0.14067971064663792,
+    0.06496527047627039,
+    0.04602064309650104,
+    0.08282038736968785,
+    0.06005437744818037,
+    0.10747834007252711
+   ],
+   "min_expected_return": 0.05616022870555666,
+   "max_weight": 0.3140749229545875,
+   "covariance_0_1": 0.024530783996111048,
+   "covariance_0_2": 0.04073359562949097
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   0.0,
+   null,
+   0.0,
+   null,
+   null,
+   0.0
+  ],
+  "C-direct": [
+   0.028203295263191316,
+   null,
+   0.020228511530385608,
+   null,
+   null,
+   0.019986031099281616
+  ],
+  "C-direct-2": [
+   1.943201606253752e-09,
+   null,
+   1.0066548857258673e-09,
+   null,
+   null,
+   0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "A-direct-2": [
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs",
+   "crash:File \"<PATH>/highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs"
+  ],
+  "B-structured": [
+   "incomplete_covariance",
+   "incomplete_covariance",
+   "incomplete_covariance",
+   "incomplete_covariance",
+   "incomplete_covariance",
+   "incomplete_covariance"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "solver_failed",
+   "optimal",
+   "solver_failed",
+   "solver_failed",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 2, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs']",
+  "A-direct-2": "failed on informative instance(s) [0, 2, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 620, in _set_objective | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Highs']",
+  "B-structured": "failed on informative instance(s) [0, 2, 5]: ['incomplete_covariance', 'incomplete_covariance', 'incomplete_covariance']",
+  "C-direct": "diverges from consensus by 0.0282 on instance 0 (params: {'expected_returns': [0.13, 0.09, 0.06, 0.09, 0.08, 0.13], 'min_expected_return': 0.1, 'max_weight': 0.3, 'covariance_0_1': 0.02, 'covariance_0_2': 0.05})"
+ },
+ "disagreements": [],
+ "notes": []
+}

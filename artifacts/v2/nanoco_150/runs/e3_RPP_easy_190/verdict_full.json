@@ -1,0 +1,123 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "distance_matrix": [
+    26,
+    32,
+    43,
+    10,
+    36,
+    39,
+    71,
+    56,
+    32,
+    35,
+    51,
+    45,
+    95,
+    74,
+    28,
+    51,
+    63,
+    58,
+    47,
+    42,
+    26,
+    93,
+    30,
+    37,
+    61,
+    18,
+    51,
+    69
+   ],
+   "coordinates_x": [
+    50,
+    26,
+    82,
+    12,
+    57,
+    51,
+    33,
+    100
+   ],
+   "coordinates_y": [
+    50,
+    59,
+    55,
+    30,
+    43,
+    14,
+    15,
+    0
+   ],
+   "required_edge_ratio": 0.778
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   411.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "invalid_dimensions",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:dist[i, j] = float(distance_matrix_flat[idx]) | ~~~~~~~~~~~~~~~~~~~~^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

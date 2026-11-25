@@ -1,0 +1,359 @@
+{
+ "spec": {
+  "supply_node0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "demand_node9": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "intermediate_net_flow": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "cost_node0_to_node1": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node2": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node3": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node4": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node5": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node6": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node7": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node8": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node0_to_node9": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node0": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node2": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node3": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node4": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node5": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node6": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node7": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node8": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_node1_to_node9": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[supply_node0] degenerate abs range (lo == hi); perturbation has no effect",
+  "[demand_node9] degenerate abs range (lo == hi); perturbation has no effect",
+  "[intermediate_net_flow] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "supply_node0": {
+    "meaning": "Required net outflow from node_0 (supply hub)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "demand_node9": {
+    "meaning": "Required net inflow to node_9 (demand hub)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "intermediate_net_flow": {
+    "meaning": "Net supply/demand at intermediate nodes node_1..node_8 (flow conservation, net zero)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "cost_node0_to_node1": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_1",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node2": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_2",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node3": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_3",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node4": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_4",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node5": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_5",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node6": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_6",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node7": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_7",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node8": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_8",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node0_to_node9": {
+    "meaning": "Transportation cost per unit on arc node_0 -> node_9",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node0": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_0",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node2": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_2",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node3": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_3",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node4": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_4",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node5": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_5",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node6": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_6",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node7": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_7",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node8": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_8",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_node1_to_node9": {
+    "meaning": "Transportation cost per unit on arc node_1 -> node_9",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

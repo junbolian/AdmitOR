@@ -1,0 +1,57 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     42,
+     30,
+     46
+    ],
+    [
+     28,
+     48,
+     10
+    ],
+    [
+     42,
+     29,
+     14
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Operation processing times (minutes) for each task on its required robots, in task order: Task0 [R1,R0,R2], Task1 [R2,R1,R0], Task2 [R2,R1,R0]",
+    "base": [
+     [
+      42,
+      30,
+      46
+     ],
+     [
+      28,
+      48,
+      10
+     ],
+     [
+      42,
+      29,
+      14
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

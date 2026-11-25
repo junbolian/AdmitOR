@@ -1,0 +1,250 @@
+{
+ "spec": {
+  "dist_0_1": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_0_2": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_0_3": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_1_0": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_1_2": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_1_3": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_2_0": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_2_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_2_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_3_0": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_3_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "dist_3_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "bigM": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500000.0,
+    "hi": 2000000.0,
+    "integer": true
+   }
+  },
+  "num_selected": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_selected] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "dist_0_1": {
+    "meaning": "distance Node 0 to Node 1",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_0_2": {
+    "meaning": "distance Node 0 to Node 2",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_0_3": {
+    "meaning": "distance Node 0 to Node 3",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_1_0": {
+    "meaning": "distance Node 1 to Node 0",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_1_2": {
+    "meaning": "distance Node 1 to Node 2",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_1_3": {
+    "meaning": "distance Node 1 to Node 3",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_2_0": {
+    "meaning": "distance Node 2 to Node 0",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_2_1": {
+    "meaning": "distance Node 2 to Node 1",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_2_3": {
+    "meaning": "distance Node 2 to Node 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_3_0": {
+    "meaning": "distance Node 3 to Node 0",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_3_1": {
+    "meaning": "distance Node 3 to Node 1",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "dist_3_2": {
+    "meaning": "distance Node 3 to Node 2",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "bigM": {
+    "meaning": "large constant used to deactivate distance constraints when a pair is not selected",
+    "base": 1000000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500000,
+     "hi": 2000000,
+     "integer": true
+    }
+   },
+   "num_selected": {
+    "meaning": "exact number of facilities that must be selected",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "number of candidate facility locations (index-set size; frozen)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "sample_id": "e3_JSSP_91",
+ "set": "heldout",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The extracted matrix has its columns ordered as [M0, M1, M2], but the rows store values in route order (M1 first, then M0, then M2). This means the M0 and M1 values are swapped for every lot.\n\nChecking each lot against the statement:\n\n- L0: statement says M1=33, M0=13, M2=15. Extracted row [13, 33, 15] → column 0 = 13 (M0), column 1 = 33 (M1). That actually matches if columns are [M0, M1, M2].\n- L1: statement says M1=46, M0=50, M2=20. Extracted row [50, 46, 20] → column 0 = 50 (M0), column 1 = 46 (M1). Matches.\n- L2: statement says M1=26, M0=39, M2=19. Extracted row [39, 26, 19] → column 0 = 39 (M0), column 1 = 26 (M1). Matches.\n\nAll values match the statement with columns interpreted as [M0, M1, M2]. No mismatches, no unstated values.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

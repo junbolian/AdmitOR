@@ -1,0 +1,132 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "bar_length": 100,
+   "order_28": 3,
+   "order_38": 3,
+   "order_21": 4,
+   "piece_length_28": 28,
+   "piece_length_38": 38,
+   "piece_length_21": 21
+  },
+  {
+   "bar_length": 109.18280395373651,
+   "order_28": 3,
+   "order_38": 3,
+   "order_21": 4,
+   "piece_length_28": 29.9863581989777,
+   "piece_length_38": 40.01437415662119,
+   "piece_length_21": 23.470731276540526
+  },
+  {
+   "bar_length": 92.60816497888248,
+   "order_28": 3,
+   "order_38": 3,
+   "order_21": 4,
+   "piece_length_28": 28.044984420068243,
+   "piece_length_38": 32.60251005439604,
+   "piece_length_21": 19.102677199325885
+  },
+  {
+   "bar_length": 109.4965331333857,
+   "order_28": 3,
+   "order_38": 3,
+   "order_21": 4,
+   "piece_length_28": 30.59921583609374,
+   "piece_length_38": 32.3740858603299,
+   "piece_length_21": 22.92666128654669
+  },
+  {
+   "bar_length": 110.94418184964681,
+   "order_28": 3,
+   "order_38": 3,
+   "order_21": 4,
+   "piece_length_28": 26.627394178946062,
+   "piece_length_38": 33.35730261453369,
+   "piece_length_21": 18.459313174050823
+  },
+  {
+   "bar_length": 115.4248309904238,
+   "order_28": 3,
+   "order_38": 3,
+   "order_21": 4,
+   "piece_length_28": 28.304315968219484,
+   "piece_length_38": 43.393519709364824,
+   "piece_length_21": 20.234766576412625
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3.0,
+   3.0,
+   3.0000000000000004,
+   3.0,
+   3.0,
+   3.0
+  ],
+  "B-structured": [
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0
+  ],
+  "C-direct": [
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0,
+   3.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

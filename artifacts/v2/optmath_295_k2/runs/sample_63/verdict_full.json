@@ -1,0 +1,162 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "participant_car_interest_p0": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "participant_car_interest_p1": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "participant_car_interest_p2": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "participant_car_interest_p3": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "assignment_objective_coefficients": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "participant_capacity": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "car_capacity": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   2.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:obj_coeffs[i * num_cars + j] * m.assign[i, j] | ~~~~~~~~~~^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "A-direct-2": [
+   "crash:return weights[p * num_cars + c] if isinstance(weights, (list, tuple)) else weights | ~~~~~~~^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:raise ValueError( | ValueError: Invalid parameter value: participant_limit[None] = '[1, 1, 1, 1]', value type=<class 'list'>. | Value not in parameter domain NonNegativeReals",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured-2": [
+   "crash:raise ValueError( | ValueError: Invalid parameter value: participant_limit[None] = '[1, 1, 1, 1]', value type=<class 'list'>. | Value not in parameter domain Reals",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:return obj_coeffs[p * num_cars + c] | ~~~~~~~~~~^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "spec": {
+  "values": {
+   "base": [
+    107,
+    883,
+    346,
+    108,
+    222,
+    2,
+    393,
+    660,
+    346,
+    576,
+    984
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "weights": {
+   "base": [
+    4464,
+    3938,
+    3726,
+    4355,
+    1683,
+    2824,
+    1512,
+    4603,
+    172,
+    23,
+    4141
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "capacity": {
+   "base": 22008,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.18
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "values": {
+    "meaning": "Value (profit) of each package, indexed 0..10",
+    "base": [
+     107,
+     883,
+     346,
+     108,
+     222,
+     2,
+     393,
+     660,
+     346,
+     576,
+     984
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "weights": {
+    "meaning": "Weight of each package, indexed 0..10",
+    "base": [
+     4464,
+     3938,
+     3726,
+     4355,
+     1683,
+     2824,
+     1512,
+     4603,
+     172,
+     23,
+     4141
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total weight the vehicle can carry",
+    "base": 22008,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.18
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

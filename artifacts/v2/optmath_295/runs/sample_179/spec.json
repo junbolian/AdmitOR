@@ -1,0 +1,155 @@
+{
+ "spec": {
+  "producer_capacity": {
+   "base": [
+    2226,
+    2118,
+    2644,
+    2649,
+    2548,
+    2682
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "contract_demand": {
+   "base": [
+    989,
+    1142,
+    1012,
+    1011,
+    1015,
+    1096
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "min_contributors": {
+   "base": [
+    3,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "producer_min_delivery": {
+   "base": [
+    489,
+    465,
+    581,
+    582,
+    560,
+    590
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_coefficient": {
+   "base": [
+    46,
+    43
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "producer_capacity": {
+    "meaning": "Maximum electricity producer can generate across all contracts",
+    "base": [
+     2226,
+     2118,
+     2644,
+     2649,
+     2548,
+     2682
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "contract_demand": {
+    "meaning": "Minimum units of electricity required by each contract",
+    "base": [
+     989,
+     1142,
+     1012,
+     1011,
+     1015,
+     1096
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers that must contribute to each contract",
+    "base": [
+     3,
+     2,
+     2,
+     2,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "producer_min_delivery": {
+    "meaning": "Minimum units a producer must deliver per contract if it contributes",
+    "base": [
+     489,
+     465,
+     581,
+     582,
+     560,
+     590
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_coefficient": {
+    "meaning": "Cost per unit of electricity delivered by producer to contract (representative range 40-50; specific Producer 0 values shown)",
+    "base": [
+     46,
+     43
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 35,
+     "hi": 60,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

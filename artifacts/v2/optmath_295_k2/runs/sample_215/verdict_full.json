@@ -1,0 +1,283 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "weights": [
+    20,
+    15,
+    17,
+    17,
+    18,
+    24,
+    20,
+    16,
+    21,
+    15,
+    22,
+    15,
+    25,
+    22,
+    23,
+    24,
+    17,
+    25,
+    16,
+    23
+   ],
+   "num_facilities": 2
+  },
+  {
+   "weights": [
+    23.34624316298921,
+    6.450193594008005,
+    12.410598094730034,
+    11.353499058235986,
+    23.107778225942667,
+    29.08894523777985,
+    29.412309624916297,
+    8.06922558648479,
+    19.032429856068816,
+    6.536349949885266,
+    14.572042534815129,
+    15.096395185860525,
+    10.796079090515908,
+    14.04931397812752,
+    27.136810482714843,
+    25.29431464137264,
+    11.296988689630213,
+    27.677970516277263,
+    21.941064768214275,
+    9.379365767114486
+   ],
+   "num_facilities": 2
+  },
+  {
+   "weights": [
+    24.755345479717448,
+    12.124509297323854,
+    9.971781796160343,
+    26.32714667301834,
+    14.47044217443274,
+    12.271080289348262,
+    10.321193044003136,
+    22.67189183387123,
+    23.61389599044566,
+    20.528308918938848,
+    28.06491916871679,
+    15.652105646184616,
+    39.19347291938112,
+    18.793307558300533,
+    24.436321423141067,
+    33.48685433048625,
+    19.417802948230623,
+    35.85120700932332,
+    17.485161188929833,
+    28.646182679531893
+   ],
+   "num_facilities": 2
+  },
+  {
+   "weights": [
+    13.469558615637126,
+    11.20898334483793,
+    8.427756329242001,
+    11.548934081765015,
+    9.381630875250151,
+    17.605639769570658,
+    23.256426662345607,
+    13.40477783622562,
+    17.728560371345445,
+    9.77112655388678,
+    15.848214502096594,
+    22.8597825788249,
+    29.44106155739781,
+    24.88105854960849,
+    13.923426690267478,
+    30.59885178097006,
+    10.133410872743339,
+    21.383663252729434,
+    25.398848332222634,
+    26.863993371972963
+   ],
+   "num_facilities": 2
+  },
+  {
+   "weights": [
+    24.430742023756995,
+    21.17133456341658,
+    22.630398195543396,
+    11.472580668067732,
+    7.893365268327216,
+    18.685047784101563,
+    14.425781023416867,
+    10.45087059685747,
+    32.161324801243374,
+    21.774617276508042,
+    17.10749605307982,
+    17.797895975307846,
+    21.86895703181993,
+    32.94405636915035,
+    21.864311131412208,
+    17.22854879514391,
+    11.831201156957263,
+    26.841044024894522,
+    11.444638883640359,
+    25.334573330169718
+   ],
+   "num_facilities": 2
+  },
+  {
+   "weights": [
+    17.585612123369536,
+    9.9477736648311,
+    27.149767172500255,
+    17.19433639099988,
+    9.163643302953949,
+    10.956951612232356,
+    10.63157912841582,
+    18.44696400069933,
+    28.360399981946696,
+    13.598879402394314,
+    10.47713144241167,
+    12.869147157117663,
+    39.88364140720291,
+    22.76861871061722,
+    36.00176322213587,
+    34.39045542435355,
+    7.034212847633521,
+    31.621654580805846,
+    19.48883908531024,
+    24.020381119282753
+   ],
+   "num_facilities": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   47.0,
+   46.45402138893188,
+   62.13303701001814,
+   57.462845152943025,
+   53.33265936465995,
+   67.03340857970316
+  ],
+  "B-structured-2": [
+   47.0,
+   46.45402138893188,
+   62.13303701001814,
+   57.462845152943025,
+   53.33265936465995,
+   67.03340857970316
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return weights[str(i)][str(j)] | ~~~~~~~^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return weights[str(i)][str(j)] | ~~~~~~~^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return weights[str(i)][str(j)] | ~~~~~~~^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return weights[str(i)][str(j)] | ~~~~~~~^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return weights[str(i)][str(j)] | ~~~~~~~^^^^^^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:return weights[str(i)][str(j)] | ~~~~~~~^^^^^^^^ | TypeError: list indices must be integers or slices, not str"
+  ],
+  "A-direct-2": [
+   "crash:elif len(entry) == 2 and isinstance(entry[1], (int, float)): | ^^^^^^^^^^ | TypeError: object of type 'int' has no len()",
+   "crash:elif len(entry) == 2 and isinstance(entry[1], (int, float)): | ^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:elif len(entry) == 2 and isinstance(entry[1], (int, float)): | ^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:elif len(entry) == 2 and isinstance(entry[1], (int, float)): | ^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:elif len(entry) == 2 and isinstance(entry[1], (int, float)): | ^^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:elif len(entry) == 2 and isinstance(entry[1], (int, float)): | ^^^^^^^^^^ | TypeError: object of type 'float' has no len()"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "crash:for key, val in weights.items(): | ^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'items'",
+   "crash:for key, val in weights.items(): | ^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'items'",
+   "crash:for key, val in weights.items(): | ^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'items'",
+   "crash:for key, val in weights.items(): | ^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'items'",
+   "crash:for key, val in weights.items(): | ^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'items'",
+   "crash:for key, val in weights.items(): | ^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'items'"
+  ],
+  "C-direct-2": [
+   "crash:for j, val in enumerate(row): | ^^^^^^^^^^^^^^ | TypeError: 'int' object is not iterable",
+   "crash:for j, val in enumerate(row): | ^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:for j, val in enumerate(row): | ^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:for j, val in enumerate(row): | ^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:for j, val in enumerate(row): | ^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable",
+   "crash:for j, val in enumerate(row): | ^^^^^^^^^^^^^^ | TypeError: 'float' object is not iterable"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs A-direct-2: incomparable (no co-solved instance)",
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "A-direct vs C-direct-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured: incomparable (no co-solved instance)",
+  "A-direct-2 vs B-structured-2: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct: incomparable (no co-solved instance)",
+  "A-direct-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct-2: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct: incomparable (no co-solved instance)",
+  "B-structured-2 vs C-direct-2: incomparable (no co-solved instance)",
+  "C-direct vs C-direct-2: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

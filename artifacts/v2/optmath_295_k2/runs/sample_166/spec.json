@@ -1,0 +1,195 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    24,
+    22,
+    19,
+    17,
+    18,
+    15,
+    20,
+    22,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "profit_supplier0": {
+   "base": [
+    4,
+    8,
+    5,
+    9,
+    6,
+    7,
+    5,
+    8,
+    7,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_supplier1": {
+   "base": [
+    5,
+    6,
+    10,
+    4,
+    5,
+    9,
+    7,
+    5,
+    8,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_supplier2": {
+   "base": [
+    6,
+    10,
+    5,
+    8,
+    7,
+    6,
+    9,
+    6,
+    6,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_supplier3": {
+   "base": [
+    8,
+    7,
+    8,
+    7,
+    9,
+    5,
+    6,
+    8,
+    5,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required units of each product (0,1) in each region (0-4); exact-satisfaction RHS",
+    "base": [
+     24,
+     22,
+     19,
+     17,
+     18,
+     15,
+     20,
+     22,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "profit_supplier0": {
+    "meaning": "Profit margins for Supplier 0, row-major region order (R0P0,R0P1,R1P0,R1P1,...)",
+    "base": [
+     4,
+     8,
+     5,
+     9,
+     6,
+     7,
+     5,
+     8,
+     7,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_supplier1": {
+    "meaning": "Profit margins for Supplier 1, row-major region order",
+    "base": [
+     5,
+     6,
+     10,
+     4,
+     5,
+     9,
+     7,
+     5,
+     8,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_supplier2": {
+    "meaning": "Profit margins for Supplier 2, row-major region order",
+    "base": [
+     6,
+     10,
+     5,
+     8,
+     7,
+     6,
+     9,
+     6,
+     6,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_supplier3": {
+    "meaning": "Profit margins for Supplier 3, row-major region order",
+    "base": [
+     8,
+     7,
+     8,
+     7,
+     9,
+     5,
+     6,
+     8,
+     5,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

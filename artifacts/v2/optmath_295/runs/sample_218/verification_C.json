@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_218",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"assignment_limit\",\n      \"evidence\": \"\\\"Similar limits apply to all other consultants and projects.\\\" — only Consultant 0's row is given explicitly; all other rows are unspecified\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "assignment_limit",
+   "evidence": "\"Similar limits apply to all other consultants and projects.\" — only Consultant 0's row is given explicitly; all other rows are unspecified"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

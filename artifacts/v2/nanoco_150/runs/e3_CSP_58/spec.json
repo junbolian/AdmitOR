@@ -1,0 +1,98 @@
+{
+ "spec": {
+  "stock_length": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "segment_lengths": {
+   "base": [
+    50,
+    59,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demands": {
+   "base": [
+    2,
+    2,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[segment_lengths] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[demands] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "stock_length": {
+    "meaning": "length of one standard raw cable reel in meters",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "segment_lengths": {
+    "meaning": "custom fiber segment lengths required (meters)",
+    "base": [
+     50,
+     59,
+     29
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      40,
+      50,
+      20
+     ],
+     "hi": [
+      60,
+      70,
+      40
+     ],
+     "integer": false
+    }
+   },
+   "demands": {
+    "meaning": "number of units required for each segment length",
+    "base": [
+     2,
+     2,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      1,
+      1,
+      3
+     ],
+     "hi": [
+      4,
+      4,
+      12
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

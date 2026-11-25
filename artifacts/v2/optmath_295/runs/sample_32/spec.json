@@ -1,0 +1,254 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    0,
+    0,
+    16,
+    63,
+    67
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "demand": {
+   "base": [
+    32,
+    40,
+    40,
+    24,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     5,
+     5,
+     8,
+     10,
+     10
+    ],
+    [
+     7,
+     7,
+     8,
+     6,
+     7
+    ],
+    [
+     10,
+     9,
+     7,
+     5,
+     5
+    ],
+    [
+     5,
+     10,
+     10,
+     5,
+     5
+    ],
+    [
+     9,
+     7,
+     8,
+     9,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     58,
+     114,
+     103,
+     103,
+     67
+    ],
+    [
+     119,
+     84,
+     104,
+     68,
+     56
+    ],
+    [
+     106,
+     83,
+     91,
+     53,
+     110
+    ],
+    [
+     104,
+     118,
+     67,
+     107,
+     117
+    ],
+    [
+     112,
+     73,
+     61,
+     57,
+     101
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 130.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Available product at each origin [0,1,2,3,4]",
+    "base": [
+     0,
+     0,
+     16,
+     63,
+     67
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Required product at each destination [0,1,2,3,4]",
+    "base": [
+     32,
+     40,
+     40,
+     24,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "cost": {
+    "meaning": "Unit transportation cost from origin i to destination j",
+    "base": [
+     [
+      5,
+      5,
+      8,
+      10,
+      10
+     ],
+     [
+      7,
+      7,
+      8,
+      6,
+      7
+     ],
+     [
+      10,
+      9,
+      7,
+      5,
+      5
+     ],
+     [
+      5,
+      10,
+      10,
+      5,
+      5
+     ],
+     [
+      9,
+      7,
+      8,
+      9,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum flow from origin i to destination j",
+    "base": [
+     [
+      58,
+      114,
+      103,
+      103,
+      67
+     ],
+     [
+      119,
+      84,
+      104,
+      68,
+      56
+     ],
+     [
+      106,
+      83,
+      91,
+      53,
+      110
+     ],
+     [
+      104,
+      118,
+      67,
+      107,
+      117
+     ],
+     [
+      112,
+      73,
+      61,
+      57,
+      101
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 130,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "spec": {
+  "item_weights": {
+   "base": [
+    34,
+    33,
+    33,
+    37,
+    32,
+    38,
+    40
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "bin_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "item_weights": {
+    "meaning": "Weight of each item that must be packed",
+    "base": [
+     34,
+     33,
+     33,
+     37,
+     32,
+     38,
+     40
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "bin_capacity": {
+    "meaning": "Maximum total weight a bin can hold",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

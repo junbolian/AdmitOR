@@ -1,0 +1,42 @@
+{
+ "alive": [
+  "A-direct",
+  "C-direct"
+ ],
+ "testable": [
+  "min_distance_lower_bound",
+  "min_distance_upper_bound",
+  "big_M",
+  "exact_selection_count",
+  "num_nodes"
+ ],
+ "safe": [
+  "min_distance_upper_bound",
+  "big_M",
+  "exact_selection_count",
+  "num_nodes"
+ ],
+ "tests": {
+  "min_distance_lower_bound": [
+   1,
+   0
+  ],
+  "min_distance_upper_bound": [
+   2,
+   2
+  ],
+  "big_M": [
+   2,
+   2
+  ],
+  "exact_selection_count": [
+   2,
+   2
+  ],
+  "num_nodes": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

@@ -1,0 +1,248 @@
+{
+ "spec": {
+  "base_cost": {
+   "base": [
+    79,
+    80,
+    80
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "marginal_cost": {
+   "base": [
+    3,
+    3,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "startup_cost": {
+   "base": [
+    353,
+    345,
+    346
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    206,
+    227,
+    173,
+    215,
+    222
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_output": {
+   "base": [
+    34,
+    35,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_output": {
+   "base": [
+    130,
+    125,
+    130
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "max_generators": {
+   "base": [
+    2,
+    5,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "reserve_requirement": {
+   "base": [
+    236.9,
+    261.05,
+    198.95,
+    247.25,
+    255.3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "initial_startup_bound": {
+   "base": [
+    1,
+    5,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[max_generators] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[initial_startup_bound] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "base_cost": {
+    "meaning": "Fixed cost per active generator per period for types 0,1,2",
+    "base": [
+     79,
+     80,
+     80
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "marginal_cost": {
+    "meaning": "Cost per MW of output for types 0,1,2",
+    "base": [
+     3,
+     3,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "startup_cost": {
+    "meaning": "Cost per startup for types 0,1,2",
+    "base": [
+     353,
+     345,
+     346
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Minimum total MW required per period (5 periods)",
+    "base": [
+     206,
+     227,
+     173,
+     215,
+     222
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_output": {
+    "meaning": "Minimum MW per active generator for types 0,1,2",
+    "base": [
+     34,
+     35,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_output": {
+    "meaning": "Maximum MW per generator for types 0,1,2",
+    "base": [
+     130,
+     125,
+     130
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "max_generators": {
+    "meaning": "Maximum number of generators available per period for types 0,1,2 (cardinality; frozen)",
+    "base": [
+     2,
+     5,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      2,
+      5,
+      1
+     ],
+     "hi": [
+      2,
+      5,
+      1
+     ],
+     "integer": true
+    }
+   },
+   "reserve_requirement": {
+    "meaning": "Minimum total max capacity per period (5 periods)",
+    "base": [
+     236.9,
+     261.05,
+     198.95,
+     247.25,
+     255.3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "initial_startup_bound": {
+    "meaning": "Type-specific constant in period-0 startup inequality: generators <= startups + bound, types 0,1,2",
+    "base": [
+     1,
+     5,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      1,
+      5,
+      0
+     ],
+     "hi": [
+      1,
+      5,
+      0
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

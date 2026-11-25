@@ -1,0 +1,291 @@
+{
+ "spec": {
+  "coordinates": {
+   "base": [
+    [
+     99,
+     82
+    ],
+    [
+     72,
+     14
+    ],
+    [
+     32,
+     37
+    ],
+    [
+     76,
+     96
+    ],
+    [
+     0,
+     14
+    ],
+    [
+     34,
+     65
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "arc_min_flow": {
+   "base": [
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    2,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    1,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "arc_max_flow": {
+   "base": [
+    4,
+    8,
+    2,
+    9,
+    3,
+    7,
+    8,
+    6,
+    4,
+    3,
+    5,
+    7,
+    9,
+    4,
+    7,
+    6,
+    4,
+    7
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "arc_unit_cost": {
+   "base": [
+    8,
+    9,
+    2,
+    9,
+    7,
+    5,
+    7,
+    6,
+    7,
+    3,
+    6,
+    12,
+    7,
+    13,
+    10,
+    6,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "num_nodes": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_arcs": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_arcs] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "coordinates": {
+    "meaning": "2D coordinates of the six nodes (x,y)",
+    "base": [
+     [
+      99,
+      82
+     ],
+     [
+      72,
+      14
+     ],
+     [
+      32,
+      37
+     ],
+     [
+      76,
+      96
+     ],
+     [
+      0,
+      14
+     ],
+     [
+      34,
+      65
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "arc_min_flow": {
+    "meaning": "mandatory minimum robot flow on each of the 18 arcs",
+    "base": [
+     2,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     2,
+     2,
+     0,
+     1,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "arc_max_flow": {
+    "meaning": "maximum robot flow capacity on each of the 18 arcs",
+    "base": [
+     4,
+     8,
+     2,
+     9,
+     3,
+     7,
+     8,
+     6,
+     4,
+     3,
+     5,
+     7,
+     9,
+     4,
+     7,
+     6,
+     4,
+     7
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "arc_unit_cost": {
+    "meaning": "energy consumption cost per robot on each of the 18 arcs",
+    "base": [
+     8,
+     9,
+     2,
+     9,
+     7,
+     5,
+     7,
+     6,
+     7,
+     3,
+     6,
+     12,
+     7,
+     13,
+     10,
+     6,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "num_nodes": {
+    "meaning": "number of nodes (frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_arcs": {
+    "meaning": "number of arcs (frozen)",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 18,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_179452",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll compare each parameter against the statement systematically.\n\n**dispersion_weights**: The statement lists 20 ordered pairs explicitly. I'll check each row of the extracted matrix against those values.\n\nRow 0 (Node 0 as first): (0,1)=15 ✓, (0,2)=18 ✓, (0,3)=18 ✓, (0,4)=22 ✓\nRow 1 (Node 1 as first): (1,0)=21 ✓, (1,2)=16 ✓, (1,3)=21 ✓, (1,4)=25 ✓\nRow 2 (Node 2 as first): (2,0)=22 ✓, (2,1)=20 ✓, (2,3)=15 ✓, (2,4)=25 ✓\nRow 3 (Node 3 as first): (3,0)=22 ✓, (3,1)=16 ✓, (3,2)=21 ✓, (3,4)=22 ✓\nRow 4 (Node 4 as first): (4,0)=22 ✓, (4,1)=25 ✓, (4,2)=17 ✓, (4,3)=20 ✓\n\nAll 20 stated values match. The diagonal entries (0s) are not stated but follow directly as a modeling constant (a node paired with itself has no dispersion contribution), so not reportable.\n\n**num_facilities_selected**: The statement says \"Exactly 3 facilities must be selected.\" The extracted value is 3. ✓\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

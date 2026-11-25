@@ -1,0 +1,151 @@
+{
+ "spec": {
+  "team_costs": {
+   "base": [
+    5,
+    3,
+    5,
+    2,
+    4,
+    2,
+    5,
+    4,
+    2,
+    3,
+    1,
+    3,
+    1,
+    4,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "task_requirements": {
+   "base": [
+    3,
+    3,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    1,
+    3,
+    3,
+    1,
+    3,
+    3,
+    3,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_teams": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "num_tasks": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 16.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_teams] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_tasks] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "team_costs": {
+    "meaning": "Cost of selecting each of the 15 teams",
+    "base": [
+     5,
+     3,
+     5,
+     2,
+     4,
+     2,
+     5,
+     4,
+     2,
+     3,
+     1,
+     3,
+     1,
+     4,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "task_requirements": {
+    "meaning": "Minimum number of covering teams required for each of the 16 tasks",
+    "base": [
+     3,
+     3,
+     1,
+     2,
+     1,
+     2,
+     2,
+     1,
+     1,
+     3,
+     3,
+     1,
+     3,
+     3,
+     3,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_teams": {
+    "meaning": "Number of available teams (index-set size, frozen)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "num_tasks": {
+    "meaning": "Number of critical tasks (index-set size, frozen)",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 16,
+     "hi": 16,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

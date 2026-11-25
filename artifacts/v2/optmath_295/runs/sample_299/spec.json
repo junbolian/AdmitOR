@@ -1,0 +1,103 @@
+{
+ "spec": {
+  "tower_cost": {
+   "base": [
+    112,
+    73,
+    82,
+    94,
+    95,
+    47,
+    46,
+    42,
+    65
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "budget": {
+   "base": 360,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "population": {
+   "base": [
+    1193,
+    523,
+    849,
+    1115,
+    692,
+    798,
+    1080,
+    1193,
+    891,
+    989,
+    1149
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "tower_cost": {
+    "meaning": "Cost of building each tower (tower_0..tower_8)",
+    "base": [
+     112,
+     73,
+     82,
+     94,
+     95,
+     47,
+     46,
+     42,
+     65
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "budget": {
+    "meaning": "Total available budget for tower construction",
+    "base": 360,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "population": {
+    "meaning": "Population of each region (region_0..region_10)",
+    "base": [
+     1193,
+     523,
+     849,
+     1115,
+     692,
+     798,
+     1080,
+     1193,
+     891,
+     989,
+     1149
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "duration_J0_M0": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_J0_M1": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "duration_J0_M2": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_J1_M0": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "duration_J1_M1": {
+   "base": 33,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "duration_J1_M2": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "duration_J2_M0": {
+   "base": 49,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_J2_M1": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_J2_M2": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "duration_J0_M0": {
+    "meaning": "Processing time of component J0 on workstation M0 (minutes)",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_J0_M1": {
+    "meaning": "Processing time of component J0 on workstation M1 (minutes)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "duration_J0_M2": {
+    "meaning": "Processing time of component J0 on workstation M2 (minutes)",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_J1_M0": {
+    "meaning": "Processing time of component J1 on workstation M0 (minutes)",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "duration_J1_M1": {
+    "meaning": "Processing time of component J1 on workstation M1 (minutes)",
+    "base": 33,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "duration_J1_M2": {
+    "meaning": "Processing time of component J1 on workstation M2 (minutes)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "duration_J2_M0": {
+    "meaning": "Processing time of component J2 on workstation M0 (minutes)",
+    "base": 49,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_J2_M1": {
+    "meaning": "Processing time of component J2 on workstation M1 (minutes)",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_J2_M2": {
+    "meaning": "Processing time of component J2 on workstation M2 (minutes)",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

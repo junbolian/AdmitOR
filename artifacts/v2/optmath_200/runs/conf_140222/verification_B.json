@@ -1,0 +1,25 @@
+{
+ "sample_id": "conf_140222",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"shipping_cost\",\n      \"evidence\": \"The variable shipping costs range from 8 to 10 units per commodity, plant, distribution center, and zone combination.\"\n    },\n    {\n      \"parameter\": \"demand\",\n      \"evidence\": \"The demand for each commodity in each zone ranges from 50 to 59 units. For example, the demand for Commodity 0 in Zone 0 is 54 units, while the demand for Commodity 2 in Zone 2 is 59 units.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_cost",
+   "evidence": "The variable shipping costs range from 8 to 10 units per commodity, plant, distribution center, and zone combination."
+  },
+  {
+   "parameter": "demand",
+   "evidence": "The demand for each commodity in each zone ranges from 50 to 59 units. For example, the demand for Commodity 0 in Zone 0 is 54 units, while the demand for Commodity 2 in Zone 2 is 59 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

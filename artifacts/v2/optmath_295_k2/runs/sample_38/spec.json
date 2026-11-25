@@ -1,0 +1,238 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    39,
+    39,
+    35,
+    38,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    41,
+    40,
+    41,
+    37,
+    36
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     6,
+     10,
+     6,
+     6,
+     9
+    ],
+    [
+     7,
+     7,
+     6,
+     5,
+     9
+    ],
+    [
+     9,
+     8,
+     5,
+     7,
+     6
+    ],
+    [
+     5,
+     5,
+     8,
+     10,
+     5
+    ],
+    [
+     5,
+     10,
+     10,
+     9,
+     7
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     48,
+     54,
+     55,
+     50,
+     54
+    ],
+    [
+     51,
+     45,
+     53,
+     53,
+     51
+    ],
+    [
+     54,
+     47,
+     52,
+     49,
+     48
+    ],
+    [
+     53,
+     50,
+     49,
+     45,
+     46
+    ],
+    [
+     50,
+     46,
+     53,
+     46,
+     50
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "units available at each origin facility",
+    "base": [
+     39,
+     39,
+     35,
+     38,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "units required at each destination center",
+    "base": [
+     41,
+     40,
+     41,
+     37,
+     36
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost": {
+    "meaning": "per-unit transportation cost from origin i to destination j",
+    "base": [
+     [
+      6,
+      10,
+      6,
+      6,
+      9
+     ],
+     [
+      7,
+      7,
+      6,
+      5,
+      9
+     ],
+     [
+      9,
+      8,
+      5,
+      7,
+      6
+     ],
+     [
+      5,
+      5,
+      8,
+      10,
+      5
+     ],
+     [
+      5,
+      10,
+      10,
+      9,
+      7
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "maximum units shippable from origin i to destination j",
+    "base": [
+     [
+      48,
+      54,
+      55,
+      50,
+      54
+     ],
+     [
+      51,
+      45,
+      53,
+      53,
+      51
+     ],
+     [
+      54,
+      47,
+      52,
+      49,
+      48
+     ],
+     [
+      53,
+      50,
+      49,
+      45,
+      46
+     ],
+     [
+      50,
+      46,
+      53,
+      46,
+      50
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

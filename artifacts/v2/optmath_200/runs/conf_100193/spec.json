@@ -1,0 +1,115 @@
+{
+ "spec": {
+  "value_A": {
+   "base": 349,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "value_B": {
+   "base": 87,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "value_C": {
+   "base": 831,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weight_A": {
+   "base": 1075,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "weight_B": {
+   "base": 376,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "weight_C": {
+   "base": 216,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": 1166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "value_A": {
+    "meaning": "Value of Crop A",
+    "base": 349,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "value_B": {
+    "meaning": "Value of Crop B",
+    "base": 87,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "value_C": {
+    "meaning": "Value of Crop C",
+    "base": 831,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weight_A": {
+    "meaning": "Weight of Crop A",
+    "base": 1075,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "weight_B": {
+    "meaning": "Weight of Crop B",
+    "base": 376,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "weight_C": {
+    "meaning": "Weight of Crop C",
+    "base": 216,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum total weight the truck can carry",
+    "base": 1166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

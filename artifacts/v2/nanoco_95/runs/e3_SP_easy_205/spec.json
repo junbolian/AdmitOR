@@ -1,0 +1,189 @@
+{
+ "spec": {
+  "arc_costs": {
+   "base": [
+    2,
+    9,
+    6,
+    9,
+    6,
+    5,
+    7,
+    8,
+    5,
+    10,
+    3,
+    4,
+    5,
+    7,
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "source_supply": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "sink_supply": {
+   "base": -1,
+   "perturb": {
+    "mode": "abs",
+    "lo": -1.0,
+    "hi": -1.0,
+    "integer": true
+   }
+  },
+  "intermediate_node_supply": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[source_supply] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink_supply] degenerate abs range (lo == hi); perturbation has no effect",
+  "[intermediate_node_supply] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_costs": {
+    "meaning": "Unit traversal cost for each directed arc, ordered as listed: (0->1, 0->2, 0->6, 0->8, 1->2, 1->5, 2->3, 2->6, 3->4, 3->7, 4->5, 5->6, 5->7, 6->7, 6->8, 7->8)",
+    "base": [
+     2,
+     9,
+     6,
+     9,
+     6,
+     5,
+     7,
+     8,
+     5,
+     10,
+     3,
+     4,
+     5,
+     7,
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Upper bound on flow (robots) per directed arc; all equal 1",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "source_supply": {
+    "meaning": "Net outflow required at source Node 0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "sink_supply": {
+    "meaning": "Net inflow required at sink Node 8 (supply = -1)",
+    "base": -1,
+    "perturb": {
+     "mode": "abs",
+     "lo": -1,
+     "hi": -1,
+     "integer": true
+    }
+   },
+   "intermediate_node_supply": {
+    "meaning": "Net supply at each intermediate node 1..7 (flow conservation = 0)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

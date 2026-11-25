@@ -1,0 +1,846 @@
+{
+ "spec": {
+  "supply_node_0": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "demand_node_6": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "cost_0_1": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_0_2": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_0_3": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_0_4": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_0_5": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_0_6": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_1_0": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_1_2": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "cost_1_3": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_1_4": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_1_5": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_1_6": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_2_0": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_2_1": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "cost_2_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "cost_2_4": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_2_5": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_2_6": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_3_0": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_3_1": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_3_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_3_4": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_3_5": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "cost_3_6": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_4_0": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_4_1": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_4_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_4_3": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_4_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_4_6": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_5_0": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_5_1": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_5_2": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "cost_5_3": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_5_4": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_5_6": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_6_0": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 21.0,
+    "integer": true
+   }
+  },
+  "cost_6_1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "cost_6_2": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_6_3": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_6_4": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "cost_6_5": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_node_0": {
+    "meaning": "Required net outflow from central hub node_0",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "demand_node_6": {
+    "meaning": "Required net inflow to destination hub node_6",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "cost_0_1": {
+    "meaning": "Cost of route node_0 -> node_1",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_0_2": {
+    "meaning": "Cost of route node_0 -> node_2",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_0_3": {
+    "meaning": "Cost of route node_0 -> node_3",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_0_4": {
+    "meaning": "Cost of route node_0 -> node_4",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_0_5": {
+    "meaning": "Cost of route node_0 -> node_5",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_0_6": {
+    "meaning": "Cost of route node_0 -> node_6",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_1_0": {
+    "meaning": "Cost of route node_1 -> node_0",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Cost of route node_1 -> node_2",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Cost of route node_1 -> node_3",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_1_4": {
+    "meaning": "Cost of route node_1 -> node_4",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Cost of route node_1 -> node_5",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_1_6": {
+    "meaning": "Cost of route node_1 -> node_6",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_2_0": {
+    "meaning": "Cost of route node_2 -> node_0",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_2_1": {
+    "meaning": "Cost of route node_2 -> node_1",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Cost of route node_2 -> node_3",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "cost_2_4": {
+    "meaning": "Cost of route node_2 -> node_4",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_2_5": {
+    "meaning": "Cost of route node_2 -> node_5",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_2_6": {
+    "meaning": "Cost of route node_2 -> node_6",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_3_0": {
+    "meaning": "Cost of route node_3 -> node_0",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_3_1": {
+    "meaning": "Cost of route node_3 -> node_1",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_3_2": {
+    "meaning": "Cost of route node_3 -> node_2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Cost of route node_3 -> node_4",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_3_5": {
+    "meaning": "Cost of route node_3 -> node_5",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "cost_3_6": {
+    "meaning": "Cost of route node_3 -> node_6",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_4_0": {
+    "meaning": "Cost of route node_4 -> node_0",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_4_1": {
+    "meaning": "Cost of route node_4 -> node_1",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_4_2": {
+    "meaning": "Cost of route node_4 -> node_2",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_4_3": {
+    "meaning": "Cost of route node_4 -> node_3",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_4_5": {
+    "meaning": "Cost of route node_4 -> node_5",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_4_6": {
+    "meaning": "Cost of route node_4 -> node_6",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_5_0": {
+    "meaning": "Cost of route node_5 -> node_0",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_5_1": {
+    "meaning": "Cost of route node_5 -> node_1",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_5_2": {
+    "meaning": "Cost of route node_5 -> node_2",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "cost_5_3": {
+    "meaning": "Cost of route node_5 -> node_3",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_5_4": {
+    "meaning": "Cost of route node_5 -> node_4",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_5_6": {
+    "meaning": "Cost of route node_5 -> node_6",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_6_0": {
+    "meaning": "Cost of route node_6 -> node_0",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 21,
+     "integer": true
+    }
+   },
+   "cost_6_1": {
+    "meaning": "Cost of route node_6 -> node_1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "cost_6_2": {
+    "meaning": "Cost of route node_6 -> node_2",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_6_3": {
+    "meaning": "Cost of route node_6 -> node_3",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_6_4": {
+    "meaning": "Cost of route node_6 -> node_4",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "cost_6_5": {
+    "meaning": "Cost of route node_6 -> node_5",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 23,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

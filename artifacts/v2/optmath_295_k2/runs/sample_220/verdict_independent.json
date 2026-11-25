@@ -1,0 +1,193 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand_0": 345,
+   "demand_1": 655,
+   "supply_2": 774,
+   "supply_3": 142,
+   "supply_4": 84,
+   "fixed_cost_min": 1901,
+   "fixed_cost_max": 2075,
+   "variable_cost_min": 19,
+   "variable_cost_max": 21,
+   "capacity_min": 539,
+   "capacity_max": 990
+  },
+  {
+   "demand_0": 373.86134728078196,
+   "demand_1": 468.32922680250806,
+   "supply_2": 669.5236154506189,
+   "supply_3": 118.41755489027969,
+   "supply_4": 95.91814919386623,
+   "fixed_cost_min": 2136.134007913668,
+   "fixed_cost_max": 2644.640822091288,
+   "variable_cost_min": 11.151837819958907,
+   "variable_cost_max": 19.36035821339068,
+   "capacity_min": 336.24856102169593,
+   "capacity_max": 767.1612760444539
+  },
+  {
+   "demand_0": 346.10854463739605,
+   "demand_1": 468.9286360857584,
+   "supply_2": 634.1402049788795,
+   "supply_3": 154.77015409881537,
+   "supply_4": 86.26505062240211,
+   "fixed_cost_min": 1528.9903357495552,
+   "fixed_cost_max": 2204.6584058297576,
+   "variable_cost_min": 24.879178676878706,
+   "variable_cost_max": 10.636473953239282,
+   "capacity_min": 670.8692613903067,
+   "capacity_max": 1146.9264008306757
+  },
+  {
+   "demand_0": 311.93185691922434,
+   "demand_1": 519.6034434260301,
+   "supply_2": 986.3297507328292,
+   "supply_3": 128.0778552435958,
+   "supply_4": 63.474390506359455,
+   "fixed_cost_min": 1364.3504826522906,
+   "fixed_cost_max": 2579.7355671196856,
+   "variable_cost_min": 20.97079459597093,
+   "variable_cost_max": 27.449693738761983,
+   "capacity_min": 638.0603464223742,
+   "capacity_max": 1018.6926484321228
+  },
+  {
+   "demand_0": 442.93496314372976,
+   "demand_1": 607.2640102428828,
+   "supply_2": 798.1676691632865,
+   "supply_3": 170.06527739435518,
+   "supply_4": 89.973395519158,
+   "fixed_cost_min": 2382.3233722435516,
+   "fixed_cost_max": 2187.353990985447,
+   "variable_cost_min": 22.886864888083547,
+   "variable_cost_max": 11.462312056768907,
+   "capacity_min": 421.669736460947,
+   "capacity_max": 823.1952671728689
+  },
+  {
+   "demand_0": 258.0169392231909,
+   "demand_1": 549.9868183398848,
+   "supply_2": 588.7050638178781,
+   "supply_3": 123.08335098497984,
+   "supply_4": 90.83849599092576,
+   "fixed_cost_min": 1721.1321805554912,
+   "fixed_cost_max": 1886.437854737272,
+   "variable_cost_min": 13.480633584658266,
+   "variable_cost_max": 16.10653426303138,
+   "capacity_min": 727.2854582216273,
+   "capacity_max": 1107.244025115302
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   27665.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "A-direct-2": [
+   28057.684210526313,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   27525.11111111111,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured-2": [
+   27525.11111111111,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   28057.684210526313,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct-2": [
+   28057.684210526313,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "A-direct-2": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "B-structured-2": [
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ],
+  "C-direct-2": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

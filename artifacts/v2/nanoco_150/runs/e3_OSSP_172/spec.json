@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "duration_P0_S0": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P0_S1": {
+   "base": 42,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P0_S2": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P1_S0": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P1_S1": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P1_S2": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P2_S0": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P2_S1": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "duration_P2_S2": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "duration_P0_S0": {
+    "meaning": "Processing time of prototype P0 on station S0 (minutes)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P0_S1": {
+    "meaning": "Processing time of prototype P0 on station S1 (minutes)",
+    "base": 42,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P0_S2": {
+    "meaning": "Processing time of prototype P0 on station S2 (minutes)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P1_S0": {
+    "meaning": "Processing time of prototype P1 on station S0 (minutes)",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P1_S1": {
+    "meaning": "Processing time of prototype P1 on station S1 (minutes)",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P1_S2": {
+    "meaning": "Processing time of prototype P1 on station S2 (minutes)",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P2_S0": {
+    "meaning": "Processing time of prototype P2 on station S0 (minutes)",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P2_S1": {
+    "meaning": "Processing time of prototype P2 on station S1 (minutes)",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "duration_P2_S2": {
+    "meaning": "Processing time of prototype P2 on station S2 (minutes)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

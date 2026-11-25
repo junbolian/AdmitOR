@@ -1,0 +1,331 @@
+{
+ "spec": {
+  "selection_count": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "weight_0_1": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_0_2": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_0_3": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_0_4": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_1_0": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_1_2": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_1_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_1_4": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_2_0": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_2_1": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_2_3": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_2_4": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_3_0": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_3_1": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_3_2": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_3_4": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_4_0": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_4_1": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_4_2": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "weight_4_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [
+  "[selection_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "selection_count": {
+    "meaning": "Exact number of facilities to select",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "weight_0_1": {
+    "meaning": "Dispersion weight between Node 0 and Node 1",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_0_2": {
+    "meaning": "Dispersion weight between Node 0 and Node 2",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_0_3": {
+    "meaning": "Dispersion weight between Node 0 and Node 3",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_0_4": {
+    "meaning": "Dispersion weight between Node 0 and Node 4",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_1_0": {
+    "meaning": "Dispersion weight between Node 1 and Node 0",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_1_2": {
+    "meaning": "Dispersion weight between Node 1 and Node 2",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_1_3": {
+    "meaning": "Dispersion weight between Node 1 and Node 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_1_4": {
+    "meaning": "Dispersion weight between Node 1 and Node 4",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_2_0": {
+    "meaning": "Dispersion weight between Node 2 and Node 0",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_2_1": {
+    "meaning": "Dispersion weight between Node 2 and Node 1",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_2_3": {
+    "meaning": "Dispersion weight between Node 2 and Node 3",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_2_4": {
+    "meaning": "Dispersion weight between Node 2 and Node 4",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_3_0": {
+    "meaning": "Dispersion weight between Node 3 and Node 0",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_3_1": {
+    "meaning": "Dispersion weight between Node 3 and Node 1",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_3_2": {
+    "meaning": "Dispersion weight between Node 3 and Node 2",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_3_4": {
+    "meaning": "Dispersion weight between Node 3 and Node 4",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_4_0": {
+    "meaning": "Dispersion weight between Node 4 and Node 0",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_4_1": {
+    "meaning": "Dispersion weight between Node 4 and Node 1",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_4_2": {
+    "meaning": "Dispersion weight between Node 4 and Node 2",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "weight_4_3": {
+    "meaning": "Dispersion weight between Node 4 and Node 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_26837",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"shipping_cost_matrix\",\n      \"evidence\": \"Shipping costs vary for each combination of distribution center and retail store, ranging from 50 to 60 units. Only row 0 entries for customer_1 (55) and customer_2 (53) are explicitly given; all other entries are unspecified.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "shipping_cost_matrix",
+   "evidence": "Shipping costs vary for each combination of distribution center and retail store, ranging from 50 to 60 units. Only row 0 entries for customer_1 (55) and customer_2 (53) are explicitly given; all other entries are unspecified."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,101 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     22,
+     31,
+     14,
+     28,
+     25
+    ],
+    [
+     17,
+     33,
+     10,
+     27,
+     34
+    ],
+    [
+     35,
+     25,
+     4,
+     24,
+     39
+    ],
+    [
+     10,
+     13,
+     21,
+     4,
+     7
+    ],
+    [
+     40,
+     6,
+     36,
+     11,
+     26
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -40.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "cost of assigning each staff member (rows 0-4) to each register (cols 0-4); sum to be minimized over a perfect assignment",
+    "base": [
+     [
+      22,
+      31,
+      14,
+      28,
+      25
+     ],
+     [
+      17,
+      33,
+      10,
+      27,
+      34
+     ],
+     [
+      35,
+      25,
+      4,
+      24,
+      39
+     ],
+     [
+      10,
+      13,
+      21,
+      4,
+      7
+     ],
+     [
+      40,
+      6,
+      36,
+      11,
+      26
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -40,
+     "hi": 80,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

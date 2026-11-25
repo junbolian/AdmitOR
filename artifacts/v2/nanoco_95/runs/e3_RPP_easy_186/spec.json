@@ -1,0 +1,440 @@
+{
+ "spec": {
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     59,
+     42,
+     51,
+     50,
+     49,
+     41,
+     47,
+     32
+    ],
+    [
+     59,
+     0,
+     101,
+     69,
+     107,
+     108,
+     70,
+     21,
+     54
+    ],
+    [
+     42,
+     101,
+     0,
+     71,
+     90,
+     7,
+     62,
+     88,
+     62
+    ],
+    [
+     51,
+     69,
+     71,
+     0,
+     90,
+     76,
+     92,
+     73,
+     21
+    ],
+    [
+     50,
+     107,
+     22,
+     90,
+     0,
+     23,
+     53,
+     91,
+     77
+    ],
+    [
+     49,
+     108,
+     7,
+     76,
+     23,
+     0,
+     68,
+     95,
+     68
+    ],
+    [
+     41,
+     70,
+     62,
+     92,
+     53,
+     68,
+     0,
+     49,
+     71
+    ],
+    [
+     47,
+     21,
+     88,
+     73,
+     91,
+     95,
+     49,
+     0,
+     54
+    ],
+    [
+     32,
+     54,
+     62,
+     21,
+     77,
+     68,
+     71,
+     54,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "asymmetric_pair_2_4": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "asymmetric_pair_4_2": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "num_graph_edges": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_required_edges": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "required_edge_ratio": {
+   "base": 0.8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.8,
+    "hi": 0.8,
+    "integer": false
+   }
+  },
+  "required_edge_set": {
+   "base": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "non_required_edge_set": {
+   "base": [
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[num_graph_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_required_edges] degenerate abs range (lo == hi); perturbation has no effect",
+  "[required_edge_ratio] degenerate abs range (lo == hi); perturbation has no effect",
+  "[required_edge_set] rel rate r=0.0 outside (0,1]; clamped to 0.3",
+  "[non_required_edge_set] rel rate r=0.0 outside (0,1]; clamped to 0.3"
+ ],
+ "raw": {
+  "params": {
+   "distance_matrix": {
+    "meaning": "Complete 9x9 travel-cost matrix; the only directional asymmetry is [2][4]=90 vs [4][2]=22",
+    "base": [
+     [
+      0,
+      59,
+      42,
+      51,
+      50,
+      49,
+      41,
+      47,
+      32
+     ],
+     [
+      59,
+      0,
+      101,
+      69,
+      107,
+      108,
+      70,
+      21,
+      54
+     ],
+     [
+      42,
+      101,
+      0,
+      71,
+      90,
+      7,
+      62,
+      88,
+      62
+     ],
+     [
+      51,
+      69,
+      71,
+      0,
+      90,
+      76,
+      92,
+      73,
+      21
+     ],
+     [
+      50,
+      107,
+      22,
+      90,
+      0,
+      23,
+      53,
+      91,
+      77
+     ],
+     [
+      49,
+      108,
+      7,
+      76,
+      23,
+      0,
+      68,
+      95,
+      68
+     ],
+     [
+      41,
+      70,
+      62,
+      92,
+      53,
+      68,
+      0,
+      49,
+      71
+     ],
+     [
+      47,
+      21,
+      88,
+      73,
+      91,
+      95,
+      49,
+      0,
+      54
+     ],
+     [
+      32,
+      54,
+      62,
+      21,
+      77,
+      68,
+      71,
+      54,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "asymmetric_pair_2_4": {
+    "meaning": "Forward distance Node 2 -> Node 4 (reverse entry is 22)",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "asymmetric_pair_4_2": {
+    "meaning": "Forward distance Node 4 -> Node 2 (asymmetric reverse is 90)",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "num_graph_edges": {
+    "meaning": "Total number of road segments in infrastructure",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_required_edges": {
+    "meaning": "Number of mandatory service (plowing) segments",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "required_edge_ratio": {
+    "meaning": "Ratio of mandatory edges to total infrastructure edges",
+    "base": 0.8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.8,
+     "hi": 0.8,
+     "integer": false
+    }
+   },
+   "required_edge_set": {
+    "meaning": "Mandatory service segments (node pairs); cardinality fixed",
+    "base": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   },
+   "non_required_edge_set": {
+    "meaning": "Transit/deadhead-only segments; cardinality fixed",
+    "base": [
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.0
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

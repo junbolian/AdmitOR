@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_82619",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement says Node 1 → Node 0 is **20**, but the extracted value matches that. Let me check each one carefully.\n\n- d01: stated 17 ✓\n- d02: stated 19 ✓\n- d03: stated 11 ✓\n- d10: stated 20 ✓\n- d12: stated 16 ✓\n- d13: stated 20 ✓\n- d20: stated 19 ✓\n- d21: stated 19 ✓\n- d23: stated 13 ✓\n- d30: stated 12 ✓\n- d31: stated 18 ✓\n- d32: stated 17 ✓\n\nAll values match exactly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

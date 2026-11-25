@@ -1,0 +1,272 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    6,
+    7,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    6,
+    3,
+    6,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_0": {
+   "base": [
+    6,
+    6,
+    6,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_1": {
+   "base": [
+    7,
+    7,
+    7,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_2": {
+   "base": [
+    7,
+    7,
+    7,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_0": {
+   "base": [
+    5,
+    9,
+    7,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1": {
+   "base": [
+    7,
+    10,
+    14,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2": {
+   "base": [
+    7,
+    13,
+    6,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[supply] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[capacity_0] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[capacity_1] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[capacity_2] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Available relief stock at hubs 0,1,2",
+    "base": [
+     6,
+     7,
+     7
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      4,
+      4
+     ],
+     "hi": [
+      9,
+      11,
+      11
+     ],
+     "integer": true
+    }
+   },
+   "demand": {
+    "meaning": "Required supply at areas 3,4,5,6 (positive magnitudes)",
+    "base": [
+     6,
+     3,
+     6,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      1,
+      3,
+      2
+     ],
+     "hi": [
+      9,
+      5,
+      9,
+      8
+     ],
+     "integer": true
+    }
+   },
+   "capacity_0": {
+    "meaning": "Payload limits on arcs from hub 0 to areas 3,4,5,6",
+    "base": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "hi": [
+      10,
+      10,
+      10,
+      10
+     ],
+     "integer": true
+    }
+   },
+   "capacity_1": {
+    "meaning": "Payload limits on arcs from hub 1 to areas 3,4,5,6",
+    "base": [
+     7,
+     7,
+     7,
+     7
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "hi": [
+      11,
+      11,
+      11,
+      11
+     ],
+     "integer": true
+    }
+   },
+   "capacity_2": {
+    "meaning": "Payload limits on arcs from hub 2 to areas 3,4,5,6",
+    "base": [
+     7,
+     7,
+     7,
+     7
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "hi": [
+      11,
+      11,
+      11,
+      11
+     ],
+     "integer": true
+    }
+   },
+   "cost_0": {
+    "meaning": "Unit costs on arcs from hub 0 to areas 3,4,5,6",
+    "base": [
+     5,
+     9,
+     7,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1": {
+    "meaning": "Unit costs on arcs from hub 1 to areas 3,4,5,6",
+    "base": [
+     7,
+     10,
+     14,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2": {
+    "meaning": "Unit costs on arcs from hub 2 to areas 3,4,5,6",
+    "base": [
+     7,
+     13,
+     6,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

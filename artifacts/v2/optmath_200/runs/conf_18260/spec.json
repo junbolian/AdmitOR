@@ -1,0 +1,71 @@
+{
+ "spec": {
+  "service_costs": {
+   "base": [
+    42,
+    71,
+    41,
+    74,
+    66,
+    44,
+    40,
+    56,
+    40,
+    44,
+    42,
+    55,
+    76,
+    56,
+    44,
+    52,
+    60,
+    67,
+    55,
+    46,
+    74,
+    56
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "service_costs": {
+    "meaning": "Cost of activating each of the 22 medical services",
+    "base": [
+     42,
+     71,
+     41,
+     74,
+     66,
+     44,
+     40,
+     56,
+     40,
+     44,
+     42,
+     55,
+     76,
+     56,
+     44,
+     52,
+     60,
+     67,
+     55,
+     46,
+     74,
+     56
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

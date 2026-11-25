@@ -1,0 +1,21 @@
+{
+ "sample_id": "sample_179",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement explicitly gives only two cost values for Producer 0 (Contract 0 and Contract 1) and says the rest are examples or fall in a range. The full cost matrix is therefore not stated. Everything else checks out against the statement.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost_coefficient\",\n      \"evidence\": \"\\\"For example: Producer 0 incurs a cost of 46 units per unit of electricity delivered to Contract 0, 43 units for Contract 1, and so on. Similar cost structures apply to all other producers and contracts, with costs ranging from 40 to 50 units per unit of electricity delivered.\\\"\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_coefficient",
+   "evidence": "\"For example: Producer 0 incurs a cost of 46 units per unit of electricity delivered to Contract 0, 43 units for Contract 1, and so on. Similar cost structures apply to all other producers and contracts, with costs ranging from 40 to 50 units per unit of electricity delivered.\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

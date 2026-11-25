@@ -1,0 +1,21 @@
+{
+ "sample_id": "conf_89332",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"serving_cost\",\"evidence\":\"“For example, serving Customer 0 from Facility 0 costs 53 units, while serving Customer 0 from Facility 1 costs 56 units, and so on.” Only illustrative entries are given; the full matrix is not provided.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "serving_cost",
+   "evidence": "“For example, serving Customer 0 from Facility 0 costs 53 units, while serving Customer 0 from Facility 1 costs 56 units, and so on.” Only illustrative entries are given; the full matrix is not provided."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

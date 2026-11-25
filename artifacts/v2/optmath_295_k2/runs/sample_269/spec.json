@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    49,
+    49,
+    43,
+    35,
+    20,
+    28,
+    40,
+    34,
+    47,
+    43,
+    49,
+    33,
+    29,
+    25,
+    44
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "resource_consumption": {
+   "base": [
+    0.2,
+    0.5,
+    0.2,
+    1.0,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.333,
+    0.5,
+    0.2,
+    0.333,
+    0.333
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "total_resource": {
+   "base": 471,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    170,
+    101,
+    124,
+    194,
+    167,
+    131,
+    194,
+    167,
+    185,
+    120,
+    141,
+    190,
+    110,
+    177,
+    198
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "Profit margin per unit for each of the 15 items",
+    "base": [
+     49,
+     49,
+     43,
+     35,
+     20,
+     28,
+     40,
+     34,
+     47,
+     43,
+     49,
+     33,
+     29,
+     25,
+     44
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "resource_consumption": {
+    "meaning": "Resource units consumed per unit produced for each item",
+    "base": [
+     0.2,
+     0.5,
+     0.2,
+     1.0,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.333,
+     0.5,
+     0.2,
+     0.333,
+     0.333
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "total_resource": {
+    "meaning": "Total available shared resource",
+    "base": 471,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum production limit for each item",
+    "base": [
+     170,
+     101,
+     124,
+     194,
+     167,
+     131,
+     194,
+     167,
+     185,
+     120,
+     141,
+     190,
+     110,
+     177,
+     198
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

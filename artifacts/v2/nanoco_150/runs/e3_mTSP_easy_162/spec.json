@@ -1,0 +1,382 @@
+{
+ "spec": {
+  "num_vehicles": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "num_customers": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "depot_x": {
+   "base": 64,
+   "perturb": {
+    "mode": "abs",
+    "lo": -200.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  },
+  "depot_y": {
+   "base": 41,
+   "perturb": {
+    "mode": "abs",
+    "lo": -200.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  },
+  "coord_x": {
+   "base": [
+    64,
+    99,
+    72,
+    32,
+    76,
+    0,
+    34,
+    39,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -200.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  },
+  "coord_y": {
+   "base": [
+    41,
+    82,
+    14,
+    37,
+    96,
+    14,
+    65,
+    9,
+    43
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -200.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     54,
+     28,
+     32,
+     56,
+     69,
+     38,
+     41,
+     58
+    ],
+    [
+     54,
+     0,
+     73,
+     81,
+     27,
+     120,
+     67,
+     94,
+     101
+    ],
+    [
+     28,
+     73,
+     0,
+     46,
+     82,
+     72,
+     64,
+     33,
+     72
+    ],
+    [
+     32,
+     81,
+     46,
+     0,
+     74,
+     39,
+     28,
+     29,
+     27
+    ],
+    [
+     56,
+     27,
+     82,
+     74,
+     0,
+     112,
+     52,
+     95,
+     88
+    ],
+    [
+     69,
+     120,
+     72,
+     39,
+     112,
+     0,
+     61,
+     39,
+     30
+    ],
+    [
+     38,
+     67,
+     64,
+     28,
+     52,
+     61,
+     0,
+     56,
+     36
+    ],
+    [
+     41,
+     94,
+     33,
+     29,
+     95,
+     39,
+     56,
+     0,
+     47
+    ],
+    [
+     58,
+     101,
+     72,
+     27,
+     88,
+     30,
+     36,
+     47,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  }
+ },
+ "warnings": [
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_customers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_vehicles": {
+    "meaning": "number of identical trucks (frozen index-set size)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "num_customers": {
+    "meaning": "number of waste collection points (frozen index-set size)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "depot_x": {
+    "meaning": "x-coordinate of processing facility Node 0",
+    "base": 64,
+    "perturb": {
+     "mode": "abs",
+     "lo": -200,
+     "hi": 200,
+     "integer": false
+    }
+   },
+   "depot_y": {
+    "meaning": "y-coordinate of processing facility Node 0",
+    "base": 41,
+    "perturb": {
+     "mode": "abs",
+     "lo": -200,
+     "hi": 200,
+     "integer": false
+    }
+   },
+   "coord_x": {
+    "meaning": "x-coordinates of nodes 0..8",
+    "base": [
+     64,
+     99,
+     72,
+     32,
+     76,
+     0,
+     34,
+     39,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -200,
+     "hi": 200,
+     "integer": false
+    }
+   },
+   "coord_y": {
+    "meaning": "y-coordinates of nodes 0..8",
+    "base": [
+     41,
+     82,
+     14,
+     37,
+     96,
+     14,
+     65,
+     9,
+     43
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -200,
+     "hi": 200,
+     "integer": false
+    }
+   },
+   "distance_matrix": {
+    "meaning": "9x9 fuel-consumption distance matrix between all node pairs",
+    "base": [
+     [
+      0,
+      54,
+      28,
+      32,
+      56,
+      69,
+      38,
+      41,
+      58
+     ],
+     [
+      54,
+      0,
+      73,
+      81,
+      27,
+      120,
+      67,
+      94,
+      101
+     ],
+     [
+      28,
+      73,
+      0,
+      46,
+      82,
+      72,
+      64,
+      33,
+      72
+     ],
+     [
+      32,
+      81,
+      46,
+      0,
+      74,
+      39,
+      28,
+      29,
+      27
+     ],
+     [
+      56,
+      27,
+      82,
+      74,
+      0,
+      112,
+      52,
+      95,
+      88
+     ],
+     [
+      69,
+      120,
+      72,
+      39,
+      112,
+      0,
+      61,
+      39,
+      30
+     ],
+     [
+      38,
+      67,
+      64,
+      28,
+      52,
+      61,
+      0,
+      56,
+      36
+     ],
+     [
+      41,
+      94,
+      33,
+      29,
+      95,
+      39,
+      56,
+      0,
+      47
+     ],
+     [
+      58,
+      101,
+      72,
+      27,
+      88,
+      30,
+      36,
+      47,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

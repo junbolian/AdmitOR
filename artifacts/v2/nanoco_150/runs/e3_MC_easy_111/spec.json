@@ -1,0 +1,534 @@
+{
+ "spec": {
+  "capacity_0_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_1_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_1_7": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_2_3": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_2_6": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_3_4": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_3_8": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_3_9": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_4_5": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_4_8": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_5_6": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_6_7": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_7_8": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_7_9": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_8_9": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_0_1": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_1_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_1_7": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_2_3": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_2_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_3_4": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_3_8": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_3_9": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_4_5": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_4_8": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_5_6": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_6_7": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_7_8": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_7_9": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "maintenance_8_9": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coord_x": {
+   "base": [
+    46,
+    11,
+    76,
+    5,
+    95,
+    80,
+    79,
+    32,
+    19,
+    82
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "coord_y": {
+   "base": [
+    6,
+    83,
+    75,
+    72,
+    89,
+    21,
+    7,
+    59,
+    8,
+    55
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_0_1": {
+    "meaning": "bandwidth capacity of link 0->1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_1_2": {
+    "meaning": "bandwidth capacity of link 1->2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_1_7": {
+    "meaning": "bandwidth capacity of link 1->7",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_2_3": {
+    "meaning": "bandwidth capacity of link 2->3",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_2_6": {
+    "meaning": "bandwidth capacity of link 2->6",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_3_4": {
+    "meaning": "bandwidth capacity of link 3->4",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_3_8": {
+    "meaning": "bandwidth capacity of link 3->8",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_3_9": {
+    "meaning": "bandwidth capacity of link 3->9",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_4_5": {
+    "meaning": "bandwidth capacity of link 4->5",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_4_8": {
+    "meaning": "bandwidth capacity of link 4->8",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_5_6": {
+    "meaning": "bandwidth capacity of link 5->6",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_6_7": {
+    "meaning": "bandwidth capacity of link 6->7",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_7_8": {
+    "meaning": "bandwidth capacity of link 7->8",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_7_9": {
+    "meaning": "bandwidth capacity of link 7->9",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_8_9": {
+    "meaning": "bandwidth capacity of link 8->9",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_0_1": {
+    "meaning": "maintenance cost factor of link 0->1 (not used in cut objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_1_2": {
+    "meaning": "maintenance cost factor of link 1->2 (not used in cut objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_1_7": {
+    "meaning": "maintenance cost factor of link 1->7 (not used in cut objective)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_2_3": {
+    "meaning": "maintenance cost factor of link 2->3 (not used in cut objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_2_6": {
+    "meaning": "maintenance cost factor of link 2->6 (not used in cut objective)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_3_4": {
+    "meaning": "maintenance cost factor of link 3->4 (not used in cut objective)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_3_8": {
+    "meaning": "maintenance cost factor of link 3->8 (not used in cut objective)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_3_9": {
+    "meaning": "maintenance cost factor of link 3->9 (not used in cut objective)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_4_5": {
+    "meaning": "maintenance cost factor of link 4->5 (not used in cut objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_4_8": {
+    "meaning": "maintenance cost factor of link 4->8 (not used in cut objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_5_6": {
+    "meaning": "maintenance cost factor of link 5->6 (not used in cut objective)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_6_7": {
+    "meaning": "maintenance cost factor of link 6->7 (not used in cut objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_7_8": {
+    "meaning": "maintenance cost factor of link 7->8 (not used in cut objective)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_7_9": {
+    "meaning": "maintenance cost factor of link 7->9 (not used in cut objective)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "maintenance_8_9": {
+    "meaning": "maintenance cost factor of link 8->9 (not used in cut objective)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coord_x": {
+    "meaning": "x coordinates of nodes 0..9 (not used in cut objective)",
+    "base": [
+     46,
+     11,
+     76,
+     5,
+     95,
+     80,
+     79,
+     32,
+     19,
+     82
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "coord_y": {
+    "meaning": "y coordinates of nodes 0..9 (not used in cut objective)",
+    "base": [
+     6,
+     83,
+     75,
+     72,
+     89,
+     21,
+     7,
+     59,
+     8,
+     55
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_46",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"min_frequency\",\n      \"evidence\": \"The same frequency bounds apply to all other lines (L_1 to L_8)\"\n    },\n    {\n      \"parameter\": \"max_frequency\",\n      \"evidence\": \"The same frequency bounds apply to all other lines (L_1 to L_8)\"\n    }\n  ]\n}\n```\n\nThe statement gives L_0's bounds (2–10) as an example and says \"the same frequency bounds apply to all other lines,\" so the values 2 and 10 are stated only by example for the remaining lines, not explicitly confirmed for each. Everything else matches.",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "min_frequency",
+   "evidence": "The same frequency bounds apply to all other lines (L_1 to L_8)"
+  },
+  {
+   "parameter": "max_frequency",
+   "evidence": "The same frequency bounds apply to all other lines (L_1 to L_8)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

@@ -1,0 +1,134 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1591,
+    1578,
+    1502
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand": {
+   "base": [
+    839,
+    814,
+    806,
+    810
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "min_delivery": {
+   "base": [
+    397,
+    394,
+    375
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     31,
+     31,
+     32,
+     32
+    ],
+    [
+     30,
+     31,
+     30,
+     32
+    ],
+    [
+     32,
+     31,
+     32,
+     31
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Generation capacity of each producer (P0, P1, P2)",
+    "base": [
+     1591,
+     1578,
+     1502
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand": {
+    "meaning": "Minimum energy demand of each contract (C0, C1, C2, C3)",
+    "base": [
+     839,
+     814,
+     806,
+     810
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum delivery threshold if a producer participates in a contract (P0, P1, P2)",
+    "base": [
+     397,
+     394,
+     375
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Production cost per unit by producer and contract, rows = producers P0..P2, cols = contracts C0..C3",
+    "base": [
+     [
+      31,
+      31,
+      32,
+      32
+     ],
+     [
+      30,
+      31,
+      30,
+      32
+     ],
+     [
+      32,
+      31,
+      32,
+      31
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

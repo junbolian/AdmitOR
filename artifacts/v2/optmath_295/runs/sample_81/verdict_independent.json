@@ -1,0 +1,113 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "crate_weight": 28,
+   "truck_capacity": 100,
+   "num_crates": 10,
+   "num_trucks": 10
+  },
+  {
+   "crate_weight": 39,
+   "truck_capacity": 33,
+   "num_crates": 10,
+   "num_trucks": 10
+  },
+  {
+   "crate_weight": 43,
+   "truck_capacity": 118,
+   "num_crates": 10,
+   "num_trucks": 10
+  },
+  {
+   "crate_weight": 29,
+   "truck_capacity": 34,
+   "num_crates": 10,
+   "num_trucks": 10
+  },
+  {
+   "crate_weight": 11,
+   "truck_capacity": 56,
+   "num_crates": 10,
+   "num_trucks": 10
+  },
+  {
+   "crate_weight": 20,
+   "truck_capacity": 107,
+   "num_crates": 10,
+   "num_trucks": 10
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4.0,
+   null,
+   5.0,
+   10.0,
+   2.0,
+   2.0
+  ],
+  "B-structured": [
+   4.0,
+   null,
+   5.0,
+   10.0,
+   2.0,
+   2.0
+  ],
+  "C-direct": [
+   4.0,
+   null,
+   5.0,
+   10.0,
+   2.0,
+   2.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_solution",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

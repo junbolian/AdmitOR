@@ -1,0 +1,359 @@
+{
+ "spec": {
+  "cost_team1": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "cost_team2": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cost_team3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "coef_sel1_sel3": {
+   "base": [
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_sel1_sel3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "coef_sel1_sel2": {
+   "base": [
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_sel1_sel2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "coef_sel2_single": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_sel2_single": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "coef_all_three": {
+   "base": [
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_all_three": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "coef_sel3_single": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_sel3_single": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "coef_sel2_sel3": {
+   "base": [
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_sel2_sel3": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "coef_sel1_single": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "rhs_sel1_single": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_team1": {
+    "meaning": "Deployment cost of Team 1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "cost_team2": {
+    "meaning": "Deployment cost of Team 2",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cost_team3": {
+    "meaning": "Deployment cost of Team 3",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "coef_sel1_sel3": {
+    "meaning": "Coefficient of Selected[1] and Selected[3] in MultiCover constraints e1,e6,e9,e23",
+    "base": [
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_sel1_sel3": {
+    "meaning": "RHS demand for constraints Selected[1]+Selected[3]>=2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "coef_sel1_sel2": {
+    "meaning": "Coefficient of Selected[1] and Selected[2] in MultiCover constraints e2,e5,e14,e19,e20",
+    "base": [
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_sel1_sel2": {
+    "meaning": "RHS demand for constraints Selected[1]+Selected[2]>=2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "coef_sel2_single": {
+    "meaning": "Coefficient of Selected[2] in single-team constraints e3,e8,e10,e25,e26",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_sel2_single": {
+    "meaning": "RHS demand for constraints Selected[2]>=1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "coef_all_three": {
+    "meaning": "Coefficients of Selected[1],Selected[2],Selected[3] in full-cover constraints e4,e7,e13,e17,e21,e22,e24,e27",
+    "base": [
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_all_three": {
+    "meaning": "RHS demand for constraints Selected[1]+Selected[2]+Selected[3]>=3",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "coef_sel3_single": {
+    "meaning": "Coefficient of Selected[3] in single-team constraints e11,e16,e18",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_sel3_single": {
+    "meaning": "RHS demand for constraints Selected[3]>=1",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "coef_sel2_sel3": {
+    "meaning": "Coefficients of Selected[2] and Selected[3] in constraint e12",
+    "base": [
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_sel2_sel3": {
+    "meaning": "RHS demand for constraint Selected[2]+Selected[3]>=2 (e12)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "coef_sel1_single": {
+    "meaning": "Coefficient of Selected[1] in constraints e15 and e20",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "rhs_sel1_single": {
+    "meaning": "RHS demand for constraints Selected[1]>=1 (e15,e20)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

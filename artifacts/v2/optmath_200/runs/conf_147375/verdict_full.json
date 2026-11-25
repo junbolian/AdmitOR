@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "shipping_cost_per_unit": 5,
+   "joint_capacity": 123,
+   "product_capacity_0_0to1": 74,
+   "product_capacity_1_0to1": 70,
+   "product_capacity_0_1to0": 71,
+   "product_capacity_1_1to0": 72,
+   "product_capacity_generic_low": 70,
+   "product_capacity_generic_high": 75,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  },
+  {
+   "shipping_cost_per_unit": 12.788535969157675,
+   "joint_capacity": 35,
+   "product_capacity_0_0to1": 49,
+   "product_capacity_1_0to1": 41,
+   "product_capacity_0_1to0": 113,
+   "product_capacity_1_1to0": 105,
+   "product_capacity_generic_low": 135,
+   "product_capacity_generic_high": 23,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  },
+  {
+   "shipping_cost_per_unit": 8.438436393705409,
+   "joint_capacity": 36,
+   "product_capacity_0_0to1": 41,
+   "product_capacity_1_0to1": 81,
+   "product_capacity_0_1to0": 14,
+   "product_capacity_1_1to0": 38,
+   "product_capacity_generic_low": 101,
+   "product_capacity_generic_high": 92,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  },
+  {
+   "shipping_cost_per_unit": 4.408812440813934,
+   "joint_capacity": 142,
+   "product_capacity_0_0to1": 123,
+   "product_capacity_1_0to1": 11,
+   "product_capacity_0_1to0": 123,
+   "product_capacity_1_1to0": 108,
+   "product_capacity_generic_low": 58,
+   "product_capacity_generic_high": 33,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  },
+  {
+   "shipping_cost_per_unit": 19.144261444135623,
+   "joint_capacity": 94,
+   "product_capacity_0_0to1": 23,
+   "product_capacity_1_0to1": 24,
+   "product_capacity_0_1to0": 129,
+   "product_capacity_1_1to0": 95,
+   "product_capacity_generic_low": 123,
+   "product_capacity_generic_high": 119,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  },
+  {
+   "shipping_cost_per_unit": 10.724561829094014,
+   "joint_capacity": 215,
+   "product_capacity_0_0to1": 63,
+   "product_capacity_1_0to1": 87,
+   "product_capacity_0_1to0": 126,
+   "product_capacity_1_1to0": 97,
+   "product_capacity_generic_low": 131,
+   "product_capacity_generic_high": 97,
+   "demand_city1_product0": 3,
+   "demand_city1_product1": 1,
+   "demand_city2_product0": 1,
+   "supply_city2_product1": 1,
+   "supply_city3_product0": 4,
+   "demand_city3_product1": 0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   25.0,
+   63.942679845788376,
+   42.192181968527045,
+   22.044062204069668,
+   95.72130722067811,
+   53.62280914547007
+  ],
+  "B-structured": [
+   25.0,
+   63.942679845788376,
+   42.192181968527045,
+   22.044062204069668,
+   95.72130722067811,
+   53.62280914547007
+  ],
+  "C-direct": [
+   25.0,
+   63.942679845788376,
+   42.192181968527045,
+   22.044062204069668,
+   95.72130722067811,
+   53.62280914547007
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

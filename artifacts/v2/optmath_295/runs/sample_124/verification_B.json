@@ -1,0 +1,28 @@
+{
+ "sample_id": "sample_124",
+ "set": "stream",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"costs[6][4]\",\n      \"extracted\": 47,\n      \"stated\": \"between 32 and 44\",\n      \"evidence\": \"Person 6: Costs range from 32 (Project 2) to 44 (Project 6).\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"costs\",\n      \"evidence\": \"Costs range from 31 (Project 3) to 45 (Project 7). The statement specifies costs at named endpoints but does not give the remaining matrix entries.\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "costs[6][4]",
+   "extracted": 47,
+   "stated": "between 32 and 44",
+   "evidence": "Person 6: Costs range from 32 (Project 2) to 44 (Project 6)."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "costs",
+   "evidence": "Costs range from 31 (Project 3) to 45 (Project 7). The statement specifies costs at named endpoints but does not give the remaining matrix entries."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true
+}

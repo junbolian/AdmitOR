@@ -1,0 +1,192 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "processing_times": [
+    [
+     14,
+     41,
+     23
+    ],
+    [
+     16,
+     25,
+     38
+    ],
+    [
+     17,
+     26,
+     17
+    ]
+   ]
+  },
+  {
+   "processing_times": [
+    [
+     15.951975178410372,
+     21.525440964129345,
+     17.825674322489743
+    ],
+    [
+     11.571371810381164,
+     30.91178035410031,
+     44.71458052207063
+    ],
+    [
+     23.66705265098237,
+     15.26040964836482,
+     15.672670934649597
+    ]
+   ]
+  },
+  {
+   "processing_times": [
+    [
+     7.417161072132985,
+     29.464156966947737,
+     23.12317162637733
+    ],
+    [
+     8.424575514941818,
+     17.47094126716621,
+     43.69560863562188
+    ],
+    [
+     17.764005170254684,
+     18.731456173058113,
+     18.517516625890448
+    ]
+   ]
+  },
+  {
+   "processing_times": [
+    [
+     18.33202639348957,
+     20.7664491468005,
+     30.033842792154584
+    ],
+    [
+     19.17023031981163,
+     21.006262912949797,
+     24.9082209928477
+    ],
+    [
+     24.77262222751528,
+     21.751458172928295,
+     10.076679337462515
+    ]
+   ]
+  },
+  {
+   "processing_times": [
+    [
+     8.354029275668497,
+     55.247269020245845,
+     25.385698721438494
+    ],
+    [
+     20.91405237239008,
+     30.743294667345445,
+     39.37666747527862
+    ],
+    [
+     25.042967987649302,
+     22.84189380741719,
+     17.884690731644856
+    ]
+   ]
+  },
+  {
+   "processing_times": [
+    [
+     18.61166529954193,
+     45.85930984693409,
+     31.319258707147878
+    ],
+    [
+     17.237634324108193,
+     30.11429590537309,
+     20.741326578915164
+    ],
+    [
+     12.374270686076297,
+     20.524087053654785,
+     9.856463607701667
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   119.0,
+   115.69034192174968,
+   111.2318126699977,
+   104.9554225890763,
+   134.30440296809752,
+   110.64301009867974
+  ],
+  "C-direct": [
+   119.0,
+   115.69034192174968,
+   111.23181366999769,
+   104.95542258907679,
+   134.3044039680975,
+   110.64301009867881
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disjunctive[0]' does not have a proper va",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disjunctive[0]' does not have a proper va",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disjunctive[0]' does not have a proper va",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disjunctive[0]' does not have a proper va",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disjunctive[0]' does not have a proper va",
+   "crash:File \"<PATH>/constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint 'disjunctive[0]' does not have a proper va"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disjunctive[0]\\' does not have a proper va', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disjunctive[0]\\' does not have a proper va', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disjunctive[0]\\' does not have a proper va', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disjunctive[0]\\' does not have a proper va', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disjunctive[0]\\' does not have a proper va', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\core\\\\base\\\\constraint.py\", line 414, in set_value | raise ValueError( | ValueError: Constraint \\'disjunctive[0]\\' does not have a proper va']"
+ },
+ "disagreements": [],
+ "notes": []
+}

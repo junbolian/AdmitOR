@@ -1,0 +1,243 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     43,
+     46,
+     47,
+     44,
+     45,
+     48
+    ],
+    [
+     41,
+     44,
+     45,
+     42,
+     43,
+     46
+    ],
+    [
+     47,
+     50,
+     51,
+     48,
+     49,
+     52
+    ],
+    [
+     45,
+     48,
+     49,
+     46,
+     47,
+     50
+    ],
+    [
+     46,
+     49,
+     50,
+     47,
+     48,
+     51
+    ],
+    [
+     44,
+     47,
+     48,
+     45,
+     46,
+     49
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    2167,
+    1875,
+    2570,
+    2650,
+    2340,
+    2297
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    971,
+    1005,
+    871,
+    1039,
+    1051,
+    1106
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_contributors": {
+   "base": [
+    2,
+    2,
+    3,
+    3,
+    2,
+    2
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_delivery": {
+   "base": [
+    476,
+    412,
+    565,
+    583,
+    514,
+    505
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Unit production cost for each producer-contract pair (6x6 matrix, rows producers 0-5, columns contracts 0-5)",
+    "base": [
+     [
+      43,
+      46,
+      47,
+      44,
+      45,
+      48
+     ],
+     [
+      41,
+      44,
+      45,
+      42,
+      43,
+      46
+     ],
+     [
+      47,
+      50,
+      51,
+      48,
+      49,
+      52
+     ],
+     [
+      45,
+      48,
+      49,
+      46,
+      47,
+      50
+     ],
+     [
+      46,
+      49,
+      50,
+      47,
+      48,
+      51
+     ],
+     [
+      44,
+      47,
+      48,
+      45,
+      46,
+      49
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum generation capacity of each producer (6 vectors)",
+    "base": [
+     2167,
+     1875,
+     2570,
+     2650,
+     2340,
+     2297
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Minimum electricity demand for each contract (6 vectors)",
+    "base": [
+     971,
+     1005,
+     871,
+     1039,
+     1051,
+     1106
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_contributors": {
+    "meaning": "Minimum number of producers that must contribute to each contract",
+    "base": [
+     2,
+     2,
+     3,
+     3,
+     2,
+     2
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_delivery": {
+    "meaning": "Minimum delivery amount if a producer contributes to any contract (6 vectors)",
+    "base": [
+     476,
+     412,
+     565,
+     583,
+     514,
+     505
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "processing_time_B0_on_U1_stage1": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B0_on_U0_stage2": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B0_on_U2_stage3": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B1_on_U1_stage1": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B1_on_U0_stage2": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B1_on_U2_stage3": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B2_on_U2_stage1": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B2_on_U1_stage2": {
+   "base": 49,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "processing_time_B2_on_U0_stage3": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time_B0_on_U1_stage1": {
+    "meaning": "Processing time of Batch 0 on Unit 1 in its first stage (hours)",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B0_on_U0_stage2": {
+    "meaning": "Processing time of Batch 0 on Unit 0 in its second stage (hours)",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B0_on_U2_stage3": {
+    "meaning": "Processing time of Batch 0 on Unit 2 in its third stage (hours)",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B1_on_U1_stage1": {
+    "meaning": "Processing time of Batch 1 on Unit 1 in its first stage (hours)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B1_on_U0_stage2": {
+    "meaning": "Processing time of Batch 1 on Unit 0 in its second stage (hours)",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B1_on_U2_stage3": {
+    "meaning": "Processing time of Batch 1 on Unit 2 in its third stage (hours)",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B2_on_U2_stage1": {
+    "meaning": "Processing time of Batch 2 on Unit 2 in its first stage (hours)",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B2_on_U1_stage2": {
+    "meaning": "Processing time of Batch 2 on Unit 1 in its second stage (hours)",
+    "base": 49,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "processing_time_B2_on_U0_stage3": {
+    "meaning": "Processing time of Batch 2 on Unit 0 in its third stage (hours)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "optimization_sense": "min"
+ }
+}

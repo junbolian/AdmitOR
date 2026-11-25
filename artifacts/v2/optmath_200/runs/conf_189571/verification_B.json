@@ -1,0 +1,41 @@
+{
+ "sample_id": "conf_189571",
+ "set": "confirm",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"cost_f0_c0\",\"evidence\":\"For example: Transporting from Facility 0 to Center 0 costs 22 units.\"},{\"parameter\":\"cost_f0_c1\",\"evidence\":\"For example: Transporting from Facility 0 to Center 1 costs 24 units.\"},{\"parameter\":\"cost_f1_c0\",\"evidence\":\"For example: Transporting from Facility 1 to Center 0 costs 16 units.\"},{\"parameter\":\"cost_f2_c1\",\"evidence\":\"For example: Transporting from Facility 2 to Center 1 costs 23 units.\"},{\"parameter\":\"cost_range_low\",\"evidence\":\"costs ranging from 15 to 25 units per route\"},{\"parameter\":\"cost_range_high\",\"evidence\":\"costs ranging from 15 to 25 units per route\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cost_f0_c0",
+   "evidence": "For example: Transporting from Facility 0 to Center 0 costs 22 units."
+  },
+  {
+   "parameter": "cost_f0_c1",
+   "evidence": "For example: Transporting from Facility 0 to Center 1 costs 24 units."
+  },
+  {
+   "parameter": "cost_f1_c0",
+   "evidence": "For example: Transporting from Facility 1 to Center 0 costs 16 units."
+  },
+  {
+   "parameter": "cost_f2_c1",
+   "evidence": "For example: Transporting from Facility 2 to Center 1 costs 23 units."
+  },
+  {
+   "parameter": "cost_range_low",
+   "evidence": "costs ranging from 15 to 25 units per route"
+  },
+  {
+   "parameter": "cost_range_high",
+   "evidence": "costs ranging from 15 to 25 units per route"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

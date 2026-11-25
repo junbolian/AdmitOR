@@ -1,0 +1,237 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    34,
+    25,
+    21,
+    27
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "pattern_usage_limit": {
+   "base": [
+    42,
+    45,
+    53,
+    21,
+    37,
+    69,
+    23,
+    68,
+    11,
+    39,
+    49,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "pattern_yield": {
+   "base": [
+    [
+     3,
+     2,
+     0,
+     4
+    ],
+    [
+     5,
+     3,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     4,
+     4,
+     3
+    ],
+    [
+     0,
+     0,
+     4,
+     4
+    ],
+    [
+     2,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     4,
+     1,
+     5
+    ],
+    [
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     3,
+     3,
+     5,
+     5
+    ],
+    [
+     2,
+     4,
+     2,
+     5
+    ],
+    [
+     0,
+     4,
+     5,
+     2
+    ],
+    [
+     0,
+     4,
+     4,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "minimum required units for widths 1-4",
+    "base": [
+     34,
+     25,
+     21,
+     27
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "pattern_usage_limit": {
+    "meaning": "maximum number of times each pattern 0-11 may be used",
+    "base": [
+     42,
+     45,
+     53,
+     21,
+     37,
+     69,
+     23,
+     68,
+     11,
+     39,
+     49,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "pattern_yield": {
+    "meaning": "units of widths 1-4 produced per single use of patterns 0-11 (zeros where not produced)",
+    "base": [
+     [
+      3,
+      2,
+      0,
+      4
+     ],
+     [
+      5,
+      3,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      4
+     ],
+     [
+      2,
+      4,
+      4,
+      3
+     ],
+     [
+      0,
+      0,
+      4,
+      4
+     ],
+     [
+      2,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      4,
+      1,
+      5
+     ],
+     [
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      3,
+      3,
+      5,
+      5
+     ],
+     [
+      2,
+      4,
+      2,
+      5
+     ],
+     [
+      0,
+      4,
+      5,
+      2
+     ],
+     [
+      0,
+      4,
+      4,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

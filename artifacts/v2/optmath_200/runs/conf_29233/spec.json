@@ -1,0 +1,29 @@
+{
+ "spec": {
+  "preference_edge_value": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "preference_edge_value": {
+    "meaning": "Objective weight for each allowed participant-car assignment (binary 0/1 in the base assignment model)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 5.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

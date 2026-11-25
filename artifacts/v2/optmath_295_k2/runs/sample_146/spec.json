@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    32,
+    39,
+    37,
+    42
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "demand": {
+   "base": [
+    39,
+    41,
+    35,
+    35
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     5,
+     10,
+     6,
+     6
+    ],
+    [
+     6,
+     9,
+     10,
+     9
+    ],
+    [
+     10,
+     10,
+     9,
+     7
+    ],
+    [
+     6,
+     7,
+     5,
+     10
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     49,
+     51,
+     48,
+     51
+    ],
+    [
+     48,
+     54,
+     50,
+     52
+    ],
+    [
+     50,
+     54,
+     53,
+     51
+    ],
+    [
+     47,
+     48,
+     49,
+     49
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "resources available at each production facility (origins 0-3)",
+    "base": [
+     32,
+     39,
+     37,
+     42
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "demand": {
+    "meaning": "resources required at each distribution center (destinations 0-3)",
+    "base": [
+     39,
+     41,
+     35,
+     35
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost": {
+    "meaning": "unit transportation cost from each origin to each destination (rows = origins 0-3, cols = destinations 0-3)",
+    "base": [
+     [
+      5,
+      10,
+      6,
+      6
+     ],
+     [
+      6,
+      9,
+      10,
+      9
+     ],
+     [
+      10,
+      10,
+      9,
+      7
+     ],
+     [
+      6,
+      7,
+      5,
+      10
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "maximum units shippable on each origin-destination lane (rows = origins 0-3, cols = destinations 0-3)",
+    "base": [
+     [
+      49,
+      51,
+      48,
+      51
+     ],
+     [
+      48,
+      54,
+      50,
+      52
+     ],
+     [
+      50,
+      54,
+      53,
+      51
+     ],
+     [
+      47,
+      48,
+      49,
+      49
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

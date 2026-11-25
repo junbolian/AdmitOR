@@ -1,0 +1,393 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    [
+     99,
+     100,
+     99,
+     100,
+     99,
+     100,
+     99,
+     100
+    ],
+    [
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     99
+    ],
+    [
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     98
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "production_cost": {
+   "base": [
+    [
+     50,
+     49,
+     48,
+     47,
+     46,
+     50,
+     49,
+     48
+    ],
+    [
+     50,
+     49,
+     48,
+     47,
+     46,
+     50,
+     49,
+     48
+    ],
+    [
+     50,
+     49,
+     48,
+     47,
+     46,
+     50,
+     49,
+     48
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "setup_cost": {
+   "base": [
+    [
+     1595,
+     1500,
+     1400,
+     1300,
+     1203,
+     1595,
+     1500,
+     1400
+    ],
+    [
+     1595,
+     1500,
+     1400,
+     1300,
+     1203,
+     1595,
+     1500,
+     1400
+    ],
+    [
+     1595,
+     1500,
+     1400,
+     1300,
+     1203,
+     1595,
+     1500,
+     1400
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "holding_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "resource_usage": {
+   "base": [
+    1.964,
+    1.981,
+    1.884
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "resource_capacity": {
+   "base": [
+    1085,
+    1075,
+    1065,
+    1055,
+    1045,
+    1035,
+    1025,
+    1009
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "production_limit": {
+   "base": [
+    [
+     742,
+     643,
+     543,
+     444,
+     344,
+     245,
+     145,
+     100
+    ],
+    [
+     642,
+     570,
+     497,
+     423,
+     348,
+     272,
+     195,
+     99
+    ],
+    [
+     688,
+     614,
+     539,
+     463,
+     386,
+     308,
+     229,
+     98
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "weekly demand per product over 8 weeks",
+    "base": [
+     [
+      99,
+      100,
+      99,
+      100,
+      99,
+      100,
+      99,
+      100
+     ],
+     [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      99
+     ],
+     [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      98
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "production_cost": {
+    "meaning": "unit production cost per product per week",
+    "base": [
+     [
+      50,
+      49,
+      48,
+      47,
+      46,
+      50,
+      49,
+      48
+     ],
+     [
+      50,
+      49,
+      48,
+      47,
+      46,
+      50,
+      49,
+      48
+     ],
+     [
+      50,
+      49,
+      48,
+      47,
+      46,
+      50,
+      49,
+      48
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "setup_cost": {
+    "meaning": "fixed setup cost per product per week",
+    "base": [
+     [
+      1595,
+      1500,
+      1400,
+      1300,
+      1203,
+      1595,
+      1500,
+      1400
+     ],
+     [
+      1595,
+      1500,
+      1400,
+      1300,
+      1203,
+      1595,
+      1500,
+      1400
+     ],
+     [
+      1595,
+      1500,
+      1400,
+      1300,
+      1203,
+      1595,
+      1500,
+      1400
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "holding_cost": {
+    "meaning": "inventory holding cost per item per week",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "resource_usage": {
+    "meaning": "shared resource units consumed per item, per product",
+    "base": [
+     1.964,
+     1.981,
+     1.884
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "resource_capacity": {
+    "meaning": "total shared resource availability per week",
+    "base": [
+     1085,
+     1075,
+     1065,
+     1055,
+     1045,
+     1035,
+     1025,
+     1009
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "production_limit": {
+    "meaning": "max production per product per week (cumulative demand bound)",
+    "base": [
+     [
+      742,
+      643,
+      543,
+      444,
+      344,
+      245,
+      145,
+      100
+     ],
+     [
+      642,
+      570,
+      497,
+      423,
+      348,
+      272,
+      195,
+      99
+     ],
+     [
+      688,
+      614,
+      539,
+      463,
+      386,
+      308,
+      229,
+      98
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

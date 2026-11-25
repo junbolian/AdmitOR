@@ -1,0 +1,131 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "shipping_cost": 9,
+   "fixed_cost_dc": [
+    2811,
+    2956
+   ],
+   "throughput_cost": [
+    [
+     930,
+     1032,
+     1020,
+     972
+    ],
+    [
+     930,
+     1032,
+     1020,
+     972
+    ]
+   ],
+   "plant_supply": [
+    [
+     387,
+     352,
+     390
+    ],
+    [
+     357,
+     356,
+     394
+    ]
+   ],
+   "demand": [
+    [
+     54,
+     50,
+     51,
+     52
+    ],
+    [
+     53,
+     55,
+     56,
+     54
+    ],
+    [
+     57,
+     58,
+     59,
+     50
+    ]
+   ],
+   "dc_min_throughput": [
+    211,
+    216
+   ],
+   "dc_max_throughput": [
+    711,
+    749
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:shipping = sum(shipping_cost[p][d][z][c] * model.x[p, d, z, c] | ~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "invalid_shipping_cost_shape",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:val = val[idx] | ~~~^^^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

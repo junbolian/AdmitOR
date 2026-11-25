@@ -1,0 +1,48 @@
+{
+ "spec": {
+  "crate_weight": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 28.0,
+    "hi": 280.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "crate_weight": {
+    "meaning": "weight of each crate",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "truck_capacity": {
+    "meaning": "maximum weight capacity per truck",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 28,
+     "hi": 280,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "spec": {
+  "assignment_cost": {
+   "base": [
+    [
+     0.3509,
+     0.3812,
+     0.4126,
+     0.4431,
+     0.4748,
+     0.5053
+    ],
+    [
+     0.3915,
+     0.4227,
+     0.4521,
+     0.4839,
+     0.5142,
+     0.5456
+    ],
+    [
+     0.4302,
+     0.4618,
+     0.4934,
+     0.5241,
+     0.5557,
+     0.5863
+    ],
+    [
+     0.4689,
+     0.4995,
+     0.5312,
+     0.5628,
+     0.5934,
+     0.6241
+    ],
+    [
+     0.5076,
+     0.5382,
+     0.5699,
+     0.6015,
+     0.6321,
+     0.6976
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "required_assignments": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[required_assignments] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "assignment_cost": {
+    "meaning": "cost of assigning each peak to each amino acid (5x6 matrix, cost[i][j] for Peak i and Amino Acid j)",
+    "base": [
+     [
+      0.3509,
+      0.3812,
+      0.4126,
+      0.4431,
+      0.4748,
+      0.5053
+     ],
+     [
+      0.3915,
+      0.4227,
+      0.4521,
+      0.4839,
+      0.5142,
+      0.5456
+     ],
+     [
+      0.4302,
+      0.4618,
+      0.4934,
+      0.5241,
+      0.5557,
+      0.5863
+     ],
+     [
+      0.4689,
+      0.4995,
+      0.5312,
+      0.5628,
+      0.5934,
+      0.6241
+     ],
+     [
+      0.5076,
+      0.5382,
+      0.5699,
+      0.6015,
+      0.6321,
+      0.6976
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "required_assignments": {
+    "meaning": "exact number of peak-to-amino-acid assignments that must be selected",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,623 @@
+{
+ "spec": {
+  "station_x": {
+   "base": [
+    56,
+    85,
+    60,
+    31,
+    20
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "station_y": {
+   "base": [
+    31,
+    79,
+    17,
+    66,
+    52
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "vehicle_x": {
+   "base": [
+    46,
+    11,
+    76,
+    5,
+    95,
+    80,
+    79,
+    32,
+    19,
+    82,
+    10,
+    21,
+    61,
+    45,
+    48,
+    20,
+    48,
+    84,
+    5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "vehicle_y": {
+   "base": [
+    6,
+    83,
+    75,
+    72,
+    89,
+    21,
+    7,
+    59,
+    8,
+    55,
+    45,
+    55,
+    84,
+    38,
+    53,
+    60,
+    32,
+    90,
+    59
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "installation_cost": {
+   "base": [
+    611,
+    570,
+    980,
+    765,
+    646
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "station_capacity": {
+   "base": [
+    111,
+    227,
+    232,
+    320,
+    273
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "vehicle_demand": {
+   "base": [
+    27,
+    24,
+    20,
+    10,
+    10,
+    23,
+    20,
+    15,
+    30,
+    21,
+    29,
+    22,
+    29,
+    27,
+    20,
+    21,
+    13,
+    25,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "access_cost": {
+   "base": [
+    [
+     27,
+     83,
+     18,
+     62,
+     53
+    ],
+    [
+     69,
+     74,
+     82,
+     26,
+     32
+    ],
+    [
+     48,
+     10,
+     60,
+     46,
+     61
+    ],
+    [
+     65,
+     80,
+     78,
+     27,
+     25
+    ],
+    [
+     70,
+     14,
+     80,
+     68,
+     84
+    ],
+    [
+     26,
+     58,
+     20,
+     67,
+     68
+    ],
+    [
+     33,
+     72,
+     21,
+     76,
+     74
+    ],
+    [
+     37,
+     57,
+     50,
+     7,
+     14
+    ],
+    [
+     44,
+     97,
+     42,
+     59,
+     44
+    ],
+    [
+     35,
+     24,
+     44,
+     52,
+     62
+    ],
+    [
+     48,
+     82,
+     57,
+     30,
+     12
+    ],
+    [
+     42,
+     68,
+     54,
+     15,
+     3
+    ],
+    [
+     53,
+     25,
+     67,
+     35,
+     52
+    ],
+    [
+     13,
+     57,
+     26,
+     31,
+     29
+    ],
+    [
+     23,
+     45,
+     38,
+     21,
+     28
+    ],
+    [
+     46,
+     68,
+     59,
+     13,
+     8
+    ],
+    [
+     8,
+     60,
+     19,
+     38,
+     34
+    ],
+    [
+     65,
+     11,
+     77,
+     58,
+     74
+    ],
+    [
+     58,
+     82,
+     69,
+     27,
+     17
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "num_stations": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "num_vehicles": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 19.0,
+    "hi": 19.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_stations] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_vehicles] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "station_x": {
+    "meaning": "x-coordinate of each potential station siting location",
+    "base": [
+     56,
+     85,
+     60,
+     31,
+     20
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "station_y": {
+    "meaning": "y-coordinate of each potential station siting location",
+    "base": [
+     31,
+     79,
+     17,
+     66,
+     52
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "vehicle_x": {
+    "meaning": "x-coordinate of each urban fleet vehicle",
+    "base": [
+     46,
+     11,
+     76,
+     5,
+     95,
+     80,
+     79,
+     32,
+     19,
+     82,
+     10,
+     21,
+     61,
+     45,
+     48,
+     20,
+     48,
+     84,
+     5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "vehicle_y": {
+    "meaning": "y-coordinate of each urban fleet vehicle",
+    "base": [
+     6,
+     83,
+     75,
+     72,
+     89,
+     21,
+     7,
+     59,
+     8,
+     55,
+     45,
+     55,
+     84,
+     38,
+     53,
+     60,
+     32,
+     90,
+     59
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "installation_cost": {
+    "meaning": "fixed infrastructure installation cost for each potential station",
+    "base": [
+     611,
+     570,
+     980,
+     765,
+     646
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "station_capacity": {
+    "meaning": "maximum charging throughput (energy units) of each station",
+    "base": [
+     111,
+     227,
+     232,
+     320,
+     273
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "vehicle_demand": {
+    "meaning": "energy demand (units) of each urban fleet vehicle",
+    "base": [
+     27,
+     24,
+     20,
+     10,
+     10,
+     23,
+     20,
+     15,
+     30,
+     21,
+     29,
+     22,
+     29,
+     27,
+     20,
+     21,
+     13,
+     25,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "access_cost": {
+    "meaning": "electricity delivery and access cost matrix from each vehicle to each station (rows=vehicles 1..19, cols=stations 1..5)",
+    "base": [
+     [
+      27,
+      83,
+      18,
+      62,
+      53
+     ],
+     [
+      69,
+      74,
+      82,
+      26,
+      32
+     ],
+     [
+      48,
+      10,
+      60,
+      46,
+      61
+     ],
+     [
+      65,
+      80,
+      78,
+      27,
+      25
+     ],
+     [
+      70,
+      14,
+      80,
+      68,
+      84
+     ],
+     [
+      26,
+      58,
+      20,
+      67,
+      68
+     ],
+     [
+      33,
+      72,
+      21,
+      76,
+      74
+     ],
+     [
+      37,
+      57,
+      50,
+      7,
+      14
+     ],
+     [
+      44,
+      97,
+      42,
+      59,
+      44
+     ],
+     [
+      35,
+      24,
+      44,
+      52,
+      62
+     ],
+     [
+      48,
+      82,
+      57,
+      30,
+      12
+     ],
+     [
+      42,
+      68,
+      54,
+      15,
+      3
+     ],
+     [
+      53,
+      25,
+      67,
+      35,
+      52
+     ],
+     [
+      13,
+      57,
+      26,
+      31,
+      29
+     ],
+     [
+      23,
+      45,
+      38,
+      21,
+      28
+     ],
+     [
+      46,
+      68,
+      59,
+      13,
+      8
+     ],
+     [
+      8,
+      60,
+      19,
+      38,
+      34
+     ],
+     [
+      65,
+      11,
+      77,
+      58,
+      74
+     ],
+     [
+      58,
+      82,
+      69,
+      27,
+      17
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "num_stations": {
+    "meaning": "number of potential siting locations (index-set size, frozen)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "num_vehicles": {
+    "meaning": "number of urban fleet vehicles (index-set size, frozen)",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 19,
+     "hi": 19,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

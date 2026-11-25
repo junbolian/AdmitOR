@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "arc_capacity": {
+   "base": [
+    12,
+    12,
+    20,
+    20,
+    24,
+    24,
+    18,
+    18,
+    22,
+    22,
+    13,
+    13,
+    19,
+    19,
+    15,
+    15,
+    14,
+    14,
+    23,
+    23,
+    12,
+    12,
+    21,
+    21,
+    19,
+    19,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_cost": {
+   "base": [
+    4,
+    4,
+    5,
+    5,
+    8,
+    8,
+    5,
+    5,
+    12,
+    12,
+    9,
+    9,
+    10,
+    10,
+    8,
+    8,
+    6,
+    6,
+    4,
+    4,
+    4,
+    4,
+    2,
+    2,
+    7,
+    7,
+    5,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_commodity1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "demand_commodity2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "arc_capacity": {
+    "meaning": "Throughput limit per directed arc (both directions of each undirected link share the same value)",
+    "base": [
+     12,
+     12,
+     20,
+     20,
+     24,
+     24,
+     18,
+     18,
+     22,
+     22,
+     13,
+     13,
+     19,
+     19,
+     15,
+     15,
+     14,
+     14,
+     23,
+     23,
+     12,
+     12,
+     21,
+     21,
+     19,
+     19,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_cost": {
+    "meaning": "Logistics cost per unit of part shipped on each directed arc",
+    "base": [
+     4,
+     4,
+     5,
+     5,
+     8,
+     8,
+     5,
+     5,
+     12,
+     12,
+     9,
+     9,
+     10,
+     10,
+     8,
+     8,
+     6,
+     6,
+     4,
+     4,
+     4,
+     4,
+     2,
+     2,
+     7,
+     7,
+     5,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_commodity1": {
+    "meaning": "Required units of Commodity 1 from node 3 to node 2",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "demand_commodity2": {
+    "meaning": "Required units of Commodity 2 from node 6 to node 1",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

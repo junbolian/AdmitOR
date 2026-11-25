@@ -1,0 +1,196 @@
+{
+ "spec": {
+  "num_facilities_to_select": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "distance_01": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_02": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_03": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_04": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_12": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_13": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_14": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_23": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_24": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "distance_34": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "large_constant_M": {
+   "base": 1000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [
+  "[num_facilities_to_select] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_facilities_to_select": {
+    "meaning": "Number of facilities to select",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "distance_01": {
+    "meaning": "Distance between Node 0 and Node 1",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_02": {
+    "meaning": "Distance between Node 0 and Node 2",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_03": {
+    "meaning": "Distance between Node 0 and Node 3",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_04": {
+    "meaning": "Distance between Node 0 and Node 4",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_12": {
+    "meaning": "Distance between Node 1 and Node 2",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_13": {
+    "meaning": "Distance between Node 1 and Node 3",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_14": {
+    "meaning": "Distance between Node 1 and Node 4",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_23": {
+    "meaning": "Distance between Node 2 and Node 3",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_24": {
+    "meaning": "Distance between Node 2 and Node 4",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "distance_34": {
+    "meaning": "Distance between Node 3 and Node 4",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "large_constant_M": {
+    "meaning": "Large constant used in constraints",
+    "base": 1000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

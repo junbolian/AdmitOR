@@ -1,0 +1,51 @@
+{
+ "spec": {
+  "max_assignments_per_participant": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "max_assignments_per_car": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_assignments_per_participant] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_assignments_per_car] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "max_assignments_per_participant": {
+    "meaning": "Maximum number of cars assignable to each participant",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "max_assignments_per_car": {
+    "meaning": "Maximum number of participants assignable to each car",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

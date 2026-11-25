@@ -1,0 +1,37 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "transport_cost",
+  "node_net_demand",
+  "node_capacity",
+  "link_capacity"
+ ],
+ "safe": [
+  "transport_cost",
+  "node_capacity",
+  "link_capacity"
+ ],
+ "tests": {
+  "transport_cost": [
+   3,
+   3
+  ],
+  "node_net_demand": [
+   0,
+   0
+  ],
+  "node_capacity": [
+   3,
+   3
+  ],
+  "link_capacity": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

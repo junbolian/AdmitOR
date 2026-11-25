@@ -1,0 +1,1723 @@
+{
+ "spec": {
+  "net_demand": {
+   "base": [
+    29,
+    34,
+    3,
+    -45,
+    -13,
+    -16,
+    -8,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_0_to_1": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_to_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_to_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_to_4": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_to_5": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_to_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_0_to_7": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_0": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_2": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_3": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_4": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_6": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_to_7": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_0": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_1": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_3": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_4": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_to_7": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_0": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_1": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_4": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_6": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_to_7": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_2": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_3": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_5": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_to_7": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_1": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_2": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_3": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_6": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_to_7": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_0": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_2": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_3": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_4": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_5": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_6_to_7": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_0": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_1": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_3": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_4": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_5": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_7_to_6": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_1": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_2": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_3": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_4": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_5": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_6": {
+   "base": 34,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_0_to_7": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_0": {
+   "base": 42,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_2": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_3": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_4": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_5": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_6": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_1_to_7": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_0": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_1": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_4": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_5": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_6": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_2_to_7": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_0": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_1": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_2": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_4": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_5": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_6": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_3_to_7": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_0": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_1": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_2": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_3": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_5": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_6": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_4_to_7": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_0": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_1": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_2": {
+   "base": 37,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_3": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_4": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_6": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_5_to_7": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_0": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_1": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_2": {
+   "base": 37,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_3": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_4": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_5": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_6_to_7": {
+   "base": 43,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_0": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_1": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_2": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_3": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_4": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_5": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_7_to_6": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "net_demand": {
+    "meaning": "net demand (positive) or surplus (negative) per city 0-7",
+    "base": [
+     29,
+     34,
+     3,
+     -45,
+     -13,
+     -16,
+     -8,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_0_to_1": {
+    "meaning": "unit transport cost city 0 -> 1",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_to_2": {
+    "meaning": "unit transport cost city 0 -> 2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_to_3": {
+    "meaning": "unit transport cost city 0 -> 3",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_to_4": {
+    "meaning": "unit transport cost city 0 -> 4",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_to_5": {
+    "meaning": "unit transport cost city 0 -> 5",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_to_6": {
+    "meaning": "unit transport cost city 0 -> 6",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_0_to_7": {
+    "meaning": "unit transport cost city 0 -> 7",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_0": {
+    "meaning": "unit transport cost city 1 -> 0",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_2": {
+    "meaning": "unit transport cost city 1 -> 2",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_3": {
+    "meaning": "unit transport cost city 1 -> 3",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_4": {
+    "meaning": "unit transport cost city 1 -> 4",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_5": {
+    "meaning": "unit transport cost city 1 -> 5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_6": {
+    "meaning": "unit transport cost city 1 -> 6",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_to_7": {
+    "meaning": "unit transport cost city 1 -> 7",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_0": {
+    "meaning": "unit transport cost city 2 -> 0",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_1": {
+    "meaning": "unit transport cost city 2 -> 1",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_3": {
+    "meaning": "unit transport cost city 2 -> 3",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_4": {
+    "meaning": "unit transport cost city 2 -> 4",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_5": {
+    "meaning": "unit transport cost city 2 -> 5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_6": {
+    "meaning": "unit transport cost city 2 -> 6",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_to_7": {
+    "meaning": "unit transport cost city 2 -> 7",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_0": {
+    "meaning": "unit transport cost city 3 -> 0",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_1": {
+    "meaning": "unit transport cost city 3 -> 1",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_2": {
+    "meaning": "unit transport cost city 3 -> 2",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_4": {
+    "meaning": "unit transport cost city 3 -> 4",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_5": {
+    "meaning": "unit transport cost city 3 -> 5",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_6": {
+    "meaning": "unit transport cost city 3 -> 6",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_to_7": {
+    "meaning": "unit transport cost city 3 -> 7",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_0": {
+    "meaning": "unit transport cost city 4 -> 0",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_1": {
+    "meaning": "unit transport cost city 4 -> 1",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_2": {
+    "meaning": "unit transport cost city 4 -> 2",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_3": {
+    "meaning": "unit transport cost city 4 -> 3",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_5": {
+    "meaning": "unit transport cost city 4 -> 5",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_6": {
+    "meaning": "unit transport cost city 4 -> 6",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_to_7": {
+    "meaning": "unit transport cost city 4 -> 7",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_0": {
+    "meaning": "unit transport cost city 5 -> 0",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_1": {
+    "meaning": "unit transport cost city 5 -> 1",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_2": {
+    "meaning": "unit transport cost city 5 -> 2",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_3": {
+    "meaning": "unit transport cost city 5 -> 3",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_4": {
+    "meaning": "unit transport cost city 5 -> 4",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_6": {
+    "meaning": "unit transport cost city 5 -> 6",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_to_7": {
+    "meaning": "unit transport cost city 5 -> 7",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_0": {
+    "meaning": "unit transport cost city 6 -> 0",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_1": {
+    "meaning": "unit transport cost city 6 -> 1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_2": {
+    "meaning": "unit transport cost city 6 -> 2",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_3": {
+    "meaning": "unit transport cost city 6 -> 3",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_4": {
+    "meaning": "unit transport cost city 6 -> 4",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_5": {
+    "meaning": "unit transport cost city 6 -> 5",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_6_to_7": {
+    "meaning": "unit transport cost city 6 -> 7",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_0": {
+    "meaning": "unit transport cost city 7 -> 0",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_1": {
+    "meaning": "unit transport cost city 7 -> 1",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_2": {
+    "meaning": "unit transport cost city 7 -> 2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_3": {
+    "meaning": "unit transport cost city 7 -> 3",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_4": {
+    "meaning": "unit transport cost city 7 -> 4",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_5": {
+    "meaning": "unit transport cost city 7 -> 5",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_7_to_6": {
+    "meaning": "unit transport cost city 7 -> 6",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_1": {
+    "meaning": "route capacity city 0 -> 1",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_2": {
+    "meaning": "route capacity city 0 -> 2",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_3": {
+    "meaning": "route capacity city 0 -> 3",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_4": {
+    "meaning": "route capacity city 0 -> 4",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_5": {
+    "meaning": "route capacity city 0 -> 5",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_6": {
+    "meaning": "route capacity city 0 -> 6",
+    "base": 34,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_0_to_7": {
+    "meaning": "route capacity city 0 -> 7",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_0": {
+    "meaning": "route capacity city 1 -> 0",
+    "base": 42,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_2": {
+    "meaning": "route capacity city 1 -> 2",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_3": {
+    "meaning": "route capacity city 1 -> 3",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_4": {
+    "meaning": "route capacity city 1 -> 4",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_5": {
+    "meaning": "route capacity city 1 -> 5",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_6": {
+    "meaning": "route capacity city 1 -> 6",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_1_to_7": {
+    "meaning": "route capacity city 1 -> 7",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_0": {
+    "meaning": "route capacity city 2 -> 0",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_1": {
+    "meaning": "route capacity city 2 -> 1",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_3": {
+    "meaning": "route capacity city 2 -> 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_4": {
+    "meaning": "route capacity city 2 -> 4",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_5": {
+    "meaning": "route capacity city 2 -> 5",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_6": {
+    "meaning": "route capacity city 2 -> 6",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_2_to_7": {
+    "meaning": "route capacity city 2 -> 7",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_0": {
+    "meaning": "route capacity city 3 -> 0",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_1": {
+    "meaning": "route capacity city 3 -> 1",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_2": {
+    "meaning": "route capacity city 3 -> 2",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_4": {
+    "meaning": "route capacity city 3 -> 4",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_5": {
+    "meaning": "route capacity city 3 -> 5",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_6": {
+    "meaning": "route capacity city 3 -> 6",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_3_to_7": {
+    "meaning": "route capacity city 3 -> 7",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_0": {
+    "meaning": "route capacity city 4 -> 0",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_1": {
+    "meaning": "route capacity city 4 -> 1",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_2": {
+    "meaning": "route capacity city 4 -> 2",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_3": {
+    "meaning": "route capacity city 4 -> 3",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_5": {
+    "meaning": "route capacity city 4 -> 5",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_6": {
+    "meaning": "route capacity city 4 -> 6",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_4_to_7": {
+    "meaning": "route capacity city 4 -> 7",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_0": {
+    "meaning": "route capacity city 5 -> 0",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_1": {
+    "meaning": "route capacity city 5 -> 1",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_2": {
+    "meaning": "route capacity city 5 -> 2",
+    "base": 37,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_3": {
+    "meaning": "route capacity city 5 -> 3",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_4": {
+    "meaning": "route capacity city 5 -> 4",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_6": {
+    "meaning": "route capacity city 5 -> 6",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_5_to_7": {
+    "meaning": "route capacity city 5 -> 7",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_0": {
+    "meaning": "route capacity city 6 -> 0",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_1": {
+    "meaning": "route capacity city 6 -> 1",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_2": {
+    "meaning": "route capacity city 6 -> 2",
+    "base": 37,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_3": {
+    "meaning": "route capacity city 6 -> 3",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_4": {
+    "meaning": "route capacity city 6 -> 4",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_5": {
+    "meaning": "route capacity city 6 -> 5",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_6_to_7": {
+    "meaning": "route capacity city 6 -> 7",
+    "base": 43,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_0": {
+    "meaning": "route capacity city 7 -> 0",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_1": {
+    "meaning": "route capacity city 7 -> 1",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_2": {
+    "meaning": "route capacity city 7 -> 2",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_3": {
+    "meaning": "route capacity city 7 -> 3",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_4": {
+    "meaning": "route capacity city 7 -> 4",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_5": {
+    "meaning": "route capacity city 7 -> 5",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_7_to_6": {
+    "meaning": "route capacity city 7 -> 6",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

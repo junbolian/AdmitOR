@@ -1,0 +1,157 @@
+{
+ "spec": {
+  "expected_returns": {
+   "base": [
+    0.1253,
+    0.0893,
+    0.055,
+    0.0948,
+    0.0803,
+    0.128
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.05,
+    "hi": 0.25,
+    "integer": false
+   }
+  },
+  "min_return": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.02,
+    "hi": 0.18,
+    "integer": false
+   }
+  },
+  "max_weight": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "budget": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "cov_0_1": {
+   "base": 0.0216,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.02,
+    "hi": 0.06,
+    "integer": false
+   }
+  },
+  "cov_0_2": {
+   "base": 0.0471,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.02,
+    "hi": 0.06,
+    "integer": false
+   }
+  },
+  "covariance_scale": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "expected_returns": {
+    "meaning": "Expected return of each asset (fractional)",
+    "base": [
+     0.1253,
+     0.0893,
+     0.055,
+     0.0948,
+     0.0803,
+     0.128
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.05,
+     "hi": 0.25,
+     "integer": false
+    }
+   },
+   "min_return": {
+    "meaning": "Minimum required portfolio expected return (fractional)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.02,
+     "hi": 0.18,
+     "integer": false
+    }
+   },
+   "max_weight": {
+    "meaning": "Maximum fraction allocatable to any single asset",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "budget": {
+    "meaning": "Total allocation sum that must be met exactly (fractional)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "cov_0_1": {
+    "meaning": "Covariance coefficient between Asset 0 and Asset 1",
+    "base": 0.0216,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.02,
+     "hi": 0.06,
+     "integer": false
+    }
+   },
+   "cov_0_2": {
+    "meaning": "Covariance coefficient between Asset 0 and Asset 2",
+    "base": 0.0471,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.02,
+     "hi": 0.06,
+     "integer": false
+    }
+   },
+   "covariance_scale": {
+    "meaning": "Multiplicative scale applied to the remaining (unspecified) covariance coefficients, anchored at 1.0 for the given example values",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

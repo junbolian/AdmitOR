@@ -1,0 +1,102 @@
+{
+ "spec": {
+  "edge_weights": {
+   "base": [
+    18,
+    6,
+    12,
+    18,
+    20,
+    10,
+    19,
+    18,
+    13,
+    18,
+    14,
+    7,
+    19,
+    12,
+    16,
+    10,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "station_capacities": {
+   "base": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "edge_weights": {
+    "meaning": "Relief Efficiency Score for each of the 17 candidate corridors, in listed order",
+    "base": [
+     18,
+     6,
+     12,
+     18,
+     20,
+     10,
+     19,
+     18,
+     13,
+     18,
+     14,
+     7,
+     19,
+     12,
+     16,
+     10,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "station_capacities": {
+    "meaning": "Dispatch Bay Capacity upper bound for Stations 0 through 9",
+    "base": [
+     1,
+     2,
+     1,
+     2,
+     1,
+     2,
+     2,
+     1,
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

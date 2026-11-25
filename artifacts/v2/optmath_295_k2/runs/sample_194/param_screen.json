@@ -1,0 +1,40 @@
+{
+ "alive": [
+  "A-direct",
+  "A-direct-2",
+  "B-structured",
+  "B-structured-2",
+  "C-direct",
+  "C-direct-2"
+ ],
+ "testable": [
+  "supply",
+  "demand",
+  "cost",
+  "capacity"
+ ],
+ "safe": [
+  "supply",
+  "cost",
+  "capacity"
+ ],
+ "tests": {
+  "supply": [
+   6,
+   6
+  ],
+  "demand": [
+   6,
+   0
+  ],
+  "cost": [
+   6,
+   6
+  ],
+  "capacity": [
+   6,
+   6
+  ]
+ },
+ "untested": []
+}

@@ -1,0 +1,162 @@
+{
+ "spec": {
+  "plane0_capacity": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "plane1_capacity": {
+   "base": 89,
+   "perturb": {
+    "mode": "abs",
+    "lo": 65.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "plane0_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "plane1_cost": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 9.0,
+    "integer": false
+   }
+  },
+  "initial_planes_per_type": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "demand_period1": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "max_trips_plane0": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "max_trips_plane1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "plane0_capacity": {
+    "meaning": "Passenger capacity of Plane 0",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "plane1_capacity": {
+    "meaning": "Passenger capacity of Plane 1",
+    "base": 89,
+    "perturb": {
+     "mode": "abs",
+     "lo": 65,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "plane0_cost": {
+    "meaning": "Cost per inter-location trip for Plane 0",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "plane1_cost": {
+    "meaning": "Cost per inter-location trip for Plane 1",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 9,
+     "integer": false
+    }
+   },
+   "initial_planes_per_type": {
+    "meaning": "Maximum idle planes of each type available at each location (total per type)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "demand_period1": {
+    "meaning": "Passenger demand from Location 1 to Location 0 in period 1",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "max_trips_plane0": {
+    "meaning": "Maximum trips Plane 0 can make from Location 1 to Location 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "max_trips_plane1": {
+    "meaning": "Maximum trips Plane 1 can make from Location 1 to Location 0",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

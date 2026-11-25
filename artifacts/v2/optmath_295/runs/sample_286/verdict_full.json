@@ -1,0 +1,116 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 1000000,
+   "big_M": 1000000,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 639462.8557780379,
+   "big_M": 222552.700591068,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 736497.567042596,
+   "big_M": 3415827.4883722654,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 421979.6275033019,
+   "big_M": 246006.3752465447,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 26633.31608689524,
+   "big_M": 1074304.4883645778,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  },
+  {
+   "min_distance_lower_bound": 0,
+   "min_distance_upper_bound": 220518.57797849263,
+   "big_M": 2987401.8509919527,
+   "exact_selection_count": 2,
+   "num_nodes": 5
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   40.0,
+   40.0,
+   40.0,
+   40.0,
+   40.0,
+   40.0
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478,
+   1.4142135623842478
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances",
+   "missing_distances"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

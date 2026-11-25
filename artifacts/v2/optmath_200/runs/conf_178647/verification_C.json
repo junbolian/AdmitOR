@@ -1,0 +1,16 @@
+{
+ "sample_id": "conf_178647",
+ "set": "confirm",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll compare each parameter against the statement systematically.\n\nRevenue values: $196, $104, $135 — match.\nHolding cost: $10 — match.\nGrinder capacities: 240 (Period 0), 360 (Periods 1–3) — match.\nDrill capacities: 120 (Periods 0, 1, 3), 0 (Period 2) — match.\nBorer capacity: 120 all periods — match.\nMax inventory: 50 — match.\nSales limits: all four periods match the statement exactly.\nFinal inventory: 10 per product — match.\n\nThe statement mentions borer time per unit: \"each unit of any product requiring 2 hours of borer time.\" This is a machine usage rate (hours per unit per product) that is stated explicitly but not extracted as a parameter.\n\nNo mismatches found. The borer usage rate is stated but not extracted, which is a `not_stated` issue only if it was intended to be captured — however, the task asks me to report parameters that were extracted but whose values conflict, or parameters that were extracted with values not given in the statement. Since the borer usage rate is not among the extracted parameters, it's out of scope for this check.\n\nReviewing all extracted parameters against the statement one more time: everything checks out.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false
+}

@@ -1,0 +1,86 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "transport_cost_per_unit": 5,
+   "net_supply_product0_city0": 1,
+   "net_supply_product1_city0": 1,
+   "net_supply_product0_city1": 1,
+   "net_supply_product1_city1": 0,
+   "net_supply_product0_city2": 1,
+   "net_supply_product1_city2": 1,
+   "net_supply_product0_city3": -3,
+   "net_supply_product1_city3": 0,
+   "total_shipping_capacity_any_pair": 124,
+   "capacity_product0_city0_city1": 75,
+   "capacity_product1_city0_city1": 74,
+   "capacity_product0_city2_city3": 75,
+   "capacity_product1_city2_city3": 75
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   15.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

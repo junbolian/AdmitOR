@@ -1,0 +1,37 @@
+{
+ "sample_id": "conf_188937",
+ "set": "confirm",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"production_cost\", \"evidence\": \"variable production costs ranging from 20 to 40 units per item produced\"}, {\"parameter\": \"holding_cost\", \"evidence\": \"inventory holding costs ranging from 15 to 25 units per item stored\"}, {\"parameter\": \"backlog_cost\", \"evidence\": \"backlogging penalty costs ranging from 51 to 79 units per backlogged item\"}, {\"parameter\": \"setup_cost\", \"evidence\": \"fixed setup costs ranging from 643 to 1189 units per period when production is initiated\"}, {\"parameter\": \"demand\", \"evidence\": \"demand for that period, which varies across periods from 302 to 596 units\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "production_cost",
+   "evidence": "variable production costs ranging from 20 to 40 units per item produced"
+  },
+  {
+   "parameter": "holding_cost",
+   "evidence": "inventory holding costs ranging from 15 to 25 units per item stored"
+  },
+  {
+   "parameter": "backlog_cost",
+   "evidence": "backlogging penalty costs ranging from 51 to 79 units per backlogged item"
+  },
+  {
+   "parameter": "setup_cost",
+   "evidence": "fixed setup costs ranging from 643 to 1189 units per period when production is initiated"
+  },
+  {
+   "parameter": "demand",
+   "evidence": "demand for that period, which varies across periods from 302 to 596 units"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

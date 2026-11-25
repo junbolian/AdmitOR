@@ -1,0 +1,25 @@
+{
+ "sample_id": "sample_203",
+ "set": "stream",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity\",\n      \"evidence\": \"\\\"with similar limits for the other consultants and projects\\\" — only Consultant 0's limits are given; rows 1–3 are not stated\"\n    },\n    {\n      \"parameter\": \"cost\",\n      \"evidence\": \"\\\"and so on for all consultant-project pairs\\\" — only three cost values are explicitly given; the remaining entries are not stated\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "\"with similar limits for the other consultants and projects\" — only Consultant 0's limits are given; rows 1–3 are not stated"
+  },
+  {
+   "parameter": "cost",
+   "evidence": "\"and so on for all consultant-project pairs\" — only three cost values are explicitly given; the remaining entries are not stated"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true
+}

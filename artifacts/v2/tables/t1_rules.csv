@@ -1,0 +1,61 @@
+set,ruler,rule,problems,certificates,coverage,coverage_se,label_matches,label_misses,precision,precision_se
+stream (OptMATH-295),round_aware,single_A,295,264,0.8949,0.0179,213,51,0.8068,0.0243
+stream (OptMATH-295),round_aware,single_B,295,271,0.9186,0.0159,227,44,0.8376,0.0224
+stream (OptMATH-295),round_aware,single_C,295,284,0.9627,0.0110,226,58,0.7958,0.0239
+stream (OptMATH-295),round_aware,panel_base_2of3,295,272,0.9220,0.0156,227,45,0.8346,0.0225
+stream (OptMATH-295),round_aware,panel_base_3of3,295,242,0.8203,0.0224,207,35,0.8554,0.0226
+stream (OptMATH-295),round_aware,gate,295,260,0.8814,0.0188,218,42,0.8385,0.0228
+stream (OptMATH-295),round_aware,gate_3fam,295,226,0.7661,0.0246,196,30,0.8673,0.0226
+stream (OptMATH-295),round_aware,gate_tau,295,223,0.7559,0.0250,193,30,0.8655,0.0228
+stream (OptMATH-295),round_aware,ind_gate,295,212,0.7186,0.0262,174,38,0.8208,0.0263
+stream (OptMATH-295),round_aware,ind_gate_3fam,295,179,0.6068,0.0284,153,26,0.8547,0.0263
+stream (OptMATH-295),round_aware,ind_gate_tau,295,174,0.5898,0.0286,148,26,0.8506,0.0270
+stream (OptMATH-295),round_aware,panel_base_3of3 + check (B or C),295,201,0.6814,0.0271,187,14,0.9303,0.0180
+stream (OptMATH-295),round_aware,panel_base_3of3 + check (B and C),295,216,0.7322,0.0258,201,15,0.9306,0.0173
+stream (OptMATH-295),round_aware,panel_base_2of3 + check (B or C),295,223,0.7559,0.0250,204,19,0.9148,0.0187
+stream (OptMATH-295),round_aware,panel_base_2of3 + check (B and C),295,241,0.8169,0.0225,221,20,0.9170,0.0178
+confirm (OptMATH-200),round_aware,single_A,200,173,0.8650,0.0242,148,25,0.8555,0.0267
+confirm (OptMATH-200),round_aware,single_B,200,185,0.9250,0.0186,162,23,0.8757,0.0243
+confirm (OptMATH-200),round_aware,single_C,200,187,0.9350,0.0174,159,28,0.8503,0.0261
+confirm (OptMATH-200),round_aware,panel_base_2of3,200,180,0.9000,0.0212,159,21,0.8833,0.0239
+confirm (OptMATH-200),round_aware,panel_base_3of3,200,163,0.8150,0.0275,145,18,0.8896,0.0245
+confirm (OptMATH-200),round_aware,gate,200,175,0.8750,0.0234,155,20,0.8857,0.0241
+confirm (OptMATH-200),round_aware,gate_3fam,200,157,0.7850,0.0290,141,16,0.8981,0.0241
+confirm (OptMATH-200),round_aware,gate_tau,200,155,0.7750,0.0295,139,16,0.8968,0.0244
+confirm (OptMATH-200),round_aware,ind_gate,200,145,0.7250,0.0316,127,18,0.8759,0.0274
+confirm (OptMATH-200),round_aware,ind_gate_3fam,200,128,0.6400,0.0339,114,14,0.8906,0.0276
+confirm (OptMATH-200),round_aware,ind_gate_tau,200,124,0.6200,0.0343,110,14,0.8871,0.0284
+confirm (OptMATH-200),round_aware,panel_base_3of3 + check (B or C),200,143,0.7150,0.0319,131,12,0.9161,0.0232
+confirm (OptMATH-200),round_aware,panel_base_3of3 + check (B and C),200,153,0.7650,0.0300,141,12,0.9216,0.0217
+confirm (OptMATH-200),round_aware,panel_base_2of3 + check (B or C),200,153,0.7650,0.0300,141,12,0.9216,0.0217
+confirm (OptMATH-200),round_aware,panel_base_2of3 + check (B and C),200,168,0.8400,0.0259,155,13,0.9226,0.0206
+calibration (NANO-CO-150),label_match,single_A,150,133,0.8867,0.0259,109,24,0.8195,0.0333
+calibration (NANO-CO-150),label_match,single_B,150,149,0.9933,0.0066,133,16,0.8926,0.0254
+calibration (NANO-CO-150),label_match,single_C,150,149,0.9933,0.0066,132,17,0.8859,0.0260
+calibration (NANO-CO-150),label_match,panel_base_2of3,150,147,0.9800,0.0114,132,15,0.8980,0.0250
+calibration (NANO-CO-150),label_match,panel_base_3of3,150,106,0.7067,0.0372,103,3,0.9717,0.0161
+calibration (NANO-CO-150),label_match,gate,150,137,0.9133,0.0230,124,13,0.9051,0.0250
+calibration (NANO-CO-150),label_match,gate_3fam,150,95,0.6333,0.0393,94,1,0.9895,0.0105
+calibration (NANO-CO-150),label_match,gate_tau,150,95,0.6333,0.0393,94,1,0.9895,0.0105
+calibration (NANO-CO-150),label_match,ind_gate,150,115,0.7667,0.0345,104,11,0.9043,0.0274
+calibration (NANO-CO-150),label_match,ind_gate_3fam,150,83,0.5533,0.0406,83,0,1.0000,0.0000
+calibration (NANO-CO-150),label_match,ind_gate_tau,150,82,0.5467,0.0406,82,0,1.0000,0.0000
+calibration (NANO-CO-150),label_match,panel_base_3of3 + check (B or C),150,101,0.6733,0.0383,99,2,0.9802,0.0139
+calibration (NANO-CO-150),label_match,panel_base_3of3 + check (B and C),150,101,0.6733,0.0383,99,2,0.9802,0.0139
+calibration (NANO-CO-150),label_match,panel_base_2of3 + check (B or C),150,136,0.9067,0.0238,125,11,0.9191,0.0234
+calibration (NANO-CO-150),label_match,panel_base_2of3 + check (B and C),150,141,0.9400,0.0194,128,13,0.9078,0.0244
+heldout (NANO-CO-95),label_match,single_A,95,80,0.8421,0.0374,69,11,0.8625,0.0385
+heldout (NANO-CO-95),label_match,single_B,95,94,0.9895,0.0105,82,12,0.8723,0.0344
+heldout (NANO-CO-95),label_match,single_C,95,94,0.9895,0.0105,79,15,0.8404,0.0378
+heldout (NANO-CO-95),label_match,panel_base_2of3,95,93,0.9789,0.0147,81,12,0.8710,0.0348
+heldout (NANO-CO-95),label_match,panel_base_3of3,95,70,0.7368,0.0452,64,6,0.9143,0.0335
+heldout (NANO-CO-95),label_match,gate,95,80,0.8421,0.0374,71,9,0.8875,0.0353
+heldout (NANO-CO-95),label_match,gate_3fam,95,60,0.6316,0.0495,55,5,0.9167,0.0357
+heldout (NANO-CO-95),label_match,gate_tau,95,59,0.6211,0.0498,54,5,0.9153,0.0363
+heldout (NANO-CO-95),label_match,ind_gate,95,78,0.8211,0.0393,69,9,0.8846,0.0362
+heldout (NANO-CO-95),label_match,ind_gate_3fam,95,56,0.5895,0.0505,51,5,0.9107,0.0381
+heldout (NANO-CO-95),label_match,ind_gate_tau,95,55,0.5789,0.0507,50,5,0.9091,0.0388
+heldout (NANO-CO-95),label_match,panel_base_3of3 + check (B or C),95,68,0.7158,0.0463,63,5,0.9265,0.0317
+heldout (NANO-CO-95),label_match,panel_base_3of3 + check (B and C),95,69,0.7263,0.0457,64,5,0.9275,0.0312
+heldout (NANO-CO-95),label_match,panel_base_2of3 + check (B or C),95,89,0.9368,0.0250,78,11,0.8764,0.0349
+heldout (NANO-CO-95),label_match,panel_base_2of3 + check (B and C),95,91,0.9579,0.0206,80,11,0.8791,0.0342

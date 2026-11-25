@@ -1,0 +1,154 @@
+{
+ "spec": {
+  "arc_costs": {
+   "base": [
+    2,
+    9,
+    6,
+    9,
+    6,
+    5,
+    7,
+    8,
+    5,
+    10,
+    3,
+    4,
+    5,
+    7,
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "arc_capacities": {
+   "base": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "node_supply": {
+   "base": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[arc_capacities] degenerate abs range (lo == hi); perturbation has no effect",
+  "[node_supply] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "arc_costs": {
+    "meaning": "Unit energy/time cost per directed arc, in the fixed arc order: 0→1, 0→2, 0→6, 0→8, 1→2, 1→5, 2→3, 2→6, 3→4, 3→7, 4→5, 5→6, 5→7, 6→7, 6→8, 7→8",
+    "base": [
+     2,
+     9,
+     6,
+     9,
+     6,
+     5,
+     7,
+     8,
+     5,
+     10,
+     3,
+     4,
+     5,
+     7,
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "arc_capacities": {
+    "meaning": "Traversal capacity upper bound for each of the 16 directed arcs (collision avoidance allows only one robot at a time)",
+    "base": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "node_supply": {
+    "meaning": "Net flow supply at nodes 0..8: +1 unit dispatched at source Node 0, -1 unit received at sink Node 8, 0 for all intermediate nodes",
+    "base": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     -1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}
