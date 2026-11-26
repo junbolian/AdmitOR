@@ -1,11 +1,13 @@
 {
  "decision": "ACCEPT",
  "clique": [
+  "A-direct",
   "B-structured",
   "C-direct"
  ],
  "families": [
   "claude",
+  "deepseek",
   "gpt"
  ],
  "instantiations": [
@@ -576,12 +578,12 @@
  ],
  "objectives": {
   "A-direct": [
-   null,
-   null,
-   null,
-   null,
-   null,
-   null
+   554968.0,
+   491141.0990208253,
+   384927.74565474177,
+   681763.8776969835,
+   600574.1086044605,
+   580698.1744189041
   ],
   "B-structured": [
    554968.0,
@@ -602,12 +604,12 @@
  },
  "statuses": {
   "A-direct": [
-   "crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
   ],
   "B-structured": [
    "optimal",
@@ -634,9 +636,7 @@
   4,
   5
  ],
- "diagnoses": {
-  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_4ab67c44] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers']"
- },
+ "diagnoses": {},
  "disagreements": [],
  "notes": []
 }

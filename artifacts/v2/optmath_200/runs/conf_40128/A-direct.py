@@ -9,32 +9,36 @@ def solve(params):
     min_production = params["min_production"]
     max_demand = params["max_demand"]
 
-    num_stages = len(stage_capacity)
-    num_products = len(profit)
+    n_products = 6
+    n_stages = 11
+    products = list(range(n_products))
+    stages = list(range(n_stages))
 
     model = pyo.ConcreteModel()
 
-    model.P = pyo.RangeSet(0, num_products - 1)
-    model.S = pyo.RangeSet(0, num_stages - 1)
+    model.x = pyo.Var(products, domain=pyo.NonNegativeReals)
 
-    model.x = pyo.Var(model.P, domain=pyo.NonNegativeReals)
+    def profit_rule(m):
+        return sum(profit[p] * m.x[p] for p in products)
 
-    def obj_rule(m):
-        return sum(profit[p] * m.x[p] for p in m.P)
-    model.total_profit = pyo.Objective(rule=obj_rule, sense=pyo.maximize)
+    model.total_profit = pyo.Objective(rule=profit_rule, sense=pyo.maximize)
 
     def stage_rule(m, s):
-        return sum(stage_time[s][p] * m.x[p] for p in m.P) <= stage_capacity[s]
-    model.stage_limit = pyo.Constraint(model.S, rule=stage_rule)
+        return sum(stage_time[s][p] * m.x[p] for p in products) <= stage_capacity[s]
 
-    def min_rule(m, p):
+    model.stage_limit = pyo.Constraint(stages, rule=stage_rule)
+
+    def lower_rule(m, p):
         return m.x[p] >= min_production[p]
-    model.min_prod = pyo.Constraint(model.P, rule=min_rule)
 
-    def max_rule(m, p):
+    model.lower_bound = pyo.Constraint(products, rule=lower_rule)
+
+    def upper_rule(m, p):
         return m.x[p] <= max_demand[p]
-    model.max_prod = pyo.Constraint(model.P, rule=max_rule)
+
+    model.upper_bound = pyo.Constraint(products, rule=upper_rule)
 
     Highs().solve(model)
+
     obj_val = float(pyo.value(model.total_profit))
     return {"objective": obj_val, "status": "optimal"}

@@ -1,11 +1,13 @@
 {
  "decision": "ACCEPT",
  "clique": [
+  "A-direct",
   "B-structured",
   "C-direct"
  ],
  "families": [
   "claude",
+  "deepseek",
   "gpt"
  ],
  "instantiations": [
@@ -948,12 +950,12 @@
  ],
  "objectives": {
   "A-direct": [
-   null,
-   null,
-   null,
-   null,
-   null,
-   null
+   11250495.529411763,
+   12482853.96761495,
+   10025133.099756211,
+   9692990.77301773,
+   10149592.228786903,
+   12099942.290959395
   ],
   "B-structured": [
    11250495.529411767,
@@ -974,12 +976,12 @@
  },
  "statuses": {
   "A-direct": [
-   "crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items",
-   "crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items",
-   "crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items",
-   "crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items",
-   "crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items",
-   "crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items"
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
   ],
   "B-structured": [
    "optimal",
@@ -1006,9 +1008,7 @@
   4,
   5
  ],
- "diagnoses": {
-  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items', 'crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items', 'crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items', 'crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items', 'crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items', 'crash:raise ValueError( | ValueError: Attempting to declare a block component using the name of a reserved attribute: | items']"
- },
+ "diagnoses": {},
  "disagreements": [],
  "notes": []
 }

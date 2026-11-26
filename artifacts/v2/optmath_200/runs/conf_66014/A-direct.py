@@ -9,28 +9,23 @@ def solve(params):
     production_limits = params["production_limits"]
 
     n = len(profit_margins)
+    items = range(n)
 
     model = pyo.ConcreteModel()
-    model.items = pyo.RangeSet(0, n - 1)
 
-    model.produce = pyo.Var(model.items, within=pyo.NonNegativeReals)
+    model.x = pyo.Var(items, bounds=lambda m, i: (0, production_limits[i]))
 
-    def profit_rule(mdl):
-        return sum(profit_margins[i] * mdl.produce[i] for i in mdl.items)
+    model.resource_constraint = pyo.Constraint(
+        expr=sum(resource_capacities[i] * model.x[i] for i in items)
+        <= resource_budget
+    )
 
-    model.total_profit = pyo.Objective(rule=profit_rule, sense=pyo.maximize)
-
-    def resource_rule(mdl):
-        return sum(resource_capacities[i] * mdl.produce[i] for i in mdl.items) <= resource_budget
-
-    model.resource_con = pyo.Constraint(rule=resource_rule)
-
-    def upper_rule(mdl, i):
-        return mdl.produce[i] <= production_limits[i]
-
-    model.upper_con = pyo.Constraint(model.items, rule=upper_rule)
+    model.profit = pyo.Objective(
+        expr=sum(profit_margins[i] * model.x[i] for i in items),
+        sense=pyo.maximize,
+    )
 
     Highs().solve(model)
 
-    obj_val = float(pyo.value(model.total_profit))
+    obj_val = float(pyo.value(model.profit))
     return {"objective": obj_val, "status": "optimal"}

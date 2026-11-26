@@ -1,7 +1,13 @@
 {
- "decision": "UNINFORMATIVE",
- "clique": [],
- "families": [],
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
  "instantiations": [
   {
    "demand": [
@@ -102,12 +108,12 @@
  ],
  "objectives": {
   "A-direct": [
+   106380.0,
+   78499.61096619316,
+   73456.82579644369,
+   113947.40076630775,
    null,
-   null,
-   null,
-   null,
-   null,
-   null
+   106378.90364529424
   ],
   "B-structured": [
    106380.0,
@@ -128,12 +134,12 @@
  },
  "statuses": {
   "A-direct": [
-   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal"
   ],
   "B-structured": [
    "optimal",
@@ -153,11 +159,15 @@
   ]
  },
  "informative": [
-  0
+  0,
+  1,
+  2,
+  3,
+  5
  ],
- "diagnoses": {},
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [1, 2, 3, 5]: ['solve_failed', 'solve_failed', 'solve_failed', 'solve_failed']"
+ },
  "disagreements": [],
- "notes": [
-  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
- ]
+ "notes": []
 }

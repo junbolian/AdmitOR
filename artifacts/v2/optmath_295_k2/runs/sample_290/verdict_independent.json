@@ -266,12 +266,12 @@
  ],
  "objectives": {
   "A-direct": [
-   null,
-   null,
-   null,
-   null,
-   null,
-   null
+   534055.0,
+   451738.97652827745,
+   470503.0789735363,
+   440405.70149268484,
+   691121.2007639849,
+   722167.5619857358
   ],
   "A-direct-2": [
    811608.0,
@@ -316,12 +316,12 @@
  },
  "statuses": {
   "A-direct": [
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
   ],
   "A-direct-2": [
    "optimal",
@@ -373,7 +373,7 @@
   5
  ],
  "diagnoses": {
-  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers']",
+  "A-direct": "diverges from consensus by 3.299e+05 on instance 4 (params: {'fixed_cost': [153844.67, 103501.12, 149645.45, 136063.0, 52783.31, 127169.92], 'capacity': [1223.07, 1058.75, 735.39, 1147.81, 618.28, 932.9], 'demand': [402.47, 549.54, 535.21, 311.46, 420.25, 257.89, 538.21, 526.28, 307.4, 444.19, 440.26, 256.57], 'transport_cost': [83.33, 65.48, 78.0, 72.12, 32.04, 51.92], 'num_facilities': 6, 'num_customers': 12})",
   "B-structured": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data', 'insufficient_transport_data']",
   "C-direct-2": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range', 'crash:return transport_cost[i * num_customers + j] | ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | IndexError: list index out of range']"
  },

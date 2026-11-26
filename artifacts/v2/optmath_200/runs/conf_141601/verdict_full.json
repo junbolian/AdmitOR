@@ -296,12 +296,12 @@
  },
  "statuses": {
   "A-direct": [
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
-   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+   "crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'",
+   "crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'",
+   "crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'",
+   "crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'",
+   "crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'",
+   "crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'"
   ],
   "B-structured": [
    "optimal",
@@ -329,7 +329,7 @@
   5
  ],
  "diagnoses": {
-  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers']"
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'\", \"crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'\", \"crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'\", \"crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'\", \"crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'\", \"crash:rule=lambda model, t: sum(g[p] * model.x[p, t] for p in products) <= gcap, | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: '<=' not supported between instances of 'LinearExpression'\"]"
  },
  "disagreements": [],
  "notes": []
