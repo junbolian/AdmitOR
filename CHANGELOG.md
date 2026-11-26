@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.1.1
+
+- Stored replies that were error pages of the API relay, returned with HTTP status 200 instead of a model reply, are requested again under the retry rule. Sixteen programs of family A are regenerated, and every later step of these problems is rerun. Over the four sets of the paper, three-family agreement issues 587 certificates (was 586); after data verification, 516 remain, as before.
+- Downstream accuracy tables over four evaluation benchmarks (1,082 problems).
+- Audit lists and figures updated with the new counts.
+
 ## v2.1.0
 
 - Replies of the extraction and the data verification that cannot be parsed are requested again with identical settings, up to three attempts. The rule is applied to every set, and the records and tables are updated: 586 three-family certificates over the four sets (was 581), 516 after data verification (was 513).

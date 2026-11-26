@@ -88,7 +88,7 @@ def main():
             row.append((sum(val(k, "single_" + f, "label_misses") - val(k, "panel_base_3of3", "label_misses") for k in ks),
                         sum(val(k, "single_" + f, "certificates") - val(k, "panel_base_3of3", "certificates") for k in ks)))
         A[g] = row
-    expect = {"OptMATH": [(53, 410), (23, 32), (14, 51), (33, 66)],
+    expect = {"OptMATH": [(54, 411), (23, 32), (13, 50), (32, 65)],
               "NANO-CO": [(9, 176), (26, 37), (19, 67), (23, 67)]}
     if A != expect:
         fail(f"panel (a) counts differ from the paper: {A}")
@@ -104,7 +104,7 @@ def main():
     for g, ks in grp.items():
         for stage, lab in (("panel_base_3of3", "agreement"), ("after check (B or C)", "verified")):
             B.append((g, lab, certs(ks, stage), {c: n for c, n in classes(ks, stage).items() if n}))
-    expectB = [("OptMATH", "agreement", 410, {"D": 26, "E": 1, "P": 16, "B": 8, "T": 2}),
+    expectB = [("OptMATH", "agreement", 411, {"D": 27, "E": 1, "P": 16, "B": 8, "T": 2}),
                ("OptMATH", "verified", 347, {"P": 16, "B": 7, "T": 2}),
                ("NANO-CO", "agreement", 176, {"E": 2, "T": 5, "U": 2}),
                ("NANO-CO", "verified", 169, {"T": 5, "U": 2})]
@@ -200,7 +200,7 @@ def fig2(t1, t2, out):
         defect = int(after["label_misses"])
         kept_match = n - withdrawn - defect
         data.append((name, n, (kept_match, defect, data_err, correct, over)))
-    expect = [("OptMATH-295", 243, (187, 14, 21, 2, 19)), ("OptMATH-200", 167, (135, 11, 6, 4, 11)),
+    expect = [("OptMATH-295", 243, (187, 14, 21, 2, 19)), ("OptMATH-200", 168, (135, 11, 7, 4, 11)),
               ("NANO-CO-150", 106, (99, 2, 1, 4, 0)), ("NANO-CO-95", 70, (63, 5, 1, 0, 1))]
     if data != expect:
         fail(f"figure 2 counts differ from the paper: {data}")

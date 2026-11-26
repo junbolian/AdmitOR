@@ -9,6 +9,7 @@ Every panel_base_3of3 certificate whose value matches the answer and that the ru
 | `om_industryor_68` | OptiMind IndustryOR | ['TravelingSalesman'] | 35.0 | 35 | yes |
 | `om_industryor_74` | OptiMind IndustryOR | ['Lot-Sizing Problem', 'Production Planning Problem'] | 4700.0 | 4700 | yes |
 | `om_industryor_87` | OptiMind IndustryOR | ['Production Planning Problem', 'Profit Maximization Problem'] | 140.0 | 140 | yes |
+| `om_industryor_94` | OptiMind IndustryOR | ['Cutting Stock Problem'] | 21.499999999999986 | 21.5 | yes |
 | `om_mamo_16` | OptiMind Mamo-Complex | ['Transportation Problem'] | 247.0 | 247 | yes |
 | `om_mamo_17` | OptiMind Mamo-Complex | ['TravelingSalesman'] | 233.0 | 233 | yes |
 | `om_mamo_21` | OptiMind Mamo-Complex | ["Network Optimization"] | 38.0 | 38 | yes |
@@ -392,7 +393,72 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 6. om_mamo_16 (OptiMind Mamo-Complex)
+## 6. om_industryor_94 (OptiMind IndustryOR)
+
+### 1. Identification
+
+| Field | Value |
+|---|---|
+| Sample id | `om_industryor_94` |
+| Benchmark | OptiMind IndustryOR (`datasets/optimind_corrected/optimind_cleaned_classified_industryor.csv`, 0-based row 94) |
+| Problem class (OptiMind) | ['Cutting Stock Problem'] |
+| Optimization sense | min (words "minim..." / "maxim..." in the problem text) |
+| Certified value (panel_base_3of3) | 21.499999999999986 |
+| Answer (OptiMind) | 21.5 |
+| Rules that certify it | gate 21.50000000000001, panel_base_2of3 21.499999999999986, panel_base_3of3 21.499999999999986, ind_gate 21.50000000000001 |
+| Families agreeing at instance 0 | A (DeepSeek-V4-Flash) and B (GPT-6.1 Sol), A (DeepSeek-V4-Flash) and C (Claude Sonnet 5.5), B (GPT-6.1 Sol) and C (Claude Sonnet 5.5) |
+| Verification, family A (DeepSeek-V4-Flash) | flag_any True (mismatch False, not_stated True) |
+| Verification, family B (GPT-6.1 Sol) | flag_any False (mismatch False, not_stated False) |
+| Verification, family C (Claude Sonnet 5.5) | flag_any True (mismatch False, not_stated True) |
+
+### 2. Problem text
+
+```
+A steel pipe retailer sources raw steel pipes from a steel pipe factory, cuts the pipes according to customer requirements, and sells them. The raw steel pipes obtained from the factory are all 1850 mm in length. A customer now needs 15 pieces of 290 mm, 28 pieces of 315 mm, 21 pieces of 350 mm, and 30 pieces of 455 mm steel pipes. To simplify the production process, it is required that no more than 4 types of cutting patterns are used. The most frequently used cutting pattern incurs an additional cost of 1/10 of the value of a raw steel pipe, the second most frequent incurs an additional cost of 2/10, and so on. Moreover, the number of cuts for each pattern cannot be too many (a single raw steel pipe can produce up to 5 products). Additionally, to minimize waste, the leftover material for each cutting pattern should not exceed 100 mm. How should the material be cut to minimize total cost, and what is the total cost in this case?
+```
+
+### 3. Data-verification replies
+
+#### Family A (DeepSeek-V4-Flash)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
+
+```json
+{"mismatch": [], "not_stated": [{"parameter": "extra_cost_fraction_third", "evidence": "the second most frequent incurs an additional cost of 2/10, and so on"}, {"parameter": "extra_cost_fraction_fourth", "evidence": "the second most frequent incurs an additional cost of 2/10, and so on"}]}
+```
+
+#### Family B (GPT-6.1 Sol)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+```json
+{"mismatch":[],"not_stated":[]}
+```
+
+#### Family C (Claude Sonnet 5.5)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
+
+````json
+```json
+{
+  "mismatch": [],
+  "not_stated": [
+    {
+      "parameter": "extra_cost_fraction_third",
+      "evidence": "the second most frequent incurs an additional cost of 2/10, and so on"
+    },
+    {
+      "parameter": "extra_cost_fraction_fourth",
+      "evidence": "the second most frequent incurs an additional cost of 2/10, and so on"
+    }
+  ]
+}
+```
+````
+
+
+## 7. om_mamo_16 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -464,7 +530,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 7. om_mamo_17 (OptiMind Mamo-Complex)
+## 8. om_mamo_17 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -530,7 +596,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 8. om_mamo_21 (OptiMind Mamo-Complex)
+## 9. om_mamo_21 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -612,7 +678,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 9. om_mamo_43 (OptiMind Mamo-Complex)
+## 10. om_mamo_43 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -693,7 +759,7 @@ Status ok; attempts 1; flag_mismatch True; flag_not_stated False; flag_any True.
 ````
 
 
-## 10. om_mamo_48 (OptiMind Mamo-Complex)
+## 11. om_mamo_48 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -764,7 +830,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 11. om_mamo_58 (OptiMind Mamo-Complex)
+## 12. om_mamo_58 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -836,7 +902,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 12. om_mamo_70 (OptiMind Mamo-Complex)
+## 13. om_mamo_70 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -915,7 +981,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 13. om_mamo_74 (OptiMind Mamo-Complex)
+## 14. om_mamo_74 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -991,7 +1057,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 14. om_mamo_84 (OptiMind Mamo-Complex)
+## 15. om_mamo_84 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1067,7 +1133,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 15. om_mamo_100 (OptiMind Mamo-Complex)
+## 16. om_mamo_100 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1277,7 +1343,7 @@ Status ok; attempts 1; flag_mismatch True; flag_not_stated True; flag_any True.
 ````
 
 
-## 16. om_mamo_105 (OptiMind Mamo-Complex)
+## 17. om_mamo_105 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1340,7 +1406,7 @@ Status ok; attempts 1; flag_mismatch True; flag_not_stated False; flag_any True.
 ````
 
 
-## 17. om_mamo_109 (OptiMind Mamo-Complex)
+## 18. om_mamo_109 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1416,7 +1482,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 18. om_mamo_113 (OptiMind Mamo-Complex)
+## 19. om_mamo_113 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1489,7 +1555,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 19. om_mamo_134 (OptiMind Mamo-Complex)
+## 20. om_mamo_134 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1555,7 +1621,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 20. om_mamo_144 (OptiMind Mamo-Complex)
+## 21. om_mamo_144 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1640,7 +1706,7 @@ Actually, let me reconsider. Looking more carefully at the calorie requirement: 
 ````
 
 
-## 21. om_mamo_154 (OptiMind Mamo-Complex)
+## 22. om_mamo_154 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1740,7 +1806,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 22. om_mamo_165 (OptiMind Mamo-Complex)
+## 23. om_mamo_165 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1818,7 +1884,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 23. om_mamo_167 (OptiMind Mamo-Complex)
+## 24. om_mamo_167 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -1895,7 +1961,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 24. om_mamo_185 (OptiMind Mamo-Complex)
+## 25. om_mamo_185 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -2017,7 +2083,7 @@ Status unparsed; attempts 3; flag_mismatch None; flag_not_stated None; flag_any 
 ````
 
 
-## 25. om_mamo_200 (OptiMind Mamo-Complex)
+## 26. om_mamo_200 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -2087,7 +2153,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 26. om_mamo_204 (OptiMind Mamo-Complex)
+## 27. om_mamo_204 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 

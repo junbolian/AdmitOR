@@ -12,6 +12,7 @@ Every panel_base_3of3 certificate whose value misses the answer. OptiMind cleane
 | `om_mamo_103` | OptiMind Mamo-Complex | ['Capacitated Facility Location Problem'] | 589621.0 | 567010 | no |
 | `om_mamo_114` | OptiMind Mamo-Complex | ['Capacitated Facility Location Problem'] | 588594.9999999998 | 58895 | no |
 | `om_mamo_131` | OptiMind Mamo-Complex | ['Diet Problem'] | 148.61089494163426 | 178 | no |
+| `om_mamo_182` | OptiMind Mamo-Complex | ['Diet Problem'] | 15.235121951219512 | 17 | no |
 | `om_mamo_194` | OptiMind Mamo-Complex | ["Facility Location Problem (FLP)"] | 66.3661 | 66.39 | no |
 | `om_mamo_197` | OptiMind Mamo-Complex | ['Diet Problem'] | 38.0 | 24 | yes |
 | `om_mamo_206` | OptiMind Mamo-Complex | ['Capacitated Facility Location Problem'] | 580131.0 | 610975 | no |
@@ -2674,7 +2675,288 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 9. om_mamo_194 (OptiMind Mamo-Complex)
+## 9. om_mamo_182 (OptiMind Mamo-Complex)
+
+### 1. Identification
+
+| Field | Value |
+|---|---|
+| Sample id | `om_mamo_182` |
+| Benchmark | OptiMind Mamo-Complex (`datasets/optimind_corrected/optimind_cleaned_classified_mamo_complex.csv`, 0-based row 182) |
+| Problem class (OptiMind) | ['Diet Problem'] |
+| Optimization sense | not determined from the problem text (words "minim..." / "maxim..." in the problem text) |
+| Certified value (panel_base_3of3) | 15.235121951219512 |
+| Answer (OptiMind) | 17 |
+| Rules that certify it | gate 15.235121951219512, gate_3fam 15.235121951219512, gate_tau 15.235121951219512, panel_base_2of3 15.235121951219512, panel_base_3of3 15.235121951219512, ind_gate 15.235121951219512, ind_gate_tau 15.235121951219512 |
+| Families agreeing at instance 0 | A (DeepSeek-V4-Flash) and B (GPT-6.1 Sol), A (DeepSeek-V4-Flash) and C (Claude Sonnet 5.5), B (GPT-6.1 Sol) and C (Claude Sonnet 5.5) |
+| Verification, family A (DeepSeek-V4-Flash) | flag_any False (mismatch False, not_stated False) |
+| Verification, family B (GPT-6.1 Sol) | flag_any False (mismatch False, not_stated False) |
+| Verification, family C (Claude Sonnet 5.5) | flag_any False (mismatch False, not_stated False) |
+
+### 2. Problem text
+
+```
+Consider the following table of food and corresponding nutritional values: Bread contains 4 grams of protein, 7 grams of carbohydrates, has a calorie count of 130, and costs 3 dollar. Milk contains 6 grams of protein, 10 grams of carbohydrates, has a calorie count of 120, and costs 4 dollars. Fish is high in protein with 20 grams, contains no carbohydrates, has a calorie count of 150, and is the most expensive at 8 dollars. Potato contains 1 gram of protein, is high in carbohydrates with 30 grams, has the lowest calorie count at 70, and is the cheapest at 2 dollars. The ideal intake for an adult is at least 30 grams of protein, 40 grams of carbohydrates, and 400 calories per day. The problem is to find the least costly way to achieve those amounts of nutrition by using the four types of food shown in the table.
+```
+
+### 3. Extracted parameter set (`spec.json`: `spec` and `warnings`)
+
+```json
+"protein_content": {"base":[4,6,20,1],"perturb":{"mode":"rel","r":0.5}}
+"carb_content": {"base":[7,10,0,30],"perturb":{"mode":"rel","r":0.5}}
+"calorie_content": {"base":[130,120,150,70],"perturb":{"mode":"rel","r":0.4}}
+"cost_per_unit": {"base":[3,4,8,2],"perturb":{"mode":"rel","r":0.6}}
+"protein_requirement": {"base":30,"perturb":{"mode":"abs","lo":15.0,"hi":60.0,"integer":false}}
+"carb_requirement": {"base":40,"perturb":{"mode":"abs","lo":20.0,"hi":80.0,"integer":false}}
+"calorie_requirement": {"base":400,"perturb":{"mode":"abs","lo":200.0,"hi":700.0,"integer":false}}
+```
+
+Warnings:
+
+```
+none
+```
+
+Extraction attempts: 1.
+
+### 4. Programs
+
+#### A-direct.py
+
+```python
+import pyomo.environ as pyo
+from pyomo.contrib.appsi.solvers.highs import Highs
+
+
+def solve(params):
+    foods = ["bread", "milk", "fish", "potato"]
+
+    protein = params["protein_content"]
+    carbs = params["carb_content"]
+    calories = params["calorie_content"]
+    cost = params["cost_per_unit"]
+
+    protein_req = params["protein_requirement"]
+    carb_req = params["carb_requirement"]
+    calorie_req = params["calorie_requirement"]
+
+    model = pyo.ConcreteModel()
+    model.F = pyo.Set(initialize=foods)
+
+    model.x = pyo.Var(model.F, domain=pyo.NonNegativeReals)
+
+    model.protein_con = pyo.Constraint(
+        expr=sum(protein[i] * model.x[f] for i, f in enumerate(foods)) >= protein_req
+    )
+    model.carb_con = pyo.Constraint(
+        expr=sum(carbs[i] * model.x[f] for i, f in enumerate(foods)) >= carb_req
+    )
+    model.calorie_con = pyo.Constraint(
+        expr=sum(calories[i] * model.x[f] for i, f in enumerate(foods)) >= calorie_req
+    )
+
+    model.obj = pyo.Objective(
+        expr=sum(cost[i] * model.x[f] for i, f in enumerate(foods)),
+        sense=pyo.minimize,
+    )
+
+    Highs().solve(model)
+
+    obj_val = float(pyo.value(model.obj))
+    return {"objective": obj_val, "status": "optimal"}
+```
+
+#### B-structured.py
+
+```python
+# IR: {"sets":{"foods":["bread","milk","fish","potato"]},"params":{"protein_content":"indexed by food","carb_content":"indexed by food","calorie_content":"indexed by food","cost_per_unit":"indexed by food","protein_requirement":"scalar","carb_requirement":"scalar","calorie_requirement":"scalar"},"variables":{"quantity[food]":"nonnegative continuous"},"constraints":["sum(protein_content[f]*quantity[f] for f in foods) >= protein_requirement","sum(carb_content[f]*quantity[f] for f in foods) >= carb_requirement","sum(calorie_content[f]*quantity[f] for f in foods) >= calorie_requirement"],"objective":"minimize sum(cost_per_unit[f]*quantity[f] for f in foods)"}
+
+from collections.abc import Mapping
+
+import pyomo.environ as pyo
+from pyomo.contrib.appsi.solvers.highs import Highs
+
+
+def solve(params):
+    """Food inputs may be mappings keyed by food or sequences in food order."""
+    foods = ("bread", "milk", "fish", "potato")
+
+    def food_values(values):
+        if isinstance(values, Mapping):
+            return {food: values[food] for food in foods}
+        return {food: values[position] for position, food in enumerate(foods)}
+
+    model = pyo.ConcreteModel()
+    model.foods = pyo.Set(initialize=foods, ordered=True)
+
+    model.protein_content = pyo.Param(
+        model.foods, initialize=food_values(params["protein_content"])
+    )
+    model.carb_content = pyo.Param(
+        model.foods, initialize=food_values(params["carb_content"])
+    )
+    model.calorie_content = pyo.Param(
+        model.foods, initialize=food_values(params["calorie_content"])
+    )
+    model.cost_per_unit = pyo.Param(
+        model.foods, initialize=food_values(params["cost_per_unit"])
+    )
+    model.protein_requirement = pyo.Param(
+        initialize=params["protein_requirement"]
+    )
+    model.carb_requirement = pyo.Param(
+        initialize=params["carb_requirement"]
+    )
+    model.calorie_requirement = pyo.Param(
+        initialize=params["calorie_requirement"]
+    )
+
+    model.quantity = pyo.Var(model.foods, domain=pyo.NonNegativeReals)
+
+    model.protein_minimum = pyo.Constraint(
+        expr=sum(
+            model.protein_content[food] * model.quantity[food]
+            for food in model.foods
+        ) >= model.protein_requirement
+    )
+    model.carb_minimum = pyo.Constraint(
+        expr=sum(
+            model.carb_content[food] * model.quantity[food]
+            for food in model.foods
+        ) >= model.carb_requirement
+    )
+    model.calorie_minimum = pyo.Constraint(
+        expr=sum(
+            model.calorie_content[food] * model.quantity[food]
+            for food in model.foods
+        ) >= model.calorie_requirement
+    )
+
+    model.total_cost = pyo.Objective(
+        expr=sum(
+            model.cost_per_unit[food] * model.quantity[food]
+            for food in model.foods
+        ),
+        sense=pyo.minimize,
+    )
+
+    try:
+        Highs().solve(model)
+    except RuntimeError:
+        return {"objective": None, "status": "solver_failed"}
+
+    try:
+        obj_val = float(pyo.value(model.total_cost))
+    except ValueError:
+        return {"objective": None, "status": "objective_unavailable"}
+
+    return {"objective": obj_val, "status": "optimal"}
+```
+
+#### C-direct.py
+
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def solve(params):
+    protein_content = params["protein_content"]   # list of 4 values
+    carb_content = params["carb_content"]          # list of 4 values
+    calorie_content = params["calorie_content"]    # list of 4 values
+    cost_per_unit = params["cost_per_unit"]        # list of 4 values
+    protein_req = params["protein_requirement"]
+    carb_req = params["carb_requirement"]
+    calorie_req = params["calorie_requirement"]
+
+    foods = range(4)  # bread, milk, fish, potato
+
+    model = gp.Model("diet")
+    model.setParam("OutputFlag", 0)
+
+    # Decision variables: units of each food to consume (continuous, non-negative)
+    x = model.addVars(foods, lb=0.0, name="x")
+
+    # Objective: minimize total cost
+    model.setObjective(gp.quicksum(cost_per_unit[i] * x[i] for i in foods), GRB.MINIMIZE)
+
+    # Nutritional constraints
+    model.addConstr(gp.quicksum(protein_content[i] * x[i] for i in foods) >= protein_req, "protein")
+    model.addConstr(gp.quicksum(carb_content[i] * x[i] for i in foods) >= carb_req, "carb")
+    model.addConstr(gp.quicksum(calorie_content[i] * x[i] for i in foods) >= calorie_req, "calorie")
+
+    model.optimize()
+
+    if model.Status == GRB.OPTIMAL:
+        return {"objective": model.ObjVal, "status": "optimal"}
+    elif model.Status == GRB.INFEASIBLE:
+        return {"objective": None, "status": "infeasible"}
+    elif model.Status == GRB.UNBOUNDED:
+        return {"objective": None, "status": "unbounded"}
+    else:
+        return {"objective": None, "status": f"status_{model.Status}"}
+```
+
+### 5. Values on the stated and resampled instances
+
+#### param_screen
+
+Decision: ACCEPT; clique A-direct, B-structured, C-direct; informative instances [0, 1, 2, 3, 4, 5]. Instance 0 is the stated instance.
+
+| Instance | A-direct | B-structured | C-direct |
+|---|---|---|---|
+| 0 (stated) | 15.235121951219512 (optimal) | 15.235121951219512 (optimal) | 15.235121951219512 (optimal) |
+| 1 | 8.024610190555133 (optimal) | 8.024610190555133 (optimal) | 8.024610190555128 (optimal) |
+| 2 | 21.203159934110758 (optimal) | 21.203159934110758 (optimal) | 21.203159934110758 (optimal) |
+| 3 | 18.068349257469606 (optimal) | 18.068349257469606 (optimal) | 18.068349257469606 (optimal) |
+| 4 | 13.546234675389085 (optimal) | 13.546234675389085 (optimal) | 13.546234675389083 (optimal) |
+| 5 | 13.66984832080959 (optimal) | 13.66984832080959 (optimal) | 13.66984832080959 (optimal) |
+
+#### independent
+
+Decision: ACCEPT; clique A-direct, B-structured, C-direct; informative instances [0, 1, 2, 3, 4, 5]. Instance 0 is the stated instance.
+
+| Instance | A-direct | B-structured | C-direct |
+|---|---|---|---|
+| 0 (stated) | 15.235121951219512 (optimal) | 15.235121951219512 (optimal) | 15.235121951219512 (optimal) |
+| 1 | 8.024610190555133 (optimal) | 8.024610190555133 (optimal) | 8.024610190555128 (optimal) |
+| 2 | 21.203159934110758 (optimal) | 21.203159934110758 (optimal) | 21.203159934110758 (optimal) |
+| 3 | 18.068349257469606 (optimal) | 18.068349257469606 (optimal) | 18.068349257469606 (optimal) |
+| 4 | 13.546234675389085 (optimal) | 13.546234675389085 (optimal) | 13.546234675389083 (optimal) |
+| 5 | 13.66984832080959 (optimal) | 13.66984832080959 (optimal) | 13.66984832080959 (optimal) |
+
+### 6. Data-verification replies
+
+#### Family A (DeepSeek-V4-Flash)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+```json
+{"mismatch": [], "not_stated": []}
+```
+
+#### Family B (GPT-6.1 Sol)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+```json
+{"mismatch":[],"not_stated":[]}
+```
+
+#### Family C (Claude Sonnet 5.5)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+````json
+```json
+{
+  "mismatch": [],
+  "not_stated": []
+}
+```
+````
+
+
+## 10. om_mamo_194 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -2995,7 +3277,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 10. om_mamo_197 (OptiMind Mamo-Complex)
+## 11. om_mamo_197 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 
@@ -3291,7 +3573,7 @@ Status ok; attempts 1; flag_mismatch True; flag_not_stated False; flag_any True.
 ````
 
 
-## 11. om_mamo_206 (OptiMind Mamo-Complex)
+## 12. om_mamo_206 (OptiMind Mamo-Complex)
 
 ### 1. Identification
 

@@ -17,33 +17,33 @@ Table h2. Data-verification flags against label match among the panel_base_3of3 
 | IndustryOR | B and C | flag_mismatch | 46 | 0 | 2 | 27 | 17 |
 | IndustryOR | B and C | flag_not_stated | 46 | 0 | 1 | 27 | 18 |
 | IndustryOR | B and C | flag_any | 46 | 0 | 3 | 27 | 16 |
-| Mamo ComplexLP | C | flag_mismatch | 158 | 1 | 3 | 85 | 69 |
-| Mamo ComplexLP | C | flag_not_stated | 158 | 4 | 10 | 82 | 62 |
-| Mamo ComplexLP | C | flag_any | 158 | 5 | 11 | 81 | 61 |
-| Mamo ComplexLP | A | flag_mismatch | 158 | 3 | 2 | 83 | 70 |
-| Mamo ComplexLP | A | flag_not_stated | 158 | 6 | 11 | 80 | 61 |
-| Mamo ComplexLP | A | flag_any | 158 | 8 | 13 | 78 | 59 |
-| Mamo ComplexLP | B | flag_mismatch | 158 | 3 | 1 | 83 | 71 |
-| Mamo ComplexLP | B | flag_not_stated | 158 | 11 | 16 | 75 | 56 |
-| Mamo ComplexLP | B | flag_any | 158 | 14 | 17 | 72 | 55 |
-| Mamo ComplexLP | B or C | flag_mismatch | 158 | 3 | 3 | 83 | 69 |
-| Mamo ComplexLP | B or C | flag_not_stated | 158 | 12 | 16 | 74 | 56 |
-| Mamo ComplexLP | B or C | flag_any | 158 | 15 | 17 | 71 | 55 |
-| Mamo ComplexLP | B and C | flag_mismatch | 158 | 1 | 1 | 85 | 71 |
-| Mamo ComplexLP | B and C | flag_not_stated | 158 | 3 | 10 | 83 | 62 |
-| Mamo ComplexLP | B and C | flag_any | 158 | 4 | 11 | 82 | 61 |
-| pooled | C | flag_mismatch | 204 | 1 | 5 | 112 | 86 |
-| pooled | C | flag_not_stated | 204 | 4 | 12 | 109 | 79 |
-| pooled | C | flag_any | 204 | 5 | 14 | 108 | 77 |
-| pooled | A | flag_mismatch | 204 | 3 | 3 | 110 | 88 |
-| pooled | A | flag_not_stated | 204 | 7 | 13 | 106 | 78 |
-| pooled | A | flag_any | 204 | 9 | 16 | 104 | 75 |
-| pooled | B | flag_mismatch | 204 | 4 | 3 | 109 | 88 |
-| pooled | B | flag_not_stated | 204 | 12 | 19 | 101 | 72 |
-| pooled | B | flag_any | 204 | 16 | 21 | 97 | 70 |
-| pooled | B or C | flag_mismatch | 204 | 4 | 5 | 109 | 86 |
-| pooled | B or C | flag_not_stated | 204 | 13 | 20 | 100 | 71 |
-| pooled | B or C | flag_any | 204 | 17 | 21 | 96 | 70 |
-| pooled | B and C | flag_mismatch | 204 | 1 | 3 | 112 | 88 |
-| pooled | B and C | flag_not_stated | 204 | 3 | 11 | 110 | 80 |
-| pooled | B and C | flag_any | 204 | 4 | 14 | 109 | 77 |
+| Mamo ComplexLP | C | flag_mismatch | 161 | 1 | 3 | 87 | 70 |
+| Mamo ComplexLP | C | flag_not_stated | 161 | 4 | 10 | 84 | 63 |
+| Mamo ComplexLP | C | flag_any | 161 | 5 | 11 | 83 | 62 |
+| Mamo ComplexLP | A | flag_mismatch | 161 | 3 | 2 | 85 | 71 |
+| Mamo ComplexLP | A | flag_not_stated | 161 | 6 | 11 | 82 | 62 |
+| Mamo ComplexLP | A | flag_any | 161 | 8 | 13 | 80 | 60 |
+| Mamo ComplexLP | B | flag_mismatch | 161 | 3 | 1 | 85 | 72 |
+| Mamo ComplexLP | B | flag_not_stated | 161 | 11 | 16 | 77 | 57 |
+| Mamo ComplexLP | B | flag_any | 161 | 14 | 17 | 74 | 56 |
+| Mamo ComplexLP | B or C | flag_mismatch | 161 | 3 | 3 | 85 | 70 |
+| Mamo ComplexLP | B or C | flag_not_stated | 161 | 12 | 16 | 76 | 57 |
+| Mamo ComplexLP | B or C | flag_any | 161 | 15 | 17 | 73 | 56 |
+| Mamo ComplexLP | B and C | flag_mismatch | 161 | 1 | 1 | 87 | 72 |
+| Mamo ComplexLP | B and C | flag_not_stated | 161 | 3 | 10 | 85 | 63 |
+| Mamo ComplexLP | B and C | flag_any | 161 | 4 | 11 | 84 | 62 |
+| pooled | C | flag_mismatch | 207 | 1 | 5 | 114 | 87 |
+| pooled | C | flag_not_stated | 207 | 4 | 12 | 111 | 80 |
+| pooled | C | flag_any | 207 | 5 | 14 | 110 | 78 |
+| pooled | A | flag_mismatch | 207 | 3 | 3 | 112 | 89 |
+| pooled | A | flag_not_stated | 207 | 7 | 13 | 108 | 79 |
+| pooled | A | flag_any | 207 | 9 | 16 | 106 | 76 |
+| pooled | B | flag_mismatch | 207 | 4 | 3 | 111 | 89 |
+| pooled | B | flag_not_stated | 207 | 12 | 19 | 103 | 73 |
+| pooled | B | flag_any | 207 | 16 | 21 | 99 | 71 |
+| pooled | B or C | flag_mismatch | 207 | 4 | 5 | 111 | 87 |
+| pooled | B or C | flag_not_stated | 207 | 13 | 20 | 102 | 72 |
+| pooled | B or C | flag_any | 207 | 17 | 21 | 98 | 71 |
+| pooled | B and C | flag_mismatch | 207 | 1 | 3 | 114 | 89 |
+| pooled | B and C | flag_not_stated | 207 | 3 | 11 | 112 | 81 |
+| pooled | B and C | flag_any | 207 | 4 | 14 | 111 | 78 |

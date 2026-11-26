@@ -2,30 +2,30 @@ Table o1. Certification rules on the OptiMind cleaned IndustryOR and Mamo-Comple
 
 | benchmark | rule | problems | certificates | coverage | coverage_se | label_matches | label_misses | precision | precision_se |
 |---|---|---|---|---|---|---|---|---|---|
-| OptiMind IndustryOR | single_A | 99 | 85 | 0.8586 | 0.0350 | 63 | 22 | 0.7412 | 0.0475 |
+| OptiMind IndustryOR | single_A | 99 | 86 | 0.8687 | 0.0339 | 64 | 22 | 0.7442 | 0.0470 |
 | OptiMind IndustryOR | single_B | 99 | 98 | 0.9899 | 0.0100 | 83 | 15 | 0.8469 | 0.0364 |
 | OptiMind IndustryOR | single_C | 99 | 96 | 0.9697 | 0.0172 | 76 | 20 | 0.7917 | 0.0414 |
 | OptiMind IndustryOR | panel_base_2of3 | 99 | 88 | 0.8889 | 0.0316 | 78 | 10 | 0.8864 | 0.0338 |
-| OptiMind IndustryOR | panel_base_3of3 | 99 | 58 | 0.5859 | 0.0495 | 56 | 2 | 0.9655 | 0.0240 |
+| OptiMind IndustryOR | panel_base_3of3 | 99 | 59 | 0.5960 | 0.0493 | 57 | 2 | 0.9661 | 0.0236 |
 | OptiMind IndustryOR | gate_tau | 99 | 43 | 0.4343 | 0.0498 | 41 | 2 | 0.9535 | 0.0321 |
 | OptiMind IndustryOR | panel_base_2of3 + check (B or C) | 99 | 79 | 0.7980 | 0.0404 | 72 | 7 | 0.9114 | 0.0320 |
 | OptiMind IndustryOR | panel_base_3of3 + check (B or C) | 99 | 52 | 0.5253 | 0.0502 | 51 | 1 | 0.9808 | 0.0190 |
-| OptiMind IndustryOR | panel_base_3of3 + check (B and C) | 99 | 56 | 0.5657 | 0.0498 | 55 | 1 | 0.9821 | 0.0177 |
-| OptiMind Mamo-Complex | single_A | 210 | 194 | 0.9238 | 0.0183 | 165 | 29 | 0.8505 | 0.0256 |
+| OptiMind IndustryOR | panel_base_3of3 + check (B and C) | 99 | 57 | 0.5758 | 0.0497 | 56 | 1 | 0.9825 | 0.0174 |
+| OptiMind Mamo-Complex | single_A | 210 | 195 | 0.9286 | 0.0178 | 165 | 30 | 0.8462 | 0.0258 |
 | OptiMind Mamo-Complex | single_B | 210 | 207 | 0.9857 | 0.0082 | 195 | 12 | 0.9420 | 0.0162 |
 | OptiMind Mamo-Complex | single_C | 210 | 206 | 0.9810 | 0.0094 | 180 | 26 | 0.8738 | 0.0231 |
 | OptiMind Mamo-Complex | panel_base_2of3 | 210 | 203 | 0.9667 | 0.0124 | 188 | 15 | 0.9261 | 0.0184 |
-| OptiMind Mamo-Complex | panel_base_3of3 | 210 | 164 | 0.7810 | 0.0285 | 155 | 9 | 0.9451 | 0.0178 |
-| OptiMind Mamo-Complex | gate_tau | 210 | 147 | 0.7000 | 0.0316 | 138 | 9 | 0.9388 | 0.0198 |
+| OptiMind Mamo-Complex | panel_base_3of3 | 210 | 165 | 0.7857 | 0.0283 | 155 | 10 | 0.9394 | 0.0186 |
+| OptiMind Mamo-Complex | gate_tau | 210 | 148 | 0.7048 | 0.0315 | 138 | 10 | 0.9324 | 0.0206 |
 | OptiMind Mamo-Complex | panel_base_2of3 + check (B or C) | 210 | 161 | 0.7667 | 0.0292 | 152 | 9 | 0.9441 | 0.0181 |
-| OptiMind Mamo-Complex | panel_base_3of3 + check (B or C) | 210 | 141 | 0.6714 | 0.0324 | 134 | 7 | 0.9504 | 0.0183 |
-| OptiMind Mamo-Complex | panel_base_3of3 + check (B and C) | 210 | 156 | 0.7429 | 0.0302 | 148 | 8 | 0.9487 | 0.0177 |
-| pooled | single_A | 309 | 279 | 0.9029 | 0.0168 | 228 | 51 | 0.8172 | 0.0231 |
+| OptiMind Mamo-Complex | panel_base_3of3 + check (B or C) | 210 | 142 | 0.6762 | 0.0323 | 134 | 8 | 0.9437 | 0.0193 |
+| OptiMind Mamo-Complex | panel_base_3of3 + check (B and C) | 210 | 157 | 0.7476 | 0.0300 | 148 | 9 | 0.9427 | 0.0186 |
+| pooled | single_A | 309 | 281 | 0.9094 | 0.0163 | 229 | 52 | 0.8149 | 0.0232 |
 | pooled | single_B | 309 | 305 | 0.9871 | 0.0064 | 278 | 27 | 0.9115 | 0.0163 |
 | pooled | single_C | 309 | 302 | 0.9773 | 0.0085 | 256 | 46 | 0.8477 | 0.0207 |
 | pooled | panel_base_2of3 | 309 | 291 | 0.9417 | 0.0133 | 266 | 25 | 0.9141 | 0.0164 |
-| pooled | panel_base_3of3 | 309 | 222 | 0.7184 | 0.0256 | 211 | 11 | 0.9505 | 0.0146 |
-| pooled | gate_tau | 309 | 190 | 0.6149 | 0.0277 | 179 | 11 | 0.9421 | 0.0169 |
+| pooled | panel_base_3of3 | 309 | 224 | 0.7249 | 0.0254 | 212 | 12 | 0.9464 | 0.0150 |
+| pooled | gate_tau | 309 | 191 | 0.6181 | 0.0276 | 179 | 12 | 0.9372 | 0.0176 |
 | pooled | panel_base_2of3 + check (B or C) | 309 | 240 | 0.7767 | 0.0237 | 224 | 16 | 0.9333 | 0.0161 |
-| pooled | panel_base_3of3 + check (B or C) | 309 | 193 | 0.6246 | 0.0275 | 185 | 8 | 0.9585 | 0.0143 |
-| pooled | panel_base_3of3 + check (B and C) | 309 | 212 | 0.6861 | 0.0264 | 203 | 9 | 0.9575 | 0.0138 |
+| pooled | panel_base_3of3 + check (B or C) | 309 | 194 | 0.6278 | 0.0275 | 185 | 9 | 0.9536 | 0.0151 |
+| pooled | panel_base_3of3 + check (B and C) | 309 | 214 | 0.6926 | 0.0263 | 204 | 10 | 0.9533 | 0.0144 |

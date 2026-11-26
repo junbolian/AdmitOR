@@ -46,6 +46,7 @@ Every panel_base_3of3 certificate whose value misses the label. IndustryOR and M
 | `mamo_complex_61` | Mamo ComplexLP | 249.0 | 148 | removed | yes |
 | `mamo_complex_66` | Mamo ComplexLP | 213.0 | 194 | removed | no |
 | `mamo_complex_73` | Mamo ComplexLP | 580735.0 | 587428 | removed | yes |
+| `mamo_complex_74` | Mamo ComplexLP | 106380.0 | 103960 | removed | no |
 | `mamo_complex_78` | Mamo ComplexLP | 269.0 | 242 | removed | no |
 | `mamo_complex_84` | Mamo ComplexLP | 232.0 | 206 | removed | no |
 | `mamo_complex_85` | Mamo ComplexLP | 13.119565217391305 | 14 | kept, same label; expert label 14.0 | no |
@@ -13330,58 +13331,37 @@ from pyomo.contrib.appsi.solvers.highs import Highs
 def solve(params):
     foods = ["chicken", "broccoli", "beef", "rice"]
 
+    cost = {f: params["cost_" + f] for f in foods}
+    protein = {f: params["protein_" + f] for f in foods}
+    carbs = {f: params["carbs_" + f] for f in foods}
+    calories = {f: params["calories_" + f] for f in foods}
+
     model = pyo.ConcreteModel()
-    model.FOODS = pyo.Set(initialize=foods)
 
-    model.x = pyo.Var(model.FOODS, domain=pyo.NonNegativeReals)
+    model.x = pyo.Var(foods, domain=pyo.NonNegativeReals)
 
-    cost = {
-        "chicken": params["cost_chicken"],
-        "broccoli": params["cost_broccoli"],
-        "beef": params["cost_beef"],
-        "rice": params["cost_rice"],
-    }
-    protein = {
-        "chicken": params["protein_chicken"],
-        "broccoli": params["protein_broccoli"],
-        "beef": params["protein_beef"],
-        "rice": params["protein_rice"],
-    }
-    carbs = {
-        "chicken": params["carbs_chicken"],
-        "broccoli": params["carbs_broccoli"],
-        "beef": params["carbs_beef"],
-        "rice": params["carbs_rice"],
-    }
-    calories = {
-        "chicken": params["calories_chicken"],
-        "broccoli": params["calories_broccoli"],
-        "beef": params["calories_beef"],
-        "rice": params["calories_rice"],
-    }
+    model.cost_expr = pyo.Expression(
+        expr=sum(cost[f] * model.x[f] for f in foods)
+    )
 
     model.protein_con = pyo.Constraint(
-        expr=sum(protein[f] * model.x[f] for f in model.FOODS)
-        >= params["protein_req"]
+        expr=sum(protein[f] * model.x[f] for f in foods) >= params["protein_req"]
     )
     model.carbs_con = pyo.Constraint(
-        expr=sum(carbs[f] * model.x[f] for f in model.FOODS)
-        >= params["carbs_req"]
+        expr=sum(carbs[f] * model.x[f] for f in foods) >= params["carbs_req"]
     )
     model.calories_con = pyo.Constraint(
-        expr=sum(calories[f] * model.x[f] for f in model.FOODS)
-        >= params["calories_req"]
+        expr=sum(calories[f] * model.x[f] for f in foods) >= params["calories_req"]
     )
 
-    model.total_cost = pyo.Objective(
-        expr=sum(cost[f] * model.x[f] for f in model.FOODS),
-        sense=pyo.minimize,
-    )
+    model.obj = pyo.Objective(expr=model.cost_expr, sense=pyo.minimize)
 
-    solver = Highs()
-    solver.solve(model)
+    try:
+        Highs().solve(model)
+        obj_val = float(pyo.value(model.obj))
+    except Exception:
+        return {"objective": None, "status": "infeasible or failed"}
 
-    obj_val = float(pyo.value(model.total_cost))
     return {"objective": obj_val, "status": "optimal"}
 ```
 
@@ -15323,7 +15303,330 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 43. mamo_complex_78 (Mamo ComplexLP)
+## 43. mamo_complex_74 (Mamo ComplexLP)
+
+### 1. Identification
+
+| Field | Value |
+|---|---|
+| Sample id | `mamo_complex_74` |
+| Benchmark | Mamo ComplexLP (`datasets/benchmark/mamo_complex_test.jsonl`, field `index` = 74) |
+| Optimization sense | not determined from the problem text (words "minim..." / "maxim..." in the problem text) |
+| Certified value (panel_base_3of3) | 106380.0 |
+| Label (original benchmark) | 103960 |
+| Rules that certify it | gate 106380.0, gate_3fam 106380.0, gate_tau 106380.0, panel_base_2of3 106380.0, panel_base_3of3 106380.0, ind_gate 106380.0 |
+| Expert status (Xiao et al. 2025) | removed |
+| Families agreeing at instance 0 | A (DeepSeek-V4-Flash) and B (GPT-6.1 Sol), A (DeepSeek-V4-Flash) and C (Claude Sonnet 5.5), B (GPT-6.1 Sol) and C (Claude Sonnet 5.5) |
+
+### 2. Problem text
+
+```
+Basel Tool and Die Company (BTD) makes large industrial pipe wrenches in one of its factories. The marketing department estimates demand for this product during the next 6 months to be: In January, the demand is 430, in February, the demand is 430, in March, the demand is 380, in April, the demand is 450, in May, the demand is 520, in June, the demand is 440. With the current labor force, BTD believes it can make approximately 420 pipe wrenches per month at a cost of $40 per wrench using regular-time production. An additional 80 wrenches per month can be made using overtime production at a cost per wrench of $45. Wrenches can be made in advance and held in inventory for later shipment at a cost of $3 per month per wrench. The monthly demand for wrenches must be satisfied every month. At the end of December (beginning of January) BTD has 10 wrenches in inventory. BTD wants to plan its production, including overtime, and inventory for the next 6 months so as to maximize profit. Assuming the revenue for these wrenches is fixed, the production manager can maximize profit by minimizing the total costs incurred in producing and delivering the wrenches. Find the minimal total cost in dollar. Provide your answer rounded to nearest integar.
+```
+
+### 3. Extracted parameter set (`spec.json`: `spec` and `warnings`)
+
+```json
+"demand": {"base":[430,430,380,450,520,440],"perturb":{"mode":"rel","r":0.25}}
+"regular_capacity": {"base":420,"perturb":{"mode":"abs","lo":300.0,"hi":600.0,"integer":true}}
+"regular_cost": {"base":40,"perturb":{"mode":"rel","r":0.25}}
+"overtime_capacity": {"base":80,"perturb":{"mode":"abs","lo":0.0,"hi":250.0,"integer":true}}
+"overtime_cost": {"base":45,"perturb":{"mode":"rel","r":0.25}}
+"holding_cost": {"base":3,"perturb":{"mode":"abs","lo":0.0,"hi":12.0,"integer":false}}
+"initial_inventory": {"base":10,"perturb":{"mode":"abs","lo":0.0,"hi":200.0,"integer":true}}
+```
+
+Warnings:
+
+```
+none
+```
+
+Extraction attempts: 3.
+
+### 4. Programs
+
+#### A-direct.py
+
+```python
+import pyomo.environ as pyo
+from pyomo.contrib.appsi.solvers.highs import Highs
+
+
+def solve(params):
+    demand = params["demand"]
+    regular_capacity = params["regular_capacity"]
+    regular_cost = params["regular_cost"]
+    overtime_capacity = params["overtime_capacity"]
+    overtime_cost = params["overtime_cost"]
+    holding_cost = params["holding_cost"]
+    initial_inventory = params["initial_inventory"]
+
+    n = len(demand)
+    months = list(range(n))
+
+    model = pyo.ConcreteModel()
+
+    model.M = pyo.Set(initialize=months)
+
+    model.reg = pyo.Var(model.M, within=pyo.NonNegativeReals, bounds=(0, regular_capacity))
+    model.ot = pyo.Var(model.M, within=pyo.NonNegativeReals, bounds=(0, overtime_capacity))
+    model.inv = pyo.Var(model.M, within=pyo.NonNegativeReals)
+
+    def inv_balance_rule(m, t):
+        prev = initial_inventory if t == 0 else m.inv[t - 1]
+        return prev + m.reg[t] + m.ot[t] - m.inv[t] == demand[t]
+    model.inv_balance = pyo.Constraint(model.M, rule=inv_balance_rule)
+
+    def cost_rule(m):
+        return sum(regular_cost * m.reg[t] + overtime_cost * m.ot[t] + holding_cost * m.inv[t]
+                   for t in m.M)
+    model.total_cost = pyo.Objective(rule=cost_rule, sense=pyo.minimize)
+
+    Highs().solve(model)
+
+    obj_val = float(pyo.value(model.total_cost))
+    return {'objective': obj_val, 'status': 'optimal'}
+```
+
+#### B-structured.py
+
+```python
+# IR: {"sets":{"T":[1,2,3,4,5,6]},"params":{"demand":"params['demand']: six-element sequence ordered Jan-Jun","regular_capacity":"params['regular_capacity']","regular_cost":"params['regular_cost']","overtime_capacity":"params['overtime_capacity']","overtime_cost":"params['overtime_cost']","holding_cost":"params['holding_cost']","initial_inventory":"params['initial_inventory']"},"variables":{"regular[t]":"nonnegative integer","overtime[t]":"nonnegative integer","inventory[t]":"nonnegative integer, end-of-month stock"},"constraints":["regular[t] <= regular_capacity for t in T","overtime[t] <= overtime_capacity for t in T","inventory[t] = (initial_inventory if t=1 else inventory[t-1]) + regular[t] + overtime[t] - demand[t] for t in T"],"objective":"minimize sum(regular_cost*regular[t] + overtime_cost*overtime[t] + holding_cost*inventory[t] for t in T)"}
+
+import pyomo.environ as pyo
+from pyomo.contrib.appsi.solvers.highs import Highs
+
+
+def solve(params):
+    """Minimize six-month production and inventory costs."""
+    model = pyo.ConcreteModel()
+    model.months = pyo.RangeSet(1, 6)
+
+    model.demand = pyo.Param(
+        model.months,
+        initialize={
+            month: params["demand"][month - 1]
+            for month in range(1, 7)
+        },
+        within=pyo.NonNegativeReals,
+    )
+    model.regular_capacity = pyo.Param(
+        initialize=params["regular_capacity"],
+        within=pyo.NonNegativeReals,
+    )
+    model.regular_cost = pyo.Param(
+        initialize=params["regular_cost"],
+        within=pyo.NonNegativeReals,
+    )
+    model.overtime_capacity = pyo.Param(
+        initialize=params["overtime_capacity"],
+        within=pyo.NonNegativeReals,
+    )
+    model.overtime_cost = pyo.Param(
+        initialize=params["overtime_cost"],
+        within=pyo.NonNegativeReals,
+    )
+    model.holding_cost = pyo.Param(
+        initialize=params["holding_cost"],
+        within=pyo.NonNegativeReals,
+    )
+    model.initial_inventory = pyo.Param(
+        initialize=params["initial_inventory"],
+        within=pyo.NonNegativeReals,
+    )
+
+    model.regular = pyo.Var(model.months, domain=pyo.NonNegativeIntegers)
+    model.overtime = pyo.Var(model.months, domain=pyo.NonNegativeIntegers)
+    model.inventory = pyo.Var(model.months, domain=pyo.NonNegativeIntegers)
+
+    def regular_capacity_rule(model, month):
+        return model.regular[month] <= model.regular_capacity
+
+    model.regular_capacity_limit = pyo.Constraint(
+        model.months, rule=regular_capacity_rule
+    )
+
+    def overtime_capacity_rule(model, month):
+        return model.overtime[month] <= model.overtime_capacity
+
+    model.overtime_capacity_limit = pyo.Constraint(
+        model.months, rule=overtime_capacity_rule
+    )
+
+    def inventory_balance_rule(model, month):
+        beginning_inventory = (
+            model.initial_inventory
+            if month == 1
+            else model.inventory[month - 1]
+        )
+        return model.inventory[month] == (
+            beginning_inventory
+            + model.regular[month]
+            + model.overtime[month]
+            - model.demand[month]
+        )
+
+    model.inventory_balance = pyo.Constraint(
+        model.months, rule=inventory_balance_rule
+    )
+
+    model.total_cost = pyo.Objective(
+        expr=sum(
+            model.regular_cost * model.regular[month]
+            + model.overtime_cost * model.overtime[month]
+            + model.holding_cost * model.inventory[month]
+            for month in model.months
+        ),
+        sense=pyo.minimize,
+    )
+
+    try:
+        Highs().solve(model)
+    except RuntimeError:
+        return {"objective": None, "status": "solve_failed"}
+
+    try:
+        obj_val = float(pyo.value(model.total_cost))
+    except ValueError:
+        return {"objective": None, "status": "objective_unavailable"}
+
+    return {"objective": obj_val, "status": "optimal"}
+```
+
+#### C-direct.py
+
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def solve(params):
+    demand = params["demand"]                          # list of 6 monthly demands
+    regular_capacity = params["regular_capacity"]      # scalar or list
+    regular_cost = params["regular_cost"]              # cost per wrench (regular)
+    overtime_capacity = params["overtime_capacity"]    # scalar or list
+    overtime_cost = params["overtime_cost"]            # cost per wrench (overtime)
+    holding_cost = params["holding_cost"]              # cost per wrench per month
+    initial_inventory = params["initial_inventory"]    # inventory at start of Jan
+
+    T = 6  # number of months (Jan–Jun)
+    months = range(T)
+
+    # Normalize capacities to lists if scalar
+    if not hasattr(regular_capacity, '__len__'):
+        reg_cap = [regular_capacity] * T
+    else:
+        reg_cap = list(regular_capacity)
+
+    if not hasattr(overtime_capacity, '__len__'):
+        ot_cap = [overtime_capacity] * T
+    else:
+        ot_cap = list(overtime_capacity)
+
+    demand_list = list(demand)
+
+    model = gp.Model("BTD_production")
+    model.setParam("OutputFlag", 0)
+
+    # Decision variables
+    # r[t]: regular-time production in month t
+    r = model.addVars(T, lb=0.0, name="r")
+    # o[t]: overtime production in month t
+    o = model.addVars(T, lb=0.0, name="o")
+    # inv[t]: inventory at END of month t (after satisfying demand)
+    inv = model.addVars(T, lb=0.0, name="inv")
+
+    # Capacity constraints
+    for t in months:
+        model.addConstr(r[t] <= reg_cap[t], name=f"reg_cap_{t}")
+        model.addConstr(o[t] <= ot_cap[t], name=f"ot_cap_{t}")
+
+    # Inventory balance constraints
+    # inv[t] = inv[t-1] + r[t] + o[t] - demand[t]
+    for t in months:
+        prev_inv = initial_inventory if t == 0 else inv[t - 1]
+        model.addConstr(
+            inv[t] == prev_inv + r[t] + o[t] - demand_list[t],
+            name=f"inv_balance_{t}"
+        )
+
+    # Objective: minimize total cost
+    total_cost = (
+        gp.quicksum(regular_cost * r[t] + overtime_cost * o[t] for t in months)
+        + gp.quicksum(holding_cost * inv[t] for t in months)
+    )
+    model.setObjective(total_cost, GRB.MINIMIZE)
+
+    model.optimize()
+
+    if model.Status == GRB.OPTIMAL:
+        return {"objective": round(model.ObjVal), "status": "optimal"}
+    elif model.Status == GRB.INFEASIBLE:
+        return {"objective": None, "status": "infeasible"}
+    elif model.Status == GRB.UNBOUNDED:
+        return {"objective": None, "status": "unbounded"}
+    else:
+        return {"objective": None, "status": f"status_{model.Status}"}
+```
+
+### 5. Values on the stated and resampled instances
+
+#### param_screen
+
+Decision: ACCEPT; clique A-direct, B-structured, C-direct; informative instances [0, 1, 2, 3, 4, 5]. Instance 0 is the stated instance.
+
+| Instance | A-direct | B-structured | C-direct |
+|---|---|---|---|
+| 0 (stated) | 106380.0 (optimal) | 106380.0 (optimal) | 106380.0 (optimal) |
+| 1 | 76939.65772980922 (optimal) | 76939.65772980922 (optimal) | 76940.0 (optimal) |
+| 2 | 80902.14168744763 (optimal) | 80902.14168744763 (optimal) | 80902.0 (optimal) |
+| 3 | 94472.3119530211 (optimal) | 94472.3119530211 (optimal) | 94472.0 (optimal) |
+| 4 | 78910.40503193684 (optimal) | 78910.40503193684 (optimal) | 78910.0 (optimal) |
+| 5 | 92783.75549735372 (optimal) | 92783.75549735372 (optimal) | 92784.0 (optimal) |
+
+#### independent
+
+Decision: ACCEPT; clique A-direct, C-direct; informative instances [0, 1, 2, 3, 5]. Instance 0 is the stated instance.
+
+| Instance | A-direct | B-structured | C-direct |
+|---|---|---|---|
+| 0 (stated) | 106380.0 (optimal) | 106380.0 (optimal) | 106380.0 (optimal) |
+| 1 | 78499.61096619316 (optimal) | none (solve_failed) | 78500.0 (optimal) |
+| 2 | 73456.82579644369 (optimal) | none (solve_failed) | 73457.0 (optimal) |
+| 3 | 113947.40076630775 (optimal) | none (solve_failed) | 113947.0 (optimal) |
+| 4 | none (infeasible_or_unbounded) | none (solve_failed) | none (infeasible) |
+| 5 | 106378.90364529424 (optimal) | none (solve_failed) | 106379.0 (optimal) |
+
+### 6. Data-verification replies
+
+#### Family A (DeepSeek-V4-Flash)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+```json
+{"mismatch": [], "not_stated": []}
+```
+
+#### Family B (GPT-6.1 Sol)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+```json
+{"mismatch":[],"not_stated":[]}
+```
+
+#### Family C (Claude Sonnet 5.5)
+
+Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
+
+````json
+```json
+{"mismatch": [], "not_stated": []}
+```
+````
+
+
+## 44. mamo_complex_78 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -15700,7 +16003,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 44. mamo_complex_84 (Mamo ComplexLP)
+## 45. mamo_complex_84 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -16077,7 +16380,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 45. mamo_complex_85 (Mamo ComplexLP)
+## 46. mamo_complex_85 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -16379,7 +16682,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 46. mamo_complex_87 (Mamo ComplexLP)
+## 47. mamo_complex_87 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -16769,7 +17072,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 47. mamo_complex_88 (Mamo ComplexLP)
+## 48. mamo_complex_88 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -17091,7 +17394,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ```
 
 
-## 48. mamo_complex_91 (Mamo ComplexLP)
+## 49. mamo_complex_91 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -17453,7 +17756,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 49. mamo_complex_92 (Mamo ComplexLP)
+## 50. mamo_complex_92 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -17789,7 +18092,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 50. mamo_complex_96 (Mamo ComplexLP)
+## 51. mamo_complex_96 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -18165,7 +18468,7 @@ Vertex 'a' connects to f, e, b — so 3 edges touch 'a'. The vector has exactly 
 ````
 
 
-## 51. mamo_complex_97 (Mamo ComplexLP)
+## 52. mamo_complex_97 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -18452,7 +18755,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 52. mamo_complex_101 (Mamo ComplexLP)
+## 53. mamo_complex_101 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -18748,7 +19051,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 53. mamo_complex_102 (Mamo ComplexLP)
+## 54. mamo_complex_102 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -19090,7 +19393,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 54. mamo_complex_104 (Mamo ComplexLP)
+## 55. mamo_complex_104 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -19396,7 +19699,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 55. mamo_complex_105 (Mamo ComplexLP)
+## 56. mamo_complex_105 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -19675,7 +19978,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 56. mamo_complex_107 (Mamo ComplexLP)
+## 57. mamo_complex_107 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -19959,7 +20262,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 57. mamo_complex_108 (Mamo ComplexLP)
+## 58. mamo_complex_108 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -20266,7 +20569,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 58. mamo_complex_109 (Mamo ComplexLP)
+## 59. mamo_complex_109 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -20553,7 +20856,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 59. mamo_complex_112 (Mamo ComplexLP)
+## 60. mamo_complex_112 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -20829,7 +21132,7 @@ Everything checks out against the statement as written.
 ````
 
 
-## 60. mamo_complex_113 (Mamo ComplexLP)
+## 61. mamo_complex_113 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -21123,7 +21426,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 61. mamo_complex_115 (Mamo ComplexLP)
+## 62. mamo_complex_115 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -21503,7 +21806,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 62. mamo_complex_116 (Mamo ComplexLP)
+## 63. mamo_complex_116 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -21811,7 +22114,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ````
 
 
-## 63. mamo_complex_117 (Mamo ComplexLP)
+## 64. mamo_complex_117 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -22145,7 +22448,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 64. mamo_complex_120 (Mamo ComplexLP)
+## 65. mamo_complex_120 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -22434,7 +22737,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 65. mamo_complex_121 (Mamo ComplexLP)
+## 66. mamo_complex_121 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -22704,7 +23007,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 66. mamo_complex_122 (Mamo ComplexLP)
+## 67. mamo_complex_122 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -23003,7 +23306,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 67. mamo_complex_134 (Mamo ComplexLP)
+## 68. mamo_complex_134 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -23352,7 +23655,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 68. mamo_complex_135 (Mamo ComplexLP)
+## 69. mamo_complex_135 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -23679,7 +23982,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 69. mamo_complex_137 (Mamo ComplexLP)
+## 70. mamo_complex_137 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -24037,7 +24340,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 70. mamo_complex_139 (Mamo ComplexLP)
+## 71. mamo_complex_139 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -24379,7 +24682,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 71. mamo_complex_141 (Mamo ComplexLP)
+## 72. mamo_complex_141 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -24690,7 +24993,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 72. mamo_complex_142 (Mamo ComplexLP)
+## 73. mamo_complex_142 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -25012,7 +25315,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 73. mamo_complex_143 (Mamo ComplexLP)
+## 74. mamo_complex_143 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -25352,7 +25655,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 74. mamo_complex_144 (Mamo ComplexLP)
+## 75. mamo_complex_144 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -25641,7 +25944,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 75. mamo_complex_145 (Mamo ComplexLP)
+## 76. mamo_complex_145 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -25960,7 +26263,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 76. mamo_complex_146 (Mamo ComplexLP)
+## 77. mamo_complex_146 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -26295,7 +26598,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 77. mamo_complex_147 (Mamo ComplexLP)
+## 78. mamo_complex_147 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -26615,7 +26918,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 78. mamo_complex_148 (Mamo ComplexLP)
+## 79. mamo_complex_148 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -26977,7 +27280,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 79. mamo_complex_149 (Mamo ComplexLP)
+## 80. mamo_complex_149 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -27291,7 +27594,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 80. mamo_complex_150 (Mamo ComplexLP)
+## 81. mamo_complex_150 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -27648,7 +27951,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 81. mamo_complex_151 (Mamo ComplexLP)
+## 82. mamo_complex_151 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -28003,7 +28306,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 82. mamo_complex_152 (Mamo ComplexLP)
+## 83. mamo_complex_152 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -28339,7 +28642,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 83. mamo_complex_153 (Mamo ComplexLP)
+## 84. mamo_complex_153 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -28685,7 +28988,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 84. mamo_complex_154 (Mamo ComplexLP)
+## 85. mamo_complex_154 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -29006,7 +29309,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 85. mamo_complex_176 (Mamo ComplexLP)
+## 86. mamo_complex_176 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -29440,7 +29743,7 @@ Status ok; attempts 1; flag_mismatch True; flag_not_stated False; flag_any True.
 ````
 
 
-## 86. mamo_complex_182 (Mamo ComplexLP)
+## 87. mamo_complex_182 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -29786,7 +30089,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 87. mamo_complex_183 (Mamo ComplexLP)
+## 88. mamo_complex_183 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -30182,7 +30485,7 @@ Status ok; attempts 1; flag_mismatch True; flag_not_stated True; flag_any True.
 ````
 
 
-## 88. mamo_complex_184 (Mamo ComplexLP)
+## 89. mamo_complex_184 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -30579,7 +30882,7 @@ The opening costs and store demands check out against the statement. The transpo
 ````
 
 
-## 89. mamo_complex_188 (Mamo ComplexLP)
+## 90. mamo_complex_188 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -30933,7 +31236,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ````
 
 
-## 90. mamo_complex_190 (Mamo ComplexLP)
+## 91. mamo_complex_190 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -31279,7 +31582,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated True; flag_any True.
 ```
 
 
-## 91. mamo_complex_194 (Mamo ComplexLP)
+## 92. mamo_complex_194 (Mamo ComplexLP)
 
 ### 1. Identification
 

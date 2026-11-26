@@ -45,7 +45,7 @@ Absolute local paths inside solver error messages are replaced by `<PATH>/`.
 
 | Folder / file | Content | Feeds |
 |---|---|---|
-| `tables/` | every table as CSV and Markdown, written by `scripts/paper_tables.py` (`t1` to `t8`, `t2_audit_list.csv`, `misses_2of3_only.md`) and `scripts/rules_compare.py` (`rules_compare.*`); `library_diagnostics.md` is a copy of `downstream/library_diagnostics.md` | Figures 1 and 2 (`t1_rules.csv`, `t2_audit.csv`) |
+| `tables/` | every table as CSV and Markdown, written by `scripts/paper_tables.py` (`t1` to `t8`, `t2_audit_list.csv`, `misses_2of3_only.md`) and `scripts/rules_compare.py` (`rules_compare.*`); `t6_downstream_4bench`, `t6_paired_4bench`, `t6_pairwise_4bench.csv`, `t6_released_4bench.csv` and `t6_differences_4bench.md` give Table 6 over the four evaluation benchmarks IndustryOR, Mamo.Complex, OptMATH-Bench and OptiBench (1,082 items), also written by `scripts/paper_tables.py`; `library_diagnostics.md` is a copy of `downstream/library_diagnostics.md` | Figures 1 and 2 (`t1_rules.csv`, `t2_audit.csv`) |
 | `audit/audit_classes.csv` | every audited label miss: set, identifier, class (D, P, B, T, U, E, M), agreement (`three` or `two_only`) | Tables 2, 8, Figures 1 and 2 |
 | `audit/AUDIT.md` | class definitions, every audited problem with certified value, label, class, agreement and evidence, and the review of the 40 label-matching certificates that data verification withdraws | Figures 1 and 2 |
 | `downstream/per_item.csv` | one row per evaluation item and pass: configuration, pass, benchmark, item identifier, prediction, label, match (`round_aware`), selected skill | Table 6 |
@@ -68,9 +68,8 @@ retry rules), on two releases of IndustryOR and Mamo ComplexLP. Each benchmark f
 sets above (`workorder.jsonl`, `problems.csv`, `verdicts.jsonl`, `judges.csv`, `runs/<id>/` with `spec.json`, the three
 programs, `verdict_full.json`, `verdict_independent.json`, `param_screen.json`, `extraction_attempts.json` and
 `verification_<A,B,C>.json`). Scoring: `round_aware` of `scripts/score_eval.py`; a data-verification reply that cannot
-be parsed after three attempts counts as not flagged. Absolute local paths are replaced by `<PATH>/` as above; a relay error page that a call returned in place of
-a model reply (in a program file, or as the reply of an earlier verification attempt) is replaced by
-`<relay error message instead of a model reply (HTTP <code>, ...); text not published>` (14 places).
+be parsed after three attempts counts as not flagged. Absolute local paths are replaced by `<PATH>/` as above. Replies that the API relay returned as error
+pages (HTTP status 200 with an error text in place of a model reply) were requested again under the retry rule.
 
 | Folder / file | Content | Rebuild |
 |---|---|---|

@@ -66,7 +66,7 @@ Every certificate whose value misses the benchmark label was checked against the
 
 ## OptMATH-200
 
-21 audited problems: 18 three-family, 3 two-family-only.
+21 audited problems: 19 three-family, 2 two-family-only.
 
 | Identifier | Record | Certified | Label | Class | Agreement | Evidence |
 |---|---:|---:|---:|---|---|---|
@@ -76,6 +76,7 @@ Every certificate whose value misses the benchmark label was checked against the
 | `conf_168766` | 168766 | 65815 | 70127.0 | D | three |  |
 | `conf_188937` | 188937 | 233938 | 251706.0 | D | three |  |
 | `conf_189571` | 189571 | 49372 | 41005.0 | D | three |  |
+| `conf_66014` | 66014 | 11250495.53 | 11417460.619134724 | D | three |  |
 | `conf_14681` | 14681 | 322806.6949 | 322663.59090909094 | P | three |  |
 | `conf_22825` | 22825 | 549394.656 | 549293.4158730159 | P | three |  |
 | `conf_30081` | 30081 | 1141276.061 | 1141009.1488119946 | P | three |  |
@@ -89,7 +90,6 @@ Every certificate whose value misses the benchmark label was checked against the
 | `conf_144925` | 144925 | 1953 | 1987.0 | B | three | The mixed-integer program of the text has optimum 1953. The rule "B or C" withdraws the certificate: family C reports `backlog_penalty` as mismatched, which the text states as given (an over-flag). |
 | `conf_187975` | 187975 | 31277 | 31871.0 | B | three | The linear program of the text has optimum 31277. |
 | `conf_16675` | 16675 | 1235.569921 | 2347.1979356914976 | D | two_only |  |
-| `conf_66014` | 66014 | 11250495.53 | 11417460.619134724 | D | two_only |  |
 | `conf_120613` | 120613 | 1844 | 1819.0 | D | two_only |  |
 
 ## NANO-CO-150

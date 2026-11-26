@@ -19,6 +19,8 @@ Outputs (under --out, default artifacts/v2/tables)
     t1_rules, t1_rules_mcnemar, t2_audit, t2_audit_2of3_only, t3_check, t3_check_unparsed, t4_k6,
     t5_arms, t5_arms_overlap, t6_downstream, t6_paired, t6_libraries, t7_cost, t7_walltime,
     t8_single_vs_panel, t8_single_vs_panel_errors (each .csv, and one .md per table group),
+    t6_downstream_4bench, t6_paired_4bench (.csv and .md), t6_pairwise_4bench.csv, t6_released_4bench.csv and
+    t6_differences_4bench.md (Table 6 over IndustryOR, Mamo.Complex, OptMATH-Bench and OptiBench, 1,082 items),
     t2_audit_list.csv and misses_2of3_only.md. The audit checks are printed on stdout; the
     script exits with status 2 if one of them fails.
 
@@ -519,6 +521,116 @@ cap6c = ("Table 6c. Library size (files in the built library folder) and the sha
          "admitted (Table 5, host rule against the vault label, rows sample_6..300).")
 write_md("t6_downstream", [write("t6_downstream", H6, rows6, cap6, notes6), write("t6_paired", H6b, rows6b, cap6b),
                            write("t6_libraries", H6c, rows6c, cap6c)])
+
+# ---------------------------------------------------------------- Table 6 over four benchmarks
+# The same definitions on IndustryOR, Mamo.Complex, OptMATH-Bench and OptiBench (1,082 items). Libraries are compared on
+# the answers of the paper: majority of r1 to r3 where there are three passes, pass r1 otherwise.
+B4 = [b for b in B if b[0] in ("industryor", "mamo_c", "optmath", "optibench")]
+N4 = sum(n for _, _, n in B4)
+LIBS5 = ["panel_base_3of3", "panel_base_2of3", "vote", "runsok", "gt"]
+CFG4 = ["nolib"] + LIBS5 + ["released"]
+
+
+def write4(name, header, rows, caption):
+    with open(os.path.join(P, name + ".csv"), "w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh, lineterminator="\n")
+        w.writerow(header)
+        w.writerows(rows)
+    if caption is not None:
+        md = [caption, "", "| " + " | ".join(header) + " |", "|" + "---|" * len(header)] + ["| " + " | ".join(str(x) for x in r) + " |" for r in rows]
+        open(os.path.join(P, name + ".md"), "w", encoding="utf-8", newline="\n").write("\n".join(md) + "\n")
+
+
+def passes4(lib):
+    return [ps for ps in ("r1", "r2", "r3") if all((lib, ps, b) in HH for b, _, _ in B4)]
+
+
+rows6f, overall4 = [], {}
+for lib in CFG4:
+    ps4 = passes4(lib)
+    for b, bn, n in B4:
+        k = [sum(HH[(lib, p_, b)].values()) for p_ in ps4]
+        acc = [100.0 * x / n for x in k]
+        rows6f.append([CNAME.get(lib, lib), bn, n, len(ps4)] + pad(k, "%d") + pad(acc, "%.2f") +
+                      ["%.2f" % (sum(acc) / len(acc)), ("%.2f" % se_mean(acc)) if len(acc) > 1 else ""])
+    k = [sum(sum(HH[(lib, p_, b)].values()) for b, _, _ in B4) for p_ in ps4]
+    acc = [100.0 * x / N4 for x in k]
+    overall4[lib] = sum(acc) / len(acc)
+    rows6f.append([CNAME.get(lib, lib), "all 1,082 (micro-average)", N4, len(ps4)] + pad(k, "%d") + pad(acc, "%.2f") +
+                  ["%.2f" % overall4[lib], ("%.2f" % se_mean(acc)) if len(acc) > 1 else ""])
+    mac = [sum(100.0 * sum(HH[(lib, p_, b)].values()) / n for b, _, n in B4) / 4 for p_ in ps4]
+    rows6f.append([CNAME.get(lib, lib), "macro-average (mean of the four benchmarks)", "", len(ps4), "", "", ""] + pad(mac, "%.2f") +
+                  ["%.2f" % (sum(mac) / len(mac)), ("%.2f" % se_mean(mac)) if len(mac) > 1 else ""])
+write4("t6_downstream_4bench", H6, rows6f,
+       "Table 6 over four benchmarks. Downstream accuracy, `round_aware` of scripts/score_eval.py, on IndustryOR, Mamo.Complex, "
+       "OptMATH-Bench and OptiBench (1,082 items; unparseable answers count as wrong); per pass, mean over the passes and "
+       "standard error of the mean (n-1 in the variance) where there are three passes, a single value otherwise. Accuracies in percent.")
+cur6 = {(r[0], r[1]): r for r in rows6}
+same6 = [r == cur6[(r[0], r[1])] for r in rows6f if (r[0], r[1]) in cur6]
+say("check (d) four benchmarks: %d per-benchmark rows equal to Table 6: %s" % (len(same6), all(same6)))
+if not all(same6):
+    FAILED.append("d")
+
+
+def view4(lib, mode):
+    out = {}
+    for b, _, _ in B4:
+        if mode == "r1":
+            v = HH[(lib, "r1", b)]
+        else:
+            vs = [HH[(lib, p_, b)] for p_ in ("r1", "r2", "r3")]
+            v = {k: sum(x[k] for x in vs) >= 2 for k in vs[0]}
+        out.update({(b, k): x for k, x in v.items()})
+    return out
+
+
+def paper4(lib):
+    return view4(lib, "maj" if len(passes4(lib)) == 3 else "r1")
+
+
+def cmp4(hx, hy):
+    both = sum(hx[k] and hy[k] for k in hx)
+    ox = sum(hx[k] and not hy[k] for k in hx)
+    oy = sum(hy[k] and not hx[k] for k in hx)
+    return both, ox, oy, len(hx) - both - ox - oy, mcnemar(ox, oy)
+
+
+rows6g = []
+for lib in LIBS5:
+    for mode, lab in (("r1", "r1 of both"), ("maj", "majority of r1-r3 of both")):
+        if mode == "maj" and len(passes4(lib)) < 3:
+            continue
+        both, ox, oy, nei, pv = cmp4(view4(lib, mode), view4("nolib", mode))
+        rows6g.append([lib, CNAME["nolib"], lab, N4, both, ox, oy, nei, fp(pv)])
+    if len(passes4(lib)) < 3:
+        both, ox, oy, nei, pv = cmp4(view4(lib, "r1"), view4("nolib", "maj"))
+        rows6g.append([lib, CNAME["nolib"], "r1 of the library against majority of r1-r3 of the host", N4, both, ox, oy, nei, fp(pv)])
+write4("t6_paired_4bench", ["library", "host_without_library", "passes", "answers_compared", "both", "library_only", "no_library_only", "neither",
+                            "mcnemar_p"], rows6g,
+       "Table 6b over four benchmarks. Each library against the host without a learned library on the 1,082 items: answers "
+       "compared, solved by both, by the library only, by the host only, by neither; exact two-sided McNemar p. Majority: solved "
+       "in at least two of r1 to r3.")
+rows6h = []
+for x, y in itertools.combinations(LIBS5, 2):
+    both, ox, oy, nei, pv = cmp4(paper4(x), paper4(y))
+    rows6h.append([x, "majority of r1-r3" if len(passes4(x)) == 3 else "r1", y, "majority of r1-r3" if len(passes4(y)) == 3 else "r1",
+                   N4, both, ox, oy, nei, fp(pv)])
+write4("t6_pairwise_4bench", ["first", "first_answers", "second", "second_answers", "answers_compared", "both", "only_first", "only_second",
+                              "neither", "mcnemar_p"], rows6h, None)
+rel4 = view4("released", "r1")
+rows6i = []
+for other in ["nolib"] + LIBS5:
+    both, ox, oy, nei, pv = cmp4(rel4, paper4(other))
+    rows6i.append(["released r1", other, "majority of r1-r3" if len(passes4(other)) == 3 else "r1", N4, ox, oy, fp(pv)])
+write4("t6_released_4bench", ["first", "second", "second_answers", "answers_compared", "released_only", "other_only", "mcnemar_p"], rows6i, None)
+d5 = max((abs(overall4[x] - overall4[y]), x, y) for x, y in itertools.combinations(LIBS5, 2))
+dn = [(overall4[lib] - overall4["nolib"], lib) for lib in LIBS5]
+with open(os.path.join(P, "t6_differences_4bench.md"), "w", encoding="utf-8", newline="\n") as fh:
+    fh.write("# Differences in overall accuracy, four benchmarks (1,082 items)\n\nOverall accuracy = mean over the passes of the "
+             "accuracy on the 1,082 items (one pass where there is one).\n\n| Configuration | Overall accuracy (%) |\n|---|---:|\n")
+    fh.write("".join("| %s | %.2f |\n" % (CNAME.get(k, k), v) for k, v in overall4.items()))
+    fh.write("\nLargest difference between two of the five libraries: %.2f points (%s against %s).\n" % d5)
+    fh.write("Library minus host without a learned library: smallest %.2f points (%s), largest %.2f points (%s).\n" % (min(dn) + max(dn)))
 
 # ---------------------------------------------------------------- Table 7
 COST = rcsv(os.path.join(V2, "cost", "calls_tokens.csv"))

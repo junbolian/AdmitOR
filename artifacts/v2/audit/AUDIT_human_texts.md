@@ -4,7 +4,7 @@ Three-family certificates (`panel_base_3of3`) that miss the label on IndustryOR 
 
 Classes: D and E are data errors (decisive values not in the text; extraction differs from the text). B: the text is complete and our re-solve reproduces the certified value, so the label is not the optimum of the stated problem. T: the label is the optimum of an instance that differs from the text in a stated rule, value, or unit. *Integrality not stated*: the certificate is the optimum of a program with continuous quantities, the label is the optimum of the same program with integer quantities, and the text does not state integrality (class U of the paper). No miss is a shared modeling error (class M).
 
-## Original releases (91 misses among 204 certificates)
+## Original releases (92 misses among 207 certificates)
 
 | Problem | Expert status | Label | Certified | Class | Withdrawn | Evidence |
 |---|---|---:|---:|---|---|---|
@@ -50,6 +50,7 @@ Classes: D and E are data errors (decisive values not in the text; extraction di
 | `mamo_complex_61` | removed | 148 | 249 | B | yes | Enumeration of all tours over the extracted costs, which all occur in the text, gives the certified value; the label lies below every tour. |
 | `mamo_complex_66` | removed | 194 | 213 | B | no | Enumeration of all tours over the extracted costs, which all occur in the text, gives the certified value; the label lies below every tour. |
 | `mamo_complex_73` | removed | 587428 | 580735 | D | yes | Values given by example and "and so on". Withdrawn by verification. |
+| `mamo_complex_74` | removed | 103960 | 106380 | B | no | Text complete. Exact re-solve gives 106,380 (certified); the label lies below 105,600, the cost of meeting the demand net of the initial inventory at the regular-time cost alone. |
 | `mamo_complex_78` | removed | 242 | 269 | B | no | Enumeration of all tours over the extracted costs, which all occur in the text, gives the certified value; the label lies below every tour. |
 | `mamo_complex_84` | removed | 206 | 232 | B | no | Enumeration of all tours over the extracted costs, which all occur in the text, gives the certified value; the label lies below every tour. |
 | `mamo_complex_85` | kept | 14 | 13.1196 | Integrality not stated | no | The label is the optimum of the same program with integer quantities; the text does not state integrality. |
@@ -100,7 +101,7 @@ Classes: D and E are data errors (decisive values not in the text; extraction di
 | `mamo_complex_190` | removed | 608437 | 529513 | D | yes | Values given as a range. Withdrawn by verification. |
 | `mamo_complex_194` | removed | 242000 | 21600 | Other text defect (T, U) | yes | Text incomplete, ambiguous, or label stated in another unit or quantity; the expert audit removes the problem. |
 
-## Corrected releases (11 misses among 222 certificates)
+## Corrected releases (12 misses among 224 certificates)
 
 | Problem | Answer | Certified | Class | Withdrawn | Evidence |
 |---|---:|---:|---|---|---|
@@ -112,6 +113,7 @@ Classes: D and E are data errors (decisive values not in the text; extraction di
 | `om_mamo_103` | 567010 | 589621 | B | no | All data stated; exact re-solve gives the certified value. |
 | `om_mamo_114` | 58895 | 588595 | B | no | All data stated; exact re-solve gives the certified value; the answer lacks one digit. |
 | `om_mamo_131` | 178 | 148.611 | Integrality not stated | no | Grain in pounds; the answer is the optimum with integer pounds. |
+| `om_mamo_182` | 17 | 15.2351 | Integrality not stated | no | Diet problem without the integrality sentence; the answer is the integer optimum of the certified program. |
 | `om_mamo_194` | 66.39 | 66.3661 | B | no | Largest inscribed circle by linear programming; the area to four significant digits is 66.37. |
 | `om_mamo_197` | 24 | 38 | T | yes | The text states the protein requirement twice (88 and 144); the answer reads the second as carbohydrates. Programs use integer quantities. Withdrawn. |
 | `om_mamo_206` | 610975 | 580131 | B | no | All data stated; exact re-solve gives 580,131 (certified), below the answer. |

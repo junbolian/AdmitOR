@@ -32,35 +32,35 @@ Table 8. Single families against the panel, split by audit group. Ruler `round_a
 | stream (OptMATH-295) | round_aware | panel_base_3of3 + check (B or C) | (iii) not audited, panel_base_3of3 certifies a matching value | 208 | 187 | 187 | 0 |
 | stream (OptMATH-295) | round_aware | panel_base_3of3 + check (B or C) | (iv) all other problems | 52 | 0 | 0 | 0 |
 | stream (OptMATH-295) | round_aware | panel_base_3of3 + check (B or C) | all groups | 295 | 201 | 187 | 14 |
-| confirm (OptMATH-200) | round_aware | single_A | (i) audited, class D/P/B/T/U (benchmark side) | 18 | 18 | 0 | 18 |
+| confirm (OptMATH-200) | round_aware | single_A | (i) audited, class D/P/B/T/U (benchmark side) | 19 | 19 | 0 | 19 |
 | confirm (OptMATH-200) | round_aware | single_A | (ii) audited, class E/M (pipeline side) | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | single_A | (iii) not audited, panel_base_3of3 certifies a matching value | 149 | 149 | 149 | 0 |
-| confirm (OptMATH-200) | round_aware | single_A | (iv) all other problems | 33 | 10 | 3 | 7 |
-| confirm (OptMATH-200) | round_aware | single_A | all groups | 200 | 177 | 152 | 25 |
-| confirm (OptMATH-200) | round_aware | single_B | (i) audited, class D/P/B/T/U (benchmark side) | 18 | 18 | 0 | 18 |
+| confirm (OptMATH-200) | round_aware | single_A | (iv) all other problems | 32 | 10 | 3 | 7 |
+| confirm (OptMATH-200) | round_aware | single_A | all groups | 200 | 178 | 152 | 26 |
+| confirm (OptMATH-200) | round_aware | single_B | (i) audited, class D/P/B/T/U (benchmark side) | 19 | 19 | 0 | 19 |
 | confirm (OptMATH-200) | round_aware | single_B | (ii) audited, class E/M (pipeline side) | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | single_B | (iii) not audited, panel_base_3of3 certifies a matching value | 149 | 149 | 149 | 0 |
-| confirm (OptMATH-200) | round_aware | single_B | (iv) all other problems | 33 | 22 | 17 | 5 |
+| confirm (OptMATH-200) | round_aware | single_B | (iv) all other problems | 32 | 21 | 17 | 4 |
 | confirm (OptMATH-200) | round_aware | single_B | all groups | 200 | 189 | 166 | 23 |
-| confirm (OptMATH-200) | round_aware | single_C | (i) audited, class D/P/B/T/U (benchmark side) | 18 | 18 | 0 | 18 |
+| confirm (OptMATH-200) | round_aware | single_C | (i) audited, class D/P/B/T/U (benchmark side) | 19 | 19 | 0 | 19 |
 | confirm (OptMATH-200) | round_aware | single_C | (ii) audited, class E/M (pipeline side) | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | single_C | (iii) not audited, panel_base_3of3 certifies a matching value | 149 | 149 | 149 | 0 |
-| confirm (OptMATH-200) | round_aware | single_C | (iv) all other problems | 33 | 24 | 14 | 10 |
+| confirm (OptMATH-200) | round_aware | single_C | (iv) all other problems | 32 | 23 | 14 | 9 |
 | confirm (OptMATH-200) | round_aware | single_C | all groups | 200 | 191 | 163 | 28 |
-| confirm (OptMATH-200) | round_aware | panel_base_2of3 | (i) audited, class D/P/B/T/U (benchmark side) | 18 | 18 | 0 | 18 |
+| confirm (OptMATH-200) | round_aware | panel_base_2of3 | (i) audited, class D/P/B/T/U (benchmark side) | 19 | 19 | 0 | 19 |
 | confirm (OptMATH-200) | round_aware | panel_base_2of3 | (ii) audited, class E/M (pipeline side) | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | panel_base_2of3 | (iii) not audited, panel_base_3of3 certifies a matching value | 149 | 149 | 149 | 0 |
-| confirm (OptMATH-200) | round_aware | panel_base_2of3 | (iv) all other problems | 33 | 17 | 14 | 3 |
+| confirm (OptMATH-200) | round_aware | panel_base_2of3 | (iv) all other problems | 32 | 16 | 14 | 2 |
 | confirm (OptMATH-200) | round_aware | panel_base_2of3 | all groups | 200 | 184 | 163 | 21 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 | (i) audited, class D/P/B/T/U (benchmark side) | 18 | 18 | 0 | 18 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 | (i) audited, class D/P/B/T/U (benchmark side) | 19 | 19 | 0 | 19 |
 | confirm (OptMATH-200) | round_aware | panel_base_3of3 | (ii) audited, class E/M (pipeline side) | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | panel_base_3of3 | (iii) not audited, panel_base_3of3 certifies a matching value | 149 | 149 | 149 | 0 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 | (iv) all other problems | 33 | 0 | 0 | 0 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 | all groups | 200 | 167 | 149 | 18 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | (i) audited, class D/P/B/T/U (benchmark side) | 18 | 11 | 0 | 11 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 | (iv) all other problems | 32 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 | all groups | 200 | 168 | 149 | 19 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | (i) audited, class D/P/B/T/U (benchmark side) | 19 | 11 | 0 | 11 |
 | confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | (ii) audited, class E/M (pipeline side) | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | (iii) not audited, panel_base_3of3 certifies a matching value | 149 | 135 | 135 | 0 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | (iv) all other problems | 33 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | (iv) all other problems | 32 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | all groups | 200 | 146 | 135 | 11 |
 
 Table 8b. Errors of each single family and of panel_base_2of3 on group (iii) (problems whose label panel_base_3of3 confirms) and on group (iv). value_returned = problems of the group the rule certifies; label_misses = those whose value misses the label under `round_aware`.
@@ -71,7 +71,7 @@ Table 8b. Errors of each single family and of panel_base_2of3 on group (iii) (pr
 | stream (OptMATH-295) | round_aware | single_B | 208 | 208 | 0 | 52 | 29 | 9 |
 | stream (OptMATH-295) | round_aware | single_C | 208 | 208 | 0 | 52 | 42 | 23 |
 | stream (OptMATH-295) | round_aware | panel_base_2of3 | 208 | 208 | 0 | 52 | 30 | 10 |
-| confirm (OptMATH-200) | round_aware | single_A | 149 | 149 | 0 | 33 | 10 | 7 |
-| confirm (OptMATH-200) | round_aware | single_B | 149 | 149 | 0 | 33 | 22 | 5 |
-| confirm (OptMATH-200) | round_aware | single_C | 149 | 149 | 0 | 33 | 24 | 10 |
-| confirm (OptMATH-200) | round_aware | panel_base_2of3 | 149 | 149 | 0 | 33 | 17 | 3 |
+| confirm (OptMATH-200) | round_aware | single_A | 149 | 149 | 0 | 32 | 10 | 7 |
+| confirm (OptMATH-200) | round_aware | single_B | 149 | 149 | 0 | 32 | 21 | 4 |
+| confirm (OptMATH-200) | round_aware | single_C | 149 | 149 | 0 | 32 | 23 | 9 |
+| confirm (OptMATH-200) | round_aware | panel_base_2of3 | 149 | 149 | 0 | 32 | 16 | 2 |

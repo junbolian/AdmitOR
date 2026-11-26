@@ -1,0 +1,43 @@
+configuration,benchmark,n,passes,solved_r1,solved_r2,solved_r3,acc_r1,acc_r2,acc_r3,mean,se_mean
+host without learned library,IndustryOR,100,3,34,35,35,34.00,35.00,35.00,34.67,0.33
+host without learned library,Mamo.Complex,211,3,116,123,118,54.98,58.29,55.92,56.40,0.99
+host without learned library,OptMATH-Bench,166,3,98,95,94,59.04,57.23,56.63,57.63,0.72
+host without learned library,OptiBench,605,3,440,429,435,72.73,70.91,71.90,71.85,0.53
+host without learned library,"all 1,082 (micro-average)",1082,3,688,682,682,63.59,63.03,63.03,63.22,0.18
+host without learned library,macro-average (mean of the four benchmarks),,3,,,,55.18,55.36,54.86,55.14,0.15
+panel_base_3of3,IndustryOR,100,3,35,34,32,35.00,34.00,32.00,33.67,0.88
+panel_base_3of3,Mamo.Complex,211,3,107,118,115,50.71,55.92,54.50,53.71,1.56
+panel_base_3of3,OptMATH-Bench,166,3,95,84,97,57.23,50.60,58.43,55.42,2.43
+panel_base_3of3,OptiBench,605,3,398,410,413,65.79,67.77,68.26,67.27,0.76
+panel_base_3of3,"all 1,082 (micro-average)",1082,3,635,646,657,58.69,59.70,60.72,59.70,0.59
+panel_base_3of3,macro-average (mean of the four benchmarks),,3,,,,52.18,52.07,53.30,52.52,0.39
+panel_base_2of3,IndustryOR,100,3,34,36,39,34.00,36.00,39.00,36.33,1.45
+panel_base_2of3,Mamo.Complex,211,3,113,115,113,53.55,54.50,53.55,53.87,0.32
+panel_base_2of3,OptMATH-Bench,166,3,95,90,95,57.23,54.22,57.23,56.22,1.00
+panel_base_2of3,OptiBench,605,3,398,399,409,65.79,65.95,67.60,66.45,0.58
+panel_base_2of3,"all 1,082 (micro-average)",1082,3,640,640,656,59.15,59.15,60.63,59.64,0.49
+panel_base_2of3,macro-average (mean of the four benchmarks),,3,,,,52.64,52.67,54.35,53.22,0.56
+vote,IndustryOR,100,3,34,36,37,34.00,36.00,37.00,35.67,0.88
+vote,Mamo.Complex,211,3,110,108,114,52.13,51.18,54.03,52.45,0.84
+vote,OptMATH-Bench,166,3,95,95,97,57.23,57.23,58.43,57.63,0.40
+vote,OptiBench,605,3,394,387,402,65.12,63.97,66.45,65.18,0.72
+vote,"all 1,082 (micro-average)",1082,3,633,626,650,58.50,57.86,60.07,58.81,0.66
+vote,macro-average (mean of the four benchmarks),,3,,,,52.12,52.10,53.98,52.73,0.62
+runsok,IndustryOR,100,1,33,,,33.00,,,33.00,
+runsok,Mamo.Complex,211,1,107,,,50.71,,,50.71,
+runsok,OptMATH-Bench,166,1,96,,,57.83,,,57.83,
+runsok,OptiBench,605,1,392,,,64.79,,,64.79,
+runsok,"all 1,082 (micro-average)",1082,1,628,,,58.04,,,58.04,
+runsok,macro-average (mean of the four benchmarks),,1,,,,51.58,,,51.58,
+gt,IndustryOR,100,1,34,,,34.00,,,34.00,
+gt,Mamo.Complex,211,1,106,,,50.24,,,50.24,
+gt,OptMATH-Bench,166,1,92,,,55.42,,,55.42,
+gt,OptiBench,605,1,410,,,67.77,,,67.77,
+gt,"all 1,082 (micro-average)",1082,1,642,,,59.33,,,59.33,
+gt,macro-average (mean of the four benchmarks),,1,,,,51.86,,,51.86,
+"released library (host); build data as described in the host README, no build record",IndustryOR,100,1,27,,,27.00,,,27.00,
+"released library (host); build data as described in the host README, no build record",Mamo.Complex,211,1,120,,,56.87,,,56.87,
+"released library (host); build data as described in the host README, no build record",OptMATH-Bench,166,1,101,,,60.84,,,60.84,
+"released library (host); build data as described in the host README, no build record",OptiBench,605,1,434,,,71.74,,,71.74,
+"released library (host); build data as described in the host README, no build record","all 1,082 (micro-average)",1082,1,682,,,63.03,,,63.03,
+"released library (host); build data as described in the host README, no build record",macro-average (mean of the four benchmarks),,1,,,,54.11,,,54.11,

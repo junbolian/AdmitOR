@@ -7,7 +7,7 @@
 **Junbo Jacob Lian** &nbsp;·&nbsp; **Huiling Chen** &nbsp;·&nbsp; **Hanzhang Qin** &nbsp;·&nbsp; **Chung-Piaw Teo**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2608.15565-b31b1b.svg)](https://arxiv.org/abs/2608.15565)
-[![Release](https://img.shields.io/badge/release-v2.1.0-2ea44f.svg)](https://github.com/junbolian/AdmitOR/releases/tag/v2.1.0)
+[![Release](https://img.shields.io/badge/release-v2.1.1-2ea44f.svg)](https://github.com/junbolian/AdmitOR/releases/tag/v2.1.1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
@@ -44,12 +44,12 @@ three-family certificates by source, before and after data verification.
   the odds of a modeling error that all agreeing programs share. Adding model families lowers the
   second term geometrically and leaves the first in place. Agreement on resampled instances removes
   no data error, and additional programs from the same families raise the odds of a shared error.
-- **Audit.** On 740 problems with generated texts, three-family agreement issues 586 certificates,
-  and 62 of them miss the benchmark label. Every miss was checked against the problem text. None is a
-  shared modeling error. In 29, the programs agree on extracted data that the text does not support.
+- **Audit.** On 740 problems with generated texts, three-family agreement issues 587 certificates,
+  and 63 of them miss the benchmark label. Every miss was checked against the problem text. None is a
+  shared modeling error. In 30, the programs agree on extracted data that the text does not support.
   The other 33 are defects of the benchmark texts and labels.
-- **Data verification.** A check of the extracted data by the two other families withdraws all 29,
-  including all six on 200 problems that were drawn after the rule had been set.
+- **Data verification.** A check of the extracted data by the two other families withdraws all 30,
+  including all seven on 200 problems that were drawn after the rule had been set.
 - **Human-written texts.** On IndustryOR and Mamo ComplexLP, three-family agreement reaches a label
   precision of 0.55 on the published releases and 0.95 on the releases with corrected texts and
   answers. The three families share a modeling error only where a text leaves a decision open: on 26
@@ -64,12 +64,12 @@ Coverage / label precision ± binomial standard error.
 
 | Rule | OptMATH-295 | OptMATH-200 | NANO-CO-150 | NANO-CO-95 |
 |---|---|---|---|---|
-| Family A alone | 0.898 / 0.807 ± 0.024 | 0.885 / 0.859 ± 0.026 | 0.887 / 0.820 ± 0.033 | 0.842 / 0.863 ± 0.038 |
+| Family A alone | 0.898 / 0.807 ± 0.024 | 0.890 / 0.854 ± 0.026 | 0.887 / 0.820 ± 0.033 | 0.842 / 0.863 ± 0.038 |
 | Family B alone | 0.922 / 0.838 ± 0.022 | 0.945 / 0.878 ± 0.024 | 0.993 / 0.893 ± 0.025 | 0.990 / 0.872 ± 0.034 |
 | Family C alone | 0.966 / 0.796 ± 0.024 | 0.955 / 0.853 ± 0.026 | 0.993 / 0.886 ± 0.026 | 0.990 / 0.840 ± 0.038 |
 | Two families agree | 0.925 / 0.835 ± 0.022 | 0.920 / 0.886 ± 0.023 | 0.980 / 0.898 ± 0.025 | 0.979 / 0.871 ± 0.035 |
-| Three families agree | 0.824 / 0.856 ± 0.022 | 0.835 / 0.892 ± 0.024 | 0.707 / 0.972 ± 0.016 | 0.737 / 0.914 ± 0.034 |
-| Three families, resampled | 0.759 / 0.866 ± 0.023 | 0.790 / 0.899 ± 0.024 | 0.633 / 0.990 ± 0.011 | 0.621 / 0.915 ± 0.036 |
+| Three families agree | 0.824 / 0.856 ± 0.022 | 0.840 / 0.887 ± 0.024 | 0.707 / 0.972 ± 0.016 | 0.737 / 0.914 ± 0.034 |
+| Three families, resampled | 0.759 / 0.866 ± 0.023 | 0.795 / 0.893 ± 0.025 | 0.633 / 0.990 ± 0.011 | 0.621 / 0.915 ± 0.036 |
 | Two families, verified | 0.756 / 0.915 ± 0.019 | 0.780 / 0.929 ± 0.021 | 0.907 / 0.919 ± 0.023 | 0.937 / 0.876 ± 0.035 |
 | Three families, verified | 0.681 / 0.930 ± 0.018 | 0.730 / 0.925 ± 0.022 | 0.673 / 0.980 ± 0.014 | 0.716 / 0.926 ± 0.032 |
 
@@ -89,9 +89,9 @@ precision ± binomial standard error.
 |---|---|---|
 | Family B alone | 0.929 / 0.540 ± 0.029 | 0.987 / 0.911 ± 0.016 |
 | Two families agree | 0.865 / 0.565 ± 0.030 | 0.942 / 0.914 ± 0.016 |
-| Three families agree | 0.656 / 0.554 ± 0.035 | 0.718 / 0.951 ± 0.015 |
-| Three families, resampled | 0.553 / 0.535 ± 0.038 | 0.615 / 0.942 ± 0.017 |
-| Three families, verified | 0.534 / 0.578 ± 0.038 | 0.625 / 0.959 ± 0.014 |
+| Three families agree | 0.666 / 0.556 ± 0.035 | 0.725 / 0.946 ± 0.015 |
+| Three families, resampled | 0.559 / 0.534 ± 0.038 | 0.618 / 0.937 ± 0.018 |
+| Three families, verified | 0.543 / 0.580 ± 0.038 | 0.628 / 0.954 ± 0.015 |
 
 Every three-family label miss on both releases is classified in
 [`AUDIT_human_texts.md`](artifacts/v2/audit/AUDIT_human_texts.md).

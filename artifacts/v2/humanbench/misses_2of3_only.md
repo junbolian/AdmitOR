@@ -23,7 +23,6 @@ Every panel_base_2of3 certificate whose value misses the label on a problem with
 | `mamo_complex_45` | Mamo ComplexLP | 2430.0 | 2400 | removed | no |
 | `mamo_complex_64` | Mamo ComplexLP | 212.0 | 199 | kept, same label; expert label 199.0 | no |
 | `mamo_complex_71` | Mamo ComplexLP | 121.0 | 60 | removed | no |
-| `mamo_complex_74` | Mamo ComplexLP | 106380.0 | 103960 | removed | no |
 | `mamo_complex_80` | Mamo ComplexLP | 4425.0 | 5213 | removed | yes |
 | `mamo_complex_94` | Mamo ComplexLP | 22.333333333333332 | 23 | removed | no |
 | `mamo_complex_100` | Mamo ComplexLP | 176.0 | 160 | kept, same label; expert label 160.0 | no |
@@ -8239,293 +8238,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 20. mamo_complex_74 (Mamo ComplexLP)
-
-### 1. Identification
-
-| Field | Value |
-|---|---|
-| Sample id | `mamo_complex_74` |
-| Benchmark | Mamo ComplexLP (`datasets/benchmark/mamo_complex_test.jsonl`, field `index` = 74) |
-| Optimization sense | not determined from the problem text (words "minim..." / "maxim..." in the problem text) |
-| Certified value (panel_base_2of3) | 106380.0 |
-| Label (original benchmark) | 103960 |
-| Rules that certify it | gate 106380.0, panel_base_2of3 106380.0 |
-| Expert status (Xiao et al. 2025) | removed |
-| Families agreeing at instance 0 | B (GPT-6.1 Sol) and C (Claude Sonnet 5.5) |
-
-### 2. Problem text
-
-```
-Basel Tool and Die Company (BTD) makes large industrial pipe wrenches in one of its factories. The marketing department estimates demand for this product during the next 6 months to be: In January, the demand is 430, in February, the demand is 430, in March, the demand is 380, in April, the demand is 450, in May, the demand is 520, in June, the demand is 440. With the current labor force, BTD believes it can make approximately 420 pipe wrenches per month at a cost of $40 per wrench using regular-time production. An additional 80 wrenches per month can be made using overtime production at a cost per wrench of $45. Wrenches can be made in advance and held in inventory for later shipment at a cost of $3 per month per wrench. The monthly demand for wrenches must be satisfied every month. At the end of December (beginning of January) BTD has 10 wrenches in inventory. BTD wants to plan its production, including overtime, and inventory for the next 6 months so as to maximize profit. Assuming the revenue for these wrenches is fixed, the production manager can maximize profit by minimizing the total costs incurred in producing and delivering the wrenches. Find the minimal total cost in dollar. Provide your answer rounded to nearest integar.
-```
-
-### 3. Extracted parameter set (`spec.json`: `spec` and `warnings`)
-
-```json
-"demand": {"base":[430,430,380,450,520,440],"perturb":{"mode":"rel","r":0.25}}
-"regular_capacity": {"base":420,"perturb":{"mode":"abs","lo":300.0,"hi":600.0,"integer":true}}
-"regular_cost": {"base":40,"perturb":{"mode":"rel","r":0.25}}
-"overtime_capacity": {"base":80,"perturb":{"mode":"abs","lo":0.0,"hi":250.0,"integer":true}}
-"overtime_cost": {"base":45,"perturb":{"mode":"rel","r":0.25}}
-"holding_cost": {"base":3,"perturb":{"mode":"abs","lo":0.0,"hi":12.0,"integer":false}}
-"initial_inventory": {"base":10,"perturb":{"mode":"abs","lo":0.0,"hi":200.0,"integer":true}}
-```
-
-Warnings:
-
-```
-none
-```
-
-Extraction attempts: 3.
-
-### 4. Programs
-
-#### A-direct.py
-
-```python
-# <relay error message instead of a model reply (HTTP 400, request rejected by the provider); text not published>
-```
-
-#### B-structured.py
-
-```python
-# IR: {"sets":{"T":[1,2,3,4,5,6]},"params":{"demand":"params['demand']: six-element sequence ordered Jan-Jun","regular_capacity":"params['regular_capacity']","regular_cost":"params['regular_cost']","overtime_capacity":"params['overtime_capacity']","overtime_cost":"params['overtime_cost']","holding_cost":"params['holding_cost']","initial_inventory":"params['initial_inventory']"},"variables":{"regular[t]":"nonnegative integer","overtime[t]":"nonnegative integer","inventory[t]":"nonnegative integer, end-of-month stock"},"constraints":["regular[t] <= regular_capacity for t in T","overtime[t] <= overtime_capacity for t in T","inventory[t] = (initial_inventory if t=1 else inventory[t-1]) + regular[t] + overtime[t] - demand[t] for t in T"],"objective":"minimize sum(regular_cost*regular[t] + overtime_cost*overtime[t] + holding_cost*inventory[t] for t in T)"}
-
-import pyomo.environ as pyo
-from pyomo.contrib.appsi.solvers.highs import Highs
-
-
-def solve(params):
-    """Minimize six-month production and inventory costs."""
-    model = pyo.ConcreteModel()
-    model.months = pyo.RangeSet(1, 6)
-
-    model.demand = pyo.Param(
-        model.months,
-        initialize={
-            month: params["demand"][month - 1]
-            for month in range(1, 7)
-        },
-        within=pyo.NonNegativeReals,
-    )
-    model.regular_capacity = pyo.Param(
-        initialize=params["regular_capacity"],
-        within=pyo.NonNegativeReals,
-    )
-    model.regular_cost = pyo.Param(
-        initialize=params["regular_cost"],
-        within=pyo.NonNegativeReals,
-    )
-    model.overtime_capacity = pyo.Param(
-        initialize=params["overtime_capacity"],
-        within=pyo.NonNegativeReals,
-    )
-    model.overtime_cost = pyo.Param(
-        initialize=params["overtime_cost"],
-        within=pyo.NonNegativeReals,
-    )
-    model.holding_cost = pyo.Param(
-        initialize=params["holding_cost"],
-        within=pyo.NonNegativeReals,
-    )
-    model.initial_inventory = pyo.Param(
-        initialize=params["initial_inventory"],
-        within=pyo.NonNegativeReals,
-    )
-
-    model.regular = pyo.Var(model.months, domain=pyo.NonNegativeIntegers)
-    model.overtime = pyo.Var(model.months, domain=pyo.NonNegativeIntegers)
-    model.inventory = pyo.Var(model.months, domain=pyo.NonNegativeIntegers)
-
-    def regular_capacity_rule(model, month):
-        return model.regular[month] <= model.regular_capacity
-
-    model.regular_capacity_limit = pyo.Constraint(
-        model.months, rule=regular_capacity_rule
-    )
-
-    def overtime_capacity_rule(model, month):
-        return model.overtime[month] <= model.overtime_capacity
-
-    model.overtime_capacity_limit = pyo.Constraint(
-        model.months, rule=overtime_capacity_rule
-    )
-
-    def inventory_balance_rule(model, month):
-        beginning_inventory = (
-            model.initial_inventory
-            if month == 1
-            else model.inventory[month - 1]
-        )
-        return model.inventory[month] == (
-            beginning_inventory
-            + model.regular[month]
-            + model.overtime[month]
-            - model.demand[month]
-        )
-
-    model.inventory_balance = pyo.Constraint(
-        model.months, rule=inventory_balance_rule
-    )
-
-    model.total_cost = pyo.Objective(
-        expr=sum(
-            model.regular_cost * model.regular[month]
-            + model.overtime_cost * model.overtime[month]
-            + model.holding_cost * model.inventory[month]
-            for month in model.months
-        ),
-        sense=pyo.minimize,
-    )
-
-    try:
-        Highs().solve(model)
-    except RuntimeError:
-        return {"objective": None, "status": "solve_failed"}
-
-    try:
-        obj_val = float(pyo.value(model.total_cost))
-    except ValueError:
-        return {"objective": None, "status": "objective_unavailable"}
-
-    return {"objective": obj_val, "status": "optimal"}
-```
-
-#### C-direct.py
-
-```python
-import gurobipy as gp
-from gurobipy import GRB
-
-def solve(params):
-    demand = params["demand"]                          # list of 6 monthly demands
-    regular_capacity = params["regular_capacity"]      # scalar or list
-    regular_cost = params["regular_cost"]              # cost per wrench (regular)
-    overtime_capacity = params["overtime_capacity"]    # scalar or list
-    overtime_cost = params["overtime_cost"]            # cost per wrench (overtime)
-    holding_cost = params["holding_cost"]              # cost per wrench per month
-    initial_inventory = params["initial_inventory"]    # inventory at start of Jan
-
-    T = 6  # number of months (Jan–Jun)
-    months = range(T)
-
-    # Normalize capacities to lists if scalar
-    if not hasattr(regular_capacity, '__len__'):
-        reg_cap = [regular_capacity] * T
-    else:
-        reg_cap = list(regular_capacity)
-
-    if not hasattr(overtime_capacity, '__len__'):
-        ot_cap = [overtime_capacity] * T
-    else:
-        ot_cap = list(overtime_capacity)
-
-    demand_list = list(demand)
-
-    model = gp.Model("BTD_production")
-    model.setParam("OutputFlag", 0)
-
-    # Decision variables
-    # r[t]: regular-time production in month t
-    r = model.addVars(T, lb=0.0, name="r")
-    # o[t]: overtime production in month t
-    o = model.addVars(T, lb=0.0, name="o")
-    # inv[t]: inventory at END of month t (after satisfying demand)
-    inv = model.addVars(T, lb=0.0, name="inv")
-
-    # Capacity constraints
-    for t in months:
-        model.addConstr(r[t] <= reg_cap[t], name=f"reg_cap_{t}")
-        model.addConstr(o[t] <= ot_cap[t], name=f"ot_cap_{t}")
-
-    # Inventory balance constraints
-    # inv[t] = inv[t-1] + r[t] + o[t] - demand[t]
-    for t in months:
-        prev_inv = initial_inventory if t == 0 else inv[t - 1]
-        model.addConstr(
-            inv[t] == prev_inv + r[t] + o[t] - demand_list[t],
-            name=f"inv_balance_{t}"
-        )
-
-    # Objective: minimize total cost
-    total_cost = (
-        gp.quicksum(regular_cost * r[t] + overtime_cost * o[t] for t in months)
-        + gp.quicksum(holding_cost * inv[t] for t in months)
-    )
-    model.setObjective(total_cost, GRB.MINIMIZE)
-
-    model.optimize()
-
-    if model.Status == GRB.OPTIMAL:
-        return {"objective": round(model.ObjVal), "status": "optimal"}
-    elif model.Status == GRB.INFEASIBLE:
-        return {"objective": None, "status": "infeasible"}
-    elif model.Status == GRB.UNBOUNDED:
-        return {"objective": None, "status": "unbounded"}
-    else:
-        return {"objective": None, "status": f"status_{model.Status}"}
-```
-
-### 5. Values on the stated and resampled instances
-
-#### param_screen
-
-Decision: ACCEPT; clique B-structured, C-direct; informative instances [0, 1, 2, 3, 4, 5]. Instance 0 is the stated instance.
-
-| Instance | A-direct | B-structured | C-direct |
-|---|---|---|---|
-| 0 (stated) | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 106380.0 (optimal) | 106380.0 (optimal) |
-| 1 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 76939.65772980922 (optimal) | 76940.0 (optimal) |
-| 2 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 80902.14168744763 (optimal) | 80902.0 (optimal) |
-| 3 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 94472.3119530211 (optimal) | 94472.0 (optimal) |
-| 4 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 78910.40503193684 (optimal) | 78910.0 (optimal) |
-| 5 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 92783.75549735372 (optimal) | 92784.0 (optimal) |
-
-#### independent
-
-Decision: UNINFORMATIVE; clique none; informative instances [0]. Instance 0 is the stated instance.
-
-| Instance | A-direct | B-structured | C-direct |
-|---|---|---|---|
-| 0 (stated) | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | 106380.0 (optimal) | 106380.0 (optimal) |
-| 1 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | none (solve_failed) | 78500.0 (optimal) |
-| 2 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | none (solve_failed) | 73457.0 (optimal) |
-| 3 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | none (solve_failed) | 113947.0 (optimal) |
-| 4 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | none (solve_failed) | none (infeasible) |
-| 5 | none (crash:[req_ba8e0f55] [deepseek-v4-flash-0731] \| ^ \| SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers) | none (solve_failed) | 106379.0 (optimal) |
-
-### 6. Data-verification replies
-
-#### Family A (DeepSeek-V4-Flash)
-
-Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
-
-```json
-{"mismatch": [], "not_stated": []}
-```
-
-#### Family B (GPT-6.1 Sol)
-
-Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
-
-```json
-{"mismatch":[],"not_stated":[]}
-```
-
-#### Family C (Claude Sonnet 5.5)
-
-Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any False.
-
-````json
-```json
-{"mismatch": [], "not_stated": []}
-```
-````
-
-
-## 21. mamo_complex_80 (Mamo ComplexLP)
+## 20. mamo_complex_80 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -8938,7 +8651,7 @@ The `supplies` and `demands` values match the statement exactly.
 ````
 
 
-## 22. mamo_complex_94 (Mamo ComplexLP)
+## 21. mamo_complex_94 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -9166,7 +8879,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 23. mamo_complex_100 (Mamo ComplexLP)
+## 22. mamo_complex_100 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -9497,7 +9210,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 24. mamo_complex_125 (Mamo ComplexLP)
+## 23. mamo_complex_125 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -9891,7 +9604,7 @@ All values match exactly.
 ````
 
 
-## 25. mamo_complex_163 (Mamo ComplexLP)
+## 24. mamo_complex_163 (Mamo ComplexLP)
 
 ### 1. Identification
 
@@ -10237,7 +9950,7 @@ Status ok; attempts 1; flag_mismatch False; flag_not_stated False; flag_any Fals
 ```
 
 
-## 26. mamo_complex_205 (Mamo ComplexLP)
+## 25. mamo_complex_205 (Mamo ComplexLP)
 
 ### 1. Identification
 

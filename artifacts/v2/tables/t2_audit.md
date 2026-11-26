@@ -5,7 +5,7 @@ Table 2. Audit of the panel_base_3of3 label misses by class (classes assigned by
 | stream (OptMATH-295) | round_aware | panel_base_3of3 | 243 | 35 | 20 | 9 | 3 | 2 | 0 | 1 | 0 | 0 |
 | stream (OptMATH-295) | round_aware | after check (B or C) | 201 | 14 | 0 | 9 | 3 | 2 | 0 | 0 | 0 | 0 |
 | stream (OptMATH-295) | round_aware | after check (B and C) | 217 | 15 | 0 | 9 | 3 | 2 | 0 | 1 | 0 | 0 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 | 167 | 18 | 6 | 7 | 5 | 0 | 0 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 | 168 | 19 | 7 | 7 | 5 | 0 | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | after check (B or C) | 146 | 11 | 0 | 7 | 4 | 0 | 0 | 0 | 0 | 0 |
 | confirm (OptMATH-200) | round_aware | after check (B and C) | 157 | 12 | 0 | 7 | 5 | 0 | 0 | 0 | 0 | 0 |
 | calibration (NANO-CO-150) | label_match | panel_base_3of3 | 106 | 3 | 0 | 0 | 0 | 2 | 0 | 1 | 0 | 0 |
@@ -30,7 +30,6 @@ Table 2b. Label misses of panel_base_2of3 that are not label misses of panel_bas
 | stream (OptMATH-295) | round_aware | sample_243 | 0.013513534831648254 | 0.012070001450990001 |
 | stream (OptMATH-295) | round_aware | sample_290 | 811608.0 | 800200.0 |
 | confirm (OptMATH-200) | round_aware | conf_16675 | 1235.5699207670264 | 2347.1979356914976 |
-| confirm (OptMATH-200) | round_aware | conf_66014 | 11250495.529411767 | 11417460.619134724 |
 | confirm (OptMATH-200) | round_aware | conf_120613 | 1844.0 | 1819.0 |
 | calibration (NANO-CO-150) | label_match | e3_JSSP_93 | 116.999999 | 132 |
 | calibration (NANO-CO-150) | label_match | e3_CPP_easy_51 | 1536.0 | 898 |

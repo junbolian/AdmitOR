@@ -8,17 +8,17 @@ Table h5. Certificates against the expert audit of Xiao et al. (2025) (cleaned I
 | IndustryOR | panel_base_3of3 + check (B or C) | removed | 11 | 1 | 10 |  |
 | IndustryOR | panel_base_3of3 + check (B or C) | kept, same label | 28 | 24 | 4 |  |
 | IndustryOR | panel_base_3of3 + check (B or C) | kept, label changed | 1 | 0 | 1 | 0 |
-| Mamo ComplexLP | panel_base_3of3 | removed | 63 | 21 | 42 |  |
-| Mamo ComplexLP | panel_base_3of3 | kept, same label | 95 | 65 | 30 |  |
+| Mamo ComplexLP | panel_base_3of3 | removed | 64 | 21 | 43 |  |
+| Mamo ComplexLP | panel_base_3of3 | kept, same label | 97 | 67 | 30 |  |
 | Mamo ComplexLP | panel_base_3of3 | kept, label changed | 0 | 0 | 0 | 0 |
-| Mamo ComplexLP | panel_base_3of3 + check (B or C) | removed | 41 | 16 | 25 |  |
-| Mamo ComplexLP | panel_base_3of3 + check (B or C) | kept, same label | 85 | 55 | 30 |  |
+| Mamo ComplexLP | panel_base_3of3 + check (B or C) | removed | 42 | 16 | 26 |  |
+| Mamo ComplexLP | panel_base_3of3 + check (B or C) | kept, same label | 87 | 57 | 30 |  |
 | Mamo ComplexLP | panel_base_3of3 + check (B or C) | kept, label changed | 0 | 0 | 0 | 0 |
-| pooled | panel_base_3of3 | removed | 78 | 23 | 55 |  |
-| pooled | panel_base_3of3 | kept, same label | 125 | 90 | 35 |  |
+| pooled | panel_base_3of3 | removed | 79 | 23 | 56 |  |
+| pooled | panel_base_3of3 | kept, same label | 127 | 92 | 35 |  |
 | pooled | panel_base_3of3 | kept, label changed | 1 | 0 | 1 | 0 |
-| pooled | panel_base_3of3 + check (B or C) | removed | 52 | 17 | 35 |  |
-| pooled | panel_base_3of3 + check (B or C) | kept, same label | 113 | 79 | 34 |  |
+| pooled | panel_base_3of3 + check (B or C) | removed | 53 | 17 | 36 |  |
+| pooled | panel_base_3of3 + check (B or C) | kept, same label | 115 | 81 | 34 |  |
 | pooled | panel_base_3of3 + check (B or C) | kept, label changed | 1 | 0 | 1 | 0 |
 
 Expert status of all problems:
