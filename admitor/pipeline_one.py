@@ -55,7 +55,7 @@ from dataclasses import asdict
 
 from admitor.consensus import base_params, run_l3
 from admitor.generate import gen_candidate, make_candidate
-from admitor.ir_extract import extract_spec
+from admitor.ir_extract import extract_spec, extract_spec_with_retry
 
 PROMO_Q = (
     "A warehouse has 150 boxes of a promo product for 3 stores; "
@@ -130,6 +130,7 @@ def live_run(question: str):
         "C": os.environ.get("ADMITOR_MODEL_C", "claude-sonnet-4-6"),
     }
     usage_log = os.environ.get("ADMITOR_USAGE_LOG")
+    last_finish = {}  # finish_reason of the last reply per family
 
     def call(fam, max_tokens=3000):
         def f(prompt):
@@ -149,6 +150,7 @@ def live_run(question: str):
                                          "response_model": getattr(r, "model", None),
                                          "max_tokens": max_tokens, "usage": u,
                                          "seconds": round(time.time() - t0, 2)}) + "\n")
+            last_finish[fam] = getattr(r.choices[0], "finish_reason", None)
             return r.choices[0].message.content or ""
 
         return f
@@ -156,7 +158,10 @@ def live_run(question: str):
     # Extraction must emit every base value (matrices included); 3000 tokens
     # truncates large-instance specs mid-JSON. Candidates stay at 3000 --
     # their code reads values from params and stays small.
-    spec = extract_spec(question, call("A", max_tokens=8192))
+    # A reply that cannot be turned into a parameter set (not JSON, no "params",
+    # cut off by the length limit) is requested again, identically, up to three
+    # attempts in total (extract_spec_with_retry); the attempts travel in the spec.
+    spec = extract_spec_with_retry(question, call("A", max_tokens=8192), finish_reason=lambda: last_finish.get("A"))
     probe = base_params(spec["spec"])
     pd = "\n".join(f"  {k}: {v.get('meaning', '')}" for k, v in spec["raw"]["params"].items())
     plan = [

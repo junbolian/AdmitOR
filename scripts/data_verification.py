@@ -6,8 +6,10 @@ Purpose
     problem text and the extracted parameter set (name | meaning | base value), and store the reply.
     A family reports, per parameter, a `mismatch` (the text gives another value, order or entity) and
     `not_stated` (the text does not give the value). The stored record carries `flag_mismatch`,
-    `flag_not_stated` and `flag_any`; an unparsed reply has status "unparsed" and no flags, an API
-    failure has status "api_error". The certificate rule "B or C" withdraws a certificate when family
+    `flag_not_stated` and `flag_any`. A reply that cannot be parsed into the two lists is requested again
+    with the identical prompt, model and settings, up to three attempts in total (recorded in "attempts");
+    only if all three fail does the record keep status "unparsed" and no flags. An API failure has status
+    "api_error". The certificate rule "B or C" withdraws a certificate when family
     B or family C raises flag_any.
 
 Inputs
@@ -26,10 +28,11 @@ Outputs
     <out>/<problem id>/verification_<X>.json   one record per problem and family
     <out>/usage.jsonl                          token usage per request
     A problem and family whose record already has status "ok" or "unparsed" is skipped, so a run
-    can be resumed.
+    can be resumed; with --retry-unparsed a stored "unparsed" record with fewer than three attempts is
+    requested again (the stored reply counts as attempt 1).
 
 Usage (from the repository root)
-    python scripts/data_verification.py --runs <runs dir> --work-order <work order> --out <dir>
+    python scripts/data_verification.py --runs <runs dir> --work-order <problem file> --out <dir>
 """
 import argparse
 import json
@@ -82,13 +85,27 @@ def parse(text):
     return None, None
 
 
-def done(path):
+ATTEMPTS = 3  # a reply that cannot be parsed is requested again, identically, up to three attempts in total
+
+
+def stored(path):
     if not os.path.isfile(path):
-        return False
+        return None
     try:
-        return json.load(open(path, encoding="utf-8")).get("status") in ("ok", "unparsed")
+        return json.load(open(path, encoding="utf-8"))
     except ValueError:
+        return None
+
+
+def done(path, retry_unparsed=False):
+    r = stored(path)
+    if r is None:
         return False
+    if r.get("status") == "ok":
+        return True
+    if r.get("status") == "unparsed":
+        return not retry_unparsed or len(r.get("attempts") or [{}]) >= ATTEMPTS
+    return False
 
 
 def main():
@@ -99,6 +116,8 @@ def main():
     ap.add_argument("--families", default="ABC")
     ap.add_argument("--only", default="")
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--retry-unparsed", action="store_true",
+                    help="request again a stored reply with status unparsed (the stored reply counts as attempt 1)")
     a = ap.parse_args()
     fams = [f for f in a.families if f in "ABC"]
     for f in fams:
@@ -121,47 +140,66 @@ def main():
         ids = [s for s in ids if s in keep]
     missing = [s for s in ids if s not in q]
     if missing:
-        sys.exit("data_verification.py: %d problems have no question in the work order, e.g. %s" % (len(missing), missing[0]))
+        sys.exit("data_verification.py: %d problems have no question in the problem file, e.g. %s" % (len(missing), missing[0]))
     os.makedirs(a.out, exist_ok=True)
     usage = os.path.join(a.out, "usage.jsonl")
     lock = threading.Lock()
 
-    def task(sid, fam):
-        path = os.path.join(a.out, sid, "verification_%s.json" % fam)
-        if done(path):
-            return
-        prompt = PROMPT % (q[sid], parameters(os.path.join(a.runs, sid)))
-        kw = {"extra_body": extra[fam]} if extra[fam] else {}
-        r, err = None, None
+    def request(fam, prompt, kw):
+        r, err, t0 = None, None, time.time()
         for wait in (0, 5, 15, 30, 60, 120):
             time.sleep(wait)
             try:
                 t0 = time.time()
                 r = clients[fam].chat.completions.create(model=models[fam], temperature=0, max_tokens=8192,
                                                          messages=[{"role": "user", "content": prompt}], **kw)
-                break
+                return r, None, t0
             except Exception as e:  # retried, then recorded as api_error, never as a flag
                 err = "%s: %s" % (type(e).__name__, str(e)[:300])
-                r = None
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        if r is None:
-            json.dump({"sample_id": sid, "family": fam, "model": models[fam], "status": "api_error", "error": err},
-                      open(path, "w", encoding="utf-8"), indent=1)
+        return None, err, t0
+
+    def task(sid, fam):
+        path = os.path.join(a.out, sid, "verification_%s.json" % fam)
+        if done(path, a.retry_unparsed):
             return
-        u = r.usage.model_dump() if getattr(r, "usage", None) else {}
-        reply = r.choices[0].message.content or ""
-        with lock:
-            with open(usage, "a", encoding="utf-8") as fh:
-                fh.write(json.dumps({"sample_id": sid, "family": fam, "requested": models[fam],
-                                     "response_model": getattr(r, "model", None), "usage": u,
-                                     "seconds": round(time.time() - t0, 2)}) + "\n")
-        d, miss = parse(reply)
-        rec = {"sample_id": sid, "family": fam, "model": models[fam], "response_model": getattr(r, "model", None),
-               "finish_reason": r.choices[0].finish_reason, "status": "ok" if d is not None else "unparsed", "reply": reply}
-        if d is not None:
-            rec.update(mismatch=d.get("mismatch", []), not_stated=d.get("not_stated", []), missing_keys=miss,
-                       flag_mismatch=bool(d.get("mismatch")), flag_not_stated=bool(d.get("not_stated")))
-            rec["flag_any"] = rec["flag_mismatch"] or rec["flag_not_stated"]
+        prev = stored(path)
+        attempts = []
+        if prev and prev.get("status") == "unparsed":  # a stored unparsed reply counts as an attempt
+            attempts = prev.get("attempts") or [{"attempt": 1, "status": "unparsed",
+                                                 "finish_reason": prev.get("finish_reason"), "reply": prev.get("reply", "")}]
+        prompt = PROMPT % (q[sid], parameters(os.path.join(a.runs, sid)))
+        kw = {"extra_body": extra[fam]} if extra[fam] else {}
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        rec = None
+        while len(attempts) < ATTEMPTS:
+            r, err, t0 = request(fam, prompt, kw)
+            if r is None:
+                json.dump({"sample_id": sid, "family": fam, "model": models[fam], "status": "api_error", "error": err,
+                           "attempts": attempts}, open(path, "w", encoding="utf-8"), indent=1)
+                return
+            u = r.usage.model_dump() if getattr(r, "usage", None) else {}
+            reply = r.choices[0].message.content or ""
+            with lock:
+                with open(usage, "a", encoding="utf-8") as fh:
+                    fh.write(json.dumps({"sample_id": sid, "family": fam, "requested": models[fam],
+                                         "response_model": getattr(r, "model", None), "usage": u,
+                                         "seconds": round(time.time() - t0, 2)}) + "\n")
+            d, miss = parse(reply)
+            att = {"attempt": len(attempts) + 1, "status": "ok" if d is not None else "unparsed",
+                   "finish_reason": r.choices[0].finish_reason}
+            if d is None:
+                att["reply"] = reply
+            attempts.append(att)
+            rec = {"sample_id": sid, "family": fam, "model": models[fam], "response_model": getattr(r, "model", None),
+                   "finish_reason": r.choices[0].finish_reason, "status": "ok" if d is not None else "unparsed", "reply": reply}
+            if d is not None:
+                rec.update(mismatch=d.get("mismatch", []), not_stated=d.get("not_stated", []), missing_keys=miss,
+                           flag_mismatch=bool(d.get("mismatch")), flag_not_stated=bool(d.get("not_stated")))
+                rec["flag_any"] = rec["flag_mismatch"] or rec["flag_not_stated"]
+                break
+        if rec is None:  # all attempts were stored before; nothing to request
+            return
+        rec["attempts"] = attempts
         json.dump(rec, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
     pools = {f: ThreadPoolExecutor(max_workers=a.workers) for f in fams}

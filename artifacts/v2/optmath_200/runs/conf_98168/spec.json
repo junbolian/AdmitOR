@@ -1,0 +1,338 @@
+{
+ "spec": {
+  "cost_peak0_aa0": {
+   "base": 0.3937,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak0_aa1": {
+   "base": 0.5281,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak0_aa2": {
+   "base": 0.3576,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak0_aa3": {
+   "base": 0.6205,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak0_aa4": {
+   "base": 0.4862,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak1_aa0": {
+   "base": 0.485,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak1_aa1": {
+   "base": 0.3448,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak1_aa2": {
+   "base": 0.314,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak1_aa3": {
+   "base": 0.444,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak1_aa4": {
+   "base": 0.5405,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak2_aa0": {
+   "base": 0.4381,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak2_aa1": {
+   "base": 0.5484,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak2_aa2": {
+   "base": 0.3229,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak2_aa3": {
+   "base": 0.586,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak2_aa4": {
+   "base": 0.6011,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak3_aa0": {
+   "base": 0.3749,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak3_aa1": {
+   "base": 0.6115,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak3_aa2": {
+   "base": 0.5365,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak3_aa3": {
+   "base": 0.6425,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_peak3_aa4": {
+   "base": 0.688,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_assignments_required": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_assignments_required] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_peak0_aa0": {
+    "meaning": "cost of assigning Peak 0 to Amino Acid 0",
+    "base": 0.3937,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak0_aa1": {
+    "meaning": "cost of assigning Peak 0 to Amino Acid 1",
+    "base": 0.5281,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak0_aa2": {
+    "meaning": "cost of assigning Peak 0 to Amino Acid 2",
+    "base": 0.3576,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak0_aa3": {
+    "meaning": "cost of assigning Peak 0 to Amino Acid 3",
+    "base": 0.6205,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak0_aa4": {
+    "meaning": "cost of assigning Peak 0 to Amino Acid 4",
+    "base": 0.4862,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak1_aa0": {
+    "meaning": "cost of assigning Peak 1 to Amino Acid 0",
+    "base": 0.485,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak1_aa1": {
+    "meaning": "cost of assigning Peak 1 to Amino Acid 1",
+    "base": 0.3448,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak1_aa2": {
+    "meaning": "cost of assigning Peak 1 to Amino Acid 2",
+    "base": 0.314,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak1_aa3": {
+    "meaning": "cost of assigning Peak 1 to Amino Acid 3",
+    "base": 0.444,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak1_aa4": {
+    "meaning": "cost of assigning Peak 1 to Amino Acid 4",
+    "base": 0.5405,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak2_aa0": {
+    "meaning": "cost of assigning Peak 2 to Amino Acid 0",
+    "base": 0.4381,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak2_aa1": {
+    "meaning": "cost of assigning Peak 2 to Amino Acid 1",
+    "base": 0.5484,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak2_aa2": {
+    "meaning": "cost of assigning Peak 2 to Amino Acid 2",
+    "base": 0.3229,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak2_aa3": {
+    "meaning": "cost of assigning Peak 2 to Amino Acid 3",
+    "base": 0.586,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak2_aa4": {
+    "meaning": "cost of assigning Peak 2 to Amino Acid 4",
+    "base": 0.6011,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak3_aa0": {
+    "meaning": "cost of assigning Peak 3 to Amino Acid 0",
+    "base": 0.3749,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak3_aa1": {
+    "meaning": "cost of assigning Peak 3 to Amino Acid 1",
+    "base": 0.6115,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak3_aa2": {
+    "meaning": "cost of assigning Peak 3 to Amino Acid 2",
+    "base": 0.5365,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak3_aa3": {
+    "meaning": "cost of assigning Peak 3 to Amino Acid 3",
+    "base": 0.6425,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_peak3_aa4": {
+    "meaning": "cost of assigning Peak 3 to Amino Acid 4",
+    "base": 0.688,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_assignments_required": {
+    "meaning": "exact total number of assignments to make",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

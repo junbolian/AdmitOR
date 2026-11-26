@@ -1,0 +1,37 @@
+{
+ "alive": [
+  "B-structured",
+  "B-structured-2",
+  "C-direct"
+ ],
+ "testable": [
+  "supply_demand",
+  "cost_matrix",
+  "capacity_matrix",
+  "num_cities"
+ ],
+ "safe": [
+  "cost_matrix",
+  "capacity_matrix",
+  "num_cities"
+ ],
+ "tests": {
+  "supply_demand": [
+   0,
+   0
+  ],
+  "cost_matrix": [
+   3,
+   3
+  ],
+  "capacity_matrix": [
+   3,
+   3
+  ],
+  "num_cities": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

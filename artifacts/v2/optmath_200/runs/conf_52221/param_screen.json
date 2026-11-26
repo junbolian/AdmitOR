@@ -1,0 +1,43 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "producer_capacity",
+  "contract_demand",
+  "min_producers_per_contract",
+  "unit_cost",
+  "min_delivery_if_assigned"
+ ],
+ "safe": [
+  "producer_capacity",
+  "contract_demand",
+  "unit_cost",
+  "min_delivery_if_assigned"
+ ],
+ "tests": {
+  "producer_capacity": [
+   3,
+   3
+  ],
+  "contract_demand": [
+   3,
+   3
+  ],
+  "min_producers_per_contract": [
+   0,
+   0
+  ],
+  "unit_cost": [
+   3,
+   3
+  ],
+  "min_delivery_if_assigned": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

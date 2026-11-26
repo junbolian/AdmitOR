@@ -2,36 +2,36 @@ Table 1. Certification rules. Rulers: OptMATH sets (stream, confirm) `round_awar
 
 | set | ruler | rule | problems | certificates | coverage | coverage_se | label_matches | label_misses | precision | precision_se |
 |---|---|---|---|---|---|---|---|---|---|---|
-| stream (OptMATH-295) | round_aware | single_A | 295 | 264 | 0.8949 | 0.0179 | 213 | 51 | 0.8068 | 0.0243 |
-| stream (OptMATH-295) | round_aware | single_B | 295 | 271 | 0.9186 | 0.0159 | 227 | 44 | 0.8376 | 0.0224 |
-| stream (OptMATH-295) | round_aware | single_C | 295 | 284 | 0.9627 | 0.0110 | 226 | 58 | 0.7958 | 0.0239 |
-| stream (OptMATH-295) | round_aware | panel_base_2of3 | 295 | 272 | 0.9220 | 0.0156 | 227 | 45 | 0.8346 | 0.0225 |
-| stream (OptMATH-295) | round_aware | panel_base_3of3 | 295 | 242 | 0.8203 | 0.0224 | 207 | 35 | 0.8554 | 0.0226 |
-| stream (OptMATH-295) | round_aware | gate | 295 | 260 | 0.8814 | 0.0188 | 218 | 42 | 0.8385 | 0.0228 |
-| stream (OptMATH-295) | round_aware | gate_3fam | 295 | 226 | 0.7661 | 0.0246 | 196 | 30 | 0.8673 | 0.0226 |
-| stream (OptMATH-295) | round_aware | gate_tau | 295 | 223 | 0.7559 | 0.0250 | 193 | 30 | 0.8655 | 0.0228 |
+| stream (OptMATH-295) | round_aware | single_A | 295 | 265 | 0.8983 | 0.0176 | 214 | 51 | 0.8075 | 0.0242 |
+| stream (OptMATH-295) | round_aware | single_B | 295 | 272 | 0.9220 | 0.0156 | 228 | 44 | 0.8382 | 0.0223 |
+| stream (OptMATH-295) | round_aware | single_C | 295 | 285 | 0.9661 | 0.0105 | 227 | 58 | 0.7965 | 0.0238 |
+| stream (OptMATH-295) | round_aware | panel_base_2of3 | 295 | 273 | 0.9254 | 0.0153 | 228 | 45 | 0.8352 | 0.0225 |
+| stream (OptMATH-295) | round_aware | panel_base_3of3 | 295 | 243 | 0.8237 | 0.0222 | 208 | 35 | 0.8560 | 0.0225 |
+| stream (OptMATH-295) | round_aware | gate | 295 | 261 | 0.8847 | 0.0186 | 219 | 42 | 0.8391 | 0.0227 |
+| stream (OptMATH-295) | round_aware | gate_3fam | 295 | 227 | 0.7695 | 0.0245 | 197 | 30 | 0.8678 | 0.0225 |
+| stream (OptMATH-295) | round_aware | gate_tau | 295 | 224 | 0.7593 | 0.0249 | 194 | 30 | 0.8661 | 0.0228 |
 | stream (OptMATH-295) | round_aware | ind_gate | 295 | 212 | 0.7186 | 0.0262 | 174 | 38 | 0.8208 | 0.0263 |
 | stream (OptMATH-295) | round_aware | ind_gate_3fam | 295 | 179 | 0.6068 | 0.0284 | 153 | 26 | 0.8547 | 0.0263 |
 | stream (OptMATH-295) | round_aware | ind_gate_tau | 295 | 174 | 0.5898 | 0.0286 | 148 | 26 | 0.8506 | 0.0270 |
 | stream (OptMATH-295) | round_aware | panel_base_3of3 + check (B or C) | 295 | 201 | 0.6814 | 0.0271 | 187 | 14 | 0.9303 | 0.0180 |
-| stream (OptMATH-295) | round_aware | panel_base_3of3 + check (B and C) | 295 | 216 | 0.7322 | 0.0258 | 201 | 15 | 0.9306 | 0.0173 |
+| stream (OptMATH-295) | round_aware | panel_base_3of3 + check (B and C) | 295 | 217 | 0.7356 | 0.0257 | 202 | 15 | 0.9309 | 0.0172 |
 | stream (OptMATH-295) | round_aware | panel_base_2of3 + check (B or C) | 295 | 223 | 0.7559 | 0.0250 | 204 | 19 | 0.9148 | 0.0187 |
-| stream (OptMATH-295) | round_aware | panel_base_2of3 + check (B and C) | 295 | 241 | 0.8169 | 0.0225 | 221 | 20 | 0.9170 | 0.0178 |
-| confirm (OptMATH-200) | round_aware | single_A | 200 | 173 | 0.8650 | 0.0242 | 148 | 25 | 0.8555 | 0.0267 |
-| confirm (OptMATH-200) | round_aware | single_B | 200 | 185 | 0.9250 | 0.0186 | 162 | 23 | 0.8757 | 0.0243 |
-| confirm (OptMATH-200) | round_aware | single_C | 200 | 187 | 0.9350 | 0.0174 | 159 | 28 | 0.8503 | 0.0261 |
-| confirm (OptMATH-200) | round_aware | panel_base_2of3 | 200 | 180 | 0.9000 | 0.0212 | 159 | 21 | 0.8833 | 0.0239 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 | 200 | 163 | 0.8150 | 0.0275 | 145 | 18 | 0.8896 | 0.0245 |
-| confirm (OptMATH-200) | round_aware | gate | 200 | 175 | 0.8750 | 0.0234 | 155 | 20 | 0.8857 | 0.0241 |
-| confirm (OptMATH-200) | round_aware | gate_3fam | 200 | 157 | 0.7850 | 0.0290 | 141 | 16 | 0.8981 | 0.0241 |
-| confirm (OptMATH-200) | round_aware | gate_tau | 200 | 155 | 0.7750 | 0.0295 | 139 | 16 | 0.8968 | 0.0244 |
-| confirm (OptMATH-200) | round_aware | ind_gate | 200 | 145 | 0.7250 | 0.0316 | 127 | 18 | 0.8759 | 0.0274 |
-| confirm (OptMATH-200) | round_aware | ind_gate_3fam | 200 | 128 | 0.6400 | 0.0339 | 114 | 14 | 0.8906 | 0.0276 |
-| confirm (OptMATH-200) | round_aware | ind_gate_tau | 200 | 124 | 0.6200 | 0.0343 | 110 | 14 | 0.8871 | 0.0284 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | 200 | 143 | 0.7150 | 0.0319 | 131 | 12 | 0.9161 | 0.0232 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B and C) | 200 | 153 | 0.7650 | 0.0300 | 141 | 12 | 0.9216 | 0.0217 |
-| confirm (OptMATH-200) | round_aware | panel_base_2of3 + check (B or C) | 200 | 153 | 0.7650 | 0.0300 | 141 | 12 | 0.9216 | 0.0217 |
-| confirm (OptMATH-200) | round_aware | panel_base_2of3 + check (B and C) | 200 | 168 | 0.8400 | 0.0259 | 155 | 13 | 0.9226 | 0.0206 |
+| stream (OptMATH-295) | round_aware | panel_base_2of3 + check (B and C) | 295 | 242 | 0.8203 | 0.0224 | 222 | 20 | 0.9174 | 0.0177 |
+| confirm (OptMATH-200) | round_aware | single_A | 200 | 177 | 0.8850 | 0.0226 | 152 | 25 | 0.8588 | 0.0262 |
+| confirm (OptMATH-200) | round_aware | single_B | 200 | 189 | 0.9450 | 0.0161 | 166 | 23 | 0.8783 | 0.0238 |
+| confirm (OptMATH-200) | round_aware | single_C | 200 | 191 | 0.9550 | 0.0147 | 163 | 28 | 0.8534 | 0.0256 |
+| confirm (OptMATH-200) | round_aware | panel_base_2of3 | 200 | 184 | 0.9200 | 0.0192 | 163 | 21 | 0.8859 | 0.0234 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 | 200 | 167 | 0.8350 | 0.0262 | 149 | 18 | 0.8922 | 0.0240 |
+| confirm (OptMATH-200) | round_aware | gate | 200 | 178 | 0.8900 | 0.0221 | 158 | 20 | 0.8876 | 0.0237 |
+| confirm (OptMATH-200) | round_aware | gate_3fam | 200 | 160 | 0.8000 | 0.0283 | 144 | 16 | 0.9000 | 0.0237 |
+| confirm (OptMATH-200) | round_aware | gate_tau | 200 | 158 | 0.7900 | 0.0288 | 142 | 16 | 0.8987 | 0.0240 |
+| confirm (OptMATH-200) | round_aware | ind_gate | 200 | 147 | 0.7350 | 0.0312 | 129 | 18 | 0.8776 | 0.0270 |
+| confirm (OptMATH-200) | round_aware | ind_gate_3fam | 200 | 130 | 0.6500 | 0.0337 | 116 | 14 | 0.8923 | 0.0272 |
+| confirm (OptMATH-200) | round_aware | ind_gate_tau | 200 | 125 | 0.6250 | 0.0342 | 111 | 14 | 0.8880 | 0.0282 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B or C) | 200 | 146 | 0.7300 | 0.0314 | 135 | 11 | 0.9247 | 0.0218 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 + check (B and C) | 200 | 157 | 0.7850 | 0.0290 | 145 | 12 | 0.9236 | 0.0212 |
+| confirm (OptMATH-200) | round_aware | panel_base_2of3 + check (B or C) | 200 | 156 | 0.7800 | 0.0293 | 145 | 11 | 0.9295 | 0.0205 |
+| confirm (OptMATH-200) | round_aware | panel_base_2of3 + check (B and C) | 200 | 172 | 0.8600 | 0.0245 | 159 | 13 | 0.9244 | 0.0202 |
 | calibration (NANO-CO-150) | label_match | single_A | 150 | 133 | 0.8867 | 0.0259 | 109 | 24 | 0.8195 | 0.0333 |
 | calibration (NANO-CO-150) | label_match | single_B | 150 | 149 | 0.9933 | 0.0066 | 133 | 16 | 0.8926 | 0.0254 |
 | calibration (NANO-CO-150) | label_match | single_C | 150 | 149 | 0.9933 | 0.0066 | 132 | 17 | 0.8859 | 0.0260 |
@@ -67,5 +67,5 @@ Table 1b. single_A against panel_base_3of3 on label match, restricted to the pro
 
 | set | ruler | both_certify | both_match | single_A_only_match | panel_base_3of3_only_match | neither_match | mcnemar_p_two_sided_exact | certified_by_single_A_not_panel_base_3of3 | of_which_label_misses |
 |---|---|---|---|---|---|---|---|---|---|
-| stream (OptMATH-295) | round_aware | 242 | 207 | 0 | 0 | 35 | 1 | 22 | 16 |
-| confirm (OptMATH-200) | round_aware | 163 | 145 | 0 | 0 | 18 | 1 | 10 | 7 |
+| stream (OptMATH-295) | round_aware | 243 | 208 | 0 | 0 | 35 | 1 | 22 | 16 |
+| confirm (OptMATH-200) | round_aware | 167 | 149 | 0 | 0 | 18 | 1 | 10 | 7 |

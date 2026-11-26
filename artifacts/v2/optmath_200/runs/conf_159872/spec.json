@@ -1,0 +1,395 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    [
+     59,
+     0
+    ],
+    [
+     35,
+     11
+    ],
+    [
+     48,
+     69
+    ],
+    [
+     51,
+     76
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    [
+     22,
+     18
+    ],
+    [
+     43,
+     29
+    ],
+    [
+     43,
+     49
+    ],
+    [
+     36,
+     39
+    ],
+    [
+     49,
+     21
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     [
+      17,
+      13
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      20,
+      18
+     ],
+     [
+      11,
+      18
+     ]
+    ],
+    [
+     [
+      15,
+      17
+     ],
+     [
+      12,
+      18
+     ],
+     [
+      11,
+      19
+     ],
+     [
+      15,
+      15
+     ],
+     [
+      14,
+      15
+     ]
+    ],
+    [
+     [
+      17,
+      12
+     ],
+     [
+      17,
+      14
+     ],
+     [
+      13,
+      13
+     ],
+     [
+      17,
+      14
+     ],
+     [
+      10,
+      17
+     ]
+    ],
+    [
+     [
+      17,
+      18
+     ],
+     [
+      13,
+      11
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      17,
+      15
+     ],
+     [
+      16,
+      14
+     ]
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity": {
+   "base": [
+    [
+     114,
+     132,
+     117,
+     103,
+     150
+    ],
+    [
+     140,
+     55,
+     78,
+     136,
+     110
+    ],
+    [
+     96,
+     132,
+     62,
+     122,
+     51
+    ],
+    [
+     113,
+     50,
+     128,
+     143,
+     56
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "supply of each product at each origin (rows origins 0-3, columns products 0-1)",
+    "base": [
+     [
+      59,
+      0
+     ],
+     [
+      35,
+      11
+     ],
+     [
+      48,
+      69
+     ],
+     [
+      51,
+      76
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "demand for each product at each destination (rows destinations 0-4, columns products 0-1)",
+    "base": [
+     [
+      22,
+      18
+     ],
+     [
+      43,
+      29
+     ],
+     [
+      43,
+      49
+     ],
+     [
+      36,
+      39
+     ],
+     [
+      49,
+      21
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "unit transportation cost from each origin to each destination for each product (origin x destination x product)",
+    "base": [
+     [
+      [
+       17,
+       13
+      ],
+      [
+       14,
+       15
+      ],
+      [
+       20,
+       15
+      ],
+      [
+       20,
+       18
+      ],
+      [
+       11,
+       18
+      ]
+     ],
+     [
+      [
+       15,
+       17
+      ],
+      [
+       12,
+       18
+      ],
+      [
+       11,
+       19
+      ],
+      [
+       15,
+       15
+      ],
+      [
+       14,
+       15
+      ]
+     ],
+     [
+      [
+       17,
+       12
+      ],
+      [
+       17,
+       14
+      ],
+      [
+       13,
+       13
+      ],
+      [
+       17,
+       14
+      ],
+      [
+       10,
+       17
+      ]
+     ],
+     [
+      [
+       17,
+       18
+      ],
+      [
+       13,
+       11
+      ],
+      [
+       18,
+       16
+      ],
+      [
+       17,
+       15
+      ],
+      [
+       16,
+       14
+      ]
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity": {
+    "meaning": "maximum total units (both products combined) from each origin to each destination (origin x destination)",
+    "base": [
+     [
+      114,
+      132,
+      117,
+      103,
+      150
+     ],
+     [
+      140,
+      55,
+      78,
+      136,
+      110
+     ],
+     [
+      96,
+      132,
+      62,
+      122,
+      51
+     ],
+     [
+      113,
+      50,
+      128,
+      143,
+      56
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "failed",
+   "finish_reason": "stop",
+   "error": "ValueError: extractor output not parseable JSON (JSONDecodeError: Expecting value: line 1 column 2 (char 1)); likely truncated -- raise extraction max_tokens"
+  },
+  {
+   "attempt": 2,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

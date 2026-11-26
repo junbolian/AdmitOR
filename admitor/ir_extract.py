@@ -159,6 +159,58 @@ def _num(x):
         return None
 
 
+EXTRACTION_ATTEMPTS = 3
+
+
+class ExtractionFailed(ValueError):
+    """Every extraction attempt failed; `attempts` holds one record per attempt."""
+
+    def __init__(self, attempts):
+        self.attempts = attempts
+        super().__init__(
+            "extraction failed in %d attempts: %s"
+            % (len(attempts), "; ".join("attempt %d: %s" % (a["attempt"], a["error"]) for a in attempts))
+        )
+
+
+def extract_spec_with_retry(question: str, llm_call, finish_reason=None,
+                            attempts: int = EXTRACTION_ATTEMPTS) -> dict:
+    """extract_spec with the retry rule for extraction failures.
+
+    An attempt fails when the reply cannot be turned into a parameter set: it is
+    not valid JSON, it has no "params" object, a parameter has no base value, or
+    it was cut off by the length limit (finish_reason "length", read through
+    `finish_reason()` after the call).
+    A failed attempt is repeated with the identical prompt, model and settings,
+    up to `attempts` attempts in total. The returned spec carries
+    "extraction_attempts", one record per attempt; when every attempt fails,
+    ExtractionFailed is raised with the same records.
+    """
+    log = []
+    for k in range(1, attempts + 1):
+        fr = None
+        try:
+            spec = extract_spec(question, llm_call)
+            fr = finish_reason() if finish_reason else None
+            if fr == "length":
+                raise ValueError("extractor reply cut off by the length limit")
+            if not isinstance((spec.get("raw") or {}).get("params"), dict):
+                raise ValueError("extractor output has no 'params' object")
+            nobase = [n for n, e in spec["spec"].items() if "base" not in e]
+            if nobase:  # the samplers read every parameter's base value, so the set cannot be used
+                raise ValueError("parameter(s) without a base value: %s" % ", ".join(nobase[:10]))
+        except (ValueError, TypeError, AttributeError, KeyError) as err:
+            if fr is None and finish_reason:
+                fr = finish_reason()
+            log.append({"attempt": k, "status": "failed", "finish_reason": fr,
+                        "error": ("%s: %s" % (type(err).__name__, err))[:500]})
+            continue
+        log.append({"attempt": k, "status": "ok", "finish_reason": fr})
+        spec["extraction_attempts"] = log
+        return spec
+    raise ExtractionFailed(log)
+
+
 def extract_spec(question: str, llm_call) -> dict:
     raw = llm_call(EXTRACT_PROMPT.replace("{question}", question))
     try:

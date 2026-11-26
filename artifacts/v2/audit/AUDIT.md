@@ -86,7 +86,7 @@ Every certificate whose value misses the benchmark label was checked against the
 | `conf_59835` | 59835 | 277 | 276.0 | B | three | The linear program of the text has optimum 277. |
 | `conf_77064` | 77064 | 10824 | 10969.0 | B | three | The linear program of the text has optimum 10824. |
 | `conf_89312` | 89312 | 2396 | 2482.0 | B | three | The mixed-integer program of the text has optimum 2396. |
-| `conf_144925` | 144925 | 1953 | 1987.0 | B | three | The mixed-integer program of the text has optimum 1953. |
+| `conf_144925` | 144925 | 1953 | 1987.0 | B | three | The mixed-integer program of the text has optimum 1953. The rule "B or C" withdraws the certificate: family C reports `backlog_penalty` as mismatched, which the text states as given (an over-flag). |
 | `conf_187975` | 187975 | 31277 | 31871.0 | B | three | The linear program of the text has optimum 31277. |
 | `conf_16675` | 16675 | 1235.569921 | 2347.1979356914976 | D | two_only |  |
 | `conf_66014` | 66014 | 11250495.53 | 11417460.619134724 | D | two_only |  |
@@ -135,7 +135,7 @@ Every certificate whose value misses the benchmark label was checked against the
 
 ## Withdrawn label-matching certificates
 
-The 39 three-family certificates whose value matches the label and that the rule "B or C" withdraws (family B or family C raises a flag in the data verification). Flags list the parameters each family reported as mismatched or not stated; the replies are in `runs/<identifier>/verification_<family>.json` of each set.
+The 40 three-family certificates whose value matches the label and that the rule "B or C" withdraws (family B or family C raises a flag in the data verification). Flags list the parameters each family reported as mismatched or not stated; the replies are in `runs/<identifier>/verification_<family>.json` of each set.
 
 | Set | Identifier | Certified | Label | Family B flags | Family C flags | Finding |
 |---|---|---:|---:|---|---|---|
@@ -178,6 +178,7 @@ The 39 three-family certificates whose value matches the label and that the rule
 | NANO-CO-95 | `e3_HCLP_87` | -4341 | -4341 |  | node_demands (not stated) | Over-flag: reply unrelated to the data |
 | OptMATH-200 | `conf_7821` | 3115 | 3115.0 |  | type1_initial_slack (not stated) | Over-flag: reply unrelated to the data |
 | OptMATH-200 | `conf_57581` | 20 | 20.0 |  | coverage_requirement (mismatch) | Over-flag: reply unrelated to the data |
+| OptMATH-295 | `sample_119` | 64384 | 64384.0 |  | borer_downtime_period (mismatch) | Over-flag: stated value reported as different |
 
 Summary of findings:
 
@@ -189,4 +190,5 @@ Summary of findings:
 | Over-flag: constant implied by the text | 8 |
 | Over-flag: diagonal of a matrix | 7 |
 | Over-flag: reply unrelated to the data | 4 |
+| Over-flag: stated value reported as different | 1 |
 

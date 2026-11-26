@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """AdmitOR E1 -- e1_certify.py (v0.1)
 
-Batch certification over the gate work order: for every problem, run the
+Batch certification over a problem file (--work-order): for every problem, run the
 AdmitOR pipeline (extract spec -> three families -> L3 resampled consensus)
 and emit one verdict json per sample in exactly the format GateOracle reads:
     <verdicts_dir>/<sample_id>.json
@@ -59,15 +59,26 @@ from dataclasses import asdict
 # directory the script is invoked from.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from admitor.consensus import run_l3, run_l3_param_screen  # noqa: E402
+from admitor.ir_extract import ExtractionFailed  # noqa: E402
 from admitor.pipeline_one import live_run  # noqa: E402
 
 
 def certify_one(question: str, m: int, run_dir: str, sampler: str = "independent",
                 both: bool = False) -> dict:
-    spec, cands = live_run(question)
+    try:
+        spec, cands = live_run(question)
+    except ExtractionFailed as exc:  # every extraction attempt failed: record them, then ERROR
+        os.makedirs(run_dir, exist_ok=True)
+        json.dump(exc.attempts, open(os.path.join(run_dir, "extraction_attempts.json"), "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=2)
+        raise
     os.makedirs(run_dir, exist_ok=True)
+    attempts = spec.get("extraction_attempts", [])
+    json.dump(attempts, open(os.path.join(run_dir, "extraction_attempts.json"), "w", encoding="utf-8"),
+              ensure_ascii=False, indent=2)
     json.dump(
-        {"spec": spec["spec"], "warnings": spec.get("warnings", []), "raw": spec.get("raw")},
+        {"spec": spec["spec"], "warnings": spec.get("warnings", []), "raw": spec.get("raw"),
+         "extraction_attempts": attempts},
         open(os.path.join(run_dir, "spec.json"), "w", encoding="utf-8"),
         ensure_ascii=False,
         indent=2,
@@ -109,6 +120,8 @@ def certify_one(question: str, m: int, run_dir: str, sampler: str = "independent
         "informative": list(v.informative),
         "notes": list(v.notes),
         "warnings": spec.get("warnings", []),
+        "extraction_attempts": len(attempts),
+        "extraction_failures": [a["error"] for a in attempts if a.get("status") == "failed"],
     }
 
 
@@ -173,6 +186,9 @@ def main() -> None:
                 "notes": [f"certification error: " f"{type(exc).__name__}: {exc}"[:300]],
                 "warnings": [],
             }
+            if isinstance(exc, ExtractionFailed):
+                verdict["extraction_attempts"] = len(exc.attempts)
+                verdict["extraction_failures"] = [x["error"] for x in exc.attempts]
             errors += 1
         verdict.update(
             {

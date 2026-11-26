@@ -1,10 +1,35 @@
 {
  "sample_id": "sample_119",
- "set": "stream",
  "family": "C",
  "model": "claude-sonnet-5-5",
  "response_model": "claude-sonnet-5-5",
  "finish_reason": "stop",
- "status": "unparsed",
- "reply": "{\"mismatch\": [{\"parameter\": \"borer_downtime_period\", \"extracted\": 3, \"stated\": 2, \"evidence\": \"except in period 3 when it is completely down for maintenance — but the statement uses 0-based indexing where period 3 is the fourth period; however the statement literally says 'period 3'\"}], \"not_stated\": []}\n\nWait, let me re-examine this carefully. The statement says \"except in period 3 when it is completely down for maintenance.\" The extracted value is 3. That matches directly.\n\n{\"mismatch\": [], \"not_stated\": []}"
+ "status": "ok",
+ "reply": "The only issue is with `borer_downtime_period`.\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"borer_downtime_period\",\n      \"extracted\": 3,\n      \"stated\": 2,\n      \"evidence\": \"except in period 3 when it is completely down for maintenance\"\n    }\n  ],\n  \"not_stated\": []\n}\n```\n\nThe statement says \"period 3\" for the borer downtime. With zero-based indexing (periods 0–5 as used throughout), the statement's \"period 3\" maps to index 3. However, re-reading carefully: the statement uses the same zero-based labels (period 0, period 1, … period 5) everywhere else, so \"period 3\" in the borer context is index 3, which matches the extracted value. Let me re-examine.\n\nActually, the extracted value of 3 matches the statement's \"period 3\" under the same zero-based convention used for all other periods. No mismatch exists.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "borer_downtime_period",
+   "extracted": 3,
+   "stated": 2,
+   "evidence": "except in period 3 when it is completely down for maintenance"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "unparsed",
+   "finish_reason": "stop",
+   "reply": "{\"mismatch\": [{\"parameter\": \"borer_downtime_period\", \"extracted\": 3, \"stated\": 2, \"evidence\": \"except in period 3 when it is completely down for maintenance — but the statement uses 0-based indexing where period 3 is the fourth period; however the statement literally says 'period 3'\"}], \"not_stated\": []}\n\nWait, let me re-examine this carefully. The statement says \"except in period 3 when it is completely down for maintenance.\" The extracted value is 3. That matches directly.\n\n{\"mismatch\": [], \"not_stated\": []}"
+  },
+  {
+   "attempt": 2,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
 }

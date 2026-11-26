@@ -2,42 +2,42 @@ Table 3. Data-verification flags against label match among the panel_base_3of3 c
 
 | set | ruler | families | flag | certificates | flagged_match | flagged_miss | not_flagged_match | not_flagged_miss |
 |---|---|---|---|---|---|---|---|---|
-| stream (OptMATH-295) | round_aware | C | flag_mismatch | 242 | 3 | 1 | 204 | 34 |
-| stream (OptMATH-295) | round_aware | C | flag_not_stated | 242 | 9 | 20 | 198 | 15 |
-| stream (OptMATH-295) | round_aware | C | flag_any | 242 | 12 | 20 | 195 | 15 |
-| stream (OptMATH-295) | round_aware | A | flag_mismatch | 242 | 2 | 2 | 205 | 33 |
-| stream (OptMATH-295) | round_aware | A | flag_not_stated | 242 | 12 | 19 | 195 | 16 |
-| stream (OptMATH-295) | round_aware | A | flag_any | 242 | 14 | 19 | 193 | 16 |
-| stream (OptMATH-295) | round_aware | B | flag_mismatch | 242 | 1 | 2 | 206 | 33 |
-| stream (OptMATH-295) | round_aware | B | flag_not_stated | 242 | 13 | 20 | 194 | 15 |
-| stream (OptMATH-295) | round_aware | B | flag_any | 242 | 14 | 21 | 193 | 14 |
-| stream (OptMATH-295) | round_aware | B or C | flag_mismatch | 242 | 3 | 3 | 204 | 32 |
-| stream (OptMATH-295) | round_aware | B or C | flag_not_stated | 242 | 18 | 20 | 189 | 15 |
-| stream (OptMATH-295) | round_aware | B or C | flag_any | 242 | 20 | 21 | 187 | 14 |
-| stream (OptMATH-295) | round_aware | B and C | flag_mismatch | 242 | 1 | 0 | 206 | 35 |
-| stream (OptMATH-295) | round_aware | B and C | flag_not_stated | 242 | 4 | 20 | 203 | 15 |
-| stream (OptMATH-295) | round_aware | B and C | flag_any | 242 | 6 | 20 | 201 | 15 |
-| stream (OptMATH-295) | round_aware | at least two of A, B, C | flag_mismatch | 242 | 1 | 1 | 206 | 34 |
-| stream (OptMATH-295) | round_aware | at least two of A, B, C | flag_not_stated | 242 | 8 | 20 | 199 | 15 |
-| stream (OptMATH-295) | round_aware | at least two of A, B, C | flag_any | 242 | 10 | 20 | 197 | 15 |
-| confirm (OptMATH-200) | round_aware | C | flag_mismatch | 163 | 1 | 0 | 144 | 18 |
-| confirm (OptMATH-200) | round_aware | C | flag_not_stated | 163 | 8 | 6 | 137 | 12 |
-| confirm (OptMATH-200) | round_aware | C | flag_any | 163 | 9 | 6 | 136 | 12 |
-| confirm (OptMATH-200) | round_aware | A | flag_mismatch | 163 | 0 | 0 | 145 | 18 |
-| confirm (OptMATH-200) | round_aware | A | flag_not_stated | 163 | 12 | 6 | 133 | 12 |
-| confirm (OptMATH-200) | round_aware | A | flag_any | 163 | 12 | 6 | 133 | 12 |
-| confirm (OptMATH-200) | round_aware | B | flag_mismatch | 163 | 0 | 0 | 145 | 18 |
-| confirm (OptMATH-200) | round_aware | B | flag_not_stated | 163 | 9 | 6 | 136 | 12 |
-| confirm (OptMATH-200) | round_aware | B | flag_any | 163 | 9 | 6 | 136 | 12 |
-| confirm (OptMATH-200) | round_aware | B or C | flag_mismatch | 163 | 1 | 0 | 144 | 18 |
-| confirm (OptMATH-200) | round_aware | B or C | flag_not_stated | 163 | 13 | 6 | 132 | 12 |
-| confirm (OptMATH-200) | round_aware | B or C | flag_any | 163 | 14 | 6 | 131 | 12 |
-| confirm (OptMATH-200) | round_aware | B and C | flag_mismatch | 163 | 0 | 0 | 145 | 18 |
-| confirm (OptMATH-200) | round_aware | B and C | flag_not_stated | 163 | 4 | 6 | 141 | 12 |
-| confirm (OptMATH-200) | round_aware | B and C | flag_any | 163 | 4 | 6 | 141 | 12 |
-| confirm (OptMATH-200) | round_aware | at least two of A, B, C | flag_mismatch | 163 | 0 | 0 | 145 | 18 |
-| confirm (OptMATH-200) | round_aware | at least two of A, B, C | flag_not_stated | 163 | 7 | 6 | 138 | 12 |
-| confirm (OptMATH-200) | round_aware | at least two of A, B, C | flag_any | 163 | 7 | 6 | 138 | 12 |
+| stream (OptMATH-295) | round_aware | C | flag_mismatch | 243 | 4 | 1 | 204 | 34 |
+| stream (OptMATH-295) | round_aware | C | flag_not_stated | 243 | 9 | 20 | 199 | 15 |
+| stream (OptMATH-295) | round_aware | C | flag_any | 243 | 13 | 20 | 195 | 15 |
+| stream (OptMATH-295) | round_aware | A | flag_mismatch | 243 | 2 | 2 | 206 | 33 |
+| stream (OptMATH-295) | round_aware | A | flag_not_stated | 243 | 12 | 19 | 196 | 16 |
+| stream (OptMATH-295) | round_aware | A | flag_any | 243 | 14 | 19 | 194 | 16 |
+| stream (OptMATH-295) | round_aware | B | flag_mismatch | 243 | 1 | 2 | 207 | 33 |
+| stream (OptMATH-295) | round_aware | B | flag_not_stated | 243 | 13 | 20 | 195 | 15 |
+| stream (OptMATH-295) | round_aware | B | flag_any | 243 | 14 | 21 | 194 | 14 |
+| stream (OptMATH-295) | round_aware | B or C | flag_mismatch | 243 | 4 | 3 | 204 | 32 |
+| stream (OptMATH-295) | round_aware | B or C | flag_not_stated | 243 | 18 | 20 | 190 | 15 |
+| stream (OptMATH-295) | round_aware | B or C | flag_any | 243 | 21 | 21 | 187 | 14 |
+| stream (OptMATH-295) | round_aware | B and C | flag_mismatch | 243 | 1 | 0 | 207 | 35 |
+| stream (OptMATH-295) | round_aware | B and C | flag_not_stated | 243 | 4 | 20 | 204 | 15 |
+| stream (OptMATH-295) | round_aware | B and C | flag_any | 243 | 6 | 20 | 202 | 15 |
+| stream (OptMATH-295) | round_aware | at least two of A, B, C | flag_mismatch | 243 | 1 | 1 | 207 | 34 |
+| stream (OptMATH-295) | round_aware | at least two of A, B, C | flag_not_stated | 243 | 8 | 20 | 200 | 15 |
+| stream (OptMATH-295) | round_aware | at least two of A, B, C | flag_any | 243 | 10 | 20 | 198 | 15 |
+| confirm (OptMATH-200) | round_aware | C | flag_mismatch | 167 | 1 | 1 | 148 | 17 |
+| confirm (OptMATH-200) | round_aware | C | flag_not_stated | 167 | 8 | 6 | 141 | 12 |
+| confirm (OptMATH-200) | round_aware | C | flag_any | 167 | 9 | 7 | 140 | 11 |
+| confirm (OptMATH-200) | round_aware | A | flag_mismatch | 167 | 0 | 0 | 149 | 18 |
+| confirm (OptMATH-200) | round_aware | A | flag_not_stated | 167 | 12 | 6 | 137 | 12 |
+| confirm (OptMATH-200) | round_aware | A | flag_any | 167 | 12 | 6 | 137 | 12 |
+| confirm (OptMATH-200) | round_aware | B | flag_mismatch | 167 | 0 | 0 | 149 | 18 |
+| confirm (OptMATH-200) | round_aware | B | flag_not_stated | 167 | 9 | 6 | 140 | 12 |
+| confirm (OptMATH-200) | round_aware | B | flag_any | 167 | 9 | 6 | 140 | 12 |
+| confirm (OptMATH-200) | round_aware | B or C | flag_mismatch | 167 | 1 | 1 | 148 | 17 |
+| confirm (OptMATH-200) | round_aware | B or C | flag_not_stated | 167 | 13 | 6 | 136 | 12 |
+| confirm (OptMATH-200) | round_aware | B or C | flag_any | 167 | 14 | 7 | 135 | 11 |
+| confirm (OptMATH-200) | round_aware | B and C | flag_mismatch | 167 | 0 | 0 | 149 | 18 |
+| confirm (OptMATH-200) | round_aware | B and C | flag_not_stated | 167 | 4 | 6 | 145 | 12 |
+| confirm (OptMATH-200) | round_aware | B and C | flag_any | 167 | 4 | 6 | 145 | 12 |
+| confirm (OptMATH-200) | round_aware | at least two of A, B, C | flag_mismatch | 167 | 0 | 0 | 149 | 18 |
+| confirm (OptMATH-200) | round_aware | at least two of A, B, C | flag_not_stated | 167 | 7 | 6 | 142 | 12 |
+| confirm (OptMATH-200) | round_aware | at least two of A, B, C | flag_any | 167 | 7 | 6 | 142 | 12 |
 | calibration (NANO-CO-150) | label_match | C | flag_mismatch | 106 | 4 | 1 | 99 | 2 |
 | calibration (NANO-CO-150) | label_match | C | flag_not_stated | 106 | 1 | 0 | 102 | 3 |
 | calibration (NANO-CO-150) | label_match | C | flag_any | 106 | 4 | 1 | 99 | 2 |
@@ -79,15 +79,15 @@ Table 3b. Unparsed data-verification replies per set and family (status other th
 
 | set | family | model | replies | unparsed_replies | unparsed_among_panel_base_3of3_certificates | missing_reply_among_panel_base_3of3_certificates |
 |---|---|---|---|---|---|---|
-| stream (OptMATH-295) | C | claude-sonnet-5-5 | 294 | 2 | 2 | 0 |
-| stream (OptMATH-295) | A | deepseek-v4-flash | 294 | 0 | 0 | 0 |
-| stream (OptMATH-295) | B | gpt-6.1-sol | 272 | 0 | 0 | 0 |
-| confirm (OptMATH-200) | C | claude-sonnet-5-5 | 196 | 3 | 1 | 0 |
-| confirm (OptMATH-200) | A | deepseek-v4-flash | 196 | 0 | 0 | 0 |
-| confirm (OptMATH-200) | B | gpt-6.1-sol | 196 | 0 | 0 | 0 |
-| calibration (NANO-CO-150) | C | claude-sonnet-5-5 | 150 | 2 | 2 | 0 |
+| stream (OptMATH-295) | C | claude-sonnet-5-5 | 295 | 0 | 0 | 0 |
+| stream (OptMATH-295) | A | deepseek-v4-flash | 295 | 0 | 0 | 0 |
+| stream (OptMATH-295) | B | gpt-6.1-sol | 273 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | C | claude-sonnet-5-5 | 200 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | A | deepseek-v4-flash | 200 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | B | gpt-6.1-sol | 200 | 0 | 0 | 0 |
+| calibration (NANO-CO-150) | C | claude-sonnet-5-5 | 150 | 0 | 0 | 0 |
 | calibration (NANO-CO-150) | A | deepseek-v4-flash | 150 | 0 | 0 | 0 |
 | calibration (NANO-CO-150) | B | gpt-6.1-sol | 150 | 0 | 0 | 0 |
-| heldout (NANO-CO-95) | C | claude-sonnet-5-5 | 95 | 3 | 2 | 0 |
+| heldout (NANO-CO-95) | C | claude-sonnet-5-5 | 95 | 0 | 0 | 0 |
 | heldout (NANO-CO-95) | A | deepseek-v4-flash | 95 | 0 | 0 | 0 |
 | heldout (NANO-CO-95) | B | gpt-6.1-sol | 95 | 0 | 0 | 0 |

@@ -1,19 +1,19 @@
 Table 2. Audit of the panel_base_3of3 label misses by class (classes assigned by re-solving the problems from their text; artifacts/v2/audit). Rulers: stream and confirm `round_aware`, calibration and heldout `label_match`; stream without sample_1..5. Classes: D decisive data absent from the problem text; P parameters printed at truncated precision; B label is not the optimum of the complete text; T text contradicts the instance behind the label; U text admits two readings; E extraction error; M modeling error shared by the certifying programs.
 
-| set | ruler | stage | certificates | label_misses | class_D | class_P | class_B | class_T | class_U | class_E | class_M |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| stream (OptMATH-295) | round_aware | panel_base_3of3 | 242 | 35 | 20 | 9 | 3 | 2 | 0 | 1 | 0 |
-| stream (OptMATH-295) | round_aware | after check (B or C) | 201 | 14 | 0 | 9 | 3 | 2 | 0 | 0 | 0 |
-| stream (OptMATH-295) | round_aware | after check (B and C) | 216 | 15 | 0 | 9 | 3 | 2 | 0 | 1 | 0 |
-| confirm (OptMATH-200) | round_aware | panel_base_3of3 | 163 | 18 | 6 | 7 | 5 | 0 | 0 | 0 | 0 |
-| confirm (OptMATH-200) | round_aware | after check (B or C) | 143 | 12 | 0 | 7 | 5 | 0 | 0 | 0 | 0 |
-| confirm (OptMATH-200) | round_aware | after check (B and C) | 153 | 12 | 0 | 7 | 5 | 0 | 0 | 0 | 0 |
-| calibration (NANO-CO-150) | label_match | panel_base_3of3 | 106 | 3 | 0 | 0 | 0 | 2 | 0 | 1 | 0 |
-| calibration (NANO-CO-150) | label_match | after check (B or C) | 101 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
-| calibration (NANO-CO-150) | label_match | after check (B and C) | 101 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
-| heldout (NANO-CO-95) | label_match | panel_base_3of3 | 70 | 6 | 0 | 0 | 0 | 3 | 2 | 1 | 0 |
-| heldout (NANO-CO-95) | label_match | after check (B or C) | 68 | 5 | 0 | 0 | 0 | 3 | 2 | 0 | 0 |
-| heldout (NANO-CO-95) | label_match | after check (B and C) | 69 | 5 | 0 | 0 | 0 | 3 | 2 | 0 | 0 |
+| set | ruler | stage | certificates | label_misses | class_D | class_P | class_B | class_T | class_U | class_E | class_M | unaudited |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| stream (OptMATH-295) | round_aware | panel_base_3of3 | 243 | 35 | 20 | 9 | 3 | 2 | 0 | 1 | 0 | 0 |
+| stream (OptMATH-295) | round_aware | after check (B or C) | 201 | 14 | 0 | 9 | 3 | 2 | 0 | 0 | 0 | 0 |
+| stream (OptMATH-295) | round_aware | after check (B and C) | 217 | 15 | 0 | 9 | 3 | 2 | 0 | 1 | 0 | 0 |
+| confirm (OptMATH-200) | round_aware | panel_base_3of3 | 167 | 18 | 6 | 7 | 5 | 0 | 0 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | round_aware | after check (B or C) | 146 | 11 | 0 | 7 | 4 | 0 | 0 | 0 | 0 | 0 |
+| confirm (OptMATH-200) | round_aware | after check (B and C) | 157 | 12 | 0 | 7 | 5 | 0 | 0 | 0 | 0 | 0 |
+| calibration (NANO-CO-150) | label_match | panel_base_3of3 | 106 | 3 | 0 | 0 | 0 | 2 | 0 | 1 | 0 | 0 |
+| calibration (NANO-CO-150) | label_match | after check (B or C) | 101 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| calibration (NANO-CO-150) | label_match | after check (B and C) | 101 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| heldout (NANO-CO-95) | label_match | panel_base_3of3 | 70 | 6 | 0 | 0 | 0 | 3 | 2 | 1 | 0 | 0 |
+| heldout (NANO-CO-95) | label_match | after check (B or C) | 68 | 5 | 0 | 0 | 0 | 3 | 2 | 0 | 0 | 0 |
+| heldout (NANO-CO-95) | label_match | after check (B and C) | 69 | 5 | 0 | 0 | 0 | 3 | 2 | 0 | 0 | 0 |
 
 Table 2b. Label misses of panel_base_2of3 that are not label misses of panel_base_3of3, per set. Same rulers; stream without sample_1..5.
 

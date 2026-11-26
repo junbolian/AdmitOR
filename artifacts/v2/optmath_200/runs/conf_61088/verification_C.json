@@ -1,10 +1,28 @@
 {
  "sample_id": "conf_61088",
- "set": "confirm",
  "family": "C",
  "model": "claude-sonnet-5-5",
  "response_model": "claude-sonnet-5-5",
  "finish_reason": "stop",
- "status": "unparsed",
- "reply": "{\"mismatch\": [{\"parameter\": \"borer_time\", \"extracted\": [1, 2, 2], \"stated\": [1, 2, 2], \"evidence\": \"each unit of product_0 requiring 1 hour, and each unit of product_1 and product_2 requiring 2 hours\"}], \"not_stated\": []}\n\nWait, let me re-examine carefully.\n\nborer_time: statement says product_0 requires 1 hour, product_1 and product_2 require 2 hours → [1,2,2]. Extracted is [1,2,2]. That matches.\n\nAll other parameters check out against the statement.\n\n{\"mismatch\": [], \"not_stated\": []}"
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": []}",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "unparsed",
+   "finish_reason": "stop",
+   "reply": "{\"mismatch\": [{\"parameter\": \"borer_time\", \"extracted\": [1, 2, 2], \"stated\": [1, 2, 2], \"evidence\": \"each unit of product_0 requiring 1 hour, and each unit of product_1 and product_2 requiring 2 hours\"}], \"not_stated\": []}\n\nWait, let me re-examine carefully.\n\nborer_time: statement says product_0 requires 1 hour, product_1 and product_2 require 2 hours → [1,2,2]. Extracted is [1,2,2]. That matches.\n\nAll other parameters check out against the statement.\n\n{\"mismatch\": [], \"not_stated\": []}"
+  },
+  {
+   "attempt": 2,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
 }

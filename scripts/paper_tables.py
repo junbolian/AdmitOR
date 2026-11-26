@@ -275,15 +275,15 @@ for s in SETS:
         say("check (c) %s: panel_base_3of3 label misses %d, not in the audit list: %s" % (s, len(a), sorted(a - set(LIST[s])) or "none"))
         if not a <= set(LIST[s]):
             FAILED.append("c " + s)
-H2 = ["set", "ruler", "stage", "certificates", "label_misses"] + ["class_" + c for c in CLS]
+H2 = ["set", "ruler", "stage", "certificates", "label_misses"] + ["class_" + c for c in CLS] + ["unaudited"]
 rows2 = []
 for s in SETS:
     for stage, key in (("panel_base_3of3", "panel_base_3of3"), ("after check (B or C)", "panel_base_3of3 + check (B or C)"),
                        ("after check (B and C)", "panel_base_3of3 + check (B and C)")):
         c = CERTS[s][key]
         ms = [sid for sid, v in c.items() if not match((s, sid), v)]
-        cnt = collections.Counter(audit[s][sid] for sid in ms)
-        rows2.append([SETNAME[s], RULER[s], stage, len(c), len(ms)] + [cnt.get(k, 0) for k in CLS])
+        cnt = collections.Counter(audit[s].get(sid, "unaudited") for sid in ms)  # a miss outside the audit list counts as unaudited
+        rows2.append([SETNAME[s], RULER[s], stage, len(c), len(ms)] + [cnt.get(k, 0) for k in CLS] + [cnt.get("unaudited", 0)])
 cap2 = ("Table 2. Audit of the panel_base_3of3 label misses by class (classes assigned by re-solving the problems from "
         "their text; artifacts/v2/audit). Rulers: stream and confirm `round_aware`, calibration and heldout `label_match`; "
         "stream without sample_1..5. Classes: D decisive data absent from the problem text; P parameters printed at "
