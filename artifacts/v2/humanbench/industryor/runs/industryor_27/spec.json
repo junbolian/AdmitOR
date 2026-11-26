@@ -1,0 +1,231 @@
+{
+ "spec": {
+  "fiber_okra": {
+   "base": 3.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fiber_carrots": {
+   "base": 2.7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fiber_celery": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fiber_cabbage": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_salmon": {
+   "base": 4.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_beef": {
+   "base": 3.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_pork": {
+   "base": 1.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_okra": {
+   "base": 2.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_carrots": {
+   "base": 1.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_celery": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_cabbage": {
+   "base": 2.3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget": {
+   "base": 15.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "total_food": {
+   "base": 600.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_vegetables": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fiber_okra": {
+    "meaning": "Fiber per 100g of okra (g)",
+    "base": 3.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fiber_carrots": {
+    "meaning": "Fiber per 100g of carrots (g)",
+    "base": 2.7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fiber_celery": {
+    "meaning": "Fiber per 100g of celery (g)",
+    "base": 1.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fiber_cabbage": {
+    "meaning": "Fiber per 100g of cabbage (g)",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_salmon": {
+    "meaning": "Price per 100g of salmon ($)",
+    "base": 4.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_beef": {
+    "meaning": "Price per 100g of beef ($)",
+    "base": 3.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_pork": {
+    "meaning": "Price per 100g of pork ($)",
+    "base": 1.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_okra": {
+    "meaning": "Price per 100g of okra ($)",
+    "base": 2.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_carrots": {
+    "meaning": "Price per 100g of carrots ($)",
+    "base": 1.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_celery": {
+    "meaning": "Price per 100g of celery ($)",
+    "base": 1.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_cabbage": {
+    "meaning": "Price per 100g of cabbage ($)",
+    "base": 2.3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "budget": {
+    "meaning": "Total budget for meal ($)",
+    "base": 15.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "total_food": {
+    "meaning": "Total food intake required (g)",
+    "base": 600.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_vegetables": {
+    "meaning": "Minimum number of vegetables to select",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

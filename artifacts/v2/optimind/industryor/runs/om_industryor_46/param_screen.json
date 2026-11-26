@@ -1,0 +1,95 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "process_I_hours_A",
+  "process_I_hours_B",
+  "process_II_hours_A",
+  "process_II_hours_B",
+  "capacity_I",
+  "capacity_II",
+  "profit_A",
+  "profit_B",
+  "profit_target",
+  "min_units_A",
+  "min_units_B",
+  "overtime_reduction_A",
+  "overtime_reduction_B",
+  "max_overtime_II"
+ ],
+ "safe": [
+  "process_I_hours_A",
+  "process_I_hours_B",
+  "process_II_hours_A",
+  "process_II_hours_B",
+  "capacity_II",
+  "profit_A",
+  "min_units_A",
+  "min_units_B",
+  "overtime_reduction_A",
+  "overtime_reduction_B",
+  "max_overtime_II"
+ ],
+ "tests": {
+  "process_I_hours_A": [
+   3,
+   3
+  ],
+  "process_I_hours_B": [
+   3,
+   3
+  ],
+  "process_II_hours_A": [
+   3,
+   3
+  ],
+  "process_II_hours_B": [
+   3,
+   3
+  ],
+  "capacity_I": [
+   2,
+   3
+  ],
+  "capacity_II": [
+   3,
+   3
+  ],
+  "profit_A": [
+   3,
+   3
+  ],
+  "profit_B": [
+   3,
+   2
+  ],
+  "profit_target": [
+   2,
+   2
+  ],
+  "min_units_A": [
+   3,
+   3
+  ],
+  "min_units_B": [
+   3,
+   3
+  ],
+  "overtime_reduction_A": [
+   3,
+   3
+  ],
+  "overtime_reduction_B": [
+   3,
+   3
+  ],
+  "max_overtime_II": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

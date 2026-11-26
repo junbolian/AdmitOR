@@ -1,0 +1,76 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "supply_A_lower",
+  "supply_B_lower",
+  "demand_1",
+  "demand_2",
+  "demand_3",
+  "dist_A1",
+  "dist_A2",
+  "dist_A3",
+  "dist_B1",
+  "dist_B2",
+  "dist_B3"
+ ],
+ "safe": [
+  "demand_1",
+  "dist_A1",
+  "dist_A2",
+  "dist_A3",
+  "dist_B1",
+  "dist_B2",
+  "dist_B3"
+ ],
+ "tests": {
+  "supply_A_lower": [
+   3,
+   0
+  ],
+  "supply_B_lower": [
+   3,
+   0
+  ],
+  "demand_1": [
+   3,
+   3
+  ],
+  "demand_2": [
+   0,
+   3
+  ],
+  "demand_3": [
+   0,
+   0
+  ],
+  "dist_A1": [
+   3,
+   3
+  ],
+  "dist_A2": [
+   3,
+   3
+  ],
+  "dist_A3": [
+   3,
+   3
+  ],
+  "dist_B1": [
+   3,
+   3
+  ],
+  "dist_B2": [
+   3,
+   3
+  ],
+  "dist_B3": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

@@ -1,0 +1,257 @@
+{
+ "spec": {
+  "microwave_processing_hours_A": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "water_heater_processing_hours_A": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "microwave_assembly_hours_B": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "water_heater_assembly_hours_B": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "inspection_sales_cost_microwave": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "inspection_sales_cost_water_heater": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "workshop_A_hours_available": {
+   "base": 250,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "workshop_B_hours_available": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "workshop_A_hour_cost": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "workshop_B_hour_cost": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_sales_microwave": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "max_sales_water_heater": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_sales_microwave": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_sales_water_heater": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "inspection_sales_budget": {
+   "base": 5500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "workshop_A_overtime_cap": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "microwave_processing_hours_A": {
+    "meaning": "Hours of processing in workshop A required per microwave oven",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "water_heater_processing_hours_A": {
+    "meaning": "Hours of processing in workshop A required per water heater",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "microwave_assembly_hours_B": {
+    "meaning": "Hours of assembly in workshop B required per microwave oven",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "water_heater_assembly_hours_B": {
+    "meaning": "Hours of assembly in workshop B required per water heater",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "inspection_sales_cost_microwave": {
+    "meaning": "Inspection and sales cost per microwave oven",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "inspection_sales_cost_water_heater": {
+    "meaning": "Inspection and sales cost per water heater",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "workshop_A_hours_available": {
+    "meaning": "Regular available production hours per month in workshop A",
+    "base": 250,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "workshop_B_hours_available": {
+    "meaning": "Regular available production hours per month in workshop B",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "workshop_A_hour_cost": {
+    "meaning": "Cost per hour of production time in workshop A",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "workshop_B_hour_cost": {
+    "meaning": "Cost per hour of production time in workshop B",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_sales_microwave": {
+    "meaning": "Maximum average microwave ovens sellable per month",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "max_sales_water_heater": {
+    "meaning": "Maximum average water heaters sellable per month",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_sales_microwave": {
+    "meaning": "Minimum microwave ovens required to be sold per month",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_sales_water_heater": {
+    "meaning": "Minimum water heaters required to be sold per month",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "inspection_sales_budget": {
+    "meaning": "Monthly budget cap on inspection and sales costs",
+    "base": 5500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "workshop_A_overtime_cap": {
+    "meaning": "Maximum allowed overtime hours in workshop A per month",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

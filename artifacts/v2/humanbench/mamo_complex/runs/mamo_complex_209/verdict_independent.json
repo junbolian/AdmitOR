@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "regular_cost": 400,
+   "overtime_cost": 450,
+   "holding_cost": 20,
+   "regular_capacity": 40,
+   "initial_inventory": 10,
+   "demand": [
+    40,
+    60,
+    75,
+    25
+   ]
+  },
+  {
+   "regular_cost": 427.88535969157675,
+   "overtime_cost": 343.12741992510007,
+   "holding_cost": 27.502931836911927,
+   "regular_capacity": 33,
+   "initial_inventory": 22,
+   "demand": [
+    42.82719179876658,
+    69.41230962491629,
+    62.60816497888249,
+    24.219218196852704
+   ]
+  },
+  {
+   "regular_cost": 305.95944388761404,
+   "overtime_cost": 386.69354433081077,
+   "holding_cost": 50.53552881033624,
+   "regular_capacity": 26,
+   "initial_inventory": 6,
+   "demand": [
+    42.398151004472375,
+    61.0785955344772,
+    66.6132186612209,
+    25.892656838759088
+   ]
+  },
+  {
+   "regular_cost": 461.8860913355653,
+   "overtime_cost": 338.96222092756375,
+   "holding_cost": 80.58192518328079,
+   "regular_capacity": 49,
+   "initial_inventory": 10,
+   "demand": [
+    34.4876719969885,
+    70.97311373296276,
+    70.09783635337881,
+    20.92745843380148
+   ]
+  },
+  {
+   "regular_cost": 319.3432753666928,
+   "overtime_cost": 528.1862324281784,
+   "holding_cost": 60.37260313668911,
+   "regular_capacity": 53,
+   "initial_inventory": 22,
+   "demand": [
+    40.57964946327522,
+    71.35477833550489,
+    71.35603131625061,
+    25.52040631273227
+   ]
+  },
+  {
+   "regular_cost": 465.88093285059904,
+   "overtime_cost": 476.66694428195535,
+   "holding_cost": 86.17069003107773,
+   "regular_capacity": 45,
+   "initial_inventory": 21,
+   "demand": [
+    32.7331901384906,
+    53.469558615637126,
+    68.68163890806322,
+    20.797919769236277
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   78450.0,
+   60756.503266773754,
+   65077.37328496353,
+   63211.73602416339,
+   63183.10647184724,
+   72410.32086565888
+  ],
+  "B-structured": [
+   78450.0,
+   60756.503266773754,
+   65077.37328496353,
+   63211.73602416339,
+   63183.10647184724,
+   72410.32086565888
+  ],
+  "C-direct": [
+   78450.0,
+   60756.503266773754,
+   65077.37328496353,
+   63211.73602416339,
+   63183.10647184724,
+   72410.32086565888
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

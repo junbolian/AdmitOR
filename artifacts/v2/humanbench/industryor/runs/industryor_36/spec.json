@@ -1,0 +1,273 @@
+{
+ "spec": {
+  "labor_A": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "assembly_B": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "labor_A_heater": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "assembly_B_heater": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": false
+   }
+  },
+  "inspect_cost_mw": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "inspect_cost_wh": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_A": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cap_B": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_A": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_mw": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_wh": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "inspect_budget": {
+   "base": 4500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "target_mw": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "target_wh": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "overtime_A_cap": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "labor_A": {
+    "meaning": "Hours of Workshop A processing required per microwave",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "assembly_B": {
+    "meaning": "Hours of Workshop B assembly required per microwave",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2,
+     "integer": false
+    }
+   },
+   "labor_A_heater": {
+    "meaning": "Hours of Workshop A processing required per water heater",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2,
+     "integer": false
+    }
+   },
+   "assembly_B_heater": {
+    "meaning": "Hours of Workshop B assembly required per water heater",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": false
+    }
+   },
+   "inspect_cost_mw": {
+    "meaning": "Inspection and sales cost per microwave ($)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "inspect_cost_wh": {
+    "meaning": "Inspection and sales cost per water heater ($)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_A": {
+    "meaning": "Available regular production hours in Workshop A per month",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cap_B": {
+    "meaning": "Available regular production hours in Workshop B per month",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_A": {
+    "meaning": "Cost per hour of Workshop A production ($/hr)",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B": {
+    "meaning": "Cost per hour of Workshop B production ($/hr)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_mw": {
+    "meaning": "Expected monthly sales ceiling for microwaves",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_wh": {
+    "meaning": "Expected monthly sales ceiling for water heaters",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "inspect_budget": {
+    "meaning": "First-priority cap on inspection and sales cost ($/month)",
+    "base": 4500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "target_mw": {
+    "meaning": "Second-priority minimum sales target for microwaves",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "target_wh": {
+    "meaning": "Fifth-priority minimum sales target for water heaters",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "overtime_A_cap": {
+    "meaning": "Fourth-priority maximum Workshop A overtime hours per month",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

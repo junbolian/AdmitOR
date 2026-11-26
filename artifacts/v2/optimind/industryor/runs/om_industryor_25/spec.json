@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "processing_time_I": {
+   "base": [
+    5,
+    7,
+    6,
+    4,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "processing_time_II": {
+   "base": [
+    10,
+    9,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "processing_time_III": {
+   "base": [
+    12,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "effective_hours": {
+   "base": [
+    6000,
+    10000,
+    4000,
+    7000,
+    4000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "operating_cost_full": {
+   "base": [
+    300,
+    321,
+    250,
+    783,
+    200
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "raw_material_cost": {
+   "base": [
+    0.25,
+    0.35,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "unit_price": {
+   "base": [
+    1.25,
+    2.0,
+    2.8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_time_I": {
+    "meaning": "Unit processing time for product I on each machine (A1, A2, B1, B2, B3); blank/missing entries are not applicable",
+    "base": [
+     5,
+     7,
+     6,
+     4,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "processing_time_II": {
+    "meaning": "Unit processing time for product II on each machine (A1, A2, B1 only; B2/B3 not applicable)",
+    "base": [
+     10,
+     9,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "processing_time_III": {
+    "meaning": "Unit processing time for product III on A2 and B2 only",
+    "base": [
+     12,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "effective_hours": {
+    "meaning": "Effective machine hours available on A1, A2, B1, B2, B3",
+    "base": [
+     6000,
+     10000,
+     4000,
+     7000,
+     4000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "operating_cost_full": {
+    "meaning": "Operating cost at full capacity for A1, A2, B1, B2, B3 (Yuan)",
+    "base": [
+     300,
+     321,
+     250,
+     783,
+     200
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "raw_material_cost": {
+    "meaning": "Raw material cost per unit of products I, II, III (Yuan/unit)",
+    "base": [
+     0.25,
+     0.35,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "unit_price": {
+    "meaning": "Sale price per unit of products I, II, III (Yuan/unit)",
+    "base": [
+     1.25,
+     2.0,
+     2.8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

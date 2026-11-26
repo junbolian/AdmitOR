@@ -1,0 +1,138 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "container_max_weight",
+  "container_min_weight",
+  "container_length",
+  "container_width",
+  "container_height",
+  "demand_A",
+  "demand_B",
+  "demand_C",
+  "demand_D",
+  "demand_E",
+  "weight_A",
+  "weight_B",
+  "weight_C",
+  "weight_D",
+  "weight_E",
+  "dims_A",
+  "dims_B",
+  "dims_C",
+  "dims_D",
+  "dims_E",
+  "coupling_AC",
+  "min_D_per_container"
+ ],
+ "safe": [
+  "container_min_weight",
+  "container_length",
+  "container_width",
+  "container_height",
+  "weight_A",
+  "weight_B",
+  "weight_C",
+  "weight_D",
+  "dims_A",
+  "dims_B",
+  "dims_C",
+  "dims_D",
+  "dims_E",
+  "coupling_AC"
+ ],
+ "tests": {
+  "container_max_weight": [
+   0,
+   3
+  ],
+  "container_min_weight": [
+   3,
+   3
+  ],
+  "container_length": [
+   3,
+   3
+  ],
+  "container_width": [
+   3,
+   3
+  ],
+  "container_height": [
+   3,
+   3
+  ],
+  "demand_A": [
+   0,
+   0
+  ],
+  "demand_B": [
+   0,
+   0
+  ],
+  "demand_C": [
+   0,
+   0
+  ],
+  "demand_D": [
+   0,
+   0
+  ],
+  "demand_E": [
+   0,
+   0
+  ],
+  "weight_A": [
+   3,
+   3
+  ],
+  "weight_B": [
+   3,
+   3
+  ],
+  "weight_C": [
+   3,
+   3
+  ],
+  "weight_D": [
+   3,
+   3
+  ],
+  "weight_E": [
+   3,
+   0
+  ],
+  "dims_A": [
+   3,
+   3
+  ],
+  "dims_B": [
+   3,
+   3
+  ],
+  "dims_C": [
+   3,
+   3
+  ],
+  "dims_D": [
+   3,
+   3
+  ],
+  "dims_E": [
+   3,
+   3
+  ],
+  "coupling_AC": [
+   3,
+   3
+  ],
+  "min_D_per_container": [
+   0,
+   3
+  ]
+ },
+ "untested": []
+}

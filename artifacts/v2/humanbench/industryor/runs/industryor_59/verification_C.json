@@ -1,0 +1,41 @@
+{
+ "sample_id": "industryor_59",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"equipment_cost_full_load\", \"extracted\": [300, 321, 250, 7000, 783], \"stated\": [300, 321, 250, 783, 200], \"evidence\": \"Table row $B_2$ ... 7000 & 783; $B_3$ ... 4000 & 200\"}], \"not_stated\": []}\n\nNote: the extracted values for B2 and B3 are shifted: the 7000 in B2's row is that equipment's available time, not its full-load cost; B3's full-load cost is 200.",
+ "mismatch": [
+  {
+   "parameter": "equipment_cost_full_load",
+   "extracted": [
+    300,
+    321,
+    250,
+    7000,
+    783
+   ],
+   "stated": [
+    300,
+    321,
+    250,
+    783,
+    200
+   ],
+   "evidence": "Table row $B_2$ ... 7000 & 783; $B_3$ ... 4000 & 200"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

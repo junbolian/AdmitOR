@@ -1,0 +1,112 @@
+{
+ "spec": {
+  "n": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "a": {
+   "base": [
+    40,
+    11,
+    35,
+    38,
+    74,
+    87,
+    62,
+    75,
+    94,
+    128
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "b": {
+   "base": [
+    67,
+    87,
+    94,
+    96,
+    105,
+    137,
+    121,
+    143,
+    172,
+    151
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [
+  "[n] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "n": {
+    "meaning": "number of aircraft (fixed index-set size, not perturbed)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "a": {
+    "meaning": "earliest allowed landing time for each flight in order 1..10",
+    "base": [
+     40,
+     11,
+     35,
+     38,
+     74,
+     87,
+     62,
+     75,
+     94,
+     128
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "b": {
+    "meaning": "latest allowed landing time for each flight in order 1..10",
+    "base": [
+     67,
+     87,
+     94,
+     96,
+     105,
+     137,
+     121,
+     143,
+     172,
+     151
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

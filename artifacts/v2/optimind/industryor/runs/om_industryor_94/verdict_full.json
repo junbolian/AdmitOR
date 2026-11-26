@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "raw_pipe_length": 1850,
+   "demand_290": 15,
+   "demand_315": 28,
+   "demand_350": 21,
+   "demand_455": 30,
+   "max_pattern_types": 4,
+   "max_pieces_per_raw": 5,
+   "max_leftover": 100,
+   "extra_cost_fraction_most": 0.1,
+   "extra_cost_fraction_second": 0.2,
+   "extra_cost_fraction_third": 0.3,
+   "extra_cost_fraction_fourth": 0.4
+  },
+  {
+   "raw_pipe_length": 1878,
+   "demand_290": 10,
+   "demand_315": 24,
+   "demand_350": 18,
+   "demand_455": 34,
+   "max_pattern_types": 4,
+   "max_pieces_per_raw": 5,
+   "max_leftover": 67,
+   "extra_cost_fraction_most": 0.12657654590558112,
+   "extra_cost_fraction_second": 0.06191888777522814,
+   "extra_cost_fraction_third": 0.2093189874018017,
+   "extra_cost_fraction_fourth": 0.45321317286201745
+  },
+  {
+   "raw_pipe_length": 1755,
+   "demand_290": 12,
+   "demand_315": 30,
+   "demand_350": 22,
+   "demand_455": 26,
+   "max_pattern_types": 4,
+   "max_pieces_per_raw": 5,
+   "max_leftover": 61,
+   "extra_cost_fraction_most": 0.24174577554984236,
+   "extra_cost_fraction_second": 0.3292557579952907,
+   "extra_cost_fraction_third": 0.2701252582589959,
+   "extra_cost_fraction_fourth": 0.24328769988706894
+  },
+  {
+   "raw_pipe_length": 1941,
+   "demand_290": 14,
+   "demand_315": 21,
+   "demand_350": 16,
+   "demand_455": 36,
+   "max_pattern_types": 4,
+   "max_pieces_per_raw": 5,
+   "max_leftover": 118,
+   "extra_cost_fraction_most": 0.16086842743641022,
+   "extra_cost_fraction_second": 0.43924630559174827,
+   "extra_cost_fraction_third": 0.2892671886041768,
+   "extra_cost_fraction_fourth": 0.4812243787639362
+  },
+  {
+   "raw_pipe_length": 1916,
+   "demand_290": 17,
+   "demand_315": 34,
+   "demand_350": 23,
+   "demand_455": 33,
+   "max_pattern_types": 4,
+   "max_pieces_per_raw": 5,
+   "max_leftover": 83,
+   "extra_cost_fraction_most": 0.02393759307708825,
+   "extra_cost_fraction_second": 0.14311635454441207,
+   "extra_cost_fraction_third": 0.15050071470486456,
+   "extra_cost_fraction_fourth": 0.3167841618660553
+  },
+  {
+   "raw_pipe_length": 1877,
+   "demand_290": 14,
+   "demand_315": 26,
+   "demand_350": 18,
+   "demand_455": 26,
+   "max_pattern_types": 4,
+   "max_pieces_per_raw": 5,
+   "max_leftover": 109,
+   "extra_cost_fraction_most": 0.051341594459429096,
+   "extra_cost_fraction_second": 0.3416507191801397,
+   "extra_cost_fraction_third": 0.1817012468809642,
+   "extra_cost_fraction_fourth": 0.37767326505458865
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   21.50000000000001,
+   20.055916760510783,
+   23.97313107227518,
+   21.30240833317849,
+   26.24757294495487,
+   19.42512256195774
+  ],
+  "C-direct": [
+   21.5,
+   20.055916760510783,
+   23.97313107227518,
+   21.30240833317849,
+   26.247572944954875,
+   19.425122561957743
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig']"
+ },
+ "disagreements": [],
+ "notes": []
+}

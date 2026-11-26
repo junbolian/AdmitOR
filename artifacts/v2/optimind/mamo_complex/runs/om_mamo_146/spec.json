@@ -1,0 +1,362 @@
+{
+ "spec": {
+  "cost_chicken": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_pasta": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_apples": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "cost_tuna": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_rice": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_chicken": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_pasta": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_apples": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_tuna": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_rice": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carbs_chicken": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_pasta": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_apples": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_tuna": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_rice": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_chicken": {
+   "base": 118,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_pasta": {
+   "base": 131,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_apples": {
+   "base": 151,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_tuna": {
+   "base": 235,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_rice": {
+   "base": 101,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 93,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carbs_req": {
+   "base": 181,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "calories_req": {
+   "base": 1620,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_chicken": {
+    "meaning": "price per portion of Chicken ($)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_pasta": {
+    "meaning": "price per portion of Pasta ($)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_apples": {
+    "meaning": "price per portion of Apples ($)",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "cost_tuna": {
+    "meaning": "price per portion of Tuna ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_rice": {
+    "meaning": "price per portion of Rice ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_chicken": {
+    "meaning": "protein per portion of Chicken (g)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_pasta": {
+    "meaning": "protein per portion of Pasta (g)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_apples": {
+    "meaning": "protein per portion of Apples (g)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_tuna": {
+    "meaning": "protein per portion of Tuna (g)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_rice": {
+    "meaning": "protein per portion of Rice (g)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "carbohydrates per portion of Chicken (g)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_pasta": {
+    "meaning": "carbohydrates per portion of Pasta (g)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_apples": {
+    "meaning": "carbohydrates per portion of Apples (g)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_tuna": {
+    "meaning": "carbohydrates per portion of Tuna (g)",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_rice": {
+    "meaning": "carbohydrates per portion of Rice (g)",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_chicken": {
+    "meaning": "calories per portion of Chicken (kcal)",
+    "base": 118,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_pasta": {
+    "meaning": "calories per portion of Pasta (kcal)",
+    "base": 131,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_apples": {
+    "meaning": "calories per portion of Apples (kcal)",
+    "base": 151,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_tuna": {
+    "meaning": "calories per portion of Tuna (kcal)",
+    "base": 235,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_rice": {
+    "meaning": "calories per portion of Rice (kcal)",
+    "base": 101,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "minimum daily protein requirement (g)",
+    "base": 93,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carbs_req": {
+    "meaning": "minimum daily carbohydrate requirement (g)",
+    "base": 181,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "calories_req": {
+    "meaning": "minimum daily calorie requirement (kcal)",
+    "base": 1620,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

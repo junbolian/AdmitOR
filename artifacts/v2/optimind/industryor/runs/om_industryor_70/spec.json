@@ -1,0 +1,82 @@
+{
+ "spec": {
+  "income": {
+   "base": [
+    12500,
+    35000,
+    23000,
+    100000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost": {
+   "base": [
+    1500000,
+    2100000,
+    2300000,
+    4200000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "budget": {
+   "base": 7000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "income": {
+    "meaning": "annual income per property ($/yr)",
+    "base": [
+     12500,
+     35000,
+     23000,
+     100000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost": {
+    "meaning": "purchase cost per property ($)",
+    "base": [
+     1500000,
+     2100000,
+     2300000,
+     4200000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "budget": {
+    "meaning": "total available budget ($)",
+    "base": 7000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

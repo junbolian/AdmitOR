@@ -1,0 +1,216 @@
+{
+ "spec": {
+  "setup_cost_A": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "setup_cost_B": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "setup_cost_C": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "processing_cost_A": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "processing_cost_B": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "processing_cost_C": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -10.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "max_parts_on_C": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "setup_cost_A": {
+    "meaning": "one-time setup cost when equipment A is used at all",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "one-time setup cost when equipment B is used at all",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "setup_cost_C": {
+    "meaning": "one-time setup cost when equipment C is used at all",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "processing_cost_A": {
+    "meaning": "per-unit processing cost for parts 1..10 on equipment A (a_1..a_10)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "processing_cost_B": {
+    "meaning": "per-unit processing cost for parts 1..10 on equipment B (b_1..b_10)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "processing_cost_C": {
+    "meaning": "per-unit processing cost for parts 1..10 on equipment C (c_1..c_10)",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -10,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "max_parts_on_C": {
+    "meaning": "maximum number of parts allowed on equipment C",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 9,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

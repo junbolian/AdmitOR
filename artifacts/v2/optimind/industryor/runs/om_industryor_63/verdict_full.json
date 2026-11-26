@@ -1,0 +1,88 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "microwave_processing_hours_A": 2,
+   "water_heater_processing_hours_A": 1,
+   "microwave_assembly_hours_B": 1,
+   "water_heater_assembly_hours_B": 3,
+   "inspection_sales_cost_microwave": 30,
+   "inspection_sales_cost_water_heater": 50,
+   "workshop_A_hours_available": 250,
+   "workshop_B_hours_available": 150,
+   "workshop_A_hour_cost": 80,
+   "workshop_B_hour_cost": 20,
+   "max_sales_microwave": 80,
+   "max_sales_water_heater": 50,
+   "min_sales_microwave": 80,
+   "min_sales_water_heater": 50,
+   "inspection_sales_budget": 5500,
+   "workshop_A_overtime_cap": 20
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   30500.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

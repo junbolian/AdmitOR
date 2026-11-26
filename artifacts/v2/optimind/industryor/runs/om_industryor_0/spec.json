@@ -1,0 +1,301 @@
+{
+ "spec": {
+  "skilled_workers": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "new_workers": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "prod_rate_I": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "prod_rate_II": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weekly_hours_normal": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "weekly_hours_overtime": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "train_capacity": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "train_weeks": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "wage_skilled": {
+   "base": 360,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "wage_trainee": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "wage_trained": {
+   "base": 240,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "wage_overtime": {
+   "base": 540,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "penalty_I": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  },
+  "penalty_II": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  },
+  "demand_I": {
+   "base": [
+    10000,
+    10000,
+    12000,
+    12000,
+    16000,
+    16000,
+    20000,
+    20000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_II": {
+   "base": [
+    6000,
+    7200,
+    8400,
+    10800,
+    10800,
+    12000,
+    12000,
+    12000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "skilled_workers": {
+    "meaning": "number of skilled workers currently available",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "new_workers": {
+    "meaning": "number of new workers to be trained by end of week 8",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "prod_rate_I": {
+    "meaning": "kg/h of food I produced per skilled worker",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "prod_rate_II": {
+    "meaning": "kg/h of food II produced per skilled worker",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weekly_hours_normal": {
+    "meaning": "standard working hours per worker per week",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "weekly_hours_overtime": {
+    "meaning": "overtime working hours per worker per week",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "train_capacity": {
+    "meaning": "maximum number of trainees one skilled worker can train in two weeks",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "train_weeks": {
+    "meaning": "duration in weeks of the training period",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "wage_skilled": {
+    "meaning": "weekly wage of a skilled worker (yuan)",
+    "base": 360,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "wage_trainee": {
+    "meaning": "weekly wage of a trainee during training (yuan)",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "wage_trained": {
+    "meaning": "weekly wage after training (yuan)",
+    "base": 240,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "wage_overtime": {
+    "meaning": "weekly wage for a worker doing overtime (yuan)",
+    "base": 540,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "penalty_I": {
+    "meaning": "compensation fee per kg per week of delay for food I (yuan)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   },
+   "penalty_II": {
+    "meaning": "compensation fee per kg per week of delay for food II (yuan)",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   },
+   "demand_I": {
+    "meaning": "weekly demand for food I (kg) over 8 weeks",
+    "base": [
+     10000,
+     10000,
+     12000,
+     12000,
+     16000,
+     16000,
+     20000,
+     20000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_II": {
+    "meaning": "weekly demand for food II (kg) over 8 weeks",
+    "base": [
+     6000,
+     7200,
+     8400,
+     10800,
+     10800,
+     12000,
+     12000,
+     12000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

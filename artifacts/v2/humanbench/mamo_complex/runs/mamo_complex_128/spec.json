@@ -1,0 +1,180 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    97,
+    458,
+    473,
+    380,
+    34,
+    399,
+    163
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    119,
+    275,
+    36,
+    459,
+    17,
+    128,
+    425
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    41,
+    42,
+    31,
+    39,
+    2,
+    18,
+    48,
+    9,
+    22,
+    47,
+    29,
+    39,
+    36,
+    22,
+    29,
+    45,
+    33,
+    45,
+    19,
+    5,
+    10,
+    3,
+    42,
+    20,
+    13,
+    10,
+    21,
+    7,
+    35,
+    11,
+    5,
+    35,
+    29,
+    16,
+    40,
+    9,
+    7,
+    24,
+    26,
+    38,
+    33,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "initial units available at each distribution center (1..7)",
+    "base": [
+     97,
+     458,
+     473,
+     380,
+     34,
+     399,
+     163
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "required units at each distribution center (1..7)",
+    "base": [
+     119,
+     275,
+     36,
+     459,
+     17,
+     128,
+     425
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "cost to transfer one unit from center i to center j; row-major over ordered pairs (i,j), i!=j, centers 1..7",
+    "base": [
+     41,
+     42,
+     31,
+     39,
+     2,
+     18,
+     48,
+     9,
+     22,
+     47,
+     29,
+     39,
+     36,
+     22,
+     29,
+     45,
+     33,
+     45,
+     19,
+     5,
+     10,
+     3,
+     42,
+     20,
+     13,
+     10,
+     21,
+     7,
+     35,
+     11,
+     5,
+     35,
+     29,
+     16,
+     40,
+     9,
+     7,
+     24,
+     26,
+     38,
+     33,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

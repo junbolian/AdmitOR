@@ -1,0 +1,140 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 30,
+   "machine1_time_solid": 24,
+   "machine2_time_solid": 33,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 40,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 95
+  },
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 33.34624316298921,
+   "machine1_time_solid": 14.880206500275204,
+   "machine2_time_solid": 27.060774004944747,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 28.92842952595291,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 124
+  },
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 34.240787698149866,
+   "machine1_time_solid": 31.52984769993303,
+   "machine2_time_solid": 22.095185181416586,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 36.87687278741082,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 53
+  },
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 23.24731139528648,
+   "machine1_time_solid": 24.102821531584553,
+   "machine2_time_solid": 20.500549599654,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 27.95350602746594,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 115
+  },
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 31.078595534477202,
+   "machine1_time_solid": 18.632459943181374,
+   "machine2_time_solid": 35.35661405432399,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 52.377218267113065,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 51
+  },
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 37.33966204398739,
+   "machine1_time_solid": 27.804276383773953,
+   "machine2_time_solid": 28.782613636074984,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 26.21917999247126,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 146
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1.0,
+   null,
+   null,
+   null,
+   60.0,
+   null
+  ],
+  "B-structured": [
+   1.0,
+   null,
+   null,
+   null,
+   60.0,
+   null
+  ],
+  "C-direct": [
+   1.0,
+   null,
+   null,
+   null,
+   60.0,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "optimal",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "solver_status_4",
+   "solver_status_4",
+   "solver_status_4",
+   "optimal",
+   "solver_status_4"
+  ]
+ },
+ "informative": [
+  0,
+  4
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

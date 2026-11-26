@@ -1,0 +1,60 @@
+{
+ "sample_id": "industryor_15",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"distances\",\n      \"extracted\": [450, 480, 540, 600],\n      \"stated\": [480, 540, 600, 450],\n      \"evidence\": \"Table: 1 & 480, 2 & 540, 3 & 600, 4 & 450\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"prob_heavy\",\n      \"extracted\": [0.1, 0.2, 0.15, 0.25],\n      \"evidence\": \"Table rows misaligned: 0.25 appears in the distance column for area 4\"\n    },\n    {\n      \"parameter\": \"prob_light\",\n      \"extracted\": [0.08, 0.16, 0.12, 0.2],\n      \"evidence\": \"Table rows misaligned; area 4 probability not clearly stated\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "distances",
+   "extracted": [
+    450,
+    480,
+    540,
+    600
+   ],
+   "stated": [
+    480,
+    540,
+    600,
+    450
+   ],
+   "evidence": "Table: 1 & 480, 2 & 540, 3 & 600, 4 & 450"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "prob_heavy",
+   "extracted": [
+    0.1,
+    0.2,
+    0.15,
+    0.25
+   ],
+   "evidence": "Table rows misaligned: 0.25 appears in the distance column for area 4"
+  },
+  {
+   "parameter": "prob_light",
+   "extracted": [
+    0.08,
+    0.16,
+    0.12,
+    0.2
+   ],
+   "evidence": "Table rows misaligned; area 4 probability not clearly stated"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

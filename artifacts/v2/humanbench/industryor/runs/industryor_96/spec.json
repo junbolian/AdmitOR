@@ -1,0 +1,88 @@
+{
+ "spec": {
+  "order_widths": {
+   "base": [
+    0.5,
+    0.7,
+    0.9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "order_lengths": {
+   "base": [
+    1000,
+    3000,
+    2000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "standard_widths": {
+   "base": [
+    1.0,
+    2.0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "order_widths": {
+    "meaning": "Width of each ordered roll (m)",
+    "base": [
+     0.5,
+     0.7,
+     0.9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "order_lengths": {
+    "meaning": "Required length of each order (m)",
+    "base": [
+     1000,
+     3000,
+     2000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "standard_widths": {
+    "meaning": "Available standard roll widths (m)",
+    "base": [
+     1.0,
+     2.0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "spec": {
+  "processing_times": {
+   "base": [
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     2,
+     1.5,
+     1
+    ],
+    [
+     3,
+     1.2,
+     1.3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2.1,
+     2,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_times": {
+    "meaning": "Hours needed to dye batch i on vat j (5x3 matrix, rows=batches, cols=vats in fixed order)",
+    "base": [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      2,
+      1.5,
+      1
+     ],
+     [
+      3,
+      1.2,
+      1.3
+     ],
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      2.1,
+      2,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

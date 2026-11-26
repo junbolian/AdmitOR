@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     58,
+     15,
+     75,
+     91
+    ],
+    [
+     58,
+     0,
+     54,
+     85,
+     11
+    ],
+    [
+     15,
+     54,
+     0,
+     28,
+     61
+    ],
+    [
+     75,
+     85,
+     28,
+     0,
+     47
+    ],
+    [
+     91,
+     11,
+     61,
+     47,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Travel cost between each ordered pair of distinct cities (rows/cols 1..5; diagonal unused, symmetric as given)",
+    "base": [
+     [
+      0,
+      58,
+      15,
+      75,
+      91
+     ],
+     [
+      58,
+      0,
+      54,
+      85,
+      11
+     ],
+     [
+      15,
+      54,
+      0,
+      28,
+      61
+     ],
+     [
+      75,
+      85,
+      28,
+      0,
+      47
+     ],
+     [
+      91,
+      11,
+      61,
+      47,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 200,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

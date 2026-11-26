@@ -1,0 +1,202 @@
+{
+ "spec": {
+  "costs": {
+   "base": [
+    3,
+    2,
+    2,
+    6,
+    6,
+    10,
+    7,
+    5,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein": {
+   "base": [
+    17,
+    15,
+    1,
+    11,
+    15,
+    12,
+    4,
+    16,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    28,
+    11,
+    11,
+    3,
+    27,
+    3,
+    8,
+    25,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    136,
+    198,
+    93,
+    269,
+    121,
+    80,
+    300,
+    99,
+    87
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_target": {
+   "base": 72,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carb_target": {
+   "base": 158,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "calorie_target": {
+   "base": 1896,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "costs": {
+    "meaning": "Cost per integral portion of each of the nine foods (Chicken Breast, Tofu, Brown Rice, Salmon, Greek Yogurt, Steak, Avocado, Eggs, Quinoa)",
+    "base": [
+     3,
+     2,
+     2,
+     6,
+     6,
+     10,
+     7,
+     5,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein": {
+    "meaning": "Protein grams provided per integral portion of each food",
+    "base": [
+     17,
+     15,
+     1,
+     11,
+     15,
+     12,
+     4,
+     16,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "Carbohydrate grams provided per integral portion of each food",
+    "base": [
+     28,
+     11,
+     11,
+     3,
+     27,
+     3,
+     8,
+     25,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "Calories provided per integral portion of each food",
+    "base": [
+     136,
+     198,
+     93,
+     269,
+     121,
+     80,
+     300,
+     99,
+     87
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_target": {
+    "meaning": "Minimum required protein grams",
+    "base": 72,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carb_target": {
+    "meaning": "Minimum required carbohydrate grams",
+    "base": 158,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "calorie_target": {
+    "meaning": "Minimum required calories",
+    "base": 1896,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

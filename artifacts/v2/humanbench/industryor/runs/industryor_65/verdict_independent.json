@@ -1,0 +1,182 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "man_hours_A": 20,
+   "man_hours_B": 0,
+   "asm_hours_A": 5,
+   "asm_hours_B": 7,
+   "insp_hours_A": 3,
+   "insp_hours_B": 6,
+   "price_A": 650,
+   "price_B": 725,
+   "cap_manufacturing": 120,
+   "cap_assembly": 80,
+   "cap_inspection": 40,
+   "cost_manufacturing": 12,
+   "cost_assembly": 8,
+   "cost_inspection": 10,
+   "profit_goal": 3000,
+   "min_A_goal": 5
+  },
+  {
+   "man_hours_A": 22.788535969157675,
+   "man_hours_B": 0.25010755222666936,
+   "asm_hours_A": 3.9252052285838346,
+   "asm_hours_B": 4.785685905190582,
+   "insp_hours_A": 4.682356070820062,
+   "insp_hours_B": 7.41359589938329,
+   "price_A": 806.8718270819381,
+   "price_B": 539.1224746832372,
+   "cap_manufacturing": 116.41140016537975,
+   "cap_assembly": 52.383777555045626,
+   "cap_inspection": 34.83870886616215,
+   "cost_manufacturing": 13.074974033447074,
+   "cost_assembly": 4.2918956665225,
+   "cost_inspection": 7.584889458926431,
+   "profit_goal": 3774.595532228331,
+   "min_A_goal": 6
+  },
+  {
+   "man_hours_A": 14.408812440813934,
+   "man_hours_B": 5.892656838759088,
+   "asm_hours_A": 7.666013196744786,
+   "asm_hours_B": 3.051990077424488,
+   "insp_hours_A": 5.02909625916404,
+   "insp_hours_B": 7.585115159905815,
+   "price_A": 586.1002066071967,
+   "price_B": 569.9657749153017,
+   "cap_manufacturing": 175.29343794274592,
+   "cap_assembly": 76.92756360901015,
+   "cap_inspection": 29.173562952106657,
+   "cost_manufacturing": 7.354029275668497,
+   "cost_assembly": 13.322438029822058,
+   "cost_inspection": 12.848438407769585,
+   "profit_goal": 4324.94895646033,
+   "min_A_goal": 8
+  },
+  {
+   "man_hours_A": 20.724561829094014,
+   "man_hours_B": 9.731157639793706,
+   "asm_hours_A": 4.649740640458474,
+   "asm_hours_B": 7.416325050185816,
+   "insp_hours_A": 5.1470233212649745,
+   "insp_hours_B": 6.9481580189139684,
+   "price_A": 794.6827601243109,
+   "price_B": 759.8084653655429,
+   "cap_manufacturing": 147.50290198364158,
+   "cap_assembly": 53.66595069245298,
+   "cap_inspection": 35.25542240431961,
+   "cost_manufacturing": 10.0514314904295,
+   "cost_assembly": 4.877711746159902,
+   "cost_inspection": 8.026281522693392,
+   "profit_goal": 1853.5050029340518,
+   "min_A_goal": 4
+  },
+  {
+   "man_hours_A": 22.713688885288004,
+   "man_hours_B": 3.6483217897008426,
+   "asm_hours_A": 4.591266769818178,
+   "asm_hours_B": 4.6760562461719015,
+   "insp_hours_A": 2.334889110245567,
+   "insp_hours_B": 9.493236701699953,
+   "price_A": 709.2141540986374,
+   "price_B": 774.1089525501447,
+   "cap_manufacturing": 88.82525130179067,
+   "cap_assembly": 108.33014383602793,
+   "cap_inspection": 32.35311221928678,
+   "cost_manufacturing": 11.312376184607068,
+   "cost_assembly": 14.884756857002548,
+   "cost_inspection": 13.319996878103208,
+   "profit_goal": 3449.324103211262,
+   "min_A_goal": 7
+  },
+  {
+   "man_hours_A": 26.857038403796192,
+   "man_hours_B": 7.759999115462448,
+   "asm_hours_A": 3.6033365037487304,
+   "asm_hours_B": 3.256801951232302,
+   "insp_hours_A": 2.5772652402954095,
+   "insp_hours_B": 4.141927007805622,
+   "price_A": 534.3931374345306,
+   "price_B": 924.3093714507745,
+   "cap_manufacturing": 166.40043891199358,
+   "cap_assembly": 75.17423046387823,
+   "cap_inspection": 54.4947399382696,
+   "cost_manufacturing": 11.5388466148493,
+   "cost_assembly": 14.060023487145978,
+   "cost_inspection": 10.965074083636186,
+   "profit_goal": 2427.0805827431836,
+   "min_A_goal": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   194.66666666666669,
+   768903656.2540754,
+   2506982976.477302,
+   162.16556352452804,
+   846792118.3793048,
+   408.92555700045784
+  ],
+  "B-structured": [
+   272.0,
+   449.7822961190948,
+   1416.5235044317594,
+   393.533900728801,
+   1504.4306031845665,
+   419.85743991836046
+  ],
+  "C-direct": [
+   194.66666666666666,
+   768902640637902.2,
+   2506979672794183.0,
+   162.16556352452807,
+   846787427547154.2,
+   408.925557000457
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [1, 2, 4]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

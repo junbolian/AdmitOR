@@ -1,0 +1,180 @@
+{
+ "spec": {
+  "duration_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "duration_B": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "duration_C": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "duration_D": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "duration_E": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "duration_F": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "duration_G": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "daily_work_cost": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "daily_machinery_cost": {
+   "base": 5000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "duration_A": {
+    "meaning": "duration of activity A in days",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "duration_B": {
+    "meaning": "duration of activity B in days",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "duration_C": {
+    "meaning": "duration of activity C in days",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "duration_D": {
+    "meaning": "duration of activity D in days",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "duration_E": {
+    "meaning": "duration of activity E in days",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "duration_F": {
+    "meaning": "duration of activity F in days",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "duration_G": {
+    "meaning": "duration of activity G in days",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "daily_work_cost": {
+    "meaning": "cost per day of ordinary work (euros/day)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "daily_machinery_cost": {
+    "meaning": "rental cost per day of special machinery (euros/day)",
+    "base": 5000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

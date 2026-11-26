@@ -1,0 +1,35 @@
+{
+ "sample_id": "om_industryor_23",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"return_rate_option1\",\n      \"extracted\": 0.7,\n      \"stated\": 1.7,\n      \"evidence\": \"The first investment guarantees a return of 0.7 yuan for every 1 yuan invested after one year\"\n    },\n    {\n      \"parameter\": \"return_rate_option2\",\n      \"extracted\": 2.0,\n      \"stated\": 3.0,\n      \"evidence\": \"The second investment guarantees a return of 2 yuan for every 1 yuan invested after two years\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "return_rate_option1",
+   "extracted": 0.7,
+   "stated": 1.7,
+   "evidence": "The first investment guarantees a return of 0.7 yuan for every 1 yuan invested after one year"
+  },
+  {
+   "parameter": "return_rate_option2",
+   "extracted": 2.0,
+   "stated": 3.0,
+   "evidence": "The second investment guarantees a return of 2 yuan for every 1 yuan invested after two years"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

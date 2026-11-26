@@ -1,0 +1,170 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 8000,
+   "preferred_city_goal": 8000
+  },
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 11137.436541638763,
+   "preferred_city_goal": 4695.51066103533
+  },
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 9199.075502236186,
+   "preferred_city_goal": 8359.531844825733
+  },
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 6722.004132143935,
+   "preferred_city_goal": 5243.835998494253
+  },
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 10457.02618619504,
+   "preferred_city_goal": 9837.854293550543
+  },
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 10893.65520248622,
+   "preferred_city_goal": 8618.817162054096
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1000002500.0,
+   4137436541.638763,
+   2199078361.7680316,
+   0.0,
+   3457030524.0493336,
+   3893658321.3033814
+  ],
+  "B-structured": [
+   2500.0,
+   0.0,
+   2859.531844825733,
+   0.0,
+   4337.854293550543,
+   3118.817162054096
+  ],
+  "C-direct": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 2, 4, 5]"
+ ],
+ "notes": []
+}

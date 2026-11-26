@@ -1,0 +1,245 @@
+{
+ "spec": {
+  "cost_A_B": {
+   "base": 61,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "cost_A_C": {
+   "base": 65,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "cost_A_D": {
+   "base": 63,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "cost_B_A": {
+   "base": 61,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "cost_B_C": {
+   "base": 94,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "cost_B_D": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "cost_C_A": {
+   "base": 65,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "cost_C_B": {
+   "base": 94,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "cost_C_D": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "cost_D_A": {
+   "base": 63,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "cost_D_B": {
+   "base": 31,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "cost_D_C": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_A_B": {
+    "meaning": "travel cost from City A to City B",
+    "base": 61,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "cost_A_C": {
+    "meaning": "travel cost from City A to City C",
+    "base": 65,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "cost_A_D": {
+    "meaning": "travel cost from City A to City D",
+    "base": 63,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "cost_B_A": {
+    "meaning": "travel cost from City B to City A",
+    "base": 61,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "cost_B_C": {
+    "meaning": "travel cost from City B to City C",
+    "base": 94,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "cost_B_D": {
+    "meaning": "travel cost from City B to City D",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "cost_C_A": {
+    "meaning": "travel cost from City C to City A",
+    "base": 65,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "cost_C_B": {
+    "meaning": "travel cost from City C to City B",
+    "base": 94,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "cost_C_D": {
+    "meaning": "travel cost from City C to City D",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "cost_D_A": {
+    "meaning": "travel cost from City D to City A",
+    "base": 63,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "cost_D_B": {
+    "meaning": "travel cost from City D to City B",
+    "base": 31,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "cost_D_C": {
+    "meaning": "travel cost from City D to City C",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

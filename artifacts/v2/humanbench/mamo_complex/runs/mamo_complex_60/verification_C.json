@@ -1,0 +1,35 @@
+{
+ "sample_id": "mamo_complex_60",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The opening costs match exactly. For all other parameters, the statement either gives only partial examples (\"and so on\", \"similar manner\", \"similar details\") or provides only endpoint values without the full arrays.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transportation_cost\",\n      \"evidence\": \"From Distribution Center 1 to Stores: $3 to Store 1, and so on, up to $4 to Store 8. This pattern continues...\"\n    },\n    {\n      \"parameter\": \"demand\",\n      \"evidence\": \"Store 1: 695 units, continuing in a similar manner up to Store 8: 440 units.\"\n    },\n    {\n      \"parameter\": \"supply_capacity\",\n      \"evidence\": \"Distribution Center 1: 1980 units, with similar details provided for each center, ending with Distribution Center 8: 1962 units.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transportation_cost",
+   "evidence": "From Distribution Center 1 to Stores: $3 to Store 1, and so on, up to $4 to Store 8. This pattern continues..."
+  },
+  {
+   "parameter": "demand",
+   "evidence": "Store 1: 695 units, continuing in a similar manner up to Store 8: 440 units."
+  },
+  {
+   "parameter": "supply_capacity",
+   "evidence": "Distribution Center 1: 1980 units, with similar details provided for each center, ending with Distribution Center 8: 1962 units."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

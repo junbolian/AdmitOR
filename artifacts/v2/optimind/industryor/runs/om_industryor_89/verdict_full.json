@@ -1,0 +1,132 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_A": 3,
+   "profit_B": 5,
+   "assembly_time_A": 12,
+   "assembly_time_B": 25,
+   "weekly_machine_hours": 30,
+   "ratio_A_per_5": 5,
+   "ratio_B_min": 2
+  },
+  {
+   "profit_A": 3.418280395373651,
+   "profit_B": 2.625053776113335,
+   "assembly_time_A": 9.30035182042943,
+   "assembly_time_B": 18.080268453720567,
+   "weekly_machine_hours": 37.09413642492037,
+   "ratio_A_per_5": 5,
+   "ratio_B_min": 2
+  },
+  {
+   "profit_A": 1.7608164978882486,
+   "profit_B": 4.609609098426352,
+   "assembly_time_A": 6.357566633256845,
+   "assembly_time_B": 17.965949370090083,
+   "weekly_machine_hours": 30.160658643100867,
+   "ratio_A_per_5": 5,
+   "ratio_B_min": 2
+  },
+  {
+   "profit_A": 3.44965331333857,
+   "profit_B": 5.224707403016083,
+   "assembly_time_A": 8.64528746448836,
+   "assembly_time_B": 27.23164209689772,
+   "weekly_machine_hours": 39.282913700334795,
+   "ratio_A_per_5": 5,
+   "ratio_B_min": 2
+  },
+  {
+   "profit_A": 3.5944181849646806,
+   "profit_B": 4.20125258258996,
+   "assembly_time_A": 7.865753997741379,
+   "assembly_time_B": 36.430326805169535,
+   "weekly_machine_hours": 25.097836353378803,
+   "ratio_A_per_5": 5,
+   "ratio_B_min": 2
+  },
+  {
+   "profit_A": 4.042483099042379,
+   "profit_B": 5.518630156834456,
+   "assembly_time_A": 15.685539279292561,
+   "assembly_time_B": 30.743294667345445,
+   "weekly_machine_hours": 31.086842743641018,
+   "ratio_A_per_5": 5,
+   "ratio_B_min": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   409.09090909090907,
+   601.5359183694418,
+   481.6273818438317,
+   668.2661861513941,
+   354.0148127968438,
+   416.5923812213554
+  ],
+  "B-structured": [
+   409.09090909090907,
+   601.5359183694418,
+   481.6273818438317,
+   668.2661861513941,
+   354.0148127968438,
+   416.5923812213554
+  ],
+  "C-direct": [
+   409.09090909090907,
+   601.5359183694418,
+   481.6273818438317,
+   668.266186151394,
+   354.0148127968438,
+   416.5923812213555
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

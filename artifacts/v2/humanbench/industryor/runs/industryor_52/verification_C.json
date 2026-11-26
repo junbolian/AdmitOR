@@ -1,0 +1,35 @@
+{
+ "sample_id": "industryor_52",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"overtime_cost_premium\", \"evidence\": \"the cost of each product produced during overtime hours increases by C_i' yuan\"}, {\"parameter\": \"penalty_p3\", \"evidence\": \"a penalty of p_3 yuan and p_4 yuan per month of delay will be imposed\"}, {\"parameter\": \"penalty_p4\", \"evidence\": \"a penalty of p_3 yuan and p_4 yuan per month of delay will be imposed\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "overtime_cost_premium",
+   "evidence": "the cost of each product produced during overtime hours increases by C_i' yuan"
+  },
+  {
+   "parameter": "penalty_p3",
+   "evidence": "a penalty of p_3 yuan and p_4 yuan per month of delay will be imposed"
+  },
+  {
+   "parameter": "penalty_p4",
+   "evidence": "a penalty of p_3 yuan and p_4 yuan per month of delay will be imposed"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

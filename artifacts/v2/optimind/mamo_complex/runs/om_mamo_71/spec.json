@@ -1,0 +1,228 @@
+{
+ "spec": {
+  "cost_1_2": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "cost_1_3": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "cost_1_4": {
+   "base": 56,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "cost_1_5": {
+   "base": 93,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "cost_2_3": {
+   "base": 52,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "cost_2_4": {
+   "base": 71,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 130.0,
+    "integer": true
+   }
+  },
+  "cost_2_5": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "cost_3_4": {
+   "base": 57,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "cost_3_5": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "cost_4_5": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "num_cities": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_cities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_1_2": {
+    "meaning": "travel cost City 1 → City 2 (symmetric with 2→1)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "cost_1_3": {
+    "meaning": "travel cost City 1 → City 3 (symmetric with 3→1)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "cost_1_4": {
+    "meaning": "travel cost City 1 → City 4 (symmetric with 4→1)",
+    "base": 56,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "cost_1_5": {
+    "meaning": "travel cost City 1 → City 5 (symmetric with 5→1)",
+    "base": 93,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "cost_2_3": {
+    "meaning": "travel cost City 2 → City 3 (symmetric with 3→2)",
+    "base": 52,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "cost_2_4": {
+    "meaning": "travel cost City 2 → City 4 (symmetric with 4→2)",
+    "base": 71,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 130,
+     "integer": true
+    }
+   },
+   "cost_2_5": {
+    "meaning": "travel cost City 2 → City 5 (symmetric with 5→2)",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "cost_3_4": {
+    "meaning": "travel cost City 3 → City 4 (symmetric with 4→3)",
+    "base": 57,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "cost_3_5": {
+    "meaning": "travel cost City 3 → City 5 (symmetric with 5→3)",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "cost_4_5": {
+    "meaning": "travel cost City 4 → City 5 (symmetric with 5→4)",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "num_cities": {
+    "meaning": "number of cities (fixed problem size)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

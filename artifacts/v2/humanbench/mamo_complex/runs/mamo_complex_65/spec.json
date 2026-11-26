@@ -1,0 +1,136 @@
+{
+ "spec": {
+  "time0_outflow": {
+   "base": [
+    11,
+    53,
+    5,
+    5,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time1_outflow": {
+   "base": [
+    3,
+    6,
+    5,
+    1,
+    34
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "npv": {
+   "base": [
+    13,
+    16,
+    16,
+    14,
+    39
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget_time0": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 90.0,
+    "integer": false
+   }
+  },
+  "budget_time1": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "time0_outflow": {
+    "meaning": "Cash outflow required at time 0 for each investment (millions of dollars)",
+    "base": [
+     11,
+     53,
+     5,
+     5,
+     29
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time1_outflow": {
+    "meaning": "Cash outflow required at time 1 for each investment (millions of dollars)",
+    "base": [
+     3,
+     6,
+     5,
+     1,
+     34
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "npv": {
+    "meaning": "Net present value per unit of each investment (millions of dollars)",
+    "base": [
+     13,
+     16,
+     16,
+     14,
+     39
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "budget_time0": {
+    "meaning": "Funds available for investment at time 0 (millions of dollars)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 90,
+     "integer": false
+    }
+   },
+   "budget_time1": {
+    "meaning": "Funds available for investment at time 1 (millions of dollars)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 60,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

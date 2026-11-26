@@ -1,0 +1,113 @@
+{
+ "spec": {
+  "stock_3m_count": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "stock_4m_count": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "raw_length": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "piece_3m_length": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "piece_4m_length": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[stock_3m_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[stock_4m_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[piece_3m_length] degenerate abs range (lo == hi); perturbation has no effect",
+  "[piece_4m_length] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "stock_3m_count": {
+    "meaning": "number of 3-meter rebars demanded",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "stock_4m_count": {
+    "meaning": "number of 4-meter rebars demanded",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "raw_length": {
+    "meaning": "length of each raw rebar before cutting",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "piece_3m_length": {
+    "meaning": "length of a 3-meter finished piece",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "piece_4m_length": {
+    "meaning": "length of a 4-meter finished piece",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "sample_id": "industryor_49",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"D_jk\", \"evidence\": \"\\\"Customer j requires k units of paper each month\\\" — k here is the demand variable name, not a numeric value; no actual demand figures are given\"}, {\"parameter\": \"r_klm\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"R_im\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"c_kl\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"c_il\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"P_ikl\", \"evidence\": \"no value in the statement\"}, {\"parameter\": \"T_ijk\", \"evidence\": \"no value in the statement\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "D_jk",
+   "evidence": "\"Customer j requires k units of paper each month\" — k here is the demand variable name, not a numeric value; no actual demand figures are given"
+  },
+  {
+   "parameter": "r_klm",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "R_im",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "c_kl",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "c_il",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "P_ikl",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "T_ijk",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

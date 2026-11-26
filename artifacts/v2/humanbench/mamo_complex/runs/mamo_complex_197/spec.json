@@ -1,0 +1,213 @@
+{
+ "spec": {
+  "mango_per_A": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "pineapple_per_A": {
+   "base": 0.125,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "strawberry_per_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "profit_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mango_per_B": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "pineapple_per_B": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "strawberry_per_B": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "profit_B": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mango_stock": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "pineapple_stock": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "strawberry_stock": {
+   "base": 120,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 160.0,
+    "integer": true
+   }
+  },
+  "completeness_tolerance": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "mango_per_A": {
+    "meaning": "mangoes used per unit of fruit salad A",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "pineapple_per_A": {
+    "meaning": "pineapples used per unit of fruit salad A",
+    "base": 0.125,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "strawberry_per_A": {
+    "meaning": "strawberries used per unit of fruit salad A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "profit_A": {
+    "meaning": "net profit per unit of fruit salad A (RMB)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mango_per_B": {
+    "meaning": "mangoes used per unit of fruit salad B",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "pineapple_per_B": {
+    "meaning": "pineapples used per unit of fruit salad B",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "strawberry_per_B": {
+    "meaning": "strawberries used per unit of fruit salad B",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "profit_B": {
+    "meaning": "net profit per unit of fruit salad B (RMB)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mango_stock": {
+    "meaning": "total mangoes available (completeness allowed within tolerance)",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "pineapple_stock": {
+    "meaning": "total pineapples available (completeness allowed within tolerance)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "strawberry_stock": {
+    "meaning": "total strawberries available (completeness allowed within tolerance)",
+    "base": 120,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 160,
+     "integer": true
+    }
+   },
+   "completeness_tolerance": {
+    "meaning": "maximum allowed leftover or extra use of each fruit (± units)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "process_I_hours_A": 4,
+   "process_I_hours_B": 6,
+   "process_II_hours_A": 3,
+   "process_II_hours_B": 2,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 300,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 10,
+   "min_units_B": 15,
+   "overtime_reduction_A": 20,
+   "overtime_reduction_B": 25,
+   "max_overtime_II": 30
+  },
+  {
+   "process_I_hours_A": 4.278853596915767,
+   "process_I_hours_B": 4.575032265668002,
+   "process_II_hours_A": 2.6625439775536788,
+   "process_II_hours_B": 1.7232107381488229,
+   "capacity_I": 150,
+   "capacity_II": 78.27649249574044,
+   "profit_A": 331.8059077361241,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 22,
+   "min_units_B": 3,
+   "overtime_reduction_A": 25.315309181116227,
+   "overtime_reduction_B": 2.234791457855276,
+   "max_overtime_II": 21.559139244108103
+  },
+  {
+   "process_I_hours_A": 4.0107105762067246,
+   "process_I_hours_B": 4.579607909051591,
+   "process_II_hours_A": 2.5482564760299726,
+   "process_II_hours_B": 2.149884437779523,
+   "capacity_I": 150,
+   "capacity_II": 71.57295182111258,
+   "profit_A": 249.6793119673254,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 15,
+   "min_units_B": 28,
+   "overtime_reduction_A": 0.389925580683661,
+   "overtime_reduction_B": 60.43644388746059,
+   "max_overtime_II": 35.9441818496468
+  },
+  {
+   "process_I_hours_A": 3.6805010330359837,
+   "process_I_hours_B": 4.966438499435345,
+   "process_II_hours_A": 3.685819608310172,
+   "process_II_hours_B": 1.8365945451126269,
+   "capacity_I": 150,
+   "capacity_II": 55.746104518305174,
+   "profit_A": 227.40894783002352,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 21,
+   "min_units_B": 21,
+   "overtime_reduction_A": 48.427696396462814,
+   "overtime_reduction_B": 54.72988400203634,
+   "max_overtime_II": 31.086842743641018
+  },
+  {
+   "process_I_hours_A": 4.946231527958741,
+   "process_I_hours_B": 5.635603131625061,
+   "process_II_hours_A": 3.07806094690984,
+   "process_II_hours_B": 2.329404664252995,
+   "capacity_I": 150,
+   "capacity_II": 74.14819133274861,
+   "profit_A": 365.1072420559399,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 14,
+   "min_units_B": 25,
+   "overtime_reduction_A": 2.749463019339733,
+   "overtime_reduction_B": 17.092370673866014,
+   "max_overtime_II": 23.681638908063213
+  },
+  {
+   "process_I_hours_A": 3.159583953847255,
+   "process_I_hours_B": 5.19837265908309,
+   "process_II_hours_A": 2.401502144114594,
+   "process_II_hours_B": 1.7779736031100921,
+   "capacity_I": 150,
+   "capacity_II": 74.748955549254,
+   "profit_A": 275.66979221461514,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 9,
+   "min_units_B": 7,
+   "overtime_reduction_A": 16.018669322946803,
+   "overtime_reduction_B": 70.24909407843705,
+   "max_overtime_II": 34.4410615573978
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   10591.666666666666,
+   12210.405377169065,
+   null,
+   null,
+   null,
+   11994.715121363597
+  ],
+  "B-structured": [
+   0.0,
+   1.7396478776789623,
+   1.3504831783489482,
+   408.44760251406694,
+   2.0748160637464035,
+   0.0
+  ],
+  "C-direct": [
+   11250.0,
+   11917.507612673448,
+   16345.18967950988,
+   13817.140301916425,
+   16361.50138878316,
+   13023.149413333553
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

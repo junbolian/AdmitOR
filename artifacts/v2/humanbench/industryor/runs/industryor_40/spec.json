@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "truck_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "van_capacity": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "motorcycle_capacity": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ev_capacity": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "truck_pollution": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "van_pollution": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "motorcycle_pollution": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "ev_pollution": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "pollution_budget": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "truck_min_trips": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "demand_required": {
+   "base": 1800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "truck_capacity": {
+    "meaning": "units of product carried per truck trip",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "van_capacity": {
+    "meaning": "units of product carried per van trip",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "motorcycle_capacity": {
+    "meaning": "units of product carried per motorcycle trip",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ev_capacity": {
+    "meaning": "units of product carried per electric vehicle trip",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "truck_pollution": {
+    "meaning": "pollution units per truck trip",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "van_pollution": {
+    "meaning": "pollution units per van trip",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "motorcycle_pollution": {
+    "meaning": "pollution units per motorcycle trip",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "ev_pollution": {
+    "meaning": "pollution units per electric vehicle trip",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "pollution_budget": {
+    "meaning": "maximum total pollution allowed",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "truck_min_trips": {
+    "meaning": "minimum number of truck trips required",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "demand_required": {
+    "meaning": "minimum total units that must be transported",
+    "base": 1800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

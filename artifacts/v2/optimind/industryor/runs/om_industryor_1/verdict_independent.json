@@ -1,0 +1,110 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "a1": 10,
+   "a2": 15,
+   "pilot_yield_per_training_jet": 5,
+   "n": 10
+  },
+  {
+   "a1": 15,
+   "a2": 6,
+   "pilot_yield_per_training_jet": 3,
+   "n": 10
+  },
+  {
+   "a1": 16,
+   "a2": 19,
+   "pilot_yield_per_training_jet": 9,
+   "n": 10
+  },
+  {
+   "a1": 11,
+   "a2": 6,
+   "pilot_yield_per_training_jet": 3,
+   "n": 10
+  },
+  {
+   "a1": 5,
+   "a2": 9,
+   "pilot_yield_per_training_jet": 7,
+   "n": 10
+  },
+  {
+   "a1": 8,
+   "a2": 17,
+   "pilot_yield_per_training_jet": 8,
+   "n": 10
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   225.0,
+   189.0,
+   315.0,
+   153.0,
+   126.0,
+   225.0
+  ],
+  "B-structured": [
+   1325.0,
+   1085.0,
+   1886.0,
+   878.0,
+   750.0,
+   1343.0
+  ],
+  "C-direct": [
+   1145.0,
+   866.0,
+   1732.0,
+   701.0,
+   673.0,
+   1222.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

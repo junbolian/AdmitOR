@@ -1,0 +1,250 @@
+{
+ "spec": {
+  "fiber_okra": {
+   "base": 3.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fiber_carrots": {
+   "base": 2.7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fiber_celery": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fiber_cabbage": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_salmon": {
+   "base": 4.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "price_beef": {
+   "base": 3.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "price_pork": {
+   "base": 1.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "price_okra": {
+   "base": 2.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "price_carrots": {
+   "base": 1.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "price_celery": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "price_cabbage": {
+   "base": 2.3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "budget": {
+   "base": 15.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "total_intake": {
+   "base": 600.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_protein_grams": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 50.0,
+    "integer": false
+   }
+  },
+  "min_vegetable_grams": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 50.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "fiber_okra": {
+    "meaning": "fiber per 100 g of okra (grams)",
+    "base": 3.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fiber_carrots": {
+    "meaning": "fiber per 100 g of carrots (grams)",
+    "base": 2.7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fiber_celery": {
+    "meaning": "fiber per 100 g of celery (grams)",
+    "base": 1.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fiber_cabbage": {
+    "meaning": "fiber per 100 g of cabbage (grams)",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_salmon": {
+    "meaning": "price per 100 g of salmon ($)",
+    "base": 4.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "price_beef": {
+    "meaning": "price per 100 g of beef ($)",
+    "base": 3.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "price_pork": {
+    "meaning": "price per 100 g of pork ($)",
+    "base": 1.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "price_okra": {
+    "meaning": "price per 100 g of okra ($)",
+    "base": 2.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "price_carrots": {
+    "meaning": "price per 100 g of carrots ($)",
+    "base": 1.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "price_celery": {
+    "meaning": "price per 100 g of celery ($)",
+    "base": 1.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "price_cabbage": {
+    "meaning": "price per 100 g of cabbage ($)",
+    "base": 2.3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "budget": {
+    "meaning": "total meal budget ($)",
+    "base": 15.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "total_intake": {
+    "meaning": "required total food intake (grams)",
+    "base": 600.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_protein_grams": {
+    "meaning": "minimum grams of chosen protein source",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 50.0,
+     "integer": false
+    }
+   },
+   "min_vegetable_grams": {
+    "meaning": "minimum grams per selected vegetable",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 50.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

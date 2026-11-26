@@ -1,0 +1,170 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "profit_A": 300,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 2,
+   "cap_I": 150,
+   "cap_II": 70,
+   "overtime_cap_II": 30,
+   "min_A": 10,
+   "min_B": 15,
+   "overtime_penalty_A": 20,
+   "overtime_penalty_B": 25
+  },
+  {
+   "profit_A": 341.8280395373651,
+   "profit_B": 236.2548398502001,
+   "profit_target": 8650.175910214715,
+   "time_I_A": 2.892842952595291,
+   "time_I_B": 7.418827284984074,
+   "time_II_A": 3.530098462268734,
+   "time_II_B": 2.784359135409691,
+   "cap_I": 100.43265991552992,
+   "cap_II": 65.62762190237514,
+   "overtime_cap_II": 13.072699899770532,
+   "min_A": 9,
+   "min_B": 20,
+   "overtime_penalty_A": 7.9607909051590875,
+   "overtime_penalty_B": 89.47694280899182
+  },
+  {
+   "profit_A": 344.96533133385697,
+   "profit_B": 470.2236662714475,
+   "profit_target": 8322.64373224418,
+   "time_I_A": 4.357062735503635,
+   "time_I_B": 7.856582740066959,
+   "time_II_A": 1.519496279034183,
+   "time_II_B": 2.611638503665616,
+   "cap_I": 173.7767273985872,
+   "cap_II": 61.05402892500754,
+   "overtime_cap_II": 17.597261993224137,
+   "min_A": 38,
+   "min_B": 13,
+   "overtime_penalty_A": 27.82375301404437,
+   "overtime_penalty_B": 43.5223695750588
+  },
+  {
+   "profit_A": 404.2483099042379,
+   "profit_B": 496.676714115101,
+   "profit_target": 11842.769639646282,
+   "time_I_A": 4.918927146775271,
+   "time_I_B": 6.217368548728204,
+   "time_II_A": 4.419347291938112,
+   "time_II_B": 1.757068754416707,
+   "cap_I": 156.24487575278724,
+   "cap_II": 88.4466611981677,
+   "overtime_cap_II": 34.26671108511286,
+   "min_A": 34,
+   "min_B": 23,
+   "overtime_penalty_A": 211.37155086447703,
+   "overtime_penalty_B": 20.620972645047996
+  },
+  {
+   "profit_A": 218.36948269546406,
+   "profit_B": 355.22458362094824,
+   "profit_target": 7478.751861541765,
+   "time_I_A": 2.9311635454441207,
+   "time_I_B": 3.6060085764583745,
+   "time_II_A": 2.3339208093302766,
+   "time_II_B": 2.2713688885288006,
+   "cap_I": 133.7798614764101,
+   "cap_II": 62.730134158545425,
+   "overtime_cap_II": 19.54225310777356,
+   "min_A": 11,
+   "min_B": 37,
+   "overtime_penalty_A": 194.41061557397805,
+   "overtime_penalty_B": 274.1089525501447
+  },
+  {
+   "profit_A": 201.3415944594291,
+   "profit_B": 553.1070590776571,
+   "profit_target": 7980.41496257157,
+   "time_I_A": 3.517821767030591,
+   "time_I_B": 8.937140103819571,
+   "time_II_A": 3.419999279562279,
+   "time_II_B": 2.1138994875492925,
+   "cap_I": 172.15371011878494,
+   "cap_II": 89.19970753062933,
+   "overtime_cap_II": 39.935996815664815,
+   "min_A": 9,
+   "min_B": 1,
+   "overtime_penalty_A": 94.63591441772458,
+   "overtime_penalty_B": 120.48339418906623
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   250033.33333333334,
+   10589324251682.48,
+   119734091.27035886,
+   269316722.890769,
+   117819010.68580325,
+   1105.0819804024918
+  ],
+  "B-structured": [
+   33.33333333333332,
+   29.48048944818493,
+   0.0,
+   906.4195920625878,
+   2358.3604393345545,
+   1105.0819804024916
+  ],
+  "C-direct": [
+   24.999999999999996,
+   1058932425165.3,
+   11955245.445290972,
+   26924755.895573184,
+   11781665.232536394,
+   0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

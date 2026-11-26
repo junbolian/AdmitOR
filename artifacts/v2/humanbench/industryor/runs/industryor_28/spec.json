@@ -1,0 +1,216 @@
+{
+ "spec": {
+  "pollution_per_car_trip": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "pollution_per_truck_trip": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "pollution_per_bus_trip": {
+   "base": 110,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_per_car_trip": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "capacity_per_truck_trip": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "capacity_per_bus_trip": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "min_products_required": {
+   "base": 500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 400.0,
+    "hi": 600.0,
+    "integer": true
+   }
+  },
+  "max_truck_trips": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "bus_fraction_limit": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.4,
+    "integer": false
+   }
+  },
+  "max_total_trips": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "max_modes_selected": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_modes_selected] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "pollution_per_car_trip": {
+    "meaning": "pollution units generated per car trip",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "pollution_per_truck_trip": {
+    "meaning": "pollution units generated per truck trip",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "pollution_per_bus_trip": {
+    "meaning": "pollution units generated per bus trip",
+    "base": 110,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_per_car_trip": {
+    "meaning": "products transported per car trip",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "capacity_per_truck_trip": {
+    "meaning": "products transported per truck trip",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "capacity_per_bus_trip": {
+    "meaning": "products transported per bus trip",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "min_products_required": {
+    "meaning": "minimum total products to transport",
+    "base": 500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 400,
+     "hi": 600,
+     "integer": true
+    }
+   },
+   "max_truck_trips": {
+    "meaning": "maximum allowed truck trips",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "bus_fraction_limit": {
+    "meaning": "maximum share of total trips that may be bus trips",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.4,
+     "integer": false
+    }
+   },
+   "max_total_trips": {
+    "meaning": "maximum total number of trips",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "max_modes_selected": {
+    "meaning": "maximum number of transportation modes that may be used",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

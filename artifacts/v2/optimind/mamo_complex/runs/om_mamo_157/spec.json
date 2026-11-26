@@ -1,0 +1,200 @@
+{
+ "spec": {
+  "octane_rating": {
+   "base": [
+    86,
+    88,
+    92,
+    96
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "raw_availability": {
+   "base": [
+    20000,
+    15000,
+    15000,
+    10000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "raw_cost": {
+   "base": [
+    17.0,
+    18.0,
+    20.5,
+    23.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_octane_product": {
+   "base": [
+    89,
+    93
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "selling_price": {
+   "base": [
+    19.5,
+    22.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_demand": {
+   "base": [
+    35000,
+    23000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[octane_rating] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[raw_cost] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[min_octane_product] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base",
+  "[selling_price] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "octane_rating": {
+    "meaning": "Octane rating of each raw gasoline (types 1-4)",
+    "base": [
+     86,
+     88,
+     92,
+     96
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      80,
+      82,
+      86,
+      90
+     ],
+     "hi": [
+      92,
+      94,
+      98,
+      102
+     ],
+     "integer": true
+    }
+   },
+   "raw_availability": {
+    "meaning": "Daily availability (barrels) of raw gasolines 1-4",
+    "base": [
+     20000,
+     15000,
+     15000,
+     10000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "raw_cost": {
+    "meaning": "Cost per barrel of raw gasolines 1-4",
+    "base": [
+     17.0,
+     18.0,
+     20.5,
+     23.0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      13.0,
+      14.0,
+      16.5,
+      19.0
+     ],
+     "hi": [
+      21.0,
+      22.0,
+      24.5,
+      27.0
+     ],
+     "integer": false
+    }
+   },
+   "min_octane_product": {
+    "meaning": "Required minimum octane for regular and premium gasoline",
+    "base": [
+     89,
+     93
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      86,
+      90
+     ],
+     "hi": [
+      92,
+      96
+     ],
+     "integer": true
+    }
+   },
+   "selling_price": {
+    "meaning": "Selling price per barrel of regular and premium gasoline",
+    "base": [
+     19.5,
+     22.0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      16.0,
+      18.5
+     ],
+     "hi": [
+      23.0,
+      25.5
+     ],
+     "integer": false
+    }
+   },
+   "max_demand": {
+    "meaning": "Maximum daily demand (barrels) for regular and premium gasoline",
+    "base": [
+     35000,
+     23000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

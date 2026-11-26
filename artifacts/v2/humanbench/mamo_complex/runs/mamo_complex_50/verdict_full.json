@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cereal_capacity": 400000,
+   "meat_capacity": 300000,
+   "cereal_cost_per_lb": 0.2,
+   "meat_cost_per_lb": 0.5,
+   "meaties_price": 2.8,
+   "yummies_price": 2.0,
+   "meaties_cereal_per_pkg": 2.0,
+   "meaties_meat_per_pkg": 3.0,
+   "yummies_cereal_per_pkg": 3.0,
+   "yummies_meat_per_pkg": 1.5,
+   "meaties_blend_pack_cost": 0.25,
+   "yummies_blend_pack_cost": 0.2,
+   "meaties_machine_capacity": 90000
+  },
+  {
+   "cereal_capacity": 427885.35969157674,
+   "meat_capacity": 228751.61328340005,
+   "cereal_cost_per_lb": 0.1730035182042943,
+   "meat_cost_per_lb": 0.4169632214446468,
+   "meaties_price": 3.1310596998296174,
+   "yummies_price": 2.176699487422911,
+   "meaties_cereal_per_pkg": 2.3137436541638765,
+   "meaties_meat_per_pkg": 2.5043265991552994,
+   "yummies_cereal_per_pkg": 2.9063061836223243,
+   "yummies_meat_per_pkg": 1.2178783316628423,
+   "meaties_blend_pack_cost": 0.19372759496072067,
+   "yummies_blend_pack_cost": 0.20085684609653798,
+   "meaties_machine_capacity": 68694.11863577386
+  },
+  {
+   "cereal_capacity": 339767.5301373297,
+   "meat_capacity": 322482.66566692846,
+   "cereal_cost_per_lb": 0.205392977672386,
+   "meat_cost_per_lb": 0.41613218661220897,
+   "meaties_price": 2.9249719574262723,
+   "yummies_price": 2.3094304566778265,
+   "meaties_cereal_per_pkg": 1.605199007742449,
+   "meaties_meat_per_pkg": 3.3669831021993692,
+   "yummies_cereal_per_pkg": 3.2377672739858725,
+   "yummies_meat_per_pkg": 1.404150309910795,
+   "meaties_blend_pack_cost": 0.1810958999623563,
+   "yummies_blend_pack_cost": 0.27315409155308495,
+   "meaties_machine_capacity": 82646.75453006821
+  },
+  {
+   "cereal_capacity": 318549.16867602954,
+   "meat_capacity": 239507.4565250196,
+   "cereal_cost_per_lb": 0.2416993239616952,
+   "meat_cost_per_lb": 0.5311178094100674,
+   "meaties_price": 3.2299795825841318,
+   "yummies_price": 2.2297317866938178,
+   "meaties_cereal_per_pkg": 2.0289824731637607,
+   "meaties_meat_per_pkg": 3.5677389167752445,
+   "yummies_cereal_per_pkg": 2.854241252650024,
+   "yummies_meat_per_pkg": 1.5312243787639361,
+   "meaties_blend_pack_cost": 0.31588093285059893,
+   "yummies_blend_pack_cost": 0.21896316037827934,
+   "meaties_machine_capacity": 106276.81051398498
+  },
+  {
+   "cereal_capacity": 415470.42905135243,
+   "meat_capacity": 330685.77543223853,
+   "cereal_cost_per_lb": 0.14549892603867948,
+   "meat_cost_per_lb": 0.41836948269546403,
+   "meaties_price": 2.50514314904295,
+   "yummies_price": 1.5797919769236275,
+   "meaties_cereal_per_pkg": 1.7862327090888241,
+   "meaties_meat_per_pkg": 2.5212017152916752,
+   "yummies_cereal_per_pkg": 2.7335683237321104,
+   "yummies_meat_per_pkg": 1.58141066655864,
+   "meaties_blend_pack_cost": 0.22296643579401684,
+   "yummies_blend_pack_cost": 0.17922895473870123,
+   "meaties_machine_capacity": 76927.81638471695
+  },
+  {
+   "cereal_capacity": 353395.5644098227,
+   "meat_capacity": 365498.1881568741,
+   "cereal_cost_per_lb": 0.21776424622959123,
+   "meat_cost_per_lb": 0.5327393017000964,
+   "meaties_price": 2.3395941074773354,
+   "yummies_price": 2.2291267979503493,
+   "meaties_cereal_per_pkg": 1.7307219950095427,
+   "meaties_meat_per_pkg": 2.8553465301091774,
+   "yummies_cereal_per_pkg": 3.5874280207639138,
+   "yummies_meat_per_pkg": 1.5839998559124555,
+   "meaties_blend_pack_cost": 0.2613899487549292,
+   "yummies_blend_pack_cost": 0.22953828015837996,
+   "meaties_machine_capacity": 105428.33640854144
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   77499.99999999999,
+   165446.75589603384,
+   123427.7922252634,
+   61303.29499795078,
+   103929.81932459502,
+   36893.363715774445
+  ],
+  "B-structured": [
+   77499.99999999999,
+   165446.75589603384,
+   123427.7922252634,
+   61303.29499795078,
+   103929.81932459502,
+   36893.363715774445
+  ],
+  "C-direct": [
+   77499.99999999999,
+   165446.75589603384,
+   123427.7922252634,
+   61303.29499795078,
+   103929.81932459502,
+   36893.363715774445
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

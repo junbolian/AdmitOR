@@ -1,0 +1,137 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "opening_cost": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000
+   ]
+  },
+  {
+   "opening_cost": [
+    172053.44656714043,
+    100802.06500275205,
+    88353.3422940796,
+    123669.0362234487,
+    197835.394266242,
+    141203.93849074937,
+    253376.68132228186,
+    109170.6228690714
+   ]
+  },
+  {
+   "opening_cost": [
+    139210.19477247584,
+    101721.06613210951,
+    81924.72912761079,
+    171915.75426567494,
+    84245.75514941818,
+    83860.51808239782,
+    209278.96767587322,
+    194359.1153921983
+   ]
+  },
+  {
+   "opening_cost": [
+    108786.5339281452,
+    209139.01130417446,
+    149275.07206127222,
+    86611.28790494843,
+    208931.08029324928,
+    143776.72739858722,
+    152925.5940062745,
+    121919.18696499137
+   ]
+  },
+  {
+   "opening_cost": [
+    220039.17390322397,
+    160626.15266162434,
+    67573.02614533686,
+    102038.50043852234,
+    215599.09861559354,
+    132447.12376402694,
+    237897.34573593718,
+    228730.1123250501
+   ]
+  },
+  {
+   "opening_cost": [
+    156470.4418096598,
+    282838.22668403917,
+    100152.91900175229,
+    179898.9479477218,
+    212704.7462804792,
+    134222.37028370952,
+    247830.65585656147,
+    200387.49901775774
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'"
+  ],
+  "B-structured": [
+   "missing_parameter:transport_cost",
+   "missing_parameter:transport_cost",
+   "missing_parameter:transport_cost",
+   "missing_parameter:transport_cost",
+   "missing_parameter:transport_cost",
+   "missing_parameter:transport_cost"
+  ],
+  "C-direct": [
+   "crash:demand = params[\"demand\"]              # list of 8 values | ~~~~~~^^^^^^^^^^ | KeyError: 'demand'",
+   "crash:demand = params[\"demand\"]              # list of 8 values | ~~~~~~^^^^^^^^^^ | KeyError: 'demand'",
+   "crash:demand = params[\"demand\"]              # list of 8 values | ~~~~~~^^^^^^^^^^ | KeyError: 'demand'",
+   "crash:demand = params[\"demand\"]              # list of 8 values | ~~~~~~^^^^^^^^^^ | KeyError: 'demand'",
+   "crash:demand = params[\"demand\"]              # list of 8 values | ~~~~~~^^^^^^^^^^ | KeyError: 'demand'",
+   "crash:demand = params[\"demand\"]              # list of 8 values | ~~~~~~^^^^^^^^^^ | KeyError: 'demand'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

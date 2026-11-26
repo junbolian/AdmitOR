@@ -1,0 +1,35 @@
+{
+ "sample_id": "industryor_52",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"overtime_cost_premium\",\"evidence\":\"the cost of each product produced during overtime hours increases by $C_i^{\\\\prime}$ yuan\"},{\"parameter\":\"penalty_p3\",\"evidence\":\"a penalty of $p_3$ yuan and $p_4$ yuan per month of delay will be imposed, respectively\"},{\"parameter\":\"penalty_p4\",\"evidence\":\"a penalty of $p_3$ yuan and $p_4$ yuan per month of delay will be imposed, respectively\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "overtime_cost_premium",
+   "evidence": "the cost of each product produced during overtime hours increases by $C_i^{\\prime}$ yuan"
+  },
+  {
+   "parameter": "penalty_p3",
+   "evidence": "a penalty of $p_3$ yuan and $p_4$ yuan per month of delay will be imposed, respectively"
+  },
+  {
+   "parameter": "penalty_p4",
+   "evidence": "a penalty of $p_3$ yuan and $p_4$ yuan per month of delay will be imposed, respectively"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

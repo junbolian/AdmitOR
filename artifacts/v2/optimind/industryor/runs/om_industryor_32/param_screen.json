@@ -1,0 +1,91 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "container_capacity",
+  "container_min_load",
+  "quantity_A",
+  "quantity_B",
+  "quantity_C",
+  "quantity_D",
+  "quantity_E",
+  "weight_A",
+  "weight_B",
+  "weight_C",
+  "weight_D",
+  "weight_E",
+  "min_D_per_container",
+  "A_requires_C_ratio"
+ ],
+ "safe": [
+  "container_min_load",
+  "weight_A",
+  "weight_B",
+  "weight_C",
+  "weight_D",
+  "weight_E",
+  "A_requires_C_ratio"
+ ],
+ "tests": {
+  "container_capacity": [
+   0,
+   3
+  ],
+  "container_min_load": [
+   3,
+   3
+  ],
+  "quantity_A": [
+   1,
+   1
+  ],
+  "quantity_B": [
+   1,
+   1
+  ],
+  "quantity_C": [
+   1,
+   1
+  ],
+  "quantity_D": [
+   0,
+   1
+  ],
+  "quantity_E": [
+   1,
+   1
+  ],
+  "weight_A": [
+   3,
+   3
+  ],
+  "weight_B": [
+   3,
+   3
+  ],
+  "weight_C": [
+   3,
+   3
+  ],
+  "weight_D": [
+   3,
+   3
+  ],
+  "weight_E": [
+   3,
+   3
+  ],
+  "min_D_per_container": [
+   1,
+   0
+  ],
+  "A_requires_C_ratio": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

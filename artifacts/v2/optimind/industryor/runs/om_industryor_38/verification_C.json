@@ -1,0 +1,31 @@
+{
+ "sample_id": "om_industryor_38",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"engines_labor\",\n      \"evidence\": \"Producing 1 unit of engines requires ... 1 person-year\"\n    },\n    {\n      \"parameter\": \"plastic_labor\",\n      \"evidence\": \"One unit of plastic requires: ... 2 person-years\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "engines_labor",
+   "evidence": "Producing 1 unit of engines requires ... 1 person-year"
+  },
+  {
+   "parameter": "plastic_labor",
+   "evidence": "One unit of plastic requires: ... 2 person-years"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

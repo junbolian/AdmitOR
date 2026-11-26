@@ -1,0 +1,155 @@
+{
+ "spec": {
+  "costs": {
+   "base": [
+    4,
+    4,
+    2,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_content": {
+   "base": [
+    14,
+    5,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_content": {
+   "base": [
+    7,
+    13,
+    26,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_content": {
+   "base": [
+    208,
+    140,
+    280,
+    199
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_req": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_req": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_req": {
+   "base": 2210,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "costs": {
+    "meaning": "per-unit cost of Chicken, Rice, Beans, Avocado",
+    "base": [
+     4,
+     4,
+     2,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_content": {
+    "meaning": "grams of protein per unit of Chicken, Rice, Beans, Avocado",
+    "base": [
+     14,
+     5,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_content": {
+    "meaning": "grams of carbohydrates per unit of Chicken, Rice, Beans, Avocado",
+    "base": [
+     7,
+     13,
+     26,
+     14
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_content": {
+    "meaning": "calories per unit of Chicken, Rice, Beans, Avocado",
+    "base": [
+     208,
+     140,
+     280,
+     199
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_req": {
+    "meaning": "daily protein requirement (grams)",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_req": {
+    "meaning": "daily carbohydrate requirement (grams)",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_req": {
+    "meaning": "daily calorie requirement",
+    "base": 2210,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

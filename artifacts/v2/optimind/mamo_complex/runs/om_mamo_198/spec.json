@@ -1,0 +1,530 @@
+{
+ "spec": {
+  "protein_pasta": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 21.0,
+    "integer": false
+   }
+  },
+  "carb_pasta": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 42.0,
+    "integer": false
+   }
+  },
+  "cal_pasta": {
+   "base": 154,
+   "perturb": {
+    "mode": "abs",
+    "lo": 92.0,
+    "hi": 215.0,
+    "integer": false
+   }
+  },
+  "cost_pasta": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "protein_avocado": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 28.0,
+    "integer": false
+   }
+  },
+  "carb_avocado": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 22.0,
+    "integer": false
+   }
+  },
+  "cal_avocado": {
+   "base": 111,
+   "perturb": {
+    "mode": "abs",
+    "lo": 67.0,
+    "hi": 155.0,
+    "integer": false
+   }
+  },
+  "cost_avocado": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "protein_chicken": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 21.0,
+    "integer": false
+   }
+  },
+  "carb_chicken": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 11.0,
+    "integer": false
+   }
+  },
+  "cal_chicken": {
+   "base": 211,
+   "perturb": {
+    "mode": "abs",
+    "lo": 127.0,
+    "hi": 295.0,
+    "integer": false
+   }
+  },
+  "cost_chicken": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "protein_tofu": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 27.0,
+    "integer": false
+   }
+  },
+  "carb_tofu": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 7.0,
+    "integer": false
+   }
+  },
+  "cal_tofu": {
+   "base": 87,
+   "perturb": {
+    "mode": "abs",
+    "lo": 52.0,
+    "hi": 122.0,
+    "integer": false
+   }
+  },
+  "cost_tofu": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "protein_spinach": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 27.0,
+    "integer": false
+   }
+  },
+  "carb_spinach": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 17.0,
+    "hi": 39.0,
+    "integer": false
+   }
+  },
+  "cal_spinach": {
+   "base": 98,
+   "perturb": {
+    "mode": "abs",
+    "lo": 59.0,
+    "hi": 137.0,
+    "integer": false
+   }
+  },
+  "cost_spinach": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "protein_cheese": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 17.0,
+    "integer": false
+   }
+  },
+  "carb_cheese": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 24.0,
+    "integer": false
+   }
+  },
+  "cal_cheese": {
+   "base": 231,
+   "perturb": {
+    "mode": "abs",
+    "lo": 139.0,
+    "hi": 323.0,
+    "integer": false
+   }
+  },
+  "cost_cheese": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "req_protein": {
+   "base": 73,
+   "perturb": {
+    "mode": "abs",
+    "lo": 44.0,
+    "hi": 102.0,
+    "integer": false
+   }
+  },
+  "req_carb": {
+   "base": 111,
+   "perturb": {
+    "mode": "abs",
+    "lo": 67.0,
+    "hi": 155.0,
+    "integer": false
+   }
+  },
+  "req_cal": {
+   "base": 2196,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1318.0,
+    "hi": 3074.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_pasta": {
+    "meaning": "protein content of Pasta (g)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 21,
+     "integer": false
+    }
+   },
+   "carb_pasta": {
+    "meaning": "carbohydrate content of Pasta (g)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 42,
+     "integer": false
+    }
+   },
+   "cal_pasta": {
+    "meaning": "calorie content of Pasta",
+    "base": 154,
+    "perturb": {
+     "mode": "abs",
+     "lo": 92,
+     "hi": 215,
+     "integer": false
+    }
+   },
+   "cost_pasta": {
+    "meaning": "cost of Pasta ($)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "protein_avocado": {
+    "meaning": "protein content of Avocado (g)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 28,
+     "integer": false
+    }
+   },
+   "carb_avocado": {
+    "meaning": "carbohydrate content of Avocado (g)",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 22,
+     "integer": false
+    }
+   },
+   "cal_avocado": {
+    "meaning": "calorie content of Avocado",
+    "base": 111,
+    "perturb": {
+     "mode": "abs",
+     "lo": 67,
+     "hi": 155,
+     "integer": false
+    }
+   },
+   "cost_avocado": {
+    "meaning": "cost of Avocado ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "protein_chicken": {
+    "meaning": "protein content of Chicken (g)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 21,
+     "integer": false
+    }
+   },
+   "carb_chicken": {
+    "meaning": "carbohydrate content of Chicken (g)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 11,
+     "integer": false
+    }
+   },
+   "cal_chicken": {
+    "meaning": "calorie content of Chicken",
+    "base": 211,
+    "perturb": {
+     "mode": "abs",
+     "lo": 127,
+     "hi": 295,
+     "integer": false
+    }
+   },
+   "cost_chicken": {
+    "meaning": "cost of Chicken ($)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "protein_tofu": {
+    "meaning": "protein content of Tofu (g)",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 27,
+     "integer": false
+    }
+   },
+   "carb_tofu": {
+    "meaning": "carbohydrate content of Tofu (g)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 7,
+     "integer": false
+    }
+   },
+   "cal_tofu": {
+    "meaning": "calorie content of Tofu",
+    "base": 87,
+    "perturb": {
+     "mode": "abs",
+     "lo": 52,
+     "hi": 122,
+     "integer": false
+    }
+   },
+   "cost_tofu": {
+    "meaning": "cost of Tofu ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": false
+    }
+   },
+   "protein_spinach": {
+    "meaning": "protein content of Spinach (g)",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 27,
+     "integer": false
+    }
+   },
+   "carb_spinach": {
+    "meaning": "carbohydrate content of Spinach (g)",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 17,
+     "hi": 39,
+     "integer": false
+    }
+   },
+   "cal_spinach": {
+    "meaning": "calorie content of Spinach",
+    "base": 98,
+    "perturb": {
+     "mode": "abs",
+     "lo": 59,
+     "hi": 137,
+     "integer": false
+    }
+   },
+   "cost_spinach": {
+    "meaning": "cost of Spinach ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "protein_cheese": {
+    "meaning": "protein content of Cheese (g)",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 17,
+     "integer": false
+    }
+   },
+   "carb_cheese": {
+    "meaning": "carbohydrate content of Cheese (g)",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 24,
+     "integer": false
+    }
+   },
+   "cal_cheese": {
+    "meaning": "calorie content of Cheese",
+    "base": 231,
+    "perturb": {
+     "mode": "abs",
+     "lo": 139,
+     "hi": 323,
+     "integer": false
+    }
+   },
+   "cost_cheese": {
+    "meaning": "cost of Cheese ($)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "req_protein": {
+    "meaning": "minimum daily protein requirement (g)",
+    "base": 73,
+    "perturb": {
+     "mode": "abs",
+     "lo": 44,
+     "hi": 102,
+     "integer": false
+    }
+   },
+   "req_carb": {
+    "meaning": "minimum daily carbohydrate requirement (g)",
+    "base": 111,
+    "perturb": {
+     "mode": "abs",
+     "lo": 67,
+     "hi": 155,
+     "integer": false
+    }
+   },
+   "req_cal": {
+    "meaning": "minimum daily calorie requirement",
+    "base": 2196,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1318,
+     "hi": 3074,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

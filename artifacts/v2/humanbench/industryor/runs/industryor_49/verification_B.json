@@ -1,0 +1,51 @@
+{
+ "sample_id": "industryor_49",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"D_jk\",\n      \"evidence\": \"Customer j requires k units of paper each month\"\n    },\n    {\n      \"parameter\": \"r_klm\",\n      \"evidence\": \"The amount of raw material m required to produce one unit of paper of type k on machine l\"\n    },\n    {\n      \"parameter\": \"R_im\",\n      \"evidence\": \"The amount of raw material m available each month at mill i\"\n    },\n    {\n      \"parameter\": \"c_kl\",\n      \"evidence\": \"The machine time required to produce one unit of paper of type k on machine l\"\n    },\n    {\n      \"parameter\": \"c_il\",\n      \"evidence\": \"The machine time available each month at mill i for machine type l\"\n    },\n    {\n      \"parameter\": \"P_ikl\",\n      \"evidence\": \"The cost of producing one unit of paper of type k on machine type l at mill i\"\n    },\n    {\n      \"parameter\": \"T_ijk\",\n      \"evidence\": \"The cost of transporting one unit of paper of type k from mill i to customer j\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "D_jk",
+   "evidence": "Customer j requires k units of paper each month"
+  },
+  {
+   "parameter": "r_klm",
+   "evidence": "The amount of raw material m required to produce one unit of paper of type k on machine l"
+  },
+  {
+   "parameter": "R_im",
+   "evidence": "The amount of raw material m available each month at mill i"
+  },
+  {
+   "parameter": "c_kl",
+   "evidence": "The machine time required to produce one unit of paper of type k on machine l"
+  },
+  {
+   "parameter": "c_il",
+   "evidence": "The machine time available each month at mill i for machine type l"
+  },
+  {
+   "parameter": "P_ikl",
+   "evidence": "The cost of producing one unit of paper of type k on machine type l at mill i"
+  },
+  {
+   "parameter": "T_ijk",
+   "evidence": "The cost of transporting one unit of paper of type k from mill i to customer j"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

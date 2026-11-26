@@ -1,0 +1,227 @@
+{
+ "spec": {
+  "raw_material_cost_per_lb": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "lab_hours_per_lb_processing": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "brute_oz_per_lb": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "chanelle_oz_per_lb": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "regular_brute_price_per_oz": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "regular_chanelle_price_per_oz": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "luxury_brute_price_per_oz": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "luxury_chanelle_price_per_oz": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "luxury_brute_lab_hours_per_oz": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "luxury_chanelle_lab_hours_per_oz": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "luxury_brute_cost_per_oz": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "luxury_chanelle_cost_per_oz": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "lab_hours_capacity": {
+   "base": 6000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "raw_material_capacity_lb": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "raw_material_cost_per_lb": {
+    "meaning": "Purchase cost of raw material per pound",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "lab_hours_per_lb_processing": {
+    "meaning": "Laboratory hours required to process 1 lb of raw material",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "brute_oz_per_lb": {
+    "meaning": "Ounces of Regular Brute yielded per pound of processed raw material",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "chanelle_oz_per_lb": {
+    "meaning": "Ounces of Regular Chanelle yielded per pound of processed raw material",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "regular_brute_price_per_oz": {
+    "meaning": "Selling price of Regular Brute per ounce",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "regular_chanelle_price_per_oz": {
+    "meaning": "Selling price of Regular Chanelle per ounce",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "luxury_brute_price_per_oz": {
+    "meaning": "Selling price of Luxury Brute per ounce",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "luxury_chanelle_price_per_oz": {
+    "meaning": "Selling price of Luxury Chanelle per ounce",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "luxury_brute_lab_hours_per_oz": {
+    "meaning": "Additional laboratory hours to further process 1 oz of Regular Brute into Luxury Brute",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "luxury_chanelle_lab_hours_per_oz": {
+    "meaning": "Additional laboratory hours to further process 1 oz of Regular Chanelle into Luxury Chanelle",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "luxury_brute_cost_per_oz": {
+    "meaning": "Additional processing cost per ounce to produce Luxury Brute",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "luxury_chanelle_cost_per_oz": {
+    "meaning": "Additional processing cost per ounce to produce Luxury Chanelle",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "lab_hours_capacity": {
+    "meaning": "Annual available laboratory hours",
+    "base": 6000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "raw_material_capacity_lb": {
+    "meaning": "Maximum annual purchase of raw material in pounds",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

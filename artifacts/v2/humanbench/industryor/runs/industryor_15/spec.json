@@ -1,0 +1,197 @@
+{
+ "spec": {
+  "gasoline_limit": {
+   "base": 48000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "heavy_bomb_limit": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "light_bomb_limit": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "fuel_efficiency_heavy": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "fuel_efficiency_light": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "fuel_efficiency_empty": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "takeoff_landing_fuel": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "distances": {
+   "base": [
+    450,
+    480,
+    540,
+    600
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "prob_heavy": {
+   "base": [
+    0.1,
+    0.2,
+    0.15,
+    0.25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "prob_light": {
+   "base": [
+    0.08,
+    0.16,
+    0.12,
+    0.2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "gasoline_limit": {
+    "meaning": "total gasoline available (L)",
+    "base": 48000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "heavy_bomb_limit": {
+    "meaning": "total heavy bombs available",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "light_bomb_limit": {
+    "meaning": "total light bombs available",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "fuel_efficiency_heavy": {
+    "meaning": "km per liter when carrying a heavy bomb",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "fuel_efficiency_light": {
+    "meaning": "km per liter when carrying a light bomb",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "fuel_efficiency_empty": {
+    "meaning": "km per liter when flying empty",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "takeoff_landing_fuel": {
+    "meaning": "fuel consumed per takeoff and landing (L)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "distances": {
+    "meaning": "distance from base to each key area (km)",
+    "base": [
+     450,
+     480,
+     540,
+     600
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "prob_heavy": {
+    "meaning": "destruction probability per heavy bomb for areas 1-4",
+    "base": [
+     0.1,
+     0.2,
+     0.15,
+     0.25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "prob_light": {
+    "meaning": "destruction probability per light bomb for areas 1-4",
+    "base": [
+     0.08,
+     0.16,
+     0.12,
+     0.2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

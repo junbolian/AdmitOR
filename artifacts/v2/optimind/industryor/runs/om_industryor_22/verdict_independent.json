@@ -1,0 +1,154 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": 1800,
+   "pollution_cap": 2000,
+   "min_truck_trips": 10,
+   "capacity_truck": 100,
+   "capacity_van": 80,
+   "capacity_motorcycle": 40,
+   "capacity_ev": 60,
+   "pollution_truck": 100,
+   "pollution_van": 50,
+   "pollution_motorcycle": 10,
+   "pollution_ev": 0
+  },
+  {
+   "demand": 1925.4841186120952,
+   "pollution_cap": 1240.017208356267,
+   "min_truck_trips": 8,
+   "capacity_truck": 88.92842952595291,
+   "capacity_van": 89.4588485665605,
+   "capacity_motorcycle": 43.533989748458225,
+   "capacity_ev": 71.76538703114537,
+   "pollution_truck": 75.21632995776497,
+   "pollution_van": 47.65765459055811,
+   "pollution_motorcycle": 5.297972194380703,
+   "pollution_ev": 4.372759496072067
+  },
+  {
+   "demand": 1804.819759293026,
+   "pollution_cap": 1242.4575514941819,
+   "min_truck_trips": 6,
+   "capacity_truck": 105.99537751118093,
+   "capacity_van": 81.79765922412867,
+   "capacity_motorcycle": 34.40881244081393,
+   "capacity_ev": 62.67797051627727,
+   "pollution_truck": 118.5658274006696,
+   "pollution_van": 35.194962790341826,
+   "pollution_motorcycle": 13.058192518328081,
+   "pollution_ev": 13.962787899764537
+  },
+  {
+   "demand": 1656.2254648661926,
+   "pollution_cap": 1448.7671996988504,
+   "min_truck_trips": 29,
+   "capacity_truck": 93.46378180450508,
+   "capacity_van": 63.70983373520591,
+   "capacity_motorcycle": 31.93432753666928,
+   "capacity_ev": 70.42483099042379,
+   "pollution_truck": 106.22356188201347,
+   "pollution_van": 59.21384819823141,
+   "pollution_motorcycle": 12.297317866938178,
+   "pollution_ev": 10.724561829094014
+  },
+  {
+   "demand": 2225.8041875814333,
+   "pollution_cap": 1805.6550035333653,
+   "min_truck_trips": 17,
+   "capacity_truck": 113.17618657011978,
+   "capacity_van": 84.74079009456985,
+   "capacity_motorcycle": 47.234138006215545,
+   "capacity_ev": 62.320564357702864,
+   "pollution_truck": 112.2743101728954,
+   "pollution_van": 36.374731509669864,
+   "pollution_motorcycle": 7.278982756515468,
+   "pollution_ev": 5.787759272042143
+  },
+  {
+   "demand": 1421.8127792312648,
+   "pollution_cap": 1572.4654181776482,
+   "min_truck_trips": 3,
+   "capacity_truck": 91.11894412440368,
+   "capacity_van": 85.42737777057602,
+   "capacity_motorcycle": 37.29664357940169,
+   "capacity_ev": 56.10542901350647,
+   "pollution_truck": 82.57042184628925,
+   "pollution_van": 43.009334661473396,
+   "pollution_motorcycle": 14.366545877124942,
+   "pollution_ev": 12.96070770493187
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1000.0,
+   675.7047113751303,
+   971.7794266738946,
+   null,
+   null,
+   513.0118273728166
+  ],
+  "B-structured": [
+   1000.0,
+   676.0675510953449,
+   976.6879344995439,
+   null,
+   null,
+   519.886127342437
+  ],
+  "C-direct": [
+   1000.0,
+   676.0675510953449,
+   976.6879344995439,
+   null,
+   null,
+   519.886127342437
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 6.874 on instance 5 (params: {'demand': 1421.81, 'pollution_cap': 1572.47, 'min_truck_trips': 3, 'capacity_truck': 91.12, 'capacity_van': 85.43, 'capacity_motorcycle': 37.3, 'capacity_ev': 56.11, 'pollution_truck': 82.57, 'pollution_van': 43.01, 'pollution_motorcycle': 14.37, 'pollution_ev': 12.96})"
+ },
+ "disagreements": [],
+ "notes": []
+}

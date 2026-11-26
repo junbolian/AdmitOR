@@ -1,0 +1,70 @@
+{
+ "spec": {
+  "initial_capital": {
+   "base": 100000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_rate_1yr": {
+   "base": 0.7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.2,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "profit_rate_2yr": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.5,
+    "hi": 4.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_capital": {
+    "meaning": "Total investable capital at the start (yuan)",
+    "base": 100000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_rate_1yr": {
+    "meaning": "Profit per 1 yuan invested in the 1-year option after one year",
+    "base": 0.7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.2,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "profit_rate_2yr": {
+    "meaning": "Profit per 1 yuan invested in the 2-year option after two years",
+    "base": 2.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.5,
+     "hi": 4.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

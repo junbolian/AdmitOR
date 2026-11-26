@@ -1,0 +1,446 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_chicken": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_chicken": {
+   "base": 202,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_chicken": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.25,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "protein_rice": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_rice": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_rice": {
+   "base": 234,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_rice": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "protein_eggs": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_eggs": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_eggs": {
+   "base": 220,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_eggs": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "protein_broccoli": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_broccoli": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_broccoli": {
+   "base": 247,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_broccoli": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.75,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "protein_lentils": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_lentils": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_lentils": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_lentils": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.25,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "protein_apples": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_apples": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_apples": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_apples": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "req_protein": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_carbs": {
+   "base": 187,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_calories": {
+   "base": 2181,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "Protein grams per portion of Chicken",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_chicken": {
+    "meaning": "Carb grams per portion of Chicken",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_chicken": {
+    "meaning": "Calories per portion of Chicken",
+    "base": 202,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per portion of Chicken ($)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.25,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams per portion of Rice",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_rice": {
+    "meaning": "Carb grams per portion of Rice",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_rice": {
+    "meaning": "Calories per portion of Rice",
+    "base": 234,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per portion of Rice ($)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "protein_eggs": {
+    "meaning": "Protein grams per portion of Eggs",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_eggs": {
+    "meaning": "Carb grams per portion of Eggs",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_eggs": {
+    "meaning": "Calories per portion of Eggs",
+    "base": 220,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_eggs": {
+    "meaning": "Cost per portion of Eggs ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "Protein grams per portion of Broccoli",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_broccoli": {
+    "meaning": "Carb grams per portion of Broccoli",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_broccoli": {
+    "meaning": "Calories per portion of Broccoli",
+    "base": 247,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "Cost per portion of Broccoli ($)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.75,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "protein_lentils": {
+    "meaning": "Protein grams per portion of Lentils",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_lentils": {
+    "meaning": "Carb grams per portion of Lentils",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_lentils": {
+    "meaning": "Calories per portion of Lentils",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_lentils": {
+    "meaning": "Cost per portion of Lentils ($)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.25,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "protein_apples": {
+    "meaning": "Protein grams per portion of Apples",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_apples": {
+    "meaning": "Carb grams per portion of Apples",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_apples": {
+    "meaning": "Calories per portion of Apples",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_apples": {
+    "meaning": "Cost per portion of Apples ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 4,
+     "integer": false
+    }
+   },
+   "req_protein": {
+    "meaning": "Minimum daily protein requirement (grams)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_carbs": {
+    "meaning": "Minimum daily carbohydrate requirement (grams)",
+    "base": 187,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_calories": {
+    "meaning": "Minimum daily calorie requirement",
+    "base": 2181,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

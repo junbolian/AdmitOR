@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "machine_hours_available": 20000,
+   "machine_hours_per_unit_product1": 3,
+   "machine_hours_per_unit_product2": 4,
+   "production_cost_product1": 3,
+   "production_cost_product2": 2,
+   "selling_price_product1": 6,
+   "selling_price_product2": 5.4,
+   "cash_available": 4000,
+   "finance_fraction_product1": 0.45,
+   "finance_fraction_product2": 0.3,
+   "extra_machine_hours": 2000,
+   "repair_cost": 400
+  },
+  {
+   "machine_hours_available": 22788.535969157674,
+   "machine_hours_per_unit_product1": 1.5750322656680007,
+   "machine_hours_per_unit_product2": 3.100117273476477,
+   "production_cost_product1": 2.169632214446468,
+   "production_cost_product2": 2.472942428328025,
+   "selling_price_product1": 7.060196924537468,
+   "selling_price_product2": 7.517769665606166,
+   "cash_available": 2347.755330517665,
+   "finance_fraction_product1": 0.4219218196852704,
+   "finance_fraction_product2": 0.029797219438070344,
+   "extra_machine_hours": 1437.2759496072067,
+   "repair_cost": 1010.7105762067248
+  },
+  {
+   "machine_hours_available": 10530.719393677273,
+   "machine_hours_per_unit_product1": 2.0965129520599453,
+   "machine_hours_per_unit_product2": 4.599537751118093,
+   "production_cost_product1": 3.1348244418096503,
+   "production_cost_product2": 1.4408812440813934,
+   "selling_price_product1": 6.535594103255452,
+   "selling_price_product2": 7.070924466060264,
+   "cash_available": 2025.995038712244,
+   "finance_fraction_product1": 0.8058192518328079,
+   "finance_fraction_product2": 0.6981393949882269,
+   "extra_machine_hours": 1680.5010330359837,
+   "repair_cost": 310.9589996235631
+  },
+  {
+   "machine_hours_available": 29144.261444135627,
+   "machine_hours_per_unit_product1": 2.50978363533788,
+   "machine_hours_per_unit_product2": 2.3709833735205916,
+   "production_cost_product1": 1.790149130500392,
+   "production_cost_product2": 2.6949887326949193,
+   "selling_price_product1": 6.622356188201346,
+   "selling_price_product2": 7.058492675681653,
+   "cash_available": 4918.9271467752715,
+   "finance_fraction_product1": 0.5362280914547007,
+   "finance_fraction_product2": 0.9731157639793706,
+   "extra_machine_hours": 1757.068754416707,
+   "repair_cost": 1104.081262546454
+  },
+  {
+   "machine_hours_available": 26588.0932850599,
+   "machine_hours_per_unit_product1": 3.355559257092738,
+   "machine_hours_per_unit_product2": 5.446827601243109,
+   "production_cost_product1": 3.232056435770286,
+   "production_cost_product2": 2.409143672429847,
+   "selling_price_product1": 3.2749463019339733,
+   "selling_price_product2": 3.9306506885183534,
+   "cash_available": 3157.551854408429,
+   "finance_fraction_product1": 0.0797919769236275,
+   "finance_fraction_product2": 0.23279088636103018,
+   "extra_machine_hours": 1202.0028588194582,
+   "repair_cost": 555.9472062201843
+  },
+  {
+   "machine_hours_available": 22713.688885288007,
+   "machine_hours_per_unit_product1": 2.5944965369102526,
+   "machine_hours_per_unit_product2": 3.4807238684675306,
+   "production_cost_product1": 2.128521092314463,
+   "production_cost_product2": 1.5339556440982267,
+   "selling_price_product1": 8.619927526274964,
+   "selling_price_product2": 6.199391080331605,
+   "cash_available": 4436.524022667953,
+   "finance_fraction_product1": 0.171138648198097,
+   "finance_fraction_product2": 0.7291267979503492,
+   "extra_machine_hours": 1326.8049875238569,
+   "repair_cost": 758.9108835152956
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   21600.0,
+   74211.81243221227,
+   19496.954858285342,
+   58391.73494062588,
+   3215.4207100363833,
+   56903.06207974241
+  ],
+  "B-structured": [
+   21600.0,
+   74211.81243221227,
+   19496.954858285342,
+   58391.73494062588,
+   3215.4207100363833,
+   56903.06207974241
+  ],
+  "C-direct": [
+   21600.0,
+   74211.81243221227,
+   19496.954858285342,
+   58391.73494062588,
+   3215.4207100363833,
+   57697.463613209206
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "diverges from consensus by 794.4 on instance 5 (params: {'machine_hours_available': 22713.69, 'machine_hours_per_unit_product1': 2.59, 'machine_hours_per_unit_product2': 3.48, 'production_cost_product1': 2.13, 'production_cost_product2': 1.53, 'selling_price_product1': 8.62, 'selling_price_product2': 6.2, 'cash_available': 4436.52, 'finance_fraction_product1': 0.17, 'finance_fraction_product2': 0.73, 'extra_machine_hours': 1326.8, 'repair_cost': 758.91})"
+ },
+ "disagreements": [],
+ "notes": []
+}

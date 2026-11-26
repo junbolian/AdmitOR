@@ -1,0 +1,35 @@
+{
+ "sample_id": "om_industryor_3",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cow_profit\",\n      \"evidence\": \"The profit is the difference between the selling price and the feed cost.\"\n    },\n    {\n      \"parameter\": \"sheep_profit\",\n      \"evidence\": \"The profit is the difference between the selling price and the feed cost.\"\n    },\n    {\n      \"parameter\": \"chicken_profit\",\n      \"evidence\": \"The profit is the difference between the selling price and the feed cost.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "cow_profit",
+   "evidence": "The profit is the difference between the selling price and the feed cost."
+  },
+  {
+   "parameter": "sheep_profit",
+   "evidence": "The profit is the difference between the selling price and the feed cost."
+  },
+  {
+   "parameter": "chicken_profit",
+   "evidence": "The profit is the difference between the selling price and the feed cost."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

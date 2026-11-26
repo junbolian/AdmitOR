@@ -1,0 +1,422 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_chicken": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_chicken": {
+   "base": 89,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_chicken": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_rice": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_rice": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_rice": {
+   "base": 276,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_rice": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_lentils": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_lentils": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_lentils": {
+   "base": 255,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_lentils": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_apples": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carb_apples": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_apples": {
+   "base": 258,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_apples": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "protein_eggs": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_eggs": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_eggs": {
+   "base": 212,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_eggs": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_broccoli": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carb_broccoli": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_broccoli": {
+   "base": 246,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_broccoli": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_protein": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_carbs": {
+   "base": 162,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_calories": {
+   "base": 1926,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "protein per chicken serving (g)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_chicken": {
+    "meaning": "carbohydrates per chicken serving (g)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_chicken": {
+    "meaning": "calories per chicken serving",
+    "base": 89,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_chicken": {
+    "meaning": "cost per chicken serving ($)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_rice": {
+    "meaning": "protein per rice serving (g)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_rice": {
+    "meaning": "carbohydrates per rice serving (g)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_rice": {
+    "meaning": "calories per rice serving",
+    "base": 276,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_rice": {
+    "meaning": "cost per rice serving ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_lentils": {
+    "meaning": "protein per lentil serving (g)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_lentils": {
+    "meaning": "carbohydrates per lentil serving (g)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_lentils": {
+    "meaning": "calories per lentil serving",
+    "base": 255,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_lentils": {
+    "meaning": "cost per lentil serving ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_apples": {
+    "meaning": "protein per apple serving (g)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carb_apples": {
+    "meaning": "carbohydrates per apple serving (g)",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_apples": {
+    "meaning": "calories per apple serving",
+    "base": 258,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_apples": {
+    "meaning": "cost per apple serving ($)",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "protein_eggs": {
+    "meaning": "protein per egg serving (g)",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_eggs": {
+    "meaning": "carbohydrates per egg serving (g)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_eggs": {
+    "meaning": "calories per egg serving",
+    "base": 212,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_eggs": {
+    "meaning": "cost per egg serving ($)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "protein per broccoli serving (g)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carb_broccoli": {
+    "meaning": "carbohydrates per broccoli serving (g)",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_broccoli": {
+    "meaning": "calories per broccoli serving",
+    "base": 246,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "cost per broccoli serving ($)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_protein": {
+    "meaning": "minimum protein requirement (g)",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_carbs": {
+    "meaning": "minimum carbohydrate requirement (g)",
+    "base": 162,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_calories": {
+    "meaning": "minimum calorie requirement",
+    "base": 1926,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

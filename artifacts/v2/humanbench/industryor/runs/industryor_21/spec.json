@@ -1,0 +1,123 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    1500,
+    2500,
+    4000,
+    6000,
+    9000,
+    12000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    500,
+    550,
+    700,
+    900,
+    400,
+    300
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "variable_cost": {
+   "base": [
+    5,
+    8,
+    10,
+    12,
+    16,
+    18
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fixed_cost": {
+   "base": 1200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3600.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "capacity of each container type (cm^3) for types 1..6",
+    "base": [
+     1500,
+     2500,
+     4000,
+     6000,
+     9000,
+     12000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "demand units for each container type 1..6",
+    "base": [
+     500,
+     550,
+     700,
+     900,
+     400,
+     300
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "variable_cost": {
+    "meaning": "variable cost per unit for each container type 1..6 (¥/unit)",
+    "base": [
+     5,
+     8,
+     10,
+     12,
+     16,
+     18
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fixed_cost": {
+    "meaning": "fixed cost incurred per container type produced (¥)",
+    "base": 1200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3600,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

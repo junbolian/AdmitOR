@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_73",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"transport_costs\",\"evidence\":\"For each center, costs for Stores 3–7 are omitted: “and so on, up to”. The zero entries for these stores are not stated.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "For each center, costs for Stores 3–7 are omitted: “and so on, up to”. The zero entries for these stores are not stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

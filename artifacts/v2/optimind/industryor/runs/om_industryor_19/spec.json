@@ -1,0 +1,180 @@
+{
+ "spec": {
+  "cost_A": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_B": {
+   "base": 110,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "cost_C": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "tables_per_order_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "tables_per_order_B": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "tables_per_order_C": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "min_tables": {
+   "base": 150,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "max_tables": {
+   "base": 600,
+   "perturb": {
+    "mode": "abs",
+    "lo": 450.0,
+    "hi": 750.0,
+    "integer": true
+   }
+  },
+  "min_tables_B_if_A": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[tables_per_order_A] degenerate abs range (lo == hi); perturbation has no effect",
+  "[tables_per_order_B] degenerate abs range (lo == hi); perturbation has no effect",
+  "[tables_per_order_C] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_A": {
+    "meaning": "cost per table from Supplier A",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_B": {
+    "meaning": "cost per table from Supplier B",
+    "base": 110,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "cost_C": {
+    "meaning": "cost per table from Supplier C",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "tables_per_order_A": {
+    "meaning": "tables included per order from Supplier A",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "tables_per_order_B": {
+    "meaning": "tables included per order from Supplier B",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "tables_per_order_C": {
+    "meaning": "tables included per order from Supplier C",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "min_tables": {
+    "meaning": "minimum total tables required",
+    "base": 150,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "max_tables": {
+    "meaning": "maximum total tables allowed",
+    "base": 600,
+    "perturb": {
+     "mode": "abs",
+     "lo": 450,
+     "hi": 750,
+     "integer": true
+    }
+   },
+   "min_tables_B_if_A": {
+    "meaning": "minimum tables from Supplier B if any order from A",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 60,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

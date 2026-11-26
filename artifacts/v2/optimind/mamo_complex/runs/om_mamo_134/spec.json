@@ -1,0 +1,151 @@
+{
+ "spec": {
+  "n": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     0,
+     49,
+     34,
+     18,
+     62,
+     14
+    ],
+    [
+     49,
+     0,
+     35,
+     24,
+     57,
+     17
+    ],
+    [
+     34,
+     35,
+     0,
+     20,
+     34,
+     58
+    ],
+    [
+     18,
+     24,
+     20,
+     0,
+     47,
+     45
+    ],
+    [
+     62,
+     57,
+     34,
+     47,
+     0,
+     71
+    ],
+    [
+     14,
+     17,
+     58,
+     45,
+     71,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[n] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "n": {
+    "meaning": "number of cities (index-set size; frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "cost": {
+    "meaning": "symmetric travel-cost matrix; cost[i][j] from city i to city j (0 on diagonal, unpresented back-costs equal given forward costs)",
+    "base": [
+     [
+      0,
+      49,
+      34,
+      18,
+      62,
+      14
+     ],
+     [
+      49,
+      0,
+      35,
+      24,
+      57,
+      17
+     ],
+     [
+      34,
+      35,
+      0,
+      20,
+      34,
+      58
+     ],
+     [
+      18,
+      24,
+      20,
+      0,
+      47,
+      45
+     ],
+     [
+      62,
+      57,
+      34,
+      47,
+      0,
+      71
+     ],
+     [
+      14,
+      17,
+      58,
+      45,
+      71,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

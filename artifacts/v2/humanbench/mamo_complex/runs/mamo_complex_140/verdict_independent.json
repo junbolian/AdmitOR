@@ -1,0 +1,71 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:cost = params[\"cost_matrix\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'cost_matrix'",
+   "crash:cost = params[\"cost_matrix\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'cost_matrix'",
+   "crash:cost = params[\"cost_matrix\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'cost_matrix'",
+   "crash:cost = params[\"cost_matrix\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'cost_matrix'",
+   "crash:cost = params[\"cost_matrix\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'cost_matrix'",
+   "crash:cost = params[\"cost_matrix\"] | ~~~~~~^^^^^^^^^^^^^^^ | KeyError: 'cost_matrix'"
+  ],
+  "B-structured": [
+   "missing_cost_matrix",
+   "missing_cost_matrix",
+   "missing_cost_matrix",
+   "missing_cost_matrix",
+   "missing_cost_matrix",
+   "missing_cost_matrix"
+  ],
+  "C-direct": [
+   "crash:cost_matrix = params.get(\"cost_matrix\") or params.get(\"Cost_matrix\") or list(params.values())[0] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:cost_matrix = params.get(\"cost_matrix\") or params.get(\"Cost_matrix\") or list(params.values())[0] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:cost_matrix = params.get(\"cost_matrix\") or params.get(\"Cost_matrix\") or list(params.values())[0] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:cost_matrix = params.get(\"cost_matrix\") or params.get(\"Cost_matrix\") or list(params.values())[0] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:cost_matrix = params.get(\"cost_matrix\") or params.get(\"Cost_matrix\") or list(params.values())[0] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range",
+   "crash:cost_matrix = params.get(\"cost_matrix\") or params.get(\"Cost_matrix\") or list(params.values())[0] | ~~~~~~~~~~~~~~~~~~~~~^^^ | IndexError: list index out of range"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

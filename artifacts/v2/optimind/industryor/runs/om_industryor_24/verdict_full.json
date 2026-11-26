@@ -1,0 +1,126 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand_2_6": 10,
+   "demand_6_10": 15,
+   "demand_10_14": 25,
+   "demand_14_18": 20,
+   "demand_18_22": 18,
+   "demand_22_2": 12
+  },
+  {
+   "demand_2_6": 14,
+   "demand_6_10": 7,
+   "demand_10_14": 20,
+   "demand_14_18": 14,
+   "demand_18_22": 24,
+   "demand_22_2": 18
+  },
+  {
+   "demand_2_6": 18,
+   "demand_6_10": 8,
+   "demand_10_14": 24,
+   "demand_14_18": 9,
+   "demand_18_22": 11,
+   "demand_22_2": 14
+  },
+  {
+   "demand_2_6": 4,
+   "demand_6_10": 10,
+   "demand_10_14": 30,
+   "demand_14_18": 22,
+   "demand_18_22": 11,
+   "demand_22_2": 16
+  },
+  {
+   "demand_2_6": 17,
+   "demand_6_10": 6,
+   "demand_10_14": 35,
+   "demand_14_18": 26,
+   "demand_18_22": 14,
+   "demand_22_2": 7
+  },
+  {
+   "demand_2_6": 19,
+   "demand_6_10": 13,
+   "demand_10_14": 15,
+   "demand_14_18": 11,
+   "demand_18_22": 26,
+   "demand_22_2": 16
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   53.0,
+   58.0,
+   53.0,
+   48.0,
+   66.0,
+   60.0
+  ],
+  "B-structured": [
+   53.0,
+   58.0,
+   53.0,
+   48.0,
+   66.0,
+   60.0
+  ],
+  "C-direct": [
+   53.0,
+   58.0,
+   53.0,
+   48.0,
+   66.0,
+   60.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

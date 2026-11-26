@@ -1,0 +1,27 @@
+{
+ "sample_id": "industryor_64",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"coupling_AC\",\"evidence\":\"“whenever loading goods A, at least 1 unit of goods C must be loaded at the same time” gives a conditional minimum, but does not state a minimum per unit of A.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "coupling_AC",
+   "evidence": "“whenever loading goods A, at least 1 unit of goods C must be loaded at the same time” gives a conditional minimum, but does not state a minimum per unit of A."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

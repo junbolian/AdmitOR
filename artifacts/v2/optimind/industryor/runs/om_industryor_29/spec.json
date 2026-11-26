@@ -1,0 +1,438 @@
+{
+ "spec": {
+  "A1_hours": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "A1_hours_II": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "A2_hours_I": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "A2_hours_II": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "A2_hours_III": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "B1_hours_I": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "B1_hours_II": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "B2_hours_I": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "B2_hours_III": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "B3_hours_I": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_A1": {
+   "base": 6000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_A2": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_B1": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_B2": {
+   "base": 7000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_B3": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "full_load_cost_A1": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "full_load_cost_A2": {
+   "base": 321,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "full_load_cost_B1": {
+   "base": 250,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "full_load_cost_B2": {
+   "base": 783,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "full_load_cost_B3": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_cost_A1": {
+   "base": 0.05,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_cost_A2": {
+   "base": 0.03,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_cost_B1": {
+   "base": 0.06,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_cost_B2": {
+   "base": 0.11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_cost_B3": {
+   "base": 0.05,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "raw_material_cost": {
+   "base": [
+    0.25,
+    0.35,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_price": {
+   "base": [
+    1.25,
+    2,
+    2.8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "A1_hours": {
+    "meaning": "processing time per piece on A1 for product I",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "A1_hours_II": {
+    "meaning": "processing time per piece on A1 for product II",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "A2_hours_I": {
+    "meaning": "processing time per piece on A2 for product I",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "A2_hours_II": {
+    "meaning": "processing time per piece on A2 for product II",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "A2_hours_III": {
+    "meaning": "processing time per piece on A2 for product III",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "B1_hours_I": {
+    "meaning": "processing time per piece on B1 for product I",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "B1_hours_II": {
+    "meaning": "processing time per piece on B1 for product II",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "B2_hours_I": {
+    "meaning": "processing time per piece on B2 for product I",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "B2_hours_III": {
+    "meaning": "processing time per piece on B2 for product III",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "B3_hours_I": {
+    "meaning": "processing time per piece on B3 for product I",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_A1": {
+    "meaning": "effective machine hours available on A1",
+    "base": 6000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_A2": {
+    "meaning": "effective machine hours available on A2",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_B1": {
+    "meaning": "effective machine hours available on B1",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_B2": {
+    "meaning": "effective machine hours available on B2",
+    "base": 7000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_B3": {
+    "meaning": "effective machine hours available on B3",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "full_load_cost_A1": {
+    "meaning": "full-load equipment cost for A1 (Yuan)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "full_load_cost_A2": {
+    "meaning": "full-load equipment cost for A2 (Yuan)",
+    "base": 321,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "full_load_cost_B1": {
+    "meaning": "full-load equipment cost for B1 (Yuan)",
+    "base": 250,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "full_load_cost_B2": {
+    "meaning": "full-load equipment cost for B2 (Yuan)",
+    "base": 783,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "full_load_cost_B3": {
+    "meaning": "full-load equipment cost for B3 (Yuan)",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_cost_A1": {
+    "meaning": "processing cost per machine hour on A1 (Yuan/hour)",
+    "base": 0.05,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_cost_A2": {
+    "meaning": "processing cost per machine hour on A2 (Yuan/hour)",
+    "base": 0.03,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_cost_B1": {
+    "meaning": "processing cost per machine hour on B1 (Yuan/hour)",
+    "base": 0.06,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_cost_B2": {
+    "meaning": "processing cost per machine hour on B2 (Yuan/hour)",
+    "base": 0.11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_cost_B3": {
+    "meaning": "processing cost per machine hour on B3 (Yuan/hour)",
+    "base": 0.05,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "raw_material_cost": {
+    "meaning": "raw material cost per piece for products I, II, III (Yuan/piece)",
+    "base": [
+     0.25,
+     0.35,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_price": {
+    "meaning": "unit sales price for products I, II, III (Yuan/piece)",
+    "base": [
+     1.25,
+     2,
+     2.8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "profit_apples": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_pears": {
+   "base": 1800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_oranges": {
+   "base": 2200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_lemons": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "total_land": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "apple_vs_pear_ratio": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "apple_vs_lemon_ratio": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "orange_vs_lemon_ratio": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "max_fruit_types": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_fruit_types] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "profit_apples": {
+    "meaning": "profit per acre of apples ($)",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_pears": {
+    "meaning": "profit per acre of pears ($)",
+    "base": 1800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_oranges": {
+    "meaning": "profit per acre of oranges ($)",
+    "base": 2200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_lemons": {
+    "meaning": "profit per acre of lemons ($)",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "total_land": {
+    "meaning": "total farm area available (acres)",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "apple_vs_pear_ratio": {
+    "meaning": "minimum ratio of apple acres to pear acres",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 4.0,
+     "integer": false
+    }
+   },
+   "apple_vs_lemon_ratio": {
+    "meaning": "minimum ratio of apple acres to lemon acres",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 6.0,
+     "integer": false
+    }
+   },
+   "orange_vs_lemon_ratio": {
+    "meaning": "required ratio of orange acres to lemon acres (conditional on lemons grown)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 4.0,
+     "integer": false
+    }
+   },
+   "max_fruit_types": {
+    "meaning": "maximum number of fruit types allowed",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

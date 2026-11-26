@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_130",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**stock**: [410, 266, 132, 6, 485] — matches exactly.\n\n**need**: [274, 331, 232, 359, 74] — matches exactly.\n\n**cost**: Checking row by row against the statement:\n\n- Row 1 (from Region 1): stated as \"to 2: 24, to 3: 3, to 4: 27, to 5: 31\" → extracted [0,24,3,27,31] ✓\n- Row 2 (from Region 2): stated as \"to 1: 24, to 3: 11, to 4: 7, to 5: 37\" → extracted [24,0,11,7,37] ✓\n- Row 3 (from Region 3): stated as \"to 1: 30, to 2: 1, to 4: 38, to 5: 22\" → extracted [30,1,0,38,22] ✓\n- Row 4 (from Region 4): stated as \"to 1: 36, to 2: 18, to 3: 17, to 5: 35\" → extracted [36,18,17,0,35] ✓\n- Row 5 (from Region 5): stated as \"to 1: 41, to 2: 35, to 3: 33, to 4: 33\" → extracted [41,35,33,33,0] ✓\n\nAll values match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

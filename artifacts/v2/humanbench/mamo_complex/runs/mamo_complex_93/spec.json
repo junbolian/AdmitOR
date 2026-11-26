@@ -1,0 +1,240 @@
+{
+ "spec": {
+  "opening_costs": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transport_costs": {
+   "base": [
+    [
+     2,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     1,
+     5
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    779,
+    892,
+    440,
+    556,
+    414,
+    464,
+    920,
+    743,
+    528
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacities": {
+   "base": [
+    1447,
+    1886,
+    1962,
+    1392,
+    1191,
+    1218,
+    1088,
+    1178
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "n_centers": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "n_stores": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n_centers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[n_stores] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "opening_costs": {
+    "meaning": "Fixed cost to open each distribution center (8 values, $)",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000,
+     182000,
+     186000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_costs": {
+    "meaning": "Unit transportation cost from each center to each store; only per-row min/max are given, treat as bounded ranges ($/unit)",
+    "base": [
+     [
+      2,
+      5
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      1,
+      5
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "Unit demand of each retail store (9 values)",
+    "base": [
+     779,
+     892,
+     440,
+     556,
+     414,
+     464,
+     920,
+     743,
+     528
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum supply capacity of each distribution center (8 values)",
+    "base": [
+     1447,
+     1886,
+     1962,
+     1392,
+     1191,
+     1218,
+     1088,
+     1178
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "n_centers": {
+    "meaning": "Number of potential distribution centers (index-set size, frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "n_stores": {
+    "meaning": "Number of retail stores (index-set size, frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

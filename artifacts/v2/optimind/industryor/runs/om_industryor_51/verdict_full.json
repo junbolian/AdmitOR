@@ -1,0 +1,138 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "harry_cost": 1200,
+   "hermione_cost": 1650,
+   "ron_cost": 750,
+   "fred_cost": 800,
+   "george_cost": 800,
+   "ginny_cost": 1500,
+   "max_children": 4,
+   "min_children": 3
+  },
+  {
+   "harry_cost": 1367.3121581494604,
+   "hermione_cost": 866.2677461174004,
+   "ron_cost": 581.2719887768394,
+   "fred_cost": 578.5685905190581,
+   "george_cost": 989.1769713312099,
+   "ginny_cost": 1765.049231134367,
+   "max_children": 4,
+   "min_children": 3
+  },
+  {
+   "harry_cost": 1106.3061836223246,
+   "hermione_cost": 874.165412072816,
+   "ron_cost": 538.9784811027025,
+   "fred_cost": 804.2842304826898,
+   "george_cost": 421.2287757470909,
+   "ginny_cost": 1048.2564760299726,
+   "max_children": 4,
+   "min_children": 3
+  },
+  {
+   "harry_cost": 864.528746448836,
+   "hermione_cost": 1797.2883783952493,
+   "ron_cost": 982.07284250837,
+   "fred_cost": 405.1990077424488,
+   "george_cost": 1044.6554014662463,
+   "ginny_cost": 1797.2090924823403,
+   "max_children": 4,
+   "min_children": 3
+  },
+  {
+   "harry_cost": 1748.6556866481376,
+   "hermione_cost": 1380.3809994358342,
+   "ron_cost": 444.55938253511096,
+   "fred_cost": 477.37310146677123,
+   "george_cost": 1077.9954930779677,
+   "ginny_cost": 1655.5890470503366,
+   "max_children": 4,
+   "min_children": 3
+  },
+  {
+   "harry_cost": 1243.4737097456407,
+   "hermione_cost": 2430.6410105659616,
+   "ron_cost": 658.9007829062651,
+   "fred_cost": 841.6325050185815,
+   "george_cost": 1063.523731402396,
+   "ginny_cost": 1677.7796285463692,
+   "max_children": 4,
+   "min_children": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3050.0,
+   2924.8898104302643,
+   2391.519187615365,
+   3184.4809427331593,
+   2577.521531052219,
+   3178.312916471216
+  ],
+  "B-structured": [
+   3050.0,
+   2924.8898104302643,
+   2391.519187615365,
+   3184.4809427331593,
+   2577.521531052219,
+   3178.312916471216
+  ],
+  "C-direct": [
+   3050.0,
+   2924.8898104302643,
+   2391.519187615365,
+   3184.480942733159,
+   2577.521531052219,
+   3178.312916471216
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,228 @@
+{
+ "spec": {
+  "area_per_store": {
+   "base": [
+    250,
+    350,
+    800,
+    400,
+    500
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_stores": {
+   "base": [
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "max_stores": {
+   "base": [
+    3,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "profit_type1": {
+   "base": [
+    9,
+    8,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_type2": {
+   "base": [
+    10,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_type3": {
+   "base": [
+    27,
+    21,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_type4": {
+   "base": [
+    16,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_type5": {
+   "base": [
+    17,
+    15,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "rent_share": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "area_per_store": {
+    "meaning": "Area occupied by each store (m^2), by type 1..5",
+    "base": [
+     250,
+     350,
+     800,
+     400,
+     500
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_stores": {
+    "meaning": "Minimum number of stores of each type, by type 1..5",
+    "base": [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "max_stores": {
+    "meaning": "Maximum number of stores of each type, by type 1..3",
+    "base": [
+     3,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "profit_type1": {
+    "meaning": "Per-store annual profit for Jewelry at 1, 2, 3 stores (ten thousand yuan)",
+    "base": [
+     9,
+     8,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_type2": {
+    "meaning": "Per-store annual profit for Shoes and Hats at 1, 2 stores (ten thousand yuan)",
+    "base": [
+     10,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_type3": {
+    "meaning": "Per-store annual profit for Department Store at 1, 2, 3 stores (ten thousand yuan)",
+    "base": [
+     27,
+     21,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_type4": {
+    "meaning": "Per-store annual profit for Bookstore at 1, 2 stores (ten thousand yuan)",
+    "base": [
+     16,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_type5": {
+    "meaning": "Per-store annual profit for Restaurant at 1, 2, 3 stores (ten thousand yuan)",
+    "base": [
+     17,
+     15,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "rent_share": {
+    "meaning": "Fraction of annual store profit paid to the mall as rent",
+    "base": 0.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

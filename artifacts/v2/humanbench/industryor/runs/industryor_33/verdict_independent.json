@@ -1,0 +1,170 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "warehouse_capacity": 5000,
+   "initial_stock": 1000,
+   "initial_capital": 20000,
+   "purchase_price": [
+    2.85,
+    3.05,
+    2.9
+   ],
+   "selling_price": [
+    3.1,
+    3.25,
+    2.95
+   ],
+   "terminal_stock_requirement": 2000
+  },
+  {
+   "warehouse_capacity": 5418.280395373651,
+   "initial_stock": 75,
+   "initial_capital": 15500.586367382386,
+   "purchase_price": [
+    2.534460241489658,
+    3.338494881280095,
+    3.1049714054105766
+   ],
+   "selling_price": [
+    3.5863026639540085,
+    2.713020482418241,
+    2.857867747228619
+   ],
+   "terminal_stock_requirement": 119
+  },
+  {
+   "warehouse_capacity": 4155.91392441081,
+   "initial_stock": 1516,
+   "initial_capital": 10530.719393677273,
+   "purchase_price": [
+    2.5066749217827793,
+    3.232859014091018,
+    2.952132117499731
+   ],
+   "selling_price": [
+    2.753346371330464,
+    3.3660453890386814,
+    3.3151279388798356
+   ],
+   "terminal_stock_requirement": 26
+  },
+  {
+   "warehouse_capacity": 5917.4577554984235,
+   "initial_stock": 2094,
+   "initial_capital": 16805.010330359837,
+   "purchase_price": [
+    2.457246629785431,
+    3.607799948092273,
+    2.7104496723306473
+   ],
+   "selling_price": [
+    2.5950048457913835,
+    2.725731289883503,
+    3.360043352290002
+   ],
+   "terminal_stock_requirement": 2415
+  },
+  {
+   "warehouse_capacity": 5921.384819823141,
+   "initial_stock": 2189,
+   "initial_capital": 20724.56182909401,
+   "purchase_price": [
+    3.3893519709364823,
+    2.901811940194191,
+    2.960367132276943
+   ],
+   "selling_price": [
+    3.5084617836737135,
+    3.40407567807352,
+    3.376814142366717
+   ],
+   "terminal_stock_requirement": 2309
+  },
+  {
+   "warehouse_capacity": 5613.71550864477,
+   "initial_stock": 137,
+   "initial_capital": 14557.965513030937,
+   "purchase_price": [
+    2.6099022785064023,
+    2.5373462118468253,
+    2.590037428178795
+   ],
+   "selling_price": [
+    2.6052417724680645,
+    2.9613656840431197,
+    3.1101076442319924
+   ],
+   "terminal_stock_requirement": 1459
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   -700.0,
+   1681.1989859384491,
+   8010.689925054371,
+   4230.465655631876,
+   3744.3907012940326,
+   1767.027310559295
+  ],
+  "C-direct": [
+   -700.0,
+   1681.1989859384466,
+   7777.8885771378355,
+   4230.465655631873,
+   3705.9548352830097,
+   -357.67826095648525
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/constraint.py\", line 698, in construct | raise IndexError( | IndexError: Constraint 'stock_balance_con': Cannot initialize mul",
+   "crash:File \"<PATH>/constraint.py\", line 698, in construct | raise IndexError( | IndexError: Constraint 'stock_balance_con': Cannot initialize mul",
+   "crash:File \"<PATH>/constraint.py\", line 698, in construct | raise IndexError( | IndexError: Constraint 'stock_balance_con': Cannot initialize mul",
+   "crash:File \"<PATH>/constraint.py\", line 698, in construct | raise IndexError( | IndexError: Constraint 'stock_balance_con': Cannot initialize mul",
+   "crash:File \"<PATH>/constraint.py\", line 698, in construct | raise IndexError( | IndexError: Constraint 'stock_balance_con': Cannot initialize mul",
+   "crash:File \"<PATH>/constraint.py\", line 698, in construct | raise IndexError( | IndexError: Constraint 'stock_balance_con': Cannot initialize mul"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: incomparable (no co-solved instance)",
+  "B-structured vs C-direct: diverge on instance(s) [2, 4, 5]"
+ ],
+ "notes": []
+}

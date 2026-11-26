@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "cost_steak": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_eggs": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_pasta": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_chicken": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_steak": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_eggs": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_pasta": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_chicken": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_steak": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carbs_eggs": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carbs_pasta": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_chicken": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calories_steak": {
+   "base": 68,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_eggs": {
+   "base": 143,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_pasta": {
+   "base": 52,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_chicken": {
+   "base": 69,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_req": {
+   "base": 141,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_req": {
+   "base": 1839,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_steak": {
+    "meaning": "Cost per unit of Steak ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_eggs": {
+    "meaning": "Cost per unit of Eggs ($)",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_pasta": {
+    "meaning": "Cost per unit of Pasta ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per unit of Chicken ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_steak": {
+    "meaning": "Protein (g) per unit of Steak",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_eggs": {
+    "meaning": "Protein (g) per unit of Eggs",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_pasta": {
+    "meaning": "Protein (g) per unit of Pasta",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_chicken": {
+    "meaning": "Protein (g) per unit of Chicken",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_steak": {
+    "meaning": "Carbohydrates (g) per unit of Steak",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carbs_eggs": {
+    "meaning": "Carbohydrates (g) per unit of Eggs",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carbs_pasta": {
+    "meaning": "Carbohydrates (g) per unit of Pasta",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "Carbohydrates (g) per unit of Chicken",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calories_steak": {
+    "meaning": "Calories per unit of Steak",
+    "base": 68,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_eggs": {
+    "meaning": "Calories per unit of Eggs",
+    "base": 143,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_pasta": {
+    "meaning": "Calories per unit of Pasta",
+    "base": 52,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_chicken": {
+    "meaning": "Calories per unit of Chicken",
+    "base": 69,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum protein requirement (g)",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_req": {
+    "meaning": "Minimum carbohydrate requirement (g)",
+    "base": 141,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_req": {
+    "meaning": "Minimum calorie requirement",
+    "base": 1839,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

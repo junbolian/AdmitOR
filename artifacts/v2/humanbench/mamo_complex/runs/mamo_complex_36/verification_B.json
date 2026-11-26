@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_36",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"transport_cost\",\"evidence\":\"The statement lists only costs to other regions; no diagonal values are stated.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost",
+   "evidence": "The statement lists only costs to other regions; no diagonal values are stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

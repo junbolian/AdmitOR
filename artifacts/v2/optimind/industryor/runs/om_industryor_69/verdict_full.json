@@ -1,0 +1,126 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "d12": 20,
+   "d21": 30,
+   "c11": 5,
+   "c12": 8,
+   "c21": 6,
+   "c22": 7
+  },
+  {
+   "d12": 22.78853596915767,
+   "d21": 15.750322656680009,
+   "c11": 3.8751465918455965,
+   "c12": 5.785685905190582,
+   "c21": 7.418827284984074,
+   "c22": 8.236896411960378
+  },
+  {
+   "d12": 27.843591354096908,
+   "d21": 17.608164978882485,
+   "c11": 4.609609098426352,
+   "c12": 4.238377755504563,
+   "c21": 4.31182784882162,
+   "c22": 7.037487016723536
+  },
+  {
+   "d12": 10.530719393677273,
+   "d21": 20.965129520599454,
+   "c11": 5.749422188897616,
+   "c12": 8.359531844825733,
+   "c21": 4.32264373224418,
+   "c22": 7.624859787131361
+  },
+  {
+   "d12": 26.188609133556533,
+   "d21": 15.19496279034183,
+   "c11": 6.5290962591640405,
+   "c12": 9.585115159905815,
+   "c21": 5.041503099107951,
+   "c22": 4.5883564986824705
+  },
+  {
+   "d12": 29.144261444135626,
+   "d21": 25.097836353378803,
+   "c11": 2.9637292169007394,
+   "c12": 4.773731014667712,
+   "c21": 8.084966198084757,
+   "c22": 7.726082219568237
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   340.0,
+   248.69623482936464,
+   193.93503435115457,
+   178.65666983827577,
+   277.6754223040623,
+   342.04202331758506
+  ],
+  "C-direct": [
+   340.0,
+   248.69623482936464,
+   193.93503435115457,
+   178.65666983827577,
+   277.6754223040623,
+   342.04202331758506
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig",
+   "crash:File \"<PATH>/highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig', 'crash:File \"D:\\\\Python\\\\Anaconda\\\\envs\\\\optskills\\\\Lib\\\\site-packages\\\\pyomo\\\\contrib\\\\appsi\\\\solvers\\\\highs.py\", line 428, in _add_constraints | raise DegreeError( | pyomo.contrib.appsi.solvers.highs.DegreeError: Hig']"
+ },
+ "disagreements": [],
+ "notes": []
+}

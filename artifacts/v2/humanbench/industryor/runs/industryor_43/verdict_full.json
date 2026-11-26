@@ -1,0 +1,198 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 6,
+   "overtime_unit_cost": 5,
+   "holding_cost": 10,
+   "max_workforce_change": 5,
+   "hiring_cost": 500,
+   "layoff_cost": 700,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 6.836560790747302,
+   "overtime_unit_cost": 2.150064531336002,
+   "holding_cost": 7.300351820429432,
+   "max_workforce_change": 3.3392644288929367,
+   "hiring_cost": 641.8827284984075,
+   "layoff_cost": 848.4275694352456,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 5.531530918111622,
+   "overtime_unit_cost": 2.1787833166284223,
+   "holding_cost": 6.62365569764324,
+   "max_workforce_change": 5.032131728620175,
+   "hiring_cost": 215.92158181031817,
+   "layoff_cost": 447.02362657678475,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 4.32264373224418,
+   "overtime_unit_cost": 5.535594103255452,
+   "holding_cost": 13.713165480133922,
+   "max_workforce_change": 2.038992558068366,
+   "hiring_cost": 683.4915510996849,
+   "layoff_cost": 866.4370917901108,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 8.743278433240688,
+   "overtime_unit_cost": 4.019567270675761,
+   "holding_cost": 5.112950120561775,
+   "max_workforce_change": 2.580298261000784,
+   "hiring_cost": 708.4966198084759,
+   "layoff_cost": 787.1298663481887,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 6.217368548728204,
+   "overtime_unit_cost": 7.838694583876224,
+   "holding_cost": 8.542412526500243,
+   "max_workforce_change": 5.312243787639362,
+   "hiring_cost": 697.642798551797,
+   "layoff_cost": 799.5565919859667,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   -5699.999999999998,
+   -5513.6599943107385,
+   -1833.0736053907585,
+   -13080.091093381405,
+   -4062.112321014737,
+   -5607.099934217602
+  ],
+  "B-structured": [
+   10000.0,
+   10106.800906700071,
+   6167.316432177587,
+   17545.504273981383,
+   9026.731795304999,
+   9907.099934217602
+  ],
+  "C-direct": [
+   10000.0,
+   10106.800906700071,
+   6167.316432177587,
+   17545.504273981387,
+   9026.731795304999,
+   9907.099934217602
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 3.063e+04 on instance 3 (params: {'workers_initial': 40, 'prod_per_worker': 20, 'demand': [700, 600, 500, 800, 900, 800], 'overtime_max_per_worker': 4.32, 'overtime_unit_cost': 5.54, 'holding_cost': 13.71, 'max_workforce_change': 2.04, 'hiring_cost': 683.49, 'layoff_cost': 866.44, 'initial_inventory': 0, 'final_inventory': 0})"
+ },
+ "disagreements": [],
+ "notes": []
+}

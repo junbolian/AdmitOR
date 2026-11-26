@@ -1,0 +1,313 @@
+{
+ "spec": {
+  "prod_rate_I": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "prod_rate_II": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "initial_skilled_workers": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "target_new_workers": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "weekly_hours_normal": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "weekly_hours_overtime": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_trainees_per_trainer": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "training_duration_weeks": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "salary_skilled_weekly": {
+   "base": 360,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "salary_trainee_training_weekly": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "salary_trainee_after_weekly": {
+   "base": 240,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "salary_overtime_weekly": {
+   "base": 540,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "penalty_shortage_I": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "penalty_shortage_II": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_I": {
+   "base": [
+    10,
+    10,
+    12,
+    12,
+    16,
+    16,
+    20,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_II": {
+   "base": [
+    6,
+    7.2,
+    8.4,
+    10.8,
+    10.8,
+    12,
+    12,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [
+  "[initial_skilled_workers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[target_new_workers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[training_duration_weeks] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "prod_rate_I": {
+    "meaning": "Production rate of food I per skilled worker (tonnes/hour scale kg/h→t/h? use kg per hour value)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "prod_rate_II": {
+    "meaning": "Production rate of food II per skilled worker (kg/h)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "initial_skilled_workers": {
+    "meaning": "Number of skilled workers at start (size — frozen)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "target_new_workers": {
+    "meaning": "Number of new workers planned to be trained by end of week 8 (size — frozen)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "weekly_hours_normal": {
+    "meaning": "Normal weekly working hours per worker",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "weekly_hours_overtime": {
+    "meaning": "Overtime weekly working hours per worker",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_trainees_per_trainer": {
+    "meaning": "Max new workers a skilled worker can train in two weeks",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "training_duration_weeks": {
+    "meaning": "Training duration in weeks (structural timing — frozen)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "salary_skilled_weekly": {
+    "meaning": "Weekly salary of skilled worker (yuan)",
+    "base": 360,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "salary_trainee_training_weekly": {
+    "meaning": "Weekly salary of trainee during training (yuan)",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "salary_trainee_after_weekly": {
+    "meaning": "Weekly salary of trainee after training completed (yuan)",
+    "base": 240,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "salary_overtime_weekly": {
+    "meaning": "Weekly salary for overtime (60h) workers (yuan)",
+    "base": 540,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "penalty_shortage_I": {
+    "meaning": "Compensation fee for undelivered food I (yuan/kg)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "penalty_shortage_II": {
+    "meaning": "Compensation fee for undelivered food II (yuan/kg)",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_I": {
+    "meaning": "Weekly demand for food I, weeks 1-8 (kg)",
+    "base": [
+     10,
+     10,
+     12,
+     12,
+     16,
+     16,
+     20,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_II": {
+    "meaning": "Weekly demand for food II, weeks 1-8 (kg)",
+    "base": [
+     6,
+     7.2,
+     8.4,
+     10.8,
+     10.8,
+     12,
+     12,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

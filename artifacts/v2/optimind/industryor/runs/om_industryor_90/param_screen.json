@@ -1,0 +1,58 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "students",
+  "bus_capacity",
+  "minibus_capacity",
+  "bus_cost",
+  "minibus_cost",
+  "num_buses_available",
+  "num_minibuses_available",
+  "num_drivers"
+ ],
+ "safe": [
+  "bus_cost",
+  "minibus_cost",
+  "num_buses_available",
+  "num_minibuses_available"
+ ],
+ "tests": {
+  "students": [
+   2,
+   2
+  ],
+  "bus_capacity": [
+   0,
+   2
+  ],
+  "minibus_capacity": [
+   2,
+   2
+  ],
+  "bus_cost": [
+   3,
+   3
+  ],
+  "minibus_cost": [
+   3,
+   3
+  ],
+  "num_buses_available": [
+   3,
+   3
+  ],
+  "num_minibuses_available": [
+   3,
+   3
+  ],
+  "num_drivers": [
+   3,
+   0
+  ]
+ },
+ "untested": []
+}

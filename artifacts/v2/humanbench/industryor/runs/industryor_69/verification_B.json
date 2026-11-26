@@ -1,0 +1,51 @@
+{
+ "sample_id": "industryor_69",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"vehicle_capacity\",\n      \"evidence\": \"The vehicles also have a capacity.\"\n    },\n    {\n      \"parameter\": \"customer_demand\",\n      \"evidence\": \"Values appear only under '### Example'.\"\n    },\n    {\n      \"parameter\": \"earliest_service_time\",\n      \"evidence\": \"Values appear only under '### Example'.\"\n    },\n    {\n      \"parameter\": \"latest_service_time\",\n      \"evidence\": \"Values appear only under '### Example'.\"\n    },\n    {\n      \"parameter\": \"service_time\",\n      \"evidence\": \"Values appear only under '### Example'.\"\n    },\n    {\n      \"parameter\": \"x_coordinate\",\n      \"evidence\": \"Values appear only under '### Example'.\"\n    },\n    {\n      \"parameter\": \"y_coordinate\",\n      \"evidence\": \"Values appear only under '### Example'.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "vehicle_capacity",
+   "evidence": "The vehicles also have a capacity."
+  },
+  {
+   "parameter": "customer_demand",
+   "evidence": "Values appear only under '### Example'."
+  },
+  {
+   "parameter": "earliest_service_time",
+   "evidence": "Values appear only under '### Example'."
+  },
+  {
+   "parameter": "latest_service_time",
+   "evidence": "Values appear only under '### Example'."
+  },
+  {
+   "parameter": "service_time",
+   "evidence": "Values appear only under '### Example'."
+  },
+  {
+   "parameter": "x_coordinate",
+   "evidence": "Values appear only under '### Example'."
+  },
+  {
+   "parameter": "y_coordinate",
+   "evidence": "Values appear only under '### Example'."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

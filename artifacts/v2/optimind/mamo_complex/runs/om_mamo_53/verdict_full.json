@@ -1,0 +1,196 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "labor_cost_tape": 50,
+   "labor_cost_radio": 35,
+   "material_cost_tape": 30,
+   "material_cost_radio": 40,
+   "price_tape": 100,
+   "price_radio": 90,
+   "raw_material_capacity_tape": 100,
+   "raw_material_capacity_radio": 100,
+   "cash_initial": 10000,
+   "accounts_receivable_initial": 3000,
+   "inventory_initial": 7000,
+   "bank_loan_initial": 10000,
+   "ar_collection_december": 2000,
+   "loan_repayment_december": 1000,
+   "rent_december": 1000,
+   "raw_material_received_january": 2000,
+   "min_cash_january": 4000,
+   "min_current_ratio_january": 2
+  },
+  {
+   "labor_cost_tape": 55.57707193831535,
+   "labor_cost_radio": 16.00043020890668,
+   "material_cost_tape": 30,
+   "material_cost_radio": 31.001172734764772,
+   "price_tape": 100,
+   "price_radio": 73.39264428892936,
+   "raw_material_capacity_tape": 124,
+   "raw_material_capacity_radio": 118,
+   "cash_initial": 13137.436541638763,
+   "accounts_receivable_initial": 3000,
+   "inventory_initial": 4521.632995776497,
+   "bank_loan_initial": 10000,
+   "ar_collection_december": 1765.7654590558113,
+   "loan_repayment_december": 1000,
+   "rent_december": 1000,
+   "raw_material_received_january": 2000,
+   "min_cash_january": 4000,
+   "min_current_ratio_january": 2
+  },
+  {
+   "labor_cost_tape": 31.191888777522813,
+   "labor_cost_radio": 23.745518992144135,
+   "material_cost_tape": 30,
+   "material_cost_radio": 40.2142115241345,
+   "price_tape": 100,
+   "price_radio": 61.59215818103182,
+   "raw_material_capacity_tape": 70,
+   "raw_material_capacity_radio": 115,
+   "cash_initial": 10359.531844825733,
+   "accounts_receivable_initial": 3000,
+   "inventory_initial": 5322.64373224418,
+   "bank_loan_initial": 10000,
+   "ar_collection_december": 2267.7970516277264,
+   "loan_repayment_december": 1000,
+   "rent_december": 1000,
+   "raw_material_received_january": 2000,
+   "min_cash_january": 4000,
+   "min_current_ratio_january": 2
+  },
+  {
+   "labor_cost_tape": 62.377218267113065,
+   "labor_cost_radio": 15.25995038712244,
+   "material_cost_tape": 30,
+   "material_cost_radio": 52.23277007331232,
+   "price_tape": 100,
+   "price_radio": 101.88836369929362,
+   "raw_material_capacity_tape": 84,
+   "raw_material_capacity_radio": 66,
+   "cash_initial": 13657.70457765425,
+   "accounts_receivable_initial": 3000,
+   "inventory_initial": 6019.5672706757605,
+   "bank_loan_initial": 10000,
+   "ar_collection_december": 778.2375301404437,
+   "loan_repayment_december": 1000,
+   "rent_december": 1000,
+   "raw_material_received_january": 2000,
+   "min_cash_january": 4000,
+   "min_current_ratio_january": 2
+  },
+  {
+   "labor_cost_tape": 33.86865507333856,
+   "labor_cost_radio": 48.89977465389839,
+   "material_cost_tape": 30,
+   "material_cost_radio": 44.149041254675645,
+   "price_tape": 100,
+   "price_radio": 108.4276963964628,
+   "raw_material_capacity_tape": 123,
+   "raw_material_capacity_radio": 104,
+   "cash_initial": 13784.926111834964,
+   "accounts_receivable_initial": 3000,
+   "inventory_initial": 6271.206263250121,
+   "bank_loan_initial": 10000,
+   "ar_collection_december": 2156.1218938196807,
+   "loan_repayment_december": 1000,
+   "rent_december": 1000,
+   "raw_material_received_january": 2000,
+   "min_cash_january": 4000,
+   "min_current_ratio_january": 2
+  },
+  {
+   "labor_cost_tape": 63.176186570119796,
+   "labor_cost_radio": 39.740790094569846,
+   "material_cost_tape": 30,
+   "material_cost_radio": 54.46827601243109,
+   "price_tape": 100,
+   "price_radio": 94.64112871540573,
+   "raw_material_capacity_tape": 120,
+   "raw_material_capacity_radio": 55,
+   "cash_initial": 7823.186205212375,
+   "accounts_receivable_initial": 3000,
+   "inventory_initial": 5736.327781612643,
+   "bank_loan_initial": 10000,
+   "ar_collection_december": 739.3759307708825,
+   "loan_repayment_december": 1000,
+   "rent_december": 1000,
+   "raw_material_received_january": 2000,
+   "min_cash_january": 4000,
+   "min_current_ratio_january": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   3679.924738171111,
+   null,
+   2598.651412945523,
+   4788.79274408928,
+   null
+  ],
+  "B-structured": [
+   2500.0,
+   4902.58595838933,
+   null,
+   2910.4261193271873,
+   6043.55899671979,
+   null
+  ],
+  "C-direct": [
+   2500.0,
+   4902.58595838933,
+   null,
+   2910.4261193271873,
+   6043.55899671979,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "no_solution",
+   "optimal",
+   "optimal",
+   "no_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "status_4",
+   "optimal",
+   "optimal",
+   "status_4"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  3,
+  4
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0]: ['infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

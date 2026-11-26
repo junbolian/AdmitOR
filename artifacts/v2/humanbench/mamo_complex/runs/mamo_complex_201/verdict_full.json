@@ -1,0 +1,120 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "capacity_1_2": 8,
+   "capacity_1_3": 7,
+   "capacity_2_3": 2,
+   "capacity_2_4": 4,
+   "capacity_3_4": 7
+  },
+  {
+   "capacity_1_2": 13,
+   "capacity_1_3": 1,
+   "capacity_2_3": 3,
+   "capacity_2_4": 3,
+   "capacity_3_4": 18
+  },
+  {
+   "capacity_1_2": 14,
+   "capacity_1_3": 18,
+   "capacity_2_3": 1,
+   "capacity_2_4": 6,
+   "capacity_3_4": 1
+  },
+  {
+   "capacity_1_2": 4,
+   "capacity_1_3": 10,
+   "capacity_2_3": 0,
+   "capacity_2_4": 3,
+   "capacity_3_4": 16
+  },
+  {
+   "capacity_1_2": 11,
+   "capacity_1_3": 4,
+   "capacity_2_3": 7,
+   "capacity_2_4": 12,
+   "capacity_3_4": 0
+  },
+  {
+   "capacity_1_2": 16,
+   "capacity_1_3": 14,
+   "capacity_2_3": 4,
+   "capacity_2_4": 2,
+   "capacity_3_4": 24
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   11.0,
+   7.0,
+   7.0,
+   13.0,
+   11.0,
+   20.0
+  ],
+  "B-structured": [
+   11.0,
+   7.0,
+   7.0,
+   13.0,
+   11.0,
+   20.0
+  ],
+  "C-direct": [
+   11.0,
+   7.0,
+   7.0,
+   13.0,
+   11.0,
+   20.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,187 @@
+{
+ "spec": {
+  "polygon_vertices": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     11,
+     4
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "area_scale_factor": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 1.5,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[polygon_vertices] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "polygon_vertices": {
+    "meaning": "Coordinates of the polygonal construction field vertices (x,y in meters)",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      11,
+      7
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       2,
+       9
+      ],
+      [
+       6,
+       9
+      ],
+      [
+       9,
+       6
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       6,
+       -1
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "hi": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       8
+      ],
+      [
+       6,
+       11
+      ],
+      [
+       10,
+       11
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       8,
+       1
+      ],
+      [
+       2,
+       1
+      ]
+     ],
+     "integer": false
+    }
+   },
+   "area_scale_factor": {
+    "meaning": "Multiplicative scale applied to the reported maximal area (for sensitivity of the objective value)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 1.5,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

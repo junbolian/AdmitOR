@@ -1,0 +1,259 @@
+{
+ "spec": {
+  "opening_cost": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     2,
+     3,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    [
+     4,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     4
+    ],
+    [
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     4
+    ],
+    [
+     4,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     4
+    ],
+    [
+     1,
+     4,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     4
+    ],
+    [
+     4,
+     4,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    401,
+    0,
+    0,
+    0,
+    0,
+    0,
+    955,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity": {
+   "base": [
+    1795,
+    0,
+    0,
+    0,
+    0,
+    1095
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "opening_cost": {
+    "meaning": "Fixed cost to open each distribution center (DC1..DC6), in dollars",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_cost": {
+    "meaning": "Per-unit transportation cost matrix from DC i (rows 1..6) to store j (columns 1..9), in dollars",
+    "base": [
+     [
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     [
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+     ],
+     [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+     ],
+     [
+      4,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+     ],
+     [
+      1,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+     ],
+     [
+      4,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each retail store 1..9, in units (only endpoints 401 for store 1 and 955 for store 7 are specified; intermediate values unknown)",
+    "base": [
+     401,
+     0,
+     0,
+     0,
+     0,
+     0,
+     955,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity": {
+    "meaning": "Supply capacity of each distribution center DC1..DC6, in units (only DC1 = 1795 and DC6 = 1095 are specified; intermediate values unknown)",
+    "base": [
+     1795,
+     0,
+     0,
+     0,
+     0,
+     1095
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

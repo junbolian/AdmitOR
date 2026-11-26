@@ -23,6 +23,8 @@ which no experiment here uses and which are not copied.
 | `optibench.jsonl` | 605 | OptiBench | OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling, 2024 |
 | `optmath_bench.jsonl` | 166 | OptMATH-Bench | OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling, 2025 |
 
+`datasets/optimind_corrected/`, the corrected releases of IndustryOR (99 records) and Mamo-Complex (210 records) by the authors of OptiMind, from https://github.com/microsoft/OptiGuide at commit `3da334a48c68af9f82035d6dece9e952a46626a9` (`optimind/data/`), unchanged, under the MIT license of that repository (`LICENSE`, Copyright (c) Microsoft Corporation); source, download dates and sha256 in `SOURCE.md`. Cite: Zhang et al., OptiMind: Improving Small Language Models for Optimization Modeling through Formulation Guidance and Multi-Turn Learning, arXiv:2509.22979.
+
 ## Mining and calibration sets
 
 `datasets/train_set/`.

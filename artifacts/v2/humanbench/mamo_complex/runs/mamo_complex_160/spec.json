@@ -1,0 +1,235 @@
+{
+ "spec": {
+  "edge_capacities": {
+   "base": [
+    15,
+    12,
+    9,
+    7,
+    12,
+    5,
+    20,
+    10,
+    6,
+    8,
+    19,
+    14,
+    17,
+    9,
+    16,
+    19,
+    11,
+    13,
+    14,
+    17,
+    10,
+    13,
+    15,
+    4,
+    5,
+    2,
+    18,
+    6,
+    17,
+    19,
+    2,
+    8,
+    2,
+    4,
+    6,
+    14,
+    20,
+    18,
+    14,
+    9,
+    18,
+    7,
+    4,
+    11,
+    11,
+    13,
+    12,
+    14,
+    12,
+    4,
+    18,
+    6,
+    5,
+    4,
+    20,
+    1,
+    6,
+    17,
+    4,
+    2,
+    11,
+    9,
+    16,
+    6,
+    14,
+    0,
+    17,
+    17,
+    6,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "source_node": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "sink_node": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_cities": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[source_node] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink_node] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_cities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "edge_capacities": {
+    "meaning": "Directed truck capacities (tons) between city pairs; entry order is 0->1,0->2,0->3,0->4,0->5,0->6,0->7,0->8, 1->0,1->2,1->4,1->5,1->6,1->7,1->8, 2->0,2->1,2->4,2->5,2->6,2->7,2->8, 3->0,3->1,3->2,3->4,3->5,3->6,3->7,3->8, 4->0,4->1,4->2,4->3,4->5,4->6,4->7,4->8, 5->0,5->1,5->2,5->3,5->4,5->6,5->7,5->8, 6->0,6->1,6->2,6->3,6->4,6->5,6->7,6->8, 7->0,7->1,7->2,7->3,7->4,7->5,7->6,7->8, 8->0,8->1,8->2,8->3,8->4,8->5,8->6,8->7",
+    "base": [
+     15,
+     12,
+     9,
+     7,
+     12,
+     5,
+     20,
+     10,
+     6,
+     8,
+     19,
+     14,
+     17,
+     9,
+     16,
+     19,
+     11,
+     13,
+     14,
+     17,
+     10,
+     13,
+     15,
+     4,
+     5,
+     2,
+     18,
+     6,
+     17,
+     19,
+     2,
+     8,
+     2,
+     4,
+     6,
+     14,
+     20,
+     18,
+     14,
+     9,
+     18,
+     7,
+     4,
+     11,
+     11,
+     13,
+     12,
+     14,
+     12,
+     4,
+     18,
+     6,
+     5,
+     4,
+     20,
+     1,
+     6,
+     17,
+     4,
+     2,
+     11,
+     9,
+     16,
+     6,
+     14,
+     0,
+     17,
+     17,
+     6,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "source_node": {
+    "meaning": "Warehouse node index (0)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "sink_node": {
+    "meaning": "Marketplace node index (8)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_cities": {
+    "meaning": "Number of cities (index-set size, frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

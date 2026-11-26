@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_204",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**price**: [0.75, 0.35, 0.4, 0.75, 0.65] — matches exactly.\n\n**share_limit**: [10, 5, 10, 10, 5] — matches exactly.\n\n**payoff**: Check each row against the statement.\n- Security 1: [1,1,1,0,0] — Argentina, Brazil, England = 1; Germany, Spain = 0. Matches.\n- Security 2: [0,0,0,1,1] — 0 for Argentina, Brazil, England; 1 for Germany, Spain. Matches.\n- Security 3: [1,0,1,0,1] — \"$1 for Argentina, $1 for Spain, and $1 for England, and 0 payoff for Germany and Brazil.\" Extracted row is [1,0,1,0,1] (Argentina=1, Brazil=0, England=1, Germany=0, Spain=1). Matches.\n- Security 4: [1,1,1,1,0] — \"$1 across all countries except Spain.\" Argentina=1, Brazil=1, England=1, Germany=1, Spain=0. Matches.\n- Security 5: [0,1,0,1,1] — \"$1 in Brazil, Germany and Spain, 0 in Argentina and England.\" Argentina=0, Brazil=1, England=0, Germany=1, Spain=1. Matches.\n\nAll parameters match the statement.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    [
+     1500,
+     1000,
+     2000,
+     1200
+    ],
+    [
+     1500,
+     1500,
+     1200,
+     1500
+    ],
+    [
+     1000,
+     2000,
+     1500,
+     2500
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "initial_inventory": {
+   "base": [
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "final_inventory": {
+   "base": [
+    150,
+    150,
+    150
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_hours_per_quarter": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "unit_hours": {
+   "base": [
+    2,
+    4,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "compensation_cost": {
+   "base": [
+    20,
+    20,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "storage_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Contract booking quantities for products I, II, III in quarters 1-4 (3x4 matrix)",
+    "base": [
+     [
+      1500,
+      1000,
+      2000,
+      1200
+     ],
+     [
+      1500,
+      1500,
+      1200,
+      1500
+     ],
+     [
+      1000,
+      2000,
+      1500,
+      2500
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Inventory at beginning of quarter 1 for each product",
+    "base": [
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "final_inventory": {
+    "meaning": "Required inventory at end of quarter 4 for each product",
+    "base": [
+     150,
+     150,
+     150
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_hours_per_quarter": {
+    "meaning": "Available production hours per quarter (each quarter identical)",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "unit_hours": {
+    "meaning": "Production hours per unit for products I, II, III",
+    "base": [
+     2,
+     4,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "compensation_cost": {
+    "meaning": "Compensation per unit per quarter of late delivery for products I, II, III",
+    "base": [
+     20,
+     20,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "storage_cost": {
+    "meaning": "Storage cost per unit per quarter for products held in inventory (all products)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

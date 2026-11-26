@@ -1,0 +1,347 @@
+{
+ "spec": {
+  "salary_F": {
+   "base": 12000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_G": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_H": {
+   "base": 18000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_I": {
+   "base": 5000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_J": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget": {
+   "base": 40000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "max_hires": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "skill_F": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "skill_G": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "skill_H": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "skill_I": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "skill_J": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_skill": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "exp_F": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "exp_G": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "exp_H": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "exp_I": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "exp_J": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "min_exp": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "salary_F": {
+    "meaning": "Salary requirement of candidate F",
+    "base": 12000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_G": {
+    "meaning": "Salary requirement of candidate G",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_H": {
+    "meaning": "Salary requirement of candidate H",
+    "base": 18000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_I": {
+    "meaning": "Salary requirement of candidate I",
+    "base": 5000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_J": {
+    "meaning": "Salary requirement of candidate J",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "budget": {
+    "meaning": "Total salary budget",
+    "base": 40000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "max_hires": {
+    "meaning": "Maximum number of new employees to hire",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "skill_F": {
+    "meaning": "Skill level of candidate F",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "skill_G": {
+    "meaning": "Skill level of candidate G",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "skill_H": {
+    "meaning": "Skill level of candidate H",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "skill_I": {
+    "meaning": "Skill level of candidate I",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "skill_J": {
+    "meaning": "Skill level of candidate J",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_skill": {
+    "meaning": "Minimum required total skill level of hired team",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "exp_F": {
+    "meaning": "Project management experience (years) of candidate F",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "exp_G": {
+    "meaning": "Project management experience (years) of candidate G",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "exp_H": {
+    "meaning": "Project management experience (years) of candidate H",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "exp_I": {
+    "meaning": "Project management experience (years) of candidate I",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "exp_J": {
+    "meaning": "Project management experience (years) of candidate J",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "min_exp": {
+    "meaning": "Minimum required total project management experience (years)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 14,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

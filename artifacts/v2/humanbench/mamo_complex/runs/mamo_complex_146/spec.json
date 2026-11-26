@@ -1,0 +1,197 @@
+{
+ "spec": {
+  "cost_Alpha_Bravo": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Alpha_Charlie": {
+   "base": 55,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Alpha_Delta": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Bravo_Alpha": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Bravo_Charlie": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Bravo_Delta": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Charlie_Alpha": {
+   "base": 55,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Charlie_Bravo": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Charlie_Delta": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Delta_Alpha": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Delta_Bravo": {
+   "base": 47,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_Delta_Charlie": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_Alpha_Bravo": {
+    "meaning": "Delivery cost from Alpha to Bravo",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Alpha_Charlie": {
+    "meaning": "Delivery cost from Alpha to Charlie",
+    "base": 55,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Alpha_Delta": {
+    "meaning": "Delivery cost from Alpha to Delta",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Bravo_Alpha": {
+    "meaning": "Delivery cost from Bravo to Alpha",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Bravo_Charlie": {
+    "meaning": "Delivery cost from Bravo to Charlie",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Bravo_Delta": {
+    "meaning": "Delivery cost from Bravo to Delta",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Charlie_Alpha": {
+    "meaning": "Delivery cost from Charlie to Alpha",
+    "base": 55,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Charlie_Bravo": {
+    "meaning": "Delivery cost from Charlie to Bravo",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Charlie_Delta": {
+    "meaning": "Delivery cost from Charlie to Delta",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Delta_Alpha": {
+    "meaning": "Delivery cost from Delta to Alpha",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Delta_Bravo": {
+    "meaning": "Delivery cost from Delta to Bravo",
+    "base": 47,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_Delta_Charlie": {
+    "meaning": "Delivery cost from Delta to Charlie",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

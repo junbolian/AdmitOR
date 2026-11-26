@@ -1,0 +1,59 @@
+{
+ "sample_id": "mamo_complex_176",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"cap_6_0\",\"extracted\":8000,\"stated\":\"City 0 -> City 6: 8000\",\"evidence\":\"From City 6 (End Destination): Can receive passengers from City 0 (8,000 passengers)\"},{\"parameter\":\"cap_6_1\",\"extracted\":1000,\"stated\":\"City 1 -> City 6: 1000\",\"evidence\":\"Can receive passengers from ... City 1 (1,000 passengers)\"},{\"parameter\":\"cap_6_2\",\"extracted\":11000,\"stated\":\"City 2 -> City 6: 11000\",\"evidence\":\"Can receive passengers from ... City 2 (11,000 passengers)\"},{\"parameter\":\"cap_6_3\",\"extracted\":8000,\"stated\":\"City 3 -> City 6: 8000\",\"evidence\":\"Can receive passengers from ... City 3 (8,000 passengers)\"},{\"parameter\":\"cap_6_4\",\"extracted\":6000,\"stated\":\"City 4 -> City 6: 6000\",\"evidence\":\"Can receive passengers from ... City 4 (6,000 passengers)\"},{\"parameter\":\"cap_6_5\",\"extracted\":20000,\"stated\":\"City 5 -> City 6: 20000\",\"evidence\":\"Can receive passengers from ... City 5 (20,000 passengers)\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "cap_6_0",
+   "extracted": 8000,
+   "stated": "City 0 -> City 6: 8000",
+   "evidence": "From City 6 (End Destination): Can receive passengers from City 0 (8,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_1",
+   "extracted": 1000,
+   "stated": "City 1 -> City 6: 1000",
+   "evidence": "Can receive passengers from ... City 1 (1,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_2",
+   "extracted": 11000,
+   "stated": "City 2 -> City 6: 11000",
+   "evidence": "Can receive passengers from ... City 2 (11,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_3",
+   "extracted": 8000,
+   "stated": "City 3 -> City 6: 8000",
+   "evidence": "Can receive passengers from ... City 3 (8,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_4",
+   "extracted": 6000,
+   "stated": "City 4 -> City 6: 6000",
+   "evidence": "Can receive passengers from ... City 4 (6,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_5",
+   "extracted": 20000,
+   "stated": "City 5 -> City 6: 20000",
+   "evidence": "Can receive passengers from ... City 5 (20,000 passengers)"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

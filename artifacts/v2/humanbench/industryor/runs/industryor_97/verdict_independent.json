@@ -1,0 +1,161 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "initial_inventory": 200,
+   "warehouse_capacity": 500,
+   "purchase_price": [
+    8,
+    6,
+    9
+   ],
+   "selling_price": [
+    9,
+    8,
+    10
+   ]
+  },
+  {
+   "initial_inventory": 256,
+   "warehouse_capacity": 215,
+   "purchase_price": [
+    6.200234546952954,
+    4.339264428892936,
+    11.128240927476112
+   ],
+   "selling_price": [
+    10.27223630944496,
+    10.50994923331101,
+    6.695510661035328
+   ]
+  },
+  {
+   "initial_inventory": 169,
+   "warehouse_capacity": 218,
+   "purchase_price": [
+    5.749103798428827,
+    6.032131728620174,
+    4.738823727154773
+   ],
+   "selling_price": [
+    6.831631084943869,
+    8.95926040178895,
+    10.359531844825733
+   ]
+  },
+  {
+   "initial_inventory": 88,
+   "warehouse_capacity": 554,
+   "purchase_price": [
+    10.475443653422612,
+    3.038992558068366,
+    11.752373266495272
+   ],
+   "selling_price": [
+    10.426603643915232,
+    6.977603305715148,
+    7.243835998494252
+   ]
+  },
+  {
+   "initial_inventory": 383,
+   "warehouse_capacity": 402,
+   "purchase_price": [
+    4.741966747041183,
+    3.580298261000784,
+    12.127449297127137
+   ],
+   "selling_price": [
+    9.746827425841614,
+    9.965620948956033,
+    11.837854293550542
+   ]
+  },
+  {
+   "initial_inventory": 214,
+   "warehouse_capacity": 784,
+   "purchase_price": [
+    7.028275017666828,
+    6.312243787639361,
+    11.964641978276953
+   ],
+   "selling_price": [
+    9.85334221702257,
+    10.314924161988973,
+    10.618817162054095
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   4100.0,
+   null,
+   3071.0179107978133,
+   3247.0243866604815,
+   7147.66478207955,
+   7095.257063616753
+  ],
+  "C-direct": [
+   4100.0,
+   null,
+   3071.017910797813,
+   3247.0243866604815,
+   7147.66478207955,
+   7095.257063616753
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (False) instead of a Pyomo object. Please modify your rule to return Constraint.Infeasible instead of",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 2, 3, 4, 5]: ['crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr', 'crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr']"
+ },
+ "disagreements": [],
+ "notes": []
+}

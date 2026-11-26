@@ -1,0 +1,205 @@
+{
+ "spec": {
+  "price_gas_I": {
+   "base": 4800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price_gas_II": {
+   "base": 5600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_prop_A_I": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.3,
+    "hi": 0.7,
+    "integer": false
+   }
+  },
+  "min_prop_A_II": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.4,
+    "hi": 0.8,
+    "integer": false
+   }
+  },
+  "inventory_A": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "inventory_B": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_purchase_A": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_tier1": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "tier1_limit": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_tier2": {
+   "base": 8000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "tier2_limit": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_tier3": {
+   "base": 6000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "price_gas_I": {
+    "meaning": "selling price of gasoline Type I (yuan/t)",
+    "base": 4800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price_gas_II": {
+    "meaning": "selling price of gasoline Type II (yuan/t)",
+    "base": 5600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_prop_A_I": {
+    "meaning": "minimum proportion of crude A in gasoline Type I (fraction)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.3,
+     "hi": 0.7,
+     "integer": false
+    }
+   },
+   "min_prop_A_II": {
+    "meaning": "minimum proportion of crude A in gasoline Type II (fraction)",
+    "base": 0.6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.4,
+     "hi": 0.8,
+     "integer": false
+    }
+   },
+   "inventory_A": {
+    "meaning": "initial inventory of crude oil A (t)",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "inventory_B": {
+    "meaning": "initial inventory of crude oil B (t)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_purchase_A": {
+    "meaning": "maximum purchasable crude oil A from market (t)",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_tier1": {
+    "meaning": "market price of crude A for first tranche (yuan/t)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "tier1_limit": {
+    "meaning": "quantity bound of first price tranche (t)",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_tier2": {
+    "meaning": "market price of crude A for second tranche (yuan/t)",
+    "base": 8000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "tier2_limit": {
+    "meaning": "quantity bound of second price tranche (t)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_tier3": {
+    "meaning": "market price of crude A for third tranche (yuan/t)",
+    "base": 6000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "protein_chicken": 23,
+   "protein_salmon": 20,
+   "protein_tofu": 8,
+   "price_chicken": 3,
+   "price_salmon": 5,
+   "price_tofu": 1.5,
+   "budget": 20,
+   "max_weight": 800
+  },
+  {
+   "protein_chicken": 25.56545309162506,
+   "protein_salmon": 12.400172083562671,
+   "protein_tofu": 6.200234546952954,
+   "price_chicken": 2.169632214446468,
+   "price_salmon": 6.182356070820062,
+   "price_tofu": 1.8180590773612406,
+   "budget": 27.843591354096908,
+   "max_weight": 535.6408528828263
+  },
+  {
+   "protein_chicken": 21.563361482208975,
+   "protein_salmon": 12.476755511009125,
+   "protein_tofu": 5.749103798428827,
+   "price_chicken": 3.016065864310087,
+   "price_salmon": 2.6326798484193183,
+   "price_tofu": 0.9579077712359674,
+   "budget": 22.997688755590463,
+   "max_weight": 828.7625475860586
+  },
+  {
+   "protein_chicken": 17.85610744554882,
+   "protein_salmon": 21.42825094201454,
+   "protein_tofu": 10.475443653422612,
+   "price_chicken": 1.519496279034183,
+   "price_salmon": 6.5290962591640405,
+   "price_tofu": 1.8566509109788087,
+   "budget": 16.80501033035984,
+   "max_weight": 579.5068798795402
+  },
+  {
+   "protein_chicken": 31.412720528604773,
+   "protein_salmon": 17.385512721802026,
+   "protein_tofu": 4.741966747041183,
+   "price_chicken": 1.790149130500392,
+   "price_salmon": 6.737471831737299,
+   "price_tofu": 1.6867068564604042,
+   "budget": 26.1425654654876,
+   "max_weight": 947.0283434840434
+  },
+  {
+   "protein_chicken": 23.66659688276649,
+   "protein_salmon": 27.569852223669926,
+   "protein_tofu": 7.028275017666828,
+   "price_chicken": 3.1561218938196807,
+   "price_salmon": 6.6470233212649745,
+   "price_tofu": 1.713335554255643,
+   "budget": 27.234138006215545,
+   "max_weight": 849.5053729643276
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   153.33333333333334,
+   328.08972134807175,
+   164.42196497110208,
+   197.48127996285316,
+   458.7378162391241,
+   204.21878093646208
+  ],
+  "B-structured": [
+   153.33333333333337,
+   136.93901098333933,
+   164.4219649711021,
+   103.47737112563823,
+   297.48736686531777,
+   201.0490121169094
+  ],
+  "C-direct": [
+   153.33333333333334,
+   136.93901098333936,
+   164.42196497110208,
+   109.1814380332681,
+   297.4873668653178,
+   201.52165695623924
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [1, 3, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [1, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [3, 5]"
+ ],
+ "notes": []
+}

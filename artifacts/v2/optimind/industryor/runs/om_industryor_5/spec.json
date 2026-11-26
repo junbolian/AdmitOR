@@ -1,0 +1,169 @@
+{
+ "spec": {
+  "reservations": {
+   "base": [
+    [
+     1500,
+     1000,
+     2000,
+     1200
+    ],
+    [
+     1500,
+     1500,
+     1200,
+     1500
+    ],
+    [
+     1000,
+     2000,
+     1500,
+     2500
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ending_inventory_required": {
+   "base": 150,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "production_hours_per_quarter": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "hours_per_unit": {
+   "base": [
+    2,
+    4,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "delay_penalty": {
+   "base": [
+    20,
+    20,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "inventory_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "reservations": {
+    "meaning": "Contract reservation demand (units) per product per quarter, rows = products I, II, III, columns = quarters 1-4",
+    "base": [
+     [
+      1500,
+      1000,
+      2000,
+      1200
+     ],
+     [
+      1500,
+      1500,
+      1200,
+      1500
+     ],
+     [
+      1000,
+      2000,
+      1500,
+      2500
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ending_inventory_required": {
+    "meaning": "Required inventory of each product at end of quarter 4 (units)",
+    "base": 150,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "production_hours_per_quarter": {
+    "meaning": "Available production hours per quarter",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "hours_per_unit": {
+    "meaning": "Production hours required per unit of products I, II, III",
+    "base": [
+     2,
+     4,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "delay_penalty": {
+    "meaning": "Compensation cost (yuan per unit per quarter delay) for products I, II, III",
+    "base": [
+     20,
+     20,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "inventory_cost": {
+    "meaning": "Inventory holding cost (yuan per unit per quarter) for produced but undelivered units",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 20,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

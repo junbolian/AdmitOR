@@ -1,0 +1,201 @@
+{
+ "spec": {
+  "profit_A": {
+   "base": 5000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "profit_B": {
+   "base": 11000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "steel_A": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "steel_B": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "aluminum_A": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "aluminum_B": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_A": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_B": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "steel_capacity": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "aluminum_capacity": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "labor_capacity": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "overtime_pay": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 600.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_A": {
+    "meaning": "Profit per unit of product A (yuan)",
+    "base": 5000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "profit_B": {
+    "meaning": "Profit per unit of product B (yuan)",
+    "base": 11000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "steel_A": {
+    "meaning": "Steel required per unit of product A (kg)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "steel_B": {
+    "meaning": "Steel required per unit of product B (kg)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "aluminum_A": {
+    "meaning": "Aluminum required per unit of product A (kg)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "aluminum_B": {
+    "meaning": "Aluminum required per unit of product B (kg)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_A": {
+    "meaning": "Labor required per unit of product A (hours)",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_B": {
+    "meaning": "Labor required per unit of product B (hours)",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "steel_capacity": {
+    "meaning": "Available steel (kg)",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "aluminum_capacity": {
+    "meaning": "Available aluminum (kg)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "labor_capacity": {
+    "meaning": "Regular labor hours available (hours)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "overtime_pay": {
+    "meaning": "Overtime pay per hour (yuan/hour)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 600,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

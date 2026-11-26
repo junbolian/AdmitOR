@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_A": 120,
+   "cost_B": 110,
+   "cost_C": 100,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 150,
+   "max_tables": 600,
+   "min_tables_B_if_A": 30
+  },
+  {
+   "cost_A": 131.71185107046225,
+   "cost_B": 73.42582815214536,
+   "cost_C": 84.25205228583835,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 189,
+   "max_tables": 476,
+   "min_tables_B_if_A": 34
+  },
+  {
+   "cost_A": 80.50296643279792,
+   "cost_B": 88.33512405987746,
+   "cost_C": 100.37487016723539,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 154,
+   "max_tables": 516,
+   "min_tables_B_if_A": 42
+  },
+  {
+   "cost_A": 145.99215836093745,
+   "cost_B": 72.0004044952107,
+   "cost_C": 121.40734762829655,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 196,
+   "max_tables": 551,
+   "min_tables_B_if_A": 19
+  },
+  {
+   "cost_A": 86.12417565401098,
+   "cost_B": 136.75706620875442,
+   "cost_C": 107.26082219568238,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 197,
+   "max_tables": 564,
+   "min_tables_B_if_A": 40
+  },
+  {
+   "cost_A": 147.66999179725158,
+   "cost_B": 119.12602093204696,
+   "cost_C": 125.31948302175442,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 123,
+   "max_tables": 537,
+   "min_tables_B_if_A": 19
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   980.0,
+   965.3619901115826,
+   767.8950745108574,
+   1057.4126060660358,
+   1120.4012504000225,
+   954.2514920748547
+  ],
+  "B-structured": [
+   15000.0,
+   14480.429851673738,
+   13245.967810725011,
+   15861.189090990536,
+   19820.36490389072,
+   15554.533965155575
+  ],
+  "C-direct": [
+   15000.0,
+   14480.429851673738,
+   13245.967810725011,
+   15861.189090990536,
+   19820.36490389072,
+   15554.533965155573
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1.87e+04 on instance 4 (params: {'cost_A': 86.12, 'cost_B': 136.76, 'cost_C': 107.26, 'tables_per_order_A': 20, 'tables_per_order_B': 15, 'tables_per_order_C': 15, 'min_tables': 197, 'max_tables': 564, 'min_tables_B_if_A': 40})"
+ },
+ "disagreements": [],
+ "notes": []
+}

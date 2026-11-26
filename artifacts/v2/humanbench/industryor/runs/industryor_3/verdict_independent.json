@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cow_price": 500,
+   "sheep_price": 200,
+   "chicken_price": 8,
+   "cow_feed_cost": 100,
+   "sheep_feed_cost": 80,
+   "chicken_feed_cost": 5,
+   "cow_manure": 10,
+   "sheep_manure": 5,
+   "chicken_manure": 3,
+   "manure_capacity": 800,
+   "chicken_max": 50,
+   "cow_min": 10,
+   "sheep_min": 20,
+   "total_animals_max": 100
+  },
+  {
+   "cow_price": 541.8280395373652,
+   "sheep_price": 143.00129062672002,
+   "chicken_price": 6.920140728171772,
+   "cow_feed_cost": 83.39264428892936,
+   "sheep_feed_cost": 91.35061827987259,
+   "chicken_feed_cost": 5.530098462268734,
+   "cow_manure": 12.353077406229072,
+   "sheep_manure": 3.7608164978882486,
+   "chicken_manure": 2.859459275433487,
+   "manure_capacity": 574.3026653302737,
+   "chicken_max": 41.5591392441081,
+   "cow_min": 10.032131728620175,
+   "sheep_min": 14.318431636206363,
+   "total_animals_max": 81.93025904119891
+  },
+  {
+   "cow_price": 544.965331333857,
+   "sheep_price": 205.392977672386,
+   "chicken_price": 6.658114985795343,
+   "cow_feed_cost": 105.35594103255453,
+   "sheep_feed_cost": 94.8526619205357,
+   "chicken_feed_cost": 3.5194962790341826,
+   "cow_manure": 11.834915510996847,
+   "sheep_manure": 5.59441818496468,
+   "chicken_manure": 2.7124509297323853,
+   "manure_capacity": 634.6301599096552,
+   "chicken_max": 63.71639216620344,
+   "cow_min": 9.01956727067576,
+   "sheep_min": 15.112950120561774,
+   "total_animals_max": 75.80298261000785
+  },
+  {
+   "cow_price": 604.248309904238,
+   "sheep_price": 212.44712376402694,
+   "chicken_price": 9.474215711717026,
+   "cow_feed_cost": 113.78390720162908,
+   "sheep_feed_cost": 81.73894838982564,
+   "chicken_feed_cost": 6.419347291938112,
+   "cow_manure": 9.27120626325012,
+   "sheep_manure": 5.15612189381968,
+   "chicken_manure": 3.592928395655391,
+   "manure_capacity": 856.8894811348381,
+   "chicken_max": 60.85120700932332,
+   "cow_min": 10.464112871540571,
+   "sheep_min": 22.45486203457908,
+   "total_animals_max": 72.74946301933973
+  },
+  {
+   "cow_price": 418.36948269546406,
+   "sheep_price": 174.72655563225285,
+   "chicken_price": 5.983001489233412,
+   "cow_feed_cost": 83.96745318166181,
+   "sheep_feed_cost": 60.84806861166699,
+   "chicken_feed_cost": 4.333920809330277,
+   "cow_manure": 10.8141066655864,
+   "sheep_manure": 4.594496536910253,
+   "chicken_manure": 2.7663257408103887,
+   "manure_capacity": 660.563374770314,
+   "chicken_max": 43.009334661473396,
+   "cow_min": 12.619927526274966,
+   "sheep_min": 21.776424622959123,
+   "total_animals_max": 106.54786034001928
+  },
+  {
+   "cow_price": 401.3415944594291,
+   "sheep_price": 227.49521575404188,
+   "chicken_price": 6.384331970057256,
+   "cow_feed_cost": 92.76732650545887,
+   "sheep_feed_cost": 103.49712083055657,
+   "chicken_feed_cost": 5.419999279562279,
+   "cow_manure": 10.341698462647877,
+   "sheep_manure": 5.553842752969624,
+   "chicken_manure": 3.6171334563416577,
+   "manure_capacity": 932.4799575421976,
+   "chicken_max": 41.87144215892313,
+   "cow_min": 7.192601463424227,
+   "sheep_min": 17.78543657670898,
+   "total_animals_max": 86.06445255854216
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   30400.0,
+   19725.56330742912,
+   21990.677005889516,
+   27039.04376603447,
+   19680.942138225346,
+   23215.015929492707
+  ],
+  "B-structured": [
+   30400.0,
+   19725.56330742912,
+   21990.677005889516,
+   27039.04376603447,
+   19680.942138225346,
+   23215.015929492707
+  ],
+  "C-direct": [
+   30400.0,
+   19725.56330742912,
+   21990.677005889516,
+   27039.04376603447,
+   19680.942138225346,
+   23215.015929492707
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

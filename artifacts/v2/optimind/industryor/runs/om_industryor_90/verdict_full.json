@@ -1,0 +1,138 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 800,
+   "minibus_cost": 600,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 866.9248632597842,
+   "minibus_cost": 429.0038718801601,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 913.506182798726,
+   "minibus_cost": 663.6118154722482,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 762.5224734489298,
+   "minibus_cost": 430.7269989977053,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 572.7372654482546,
+   "minibus_cost": 491.5815542471934,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 665.8114985795344,
+   "minibus_cost": 632.1356461953271,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6200.0,
+   5612.718812439937,
+   6972.0838085561445,
+   5203.724888784245,
+   4581.8981235860365,
+   5326.491988636275
+  ],
+  "B-structured": [
+   6200.0,
+   5612.718812439937,
+   6972.0838085561445,
+   5203.724888784245,
+   4581.8981235860365,
+   5326.491988636275
+  ],
+  "C-direct": [
+   6200.0,
+   5612.718812439937,
+   6972.0838085561445,
+   5203.724888784245,
+   4581.8981235860365,
+   5326.491988636275
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

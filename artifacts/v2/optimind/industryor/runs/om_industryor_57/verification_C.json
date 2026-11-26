@@ -1,0 +1,43 @@
+{
+ "sample_id": "om_industryor_57",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"content_A_in_A\",\n      \"evidence\": \"? 60%\"\n    },\n    {\n      \"parameter\": \"content_A_in_B\",\n      \"evidence\": \"? 15%\"\n    },\n    {\n      \"parameter\": \"content_C_in_A\",\n      \"evidence\": \"? 20%\"\n    },\n    {\n      \"parameter\": \"content_C_in_B\",\n      \"evidence\": \"? 60%\"\n    },\n    {\n      \"parameter\": \"content_C_in_C\",\n      \"evidence\": \"? 50%\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "content_A_in_A",
+   "evidence": "? 60%"
+  },
+  {
+   "parameter": "content_A_in_B",
+   "evidence": "? 15%"
+  },
+  {
+   "parameter": "content_C_in_A",
+   "evidence": "? 20%"
+  },
+  {
+   "parameter": "content_C_in_B",
+   "evidence": "? 60%"
+  },
+  {
+   "parameter": "content_C_in_C",
+   "evidence": "? 50%"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

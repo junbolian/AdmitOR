@@ -1,0 +1,100 @@
+{
+ "sample_id": "industryor_59",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"equipment_available_time[A1]\",\n      \"extracted\": 6000,\n      \"stated\": 10000,\n      \"evidence\": \"$A_1$ & 5 & 10 & & 10000 & 321\"\n    },\n    {\n      \"parameter\": \"equipment_available_time[A2]\",\n      \"extracted\": 10000,\n      \"stated\": 4000,\n      \"evidence\": \"$A_2$ & 7 & 9 & 12 & 4000 & 250\"\n    },\n    {\n      \"parameter\": \"equipment_available_time[B1]\",\n      \"extracted\": 4000,\n      \"stated\": 7000,\n      \"evidence\": \"$B_1$ & 6 & 8 & & 7000 & 783\"\n    },\n    {\n      \"parameter\": \"equipment_available_time[B2]\",\n      \"extracted\": 7000,\n      \"stated\": 4000,\n      \"evidence\": \"$B_2$ & 4 & & 11 & 4000 & 200\"\n    },\n    {\n      \"parameter\": \"equipment_cost_full_load[A1]\",\n      \"extracted\": 300,\n      \"stated\": 321,\n      \"evidence\": \"$A_1$ & 5 & 10 & & 10000 & 321\"\n    },\n    {\n      \"parameter\": \"equipment_cost_full_load[A2]\",\n      \"extracted\": 321,\n      \"stated\": 250,\n      \"evidence\": \"$A_2$ & 7 & 9 & 12 & 4000 & 250\"\n    },\n    {\n      \"parameter\": \"equipment_cost_full_load[B1]\",\n      \"extracted\": 250,\n      \"stated\": 783,\n      \"evidence\": \"$B_1$ & 6 & 8 & & 7000 & 783\"\n    },\n    {\n      \"parameter\": \"equipment_cost_full_load[B2]\",\n      \"extracted\": 7000,\n      \"stated\": 200,\n      \"evidence\": \"$B_2$ & 4 & & 11 & 4000 & 200\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"unit_processing_time[A1,III]\",\n      \"evidence\": \"$A_1$ & 5 & 10 & & 10000 & 321\"\n    },\n    {\n      \"parameter\": \"unit_processing_time[B1,III]\",\n      \"evidence\": \"$B_1$ & 6 & 8 & & 7000 & 783\"\n    },\n    {\n      \"parameter\": \"unit_processing_time[B2,II]\",\n      \"evidence\": \"$B_2$ & 4 & & 11 & 4000 & 200\"\n    },\n    {\n      \"parameter\": \"unit_processing_time[B3,II]\",\n      \"evidence\": \"$B_3$ & 7 & & & &\"\n    },\n    {\n      \"parameter\": \"unit_processing_time[B3,III]\",\n      \"evidence\": \"$B_3$ & 7 & & & &\"\n    },\n    {\n      \"parameter\": \"equipment_available_time[B3]\",\n      \"evidence\": \"$B_3$ & 7 & & & &\"\n    },\n    {\n      \"parameter\": \"equipment_cost_full_load[B3]\",\n      \"evidence\": \"$B_3$ & 7 & & & &\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "equipment_available_time[A1]",
+   "extracted": 6000,
+   "stated": 10000,
+   "evidence": "$A_1$ & 5 & 10 & & 10000 & 321"
+  },
+  {
+   "parameter": "equipment_available_time[A2]",
+   "extracted": 10000,
+   "stated": 4000,
+   "evidence": "$A_2$ & 7 & 9 & 12 & 4000 & 250"
+  },
+  {
+   "parameter": "equipment_available_time[B1]",
+   "extracted": 4000,
+   "stated": 7000,
+   "evidence": "$B_1$ & 6 & 8 & & 7000 & 783"
+  },
+  {
+   "parameter": "equipment_available_time[B2]",
+   "extracted": 7000,
+   "stated": 4000,
+   "evidence": "$B_2$ & 4 & & 11 & 4000 & 200"
+  },
+  {
+   "parameter": "equipment_cost_full_load[A1]",
+   "extracted": 300,
+   "stated": 321,
+   "evidence": "$A_1$ & 5 & 10 & & 10000 & 321"
+  },
+  {
+   "parameter": "equipment_cost_full_load[A2]",
+   "extracted": 321,
+   "stated": 250,
+   "evidence": "$A_2$ & 7 & 9 & 12 & 4000 & 250"
+  },
+  {
+   "parameter": "equipment_cost_full_load[B1]",
+   "extracted": 250,
+   "stated": 783,
+   "evidence": "$B_1$ & 6 & 8 & & 7000 & 783"
+  },
+  {
+   "parameter": "equipment_cost_full_load[B2]",
+   "extracted": 7000,
+   "stated": 200,
+   "evidence": "$B_2$ & 4 & & 11 & 4000 & 200"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "unit_processing_time[A1,III]",
+   "evidence": "$A_1$ & 5 & 10 & & 10000 & 321"
+  },
+  {
+   "parameter": "unit_processing_time[B1,III]",
+   "evidence": "$B_1$ & 6 & 8 & & 7000 & 783"
+  },
+  {
+   "parameter": "unit_processing_time[B2,II]",
+   "evidence": "$B_2$ & 4 & & 11 & 4000 & 200"
+  },
+  {
+   "parameter": "unit_processing_time[B3,II]",
+   "evidence": "$B_3$ & 7 & & & &"
+  },
+  {
+   "parameter": "unit_processing_time[B3,III]",
+   "evidence": "$B_3$ & 7 & & & &"
+  },
+  {
+   "parameter": "equipment_available_time[B3]",
+   "evidence": "$B_3$ & 7 & & & &"
+  },
+  {
+   "parameter": "equipment_cost_full_load[B3]",
+   "evidence": "$B_3$ & 7 & & & &"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

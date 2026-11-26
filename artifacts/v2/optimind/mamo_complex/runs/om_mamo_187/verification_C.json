@@ -1,0 +1,27 @@
+{
+ "sample_id": "om_mamo_187",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_8_7\",\n      \"evidence\": \"From Node 8 (The Destination): Goods from Node 0 (7 units), Node 1 (15 units), Node 2 (14 units), Node 3 (18 units), Node 4 (18 units), Node 5 (11 units), Node 6 (18 units) can be finally distributed.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_8_7",
+   "evidence": "From Node 8 (The Destination): Goods from Node 0 (7 units), Node 1 (15 units), Node 2 (14 units), Node 3 (18 units), Node 4 (18 units), Node 5 (11 units), Node 6 (18 units) can be finally distributed."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

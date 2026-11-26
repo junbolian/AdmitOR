@@ -1,0 +1,31 @@
+{
+ "sample_id": "mamo_complex_190",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"transport_cost\", \"evidence\": \"From Center 1: $5 to Store 1, $2 to Store 2, and so on, up to $5 to Store 9. ... From Center 3, Center 4, and Center 5 also have their specific costs to each store\"}, {\"parameter\": \"demand\", \"evidence\": \"Store 1 needs 739 units; Store 2 needs 491 units; and this demand pattern continues, with Store 9 needing 480 units\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost",
+   "evidence": "From Center 1: $5 to Store 1, $2 to Store 2, and so on, up to $5 to Store 9. ... From Center 3, Center 4, and Center 5 also have their specific costs to each store"
+  },
+  {
+   "parameter": "demand",
+   "evidence": "Store 1 needs 739 units; Store 2 needs 491 units; and this demand pattern continues, with Store 9 needing 480 units"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

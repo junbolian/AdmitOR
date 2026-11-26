@@ -1,0 +1,395 @@
+{
+ "spec": {
+  "container_max_weight": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "container_min_weight": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "container_length": {
+   "base": 15.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "container_width": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "container_height": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand_A": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_B": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_C": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_D": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_E": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_A": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_B": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_C": {
+   "base": 0.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_D": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_E": {
+   "base": 0.65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "dims_A": {
+   "base": [
+    0.65,
+    1.0,
+    1.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "dims_B": {
+   "base": [
+    0.2,
+    2.0,
+    2.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "dims_C": {
+   "base": [
+    0.35,
+    2.0,
+    1.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "dims_D": {
+   "base": [
+    0.2,
+    3.0,
+    1.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "dims_E": {
+   "base": [
+    0.15,
+    5.0,
+    1.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "coupling_AC": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "min_D_per_container": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "container_max_weight": {
+    "meaning": "maximum weight capacity per container (tons)",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "container_min_weight": {
+    "meaning": "minimum weight that must be loaded per used container (tons)",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "container_length": {
+    "meaning": "internal container length (m)",
+    "base": 15.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "container_width": {
+    "meaning": "internal container width (m)",
+    "base": 2.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "container_height": {
+    "meaning": "internal container height (m)",
+    "base": 2.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand_A": {
+    "meaning": "number of units of goods A to transport",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_B": {
+    "meaning": "number of units of goods B to transport",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_C": {
+    "meaning": "number of units of goods C to transport",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_D": {
+    "meaning": "number of units of goods D to transport",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_E": {
+    "meaning": "number of units of goods E to transport",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_A": {
+    "meaning": "weight per unit of goods A (tons)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_B": {
+    "meaning": "weight per unit of goods B (tons)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_C": {
+    "meaning": "weight per unit of goods C (tons)",
+    "base": 0.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_D": {
+    "meaning": "weight per unit of goods D (tons)",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_E": {
+    "meaning": "weight per unit of goods E (tons)",
+    "base": 0.65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "dims_A": {
+    "meaning": "dimensions of goods A [length, width, height] (m)",
+    "base": [
+     0.65,
+     1.0,
+     1.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "dims_B": {
+    "meaning": "dimensions of goods B [length, width, height] (m)",
+    "base": [
+     0.2,
+     2.0,
+     2.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "dims_C": {
+    "meaning": "dimensions of goods C [length, width, height] (m)",
+    "base": [
+     0.35,
+     2.0,
+     1.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "dims_D": {
+    "meaning": "dimensions of goods D [length, width, height] (m)",
+    "base": [
+     0.2,
+     3.0,
+     1.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "dims_E": {
+    "meaning": "dimensions of goods E [length, width, height] (m)",
+    "base": [
+     0.15,
+     5.0,
+     1.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "coupling_AC": {
+    "meaning": "minimum units of C required per unit of A loaded (packaging coupling ratio)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "min_D_per_container": {
+    "meaning": "minimum units of D that must be loaded in each used container",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "spec": {
+  "cost_E_to_F": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_to_G": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_to_H": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_to_I": {
+   "base": 62,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_to_G": {
+   "base": 53,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_to_H": {
+   "base": 58,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_to_I": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_to_H": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_to_I": {
+   "base": 91,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_H_to_I": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_E_to_F": {
+    "meaning": "Travel cost from city E to city F",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_to_G": {
+    "meaning": "Travel cost from city E to city G",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_to_H": {
+    "meaning": "Travel cost from city E to city H",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_to_I": {
+    "meaning": "Travel cost from city E to city I",
+    "base": 62,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_to_G": {
+    "meaning": "Travel cost from city F to city G",
+    "base": 53,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_to_H": {
+    "meaning": "Travel cost from city F to city H",
+    "base": 58,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_to_I": {
+    "meaning": "Travel cost from city F to city I",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_to_H": {
+    "meaning": "Travel cost from city G to city H",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_to_I": {
+    "meaning": "Travel cost from city G to city I",
+    "base": 91,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_H_to_I": {
+    "meaning": "Travel cost from city H to city I",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

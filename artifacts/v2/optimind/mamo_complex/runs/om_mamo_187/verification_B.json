@@ -1,0 +1,65 @@
+{
+ "sample_id": "om_mamo_187",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"capacity_8_0\",\"extracted\":7,\"stated\":\"7 from node 0 to node 8\",\"evidence\":\"From Node 8 (The Destination): Goods from Node 0 (7 units)\"},{\"parameter\":\"capacity_8_1\",\"extracted\":15,\"stated\":\"15 from node 1 to node 8\",\"evidence\":\"Goods from Node 0 (7 units), Node 1 (15 units)\"},{\"parameter\":\"capacity_8_2\",\"extracted\":14,\"stated\":\"14 from node 2 to node 8\",\"evidence\":\"From Node 8 (The Destination): Goods from ... Node 2 (14 units)\"},{\"parameter\":\"capacity_8_3\",\"extracted\":18,\"stated\":\"18 from node 3 to node 8\",\"evidence\":\"From Node 8 (The Destination): Goods from ... Node 3 (18 units)\"},{\"parameter\":\"capacity_8_4\",\"extracted\":18,\"stated\":\"18 from node 4 to node 8\",\"evidence\":\"From Node 8 (The Destination): Goods from ... Node 4 (18 units)\"},{\"parameter\":\"capacity_8_5\",\"extracted\":11,\"stated\":\"11 from node 5 to node 8\",\"evidence\":\"From Node 8 (The Destination): Goods from ... Node 5 (11 units)\"},{\"parameter\":\"capacity_8_6\",\"extracted\":18,\"stated\":\"18 from node 6 to node 8\",\"evidence\":\"From Node 8 (The Destination): Goods from ... Node 6 (18 units) can be finally distributed.\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "capacity_8_0",
+   "extracted": 7,
+   "stated": "7 from node 0 to node 8",
+   "evidence": "From Node 8 (The Destination): Goods from Node 0 (7 units)"
+  },
+  {
+   "parameter": "capacity_8_1",
+   "extracted": 15,
+   "stated": "15 from node 1 to node 8",
+   "evidence": "Goods from Node 0 (7 units), Node 1 (15 units)"
+  },
+  {
+   "parameter": "capacity_8_2",
+   "extracted": 14,
+   "stated": "14 from node 2 to node 8",
+   "evidence": "From Node 8 (The Destination): Goods from ... Node 2 (14 units)"
+  },
+  {
+   "parameter": "capacity_8_3",
+   "extracted": 18,
+   "stated": "18 from node 3 to node 8",
+   "evidence": "From Node 8 (The Destination): Goods from ... Node 3 (18 units)"
+  },
+  {
+   "parameter": "capacity_8_4",
+   "extracted": 18,
+   "stated": "18 from node 4 to node 8",
+   "evidence": "From Node 8 (The Destination): Goods from ... Node 4 (18 units)"
+  },
+  {
+   "parameter": "capacity_8_5",
+   "extracted": 11,
+   "stated": "11 from node 5 to node 8",
+   "evidence": "From Node 8 (The Destination): Goods from ... Node 5 (11 units)"
+  },
+  {
+   "parameter": "capacity_8_6",
+   "extracted": 18,
+   "stated": "18 from node 6 to node 8",
+   "evidence": "From Node 8 (The Destination): Goods from ... Node 6 (18 units) can be finally distributed."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

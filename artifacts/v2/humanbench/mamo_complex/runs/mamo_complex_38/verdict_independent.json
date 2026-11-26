@@ -1,0 +1,223 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "a": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+   ],
+   "b": [
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150
+   ]
+  },
+  {
+   "a": [
+    66,
+    -26,
+    11,
+    3,
+    80,
+    72,
+    104,
+    -17,
+    33,
+    -26
+   ],
+   "b": [
+    63,
+    106,
+    34,
+    60,
+    127,
+    112,
+    63,
+    118,
+    151,
+    31
+   ]
+  },
+  {
+   "a": [
+    91,
+    75,
+    21,
+    -7,
+    114,
+    20,
+    -16,
+    -15,
+    97,
+    61
+   ],
+   "b": [
+    151,
+    139,
+    110,
+    176,
+    87,
+    113,
+    154,
+    123,
+    159,
+    117
+   ]
+  },
+  {
+   "a": [
+    76,
+    -23,
+    4,
+    13,
+    -18,
+    5,
+    -15,
+    12,
+    65,
+    25
+   ],
+   "b": [
+    86,
+    61,
+    70,
+    170,
+    127,
+    121,
+    56,
+    139,
+    55,
+    87
+   ]
+  },
+  {
+   "a": [
+    118,
+    66,
+    54,
+    73,
+    96,
+    86,
+    4,
+    -25,
+    17,
+    10
+   ],
+   "b": [
+    62,
+    171,
+    161,
+    77,
+    128,
+    89,
+    167,
+    99,
+    70,
+    67
+   ]
+  },
+  {
+   "a": [
+    54,
+    9,
+    58,
+    105,
+    30,
+    3,
+    120,
+    46,
+    -16,
+    -23
+   ],
+   "b": [
+    46,
+    124,
+    149,
+    93,
+    40,
+    87,
+    179,
+    109,
+    176,
+    159
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   16.666666666666668,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   16.666666666666668,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   16.666666666666668,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "status_4",
+   "status_4",
+   "status_4",
+   "status_4",
+   "status_4"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

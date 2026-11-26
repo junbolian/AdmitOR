@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "price_meaties": 2.8,
+   "price_yummies": 2.0,
+   "grains_per_meaties": 2.0,
+   "meat_per_meaties": 3.0,
+   "grains_per_yummies": 3.0,
+   "meat_per_yummies": 1.5,
+   "varcost_meaties": 0.25,
+   "varcost_yummies": 0.2,
+   "grains_price": 0.2,
+   "meat_price": 0.5,
+   "grains_avail": 400000,
+   "meat_avail": 300000,
+   "meaties_capacity": 90000
+  },
+  {
+   "price_meaties": 3.0342370214092447,
+   "price_yummies": 1.4300129062672002,
+   "grains_per_meaties": 1.7750293183691193,
+   "meat_per_meaties": 2.5848161072232343,
+   "grains_per_yummies": 3.354706821246019,
+   "meat_per_yummies": 1.6325246155671833,
+   "varcost_meaties": 0.5460897838524227,
+   "varcost_yummies": 0.08912247468323728,
+   "grains_price": 0.21876872787410817,
+   "meat_price": 0.22085805360664926,
+   "grains_avail": 332473.11395286483,
+   "meat_avail": 300963.95185860526,
+   "meaties_capacity": 64432.94236292864
+  },
+  {
+   "price_meaties": 2.294047253153569,
+   "price_yummies": 2.1798613253354278,
+   "grains_per_meaties": 2.0449414806032165,
+   "meat_per_meaties": 2.5806609330610453,
+   "grains_per_yummies": 3.1338985258138634,
+   "meat_per_yummies": 1.7320728425083698,
+   "varcost_meaties": 0.10324937983903051,
+   "varcost_yummies": 0.41261866332476355,
+   "grains_price": 0.3292557579952907,
+   "meat_price": 0.4381753615625943,
+   "grains_avail": 317315.07995482755,
+   "meat_avail": 382298.35299722065,
+   "meaties_capacity": 81176.10543608184
+  },
+  {
+   "price_meaties": 2.1158130168786484,
+   "price_yummies": 1.5160596522001568,
+   "grains_per_meaties": 2.3474943663474597,
+   "meat_per_meaties": 3.155589047050337,
+   "grains_per_yummies": 3.4606924099115703,
+   "meat_per_yummies": 1.6722988400203633,
+   "varcost_meaties": 0.3681140457273504,
+   "varcost_yummies": 0.48790209379071675,
+   "grains_price": 0.2014137508833414,
+   "meat_price": 0.5864284418912589,
+   "grains_avail": 479057.1194207188,
+   "meat_avail": 321333.5554255643,
+   "meaties_capacity": 109532.17261678197
+  },
+  {
+   "price_meaties": 2.92995160403136,
+   "price_yummies": 2.245486203457908,
+   "grains_per_meaties": 1.5458243836556622,
+   "meat_per_meaties": 2.5918474134773204,
+   "grains_per_yummies": 2.6840819454031606,
+   "meat_per_yummies": 1.1848439826927206,
+   "varcost_meaties": 0.2163954431805151,
+   "varcost_yummies": 0.0954506432343781,
+   "grains_price": 0.16118944124403684,
+   "meat_price": 0.6449791109850801,
+   "grains_avail": 367559.7229528202,
+   "meat_avail": 276632.5740810389,
+   "meaties_capacity": 74313.37966166034
+  },
+  {
+   "price_meaties": 2.40852274104251,
+   "price_yummies": 2.523985505254993,
+   "grains_per_meaties": 2.1480353852465934,
+   "meat_per_meaties": 3.1636965085004825,
+   "grains_per_yummies": 2.5067079722971455,
+   "meat_per_yummies": 1.671845098462762,
+   "varcost_meaties": 0.1817012468809642,
+   "varcost_yummies": 0.22075494879094149,
+   "grains_price": 0.4458093402546381,
+   "meat_price": 0.647999831897865,
+   "grains_avail": 413667.93850591505,
+   "meat_avail": 333230.56517817744,
+   "meaties_capacity": 108514.00369024974
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   77500.0,
+   114536.01648065337,
+   31391.374589211606,
+   0.0,
+   145130.36962960596,
+   16892.1247094364
+  ],
+  "B-structured": [
+   77499.99999999999,
+   114536.01648065334,
+   31391.374589211602,
+   -0.0,
+   145130.3696296059,
+   16892.12470943647
+  ],
+  "C-direct": [
+   77499.99999999999,
+   114536.01648065334,
+   31391.374589211595,
+   -0.0,
+   145130.36962960594,
+   16892.124709436433
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

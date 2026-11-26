@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "capacities": {
+   "base": [
+    [
+     0,
+     15,
+     2,
+     16,
+     3,
+     5,
+     3
+    ],
+    [
+     7,
+     0,
+     0,
+     0,
+     19,
+     15,
+     16
+    ],
+    [
+     11,
+     14,
+     0,
+     14,
+     8,
+     11,
+     6
+    ],
+    [
+     17,
+     11,
+     11,
+     0,
+     11,
+     16,
+     19
+    ],
+    [
+     10,
+     4,
+     17,
+     20,
+     0,
+     12,
+     17
+    ],
+    [
+     3,
+     0,
+     4,
+     5,
+     20,
+     0,
+     4
+    ],
+    [
+     15,
+     2,
+     15,
+     18,
+     17,
+     7,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacities": {
+    "meaning": "Arc capacity (max vehicles/hour) for each directed edge in the 7-hub network; 0 denotes no direct lane",
+    "base": [
+     [
+      0,
+      15,
+      2,
+      16,
+      3,
+      5,
+      3
+     ],
+     [
+      7,
+      0,
+      0,
+      0,
+      19,
+      15,
+      16
+     ],
+     [
+      11,
+      14,
+      0,
+      14,
+      8,
+      11,
+      6
+     ],
+     [
+      17,
+      11,
+      11,
+      0,
+      11,
+      16,
+      19
+     ],
+     [
+      10,
+      4,
+      17,
+      20,
+      0,
+      12,
+      17
+     ],
+     [
+      3,
+      0,
+      4,
+      5,
+      20,
+      0,
+      4
+     ],
+     [
+      15,
+      2,
+      15,
+      18,
+      17,
+      7,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

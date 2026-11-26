@@ -1,0 +1,295 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    480,
+    492,
+    74,
+    317
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    61,
+    313,
+    93,
+    199
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_1_2": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_1_3": {
+   "base": 42,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  },
+  "cost_1_4": {
+   "base": 27,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "cost_2_1": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "cost_2_3": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "cost_2_4": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "cost_3_1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_3_2": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "cost_3_4": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "cost_4_1": {
+   "base": 33,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "cost_4_2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "cost_4_3": {
+   "base": 42,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 70.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Initial units of supplies held by each hospital (H1..H4)",
+    "base": [
+     480,
+     492,
+     74,
+     317
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Units of supplies required by each hospital (H1..H4)",
+    "base": [
+     61,
+     313,
+     93,
+     199
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_1_2": {
+    "meaning": "Transfer cost per unit from Hospital 1 to Hospital 2",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Transfer cost per unit from Hospital 1 to Hospital 3",
+    "base": 42,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 70,
+     "integer": true
+    }
+   },
+   "cost_1_4": {
+    "meaning": "Transfer cost per unit from Hospital 1 to Hospital 4",
+    "base": 27,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "cost_2_1": {
+    "meaning": "Transfer cost per unit from Hospital 2 to Hospital 1",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Transfer cost per unit from Hospital 2 to Hospital 3",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "cost_2_4": {
+    "meaning": "Transfer cost per unit from Hospital 2 to Hospital 4",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "cost_3_1": {
+    "meaning": "Transfer cost per unit from Hospital 3 to Hospital 1",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_3_2": {
+    "meaning": "Transfer cost per unit from Hospital 3 to Hospital 2",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Transfer cost per unit from Hospital 3 to Hospital 4",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "cost_4_1": {
+    "meaning": "Transfer cost per unit from Hospital 4 to Hospital 1",
+    "base": 33,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "cost_4_2": {
+    "meaning": "Transfer cost per unit from Hospital 4 to Hospital 2",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "cost_4_3": {
+    "meaning": "Transfer cost per unit from Hospital 4 to Hospital 3",
+    "base": 42,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 70,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

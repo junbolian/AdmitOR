@@ -1,0 +1,27 @@
+{
+ "sample_id": "om_mamo_21",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity_matrix\",\"evidence\":\"no value in the statement for diagonal entries, capacity from Station 1 to Station 5, or outgoing capacities from Station 5; these entries were filled with zeros\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix",
+   "evidence": "no value in the statement for diagonal entries, capacity from Station 1 to Station 5, or outgoing capacities from Station 5; these entries were filled with zeros"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

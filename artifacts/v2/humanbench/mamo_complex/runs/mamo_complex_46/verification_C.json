@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_46",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Comparing each extracted value against the statement:\n\nAll `capacity_0_*` values match the statement exactly.\n\nFor the grouped capacity arrays, I'll check each in order:\n\n- `capacities_from_1`: [4,14,14,13,19,4,19] — statement says Node 1 → Node 0: 4, Node 2: 14, Node 3: 14, Node 4: 13, Node 5: 19, Node 6: 4, Node 7: 19. ✓\n- `capacities_from_2`: [6,16,3,10,7,18,10] — statement says Node 2 → Node 0: 6, Node 1: 16, Node 3: 3, Node 4: 10, Node 5: 7, Node 6: 18, Node 7: 10. ✓\n- `capacities_from_3`: [19,4,15,6,1,17,9] — statement says Node 3 → Node 0: 19, Node 1: 4, Node 2: 15, Node 4: 6, Node 5: 1, Node 6: 17, Node 7: 9. ✓\n- `capacities_from_4`: [12,15,3,14,18,20,14] — statement says Node 4 → Node 0: 12, Node 1: 15, Node 2: 3, Node 3: 14, Node 5: 18, Node 6: 20, Node 7: 14. ✓\n- `capacities_from_5`: [20,5,19,9,20,10,6] — statement says Node 5 → Node 0: 20, Node 1: 5, Node 2: 19, Node 3: 9, Node 4: 20, Node 6: 10, Node 7: 6. ✓\n- `capacities_from_6`: [9,14,12,16,19,3,10] — statement says Node 6 → Node 0: 9, Node 1: 14, Node 2: 12, Node 3: 16, Node 4: 19, Node 5: 3, Node 7: 10. ✓\n- `capacities_from_7`: [20,16,6,16,8,16,4] — statement says Node 7 → Node 0: 20, Node 1: 16, Node 2: 6, Node 3: 16, Node 4: 8, Node 5: 16, Node 6: 4. ✓\n\nAll values match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

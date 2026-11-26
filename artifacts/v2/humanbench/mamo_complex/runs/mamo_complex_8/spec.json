@@ -1,0 +1,225 @@
+{
+ "spec": {
+  "calories": {
+   "base": [
+    400,
+    200,
+    150,
+    500
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chocolate": {
+   "base": [
+    3,
+    2,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sugar": {
+   "base": [
+    2,
+    2,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fat": {
+   "base": [
+    2,
+    4,
+    1,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost": {
+   "base": [
+    50,
+    20,
+    30,
+    80
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_calories": {
+   "base": 500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 900.0,
+    "integer": false
+   }
+  },
+  "min_chocolate": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "min_sugar": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "min_fat": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[chocolate] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "calories": {
+    "meaning": "Calories provided per unit of each food (brownies, chocolate ice cream, cola, pineapple cheesecake)",
+    "base": [
+     400,
+     200,
+     150,
+     500
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chocolate": {
+    "meaning": "Oz of chocolate per unit of each food",
+    "base": [
+     3,
+     2,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      6,
+      4,
+      2,
+      2
+     ],
+     "integer": false
+    }
+   },
+   "sugar": {
+    "meaning": "Oz of sugar per unit of each food",
+    "base": [
+     2,
+     2,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fat": {
+    "meaning": "Oz of fat per unit of each food",
+    "base": [
+     2,
+     4,
+     1,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost": {
+    "meaning": "Cost in cents per unit of each food",
+    "base": [
+     50,
+     20,
+     30,
+     80
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_calories": {
+    "meaning": "Daily minimum calorie requirement",
+    "base": 500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 900,
+     "integer": false
+    }
+   },
+   "min_chocolate": {
+    "meaning": "Daily minimum chocolate requirement (oz)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "min_sugar": {
+    "meaning": "Daily minimum sugar requirement (oz)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "min_fat": {
+    "meaning": "Daily minimum fat requirement (oz)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 16,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

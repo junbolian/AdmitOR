@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "income_A": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "income_B": {
+   "base": 40000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "income_C": {
+   "base": 30000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "income_D": {
+   "base": 50000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_A": {
+   "base": 1600000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B": {
+   "base": 2500000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_C": {
+   "base": 1800000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_D": {
+   "base": 3000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget": {
+   "base": 6000000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "income_A": {
+    "meaning": "Annual income of Restaurant A in dollars",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "income_B": {
+    "meaning": "Annual income of Restaurant B in dollars",
+    "base": 40000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "income_C": {
+    "meaning": "Annual income of Restaurant C in dollars",
+    "base": 30000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "income_D": {
+    "meaning": "Annual income of Restaurant D in dollars",
+    "base": 50000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_A": {
+    "meaning": "Purchase cost of Restaurant A in dollars",
+    "base": 1600000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B": {
+    "meaning": "Purchase cost of Restaurant B in dollars",
+    "base": 2500000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_C": {
+    "meaning": "Purchase cost of Restaurant C in dollars",
+    "base": 1800000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_D": {
+    "meaning": "Purchase cost of Restaurant D in dollars",
+    "base": 3000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "budget": {
+    "meaning": "Total investment budget in dollars",
+    "base": 6000000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

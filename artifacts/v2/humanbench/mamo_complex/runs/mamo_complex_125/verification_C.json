@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_125",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll check each parameter against the statement.\n\n**supply and demand**: Statement gives 42/74, 32/476, 398/2, 224/235, 210/221, 209/72. Extracted values match.\n\n**cost parameters**: The statement says costs are \"from/to\" a region, meaning the costs listed appear to be symmetric (the same value applies in both directions between a pair). Let me check for asymmetries in the extracted values vs. what the statement says.\n\nThe statement lists, for Region 1: to R2=16, to R3=48, to R4=42, to R5=50, to R6=8.\nFor Region 2: to R1=27, to R3=23, to R4=37, to R5=39, to R6=29.\n\nSo the statement gives cost_1_2=16 and cost_2_1=27 — these differ, which is fine, both are stated explicitly.\n\nGoing through all pairs, checking extracted vs. stated:\n\n- cost_1_2=16 ✓, cost_2_1=27 ✓\n- cost_1_3=48 ✓, cost_3_1=49 ✓\n- cost_1_4=42 ✓, cost_4_1=23 ✓\n- cost_1_5=50 ✓, cost_5_1=45 ✓\n- cost_1_6=8 ✓, cost_6_1=33 ✓\n- cost_2_3=23 ✓, cost_3_2=39 ✓\n- cost_2_4=37 ✓, cost_4_2=49 ✓\n- cost_2_5=39 ✓, cost_5_2=47 ✓\n- cost_2_6=29 ✓, cost_6_2=11 ✓\n- cost_3_4=33 ✓, cost_4_3=46 ✓\n- cost_3_5=50 ✓, cost_5_3=48 ✓\n- cost_3_6=6 ✓, cost_6_3=9 ✓\n- cost_4_5=50 ✓, cost_5_4=26 ✓\n- cost_4_6=6 ✓, cost_6_4=4 ✓\n- cost_5_6=39 ✓, cost_6_5=12 ✓\n\nAll values match exactly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

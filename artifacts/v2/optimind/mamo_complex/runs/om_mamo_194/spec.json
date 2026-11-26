@@ -1,0 +1,168 @@
+{
+ "spec": {
+  "field_vertices": {
+   "base": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     11,
+     4
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[field_vertices] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "field_vertices": {
+    "meaning": "coordinates of the polygonal construction field (x,y pairs in meters) defining the feasible region for the fountain center (Chebyshev center formulation)",
+    "base": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      11,
+      7
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       5
+      ],
+      [
+       3,
+       9
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       6,
+       -1
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "hi": [
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       5,
+       11
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       12,
+       8
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       8,
+       1
+      ],
+      [
+       2,
+       1
+      ]
+     ],
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

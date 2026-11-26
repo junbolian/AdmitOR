@@ -1,0 +1,197 @@
+{
+ "spec": {
+  "cost_A_B": {
+   "base": 61,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_A_C": {
+   "base": 65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_A_D": {
+   "base": 63,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B_A": {
+   "base": 61,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B_C": {
+   "base": 94,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B_D": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_C_A": {
+   "base": 65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_C_B": {
+   "base": 94,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_C_D": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_D_A": {
+   "base": 63,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_D_B": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_D_C": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_A_B": {
+    "meaning": "travel cost from city A to city B",
+    "base": 61,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_A_C": {
+    "meaning": "travel cost from city A to city C",
+    "base": 65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_A_D": {
+    "meaning": "travel cost from city A to city D",
+    "base": 63,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B_A": {
+    "meaning": "travel cost from city B to city A",
+    "base": 61,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B_C": {
+    "meaning": "travel cost from city B to city C",
+    "base": 94,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B_D": {
+    "meaning": "travel cost from city B to city D",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_C_A": {
+    "meaning": "travel cost from city C to city A",
+    "base": 65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_C_B": {
+    "meaning": "travel cost from city C to city B",
+    "base": 94,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_C_D": {
+    "meaning": "travel cost from city C to city D",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_D_A": {
+    "meaning": "travel cost from city D to city A",
+    "base": 63,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_D_B": {
+    "meaning": "travel cost from city D to city B",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_D_C": {
+    "meaning": "travel cost from city D to city C",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

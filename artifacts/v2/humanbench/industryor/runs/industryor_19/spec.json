@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "t_11": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "t_12": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "t_13": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "t_21": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "t_22": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "t_23": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "t_31": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "t_32": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "t_33": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "t_11": {
+    "meaning": "processing time of product 1 on machine 1 (minutes)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "t_12": {
+    "meaning": "processing time of product 1 on machine 2 (minutes)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "t_13": {
+    "meaning": "processing time of product 1 on machine 3 (minutes)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "t_21": {
+    "meaning": "processing time of product 2 on machine 1 (minutes)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "t_22": {
+    "meaning": "processing time of product 2 on machine 2 (minutes)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "t_23": {
+    "meaning": "processing time of product 2 on machine 3 (minutes)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "t_31": {
+    "meaning": "processing time of product 3 on machine 1 (minutes)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "t_32": {
+    "meaning": "processing time of product 3 on machine 2 (minutes)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "t_33": {
+    "meaning": "processing time of product 3 on machine 3 (minutes)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

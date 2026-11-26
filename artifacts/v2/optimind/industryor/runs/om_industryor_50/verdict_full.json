@@ -1,0 +1,126 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "req_shift1": 60,
+   "req_shift2": 70,
+   "req_shift3": 60,
+   "req_shift4": 50,
+   "req_shift5": 20,
+   "req_shift6": 30
+  },
+  {
+   "req_shift1": 65.01936474448382,
+   "req_shift2": 50.05045171935201,
+   "req_shift3": 51.90105546128829,
+   "req_shift4": 41.69632214446468,
+   "req_shift5": 24.72942428328025,
+   "req_shift6": 35.30098462268734
+  },
+  {
+   "req_shift1": 74.11846443737443,
+   "req_shift2": 52.65143097043548,
+   "req_shift3": 57.18918550866974,
+   "req_shift4": 35.89391658314211,
+   "req_shift5": 14.372759496072067,
+   "req_shift6": 30.160658643100867
+  },
+  {
+   "req_shift1": 42.95529490861909,
+   "req_shift2": 57.35118132883923,
+   "req_shift3": 65.39583976006283,
+   "req_shift4": 51.3482444180965,
+   "req_shift5": 14.408812440813934,
+   "req_shift6": 32.67797051627726
+  },
+  {
+   "req_shift1": 71.13949644040177,
+   "req_shift2": 49.27294790647856,
+   "req_shift3": 71.00949306598108,
+   "req_shift4": 55.9441818496468,
+   "req_shift5": 16.80501033035984,
+   "req_shift6": 19.664384994353448
+  },
+  {
+   "req_shift1": 76.45967059944412,
+   "req_shift2": 63.13697089473032,
+   "req_shift3": 45.338850361685324,
+   "req_shift4": 37.90149130500392,
+   "req_shift5": 26.949887326949195,
+   "req_shift6": 33.111780941006735
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   75.0,
+   70.82492224452618,
+   74.11846443737443,
+   70.6886981316065,
+   79.47699991837135,
+   76.45967059944412
+  ],
+  "B-structured": [
+   150.0,
+   143.0,
+   148.0,
+   143.0,
+   161.0,
+   150.0
+  ],
+  "C-direct": [
+   150.0,
+   143.0,
+   148.0,
+   143.0,
+   161.0,
+   150.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 81.52 on instance 4 (params: {'req_shift1': 71.14, 'req_shift2': 49.27, 'req_shift3': 71.01, 'req_shift4': 55.94, 'req_shift5': 16.81, 'req_shift6': 19.66})"
+ },
+ "disagreements": [],
+ "notes": []
+}

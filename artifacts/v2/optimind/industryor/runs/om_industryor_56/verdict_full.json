@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_apples": 2000,
+   "profit_pears": 1800,
+   "profit_oranges": 2200,
+   "profit_lemons": 3000,
+   "total_land": 120,
+   "apple_vs_pear_ratio": 2,
+   "apple_vs_lemon_ratio": 3,
+   "orange_vs_lemon_ratio": 2,
+   "max_fruit_types": 2
+  },
+  {
+   "profit_apples": 2278.8535969157674,
+   "profit_pears": 945.0193594008005,
+   "profit_oranges": 1705.0645004120624,
+   "profit_lemons": 2169.6322144464684,
+   "total_land": 148.3765456996815,
+   "apple_vs_pear_ratio": 3.030098462268734,
+   "apple_vs_lemon_ratio": 5.460897838524227,
+   "orange_vs_lemon_ratio": 1.2608164978882486,
+   "max_fruit_types": 2
+  },
+  {
+   "profit_apples": 1059.5944388761407,
+   "profit_pears": 1293.5483546464861,
+   "profit_oranges": 2211.781633827397,
+   "profit_lemons": 1579.607909051591,
+   "total_land": 83.86051808239782,
+   "apple_vs_pear_ratio": 2.94965331333857,
+   "apple_vs_lemon_ratio": 3.724707403016083,
+   "orange_vs_lemon_ratio": 1.66132186612209,
+   "max_fruit_types": 2
+  },
+  {
+   "profit_apples": 2618.860913355653,
+   "profit_pears": 911.6977674205099,
+   "profit_oranges": 2872.8023540321774,
+   "profit_lemons": 3594.4181849646807,
+   "total_land": 100.83006198215902,
+   "apple_vs_pear_ratio": 1.4664384994353448,
+   "apple_vs_lemon_ratio": 5.786065361033906,
+   "orange_vs_lemon_ratio": 2.00978363533788,
+   "max_fruit_types": 2
+  },
+  {
+   "profit_apples": 1193.432753666928,
+   "profit_pears": 2425.4898594254273,
+   "profit_oranges": 2428.1972690071602,
+   "profit_lemons": 3921.3848198231403,
+   "total_land": 147.56781440325813,
+   "apple_vs_pear_ratio": 2.6086842743641023,
+   "apple_vs_lemon_ratio": 5.865578819896853,
+   "orange_vs_lemon_ratio": 2.1356031316250603,
+   "max_fruit_types": 2
+  },
+  {
+   "profit_apples": 2658.80932850599,
+   "profit_pears": 2013.3355542556428,
+   "profit_oranges": 2995.75518068371,
+   "profit_lemons": 3232.056435770286,
+   "total_land": 144.54862034579082,
+   "apple_vs_pear_ratio": 1.1374731509669866,
+   "apple_vs_lemon_ratio": 2.139491378257734,
+   "orange_vs_lemon_ratio": 1.8681638908063216,
+   "max_fruit_types": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   264000.0,
+   338128.4248656559,
+   185481.1536978978,
+   289664.8394195568,
+   358323.76392734685,
+   433032.27826158557
+  ],
+  "B-structured": [
+   264000.0,
+   338128.4248656559,
+   185481.1536978978,
+   289664.8394195568,
+   358323.76392734685,
+   433032.27826158557
+  ],
+  "C-direct": [
+   264000.0,
+   338128.4248656559,
+   185481.1536978978,
+   289664.8394195568,
+   358323.76392734685,
+   433032.27826158557
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

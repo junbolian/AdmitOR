@@ -1,0 +1,246 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "supply": [
+    500,
+    497,
+    354,
+    223
+   ],
+   "demand": [
+    17,
+    65,
+    26,
+    332
+   ],
+   "transport_cost": [
+    17,
+    3,
+    5,
+    39,
+    18,
+    50,
+    8,
+    45,
+    15,
+    11,
+    4,
+    29
+   ]
+  },
+  {
+   "supply": [
+    541.8280395373652,
+    355.35820720739923,
+    306.2162272216009,
+    185.96559676431247
+   ],
+   "demand": [
+    19.412006384472928,
+    71.89128000949354,
+    32.11800125619558,
+    249.7182154597797
+   ],
+   "transport_cost": [
+    15.672670934649597,
+    1.5893916583142111,
+    3.593189874018017,
+    39.20885623603113,
+    9.477647454309546,
+    34.94188253433242,
+    9.199075502236186,
+    47.02236662714475,
+    10.806609330610451,
+    11.981922522634996,
+    5.237721826711306,
+    14.68846403066377
+   ]
+  },
+  {
+   "supply": [
+    591.7457755498423,
+    556.0851675854892,
+    320.06920970842145,
+    176.90315707481636
+   ],
+   "demand": [
+    21.66357333650917,
+    58.62718725939244,
+    19.646835156730308,
+    251.66590226522604
+   ],
+   "transport_cost": [
+    22.907404227906813,
+    3.311178094100673,
+    6.5356413663719,
+    47.95953968105889,
+    18.652105646184612,
+    73.65578819896854,
+    7.028275017666828,
+    47.34182840729521,
+    19.941069963794924,
+    12.303717276006706,
+    5.446827601243109,
+    31.2432122124461
+   ]
+  },
+  {
+   "supply": [
+    561.371550864477,
+    361.56483120611847,
+    296.20559374838854,
+    194.82010952996194
+   ],
+   "demand": [
+    12.713878164621,
+    54.57884456808018,
+    19.775622298791774,
+    287.77234173953036
+   ],
+   "transport_cost": [
+    19.306635552494804,
+    2.5944965369102526,
+    4.350904835584413,
+    27.67077420008802,
+    13.80560079688404,
+    71.8327293856247,
+    9.184283081972747,
+    49.91089525501447,
+    10.067079722971455,
+    13.520394777453841,
+    2.6536099750477136,
+    25.504207810971785
+   ]
+  },
+  {
+   "supply": [
+    646.8570051909785,
+    538.7479283884905,
+    366.0961255777348,
+    247.70138678244524
+   ],
+   "demand": [
+    20.49708958593606,
+    75.76399655030355,
+    21.77314992264003,
+    238.7943685856843
+   ],
+   "transport_cost": [
+    13.862701817004393,
+    2.3032226279271084,
+    3.5549142179316324,
+    56.273478859067126,
+    24.774617276508042,
+    40.7338940399239,
+    9.24350932235904,
+    40.30343554772989,
+    21.218213846108153,
+    10.547370378461387,
+    3.05952066599221,
+    21.65219772312552
+   ]
+  },
+  {
+   "supply": [
+    518.4104402489452,
+    426.24954766153934,
+    371.96606432348,
+    276.22870182601145
+   ],
+   "demand": [
+    15.973885152432054,
+    54.05350960713405,
+    33.76158666132372,
+    333.8976377003517
+   ],
+   "transport_cost": [
+    10.045460006954496,
+    1.6413491262742037,
+    3.048245651753296,
+    43.97039562642051,
+    23.257428558533352,
+    46.1079983399842,
+    4.508221649215657,
+    39.67286789279415,
+    22.44182070360145,
+    11.320257796090509,
+    5.884313510454472,
+    39.462611364800445
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   545.0,
+   229.07526393868463,
+   488.6224901299633,
+   404.4263165989765,
+   0.0,
+   175.78908302019735
+  ],
+  "C-direct": [
+   545.0,
+   229.07526393868463,
+   488.6224901299633,
+   404.4263165989765,
+   0.0,
+   175.78908302019735
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+   "crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+   "crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+   "crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+   "crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple",
+   "crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple', 'crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple', 'crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple', 'crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple', 'crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple', 'crash:return sum(transport_cost[i, j] * m.flow[i, j] for (i, j) in arcs) | ~~~~~~~~~~~~~~^^^^^^ | TypeError: list indices must be integers or slices, not tuple']"
+ },
+ "disagreements": [],
+ "notes": []
+}

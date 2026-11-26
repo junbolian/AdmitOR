@@ -1,0 +1,362 @@
+{
+ "spec": {
+  "cost_chicken": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_rice": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_broccoli": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_tofu": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_beans": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_chicken": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_rice": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_broccoli": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_tofu": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_beans": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_chicken": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_rice": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_broccoli": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_tofu": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_beans": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_chicken": {
+   "base": 142,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_rice": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_broccoli": {
+   "base": 137,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_tofu": {
+   "base": 141,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_beans": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_protein": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "req_carb": {
+   "base": 194,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "req_cal": {
+   "base": 2012,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_chicken": {
+    "meaning": "Cost per portion of Chicken",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per portion of Rice",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "Cost per portion of Broccoli",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_tofu": {
+    "meaning": "Cost per portion of Tofu",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_beans": {
+    "meaning": "Cost per portion of Beans",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_chicken": {
+    "meaning": "Protein grams per portion of Chicken",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams per portion of Rice",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "Protein grams per portion of Broccoli",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_tofu": {
+    "meaning": "Protein grams per portion of Tofu",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_beans": {
+    "meaning": "Protein grams per portion of Beans",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_chicken": {
+    "meaning": "Carbohydrate grams per portion of Chicken",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_rice": {
+    "meaning": "Carbohydrate grams per portion of Rice",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_broccoli": {
+    "meaning": "Carbohydrate grams per portion of Broccoli",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_tofu": {
+    "meaning": "Carbohydrate grams per portion of Tofu",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_beans": {
+    "meaning": "Carbohydrate grams per portion of Beans",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_chicken": {
+    "meaning": "Calories per portion of Chicken",
+    "base": 142,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_rice": {
+    "meaning": "Calories per portion of Rice",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_broccoli": {
+    "meaning": "Calories per portion of Broccoli",
+    "base": 137,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_tofu": {
+    "meaning": "Calories per portion of Tofu",
+    "base": 141,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_beans": {
+    "meaning": "Calories per portion of Beans",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_protein": {
+    "meaning": "Daily minimum protein requirement (grams)",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "req_carb": {
+    "meaning": "Daily minimum carbohydrate requirement (grams)",
+    "base": 194,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "req_cal": {
+    "meaning": "Daily minimum calorie requirement",
+    "base": 2012,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

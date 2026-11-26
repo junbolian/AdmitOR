@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "initial_food": {
+   "base": [
+    42,
+    32,
+    398,
+    224,
+    210,
+    209
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "required_food": {
+   "base": [
+    74,
+    476,
+    2,
+    235,
+    221,
+    72
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     0,
+     16,
+     48,
+     42,
+     50,
+     8
+    ],
+    [
+     27,
+     0,
+     23,
+     37,
+     39,
+     29
+    ],
+    [
+     49,
+     39,
+     0,
+     33,
+     50,
+     6
+    ],
+    [
+     23,
+     49,
+     46,
+     0,
+     50,
+     6
+    ],
+    [
+     45,
+     47,
+     48,
+     26,
+     0,
+     39
+    ],
+    [
+     33,
+     11,
+     9,
+     4,
+     12,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_food": {
+    "meaning": "Food currently available in each of the six regions (tons), indexed 1..6",
+    "base": [
+     42,
+     32,
+     398,
+     224,
+     210,
+     209
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "required_food": {
+    "meaning": "Food required by each of the six regions (tons), indexed 1..6",
+    "base": [
+     74,
+     476,
+     2,
+     235,
+     221,
+     72
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "transport_cost": {
+    "meaning": "Cost per ton to move food between ordered region pairs; base[i][j] = cost from region i+1 to region j+1, diagonal 0 (unused)",
+    "base": [
+     [
+      0,
+      16,
+      48,
+      42,
+      50,
+      8
+     ],
+     [
+      27,
+      0,
+      23,
+      37,
+      39,
+      29
+     ],
+     [
+      49,
+      39,
+      0,
+      33,
+      50,
+      6
+     ],
+     [
+      23,
+      49,
+      46,
+      0,
+      50,
+      6
+     ],
+     [
+      45,
+      47,
+      48,
+      26,
+      0,
+      39
+     ],
+     [
+      33,
+      11,
+      9,
+      4,
+      12,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

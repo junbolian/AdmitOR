@@ -1,0 +1,288 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "reservations": [
+    [
+     1500,
+     1000,
+     2000,
+     1200
+    ],
+    [
+     1500,
+     1500,
+     1200,
+     1500
+    ],
+    [
+     1000,
+     2000,
+     1500,
+     2500
+    ]
+   ],
+   "ending_inventory_required": 150,
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit": [
+    2,
+    4,
+    3
+   ],
+   "delay_penalty": [
+    20,
+    20,
+    10
+   ],
+   "inventory_cost": 5
+  },
+  {
+   "reservations": [
+    [
+     1625.4841186120955,
+     715.0064531336001,
+     1730.035182042943,
+     1000.7117314671524
+    ],
+    [
+     1712.824092747611,
+     1659.0295386806204,
+     1482.3692887474886,
+     1128.2449493664747
+    ],
+    [
+     953.1530918111623,
+     1435.7566633256845,
+     1246.774177323243,
+     2508.032932155044
+    ]
+   ],
+   "ending_inventory_required": 11,
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit": [
+    2,
+    4,
+    3
+   ],
+   "delay_penalty": [
+    13.97675301373297,
+    22.997688755590463,
+    10.449414806032166
+   ],
+   "inventory_cost": 5.188371818773238
+  },
+  {
+   "reservations": [
+    [
+     1580.339115488318,
+     1185.658274006696,
+     1407.798511613673,
+     1420.1898613196215
+    ],
+    [
+     1678.325455489404,
+     1356.2254648661926,
+     951.9452398644827,
+     1911.4917649861031
+    ],
+    [
+     901.956727067576,
+     1511.2950120561775,
+     1137.0447391501177,
+     3021.24154952119
+    ]
+   ],
+   "ending_inventory_required": 241,
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit": [
+    2,
+    4,
+    3
+   ],
+   "delay_penalty": [
+    26.1425654654876,
+    24.594635733876355,
+    10.362280914547007
+   ],
+   "inventory_cost": 19.489199515608043
+  },
+  {
+   "reservations": [
+    [
+     1390.6809394875181,
+     1031.224378763936,
+     2395.2855971035942,
+     1285.334221702257
+    ],
+    [
+     1825.5362102796994,
+     1569.6169307310859,
+     1347.2917220747447,
+     1091.241945290096
+    ],
+    [
+     836.7389653909281,
+     1747.2655563225285,
+     1121.8127792312648,
+     2099.186329541545
+    ]
+   ],
+   "ending_inventory_required": 40,
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit": [
+    2,
+    4,
+    3
+   ],
+   "delay_penalty": [
+    15.559472062201841,
+    22.713688885288008,
+    8.648321789700843
+   ],
+   "inventory_cost": 8.03343837522077
+  },
+  {
+   "reservations": [
+    [
+     1238.5563276943387,
+     860.1866932294679,
+     2523.9855052549933,
+     1306.5854773775475
+    ],
+    [
+     1598.2179051002893,
+     1204.024783378287,
+     1364.9712945242513,
+     1197.0622443857355
+    ],
+    [
+     927.6732650545887,
+     2587.428020763914,
+     1625.9997838686836,
+     2585.4246156619693
+    ]
+   ],
+   "ending_inventory_required": 274,
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit": [
+    2,
+    4,
+    3
+   ],
+   "delay_penalty": [
+    26.857038403796196,
+    25.519998230924898,
+    7.290480719641044
+   ],
+   "inventory_cost": 1.6099046341767176
+  },
+  {
+   "reservations": [
+    [
+     1333.9077432531735,
+     860.6445255854215,
+     1653.1794123035916,
+     1518.894994321239
+    ],
+    [
+     1838.7308638254021,
+     1333.21009271863,
+     1311.9158390123139,
+     1406.0687109545977
+    ],
+    [
+     1248.7285538443261,
+     1950.6222231048787,
+     1288.392149848247,
+     2119.941261540975
+    ]
+   ],
+   "ending_inventory_required": 225,
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit": [
+    2,
+    4,
+    3
+   ],
+   "delay_penalty": [
+    15.254832170458705,
+    21.691719804470814,
+    13.97822883602477
+   ],
+   "inventory_cost": 8.58860959766755
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   10750.0,
+   3880.935601698895,
+   78479.53814388918,
+   9248.290102851895,
+   5212.035015765304,
+   19217.969781157593
+  ],
+  "C-direct": [
+   10750.0,
+   3880.9356016988954,
+   78479.5381438892,
+   9248.290102851894,
+   5212.035015765305,
+   19217.969781157593
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\", \"crash:end_req = {i: ending_inventory_required[i] for i in products} | ~~~~~~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

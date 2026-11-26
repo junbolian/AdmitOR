@@ -1,0 +1,27 @@
+{
+ "sample_id": "industryor_24",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"requirements\", \"evidence\": \"Table 1-17 lists shift requirements (60, 70, 60, 50, 20, 30) but the shift times are inconsistent/ambiguous (e.g., shift 4 '22:00~22:00', shift times total 24h but entries overlap), so the 4-hour period mapping is not explicitly stated\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "requirements",
+   "evidence": "Table 1-17 lists shift requirements (60, 70, 60, 50, 20, 30) but the shift times are inconsistent/ambiguous (e.g., shift 4 '22:00~22:00', shift times total 24h but entries overlap), so the 4-hour period mapping is not explicitly stated"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

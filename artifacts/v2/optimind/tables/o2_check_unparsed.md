@@ -1,0 +1,13 @@
+Table o2b. Data-verification replies per family: unparsed after up to three attempts, and replies that needed a retry.
+
+| benchmark | family | replies | unparsed_after_retries | replies_needing_more_than_one_attempt |
+|---|---|---|---|---|
+| OptiMind IndustryOR | C | 99 | 0 | 1 |
+| OptiMind IndustryOR | A | 99 | 0 | 7 |
+| OptiMind IndustryOR | B | 99 | 0 | 0 |
+| OptiMind Mamo-Complex | C | 210 | 1 | 1 |
+| OptiMind Mamo-Complex | A | 210 | 0 | 3 |
+| OptiMind Mamo-Complex | B | 210 | 0 | 0 |
+| pooled | C | 309 | 1 | 2 |
+| pooled | A | 309 | 0 | 10 |
+| pooled | B | 309 | 0 | 0 |

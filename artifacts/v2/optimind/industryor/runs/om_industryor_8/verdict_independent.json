@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "profit_truck": 5,
+   "profit_airplane": 10,
+   "profit_boat": 8,
+   "profit_train": 7,
+   "wood_capacity": 890,
+   "wood_truck": 12,
+   "wood_airplane": 20,
+   "wood_boat": 15,
+   "wood_train": 10,
+   "steel_capacity": 500,
+   "steel_truck": 6,
+   "steel_airplane": 3,
+   "steel_boat": 5,
+   "steel_train": 4
+  },
+  {
+   "profit_truck": 8.033694783036722,
+   "profit_airplane": 3.375161328340004,
+   "profit_boat": 4.575381138798551,
+   "profit_train": 4.455318119637051,
+   "wood_capacity": 1283.765456996815,
+   "wood_truck": 15.473792823920759,
+   "wood_airplane": 29.6279504895066,
+   "wood_boat": 9.477960154700074,
+   "wood_train": 10.484983655908515,
+   "steel_capacity": 220.85805360664924,
+   "steel_truck": 3.749103798428827,
+   "steel_airplane": 4.537487016723537,
+   "steel_boat": 2.185751787787045,
+   "steel_train": 2.3918635548065392
+  },
+  {
+   "profit_truck": 8.148728815574756,
+   "profit_airplane": 11.17412220904825,
+   "profit_boat": 3.865728086529057,
+   "profit_train": 8.481922522634996,
+   "wood_capacity": 1371.316548013392,
+   "wood_truck": 6.090982635492854,
+   "wood_airplane": 27.728023540321775,
+   "wood_boat": 19.868369714799854,
+   "wood_train": 9.423256714733895,
+   "steel_capacity": 308.83564986824706,
+   "steel_truck": 9.65770457765425,
+   "steel_airplane": 3.3561618157883872,
+   "steel_boat": 2.6492209036610355,
+   "steel_train": 1.677014637834248
+  },
+  {
+   "profit_truck": 10.322438029822058,
+   "profit_airplane": 12.055890470503366,
+   "profit_boat": 11.492667552566942,
+   "profit_train": 10.027049653631996,
+   "wood_capacity": 1043.473709745641,
+   "wood_truck": 19.62362069571119,
+   "wood_airplane": 18.32775629858378,
+   "wood_boat": 17.38469073164486,
+   "wood_train": 15.782260635288933,
+   "steel_capacity": 632.9638266549723,
+   "steel_truck": 8.893655202486219,
+   "steel_airplane": 5.041465016797334,
+   "steel_boat": 6.932002853504464,
+   "steel_train": 1.3207706855896355
+  },
+  {
+   "profit_truck": 3.5068810321670156,
+   "profit_airplane": 7.340819454031608,
+   "profit_boat": 2.0372957000071574,
+   "profit_train": 4.560699749971332,
+   "wood_capacity": 521.201715291675,
+   "wood_truck": 9.89163044354129,
+   "wood_airplane": 23.985057773816806,
+   "wood_boat": 14.202147042491433,
+   "wood_train": 9.812352572519474,
+   "steel_capacity": 346.6549215400414,
+   "steel_truck": 4.135822576392907,
+   "steel_airplane": 7.556582113987458,
+   "steel_boat": 6.5362476967261545,
+   "steel_train": 5.263917039668917
+  },
+  {
+   "profit_truck": 2.882525130179067,
+   "profit_airplane": 13.936901969255238,
+   "profit_boat": 3.124232418905069,
+   "profit_train": 6.1740098593341255,
+   "wood_capacity": 1587.4280207639142,
+   "wood_truck": 14.9599966379573,
+   "wood_airplane": 22.252894363042216,
+   "wood_boat": 19.638442266827866,
+   "wood_train": 15.957074962467525,
+   "steel_capacity": 743.1999380823713,
+   "steel_truck": 3.832384575712835,
+   "steel_airplane": 1.2247017073282644,
+   "steel_boat": 4.2081713364135735,
+   "steel_train": 2.8741861318299193
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   623.0,
+   473.261421514912,
+   1234.3291779444348,
+   686.3908788723554,
+   242.25021625013096,
+   994.200050910185
+  ],
+  "B-structured": [
+   623.0,
+   465.95429741612986,
+   1229.8787657820744,
+   685.156916001815,
+   241.7170867484806,
+   989.520039817122
+  ],
+  "C-direct": [
+   623.0,
+   473.261421514912,
+   1234.3291779444348,
+   686.3908788723554,
+   242.25021625013096,
+   994.200050910185
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 7.307 on instance 1 (params: {'profit_truck': 8.03, 'profit_airplane': 3.38, 'profit_boat': 4.58, 'profit_train': 4.46, 'wood_capacity': 1283.77, 'wood_truck': 15.47, 'wood_airplane': 29.63, 'wood_boat': 9.48, 'wood_train': 10.48, 'steel_capacity': 220.86, 'steel_truck': 3.75, 'steel_airplane': 4.54, 'steel_boat': 2.19, 'steel_train': 2.39})"
+ },
+ "disagreements": [],
+ "notes": []
+}

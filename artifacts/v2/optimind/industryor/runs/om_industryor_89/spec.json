@@ -1,0 +1,133 @@
+{
+ "spec": {
+  "profit_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_B": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assembly_time_A": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "assembly_time_B": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "weekly_machine_hours": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "ratio_A_per_5": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "ratio_B_min": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[ratio_A_per_5] degenerate abs range (lo == hi); perturbation has no effect",
+  "[ratio_B_min] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "profit_A": {
+    "meaning": "Profit per unit of product A (£)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_B": {
+    "meaning": "Profit per unit of product B (£)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assembly_time_A": {
+    "meaning": "Assembly time per unit of product A (minutes)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "assembly_time_B": {
+    "meaning": "Assembly time per unit of product B (minutes)",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "weekly_machine_hours": {
+    "meaning": "Effective machine working time per week (hours)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "ratio_A_per_5": {
+    "meaning": "Units of product A in the technical ratio (A per B requirement)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "ratio_B_min": {
+    "meaning": "Minimum units of product B required per ratio block",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

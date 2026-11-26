@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "purchase_price": {
+   "base": [
+    410,
+    430,
+    460,
+    450
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "sale_price": {
+   "base": [
+    425,
+    440,
+    465,
+    455
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_sales": {
+   "base": [
+    100,
+    140,
+    200,
+    160
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "storage_capacity": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "storage_cost_a": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "storage_cost_b": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "purchase_price": {
+    "meaning": "Timber purchase price in each quarter (10,000 yuan per 10,000 m³), order: Winter, Spring, Summer, Autumn",
+    "base": [
+     410,
+     430,
+     460,
+     450
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "sale_price": {
+    "meaning": "Timber sale price in each quarter (10,000 yuan per 10,000 m³), order: Winter, Spring, Summer, Autumn",
+    "base": [
+     425,
+     440,
+     465,
+     455
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_sales": {
+    "meaning": "Estimated maximum sales volume in each quarter (10,000 m³), order: Winter, Spring, Summer, Autumn",
+    "base": [
+     100,
+     140,
+     200,
+     160
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "storage_capacity": {
+    "meaning": "Maximum warehouse storage capacity (10,000 m³)",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "storage_cost_a": {
+    "meaning": "Constant term a in storage cost a + b*u (yuan per m³), u = storage time in quarters",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "storage_cost_b": {
+    "meaning": "Per-quarter term b in storage cost a + b*u (yuan per m³ per quarter)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "mileage_A_M": {
+   "base": 17.1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mileage_Z_M": {
+   "base": 26.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_continuous_driving_minutes": {
+   "base": 120,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "max_daily_mileage_km": {
+   "base": 120,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "min_transfer_buffer_minutes": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "max_shift_length_minutes": {
+   "base": 480,
+   "perturb": {
+    "mode": "abs",
+    "lo": 240.0,
+    "hi": 720.0,
+    "integer": true
+   }
+  },
+  "num_driving_tasks": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "num_platforms": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_driving_tasks] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_platforms] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "mileage_A_M": {
+    "meaning": "Mileage (km) of segment between platform A and platform M",
+    "base": 17.1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mileage_Z_M": {
+    "meaning": "Mileage (km) of segment between platform Z and platform M",
+    "base": 26.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_continuous_driving_minutes": {
+    "meaning": "Maximum continuous driving time (minutes) allowed before a mandatory break/handover",
+    "base": 120,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "max_daily_mileage_km": {
+    "meaning": "Mileage limit (km) a driver may accumulate per duty",
+    "base": 120,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "min_transfer_buffer_minutes": {
+    "meaning": "Minimum buffer time (minutes) between consecutive tasks at a transfer platform",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "max_shift_length_minutes": {
+    "meaning": "Maximum total duty/shift length (minutes) per driver",
+    "base": 480,
+    "perturb": {
+     "mode": "abs",
+     "lo": 240,
+     "hi": 720,
+     "integer": true
+    }
+   },
+   "num_driving_tasks": {
+    "meaning": "Number of driving tasks on the roster (index-set cardinality, frozen)",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "num_platforms": {
+    "meaning": "Number of platforms/stations (index-set cardinality, frozen)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

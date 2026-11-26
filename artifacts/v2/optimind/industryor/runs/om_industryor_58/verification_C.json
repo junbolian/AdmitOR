@@ -1,0 +1,27 @@
+{
+ "sample_id": "om_industryor_58",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"distance_matrix\",\n      \"evidence\": \"The table shows distances for locations 1-7, but row 7 is incomplete. The statement does not provide distance values for entries (7,1), (7,2), (7,3), (7,4), (7,5), and (7,6). While the problem states the matrix is 'symmetric', the actual numeric values for the lower triangle are not explicitly given in the statement.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "distance_matrix",
+   "evidence": "The table shows distances for locations 1-7, but row 7 is incomplete. The statement does not provide distance values for entries (7,1), (7,2), (7,3), (7,4), (7,5), and (7,6). While the problem states the matrix is 'symmetric', the actual numeric values for the lower triangle are not explicitly given in the statement."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

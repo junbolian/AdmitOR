@@ -1,0 +1,138 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_corn": 1500,
+   "profit_wheat": 1200,
+   "profit_soybeans": 1800,
+   "profit_sorghum": 1600,
+   "total_area": 100,
+   "corn_wheat_ratio": 2,
+   "soybean_sorghum_ratio": 0.5,
+   "wheat_sorghum_ratio": 3
+  },
+  {
+   "profit_corn": 1709.1401976868256,
+   "profit_wheat": 630.0129062672004,
+   "profit_soybeans": 1395.0527730644146,
+   "profit_sorghum": 1157.1371810381163,
+   "total_area": 128.3765456996815,
+   "corn_wheat_ratio": 3.030098462268734,
+   "soybean_sorghum_ratio": 1.7951411786392062,
+   "wheat_sorghum_ratio": 1.4346941631470806
+  },
+  {
+   "profit_corn": 1382.8827295279057,
+   "profit_wheat": 635.7566633256844,
+   "profit_soybeans": 1293.5483546464861,
+   "profit_sorghum": 1608.5684609653797,
+   "total_area": 43.18431636206363,
+   "corn_wheat_ratio": 1.5965129520599455,
+   "soybean_sorghum_ratio": 1.334780431781094,
+   "wheat_sorghum_ratio": 3.724707403016083
+  },
+  {
+   "profit_corn": 1080.660933061045,
+   "profit_wheat": 1307.1188206510906,
+   "profit_soybeans": 2356.9748220200877,
+   "profit_sorghum": 810.3980154848977,
+   "total_area": 136.69831021993696,
+   "corn_wheat_ratio": 3.0944181849646806,
+   "soybean_sorghum_ratio": 0.7464759813841845,
+   "wheat_sorghum_ratio": 1.7773974990589076
+  },
+  {
+   "profit_corn": 2185.819608310172,
+   "profit_wheat": 1003.9134541351522,
+   "profit_soybeans": 1066.9425180842663,
+   "profit_sorghum": 954.7462029335425,
+   "total_area": 141.69932396169517,
+   "corn_wheat_ratio": 2.811178094100673,
+   "soybean_sorghum_ratio": 1.6335437192213225,
+   "wheat_sorghum_ratio": 4.64865893346909
+  },
+  {
+   "profit_corn": 1554.342137182051,
+   "profit_wheat": 1767.7389167752447,
+   "profit_soybeans": 1581.3618789750362,
+   "profit_sorghum": 1683.265010037163,
+   "total_area": 139.5285597103594,
+   "corn_wheat_ratio": 2.855559257092738,
+   "soybean_sorghum_ratio": 1.7372431105904769,
+   "wheat_sorghum_ratio": 3.88676072628381
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   180000.0,
+   219413.5146955054,
+   59718.845283567156,
+   322194.47540108266,
+   309729.1607997687,
+   224789.51998588926
+  ],
+  "B-structured": [
+   180000.0,
+   219413.5146955054,
+   59718.845283567156,
+   322194.47540108266,
+   309729.1607997687,
+   224789.51998588926
+  ],
+  "C-direct": [
+   180000.0,
+   219413.5146955054,
+   59718.845283567156,
+   322194.47540108266,
+   309729.1607997687,
+   224789.5199858893
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,198 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "warehouse_capacity": 500,
+   "initial_inventory": 200,
+   "purchase_prices": [
+    28,
+    24,
+    25,
+    27,
+    23,
+    23
+   ],
+   "sale_prices": [
+    29,
+    24,
+    26,
+    28,
+    22,
+    25
+   ]
+  },
+  {
+   "warehouse_capacity": 570,
+   "initial_inventory": 108,
+   "purchase_prices": [
+    24.85041045716767,
+    20.678528857785874,
+    27.955890177050158,
+    29.3854430802093,
+    27.510065028605723,
+    18.249796575238285
+   ],
+   "sale_prices": [
+    27.86786638543642,
+    18.357566633256845,
+    22.342293672446843,
+    28.07497403344707,
+    16.7918956665225,
+    21.235470633583105
+   ]
+  },
+  {
+   "warehouse_capacity": 575,
+   "initial_inventory": 263,
+   "purchase_prices": [
+    24.086168708569755,
+    25.071188206510907,
+    28.867880708472832,
+    20.337733255653824,
+    26.516921396077294,
+    25.278603042364608
+   ],
+   "sale_prices": [
+    26.68363248951088,
+    19.86575399774138,
+    31.943769938688156,
+    25.712323631576776,
+    17.520204277181627,
+    19.9589547104183
+   ]
+  },
+  {
+   "warehouse_capacity": 674,
+   "initial_inventory": 281,
+   "purchase_prices": [
+    32.29979582584132,
+    26.756781440325813,
+    25.452851143183757,
+    33.3870628137215,
+    21.603145337896066,
+    23.59846725964211
+   ],
+   "sale_prices": [
+    33.77636763166843,
+    25.42223702837095,
+    30.702189704040105,
+    29.082930033594668,
+    24.25029019836416,
+    19.322804795695777
+   ]
+  },
+  {
+   "warehouse_capacity": 364,
+   "initial_inventory": 187,
+   "purchase_prices": [
+    22.117087676930787,
+    20.79349063633236,
+    20.012517867621614,
+    24.002643641986243,
+    24.560371109040602,
+    21.44557005815597
+   ],
+   "sale_prices": [
+    27.117624023194796,
+    20.51408436925785,
+    22.970711686638474,
+    34.11316422797492,
+    23.62838923771253,
+    26.364137570837354
+   ]
+  },
+  {
+   "warehouse_capacity": 336,
+   "initial_inventory": 319,
+   "purchase_prices": [
+    23.287634912666995,
+    22.553465301091776,
+    31.119041882957443,
+    28.889996758030254,
+    23.65492205340843,
+    25.123063886383555
+   ],
+   "sale_prices": [
+    33.97135284275224,
+    27.311998938554936,
+    22.477624935533356,
+    21.449403414656526,
+    19.969983528649898,
+    22.096760949696286
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   9100.0,
+   10321.602171870727,
+   14870.328006552609,
+   15393.681850161553,
+   12879.084475410784,
+   12617.352063837036
+  ],
+  "C-direct": [
+   9100.0,
+   10321.602171870725,
+   14870.328006552607,
+   15393.68185016155,
+   12879.084475410782,
+   12617.352063837036
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

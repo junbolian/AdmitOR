@@ -1,0 +1,138 @@
+{
+ "spec": {
+  "prod_time_hours": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 110.0,
+    "integer": false
+   }
+  },
+  "rate_m_per_hour": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "curtain_demand_m": {
+   "base": 70000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "clothing_demand_m": {
+   "base": 45000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "curtain_profit_per_m": {
+   "base": 2.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "clothing_profit_per_m": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "overtime_cap_hours": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "prod_time_hours": {
+    "meaning": "weekly available production time (hours)",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 110,
+     "integer": false
+    }
+   },
+   "rate_m_per_hour": {
+    "meaning": "production rate of both fabrics (meters per hour)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "curtain_demand_m": {
+    "meaning": "sellable curtain fabric per week (meters)",
+    "base": 70000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "clothing_demand_m": {
+    "meaning": "sellable clothing fabric per week (meters)",
+    "base": 45000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "curtain_profit_per_m": {
+    "meaning": "profit per meter of curtain fabric (yuan)",
+    "base": 2.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 4.0,
+     "integer": false
+    }
+   },
+   "clothing_profit_per_m": {
+    "meaning": "profit per meter of clothing fabric (yuan)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 3.0,
+     "integer": false
+    }
+   },
+   "overtime_cap_hours": {
+    "meaning": "maximum allowable overtime hours per week (p2 target)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

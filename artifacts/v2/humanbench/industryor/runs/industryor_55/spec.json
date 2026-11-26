@@ -1,0 +1,71 @@
+{
+ "spec": {},
+ "warnings": [
+  "[a] non-numeric base dropped",
+  "[b] non-numeric base dropped",
+  "[f] non-numeric base dropped",
+  "[q] non-numeric base dropped",
+  "[c_ik] non-numeric base dropped",
+  "[c_kj] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "a": {
+    "meaning": "output (supply) at each production point i",
+    "base": "a_i (given)",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "b": {
+    "meaning": "required demand quantity at each demand point j",
+    "base": "b_j (given)",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "f": {
+    "meaning": "fixed cost incurred if intermediate transfer station k is used",
+    "base": "f_k (given)",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "q": {
+    "meaning": "maximum capacity limit for intermediate transfer station k",
+    "base": "q_k (given)",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "c_ik": {
+    "meaning": "unit transportation cost from production point i to transfer station k",
+    "base": "c_{i k} (given)",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "c_kj": {
+    "meaning": "unit transportation cost from transfer station k to demand point j",
+    "base": "c_{k j} (given)",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

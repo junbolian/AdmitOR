@@ -1,0 +1,397 @@
+{
+ "spec": {
+  "time_I_A": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "time_I_B": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "time_I_C": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "time_I_D": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "time_II_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "time_II_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "time_II_C": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "time_II_D": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "time_III_A": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "time_III_B": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "time_III_C": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "time_III_D": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "time_IV_A": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "time_IV_B": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "time_IV_C": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "time_IV_D": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "time_V_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 16.0,
+    "integer": true
+   }
+  },
+  "time_V_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "time_V_C": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "time_V_D": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "time_I_A": {
+    "meaning": "hours for worker I to complete task A",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "time_I_B": {
+    "meaning": "hours for worker I to complete task B",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "time_I_C": {
+    "meaning": "hours for worker I to complete task C",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "time_I_D": {
+    "meaning": "hours for worker I to complete task D",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "time_II_A": {
+    "meaning": "hours for worker II to complete task A",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "time_II_B": {
+    "meaning": "hours for worker II to complete task B",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "time_II_C": {
+    "meaning": "hours for worker II to complete task C",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "time_II_D": {
+    "meaning": "hours for worker II to complete task D",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "time_III_A": {
+    "meaning": "hours for worker III to complete task A",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "time_III_B": {
+    "meaning": "hours for worker III to complete task B",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "time_III_C": {
+    "meaning": "hours for worker III to complete task C",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "time_III_D": {
+    "meaning": "hours for worker III to complete task D",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "time_IV_A": {
+    "meaning": "hours for worker IV to complete task A",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "time_IV_B": {
+    "meaning": "hours for worker IV to complete task B",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "time_IV_C": {
+    "meaning": "hours for worker IV to complete task C",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "time_IV_D": {
+    "meaning": "hours for worker IV to complete task D",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "time_V_A": {
+    "meaning": "hours for worker V to complete task A",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 16,
+     "integer": true
+    }
+   },
+   "time_V_B": {
+    "meaning": "hours for worker V to complete task B",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "time_V_C": {
+    "meaning": "hours for worker V to complete task C",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "time_V_D": {
+    "meaning": "hours for worker V to complete task D",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

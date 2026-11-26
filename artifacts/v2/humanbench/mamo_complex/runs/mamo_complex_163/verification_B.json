@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_163",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity\",\"evidence\":\"The capacity from Substation 4 to Substation 3 is filled in as 0 but is not stated: \\\"From Substation 4: Can send energy to Substation 0 (9 MW), Substation 1 (16 MW), Substation 2 (2 MW), Substation 5 (14 MW), Substation 6 (18 MW), and Substation 7 (7 MW).\\\"\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "The capacity from Substation 4 to Substation 3 is filled in as 0 but is not stated: \"From Substation 4: Can send energy to Substation 0 (9 MW), Substation 1 (16 MW), Substation 2 (2 MW), Substation 5 (14 MW), Substation 6 (18 MW), and Substation 7 (7 MW).\""
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

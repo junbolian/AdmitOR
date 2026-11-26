@@ -1,0 +1,197 @@
+{
+ "spec": {
+  "assembly_hours_product1": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "testing_hours_product1": {
+   "base": 0.125,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "material_cost_product1": {
+   "base": 1.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "assembly_hours_product2": {
+   "base": 0.3333333333,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "testing_hours_product2": {
+   "base": 0.3333333333,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "material_cost_product2": {
+   "base": 0.9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "regular_assembly_capacity": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "testing_capacity": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "overtime_assembly_capacity": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "overtime_cost_per_hour": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "market_value_product1": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "market_value_product2": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "assembly_hours_product1": {
+    "meaning": "Assembly labor hours required per unit of product 1",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "testing_hours_product1": {
+    "meaning": "Testing hours required per unit of product 1",
+    "base": 0.125,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "material_cost_product1": {
+    "meaning": "Raw material cost per unit of product 1 ($)",
+    "base": 1.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "assembly_hours_product2": {
+    "meaning": "Assembly labor hours required per unit of product 2",
+    "base": 0.3333333333,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "testing_hours_product2": {
+    "meaning": "Testing hours required per unit of product 2",
+    "base": 0.3333333333,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "material_cost_product2": {
+    "meaning": "Raw material cost per unit of product 2 ($)",
+    "base": 0.9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "regular_assembly_capacity": {
+    "meaning": "Maximum regular assembly labor hours per day",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "testing_capacity": {
+    "meaning": "Maximum testing labor hours per day",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "overtime_assembly_capacity": {
+    "meaning": "Maximum overtime assembly labor hours per day",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "overtime_cost_per_hour": {
+    "meaning": "Cost of one hour of overtime assembly labor ($)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "market_value_product1": {
+    "meaning": "Market value (revenue) per unit of product 1 ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "market_value_product2": {
+    "meaning": "Market value (revenue) per unit of product 2 ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

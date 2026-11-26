@@ -1,0 +1,148 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "shirts_available": 200,
+   "pants_available": 100,
+   "shirts_per_A": 1,
+   "pants_per_A": 2,
+   "price_A": 30,
+   "shirts_per_B": 3,
+   "pants_per_B": 1,
+   "price_B": 50,
+   "min_A": 20,
+   "min_B": 10
+  },
+  {
+   "shirts_available": 228,
+   "pants_available": 54,
+   "shirts_per_A": 1,
+   "pants_per_A": 1,
+   "price_A": 46.82356070820062,
+   "shirts_per_B": 3,
+   "pants_per_B": 2,
+   "price_B": 26.08571828405913,
+   "min_A": 25,
+   "min_B": 1
+  },
+  {
+   "shirts_available": 144,
+   "pants_available": 126,
+   "shirts_per_A": 1,
+   "pants_per_A": 1,
+   "price_A": 42.49422188897616,
+   "shirts_per_B": 3,
+   "pants_per_B": 1,
+   "price_B": 61.24859787131361,
+   "min_A": 49,
+   "min_B": 0
+  },
+  {
+   "shirts_available": 261,
+   "pants_available": 155,
+   "shirts_per_A": 1,
+   "pants_per_A": 1,
+   "price_A": 57.86065361033906,
+   "shirts_per_B": 3,
+   "pants_per_B": 1,
+   "price_B": 26.77014637834248,
+   "min_A": 51,
+   "min_B": 24
+  },
+  {
+   "shirts_available": 261,
+   "pants_available": 159,
+   "shirts_per_A": 1,
+   "pants_per_A": 3,
+   "price_A": 28.926718860417672,
+   "shirts_per_B": 3,
+   "pants_per_B": 2,
+   "price_B": 63.29638266549723,
+   "min_A": 52,
+   "min_B": 23
+  },
+  {
+   "shirts_available": 241,
+   "pants_available": 57,
+   "shirts_per_A": 1,
+   "pants_per_A": 2,
+   "price_A": 13.989598846181375,
+   "shirts_per_B": 2,
+   "pants_per_B": 1,
+   "price_B": 39.45815221770645,
+   "min_A": 38,
+   "min_B": 15
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3600.0,
+   2460.9108751104914,
+   5523.061341852033,
+   8222.229136034637,
+   null,
+   null
+  ],
+  "B-structured": [
+   3600.0,
+   2460.9108751104914,
+   5523.061341852033,
+   8222.229136034637,
+   null,
+   null
+  ],
+  "C-direct": [
+   3600.0,
+   2460.9108751104914,
+   5523.061341852033,
+   8222.229136034637,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "no feasible solution",
+   "no feasible solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "status_4",
+   "status_4"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

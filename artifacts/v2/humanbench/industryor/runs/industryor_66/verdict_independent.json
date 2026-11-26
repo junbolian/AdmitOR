@@ -1,0 +1,125 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "route_cost": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "route_capacity_r": 3
+  },
+  {
+   "route_cost": [
+    1.1394267984578836,
+    0.5250107552226669,
+    0.7750293183691193,
+    0.7232107381488228,
+    1.2364712141640124
+   ],
+   "route_capacity_r": 4
+  },
+  {
+   "route_cost": [
+    1.3921795677048454,
+    0.5869388326294162,
+    0.9219218196852704,
+    0.5297972194380703,
+    0.7186379748036034
+   ],
+   "route_capacity_r": 3
+  },
+  {
+   "route_cost": [
+    0.5265359696838636,
+    0.6988376506866485,
+    1.1498844377795232,
+    1.0449414806032167,
+    0.7204406220406967
+   ],
+   "route_capacity_r": 3
+  },
+  {
+   "route_cost": [
+    1.3094304566778265,
+    0.506498759678061,
+    1.305819251832808,
+    1.1981393949882269,
+    0.8402505165179919
+   ],
+   "route_capacity_r": 2
+  },
+  {
+   "route_cost": [
+    1.4572130722067813,
+    0.8365945451126268,
+    0.5927458433801479,
+    0.596716376833464,
+    1.3474943663474597
+   ],
+   "route_capacity_r": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   5.0,
+   4.399148824362505,
+   4.149475414261206,
+   4.140640160793948,
+   5.1601383796949145,
+   4.83076420388048
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "insufficient_route_data",
+   "insufficient_route_data",
+   "insufficient_route_data",
+   "insufficient_route_data",
+   "insufficient_route_data",
+   "insufficient_route_data"
+  ],
+  "C-direct": [
+   "missing coverage matrix",
+   "missing coverage matrix",
+   "missing coverage matrix",
+   "missing coverage matrix",
+   "missing coverage matrix",
+   "missing coverage matrix"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "spec": {
+  "capacity_A": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_B": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_C": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_D": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "productivity_A": {
+   "base": [
+    10,
+    15,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "productivity_B": {
+   "base": [
+    15,
+    10,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "productivity_C": {
+   "base": [
+    20,
+    5,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "productivity_D": {
+   "base": [
+    10,
+    15,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_A": {
+    "meaning": "Production hours available at workshop A",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_B": {
+    "meaning": "Production hours available at workshop B",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_C": {
+    "meaning": "Production hours available at workshop C",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_D": {
+    "meaning": "Production hours available at workshop D",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "productivity_A": {
+    "meaning": "Units per hour at workshop A for components 1, 2, 3",
+    "base": [
+     10,
+     15,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "productivity_B": {
+    "meaning": "Units per hour at workshop B for components 1, 2, 3",
+    "base": [
+     15,
+     10,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "productivity_C": {
+    "meaning": "Units per hour at workshop C for components 1, 2, 3",
+    "base": [
+     20,
+     5,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "productivity_D": {
+    "meaning": "Units per hour at workshop D for components 1, 2, 3",
+    "base": [
+     10,
+     15,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

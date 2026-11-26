@@ -1,0 +1,205 @@
+{
+ "spec": {
+  "profit_A": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_B": {
+   "base": 450,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_procI_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "time_procI_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "time_procII_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "time_procII_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cap_procI": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_procII": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "profit_target": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "min_B": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "procI_target": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_A": {
+    "meaning": "Profit per unit of model A (RMB)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_B": {
+    "meaning": "Profit per unit of model B (RMB)",
+    "base": 450,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_procI_A": {
+    "meaning": "Process I hours per unit of model A",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "time_procI_B": {
+    "meaning": "Process I hours per unit of model B",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "time_procII_A": {
+    "meaning": "Process II hours per unit of model A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "time_procII_B": {
+    "meaning": "Process II hours per unit of model B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cap_procI": {
+    "meaning": "Maximum weekly processing capacity of Process I (hours)",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_procII": {
+    "meaning": "Maximum weekly processing capacity of Process II (hours)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "profit_target": {
+    "meaning": "p1 goal: minimum total weekly profit (RMB)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_A": {
+    "meaning": "p2 contractual minimum units of model A",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "min_B": {
+    "meaning": "p2 contractual minimum units of model B",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "procI_target": {
+    "meaning": "p3 goal: exact weekly hours for Process I",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

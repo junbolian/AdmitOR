@@ -1,0 +1,31 @@
+{
+ "sample_id": "industryor_87",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"a_j\", \"evidence\": \"The statement defines a_j as a general sequence but gives no specific numerical values\"}, {\"parameter\": \"k\", \"evidence\": \"The statement defines k symbolically but gives no specific numerical value\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "a_j",
+   "evidence": "The statement defines a_j as a general sequence but gives no specific numerical values"
+  },
+  {
+   "parameter": "k",
+   "evidence": "The statement defines k symbolically but gives no specific numerical value"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "pollution_motorcycle": 40,
+   "pollution_small_truck": 70,
+   "pollution_large_truck": 100,
+   "motorcycle_trip_cap": 8,
+   "capacity_motorcycle": 10,
+   "capacity_small_truck": 20,
+   "capacity_large_truck": 50,
+   "demand": 300,
+   "total_trip_cap": 20
+  },
+  {
+   "pollution_motorcycle": 45.57707193831534,
+   "pollution_small_truck": 36.75075286558668,
+   "pollution_large_truck": 77.50293183691193,
+   "motorcycle_trip_cap": 4,
+   "capacity_motorcycle": 12.364712141640124,
+   "capacity_small_truck": 23.533989748458225,
+   "capacity_large_truck": 69.60897838524227,
+   "demand": 176.08164978882485,
+   "total_trip_cap": 17
+  },
+  {
+   "pollution_motorcycle": 21.191888777522813,
+   "pollution_small_truck": 50.30465823625224,
+   "pollution_large_truck": 100.53552881033623,
+   "motorcycle_trip_cap": 1,
+   "capacity_motorcycle": 6.988376506866485,
+   "capacity_small_truck": 22.997688755590463,
+   "capacity_large_truck": 52.24707403016083,
+   "demand": 216.132186612209,
+   "total_trip_cap": 24
+  },
+  {
+   "pollution_motorcycle": 52.377218267113065,
+   "pollution_small_truck": 35.45491317746427,
+   "pollution_large_truck": 130.5819251832808,
+   "motorcycle_trip_cap": 14,
+   "capacity_motorcycle": 8.40250516517992,
+   "capacity_small_truck": 13.10958999623563,
+   "capacity_large_truck": 72.86065361033907,
+   "demand": 250.97836353378804,
+   "total_trip_cap": 5
+  },
+  {
+   "pollution_motorcycle": 23.86865507333856,
+   "pollution_small_truck": 94.32460564432218,
+   "pollution_large_truck": 110.37260313668911,
+   "motorcycle_trip_cap": 16,
+   "capacity_motorcycle": 12.297317866938178,
+   "capacity_small_truck": 20.724561829094014,
+   "capacity_large_truck": 73.65578819896854,
+   "demand": 263.560313162506,
+   "total_trip_cap": 23
+  },
+  {
+   "pollution_motorcycle": 53.176186570119796,
+   "pollution_small_truck": 78.29638266549722,
+   "pollution_large_truck": 136.17069003107773,
+   "motorcycle_trip_cap": 12,
+   "capacity_motorcycle": 12.045718362149236,
+   "capacity_small_truck": 10.916487673113245,
+   "capacity_large_truck": 36.39491378257734,
+   "demand": 236.81638908063215,
+   "total_trip_cap": 4
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   600.0,
+   196.0500558676141,
+   415.8886229963646,
+   449.80708057964455,
+   394.94299848758044,
+   null
+  ],
+  "B-structured": [
+   640.0,
+   228.50736940499723,
+   452.44677347759716,
+   557.7826139105874,
+   426.59242970342154,
+   null
+  ],
+  "C-direct": [
+   600.0,
+   228.50736940499723,
+   452.44677347759716,
+   522.3277007331232,
+   426.59242970342154,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "no_feasible_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4]",
+  "A-direct vs C-direct: diverge on instance(s) [1, 2, 3, 4]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 3]"
+ ],
+ "notes": []
+}

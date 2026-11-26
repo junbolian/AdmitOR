@@ -1,0 +1,226 @@
+{
+ "spec": {
+  "supply_A_min": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 130.0,
+    "integer": true
+   }
+  },
+  "supply_B_min": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 160.0,
+    "integer": true
+   }
+  },
+  "demand_1": {
+   "base": 55,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 85.0,
+    "integer": true
+   }
+  },
+  "demand_2": {
+   "base": 75,
+   "perturb": {
+    "mode": "abs",
+    "lo": 45.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "demand_3": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "distance_A1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "distance_A2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "distance_A3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "distance_B1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 7.0,
+    "integer": false
+   }
+  },
+  "distance_B2": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 13.0,
+    "integer": false
+   }
+  },
+  "distance_B3": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 24.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_A_min": {
+    "meaning": "minimum monthly coal shipped from yard A (tons)",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 130,
+     "integer": true
+    }
+   },
+   "supply_B_min": {
+    "meaning": "minimum monthly coal shipped from yard B (tons)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 160,
+     "integer": true
+    }
+   },
+   "demand_1": {
+    "meaning": "monthly coal demand of residential area 1 (tons)",
+    "base": 55,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 85,
+     "integer": true
+    }
+   },
+   "demand_2": {
+    "meaning": "monthly coal demand of residential area 2 (tons)",
+    "base": 75,
+    "perturb": {
+     "mode": "abs",
+     "lo": 45,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "demand_3": {
+    "meaning": "monthly coal demand of residential area 3 (tons)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "distance_A1": {
+    "meaning": "distance from yard A to area 1 (km)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "distance_A2": {
+    "meaning": "distance from yard A to area 2 (km)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "distance_A3": {
+    "meaning": "distance from yard A to area 3 (km)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "distance_B1": {
+    "meaning": "distance from yard B to area 1 (km)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 7,
+     "integer": false
+    }
+   },
+   "distance_B2": {
+    "meaning": "distance from yard B to area 2 (km)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 13,
+     "integer": false
+    }
+   },
+   "distance_B3": {
+    "meaning": "distance from yard B to area 3 (km)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 24,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

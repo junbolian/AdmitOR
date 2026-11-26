@@ -1,0 +1,129 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    40,
+    60,
+    75,
+    25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "initial_inventory": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "regular_capacity": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "regular_cost": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "overtime_cost": {
+   "base": 450,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "holding_cost": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Sailboat demand in each of the four quarters",
+    "base": [
+     40,
+     60,
+     75,
+     25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Inventory of sailboats at the beginning of quarter 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "regular_capacity": {
+    "meaning": "Maximum quarterly production with regular-time labor",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "regular_cost": {
+    "meaning": "Cost per sailboat produced with regular-time labor",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "overtime_cost": {
+    "meaning": "Cost per sailboat produced with overtime labor",
+    "base": 450,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "holding_cost": {
+    "meaning": "Carrying/holding cost per sailboat held in inventory at end of a quarter",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

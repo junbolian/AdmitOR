@@ -1,0 +1,174 @@
+{
+ "spec": {
+  "protein_content": {
+   "base": [
+    4,
+    6,
+    20,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_content": {
+   "base": [
+    7,
+    10,
+    0,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_content": {
+   "base": [
+    130,
+    120,
+    150,
+    70
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_per_unit": {
+   "base": [
+    3,
+    4,
+    8,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "protein_requirement": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "carb_requirement": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "calorie_requirement": {
+   "base": 400,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 700.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_content": {
+    "meaning": "Protein grams per unit of each food (bread, milk, fish, potato)",
+    "base": [
+     4,
+     6,
+     20,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_content": {
+    "meaning": "Carbohydrate grams per unit of each food (bread, milk, fish, potato)",
+    "base": [
+     7,
+     10,
+     0,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_content": {
+    "meaning": "Calories per unit of each food (bread, milk, fish, potato)",
+    "base": [
+     130,
+     120,
+     150,
+     70
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_per_unit": {
+    "meaning": "Dollar cost per unit of each food (bread, milk, fish, potato)",
+    "base": [
+     3,
+     4,
+     8,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "protein_requirement": {
+    "meaning": "Minimum daily protein intake (grams)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "carb_requirement": {
+    "meaning": "Minimum daily carbohydrate intake (grams)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "Minimum daily calorie intake (calories)",
+    "base": 400,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 700,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

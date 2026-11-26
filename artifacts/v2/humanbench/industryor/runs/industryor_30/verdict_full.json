@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "duration_A": 4,
+   "duration_B": 3,
+   "duration_C": 5,
+   "duration_D": 2,
+   "duration_E": 10,
+   "duration_F": 10,
+   "duration_G": 1,
+   "daily_work_cost": 1000,
+   "daily_machinery_cost": 5000
+  },
+  {
+   "duration_A": 6,
+   "duration_B": 1,
+   "duration_C": 4,
+   "duration_D": 2,
+   "duration_E": 13,
+   "duration_F": 12,
+   "duration_G": 5,
+   "daily_work_cost": 586.9388326294162,
+   "daily_machinery_cost": 4609.609098426352
+  },
+  {
+   "duration_A": 2,
+   "duration_B": 2,
+   "duration_C": 6,
+   "duration_D": 1,
+   "duration_E": 7,
+   "duration_F": 12,
+   "duration_G": 3,
+   "daily_work_cost": 720.4406220406967,
+   "daily_machinery_cost": 5446.328419379543
+  },
+  {
+   "duration_A": 7,
+   "duration_B": 1,
+   "duration_C": 8,
+   "duration_D": 4,
+   "duration_E": 9,
+   "duration_F": 7,
+   "duration_G": 5,
+   "daily_work_cost": 836.5945451126267,
+   "daily_machinery_cost": 2963.7292169007396
+  },
+  {
+   "duration_A": 3,
+   "duration_B": 6,
+   "duration_C": 6,
+   "duration_D": 5,
+   "duration_E": 13,
+   "duration_F": 11,
+   "duration_G": 5,
+   "daily_work_cost": 878.5343772083535,
+   "daily_machinery_cost": 5260.203156366135
+  },
+  {
+   "duration_A": 7,
+   "duration_B": 5,
+   "duration_C": 8,
+   "duration_D": 4,
+   "duration_E": 13,
+   "duration_F": 6,
+   "duration_G": 2,
+   "daily_work_cost": 789.3879636021072,
+   "daily_machinery_cost": 2898.9598846181375
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   115000.0,
+   127651.84450848552,
+   121491.25551922875,
+   81862.63705605571,
+   157861.11022540397,
+   79292.67270961966
+  ],
+  "B-structured": [
+   115000.0,
+   127651.84450848552,
+   121491.25551922875,
+   81862.63705605571,
+   157861.11022540397,
+   79292.67270961966
+  ],
+  "C-direct": [
+   115000.0,
+   127651.84450848552,
+   121491.25551922875,
+   81862.63705605571,
+   157861.11022540397,
+   79292.67270961966
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

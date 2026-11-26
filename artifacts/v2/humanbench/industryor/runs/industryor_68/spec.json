@@ -1,0 +1,286 @@
+{
+ "spec": {
+  "raw_material_cost": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "labor_hours_per_unit": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "unit_price": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "initial_workers": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "initial_inventory": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "normal_wage": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "normal_hours_per_day": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "overtime_wage": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "working_days_per_month": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_overtime_hours_per_worker": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "outsourcing_cost": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "inventory_cost": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "stockout_cost": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "hiring_cost": {
+   "base": 5000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "firing_cost": {
+   "base": 8000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand": {
+   "base": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "min_final_inventory": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "raw_material_cost": {
+    "meaning": "Raw material cost per unit produced (yuan/unit)",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "labor_hours_per_unit": {
+    "meaning": "Labor hours required per unit produced",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "unit_price": {
+    "meaning": "Selling price per unit (yuan/unit)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "initial_workers": {
+    "meaning": "Number of workers at beginning of January",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Units of inventory held at beginning of January",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "normal_wage": {
+    "meaning": "Normal hourly wage (yuan/hour)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "normal_hours_per_day": {
+    "meaning": "Normal working hours per worker per day",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "overtime_wage": {
+    "meaning": "Overtime hourly wage (yuan/hour)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "working_days_per_month": {
+    "meaning": "Number of working days per month",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_overtime_hours_per_worker": {
+    "meaning": "Maximum overtime hours per worker per month",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "outsourcing_cost": {
+    "meaning": "Outsourcing cost per unit (yuan/unit)",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "inventory_cost": {
+    "meaning": "Holding cost per unit per month (yuan/unit/month)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "stockout_cost": {
+    "meaning": "Stockout penalty cost per unit (yuan/unit)",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "hiring_cost": {
+    "meaning": "Cost to hire one employee (yuan/employee)",
+    "base": 5000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "firing_cost": {
+    "meaning": "Cost to dismiss one employee (yuan/employee)",
+    "base": 8000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand": {
+    "meaning": "Monthly demand forecast for months 1 through 6 (units)",
+    "base": [
+     20000,
+     40000,
+     42000,
+     35000,
+     19000,
+     18500
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "min_final_inventory": {
+    "meaning": "Minimum required inventory at end of June (units)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

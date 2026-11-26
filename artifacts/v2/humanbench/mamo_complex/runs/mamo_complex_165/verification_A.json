@@ -1,0 +1,31 @@
+{
+ "sample_id": "mamo_complex_165",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"capacity_4_1\", \"evidence\": \"no trains to City 1\"},\n    {\"parameter\": \"capacity_4_3\", \"evidence\": \"no trains to City 3\"}\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_4_1",
+   "evidence": "no trains to City 1"
+  },
+  {
+   "parameter": "capacity_4_3",
+   "evidence": "no trains to City 3"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

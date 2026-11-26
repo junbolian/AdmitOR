@@ -1,0 +1,407 @@
+{
+ "spec": {
+  "time_A1_I": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_A1_II": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_A2_I": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_A2_II": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_A2_III": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_B1_I": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_B1_II": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_B2_I": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_B2_III": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_B3_I": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_A1": {
+   "base": 6000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_A2": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_B1": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_B2": {
+   "base": 7000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_B3": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_A1": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_A2": {
+   "base": 321,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B1": {
+   "base": 250,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B2": {
+   "base": 783,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B3": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "raw_I": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "raw_II": {
+   "base": 0.35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "raw_III": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_I": {
+   "base": 1.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_II": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_III": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "time_A1_I": {
+    "meaning": "processing time of product I on equipment A1",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_A1_II": {
+    "meaning": "processing time of product II on equipment A1",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_A2_I": {
+    "meaning": "processing time of product I on equipment A2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_A2_II": {
+    "meaning": "processing time of product II on equipment A2",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_A2_III": {
+    "meaning": "processing time of product III on equipment A2",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_B1_I": {
+    "meaning": "processing time of product I on equipment B1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_B1_II": {
+    "meaning": "processing time of product II on equipment B1",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_B2_I": {
+    "meaning": "processing time of product I on equipment B2",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_B2_III": {
+    "meaning": "processing time of product III on equipment B2",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_B3_I": {
+    "meaning": "processing time of product I on equipment B3",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_A1": {
+    "meaning": "available operating time of equipment A1",
+    "base": 6000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_A2": {
+    "meaning": "available operating time of equipment A2",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_B1": {
+    "meaning": "available operating time of equipment B1",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_B2": {
+    "meaning": "available operating time of equipment B2",
+    "base": 7000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_B3": {
+    "meaning": "available operating time of equipment B3",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_A1": {
+    "meaning": "equipment cost at full load for A1",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_A2": {
+    "meaning": "equipment cost at full load for A2",
+    "base": 321,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B1": {
+    "meaning": "equipment cost at full load for B1",
+    "base": 250,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B2": {
+    "meaning": "equipment cost at full load for B2",
+    "base": 783,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B3": {
+    "meaning": "equipment cost at full load for B3",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "raw_I": {
+    "meaning": "raw material cost per unit of product I",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "raw_II": {
+    "meaning": "raw material cost per unit of product II",
+    "base": 0.35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "raw_III": {
+    "meaning": "raw material cost per unit of product III",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_I": {
+    "meaning": "unit selling price of product I",
+    "base": 1.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_II": {
+    "meaning": "unit selling price of product II",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_III": {
+    "meaning": "unit selling price of product III",
+    "base": 2.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

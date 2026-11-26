@@ -1,0 +1,58 @@
+{
+ "sample_id": "mamo_complex_17",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"capacity_matrix[2]\",\"extracted\":[3,8,0,0,10,16,18,8,20],\"stated\":[3,8,0,10,16,18,8,0,20],\"evidence\":\"flows of 3, 8, 0, 10, 16, 18, 8, 0, and 20 thousand gallons per hour to Centers 0 through 8, respectively.\"}],\"not_stated\":[{\"parameter\":\"capacity_matrix[0][0]\",\"evidence\":\"the water can be directed to Centers 1 through 8\"},{\"parameter\":\"capacity_matrix[1][1]\",\"evidence\":\"to Centers 0 through 8 (excluding itself)\"}]}",
+ "mismatch": [
+  {
+   "parameter": "capacity_matrix[2]",
+   "extracted": [
+    3,
+    8,
+    0,
+    0,
+    10,
+    16,
+    18,
+    8,
+    20
+   ],
+   "stated": [
+    3,
+    8,
+    0,
+    10,
+    16,
+    18,
+    8,
+    0,
+    20
+   ],
+   "evidence": "flows of 3, 8, 0, 10, 16, 18, 8, 0, and 20 thousand gallons per hour to Centers 0 through 8, respectively."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix[0][0]",
+   "evidence": "the water can be directed to Centers 1 through 8"
+  },
+  {
+   "parameter": "capacity_matrix[1][1]",
+   "evidence": "to Centers 0 through 8 (excluding itself)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

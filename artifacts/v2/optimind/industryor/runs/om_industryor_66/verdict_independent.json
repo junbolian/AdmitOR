@@ -1,0 +1,155 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "supply_A_min": 80,
+   "supply_B_min": 100,
+   "demand_1": 55,
+   "demand_2": 75,
+   "demand_3": 50,
+   "distance_A1": 10,
+   "distance_A2": 5,
+   "distance_A3": 6,
+   "distance_B1": 4,
+   "distance_B2": 8,
+   "distance_B3": 15
+  },
+  {
+   "supply_A_min": 98,
+   "supply_B_min": 53,
+   "demand_1": 45,
+   "demand_2": 60,
+   "demand_3": 66,
+   "distance_A1": 12.443694361652025,
+   "distance_A2": 7.40698762237665,
+   "distance_A3": 3.608571828405913,
+   "distance_B1": 4.109609098426352,
+   "distance_B2": 4.268174974942633,
+   "distance_B3": 11.498207596857654
+  },
+  {
+   "supply_A_min": 85,
+   "supply_B_min": 53,
+   "demand_1": 41,
+   "demand_2": 87,
+   "demand_3": 55,
+   "distance_A1": 7.424846842447664,
+   "distance_A2": 5.740961261317498,
+   "distance_A3": 8.666013196744785,
+   "distance_B1": 2.032493798390305,
+   "distance_B2": 11.25237326649527,
+   "distance_B3": 19.17023031981163
+  },
+  {
+   "supply_A_min": 71,
+   "supply_B_min": 67,
+   "demand_1": 83,
+   "demand_2": 67,
+   "demand_3": 30,
+   "distance_A1": 6.063880145168104,
+   "distance_A2": 7.161219014911029,
+   "distance_A3": 7.226082219568237,
+   "distance_B1": 6.035641366371901,
+   "distance_B2": 10.56758608024436,
+   "distance_B3": 16.57964946327521
+  },
+  {
+   "supply_A_min": 128,
+   "supply_B_min": 92,
+   "demand_1": 60,
+   "demand_2": 99,
+   "demand_3": 59,
+   "distance_A1": 14.47877590341855,
+   "distance_A2": 5.675436798912191,
+   "distance_A3": 7.932002853504464,
+   "distance_B1": 2.2291219182783113,
+   "distance_B2": 6.0510844808639215,
+   "distance_B3": 12.630207417633715
+  },
+  {
+   "supply_A_min": 47,
+   "supply_B_min": 76,
+   "demand_1": 36,
+   "demand_2": 63,
+   "demand_3": 60,
+   "distance_A1": 9.013153968670927,
+   "distance_A2": 4.535995319142854,
+   "distance_A3": 4.466549215400414,
+   "distance_B1": 3.334889110245567,
+   "distance_B2": 12.429891289412446,
+   "distance_B3": 18.368566163945495
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1030.0,
+   779.6306533184227,
+   1125.5635453517214,
+   1197.5423739949538,
+   null,
+   989.5725048096486
+  ],
+  "B-structured": [
+   1030.0,
+   779.6306533184227,
+   1125.5635453517214,
+   1197.5423739949538,
+   null,
+   989.5725048096486
+  ],
+  "C-direct": [
+   1030.0,
+   779.6306533184227,
+   1125.5635453517214,
+   1197.5423739949538,
+   null,
+   989.5725048096486
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "no_feasible_solution",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

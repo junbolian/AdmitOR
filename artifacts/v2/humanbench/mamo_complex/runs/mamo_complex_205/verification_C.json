@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_205",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**security_price**: [0.75, 0.35, 0.4, 0.75, 0.65] — matches the statement exactly.\n\n**share_limit**: [10, 5, 10, 10, 5] — matches the statement exactly.\n\n**payoff**: Check each row against the statement:\n- Security 1: Argentina=1, Brazil=1, England=1, Germany=0, Spain=0 → extracted row [1,1,1,0,0] with columns ordered (Argentina, Brazil, England, Spain, Germany) gives [1,1,1,0,0]. Matches.\n- Security 2: Argentina=0, Brazil=0, England=0, Germany=1, Spain=1 → in (Arg, Bra, Eng, Spa, Ger) order: [0,0,0,1,1]. Extracted [0,0,0,1,1]. Matches.\n- Security 3: \"payoff is $1 for Argentina, $1 for Spain, and $1 for England, and 0 payoff for Germany and Brazil\" → in (Arg, Bra, Eng, Spa, Ger) order: [1,0,1,1,0]. Extracted [1,0,1,1,0]. Matches.\n- Security 4: \"$1 across all countries except for Spain\" → in (Arg, Bra, Eng, Spa, Ger) order: [1,1,1,0,1]. Extracted [1,1,1,0,1]. Matches.\n- Security 5: \"$1 in Brazil, Germany and Spain, 0 in Argentina and England\" → in (Arg, Bra, Eng, Spa, Ger) order: [0,1,0,1,1]. Extracted [0,1,0,1,1]. Matches.\n\nAll parameters match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

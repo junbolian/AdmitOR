@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "equipment_hours_per_unit_A": {
+   "base": [
+    8,
+    2,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "equipment_hours_per_unit_B": {
+   "base": [
+    10,
+    5,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "equipment_hours_per_unit_C": {
+   "base": [
+    2,
+    13,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_A": {
+   "base": 300,
+   "perturb": {
+    "mode": "abs",
+    "lo": 220.0,
+    "hi": 380.0,
+    "integer": true
+   }
+  },
+  "capacity_B": {
+   "base": 400,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "capacity_C": {
+   "base": 420,
+   "perturb": {
+    "mode": "abs",
+    "lo": 320.0,
+    "hi": 520.0,
+    "integer": true
+   }
+  },
+  "unit_profit": {
+   "base": [
+    3,
+    2,
+    2.9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "equipment_hours_per_unit_A": {
+    "meaning": "Hours of equipment A required per unit of products I, II, III",
+    "base": [
+     8,
+     2,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "equipment_hours_per_unit_B": {
+    "meaning": "Hours of equipment B required per unit of products I, II, III",
+    "base": [
+     10,
+     5,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "equipment_hours_per_unit_C": {
+    "meaning": "Hours of equipment C required per unit of products I, II, III",
+    "base": [
+     2,
+     13,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_A": {
+    "meaning": "Effective monthly equipment hours available on A",
+    "base": 300,
+    "perturb": {
+     "mode": "abs",
+     "lo": 220,
+     "hi": 380,
+     "integer": true
+    }
+   },
+   "capacity_B": {
+    "meaning": "Effective monthly equipment hours available on B",
+    "base": 400,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "capacity_C": {
+    "meaning": "Effective monthly equipment hours available on C",
+    "base": 420,
+    "perturb": {
+     "mode": "abs",
+     "lo": 320,
+     "hi": 520,
+     "integer": true
+    }
+   },
+   "unit_profit": {
+    "meaning": "Profit per unit (thousand yuan) for products I, II, III",
+    "base": [
+     3,
+     2,
+     2.9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

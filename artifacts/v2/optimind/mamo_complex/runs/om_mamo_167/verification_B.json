@@ -1,0 +1,27 @@
+{
+ "sample_id": "om_mamo_167",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"transport_cost\",\"evidence\":\"The statement lists costs for moving food \\\"from one warehouse to any other\\\" but gives no diagonal costs; the diagonal zeros were filled in.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost",
+   "evidence": "The statement lists costs for moving food \"from one warehouse to any other\" but gives no diagonal costs; the diagonal zeros were filled in."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

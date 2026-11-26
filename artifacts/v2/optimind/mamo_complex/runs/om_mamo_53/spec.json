@@ -1,0 +1,359 @@
+{
+ "spec": {
+  "labor_cost_tape": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "labor_cost_radio": {
+   "base": 35,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 55.0,
+    "integer": false
+   }
+  },
+  "material_cost_tape": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 50.0,
+    "integer": false
+   }
+  },
+  "material_cost_radio": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "price_tape": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  },
+  "price_radio": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "raw_material_capacity_tape": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "raw_material_capacity_radio": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "cash_initial": {
+   "base": 10000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6000.0,
+    "hi": 14000.0,
+    "integer": false
+   }
+  },
+  "accounts_receivable_initial": {
+   "base": 3000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1000.0,
+    "hi": 5000.0,
+    "integer": false
+   }
+  },
+  "inventory_initial": {
+   "base": 7000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4000.0,
+    "hi": 10000.0,
+    "integer": false
+   }
+  },
+  "bank_loan_initial": {
+   "base": 10000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6000.0,
+    "hi": 14000.0,
+    "integer": false
+   }
+  },
+  "ar_collection_december": {
+   "base": 2000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 3500.0,
+    "integer": false
+   }
+  },
+  "loan_repayment_december": {
+   "base": 1000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2500.0,
+    "integer": false
+   }
+  },
+  "rent_december": {
+   "base": 1000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 2000.0,
+    "integer": false
+   }
+  },
+  "raw_material_received_january": {
+   "base": 2000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1000.0,
+    "hi": 4000.0,
+    "integer": false
+   }
+  },
+  "min_cash_january": {
+   "base": 4000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2000.0,
+    "hi": 6000.0,
+    "integer": false
+   }
+  },
+  "min_current_ratio_january": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 3.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "labor_cost_tape": {
+    "meaning": "per-unit labor cost for tape recorders ($)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "labor_cost_radio": {
+    "meaning": "per-unit labor cost for radios ($)",
+    "base": 35,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 55,
+     "integer": false
+    }
+   },
+   "material_cost_tape": {
+    "meaning": "per-unit raw material cost for tape recorders ($)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 50,
+     "integer": false
+    }
+   },
+   "material_cost_radio": {
+    "meaning": "per-unit raw material cost for radios ($)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "price_tape": {
+    "meaning": "selling price per tape recorder ($)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 130,
+     "integer": false
+    }
+   },
+   "price_radio": {
+    "meaning": "selling price per radio ($)",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "raw_material_capacity_tape": {
+    "meaning": "max tape recorders manufacturable from available raw material (units)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "raw_material_capacity_radio": {
+    "meaning": "max radios manufacturable from available raw material (units)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "cash_initial": {
+    "meaning": "cash on hand Dec 1 ($)",
+    "base": 10000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6000,
+     "hi": 14000,
+     "integer": false
+    }
+   },
+   "accounts_receivable_initial": {
+    "meaning": "accounts receivable on Dec 1 ($)",
+    "base": 3000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1000,
+     "hi": 5000,
+     "integer": false
+    }
+   },
+   "inventory_initial": {
+    "meaning": "inventory outstanding valued at Dec 1 ($)",
+    "base": 7000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4000,
+     "hi": 10000,
+     "integer": false
+    }
+   },
+   "bank_loan_initial": {
+    "meaning": "bank loan liability on Dec 1 ($)",
+    "base": 10000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6000,
+     "hi": 14000,
+     "integer": false
+    }
+   },
+   "ar_collection_december": {
+    "meaning": "accounts receivable collected in December ($)",
+    "base": 2000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 3500,
+     "integer": false
+    }
+   },
+   "loan_repayment_december": {
+    "meaning": "loan principal repaid in December ($)",
+    "base": 1000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2500,
+     "integer": false
+    }
+   },
+   "rent_december": {
+    "meaning": "monthly rent paid in December ($)",
+    "base": 1000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 2000,
+     "integer": false
+    }
+   },
+   "raw_material_received_january": {
+    "meaning": "raw materials received Jan 1, paid Feb 1 ($)",
+    "base": 2000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1000,
+     "hi": 4000,
+     "integer": false
+    }
+   },
+   "min_cash_january": {
+    "meaning": "minimum cash balance required on Jan 1 ($)",
+    "base": 4000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2000,
+     "hi": 6000,
+     "integer": false
+    }
+   },
+   "min_current_ratio_january": {
+    "meaning": "minimum current ratio required on Jan 1",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 3.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

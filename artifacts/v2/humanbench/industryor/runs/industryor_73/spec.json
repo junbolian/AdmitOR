@@ -1,0 +1,172 @@
+{
+ "spec": {
+  "demand": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "pollution_budget": {
+   "base": 1000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 400.0,
+    "hi": 2000.0,
+    "integer": false
+   }
+  },
+  "pollution_per_horse_trip": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 160.0,
+    "integer": false
+   }
+  },
+  "pollution_per_bicycle_trip": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "pollution_per_handcart_trip": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "min_horse_trips": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_horse": {
+   "base": 55,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_bicycle": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_handcart": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "minimum total products that must be transported",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "pollution_budget": {
+    "meaning": "maximum total pollution allowed",
+    "base": 1000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 400,
+     "hi": 2000,
+     "integer": false
+    }
+   },
+   "pollution_per_horse_trip": {
+    "meaning": "pollution units produced per horse trip",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 160,
+     "integer": false
+    }
+   },
+   "pollution_per_bicycle_trip": {
+    "meaning": "pollution units produced per bicycle trip",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "pollution_per_handcart_trip": {
+    "meaning": "pollution units produced per hand-cart trip",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "min_horse_trips": {
+    "meaning": "minimum number of horse trips required",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_horse": {
+    "meaning": "products carried per horse trip",
+    "base": 55,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_bicycle": {
+    "meaning": "products carried per bicycle trip",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_handcart": {
+    "meaning": "products carried per hand-cart trip",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

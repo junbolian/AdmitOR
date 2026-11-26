@@ -1,0 +1,208 @@
+{
+ "spec": {
+  "profit_per_pair": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "full_time_count": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "part_time_count": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "full_time_monthly_hours": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "part_time_monthly_hours": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "full_time_sales_rate": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "part_time_sales_rate": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "full_time_wage": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "part_time_wage": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "full_time_overtime_pay": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "part_time_overtime_pay": {
+   "base": 0.7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "sales_target": {
+   "base": 5500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[full_time_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[part_time_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "profit_per_pair": {
+    "meaning": "Profit earned per pair of shoes sold (Yuan/pair)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "full_time_count": {
+    "meaning": "Number of full-time clerks (fixed size)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "part_time_count": {
+    "meaning": "Number of part-time clerks (fixed size)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "full_time_monthly_hours": {
+    "meaning": "Regular monthly working hours per full-time clerk",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "part_time_monthly_hours": {
+    "meaning": "Regular monthly working hours per part-time clerk",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "full_time_sales_rate": {
+    "meaning": "Sales volume (pairs/hour) per full-time clerk",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "part_time_sales_rate": {
+    "meaning": "Sales volume (pairs/hour) per part-time clerk",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "full_time_wage": {
+    "meaning": "Regular wage (Yuan/hour) for full-time clerk",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "part_time_wage": {
+    "meaning": "Regular wage (Yuan/hour) for part-time clerk",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "full_time_overtime_pay": {
+    "meaning": "Overtime pay (Yuan/hour) for full-time clerk",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "part_time_overtime_pay": {
+    "meaning": "Overtime pay (Yuan/hour) for part-time clerk",
+    "base": 0.7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "sales_target": {
+    "meaning": "Monthly sales goal (pairs)",
+    "base": 5500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

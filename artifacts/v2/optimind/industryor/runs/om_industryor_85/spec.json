@@ -1,0 +1,122 @@
+{
+ "spec": {
+  "refrigerated_capacity_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nonrefrigerated_capacity_A": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "total_capacity_B": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "refrigerated_demand": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nonrefrigerated_demand": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_per_km_A": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_per_km_B": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "refrigerated_capacity_A": {
+    "meaning": "Refrigerated capacity per Type A truck (cubic meters)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nonrefrigerated_capacity_A": {
+    "meaning": "Non-refrigerated capacity per Type A truck (cubic meters)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "total_capacity_B": {
+    "meaning": "Total capacity per Type B truck (cubic meters, split equally between refrigerated and non-refrigerated)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "refrigerated_demand": {
+    "meaning": "Required refrigerated cargo to transport (cubic meters)",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nonrefrigerated_demand": {
+    "meaning": "Required non-refrigerated cargo to transport (cubic meters)",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_per_km_A": {
+    "meaning": "Rental cost per kilometer for Type A trucks (£)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_per_km_B": {
+    "meaning": "Rental cost per kilometer for Type B trucks (£)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

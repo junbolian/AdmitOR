@@ -1,0 +1,422 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "carb_chicken": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cal_chicken": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost_chicken": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_rice": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "carb_rice": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cal_rice": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost_rice": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_veg": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "carb_veg": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cal_veg": {
+   "base": 164,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost_veg": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_bread": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "carb_bread": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cal_bread": {
+   "base": 165,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost_bread": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_almonds": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "carb_almonds": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cal_almonds": {
+   "base": 51,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost_almonds": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_salmon": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "carb_salmon": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cal_salmon": {
+   "base": 238,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "cost_salmon": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_target": {
+   "base": 58,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_target": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_target": {
+   "base": 2392,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "Protein grams per serving of Chicken",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "carb_chicken": {
+    "meaning": "Carb grams per serving of Chicken",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cal_chicken": {
+    "meaning": "Calories per serving of Chicken",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per serving of Chicken",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams per serving of Rice",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "carb_rice": {
+    "meaning": "Carb grams per serving of Rice",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cal_rice": {
+    "meaning": "Calories per serving of Rice",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per serving of Rice",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_veg": {
+    "meaning": "Protein grams per serving of Vegetables",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "carb_veg": {
+    "meaning": "Carb grams per serving of Vegetables",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cal_veg": {
+    "meaning": "Calories per serving of Vegetables",
+    "base": 164,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost_veg": {
+    "meaning": "Cost per serving of Vegetables",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_bread": {
+    "meaning": "Protein grams per serving of Bread",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "carb_bread": {
+    "meaning": "Carb grams per serving of Bread",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cal_bread": {
+    "meaning": "Calories per serving of Bread",
+    "base": 165,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost_bread": {
+    "meaning": "Cost per serving of Bread",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_almonds": {
+    "meaning": "Protein grams per serving of Almonds",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "carb_almonds": {
+    "meaning": "Carb grams per serving of Almonds",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cal_almonds": {
+    "meaning": "Calories per serving of Almonds",
+    "base": 51,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost_almonds": {
+    "meaning": "Cost per serving of Almonds",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_salmon": {
+    "meaning": "Protein grams per serving of Salmon",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "carb_salmon": {
+    "meaning": "Carb grams per serving of Salmon",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cal_salmon": {
+    "meaning": "Calories per serving of Salmon",
+    "base": 238,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "cost_salmon": {
+    "meaning": "Cost per serving of Salmon",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_target": {
+    "meaning": "Minimum weekly protein requirement (g)",
+    "base": 58,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_target": {
+    "meaning": "Minimum weekly carbohydrate requirement (g)",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_target": {
+    "meaning": "Minimum weekly calorie requirement (kcal)",
+    "base": 2392,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

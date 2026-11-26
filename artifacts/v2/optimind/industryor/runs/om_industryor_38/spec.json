@@ -1,0 +1,451 @@
+{
+ "spec": {
+  "price_steel": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_engines": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_electronics": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "price_plastic": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "steel_req_engines": {
+   "base": 0.02,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.1,
+    "integer": false
+   }
+  },
+  "steel_req_plastic": {
+   "base": 0.01,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.1,
+    "integer": false
+   }
+  },
+  "steel_import_cost": {
+   "base": 250,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "steel_labor": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "engines_req_steel": {
+   "base": 0.8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.4,
+    "hi": 1.2,
+    "integer": false
+   }
+  },
+  "engines_req_electronics": {
+   "base": 0.15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.35,
+    "integer": false
+   }
+  },
+  "engines_req_plastic": {
+   "base": 0.11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.3,
+    "integer": false
+   }
+  },
+  "engines_import_cost": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "engines_labor": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "electronics_req_steel": {
+   "base": 0.01,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.1,
+    "integer": false
+   }
+  },
+  "electronics_req_engines": {
+   "base": 0.01,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.1,
+    "integer": false
+   }
+  },
+  "electronics_req_plastic": {
+   "base": 0.05,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "electronics_import_cost": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "electronics_labor": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "plastic_req_engines": {
+   "base": 0.03,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.15,
+    "integer": false
+   }
+  },
+  "plastic_req_steel": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "plastic_req_electronics": {
+   "base": 0.05,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "plastic_import_cost": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "plastic_labor": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_engines": {
+   "base": 650000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cap_plastic": {
+   "base": 60000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_available": {
+   "base": 830000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "price_steel": {
+    "meaning": "World market unit price of steel (Klunz per unit)",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_engines": {
+    "meaning": "World market unit price of engines (Klunz per unit)",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_electronics": {
+    "meaning": "World market unit price of electronic components (Klunz per unit)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "price_plastic": {
+    "meaning": "World market unit price of plastic (Klunz per unit)",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "steel_req_engines": {
+    "meaning": "Engines required per unit of steel produced (units)",
+    "base": 0.02,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.1,
+     "integer": false
+    }
+   },
+   "steel_req_plastic": {
+    "meaning": "Plastic required per unit of steel produced (units)",
+    "base": 0.01,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.1,
+     "integer": false
+    }
+   },
+   "steel_import_cost": {
+    "meaning": "Imported goods cost per unit of steel produced (Klunz)",
+    "base": 250,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "steel_labor": {
+    "meaning": "Labor (person-months) per unit of steel produced",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "engines_req_steel": {
+    "meaning": "Steel required per unit of engines produced (units)",
+    "base": 0.8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.4,
+     "hi": 1.2,
+     "integer": false
+    }
+   },
+   "engines_req_electronics": {
+    "meaning": "Electronic components required per unit of engines produced (units)",
+    "base": 0.15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.35,
+     "integer": false
+    }
+   },
+   "engines_req_plastic": {
+    "meaning": "Plastic required per unit of engines produced (units)",
+    "base": 0.11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.3,
+     "integer": false
+    }
+   },
+   "engines_import_cost": {
+    "meaning": "Imported goods cost per unit of engines produced (Klunz)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "engines_labor": {
+    "meaning": "Labor (person-months) per unit of engines produced",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "electronics_req_steel": {
+    "meaning": "Steel required per unit of electronics produced (units)",
+    "base": 0.01,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.1,
+     "integer": false
+    }
+   },
+   "electronics_req_engines": {
+    "meaning": "Engines required per unit of electronics produced (units)",
+    "base": 0.01,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.1,
+     "integer": false
+    }
+   },
+   "electronics_req_plastic": {
+    "meaning": "Plastic required per unit of electronics produced (units)",
+    "base": 0.05,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "electronics_import_cost": {
+    "meaning": "Imported goods cost per unit of electronics produced (Klunz)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "electronics_labor": {
+    "meaning": "Labor (person-months) per unit of electronics produced",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "plastic_req_engines": {
+    "meaning": "Engines required per unit of plastic produced (units)",
+    "base": 0.03,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.15,
+     "integer": false
+    }
+   },
+   "plastic_req_steel": {
+    "meaning": "Steel required per unit of plastic produced (units)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "plastic_req_electronics": {
+    "meaning": "Electronic components required per unit of plastic produced (units)",
+    "base": 0.05,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "plastic_import_cost": {
+    "meaning": "Imported goods cost per unit of plastic produced (Klunz)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "plastic_labor": {
+    "meaning": "Labor (person-months) per unit of plastic produced",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_engines": {
+    "meaning": "Maximum engine production capacity (units)",
+    "base": 650000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cap_plastic": {
+    "meaning": "Maximum plastic production capacity (units)",
+    "base": 60000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_available": {
+    "meaning": "Total available labor force per year (person-months)",
+    "base": 830000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

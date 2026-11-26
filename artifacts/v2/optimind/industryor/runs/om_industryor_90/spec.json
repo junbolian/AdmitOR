@@ -1,0 +1,152 @@
+{
+ "spec": {
+  "students": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "bus_capacity": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "minibus_capacity": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "bus_cost": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "minibus_cost": {
+   "base": 600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_buses_available": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_minibuses_available": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_drivers": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_buses_available] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_minibuses_available] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "students": {
+    "meaning": "total number of students to transport",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "bus_capacity": {
+    "meaning": "seats per bus",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "minibus_capacity": {
+    "meaning": "seats per minibus",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "bus_cost": {
+    "meaning": "rental cost per bus (£)",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "minibus_cost": {
+    "meaning": "rental cost per minibus (£)",
+    "base": 600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_buses_available": {
+    "meaning": "number of buses available (frozen: index-set size)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_minibuses_available": {
+    "meaning": "number of minibuses available (frozen: index-set size)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_drivers": {
+    "meaning": "number of drivers available",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 12,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

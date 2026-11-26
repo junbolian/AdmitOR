@@ -1,0 +1,317 @@
+{
+ "spec": {
+  "cost_E_F": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_G": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_H": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_I": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_E": {
+   "base": 31,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_G": {
+   "base": 39,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_H": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_I": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_E": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_F": {
+   "base": 39,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_H": {
+   "base": 65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_I": {
+   "base": 78,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_H_E": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_H_F": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_H_G": {
+   "base": 65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_H_I": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_I_E": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_I_F": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_I_G": {
+   "base": 78,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_I_H": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_E_F": {
+    "meaning": "delivery cost from E to F",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_G": {
+    "meaning": "delivery cost from E to G",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_H": {
+    "meaning": "delivery cost from E to H",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_I": {
+    "meaning": "delivery cost from E to I",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_E": {
+    "meaning": "delivery cost from F to E",
+    "base": 31,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_G": {
+    "meaning": "delivery cost from F to G",
+    "base": 39,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_H": {
+    "meaning": "delivery cost from F to H",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_I": {
+    "meaning": "delivery cost from F to I",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_E": {
+    "meaning": "delivery cost from G to E",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_F": {
+    "meaning": "delivery cost from G to F",
+    "base": 39,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_H": {
+    "meaning": "delivery cost from G to H",
+    "base": 65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_I": {
+    "meaning": "delivery cost from G to I",
+    "base": 78,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_H_E": {
+    "meaning": "delivery cost from H to E",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_H_F": {
+    "meaning": "delivery cost from H to F",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_H_G": {
+    "meaning": "delivery cost from H to G",
+    "base": 65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_H_I": {
+    "meaning": "delivery cost from H to I",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_I_E": {
+    "meaning": "delivery cost from I to E",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_I_F": {
+    "meaning": "delivery cost from I to F",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_I_G": {
+    "meaning": "delivery cost from I to G",
+    "base": 78,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_I_H": {
+    "meaning": "delivery cost from I to H",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

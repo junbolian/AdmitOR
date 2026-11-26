@@ -1,0 +1,153 @@
+{
+ "spec": {
+  "initial_fund": {
+   "base": 300000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "return_rate_project1": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "return_multiplier_project2": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "cap_project2": {
+   "base": 150000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "return_multiplier_project3": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.2,
+    "integer": false
+   }
+  },
+  "cap_project3": {
+   "base": 200000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "return_multiplier_project4": {
+   "base": 1.4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "cap_project4": {
+   "base": 100000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_fund": {
+    "meaning": "Initial available capital at start of year 1",
+    "base": 300000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "return_rate_project1": {
+    "meaning": "Annual profit rate for project 1 (renewable yearly investment)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "return_multiplier_project2": {
+    "meaning": "Total principal+interest multiplier for project 2 (matures end of year 2)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.0,
+     "integer": false
+    }
+   },
+   "cap_project2": {
+    "meaning": "Maximum investment limit for project 2",
+    "base": 150000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "return_multiplier_project3": {
+    "meaning": "Total principal+interest multiplier for project 3 (matures end of year 3)",
+    "base": 1.6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.2,
+     "integer": false
+    }
+   },
+   "cap_project3": {
+    "meaning": "Maximum investment limit for project 3",
+    "base": 200000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "return_multiplier_project4": {
+    "meaning": "Total principal+interest multiplier for project 4 (one-year, matures end of year 3)",
+    "base": 1.4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.0,
+     "integer": false
+    }
+   },
+   "cap_project4": {
+    "meaning": "Maximum investment limit for project 4",
+    "base": 100000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

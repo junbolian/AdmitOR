@@ -1,0 +1,214 @@
+{
+ "spec": {
+  "space_capacity": {
+   "base": 5000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3000.0,
+    "hi": 7000.0,
+    "integer": false
+   }
+  },
+  "rent_rate": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.35,
+    "integer": false
+   }
+  },
+  "area": {
+   "base": [
+    250,
+    350,
+    800,
+    400,
+    500
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_shops": {
+   "base": [
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "max_shops": {
+   "base": [
+    3,
+    2,
+    3,
+    2,
+    3
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "profit_1": {
+   "base": [
+    9,
+    10,
+    27,
+    16,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_2": {
+   "base": [
+    8,
+    9,
+    21,
+    10,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[profit_3] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "space_capacity": {
+    "meaning": "Total leasable space in the mall (m²)",
+    "base": 5000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3000,
+     "hi": 7000,
+     "integer": false
+    }
+   },
+   "rent_rate": {
+    "meaning": "Fraction of annual profit paid as rent",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.35,
+     "integer": false
+    }
+   },
+   "area": {
+    "meaning": "Area per shop by store type (m²): jewelry, shoes&hats, general merchandise, bookstore, catering",
+    "base": [
+     250,
+     350,
+     800,
+     400,
+     500
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_shops": {
+    "meaning": "Minimum number of shops required by type",
+    "base": [
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "max_shops": {
+    "meaning": "Maximum number of shops allowed by type",
+    "base": [
+     3,
+     2,
+     3,
+     2,
+     3
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "profit_1": {
+    "meaning": "Annual profit per store when exactly 1 store of that type (10k yuan): jewelry, shoes&hats, general merchandise, bookstore, catering",
+    "base": [
+     9,
+     10,
+     27,
+     16,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_2": {
+    "meaning": "Annual profit per store when exactly 2 stores of that type (10k yuan); null where not applicable",
+    "base": [
+     8,
+     9,
+     21,
+     10,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_3": {
+    "meaning": "Annual profit per store when exactly 3 stores of that type (10k yuan); null where not applicable",
+    "base": [
+     7,
+     null,
+     20,
+     null,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

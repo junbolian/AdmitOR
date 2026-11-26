@@ -1,0 +1,19 @@
+benchmark,rule,expert_status,certificates,match_original_label,miss_original_label,match_new_label
+IndustryOR,panel_base_3of3,removed,15,2,13,
+IndustryOR,panel_base_3of3,"kept, same label",30,25,5,
+IndustryOR,panel_base_3of3,"kept, label changed",1,0,1,0
+IndustryOR,panel_base_3of3 + check (B or C),removed,11,1,10,
+IndustryOR,panel_base_3of3 + check (B or C),"kept, same label",28,24,4,
+IndustryOR,panel_base_3of3 + check (B or C),"kept, label changed",1,0,1,0
+Mamo ComplexLP,panel_base_3of3,removed,63,21,42,
+Mamo ComplexLP,panel_base_3of3,"kept, same label",95,65,30,
+Mamo ComplexLP,panel_base_3of3,"kept, label changed",0,0,0,0
+Mamo ComplexLP,panel_base_3of3 + check (B or C),removed,41,16,25,
+Mamo ComplexLP,panel_base_3of3 + check (B or C),"kept, same label",85,55,30,
+Mamo ComplexLP,panel_base_3of3 + check (B or C),"kept, label changed",0,0,0,0
+pooled,panel_base_3of3,removed,78,23,55,
+pooled,panel_base_3of3,"kept, same label",125,90,35,
+pooled,panel_base_3of3,"kept, label changed",1,0,1,0
+pooled,panel_base_3of3 + check (B or C),removed,52,17,35,
+pooled,panel_base_3of3 + check (B or C),"kept, same label",113,79,34,
+pooled,panel_base_3of3 + check (B or C),"kept, label changed",1,0,1,0

@@ -1,0 +1,109 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "space_capacity": 5000,
+   "rent_rate": 0.2,
+   "area": [
+    250,
+    350,
+    800,
+    400,
+    500
+   ],
+   "min_shops": [
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "max_shops": [
+    3,
+    2,
+    3,
+    2,
+    3
+   ],
+   "profit_1": [
+    9,
+    10,
+    27,
+    16,
+    17
+   ],
+   "profit_2": [
+    8,
+    9,
+    21,
+    10,
+    15
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:profit_3 = params[\"profit_3\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'profit_3'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "missing_parameter:profit_3",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:profit_3 = params[\"profit_3\"] | ~~~~~~^^^^^^^^^^^^ | KeyError: 'profit_3'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

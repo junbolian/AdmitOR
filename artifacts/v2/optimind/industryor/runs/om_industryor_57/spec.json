@@ -1,0 +1,272 @@
+{
+ "spec": {
+  "mat_cost_A": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mat_cost_B": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mat_cost_C": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "limit_A": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "limit_B": {
+   "base": 2500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "limit_C": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_fee_A": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_fee_B": {
+   "base": 0.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "proc_fee_C": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_A": {
+   "base": 3.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_B": {
+   "base": 2.85,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_C": {
+   "base": 2.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "content_A_in_A": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "content_A_in_B": {
+   "base": 0.15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "content_C_in_A": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "content_C_in_B": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "content_C_in_C": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "mat_cost_A": {
+    "meaning": "raw material A cost (Yuan/kg)",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mat_cost_B": {
+    "meaning": "raw material B cost (Yuan/kg)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mat_cost_C": {
+    "meaning": "raw material C cost (Yuan/kg)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "limit_A": {
+    "meaning": "monthly limit of raw material A (kg)",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "limit_B": {
+    "meaning": "monthly limit of raw material B (kg)",
+    "base": 2500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "limit_C": {
+    "meaning": "monthly limit of raw material C (kg)",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_fee_A": {
+    "meaning": "processing fee for candy A (Yuan/kg)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_fee_B": {
+    "meaning": "processing fee for candy B (Yuan/kg)",
+    "base": 0.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "proc_fee_C": {
+    "meaning": "processing fee for candy C (Yuan/kg)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_A": {
+    "meaning": "selling price of candy A (Yuan/kg)",
+    "base": 3.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_B": {
+    "meaning": "selling price of candy B (Yuan/kg)",
+    "base": 2.85,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_C": {
+    "meaning": "selling price of candy C (Yuan/kg)",
+    "base": 2.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "content_A_in_A": {
+    "meaning": "fraction of raw material A in candy A",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "content_A_in_B": {
+    "meaning": "fraction of raw material A in candy B",
+    "base": 0.15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "content_C_in_A": {
+    "meaning": "fraction of raw material C in candy A",
+    "base": 0.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "content_C_in_B": {
+    "meaning": "fraction of raw material C in candy B",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "content_C_in_C": {
+    "meaning": "fraction of raw material C in candy C",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

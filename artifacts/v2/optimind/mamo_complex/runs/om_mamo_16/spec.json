@@ -1,0 +1,132 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    480,
+    492,
+    74,
+    317
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    61,
+    313,
+    93,
+    199
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     0,
+     8,
+     42,
+     27
+    ],
+    [
+     17,
+     0,
+     13,
+     30
+    ],
+    [
+     4,
+     14,
+     0,
+     16
+    ],
+    [
+     33,
+     9,
+     42,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Initial units of supplies held by each hospital (H1..H4)",
+    "base": [
+     480,
+     492,
+     74,
+     317
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Required units of supplies at each hospital (H1..H4)",
+    "base": [
+     61,
+     313,
+     93,
+     199
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "Unit transfer cost matrix c[i][j] from hospital i to hospital j; diagonal entries unused/set 0",
+    "base": [
+     [
+      0,
+      8,
+      42,
+      27
+     ],
+     [
+      17,
+      0,
+      13,
+      30
+     ],
+     [
+      4,
+      14,
+      0,
+      16
+     ],
+     [
+      33,
+      9,
+      42,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,355 @@
+{
+ "spec": {
+  "cost_steak": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_rice": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_chicken": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_lettuce": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_almonds": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_steak": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_rice": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_chicken": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_lettuce": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_almonds": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_steak": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_rice": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_chicken": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_lettuce": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_almonds": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_steak": {
+   "base": 167,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_rice": {
+   "base": 275,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_chicken": {
+   "base": 112,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_lettuce": {
+   "base": 148,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_almonds": {
+   "base": 286,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_req": {
+   "base": 83,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carbs_req": {
+   "base": 128,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_req": {
+   "base": 1686,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_steak": {
+    "meaning": "cost per unit of Steak ($)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_rice": {
+    "meaning": "cost per unit of Rice ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_chicken": {
+    "meaning": "cost per unit of Chicken ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_lettuce": {
+    "meaning": "cost per unit of Iceberg Lettuce ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_almonds": {
+    "meaning": "cost per unit of Almonds ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_steak": {
+    "meaning": "protein grams per unit of Steak",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_rice": {
+    "meaning": "protein grams per unit of Rice",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_chicken": {
+    "meaning": "protein grams per unit of Chicken",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_lettuce": {
+    "meaning": "protein grams per unit of Iceberg Lettuce",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_almonds": {
+    "meaning": "protein grams per unit of Almonds",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_steak": {
+    "meaning": "carb grams per unit of Steak",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_rice": {
+    "meaning": "carb grams per unit of Rice",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "carb grams per unit of Chicken",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_lettuce": {
+    "meaning": "carb grams per unit of Iceberg Lettuce",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_almonds": {
+    "meaning": "carb grams per unit of Almonds",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_steak": {
+    "meaning": "calories per unit of Steak",
+    "base": 167,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_rice": {
+    "meaning": "calories per unit of Rice",
+    "base": 275,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_chicken": {
+    "meaning": "calories per unit of Chicken",
+    "base": 112,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_lettuce": {
+    "meaning": "calories per unit of Iceberg Lettuce",
+    "base": 148,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_almonds": {
+    "meaning": "calories per unit of Almonds",
+    "base": 286,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_req": {
+    "meaning": "minimum daily protein requirement (g)",
+    "base": 83,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carbs_req": {
+    "meaning": "minimum daily carbohydrate requirement (g)",
+    "base": 128,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_req": {
+    "meaning": "minimum daily calorie requirement",
+    "base": 1686,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

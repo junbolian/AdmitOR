@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "price_table": 200,
+   "price_chair": 50,
+   "price_bookshelf": 150,
+   "cost_table": 120,
+   "cost_chair": 20,
+   "cost_bookshelf": 90,
+   "space_table": 5,
+   "space_chair": 2,
+   "space_bookshelf": 3,
+   "space_capacity": 500,
+   "min_tables": 10,
+   "min_bookshelves": 20,
+   "max_total_items": 200
+  },
+  {
+   "price_table": 216.73121581494604,
+   "price_chair": 31.000430208906675,
+   "price_bookshelf": 129.7526386532207,
+   "cost_table": 100.07117314671524,
+   "cost_chair": 24.72942428328025,
+   "cost_bookshelf": 99.54177232083723,
+   "space_table": 6.176538703114536,
+   "space_chair": 1.1738776652588323,
+   "space_bookshelf": 2.859459275433487,
+   "space_capacity": 358.9391658314211,
+   "min_tables": 9,
+   "min_bookshelves": 40,
+   "max_total_items": 69
+  },
+  {
+   "price_table": 163.86051808239782,
+   "price_chair": 55.99537751118093,
+   "price_bookshelf": 154.0447332542895,
+   "cost_table": 99.87172478693014,
+   "cost_chair": 21.785313677518175,
+   "cost_bookshelf": 106.70924466060265,
+   "space_table": 3.5194962790341826,
+   "space_chair": 2.611638503665616,
+   "space_bookshelf": 3.356650910978808,
+   "space_capacity": 452.0751549553976,
+   "min_tables": 6,
+   "min_bookshelves": 77,
+   "max_total_items": 174
+  },
+  {
+   "price_table": 151.12950120561774,
+   "price_chair": 33.86865507333856,
+   "price_bookshelf": 181.27449297127137,
+   "cost_table": 127.46827425841617,
+   "cost_chair": 26.1425654654876,
+   "cost_bookshelf": 102.40551648146617,
+   "space_table": 5.108684274364102,
+   "space_chair": 2.946231527958741,
+   "space_bookshelf": 2.7813618789750363,
+   "space_capacity": 515.612189381968,
+   "min_tables": 33,
+   "min_bookshelves": 49,
+   "max_total_items": 353
+  },
+  {
+   "price_table": 209.28225743081143,
+   "price_chair": 58.182873448596936,
+   "price_bookshelf": 109.1241945290096,
+   "cost_table": 100.40867584691136,
+   "cost_chair": 15.787759272042143,
+   "cost_bookshelf": 67.30876675387589,
+   "space_table": 4.19837265908309,
+   "space_chair": 1.2020028588194582,
+   "space_bookshelf": 2.6003524855981657,
+   "space_capacity": 540.70533327932,
+   "min_tables": 15,
+   "min_bookshelves": 30,
+   "max_total_items": 131
+  },
+  {
+   "price_table": 172.03733864589358,
+   "price_chair": 67.46618350849975,
+   "price_bookshelf": 163.32318467219343,
+   "cost_table": 127.85743240802314,
+   "cost_chair": 13.42277296396194,
+   "cost_bookshelf": 102.37284708931884,
+   "space_table": 3.9902074812857853,
+   "space_chair": 1.7589108835152956,
+   "space_bookshelf": 3.8811420311458713,
+   "space_capacity": 541.9999279562279,
+   "min_tables": 22,
+   "min_bookshelves": 55,
+   "max_total_items": 347
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   9800.0,
+   4591.575890674033,
+   7164.956946768424,
+   10621.163362822757,
+   12250.694573227916,
+   11721.468235338067
+  ],
+  "B-structured": [
+   9800.0,
+   4591.575890674033,
+   7164.216252964609,
+   10560.573573993497,
+   12250.694573227916,
+   11674.130338348396
+  ],
+  "C-direct": [
+   9800.0,
+   4591.575890674033,
+   7164.216252964609,
+   10560.573573993497,
+   12250.694573227916,
+   11674.130338348396
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 60.59 on instance 3 (params: {'price_table': 151.13, 'price_chair': 33.87, 'price_bookshelf': 181.27, 'cost_table': 127.47, 'cost_chair': 26.14, 'cost_bookshelf': 102.41, 'space_table': 5.11, 'space_chair': 2.95, 'space_bookshelf': 2.78, 'space_capacity': 515.61, 'min_tables': 33, 'min_bookshelves': 49, 'max_total_items': 353})"
+ },
+ "disagreements": [],
+ "notes": []
+}

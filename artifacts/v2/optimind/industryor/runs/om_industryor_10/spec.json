@@ -1,0 +1,261 @@
+{
+ "spec": {
+  "price_A": {
+   "base": 650,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "price_B": {
+   "base": 725,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "hours_manuf_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "hours_asm_A": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "hours_insp_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "hours_manuf_B": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "hours_asm_B": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "hours_insp_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cap_manuf": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cap_asm": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cap_insp": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_manuf": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_asm": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost_insp": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "profit_target": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_A_target": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "price_A": {
+    "meaning": "Selling price of type A motorcycle (Yuan/unit)",
+    "base": 650,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "price_B": {
+    "meaning": "Selling price of type B motorcycle (Yuan/unit)",
+    "base": 725,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "hours_manuf_A": {
+    "meaning": "Manufacturing hours per unit of type A",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "hours_asm_A": {
+    "meaning": "Assembly hours per unit of type A",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "hours_insp_A": {
+    "meaning": "Inspection hours per unit of type A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "hours_manuf_B": {
+    "meaning": "Manufacturing hours per unit of type B",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "hours_asm_B": {
+    "meaning": "Assembly hours per unit of type B",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "hours_insp_B": {
+    "meaning": "Inspection hours per unit of type B",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cap_manuf": {
+    "meaning": "Weekly manufacturing capacity (hours)",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cap_asm": {
+    "meaning": "Weekly assembly capacity (hours)",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cap_insp": {
+    "meaning": "Weekly inspection capacity (hours)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_manuf": {
+    "meaning": "Manufacturing cost per hour (Yuan)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_asm": {
+    "meaning": "Assembly cost per hour (Yuan)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost_insp": {
+    "meaning": "Inspection cost per hour (Yuan)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "profit_target": {
+    "meaning": "Weekly total profit target (Yuan), p1 goal at least",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_A_target": {
+    "meaning": "Minimum weekly production target for type A (units), p2 goal",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

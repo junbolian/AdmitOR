@@ -1,0 +1,104 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     -1,
+     44,
+     19,
+     92,
+     71
+    ],
+    [
+     44,
+     -1,
+     22,
+     84,
+     63
+    ],
+    [
+     19,
+     22,
+     -1,
+     47,
+     89
+    ],
+    [
+     92,
+     84,
+     47,
+     -1,
+     78
+    ],
+    [
+     71,
+     63,
+     89,
+     78,
+     -1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Symmetric travel cost between each pair of cities (ordered by city indices 0=A,1=B,2=C,3=D,4=E; -1 diagonal is self-travel, not used)",
+    "base": [
+     [
+      -1,
+      44,
+      19,
+      92,
+      71
+     ],
+     [
+      44,
+      -1,
+      22,
+      84,
+      63
+     ],
+     [
+      19,
+      22,
+      -1,
+      47,
+      89
+     ],
+     [
+      92,
+      84,
+      47,
+      -1,
+      78
+     ],
+     [
+      71,
+      63,
+      89,
+      78,
+      -1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "spec": {
+  "protein": {
+   "base": [
+    16,
+    11,
+    1,
+    6,
+    2,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    8,
+    24,
+    5,
+    26,
+    11,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    50,
+    90,
+    164,
+    165,
+    51,
+    238
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    2,
+    3,
+    3,
+    2,
+    4,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "protein_requirement": {
+   "base": 58,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "carb_requirement": {
+   "base": 150,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 260.0,
+    "integer": false
+   }
+  },
+  "calorie_requirement": {
+   "base": 2392,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 3600.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein": {
+    "meaning": "protein content (g) per food: Chicken, Rice, Vegetables, Bread, Almonds, Salmon",
+    "base": [
+     16,
+     11,
+     1,
+     6,
+     2,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "carbohydrate content (g) per food: Chicken, Rice, Vegetables, Bread, Almonds, Salmon",
+    "base": [
+     8,
+     24,
+     5,
+     26,
+     11,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "calorie content per food: Chicken, Rice, Vegetables, Bread, Almonds, Salmon",
+    "base": [
+     50,
+     90,
+     164,
+     165,
+     51,
+     238
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "cost ($) per food unit: Chicken, Rice, Vegetables, Bread, Almonds, Salmon",
+    "base": [
+     2,
+     3,
+     3,
+     2,
+     4,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "protein_requirement": {
+    "meaning": "minimum weekly protein target (g)",
+    "base": 58,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "carb_requirement": {
+    "meaning": "minimum weekly carbohydrate target (g)",
+    "base": 150,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 260,
+     "integer": false
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "minimum weekly calorie target",
+    "base": 2392,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 3600,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

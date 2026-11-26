@@ -1,0 +1,226 @@
+{
+ "spec": {
+  "supply_A_lower": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 55.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "supply_B_lower": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 75.0,
+    "hi": 150.0,
+    "integer": false
+   }
+  },
+  "demand_1": {
+   "base": 55,
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "demand_2": {
+   "base": 75,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 105.0,
+    "integer": false
+   }
+  },
+  "demand_3": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 75.0,
+    "integer": false
+   }
+  },
+  "dist_A1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "dist_A2": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "dist_A3": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "dist_B1": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 9.0,
+    "integer": false
+   }
+  },
+  "dist_B2": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "dist_B3": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 24.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_A_lower": {
+    "meaning": "Minimum monthly coal supply from mine A (tons)",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 55,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "supply_B_lower": {
+    "meaning": "Minimum monthly coal supply from mine B (tons)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 75,
+     "hi": 150,
+     "integer": false
+    }
+   },
+   "demand_1": {
+    "meaning": "Monthly coal requirement of residential area 1 (tons)",
+    "base": 55,
+    "perturb": {
+     "mode": "abs",
+     "lo": 35,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "demand_2": {
+    "meaning": "Monthly coal requirement of residential area 2 (tons)",
+    "base": 75,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 105,
+     "integer": false
+    }
+   },
+   "demand_3": {
+    "meaning": "Monthly coal requirement of residential area 3 (tons)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 75,
+     "integer": false
+    }
+   },
+   "dist_A1": {
+    "meaning": "Distance from mine A to area 1 (km)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "dist_A2": {
+    "meaning": "Distance from mine A to area 2 (km)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "dist_A3": {
+    "meaning": "Distance from mine A to area 3 (km)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "dist_B1": {
+    "meaning": "Distance from mine B to area 1 (km)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 9,
+     "integer": false
+    }
+   },
+   "dist_B2": {
+    "meaning": "Distance from mine B to area 2 (km)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "dist_B3": {
+    "meaning": "Distance from mine B to area 3 (km)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 24,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

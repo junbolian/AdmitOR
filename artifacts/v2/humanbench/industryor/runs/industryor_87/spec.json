@@ -1,0 +1,63 @@
+{
+ "spec": {
+  "a_j": {
+   "base": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "k": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 3.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "a_j": {
+    "meaning": "number of fighter jets produced each year (list over n years)",
+    "base": [
+     100,
+     100,
+     100,
+     100,
+     100
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "k": {
+    "meaning": "number of pilots each fighter jet can train per year",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 3.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

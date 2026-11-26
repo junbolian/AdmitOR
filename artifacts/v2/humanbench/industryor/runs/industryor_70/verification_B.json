@@ -1,0 +1,47 @@
+{
+ "sample_id": "industryor_70",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"mileage_A_M\",\n      \"evidence\": \"Under “Example”: “A,M,17.1”\"\n    },\n    {\n      \"parameter\": \"mileage_Z_M\",\n      \"evidence\": \"Under “Example”: “Z,M,26.4”\"\n    },\n    {\n      \"parameter\": \"max_continuous_driving_minutes\",\n      \"evidence\": \"“maximum continuous driving time constraint” gives no numeric limit\"\n    },\n    {\n      \"parameter\": \"max_daily_mileage_km\",\n      \"evidence\": \"“mileage limit constraint” gives no numeric limit\"\n    },\n    {\n      \"parameter\": \"min_transfer_buffer_minutes\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"max_shift_length_minutes\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "mileage_A_M",
+   "evidence": "Under “Example”: “A,M,17.1”"
+  },
+  {
+   "parameter": "mileage_Z_M",
+   "evidence": "Under “Example”: “Z,M,26.4”"
+  },
+  {
+   "parameter": "max_continuous_driving_minutes",
+   "evidence": "“maximum continuous driving time constraint” gives no numeric limit"
+  },
+  {
+   "parameter": "max_daily_mileage_km",
+   "evidence": "“mileage limit constraint” gives no numeric limit"
+  },
+  {
+   "parameter": "min_transfer_buffer_minutes",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "max_shift_length_minutes",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

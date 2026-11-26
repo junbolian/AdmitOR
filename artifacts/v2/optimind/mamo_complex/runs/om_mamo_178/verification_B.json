@@ -1,0 +1,27 @@
+{
+ "sample_id": "om_mamo_178",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity_matrix[3,2]\",\"evidence\":\"From Sector 3: Can send resources to Sector 0 (2 units), Sector 1 (5 units), Sector 4 (6 units)\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix[3,2]",
+   "evidence": "From Sector 3: Can send resources to Sector 0 (2 units), Sector 1 (5 units), Sector 4 (6 units)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

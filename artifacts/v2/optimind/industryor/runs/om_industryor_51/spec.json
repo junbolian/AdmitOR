@@ -1,0 +1,148 @@
+{
+ "spec": {
+  "harry_cost": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "hermione_cost": {
+   "base": 1650,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "ron_cost": {
+   "base": 750,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "fred_cost": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "george_cost": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "ginny_cost": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_children": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "min_children": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_children] degenerate abs range (lo == hi); perturbation has no effect",
+  "[min_children] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "harry_cost": {
+    "meaning": "Cost of taking Harry",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "hermione_cost": {
+    "meaning": "Cost of taking Hermione",
+    "base": 1650,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "ron_cost": {
+    "meaning": "Cost of taking Ron",
+    "base": 750,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "fred_cost": {
+    "meaning": "Cost of taking Fred",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "george_cost": {
+    "meaning": "Cost of taking George",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "ginny_cost": {
+    "meaning": "Cost of taking Ginny",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_children": {
+    "meaning": "Maximum number of children that can be taken",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "min_children": {
+    "meaning": "Minimum number of children that must be taken",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

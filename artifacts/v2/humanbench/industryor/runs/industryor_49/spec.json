@@ -1,0 +1,130 @@
+{
+ "spec": {
+  "D_jk": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "r_klm": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "R_im": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  },
+  "c_kl": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "c_il": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  },
+  "P_ikl": {
+   "base": 10.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "T_ijk": {
+   "base": 5.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "D_jk": {
+    "meaning": "Monthly demand (units) of paper type k for customer j; 1000 customers x 5 paper types",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "r_klm": {
+    "meaning": "Amount of raw material m required per unit of paper type k on machine l",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "R_im": {
+    "meaning": "Monthly raw material m availability at mill i",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   },
+   "c_kl": {
+    "meaning": "Machine time required per unit of paper type k on machine l",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "c_il": {
+    "meaning": "Monthly machine time available at mill i for machine type l",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   },
+   "P_ikl": {
+    "meaning": "Production cost per unit of paper type k on machine l at mill i (net profit may turn negative)",
+    "base": 10.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": -5.0,
+     "hi": 30.0,
+     "integer": false
+    }
+   },
+   "T_ijk": {
+    "meaning": "Transportation cost per unit of paper type k from mill i to customer j",
+    "base": 5.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 25.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

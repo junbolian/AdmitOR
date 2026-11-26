@@ -1,0 +1,362 @@
+{
+ "spec": {
+  "lentils_cost": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "rice_cost": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "chicken_cost": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "beef_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "tofu_cost": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "lentils_protein": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "rice_protein": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "chicken_protein": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "beef_protein": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "tofu_protein": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "lentils_carbs": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "rice_carbs": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "chicken_carbs": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "beef_carbs": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "tofu_carbs": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "lentils_calories": {
+   "base": 284,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "rice_calories": {
+   "base": 55,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_calories": {
+   "base": 276,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "beef_calories": {
+   "base": 204,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tofu_calories": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 79,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_req": {
+   "base": 170,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_req": {
+   "base": 1699,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "lentils_cost": {
+    "meaning": "Cost of one portion of Lentils (dollars)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "rice_cost": {
+    "meaning": "Cost of one portion of Rice (dollars)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "chicken_cost": {
+    "meaning": "Cost of one portion of Chicken (dollars)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "beef_cost": {
+    "meaning": "Cost of one portion of Beef (dollars)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "tofu_cost": {
+    "meaning": "Cost of one portion of Tofu (dollars)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "lentils_protein": {
+    "meaning": "Protein grams per portion of Lentils",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "rice_protein": {
+    "meaning": "Protein grams per portion of Rice",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "chicken_protein": {
+    "meaning": "Protein grams per portion of Chicken",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "beef_protein": {
+    "meaning": "Protein grams per portion of Beef",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "tofu_protein": {
+    "meaning": "Protein grams per portion of Tofu",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "lentils_carbs": {
+    "meaning": "Carbohydrate grams per portion of Lentils",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "rice_carbs": {
+    "meaning": "Carbohydrate grams per portion of Rice",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "chicken_carbs": {
+    "meaning": "Carbohydrate grams per portion of Chicken",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "beef_carbs": {
+    "meaning": "Carbohydrate grams per portion of Beef",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "tofu_carbs": {
+    "meaning": "Carbohydrate grams per portion of Tofu",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "lentils_calories": {
+    "meaning": "Calories per portion of Lentils",
+    "base": 284,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "rice_calories": {
+    "meaning": "Calories per portion of Rice",
+    "base": 55,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_calories": {
+    "meaning": "Calories per portion of Chicken",
+    "base": 276,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "beef_calories": {
+    "meaning": "Calories per portion of Beef",
+    "base": 204,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tofu_calories": {
+    "meaning": "Calories per portion of Tofu",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum protein requirement (grams)",
+    "base": 79,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_req": {
+    "meaning": "Minimum carbohydrate requirement (grams)",
+    "base": 170,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_req": {
+    "meaning": "Minimum calorie requirement",
+    "base": 1699,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

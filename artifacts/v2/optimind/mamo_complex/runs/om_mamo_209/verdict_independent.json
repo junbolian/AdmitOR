@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": [
+    40,
+    60,
+    75,
+    25
+   ],
+   "initial_inventory": 10,
+   "regular_capacity": 40,
+   "regular_cost": 400,
+   "overtime_cost": 450,
+   "holding_cost": 20
+  },
+  {
+   "demand": [
+    45.57707193831534,
+    31.500645313360017,
+    58.127198877683945,
+    18.080268453720567
+   ],
+   "initial_inventory": 22,
+   "regular_capacity": 61,
+   "regular_cost": 494.12309624916287,
+   "overtime_cost": 338.47348480994236,
+   "holding_cost": 33.753745574821636
+  },
+  {
+   "demand": [
+    21.191888777522813,
+    43.118278488216205,
+    75.40164660775217,
+    13.16339924209659
+   ],
+   "initial_inventory": 6,
+   "regular_capacity": 59,
+   "regular_cost": 410.785955344772,
+   "overtime_cost": 374.51896795098804,
+   "holding_cost": 47.1412547100727
+  },
+  {
+   "demand": [
+    52.377218267113065,
+    30.38992558068366,
+    97.9364438874606,
+    29.953484874705673
+   ],
+   "initial_inventory": 10,
+   "regular_capacity": 29,
+   "regular_cost": 509.73113732962753,
+   "overtime_cost": 405.8805271804092,
+   "holding_cost": 7.419667470411833
+  },
+  {
+   "demand": [
+    23.86865507333856,
+    80.84966198084759,
+    82.77945235251683,
+    32.678206831859505
+   ],
+   "initial_inventory": 22,
+   "regular_capacity": 52,
+   "regular_cost": 513.547783355049,
+   "overtime_cost": 417.2042818462554,
+   "holding_cost": 44.16325050185816
+  },
+  {
+   "demand": [
+    53.176186570119796,
+    67.11118514185476,
+    102.1280175233083,
+    26.93380363141905
+   ],
+   "initial_inventory": 21,
+   "regular_capacity": 23,
+   "regular_cost": 334.69558615637123,
+   "overtime_cost": 393.13475017256894,
+   "holding_cost": 6.3833581538902
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   78450.0,
+   44436.553929751564,
+   55007.553233631355,
+   81442.79841340943,
+   82679.86584579003,
+   84395.59980026842
+  ],
+  "B-structured": [
+   78450.0,
+   44436.553929751564,
+   55007.553233631355,
+   81442.79841340943,
+   82679.86584579003,
+   84395.59980026842
+  ],
+  "C-direct": [
+   78450.0,
+   44436.553929751564,
+   55007.553233631355,
+   81442.79841340944,
+   82679.86584579003,
+   84395.59980026842
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

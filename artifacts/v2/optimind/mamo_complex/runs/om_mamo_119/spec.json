@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "cost_per_unit": {
+   "base": [
+    6,
+    1,
+    1,
+    3,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_per_unit": {
+   "base": [
+    1,
+    7,
+    6,
+    20,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_per_unit": {
+   "base": [
+    3,
+    22,
+    18,
+    6,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_per_unit": {
+   "base": [
+    210,
+    96,
+    189,
+    132,
+    75
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_protein": {
+   "base": 87,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_carbs": {
+   "base": 135,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_calories": {
+   "base": 1926,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_per_unit": {
+    "meaning": "Cost per unit of each food item (Steak, Apples, Eggs, Chicken, Tofu)",
+    "base": [
+     6,
+     1,
+     1,
+     3,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_per_unit": {
+    "meaning": "Protein grams provided per unit of each food item",
+    "base": [
+     1,
+     7,
+     6,
+     20,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_per_unit": {
+    "meaning": "Carbohydrate grams provided per unit of each food item",
+    "base": [
+     3,
+     22,
+     18,
+     6,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_per_unit": {
+    "meaning": "Calories provided per unit of each food item",
+    "base": [
+     210,
+     96,
+     189,
+     132,
+     75
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_protein": {
+    "meaning": "Minimum daily protein requirement (grams)",
+    "base": 87,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_carbs": {
+    "meaning": "Minimum daily carbohydrate requirement (grams)",
+    "base": 135,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_calories": {
+    "meaning": "Minimum daily calorie requirement",
+    "base": 1926,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

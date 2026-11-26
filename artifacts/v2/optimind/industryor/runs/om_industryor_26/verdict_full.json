@@ -1,0 +1,138 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "initial_fund": 300000,
+   "return_rate_project1": 0.2,
+   "return_multiplier_project2": 1.5,
+   "cap_project2": 150000,
+   "return_multiplier_project3": 1.6,
+   "cap_project3": 200000,
+   "return_multiplier_project4": 1.4,
+   "cap_project4": 100000
+  },
+  {
+   "initial_fund": 341828.0395373651,
+   "return_rate_project1": 0.012505377611333468,
+   "return_multiplier_project2": 1.2750293183691193,
+   "cap_project2": 108481.61072232341,
+   "return_multiplier_project3": 1.883765456996815,
+   "cap_project3": 235339.89748458227,
+   "return_multiplier_project4": 1.8921795677048454,
+   "cap_project4": 58693.883262941614
+  },
+  {
+   "initial_fund": 276576.54590558115,
+   "return_rate_project1": 0.014898609719035172,
+   "return_multiplier_project2": 1.2186379748036034,
+   "cap_project2": 150803.29321550435,
+   "return_multiplier_project3": 1.0318431636206364,
+   "cap_project3": 139767.5301373297,
+   "return_multiplier_project4": 1.6498844377795232,
+   "cap_project4": 104494.14806032166
+  },
+  {
+   "initial_fund": 216132.186612209,
+   "return_rate_project1": 0.29463284193795436,
+   "return_multiplier_project2": 1.8094304566778265,
+   "cap_project2": 75974.81395170915,
+   "return_multiplier_project3": 1.9669831021993696,
+   "cap_project3": 239627.87899764537,
+   "return_multiplier_project4": 1.3402505165179919,
+   "cap_project4": 65547.94998117816
+  },
+  {
+   "initial_fund": 437163.9216620344,
+   "return_rate_project1": 0.16829727255631338,
+   "return_multiplier_project2": 1.0927458433801478,
+   "cap_project2": 89507.4565250196,
+   "return_multiplier_project3": 2.016993239616952,
+   "cap_project3": 220745.20627337822,
+   "return_multiplier_project4": 1.80712827327438,
+   "cap_project4": 122973.17866938177
+  },
+  {
+   "initial_fund": 310868.4274364102,
+   "return_rate_project1": 0.4865578819896853,
+   "return_multiplier_project2": 1.3785343772083536,
+   "cap_project2": 157806.09469098403,
+   "return_multiplier_project3": 1.995285597103594,
+   "cap_project3": 223703.95047284922,
+   "return_multiplier_project4": 1.8617069003107773,
+   "cap_project4": 107735.2145256762
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   580000.0,
+   635951.4936663761,
+   384576.6960721932,
+   546616.0593566322,
+   919616.4062077964,
+   1061643.2888430234
+  ],
+  "B-structured": [
+   580000.0,
+   635951.4936663761,
+   384576.6960721932,
+   546616.0593566322,
+   919616.4062077964,
+   1061643.2888430234
+  ],
+  "C-direct": [
+   580000.0,
+   635951.4936663761,
+   384576.6960721932,
+   546616.0593566322,
+   919616.4062077964,
+   1061643.2888430234
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

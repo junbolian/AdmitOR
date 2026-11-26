@@ -1,0 +1,283 @@
+{
+ "spec": {
+  "raw_material_cost_per_lb": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "lab_hours_per_lb_raw": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "regular_brute_oz_per_lb": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.5,
+    "integer": false
+   }
+  },
+  "regular_chanelle_oz_per_lb": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 5.5,
+    "integer": false
+   }
+  },
+  "regular_brute_price_per_oz": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "regular_chanelle_price_per_oz": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 9.0,
+    "integer": false
+   }
+  },
+  "luxury_brute_price_per_oz": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 26.0,
+    "integer": false
+   }
+  },
+  "luxury_chanelle_price_per_oz": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 21.0,
+    "integer": false
+   }
+  },
+  "brute_further_lab_hours_per_oz": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "chanelle_further_lab_hours_per_oz": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.5,
+    "integer": false
+   }
+  },
+  "brute_further_cost_per_oz": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.5,
+    "integer": false
+   }
+  },
+  "chanelle_further_cost_per_oz": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.5,
+    "integer": false
+   }
+  },
+  "lab_hours_capacity": {
+   "base": 6000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3000.0,
+    "hi": 12000.0,
+    "integer": false
+   }
+  },
+  "raw_material_capacity_lb": {
+   "base": 4000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2000.0,
+    "hi": 8000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "raw_material_cost_per_lb": {
+    "meaning": "Purchase cost of raw material per pound",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 5.0,
+     "integer": false
+    }
+   },
+   "lab_hours_per_lb_raw": {
+    "meaning": "Laboratory hours to process 1 lb of raw material",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2.0,
+     "integer": false
+    }
+   },
+   "regular_brute_oz_per_lb": {
+    "meaning": "Ounces of Regular Brute yielded per pound of processed raw material",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.0,
+     "hi": 4.5,
+     "integer": false
+    }
+   },
+   "regular_chanelle_oz_per_lb": {
+    "meaning": "Ounces of Regular Chanelle yielded per pound of processed raw material",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 5.5,
+     "integer": false
+    }
+   },
+   "regular_brute_price_per_oz": {
+    "meaning": "Selling price of Regular Brute per ounce",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4.0,
+     "hi": 10.0,
+     "integer": false
+    }
+   },
+   "regular_chanelle_price_per_oz": {
+    "meaning": "Selling price of Regular Chanelle per ounce",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 9.0,
+     "integer": false
+    }
+   },
+   "luxury_brute_price_per_oz": {
+    "meaning": "Selling price of Luxury Brute per ounce",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10.0,
+     "hi": 26.0,
+     "integer": false
+    }
+   },
+   "luxury_chanelle_price_per_oz": {
+    "meaning": "Selling price of Luxury Chanelle per ounce",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8.0,
+     "hi": 21.0,
+     "integer": false
+    }
+   },
+   "brute_further_lab_hours_per_oz": {
+    "meaning": "Additional laboratory hours to further process 1 oz Regular Brute into Luxury Brute",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 5.0,
+     "integer": false
+    }
+   },
+   "chanelle_further_lab_hours_per_oz": {
+    "meaning": "Additional laboratory hours to further process 1 oz Regular Chanelle into Luxury Chanelle",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 3.5,
+     "integer": false
+    }
+   },
+   "brute_further_cost_per_oz": {
+    "meaning": "Additional processing cost to convert 1 oz Regular Brute to Luxury Brute",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.0,
+     "hi": 6.5,
+     "integer": false
+    }
+   },
+   "chanelle_further_cost_per_oz": {
+    "meaning": "Additional processing cost to convert 1 oz Regular Chanelle to Luxury Chanelle",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.0,
+     "hi": 6.5,
+     "integer": false
+    }
+   },
+   "lab_hours_capacity": {
+    "meaning": "Annual available laboratory hours",
+    "base": 6000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3000,
+     "hi": 12000,
+     "integer": false
+    }
+   },
+   "raw_material_capacity_lb": {
+    "meaning": "Maximum annual raw material purchase in pounds",
+    "base": 4000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2000,
+     "hi": 8000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

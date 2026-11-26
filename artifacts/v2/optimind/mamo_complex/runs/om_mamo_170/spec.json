@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "protein_content": {
+   "base": [
+    3,
+    17,
+    16,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_content": {
+   "base": [
+    16,
+    24,
+    27,
+    16,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_content": {
+   "base": [
+    96,
+    182,
+    114,
+    208,
+    236
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "food_cost": {
+   "base": [
+    9,
+    9,
+    2,
+    9,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_target": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_target": {
+   "base": 180,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_target": {
+   "base": 1796,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_content": {
+    "meaning": "protein grams per food item (Food_1..Food_5)",
+    "base": [
+     3,
+     17,
+     16,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_content": {
+    "meaning": "carb grams per food item (Food_1..Food_5)",
+    "base": [
+     16,
+     24,
+     27,
+     16,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_content": {
+    "meaning": "calories per food item (Food_1..Food_5)",
+    "base": [
+     96,
+     182,
+     114,
+     208,
+     236
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "food_cost": {
+    "meaning": "cost in dollars per food item (Food_1..Food_5)",
+    "base": [
+     9,
+     9,
+     2,
+     9,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_target": {
+    "meaning": "minimum weekly protein requirement (grams)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_target": {
+    "meaning": "minimum weekly carbohydrate requirement (grams)",
+    "base": 180,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_target": {
+    "meaning": "minimum weekly calorie requirement",
+    "base": 1796,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

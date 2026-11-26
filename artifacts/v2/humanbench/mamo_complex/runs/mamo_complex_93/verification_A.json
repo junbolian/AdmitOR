@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_93",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"transport_costs\", \"evidence\": \"From Center 1 to Stores: $2 to $5, varying per store\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "From Center 1 to Stores: $2 to $5, varying per store"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

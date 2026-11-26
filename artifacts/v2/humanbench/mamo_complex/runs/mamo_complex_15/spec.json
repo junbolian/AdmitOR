@@ -1,0 +1,352 @@
+{
+ "spec": {
+  "opening_costs": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_costs": {
+   "base": [
+    [
+     3,
+     3,
+     5,
+     4,
+     3,
+     5,
+     2,
+     4,
+     2
+    ],
+    [
+     4,
+     5,
+     1,
+     4,
+     2,
+     5,
+     4,
+     1,
+     1
+    ],
+    [
+     3,
+     3,
+     2,
+     4,
+     4,
+     3,
+     4,
+     4,
+     1
+    ],
+    [
+     3,
+     5,
+     3,
+     5,
+     1,
+     2,
+     4,
+     1,
+     4
+    ],
+    [
+     2,
+     2,
+     1,
+     2,
+     5,
+     2,
+     4,
+     4,
+     4
+    ],
+    [
+     4,
+     5,
+     3,
+     1,
+     4,
+     2,
+     4,
+     2,
+     2
+    ],
+    [
+     4,
+     5,
+     2,
+     2,
+     4,
+     2,
+     2,
+     4,
+     4
+    ],
+    [
+     1,
+     5,
+     5,
+     2,
+     5,
+     2,
+     1,
+     4,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "demands": {
+   "base": [
+    779,
+    892,
+    440,
+    556,
+    414,
+    464,
+    920,
+    743,
+    528
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacities": {
+   "base": [
+    1447,
+    1886,
+    1962,
+    1392,
+    1191,
+    1218,
+    1088,
+    1178
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_centers": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_stores": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_centers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_stores] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "opening_costs": {
+    "meaning": "Fixed cost to open each distribution center (in dollars), ordered by center 1..8",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000,
+     182000,
+     186000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_costs": {
+    "meaning": "Unit transportation cost from each distribution center to each retail store (in dollars); rows = centers 1..8, columns = stores 1..9",
+    "base": [
+     [
+      3,
+      3,
+      5,
+      4,
+      3,
+      5,
+      2,
+      4,
+      2
+     ],
+     [
+      4,
+      5,
+      1,
+      4,
+      2,
+      5,
+      4,
+      1,
+      1
+     ],
+     [
+      3,
+      3,
+      2,
+      4,
+      4,
+      3,
+      4,
+      4,
+      1
+     ],
+     [
+      3,
+      5,
+      3,
+      5,
+      1,
+      2,
+      4,
+      1,
+      4
+     ],
+     [
+      2,
+      2,
+      1,
+      2,
+      5,
+      2,
+      4,
+      4,
+      4
+     ],
+     [
+      4,
+      5,
+      3,
+      1,
+      4,
+      2,
+      4,
+      2,
+      2
+     ],
+     [
+      4,
+      5,
+      2,
+      2,
+      4,
+      2,
+      2,
+      4,
+      4
+     ],
+     [
+      1,
+      5,
+      5,
+      2,
+      5,
+      2,
+      1,
+      4,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "demands": {
+    "meaning": "Demand of each retail store (in units), ordered by store 1..9",
+    "base": [
+     779,
+     892,
+     440,
+     556,
+     414,
+     464,
+     920,
+     743,
+     528
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacities": {
+    "meaning": "Supply capacity of each distribution center (in units), ordered by center 1..8",
+    "base": [
+     1447,
+     1886,
+     1962,
+     1392,
+     1191,
+     1218,
+     1088,
+     1178
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_centers": {
+    "meaning": "Number of potential distribution centers (index-set size; frozen)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_stores": {
+    "meaning": "Number of retail stores (index-set size; frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

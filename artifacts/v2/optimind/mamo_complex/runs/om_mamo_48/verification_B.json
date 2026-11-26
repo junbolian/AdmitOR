@@ -1,0 +1,83 @@
+{
+ "sample_id": "om_mamo_48",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"cap_7_1\",\"extracted\":5,\"stated\":{\"from\":1,\"to\":7,\"capacity\":5},\"evidence\":\"From Data Center 7 (Destination): Can receive return data flow from Center 1 (5 TB/h)\"},{\"parameter\":\"cap_7_2\",\"extracted\":8,\"stated\":{\"from\":2,\"to\":7,\"capacity\":8},\"evidence\":\"Can receive return data flow from ... Center 2 (8 TB/h)\"},{\"parameter\":\"cap_7_3\",\"extracted\":17,\"stated\":{\"from\":3,\"to\":7,\"capacity\":17},\"evidence\":\"Can receive return data flow from ... Center 3 (17 TB/h)\"},{\"parameter\":\"cap_7_4\",\"extracted\":2,\"stated\":{\"from\":4,\"to\":7,\"capacity\":2},\"evidence\":\"Can receive return data flow from ... Center 4 (2 TB/h)\"},{\"parameter\":\"cap_7_5\",\"extracted\":5,\"stated\":{\"from\":5,\"to\":7,\"capacity\":5},\"evidence\":\"Can receive return data flow from ... Center 5 (5 TB/h)\"},{\"parameter\":\"cap_7_6\",\"extracted\":4,\"stated\":{\"from\":6,\"to\":7,\"capacity\":4},\"evidence\":\"Can receive return data flow from ... Center 6 (4 TB/h)\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "cap_7_1",
+   "extracted": 5,
+   "stated": {
+    "from": 1,
+    "to": 7,
+    "capacity": 5
+   },
+   "evidence": "From Data Center 7 (Destination): Can receive return data flow from Center 1 (5 TB/h)"
+  },
+  {
+   "parameter": "cap_7_2",
+   "extracted": 8,
+   "stated": {
+    "from": 2,
+    "to": 7,
+    "capacity": 8
+   },
+   "evidence": "Can receive return data flow from ... Center 2 (8 TB/h)"
+  },
+  {
+   "parameter": "cap_7_3",
+   "extracted": 17,
+   "stated": {
+    "from": 3,
+    "to": 7,
+    "capacity": 17
+   },
+   "evidence": "Can receive return data flow from ... Center 3 (17 TB/h)"
+  },
+  {
+   "parameter": "cap_7_4",
+   "extracted": 2,
+   "stated": {
+    "from": 4,
+    "to": 7,
+    "capacity": 2
+   },
+   "evidence": "Can receive return data flow from ... Center 4 (2 TB/h)"
+  },
+  {
+   "parameter": "cap_7_5",
+   "extracted": 5,
+   "stated": {
+    "from": 5,
+    "to": 7,
+    "capacity": 5
+   },
+   "evidence": "Can receive return data flow from ... Center 5 (5 TB/h)"
+  },
+  {
+   "parameter": "cap_7_6",
+   "extracted": 4,
+   "stated": {
+    "from": 6,
+    "to": 7,
+    "capacity": 4
+   },
+   "evidence": "Can receive return data flow from ... Center 6 (4 TB/h)"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

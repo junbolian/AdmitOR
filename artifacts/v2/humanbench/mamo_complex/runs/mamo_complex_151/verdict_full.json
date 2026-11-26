@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_E_to_F": 62,
+   "cost_E_to_G": 51,
+   "cost_E_to_H": 50,
+   "cost_F_to_E": 62,
+   "cost_F_to_G": 42,
+   "cost_F_to_H": 69,
+   "cost_G_to_E": 51,
+   "cost_G_to_F": 42,
+   "cost_G_to_H": 11,
+   "cost_H_to_E": 50,
+   "cost_H_to_F": 69,
+   "cost_H_to_G": 11
+  },
+  {
+   "cost_E_to_F": 70.64446150438879,
+   "cost_E_to_G": 26.775548516356015,
+   "cost_E_to_H": 38.75146591845596,
+   "cost_F_to_E": 44.83906576522701,
+   "cost_F_to_G": 51.93179099488852,
+   "cost_F_to_H": 81.19226463218088,
+   "cost_G_to_E": 71.00115795294711,
+   "cost_G_to_F": 24.651430970435477,
+   "cost_G_to_H": 25,
+   "cost_H_to_E": 26.489860971903518,
+   "cost_H_to_F": 49.58602026144863,
+   "cost_H_to_G": 30
+  },
+  {
+   "cost_E_to_F": 32.645230120399546,
+   "cost_E_to_G": 35.64072018501907,
+   "cost_E_to_H": 57.49422188897616,
+   "cost_F_to_E": 64.78637179739944,
+   "cost_F_to_G": 30.25850612570926,
+   "cost_F_to_H": 75.1593321874377,
+   "cost_G_to_E": 66.78095329056916,
+   "cost_G_to_F": 21.272947906478564,
+   "cost_G_to_H": 48,
+   "cost_H_to_E": 59.906969749411346,
+   "cost_H_to_F": 57.97728563974144,
+   "cost_H_to_G": 9
+  },
+  {
+   "cost_E_to_F": 90.34721047682044,
+   "cost_E_to_G": 42.666321800743965,
+   "cost_E_to_H": 29.637292169007395,
+   "cost_F_to_E": 36.99641536367477,
+   "cost_F_to_G": 56.59476338659331,
+   "cost_F_to_H": 76.15709616431549,
+   "cost_G_to_E": 66.66354193699338,
+   "cost_G_to_F": 51.64873504114035,
+   "cost_G_to_H": 32,
+   "cost_H_to_E": 73.65578819896854,
+   "cost_H_to_F": 60.61887202737639,
+   "cost_H_to_G": 33
+  },
+  {
+   "cost_E_to_F": 82.42308918368568,
+   "cost_E_to_G": 57.04450737057655,
+   "cost_E_to_H": 68.08534501553886,
+   "cost_F_to_E": 66.79583300591925,
+   "cost_F_to_G": 50.59201712102679,
+   "cost_F_to_H": 37.66188247224069,
+   "cost_G_to_E": 37.12281205822889,
+   "cost_G_to_F": 33.1542944712885,
+   "cost_G_to_H": 5,
+   "cost_H_to_E": 36.639544318051506,
+   "cost_H_to_F": 41.46909862927131,
+   "cost_H_to_G": 17
+  },
+  {
+   "cost_E_to_F": 70.41243554439282,
+   "cost_E_to_G": 44.1064411274743,
+   "cost_E_to_H": 43.50904835584413,
+   "cost_F_to_E": 43.98943590783224,
+   "cost_F_to_G": 32.21306852606276,
+   "cost_F_to_H": 99.12916655216209,
+   "cost_G_to_E": 58.549804647576266,
+   "cost_G_to_F": 46.58350223801351,
+   "cost_G_to_H": 10,
+   "cost_H_to_E": 61.456339897517466,
+   "cost_H_to_F": 45.77477206957306,
+   "cost_H_to_G": 23
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   165.0,
+   138.24196265411845,
+   152.55354159285417,
+   151.28244257382252,
+   164.50022863215725,
+   143.8706491048796
+  ],
+  "B-structured": [
+   165.0,
+   138.24196265411845,
+   152.55354159285417,
+   151.28244257382252,
+   164.50022863215725,
+   143.8706491048796
+  ],
+  "C-direct": [
+   165.0,
+   138.24196265411845,
+   152.55354159285417,
+   151.28244257382252,
+   164.50022863215725,
+   143.8706491048796
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

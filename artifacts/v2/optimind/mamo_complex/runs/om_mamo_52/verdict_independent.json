@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assembly_hours_product1": 0.25,
+   "testing_hours_product1": 0.125,
+   "material_cost_product1": 1.2,
+   "assembly_hours_product2": 0.3333333333,
+   "testing_hours_product2": 0.3333333333,
+   "material_cost_product2": 0.9,
+   "regular_assembly_capacity": 90,
+   "testing_capacity": 80,
+   "overtime_assembly_capacity": 50,
+   "overtime_cost_per_hour": 7,
+   "market_value_product1": 9,
+   "market_value_product2": 8
+  },
+  {
+   "assembly_hours_product1": 0.27091401976868257,
+   "testing_hours_product1": 0.08937580664170001,
+   "material_cost_product1": 0.9840281456343544,
+   "assembly_hours_product2": 0.27797548093530033,
+   "testing_hours_product2": 0.380627576128073,
+   "material_cost_product2": 1.027223630944496,
+   "regular_assembly_capacity": 107.64808054671805,
+   "testing_capacity": 63.47755330517664,
+   "overtime_assembly_capacity": 46.09609098426352,
+   "overtime_cost_per_hour": 3.7085805360664925,
+   "market_value_product1": 7.480645063939458,
+   "market_value_product2": 8.02570538289614
+  },
+  {
+   "assembly_hours_product1": 0.17898039545257954,
+   "testing_hours_product1": 0.10241282380149863,
+   "material_cost_product1": 1.3438890602683424,
+   "assembly_hours_product2": 0.3423216294197445,
+   "testing_hours_product2": 0.2774214577137305,
+   "material_cost_product2": 0.9642712923906543,
+   "regular_assembly_capacity": 103.92437055050219,
+   "testing_capacity": 60.259950387122444,
+   "overtime_assembly_capacity": 65.2909625916404,
+   "overtime_cost_per_hour": 8.386975764917588,
+   "market_value_product1": 8.137352789197156,
+   "market_value_product2": 6.3463015990965514
+  },
+  {
+   "assembly_hours_product1": 0.3185819608310172,
+   "testing_hours_product1": 0.112744590883447,
+   "material_cost_product1": 0.8090360096449419,
+   "assembly_hours_product2": 0.25267660867475844,
+   "testing_hours_product2": 0.40283220656254204,
+   "material_cost_product2": 0.9746827425841614,
+   "regular_assembly_capacity": 103.8207722973471,
+   "testing_capacity": 89.18927146775272,
+   "overtime_assembly_capacity": 51.81140457273503,
+   "overtime_cost_per_hour": 10.311810347855594,
+   "market_value_product1": 8.344085636925108,
+   "market_value_product2": 8.249795030111489
+  },
+  {
+   "assembly_hours_product1": 0.29941069963794925,
+   "testing_hours_product1": 0.13388898142731845,
+   "material_cost_product1": 1.5472386242983458,
+   "assembly_hours_product2": 0.3488037623498053,
+   "testing_hours_product2": 0.3742477005388932,
+   "material_cost_product2": 0.5729935562320768,
+   "regular_assembly_capacity": 77.7554224043196,
+   "testing_capacity": 71.57551854408428,
+   "overtime_assembly_capacity": 28.989598846181373,
+   "overtime_cost_per_hour": 5.129536204527211,
+   "market_value_product1": 6.845407718812536,
+   "market_value_product2": 6.934273294928442
+  },
+  {
+   "assembly_hours_product1": 0.27035266663966,
+   "testing_hours_product1": 0.11486241342275631,
+   "material_cost_product1": 1.0753737284322074,
+   "assembly_hours_product2": 0.27523473946010735,
+   "testing_hours_product2": 0.28672889771448307,
+   "material_cost_product2": 1.2143913031529956,
+   "regular_assembly_capacity": 96.6615923360967,
+   "testing_capacity": 84.36524022667953,
+   "overtime_assembly_capacity": 33.556932409904846,
+   "overtime_cost_per_hour": 8.603887585652444,
+   "market_value_product1": 7.182373466314413,
+   "market_value_product2": 7.4213861204367095
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4018.0,
+   3530.5721477323127,
+   3985.6481547156363,
+   3288.0849007249735,
+   1760.8381718815483,
+   2652.787795438172
+  ],
+  "B-structured": [
+   4018.0,
+   3530.5721477323127,
+   3985.6481547156363,
+   3288.0849007249735,
+   1760.8381718815483,
+   2652.787795438172
+  ],
+  "C-direct": [
+   4018.0,
+   3530.572147732313,
+   3985.648154715636,
+   3288.0849007249735,
+   1760.8381718815485,
+   2652.787795438172
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

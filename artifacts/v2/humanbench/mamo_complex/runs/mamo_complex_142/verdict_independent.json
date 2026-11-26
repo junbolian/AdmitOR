@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "travel_cost_c1_c2": 29,
+   "travel_cost_c1_c3": 97,
+   "travel_cost_c1_c4": 72,
+   "travel_cost_c2_c1": 29,
+   "travel_cost_c2_c3": 69,
+   "travel_cost_c2_c4": 52,
+   "travel_cost_c3_c1": 97,
+   "travel_cost_c3_c2": 69,
+   "travel_cost_c3_c4": 91,
+   "travel_cost_c4_c1": 72,
+   "travel_cost_c4_c2": 52,
+   "travel_cost_c4_c3": 91
+  },
+  {
+   "travel_cost_c1_c2": 33.04337715527863,
+   "travel_cost_c1_c3": 50.926043256598696,
+   "travel_cost_c1_c4": 55.80211092257659,
+   "travel_cost_c2_c1": 20.97311140631586,
+   "travel_cost_c2_c3": 85.31651377731686,
+   "travel_cost_c2_c4": 61.18837334599139,
+   "travel_cost_c3_c1": 135.04141806737002,
+   "travel_cost_c3_c2": 40.49877945142971,
+   "travel_cost_c3_c4": 83.89488559135961,
+   "travel_cost_c4_c1": 38.14539979954107,
+   "travel_cost_c4_c2": 37.36917468978737,
+   "travel_cost_c4_c3": 91.48733121740597
+  },
+  {
+   "travel_cost_c1_c2": 15.269543120832045,
+   "travel_cost_c1_c3": 67.7872521166049,
+   "travel_cost_c1_c4": 82.79167952012567,
+   "travel_cost_c2_c1": 30.303302937493285,
+   "travel_cost_c2_c3": 49.71040292080807,
+   "travel_cost_c2_c4": 56.641815561547254,
+   "travel_cost_c3_c1": 127.01475429774918,
+   "travel_cost_c3_c2": 34.94841441778621,
+   "travel_cost_c3_c4": 118.82955191678553,
+   "travel_cost_c4_c1": 86.26603643915233,
+   "travel_cost_c4_c2": 43.693026858935575,
+   "travel_cost_c4_c3": 59.64863448287212
+  },
+  {
+   "travel_cost_c1_c2": 42.25917909399666,
+   "travel_cost_c1_c3": 81.1496708759248,
+   "travel_cost_c1_c4": 42.67770072337065,
+   "travel_cost_c2_c1": 17.304774928170456,
+   "travel_cost_c2_c3": 92.97711127797471,
+   "travel_cost_c2_c4": 57.39375363107833,
+   "travel_cost_c3_c1": 126.79144250761487,
+   "travel_cost_c3_c2": 84.85149328187343,
+   "travel_cost_c3_c4": 94.29675632237776,
+   "travel_cost_c4_c1": 106.06433500651468,
+   "travel_cost_c4_c2": 45.68378761483438,
+   "travel_cost_c4_c3": 95.73569744586365
+  },
+  {
+   "travel_cost_c1_c2": 38.55273526333685,
+   "travel_cost_c1_c3": 108.49641597933187,
+   "travel_cost_c1_c4": 98.04289682237597,
+   "travel_cost_c2_c1": 31.2432122124461,
+   "travel_cost_c2_c3": 83.11545669882973,
+   "travel_cost_c2_c4": 28.382867950094436,
+   "travel_cost_c3_c1": 70.60613273820005,
+   "travel_cost_c3_c2": 54.46776948854539,
+   "travel_cost_c3_c4": 52.7610699000501,
+   "travel_cost_c4_c1": 52.760943817994175,
+   "travel_cost_c4_c2": 31.252074329305913,
+   "travel_cost_c4_c3": 70.79559788301839
+  },
+  {
+   "travel_cost_c1_c2": 32.934848883667605,
+   "travel_cost_c1_c3": 83.88872136009817,
+   "travel_cost_c1_c4": 62.65302963241555,
+   "travel_cost_c2_c1": 20.57570389237314,
+   "travel_cost_c2_c3": 52.921469721388824,
+   "travel_cost_c2_c4": 74.7060385610497,
+   "travel_cost_c3_c1": 111.35943236891956,
+   "travel_cost_c3_c2": 76.5300393910222,
+   "travel_cost_c3_c4": 61.07361698602683,
+   "travel_cost_c4_c1": 88.49712945242516,
+   "travel_cost_c4_c2": 34.49692967562028,
+   "travel_cost_c4_c3": 80.03044519994594
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   261.0,
+   190.75859585356085,
+   207.6920313582773,
+   238.4349897413074,
+   208.3373338346497,
+   200.03497191411842
+  ],
+  "B-structured": [
+   261.0,
+   190.75859585356085,
+   207.6920313582773,
+   238.4349897413074,
+   208.3373338346497,
+   200.03497191411842
+  ],
+  "C-direct": [
+   261.0,
+   190.75859585356085,
+   207.69203135827726,
+   238.4349897413074,
+   208.3373338346497,
+   200.03497191411844
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,152 @@
+{
+ "spec": {
+  "req_1": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "req_2": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "req_3": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "req_4": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 110.0,
+    "integer": true
+   }
+  },
+  "req_5": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "req_6": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "shift_length": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[shift_length] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "req_1": {
+    "meaning": "Number required during shift 1 (6:00-10:00)",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "req_2": {
+    "meaning": "Number required during shift 2 (10:00-14:00)",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "req_3": {
+    "meaning": "Number required during shift 3 (14:00-18:00)",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "req_4": {
+    "meaning": "Number required during shift 4 (18:00-22:00)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 110,
+     "integer": true
+    }
+   },
+   "req_5": {
+    "meaning": "Number required during shift 5 (22:00-2:00)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "req_6": {
+    "meaning": "Number required during shift 6 (2:00-6:00)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "shift_length": {
+    "meaning": "Continuous working duration per start (hours)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

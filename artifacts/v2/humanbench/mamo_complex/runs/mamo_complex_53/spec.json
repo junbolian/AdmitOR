@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "protein": {
+   "base": [
+    14,
+    11,
+    8,
+    1,
+    16,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carbs": {
+   "base": [
+    1,
+    6,
+    12,
+    17,
+    11,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    164,
+    210,
+    98,
+    92,
+    211,
+    211
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    6,
+    2,
+    9,
+    3,
+    7,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_target": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 120.0,
+    "integer": false
+   }
+  },
+  "carb_target": {
+   "base": 117,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  },
+  "calorie_target": {
+   "base": 1837,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1000.0,
+    "hi": 3000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein": {
+    "meaning": "Protein content (g) per unit of each food: Chicken, Oats, Tofu, Rice, Beef, Salmon",
+    "base": [
+     14,
+     11,
+     8,
+     1,
+     16,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carbs": {
+    "meaning": "Carbohydrate content (g) per unit of each food: Chicken, Oats, Tofu, Rice, Beef, Salmon",
+    "base": [
+     1,
+     6,
+     12,
+     17,
+     11,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "Calorie content per unit of each food: Chicken, Oats, Tofu, Rice, Beef, Salmon",
+    "base": [
+     164,
+     210,
+     98,
+     92,
+     211,
+     211
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "Price ($) per unit of each food: Chicken, Oats, Tofu, Rice, Beef, Salmon",
+    "base": [
+     6,
+     2,
+     9,
+     3,
+     7,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_target": {
+    "meaning": "Minimum required protein intake (g)",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 120,
+     "integer": false
+    }
+   },
+   "carb_target": {
+    "meaning": "Minimum required carbohydrate intake (g)",
+    "base": 117,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 200,
+     "integer": false
+    }
+   },
+   "calorie_target": {
+    "meaning": "Minimum required calorie intake",
+    "base": 1837,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1000,
+     "hi": 3000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

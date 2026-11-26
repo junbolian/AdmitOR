@@ -1,0 +1,101 @@
+{
+ "spec": {
+  "initial_inventory": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "warehouse_capacity": {
+   "base": 500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 800.0,
+    "integer": true
+   }
+  },
+  "purchase_price": {
+   "base": [
+    8,
+    6,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "selling_price": {
+   "base": [
+    9,
+    8,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_inventory": {
+    "meaning": "Units of product in stock at the end of this year (start of month 1)",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "warehouse_capacity": {
+    "meaning": "Maximum units the warehouse can store",
+    "base": 500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 800,
+     "integer": true
+    }
+   },
+   "purchase_price": {
+    "meaning": "Unit purchase price for each month (months 1, 2, 3)",
+    "base": [
+     8,
+     6,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "selling_price": {
+    "meaning": "Unit selling price for each month (months 1, 2, 3)",
+    "base": [
+     9,
+     8,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

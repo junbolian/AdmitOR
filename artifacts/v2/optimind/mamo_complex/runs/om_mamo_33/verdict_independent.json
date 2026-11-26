@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "price_meaties": 2.8,
+   "price_yummies": 2.0,
+   "cereal_per_meaties": 2.0,
+   "meat_per_meaties": 3.0,
+   "cereal_per_yummies": 3.0,
+   "meat_per_yummies": 1.5,
+   "varcost_meaties": 0.25,
+   "varcost_yummies": 0.2,
+   "cereal_price": 0.2,
+   "meat_price": 0.5,
+   "cereal_avail": 400000,
+   "meat_avail": 300000,
+   "meaties_capacity": 90000
+  },
+  {
+   "price_meaties": 3.078853596915767,
+   "price_yummies": 1.240017208356267,
+   "cereal_per_meaties": 1.6875732959227983,
+   "meat_per_meaties": 2.169632214446468,
+   "cereal_per_yummies": 3.709413642492037,
+   "meat_per_yummies": 1.9342241029900948,
+   "varcost_meaties": 0.7245256973933918,
+   "varcost_yummies": 0.13390207623023803,
+   "cereal_price": 0.2398648188583717,
+   "meat_price": 0.22085805360664926,
+   "cereal_avail": 326523,
+   "meat_avail": 331607,
+   "meaties_capacity": 42919
+  },
+  {
+   "price_meaties": 2.197675301373297,
+   "price_yummies": 2.2398151004472373,
+   "cereal_per_meaties": 2.3623537015080416,
+   "meat_per_meaties": 2.16132186612209,
+   "cereal_per_yummies": 3.267797051627726,
+   "meat_per_yummies": 2.1665032991861963,
+   "varcost_meaties": 0.10454913177464271,
+   "varcost_yummies": 0.5796079361363409,
+   "cereal_price": 0.3641627277447021,
+   "meat_price": 0.4381753615625943,
+   "cereal_avail": 304418,
+   "meat_avail": 467164,
+   "meaties_capacity": 77025
+  },
+  {
+   "price_meaties": 1.9854916867602959,
+   "price_yummies": 1.3547462029335424,
+   "cereal_per_meaties": 3.1187359158686494,
+   "meat_per_meaties": 3.311178094100673,
+   "cereal_per_yummies": 3.9213848198231407,
+   "meat_per_yummies": 2.0270306267141813,
+   "varcost_meaties": 0.47535966401829055,
+   "varcost_yummies": 0.6833317736672098,
+   "cereal_price": 0.2203404697437591,
+   "meat_price": 0.5864284418912589,
+   "cereal_avail": 540292,
+   "meat_avail": 365556,
+   "meaties_capacity": 134788
+  },
+  {
+   "price_meaties": 2.954704290513524,
+   "price_yummies": 2.3273149379438776,
+   "cereal_per_meaties": 1.1145609591391556,
+   "meat_per_meaties": 2.183694826954641,
+   "cereal_per_yummies": 2.3681638908063216,
+   "meat_per_yummies": 0.8896359596163481,
+   "varcost_meaties": 0.26295362045272114,
+   "varcost_yummies": 0.14262088623403205,
+   "cereal_price": 0.17508812139954144,
+   "meat_price": 0.6449791109850801,
+   "cereal_avail": 377691,
+   "meat_avail": 291054,
+   "meaties_capacity": 63046
+  },
+  {
+   "price_meaties": 2.3339556440982268,
+   "price_yummies": 2.69864734033999,
+   "cereal_per_meaties": 2.620088463116484,
+   "meat_per_meaties": 3.3273930170009645,
+   "cereal_per_yummies": 2.013415944594291,
+   "meat_per_yummies": 2.025971896413111,
+   "varcost_meaties": 0.21438174563334988,
+   "varcost_yummies": 0.3152623738897416,
+   "cereal_price": 0.49528550778646785,
+   "meat_price": 0.647999831897865,
+   "cereal_avail": 444932,
+   "meat_avail": 385384,
+   "meaties_capacity": 132714
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   77499.99999999999,
+   63106.28163962845,
+   22014.285069915277,
+   -0.0,
+   223896.65470469446,
+   13950.824138877266
+  ],
+  "B-structured": [
+   77499.99999999999,
+   63106.28163962845,
+   22014.285069915277,
+   -0.0,
+   223896.65470469446,
+   13950.824138877266
+  ],
+  "C-direct": [
+   77499.99999999999,
+   63106.28163962845,
+   22014.28506991528,
+   -0.0,
+   223896.65470469446,
+   13950.824138877257
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

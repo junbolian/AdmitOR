@@ -1,0 +1,235 @@
+{
+ "spec": {
+  "container_capacity": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "container_min_load": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quantity_A": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quantity_B": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quantity_C": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quantity_D": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quantity_E": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "weight_A": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "weight_B": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "weight_C": {
+   "base": 0.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "weight_D": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "weight_E": {
+   "base": 0.65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_D_per_container": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "A_requires_C_ratio": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "container_capacity": {
+    "meaning": "maximum weight (tons) a single container can hold",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "container_min_load": {
+    "meaning": "minimum weight (tons) that must be loaded into any used container",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quantity_A": {
+    "meaning": "number of units of good A to be transported",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quantity_B": {
+    "meaning": "number of units of good B to be transported",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quantity_C": {
+    "meaning": "number of units of good C to be transported",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quantity_D": {
+    "meaning": "number of units of good D to be transported",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quantity_E": {
+    "meaning": "number of units of good E to be transported",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "weight_A": {
+    "meaning": "weight (tons) per unit of good A",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "weight_B": {
+    "meaning": "weight (tons) per unit of good B",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "weight_C": {
+    "meaning": "weight (tons) per unit of good C",
+    "base": 0.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "weight_D": {
+    "meaning": "weight (tons) per unit of good D",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "weight_E": {
+    "meaning": "weight (tons) per unit of good E",
+    "base": 0.65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_D_per_container": {
+    "meaning": "minimum number of units of good D that must be loaded in each used container",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "A_requires_C_ratio": {
+    "meaning": "minimum units of C that must be loaded for every unit of A loaded (A => at least this many C)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

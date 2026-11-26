@@ -1,0 +1,132 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "req_1": 60,
+   "req_2": 70,
+   "req_3": 60,
+   "req_4": 50,
+   "req_5": 20,
+   "req_6": 30,
+   "shift_length": 8
+  },
+  {
+   "req_1": 88,
+   "req_2": 32,
+   "req_3": 55,
+   "req_4": 40,
+   "req_5": 60,
+   "req_6": 64,
+   "shift_length": 8
+  },
+  {
+   "req_1": 38,
+   "req_2": 68,
+   "req_3": 33,
+   "req_4": 40,
+   "req_5": 43,
+   "req_6": 12,
+   "shift_length": 8
+  },
+  {
+   "req_1": 88,
+   "req_2": 79,
+   "req_3": 50,
+   "req_4": 73,
+   "req_5": 66,
+   "req_6": 11,
+   "shift_length": 8
+  },
+  {
+   "req_1": 93,
+   "req_2": 61,
+   "req_3": 44,
+   "req_4": 106,
+   "req_5": 30,
+   "req_6": 17,
+   "shift_length": 8
+  },
+  {
+   "req_1": 106,
+   "req_2": 84,
+   "req_3": 103,
+   "req_4": 86,
+   "req_5": 45,
+   "req_6": 88,
+   "shift_length": 8
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   70.0,
+   88.0,
+   68.0,
+   88.0,
+   106.0,
+   106.0
+  ],
+  "B-structured": [
+   150.0,
+   203.0,
+   120.0,
+   204.0,
+   199.0,
+   258.0
+  ],
+  "C-direct": [
+   150.0,
+   203.0,
+   120.0,
+   204.0,
+   199.0,
+   258.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 152 on instance 5 (params: {'req_1': 106, 'req_2': 84, 'req_3': 103, 'req_4': 86, 'req_5': 45, 'req_6': 88, 'shift_length': 8})"
+ },
+ "disagreements": [],
+ "notes": []
+}

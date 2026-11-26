@@ -1,0 +1,41 @@
+{
+ "sample_id": "om_industryor_17",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"cost_A\",\n      \"extracted\": 50,\n      \"stated\": 50,\n      \"evidence\": \"The cost of ordering each chair from manufacturer A is $50\"\n    },\n    {\n      \"parameter\": \"cost_B\",\n      \"extracted\": 45,\n      \"stated\": 45,\n      \"evidence\": \"from manufacturer B is $45\"\n    },\n    {\n      \"parameter\": \"cost_C\",\n      \"extracted\": 40,\n      \"stated\": 40,\n      \"evidence\": \"from manufacturer C is $40\"\n    }\n  ],\n  \"not_stated\": []\n}\n```\n\nWait, I need to reconsider. The statement says \"cost of ordering each **chair**\" but the extracted parameters are labeled \"cost per **order**\". Let me check if this is a mismatch.‍‍‌⁠‌‌‍‌​​‌‌​⁠​‌​⁠​​​⁠​​​⁠​​​⁠​‌‌​⁠⁠\n\nThe statement clearly says: \"The cost of ordering each chair from manufacturer A is $50\" - this is cost per chair, not cost per order.\n\nThe extracted value shows \"cost per order from manufacturer A | 50\" - this interprets it as cost per order.\n\nThis is a mismatch in what the cost represents (per chair vs per order).\n\n```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"cost_A\",\n      \"extracted\": \"50 per order\",\n      \"stated\": \"50 per chair\",\n      \"evidence\": \"The cost of ordering each chair from manufacturer A is $50\"\n    },\n    {\n      \"parameter\": \"cost_B\",\n      \"extracted\": \"45 per order\",\n      \"stated\": \"45 per chair\",\n      \"evidence\": \"from manufacturer B is $45\"\n    },\n    {\n      \"parameter\": \"cost_C\",\n      \"extracted\": \"40 per order\",\n      \"stated\": \"40 per chair\",\n      \"evidence\": \"from manufacturer C is $40\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "cost_A",
+   "extracted": 50,
+   "stated": 50,
+   "evidence": "The cost of ordering each chair from manufacturer A is $50"
+  },
+  {
+   "parameter": "cost_B",
+   "extracted": 45,
+   "stated": 45,
+   "evidence": "from manufacturer B is $45"
+  },
+  {
+   "parameter": "cost_C",
+   "extracted": 40,
+   "stated": 40,
+   "evidence": "from manufacturer C is $40"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

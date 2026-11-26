@@ -1,0 +1,186 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "salary_A": 8100,
+   "salary_B": 20000,
+   "salary_C": 21000,
+   "salary_D": 3000,
+   "salary_E": 8000,
+   "max_hires": 3,
+   "budget": 35000,
+   "min_hires": 2,
+   "experience_A": 3,
+   "experience_B": 10,
+   "experience_C": 4,
+   "experience_D": 3,
+   "experience_E": 7,
+   "min_experience": 12,
+   "max_from_A_E": 1,
+   "min_advanced_degree": 1
+  },
+  {
+   "salary_A": 9229.357067508858,
+   "salary_B": 10500.215104453338,
+   "salary_C": 16275.615685751505,
+   "salary_D": 2169.6322144464684,
+   "salary_E": 9891.7697133121,
+   "max_hires": 3,
+   "budget": 48726.28486966959,
+   "min_hires": 2,
+   "experience_A": 2.765765459055811,
+   "experience_B": 5.297972194380703,
+   "experience_C": 2.8745518992144135,
+   "experience_D": 3.016065864310087,
+   "experience_E": 3.685751787787045,
+   "min_experience": 8.386051808239781,
+   "max_from_A_E": 1,
+   "min_advanced_degree": 1
+  },
+  {
+   "salary_A": 5835.569038529643,
+   "salary_B": 21785.313677518174,
+   "salary_C": 27498.03959023436,
+   "salary_D": 1519.496279034183,
+   "salary_E": 10446.554014662464,
+   "max_hires": 3,
+   "budget": 29408.768078129717,
+   "min_hires": 2,
+   "experience_A": 4.371639216620344,
+   "experience_B": 8.365945451126267,
+   "experience_C": 2.3709833735205916,
+   "experience_D": 1.790149130500392,
+   "experience_E": 9.432460564432217,
+   "min_experience": 13.244712376402692,
+   "max_from_A_E": 1,
+   "min_advanced_degree": 1
+  },
+  {
+   "salary_A": 8393.447540783076,
+   "salary_B": 29462.315279587412,
+   "salary_C": 18449.22192137542,
+   "salary_D": 3156.1218938196807,
+   "salary_E": 10635.23731402396,
+   "max_hires": 3,
+   "budget": 47659.741510877204,
+   "min_hires": 2,
+   "experience_A": 3.6137155086447708,
+   "experience_B": 5.458243836556623,
+   "experience_C": 2.9115931026061874,
+   "experience_D": 2.3681638908063216,
+   "experience_E": 4.0585438384653925,
+   "min_experience": 8.793490636332361,
+   "max_from_A_E": 1,
+   "min_advanced_degree": 1
+  },
+  {
+   "salary_A": 9199.043998541641,
+   "salary_B": 17296.643579401683,
+   "salary_C": 18273.800309454535,
+   "salary_D": 2128.521092314463,
+   "salary_E": 6135.822576392907,
+   "max_hires": 3,
+   "budget": 40181.23848363077,
+   "min_hires": 2,
+   "experience_A": 2.013415944594291,
+   "experience_B": 12.291267979503493,
+   "experience_C": 2.6536099750477136,
+   "experience_D": 2.6383663252729432,
+   "experience_E": 10.426663454456166,
+   "min_experience": 13.679997118249116,
+   "max_from_A_E": 1,
+   "min_advanced_degree": 1
+  },
+  {
+   "salary_A": 10877.100553537459,
+   "salary_B": 25519.998230924895,
+   "salary_C": 15310.009511246191,
+   "salary_D": 1596.3007317121132,
+   "salary_E": 6523.624384472655,
+   "max_hires": 3,
+   "budget": 24884.399525521425,
+   "min_hires": 2,
+   "experience_A": 4.1291028794180065,
+   "experience_B": 8.146778807984779,
+   "experience_C": 4.62175466117952,
+   "experience_D": 2.686895703181993,
+   "experience_E": 9.901833128183805,
+   "min_experience": 11.506222231048785,
+   "max_from_A_E": 1,
+   "min_advanced_degree": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   23000.0,
+   20391.98481776544,
+   29140.378995082,
+   29998.791355978177,
+   19425.164671716146,
+   21833.633895718845
+  ],
+  "B-structured": [
+   23000.0,
+   20391.98481776544,
+   29140.378995082,
+   29998.791355978177,
+   19425.164671716146,
+   21833.633895718845
+  ],
+  "C-direct": [
+   23000.0,
+   20391.98481776544,
+   29140.378995082,
+   29998.791355978177,
+   19425.164671716146,
+   21833.633895718845
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

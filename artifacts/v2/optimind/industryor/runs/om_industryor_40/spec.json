@@ -1,0 +1,122 @@
+{
+ "spec": {
+  "a": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "b": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "m": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "n": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "k": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "d": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "c": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "a": {
+    "meaning": "hours required by method 1 per furnace",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "b": {
+    "meaning": "hours required by method 2 per furnace",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "m": {
+    "meaning": "fuel cost of method 1 per furnace",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "n": {
+    "meaning": "fuel cost of method 2 per furnace",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "k": {
+    "meaning": "tons of steel produced per furnace regardless of method",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "d": {
+    "meaning": "minimum total tons of steel required",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "c": {
+    "meaning": "total available hours",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

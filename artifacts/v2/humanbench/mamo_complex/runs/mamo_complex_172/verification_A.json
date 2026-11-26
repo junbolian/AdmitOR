@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_172",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"capacity[8][*] (outgoing arcs from City 8)\", \"evidence\": \"This city receives and dispatches goods but primarily serves as the endpoint for cargo coming from the Central Hub.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity[8][*] (outgoing arcs from City 8)",
+   "evidence": "This city receives and dispatches goods but primarily serves as the endpoint for cargo coming from the Central Hub."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

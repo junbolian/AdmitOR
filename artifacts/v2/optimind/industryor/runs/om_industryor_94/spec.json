@@ -1,0 +1,248 @@
+{
+ "spec": {
+  "raw_pipe_length": {
+   "base": 1850,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1750.0,
+    "hi": 1950.0,
+    "integer": true
+   }
+  },
+  "demand_290": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 22.0,
+    "integer": true
+   }
+  },
+  "demand_315": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 36.0,
+    "integer": true
+   }
+  },
+  "demand_350": {
+   "base": 21,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "demand_455": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 22.0,
+    "hi": 38.0,
+    "integer": true
+   }
+  },
+  "max_pattern_types": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "max_pieces_per_raw": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "max_leftover": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "extra_cost_fraction_most": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.3,
+    "integer": false
+   }
+  },
+  "extra_cost_fraction_second": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.45,
+    "integer": false
+   }
+  },
+  "extra_cost_fraction_third": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.6,
+    "integer": false
+   }
+  },
+  "extra_cost_fraction_fourth": {
+   "base": 0.4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.15,
+    "hi": 0.75,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[max_pattern_types] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_pieces_per_raw] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "raw_pipe_length": {
+    "meaning": "Length of each raw steel pipe (mm)",
+    "base": 1850,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1750,
+     "hi": 1950,
+     "integer": true
+    }
+   },
+   "demand_290": {
+    "meaning": "Required number of 290 mm pieces",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 22,
+     "integer": true
+    }
+   },
+   "demand_315": {
+    "meaning": "Required number of 315 mm pieces",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 36,
+     "integer": true
+    }
+   },
+   "demand_350": {
+    "meaning": "Required number of 350 mm pieces",
+    "base": 21,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "demand_455": {
+    "meaning": "Required number of 455 mm pieces",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 22,
+     "hi": 38,
+     "integer": true
+    }
+   },
+   "max_pattern_types": {
+    "meaning": "Maximum number of distinct cutting patterns allowed",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "max_pieces_per_raw": {
+    "meaning": "Maximum number of products cut from a single raw pipe",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "max_leftover": {
+    "meaning": "Maximum allowable leftover material per cutting pattern (mm)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "extra_cost_fraction_most": {
+    "meaning": "Additional cost fraction of a raw pipe's value for the most frequently used pattern",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.3,
+     "integer": false
+    }
+   },
+   "extra_cost_fraction_second": {
+    "meaning": "Additional cost fraction for the second most frequently used pattern",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.45,
+     "integer": false
+    }
+   },
+   "extra_cost_fraction_third": {
+    "meaning": "Additional cost fraction for the third most frequently used pattern",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.6,
+     "integer": false
+    }
+   },
+   "extra_cost_fraction_fourth": {
+    "meaning": "Additional cost fraction for the fourth most frequently used pattern",
+    "base": 0.4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.15,
+     "hi": 0.75,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

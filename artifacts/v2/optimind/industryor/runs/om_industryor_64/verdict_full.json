@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_high": 300,
+   "profit_mid": 200,
+   "profit_low": 100,
+   "labor_high": 17,
+   "labor_mid": 10,
+   "labor_low": 2,
+   "inspect_high": 8,
+   "inspect_mid": 4,
+   "inspect_low": 2,
+   "labor_capacity": 1000,
+   "inspection_capacity": 500,
+   "demand_high": 50,
+   "demand_mid": 80,
+   "demand_low": 150
+  },
+  {
+   "profit_high": 341.82803953736516,
+   "profit_mid": 105.00215104453339,
+   "profit_low": 77.50293183691193,
+   "labor_high": 14.785685905190583,
+   "labor_mid": 11.418827284984074,
+   "labor_low": 2.3533989748458226,
+   "inspect_high": 9.568718270819382,
+   "inspect_mid": 3.173877665258832,
+   "inspect_low": 1.8438436393705409,
+   "labor_capacity": 764.8986097190352,
+   "inspection_capacity": 429.65949370090084,
+   "demand_high": 50,
+   "demand_mid": 42,
+   "demand_low": 105
+  },
+  {
+   "profit_high": 344.96533133385697,
+   "profit_mid": 208.98829612064333,
+   "profit_low": 72.04406220406966,
+   "labor_high": 17.71412547100727,
+   "labor_mid": 11.85658274006696,
+   "labor_low": 1.012997519356122,
+   "inspect_high": 9.223277007331232,
+   "inspect_mid": 4.396278789976454,
+   "inspect_low": 1.6805010330359837,
+   "labor_capacity": 827.7397499058908,
+   "inspection_capacity": 614.3032680516953,
+   "demand_high": 42,
+   "demand_mid": 47,
+   "demand_low": 90
+  },
+  {
+   "profit_high": 404.24830990423794,
+   "profit_mid": 220.74520627337822,
+   "profit_low": 130.71282732743802,
+   "labor_high": 18.837854293550542,
+   "labor_mid": 10.217368548728205,
+   "labor_low": 2.946231527958741,
+   "inspect_high": 7.514137508833414,
+   "inspect_mid": 4.104081262546454,
+   "inspect_low": 2.6588093285059897,
+   "labor_capacity": 1059.259876182123,
+   "inspection_capacity": 590.4267250776943,
+   "demand_high": 54,
+   "demand_mid": 96,
+   "demand_low": 82
+  },
+  {
+   "profit_high": 218.36948269546406,
+   "profit_mid": 157.87759272042143,
+   "profit_low": 57.979197692362746,
+   "labor_high": 14.862327090888241,
+   "labor_mid": 7.6060085764583745,
+   "labor_low": 1.5559472062201842,
+   "inspect_high": 8.542737777057601,
+   "inspect_mid": 3.7296643579401687,
+   "inspect_low": 1.7403619342337653,
+   "labor_capacity": 854.7535153857439,
+   "inspection_capacity": 441.74445551227836,
+   "demand_high": 72,
+   "demand_mid": 92,
+   "demand_low": 166
+  },
+  {
+   "profit_high": 201.3415944594291,
+   "profit_mid": 245.82535959006984,
+   "profit_low": 66.34024937619284,
+   "labor_high": 16.035643534061183,
+   "labor_mid": 12.937140103819571,
+   "labor_low": 2.279999519708186,
+   "inspect_high": 8.227798975098585,
+   "inspect_mid": 4.369228501979749,
+   "inspect_low": 2.6857038403796194,
+   "labor_capacity": 1137.9999557731223,
+   "inspection_capacity": 432.2620179910261,
+   "demand_high": 27,
+   "demand_mid": 65,
+   "demand_low": 115
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   25000.0,
+   16570.549531825236,
+   20827.94804666186,
+   28384.104902292587,
+   17810.053996416573,
+   19640.909593415894
+  ],
+  "B-structured": [
+   25000.0,
+   16551.685093861583,
+   20700.555443961835,
+   28378.068342720173,
+   17771.573601051085,
+   19634.3246280377
+  ],
+  "C-direct": [
+   25000.0,
+   16551.685093861583,
+   20700.555443961835,
+   28378.068342720173,
+   17771.573601051085,
+   19634.3246280377
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 127.4 on instance 2 (params: {'profit_high': 344.97, 'profit_mid': 208.99, 'profit_low': 72.04, 'labor_high': 17.71, 'labor_mid': 11.86, 'labor_low': 1.01, 'inspect_high': 9.22, 'inspect_mid': 4.4, 'inspect_low': 1.68, 'labor_capacity': 827.74, 'inspection_capacity': 614.3, 'demand_high': 42, 'demand_mid': 47, 'demand_low': 90})"
+ },
+ "disagreements": [],
+ "notes": []
+}

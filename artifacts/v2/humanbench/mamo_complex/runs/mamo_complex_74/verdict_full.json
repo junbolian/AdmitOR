@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 420,
+   "regular_cost": 40,
+   "overtime_capacity": 80,
+   "overtime_cost": 45,
+   "holding_cost": 3,
+   "initial_inventory": 10
+  },
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 492,
+   "regular_cost": 30.50021510445334,
+   "overtime_capacity": 69,
+   "overtime_cost": 38.772241608348516,
+   "holding_cost": 8.837654569968148,
+   "initial_inventory": 135
+  },
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 568,
+   "regular_cost": 31.73877665258832,
+   "overtime_capacity": 105,
+   "overtime_cost": 34.42043743735658,
+   "holding_cost": 2.6236556976432404,
+   "initial_inventory": 101
+  },
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 308,
+   "regular_cost": 33.97675301373297,
+   "overtime_capacity": 162,
+   "overtime_cost": 46.01118331357237,
+   "holding_cost": 2.6452874644883604,
+   "initial_inventory": 118
+  },
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 543,
+   "regular_cost": 30.129975193561222,
+   "overtime_capacity": 201,
+   "overtime_cost": 49.45813638723511,
+   "holding_cost": 4.0830061982159025,
+   "initial_inventory": 31
+  },
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 587,
+   "regular_cost": 36.73189090225254,
+   "overtime_capacity": 23,
+   "overtime_cost": 35.92611847875294,
+   "holding_cost": 10.169932396169518,
+   "initial_inventory": 121
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   106380.0,
+   76939.65772980922,
+   80902.14168744763,
+   94472.3119530211,
+   78910.40503193684,
+   92783.75549735372
+  ],
+  "C-direct": [
+   106380.0,
+   76940.0,
+   80902.0,
+   94472.0,
+   78910.0,
+   92784.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers']"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,530 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 14,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "protein_oats": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "protein_tofu": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "protein_rice": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "protein_beef": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 23.0,
+    "integer": true
+   }
+  },
+  "protein_salmon": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "carbs_chicken": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "carbs_oats": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "carbs_tofu": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 19.0,
+    "integer": true
+   }
+  },
+  "carbs_rice": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "carbs_beef": {
+   "base": 11,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 17.0,
+    "integer": true
+   }
+  },
+  "carbs_salmon": {
+   "base": 13,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "calories_chicken": {
+   "base": 164,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 240.0,
+    "integer": true
+   }
+  },
+  "calories_oats": {
+   "base": 210,
+   "perturb": {
+    "mode": "abs",
+    "lo": 120.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "calories_tofu": {
+   "base": 98,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "calories_rice": {
+   "base": 92,
+   "perturb": {
+    "mode": "abs",
+    "lo": 45.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "calories_beef": {
+   "base": 211,
+   "perturb": {
+    "mode": "abs",
+    "lo": 120.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "calories_salmon": {
+   "base": 211,
+   "perturb": {
+    "mode": "abs",
+    "lo": 120.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "cost_chicken": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 11.0,
+    "integer": true
+   }
+  },
+  "cost_oats": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "cost_tofu": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "cost_rice": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "cost_beef": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 13.0,
+    "integer": true
+   }
+  },
+  "cost_salmon": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "protein_target": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.0,
+    "hi": 105.0,
+    "integer": true
+   }
+  },
+  "carb_target": {
+   "base": 117,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 175.0,
+    "integer": true
+   }
+  },
+  "calorie_target": {
+   "base": 1837,
+   "perturb": {
+    "mode": "abs",
+    "lo": 950.0,
+    "hi": 2750.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "protein grams per unit of Chicken",
+    "base": 14,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "protein_oats": {
+    "meaning": "protein grams per unit of Oats",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "protein_tofu": {
+    "meaning": "protein grams per unit of Tofu",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "protein_rice": {
+    "meaning": "protein grams per unit of Rice",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "protein_beef": {
+    "meaning": "protein grams per unit of Beef",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 23,
+     "integer": true
+    }
+   },
+   "protein_salmon": {
+    "meaning": "protein grams per unit of Salmon",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "carb grams per unit of Chicken",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "carbs_oats": {
+    "meaning": "carb grams per unit of Oats",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "carbs_tofu": {
+    "meaning": "carb grams per unit of Tofu",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 19,
+     "integer": true
+    }
+   },
+   "carbs_rice": {
+    "meaning": "carb grams per unit of Rice",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "carbs_beef": {
+    "meaning": "carb grams per unit of Beef",
+    "base": 11,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 17,
+     "integer": true
+    }
+   },
+   "carbs_salmon": {
+    "meaning": "carb grams per unit of Salmon",
+    "base": 13,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "calories_chicken": {
+    "meaning": "calories per unit of Chicken",
+    "base": 164,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 240,
+     "integer": true
+    }
+   },
+   "calories_oats": {
+    "meaning": "calories per unit of Oats",
+    "base": 210,
+    "perturb": {
+     "mode": "abs",
+     "lo": 120,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "calories_tofu": {
+    "meaning": "calories per unit of Tofu",
+    "base": 98,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "calories_rice": {
+    "meaning": "calories per unit of Rice",
+    "base": 92,
+    "perturb": {
+     "mode": "abs",
+     "lo": 45,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "calories_beef": {
+    "meaning": "calories per unit of Beef",
+    "base": 211,
+    "perturb": {
+     "mode": "abs",
+     "lo": 120,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "calories_salmon": {
+    "meaning": "calories per unit of Salmon",
+    "base": 211,
+    "perturb": {
+     "mode": "abs",
+     "lo": 120,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "cost_chicken": {
+    "meaning": "price per unit of Chicken",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 11,
+     "integer": true
+    }
+   },
+   "cost_oats": {
+    "meaning": "price per unit of Oats",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "cost_tofu": {
+    "meaning": "price per unit of Tofu",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "cost_rice": {
+    "meaning": "price per unit of Rice",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "cost_beef": {
+    "meaning": "price per unit of Beef",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 13,
+     "integer": true
+    }
+   },
+   "cost_salmon": {
+    "meaning": "price per unit of Salmon",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "protein_target": {
+    "meaning": "minimum total protein required (grams)",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 35,
+     "hi": 105,
+     "integer": true
+    }
+   },
+   "carb_target": {
+    "meaning": "minimum total carbohydrates required (grams)",
+    "base": 117,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 175,
+     "integer": true
+    }
+   },
+   "calorie_target": {
+    "meaning": "minimum total calories required",
+    "base": 1837,
+    "perturb": {
+     "mode": "abs",
+     "lo": 950,
+     "hi": 2750,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

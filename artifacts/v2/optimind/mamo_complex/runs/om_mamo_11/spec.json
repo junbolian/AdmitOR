@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "chicken_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "tofu_cost": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "brown_rice_cost": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "fish_cost": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "lentils_cost": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "quinoa_cost": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "eggs_cost": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "beef_cost": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "beans_cost": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_per_item": {
+   "base": [
+    7,
+    12,
+    14,
+    9,
+    11,
+    10,
+    10,
+    9,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_per_item": {
+   "base": [
+    17,
+    12,
+    27,
+    6,
+    19,
+    23,
+    6,
+    16,
+    25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_per_item": {
+   "base": [
+    95,
+    233,
+    134,
+    109,
+    202,
+    148,
+    184,
+    136,
+    229
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_req": {
+   "base": 107,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_req": {
+   "base": 1623,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "chicken_cost": {
+    "meaning": "Cost of one portion of chicken ($)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "tofu_cost": {
+    "meaning": "Cost of one portion of tofu ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "brown_rice_cost": {
+    "meaning": "Cost of one portion of brown rice ($)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "fish_cost": {
+    "meaning": "Cost of one portion of fish ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "lentils_cost": {
+    "meaning": "Cost of one portion of lentils ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "quinoa_cost": {
+    "meaning": "Cost of one portion of quinoa ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "eggs_cost": {
+    "meaning": "Cost of one portion of eggs ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "beef_cost": {
+    "meaning": "Cost of one portion of beef ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "beans_cost": {
+    "meaning": "Cost of one portion of beans ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_per_item": {
+    "meaning": "Protein (g) provided by one portion of each food item (chicken, tofu, brown rice, fish, lentils, quinoa, eggs, beef, beans)",
+    "base": [
+     7,
+     12,
+     14,
+     9,
+     11,
+     10,
+     10,
+     9,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_per_item": {
+    "meaning": "Carbohydrates (g) provided by one portion of each food item (chicken, tofu, brown rice, fish, lentils, quinoa, eggs, beef, beans)",
+    "base": [
+     17,
+     12,
+     27,
+     6,
+     19,
+     23,
+     6,
+     16,
+     25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_per_item": {
+    "meaning": "Calories provided by one portion of each food item (chicken, tofu, brown rice, fish, lentils, quinoa, eggs, beef, beans)",
+    "base": [
+     95,
+     233,
+     134,
+     109,
+     202,
+     148,
+     184,
+     136,
+     229
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "Daily protein requirement (g)",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_req": {
+    "meaning": "Daily carbohydrate requirement (g)",
+    "base": 107,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_req": {
+    "meaning": "Daily calorie requirement (kcal)",
+    "base": 1623,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

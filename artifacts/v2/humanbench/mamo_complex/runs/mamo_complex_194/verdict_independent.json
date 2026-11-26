@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "machine_hours_per_unit_p1": 3,
+   "machine_hours_per_unit_p2": 4,
+   "machine_hours_available": 20000,
+   "production_cost_p1": 3,
+   "production_cost_p2": 2,
+   "selling_price_p1": 6,
+   "selling_price_p2": 5.4,
+   "available_cash": 4000,
+   "revenue_advance_rate_p1": 0.45,
+   "revenue_advance_rate_p2": 0.3,
+   "extra_machine_hours": 2000,
+   "repair_cost": 400
+  },
+  {
+   "machine_hours_per_unit_p1": 3.16731215814946,
+   "machine_hours_per_unit_p2": 3.2400172083562673,
+   "machine_hours_available": 18200.234546952954,
+   "production_cost_p1": 2.5848161072232343,
+   "production_cost_p2": 2.2364712141640126,
+   "selling_price_p1": 6.424078769814987,
+   "selling_price_p2": 6.247107866242467,
+   "available_cash": 3008.653198310599,
+   "revenue_advance_rate_p1": 0.4109609098426352,
+   "revenue_advance_rate_p2": 0.11489860971903518,
+   "extra_machine_hours": 1437.2759496072067,
+   "repair_cost": 402.1421152413449
+  },
+  {
+   "machine_hours_per_unit_p1": 2.4318431636206363,
+   "machine_hours_per_unit_p2": 3.5181402410986378,
+   "machine_hours_available": 21199.07550223619,
+   "production_cost_p1": 3.0674122209048247,
+   "production_cost_p2": 1.7204406220406967,
+   "selling_price_p1": 6.214237641302181,
+   "selling_price_p2": 6.068369786424106,
+   "available_cash": 2815.597023227346,
+   "revenue_advance_rate_p1": 0.602909625916404,
+   "revenue_advance_rate_p2": 0.4490696974941134,
+   "extra_machine_hours": 1680.5010330359837,
+   "repair_cost": 262.1917999247126
+  },
+  {
+   "machine_hours_per_unit_p1": 3.5486556866481376,
+   "machine_hours_per_unit_p2": 3.738551272180203,
+   "machine_hours_available": 16741.966747041184,
+   "production_cost_p1": 2.395074565250196,
+   "production_cost_p2": 2.3474943663474597,
+   "selling_price_p1": 6.248942475280538,
+   "selling_price_p2": 6.063397070272662,
+   "available_cash": 4551.356288065163,
+   "revenue_advance_rate_p1": 0.4681140457273503,
+   "revenue_advance_rate_p2": 0.5865578819896853,
+   "extra_machine_hours": 1757.068754416707,
+   "repair_cost": 420.81625250929073
+  },
+  {
+   "machine_hours_per_unit_p1": 3.3952855971035936,
+   "machine_hours_per_unit_p2": 4.189631603782794,
+   "machine_hours_available": 22893.655202486218,
+   "production_cost_p1": 3.116028217885143,
+   "production_cost_p2": 2.2045718362149236,
+   "selling_price_p1": 4.909978520773589,
+   "selling_price_p2": 4.812260275407342,
+   "available_cash": 3494.531112645057,
+   "revenue_advance_rate_p1": 0.23989598846181376,
+   "revenue_advance_rate_p2": 0.2163954431805151,
+   "extra_machine_hours": 1202.0028588194582,
+   "repair_cost": 311.18944124403686
+  },
+  {
+   "machine_hours_per_unit_p1": 3.16282133311728,
+   "machine_hours_per_unit_p2": 3.783731486352135,
+   "machine_hours_available": 18961.44773693506,
+   "production_cost_p1": 2.5642605461572314,
+   "production_cost_p2": 1.7669778220491135,
+   "selling_price_p1": 7.047971010509985,
+   "selling_price_p2": 5.719756432132642,
+   "available_cash": 4261.914413600772,
+   "revenue_advance_rate_p1": 0.2855693240990485,
+   "revenue_advance_rate_p2": 0.4645633989751746,
+   "extra_machine_hours": 1326.8049875238569,
+   "repair_cost": 351.7821767030591
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   21600.0,
+   23578.594486779974,
+   29344.171853036965,
+   19669.281401602613,
+   7833.980983435487,
+   28409.45390438562
+  ],
+  "B-structured": [
+   21600.0,
+   23557.0,
+   29344.0,
+   19669.0,
+   7834.0,
+   28409.0
+  ],
+  "C-direct": [
+   21600.0,
+   23579.0,
+   29344.0,
+   19669.0,
+   7834.0,
+   28409.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 21.59 on instance 1 (params: {'machine_hours_per_unit_p1': 3.17, 'machine_hours_per_unit_p2': 3.24, 'machine_hours_available': 18200.23, 'production_cost_p1': 2.58, 'production_cost_p2': 2.24, 'selling_price_p1': 6.42, 'selling_price_p2': 6.25, 'available_cash': 3008.65, 'revenue_advance_rate_p1': 0.41, 'revenue_advance_rate_p2': 0.11, 'extra_machine_hours': 1437.28, 'repair_cost': 402.14})"
+ },
+ "disagreements": [],
+ "notes": []
+}

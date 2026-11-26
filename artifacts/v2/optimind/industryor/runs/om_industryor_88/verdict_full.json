@@ -1,0 +1,150 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "shirts_available": 200,
+   "pants_available": 100,
+   "shirts_per_A": 1,
+   "pants_per_A": 2,
+   "price_A": 30,
+   "shirts_per_B": 3,
+   "pants_per_B": 1,
+   "price_B": 50,
+   "min_A": 20,
+   "min_B": 10
+  },
+  {
+   "shirts_available": 228,
+   "pants_available": 54,
+   "shirts_per_A": 1,
+   "pants_per_A": 1,
+   "price_A": 46.82356070820062,
+   "shirts_per_B": 3,
+   "pants_per_B": 2,
+   "price_B": 26.08571828405913,
+   "min_A": 20,
+   "min_B": 17
+  },
+  {
+   "shirts_available": 106,
+   "pants_available": 83,
+   "shirts_per_A": 1,
+   "pants_per_A": 1,
+   "price_A": 19.941882534332425,
+   "shirts_per_B": 3,
+   "pants_per_B": 2,
+   "price_B": 35.43084354284877,
+   "min_A": 20,
+   "min_B": 24
+  },
+  {
+   "shirts_available": 262,
+   "pants_available": 51,
+   "shirts_per_A": 1,
+   "pants_per_A": 2,
+   "price_A": 27.012525825899594,
+   "shirts_per_B": 2,
+   "pants_per_B": 2,
+   "price_B": 43.56161815788387,
+   "min_A": 20,
+   "min_B": 4
+  },
+  {
+   "shirts_available": 119,
+   "pants_available": 177,
+   "shirts_per_A": 1,
+   "pants_per_A": 3,
+   "price_A": 46.4865893346909,
+   "shirts_per_B": 3,
+   "pants_per_B": 2,
+   "price_B": 46.497406404584744,
+   "min_A": 20,
+   "min_B": 22
+  },
+  {
+   "shirts_available": 266,
+   "pants_available": 143,
+   "shirts_per_A": 1,
+   "pants_per_A": 2,
+   "price_A": 45.228591810746174,
+   "shirts_per_B": 2,
+   "pants_per_B": 1,
+   "price_B": 40.2571574521475,
+   "min_A": 20,
+   "min_B": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3600.0,
+   1379.9284249930174,
+   1528.3642511956728,
+   758.0586073074112,
+   3114.88272924153,
+   5051.059053786116
+  ],
+  "B-structured": [
+   3600.0,
+   1379.9284249930174,
+   1528.3642511956728,
+   758.0586073074112,
+   3114.88272924153,
+   5051.059053786116
+  ],
+  "C-direct": [
+   3600.0,
+   1379.9284249930174,
+   1528.3642511956728,
+   758.0586073074112,
+   3114.88272924153,
+   5051.059053786116
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

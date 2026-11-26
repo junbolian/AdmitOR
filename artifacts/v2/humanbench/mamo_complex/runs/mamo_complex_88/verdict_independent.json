@@ -1,0 +1,300 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "polygon_vertices": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     11,
+     4
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "area_scale_factor": 1.0
+  },
+  {
+   "polygon_vertices": [
+    [
+     0.0,
+     0.7150064531336001
+    ],
+    [
+     0.0,
+     5.003558657335762
+    ],
+    [
+     4.56753091399363,
+     11.060196924537468
+    ],
+    [
+     9.882461924983257,
+     7.521632995776497
+    ],
+    [
+     10.484684009922784,
+     5.025148321639896
+    ],
+    [
+     9.143010633703781,
+     4.01285269144807
+    ],
+    [
+     5.0114510726722274,
+     0.0
+    ],
+    [
+     1.0899306626677139,
+     0.0
+    ]
+   ],
+   "area_scale_factor": 0.7204406220406967
+  },
+  {
+   "polygon_vertices": [
+    [
+     0.0,
+     1.185658274006696
+    ],
+    [
+     0.0,
+     7.100949306598108
+    ],
+    [
+     4.475534547971744,
+     9.04150309910795
+    ],
+    [
+     6.3463015990965514,
+     12.743278433240688
+    ],
+    [
+     9.921523997743336,
+     5.289532542196621
+    ],
+    [
+     8.338328087100862,
+     4.833986479233904
+    ],
+    [
+     7.435649331740943,
+     0.0
+    ],
+    [
+     1.1378390720162908,
+     0.0
+    ]
+   ],
+   "area_scale_factor": 1.4731157639793706
+  },
+  {
+   "polygon_vertices": [
+    [
+     0.0,
+     1.0312243787639361
+    ],
+    [
+     0.0,
+     6.426671108511286
+    ],
+    [
+     4.868096560745865,
+     10.464112871540571
+    ],
+    [
+     8.981944813831632,
+     7.274946301933973
+    ],
+    [
+     9.204128619300208,
+     6.11542944712885
+    ],
+    [
+     8.226627047695942,
+     3.3586981272664724
+    ],
+    [
+     5.324206003520862,
+     0.0
+    ],
+    [
+     1.08141066655864,
+     0.0
+    ]
+   ],
+   "area_scale_factor": 0.8701809671168826
+  },
+  {
+   "polygon_vertices": [
+    [
+     0.0,
+     0.860186693229468
+    ],
+    [
+     0.0,
+     6.532927386887737
+    ],
+    [
+     4.261914413600771,
+     8.026831889188582
+    ],
+    [
+     9.099808630161675,
+     7.980414962571571
+    ],
+    [
+     10.204405915600475,
+     9.055998072673699
+    ],
+    [
+     11.923998415037014,
+     4.136679385059151
+    ],
+    [
+     7.775379854157475,
+     0.0
+    ],
+    [
+     1.165599946927747,
+     0.0
+    ]
+   ],
+   "area_scale_factor": 0.5321002439040378
+  },
+  {
+   "polygon_vertices": [
+    [
+     0.0,
+     0.8606445255854216
+    ],
+    [
+     0.0,
+     7.5944749716061954
+    ],
+    [
+     4.9032823035344055,
+     8.888067284790868
+    ],
+    [
+     8.746105593415425,
+     9.373791406363985
+    ],
+    [
+     13.736014092287588,
+     6.827177780867075
+    ],
+    [
+     9.448209098887146,
+     3.3919060184655603
+    ],
+    [
+     7.257746163485233,
+     0.0
+    ],
+    [
+     1.0507515941341243,
+     0.0
+    ]
+   ],
+   "area_scale_factor": 0.8994005051403973
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   66.3661448070844,
+   32.24569572403993,
+   29.07247335462153,
+   43.47819873093662,
+   9.556858836218595,
+   48.11039480448618
+  ],
+  "B-structured": [
+   66.37,
+   null,
+   null,
+   43.48,
+   null,
+   null
+  ],
+  "C-direct": [
+   66.36614480708437,
+   32.24569572403993,
+   29.072473354621515,
+   43.478198730936576,
+   9.556858836218595,
+   48.1103948044862
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.",
+   "crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.",
+   "optimal",
+   "crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.",
+   "crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered."
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [1, 2, 4, 5]: ['crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.', 'crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.', 'crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.', 'crash:File \"candidate.py\", line 54, in solve | raise ValueError(\"The polygon must be convex and ordered.\") | ValueError: The polygon must be convex and ordered.']"
+ },
+ "disagreements": [],
+ "notes": []
+}

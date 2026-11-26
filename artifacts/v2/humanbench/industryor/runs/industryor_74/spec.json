@@ -1,0 +1,173 @@
+{
+ "spec": {
+  "cost_A": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_B": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_C": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_A": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "capacity_B": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "capacity_C": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "min_chairs": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_chairs": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_B_if_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[capacity_A] degenerate abs range (lo == hi); perturbation has no effect",
+  "[capacity_B] degenerate abs range (lo == hi); perturbation has no effect",
+  "[capacity_C] degenerate abs range (lo == hi); perturbation has no effect",
+  "[min_B_if_A] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_A": {
+    "meaning": "Cost per chair from manufacturer A ($)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_B": {
+    "meaning": "Cost per chair from manufacturer B ($)",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_C": {
+    "meaning": "Cost per chair from manufacturer C ($)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_A": {
+    "meaning": "Chairs per order from manufacturer A",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "capacity_B": {
+    "meaning": "Chairs per order from manufacturer B",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "capacity_C": {
+    "meaning": "Chairs per order from manufacturer C",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "min_chairs": {
+    "meaning": "Minimum total chairs required",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_chairs": {
+    "meaning": "Maximum total chairs allowed",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_B_if_A": {
+    "meaning": "Minimum chairs from B required if any A ordered",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

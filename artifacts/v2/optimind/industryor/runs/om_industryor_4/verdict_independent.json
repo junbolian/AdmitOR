@@ -1,0 +1,180 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "fiber_okra": 3.2,
+   "fiber_carrots": 2.7,
+   "fiber_celery": 1.6,
+   "fiber_cabbage": 2.0,
+   "price_salmon": 4.0,
+   "price_beef": 3.6,
+   "price_pork": 1.8,
+   "price_okra": 2.6,
+   "price_carrots": 1.2,
+   "price_celery": 1.6,
+   "price_cabbage": 2.3,
+   "budget": 15.0,
+   "total_intake": 600.0,
+   "min_protein_grams": 1.0,
+   "min_vegetable_grams": 1.0
+  },
+  {
+   "fiber_okra": 3.5569326040521823,
+   "fiber_carrots": 1.6740232312809606,
+   "fiber_celery": 1.3120375275124727,
+   "fiber_cabbage": 1.5571371810381163,
+   "price_salmon": 4.662119399659235,
+   "price_beef": 4.045282708305737,
+   "price_pork": 2.2941462553081053,
+   "price_okra": 1.8482286753855375,
+   "price_carrots": 1.1344143285356272,
+   "price_celery": 1.0733728857706388,
+   "price_cabbage": 1.8470071394338012,
+   "budget": 15.048197592930263,
+   "total_intake": 486.3686327241273,
+   "min_protein_grams": 10.743044883645776,
+   "min_vegetable_grams": 32.84433745119664
+  },
+  {
+   "fiber_okra": 3.315050190344235,
+   "fiber_carrots": 2.096151743607905,
+   "fiber_celery": 1.7142600753611632,
+   "fiber_cabbage": 2.4950887306845226,
+   "price_salmon": 2.6181965270985708,
+   "price_beef": 4.370664514618676,
+   "price_pork": 2.049655637685166,
+   "price_okra": 2.3092559400627453,
+   "price_carrots": 0.9106027798418965,
+   "price_celery": 2.1120786408715952,
+   "price_cabbage": 2.0369172176313293,
+   "budget": 11.334712590421331,
+   "total_intake": 503.2119304400314,
+   "min_protein_grams": 42.527223951025526,
+   "min_vegetable_grams": 30.58257553697766
+  },
+  {
+   "fiber_okra": 3.9862483795824133,
+   "fiber_carrots": 3.1962206592586466,
+   "fiber_celery": 1.6463719570620168,
+   "fiber_cabbage": 2.7569852223669926,
+   "price_salmon": 3.65989625618339,
+   "price_beef": 3.731142390808533,
+   "price_pork": 2.2150498769587736,
+   "price_okra": 2.815705949302928,
+   "price_carrots": 1.503833796261053,
+   "price_celery": 1.6866344026875737,
+   "price_cabbage": 2.629360656306027,
+   "budget": 10.91241945290096,
+   "total_intake": 534.6955861563713,
+   "min_protein_grams": 15.180010216503252,
+   "min_vegetable_grams": 4.909806869257747
+  },
+  {
+   "fiber_okra": 2.5159446690842375,
+   "fiber_carrots": 1.8381630875250148,
+   "fiber_celery": 1.315806211980918,
+   "fiber_cabbage": 2.21709511082304,
+   "price_salmon": 3.621530101116236,
+   "price_beef": 3.2728560371345443,
+   "price_pork": 1.4339788587720745,
+   "price_okra": 2.1758996361293863,
+   "price_carrots": 1.566789853678495,
+   "price_celery": 1.765799631476185,
+   "price_cabbage": 2.475700919123851,
+   "budget": 12.040247833782873,
+   "total_intake": 654.9904315080838,
+   "min_protein_grams": 9.006722194334492,
+   "min_vegetable_grams": 19.59331664612474
+  },
+  {
+   "fiber_okra": 4.453179777629684,
+   "fiber_carrots": 3.0023994812848405,
+   "fiber_celery": 1.672895672031547,
+   "fiber_cabbage": 2.2953828015837994,
+   "price_salmon": 4.959985376531467,
+   "price_beef": 4.295519777096537,
+   "price_pork": 1.4586005706747716,
+   "price_okra": 1.7484224439053488,
+   "price_carrots": 1.0449805603696287,
+   "price_celery": 1.339869781092787,
+   "price_cabbage": 1.8346823781739856,
+   "budget": 18.986187429015487,
+   "total_intake": 690.3282303534405,
+   "min_protein_grams": 16.41921615912542,
+   "min_vegetable_grams": 33.11649459944912
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   18.95657142857143,
+   16.299252498819747,
+   14.899158701158383,
+   18.269096797616335,
+   13.865914225619878,
+   29.529932361235883
+  ],
+  "B-structured": [
+   18.95657142857143,
+   16.299252498819747,
+   14.899158701158383,
+   18.269096797616335,
+   13.865914225619878,
+   29.529932361235883
+  ],
+  "C-direct": [
+   18.95657142857143,
+   16.299252498819747,
+   14.899158701158383,
+   18.26909679761635,
+   13.865914225619882,
+   29.529932361235897
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

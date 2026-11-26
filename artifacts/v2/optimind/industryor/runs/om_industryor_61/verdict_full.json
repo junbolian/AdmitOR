@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": 1000,
+   "pollution_horse": 80,
+   "pollution_bicycle": 0,
+   "pollution_handcart": 0,
+   "pollution_budget": 1000,
+   "min_horse_trips": 8,
+   "capacity_horse": 55,
+   "capacity_bicycle": 30,
+   "capacity_handcart": 40
+  },
+  {
+   "demand": 1139.4267984578837,
+   "pollution_horse": 42.00086041781336,
+   "pollution_bicycle": 0,
+   "pollution_handcart": 0,
+   "pollution_budget": 1000,
+   "min_horse_trips": 8,
+   "capacity_horse": 62.80355006741241,
+   "capacity_bicycle": 33.18059077361241,
+   "capacity_handcart": 49.41230962491629
+  },
+  {
+   "demand": 586.9388326294162,
+   "pollution_horse": 73.75374557482164,
+   "pollution_bicycle": 0,
+   "pollution_handcart": 0,
+   "pollution_budget": 1000,
+   "min_horse_trips": 8,
+   "capacity_horse": 55.17672450741096,
+   "capacity_bicycle": 21.477647454309544,
+   "capacity_handcart": 32.77210361647956
+  },
+  {
+   "demand": 1149.8844377795233,
+   "pollution_horse": 83.59531844825733,
+   "pollution_bicycle": 0,
+   "pollution_handcart": 0,
+   "pollution_budget": 1000,
+   "min_horse_trips": 8,
+   "capacity_horse": 65.21120507036828,
+   "capacity_bicycle": 21.116977674205096,
+   "capacity_handcart": 47.33966204398739
+  },
+  {
+   "demand": 1198.139394988227,
+   "pollution_horse": 67.22004132143935,
+   "pollution_bicycle": 0,
+   "pollution_handcart": 0,
+   "pollution_budget": 1000,
+   "min_horse_trips": 8,
+   "capacity_horse": 49.60761998871668,
+   "capacity_bicycle": 22.669425180842662,
+   "capacity_handcart": 30.321193044003138
+  },
+  {
+   "demand": 1347.4943663474596,
+   "pollution_horse": 88.29808250935129,
+   "pollution_bicycle": 0,
+   "pollution_handcart": 0,
+   "pollution_budget": 1000,
+   "min_horse_trips": 8,
+   "capacity_horse": 56.19552701800513,
+   "capacity_bicycle": 38.51608375162867,
+   "capacity_handcart": 37.08482505300048
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   640.0,
+   336.00688334250685,
+   590.0299645985731,
+   668.7625475860586,
+   537.7603305715148,
+   706.3846600748103
+  ],
+  "B-structured": [
+   640.0,
+   336.00688334250685,
+   590.0299645985731,
+   668.7625475860586,
+   537.7603305715148,
+   706.3846600748103
+  ],
+  "C-direct": [
+   640.0,
+   336.00688334250685,
+   590.0299645985731,
+   668.7625475860586,
+   537.7603305715148,
+   706.3846600748103
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,342 @@
+{
+ "spec": {
+  "bw_A_B": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_A_C": {
+   "base": 85,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_A_E": {
+   "base": 65,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_B_A": {
+   "base": 95,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_B_C": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_B_D": {
+   "base": 65,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_B_E": {
+   "base": 34,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_C_A": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_C_D": {
+   "base": 88,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_C_E": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_D_A": {
+   "base": 67,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_D_B": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_D_C": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_D_E": {
+   "base": 84,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_E_B": {
+   "base": 51,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "bw_E_D": {
+   "base": 56,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "zero_bandwidth": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[zero_bandwidth] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "bw_A_B": {
+    "meaning": "directed bandwidth from A to B",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_A_C": {
+    "meaning": "directed bandwidth from A to C",
+    "base": 85,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_A_E": {
+    "meaning": "directed bandwidth from A to E",
+    "base": 65,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_B_A": {
+    "meaning": "directed bandwidth from B to A",
+    "base": 95,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_B_C": {
+    "meaning": "directed bandwidth from B to C",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_B_D": {
+    "meaning": "directed bandwidth from B to D",
+    "base": 65,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_B_E": {
+    "meaning": "directed bandwidth from B to E",
+    "base": 34,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_C_A": {
+    "meaning": "directed bandwidth from C to A",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_C_D": {
+    "meaning": "directed bandwidth from C to D",
+    "base": 88,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_C_E": {
+    "meaning": "directed bandwidth from C to E",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_D_A": {
+    "meaning": "directed bandwidth from D to A",
+    "base": 67,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_D_B": {
+    "meaning": "directed bandwidth from D to B",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_D_C": {
+    "meaning": "directed bandwidth from D to C",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_D_E": {
+    "meaning": "directed bandwidth from D to E",
+    "base": 84,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_E_B": {
+    "meaning": "directed bandwidth from E to B",
+    "base": 51,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "bw_E_D": {
+    "meaning": "directed bandwidth from E to D",
+    "base": 56,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "zero_bandwidth": {
+    "meaning": "bandwidth value indicating no direct connection",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

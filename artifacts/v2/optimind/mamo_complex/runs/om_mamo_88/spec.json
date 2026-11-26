@@ -1,0 +1,295 @@
+{
+ "spec": {
+  "initial_stock": {
+   "base": [
+    330,
+    294,
+    474,
+    86
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "required_demand": {
+   "base": [
+    476,
+    92,
+    385,
+    203
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transport_cost_1_to_2": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "transport_cost_1_to_3": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "transport_cost_1_to_4": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "transport_cost_2_to_1": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "transport_cost_2_to_3": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "transport_cost_2_to_4": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 28.0,
+    "integer": false
+   }
+  },
+  "transport_cost_3_to_1": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 55.0,
+    "integer": false
+   }
+  },
+  "transport_cost_3_to_2": {
+   "base": 46,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 95.0,
+    "integer": false
+   }
+  },
+  "transport_cost_3_to_4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "transport_cost_4_to_1": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "transport_cost_4_to_2": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "transport_cost_4_to_3": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 55.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_stock": {
+    "meaning": "initial supply stock at each clinic (clinics 1-4)",
+    "base": [
+     330,
+     294,
+     474,
+     86
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "required_demand": {
+    "meaning": "required supply quantity at each clinic (clinics 1-4)",
+    "base": [
+     476,
+     92,
+     385,
+     203
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transport_cost_1_to_2": {
+    "meaning": "unit cost shipping Clinic 1 to Clinic 2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "transport_cost_1_to_3": {
+    "meaning": "unit cost shipping Clinic 1 to Clinic 3",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "transport_cost_1_to_4": {
+    "meaning": "unit cost shipping Clinic 1 to Clinic 4",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "transport_cost_2_to_1": {
+    "meaning": "unit cost shipping Clinic 2 to Clinic 1",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "transport_cost_2_to_3": {
+    "meaning": "unit cost shipping Clinic 2 to Clinic 3",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "transport_cost_2_to_4": {
+    "meaning": "unit cost shipping Clinic 2 to Clinic 4",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 28,
+     "integer": false
+    }
+   },
+   "transport_cost_3_to_1": {
+    "meaning": "unit cost shipping Clinic 3 to Clinic 1",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 55,
+     "integer": false
+    }
+   },
+   "transport_cost_3_to_2": {
+    "meaning": "unit cost shipping Clinic 3 to Clinic 2",
+    "base": 46,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 95,
+     "integer": false
+    }
+   },
+   "transport_cost_3_to_4": {
+    "meaning": "unit cost shipping Clinic 3 to Clinic 4",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "transport_cost_4_to_1": {
+    "meaning": "unit cost shipping Clinic 4 to Clinic 1",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "transport_cost_4_to_2": {
+    "meaning": "unit cost shipping Clinic 4 to Clinic 2",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "transport_cost_4_to_3": {
+    "meaning": "unit cost shipping Clinic 4 to Clinic 3",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 55,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

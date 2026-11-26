@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_21",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity_7_3\",\"evidence\":\"capacities such as 20 Tbps from Data Center 7 to Data Center 3\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_7_3",
+   "evidence": "capacities such as 20 Tbps from Data Center 7 to Data Center 3"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

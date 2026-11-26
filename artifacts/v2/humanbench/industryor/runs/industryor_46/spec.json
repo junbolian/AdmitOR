@@ -1,0 +1,212 @@
+{
+ "spec": {
+  "production_hours_per_quarter": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "hours_per_unit_I": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "hours_per_unit_II": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "hours_per_unit_III": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "orders_I": {
+   "base": [
+    1500,
+    1000,
+    2000,
+    1200
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "orders_II": {
+   "base": [
+    1500,
+    1500,
+    1200,
+    1500
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "orders_III": {
+   "base": [
+    1000,
+    2000,
+    1500,
+    2500
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "ending_inventory_required": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "compensation_per_unit_per_quarter_I_II": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "compensation_per_unit_per_quarter_III": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "storage_fee_per_unit_per_quarter": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "production_hours_per_quarter": {
+    "meaning": "Available production time per quarter (hours)",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "hours_per_unit_I": {
+    "meaning": "Production hours required per unit of product I",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "hours_per_unit_II": {
+    "meaning": "Production hours required per unit of product II",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "hours_per_unit_III": {
+    "meaning": "Production hours required per unit of product III",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "orders_I": {
+    "meaning": "Contract orders for product I in quarters 1-4",
+    "base": [
+     1500,
+     1000,
+     2000,
+     1200
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "orders_II": {
+    "meaning": "Contract orders for product II in quarters 1-4",
+    "base": [
+     1500,
+     1500,
+     1200,
+     1500
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "orders_III": {
+    "meaning": "Contract orders for product III in quarters 1-4",
+    "base": [
+     1000,
+     2000,
+     1500,
+     2500
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "ending_inventory_required": {
+    "meaning": "Required inventory of each product at end of quarter 4",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "compensation_per_unit_per_quarter_I_II": {
+    "meaning": "Late-delivery compensation per unit per quarter for products I and II ($)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "compensation_per_unit_per_quarter_III": {
+    "meaning": "Late-delivery compensation per unit per quarter for product III ($)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "storage_fee_per_unit_per_quarter": {
+    "meaning": "Storage fee per unit per quarter for undelivered inventory ($)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

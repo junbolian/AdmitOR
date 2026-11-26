@@ -1,0 +1,187 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "workers_initial": 40,
+   "prod_per_worker": 20,
+   "demand": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "overtime_max_per_worker": 6,
+   "overtime_unit_cost": 5,
+   "holding_cost": 10,
+   "max_workforce_change": 5,
+   "hiring_cost": 500,
+   "layoff_cost": 700,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 42.78853596915767,
+   "prod_per_worker": 15.25010755222667,
+   "demand": [
+    605.51231371503,
+    500.3558657335762,
+    570.9413642492037,
+    884.8157539629975,
+    1111.7769665606165,
+    601.7306396621198
+   ],
+   "overtime_max_per_worker": 5.531530918111622,
+   "overtime_unit_cost": 2.1787833166284223,
+   "holding_cost": 6.62365569764324,
+   "max_workforce_change": 5.032131728620175,
+   "hiring_cost": 215.92158181031817,
+   "layoff_cost": 447.02362657678475,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 34.40881244081393,
+   "prod_per_worker": 20.892656838759088,
+   "demand": [
+    829.9607918046872,
+    422.33955348410194,
+    591.7457755498423,
+    895.1069095943488,
+    813.7352789197156,
+    634.6301599096552
+   ],
+   "overtime_max_per_worker": 8.743278433240688,
+   "overtime_unit_cost": 4.019567270675761,
+   "holding_cost": 5.112950120561775,
+   "max_workforce_change": 2.580298261000784,
+   "hiring_cost": 708.4966198084759,
+   "layoff_cost": 787.1298663481887,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 40.724561829094014,
+   "prod_per_worker": 24.731157639793704,
+   "demand": [
+    648.9844384275084,
+    618.7346272583617,
+    598.8213992758986,
+    856.8894811348381,
+    1095.3217261678196,
+    837.1290297232457
+   ],
+   "overtime_max_per_worker": 7.2274310172895415,
+   "overtime_unit_cost": 2.2749463019339733,
+   "holding_cost": 6.734779307818563,
+   "max_workforce_change": 3.7363277816126432,
+   "hiring_cost": 247.87518615417653,
+   "layoff_cost": 475.54434454326537,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 42.71368888528801,
+   "prod_per_worker": 18.648321789700844,
+   "demand": [
+    645.4760061890906,
+    495.4225310777355,
+    430.09334661473395,
+    1009.5942021019972,
+    979.9391080331606,
+    852.3828827201543
+   ],
+   "overtime_max_per_worker": 4.026831889188582,
+   "overtime_unit_cost": 6.374760787702096,
+   "holding_cost": 5.960829925143141,
+   "max_workforce_change": 4.2767326505458865,
+   "hiring_cost": 793.7140103819573,
+   "layoff_cost": 817.599798277438,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  },
+  {
+   "workers_initial": 46.857038403796196,
+   "prod_per_worker": 22.75999911546245,
+   "demand": [
+    586.2001902249239,
+    431.55608780545356,
+    444.63591441772456,
+    688.5156204683373,
+    743.9307355366162,
+    1012.5966628808261
+   ],
+   "overtime_max_per_worker": 8.258205758836013,
+   "overtime_unit_cost": 3.888067284790868,
+   "holding_cost": 11.865263983538563,
+   "max_workforce_change": 4.373791406363986,
+   "hiring_cost": 748.7285538443263,
+   "layoff_cost": 665.4355561734151,
+   "initial_inventory": 0,
+   "final_inventory": 0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   -5699.999999999998,
+   -2856.844490891588,
+   -2678.4303770339047,
+   -13588.371284351013,
+   -7269.661690966386,
+   null
+  ],
+  "B-structured": [
+   10000.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   10000.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

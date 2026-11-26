@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "demand_2_6": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 18.0,
+    "integer": true
+   }
+  },
+  "demand_6_10": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "demand_10_14": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "demand_14_18": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "demand_18_22": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "demand_22_2": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "salary_regular": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "salary_contract": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "shift_length": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[shift_length] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "demand_2_6": {
+    "meaning": "Nurses required during 2:00-6:00",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 18,
+     "integer": true
+    }
+   },
+   "demand_6_10": {
+    "meaning": "Nurses required during 6:00-10:00",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "demand_10_14": {
+    "meaning": "Nurses required during 10:00-14:00",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "demand_14_18": {
+    "meaning": "Nurses required during 14:00-18:00",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "demand_18_22": {
+    "meaning": "Nurses required during 18:00-22:00",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "demand_22_2": {
+    "meaning": "Nurses required during 22:00-2:00",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "salary_regular": {
+    "meaning": "Hourly salary for regular nurses ($/hour)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "salary_contract": {
+    "meaning": "Hourly salary for contract nurses ($/hour)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "shift_length": {
+    "meaning": "Consecutive working hours per nurse shift",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

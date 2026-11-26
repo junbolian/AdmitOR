@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "a_front_hours": 2,
+   "b_front_hours": 3,
+   "a_back_hours": 3,
+   "b_back_hours": 4,
+   "front_capacity": 16,
+   "back_capacity": 24,
+   "c_per_b": 2,
+   "c_sellable_max": 5,
+   "c_disposal_cost": 2,
+   "profit_a": 4,
+   "profit_b": 10,
+   "profit_c": 3
+  },
+  {
+   "a_front_hours": 2.2788535969157673,
+   "b_front_hours": 1.5750322656680007,
+   "a_back_hours": 2.3250879551073576,
+   "b_back_hours": 2.892842952595291,
+   "front_capacity": 19.7835394266242,
+   "back_capacity": 28.240787698149873,
+   "c_per_b": 2.784359135409691,
+   "c_sellable_max": 2.521632995776497,
+   "c_disposal_cost": 1.7657654590558112,
+   "profit_a": 1.178783316628422,
+   "profit_b": 5.7795696220540504,
+   "profit_c": 4.042842304826899
+  },
+  {
+   "a_front_hours": 1.0530719393677272,
+   "b_front_hours": 2.0965129520599453,
+   "a_back_hours": 3.44965331333857,
+   "b_back_hours": 4.179765922412867,
+   "front_capacity": 11.527049952651147,
+   "back_capacity": 26.142376413021807,
+   "c_per_b": 2.618860913355653,
+   "c_sellable_max": 2.038992558068366,
+   "c_disposal_cost": 2.9174577554984236,
+   "profit_a": 5.188836369929361,
+   "profit_b": 7.603757747769878,
+   "profit_c": 1.2438359984942524
+  },
+  {
+   "a_front_hours": 2.9144261444135626,
+   "b_front_hours": 2.50978363533788,
+   "a_back_hours": 1.7782375301404438,
+   "b_back_hours": 2.386865507333856,
+   "front_capacity": 21.559909861559355,
+   "back_capacity": 26.489424752805384,
+   "c_per_b": 2.61425654654876,
+   "c_sellable_max": 6.3783907201629075,
+   "c_disposal_cost": 2.1086842743641023,
+   "profit_a": 6.838694583876224,
+   "profit_b": 8.178015658125302,
+   "profit_c": 4.416325050185816
+  },
+  {
+   "a_front_hours": 2.6588093285059897,
+   "b_front_hours": 3.355559257092738,
+   "a_back_hours": 4.0851207009323325,
+   "b_back_hours": 4.309408581027048,
+   "front_capacity": 19.273149379438777,
+   "back_capacity": 13.099785207735893,
+   "c_per_b": 1.4557965513030937,
+   "c_sellable_max": 3.7363277816126432,
+   "c_disposal_cost": 0.7393759307708825,
+   "profit_a": 2.396745318166181,
+   "profit_b": 4.015021441145937,
+   "profit_c": 2.223788824880737
+  },
+  {
+   "a_front_hours": 2.2713688885288006,
+   "b_front_hours": 2.5944965369102526,
+   "a_back_hours": 2.610542901350648,
+   "b_back_hours": 2.8380281230859508,
+   "front_capacity": 12.271645152785814,
+   "back_capacity": 34.479710105099855,
+   "c_per_b": 2.296070770493187,
+   "c_sellable_max": 5.65478603400193,
+   "c_disposal_cost": 1.013415944594291,
+   "profit_a": 5.374760787702095,
+   "profit_b": 4.9510374064289255,
+   "profit_c": 3.0356435340611823
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   57.0,
+   25.18338274797955,
+   42.88370059107652,
+   84.34368784488933,
+   20.004264911620954,
+   43.27775614657405
+  ],
+  "B-structured": [
+   57.0,
+   25.18338274797955,
+   42.88370059107652,
+   84.34368784488933,
+   20.004264911620954,
+   43.27775614657405
+  ],
+  "C-direct": [
+   57.0,
+   25.183382747979547,
+   42.88370059107652,
+   84.34368784488933,
+   20.00426491162095,
+   43.27775614657405
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

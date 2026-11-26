@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "durations": [
+    4,
+    3,
+    5,
+    2,
+    10,
+    10,
+    1
+   ],
+   "work_cost_per_day": 1000,
+   "machine_cost_per_day": 5000
+  },
+  {
+   "durations": [
+    4.5577071938315346,
+    1.5750322656680007,
+    3.8751465918455965,
+    1.4464214762976455,
+    12.364712141640124,
+    11.766994874229113,
+    1.3921795677048454
+   ],
+   "work_cost_per_day": 586.9388326294162,
+   "machine_cost_per_day": 4531.530918111623
+  },
+  {
+   "durations": [
+    2.1191888777522814,
+    2.15591392441081,
+    5.026776440516811,
+    1.0530719393677272,
+    6.988376506866485,
+    11.498844377795232,
+    1.0449414806032167
+   ],
+   "work_cost_per_day": 720.4406220406967,
+   "machine_cost_per_day": 5535.594103255452
+  },
+  {
+   "durations": [
+    5.237721826711306,
+    1.519496279034183,
+    6.5290962591640405,
+    2.3962787899764537,
+    8.40250516517992,
+    6.554794998117815,
+    1.4572130722067813
+   ],
+   "work_cost_per_day": 836.5945451126267,
+   "machine_cost_per_day": 2556.4750602808876
+  },
+  {
+   "durations": [
+    2.386865507333856,
+    4.042483099042379,
+    5.518630156834456,
+    2.61425654654876,
+    12.297317866938178,
+    10.362280914547007,
+    1.4731157639793706
+   ],
+   "work_cost_per_day": 878.5343772083535,
+   "machine_cost_per_day": 5312.243787639362
+  },
+  {
+   "durations": [
+    5.317618657011979,
+    3.355559257092738,
+    6.808534501553886,
+    2.154704290513524,
+    12.045718362149236,
+    5.458243836556623,
+    0.7278982756515469
+   ],
+   "work_cost_per_day": 789.3879636021072,
+   "machine_cost_per_day": 2478.7518615417653
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   115000.0,
+   103860.2142760284,
+   110042.97975232934,
+   55732.56041992981,
+   121782.32248370029,
+   56024.55943676889
+  ],
+  "C-direct": [
+   115000.0,
+   103860.2142760284,
+   110042.97975232934,
+   55732.56041992981,
+   121782.32248370029,
+   56024.55943676889
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'",
+   "crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'",
+   "crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'",
+   "crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'",
+   "crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'",
+   "crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'\", \"crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'\", \"crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'\", \"crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'\", \"crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'\", \"crash:acts = list(durations.keys()) | ^^^^^^^^^^^^^^ | AttributeError: 'list' object has no attribute 'keys'\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

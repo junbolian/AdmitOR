@@ -1,0 +1,192 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    467,
+    121,
+    109,
+    131,
+    500,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    261,
+    209,
+    135,
+    146,
+    488,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     43,
+     8,
+     15,
+     37,
+     9
+    ],
+    [
+     9,
+     0,
+     50,
+     37,
+     50,
+     29
+    ],
+    [
+     3,
+     37,
+     0,
+     7,
+     18,
+     27
+    ],
+    [
+     15,
+     3,
+     3,
+     0,
+     2,
+     48
+    ],
+    [
+     34,
+     18,
+     44,
+     2,
+     0,
+     27
+    ],
+    [
+     36,
+     49,
+     29,
+     12,
+     33,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "initial supply at each clinic (units)",
+    "base": [
+     467,
+     121,
+     109,
+     131,
+     500,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "required units at each clinic",
+    "base": [
+     261,
+     209,
+     135,
+     146,
+     488,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_matrix": {
+    "meaning": "unit transfer cost between clinic pairs (rows=from, cols=to; diagonal unused/0)",
+    "base": [
+     [
+      0,
+      43,
+      8,
+      15,
+      37,
+      9
+     ],
+     [
+      9,
+      0,
+      50,
+      37,
+      50,
+      29
+     ],
+     [
+      3,
+      37,
+      0,
+      7,
+      18,
+      27
+     ],
+     [
+      15,
+      3,
+      3,
+      0,
+      2,
+      48
+     ],
+     [
+      34,
+      18,
+      44,
+      2,
+      0,
+      27
+     ],
+     [
+      36,
+      49,
+      29,
+      12,
+      33,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

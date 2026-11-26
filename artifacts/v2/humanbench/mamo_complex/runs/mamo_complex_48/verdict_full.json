@@ -1,0 +1,152 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "capacity_0_1": 11,
+   "capacity_0_2": 11,
+   "capacity_0_3": 14,
+   "capacity_0_4": 6,
+   "capacity_0_5": 11,
+   "capacity_0_6": 4,
+   "capacity_0_7": 15,
+   "capacity_0_8": 9,
+   "capacity_1_5_high": 18,
+   "capacity_range_low": 1,
+   "capacity_range_high": 20
+  },
+  {
+   "capacity_0_1": 12.53369478303672,
+   "capacity_0_2": 5.775118307449336,
+   "capacity_0_3": 10.85041045716767,
+   "capacity_0_4": 4.339264428892936,
+   "capacity_0_5": 13.601183355804137,
+   "capacity_0_6": 4.706797949691645,
+   "capacity_0_7": 20.882693515572683,
+   "capacity_0_8": 5.282449493664745,
+   "capacity_1_5_high": 16.59459275433487,
+   "capacity_range_low": 1,
+   "capacity_range_high": 14.372759496072067
+  },
+  {
+   "capacity_0_1": 11.058908169136984,
+   "capacity_0_2": 5.7918956665225,
+   "capacity_0_3": 9.783727109613078,
+   "capacity_0_4": 6.89930662667714,
+   "capacity_0_5": 11.494356286635384,
+   "capacity_0_6": 2.881762488162787,
+   "capacity_0_7": 16.33898525813863,
+   "capacity_0_8": 11.78487411010044,
+   "capacity_1_5_high": 9.1169776742051,
+   "capacity_range_low": 8,
+   "capacity_range_high": 23.962787899764535
+  },
+  {
+   "capacity_0_1": 9.242755681697911,
+   "capacity_0_2": 7.210274497929597,
+   "capacity_0_3": 20.40098301089494,
+   "capacity_0_4": 5.01956727067576,
+   "capacity_0_5": 6.520204277181627,
+   "capacity_0_6": 2.386865507333856,
+   "capacity_0_7": 20.212415495211896,
+   "capacity_0_8": 9.93353428230202,
+   "capacity_1_5_high": 23.52830891893884,
+   "capacity_range_low": 8,
+   "capacity_range_high": 20.724561829094014
+  },
+  {
+   "capacity_0_1": 16.204273403773076,
+   "capacity_0_2": 9.663878149291888,
+   "capacity_0_3": 14.728568837825176,
+   "capacity_0_4": 7.976427985517969,
+   "capacity_0_5": 12.303717276006706,
+   "capacity_0_6": 5.446827601243109,
+   "capacity_0_7": 16.160282178851432,
+   "capacity_0_8": 10.841146525934313,
+   "capacity_1_5_high": 9.82483890580192,
+   "capacity_range_low": 3,
+   "capacity_range_high": 15.787759272042143
+  },
+  {
+   "capacity_0_1": 6.377711746159902,
+   "capacity_0_2": 8.060699749971333,
+   "capacity_0_3": 8.414020011736207,
+   "capacity_0_4": 4.667841618660553,
+   "capacity_0_5": 12.492528886908403,
+   "capacity_0_6": 3.459328715880337,
+   "capacity_0_7": 13.05271450675324,
+   "capacity_0_8": 6.385563276943389,
+   "capacity_1_5_high": 13.80560079688404,
+   "capacity_range_low": 9,
+   "capacity_range_high": 22.96070770493187
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   81.0,
+   77.97161229127987,
+   76.03381571498694,
+   80.9266000232276,
+   93.32512195844367,
+   62.910408513013365
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   73.0,
+   52.40072798188095,
+   115.67323780939405,
+   104.10721976958406,
+   70.20442434206075,
+   111.267686391739
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "ambiguous_network",
+   "ambiguous_network",
+   "ambiguous_network",
+   "ambiguous_network",
+   "ambiguous_network",
+   "ambiguous_network"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: incomparable (no co-solved instance)",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: incomparable (no co-solved instance)"
+ ],
+ "notes": []
+}

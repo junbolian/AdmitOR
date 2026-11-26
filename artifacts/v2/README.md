@@ -59,3 +59,27 @@ The configurations of `downstream/` are the libraries built from the arms `panel
 `vote`, `runsok` and `gt`, the host without a learned library (`nolib`), and the host's released library
 (`released`; build data as described in the host README, no build record). The host itself and the text of
 its skill libraries are not redistributed; the changes made to the host are in `patches/`.
+
+## Runs on human-written texts
+
+The same certifier and data verification, unchanged (`scripts/e1_certify.py --m 5 --sampler param_screen --both`, the
+three families DeepSeek-V4-Flash, GPT-6.1 Sol and Claude Sonnet 5.5, temperature 0, the extraction and verification
+retry rules), on two releases of IndustryOR and Mamo ComplexLP. Each benchmark folder has the layout of the problem
+sets above (`workorder.jsonl`, `problems.csv`, `verdicts.jsonl`, `judges.csv`, `runs/<id>/` with `spec.json`, the three
+programs, `verdict_full.json`, `verdict_independent.json`, `param_screen.json`, `extraction_attempts.json` and
+`verification_<A,B,C>.json`). Scoring: `round_aware` of `scripts/score_eval.py`; a data-verification reply that cannot
+be parsed after three attempts counts as not flagged. Absolute local paths are replaced by `<PATH>/` as above; a relay error page that a call returned in place of
+a model reply (in a program file, or as the reply of an earlier verification attempt) is replaced by
+`<relay error message instead of a model reply (HTTP <code>, ...); text not published>` (14 places).
+
+| Folder / file | Content | Rebuild |
+|---|---|---|
+| `humanbench/industryor`, `humanbench/mamo_complex` | published releases of IndustryOR (100 problems, `industryor_<index>`) and Mamo ComplexLP (211, `mamo_complex_<index>`), from `datasets/benchmark/industryor.jsonl` and `mamo_complex_test.jsonl`; the label is the field `answer` | `python scripts/human_problems.py` (problem files) |
+| `humanbench/tables/` | `h1_rules` (certification rules), `h2_check` and `h2_check_unparsed` (data-verification flags among the `panel_base_3of3` certificates), `h3_single_vs` (single programs on the problems without a three-family certificate), `h4_joint` (agreement of the three families with the label), `h5_expert` and `h5_expert_status.csv` (certificates against the expert audit of Xiao et al. 2025), `h6_per_problem.csv` (every decision per problem, for rescoring against any release) | `python scripts/human_tables.py --run humanbench` |
+| `humanbench/misses_3of3.md`, `misses_2of3_only.md`, `withdrawn_matching.md` | every `panel_base_3of3` certificate that misses the label, every `panel_base_2of3` miss without a three-family certificate, and every label-matching `panel_base_3of3` certificate that the rule "B or C" withdraws, with problem text, parameter set, programs, values and verification replies | `python scripts/human_tables.py --run humanbench` |
+| `humanbench/expert/SOURCE.md` | address, commit, file names and SHA-256 of the cleaned and original files of the expert audit of Xiao et al. (2025); the files themselves are not redistributed | none |
+| `humanbench/expert/expert_status.csv` | the per-problem status derived from those files (`removed`, `kept, same label`, `kept, label changed`), read by table h5 | `python scripts/human_expert_status.py --expert <folder with the downloaded files>` |
+| `optimind/industryor`, `optimind/mamo_complex` | corrected releases by the OptiMind authors (99 problems, `om_industryor_<row>`, and 210, `om_mamo_<row>`; `<row>` is the 0-based row of the CSV), from `datasets/optimind_corrected/`; `problems.csv` keeps the column `problem_class`. The `answer` column holds a number (IndustryOR) or a one-element list (Mamo); an answer written with a zero decimal, such as `219816.0`, is read as the integer `219816`, so `round_aware` compares it with zero decimals | `python scripts/human_problems.py` (problem files) |
+| `optimind/tables/` | `o1_rules`, `o2_check`, `o2_check_unparsed` and `o3_per_problem.csv`, as h1, h2 and h6, scored against the OptiMind answers | `python scripts/human_tables.py --run optimind` |
+| `optimind/misses_3of3.md`, `misses_2of3_only.md`, `withdrawn_matching.md` | the same exports against the OptiMind answers | `python scripts/human_tables.py --run optimind` |
+| `audit/AUDIT_human_texts.md` | class of every `panel_base_3of3` certificate that misses the label in both releases, with evidence, and the diet problems whose text states integrality | none |

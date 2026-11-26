@@ -1,0 +1,224 @@
+{
+ "spec": {
+  "capacity_0_1": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_2": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_3": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_4": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_5": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_6": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_7": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity_0_8": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_capacity_from_1": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "max_capacity_from_2": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "capacity_7_3": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_capacity_to_8": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "capacity_3_8": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_0_1": {
+    "meaning": "Capacity of link from Station 0 to Station 1 (Tbps)",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_2": {
+    "meaning": "Capacity of link from Station 0 to Station 2 (Tbps)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_3": {
+    "meaning": "Capacity of link from Station 0 to Station 3 (Tbps)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_4": {
+    "meaning": "Capacity of link from Station 0 to Station 4 (Tbps)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_5": {
+    "meaning": "Capacity of link from Station 0 to Station 5 (Tbps)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_6": {
+    "meaning": "Capacity of link from Station 0 to Station 6 (Tbps)",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_7": {
+    "meaning": "Capacity of link from Station 0 to Station 7 (Tbps)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity_0_8": {
+    "meaning": "Capacity of link from Station 0 to Station 8 (Tbps)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_capacity_from_1": {
+    "meaning": "Upper bound on capacities from Station 1 to other stations (Tbps)",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "max_capacity_from_2": {
+    "meaning": "Upper bound on capacities from Station 2 to other stations (Tbps)",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "capacity_7_3": {
+    "meaning": "Capacity of link from Station 7 to Station 3 (Tbps)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_capacity_to_8": {
+    "meaning": "Upper bound on capacities into Station 8 from other stations (Tbps)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "capacity_3_8": {
+    "meaning": "Capacity of link from Station 3 to Station 8 (Tbps)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "sample_id": "om_mamo_100",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[0][3] = 10\",\n      \"stated\": \"capacity_matrix[0][3] = 10, but capacity_matrix[3][0] = 9\",\n      \"evidence\": \"From City 0 (Source): Can send supplies to City 3 (10 tons). City 3: Starts with supplies from City 0 (9 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[0][4] = 0\",\n      \"stated\": \"capacity_matrix[0][4] = 7\",\n      \"evidence\": \"City 4: Receives from City 0 (7 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[0][5] = 2\",\n      \"stated\": \"capacity_matrix[0][5] = 2, but capacity_matrix[5][0] = 16\",\n      \"evidence\": \"From City 0 (Source): Can send supplies to City 5 (2 tons). City 5: Gathers supplies from City 0 (16 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[0][6] = 11\",\n      \"stated\": \"capacity_matrix[0][6] = 11, but capacity_matrix[6][0] = 3\",\n      \"evidence\": \"From City 0 (Source): Can send supplies to City 6 (11 tons). City 6: Channels supplies from City 0 (3 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[0][7] = 5\",\n      \"stated\": \"capacity_matrix[0][7] = 5, but capacity_matrix[7][0] = 14\",\n      \"evidence\": \"From City 0 (Source): Can send supplies to City 7 (5 tons). City 7: Starts with resources from City 0 (14 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[2][0] = 3\",\n      \"stated\": \"capacity_matrix[2][0] = 3, but capacity_matrix[0][2] = 20\",\n      \"evidence\": \"From City 0 (Source): Can send supplies to City 2 (20 tons). City 2: Can manage supplies from City 0 (3 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": \"capacity_matrix[5][7] = 0\",\n      \"stated\": \"not mentioned for City 5 to City 7\",\n      \"evidence\": \"City 5: ...can send out to City 1 (4 tons), City 2 (6 tons), City 3 (15 tons), City 4 (19 tons), City 6 (0 tons), and City 8 (20 tons)\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_matrix[5][7]\",\n      \"evidence\": \"City 5 outbound routes list City 1, 2, 3, 4, 6, and 8, but not City 7\"\n    }\n  ]\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[0][3] = 10",
+   "stated": "capacity_matrix[0][3] = 10, but capacity_matrix[3][0] = 9",
+   "evidence": "From City 0 (Source): Can send supplies to City 3 (10 tons). City 3: Starts with supplies from City 0 (9 tons)"
+  },
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[0][4] = 0",
+   "stated": "capacity_matrix[0][4] = 7",
+   "evidence": "City 4: Receives from City 0 (7 tons)"
+  },
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[0][5] = 2",
+   "stated": "capacity_matrix[0][5] = 2, but capacity_matrix[5][0] = 16",
+   "evidence": "From City 0 (Source): Can send supplies to City 5 (2 tons). City 5: Gathers supplies from City 0 (16 tons)"
+  },
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[0][6] = 11",
+   "stated": "capacity_matrix[0][6] = 11, but capacity_matrix[6][0] = 3",
+   "evidence": "From City 0 (Source): Can send supplies to City 6 (11 tons). City 6: Channels supplies from City 0 (3 tons)"
+  },
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[0][7] = 5",
+   "stated": "capacity_matrix[0][7] = 5, but capacity_matrix[7][0] = 14",
+   "evidence": "From City 0 (Source): Can send supplies to City 7 (5 tons). City 7: Starts with resources from City 0 (14 tons)"
+  },
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[2][0] = 3",
+   "stated": "capacity_matrix[2][0] = 3, but capacity_matrix[0][2] = 20",
+   "evidence": "From City 0 (Source): Can send supplies to City 2 (20 tons). City 2: Can manage supplies from City 0 (3 tons)"
+  },
+  {
+   "parameter": "capacity_matrix",
+   "extracted": "capacity_matrix[5][7] = 0",
+   "stated": "not mentioned for City 5 to City 7",
+   "evidence": "City 5: ...can send out to City 1 (4 tons), City 2 (6 tons), City 3 (15 tons), City 4 (19 tons), City 6 (0 tons), and City 8 (20 tons)"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix[5][7]",
+   "evidence": "City 5 outbound routes list City 1, 2, 3, 4, 6, and 8, but not City 7"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

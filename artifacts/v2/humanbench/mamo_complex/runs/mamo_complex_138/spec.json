@@ -1,0 +1,104 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     15,
+     88,
+     54,
+     92
+    ],
+    [
+     15,
+     0,
+     29,
+     98,
+     33
+    ],
+    [
+     88,
+     29,
+     0,
+     96,
+     96
+    ],
+    [
+     54,
+     98,
+     96,
+     0,
+     63
+    ],
+    [
+     92,
+     33,
+     96,
+     63,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Pairwise travel cost between warehouses (symmetric, zero diagonal not used)",
+    "base": [
+     [
+      0,
+      15,
+      88,
+      54,
+      92
+     ],
+     [
+      15,
+      0,
+      29,
+      98,
+      33
+     ],
+     [
+      88,
+      29,
+      0,
+      96,
+      96
+     ],
+     [
+      54,
+      98,
+      96,
+      0,
+      63
+     ],
+     [
+      92,
+      33,
+      96,
+      63,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

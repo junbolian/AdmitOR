@@ -1,0 +1,31 @@
+{
+ "sample_id": "om_mamo_21",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_matrix[1][5]\",\n      \"evidence\": \"From Station 1: Can transmit to the Power Plant (20 MW), Station 2 (13 MW), Station 3 (9 MW), and Station 4 (10 MW).\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[4][5]\",\n      \"evidence\": \"From Station 4: Can send power back to the Power Plant (8 MW), to Station 1 (17 MW), Station 2 (20 MW), Station 3 (14 MW), and Station 5 (9 MW).\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix[1][5]",
+   "evidence": "From Station 1: Can transmit to the Power Plant (20 MW), Station 2 (13 MW), Station 3 (9 MW), and Station 4 (10 MW)."
+  },
+  {
+   "parameter": "capacity_matrix[4][5]",
+   "evidence": "From Station 4: Can send power back to the Power Plant (8 MW), to Station 1 (17 MW), Station 2 (20 MW), Station 3 (14 MW), and Station 5 (9 MW)."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

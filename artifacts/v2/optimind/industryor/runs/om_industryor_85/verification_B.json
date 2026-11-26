@@ -1,0 +1,29 @@
+{
+ "sample_id": "om_industryor_85",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"total_capacity_B\",\"extracted\":30,\"stated\":60,\"evidence\":\"Type A trucks have 20 cubic meters of refrigerated capacity and 40 cubic meters of non-refrigerated capacity. In contrast, Type B trucks have the same total capacity\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "total_capacity_B",
+   "extracted": 30,
+   "stated": 60,
+   "evidence": "Type A trucks have 20 cubic meters of refrigerated capacity and 40 cubic meters of non-refrigerated capacity. In contrast, Type B trucks have the same total capacity"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

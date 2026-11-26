@@ -1,0 +1,202 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "salary_F": 12000,
+   "salary_G": 15000,
+   "salary_H": 18000,
+   "salary_I": 5000,
+   "salary_J": 10000,
+   "budget": 40000,
+   "max_hires": 4,
+   "skill_F": 2,
+   "skill_G": 3,
+   "skill_H": 4,
+   "skill_I": 1,
+   "skill_J": 2,
+   "min_skill": 8,
+   "exp_F": 1,
+   "exp_G": 2,
+   "exp_H": 2,
+   "exp_I": 5,
+   "exp_J": 4,
+   "min_exp": 8
+  },
+  {
+   "salary_F": 13673.121581494604,
+   "salary_G": 7875.161328340004,
+   "salary_H": 18000,
+   "salary_I": 3875.1465918455965,
+   "salary_J": 7232.1073814882275,
+   "budget": 40000,
+   "max_hires": 4,
+   "skill_F": 3,
+   "skill_G": 4,
+   "skill_H": 4,
+   "skill_I": 0,
+   "skill_J": 2,
+   "min_skill": 8,
+   "exp_F": 0,
+   "exp_G": 2,
+   "exp_H": 1,
+   "exp_I": 4,
+   "exp_J": 0,
+   "min_exp": 8
+  },
+  {
+   "salary_F": 8386.051808239781,
+   "salary_G": 17248.266566692848,
+   "salary_H": 18000,
+   "salary_I": 5224.707403016083,
+   "salary_J": 7204.406220406967,
+   "budget": 40000,
+   "max_hires": 4,
+   "skill_F": 3,
+   "skill_G": 0,
+   "skill_H": 4,
+   "skill_I": 2,
+   "skill_J": 3,
+   "min_skill": 8,
+   "exp_F": 2,
+   "exp_G": 2,
+   "exp_H": 1,
+   "exp_I": 7,
+   "exp_J": 2,
+   "min_exp": 8
+  },
+  {
+   "salary_F": 7112.950120561775,
+   "salary_G": 8950.74565250196,
+   "salary_H": 18000,
+   "salary_I": 6737.471831737298,
+   "salary_J": 11037.26031366891,
+   "budget": 40000,
+   "max_hires": 4,
+   "skill_F": 3,
+   "skill_G": 2,
+   "skill_H": 4,
+   "skill_I": 3,
+   "skill_J": 2,
+   "min_skill": 8,
+   "exp_F": 3,
+   "exp_G": 2,
+   "exp_H": 4,
+   "exp_I": 4,
+   "exp_J": 5,
+   "min_exp": 8
+  },
+  {
+   "salary_F": 12928.225743081144,
+   "salary_G": 18068.577543223855,
+   "salary_H": 18000,
+   "salary_I": 2729.121918278311,
+   "salary_J": 7278.982756515468,
+   "budget": 40000,
+   "max_hires": 3,
+   "skill_F": 0,
+   "skill_G": 1,
+   "skill_H": 4,
+   "skill_I": 0,
+   "skill_J": 1,
+   "min_skill": 8,
+   "exp_F": 3,
+   "exp_G": 2,
+   "exp_H": 2,
+   "exp_I": 3,
+   "exp_J": 1,
+   "min_exp": 8
+  },
+  {
+   "salary_F": 9203.73386458936,
+   "salary_G": 21549.818815687413,
+   "salary_H": 18000,
+   "salary_I": 5740.176926232967,
+   "salary_J": 11091.310056669883,
+   "budget": 40000,
+   "max_hires": 3,
+   "skill_F": 3,
+   "skill_G": 1,
+   "skill_H": 4,
+   "skill_I": 1,
+   "skill_J": 4,
+   "min_skill": 8,
+   "exp_F": 3,
+   "exp_G": 2,
+   "exp_H": 3,
+   "exp_I": 5,
+   "exp_J": 5,
+   "min_exp": 8
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   38000.0,
+   null,
+   20815.16543166283,
+   22801.167604801034,
+   null,
+   26035.220847492208
+  ],
+  "B-structured": [
+   38000.0,
+   null,
+   20815.16543166283,
+   22801.167604801034,
+   null,
+   26035.220847492208
+  ],
+  "C-direct": [
+   38000.0,
+   null,
+   20815.165431662834,
+   22801.167604801034,
+   null,
+   26035.220847492208
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_feasible_solution",
+   "optimal",
+   "optimal",
+   "no_feasible_solution",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

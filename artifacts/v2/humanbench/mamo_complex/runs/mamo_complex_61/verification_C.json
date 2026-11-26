@@ -1,0 +1,34 @@
+{
+ "sample_id": "mamo_complex_61",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement says \"To reach City A from City E, the cost is 16 units\" — this is cost_E_to_A, not cost_A_to_E. The extracted parameter cost_A_to_E is assigned the value 16, but the statement never gives a cost from A to E directly; it only states the cost from E to A.\n\n```json\n{\"mismatch\": [{\"parameter\": \"cost_A_to_E\", \"extracted\": 16, \"stated\": \"not given\", \"evidence\": \"\\\"To reach City A from City E, the cost is 16 units\\\" — this states cost from E to A, not A to E\"}], \"not_stated\": [{\"parameter\": \"cost_A_to_E\", \"evidence\": \"\\\"To reach City A from City E, the cost is 16 units\\\" — only the reverse direction is stated\"}]}\n```",
+ "mismatch": [
+  {
+   "parameter": "cost_A_to_E",
+   "extracted": 16,
+   "stated": "not given",
+   "evidence": "\"To reach City A from City E, the cost is 16 units\" — this states cost from E to A, not A to E"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "cost_A_to_E",
+   "evidence": "\"To reach City A from City E, the cost is 16 units\" — only the reverse direction is stated"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "spec": {
+  "initial_supply": {
+   "base": [
+    229,
+    345,
+    231,
+    164,
+    354,
+    437,
+    265
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "required_supply": {
+   "base": [
+    158,
+    14,
+    326,
+    432,
+    207,
+    215,
+    233
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[transfer_cost] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "initial_supply": {
+    "meaning": "Initial medical supplies at each of the seven facilities",
+    "base": [
+     229,
+     345,
+     231,
+     164,
+     354,
+     437,
+     265
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "required_supply": {
+    "meaning": "Required medical supplies at each of the seven facilities",
+    "base": [
+     158,
+     14,
+     326,
+     432,
+     207,
+     215,
+     233
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transfer_cost": {
+    "meaning": "Transportation cost matrix between facilities (row i to column j; diagonal unused)",
+    "base": [
+     [
+      null,
+      26,
+      8,
+      7,
+      34,
+      35,
+      34
+     ],
+     [
+      41,
+      null,
+      27,
+      31,
+      3,
+      33,
+      36
+     ],
+     [
+      20,
+      49,
+      null,
+      48,
+      21,
+      38,
+      42
+     ],
+     [
+      10,
+      35,
+      26,
+      null,
+      21,
+      33,
+      31
+     ],
+     [
+      21,
+      30,
+      24,
+      25,
+      null,
+      5,
+      8
+     ],
+     [
+      27,
+      34,
+      34,
+      26,
+      27,
+      null,
+      43
+     ],
+     [
+      38,
+      20,
+      11,
+      43,
+      49,
+      9,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

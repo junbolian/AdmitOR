@@ -1,0 +1,129 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "capacity": [
+    18000,
+    5000,
+    6000,
+    8000,
+    10000,
+    16000,
+    18000,
+    1000,
+    15000,
+    20000,
+    13000,
+    1000,
+    2000,
+    18000,
+    16000,
+    19000,
+    15000,
+    4000,
+    9000,
+    10000,
+    20000,
+    2000,
+    18000,
+    19000,
+    17000,
+    15000,
+    19000,
+    14000,
+    13000,
+    14000,
+    1000,
+    8000,
+    16000,
+    20000,
+    0,
+    17000,
+    18000,
+    10000,
+    17000,
+    16000,
+    6000,
+    5000,
+    14000,
+    19000,
+    6000,
+    0,
+    19000,
+    12000,
+    7000,
+    16000,
+    17000,
+    13000,
+    6000,
+    9000,
+    5000
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   63000.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:cap = {(i, j): capacity[idx] for idx, (i, j) in enumerate(edges)} | ~~~~~~~~^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:return capacity[i * n + j] | ~~~~~~~~^^^^^^^^^^^ | IndexError: list index out of range",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

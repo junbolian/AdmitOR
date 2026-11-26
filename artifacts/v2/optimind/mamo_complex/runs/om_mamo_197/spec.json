@@ -1,0 +1,178 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    10,
+    4,
+    1,
+    7,
+    6,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein": {
+   "base": [
+    15,
+    16,
+    3,
+    19,
+    11,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    10,
+    25,
+    8,
+    20,
+    8,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    163,
+    108,
+    198,
+    141,
+    105,
+    199
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_req_1": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_req_2": {
+   "base": 144,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "calorie_req": {
+   "base": 1900,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Cost per unit portion of each food item",
+    "base": [
+     10,
+     4,
+     1,
+     7,
+     6,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein": {
+    "meaning": "Protein grams per unit portion of each food item",
+    "base": [
+     15,
+     16,
+     3,
+     19,
+     11,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "Carbohydrate grams per unit portion of each food item",
+    "base": [
+     10,
+     25,
+     8,
+     20,
+     8,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "Calories per unit portion of each food item",
+    "base": [
+     163,
+     108,
+     198,
+     141,
+     105,
+     199
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_req_1": {
+    "meaning": "First protein requirement (grams per day)",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_req_2": {
+    "meaning": "Second protein requirement (grams per day)",
+    "base": 144,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "calorie_req": {
+    "meaning": "Calorie requirement (kcal per day)",
+    "base": 1900,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

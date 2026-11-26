@@ -1,0 +1,83 @@
+{
+ "spec": {
+  "car_lengths": {
+   "base": [
+    4,
+    4.5,
+    5,
+    4.1,
+    2.4,
+    5.2,
+    3.7,
+    3.5,
+    3.2,
+    4.5,
+    2.3,
+    3.3,
+    3.8,
+    4.6,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "side_capacity": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "car_lengths": {
+    "meaning": "lengths λ_i of the 15 cars (meters)",
+    "base": [
+     4,
+     4.5,
+     5,
+     4.1,
+     2.4,
+     5.2,
+     3.7,
+     3.5,
+     3.2,
+     4.5,
+     2.3,
+     3.3,
+     3.8,
+     4.6,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "side_capacity": {
+    "meaning": "maximum total length one side of the street may use; also the tight-capacity limit of 15 m in the variant",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

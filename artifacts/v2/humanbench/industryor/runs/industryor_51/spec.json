@@ -1,0 +1,152 @@
+{
+ "spec": {
+  "wage_skilled": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "wage_laborer": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "eff_hours_skilled": {
+   "base": 42,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "eff_hours_laborer": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "demand_task1": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_task2": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_task3": {
+   "base": 30000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "max_skilled": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_laborers": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "wage_skilled": {
+    "meaning": "weekly wage per skilled worker (yuan)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "wage_laborer": {
+    "meaning": "weekly wage per laborer (yuan)",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "eff_hours_skilled": {
+    "meaning": "effective weekly working hours per skilled worker",
+    "base": 42,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "eff_hours_laborer": {
+    "meaning": "effective weekly working hours per laborer",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "demand_task1": {
+    "meaning": "required effective hours for task 1",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_task2": {
+    "meaning": "required effective hours for task 2",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_task3": {
+    "meaning": "required effective hours for task 3",
+    "base": 30000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "max_skilled": {
+    "meaning": "maximum number of skilled workers recruitable",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_laborers": {
+    "meaning": "maximum number of laborers recruitable",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

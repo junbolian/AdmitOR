@@ -1,0 +1,205 @@
+{
+ "spec": {
+  "machine_hours_per_unit_p1": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "machine_hours_per_unit_p2": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "machine_hours_available": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "production_cost_p1": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "production_cost_p2": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "selling_price_p1": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "selling_price_p2": {
+   "base": 5.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "available_cash": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "revenue_advance_rate_p1": {
+   "base": 0.45,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 0.7,
+    "integer": false
+   }
+  },
+  "revenue_advance_rate_p2": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.6,
+    "integer": false
+   }
+  },
+  "extra_machine_hours": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "repair_cost": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "machine_hours_per_unit_p1": {
+    "meaning": "Machine hours required per unit of product 1",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "machine_hours_per_unit_p2": {
+    "meaning": "Machine hours required per unit of product 2",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "machine_hours_available": {
+    "meaning": "Total machine hours available in the current period",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "production_cost_p1": {
+    "meaning": "Production cost per unit of product 1",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "production_cost_p2": {
+    "meaning": "Production cost per unit of product 2",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "selling_price_p1": {
+    "meaning": "Selling price per unit of product 1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "selling_price_p2": {
+    "meaning": "Selling price per unit of product 2",
+    "base": 5.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "available_cash": {
+    "meaning": "Cash available to finance operations during the current period",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "revenue_advance_rate_p1": {
+    "meaning": "Fraction of product 1 sales revenue made available to finance operations",
+    "base": 0.45,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 0.7,
+     "integer": false
+    }
+   },
+   "revenue_advance_rate_p2": {
+    "meaning": "Fraction of product 2 sales revenue made available to finance operations",
+    "base": 0.3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.6,
+     "integer": false
+    }
+   },
+   "extra_machine_hours": {
+    "meaning": "Additional machine hours obtainable via repairs",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "repair_cost": {
+    "meaning": "Cost of repairs to obtain extra machine hours",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

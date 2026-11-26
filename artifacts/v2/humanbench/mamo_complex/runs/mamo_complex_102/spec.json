@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "cost_food1": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_food2": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_food3": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_food4": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_food1": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_food2": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_food3": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_food4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_food1": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_food2": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_food3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_food4": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_food1": {
+   "base": 83,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_food2": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_food3": {
+   "base": 71,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_food4": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_req": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_req": {
+   "base": 132,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_req": {
+   "base": 1990,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_food1": {
+    "meaning": "Cost per unit of Food_1",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_food2": {
+    "meaning": "Cost per unit of Food_2",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_food3": {
+    "meaning": "Cost per unit of Food_3",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_food4": {
+    "meaning": "Cost per unit of Food_4",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_food1": {
+    "meaning": "Protein grams per unit of Food_1",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_food2": {
+    "meaning": "Protein grams per unit of Food_2",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_food3": {
+    "meaning": "Protein grams per unit of Food_3",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_food4": {
+    "meaning": "Protein grams per unit of Food_4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_food1": {
+    "meaning": "Carbohydrate grams per unit of Food_1",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_food2": {
+    "meaning": "Carbohydrate grams per unit of Food_2",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_food3": {
+    "meaning": "Carbohydrate grams per unit of Food_3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_food4": {
+    "meaning": "Carbohydrate grams per unit of Food_4",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_food1": {
+    "meaning": "Calories per unit of Food_1",
+    "base": 83,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_food2": {
+    "meaning": "Calories per unit of Food_2",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_food3": {
+    "meaning": "Calories per unit of Food_3",
+    "base": 71,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_food4": {
+    "meaning": "Calories per unit of Food_4",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum protein requirement for the group",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_req": {
+    "meaning": "Minimum carbohydrate requirement for the group",
+    "base": 132,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_req": {
+    "meaning": "Minimum calorie requirement for the group",
+    "base": 1990,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

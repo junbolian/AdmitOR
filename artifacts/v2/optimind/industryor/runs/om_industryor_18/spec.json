@@ -1,0 +1,227 @@
+{
+ "spec": {
+  "profit_per_robot": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_per_car": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_per_blocks": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_per_doll": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "plastic_capacity": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "electronics_capacity": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "plastic_per_robot": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "plastic_per_car": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "plastic_per_blocks": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "plastic_per_doll": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "electronics_per_robot": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "electronics_per_car": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "electronics_per_blocks": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "electronics_per_doll": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_robot": {
+    "meaning": "Profit per robot sold ($)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_per_car": {
+    "meaning": "Profit per model car sold ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_per_blocks": {
+    "meaning": "Profit per set of building blocks sold ($)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_per_doll": {
+    "meaning": "Profit per doll sold ($)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "plastic_capacity": {
+    "meaning": "Available units of plastic",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "electronics_capacity": {
+    "meaning": "Available units of electronic components",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "plastic_per_robot": {
+    "meaning": "Plastic required per robot",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "plastic_per_car": {
+    "meaning": "Plastic required per model car",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "plastic_per_blocks": {
+    "meaning": "Plastic required per set of building blocks",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "plastic_per_doll": {
+    "meaning": "Plastic required per doll",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "electronics_per_robot": {
+    "meaning": "Electronic components required per robot",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "electronics_per_car": {
+    "meaning": "Electronic components required per model car",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "electronics_per_blocks": {
+    "meaning": "Electronic components required per set of building blocks",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "electronics_per_doll": {
+    "meaning": "Electronic components required per doll",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

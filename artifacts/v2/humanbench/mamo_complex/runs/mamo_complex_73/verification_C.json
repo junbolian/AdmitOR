@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_73",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transport_costs\",\n      \"evidence\": \"From Center 1: $2 to Store 1, $3 to Store 2, and so on, up to $5 to Store 8 — intermediate values (stores 3–7) are not given, only examples and a range\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "From Center 1: $2 to Store 1, $3 to Store 2, and so on, up to $5 to Store 8 — intermediate values (stores 3–7) are not given, only examples and a range"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

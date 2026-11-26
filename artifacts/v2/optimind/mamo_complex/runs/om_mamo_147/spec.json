@@ -1,0 +1,222 @@
+{
+ "spec": {
+  "initial_supply": {
+   "base": [
+    318,
+    349,
+    129,
+    381,
+    430,
+    52,
+    124
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    309,
+    9,
+    279,
+    71,
+    365,
+    233,
+    483
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     0,
+     2,
+     26,
+     19,
+     16,
+     26,
+     36
+    ],
+    [
+     27,
+     0,
+     26,
+     4,
+     15,
+     43,
+     25
+    ],
+    [
+     17,
+     45,
+     0,
+     18,
+     36,
+     37,
+     39
+    ],
+    [
+     19,
+     16,
+     14,
+     0,
+     5,
+     35,
+     9
+    ],
+    [
+     44,
+     47,
+     4,
+     3,
+     0,
+     2,
+     4
+    ],
+    [
+     30,
+     12,
+     28,
+     10,
+     16,
+     0,
+     25
+    ],
+    [
+     19,
+     16,
+     10,
+     2,
+     50,
+     4,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_supply": {
+    "meaning": "Initial supplies held by each region",
+    "base": [
+     318,
+     349,
+     129,
+     381,
+     430,
+     52,
+     124
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "Required supplies for each region",
+    "base": [
+     309,
+     9,
+     279,
+     71,
+     365,
+     233,
+     483
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "transport_cost": {
+    "meaning": "Cost matrix of transporting one unit between regions; diagonal (within-region) cost is 0 and is not listed",
+    "base": [
+     [
+      0,
+      2,
+      26,
+      19,
+      16,
+      26,
+      36
+     ],
+     [
+      27,
+      0,
+      26,
+      4,
+      15,
+      43,
+      25
+     ],
+     [
+      17,
+      45,
+      0,
+      18,
+      36,
+      37,
+      39
+     ],
+     [
+      19,
+      16,
+      14,
+      0,
+      5,
+      35,
+      9
+     ],
+     [
+      44,
+      47,
+      4,
+      3,
+      0,
+      2,
+      4
+     ],
+     [
+      30,
+      12,
+      28,
+      10,
+      16,
+      0,
+      25
+     ],
+     [
+      19,
+      16,
+      10,
+      2,
+      50,
+      4,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

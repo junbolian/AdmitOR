@@ -1,0 +1,212 @@
+{
+ "spec": {
+  "cereal_capacity": {
+   "base": 400000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "meat_capacity": {
+   "base": 300000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cereal_cost_per_lb": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "meat_cost_per_lb": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "meaties_price": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "yummies_price": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "meaties_cereal_per_pkg": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "meaties_meat_per_pkg": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "yummies_cereal_per_pkg": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "yummies_meat_per_pkg": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "meaties_blend_pack_cost": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "yummies_blend_pack_cost": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "meaties_machine_capacity": {
+   "base": 90000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cereal_capacity": {
+    "meaning": "Maximum pounds of cereal available per month",
+    "base": 400000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "meat_capacity": {
+    "meaning": "Maximum pounds of meat available per month",
+    "base": 300000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cereal_cost_per_lb": {
+    "meaning": "Cost of cereal per pound",
+    "base": 0.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "meat_cost_per_lb": {
+    "meaning": "Cost of meat per pound",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "meaties_price": {
+    "meaning": "Sales price per package of Meaties",
+    "base": 2.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "yummies_price": {
+    "meaning": "Sales price per package of Yummies",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "meaties_cereal_per_pkg": {
+    "meaning": "Pounds of cereal per package of Meaties",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "meaties_meat_per_pkg": {
+    "meaning": "Pounds of meat per package of Meaties",
+    "base": 3.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "yummies_cereal_per_pkg": {
+    "meaning": "Pounds of cereal per package of Yummies",
+    "base": 3.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "yummies_meat_per_pkg": {
+    "meaning": "Pounds of meat per package of Yummies",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "meaties_blend_pack_cost": {
+    "meaning": "Variable blending/packing cost per package of Meaties",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "yummies_blend_pack_cost": {
+    "meaning": "Variable blending/packing cost per package of Yummies",
+    "base": 0.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "meaties_machine_capacity": {
+    "meaning": "Monthly machine capacity for Meaties in packages",
+    "base": 90000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

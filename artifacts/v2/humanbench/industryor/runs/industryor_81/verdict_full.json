@@ -1,0 +1,134 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "initial_capital": 500000,
+   "annual_reinvest_profit_rate": 0.2,
+   "project2_total_interest_rate": 1.5,
+   "project2_investment_cap": 120000,
+   "project3_total_interest_rate": 1.6,
+   "project3_investment_cap": 150000,
+   "project4_profit_rate": 0.4,
+   "project4_investment_cap": 100000
+  },
+  {
+   "initial_capital": 555770.7193831535,
+   "annual_reinvest_profit_rate": 0.012505377611333468,
+   "project2_total_interest_rate": 1.4125439775536788,
+   "project2_investment_cap": 105802.68453720569,
+   "project3_total_interest_rate": 2.1047068212460185,
+   "project3_investment_cap": 253009.8462268734,
+   "project4_profit_rate": 0.8083526325491186,
+   "project4_investment_cap": 49126.543178471555
+  },
+  {
+   "initial_capital": 468768.7278741082,
+   "annual_reinvest_profit_rate": 0.014898609719035172,
+   "project2_total_interest_rate": 1.327956962205405,
+   "project2_investment_cap": 176338.82202584058,
+   "project3_total_interest_rate": 1.0398039545257953,
+   "project3_investment_cap": 109651.29520599454,
+   "project4_profit_rate": 0.6024017721125947,
+   "project4_investment_cap": 149887.12573270767
+  },
+  {
+   "initial_capital": 388176.24881627865,
+   "annual_reinvest_profit_rate": 0.29463284193795436,
+   "project2_total_interest_rate": 2.21414568501674,
+   "project2_investment_cap": 51624.68991951525,
+   "project3_total_interest_rate": 2.208728877749212,
+   "project3_investment_cap": 259441.81849646807,
+   "project4_profit_rate": 0.3392129390402931,
+   "project4_investment_cap": 64205.48995859194
+  },
+  {
+   "initial_capital": 682885.2288827124,
+   "annual_reinvest_profit_rate": 0.16829727255631338,
+   "project2_total_interest_rate": 1.139118765070222,
+   "project2_investment_cap": 74179.094208366,
+   "project3_total_interest_rate": 2.2712415495211897,
+   "project3_investment_cap": 231117.80941006733,
+   "project4_profit_rate": 0.7360590322832232,
+   "project4_investment_cap": 190540.99307263995
+  },
+  {
+   "initial_capital": 514491.23658188025,
+   "annual_reinvest_profit_rate": 0.4865578819896853,
+   "project2_total_interest_rate": 1.5678015658125302,
+   "project2_investment_cap": 188010.15781830676,
+   "project3_total_interest_rate": 2.244106996379492,
+   "project3_investment_cap": 235555.9257092738,
+   "project4_profit_rate": 0.7824508652641606,
+   "project4_investment_cap": 157017.47195648763
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   740000.0,
+   648755.3307057795,
+   688169.8523524429,
+   588530.5430878013,
+   1128603.3624166385,
+   1044696.9317058463
+  ],
+  "B-structured": [
+   788640.0,
+   744800.5137133914,
+   455668.17493791674,
+   1202697.2000291029,
+   1149166.0668716896,
+   1937590.7016051973
+  ],
+  "C-direct": [
+   1288640.0,
+   1300571.2330965446,
+   924436.9028120249,
+   1590873.4488453818,
+   1832051.2957544022,
+   2452081.9381870776
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

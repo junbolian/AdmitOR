@@ -1,0 +1,31 @@
+{
+ "sample_id": "om_industryor_94",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"extra_cost_fraction_third\",\n      \"evidence\": \"the second most frequent incurs an additional cost of 2/10, and so on\"\n    },\n    {\n      \"parameter\": \"extra_cost_fraction_fourth\",\n      \"evidence\": \"the second most frequent incurs an additional cost of 2/10, and so on\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "extra_cost_fraction_third",
+   "evidence": "the second most frequent incurs an additional cost of 2/10, and so on"
+  },
+  {
+   "parameter": "extra_cost_fraction_fourth",
+   "evidence": "the second most frequent incurs an additional cost of 2/10, and so on"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

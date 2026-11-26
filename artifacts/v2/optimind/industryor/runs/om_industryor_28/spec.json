@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "requirement_protein": {
+   "base": 700,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "requirement_minerals": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "requirement_vitamins": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_content": {
+   "base": [
+    3,
+    2,
+    1,
+    6,
+    18
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "minerals_content": {
+   "base": [
+    1,
+    0.5,
+    0.2,
+    2,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "vitamins_content": {
+   "base": [
+    0.5,
+    1,
+    0.2,
+    2,
+    0.8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price": {
+   "base": [
+    0.2,
+    0.7,
+    0.4,
+    0.3,
+    0.8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "requirement_protein": {
+    "meaning": "minimum daily protein requirement (g)",
+    "base": 700,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "requirement_minerals": {
+    "meaning": "minimum daily minerals requirement (g)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "requirement_vitamins": {
+    "meaning": "minimum daily vitamins requirement (mg)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_content": {
+    "meaning": "protein content per kg of each feed type (g/kg)",
+    "base": [
+     3,
+     2,
+     1,
+     6,
+     18
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "minerals_content": {
+    "meaning": "minerals content per kg of each feed type (g/kg)",
+    "base": [
+     1,
+     0.5,
+     0.2,
+     2,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "vitamins_content": {
+    "meaning": "vitamins content per kg of each feed type (mg/kg)",
+    "base": [
+     0.5,
+     1,
+     0.2,
+     2,
+     0.8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price": {
+    "meaning": "price per kg of each feed type (¥/kg)",
+    "base": [
+     0.2,
+     0.7,
+     0.4,
+     0.3,
+     0.8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

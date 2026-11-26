@@ -1,0 +1,226 @@
+{
+ "spec": {
+  "profit_per_pair": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -0.5,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "fulltime_sales_rate": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 9.0,
+    "integer": false
+   }
+  },
+  "parttime_sales_rate": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "fulltime_salary": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 2.5,
+    "integer": false
+   }
+  },
+  "parttime_salary": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "fulltime_overtime_pay": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "parttime_overtime_pay": {
+   "base": 0.7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "fulltime_hours": {
+   "base": 160,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 220.0,
+    "integer": true
+   }
+  },
+  "parttime_hours": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "sales_target": {
+   "base": 5500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2000.0,
+    "hi": 12000.0,
+    "integer": true
+   }
+  },
+  "fulltime_overtime_limit": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_per_pair": {
+    "meaning": "profit earned per pair of shoes sold (CNY)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -0.5,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "fulltime_sales_rate": {
+    "meaning": "sales volume per hour for full-time salesperson (pairs/hour)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 9,
+     "integer": false
+    }
+   },
+   "parttime_sales_rate": {
+    "meaning": "sales volume per hour for part-time salesperson (pairs/hour)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "fulltime_salary": {
+    "meaning": "regular hourly salary for full-time salesperson (CNY/hour)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 2.5,
+     "integer": false
+    }
+   },
+   "parttime_salary": {
+    "meaning": "regular hourly salary for part-time salesperson (CNY/hour)",
+    "base": 0.6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "fulltime_overtime_pay": {
+    "meaning": "overtime hourly pay for full-time salesperson (CNY/hour)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 4.0,
+     "integer": false
+    }
+   },
+   "parttime_overtime_pay": {
+    "meaning": "overtime hourly pay for part-time salesperson (CNY/hour)",
+    "base": 0.7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 2.0,
+     "integer": false
+    }
+   },
+   "fulltime_hours": {
+    "meaning": "standard monthly working hours for full-time salesperson (hours)",
+    "base": 160,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 220,
+     "integer": true
+    }
+   },
+   "parttime_hours": {
+    "meaning": "standard monthly working hours for part-time salesperson (hours)",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "sales_target": {
+    "meaning": "monthly sales volume target p1 (pairs)",
+    "base": 5500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2000,
+     "hi": 12000,
+     "integer": true
+    }
+   },
+   "fulltime_overtime_limit": {
+    "meaning": "cap on full-time overtime hours p2 (hours)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 300,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

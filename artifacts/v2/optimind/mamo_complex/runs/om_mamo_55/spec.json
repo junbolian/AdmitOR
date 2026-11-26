@@ -1,0 +1,318 @@
+{
+ "spec": {
+  "protein_goal": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_goal": {
+   "base": 166,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_goal": {
+   "base": 2210,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_chicken": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": false
+   }
+  },
+  "cost_rice": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": false
+   }
+  },
+  "cost_beans": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "cost_avocado": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 7.0,
+    "integer": false
+   }
+  },
+  "protein_chicken": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_rice": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_beans": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_avocado": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carb_chicken": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carb_rice": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carb_beans": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carb_avocado": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cal_chicken": {
+   "base": 208,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cal_rice": {
+   "base": 140,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cal_beans": {
+   "base": 280,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cal_avocado": {
+   "base": 199,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_goal": {
+    "meaning": "Daily protein requirement (g)",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_goal": {
+    "meaning": "Daily carbohydrate requirement (g)",
+    "base": 166,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_goal": {
+    "meaning": "Daily calorie requirement (kcal)",
+    "base": 2210,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per serving of chicken ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": false
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per serving of rice ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": false
+    }
+   },
+   "cost_beans": {
+    "meaning": "Cost per serving of beans ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "cost_avocado": {
+    "meaning": "Cost per serving of avocado ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 7,
+     "integer": false
+    }
+   },
+   "protein_chicken": {
+    "meaning": "Protein per serving of chicken (g)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein per serving of rice (g)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_beans": {
+    "meaning": "Protein per serving of beans (g)",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_avocado": {
+    "meaning": "Protein per serving of avocado (g)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carb_chicken": {
+    "meaning": "Carbohydrates per serving of chicken (g)",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carb_rice": {
+    "meaning": "Carbohydrates per serving of rice (g)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carb_beans": {
+    "meaning": "Carbohydrates per serving of beans (g)",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carb_avocado": {
+    "meaning": "Carbohydrates per serving of avocado (g)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cal_chicken": {
+    "meaning": "Calories per serving of chicken (kcal)",
+    "base": 208,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cal_rice": {
+    "meaning": "Calories per serving of rice (kcal)",
+    "base": 140,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cal_beans": {
+    "meaning": "Calories per serving of beans (kcal)",
+    "base": 280,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cal_avocado": {
+    "meaning": "Calories per serving of avocado (kcal)",
+    "base": 199,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

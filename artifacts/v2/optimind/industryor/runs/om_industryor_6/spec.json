@@ -1,0 +1,214 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    10,
+    12,
+    20,
+    24,
+    18,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    20,
+    15,
+    25,
+    33,
+    21
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "distance": {
+   "base": [
+    [
+     290,
+     115,
+     355,
+     715,
+     810
+    ],
+    [
+     380,
+     340,
+     165,
+     380,
+     610
+    ],
+    [
+     505,
+     530,
+     285,
+     220,
+     450
+    ],
+    [
+     655,
+     450,
+     155,
+     240,
+     315
+    ],
+    [
+     1010,
+     840,
+     550,
+     305,
+     95
+    ],
+    [
+     1072,
+     1097,
+     747,
+     372,
+     333
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "cost_rate": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "truck_capacity": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[truck_capacity] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "empty containers available at each warehouse (Verona, Perugia, Rome, Pescara, Taranto, Lamezia)",
+    "base": [
+     10,
+     12,
+     20,
+     24,
+     18,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "container demand at each port (Genoa, Venice, Ancona, Naples, Bari)",
+    "base": [
+     20,
+     15,
+     25,
+     33,
+     21
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "distance": {
+    "meaning": "road distance in km from each warehouse (rows: Verona, Perugia, Rome, Pescara, Taranto, Lamezia) to each port (columns: Genoa, Venice, Ancona, Naples, Bari)",
+    "base": [
+     [
+      290,
+      115,
+      355,
+      715,
+      810
+     ],
+     [
+      380,
+      340,
+      165,
+      380,
+      610
+     ],
+     [
+      505,
+      530,
+      285,
+      220,
+      450
+     ],
+     [
+      655,
+      450,
+      155,
+      240,
+      315
+     ],
+     [
+      1010,
+      840,
+      550,
+      305,
+      95
+     ],
+     [
+      1072,
+      1097,
+      747,
+      372,
+      333
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "cost_rate": {
+    "meaning": "transport cost in euros per kilometer",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "truck_capacity": {
+    "meaning": "maximum containers per truck (fleet size and hence total capacity is not binding since supply=124 exceeds demand=114)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

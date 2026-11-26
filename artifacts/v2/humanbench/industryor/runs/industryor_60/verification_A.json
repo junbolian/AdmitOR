@@ -1,0 +1,56 @@
+{
+ "sample_id": "industryor_60",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"red_gradeI_upper_frac\",\n      \"extracted\": 0.1,\n      \"stated\": 0.5,\n      \"evidence\": \"I less than 10% ... I more than 50%\"\n    },\n    {\n      \"parameter\": \"red_gradeI_lower_frac\",\n      \"extracted\": 0.5,\n      \"stated\": 0.1,\n      \"evidence\": \"I less than 10% ... I more than 50%\"\n    },\n    {\n      \"parameter\": \"blue_gradeI_upper_frac\",\n      \"extracted\": 0.5,\n      \"stated\": 0.1,\n      \"evidence\": \"I less than 50% ... I more than 10%\"\n    },\n    {\n      \"parameter\": \"blue_gradeI_lower_frac\",\n      \"extracted\": 0.1,\n      \"stated\": 0.5,\n      \"evidence\": \"I less than 50% ... I more than 10%\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"supply_I_prime\",\n      \"evidence\": \"Table 4-8 has rows: I 1500 6; I 2000 4.5; II 1000 3 (the second row is also labeled I, but no distinct grade label is given)\"\n    },\n    {\n      \"parameter\": \"cost_I_prime\",\n      \"evidence\": \"Table 4-8 has rows: I 1500 6; I 2000 4.5; II 1000 3 (the second row is also labeled I, but no distinct grade label is given)\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "red_gradeI_upper_frac",
+   "extracted": 0.1,
+   "stated": 0.5,
+   "evidence": "I less than 10% ... I more than 50%"
+  },
+  {
+   "parameter": "red_gradeI_lower_frac",
+   "extracted": 0.5,
+   "stated": 0.1,
+   "evidence": "I less than 10% ... I more than 50%"
+  },
+  {
+   "parameter": "blue_gradeI_upper_frac",
+   "extracted": 0.5,
+   "stated": 0.1,
+   "evidence": "I less than 50% ... I more than 10%"
+  },
+  {
+   "parameter": "blue_gradeI_lower_frac",
+   "extracted": 0.1,
+   "stated": 0.5,
+   "evidence": "I less than 50% ... I more than 10%"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "supply_I_prime",
+   "evidence": "Table 4-8 has rows: I 1500 6; I 2000 4.5; II 1000 3 (the second row is also labeled I, but no distinct grade label is given)"
+  },
+  {
+   "parameter": "cost_I_prime",
+   "evidence": "Table 4-8 has rows: I 1500 6; I 2000 4.5; II 1000 3 (the second row is also labeled I, but no distinct grade label is given)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

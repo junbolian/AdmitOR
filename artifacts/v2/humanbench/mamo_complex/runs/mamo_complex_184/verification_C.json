@@ -1,0 +1,35 @@
+{
+ "sample_id": "mamo_complex_184",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The opening costs and store demands check out against the statement. The transportation cost matrix and center capacities are specific numerical values that the statement never provides — it only describes ranges.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transportation_cost_matrix\",\n      \"evidence\": \"Costs vary for each distribution center and are specific to the route to each retail store, ranging from $1 to $5 per unit\"\n    },\n    {\n      \"parameter\": \"store_demand\",\n      \"evidence\": \"Store demands range from 440 to 892 units, highlighting varied customer needs across the locations.\"\n    },\n    {\n      \"parameter\": \"center_capacity\",\n      \"evidence\": \"The distribution centers have capacities ranging from 814 to 1962 units, indicating their maximum supply capabilities.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transportation_cost_matrix",
+   "evidence": "Costs vary for each distribution center and are specific to the route to each retail store, ranging from $1 to $5 per unit"
+  },
+  {
+   "parameter": "store_demand",
+   "evidence": "Store demands range from 440 to 892 units, highlighting varied customer needs across the locations."
+  },
+  {
+   "parameter": "center_capacity",
+   "evidence": "The distribution centers have capacities ranging from 814 to 1962 units, indicating their maximum supply capabilities."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "spec": {
+  "effective_hours": {
+   "base": [
+    6000,
+    10000,
+    4000,
+    7000,
+    4000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "machine_fee": {
+   "base": [
+    0.05,
+    0.03,
+    0.06,
+    0.11,
+    0.05
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "raw_material_cost": {
+   "base": [
+    0.25,
+    0.35,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "selling_price": {
+   "base": [
+    1.25,
+    2.0,
+    2.8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[processing_time] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "processing_time": {
+    "meaning": "Unit processing time (h/unit) for each machine-product pair",
+    "base": [
+     [
+      5,
+      10,
+      6
+     ],
+     [
+      7,
+      9,
+      12
+     ],
+     [
+      6,
+      8,
+      null
+     ],
+     [
+      4,
+      null,
+      11
+     ],
+     [
+      7,
+      null,
+      null
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "effective_hours": {
+    "meaning": "Effective machine hours available per machine",
+    "base": [
+     6000,
+     10000,
+     4000,
+     7000,
+     4000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "machine_fee": {
+    "meaning": "Machine processing fee in yuan per hour",
+    "base": [
+     0.05,
+     0.03,
+     0.06,
+     0.11,
+     0.05
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "raw_material_cost": {
+    "meaning": "Raw material cost in yuan per unit for products I, II, III",
+    "base": [
+     0.25,
+     0.35,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "selling_price": {
+    "meaning": "Selling price in yuan per unit for products I, II, III",
+    "base": [
+     1.25,
+     2.0,
+     2.8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

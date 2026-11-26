@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assembly_hours_type1": 0.25,
+   "assembly_hours_type2": 0.3333333333333333,
+   "testing_hours_type1": 0.125,
+   "testing_hours_type2": 0.3333333333333333,
+   "raw_material_cost_type1": 1.2,
+   "raw_material_cost_type2": 0.9,
+   "regular_assembly_capacity": 90,
+   "testing_capacity": 80,
+   "max_overtime_assembly": 50,
+   "overtime_cost_per_hour": 9,
+   "market_value_type1": 9,
+   "market_value_type2": 8
+  },
+  {
+   "assembly_hours_type1": 0.27788535969157674,
+   "assembly_hours_type2": 0.2066695347260445,
+   "testing_hours_type1": 0.10250293183691192,
+   "testing_hours_type2": 0.2595228635063527,
+   "raw_material_cost_type1": 1.4837654569968148,
+   "raw_material_cost_type2": 1.05902953868062,
+   "regular_assembly_capacity": 111.17769665606164,
+   "testing_capacity": 60.17306396621198,
+   "max_overtime_assembly": 45.315309181116234,
+   "overtime_cost_per_hour": 4.768174974942633,
+   "market_value_type1": 6.974193418585944,
+   "market_value_type2": 8.034273843861518
+  },
+  {
+   "assembly_hours_type1": 0.15530719393677272,
+   "assembly_hours_type2": 0.25302337351643955,
+   "testing_hours_type1": 0.13998844377795233,
+   "testing_hours_type2": 0.34531772816085776,
+   "raw_material_cost_type1": 0.864528746448836,
+   "raw_material_cost_type2": 0.9803391154883179,
+   "regular_assembly_capacity": 106.70924466060265,
+   "testing_capacity": 56.31194046454692,
+   "max_overtime_assembly": 68.34915510996848,
+   "overtime_cost_per_hour": 10.783254554894041,
+   "market_value_type1": 7.849803718929541,
+   "market_value_type2": 5.795068798795402
+  },
+  {
+   "assembly_hours_type1": 0.3414426144413562,
+   "assembly_hours_type2": 0.2897585453633671,
+   "testing_hours_type1": 0.08427458433801478,
+   "testing_hours_type2": 0.22579103382225707,
+   "raw_material_cost_type1": 1.6169932396169515,
+   "raw_material_cost_type2": 0.993353428230202,
+   "regular_assembly_capacity": 106.58492675681654,
+   "testing_capacity": 91.02712576130327,
+   "max_overtime_assembly": 52.17368548728205,
+   "overtime_cost_per_hour": 13.258041875814335,
+   "market_value_type1": 8.125447515900145,
+   "market_value_type2": 8.333060040148652
+  },
+  {
+   "assembly_hours_type1": 0.31588093285059893,
+   "assembly_hours_type2": 0.36493860063046557,
+   "testing_hours_type1": 0.1611706900310777,
+   "testing_hours_type2": 0.3539605720684698,
+   "raw_material_cost_type1": 1.4454862034579083,
+   "raw_material_cost_type2": 0.491241945290096,
+   "regular_assembly_capacity": 75.30650688518352,
+   "testing_capacity": 69.89062225290114,
+   "max_overtime_assembly": 24.787518615417653,
+   "overtime_cost_per_hour": 6.595117977249272,
+   "market_value_type1": 6.127210291750049,
+   "market_value_type2": 6.579031059904589
+  },
+  {
+   "assembly_hours_type1": 0.27713688885288,
+   "assembly_hours_type2": 0.2972885810586891,
+   "testing_hours_type1": 0.11201809671168826,
+   "testing_hours_type2": 0.25586854153906335,
+   "raw_material_cost_type1": 0.920373386458936,
+   "raw_material_cost_type2": 1.2929891289412447,
+   "regular_assembly_capacity": 97.99391080331606,
+   "testing_capacity": 85.23828827201542,
+   "max_overtime_assembly": 30.26831889188582,
+   "overtime_cost_per_hour": 11.062141181553145,
+   "market_value_type1": 6.576497955085884,
+   "market_value_type2": 7.2285148272489455
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3918.0,
+   2914.5216080312125,
+   2809.9061448440434,
+   2944.8788738522944,
+   1396.204082245844,
+   2282.888925090547
+  ],
+  "B-structured": [
+   3918.0,
+   2914.5216080312125,
+   2809.9061448440434,
+   2944.8788738522944,
+   1396.204082245844,
+   2282.888925090547
+  ],
+  "C-direct": [
+   3918.0,
+   2914.521608031213,
+   2809.9061448440434,
+   2944.8788738522944,
+   1396.204082245844,
+   2282.888925090547
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,130 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    [
+     0,
+     43,
+     39,
+     97,
+     84,
+     67
+    ],
+    [
+     43,
+     0,
+     18,
+     92,
+     27,
+     51
+    ],
+    [
+     39,
+     18,
+     0,
+     84,
+     60,
+     15
+    ],
+    [
+     97,
+     92,
+     84,
+     0,
+     42,
+     32
+    ],
+    [
+     84,
+     27,
+     60,
+     42,
+     0,
+     18
+    ],
+    [
+     67,
+     51,
+     15,
+     32,
+     18,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Symmetric inter-city travel cost matrix (6x6, diagonal 0 implied by TSP); row i to column j as listed",
+    "base": [
+     [
+      0,
+      43,
+      39,
+      97,
+      84,
+      67
+     ],
+     [
+      43,
+      0,
+      18,
+      92,
+      27,
+      51
+     ],
+     [
+      39,
+      18,
+      0,
+      84,
+      60,
+      15
+     ],
+     [
+      97,
+      92,
+      84,
+      0,
+      42,
+      32
+     ],
+     [
+      84,
+      27,
+      60,
+      42,
+      0,
+      18
+     ],
+     [
+      67,
+      51,
+      15,
+      32,
+      18,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

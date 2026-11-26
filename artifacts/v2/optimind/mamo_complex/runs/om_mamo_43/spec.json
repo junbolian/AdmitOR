@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "supplies": {
+   "base": [
+    410,
+    266,
+    132,
+    6,
+    485
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demands": {
+   "base": [
+    274,
+    331,
+    232,
+    359,
+    74
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transfer_costs": {
+   "base": [
+    [
+     0,
+     24,
+     3,
+     27,
+     31
+    ],
+    [
+     24,
+     0,
+     11,
+     7,
+     37
+    ],
+    [
+     30,
+     1,
+     0,
+     38,
+     22
+    ],
+    [
+     36,
+     18,
+     17,
+     0,
+     35
+    ],
+    [
+     41,
+     35,
+     33,
+     33,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supplies": {
+    "meaning": "initial stock of supplies available at each region",
+    "base": [
+     410,
+     266,
+     132,
+     6,
+     485
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demands": {
+    "meaning": "required amount of supplies at each region",
+    "base": [
+     274,
+     331,
+     232,
+     359,
+     74
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transfer_costs": {
+    "meaning": "cost per unit transferred from region i to region j (off-diagonal entries of the 5x5 cost matrix; diagonal/self-transfer is not a decision variable)",
+    "base": [
+     [
+      0,
+      24,
+      3,
+      27,
+      31
+     ],
+     [
+      24,
+      0,
+      11,
+      7,
+      37
+     ],
+     [
+      30,
+      1,
+      0,
+      38,
+      22
+     ],
+     [
+      36,
+      18,
+      17,
+      0,
+      35
+     ],
+     [
+      41,
+      35,
+      33,
+      33,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

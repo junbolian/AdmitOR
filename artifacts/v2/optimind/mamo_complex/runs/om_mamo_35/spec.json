@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "cost_1_2": {
+   "base": 65,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_3": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_4": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_5": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_6": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_3": {
+   "base": 76,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_4": {
+   "base": 52,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_5": {
+   "base": 89,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_6": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_4": {
+   "base": 72,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_5": {
+   "base": 38,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_6": {
+   "base": 62,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_5": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_6": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_5_6": {
+   "base": 89,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_1_2": {
+    "meaning": "Travel cost from City 1 to City 2 (symmetric with 2->1)",
+    "base": 65,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_3": {
+    "meaning": "Travel cost from City 1 to City 3 (symmetric with 3->1)",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_4": {
+    "meaning": "Travel cost from City 1 to City 4 (symmetric with 4->1)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Travel cost from City 1 to City 5 (symmetric with 5->1)",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_6": {
+    "meaning": "Travel cost from City 1 to City 6 (symmetric with 6->1)",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Travel cost from City 2 to City 3 (symmetric with 3->2)",
+    "base": 76,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_4": {
+    "meaning": "Travel cost from City 2 to City 4 (symmetric with 4->2)",
+    "base": 52,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_5": {
+    "meaning": "Travel cost from City 2 to City 5 (symmetric with 5->2)",
+    "base": 89,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_6": {
+    "meaning": "Travel cost from City 2 to City 6 (symmetric with 6->2)",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Travel cost from City 3 to City 4 (symmetric with 4->3)",
+    "base": 72,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_5": {
+    "meaning": "Travel cost from City 3 to City 5 (symmetric with 5->3)",
+    "base": 38,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_6": {
+    "meaning": "Travel cost from City 3 to City 6 (symmetric with 6->3)",
+    "base": 62,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_5": {
+    "meaning": "Travel cost from City 4 to City 5 (symmetric with 5->4)",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_6": {
+    "meaning": "Travel cost from City 4 to City 6 (symmetric with 6->4)",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_5_6": {
+    "meaning": "Travel cost from City 5 to City 6 (symmetric with 6->5)",
+    "base": 89,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

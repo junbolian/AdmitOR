@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "fiber_okra": 3.2,
+   "fiber_carrots": 2.7,
+   "fiber_celery": 1.6,
+   "fiber_cabbage": 2.0,
+   "price_salmon": 4.0,
+   "price_beef": 3.6,
+   "price_pork": 1.8,
+   "price_okra": 2.6,
+   "price_carrots": 1.2,
+   "price_celery": 1.6,
+   "price_cabbage": 2.3,
+   "budget": 15.0,
+   "total_food": 600.0,
+   "min_vegetables": 2
+  },
+  {
+   "fiber_okra": 3.5569326040521823,
+   "fiber_carrots": 1.6740232312809606,
+   "fiber_celery": 1.3120375275124727,
+   "fiber_cabbage": 1.5571371810381163,
+   "price_salmon": 4.94588485665605,
+   "price_beef": 4.23611815472248,
+   "price_pork": 2.5059232218687217,
+   "price_okra": 1.526040964836482,
+   "price_carrots": 1.1063061836223245,
+   "price_celery": 0.8476755511009126,
+   "price_cabbage": 1.6528673420482876,
+   "budget": 15.064263457240347,
+   "total_food": 457.9607909051591,
+   "min_vegetables": 2
+  },
+  {
+   "fiber_okra": 3.58370416071558,
+   "fiber_carrots": 2.797073598102948,
+   "fiber_celery": 1.2421639962120918,
+   "fiber_cabbage": 2.142825094201454,
+   "price_salmon": 5.237721826711306,
+   "price_beef": 1.8233955348410198,
+   "price_pork": 2.3504746532990546,
+   "price_okra": 3.11516242696939,
+   "price_carrots": 1.0083006198215902,
+   "price_celery": 1.0487671996988506,
+   "price_cabbage": 3.351590066075597,
+   "budget": 13.03913454135152,
+   "total_food": 477.8237530140443,
+   "min_vegetables": 2
+  },
+  {
+   "fiber_okra": 4.089585577849497,
+   "fiber_carrots": 2.9240482277524844,
+   "fiber_celery": 1.9931241897912066,
+   "fiber_cabbage": 2.3675708587101085,
+   "price_salmon": 4.1449123658188025,
+   "price_beef": 5.303216750325734,
+   "price_pork": 1.5813618789750363,
+   "price_okra": 2.73530564131039,
+   "price_carrots": 1.5952855971035937,
+   "price_celery": 1.7896316037827937,
+   "price_cabbage": 3.1319258707147877,
+   "budget": 15.928225743081143,
+   "total_food": 661.3715508644771,
+   "min_vegetables": 2
+  },
+  {
+   "fiber_okra": 2.50341958566796,
+   "fiber_carrots": 2.2450780013805516,
+   "fiber_celery": 1.0621337304622431,
+   "fiber_cabbage": 1.5724654181776483,
+   "price_salmon": 2.4040057176389165,
+   "price_beef": 2.800704971196332,
+   "price_pork": 2.0442319996759206,
+   "price_okra": 2.248563665322219,
+   "price_carrots": 1.044217160540259,
+   "price_celery": 1.1352112492343804,
+   "price_cabbage": 1.7640489907129606,
+   "budget": 20.239855052549927,
+   "total_food": 644.410615573978,
+   "min_vegetables": 3
+  },
+  {
+   "fiber_okra": 2.358114939387128,
+   "fiber_carrots": 3.1949138835727546,
+   "fiber_celery": 1.1691551920152683,
+   "fiber_cabbage": 1.8071287068122364,
+   "price_salmon": 5.958093402546381,
+   "price_beef": 4.1039991354747345,
+   "price_pork": 1.9025095387943634,
+   "price_okra": 3.079997052573674,
+   "price_carrots": 1.6114223042277716,
+   "price_celery": 2.0415998584739916,
+   "price_cabbage": 1.67681056551744,
+   "budget": 9.385202926848452,
+   "total_food": 544.6359144177245,
+   "min_vegetables": 3
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   18.985714285714288,
+   16.289356685480843,
+   16.43461153660931,
+   24.836648581475067,
+   16.132301562402432,
+   17.400648444655307
+  ],
+  "B-structured": [
+   18.985714285714288,
+   16.289356685480843,
+   16.43461153660931,
+   24.836648581475067,
+   16.132301562402432,
+   17.400648444655307
+  ],
+  "C-direct": [
+   18.985714285714288,
+   16.289356685480847,
+   16.43461153660931,
+   24.836648581475067,
+   16.13230156240243,
+   17.400648444655307
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

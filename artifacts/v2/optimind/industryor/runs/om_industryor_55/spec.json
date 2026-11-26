@@ -1,0 +1,84 @@
+{
+ "spec": {
+  "order_widths": {
+   "base": [
+    0.5,
+    0.7,
+    0.9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "order_lengths": {
+   "base": [
+    1000,
+    3000,
+    2000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "stock_widths": {
+   "base": [
+    1,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "order_widths": {
+    "meaning": "Width (meters) required by each order",
+    "base": [
+     0.5,
+     0.7,
+     0.9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "order_lengths": {
+    "meaning": "Length (meters) required by each order",
+    "base": [
+     1000,
+     3000,
+     2000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "stock_widths": {
+    "meaning": "Standard roll widths (meters) available from the mill",
+    "base": [
+     1,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

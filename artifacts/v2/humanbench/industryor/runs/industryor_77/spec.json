@@ -1,0 +1,174 @@
+{
+ "spec": {
+  "days": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "max_demand": {
+   "base": [
+    5300,
+    4500,
+    5400
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price": {
+   "base": [
+    124,
+    109,
+    115
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "prod_cost": {
+   "base": [
+    73.3,
+    52.9,
+    65.4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quota": {
+   "base": [
+    500,
+    450,
+    550
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "activation_cost": {
+   "base": [
+    170000,
+    150000,
+    100000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "min_batch": {
+   "base": [
+    20,
+    20,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "days": {
+    "meaning": "Number of production days in the month (calendar horizon)",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "max_demand": {
+    "meaning": "Maximum demand per product (units of 100 kg) for A1, A2, A3",
+    "base": [
+     5300,
+     4500,
+     5400
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price": {
+    "meaning": "Selling price per 100 kg for A1, A2, A3",
+    "base": [
+     124,
+     109,
+     115
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "prod_cost": {
+    "meaning": "Variable production cost per 100 kg for A1, A2, A3",
+    "base": [
+     73.3,
+     52.9,
+     65.4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quota": {
+    "meaning": "Maximum units of 100 kg producible per day per product (A1, A2, A3)",
+    "base": [
+     500,
+     450,
+     550
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "activation_cost": {
+    "meaning": "Fixed activation cost per production line for A1, A2, A3",
+    "base": [
+     170000,
+     150000,
+     100000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "min_batch": {
+    "meaning": "Minimum production batch size per product (A1, A2, A3) if line activated",
+    "base": [
+     20,
+     20,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

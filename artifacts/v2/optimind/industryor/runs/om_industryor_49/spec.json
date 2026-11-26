@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    10,
+    15,
+    25,
+    20,
+    18,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "regular_wage": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "contract_wage": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "shift_hours": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "num_periods": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "num_shift_starts": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[shift_hours] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_periods] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_shift_starts] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Nurses required per 4-hour period (6 periods: 2-6, 6-10, 10-14, 14-18, 18-22, 22-2)",
+    "base": [
+     10,
+     15,
+     25,
+     20,
+     18,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "regular_wage": {
+    "meaning": "Hourly pay for regular nurses (yuan/hour)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "contract_wage": {
+    "meaning": "Hourly pay for contract nurses (yuan/hour)",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "shift_hours": {
+    "meaning": "Continuous working hours per shift",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "num_periods": {
+    "meaning": "Number of 4-hour periods in the day (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "num_shift_starts": {
+    "meaning": "Number of shift starting batches (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

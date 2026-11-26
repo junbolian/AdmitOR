@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "initial_capital": {
+   "base": 300000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "rate_project1": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "multiplier_project2": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.5,
+    "integer": false
+   }
+  },
+  "cap_project2": {
+   "base": 150000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 400000.0,
+    "integer": false
+   }
+  },
+  "multiplier_project3": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.6,
+    "integer": false
+   }
+  },
+  "cap_project3": {
+   "base": 200000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 500000.0,
+    "integer": false
+   }
+  },
+  "multiplier_project4": {
+   "base": 1.4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.5,
+    "integer": false
+   }
+  },
+  "cap_project4": {
+   "base": 100000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20000.0,
+    "hi": 300000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_capital": {
+    "meaning": "initial capital available at the beginning of year 1",
+    "base": 300000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "rate_project1": {
+    "meaning": "annual net profit rate of project 1 (reinvestable each year)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "multiplier_project2": {
+    "meaning": "total principal+interest multiplier of project 2 recovered at end of year 2",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.5,
+     "integer": false
+    }
+   },
+   "cap_project2": {
+    "meaning": "investment limit for project 2",
+    "base": 150000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 400000,
+     "integer": false
+    }
+   },
+   "multiplier_project3": {
+    "meaning": "total principal+interest multiplier of project 3 recovered at end of year 3",
+    "base": 1.6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.6,
+     "integer": false
+    }
+   },
+   "cap_project3": {
+    "meaning": "investment limit for project 3",
+    "base": 200000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 500000,
+     "integer": false
+    }
+   },
+   "multiplier_project4": {
+    "meaning": "total principal+interest multiplier of project 4 recovered within one year",
+    "base": 1.4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.5,
+     "integer": false
+    }
+   },
+   "cap_project4": {
+    "meaning": "investment limit for project 4",
+    "base": 100000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20000,
+     "hi": 300000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

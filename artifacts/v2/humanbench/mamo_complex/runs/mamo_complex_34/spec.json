@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_chicken": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_chicken": {
+   "base": 218,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_chicken": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_tofu": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_tofu": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_tofu": {
+   "base": 290,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_tofu": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_rice": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_rice": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_rice": {
+   "base": 298,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_rice": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_avocado": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_avocado": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_avocado": {
+   "base": 158,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_avocado": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_min": {
+   "base": 86,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_min": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_min": {
+   "base": 2435,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "Protein grams contributed by one serving of Chicken",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "Carb grams contributed by one serving of Chicken",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_chicken": {
+    "meaning": "Calories contributed by one serving of Chicken",
+    "base": 218,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Dollar cost per serving of Chicken",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_tofu": {
+    "meaning": "Protein grams contributed by one serving of Tofu",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_tofu": {
+    "meaning": "Carb grams contributed by one serving of Tofu",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_tofu": {
+    "meaning": "Calories contributed by one serving of Tofu",
+    "base": 290,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_tofu": {
+    "meaning": "Dollar cost per serving of Tofu",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams contributed by one serving of Rice",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_rice": {
+    "meaning": "Carb grams contributed by one serving of Rice",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_rice": {
+    "meaning": "Calories contributed by one serving of Rice",
+    "base": 298,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_rice": {
+    "meaning": "Dollar cost per serving of Rice",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_avocado": {
+    "meaning": "Protein grams contributed by one serving of Avocado",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_avocado": {
+    "meaning": "Carb grams contributed by one serving of Avocado",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_avocado": {
+    "meaning": "Calories contributed by one serving of Avocado",
+    "base": 158,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_avocado": {
+    "meaning": "Dollar cost per serving of Avocado",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_min": {
+    "meaning": "Minimum required protein grams",
+    "base": 86,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_min": {
+    "meaning": "Minimum required carbohydrate grams",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_min": {
+    "meaning": "Minimum required calories",
+    "base": 2435,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

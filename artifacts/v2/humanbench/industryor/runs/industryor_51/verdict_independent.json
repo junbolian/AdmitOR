@@ -1,0 +1,131 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "wage_skilled": 100,
+   "wage_laborer": 80,
+   "eff_hours_skilled": 42,
+   "eff_hours_laborer": 36,
+   "demand_task1": 10000,
+   "demand_task2": 20000,
+   "demand_task3": 30000,
+   "max_skilled": 400,
+   "max_laborers": 800
+  },
+  {
+   "wage_skilled": 108.36560790747302,
+   "wage_laborer": 57.20051625068801,
+   "eff_hours_skilled": 39.165369411450904,
+   "eff_hours_laborer": 33.010675972007284,
+   "demand_task1": 11418.827284984074,
+   "demand_task2": 22120.39384907494,
+   "demand_task3": 37059.23221868721,
+   "max_skilled": 317.3877665258832,
+   "max_laborers": 768.7687278741082
+  },
+  {
+   "wage_skilled": 71.78783316628422,
+   "wage_laborer": 66.49462279057296,
+   "eff_hours_skilled": 42.06747663010236,
+   "eff_hours_laborer": 30.88658847258573,
+   "demand_task1": 8193.02590411989,
+   "demand_task2": 21798.613253354277,
+   "demand_task3": 30808.9466508579,
+   "max_skilled": 344.0881244081393,
+   "max_laborers": 835.7062735503636
+  },
+  {
+   "wage_skilled": 118.5658274006696,
+   "wage_laborer": 56.31194046454692,
+   "eff_hours_skilled": 45.85332257309338,
+   "eff_hours_laborer": 38.13990546587285,
+   "demand_task1": 9041.503099107951,
+   "demand_task2": 15865.753997741378,
+   "demand_task3": 38229.835299722065,
+   "max_skilled": 367.31890902252536,
+   "max_laborers": 637.0983373520592
+  },
+  {
+   "wage_skilled": 75.80298261000785,
+   "wage_laborer": 96.67972958467807,
+   "eff_hours_skilled": 43.30694799522283,
+   "eff_hours_laborer": 39.3169853513633,
+   "demand_task1": 11378.390720162908,
+   "demand_task2": 20434.73709745641,
+   "demand_task3": 38516.08375162867,
+   "max_skilled": 375.7068754416707,
+   "max_laborers": 820.8162525092907
+  },
+  {
+   "wage_skilled": 119.7642798551797,
+   "wage_laborer": 85.6889481134838,
+   "eff_hours_skilled": 46.55750694391579,
+   "eff_hours_laborer": 36.83540316877303,
+   "demand_task1": 11227.43101728954,
+   "demand_task2": 14549.892603867947,
+   "demand_task3": 25102.168961727843,
+   "max_skilled": 357.87759272042143,
+   "max_laborers": 631.916790769451
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   68253.96825396825,
+   76295.63044878237,
+   59866.27983535644,
+   71898.41808949289,
+   83180.63862883917,
+   61157.7149577093
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

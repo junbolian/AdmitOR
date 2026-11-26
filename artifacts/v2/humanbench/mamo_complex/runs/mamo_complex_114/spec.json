@@ -1,0 +1,190 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    1,
+    7,
+    4,
+    3,
+    1,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein": {
+   "base": [
+    18,
+    14,
+    18,
+    7,
+    15,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    5,
+    13,
+    4,
+    15,
+    17,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    202,
+    234,
+    220,
+    247,
+    88,
+    77
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 70,
+   "perturb": {
+    "mode": "abs",
+    "lo": 35.0,
+    "hi": 140.0,
+    "integer": false
+   }
+  },
+  "carb_req": {
+   "base": 187,
+   "perturb": {
+    "mode": "abs",
+    "lo": 93.5,
+    "hi": 374.0,
+    "integer": false
+   }
+  },
+  "calorie_req": {
+   "base": 2181,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1090.5,
+    "hi": 4362.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "Price per unit of each food item (Chicken, Rice, Eggs, Broccoli, Lentils, Apples)",
+    "base": [
+     1,
+     7,
+     4,
+     3,
+     1,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein": {
+    "meaning": "Protein grams provided per unit of each food item",
+    "base": [
+     18,
+     14,
+     18,
+     7,
+     15,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "Carbohydrate grams provided per unit of each food item",
+    "base": [
+     5,
+     13,
+     4,
+     15,
+     17,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "Calories provided per unit of each food item",
+    "base": [
+     202,
+     234,
+     220,
+     247,
+     88,
+     77
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum daily protein requirement in grams",
+    "base": 70,
+    "perturb": {
+     "mode": "abs",
+     "lo": 35,
+     "hi": 140,
+     "integer": false
+    }
+   },
+   "carb_req": {
+    "meaning": "Minimum daily carbohydrate requirement in grams",
+    "base": 187,
+    "perturb": {
+     "mode": "abs",
+     "lo": 93.5,
+     "hi": 374,
+     "integer": false
+    }
+   },
+   "calorie_req": {
+    "meaning": "Minimum daily calorie requirement",
+    "base": 2181,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1090.5,
+     "hi": 4362,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

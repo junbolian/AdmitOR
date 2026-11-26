@@ -1,0 +1,222 @@
+{
+ "spec": {
+  "stock": {
+   "base": [
+    160,
+    353,
+    171,
+    193,
+    102,
+    429,
+    284
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    19,
+    138,
+    110,
+    446,
+    341,
+    428,
+    47
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transfer_cost": {
+   "base": [
+    [
+     0,
+     12,
+     47,
+     39,
+     4,
+     21,
+     31
+    ],
+    [
+     14,
+     0,
+     39,
+     12,
+     31,
+     29,
+     15
+    ],
+    [
+     15,
+     6,
+     0,
+     26,
+     12,
+     5,
+     3
+    ],
+    [
+     39,
+     47,
+     42,
+     0,
+     33,
+     48,
+     2
+    ],
+    [
+     35,
+     25,
+     46,
+     12,
+     0,
+     25,
+     45
+    ],
+    [
+     39,
+     28,
+     28,
+     11,
+     16,
+     0,
+     13
+    ],
+    [
+     42,
+     43,
+     49,
+     41,
+     41,
+     18,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "stock": {
+    "meaning": "Initial supply stock at each hospital (units)",
+    "base": [
+     160,
+     353,
+     171,
+     193,
+     102,
+     429,
+     284
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Required supply level at each hospital (units)",
+    "base": [
+     19,
+     138,
+     110,
+     446,
+     341,
+     428,
+     47
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transfer_cost": {
+    "meaning": "Cost per unit transferred from hospital i to hospital j (i != j); diagonal entries are 0",
+    "base": [
+     [
+      0,
+      12,
+      47,
+      39,
+      4,
+      21,
+      31
+     ],
+     [
+      14,
+      0,
+      39,
+      12,
+      31,
+      29,
+      15
+     ],
+     [
+      15,
+      6,
+      0,
+      26,
+      12,
+      5,
+      3
+     ],
+     [
+      39,
+      47,
+      42,
+      0,
+      33,
+      48,
+      2
+     ],
+     [
+      35,
+      25,
+      46,
+      12,
+      0,
+      25,
+      45
+     ],
+     [
+      39,
+      28,
+      28,
+      11,
+      16,
+      0,
+      13
+     ],
+     [
+      42,
+      43,
+      49,
+      41,
+      41,
+      18,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

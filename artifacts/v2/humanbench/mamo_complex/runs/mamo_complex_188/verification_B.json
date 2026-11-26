@@ -1,0 +1,35 @@
+{
+ "sample_id": "mamo_complex_188",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"transport_cost\",\"evidence\":\"Each row specifies costs to Stores 1, 2, and 9, with \\\"and so on\\\" for Stores 3–8; the extracted costs for Stores 3–8 are not stated.\"},{\"parameter\":\"demand\",\"evidence\":\"\\\"401 units for Store 1 to 955 units for Store 7, with varying demands for the others in between\\\" does not specify demands for Stores 2–6, 8, or 9.\"},{\"parameter\":\"capacity\",\"evidence\":\"\\\"DC 1 capable of supplying 1795 units, down to DC 6 which can supply 1095 units, and various capacities for the others\\\" does not specify capacities for DCs 2–5.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost",
+   "evidence": "Each row specifies costs to Stores 1, 2, and 9, with \"and so on\" for Stores 3–8; the extracted costs for Stores 3–8 are not stated."
+  },
+  {
+   "parameter": "demand",
+   "evidence": "\"401 units for Store 1 to 955 units for Store 7, with varying demands for the others in between\" does not specify demands for Stores 2–6, 8, or 9."
+  },
+  {
+   "parameter": "capacity",
+   "evidence": "\"DC 1 capable of supplying 1795 units, down to DC 6 which can supply 1095 units, and various capacities for the others\" does not specify capacities for DCs 2–5."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "spec": {
+  "num_vertices": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "num_edges": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "edge_incidence_a": {
+   "base": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_vertices] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_edges] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_vertices": {
+    "meaning": "Number of vertices in the graph (index-set size, frozen)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "num_edges": {
+    "meaning": "Number of edges in the graph (index-set size, frozen)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "edge_incidence_a": {
+    "meaning": "Incidence vector of edges for vertex a (whether each edge touches a); frozen structure",
+    "base": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

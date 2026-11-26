@@ -1,0 +1,163 @@
+{
+ "spec": {
+  "protein_content": {
+   "base": [
+    18,
+    12,
+    13,
+    5,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carb_content": {
+   "base": [
+    6,
+    28,
+    19,
+    16,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calorie_content": {
+   "base": [
+    142,
+    88,
+    137,
+    141,
+    150
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost": {
+   "base": [
+    4,
+    8,
+    7,
+    10,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "protein_requirement": {
+   "base": 56,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_requirement": {
+   "base": 194,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_requirement": {
+   "base": 2012,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_content": {
+    "meaning": "grams of protein per unit of each food item [Chicken, Rice, Broccoli, Tofu, Beans]",
+    "base": [
+     18,
+     12,
+     13,
+     5,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carb_content": {
+    "meaning": "grams of carbohydrates per unit of each food item [Chicken, Rice, Broccoli, Tofu, Beans]",
+    "base": [
+     6,
+     28,
+     19,
+     16,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calorie_content": {
+    "meaning": "calories per unit of each food item [Chicken, Rice, Broccoli, Tofu, Beans]",
+    "base": [
+     142,
+     88,
+     137,
+     141,
+     150
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost": {
+    "meaning": "cost per unit of each food item [Chicken, Rice, Broccoli, Tofu, Beans]",
+    "base": [
+     4,
+     8,
+     7,
+     10,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "protein_requirement": {
+    "meaning": "minimum daily protein intake (grams)",
+    "base": 56,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_requirement": {
+    "meaning": "minimum daily carbohydrate intake (grams)",
+    "base": 194,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "minimum daily calorie intake",
+    "base": 2012,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

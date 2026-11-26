@@ -1,0 +1,240 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "labor_per_unit": [
+    3,
+    2,
+    6
+   ],
+   "material_per_unit": [
+    4,
+    3,
+    6
+   ],
+   "selling_price": [
+    120,
+    80,
+    180
+   ],
+   "variable_cost": [
+    60,
+    40,
+    80
+   ],
+   "labor_capacity": 1500,
+   "material_capacity": 1600,
+   "fixed_cost_shirt": 2000,
+   "fixed_cost_short_sleeve": 1500,
+   "fixed_cost_casual_cloth": 1000
+  },
+  {
+   "labor_per_unit": [
+    3.418280395373651,
+    1.0500215104453339,
+    4.650175910214715
+   ],
+   "material_per_unit": [
+    2.892842952595291,
+    3.709413642492037,
+    7.060196924537468
+   ],
+   "selling_price": [
+    148.23692887474886,
+    60.17306396621198,
+    171.5675565260092
+   ],
+   "variable_cost": [
+    31.78783316628422,
+    28.745518992144135,
+    80.42842304826898
+   ],
+   "labor_capacity": 845,
+   "material_capacity": 1158,
+   "fixed_cost_shirt": 2599.5377511180927,
+   "fixed_cost_short_sleeve": 1634.8244418096501,
+   "fixed_cost_casual_cloth": 551.1015551017417
+  },
+  {
+   "labor_per_unit": [
+    3.267797051627726,
+    2.618860913355653,
+    3.038992558068366
+   ],
+   "material_per_unit": [
+    5.223277007331232,
+    3.5944181849646806,
+    5.041503099107951
+   ],
+   "selling_price": [
+    95.19452398644827,
+    101.9462274659255,
+    162.35221087216368
+   ],
+   "variable_cost": [
+    35.56475060280887,
+    23.86865507333856,
+    107.79954930779678
+   ],
+   "labor_capacity": 1826,
+   "material_capacity": 2253,
+   "fixed_cost_shirt": 2918.9271467752715,
+   "fixed_cost_short_sleeve": 1608.6842743641023,
+   "fixed_cost_casual_cloth": 2432.7894099484265
+  },
+  {
+   "labor_per_unit": [
+    2.6356031316250603,
+    2.104081262546454,
+    7.976427985517969
+   ],
+   "material_per_unit": [
+    4.474079009456984,
+    4.0851207009323325,
+    6.464112871540572
+   ],
+   "selling_price": [
+    134.72917220747448,
+    58.19957041547178,
+    150.61301377036705
+   ],
+   "variable_cost": [
+    47.36327781612643,
+    23.1916790769451,
+    58.62327090888242
+   ],
+   "labor_capacity": 972,
+   "material_capacity": 1300,
+   "fixed_cost_shirt": 2542.737777057601,
+   "fixed_cost_short_sleeve": 1094.4965369102526,
+   "fixed_cost_casual_cloth": 925.4524177922066
+  },
+  {
+   "labor_per_unit": [
+    2.128521092314463,
+    1.5339556440982267,
+    8.619927526274964
+   ],
+   "material_per_unit": [
+    4.592141540986374,
+    3.327393017000965,
+    4.026831889188582
+   ],
+   "selling_price": [
+    136.49712945242513,
+    63.843319700572565,
+    166.98118770982597
+   ],
+   "variable_cost": [
+    89.37140103819571,
+    45.59999039416372,
+    84.5559795019717
+   ],
+   "labor_capacity": 1964,
+   "material_capacity": 2317,
+   "fixed_cost_shirt": 3103.999646184979,
+   "fixed_cost_short_sleeve": 687.1442158923131,
+   "fixed_cost_casual_cloth": 80.2506097600944
+  },
+  {
+   "labor_per_unit": [
+    2.446359144177246,
+    1.5354817519514055,
+    4.2658970615179586
+   ],
+   "material_per_unit": [
+    5.771638857340218,
+    4.1291028794180065,
+    4.888067284790868
+   ],
+   "selling_price": [
+    131.19158390123138,
+    74.99033125091188,
+    224.77113969197873
+   ],
+   "variable_cost": [
+    57.53111115524393,
+    30.5952066599221,
+    59.730200615518676
+   ],
+   "labor_capacity": 1754,
+   "material_capacity": 1273,
+   "fixed_cost_shirt": 2338.343960894162,
+   "fixed_cost_short_sleeve": 2693.468650807431,
+   "fixed_cost_casual_cloth": 998.5012628509932
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   24000.0,
+   26186.715713292808,
+   47330.74390244579,
+   22842.523070746927,
+   26010.093325779042,
+   41983.13200927008
+  ],
+  "B-structured": [
+   24000.0,
+   26163.388888872672,
+   47267.87604339532,
+   22793.37159643333,
+   25980.659852212702,
+   41912.14289702862
+  ],
+  "C-direct": [
+   24000.0,
+   26186.715713292808,
+   47330.74390244579,
+   22842.523070746927,
+   26010.093325779042,
+   41983.13200927008
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 70.99 on instance 5 (params: {'labor_per_unit': [2.45, 1.54, 4.27], 'material_per_unit': [5.77, 4.13, 4.89], 'selling_price': [131.19, 74.99, 224.77], 'variable_cost': [57.53, 30.6, 59.73], 'labor_capacity': 1754, 'material_capacity': 1273, 'fixed_cost_shirt': 2338.34, 'fixed_cost_short_sleeve': 2693.47, 'fixed_cost_casual_cloth': 998.5})"
+ },
+ "disagreements": [],
+ "notes": []
+}

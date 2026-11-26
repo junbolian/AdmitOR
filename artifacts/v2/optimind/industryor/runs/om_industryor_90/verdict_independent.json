@@ -1,0 +1,128 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "students": 400,
+   "bus_capacity": 50,
+   "minibus_capacity": 40,
+   "bus_cost": 800,
+   "minibus_cost": 600,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 433.4624316298921,
+   "bus_capacity": 40.50021510445334,
+   "minibus_capacity": 36.400469093905905,
+   "bus_cost": 667.1411543114349,
+   "minibus_cost": 685.1296370990444,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 6
+  },
+  {
+   "students": 381.2612367244649,
+   "bus_capacity": 40.59594438876141,
+   "minibus_capacity": 35.498207596857654,
+   "bus_cost": 802.570538289614,
+   "minibus_cost": 429.5529490861909,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  },
+  {
+   "students": 332.9057492897672,
+   "bus_capacity": 51.785313677518175,
+   "minibus_capacity": 44.950887306845225,
+   "bus_cost": 563.1194046454692,
+   "minibus_cost": 710.0949306598108,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 6
+  },
+  {
+   "students": 509.73113732962753,
+   "bus_capacity": 46.73189090225254,
+   "minibus_capacity": 33.483933494082365,
+   "bus_cost": 606.4238608800628,
+   "minibus_cost": 725.0979718850855,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 10
+  },
+  {
+   "students": 408.69474194912823,
+   "bus_capacity": 59.46231527958741,
+   "minibus_capacity": 38.05655003533366,
+   "bus_cost": 824.979503011149,
+   "minibus_cost": 718.5856791310782,
+   "num_buses_available": 10,
+   "num_minibuses_available": 8,
+   "num_drivers": 9
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6200.0,
+   null,
+   null,
+   null,
+   null,
+   5774.8565210780425
+  ],
+  "B-structured": [
+   6200.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   6200.0,
+   null,
+   null,
+   null,
+   null,
+   5774.8565210780425
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: students[None] = '433.4624316298921', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: students[None] = '381.2612367244649', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: students[None] = '332.9057492897672', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: students[None] = '509.73113732962753', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: students[None] = '408.69474194912823', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

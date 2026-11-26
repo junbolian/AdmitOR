@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_A": 5000,
+   "profit_B": 11000,
+   "steel_A": 6,
+   "steel_B": 12,
+   "aluminum_A": 8,
+   "aluminum_B": 20,
+   "labor_A": 11,
+   "labor_B": 24,
+   "steel_capacity": 200,
+   "aluminum_capacity": 300,
+   "labor_capacity": 300,
+   "overtime_pay": 100
+  },
+  {
+   "profit_A": 5836.560790747303,
+   "profit_B": 4730.141968939204,
+   "steel_A": 5.190105546128828,
+   "steel_B": 10.007117314671524,
+   "aluminum_A": 9.13506182798726,
+   "aluminum_B": 22.120393849074937,
+   "labor_A": 13.588385146851978,
+   "labor_B": 18.051919189863593,
+   "steel_capacity": 184.38436393705408,
+   "aluminum_capacity": 158.9391658314211,
+   "labor_capacity": 215.591392441081,
+   "overtime_pay": 303.2131728620174
+  },
+  {
+   "profit_A": 2159.215818103182,
+   "profit_B": 7024.65698906376,
+   "steel_A": 6.539583976006283,
+   "steel_B": 12.32357866034316,
+   "aluminum_A": 6.658114985795343,
+   "aluminum_B": 21.071188206510904,
+   "labor_A": 13.042241014073657,
+   "labor_B": 16.893582139364078,
+   "steel_capacity": 261.1638503665616,
+   "aluminum_capacity": 359.44181849646804,
+   "labor_capacity": 252.07515495539755,
+   "overtime_pay": 93.28769988706892
+  },
+  {
+   "profit_A": 7743.278433240688,
+   "profit_B": 8843.047995486675,
+   "steel_A": 4.533885036168533,
+   "steel_B": 9.09635791320094,
+   "aluminum_A": 9.667972958467807,
+   "aluminum_B": 21.244712376402695,
+   "labor_A": 13.027046603610911,
+   "labor_B": 27.308137728390978,
+   "steel_capacity": 207.24561829094012,
+   "aluminum_capacity": 441.93472919381117,
+   "labor_capacity": 263.560313162506,
+   "overtime_pay": 331.2243787639362
+  },
+  {
+   "profit_A": 6976.42798551797,
+   "profit_B": 12564.46073120805,
+   "steel_A": 7.302144841118798,
+   "steel_B": 12.556935445848687,
+   "aluminum_A": 8.981944813831632,
+   "aluminum_B": 14.549892603867946,
+   "labor_A": 9.204128619300208,
+   "labor_B": 20.967186675870344,
+   "steel_capacity": 115.95839538472549,
+   "aluminum_capacity": 219.83726590830906,
+   "labor_capacity": 180.30042882291875,
+   "overtime_pay": 166.78416186605526
+  },
+  {
+   "profit_A": 5814.1066655864015,
+   "profit_B": 9215.784762405114,
+   "steel_A": 5.5326514816207775,
+   "steel_B": 9.90845062155471,
+   "aluminum_A": 6.881493545835744,
+   "aluminum_B": 25.23985505254993,
+   "labor_A": 11.977033542627517,
+   "labor_B": 25.57148648160463,
+   "steel_capacity": 134.22772963961938,
+   "aluminum_capacity": 368.7380393851048,
+   "labor_capacity": 199.0207481285785,
+   "overtime_pay": 227.67326505458868
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   165900.0,
+   94548.668220887,
+   116143.3020677622,
+   241575.73666146642,
+   113493.63471967324,
+   119405.85553847402
+  ],
+  "B-structured": [
+   165900.0,
+   94548.668220887,
+   116143.3020677622,
+   241575.73666146642,
+   113493.63471967324,
+   119405.85553847402
+  ],
+  "C-direct": [
+   165900.0,
+   94548.668220887,
+   116143.3020677622,
+   241575.73666211974,
+   113493.63471967322,
+   119405.85553847402
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

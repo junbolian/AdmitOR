@@ -1,0 +1,446 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_chicken": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_chicken": {
+   "base": 81,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_chicken": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "protein_rice": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_rice": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_rice": {
+   "base": 137,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_rice": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "protein_tuna": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_tuna": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_tuna": {
+   "base": 53,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_tuna": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "protein_beef": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_beef": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_beef": {
+   "base": 126,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_beef": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "protein_corn": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_corn": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_corn": {
+   "base": 117,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_corn": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "protein_whey": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_whey": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cal_whey": {
+   "base": 277,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_whey": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "protein_target": {
+   "base": 58,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carb_target": {
+   "base": 148,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cal_target": {
+   "base": 2454,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "Protein grams per unit of Chicken",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_chicken": {
+    "meaning": "Carb grams per unit of Chicken",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_chicken": {
+    "meaning": "Calories per unit of Chicken",
+    "base": 81,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per unit of Chicken ($)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams per unit of Rice",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_rice": {
+    "meaning": "Carb grams per unit of Rice",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_rice": {
+    "meaning": "Calories per unit of Rice",
+    "base": 137,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per unit of Rice ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "protein_tuna": {
+    "meaning": "Protein grams per unit of Tuna",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_tuna": {
+    "meaning": "Carb grams per unit of Tuna",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_tuna": {
+    "meaning": "Calories per unit of Tuna",
+    "base": 53,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_tuna": {
+    "meaning": "Cost per unit of Tuna ($)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "protein_beef": {
+    "meaning": "Protein grams per unit of Beef",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_beef": {
+    "meaning": "Carb grams per unit of Beef",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_beef": {
+    "meaning": "Calories per unit of Beef",
+    "base": 126,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_beef": {
+    "meaning": "Cost per unit of Beef ($)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "protein_corn": {
+    "meaning": "Protein grams per unit of Corn",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_corn": {
+    "meaning": "Carb grams per unit of Corn",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_corn": {
+    "meaning": "Calories per unit of Corn",
+    "base": 117,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_corn": {
+    "meaning": "Cost per unit of Corn ($)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "protein_whey": {
+    "meaning": "Protein grams per unit of Whey Protein",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_whey": {
+    "meaning": "Carb grams per unit of Whey Protein",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cal_whey": {
+    "meaning": "Calories per unit of Whey Protein",
+    "base": 277,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_whey": {
+    "meaning": "Cost per unit of Whey Protein ($)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "protein_target": {
+    "meaning": "Minimum daily protein requirement (g)",
+    "base": 58,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carb_target": {
+    "meaning": "Minimum daily carbohydrate requirement (g)",
+    "base": 148,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cal_target": {
+    "meaning": "Minimum daily calorie requirement",
+    "base": 2454,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

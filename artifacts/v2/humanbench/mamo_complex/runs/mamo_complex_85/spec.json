@@ -1,0 +1,186 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    6,
+    2,
+    10,
+    6,
+    4,
+    1,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein": {
+   "base": [
+    6,
+    16,
+    12,
+    9,
+    12,
+    12,
+    13
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    3,
+    3,
+    17,
+    28,
+    17,
+    14,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    73,
+    181,
+    231,
+    160,
+    209,
+    184,
+    118
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 59,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_req": {
+   "base": 179,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_req": {
+   "base": 2414,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "cost per unit of each food item",
+    "base": [
+     6,
+     2,
+     10,
+     6,
+     4,
+     1,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein": {
+    "meaning": "protein grams provided per unit of each food item",
+    "base": [
+     6,
+     16,
+     12,
+     9,
+     12,
+     12,
+     13
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "carbohydrate grams provided per unit of each food item",
+    "base": [
+     3,
+     3,
+     17,
+     28,
+     17,
+     14,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "calories provided per unit of each food item",
+    "base": [
+     73,
+     181,
+     231,
+     160,
+     209,
+     184,
+     118
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "minimum weekly protein requirement (grams)",
+    "base": 59,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_req": {
+    "meaning": "minimum weekly carbohydrate requirement (grams)",
+    "base": 179,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_req": {
+    "meaning": "minimum weekly calorie requirement",
+    "base": 2414,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

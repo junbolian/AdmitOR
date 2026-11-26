@@ -1,0 +1,113 @@
+{
+ "spec": {
+  "setup_cost": {
+   "base": [
+    1000,
+    920,
+    800,
+    700
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_cost": {
+   "base": [
+    20,
+    24,
+    16,
+    28
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacity": {
+   "base": [
+    900,
+    1000,
+    1200,
+    1600
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "setup_cost": {
+    "meaning": "Setup completion cost for activating each device (A, B, C, D) in yuan",
+    "base": [
+     1000,
+     920,
+     800,
+     700
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_cost": {
+    "meaning": "Unit production cost for each device (A, B, C, D) in yuan per unit",
+    "base": [
+     20,
+     24,
+     16,
+     28
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum processing capacity for each device (A, B, C, D) in units",
+    "base": [
+     900,
+     1000,
+     1200,
+     1600
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Total number of units of the product to be produced",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "failed",
+   "finish_reason": "stop",
+   "error": "ValueError: extractor output not parseable JSON (JSONDecodeError: Expecting value: line 1 column 2 (char 1)); likely truncated -- raise extraction max_tokens"
+  },
+  {
+   "attempt": 2,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

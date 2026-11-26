@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "a": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "b": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "c": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "p": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "q": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "r": {
+   "base": [
+    3,
+    5,
+    2,
+    4,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "a": {
+    "meaning": "purchase cost per new tool",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "b": {
+    "meaning": "slow repair cost per tool",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 6.0,
+     "integer": false
+    }
+   },
+   "c": {
+    "meaning": "fast repair cost per tool",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 10.0,
+     "integer": false
+    }
+   },
+   "p": {
+    "meaning": "slow repair lead time (stages until return)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "q": {
+    "meaning": "fast repair lead time (stages until return)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "r": {
+    "meaning": "tool requirements per stage",
+    "base": [
+     3,
+     5,
+     2,
+     4,
+     6,
+     5,
+     4,
+     3,
+     2,
+     1
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

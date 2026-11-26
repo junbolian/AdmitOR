@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "painting_value": 25000,
+   "bust_value": 5000,
+   "vase_value": 20000,
+   "porsche_value": 40000,
+   "diamond_value": 12000,
+   "diamond_count": 3,
+   "sofa_value": 3000,
+   "dog_value": 3000,
+   "dog_count": 2,
+   "sculpture_value": 10000,
+   "sailboat_value": 15000,
+   "harley_value": 10000,
+   "cavour_furniture_value": 13000
+  },
+  {
+   "painting_value": 28485.669961447093,
+   "bust_value": 2625.0537761133346,
+   "vase_value": 15500.586367382386,
+   "porsche_value": 28928.42952595291,
+   "diamond_value": 14837.654569968148,
+   "diamond_count": 3,
+   "sofa_value": 4176.5387031145365,
+   "dog_value": 1760.8164978882485,
+   "dog_count": 2,
+   "sculpture_value": 5297.9721943807035,
+   "sailboat_value": 10779.56962205405,
+   "harley_value": 10053.552881033624,
+   "cavour_furniture_value": 6844.967605890227
+  },
+  {
+   "painting_value": 17470.941267166214,
+   "bust_value": 5749.422188897616,
+   "vase_value": 20898.82961206433,
+   "porsche_value": 28817.624881627868,
+   "diamond_value": 13071.188206510904,
+   "diamond_count": 3,
+   "sofa_value": 1519.496279034183,
+   "dog_value": 3917.457755498424,
+   "dog_count": 2,
+   "sculpture_value": 8402.505165179919,
+   "sailboat_value": 9832.192497176724,
+   "harley_value": 14572.130722067814,
+   "cavour_furniture_value": 10875.729086464147
+  },
+  {
+   "painting_value": 14818.646084503698,
+   "bust_value": 2983.58188416732,
+   "vase_value": 26949.887326949192,
+   "porsche_value": 44149.04125467564,
+   "diamond_value": 15685.539279292561,
+   "diamond_count": 3,
+   "sofa_value": 3108.684274364102,
+   "dog_value": 4419.347291938112,
+   "dog_count": 2,
+   "sculpture_value": 10520.40631273227,
+   "sailboat_value": 19941.069963794922,
+   "harley_value": 11185.19752364246,
+   "cavour_furniture_value": 17702.189704040105
+  },
+  {
+   "painting_value": 26933.80363141905,
+   "bust_value": 6022.8591810746175,
+   "vase_value": 10916.487673113244,
+   "porsche_value": 29115.931026061873,
+   "diamond_value": 9472.655563225286,
+   "diamond_count": 3,
+   "sofa_value": 2198.3726590830906,
+   "dog_value": 1803.0042882291873,
+   "dog_count": 2,
+   "sculpture_value": 11356.844442644004,
+   "sailboat_value": 12972.482684551263,
+   "harley_value": 8701.809671168827,
+   "cavour_furniture_value": 9223.59140002934
+  },
+  {
+   "painting_value": 19174.445551227833,
+   "bust_value": 7183.272938562471,
+   "vase_value": 22960.70770493187,
+   "porsche_value": 44365.24022667953,
+   "diamond_value": 8053.663778377164,
+   "diamond_count": 3,
+   "sofa_value": 1990.2074812857852,
+   "dog_value": 2638.3663252729434,
+   "dog_count": 2,
+   "sculpture_value": 11399.99759854093,
+   "sailboat_value": 15854.246156619694,
+   "harley_value": 11846.142509898746,
+   "cavour_furniture_value": 17457.074962467526
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1000.0,
+   53.719523599836975,
+   19.28861624840647,
+   14.488010286353528,
+   75.91084743314423,
+   81.20004975579842
+  ],
+  "B-structured": [
+   1000.0,
+   11.993777673908887,
+   19.288616248182116,
+   14.488010286226594,
+   24.15063091752422,
+   81.20004975580378
+  ],
+  "C-direct": [
+   1000.0,
+   11.993777673671453,
+   19.28861624840647,
+   14.48801028606556,
+   24.150630917450716,
+   81.20004975578922
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 51.76 on instance 4 (params: {'painting_value': 26933.8, 'bust_value': 6022.86, 'vase_value': 10916.49, 'porsche_value': 29115.93, 'diamond_value': 9472.66, 'diamond_count': 3, 'sofa_value': 2198.37, 'dog_value': 1803.0, 'dog_count': 2, 'sculpture_value': 11356.84, 'sailboat_value': 12972.48, 'harley_value': 8701.81, 'cavour_furniture_value': 9223.59})"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,264 @@
+{
+ "spec": {
+  "price_meaties": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.8,
+    "hi": 3.8,
+    "integer": false
+   }
+  },
+  "price_yummies": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.2,
+    "hi": 2.8,
+    "integer": false
+   }
+  },
+  "cereal_per_meaties": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.5,
+    "integer": false
+   }
+  },
+  "meat_per_meaties": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": false
+   }
+  },
+  "cereal_per_yummies": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 4.5,
+    "integer": false
+   }
+  },
+  "meat_per_yummies": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.75,
+    "hi": 2.5,
+    "integer": false
+   }
+  },
+  "varcost_meaties": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.8,
+    "integer": false
+   }
+  },
+  "varcost_yummies": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.08,
+    "hi": 0.7,
+    "integer": false
+   }
+  },
+  "cereal_price": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "meat_price": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 0.9,
+    "integer": false
+   }
+  },
+  "cereal_avail": {
+   "base": 400000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 250000.0,
+    "hi": 600000.0,
+    "integer": true
+   }
+  },
+  "meat_avail": {
+   "base": 300000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 180000.0,
+    "hi": 480000.0,
+    "integer": true
+   }
+  },
+  "meaties_capacity": {
+   "base": 90000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40000.0,
+    "hi": 150000.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "price_meaties": {
+    "meaning": "Selling price per package of Meaties ($)",
+    "base": 2.8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.8,
+     "hi": 3.8,
+     "integer": false
+    }
+   },
+   "price_yummies": {
+    "meaning": "Selling price per package of Yummies ($)",
+    "base": 2.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.2,
+     "hi": 2.8,
+     "integer": false
+    }
+   },
+   "cereal_per_meaties": {
+    "meaning": "Pounds of cereal required per package of Meaties",
+    "base": 2.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 3.5,
+     "integer": false
+    }
+   },
+   "meat_per_meaties": {
+    "meaning": "Pounds of meat required per package of Meaties",
+    "base": 3.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": false
+    }
+   },
+   "cereal_per_yummies": {
+    "meaning": "Pounds of cereal required per package of Yummies",
+    "base": 3.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 4.5,
+     "integer": false
+    }
+   },
+   "meat_per_yummies": {
+    "meaning": "Pounds of meat required per package of Yummies",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.75,
+     "hi": 2.5,
+     "integer": false
+    }
+   },
+   "varcost_meaties": {
+    "meaning": "Variable blending/packing cost per package of Meaties ($)",
+    "base": 0.25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.8,
+     "integer": false
+    }
+   },
+   "varcost_yummies": {
+    "meaning": "Variable blending/packing cost per package of Yummies ($)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.08,
+     "hi": 0.7,
+     "integer": false
+    }
+   },
+   "cereal_price": {
+    "meaning": "Purchase cost per pound of cereal ($)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "meat_price": {
+    "meaning": "Purchase cost per pound of meat ($)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 0.9,
+     "integer": false
+    }
+   },
+   "cereal_avail": {
+    "meaning": "Maximum pounds of cereal available per month",
+    "base": 400000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 250000,
+     "hi": 600000,
+     "integer": true
+    }
+   },
+   "meat_avail": {
+    "meaning": "Maximum pounds of meat available per month",
+    "base": 300000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 180000,
+     "hi": 480000,
+     "integer": true
+    }
+   },
+   "meaties_capacity": {
+    "meaning": "Monthly machine capacity for Meaties (packages)",
+    "base": 90000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40000,
+     "hi": 150000,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

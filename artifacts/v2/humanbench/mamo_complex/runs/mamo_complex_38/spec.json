@@ -1,0 +1,99 @@
+{
+ "spec": {
+  "a": {
+   "base": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -30.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "b": {
+   "base": [
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 180.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "a": {
+    "meaning": "earliest landing time for each flight (ordered)",
+    "base": [
+     0,
+     10,
+     20,
+     30,
+     40,
+     50,
+     60,
+     70,
+     80,
+     90
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -30,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "b": {
+    "meaning": "latest landing time for each flight (ordered)",
+    "base": [
+     60,
+     70,
+     80,
+     90,
+     100,
+     110,
+     120,
+     130,
+     140,
+     150
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 180,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

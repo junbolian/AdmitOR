@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_A": 50,
+   "cost_B": 45,
+   "cost_C": 40,
+   "capacity_A": 15,
+   "capacity_B": 10,
+   "capacity_C": 10,
+   "min_chairs": 100,
+   "max_chairs": 500,
+   "min_B_if_A": 10
+  },
+  {
+   "cost_A": 56.97133992289418,
+   "cost_B": 23.62548398502001,
+   "cost_C": 31.001172734764772,
+   "capacity_A": 15,
+   "capacity_B": 10,
+   "capacity_C": 10,
+   "min_chairs": 139.21795677048453,
+   "max_chairs": 293.4694163147081,
+   "min_B_if_A": 10
+  },
+  {
+   "cost_A": 26.489860971903518,
+   "cost_B": 32.33870886616215,
+   "cost_C": 40.21421152413449,
+   "capacity_A": 15,
+   "capacity_B": 10,
+   "capacity_C": 10,
+   "min_chairs": 104.49414806032166,
+   "max_chairs": 360.22031102034833,
+   "min_B_if_A": 10
+  },
+  {
+   "cost_A": 65.47152283389133,
+   "cost_B": 22.792444185512746,
+   "cost_C": 52.232770073312324,
+   "capacity_A": 15,
+   "capacity_B": 10,
+   "capacity_C": 10,
+   "min_chairs": 145.72130722067814,
+   "max_chairs": 418.2972725563134,
+   "min_B_if_A": 10
+  },
+  {
+   "cost_A": 29.835818841673202,
+   "cost_B": 60.637246485635686,
+   "cost_C": 44.149041254675645,
+   "capacity_A": 15,
+   "capacity_B": 10,
+   "capacity_C": 10,
+   "min_chairs": 147.31157639793707,
+   "max_chairs": 439.26718860417674,
+   "min_B_if_A": 10
+  },
+  {
+   "cost_A": 66.47023321264975,
+   "cost_B": 50.333388856391075,
+   "cost_C": 54.46827601243109,
+   "capacity_A": 15,
+   "capacity_B": 10,
+   "capacity_C": 10,
+   "min_chairs": 72.78982756515468,
+   "max_chairs": 394.6939818010536,
+   "min_B_if_A": 10
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4000.0,
+   3381.324645400249,
+   3035.655865457352,
+   3713.2698867049075,
+   5069.651550950654,
+   4058.405701133611
+  ],
+  "B-structured": [
+   4000.0,
+   3381.324645400249,
+   3035.655865457352,
+   3713.2698867049075,
+   5069.651550950654,
+   4058.405701133611
+  ],
+  "C-direct": [
+   4000.0,
+   3381.324645400249,
+   3035.655865457352,
+   3713.2698867049075,
+   5069.6515509506535,
+   4058.405701133611
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

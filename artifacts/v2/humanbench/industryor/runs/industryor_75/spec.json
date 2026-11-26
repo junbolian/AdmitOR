@@ -1,0 +1,122 @@
+{
+ "spec": {
+  "profit": {
+   "base": [
+    15,
+    8,
+    12,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "plastic_avail": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "electronics_avail": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "plastic_req": {
+   "base": [
+    30,
+    10,
+    20,
+    15
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "electronics_req": {
+   "base": [
+    8,
+    5,
+    3,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit": {
+    "meaning": "Profit per unit sold for each toy type: robot, model car, building blocks, doll",
+    "base": [
+     15,
+     8,
+     12,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "plastic_avail": {
+    "meaning": "Total units of plastic available",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "electronics_avail": {
+    "meaning": "Total units of electronic components available",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "plastic_req": {
+    "meaning": "Plastic units required per unit of robot, model car, building blocks, doll",
+    "base": [
+     30,
+     10,
+     20,
+     15
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "electronics_req": {
+    "meaning": "Electronic component units required per unit of robot, model car, building blocks, doll",
+    "base": [
+     8,
+     5,
+     3,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

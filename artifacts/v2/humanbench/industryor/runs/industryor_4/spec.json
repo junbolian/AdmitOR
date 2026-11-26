@@ -1,0 +1,294 @@
+{
+ "spec": {
+  "salary_A": {
+   "base": 8100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_B": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_C": {
+   "base": 21000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_D": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_E": {
+   "base": 8000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_hires": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "min_hires": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "budget": {
+   "base": 35000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20000.0,
+    "hi": 60000.0,
+    "integer": false
+   }
+  },
+  "experience_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "experience_B": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 15.0,
+    "integer": true
+   }
+  },
+  "experience_C": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "experience_D": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "experience_E": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "min_experience": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "AE_max": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "min_advanced_degree": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "salary_A": {
+    "meaning": "salary requirement of candidate A",
+    "base": 8100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_B": {
+    "meaning": "salary requirement of candidate B",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_C": {
+    "meaning": "salary requirement of candidate C",
+    "base": 21000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_D": {
+    "meaning": "salary requirement of candidate D",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_E": {
+    "meaning": "salary requirement of candidate E",
+    "base": 8000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_hires": {
+    "meaning": "maximum number of new employees to hire",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "min_hires": {
+    "meaning": "minimum number of new employees to hire",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "budget": {
+    "meaning": "limited budget for total payments",
+    "base": 35000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20000,
+     "hi": 60000,
+     "integer": false
+    }
+   },
+   "experience_A": {
+    "meaning": "work experience of candidate A (years)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "experience_B": {
+    "meaning": "work experience of candidate B (years)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 15,
+     "integer": true
+    }
+   },
+   "experience_C": {
+    "meaning": "work experience of candidate C (years)",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "experience_D": {
+    "meaning": "work experience of candidate D (years)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "experience_E": {
+    "meaning": "work experience of candidate E (years)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "min_experience": {
+    "meaning": "minimum total work experience of selected candidates (years)",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "AE_max": {
+    "meaning": "maximum number of candidates selected from {A, E}",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "min_advanced_degree": {
+    "meaning": "minimum number of selected candidates with master's or PhD degree (B or C)",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

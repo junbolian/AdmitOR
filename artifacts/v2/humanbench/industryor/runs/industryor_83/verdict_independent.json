@@ -1,0 +1,134 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "initial_capital": 300000,
+   "rate_project1": 0.2,
+   "multiplier_project2": 1.5,
+   "cap_project2": 150000,
+   "multiplier_project3": 1.6,
+   "cap_project3": 200000,
+   "multiplier_project4": 1.4,
+   "cap_project4": 100000
+  },
+  {
+   "initial_capital": 341828.0395373651,
+   "rate_project1": 0.012505377611333468,
+   "multiplier_project2": 1.4125439775536788,
+   "cap_project2": 128123.75835208796,
+   "multiplier_project3": 2.1783539426624197,
+   "cap_project3": 354514.7693403101,
+   "multiplier_project4": 2.338269351557268,
+   "cap_project4": 44342.87313623652
+  },
+  {
+   "initial_capital": 276576.54590558115,
+   "rate_project1": 0.014898609719035172,
+   "multiplier_project2": 1.327956962205405,
+   "cap_project2": 226874.35083617683,
+   "multiplier_project3": 1.0424575514941818,
+   "cap_project3": 139476.94280899182,
+   "multiplier_project4": 1.974826656669285,
+   "cap_project4": 172583.61456890067
+  },
+  {
+   "initial_capital": 216132.186612209,
+   "rate_project1": 0.29463284193795436,
+   "multiplier_project2": 2.21414568501674,
+   "cap_project2": 52274.565887321354,
+   "multiplier_project3": 2.2893108029324925,
+   "cap_project3": 364162.7277447021,
+   "multiplier_project4": 1.5103757747769877,
+   "cap_project4": 63534.25994729884
+  },
+  {
+   "initial_capital": 437163.9216620344,
+   "rate_project1": 0.16829727255631338,
+   "multiplier_project2": 1.139118765070222,
+   "cap_project2": 83850.7318917124,
+   "multiplier_project3": 2.355990986155936,
+   "cap_project3": 321676.714115101,
+   "multiplier_project4": 2.2106924099115703,
+   "cap_project4": 224324.90027426902
+  },
+  {
+   "initial_capital": 310868.4274364102,
+   "rate_project1": 0.4865578819896853,
+   "multiplier_project2": 1.5678015658125302,
+   "cap_project2": 243214.22094562944,
+   "multiplier_project3": 2.327047462804792,
+   "cap_project3": 328333.88856391073,
+   "multiplier_project4": 2.292560350466166,
+   "cap_project4": 181658.60067189336
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   699200.0,
+   884624.8438881788,
+   531849.4299744837,
+   985480.2920639088,
+   1377302.101750564,
+   1621542.005129932
+  ],
+  "B-structured": [
+   580000.0,
+   788381.326207502,
+   524020.23134108656,
+   651490.9887261864,
+   1246831.992397156,
+   1206122.284307389
+  ],
+  "C-direct": [
+   549200.0,
+   463854.17313732597,
+   523392.80684419733,
+   519107.17547218234,
+   930950.143514621,
+   1167643.8094366333
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

@@ -1,0 +1,170 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand_donghai_major1": 1000,
+   "demand_donghai_major2": 2000,
+   "demand_donghai_major3": 1500,
+   "demand_nanjiang_major1": 2000,
+   "demand_nanjiang_major2": 1000,
+   "demand_nanjiang_major3": 1000,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 8000,
+   "preferred_city_goal": 8000
+  },
+  {
+   "demand_donghai_major1": 1139.4267984578837,
+   "demand_donghai_major2": 1050.021510445334,
+   "demand_donghai_major3": 1162.5439775536788,
+   "demand_nanjiang_major1": 1446.4214762976455,
+   "demand_nanjiang_major2": 1236.4712141640125,
+   "demand_nanjiang_major3": 1176.6994874229113,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 4212.287757470909,
+   "preferred_city_goal": 5590.701205493188
+  },
+  {
+   "demand_donghai_major1": 1149.8844377795233,
+   "demand_donghai_major2": 2089.8829612064333,
+   "demand_donghai_major3": 1080.660933061045,
+   "demand_nanjiang_major1": 2178.5313677518175,
+   "demand_nanjiang_major2": 1309.4304566778264,
+   "demand_nanjiang_major3": 506.498759678061,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 4741.966747041183,
+   "preferred_city_goal": 4773.731014667712
+  },
+  {
+   "demand_donghai_major1": 1347.4943663474596,
+   "demand_donghai_major2": 2207.452062733782,
+   "demand_donghai_major3": 1960.6924099115702,
+   "demand_nanjiang_major1": 2459.4635733876357,
+   "demand_nanjiang_major2": 1036.2280914547007,
+   "demand_nanjiang_major3": 1473.1157639793705,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 9636.57468971939,
+   "preferred_city_goal": 4366.595069245298
+  },
+  {
+   "demand_donghai_major1": 727.8982756515469,
+   "demand_donghai_major2": 1578.7759272042144,
+   "demand_donghai_major3": 869.6879653854412,
+   "demand_nanjiang_major1": 1465.5817727220604,
+   "demand_nanjiang_major2": 601.0014294097291,
+   "demand_nanjiang_major3": 777.9736031100921,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 9184.283081972748,
+   "preferred_city_goal": 8873.048045335907
+  },
+  {
+   "demand_donghai_major1": 671.138648198097,
+   "demand_donghai_major2": 2458.2535959006987,
+   "demand_donghai_major3": 995.1037406428926,
+   "demand_nanjiang_major1": 1758.9108835152956,
+   "demand_nanjiang_major2": 1489.5233506365953,
+   "demand_nanjiang_major3": 1139.9997598540929,
+   "category1_size": 1500,
+   "category2_size": 1500,
+   "category3_size": 1500,
+   "category4_size": 1500,
+   "category5_size": 1500,
+   "category6_size": 1500,
+   "preferred_major_goal": 6523.624384472655,
+   "preferred_city_goal": 6141.9270078056215
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1000002500.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   2500.0,
+   0.0,
+   0.0,
+   0.0,
+   3452.048045335907,
+   232.92700780562177
+  ],
+  "C-direct": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0]",
+  "A-direct vs C-direct: diverge on instance(s) [0]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 4, 5]"
+ ],
+ "notes": []
+}

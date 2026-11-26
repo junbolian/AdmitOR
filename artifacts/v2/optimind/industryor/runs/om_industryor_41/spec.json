@@ -1,0 +1,182 @@
+{
+ "spec": {
+  "demandA": {
+   "base": 240,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demandB": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demandC": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplyA_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplyA_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplyA_C": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplyB_A": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplyB_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supplyB_C": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "costA": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "costB": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demandA": {
+    "meaning": "minimum required pieces of raw material A",
+    "base": 240,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demandB": {
+    "meaning": "minimum required kg of raw material B",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demandC": {
+    "meaning": "minimum required tons of raw material C",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplyA_A": {
+    "meaning": "pieces of raw material A per truck from warehouse A",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplyA_B": {
+    "meaning": "kg of raw material B per truck from warehouse A",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplyA_C": {
+    "meaning": "tons of raw material C per truck from warehouse A",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplyB_A": {
+    "meaning": "pieces of raw material A per truck from warehouse B",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplyB_B": {
+    "meaning": "kg of raw material B per truck from warehouse B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supplyB_C": {
+    "meaning": "tons of raw material C per truck from warehouse B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "costA": {
+    "meaning": "freight cost per truck from warehouse A",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "costB": {
+    "meaning": "freight cost per truck from warehouse B",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,321 @@
+{
+ "spec": {
+  "man_hours_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 30.0,
+    "integer": false
+   }
+  },
+  "man_hours_B": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "asm_hours_A": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 9.0,
+    "integer": false
+   }
+  },
+  "asm_hours_B": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 11.0,
+    "integer": false
+   }
+  },
+  "insp_hours_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "insp_hours_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "price_A": {
+   "base": 650,
+   "perturb": {
+    "mode": "abs",
+    "lo": 450.0,
+    "hi": 850.0,
+    "integer": false
+   }
+  },
+  "price_B": {
+   "base": 725,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 950.0,
+    "integer": false
+   }
+  },
+  "cap_manufacturing": {
+   "base": 120,
+   "perturb": {
+    "mode": "abs",
+    "lo": 70.0,
+    "hi": 180.0,
+    "integer": false
+   }
+  },
+  "cap_assembly": {
+   "base": 80,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 130.0,
+    "integer": false
+   }
+  },
+  "cap_inspection": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "cost_manufacturing": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "cost_assembly": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "cost_inspection": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_goal": {
+   "base": 3000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 5000.0,
+    "integer": false
+   }
+  },
+  "min_A_goal": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "man_hours_A": {
+    "meaning": "manufacturing hours per unit of Type A",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 30,
+     "integer": false
+    }
+   },
+   "man_hours_B": {
+    "meaning": "manufacturing hours per unit of Type B",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "asm_hours_A": {
+    "meaning": "assembly hours per unit of Type A",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 9,
+     "integer": false
+    }
+   },
+   "asm_hours_B": {
+    "meaning": "assembly hours per unit of Type B",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 11,
+     "integer": false
+    }
+   },
+   "insp_hours_A": {
+    "meaning": "inspection hours per unit of Type A",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "insp_hours_B": {
+    "meaning": "inspection hours per unit of Type B",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "price_A": {
+    "meaning": "selling price per unit of Type A (yuan)",
+    "base": 650,
+    "perturb": {
+     "mode": "abs",
+     "lo": 450,
+     "hi": 850,
+     "integer": false
+    }
+   },
+   "price_B": {
+    "meaning": "selling price per unit of Type B (yuan)",
+    "base": 725,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 950,
+     "integer": false
+    }
+   },
+   "cap_manufacturing": {
+    "meaning": "maximum weekly manufacturing capacity (hours)",
+    "base": 120,
+    "perturb": {
+     "mode": "abs",
+     "lo": 70,
+     "hi": 180,
+     "integer": false
+    }
+   },
+   "cap_assembly": {
+    "meaning": "maximum weekly assembly capacity (hours)",
+    "base": 80,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 130,
+     "integer": false
+    }
+   },
+   "cap_inspection": {
+    "meaning": "maximum weekly inspection capacity (hours)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "cost_manufacturing": {
+    "meaning": "hourly manufacturing cost (yuan/hour)",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "cost_assembly": {
+    "meaning": "hourly assembly cost (yuan/hour)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "cost_inspection": {
+    "meaning": "hourly inspection cost (yuan/hour)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_goal": {
+    "meaning": "target total weekly profit (yuan)",
+    "base": 3000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 5000,
+     "integer": false
+    }
+   },
+   "min_A_goal": {
+    "meaning": "minimum weekly production of Type A units",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

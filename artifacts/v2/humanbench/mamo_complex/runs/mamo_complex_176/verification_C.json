@@ -1,0 +1,83 @@
+{
+ "sample_id": "mamo_complex_176",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\"parameter\": \"cap_6_0\", \"extracted\": 8000, \"stated\": \"8000 is the capacity City 0 -> City 6, not City 6 -> City 0\", \"evidence\": \"City 6 ... Can receive passengers from City 0 (8,000 passengers)\"},\n    {\"parameter\": \"cap_6_1\", \"extracted\": 1000, \"stated\": \"1000 is the capacity City 1 -> City 6, not City 6 -> City 1\", \"evidence\": \"Can receive passengers from City 1 (1,000 passengers)\"},\n    {\"parameter\": \"cap_6_2\", \"extracted\": 11000, \"stated\": \"11000 is the capacity City 2 -> City 6, not City 6 -> City 2\", \"evidence\": \"Can receive passengers from City 2 (11,000 passengers)\"},\n    {\"parameter\": \"cap_6_3\", \"extracted\": 8000, \"stated\": \"8000 is the capacity City 3 -> City 6, not City 6 -> City 3\", \"evidence\": \"Can receive passengers from City 3 (8,000 passengers)\"},\n    {\"parameter\": \"cap_6_4\", \"extracted\": 6000, \"stated\": \"6000 is the capacity City 4 -> City 6, not City 6 -> City 4\", \"evidence\": \"Can receive passengers from City 4 (6,000 passengers)\"},\n    {\"parameter\": \"cap_6_5\", \"extracted\": 20000, \"stated\": \"20000 is the capacity City 5 -> City 6, not City 6 -> City 5\", \"evidence\": \"Can receive passengers from City 5 (20,000 passengers)\"},\n    {\"parameter\": \"cap_0_6\", \"extracted\": 20000, \"stated\": 8000, \"evidence\": \"City 6 ... Can receive passengers from City 0 (8,000 passengers)\"},\n    {\"parameter\": \"cap_2_6\", \"extracted\": 5000, \"stated\": 11000, \"evidence\": \"Can receive passengers from City 2 (11,000 passengers)\"},\n    {\"parameter\": \"cap_3_6\", \"extracted\": 19000, \"stated\": 8000, \"evidence\": \"Can receive passengers from City 3 (8,000 passengers)\"},\n    {\"parameter\": \"cap_5_6\", \"extracted\": 18000, \"stated\": 20000, \"evidence\": \"Can receive passengers from City 5 (20,000 passengers)\"}\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "cap_6_0",
+   "extracted": 8000,
+   "stated": "8000 is the capacity City 0 -> City 6, not City 6 -> City 0",
+   "evidence": "City 6 ... Can receive passengers from City 0 (8,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_1",
+   "extracted": 1000,
+   "stated": "1000 is the capacity City 1 -> City 6, not City 6 -> City 1",
+   "evidence": "Can receive passengers from City 1 (1,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_2",
+   "extracted": 11000,
+   "stated": "11000 is the capacity City 2 -> City 6, not City 6 -> City 2",
+   "evidence": "Can receive passengers from City 2 (11,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_3",
+   "extracted": 8000,
+   "stated": "8000 is the capacity City 3 -> City 6, not City 6 -> City 3",
+   "evidence": "Can receive passengers from City 3 (8,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_4",
+   "extracted": 6000,
+   "stated": "6000 is the capacity City 4 -> City 6, not City 6 -> City 4",
+   "evidence": "Can receive passengers from City 4 (6,000 passengers)"
+  },
+  {
+   "parameter": "cap_6_5",
+   "extracted": 20000,
+   "stated": "20000 is the capacity City 5 -> City 6, not City 6 -> City 5",
+   "evidence": "Can receive passengers from City 5 (20,000 passengers)"
+  },
+  {
+   "parameter": "cap_0_6",
+   "extracted": 20000,
+   "stated": 8000,
+   "evidence": "City 6 ... Can receive passengers from City 0 (8,000 passengers)"
+  },
+  {
+   "parameter": "cap_2_6",
+   "extracted": 5000,
+   "stated": 11000,
+   "evidence": "Can receive passengers from City 2 (11,000 passengers)"
+  },
+  {
+   "parameter": "cap_3_6",
+   "extracted": 19000,
+   "stated": 8000,
+   "evidence": "Can receive passengers from City 3 (8,000 passengers)"
+  },
+  {
+   "parameter": "cap_5_6",
+   "extracted": 18000,
+   "stated": 20000,
+   "evidence": "Can receive passengers from City 5 (20,000 passengers)"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

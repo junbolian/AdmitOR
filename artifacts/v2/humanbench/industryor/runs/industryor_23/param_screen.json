@@ -1,0 +1,55 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "device_A_hours_per_unit",
+  "device_B_hours_per_unit",
+  "device_C_hours_per_unit",
+  "capacity_A",
+  "capacity_B",
+  "capacity_C",
+  "unit_profit"
+ ],
+ "safe": [
+  "device_A_hours_per_unit",
+  "device_B_hours_per_unit",
+  "device_C_hours_per_unit",
+  "capacity_B",
+  "capacity_C",
+  "unit_profit"
+ ],
+ "tests": {
+  "device_A_hours_per_unit": [
+   3,
+   3
+  ],
+  "device_B_hours_per_unit": [
+   3,
+   3
+  ],
+  "device_C_hours_per_unit": [
+   3,
+   3
+  ],
+  "capacity_A": [
+   3,
+   2
+  ],
+  "capacity_B": [
+   3,
+   3
+  ],
+  "capacity_C": [
+   3,
+   3
+  ],
+  "unit_profit": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

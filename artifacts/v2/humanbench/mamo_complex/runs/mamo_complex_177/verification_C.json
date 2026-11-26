@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_177",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Checking each row of the extracted matrix against the statement:\n\n- Row 0 (Hub 0): stated → Hub1=15, Hub2=2, Hub3=16, Hub4=3, Hub5=5, Hub6=3. Extracted: [0,15,2,16,3,5,3]. ✓\n- Row 1 (Hub 1): stated → Hub0=7, Hub4=19, Hub5=15, Hub6=16. No Hub2 or Hub3 connection stated. Extracted: [7,0,0,0,19,15,16]. ✓\n- Row 2 (Hub 2): stated → Hub0=11, Hub1=14, Hub3=14, Hub4=8, Hub5=11, Hub6=6. Extracted: [11,14,0,14,8,11,6]. ✓\n- Row 3 (Hub 3): stated → Hub0=17, Hub1=11, Hub2=11, Hub4=11, Hub5=16, Hub6=19. Extracted: [17,11,11,0,11,16,19]. ✓\n- Row 4 (Hub 4): stated → Hub0=10, Hub1=4, Hub2=17, Hub3=20, Hub5=12, Hub6=17. Extracted: [10,4,17,20,0,12,17]. ✓\n- Row 5 (Hub 5): stated → Hub0=3, Hub2=4, Hub3=5, Hub4=20, Hub6=4. No Hub1 connection stated. Extracted: [3,0,4,5,20,0,4]. ✓\n- Row 6 (Hub 6): stated → Hub0=15, Hub1=2, Hub2=15, Hub3=18, Hub4=17, Hub5=7. Extracted: [15,2,15,18,17,7,0]. ✓\n\nAll values match the statement exactly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

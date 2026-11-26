@@ -1,0 +1,47 @@
+{
+ "sample_id": "mamo_complex_161",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"capacity\",\"extracted\":{\"8→0\":3,\"8→1\":12,\"8→2\":6,\"8→3\":6,\"8→4\":1,\"8→5\":11,\"8→6\":6,\"8→7\":1},\"stated\":{\"0→8\":3,\"1→8\":12,\"2→8\":6,\"3→8\":6,\"4→8\":1,\"5→8\":11,\"6→8\":6,\"7→8\":1},\"evidence\":\"From Station 8 (Destination): Can receive data back from Station 0 (3 packets), Station 1 (12 packets), Station 2 (6 packets), Station 3 (6 packets), Station 4 (1 packet), Station 5 (11 packets), Station 6 (6 packets), and Station 7 (1 packet).\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "capacity",
+   "extracted": {
+    "8→0": 3,
+    "8→1": 12,
+    "8→2": 6,
+    "8→3": 6,
+    "8→4": 1,
+    "8→5": 11,
+    "8→6": 6,
+    "8→7": 1
+   },
+   "stated": {
+    "0→8": 3,
+    "1→8": 12,
+    "2→8": 6,
+    "3→8": 6,
+    "4→8": 1,
+    "5→8": 11,
+    "6→8": 6,
+    "7→8": 1
+   },
+   "evidence": "From Station 8 (Destination): Can receive data back from Station 0 (3 packets), Station 1 (12 packets), Station 2 (6 packets), Station 3 (6 packets), Station 4 (1 packet), Station 5 (11 packets), Station 6 (6 packets), and Station 7 (1 packet)."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

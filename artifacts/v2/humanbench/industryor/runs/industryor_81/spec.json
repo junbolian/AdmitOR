@@ -1,0 +1,165 @@
+{
+ "spec": {
+  "initial_capital": {
+   "base": 500000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "annual_reinvest_profit_rate": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "project2_total_interest_rate": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.5,
+    "integer": false
+   }
+  },
+  "project2_investment_cap": {
+   "base": 120000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 300000.0,
+    "integer": false
+   }
+  },
+  "project3_total_interest_rate": {
+   "base": 1.6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.5,
+    "integer": false
+   }
+  },
+  "project3_investment_cap": {
+   "base": 150000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50000.0,
+    "hi": 350000.0,
+    "integer": false
+   }
+  },
+  "project4_profit_rate": {
+   "base": 0.4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.9,
+    "integer": false
+   }
+  },
+  "project4_investment_cap": {
+   "base": 100000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30000.0,
+    "hi": 250000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_capital": {
+    "meaning": "starting capital available at the beginning of year 1",
+    "base": 500000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "annual_reinvest_profit_rate": {
+    "meaning": "annual profit rate for project type 1 invested at start of each year",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "project2_total_interest_rate": {
+    "meaning": "total interest rate for project type 2 (start year 1, recovered end year 2, i.e. over 2 years)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.5,
+     "integer": false
+    }
+   },
+   "project2_investment_cap": {
+    "meaning": "maximum amount investable in project type 2",
+    "base": 120000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 300000,
+     "integer": false
+    }
+   },
+   "project3_total_interest_rate": {
+    "meaning": "total interest rate for project type 3 (start year 2, recovered end year 2, i.e. over 1 year)",
+    "base": 1.6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.0,
+     "hi": 2.5,
+     "integer": false
+    }
+   },
+   "project3_investment_cap": {
+    "meaning": "maximum amount investable in project type 3",
+    "base": 150000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50000,
+     "hi": 350000,
+     "integer": false
+    }
+   },
+   "project4_profit_rate": {
+    "meaning": "profit rate for project type 4 (start year 3, recovered within one year)",
+    "base": 0.4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.9,
+     "integer": false
+    }
+   },
+   "project4_investment_cap": {
+    "meaning": "maximum amount investable in project type 4",
+    "base": 100000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30000,
+     "hi": 250000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

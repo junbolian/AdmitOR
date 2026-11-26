@@ -1,0 +1,197 @@
+{
+ "spec": {
+  "cost_12": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_13": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_14": {
+   "base": 76,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_21": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_23": {
+   "base": 82,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_24": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_31": {
+   "base": 48,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_32": {
+   "base": 82,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_34": {
+   "base": 97,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_41": {
+   "base": 76,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_42": {
+   "base": 88,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_43": {
+   "base": 97,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_12": {
+    "meaning": "travel cost from City 1 to City 2",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_13": {
+    "meaning": "travel cost from City 1 to City 3",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_14": {
+    "meaning": "travel cost from City 1 to City 4",
+    "base": 76,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_21": {
+    "meaning": "travel cost from City 2 to City 1",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_23": {
+    "meaning": "travel cost from City 2 to City 3",
+    "base": 82,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_24": {
+    "meaning": "travel cost from City 2 to City 4",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_31": {
+    "meaning": "travel cost from City 3 to City 1",
+    "base": 48,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_32": {
+    "meaning": "travel cost from City 3 to City 2",
+    "base": 82,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_34": {
+    "meaning": "travel cost from City 3 to City 4",
+    "base": 97,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_41": {
+    "meaning": "travel cost from City 4 to City 1",
+    "base": 76,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_42": {
+    "meaning": "travel cost from City 4 to City 2",
+    "base": 88,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_43": {
+    "meaning": "travel cost from City 4 to City 3",
+    "base": 97,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

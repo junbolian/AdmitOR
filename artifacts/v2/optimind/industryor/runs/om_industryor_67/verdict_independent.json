@@ -1,0 +1,120 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand_3m": 90,
+   "demand_4m": 60,
+   "raw_length": 10,
+   "piece_length_3m": 3,
+   "piece_length_4m": 4
+  },
+  {
+   "demand_3m": 98,
+   "demand_4m": 41,
+   "raw_length": 10.0,
+   "piece_length_3m": 3.0,
+   "piece_length_4m": 4.0
+  },
+  {
+   "demand_3m": 101,
+   "demand_4m": 76,
+   "raw_length": 10.0,
+   "piece_length_3m": 3.0,
+   "piece_length_4m": 4.0
+  },
+  {
+   "demand_3m": 73,
+   "demand_4m": 60,
+   "raw_length": 10.0,
+   "piece_length_3m": 3.0,
+   "piece_length_4m": 4.0
+  },
+  {
+   "demand_3m": 93,
+   "demand_4m": 49,
+   "raw_length": 10.0,
+   "piece_length_3m": 3.0,
+   "piece_length_4m": 4.0
+  },
+  {
+   "demand_3m": 108,
+   "demand_4m": 68,
+   "raw_length": 10.0,
+   "piece_length_3m": 3.0,
+   "piece_length_4m": 4.0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   53.0,
+   47.0,
+   64.0,
+   49.0,
+   48.0,
+   61.0
+  ],
+  "B-structured": [
+   53.0,
+   47.0,
+   64.0,
+   49.0,
+   48.0,
+   61.0
+  ],
+  "C-direct": [
+   52.5,
+   46.333333333333336,
+   63.25,
+   48.25,
+   47.75,
+   61.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "diverges from consensus by 0.75 on instance 2 (params: {'demand_3m': 101, 'demand_4m': 76, 'raw_length': 10.0, 'piece_length_3m': 3.0, 'piece_length_4m': 4.0})"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,27 @@
+{
+ "sample_id": "industryor_34",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"x_coords\", \"evidence\": \"the x-coordinate of village 1 is blank in the table (only 10, 12, 14, 16, 18, 8, 6 are given); the blank cell is not a stated value\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "x_coords",
+   "evidence": "the x-coordinate of village 1 is blank in the table (only 10, 12, 14, 16, 18, 8, 6 are given); the blank cell is not a stated value"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

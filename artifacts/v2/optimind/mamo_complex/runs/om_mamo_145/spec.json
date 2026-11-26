@@ -1,0 +1,318 @@
+{
+ "spec": {
+  "protein_eggs": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_eggs": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_eggs": {
+   "base": 238,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_eggs": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "protein_rice": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_rice": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_rice": {
+   "base": 85,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_rice": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "protein_chicken": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_chicken": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_chicken": {
+   "base": 146,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_chicken": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "protein_broccoli": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_broccoli": {
+   "base": 26,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_broccoli": {
+   "base": 139,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_broccoli": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "protein_req": {
+   "base": 93,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_req": {
+   "base": 165,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cal_req": {
+   "base": 1553,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_eggs": {
+    "meaning": "Protein grams per unit of Eggs",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_eggs": {
+    "meaning": "Carbohydrate grams per unit of Eggs",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_eggs": {
+    "meaning": "Calories per unit of Eggs",
+    "base": 238,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_eggs": {
+    "meaning": "Cost per unit of Eggs",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams per unit of Rice",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_rice": {
+    "meaning": "Carbohydrate grams per unit of Rice",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_rice": {
+    "meaning": "Calories per unit of Rice",
+    "base": 85,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per unit of Rice",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "protein_chicken": {
+    "meaning": "Protein grams per unit of Chicken",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_chicken": {
+    "meaning": "Carbohydrate grams per unit of Chicken",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_chicken": {
+    "meaning": "Calories per unit of Chicken",
+    "base": 146,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per unit of Chicken",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "Protein grams per unit of Broccoli",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_broccoli": {
+    "meaning": "Carbohydrate grams per unit of Broccoli",
+    "base": 26,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_broccoli": {
+    "meaning": "Calories per unit of Broccoli",
+    "base": 139,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "Cost per unit of Broccoli",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum daily protein requirement (grams)",
+    "base": 93,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_req": {
+    "meaning": "Minimum daily carbohydrate requirement (grams)",
+    "base": 165,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cal_req": {
+    "meaning": "Minimum daily calorie requirement",
+    "base": 1553,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

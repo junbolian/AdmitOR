@@ -1,0 +1,293 @@
+{
+ "spec": {
+  "capacity_matrix": {
+   "base": [
+    [
+     0,
+     9,
+     7,
+     18,
+     0,
+     0,
+     7,
+     0,
+     2
+    ],
+    [
+     15,
+     0,
+     11,
+     5,
+     20,
+     15,
+     18,
+     9,
+     15
+    ],
+    [
+     3,
+     8,
+     0,
+     0,
+     10,
+     16,
+     18,
+     8,
+     20
+    ],
+    [
+     13,
+     3,
+     7,
+     0,
+     20,
+     13,
+     16,
+     6,
+     20
+    ],
+    [
+     7,
+     20,
+     2,
+     4,
+     0,
+     9,
+     3,
+     14,
+     2
+    ],
+    [
+     17,
+     10,
+     5,
+     1,
+     4,
+     0,
+     4,
+     3,
+     20
+    ],
+    [
+     0,
+     20,
+     10,
+     10,
+     15,
+     5,
+     0,
+     1,
+     10
+    ],
+    [
+     10,
+     3,
+     9,
+     4,
+     3,
+     13,
+     18,
+     0,
+     20
+    ],
+    [
+     2,
+     12,
+     10,
+     5,
+     15,
+     14,
+     0,
+     10,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_centers": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "source_node": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "sink_node": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_centers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[source_node] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink_node] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "capacity_matrix": {
+    "meaning": "Flow capacity c[i][j] (thousands of gallons/hour) from center i to center j; row i lists capacities to centers 0..8 excluding i, diagonal treated as 0",
+    "base": [
+     [
+      0,
+      9,
+      7,
+      18,
+      0,
+      0,
+      7,
+      0,
+      2
+     ],
+     [
+      15,
+      0,
+      11,
+      5,
+      20,
+      15,
+      18,
+      9,
+      15
+     ],
+     [
+      3,
+      8,
+      0,
+      0,
+      10,
+      16,
+      18,
+      8,
+      20
+     ],
+     [
+      13,
+      3,
+      7,
+      0,
+      20,
+      13,
+      16,
+      6,
+      20
+     ],
+     [
+      7,
+      20,
+      2,
+      4,
+      0,
+      9,
+      3,
+      14,
+      2
+     ],
+     [
+      17,
+      10,
+      5,
+      1,
+      4,
+      0,
+      4,
+      3,
+      20
+     ],
+     [
+      0,
+      20,
+      10,
+      10,
+      15,
+      5,
+      0,
+      1,
+      10
+     ],
+     [
+      10,
+      3,
+      9,
+      4,
+      3,
+      13,
+      18,
+      0,
+      20
+     ],
+     [
+      2,
+      12,
+      10,
+      5,
+      15,
+      14,
+      0,
+      10,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_centers": {
+    "meaning": "Number of distribution centers / nodes in the network (fixed cardinality)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "source_node": {
+    "meaning": "Index of the source distribution center",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "sink_node": {
+    "meaning": "Index of the terminal/outskirts center",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

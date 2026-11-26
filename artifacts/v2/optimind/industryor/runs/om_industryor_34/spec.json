@@ -1,0 +1,475 @@
+{
+ "spec": {
+  "depot_x": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "depot_y": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 30.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "depot_tw_start": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "depot_tw_end": {
+   "base": 1236,
+   "perturb": {
+    "mode": "abs",
+    "lo": 900.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "vehicle_count_max": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "vehicle_capacity": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 140.0,
+    "hi": 280.0,
+    "integer": true
+   }
+  },
+  "customer_x": {
+   "base": [
+    45,
+    45,
+    42,
+    42,
+    42,
+    40,
+    40,
+    38,
+    38,
+    35,
+    35,
+    25,
+    22,
+    22,
+    20,
+    20,
+    18,
+    15,
+    15,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "customer_y": {
+   "base": [
+    68,
+    70,
+    66,
+    68,
+    65,
+    69,
+    66,
+    68,
+    70,
+    66,
+    69,
+    85,
+    75,
+    85,
+    80,
+    85,
+    75,
+    75,
+    80,
+    50
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "demand": {
+   "base": [
+    10,
+    30,
+    10,
+    10,
+    10,
+    20,
+    20,
+    20,
+    10,
+    10,
+    10,
+    20,
+    30,
+    10,
+    40,
+    40,
+    20,
+    20,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "tw_early": {
+   "base": [
+    912,
+    825,
+    65,
+    727,
+    15,
+    621,
+    170,
+    255,
+    534,
+    357,
+    448,
+    652,
+    30,
+    567,
+    384,
+    475,
+    99,
+    179,
+    278,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "tw_late": {
+   "base": [
+    967,
+    870,
+    146,
+    782,
+    67,
+    702,
+    225,
+    324,
+    605,
+    410,
+    505,
+    721,
+    92,
+    620,
+    429,
+    528,
+    148,
+    254,
+    345,
+    73
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.1
+   }
+  },
+  "service_time": {
+   "base": [
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [
+  "[vehicle_count_max] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "depot_x": {
+    "meaning": "depot x-coordinate",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "depot_y": {
+    "meaning": "depot y-coordinate",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 30,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "depot_tw_start": {
+    "meaning": "depot earliest departure time",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "depot_tw_end": {
+    "meaning": "depot latest return time",
+    "base": 1236,
+    "perturb": {
+     "mode": "abs",
+     "lo": 900,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "vehicle_count_max": {
+    "meaning": "maximum number of trucks available",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "vehicle_capacity": {
+    "meaning": "capacity of each truck",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 140,
+     "hi": 280,
+     "integer": true
+    }
+   },
+   "customer_x": {
+    "meaning": "x-coordinates of customers 1-20",
+    "base": [
+     45,
+     45,
+     42,
+     42,
+     42,
+     40,
+     40,
+     38,
+     38,
+     35,
+     35,
+     25,
+     22,
+     22,
+     20,
+     20,
+     18,
+     15,
+     15,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "customer_y": {
+    "meaning": "y-coordinates of customers 1-20",
+    "base": [
+     68,
+     70,
+     66,
+     68,
+     65,
+     69,
+     66,
+     68,
+     70,
+     66,
+     69,
+     85,
+     75,
+     85,
+     80,
+     85,
+     75,
+     75,
+     80,
+     50
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "demand": {
+    "meaning": "demand per customer 1-20",
+    "base": [
+     10,
+     30,
+     10,
+     10,
+     10,
+     20,
+     20,
+     20,
+     10,
+     10,
+     10,
+     20,
+     30,
+     10,
+     40,
+     40,
+     20,
+     20,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "tw_early": {
+    "meaning": "earliest service start time per customer 1-20",
+    "base": [
+     912,
+     825,
+     65,
+     727,
+     15,
+     621,
+     170,
+     255,
+     534,
+     357,
+     448,
+     652,
+     30,
+     567,
+     384,
+     475,
+     99,
+     179,
+     278,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "tw_late": {
+    "meaning": "latest service start time per customer 1-20",
+    "base": [
+     967,
+     870,
+     146,
+     782,
+     67,
+     702,
+     225,
+     324,
+     605,
+     410,
+     505,
+     721,
+     92,
+     620,
+     429,
+     528,
+     148,
+     254,
+     345,
+     73
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.1
+    }
+   },
+   "service_time": {
+    "meaning": "fixed service duration per customer 1-20",
+    "base": [
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90,
+     90
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

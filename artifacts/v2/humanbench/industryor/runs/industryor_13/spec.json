@@ -1,0 +1,39 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    10,
+    15,
+    25,
+    20,
+    18,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required number of salespersons on duty during each 4-hour period (six periods in chronological order starting at 2:00)",
+    "base": [
+     10,
+     15,
+     25,
+     20,
+     18,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

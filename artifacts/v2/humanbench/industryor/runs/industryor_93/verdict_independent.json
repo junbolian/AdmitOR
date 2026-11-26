@@ -1,0 +1,120 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "stock_3m_count": 90,
+   "stock_4m_count": 60,
+   "raw_length": 10,
+   "piece_3m_length": 3,
+   "piece_4m_length": 4
+  },
+  {
+   "stock_3m_count": 90,
+   "stock_4m_count": 60,
+   "raw_length": 9.100117273476476,
+   "piece_3m_length": 3.0,
+   "piece_4m_length": 4.0
+  },
+  {
+   "stock_3m_count": 90,
+   "stock_4m_count": 60,
+   "raw_length": 8.347755330517666,
+   "piece_3m_length": 3.0,
+   "piece_4m_length": 4.0
+  },
+  {
+   "stock_3m_count": 90,
+   "stock_4m_count": 60,
+   "raw_length": 8.106143878735455,
+   "piece_3m_length": 3.0,
+   "piece_4m_length": 4.0
+  },
+  {
+   "stock_3m_count": 90,
+   "stock_4m_count": 60,
+   "raw_length": 10.357062735503636,
+   "piece_3m_length": 3.0,
+   "piece_4m_length": 4.0
+  },
+  {
+   "stock_3m_count": 90,
+   "stock_4m_count": 60,
+   "raw_length": 9.361002066071967,
+   "piece_3m_length": 3.0,
+   "piece_4m_length": 4.0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   53.0,
+   60.0,
+   75.0,
+   75.0,
+   53.0,
+   60.0
+  ],
+  "B-structured": [
+   53.0,
+   60.0,
+   75.0,
+   75.0,
+   53.0,
+   60.0
+  ],
+  "C-direct": [
+   53.0,
+   60.0,
+   75.0,
+   75.0,
+   53.0,
+   60.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

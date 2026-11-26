@@ -1,0 +1,101 @@
+{
+ "sample_id": "mamo_complex_183",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"transport_costs\",\n      \"extracted\": [[2,3,2,3,2,3,2,3,2],[4,2,4,2,4,2,4,2,4],[3,2,3,2,3,2,3,2,3],[2,4,2,4,2,4,2,4,2],[3,4,3,4,3,4,3,4,3],[4,3,4,3,4,3,4,3,4]],\n      \"stated\": \"only first two rows partially specified; rows 3-6 not given\",\n      \"evidence\": \"\\\"From Center 1: $2 to Store 1, $3 to Store 2, and so on, up to $2 to Store 9\\\" and \\\"From Center 2: $4 to Store 1, $2 to Store 2, and so on, up to $4 to Store 9\\\" — rows 3-6 are explicitly not specified\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transport_costs\",\n      \"evidence\": \"\\\"From Center 3, Center 4, Center 5, and Center 6 follow similar patterns with varying costs to each store\\\" — no actual values given for rows 3-6, and rows 1-2 are only partially described ('and so on')\"\n    }\n  ]\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "transport_costs",
+   "extracted": [
+    [
+     2,
+     3,
+     2,
+     3,
+     2,
+     3,
+     2,
+     3,
+     2
+    ],
+    [
+     4,
+     2,
+     4,
+     2,
+     4,
+     2,
+     4,
+     2,
+     4
+    ],
+    [
+     3,
+     2,
+     3,
+     2,
+     3,
+     2,
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     4,
+     2,
+     4,
+     2,
+     4,
+     2,
+     4,
+     2
+    ],
+    [
+     3,
+     4,
+     3,
+     4,
+     3,
+     4,
+     3,
+     4,
+     3
+    ],
+    [
+     4,
+     3,
+     4,
+     3,
+     4,
+     3,
+     4,
+     3,
+     4
+    ]
+   ],
+   "stated": "only first two rows partially specified; rows 3-6 not given",
+   "evidence": "\"From Center 1: $2 to Store 1, $3 to Store 2, and so on, up to $2 to Store 9\" and \"From Center 2: $4 to Store 1, $2 to Store 2, and so on, up to $4 to Store 9\" — rows 3-6 are explicitly not specified"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "\"From Center 3, Center 4, Center 5, and Center 6 follow similar patterns with varying costs to each store\" — no actual values given for rows 3-6, and rows 1-2 are only partially described ('and so on')"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+ "spec": {
+  "cost_1_3": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_4": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_5": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_3": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_5": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_4": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_5": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_5": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_1": {
+   "base": 120,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 170.0,
+    "integer": true
+   }
+  },
+  "supply_2": {
+   "base": 330,
+   "perturb": {
+    "mode": "abs",
+    "lo": 250.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "supply_3": {
+   "base": 400,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "supply_4": {
+   "base": 400,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 500.0,
+    "integer": true
+   }
+  },
+  "supply_5": {
+   "base": 600,
+   "perturb": {
+    "mode": "abs",
+    "lo": 450.0,
+    "hi": 700.0,
+    "integer": true
+   }
+  },
+  "demand_1": {
+   "base": 150,
+   "perturb": {
+    "mode": "abs",
+    "lo": 120.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "demand_2": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 260.0,
+    "integer": true
+   }
+  },
+  "demand_3": {
+   "base": 600,
+   "perturb": {
+    "mode": "abs",
+    "lo": 500.0,
+    "hi": 700.0,
+    "integer": true
+   }
+  },
+  "demand_4": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 260.0,
+    "integer": true
+   }
+  },
+  "demand_5": {
+   "base": 400,
+   "perturb": {
+    "mode": "abs",
+    "lo": 300.0,
+    "hi": 520.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_1_3": {
+    "meaning": "unit cost of moving a car from location 1 to location 3",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_4": {
+    "meaning": "unit cost of moving a car from location 1 to location 4",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_5": {
+    "meaning": "unit cost of moving a car from location 1 to location 5",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_3": {
+    "meaning": "unit cost of moving a car from location 2 to location 3",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_4": {
+    "meaning": "unit cost of moving a car from location 2 to location 4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_5": {
+    "meaning": "unit cost of moving a car from location 2 to location 5",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_4": {
+    "meaning": "unit cost of moving a car from location 3 to location 4",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_5": {
+    "meaning": "unit cost of moving a car from location 3 to location 5",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_5": {
+    "meaning": "unit cost of moving a car from location 4 to location 5",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_1": {
+    "meaning": "cars currently present at location 1 (supply)",
+    "base": 120,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 170,
+     "integer": true
+    }
+   },
+   "supply_2": {
+    "meaning": "cars currently present at location 2 (supply)",
+    "base": 330,
+    "perturb": {
+     "mode": "abs",
+     "lo": 250,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "supply_3": {
+    "meaning": "cars currently present at location 3 (supply)",
+    "base": 400,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "supply_4": {
+    "meaning": "cars currently present at location 4 (supply)",
+    "base": 400,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 500,
+     "integer": true
+    }
+   },
+   "supply_5": {
+    "meaning": "cars currently present at location 5 (supply)",
+    "base": 600,
+    "perturb": {
+     "mode": "abs",
+     "lo": 450,
+     "hi": 700,
+     "integer": true
+    }
+   },
+   "demand_1": {
+    "meaning": "cars needed at location 1 (demand)",
+    "base": 150,
+    "perturb": {
+     "mode": "abs",
+     "lo": 120,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "demand_2": {
+    "meaning": "cars needed at location 2 (demand)",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 260,
+     "integer": true
+    }
+   },
+   "demand_3": {
+    "meaning": "cars needed at location 3 (demand)",
+    "base": 600,
+    "perturb": {
+     "mode": "abs",
+     "lo": 500,
+     "hi": 700,
+     "integer": true
+    }
+   },
+   "demand_4": {
+    "meaning": "cars needed at location 4 (demand)",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 260,
+     "integer": true
+    }
+   },
+   "demand_5": {
+    "meaning": "cars needed at location 5 (demand)",
+    "base": 400,
+    "perturb": {
+     "mode": "abs",
+     "lo": 300,
+     "hi": 520,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

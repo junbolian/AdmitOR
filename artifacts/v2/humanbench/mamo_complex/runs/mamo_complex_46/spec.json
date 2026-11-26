@@ -1,0 +1,367 @@
+{
+ "spec": {
+  "capacity_0_1": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_0_2": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_0_3": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_0_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_0_5": {
+   "base": 17,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "capacity_0_6": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "capacity_0_7": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "capacities_from_1": {
+   "base": [
+    4,
+    14,
+    14,
+    13,
+    19,
+    4,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities_from_2": {
+   "base": [
+    6,
+    16,
+    3,
+    10,
+    7,
+    18,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities_from_3": {
+   "base": [
+    19,
+    4,
+    15,
+    6,
+    1,
+    17,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities_from_4": {
+   "base": [
+    12,
+    15,
+    3,
+    14,
+    18,
+    20,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities_from_5": {
+   "base": [
+    20,
+    5,
+    19,
+    9,
+    20,
+    10,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities_from_6": {
+   "base": [
+    9,
+    14,
+    12,
+    16,
+    19,
+    3,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "capacities_from_7": {
+   "base": [
+    20,
+    16,
+    6,
+    16,
+    8,
+    16,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_0_1": {
+    "meaning": "Tunnel capacity from Node 0 to Node 1 (thousand kWh/h)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_0_2": {
+    "meaning": "Tunnel capacity from Node 0 to Node 2",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_0_3": {
+    "meaning": "Tunnel capacity from Node 0 to Node 3",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_0_4": {
+    "meaning": "Tunnel capacity from Node 0 to Node 4",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_0_5": {
+    "meaning": "Tunnel capacity from Node 0 to Node 5",
+    "base": 17,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "capacity_0_6": {
+    "meaning": "Tunnel capacity from Node 0 to Node 6",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "capacity_0_7": {
+    "meaning": "Tunnel capacity from Node 0 to Node 7 (direct source-sink)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "capacities_from_1": {
+    "meaning": "Capacities from Node 1 to Nodes [0,2,3,4,5,6,7]",
+    "base": [
+     4,
+     14,
+     14,
+     13,
+     19,
+     4,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities_from_2": {
+    "meaning": "Capacities from Node 2 to Nodes [0,1,3,4,5,6,7]",
+    "base": [
+     6,
+     16,
+     3,
+     10,
+     7,
+     18,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities_from_3": {
+    "meaning": "Capacities from Node 3 to Nodes [0,1,2,4,5,6,7]",
+    "base": [
+     19,
+     4,
+     15,
+     6,
+     1,
+     17,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities_from_4": {
+    "meaning": "Capacities from Node 4 to Nodes [0,1,2,3,5,6,7]",
+    "base": [
+     12,
+     15,
+     3,
+     14,
+     18,
+     20,
+     14
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities_from_5": {
+    "meaning": "Capacities from Node 5 to Nodes [0,1,2,3,4,6,7]",
+    "base": [
+     20,
+     5,
+     19,
+     9,
+     20,
+     10,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities_from_6": {
+    "meaning": "Capacities from Node 6 to Nodes [0,1,2,3,4,5,7]",
+    "base": [
+     9,
+     14,
+     12,
+     16,
+     19,
+     3,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "capacities_from_7": {
+    "meaning": "Capacities from Node 7 to Nodes [0,1,2,3,4,5,6]",
+    "base": [
+     20,
+     16,
+     6,
+     16,
+     8,
+     16,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "sample_id": "om_industryor_85",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"total_capacity_B\",\n      \"extracted\": 30,\n      \"stated\": 60,\n      \"evidence\": \"Type A trucks have 20 cubic meters of refrigerated capacity and 40 cubic meters of non-refrigerated capacity... Type B trucks have the same total capacity\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "total_capacity_B",
+   "extracted": 30,
+   "stated": 60,
+   "evidence": "Type A trucks have 20 cubic meters of refrigerated capacity and 40 cubic meters of non-refrigerated capacity... Type B trucks have the same total capacity"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "unparsed",
+   "finish_reason": "stop",
+   "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"total_capacity_B\",\n      \"extracted\": 30,\n      \"stated\": 60,\n      \"evidence\": \"Type B trucks have the same total capacity\" (as Type A, which is 20 + 40 = 60 cubic meters)\n    }\n  ],\n  \"not_stated\": []\n}\n```"
+  },
+  {
+   "attempt": 2,
+   "status": "unparsed",
+   "finish_reason": "stop",
+   "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"total_capacity_B\",\n      \"extracted\": 30,\n      \"stated\": 60,\n      \"evidence\": \"Type B trucks have the same total capacity\" (as Type A, which has 20 + 40 = 60 cubic meters total)\n    }\n  ],\n  \"not_stated\": []\n}\n```"
+  },
+  {
+   "attempt": 3,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

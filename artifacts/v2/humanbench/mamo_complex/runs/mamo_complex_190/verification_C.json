@@ -1,0 +1,31 @@
+{
+ "sample_id": "mamo_complex_190",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"transport_cost\", \"evidence\": \"From Center 3, Center 4, and Center 5 also have their specific costs to each store — no values given; rows 3-5 (and interior entries of rows 1-2 beyond stores 1, 2, 9) were filled in\"}, {\"parameter\": \"demand\", \"evidence\": \"Store 1 needs 739 units; Store 2 needs 491 units; and this demand pattern continues, with Store 9 needing 480 units — demands for stores 3-8 not stated\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_cost",
+   "evidence": "From Center 3, Center 4, and Center 5 also have their specific costs to each store — no values given; rows 3-5 (and interior entries of rows 1-2 beyond stores 1, 2, 9) were filled in"
+  },
+  {
+   "parameter": "demand",
+   "evidence": "Store 1 needs 739 units; Store 2 needs 491 units; and this demand pattern continues, with Store 9 needing 480 units — demands for stores 3-8 not stated"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

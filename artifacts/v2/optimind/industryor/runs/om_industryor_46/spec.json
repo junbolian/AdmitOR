@@ -1,0 +1,243 @@
+{
+ "spec": {
+  "process_I_hours_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "process_I_hours_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "process_II_hours_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "process_II_hours_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_I": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_II": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "profit_A": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_B": {
+   "base": 450,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_target": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_units_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "min_units_B": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 35.0,
+    "integer": true
+   }
+  },
+  "overtime_reduction_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "overtime_reduction_B": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 75.0,
+    "integer": false
+   }
+  },
+  "max_overtime_II": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "process_I_hours_A": {
+    "meaning": "Hours of process I per unit of model A",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "process_I_hours_B": {
+    "meaning": "Hours of process I per unit of model B",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "process_II_hours_A": {
+    "meaning": "Hours of process II per unit of model A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "process_II_hours_B": {
+    "meaning": "Hours of process II per unit of model B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_I": {
+    "meaning": "Maximum weekly processing capacity for process I (hours)",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_II": {
+    "meaning": "Maximum regular weekly processing capacity for process II (hours)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "profit_A": {
+    "meaning": "Profit per unit of model A (yuan/unit)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_B": {
+    "meaning": "Profit per unit of model B (yuan/unit)",
+    "base": 450,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_target": {
+    "meaning": "Minimum total weekly profit requirement p1 (yuan)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_units_A": {
+    "meaning": "Minimum weekly production of model A due to contract (units)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "min_units_B": {
+    "meaning": "Minimum weekly production of model B due to contract (units)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 35,
+     "integer": true
+    }
+   },
+   "overtime_reduction_A": {
+    "meaning": "Profit reduction per unit of model A produced during overtime in process II (yuan/unit)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "overtime_reduction_B": {
+    "meaning": "Profit reduction per unit of model B produced during overtime in process II (yuan/unit)",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 75,
+     "integer": false
+    }
+   },
+   "max_overtime_II": {
+    "meaning": "Maximum overtime hours allowed for process II per week (hours)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

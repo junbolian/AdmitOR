@@ -1,0 +1,295 @@
+{
+ "spec": {
+  "stock": {
+   "base": [
+    330,
+    294,
+    474,
+    86
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    476,
+    92,
+    385,
+    203
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_12": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "cost_13": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "cost_14": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_21": {
+   "base": 28,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "cost_23": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "cost_24": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "cost_31": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  },
+  "cost_32": {
+   "base": 46,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 90.0,
+    "integer": true
+   }
+  },
+  "cost_34": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "cost_41": {
+   "base": 19,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "cost_42": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "cost_43": {
+   "base": 23,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 55.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "stock": {
+    "meaning": "initial supply stock at each clinic (clinics 1-4)",
+    "base": [
+     330,
+     294,
+     474,
+     86
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "required supply quantity at each clinic (clinics 1-4)",
+    "base": [
+     476,
+     92,
+     385,
+     203
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_12": {
+    "meaning": "transport cost from Clinic 1 to Clinic 2",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "cost_13": {
+    "meaning": "transport cost from Clinic 1 to Clinic 3",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "cost_14": {
+    "meaning": "transport cost from Clinic 1 to Clinic 4",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_21": {
+    "meaning": "transport cost from Clinic 2 to Clinic 1",
+    "base": 28,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "cost_23": {
+    "meaning": "transport cost from Clinic 2 to Clinic 3",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "cost_24": {
+    "meaning": "transport cost from Clinic 2 to Clinic 4",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "cost_31": {
+    "meaning": "transport cost from Clinic 3 to Clinic 1",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 55,
+     "integer": true
+    }
+   },
+   "cost_32": {
+    "meaning": "transport cost from Clinic 3 to Clinic 2",
+    "base": 46,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 90,
+     "integer": true
+    }
+   },
+   "cost_34": {
+    "meaning": "transport cost from Clinic 3 to Clinic 4",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "cost_41": {
+    "meaning": "transport cost from Clinic 4 to Clinic 1",
+    "base": 19,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "cost_42": {
+    "meaning": "transport cost from Clinic 4 to Clinic 2",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "cost_43": {
+    "meaning": "transport cost from Clinic 4 to Clinic 3",
+    "base": 23,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 55,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

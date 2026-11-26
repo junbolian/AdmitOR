@@ -1,0 +1,220 @@
+{
+ "spec": {
+  "labor_hours_advanced": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "inspection_hours_advanced": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_advanced": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "labor_hours_intermediate": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "inspection_hours_intermediate": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_intermediate": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "labor_hours_basic": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "inspection_hours_basic": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "profit_basic": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "labor_capacity": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "inspection_capacity": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_advanced": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_intermediate": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_basic": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "labor_hours_advanced": {
+    "meaning": "processing/assembly labor hours per advanced unit",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "inspection_hours_advanced": {
+    "meaning": "inspection hours per advanced unit",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_advanced": {
+    "meaning": "profit per advanced unit (yuan)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "labor_hours_intermediate": {
+    "meaning": "processing/assembly labor hours per intermediate unit",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "inspection_hours_intermediate": {
+    "meaning": "inspection hours per intermediate unit",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_intermediate": {
+    "meaning": "profit per intermediate unit (yuan)",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "labor_hours_basic": {
+    "meaning": "processing/assembly labor hours per basic unit",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "inspection_hours_basic": {
+    "meaning": "inspection hours per basic unit",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "profit_basic": {
+    "meaning": "profit per basic unit (yuan)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "labor_capacity": {
+    "meaning": "available processing/assembly labor hours",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "inspection_capacity": {
+    "meaning": "available inspection hours",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_advanced": {
+    "meaning": "max demand for advanced units",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_intermediate": {
+    "meaning": "max demand for intermediate units",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_basic": {
+    "meaning": "max demand for basic units",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

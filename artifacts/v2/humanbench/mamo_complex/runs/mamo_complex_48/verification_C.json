@@ -1,0 +1,42 @@
+{
+ "sample_id": "mamo_complex_48",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"capacity_1_5_high\",\n      \"extracted\": 18,\n      \"stated\": \"18 TB to Centers 1 and 5 from Center 2\",\n      \"evidence\": \"Features a range of capacities to other centers, including a high capacity of 18 TB to Centers 1 and 5\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_1_5_high\",\n      \"evidence\": \"capacities varying between 1 TB to 20 TB — specific values for center 1 through 7 inter-connections are not given, only examples or ranges\"\n    },\n    {\n      \"parameter\": \"capacity_range_low\",\n      \"evidence\": \"capacities varying between 1 TB to 20 TB — this is a range, not a stated value for a specific pathway\"\n    },\n    {\n      \"parameter\": \"capacity_range_high\",\n      \"evidence\": \"capacities ranging from as low as 1 TB to as high as 20 TB — this is a range, not a stated value for a specific pathway\"\n    }\n  ]\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "capacity_1_5_high",
+   "extracted": 18,
+   "stated": "18 TB to Centers 1 and 5 from Center 2",
+   "evidence": "Features a range of capacities to other centers, including a high capacity of 18 TB to Centers 1 and 5"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "capacity_1_5_high",
+   "evidence": "capacities varying between 1 TB to 20 TB — specific values for center 1 through 7 inter-connections are not given, only examples or ranges"
+  },
+  {
+   "parameter": "capacity_range_low",
+   "evidence": "capacities varying between 1 TB to 20 TB — this is a range, not a stated value for a specific pathway"
+  },
+  {
+   "parameter": "capacity_range_high",
+   "evidence": "capacities ranging from as low as 1 TB to as high as 20 TB — this is a range, not a stated value for a specific pathway"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

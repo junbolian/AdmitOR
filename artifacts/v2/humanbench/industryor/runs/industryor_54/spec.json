@@ -1,0 +1,258 @@
+{
+ "spec": {
+  "demand_donghai_major1": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_donghai_major2": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_donghai_major3": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_nanjiang_major1": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_nanjiang_major2": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_nanjiang_major3": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "category1_size": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "category2_size": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "category3_size": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "category4_size": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "category5_size": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "category6_size": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1500.0,
+    "hi": 1500.0,
+    "integer": true
+   }
+  },
+  "preferred_major_goal": {
+   "base": 8000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "preferred_city_goal": {
+   "base": 8000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[category1_size] degenerate abs range (lo == hi); perturbation has no effect",
+  "[category2_size] degenerate abs range (lo == hi); perturbation has no effect",
+  "[category3_size] degenerate abs range (lo == hi); perturbation has no effect",
+  "[category4_size] degenerate abs range (lo == hi); perturbation has no effect",
+  "[category5_size] degenerate abs range (lo == hi); perturbation has no effect",
+  "[category6_size] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "demand_donghai_major1": {
+    "meaning": "Donghai City demand for major 1 personnel",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_donghai_major2": {
+    "meaning": "Donghai City demand for major 2 personnel",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_donghai_major3": {
+    "meaning": "Donghai City demand for major 3 personnel",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_nanjiang_major1": {
+    "meaning": "Nanjiang City demand for major 1 personnel",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_nanjiang_major2": {
+    "meaning": "Nanjiang City demand for major 2 personnel",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_nanjiang_major3": {
+    "meaning": "Nanjiang City demand for major 3 personnel",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "category1_size": {
+    "meaning": "Number of personnel in category 1",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "category2_size": {
+    "meaning": "Number of personnel in category 2",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "category3_size": {
+    "meaning": "Number of personnel in category 3",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "category4_size": {
+    "meaning": "Number of personnel in category 4",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "category5_size": {
+    "meaning": "Number of personnel in category 5",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "category6_size": {
+    "meaning": "Number of personnel in category 6",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1500,
+     "hi": 1500,
+     "integer": true
+    }
+   },
+   "preferred_major_goal": {
+    "meaning": "Target number of recruited personnel satisfying their preferred majors (p2)",
+    "base": 8000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "preferred_city_goal": {
+    "meaning": "Target number of recruited personnel satisfying their preferred cities (p3)",
+    "base": 8000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "spec": {
+  "cost_E_F": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_G": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_H": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_E_I": {
+   "base": 62,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_G": {
+   "base": 53,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_H": {
+   "base": 58,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_F_I": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_H": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_G_I": {
+   "base": 91,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_H_I": {
+   "base": 77,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_E_F": {
+    "meaning": "travel cost from city E to city F (symmetric: E-F edge)",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_G": {
+    "meaning": "travel cost from city E to city G (symmetric: E-G edge)",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_H": {
+    "meaning": "travel cost from city E to city H (symmetric: E-H edge)",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_E_I": {
+    "meaning": "travel cost from city E to city I (symmetric: E-I edge)",
+    "base": 62,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_G": {
+    "meaning": "travel cost from city F to city G (symmetric: F-G edge)",
+    "base": 53,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_H": {
+    "meaning": "travel cost from city F to city H (symmetric: F-H edge)",
+    "base": 58,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_F_I": {
+    "meaning": "travel cost from city F to city I (symmetric: F-I edge)",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_H": {
+    "meaning": "travel cost from city G to city H (symmetric: G-H edge)",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_G_I": {
+    "meaning": "travel cost from city G to city I (symmetric: G-I edge)",
+    "base": 91,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_H_I": {
+    "meaning": "travel cost from city H to city I (symmetric: H-I edge)",
+    "base": 77,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

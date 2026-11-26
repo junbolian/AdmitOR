@@ -1,0 +1,74 @@
+{
+ "sample_id": "mamo_complex_169",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"capacity[1,5]\",\n      \"extracted\": 0,\n      \"stated\": 19,\n      \"evidence\": \"To the Main Distribution Hub (Station 5): Has incoming lines from ... Station 1 (19 MW)\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity[0,0]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity[1,1]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity[2,2]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity[3,3]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity[4,4]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity[5,0]\",\n      \"evidence\": \"Station 5 has 'incoming lines from the Power Plant (9 MW)'; no outgoing capacity to Station 0 is stated.\"\n    },\n    {\n      \"parameter\": \"capacity[5,1]\",\n      \"evidence\": \"Station 5 has 'incoming lines from ... Station 1 (19 MW)'; no outgoing capacity to Station 1 is stated.\"\n    },\n    {\n      \"parameter\": \"capacity[5,2]\",\n      \"evidence\": \"Station 5 has 'incoming lines from ... Station 2 (19 MW)'; no outgoing capacity to Station 2 is stated.\"\n    },\n    {\n      \"parameter\": \"capacity[5,3]\",\n      \"evidence\": \"Station 5 has 'incoming lines from ... Station 3 (11 MW)'; no outgoing capacity to Station 3 is stated.\"\n    },\n    {\n      \"parameter\": \"capacity[5,4]\",\n      \"evidence\": \"Station 5 has 'incoming lines from ... Station 4 (4 MW)'; no outgoing capacity to Station 4 is stated.\"\n    },\n    {\n      \"parameter\": \"capacity[5,5]\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "capacity[1,5]",
+   "extracted": 0,
+   "stated": 19,
+   "evidence": "To the Main Distribution Hub (Station 5): Has incoming lines from ... Station 1 (19 MW)"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "capacity[0,0]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity[1,1]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity[2,2]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity[3,3]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity[4,4]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity[5,0]",
+   "evidence": "Station 5 has 'incoming lines from the Power Plant (9 MW)'; no outgoing capacity to Station 0 is stated."
+  },
+  {
+   "parameter": "capacity[5,1]",
+   "evidence": "Station 5 has 'incoming lines from ... Station 1 (19 MW)'; no outgoing capacity to Station 1 is stated."
+  },
+  {
+   "parameter": "capacity[5,2]",
+   "evidence": "Station 5 has 'incoming lines from ... Station 2 (19 MW)'; no outgoing capacity to Station 2 is stated."
+  },
+  {
+   "parameter": "capacity[5,3]",
+   "evidence": "Station 5 has 'incoming lines from ... Station 3 (11 MW)'; no outgoing capacity to Station 3 is stated."
+  },
+  {
+   "parameter": "capacity[5,4]",
+   "evidence": "Station 5 has 'incoming lines from ... Station 4 (4 MW)'; no outgoing capacity to Station 4 is stated."
+  },
+  {
+   "parameter": "capacity[5,5]",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

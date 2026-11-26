@@ -1,0 +1,252 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "protein_content": [
+    4,
+    6,
+    20,
+    1
+   ],
+   "carb_content": [
+    7,
+    10,
+    0,
+    30
+   ],
+   "calorie_content": [
+    130,
+    120,
+    150,
+    70
+   ],
+   "cost_per_unit": [
+    3,
+    4,
+    8,
+    2
+   ],
+   "protein_requirement": 30,
+   "carb_requirement": 40,
+   "calorie_requirement": 400
+  },
+  {
+   "protein_content": [
+    4.5577071938315346,
+    3.1500645313360014,
+    15.500586367382386,
+    0.7232107381488228
+   ],
+   "carb_content": [
+    8.655298499148087,
+    11.766994874229113,
+    0.0,
+    17.608164978882485
+   ],
+   "calorie_content": [
+    121.87986924726812,
+    74.86053306605476,
+    116.23655697643241,
+    70.29989613378828
+   ],
+   "cost_per_unit": [
+    1.295529490861909,
+    2.554420723295913,
+    9.438890602683424,
+    2.10785955344772
+   ],
+   "protein_requirement": 24.91982799183135,
+   "carb_requirement": 55.355941032554526,
+   "calorie_requirement": 604.7152283389133
+  },
+  {
+   "protein_content": [
+    2.025995038712244,
+    7.834915510996848,
+    23.962787899764535,
+    0.8402505165179919
+   ],
+   "carb_content": [
+    4.5883564986824705,
+    14.572130722067813,
+    0.0,
+    17.782375301404436
+   ],
+   "calorie_content": [
+    88.05850319068026,
+    153.35945916935614,
+    162.4471237640269,
+    87.19918330336529
+   ],
+   "cost_per_unit": [
+    3.8270344320977445,
+    4.173894838982564,
+    12.54191133420196,
+    1.7084825053000485
+   ],
+   "protein_requirement": 39.84182840729521,
+   "carb_requirement": 69.7642798551797,
+   "calorie_requirement": 509.25987618212304
+  },
+  {
+   "protein_content": [
+    5.446827601243109,
+    6.464112871540572,
+    24.09143672429847,
+    0.5458243836556622
+   ],
+   "carb_content": [
+    5.095287929560828,
+    7.8938796360210715,
+    0.0,
+    21.983726590830905
+   ],
+   "calorie_content": [
+    88.50414865861181,
+    98.68546589856884,
+    166.28213331172802,
+    62.43060202232471
+   ],
+   "cost_per_unit": [
+    2.532651481620778,
+    2.6056337477031413,
+    5.762987091671489,
+    3.047971010509986
+   ],
+   "protein_requirement": 44.16159233609671,
+   "carb_requirement": 56.54786034001929,
+   "calorie_requirement": 285.56932409904846
+  },
+  {
+   "protein_content": [
+    4.916507191801397,
+    3.9804149625715706,
+    17.589108835152956,
+    1.4895233506365952
+   ],
+   "carb_content": [
+    7.979998318978651,
+    10.569497437746463,
+    0.0,
+    40.285557605694294
+   ],
+   "calorie_content": [
+    158.70399080080944,
+    93.98861490855401,
+    93.85202926848451,
+    59.66537069130858
+   ],
+   "cost_per_unit": [
+    2.1638671535125305,
+    2.6127176492143676,
+    12.251933257616525,
+    2.9032823035344055
+   ],
+   "protein_requirement": 29.160504635931506,
+   "carb_requirement": 59.3263199176928,
+   "calorie_requirement": 397.8159505303321
+  },
+  {
+   "protein_content": [
+    5.658190358962174,
+    5.753111115524392,
+    15.29760332996105,
+    0.7466275076939834
+   ],
+   "carb_content": [
+    7.429576939142055,
+    7.627416085229353,
+    0.0,
+    41.934686508074314
+   ],
+   "calorie_content": [
+    119.5376525346013,
+    93.0547928790992,
+    209.70451277941322,
+    70.53347244588201
+   ],
+   "cost_per_unit": [
+    1.527273883825658,
+    1.826158602038726,
+    4.252631651366328,
+    2.3058705000874165
+   ],
+   "protein_requirement": 50.643571396333385,
+   "carb_requirement": 45.32959800798104,
+   "calorie_requirement": 231.76385307597857
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   15.235121951219512,
+   8.024610190555133,
+   21.203159934110758,
+   18.068349257469606,
+   13.546234675389085,
+   13.66984832080959
+  ],
+  "C-direct": [
+   15.235121951219512,
+   8.024610190555128,
+   21.203159934110758,
+   18.068349257469606,
+   13.546234675389083,
+   13.66984832080959
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers', 'crash:Model: deepseek-v4-flash-0731 | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers']"
+ },
+ "disagreements": [],
+ "notes": []
+}

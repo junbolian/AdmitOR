@@ -1,0 +1,164 @@
+{
+ "spec": {
+  "unit_processing_time": {
+   "base": [
+    5,
+    10,
+    0,
+    7,
+    9,
+    12,
+    6,
+    8,
+    0,
+    4,
+    0,
+    11,
+    7,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "equipment_available_time": {
+   "base": [
+    6000,
+    10000,
+    4000,
+    7000,
+    4000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "equipment_cost_full_load": {
+   "base": [
+    300,
+    321,
+    250,
+    7000,
+    783
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "raw_material_cost": {
+   "base": [
+    0.25,
+    0.35,
+    0.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "unit_price": {
+   "base": [
+    1.25,
+    2.0,
+    2.8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "unit_processing_time": {
+    "meaning": "Processing time per unit of each product on each equipment type (hours per unit); order: A1:I,II,III; A2:I,II,III; B1:I,II,III; B2:I,II,III; B3:I,II,III",
+    "base": [
+     5,
+     10,
+     0,
+     7,
+     9,
+     12,
+     6,
+     8,
+     0,
+     4,
+     0,
+     11,
+     7,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "equipment_available_time": {
+    "meaning": "Available processing time for each equipment type in hours; order: A1, A2, B1, B2, B3",
+    "base": [
+     6000,
+     10000,
+     4000,
+     7000,
+     4000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "equipment_cost_full_load": {
+    "meaning": "Equipment cost at full load for each equipment type in CNY; order: A1, A2, B1, B2, B3",
+    "base": [
+     300,
+     321,
+     250,
+     7000,
+     783
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "raw_material_cost": {
+    "meaning": "Raw material cost per unit for products I, II, III in CNY per unit",
+    "base": [
+     0.25,
+     0.35,
+     0.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "unit_price": {
+    "meaning": "Selling price per unit for products I, II, III in CNY per unit",
+    "base": [
+     1.25,
+     2.0,
+     2.8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

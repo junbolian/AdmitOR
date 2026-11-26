@@ -1,0 +1,362 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_rice": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_beans": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_broccoli": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "protein_fruit": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carbs_chicken": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carbs_rice": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carbs_beans": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "carbs_broccoli": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carbs_fruit": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "calories_chicken": {
+   "base": 186,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_rice": {
+   "base": 250,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_beans": {
+   "base": 134,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_broccoli": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_fruit": {
+   "base": 104,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "cost_chicken": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_rice": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_beans": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_broccoli": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_fruit": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_protein": {
+   "base": 97,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_carbs": {
+   "base": 163,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_calories": {
+   "base": 2217,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "Protein grams provided by one Chicken portion",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein grams provided by one Rice portion",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_beans": {
+    "meaning": "Protein grams provided by one Beans portion",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "Protein grams provided by one Broccoli portion",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "protein_fruit": {
+    "meaning": "Protein grams provided by one Fruit portion",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "Carbohydrate grams provided by one Chicken portion",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carbs_rice": {
+    "meaning": "Carbohydrate grams provided by one Rice portion",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carbs_beans": {
+    "meaning": "Carbohydrate grams provided by one Beans portion",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "carbs_broccoli": {
+    "meaning": "Carbohydrate grams provided by one Broccoli portion",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carbs_fruit": {
+    "meaning": "Carbohydrate grams provided by one Fruit portion",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "calories_chicken": {
+    "meaning": "Calories provided by one Chicken portion",
+    "base": 186,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_rice": {
+    "meaning": "Calories provided by one Rice portion",
+    "base": 250,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_beans": {
+    "meaning": "Calories provided by one Beans portion",
+    "base": 134,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_broccoli": {
+    "meaning": "Calories provided by one Broccoli portion",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_fruit": {
+    "meaning": "Calories provided by one Fruit portion",
+    "base": 104,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost in dollars of one Chicken portion",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost in dollars of one Rice portion",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_beans": {
+    "meaning": "Cost in dollars of one Beans portion",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "Cost in dollars of one Broccoli portion",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_fruit": {
+    "meaning": "Cost in dollars of one Fruit portion",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_protein": {
+    "meaning": "Minimum required total protein grams",
+    "base": 97,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_carbs": {
+    "meaning": "Minimum required total carbohydrate grams",
+    "base": 163,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_calories": {
+    "meaning": "Minimum required total calories",
+    "base": 2217,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

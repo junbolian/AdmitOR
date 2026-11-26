@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_Alpha_Bravo": 41,
+   "cost_Alpha_Charlie": 55,
+   "cost_Alpha_Delta": 22,
+   "cost_Bravo_Alpha": 41,
+   "cost_Bravo_Charlie": 47,
+   "cost_Bravo_Delta": 47,
+   "cost_Charlie_Alpha": 55,
+   "cost_Charlie_Bravo": 47,
+   "cost_Charlie_Delta": 35,
+   "cost_Delta_Alpha": 22,
+   "cost_Delta_Bravo": 47,
+   "cost_Delta_Charlie": 35
+  },
+  {
+   "cost_Alpha_Bravo": 46.71649873677323,
+   "cost_Alpha_Charlie": 28.87559153724668,
+   "cost_Alpha_Delta": 17.050645004120625,
+   "cost_Bravo_Alpha": 29.651640264101733,
+   "cost_Bravo_Charlie": 58.114147065708586,
+   "cost_Bravo_Delta": 55.30487590887683,
+   "cost_Charlie_Alpha": 76.5698762237665,
+   "cost_Charlie_Bravo": 27.58612513358256,
+   "cost_Charlie_Delta": 32.267263688984464,
+   "cost_Delta_Alpha": 11.655538827637548,
+   "cost_Delta_Bravo": 33.775984815769355,
+   "cost_Delta_Charlie": 35.18743508361768
+  },
+  {
+   "cost_Alpha_Bravo": 21.58797475703841,
+   "cost_Alpha_Charlie": 38.436070787765665,
+   "cost_Alpha_Delta": 25.29745763114951,
+   "cost_Bravo_Alpha": 42.842600704731886,
+   "cost_Bravo_Charlie": 33.86070923591274,
+   "cost_Bravo_Delta": 51.19548714216771,
+   "cost_Charlie_Alpha": 72.01867511728047,
+   "cost_Charlie_Bravo": 23.80544170486887,
+   "cost_Charlie_Delta": 45.70367381414828,
+   "cost_Delta_Alpha": 26.35906668974099,
+   "cost_Delta_Bravo": 39.491774276345616,
+   "cost_Delta_Charlie": 22.941782493412354
+  },
+  {
+   "cost_Alpha_Bravo": 59.74573596047804,
+   "cost_Alpha_Charlie": 46.01269998119447,
+   "cost_Alpha_Delta": 13.040408554363253,
+   "cost_Bravo_Alpha": 24.465371450172025,
+   "cost_Bravo_Charlie": 63.3322352183306,
+   "cost_Bravo_Delta": 51.87512347424388,
+   "cost_Charlie_Alpha": 71.8920550300909,
+   "cost_Charlie_Bravo": 57.797393974609435,
+   "cost_Charlie_Delta": 36.26798320091452,
+   "cost_Delta_Alpha": 32.40854680754615,
+   "cost_Delta_Bravo": 41.29111572879261,
+   "cost_Delta_Charlie": 36.82142209456294
+  },
+  {
+   "cost_Alpha_Bravo": 54.50559123437279,
+   "cost_Alpha_Charlie": 61.51858638003353,
+   "cost_Alpha_Delta": 29.957551806837103,
+   "cost_Bravo_Alpha": 44.171437955527246,
+   "cost_Bravo_Charlie": 56.61487630210141,
+   "cost_Bravo_Delta": 25.653746031816123,
+   "cost_Charlie_Alpha": 40.03440516083508,
+   "cost_Charlie_Bravo": 37.101234289299036,
+   "cost_Charlie_Delta": 20.292719192326963,
+   "cost_Delta_Alpha": 16.121399499942665,
+   "cost_Delta_Bravo": 28.24706718225727,
+   "cost_Delta_Charlie": 27.229076108853224
+  },
+  {
+   "cost_Alpha_Bravo": 46.563062214840414,
+   "cost_Alpha_Charlie": 47.56576984335463,
+   "cost_Alpha_Delta": 19.143981276571417,
+   "cost_Bravo_Alpha": 29.089788261630996,
+   "cost_Bravo_Charlie": 36.047957636308325,
+   "cost_Bravo_Delta": 67.52276562248723,
+   "cost_Charlie_Alpha": 63.14194618856264,
+   "cost_Charlie_Bravo": 52.12915726634845,
+   "cost_Charlie_Delta": 23.489852686933396,
+   "cost_Delta_Alpha": 27.040789554907683,
+   "cost_Delta_Bravo": 31.179917206810636,
+   "cost_Delta_Charlie": 30.780940461517673
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   145.0,
+   109.4758454854226,
+   114.88728253416262,
+   132.12459607370766,
+   138.45930016051662,
+   131.14386726606853
+  ],
+  "B-structured": [
+   145.0,
+   109.4758454854226,
+   114.88728253416262,
+   132.12459607370766,
+   138.45930016051662,
+   131.14386726606853
+  ],
+  "C-direct": [
+   145.0,
+   109.4758454854226,
+   114.88728253416262,
+   132.12459607370766,
+   138.45930016051662,
+   131.14386726606853
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

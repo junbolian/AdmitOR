@@ -1,0 +1,27 @@
+{
+ "sample_id": "om_mamo_74",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_4_3\",\n      \"evidence\": \"From Substation 4: Can send energy to Substation 0 (9 MW), Substation 1 (16 MW), Substation 2 (2 MW), Substation 5 (14 MW), Substation 6 (18 MW), and Substation 7 (7 MW).\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_4_3",
+   "evidence": "From Substation 4: Can send energy to Substation 0 (9 MW), Substation 1 (16 MW), Substation 2 (2 MW), Substation 5 (14 MW), Substation 6 (18 MW), and Substation 7 (7 MW)."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

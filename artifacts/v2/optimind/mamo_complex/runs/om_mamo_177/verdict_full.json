@@ -1,0 +1,129 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "arc_capacities": [
+    3,
+    3,
+    5,
+    13,
+    7,
+    14,
+    17,
+    5,
+    2,
+    18,
+    20,
+    1,
+    17,
+    2,
+    18,
+    10,
+    14,
+    15,
+    8,
+    18,
+    20,
+    7,
+    11,
+    13,
+    2,
+    8,
+    12,
+    20,
+    20,
+    12,
+    7,
+    11,
+    2,
+    14,
+    5,
+    16,
+    15,
+    19,
+    11,
+    1,
+    8,
+    10,
+    3,
+    14,
+    18,
+    13,
+    6,
+    7,
+    9,
+    3,
+    14,
+    13,
+    6,
+    5,
+    9
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   47.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:if i != j and caps[i][j] > 0: | ~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "crash:return capacities[tail][head] | ~~~~~~~~~~~~~~~~^^^^^^ | TypeError: 'int' object is not subscriptable",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

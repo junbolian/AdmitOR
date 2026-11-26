@@ -1,0 +1,132 @@
+{
+ "spec": {
+  "initial_supplies": {
+   "base": [
+    483,
+    265,
+    130,
+    361
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    346,
+    221,
+    217,
+    293
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_costs": {
+   "base": [
+    [
+     0,
+     2,
+     19,
+     13
+    ],
+    [
+     34,
+     0,
+     10,
+     48
+    ],
+    [
+     46,
+     22,
+     0,
+     46
+    ],
+    [
+     48,
+     15,
+     23,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_supplies": {
+    "meaning": "vaccines each city currently has (cities 1-4)",
+    "base": [
+     483,
+     265,
+     130,
+     361
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "vaccines each city requires (cities 1-4)",
+    "base": [
+     346,
+     221,
+     217,
+     293
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_costs": {
+    "meaning": "cost matrix c[i][j] moving vaccines from city i to city j; diagonal 0 (i=j); rows 1-4 order",
+    "base": [
+     [
+      0,
+      2,
+      19,
+      13
+     ],
+     [
+      34,
+      0,
+      10,
+      48
+     ],
+     [
+      46,
+      22,
+      0,
+      46
+     ],
+     [
+      48,
+      15,
+      23,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

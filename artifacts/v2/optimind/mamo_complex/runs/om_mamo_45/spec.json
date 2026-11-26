@@ -1,0 +1,245 @@
+{
+ "spec": {
+  "cost_AB": {
+   "base": 41,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 65.0,
+    "integer": false
+   }
+  },
+  "cost_AC": {
+   "base": 55,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "cost_AD": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "cost_BA": {
+   "base": 41,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 65.0,
+    "integer": false
+   }
+  },
+  "cost_BC": {
+   "base": 47,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "cost_BD": {
+   "base": 47,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "cost_CA": {
+   "base": 55,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "cost_CB": {
+   "base": 47,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "cost_CD": {
+   "base": 35,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 55.0,
+    "integer": false
+   }
+  },
+  "cost_DA": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 45.0,
+    "integer": false
+   }
+  },
+  "cost_DB": {
+   "base": 47,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 70.0,
+    "integer": false
+   }
+  },
+  "cost_DC": {
+   "base": 35,
+   "perturb": {
+    "mode": "abs",
+    "lo": 15.0,
+    "hi": 55.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_AB": {
+    "meaning": "delivery cost Alpha->Bravo",
+    "base": 41,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 65,
+     "integer": false
+    }
+   },
+   "cost_AC": {
+    "meaning": "delivery cost Alpha->Charlie",
+    "base": 55,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "cost_AD": {
+    "meaning": "delivery cost Alpha->Delta",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "cost_BA": {
+    "meaning": "delivery cost Bravo->Alpha",
+    "base": 41,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 65,
+     "integer": false
+    }
+   },
+   "cost_BC": {
+    "meaning": "delivery cost Bravo->Charlie",
+    "base": 47,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "cost_BD": {
+    "meaning": "delivery cost Bravo->Delta",
+    "base": 47,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "cost_CA": {
+    "meaning": "delivery cost Charlie->Alpha",
+    "base": 55,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "cost_CB": {
+    "meaning": "delivery cost Charlie->Bravo",
+    "base": 47,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "cost_CD": {
+    "meaning": "delivery cost Charlie->Delta",
+    "base": 35,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 55,
+     "integer": false
+    }
+   },
+   "cost_DA": {
+    "meaning": "delivery cost Delta->Alpha",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 45,
+     "integer": false
+    }
+   },
+   "cost_DB": {
+    "meaning": "delivery cost Delta->Bravo",
+    "base": 47,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 70,
+     "integer": false
+    }
+   },
+   "cost_DC": {
+    "meaning": "delivery cost Delta->Charlie",
+    "base": 35,
+    "perturb": {
+     "mode": "abs",
+     "lo": 15,
+     "hi": 55,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

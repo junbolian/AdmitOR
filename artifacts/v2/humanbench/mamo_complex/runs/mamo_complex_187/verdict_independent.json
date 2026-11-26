@@ -1,0 +1,233 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "opening_costs": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000,
+    174000
+   ],
+   "transportation_costs": 1,
+   "demands": [
+    871,
+    462,
+    538,
+    898,
+    992,
+    791,
+    818,
+    688,
+    778
+   ],
+   "capacities": 840,
+   "num_centers": 9,
+   "num_stores": 9
+  },
+  {
+   "opening_costs": [
+    167842.75725371236,
+    119041.65200220163,
+    93482.67383526367,
+    133135.22897875894,
+    190268.3154129936,
+    136963.15079259945,
+    239101.34505782547,
+    124536.49829525712,
+    163131.51730018965
+   ],
+   "transportation_costs": 1.1191888777522814,
+   "demands": [
+    748.4668380269693,
+    463.2370715518767,
+    410.63817584495933,
+    762.7781051583052,
+    1066.3426811386435,
+    808.7743555785721,
+    703.660214414645,
+    718.7073952533127,
+    898.3684476476745
+   ],
+   "capacities": 847,
+   "num_centers": 9,
+   "num_stores": 9
+  },
+  {
+   "opening_costs": [
+    131702.2623953734,
+    139081.65117108964,
+    155697.83218525842,
+    148646.13377140733,
+    107871.46795265892,
+    81284.77217601254,
+    232595.17974019013,
+    201434.43346739336,
+    216752.25563979373
+   ],
+   "transportation_costs": 3.9189271467752715,
+   "demands": [
+    886.7773338285222,
+    571.2897414792345,
+    505.3257474690471,
+    921.3662434416789,
+    1155.3847134694856,
+    837.8745620600594,
+    965.9381222271079,
+    714.6091379683262,
+    857.5784442876053
+   ],
+   "capacities": 887,
+   "num_centers": 9,
+   "num_stores": 9
+  },
+  {
+   "opening_costs": [
+    100238.8708123742,
+    150956.68014505424,
+    77611.33036216728,
+    140626.7889054606,
+    177367.6088658432,
+    107023.88918112808,
+    163098.34881221812,
+    142774.64617879735,
+    141563.31282923656
+   ],
+   "transportation_costs": 4.746618350849976,
+   "demands": [
+    935.4694102748914,
+    487.2092623090743,
+    449.5362963652881,
+    1000.8779322797068,
+    825.0476369059164,
+    743.3246272151497,
+    1018.2150504103676,
+    736.159917389808,
+    800.1534503283374
+   ],
+   "capacities": 1536,
+   "num_centers": 9,
+   "num_stores": 9
+  },
+  {
+   "opening_costs": [
+    118269.00709326379,
+    120130.59746366019,
+    97169.31798298826,
+    139226.95183347614,
+    123005.80397904979,
+    162519.3325761652,
+    236799.12641442055,
+    158424.06866281352,
+    195637.0622090473
+   ],
+   "transportation_costs": 2.582527604242657,
+   "demands": [
+    1051.5354753320066,
+    452.4947779476891,
+    474.7527647879761,
+    784.2357509545985,
+    1022.4385945449227,
+    697.1643061708209,
+    852.5956700014281,
+    824.8510719592521,
+    738.8667964996146
+   ],
+   "capacities": 1063,
+   "num_centers": 9,
+   "num_stores": 9
+  },
+  {
+   "opening_costs": [
+    101581.85699059429,
+    122437.07526523923,
+    78400.00068798011,
+    188434.61850498267,
+    197386.1586384594,
+    112527.35681276966,
+    118449.63401572495,
+    168384.94983217266,
+    243060.09612942144
+   ],
+   "transportation_costs": 3.116457380396548,
+   "demands": [
+    1076.1546334507307,
+    545.340111216169,
+    406.58839490261846,
+    997.1040968927274,
+    1082.1283430371811,
+    805.6217656766785,
+    722.6315026905901,
+    736.4908587114539,
+    626.893795528796
+   ],
+   "capacities": 1282,
+   "num_centers": 9,
+   "num_stores": 9
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return transportation_costs[i][j] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:return transportation_costs[i][j] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return transportation_costs[i][j] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return transportation_costs[i][j] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return transportation_costs[i][j] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:return transportation_costs[i][j] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "B-structured": [
+   "crash:row_or_value = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:row_or_value = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:row_or_value = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:row_or_value = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:row_or_value = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:row_or_value = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ],
+  "C-direct": [
+   "crash:val = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'int' object is not subscriptable",
+   "crash:val = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:val = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:val = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:val = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable",
+   "crash:val = transportation_costs[i] | ~~~~~~~~~~~~~~~~~~~~^^^ | TypeError: 'float' object is not subscriptable"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

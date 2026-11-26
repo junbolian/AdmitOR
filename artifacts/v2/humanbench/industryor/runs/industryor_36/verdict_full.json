@@ -1,0 +1,182 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "labor_A": 2,
+   "assembly_B": 1,
+   "labor_A_heater": 1,
+   "assembly_B_heater": 3,
+   "inspect_cost_mw": 30,
+   "inspect_cost_wh": 50,
+   "cap_A": 120,
+   "cap_B": 150,
+   "cost_A": 80,
+   "cost_B": 20,
+   "demand_mw": 80,
+   "demand_wh": 50,
+   "inspect_budget": 4500,
+   "target_mw": 80,
+   "target_wh": 50,
+   "overtime_A_cap": 20
+  },
+  {
+   "labor_A": 2.2788535969157673,
+   "assembly_B": 0.5375161328340003,
+   "labor_A_heater": 0.9125439775536789,
+   "assembly_B_heater": 2.169632214446468,
+   "inspect_cost_mw": 37.09413642492037,
+   "inspect_cost_wh": 58.83497437114556,
+   "cap_A": 143.53077406229073,
+   "cap_B": 119.0204124472062,
+   "cost_A": 73.75374557482164,
+   "cost_B": 10.595944388761406,
+   "demand_mw": 68.74551899214413,
+   "demand_wh": 50.133882202584054,
+   "inspect_budget": 3221.6471181464317,
+   "target_mw": 67.95350602746593,
+   "target_wh": 53.74711094448807,
+   "overtime_A_cap": 20.898829612064333
+  },
+  {
+   "labor_A": 1.4408812440813934,
+   "assembly_B": 1.383898525813863,
+   "labor_A_heater": 1.71414568501674,
+   "assembly_B_heater": 1.519496279034183,
+   "inspect_cost_mw": 39.17457755498424,
+   "inspect_cost_wh": 59.906969749411346,
+   "cap_A": 110.41503099107952,
+   "cap_B": 124.1609624858836,
+   "cost_A": 116.5770457765425,
+   "cost_B": 16.731890902252534,
+   "demand_mw": 63.70983373520591,
+   "demand_wh": 39.9179094208366,
+   "inspect_budget": 5438.234789138141,
+   "target_mw": 84.14904125467565,
+   "target_wh": 57.678206831859505,
+   "overtime_A_cap": 24.594635733876355
+  },
+  {
+   "labor_A": 2.0724561829094013,
+   "assembly_B": 1.959673645969056,
+   "labor_A_heater": 1.0678015658125302,
+   "assembly_B_heater": 3.156121893819681,
+   "inspect_cost_mw": 39.88213992758985,
+   "inspect_cost_wh": 55.925987618212304,
+   "cap_A": 141.70241401864664,
+   "cap_B": 155.80141089425715,
+   "cost_A": 96.36574689719389,
+   "cost_B": 10.916487673113245,
+   "demand_mw": 69.11593102606187,
+   "demand_wh": 44.73469909005268,
+   "inspect_budget": 3365.438337693794,
+   "target_mw": 69.3116354544412,
+   "target_wh": 40.02503573524323,
+   "overtime_A_cap": 15.559472062201841
+  },
+  {
+   "labor_A": 2.2713688885288006,
+   "assembly_B": 1.0472482684551263,
+   "labor_A_heater": 1.055271450675324,
+   "assembly_B_heater": 2.128521092314463,
+   "inspect_cost_mw": 23.0093346614734,
+   "inspect_cost_wh": 71.8327293856247,
+   "cap_A": 128.8821231147956,
+   "cap_B": 158.18482542502412,
+   "cost_A": 53.69109185584776,
+   "cost_B": 24.582535959006986,
+   "demand_mw": 66.53609975047713,
+   "demand_wh": 46.986386043941195,
+   "inspect_budget": 5821.713046718807,
+   "target_mw": 85.59999039416371,
+   "target_wh": 51.42374359436616,
+   "overtime_A_cap": 23.692285019797488
+  },
+  {
+   "labor_A": 2.6857038403796194,
+   "assembly_B": 1.6639998673193672,
+   "labor_A_heater": 0.8435721079461566,
+   "assembly_B_heater": 1.5963007317121134,
+   "inspect_cost_mw": 24.463591441772458,
+   "inspect_cost_wh": 38.387043798785136,
+   "cap_A": 102.6589706151796,
+   "cap_B": 183.21822857512907,
+   "cost_A": 110.10941011781352,
+   "cost_B": 16.293557615969558,
+   "demand_mw": 86.2175466117952,
+   "demand_wh": 47.39079752651661,
+   "inspect_budget": 5619.278492299468,
+   "target_mw": 78.35407410349595,
+   "target_wh": 44.12200416245131,
+   "overtime_A_cap": 14.932550153879669
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   6.329239837741074e+17,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   26.66666666666667,
+   41.83293060355572,
+   32.46951972313709,
+   29.136589572364166,
+   9.843225322243796,
+   11.022313976686917
+  ],
+  "C-direct": [
+   43359.99999999999,
+   7117032.279088132,
+   20439207551.93926,
+   195704457.51591903,
+   19063933085.88244,
+   120777.31469643574
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [1]",
+  "A-direct vs C-direct: diverge on instance(s) [1]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

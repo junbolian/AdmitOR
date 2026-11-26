@@ -1,0 +1,149 @@
+{
+ "spec": {
+  "profit_corn": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_wheat": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_soybeans": {
+   "base": 1800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_sorghum": {
+   "base": 1600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "total_land": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "corn_to_wheat_min_ratio": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "soybean_to_sorghum_min_ratio": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 2.0,
+    "integer": false
+   }
+  },
+  "wheat_to_sorghum_ratio": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_corn": {
+    "meaning": "Profit per acre for corn ($/acre)",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_wheat": {
+    "meaning": "Profit per acre for wheat ($/acre)",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_soybeans": {
+    "meaning": "Profit per acre for soybeans ($/acre)",
+    "base": 1800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_sorghum": {
+    "meaning": "Profit per acre for sorghum ($/acre)",
+    "base": 1600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "total_land": {
+    "meaning": "Total farm area available (acres)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "corn_to_wheat_min_ratio": {
+    "meaning": "Minimum ratio of corn area to wheat area (corn >= ratio * wheat)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 4,
+     "integer": false
+    }
+   },
+   "soybean_to_sorghum_min_ratio": {
+    "meaning": "Minimum ratio of soybean area to sorghum area (soybeans >= ratio * sorghum)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 2,
+     "integer": false
+    }
+   },
+   "wheat_to_sorghum_ratio": {
+    "meaning": "Required exact ratio of wheat area to sorghum area (wheat = ratio * sorghum)",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

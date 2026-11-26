@@ -1,0 +1,108 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    500,
+    497,
+    354,
+    223
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    17,
+    65,
+    26,
+    332
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transport_cost": {
+   "base": [
+    17,
+    3,
+    5,
+    39,
+    18,
+    50,
+    8,
+    45,
+    15,
+    11,
+    4,
+    29
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "current food stock at each warehouse (tons)",
+    "base": [
+     500,
+     497,
+     354,
+     223
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "required food quantity at each warehouse (tons)",
+    "base": [
+     17,
+     65,
+     26,
+     332
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transport_cost": {
+    "meaning": "cost per ton moved between ordered warehouse pairs (from,to): (1,2),(1,3),(1,4),(2,1),(2,3),(2,4),(3,1),(3,2),(3,4),(4,1),(4,2),(4,3)",
+    "base": [
+     17,
+     3,
+     5,
+     39,
+     18,
+     50,
+     8,
+     45,
+     15,
+     11,
+     4,
+     29
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

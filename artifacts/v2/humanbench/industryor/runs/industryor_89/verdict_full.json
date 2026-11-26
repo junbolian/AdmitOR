@@ -1,0 +1,129 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "remuneration": [
+    10.0,
+    10.0,
+    9.9,
+    9.8,
+    10.8,
+    11.3
+   ],
+   "max_hours": [
+    [
+     6,
+     0,
+     6,
+     0,
+     7
+    ],
+    [
+     0,
+     6,
+     0,
+     6,
+     0
+    ],
+    [
+     4,
+     8,
+     3,
+     0,
+     5
+    ],
+    [
+     5,
+     5,
+     6,
+     0,
+     4
+    ],
+    [
+     3,
+     0,
+     4,
+     8,
+     0
+    ],
+    [
+     0,
+     6,
+     0,
+     6,
+     3
+    ]
+   ],
+   "opening_hours": 14,
+   "min_weekly_undergrad": 8,
+   "min_weekly_grad": 7,
+   "max_shifts_week": 2,
+   "max_students_per_day": 3
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "no_solution",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

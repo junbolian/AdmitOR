@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    133,
+    189,
+    446,
+    346,
+    184
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    146,
+    270,
+    313,
+    102,
+    412
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     0,
+     24,
+     32,
+     44,
+     46
+    ],
+    [
+     41,
+     0,
+     6,
+     11,
+     49
+    ],
+    [
+     40,
+     10,
+     0,
+     40,
+     45
+    ],
+    [
+     22,
+     22,
+     34,
+     0,
+     1
+    ],
+    [
+     46,
+     14,
+     35,
+     36,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "initial supply units available in each of the five regions",
+    "base": [
+     133,
+     189,
+     446,
+     346,
+     184
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "required units in each of the five regions",
+    "base": [
+     146,
+     270,
+     313,
+     102,
+     412
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transport_cost": {
+    "meaning": "cost per unit shipped from region i to region j (row i, column j), diagonal self-shipping cost set to 0",
+    "base": [
+     [
+      0,
+      24,
+      32,
+      44,
+      46
+     ],
+     [
+      41,
+      0,
+      6,
+      11,
+      49
+     ],
+     [
+      40,
+      10,
+      0,
+      40,
+      45
+     ],
+     [
+      22,
+      22,
+      34,
+      0,
+      1
+     ],
+     [
+      46,
+      14,
+      35,
+      36,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "d1": 5,
+   "d2": 4,
+   "d3": 7,
+   "d4": 3,
+   "d5": 8,
+   "d6": 4,
+   "d7": 3
+  },
+  {
+   "d1": 7,
+   "d2": 1,
+   "d3": 4,
+   "d4": 3,
+   "d5": 9,
+   "d6": 7,
+   "d7": 9
+  },
+  {
+   "d1": 2,
+   "d2": 5,
+   "d3": 1,
+   "d4": 3,
+   "d5": 7,
+   "d6": 1,
+   "d7": 3
+  },
+  {
+   "d1": 7,
+   "d2": 6,
+   "d3": 3,
+   "d4": 6,
+   "d5": 10,
+   "d6": 1,
+   "d7": 8
+  },
+  {
+   "d1": 7,
+   "d2": 4,
+   "d3": 3,
+   "d4": 10,
+   "d5": 5,
+   "d6": 2,
+   "d7": 2
+  },
+  {
+   "d1": 9,
+   "d2": 6,
+   "d3": 10,
+   "d4": 8,
+   "d5": 7,
+   "d6": 10,
+   "d7": 4
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   8.0,
+   9.666666666666666,
+   7.0,
+   10.0,
+   10.0,
+   12.333333333333334
+  ],
+  "B-structured": [
+   8.0,
+   10.0,
+   7.0,
+   10.0,
+   10.0,
+   12.0
+  ],
+  "C-direct": [
+   8.0,
+   9.666666666666666,
+   7.0,
+   10.0,
+   10.0,
+   12.333333333333332
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 0.3333 on instance 1 (params: {'d1': 7, 'd2': 1, 'd3': 4, 'd4': 3, 'd5': 9, 'd6': 7, 'd7': 9})"
+ },
+ "disagreements": [],
+ "notes": []
+}

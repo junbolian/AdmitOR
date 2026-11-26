@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "labor_hours_advanced": 17,
+   "inspection_hours_advanced": 8,
+   "profit_advanced": 300,
+   "labor_hours_intermediate": 10,
+   "inspection_hours_intermediate": 4,
+   "profit_intermediate": 200,
+   "labor_hours_basic": 2,
+   "inspection_hours_basic": 2,
+   "profit_basic": 100,
+   "labor_capacity": 1000,
+   "inspection_capacity": 500,
+   "demand_advanced": 50,
+   "demand_intermediate": 80,
+   "demand_basic": 150
+  },
+  {
+   "labor_hours_advanced": 18.422153344270413,
+   "inspection_hours_advanced": 5.720051625068801,
+   "profit_advanced": 246.00703640858862,
+   "labor_hours_intermediate": 8.339264428892935,
+   "inspection_hours_intermediate": 4.56753091399363,
+   "profit_intermediate": 228.27191798766577,
+   "labor_hours_basic": 2.4706154812458143,
+   "inspection_hours_basic": 1.5043265991552994,
+   "profit_basic": 93.75374557482164,
+   "labor_capacity": 717.8783316628422,
+   "inspection_capacity": 415.591392441081,
+   "demand_advanced": 50.21421152413449,
+   "demand_intermediate": 49.69830205976727,
+   "demand_basic": 113.86051808239782
+  },
+  {
+   "labor_hours_advanced": 18.528821265351137,
+   "inspection_hours_advanced": 8.21571910689544,
+   "profit_advanced": 232.9057492897672,
+   "labor_hours_intermediate": 10.535594103255452,
+   "inspection_hours_intermediate": 4.742633096026784,
+   "profit_intermediate": 121.03980154848976,
+   "labor_hours_basic": 2.3669831021993692,
+   "inspection_hours_basic": 2.237767273985872,
+   "profit_basic": 87.22004132143934,
+   "labor_capacity": 793.2876998870689,
+   "inspection_capacity": 637.1639216620343,
+   "demand_advanced": 43.46378180450507,
+   "demand_intermediate": 53.93573397632946,
+   "demand_basic": 101.60596522001568
+  },
+  {
+   "labor_hours_advanced": 20.54444253674409,
+   "inspection_hours_advanced": 8.497884950561078,
+   "profit_advanced": 373.7107855858512,
+   "labor_hours_intermediate": 11.378390720162908,
+   "inspection_hours_intermediate": 4.086947419491282,
+   "profit_intermediate": 275.69852223669926,
+   "labor_hours_basic": 1.854241252650024,
+   "inspection_hours_basic": 2.0624487575278723,
+   "profit_basic": 126.35237314023956,
+   "labor_capacity": 1071.1118514185475,
+   "inspection_capacity": 608.5120700932332,
+   "demand_advanced": 53.09408581027048,
+   "demand_intermediate": 93.09259751775511,
+   "demand_basic": 95.49892603867947
+  },
+  {
+   "labor_hours_advanced": 14.224562411645778,
+   "inspection_hours_advanced": 6.989062225290114,
+   "profit_advanced": 199.15007446167058,
+   "labor_hours_intermediate": 8.39674531816618,
+   "inspection_hours_intermediate": 3.0424034305833496,
+   "profit_intermediate": 164.47577649761473,
+   "labor_hours_basic": 2.16282133311728,
+   "inspection_hours_basic": 1.837798614764101,
+   "profit_basic": 89.61447736935061,
+   "labor_capacity": 825.7042184628925,
+   "inspection_capacity": 430.09334661473395,
+   "demand_advanced": 67.46618350849975,
+   "demand_intermediate": 89.47426465578198,
+   "demand_basic": 163.09572068003857
+  },
+  {
+   "labor_hours_advanced": 13.645614211620588,
+   "inspection_hours_advanced": 9.099808630161675,
+   "profit_advanced": 219.2165985028628,
+   "labor_hours_intermediate": 9.276732650545886,
+   "inspection_hours_intermediate": 5.174856041527828,
+   "profit_intermediate": 222.39996157665485,
+   "labor_hours_basic": 2.0683396925295754,
+   "inspection_hours_basic": 2.2215371011878497,
+   "profit_basic": 127.42815361518475,
+   "labor_capacity": 1165.599946927747,
+   "inspection_capacity": 418.71442158923134,
+   "demand_advanced": 31.284009756161506,
+   "demand_intermediate": 68.18899507578124,
+   "demand_basic": 122.12890511708433
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   25000.0,
+   22315.037692912465,
+   15810.577100139777,
+   33728.96403097169,
+   22041.836938150744,
+   21897.498304375124
+  ],
+  "B-structured": [
+   25000.0,
+   22043.23938617998,
+   15709.17661083695,
+   33507.960182785304,
+   21997.102799124223,
+   21773.433665198878
+  ],
+  "C-direct": [
+   25000.0,
+   22315.03769291247,
+   15810.577100139777,
+   33728.96403097169,
+   22041.836938150744,
+   21897.498304375124
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 271.8 on instance 1 (params: {'labor_hours_advanced': 18.42, 'inspection_hours_advanced': 5.72, 'profit_advanced': 246.01, 'labor_hours_intermediate': 8.34, 'inspection_hours_intermediate': 4.57, 'profit_intermediate': 228.27, 'labor_hours_basic': 2.47, 'inspection_hours_basic': 1.5, 'profit_basic': 93.75, 'labor_capacity': 717.88, 'inspection_capacity': 415.59, 'demand_advanced': 50.21, 'demand_intermediate': 49.7, 'demand_basic': 113.86})"
+ },
+ "disagreements": [],
+ "notes": []
+}

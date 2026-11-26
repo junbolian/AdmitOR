@@ -1,0 +1,83 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "depot_x",
+  "depot_y",
+  "depot_tw_start",
+  "depot_tw_end",
+  "vehicle_count_max",
+  "vehicle_capacity",
+  "customer_x",
+  "customer_y",
+  "demand",
+  "tw_early",
+  "tw_late",
+  "service_time"
+ ],
+ "safe": [
+  "depot_x",
+  "depot_y",
+  "depot_tw_end",
+  "vehicle_count_max",
+  "vehicle_capacity",
+  "customer_x",
+  "customer_y",
+  "demand",
+  "tw_early",
+  "service_time"
+ ],
+ "tests": {
+  "depot_x": [
+   2,
+   2
+  ],
+  "depot_y": [
+   2,
+   2
+  ],
+  "depot_tw_start": [
+   0,
+   0
+  ],
+  "depot_tw_end": [
+   2,
+   2
+  ],
+  "vehicle_count_max": [
+   2,
+   2
+  ],
+  "vehicle_capacity": [
+   2,
+   2
+  ],
+  "customer_x": [
+   2,
+   2
+  ],
+  "customer_y": [
+   2,
+   2
+  ],
+  "demand": [
+   2,
+   2
+  ],
+  "tw_early": [
+   2,
+   2
+  ],
+  "tw_late": [
+   0,
+   2
+  ],
+  "service_time": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

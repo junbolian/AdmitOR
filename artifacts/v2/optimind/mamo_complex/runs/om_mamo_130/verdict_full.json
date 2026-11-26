@@ -1,0 +1,161 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_A": 10,
+   "profit_B": 20,
+   "mango_per_A": 0.25,
+   "pineapple_per_A": 0.125,
+   "strawberry_per_A": 3,
+   "mango_per_B": 0.5,
+   "pineapple_per_B": 0.25,
+   "strawberry_per_B": 1,
+   "mango_stock": 25,
+   "pineapple_stock": 10,
+   "strawberry_stock": 120,
+   "slack_tolerance": 5
+  },
+  {
+   "profit_A": 11.394267984578835,
+   "profit_B": 10.50021510445334,
+   "mango_per_A": 0.20500586367382384,
+   "pineapple_per_A": 0.09732107381488227,
+   "strawberry_per_A": 3,
+   "mango_per_B": 0.5706797949691644,
+   "pineapple_per_B": 0.32843591354096907,
+   "strawberry_per_B": 0.8152041244720621,
+   "mango_stock": 24,
+   "pineapple_stock": 6,
+   "strawberry_stock": 97,
+   "slack_tolerance": 5
+  },
+  {
+   "profit_A": 5.265359696838637,
+   "profit_B": 13.97675301373297,
+   "mango_per_A": 0.27997688755590466,
+   "pineapple_per_A": 0.12949414806032167,
+   "strawberry_per_A": 2,
+   "mango_per_B": 0.5357062735503635,
+   "pineapple_per_B": 0.31188609133556533,
+   "strawberry_per_B": 0.7548740697585458,
+   "mango_stock": 29,
+   "pineapple_stock": 12,
+   "strawberry_stock": 107,
+   "slack_tolerance": 2
+  },
+  {
+   "profit_A": 14.572130722067813,
+   "profit_B": 16.731890902252534,
+   "mango_per_A": 0.16854916867602956,
+   "pineapple_per_A": 0.0846716376833464,
+   "strawberry_per_A": 4,
+   "mango_per_B": 0.5414904125467563,
+   "pineapple_per_B": 0.31142565465487604,
+   "strawberry_per_B": 1.2972988400203636,
+   "mango_stock": 26,
+   "pineapple_stock": 14,
+   "strawberry_stock": 110,
+   "slack_tolerance": 6
+  },
+  {
+   "profit_A": 13.294046642529949,
+   "profit_B": 22.370395047284923,
+   "mango_per_A": 0.3223413800621554,
+   "pineapple_per_A": 0.1327352145256762,
+   "strawberry_per_A": 3,
+   "mango_per_B": 0.3183297534622649,
+   "pineapple_per_B": 0.19557965513030937,
+   "strawberry_per_B": 0.9670409727015804,
+   "mango_stock": 19,
+   "pineapple_stock": 8,
+   "strawberry_stock": 88,
+   "slack_tolerance": 3
+  },
+  {
+   "profit_A": 11.356844442644004,
+   "profit_B": 17.296643579401685,
+   "mango_per_A": 0.22403619342337652,
+   "pineapple_per_A": 0.09595070307714876,
+   "strawberry_per_A": 3,
+   "mango_per_B": 0.6746618350849976,
+   "pineapple_per_B": 0.2796070770493187,
+   "strawberry_per_B": 1.2068482542502412,
+   "mango_stock": 20,
+   "pineapple_stock": 12,
+   "strawberry_stock": 93,
+   "slack_tolerance": 4
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1200.0,
+   570.150613194962,
+   null,
+   1080.5474375666354,
+   1228.4488718130556,
+   722.7997535187712
+  ],
+  "B-structured": [
+   1200.0,
+   570.150613194962,
+   null,
+   1080.5474375666354,
+   1228.4488718130556,
+   722.7997535187712
+  ],
+  "C-direct": [
+   1200.0,
+   570.150613194962,
+   null,
+   1080.5474375666354,
+   1228.4488718130556,
+   722.7997535187712
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "status_4",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "machine_minutes_X": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "craftsman_minutes_X": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "machine_minutes_Y": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "craftsman_minutes_Y": {
+   "base": 29,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "machine_hours_capacity": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "craftsman_hours_capacity": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "machine_cost_per_hour": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "craftsman_cost_per_hour": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "revenue_X": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "revenue_Y": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "contract_min_X": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "machine_minutes_X": {
+    "meaning": "Machine time required per unit of X (minutes)",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "craftsman_minutes_X": {
+    "meaning": "Craftsman time required per unit of X (minutes)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "machine_minutes_Y": {
+    "meaning": "Machine time required per unit of Y (minutes)",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "craftsman_minutes_Y": {
+    "meaning": "Craftsman time required per unit of Y (minutes)",
+    "base": 29,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "machine_hours_capacity": {
+    "meaning": "Weekly machine time available (hours)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "craftsman_hours_capacity": {
+    "meaning": "Weekly craftsman time available (hours)",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "machine_cost_per_hour": {
+    "meaning": "Cost of machine time (£/hour)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "craftsman_cost_per_hour": {
+    "meaning": "Cost of craftsman time (£/hour)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "revenue_X": {
+    "meaning": "Revenue per unit of X (£)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "revenue_Y": {
+    "meaning": "Revenue per unit of Y (£)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "contract_min_X": {
+    "meaning": "Minimum units of X required by contract per week",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

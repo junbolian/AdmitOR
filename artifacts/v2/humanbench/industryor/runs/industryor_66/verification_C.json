@@ -1,0 +1,31 @@
+{
+ "sample_id": "industryor_66",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"route_cost\", \"evidence\": \"\\\"Let c_j be the cost of the jth route\\\" — no numerical values are given\"}, {\"parameter\": \"route_capacity_r\", \"evidence\": \"\\\"each delivery person can transport up to r types of orders\\\" — r is left as a symbolic parameter, no numerical value given\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "route_cost",
+   "evidence": "\"Let c_j be the cost of the jth route\" — no numerical values are given"
+  },
+  {
+   "parameter": "route_capacity_r",
+   "evidence": "\"each delivery person can transport up to r types of orders\" — r is left as a symbolic parameter, no numerical value given"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

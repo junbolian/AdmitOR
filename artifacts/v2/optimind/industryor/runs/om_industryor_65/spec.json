@@ -1,0 +1,281 @@
+{
+ "spec": {
+  "demand_I": {
+   "base": [
+    10000,
+    10000,
+    10000,
+    10000,
+    30000,
+    30000,
+    30000,
+    30000,
+    30000,
+    100000,
+    100000,
+    100000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_II": {
+   "base": [
+    50000,
+    50000,
+    15000,
+    15000,
+    15000,
+    15000,
+    15000,
+    15000,
+    15000,
+    50000,
+    50000,
+    50000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "prod_cost_I": {
+   "base": 5.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.5,
+    "hi": 7.5,
+    "integer": false
+   }
+  },
+  "prod_cost_I_late": {
+   "base": 4.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.25,
+    "hi": 6.75,
+    "integer": false
+   }
+  },
+  "prod_cost_II": {
+   "base": 8.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "prod_cost_II_late": {
+   "base": 7.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.5,
+    "hi": 10.5,
+    "integer": false
+   }
+  },
+  "cap_month": {
+   "base": 120000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60000.0,
+    "hi": 180000.0,
+    "integer": true
+   }
+  },
+  "vol_I": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "vol_II": {
+   "base": 0.4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "wh_cap": {
+   "base": 15000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7500.0,
+    "hi": 30000.0,
+    "integer": false
+   }
+  },
+  "hold_own": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "hold_rent": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.5,
+    "hi": 4.5,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_I": {
+    "meaning": "Monthly demand for product I, January through December (units)",
+    "base": [
+     10000,
+     10000,
+     10000,
+     10000,
+     30000,
+     30000,
+     30000,
+     30000,
+     30000,
+     100000,
+     100000,
+     100000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_II": {
+    "meaning": "Monthly demand for product II, January through December (units)",
+    "base": [
+     50000,
+     50000,
+     15000,
+     15000,
+     15000,
+     15000,
+     15000,
+     15000,
+     15000,
+     50000,
+     50000,
+     50000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "prod_cost_I": {
+    "meaning": "Unit production cost for product I in Jan-May (yuan/unit)",
+    "base": 5.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.5,
+     "hi": 7.5,
+     "integer": false
+    }
+   },
+   "prod_cost_I_late": {
+    "meaning": "Unit production cost for product I in Jun-Dec (yuan/unit)",
+    "base": 4.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2.25,
+     "hi": 6.75,
+     "integer": false
+    }
+   },
+   "prod_cost_II": {
+    "meaning": "Unit production cost for product II in Jan-May (yuan/unit)",
+    "base": 8.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4.0,
+     "hi": 12.0,
+     "integer": false
+    }
+   },
+   "prod_cost_II_late": {
+    "meaning": "Unit production cost for product II in Jun-Dec (yuan/unit)",
+    "base": 7.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.5,
+     "hi": 10.5,
+     "integer": false
+    }
+   },
+   "cap_month": {
+    "meaning": "Combined monthly production capacity for both products (units/month)",
+    "base": 120000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60000,
+     "hi": 180000,
+     "integer": true
+    }
+   },
+   "vol_I": {
+    "meaning": "Volume per unit of product I (cubic meters/unit)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "vol_II": {
+    "meaning": "Volume per unit of product II (cubic meters/unit)",
+    "base": 0.4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "wh_cap": {
+    "meaning": "Factory warehouse capacity (cubic meters)",
+    "base": 15000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7500,
+     "hi": 30000,
+     "integer": false
+    }
+   },
+   "hold_own": {
+    "meaning": "Monthly storage cost in own warehouse (yuan per cubic meter per month)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 3.0,
+     "integer": false
+    }
+   },
+   "hold_rent": {
+    "meaning": "Monthly storage cost in rented external warehouse (yuan per cubic meter per month)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.5,
+     "hi": 4.5,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

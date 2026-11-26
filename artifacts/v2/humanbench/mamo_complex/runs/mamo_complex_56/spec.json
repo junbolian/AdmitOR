@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "cost_chicken": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_broccoli": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_beef": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_rice": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_chicken": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_broccoli": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_beef": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "protein_rice": {
+   "base": 15,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carbs_chicken": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carbs_broccoli": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carbs_beef": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carbs_rice": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "calories_chicken": {
+   "base": 159,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_broccoli": {
+   "base": 126,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_beef": {
+   "base": 230,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_rice": {
+   "base": 112,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_req": {
+   "base": 66,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carbs_req": {
+   "base": 101,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calories_req": {
+   "base": 1701,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_chicken": {
+    "meaning": "Cost per unit of Chicken ($)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "Cost per unit of Broccoli ($)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_beef": {
+    "meaning": "Cost per unit of Beef ($)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_rice": {
+    "meaning": "Cost per unit of Rice ($)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_chicken": {
+    "meaning": "Protein (g) per unit of Chicken",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "Protein (g) per unit of Broccoli",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_beef": {
+    "meaning": "Protein (g) per unit of Beef",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "protein_rice": {
+    "meaning": "Protein (g) per unit of Rice",
+    "base": 15,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "Carbohydrates (g) per unit of Chicken",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carbs_broccoli": {
+    "meaning": "Carbohydrates (g) per unit of Broccoli",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carbs_beef": {
+    "meaning": "Carbohydrates (g) per unit of Beef",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carbs_rice": {
+    "meaning": "Carbohydrates (g) per unit of Rice",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "calories_chicken": {
+    "meaning": "Calories per unit of Chicken",
+    "base": 159,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_broccoli": {
+    "meaning": "Calories per unit of Broccoli",
+    "base": 126,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_beef": {
+    "meaning": "Calories per unit of Beef",
+    "base": 230,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_rice": {
+    "meaning": "Calories per unit of Rice",
+    "base": 112,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum weekly protein requirement (g)",
+    "base": 66,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carbs_req": {
+    "meaning": "Minimum weekly carbohydrate requirement (g)",
+    "base": 101,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calories_req": {
+    "meaning": "Minimum weekly calorie requirement",
+    "base": 1701,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

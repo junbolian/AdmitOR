@@ -1,0 +1,42 @@
+{
+ "sample_id": "industryor_76",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"cost_A\",\n      \"extracted\": 120,\n      \"stated\": 120,\n      \"evidence\": \"The cost of ordering each table from supplier A is $120\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"cost_A\",\n      \"evidence\": \"The statement gives the cost per order, not per table. Each order from supplier A includes 20 tables at $120, so cost per table is a derived value, not directly stated.\"\n    },\n    {\n      \"parameter\": \"cost_B\",\n      \"evidence\": \"The statement gives the cost per order, not per table. Each order from supplier B includes 15 tables at $110, so cost per table is a derived value, not directly stated.\"\n    },\n    {\n      \"parameter\": \"cost_C\",\n      \"evidence\": \"The statement gives the cost per order, not per table. Each order from supplier C includes 15 tables at $100, so cost per table is a derived value, not directly stated.\"\n    }\n  ]\n}\n```\n\nWait, let me re-read the statement carefully. The statement says \"The cost of ordering each table from supplier A is $120\" — it does say \"each table,\" so cost per table is directly stated. Let me reassess.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": []\n}\n```\n\nActually, re-reading more carefully: the costs are stated as per-table costs (\"cost of ordering each table\"), and the extracted values match. All other parameters match directly. There are no mismatches or unstated values.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [
+  {
+   "parameter": "cost_A",
+   "extracted": 120,
+   "stated": 120,
+   "evidence": "The cost of ordering each table from supplier A is $120"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "cost_A",
+   "evidence": "The statement gives the cost per order, not per table. Each order from supplier A includes 20 tables at $120, so cost per table is a derived value, not directly stated."
+  },
+  {
+   "parameter": "cost_B",
+   "evidence": "The statement gives the cost per order, not per table. Each order from supplier B includes 15 tables at $110, so cost per table is a derived value, not directly stated."
+  },
+  {
+   "parameter": "cost_C",
+   "evidence": "The statement gives the cost per order, not per table. Each order from supplier C includes 15 tables at $100, so cost per table is a derived value, not directly stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

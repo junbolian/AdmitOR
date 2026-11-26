@@ -1,0 +1,374 @@
+{
+ "spec": {
+  "protein_Chicken": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_Chicken": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_Chicken": {
+   "base": 121,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_Chicken": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_Pasta": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_Pasta": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_Pasta": {
+   "base": 274,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_Pasta": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_Rice": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_Rice": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_Rice": {
+   "base": 251,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_Rice": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_Beans": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_Beans": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_Beans": {
+   "base": 259,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_Beans": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_Cheese": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_Cheese": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories_Cheese": {
+   "base": 199,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_Cheese": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_requirement": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "carbs_requirement": {
+   "base": 146,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "calories_requirement": {
+   "base": 1727,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1200.0,
+    "hi": 3000.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_Chicken": {
+    "meaning": "protein grams per unit of Chicken",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_Chicken": {
+    "meaning": "carbohydrate grams per unit of Chicken",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_Chicken": {
+    "meaning": "calories per unit of Chicken",
+    "base": 121,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_Chicken": {
+    "meaning": "cost per unit of Chicken",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_Pasta": {
+    "meaning": "protein grams per unit of Pasta",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_Pasta": {
+    "meaning": "carbohydrate grams per unit of Pasta",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_Pasta": {
+    "meaning": "calories per unit of Pasta",
+    "base": 274,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_Pasta": {
+    "meaning": "cost per unit of Pasta",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_Rice": {
+    "meaning": "protein grams per unit of Rice",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_Rice": {
+    "meaning": "carbohydrate grams per unit of Rice",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_Rice": {
+    "meaning": "calories per unit of Rice",
+    "base": 251,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_Rice": {
+    "meaning": "cost per unit of Rice",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_Beans": {
+    "meaning": "protein grams per unit of Beans",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_Beans": {
+    "meaning": "carbohydrate grams per unit of Beans",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_Beans": {
+    "meaning": "calories per unit of Beans",
+    "base": 259,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_Beans": {
+    "meaning": "cost per unit of Beans",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_Cheese": {
+    "meaning": "protein grams per unit of Cheese",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_Cheese": {
+    "meaning": "carbohydrate grams per unit of Cheese",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories_Cheese": {
+    "meaning": "calories per unit of Cheese",
+    "base": 199,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_Cheese": {
+    "meaning": "cost per unit of Cheese",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_requirement": {
+    "meaning": "minimum protein grams required",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "carbs_requirement": {
+    "meaning": "minimum carbohydrate grams required",
+    "base": 146,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "calories_requirement": {
+    "meaning": "minimum calories required",
+    "base": 1727,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1200,
+     "hi": 3000,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

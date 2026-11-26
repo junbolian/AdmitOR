@@ -1,0 +1,228 @@
+{
+ "spec": {
+  "price_meaties": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price_yummies": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "grains_per_meaties": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "meat_per_meaties": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "grains_per_yummies": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "meat_per_yummies": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "varcost_meaties": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.6,
+    "integer": false
+   }
+  },
+  "varcost_yummies": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.5,
+    "integer": false
+   }
+  },
+  "grains_price": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.45,
+    "integer": false
+   }
+  },
+  "meat_price": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.2,
+    "hi": 0.9,
+    "integer": false
+   }
+  },
+  "grains_avail": {
+   "base": 400000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "meat_avail": {
+   "base": 300000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "meaties_capacity": {
+   "base": 90000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "price_meaties": {
+    "meaning": "Selling price per pack of Meaties ($)",
+    "base": 2.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price_yummies": {
+    "meaning": "Selling price per pack of Yummies ($)",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "grains_per_meaties": {
+    "meaning": "Pounds of grains per pack of Meaties",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "meat_per_meaties": {
+    "meaning": "Pounds of meat per pack of Meaties",
+    "base": 3.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "grains_per_yummies": {
+    "meaning": "Pounds of grains per pack of Yummies",
+    "base": 3.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "meat_per_yummies": {
+    "meaning": "Pounds of meat per pack of Yummies",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "varcost_meaties": {
+    "meaning": "Variable (mixing/packaging) cost per pack of Meaties ($)",
+    "base": 0.25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.6,
+     "integer": false
+    }
+   },
+   "varcost_yummies": {
+    "meaning": "Variable (mixing/packaging) cost per pack of Yummies ($)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.5,
+     "integer": false
+    }
+   },
+   "grains_price": {
+    "meaning": "Purchase price per pound of grains ($)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.45,
+     "integer": false
+    }
+   },
+   "meat_price": {
+    "meaning": "Purchase price per pound of meat ($)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.2,
+     "hi": 0.9,
+     "integer": false
+    }
+   },
+   "grains_avail": {
+    "meaning": "Monthly maximum purchasable grains (lbs)",
+    "base": 400000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "meat_avail": {
+    "meaning": "Monthly maximum purchasable meat (lbs)",
+    "base": 300000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "meaties_capacity": {
+    "meaning": "Monthly machine capacity for Meaties (packs)",
+    "base": 90000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

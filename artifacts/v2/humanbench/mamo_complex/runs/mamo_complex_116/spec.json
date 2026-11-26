@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "food_cost": {
+   "base": [
+    8,
+    4,
+    1,
+    4,
+    7,
+    2,
+    9,
+    3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_content": {
+   "base": [
+    5,
+    8,
+    18,
+    16,
+    3,
+    3,
+    6,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_content": {
+   "base": [
+    15,
+    17,
+    20,
+    15,
+    28,
+    19,
+    24,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_content": {
+   "base": [
+    162,
+    282,
+    234,
+    85,
+    194,
+    153,
+    167,
+    192
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_requirement": {
+   "base": 68,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_requirement": {
+   "base": 189,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_requirement": {
+   "base": 1840,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "food_cost": {
+    "meaning": "Cost per unit of each of the 8 food items (Chicken, Rice, Eggs, Beans, Spinach, Corn, Beef, Broccoli)",
+    "base": [
+     8,
+     4,
+     1,
+     4,
+     7,
+     2,
+     9,
+     3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_content": {
+    "meaning": "Grams of protein provided per unit of each food item",
+    "base": [
+     5,
+     8,
+     18,
+     16,
+     3,
+     3,
+     6,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_content": {
+    "meaning": "Grams of carbohydrates provided per unit of each food item",
+    "base": [
+     15,
+     17,
+     20,
+     15,
+     28,
+     19,
+     24,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_content": {
+    "meaning": "Calories provided per unit of each food item",
+    "base": [
+     162,
+     282,
+     234,
+     85,
+     194,
+     153,
+     167,
+     192
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_requirement": {
+    "meaning": "Minimum grams of protein to consume over the week",
+    "base": 68,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_requirement": {
+    "meaning": "Minimum grams of carbohydrates to consume over the week",
+    "base": 189,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "Minimum calories to consume over the week",
+    "base": 1840,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

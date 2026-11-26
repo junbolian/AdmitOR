@@ -1,0 +1,116 @@
+{
+ "spec": {
+  "demand_3m": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "demand_4m": {
+   "base": 60,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  },
+  "raw_length": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "piece_length_3m": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "piece_length_4m": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [
+  "[raw_length] degenerate abs range (lo == hi); perturbation has no effect",
+  "[piece_length_3m] degenerate abs range (lo == hi); perturbation has no effect",
+  "[piece_length_4m] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "demand_3m": {
+    "meaning": "Number of 3-meter bars required",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "demand_4m": {
+    "meaning": "Number of 4-meter bars required",
+    "base": 60,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 80,
+     "integer": true
+    }
+   },
+   "raw_length": {
+    "meaning": "Length of each raw steel bar",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "piece_length_3m": {
+    "meaning": "Length of short finished bar",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "piece_length_4m": {
+    "meaning": "Length of long finished bar",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

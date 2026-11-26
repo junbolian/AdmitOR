@@ -1,0 +1,31 @@
+{
+ "sample_id": "om_industryor_87",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"space_per_B\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"storage_capacity\",\n      \"evidence\": \"The storage space's capacity is such that it can store 4 units of product A when only product A is stored\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "space_per_B",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "storage_capacity",
+   "evidence": "The storage space's capacity is such that it can store 4 units of product A when only product A is stored"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

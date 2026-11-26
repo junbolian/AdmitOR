@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "protein_content": {
+   "base": [
+    20,
+    6,
+    17,
+    1,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_content": {
+   "base": [
+    12,
+    29,
+    26,
+    8,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_content": {
+   "base": [
+    167,
+    275,
+    112,
+    148,
+    286
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost": {
+   "base": [
+    7,
+    8,
+    2,
+    8,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_requirement": {
+   "base": 83,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_requirement": {
+   "base": 128,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_requirement": {
+   "base": 1686,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_content": {
+    "meaning": "Protein grams per unit for [Steak, Rice, Chicken, Iceberg Lettuce, Almonds]",
+    "base": [
+     20,
+     6,
+     17,
+     1,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_content": {
+    "meaning": "Carbohydrate grams per unit for [Steak, Rice, Chicken, Iceberg Lettuce, Almonds]",
+    "base": [
+     12,
+     29,
+     26,
+     8,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_content": {
+    "meaning": "Calories per unit for [Steak, Rice, Chicken, Iceberg Lettuce, Almonds]",
+    "base": [
+     167,
+     275,
+     112,
+     148,
+     286
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost": {
+    "meaning": "Dollar cost per unit for [Steak, Rice, Chicken, Iceberg Lettuce, Almonds]",
+    "base": [
+     7,
+     8,
+     2,
+     8,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_requirement": {
+    "meaning": "Minimum daily protein grams required",
+    "base": 83,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_requirement": {
+    "meaning": "Minimum daily carbohydrate grams required",
+    "base": 128,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "Minimum daily calories required",
+    "base": 1686,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

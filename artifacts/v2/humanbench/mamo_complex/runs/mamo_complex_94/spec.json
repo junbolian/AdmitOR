@@ -1,0 +1,48 @@
+{
+ "spec": {
+  "requirements": {
+   "base": [
+    17,
+    13,
+    15,
+    19,
+    14,
+    16,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "requirements": {
+    "meaning": "Minimum number of full-time employees required on each day of the week (Mon..Sun)",
+    "base": [
+     17,
+     13,
+     15,
+     19,
+     14,
+     16,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

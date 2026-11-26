@@ -1,0 +1,194 @@
+{
+ "spec": {
+  "protein_requirement": {
+   "base": 91,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_requirement": {
+   "base": 136,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_requirement": {
+   "base": 1563,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    7,
+    7,
+    1,
+    9,
+    6,
+    7,
+    2,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_content": {
+   "base": [
+    12,
+    10,
+    11,
+    8,
+    16,
+    4,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_content": {
+   "base": [
+    5,
+    1,
+    30,
+    26,
+    9,
+    25,
+    16,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_content": {
+   "base": [
+    231,
+    210,
+    295,
+    211,
+    232,
+    146,
+    255,
+    205
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_requirement": {
+    "meaning": "daily protein requirement (g)",
+    "base": 91,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_requirement": {
+    "meaning": "daily carbohydrate requirement (g)",
+    "base": 136,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "daily calorie requirement (kcal)",
+    "base": 1563,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "cost per serving of each food, in order: chicken breast, tofu, spinach, beef steak, eggs, brown rice, bananas, quinoa ($)",
+    "base": [
+     7,
+     7,
+     1,
+     9,
+     6,
+     7,
+     2,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_content": {
+    "meaning": "protein per serving of each food (g)",
+    "base": [
+     12,
+     10,
+     11,
+     8,
+     16,
+     4,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_content": {
+    "meaning": "carbohydrates per serving of each food (g)",
+    "base": [
+     5,
+     1,
+     30,
+     26,
+     9,
+     25,
+     16,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_content": {
+    "meaning": "calories per serving of each food (kcal)",
+    "base": [
+     231,
+     210,
+     295,
+     211,
+     232,
+     146,
+     255,
+     205
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

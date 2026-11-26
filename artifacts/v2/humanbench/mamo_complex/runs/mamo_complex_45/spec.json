@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "cost_1_3": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_4": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_1_5": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_3": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_4": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_2_5": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_4": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_3_5": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_4_5": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_1": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "supply_2": {
+   "base": 330,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "supply_3": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "supply_4": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "supply_5": {
+   "base": 600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_1": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_2": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_3": {
+   "base": 600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_4": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand_5": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_1_3": {
+    "meaning": "Unit cost of moving a freight car from location 1 to 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_4": {
+    "meaning": "Unit cost of moving a freight car from location 1 to 4",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_1_5": {
+    "meaning": "Unit cost of moving a freight car from location 1 to 5",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_3": {
+    "meaning": "Unit cost of moving a freight car from location 2 to 3",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_4": {
+    "meaning": "Unit cost of moving a freight car from location 2 to 4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_2_5": {
+    "meaning": "Unit cost of moving a freight car from location 2 to 5",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_4": {
+    "meaning": "Unit cost of moving a freight car from location 3 to 4",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_3_5": {
+    "meaning": "Unit cost of moving a freight car from location 3 to 5",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_4_5": {
+    "meaning": "Unit cost of moving a freight car from location 4 to 5",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_1": {
+    "meaning": "Number of cars currently present at location 1",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "supply_2": {
+    "meaning": "Number of cars currently present at location 2",
+    "base": 330,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "supply_3": {
+    "meaning": "Number of cars currently present at location 3",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "supply_4": {
+    "meaning": "Number of cars currently present at location 4",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "supply_5": {
+    "meaning": "Number of cars currently present at location 5",
+    "base": 600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_1": {
+    "meaning": "Number of cars needed at location 1",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_2": {
+    "meaning": "Number of cars needed at location 2",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_3": {
+    "meaning": "Number of cars needed at location 3",
+    "base": 600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_4": {
+    "meaning": "Number of cars needed at location 4",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand_5": {
+    "meaning": "Number of cars needed at location 5",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

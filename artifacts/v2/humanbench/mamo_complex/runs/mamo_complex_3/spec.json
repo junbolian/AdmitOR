@@ -1,0 +1,144 @@
+{
+ "spec": {
+  "opening_costs": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000,
+    174000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_costs": {
+   "base": [
+    [
+     3,
+     5
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    695,
+    737,
+    452,
+    616,
+    587,
+    779,
+    892
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacities": {
+   "base": [
+    1864,
+    1980,
+    814,
+    864,
+    1320,
+    1952,
+    1447,
+    1886,
+    1962
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "opening_costs": {
+    "meaning": "Fixed cost to open each potential distribution center",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000,
+     182000,
+     186000,
+     174000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_costs": {
+    "meaning": "Per-unit transportation cost from each distribution center to each retail store (partial: only first two stores specified; remaining entries are unknown and omitted)",
+    "base": [
+     [
+      3,
+      5
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "Demand of each retail store in units",
+    "base": [
+     695,
+     737,
+     452,
+     616,
+     587,
+     779,
+     892
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum supply capacity of each distribution center in units",
+    "base": [
+     1864,
+     1980,
+     814,
+     864,
+     1320,
+     1952,
+     1447,
+     1886,
+     1962
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "sample_id": "industryor_15",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"distances\",\"extracted\":[450,480,540,600],\"stated\":[480,540,600,0.25],\"evidence\":\"The table rows read: '1 & 480 & 0.10 & 0.08', '2 & 540 & 0.20 & 0.16', '3 & 600 & 0.15 & 0.12', and '4 & 0.25 & 0.20'.\"},{\"parameter\":\"prob_heavy\",\"extracted\":[0.1,0.2,0.15,0.25],\"stated\":[0.1,0.2,0.15,0.2],\"evidence\":\"The row '4 & 0.25 & 0.20' places 0.20 in the heavy-bomb probability column and 0.25 in the distance column.\"}],\"not_stated\":[{\"parameter\":\"prob_light\",\"evidence\":\"The row '4 & 0.25 & 0.20' has no entry in the light-bomb probability column.\"}]}",
+ "mismatch": [
+  {
+   "parameter": "distances",
+   "extracted": [
+    450,
+    480,
+    540,
+    600
+   ],
+   "stated": [
+    480,
+    540,
+    600,
+    0.25
+   ],
+   "evidence": "The table rows read: '1 & 480 & 0.10 & 0.08', '2 & 540 & 0.20 & 0.16', '3 & 600 & 0.15 & 0.12', and '4 & 0.25 & 0.20'."
+  },
+  {
+   "parameter": "prob_heavy",
+   "extracted": [
+    0.1,
+    0.2,
+    0.15,
+    0.25
+   ],
+   "stated": [
+    0.1,
+    0.2,
+    0.15,
+    0.2
+   ],
+   "evidence": "The row '4 & 0.25 & 0.20' places 0.20 in the heavy-bomb probability column and 0.25 in the distance column."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "prob_light",
+   "evidence": "The row '4 & 0.25 & 0.20' has no entry in the light-bomb probability column."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

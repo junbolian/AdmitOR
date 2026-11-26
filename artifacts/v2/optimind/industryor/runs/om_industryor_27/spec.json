@@ -1,0 +1,227 @@
+{
+ "spec": {
+  "demand_Donghai_1": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_Donghai_2": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_Donghai_3": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_Nanjiang_1": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_Nanjiang_2": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_Nanjiang_3": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "count_type_1": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "count_type_2": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "count_type_3": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "count_type_4": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "count_type_5": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "count_type_6": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "p2_target": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "p3_target": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_Donghai_1": {
+    "meaning": "Demand for specialty 1 in Donghai City",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_Donghai_2": {
+    "meaning": "Demand for specialty 2 in Donghai City",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_Donghai_3": {
+    "meaning": "Demand for specialty 3 in Donghai City",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_Nanjiang_1": {
+    "meaning": "Demand for specialty 1 in Nanjiang City",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_Nanjiang_2": {
+    "meaning": "Demand for specialty 2 in Nanjiang City",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_Nanjiang_3": {
+    "meaning": "Demand for specialty 3 in Nanjiang City",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "count_type_1": {
+    "meaning": "Number of people of type 1",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "count_type_2": {
+    "meaning": "Number of people of type 2",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "count_type_3": {
+    "meaning": "Number of people of type 3",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "count_type_4": {
+    "meaning": "Number of people of type 4",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "count_type_5": {
+    "meaning": "Number of people of type 5",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "count_type_6": {
+    "meaning": "Number of people of type 6",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "p2_target": {
+    "meaning": "Priority 2 target: number of recruited personnel meeting preferred specialty",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "p3_target": {
+    "meaning": "Priority 3 target: number of recruited personnel meeting preferred city",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

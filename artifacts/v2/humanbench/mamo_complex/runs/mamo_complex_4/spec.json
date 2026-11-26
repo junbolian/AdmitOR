@@ -1,0 +1,171 @@
+{
+ "spec": {
+  "costs": {
+   "base": [
+    4,
+    10,
+    6,
+    1,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_content": {
+   "base": [
+    14,
+    11,
+    20,
+    6,
+    9,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_content": {
+   "base": [
+    4,
+    17,
+    12,
+    20,
+    11,
+    19
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_content": {
+   "base": [
+    275,
+    151,
+    155,
+    106,
+    279,
+    93
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein_requirement": {
+   "base": 78,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_requirement": {
+   "base": 140,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_requirement": {
+   "base": 1537,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "costs": {
+    "meaning": "cost per serving of each food (chicken breast, brown rice, tofu, spinach, almonds, salmon)",
+    "base": [
+     4,
+     10,
+     6,
+     1,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_content": {
+    "meaning": "grams of protein per serving of each food",
+    "base": [
+     14,
+     11,
+     20,
+     6,
+     9,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_content": {
+    "meaning": "grams of carbohydrates per serving of each food",
+    "base": [
+     4,
+     17,
+     12,
+     20,
+     11,
+     19
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_content": {
+    "meaning": "calories per serving of each food",
+    "base": [
+     275,
+     151,
+     155,
+     106,
+     279,
+     93
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein_requirement": {
+    "meaning": "daily protein requirement (grams)",
+    "base": 78,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_requirement": {
+    "meaning": "daily carbohydrate requirement (grams)",
+    "base": 140,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "daily calorie requirement",
+    "base": 1537,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

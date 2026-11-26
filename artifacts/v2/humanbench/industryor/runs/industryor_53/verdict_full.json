@@ -1,0 +1,96 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "effective_hours": [
+    6000,
+    10000,
+    4000,
+    7000,
+    4000
+   ],
+   "machine_fee": [
+    0.05,
+    0.03,
+    0.06,
+    0.11,
+    0.05
+   ],
+   "raw_material_cost": [
+    0.25,
+    0.35,
+    0.5
+   ],
+   "selling_price": [
+    1.25,
+    2.0,
+    2.8
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "invalid_or_missing_parameters",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

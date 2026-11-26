@@ -1,0 +1,246 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "production_hours_per_quarter": 15000,
+   "hours_per_unit_I": 2,
+   "hours_per_unit_II": 4,
+   "hours_per_unit_III": 3,
+   "orders_I": [
+    1500,
+    1000,
+    2000,
+    1200
+   ],
+   "orders_II": [
+    1500,
+    1500,
+    1200,
+    1500
+   ],
+   "orders_III": [
+    1000,
+    2000,
+    1500,
+    2500
+   ],
+   "ending_inventory_required": 150,
+   "compensation_per_unit_per_quarter_I_II": 20,
+   "compensation_per_unit_per_quarter_III": 10,
+   "storage_fee_per_unit_per_quarter": 5
+  },
+  {
+   "production_hours_per_quarter": 16254.841186120953,
+   "hours_per_unit_I": 1.240017208356267,
+   "hours_per_unit_II": 3.2800938187811814,
+   "hours_per_unit_III": 2.3357057715571745,
+   "orders_I": [
+    1712.824092747611,
+    1106.019692453747,
+    2470.6154812458144,
+    902.5959594931796
+   ],
+   "orders_II": [
+    1429.7296377167434,
+    1076.8174974942633,
+    997.4193418585944,
+    1504.8197592930262
+   ],
+   "orders_III": [
+    715.9215818103182,
+    1638.6051808239781,
+    1634.895994001571,
+    2567.412220904825
+   ],
+   "ending_inventory_required": 82.9057492897672,
+   "compensation_per_unit_per_quarter_I_II": 22.142376413021807,
+   "compensation_per_unit_per_quarter_III": 13.713165480133922,
+   "storage_fee_per_unit_per_quarter": 1.051990077424488
+  },
+  {
+   "production_hours_per_quarter": 17752.37326649527,
+   "hours_per_unit_I": 2.317023031981163,
+   "hours_per_unit_II": 3.488801652857574,
+   "hours_per_unit_III": 2.1731507995482757,
+   "orders_I": [
+    1911.4917649861031,
+    901.956727067576,
+    1511.2950120561775,
+    909.6357913200941
+   ],
+   "orders_II": [
+    1812.7449297127139,
+    1593.353428230202,
+    1421.132356757554,
+    1706.7586080244362
+   ],
+   "orders_III": [
+    1021.7368548728205,
+    2567.738916775245,
+    1390.6809394875181,
+    2578.0609469098404
+   ],
+   "ending_inventory_required": 229.05711942071878,
+   "compensation_per_unit_per_quarter_I_II": 22.84447405674191,
+   "compensation_per_unit_per_quarter_III": 14.340482803729326,
+   "storage_fee_per_unit_per_quarter": 5.618817162054096
+  },
+  {
+   "production_hours_per_quarter": 16841.14652593431,
+   "hours_per_unit_I": 1.2733190138490595,
+   "hours_per_unit_II": 3.12927448208495,
+   "hours_per_unit_III": 2.494531112645057,
+   "orders_I": [
+    1121.8127792312648,
+    839.6745318166181,
+    1521.2017152916749,
+    1040.1409942392663
+   ],
+   "orders_II": [
+    1622.11599983796,
+    1378.3489610730758,
+    1106.5302963241554,
+    1238.5563276943387
+   ],
+   "orders_III": [
+    860.1866932294679,
+    2523.9855052549933,
+    1633.2318467219343,
+    2663.696508500482
+   ],
+   "ending_inventory_required": 71.07327556754328,
+   "compensation_per_unit_per_quarter_I_II": 25.499043150808383,
+   "compensation_per_unit_per_quarter_III": 5.960829925143141,
+   "storage_fee_per_unit_per_quarter": 4.035643534061182
+  },
+  {
+   "production_hours_per_quarter": 19405.710155729357,
+   "hours_per_unit_I": 2.2239996157665485,
+   "hours_per_unit_II": 4.182239180078867,
+   "hours_per_unit_III": 3.443074202375699,
+   "orders_I": [
+    1808.5667281708288,
+    1165.599946927747,
+    1674.8576863569253,
+    863.1121756109071
+   ],
+   "orders_II": [
+    1333.9077432531735,
+    1290.9667883781324,
+    991.907647382155,
+    1898.6187429015488
+   ],
+   "orders_III": [
+    1225.8205758836014,
+    1777.6134569581734,
+    1639.8947987653921,
+    2343.4478515909964
+   ],
+   "ending_inventory_required": 249.49142153773047,
+   "compensation_per_unit_per_quarter_I_II": 19.012444462097573,
+   "compensation_per_unit_per_quarter_III": 7.17856199797663,
+   "storage_fee_per_unit_per_quarter": 2.9730200615518676
+  },
+  {
+   "production_hours_per_quarter": 15552.313207468356,
+   "hours_per_unit_I": 1.6203865736366962,
+   "hours_per_unit_II": 4.2706751687153295,
+   "hours_per_unit_III": 3.954774920645945,
+   "orders_I": [
+    1409.4604546263577,
+    831.59245549437,
+    2597.045127794132,
+    1206.8589314470544
+   ],
+   "orders_II": [
+    1131.8184709564146,
+    1092.404737882261,
+    918.9473738524746,
+    1614.7014375327813
+   ],
+   "orders_III": [
+    1175.2476186177785,
+    1906.5919601596208,
+    1107.1749355367615,
+    2322.4289297598048
+   ],
+   "ending_inventory_required": 269.0691312576232,
+   "compensation_per_unit_per_quarter_I_II": 20.69874428237929,
+   "compensation_per_unit_per_quarter_III": 15.652940531363422,
+   "storage_fee_per_unit_per_quarter": 7.886237617875985
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   10750.0,
+   1425.1698187402576,
+   8929.020158552867,
+   4249.106310007699,
+   6387.453922466818,
+   26265.861335730027
+  ],
+  "B-structured": [
+   10750.0,
+   1425.1698187402576,
+   8929.020158552867,
+   4249.106310007699,
+   6387.453922466818,
+   26265.861335730027
+  ],
+  "C-direct": [
+   10750.0,
+   1425.1698187402578,
+   8929.020158552867,
+   4249.1063100077,
+   6387.453922466819,
+   26265.861335730046
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

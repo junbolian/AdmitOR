@@ -1,0 +1,179 @@
+{
+ "spec": {
+  "opening_cost": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand": {
+   "base": [
+    908,
+    434,
+    605,
+    480,
+    961,
+    787,
+    401,
+    789
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    1365,
+    1929,
+    1502,
+    1201,
+    1529,
+    961
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[transport_cost] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "opening_cost": {
+    "meaning": "Fixed cost to open each distribution center (USD)",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transport_cost": {
+    "meaning": "Unit transportation cost from each DC to each store (USD/unit), rows=centers 1-6, cols=stores 1-8; only the given endpoints are specified, interior entries are not provided in the problem statement",
+    "base": [
+     [
+      2,
+      3,
+      null,
+      null,
+      null,
+      null,
+      null,
+      5
+     ],
+     [
+      2,
+      4,
+      null,
+      null,
+      null,
+      null,
+      null,
+      2
+     ],
+     [
+      5,
+      4,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4
+     ],
+     [
+      4,
+      3,
+      null,
+      null,
+      null,
+      null,
+      null,
+      3
+     ],
+     [
+      5,
+      1,
+      null,
+      null,
+      null,
+      null,
+      null,
+      2
+     ],
+     [
+      1,
+      2,
+      null,
+      null,
+      null,
+      null,
+      null,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each retail store (units)",
+    "base": [
+     908,
+     434,
+     605,
+     480,
+     961,
+     787,
+     401,
+     789
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Supply capacity of each distribution center (units)",
+    "base": [
+     1365,
+     1929,
+     1502,
+     1201,
+     1529,
+     961
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

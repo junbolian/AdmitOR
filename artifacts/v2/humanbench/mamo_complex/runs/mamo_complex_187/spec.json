@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "opening_costs": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000,
+    174000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "transportation_costs": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "demands": {
+   "base": [
+    871,
+    462,
+    538,
+    898,
+    992,
+    791,
+    818,
+    688,
+    778
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacities": {
+   "base": 840,
+   "perturb": {
+    "mode": "abs",
+    "lo": 840.0,
+    "hi": 1856.0,
+    "integer": true
+   }
+  },
+  "num_centers": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  },
+  "num_stores": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 9.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_centers] degenerate abs range (lo == hi); perturbation has no effect",
+  "[num_stores] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "opening_costs": {
+    "meaning": "Fixed cost of opening each distribution center (9 centers)",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000,
+     182000,
+     186000,
+     174000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "transportation_costs": {
+    "meaning": "Per-unit shipping cost from each distribution center to each store; matrix entries are stated to lie in $1-$5, exact values vary with a heterogeneous rate",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "demands": {
+    "meaning": "Units required by each of the 9 retail stores",
+    "base": [
+     871,
+     462,
+     538,
+     898,
+     992,
+     791,
+     818,
+     688,
+     778
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacities": {
+    "meaning": "Maximum units each of the 9 distribution centers can supply; given as ranging from 840 to 1856 with a unique value per center",
+    "base": 840,
+    "perturb": {
+     "mode": "abs",
+     "lo": 840,
+     "hi": 1856,
+     "integer": true
+    }
+   },
+   "num_centers": {
+    "meaning": "Cardinality of the distribution-center index set (frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   },
+   "num_stores": {
+    "meaning": "Cardinality of the retail-store index set (frozen)",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 9,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

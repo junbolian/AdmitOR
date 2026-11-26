@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "machine_minutes_X": 13,
+   "craftsman_minutes_X": 20,
+   "machine_minutes_Y": 19,
+   "craftsman_minutes_Y": 29,
+   "machine_hours_capacity": 40,
+   "craftsman_hours_capacity": 35,
+   "machine_cost_per_hour": 10,
+   "craftsman_cost_per_hour": 2,
+   "revenue_X": 20,
+   "revenue_Y": 30,
+   "contract_min_X": 10
+  },
+  {
+   "machine_minutes_X": 14.812548379952487,
+   "craftsman_minutes_X": 10.50021510445334,
+   "machine_minutes_Y": 14.725557049013267,
+   "craftsman_minutes_Y": 20.97311140631586,
+   "machine_hours_capacity": 49.4588485665605,
+   "craftsman_hours_capacity": 41.184482059801894,
+   "machine_cost_per_hour": 17.843591354096908,
+   "craftsman_cost_per_hour": 0.8693883262941615,
+   "revenue_X": 18.43843639370541,
+   "revenue_Y": 15.89391658314211,
+   "contract_min_X": 7
+  },
+  {
+   "machine_minutes_X": 13.06961874534371,
+   "craftsman_minutes_X": 10.530719393677273,
+   "machine_minutes_Y": 13.277915363046322,
+   "craftsman_minutes_Y": 33.34664869560617,
+   "machine_hours_capacity": 41.797659224128665,
+   "craftsman_hours_capacity": 25.215421771424385,
+   "machine_cost_per_hour": 11.785313677518175,
+   "craftsman_cost_per_hour": 8.094304566778266,
+   "revenue_X": 10.12997519356122,
+   "revenue_Y": 39.17457755498424,
+   "contract_min_X": 21
+  },
+  {
+   "machine_minutes_X": 10.923256714733894,
+   "craftsman_minutes_X": 13.10958999623563,
+   "machine_minutes_Y": 27.687048371928846,
+   "craftsman_minutes_Y": 24.261241808266178,
+   "machine_hours_capacity": 23.709833735205915,
+   "craftsman_hours_capacity": 20.88507318917124,
+   "machine_cost_per_hour": 16.949887326949195,
+   "craftsman_cost_per_hour": 6.037260313668911,
+   "revenue_X": 26.1425654654876,
+   "revenue_Y": 36.89195360081453,
+   "contract_min_X": 16
+  },
+  {
+   "machine_minutes_X": 19.150504931731817,
+   "craftsman_minutes_X": 17.57068754416707,
+   "machine_minutes_Y": 19.98877199419131,
+   "craftsman_minutes_Y": 38.55273526333685,
+   "machine_hours_capacity": 44.740790094569846,
+   "craftsman_hours_capacity": 47.659741510877204,
+   "machine_cost_per_hour": 11.54704290513524,
+   "craftsman_cost_per_hour": 7.045718362149235,
+   "revenue_X": 10.916487673113245,
+   "revenue_Y": 21.836948269546404,
+   "contract_min_X": 9
+  },
+  {
+   "machine_minutes_X": 7.537295700007157,
+   "craftsman_minutes_X": 14.655817727220604,
+   "machine_minutes_Y": 11.419027158784854,
+   "craftsman_minutes_Y": 22.56123449019267,
+   "machine_hours_capacity": 45.427377770576015,
+   "craftsman_hours_capacity": 30.26912626395295,
+   "machine_cost_per_hour": 7.403619342337652,
+   "craftsman_cost_per_hour": 2.095070307714877,
+   "revenue_X": 15.339556440982268,
+   "revenue_Y": 43.099637631374826,
+   "contract_min_X": 19
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1861.4666666666667,
+   2776.2278632742427,
+   1359.8490127012335,
+   2065.078254100849,
+   988.9118855383413,
+   3045.448553122457
+  ],
+  "B-structured": [
+   1861.4666666666667,
+   2776.2278632742427,
+   1359.8490127012337,
+   2065.0782541008493,
+   988.9118855383415,
+   3045.448553122457
+  ],
+  "C-direct": [
+   1861.4666666666667,
+   2776.2278632742427,
+   1359.8490127012335,
+   2065.078254100849,
+   988.9118855383413,
+   3045.448553122457
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,243 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    97,
+    458,
+    473,
+    380,
+    34,
+    399,
+    163
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    119,
+    275,
+    36,
+    459,
+    17,
+    128,
+    425
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "transfer_cost": {
+   "base": [
+    [
+     0,
+     41,
+     42,
+     31,
+     39,
+     2,
+     18
+    ],
+    [
+     48,
+     0,
+     9,
+     22,
+     47,
+     29,
+     39
+    ],
+    [
+     36,
+     22,
+     0,
+     29,
+     45,
+     33,
+     45
+    ],
+    [
+     19,
+     5,
+     10,
+     0,
+     3,
+     42,
+     20
+    ],
+    [
+     13,
+     10,
+     21,
+     7,
+     0,
+     35,
+     11
+    ],
+    [
+     5,
+     35,
+     29,
+     16,
+     40,
+     0,
+     9
+    ],
+    [
+     7,
+     24,
+     26,
+     38,
+     33,
+     13,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_centers": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_centers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "initial supply quantity at each of the seven distribution centers",
+    "base": [
+     97,
+     458,
+     473,
+     380,
+     34,
+     399,
+     163
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "required quantity at each of the seven distribution centers",
+    "base": [
+     119,
+     275,
+     36,
+     459,
+     17,
+     128,
+     425
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "transfer_cost": {
+    "meaning": "cost per unit transferred between centers; entry [i][j] is cost from center i to center j, with 0 on the diagonal and all 42 off-diagonal routes given",
+    "base": [
+     [
+      0,
+      41,
+      42,
+      31,
+      39,
+      2,
+      18
+     ],
+     [
+      48,
+      0,
+      9,
+      22,
+      47,
+      29,
+      39
+     ],
+     [
+      36,
+      22,
+      0,
+      29,
+      45,
+      33,
+      45
+     ],
+     [
+      19,
+      5,
+      10,
+      0,
+      3,
+      42,
+      20
+     ],
+     [
+      13,
+      10,
+      21,
+      7,
+      0,
+      35,
+      11
+     ],
+     [
+      5,
+      35,
+      29,
+      16,
+      40,
+      0,
+      9
+     ],
+     [
+      7,
+      24,
+      26,
+      38,
+      33,
+      13,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_centers": {
+    "meaning": "number of distribution centers (fixed index-set size; not perturbed)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "warehouse_capacity": 5000,
+   "initial_inventory": 1000,
+   "initial_funds": 20000,
+   "purchase_price": [
+    2.85,
+    3.05,
+    2.9
+   ],
+   "selling_price": [
+    3.1,
+    3.25,
+    2.95
+   ],
+   "terminal_inventory_requirement": 2000
+  },
+  {
+   "warehouse_capacity": 5557.707193831535,
+   "initial_inventory": 525.010755222667,
+   "initial_funds": 15500.586367382386,
+   "purchase_price": [
+    2.534460241489658,
+    3.338494881280095,
+    3.1049714054105766
+   ],
+   "selling_price": [
+    3.5863026639540085,
+    2.713020482418241,
+    2.857867747228619
+   ],
+   "terminal_inventory_requirement": 1247.6755511009126
+  },
+  {
+   "warehouse_capacity": 3874.5518992144134,
+   "initial_inventory": 1005.3552881033622,
+   "initial_funds": 10530.719393677273,
+   "purchase_price": [
+    2.5066749217827793,
+    3.232859014091018,
+    2.952132117499731
+   ],
+   "selling_price": [
+    2.753346371330464,
+    3.3660453890386814,
+    3.3151279388798356
+   ],
+   "terminal_inventory_requirement": 1210.3980154848978
+  },
+  {
+   "warehouse_capacity": 6223.277007331231,
+   "initial_inventory": 1198.139394988227,
+   "initial_funds": 16805.010330359837,
+   "purchase_price": [
+    2.457246629785431,
+    3.607799948092273,
+    2.7104496723306473
+   ],
+   "selling_price": [
+    2.5950048457913835,
+    2.725731289883503,
+    3.360043352290002
+   ],
+   "terminal_inventory_requirement": 2165.9616501870255
+  },
+  {
+   "warehouse_capacity": 6228.513093097521,
+   "initial_inventory": 1229.7317866938179,
+   "initial_funds": 20724.56182909401,
+   "purchase_price": [
+    3.3893519709364823,
+    2.901811940194191,
+    2.960367132276943
+   ],
+   "selling_price": [
+    3.5084617836737135,
+    3.40407567807352,
+    3.376814142366717
+   ],
+   "terminal_inventory_requirement": 2123.763432410819
+  },
+  {
+   "warehouse_capacity": 5818.287344859694,
+   "initial_inventory": 545.8243836556622,
+   "initial_funds": 14557.965513030937,
+   "purchase_price": [
+    2.6099022785064023,
+    2.5373462118468253,
+    2.590037428178795
+   ],
+   "selling_price": [
+    2.6052417724680645,
+    2.9613656840431197,
+    3.1101076442319924
+   ],
+   "terminal_inventory_requirement": 1783.7314863521347
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   -700.0,
+   114.55997474710261,
+   2843.2671727483544,
+   2856.8015763545272,
+   1077.6117539071138,
+   2182.0226693801424
+  ],
+  "C-direct": [
+   -700.0,
+   114.55997474710239,
+   2843.2671727483576,
+   2856.8015763545263,
+   1077.6117539071129,
+   2182.022669380138
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_failed', 'infeasible_or_failed', 'infeasible_or_failed', 'infeasible_or_failed', 'infeasible_or_failed', 'infeasible_or_failed']"
+ },
+ "disagreements": [],
+ "notes": []
+}

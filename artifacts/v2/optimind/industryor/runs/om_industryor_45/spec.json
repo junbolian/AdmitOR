@@ -1,0 +1,407 @@
+{
+ "spec": {
+  "land_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "funds_capacity": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "labor_autumn_winter": {
+   "base": 3500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_spring_summer": {
+   "base": 4000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "external_wage_spring_summer": {
+   "base": 2.1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "external_wage_autumn_winter": {
+   "base": 1.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cow_investment": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "chicken_investment": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cow_land": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cow_labor_autumn_winter": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cow_labor_spring_summer": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cow_net_income": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "chicken_labor_autumn_winter": {
+   "base": 0.6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_labor_spring_summer": {
+   "base": 0.3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_net_income": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "chicken_capacity": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cow_capacity": {
+   "base": 32,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "soybean_labor_autumn_winter": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "soybean_labor_spring_summer": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "soybean_net_income": {
+   "base": 175,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "corn_labor_autumn_winter": {
+   "base": 35,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "corn_labor_spring_summer": {
+   "base": 75,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "corn_net_income": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "wheat_labor_autumn_winter": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "wheat_labor_spring_summer": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "wheat_net_income": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "land_capacity": {
+    "meaning": "Total land available (hectares)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "funds_capacity": {
+    "meaning": "Production development funds (yuan)",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "labor_autumn_winter": {
+    "meaning": "Autumn/winter labor available (person-days)",
+    "base": 3500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_spring_summer": {
+    "meaning": "Spring/summer labor available (person-days)",
+    "base": 4000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "external_wage_spring_summer": {
+    "meaning": "External work income per person-day in spring/summer (yuan)",
+    "base": 2.1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "external_wage_autumn_winter": {
+    "meaning": "External work income per person-day in autumn/winter (yuan)",
+    "base": 1.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cow_investment": {
+    "meaning": "Investment per dairy cow (yuan)",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "chicken_investment": {
+    "meaning": "Investment per chicken (yuan)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cow_land": {
+    "meaning": "Land allocated per dairy cow for feed (hectares)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cow_labor_autumn_winter": {
+    "meaning": "Autumn/winter labor per dairy cow (person-days)",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cow_labor_spring_summer": {
+    "meaning": "Spring/summer labor per dairy cow (person-days)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cow_net_income": {
+    "meaning": "Annual net income per dairy cow (yuan)",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "chicken_labor_autumn_winter": {
+    "meaning": "Autumn/winter labor per chicken (person-days)",
+    "base": 0.6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_labor_spring_summer": {
+    "meaning": "Spring/summer labor per chicken (person-days)",
+    "base": 0.3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_net_income": {
+    "meaning": "Annual net income per chicken (yuan)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "chicken_capacity": {
+    "meaning": "Maximum number of chickens",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cow_capacity": {
+    "meaning": "Maximum number of dairy cows",
+    "base": 32,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "soybean_labor_autumn_winter": {
+    "meaning": "Autumn/winter labor per hectare of soybean (person-days)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "soybean_labor_spring_summer": {
+    "meaning": "Spring/summer labor per hectare of soybean (person-days)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "soybean_net_income": {
+    "meaning": "Annual net income per hectare of soybean (yuan)",
+    "base": 175,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "corn_labor_autumn_winter": {
+    "meaning": "Autumn/winter labor per hectare of corn (person-days)",
+    "base": 35,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "corn_labor_spring_summer": {
+    "meaning": "Spring/summer labor per hectare of corn (person-days)",
+    "base": 75,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "corn_net_income": {
+    "meaning": "Annual net income per hectare of corn (yuan)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "wheat_labor_autumn_winter": {
+    "meaning": "Autumn/winter labor per hectare of wheat (person-days)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "wheat_labor_spring_summer": {
+    "meaning": "Spring/summer labor per hectare of wheat (person-days)",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "wheat_net_income": {
+    "meaning": "Annual net income per hectare of wheat (yuan)",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

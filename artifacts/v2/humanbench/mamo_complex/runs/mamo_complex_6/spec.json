@@ -1,0 +1,150 @@
+{
+ "spec": {
+  "opening_costs": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_costs": {
+   "base": [
+    [
+     5,
+     5,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     5,
+     4
+    ],
+    [
+     3,
+     5,
+     2,
+     4
+    ],
+    [
+     2,
+     4,
+     5,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demands": {
+   "base": [
+    859,
+    713,
+    421,
+    652
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacities": {
+   "base": [
+    1547,
+    1656,
+    1274,
+    1882
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "opening_costs": {
+    "meaning": "Fixed cost to open each distribution center (dollars)",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_costs": {
+    "meaning": "Per-unit transportation cost from each center to each outlet (dollars/unit), row = center, column = outlet",
+    "base": [
+     [
+      5,
+      5,
+      2,
+      3
+     ],
+     [
+      3,
+      3,
+      5,
+      4
+     ],
+     [
+      3,
+      5,
+      2,
+      4
+     ],
+     [
+      2,
+      4,
+      5,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demands": {
+    "meaning": "Demand at each retail outlet (units)",
+    "base": [
+     859,
+     713,
+     421,
+     652
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacities": {
+    "meaning": "Supply capacity of each distribution center (units)",
+    "base": [
+     1547,
+     1656,
+     1274,
+     1882
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

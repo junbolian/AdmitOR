@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_168",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The only issue is `capacity_2_5`. The statement's description of Data Center 2's connections omits any link to Data Center 5, so the value 0 was filled in rather than stated.\n\n```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"capacity_2_5\", \"evidence\": \"From Data Center 2: Can send data to Data Center 0 (17 Tbps), Data Center 1 (20 Tbps), Data Center 3 (16 Tbps), Data Center 4 (13 Tbps), Data Center 6 (6 Tbps), and Data Center 7 (1 Tbps). — no value given for DC 2 to DC 5\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_2_5",
+   "evidence": "From Data Center 2: Can send data to Data Center 0 (17 Tbps), Data Center 1 (20 Tbps), Data Center 3 (16 Tbps), Data Center 4 (13 Tbps), Data Center 6 (6 Tbps), and Data Center 7 (1 Tbps). — no value given for DC 2 to DC 5"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

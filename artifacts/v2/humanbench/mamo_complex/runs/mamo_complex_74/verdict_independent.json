@@ -1,0 +1,163 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "demand": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "regular_capacity": 420,
+   "regular_cost": 40,
+   "overtime_capacity": 80,
+   "overtime_cost": 45,
+   "holding_cost": 3,
+   "initial_inventory": 10
+  },
+  {
+   "demand": [
+    459.97676166844496,
+    327.8773123728734,
+    337.25557049013264,
+    387.72241608348514,
+    581.4825156826432,
+    478.8738872330404
+   ],
+   "regular_capacity": 568,
+   "regular_cost": 31.73877665258832,
+   "overtime_capacity": 105,
+   "overtime_cost": 34.42043743735658,
+   "holding_cost": 2.6236556976432404,
+   "initial_inventory": 101
+  },
+  {
+   "demand": [
+    328.2052334820307,
+    365.2500948976294,
+    408.4780431781094,
+    460.1118331357237,
+    447.31456173058115,
+    459.63845045269994
+   ],
+   "regular_capacity": 543,
+   "regular_cost": 30.129975193561222,
+   "overtime_capacity": 201,
+   "overtime_cost": 49.45813638723511,
+   "holding_cost": 4.0830061982159025,
+   "initial_inventory": 31
+  },
+  {
+   "demand": [
+    528.300810524458,
+    394.8678271992148,
+    302.62171024222806,
+    359.26118478752943,
+    610.3485352503395,
+    462.8197269007161
+   ],
+   "regular_capacity": 542,
+   "regular_cost": 44.59463573387636,
+   "overtime_capacity": 134,
+   "overtime_cost": 55.645104689535835,
+   "holding_cost": 4.542412526500241,
+   "initial_inventory": 110
+  },
+  {
+   "demand": [
+    500.82200281439395,
+    455.4817467583129,
+    448.7243110590477,
+    467.40423268277146,
+    573.1886774158801,
+    340.0813644042457
+   ],
+   "regular_capacity": 368,
+   "regular_cost": 35.78775927204214,
+   "overtime_capacity": 20,
+   "overtime_cost": 38.98779494312318,
+   "holding_cost": 1.2120171529167494,
+   "initial_inventory": 56
+  },
+  {
+   "demand": [
+    459.1721555168461,
+    400.93891847856816,
+    355.33438375220766,
+    384.63908192358474,
+    459.4142337327695,
+    536.0640092967487
+   ],
+   "regular_capacity": 494,
+   "regular_cost": 42.182620113339766,
+   "overtime_capacity": 43,
+   "overtime_cost": 50.15535295388286,
+   "holding_cost": 1.9608299251431407,
+   "initial_inventory": 76
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   106380.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   106380.0,
+   78500.0,
+   73457.0,
+   113947.0,
+   null,
+   106379.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+   "crash:[req_ba8e0f55] [deepseek-v4-flash-0731] | ^ | SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

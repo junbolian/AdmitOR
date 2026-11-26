@@ -1,0 +1,221 @@
+{
+ "spec": {
+  "cap": {
+   "base": [
+    [
+     0,
+     18,
+     2,
+     10,
+     17,
+     0,
+     12
+    ],
+    [
+     14,
+     0,
+     3,
+     1,
+     19,
+     18,
+     2
+    ],
+    [
+     17,
+     5,
+     0,
+     15,
+     15,
+     19,
+     0
+    ],
+    [
+     14,
+     17,
+     0,
+     0,
+     19,
+     9,
+     16
+    ],
+    [
+     2,
+     13,
+     15,
+     12,
+     0,
+     20,
+     5
+    ],
+    [
+     9,
+     16,
+     4,
+     15,
+     15,
+     0,
+     11
+    ],
+    [
+     8,
+     10,
+     19,
+     19,
+     17,
+     16,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 1.0
+   }
+  },
+  "n_nodes": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "source": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "sink": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n_nodes] degenerate abs range (lo == hi); perturbation has no effect",
+  "[source] degenerate abs range (lo == hi); perturbation has no effect",
+  "[sink] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cap": {
+    "meaning": "Directed fiber-optic link capacity (Tbps) between data centers, indexed by ordered pair (i,j); 0 means no link",
+    "base": [
+     [
+      0,
+      18,
+      2,
+      10,
+      17,
+      0,
+      12
+     ],
+     [
+      14,
+      0,
+      3,
+      1,
+      19,
+      18,
+      2
+     ],
+     [
+      17,
+      5,
+      0,
+      15,
+      15,
+      19,
+      0
+     ],
+     [
+      14,
+      17,
+      0,
+      0,
+      19,
+      9,
+      16
+     ],
+     [
+      2,
+      13,
+      15,
+      12,
+      0,
+      20,
+      5
+     ],
+     [
+      9,
+      16,
+      4,
+      15,
+      15,
+      0,
+      11
+     ],
+     [
+      8,
+      10,
+      19,
+      19,
+      17,
+      16,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 1.0
+    }
+   },
+   "n_nodes": {
+    "meaning": "Number of data centers (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "source": {
+    "meaning": "Source node index (frozen)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "sink": {
+    "meaning": "Destination node index (frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

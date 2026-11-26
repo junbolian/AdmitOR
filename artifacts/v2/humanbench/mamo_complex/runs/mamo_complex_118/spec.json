@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "protein": {
+   "base": [
+    8,
+    10,
+    3,
+    16,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    8,
+    30,
+    10,
+    29,
+    24
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    118,
+    131,
+    151,
+    235,
+    101
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price": {
+   "base": [
+    6,
+    10,
+    1,
+    9,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_requirement": {
+   "base": 93,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_requirement": {
+   "base": 181,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_requirement": {
+   "base": 1620,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein": {
+    "meaning": "grams of protein per item (Chicken, Pasta, Apples, Tuna, Rice)",
+    "base": [
+     8,
+     10,
+     3,
+     16,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "grams of carbohydrates per item (Chicken, Pasta, Apples, Tuna, Rice)",
+    "base": [
+     8,
+     30,
+     10,
+     29,
+     24
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "calories per item (Chicken, Pasta, Apples, Tuna, Rice)",
+    "base": [
+     118,
+     131,
+     151,
+     235,
+     101
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price": {
+    "meaning": "cost per item in dollars (Chicken, Pasta, Apples, Tuna, Rice)",
+    "base": [
+     6,
+     10,
+     1,
+     9,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_requirement": {
+    "meaning": "minimum daily protein intake in grams",
+    "base": 93,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_requirement": {
+    "meaning": "minimum daily carbohydrate intake in grams",
+    "base": 181,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "minimum daily calorie intake",
+    "base": 1620,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

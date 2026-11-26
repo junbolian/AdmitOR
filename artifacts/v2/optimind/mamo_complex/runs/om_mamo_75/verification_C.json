@@ -1,0 +1,59 @@
+{
+ "sample_id": "om_mamo_75",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_3_7\",\n      \"evidence\": \"From Hub 3: Can send to Hub 0 (17 units), Hub 1 (20 units), Hub 2 (6 units), Hub 4 (11 units), Hub 5 (3 units), Hub 6 (2 units).\"\n    },\n    {\n      \"parameter\": \"capacity_4_3\",\n      \"evidence\": \"From Hub 4: Can distribute to Hub 0 (10 units), Hub 1 (15 units), Hub 2 (5 units), Hub 5 (9 units), Hub 6 (9 units), and Hub 7 (15 units).\"\n    },\n    {\n      \"parameter\": \"capacity_7_0\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    },\n    {\n      \"parameter\": \"capacity_7_1\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    },\n    {\n      \"parameter\": \"capacity_7_2\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    },\n    {\n      \"parameter\": \"capacity_7_3\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    },\n    {\n      \"parameter\": \"capacity_7_4\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    },\n    {\n      \"parameter\": \"capacity_7_5\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    },\n    {\n      \"parameter\": \"capacity_7_6\",\n      \"evidence\": \"Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_3_7",
+   "evidence": "From Hub 3: Can send to Hub 0 (17 units), Hub 1 (20 units), Hub 2 (6 units), Hub 4 (11 units), Hub 5 (3 units), Hub 6 (2 units)."
+  },
+  {
+   "parameter": "capacity_4_3",
+   "evidence": "From Hub 4: Can distribute to Hub 0 (10 units), Hub 1 (15 units), Hub 2 (5 units), Hub 5 (9 units), Hub 6 (9 units), and Hub 7 (15 units)."
+  },
+  {
+   "parameter": "capacity_7_0",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  },
+  {
+   "parameter": "capacity_7_1",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  },
+  {
+   "parameter": "capacity_7_2",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  },
+  {
+   "parameter": "capacity_7_3",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  },
+  {
+   "parameter": "capacity_7_4",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  },
+  {
+   "parameter": "capacity_7_5",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  },
+  {
+   "parameter": "capacity_7_6",
+   "evidence": "Hub 7 (Destination): Can receive back from Hubs 0 through 6 various capacities"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

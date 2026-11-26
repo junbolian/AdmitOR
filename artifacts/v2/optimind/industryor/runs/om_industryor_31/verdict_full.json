@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "painting_value": 25000,
+   "bust_value": 5000,
+   "vase_value": 20000,
+   "porsche_value": 40000,
+   "diamond_value": 12000,
+   "sofa_value": 3000,
+   "dog_value": 3000,
+   "sculpture_value": 10000,
+   "boat_value": 15000,
+   "motorcycle_value": 10000,
+   "cavour_furniture_value": 13000
+  },
+  {
+   "painting_value": 28485.669961447093,
+   "bust_value": 1200.0860417813353,
+   "vase_value": 15500.586367382386,
+   "porsche_value": 28928.42952595291,
+   "diamond_value": 15405.185483961779,
+   "sofa_value": 3954.1772320837213,
+   "dog_value": 5117.769665606164,
+   "sculpture_value": 4217.143656811826,
+   "boat_value": 13594.59275433487,
+   "motorcycle_value": 3417.1610721329853,
+   "cavour_furniture_value": 8610.752406936212
+  },
+  {
+   "painting_value": 25133.882202584056,
+   "bust_value": 1212.2877574709087,
+   "vase_value": 13976.75301373297,
+   "porsche_value": 45995.37751118093,
+   "diamond_value": 12647.15732068632,
+   "sofa_value": 1490.379359019762,
+   "dog_value": 3482.034692929906,
+   "sculpture_value": 14332.026393489572,
+   "boat_value": 6116.977674205099,
+   "motorcycle_value": 14281.46952565931,
+   "cavour_furniture_value": 16090.974561816343
+  },
+  {
+   "painting_value": 21006.2629129498,
+   "bust_value": 2243.8359984942526,
+   "vase_value": 29144.261444135627,
+   "porsche_value": 33463.78180450507,
+   "diamond_value": 6135.540144674131,
+   "sofa_value": 822.2684349007056,
+   "dog_value": 4876.469578276282,
+   "sculpture_value": 11452.164439136477,
+   "boat_value": 20528.30891893885,
+   "motorcycle_value": 13216.245013713451,
+   "cavour_furniture_value": 13565.158226693333
+  },
+  {
+   "painting_value": 36827.89409948426,
+   "bust_value": 4028.2750176668283,
+   "vase_value": 21040.81262546454,
+   "porsche_value": 53176.1865701198,
+   "diamond_value": 13706.684434045144,
+   "sofa_value": 4953.217261678197,
+   "dog_value": 3417.701584386515,
+   "sculpture_value": 12864.005707008928,
+   "boat_value": 6824.83890580192,
+   "motorcycle_value": 6190.575859121656,
+   "cavour_furniture_value": 9714.452232192873
+  },
+  {
+   "painting_value": 14494.799423090688,
+   "bust_value": 2862.3270908882414,
+   "vase_value": 12020.028588194582,
+   "porsche_value": 31118.944124403686,
+   "diamond_value": 13953.855997407363,
+   "sofa_value": 2270.0937664384546,
+   "dog_value": 2298.977222431166,
+   "sculpture_value": 5933.098430800827,
+   "boat_value": 10805.600796884042,
+   "motorcycle_value": 16113.164227974916,
+   "cavour_furniture_value": 15309.35200984686
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   0.0,
+   3.035839012698314,
+   54.01964074213174,
+   2.2967173556956446,
+   34.826169972715434,
+   11.212537815220161
+  ],
+  "B-structured": [
+   1000.0,
+   21.689002116328084,
+   0.736460249958327,
+   29.571145921800053,
+   9.68745066308453,
+   79.17809633510936
+  ],
+  "C-direct": [
+   1000.0,
+   21.689002116319898,
+   0.7364602496375454,
+   29.57114592159327,
+   9.687450663085372,
+   79.1780963342465
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1000 on instance 0 (params: {'painting_value': 25000, 'bust_value': 5000, 'vase_value': 20000, 'porsche_value': 40000, 'diamond_value': 12000, 'sofa_value': 3000, 'dog_value': 3000, 'sculpture_value': 10000, 'boat_value': 15000, 'motorcycle_value': 10000, 'cavour_furniture_value': 13000})"
+ },
+ "disagreements": [],
+ "notes": []
+}

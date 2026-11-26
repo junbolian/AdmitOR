@@ -1,0 +1,59 @@
+{
+ "sample_id": "om_industryor_69",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"d12\",\n      \"extracted\": 20,\n      \"stated\": 10,\n      \"evidence\": \"Factory 1, Transportation volume to Location 1: 10\"\n    },\n    {\n      \"parameter\": \"d21\",\n      \"extracted\": 30,\n      \"stated\": 20,\n      \"evidence\": \"Factory 1, Transportation volume to Location 2: 20\"\n    },\n    {\n      \"parameter\": \"c11\",\n      \"extracted\": 5,\n      \"stated\": 10,\n      \"evidence\": \"Factory 1, Transportation volume to Location 1: 10\"\n    },\n    {\n      \"parameter\": \"c12\",\n      \"extracted\": 8,\n      \"stated\": 20,\n      \"evidence\": \"Factory 1, Transportation volume to Location 2: 20\"\n    },\n    {\n      \"parameter\": \"c21\",\n      \"extracted\": 6,\n      \"stated\": 30,\n      \"evidence\": \"Factory 2, Transportation volume to Location 1: 30\"\n    },\n    {\n      \"parameter\": \"c22\",\n      \"extracted\": 7,\n      \"stated\": 40,\n      \"evidence\": \"Factory 2, Transportation volume to Location 2: 40\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "d12",
+   "extracted": 20,
+   "stated": 10,
+   "evidence": "Factory 1, Transportation volume to Location 1: 10"
+  },
+  {
+   "parameter": "d21",
+   "extracted": 30,
+   "stated": 20,
+   "evidence": "Factory 1, Transportation volume to Location 2: 20"
+  },
+  {
+   "parameter": "c11",
+   "extracted": 5,
+   "stated": 10,
+   "evidence": "Factory 1, Transportation volume to Location 1: 10"
+  },
+  {
+   "parameter": "c12",
+   "extracted": 8,
+   "stated": 20,
+   "evidence": "Factory 1, Transportation volume to Location 2: 20"
+  },
+  {
+   "parameter": "c21",
+   "extracted": 6,
+   "stated": 30,
+   "evidence": "Factory 2, Transportation volume to Location 1: 30"
+  },
+  {
+   "parameter": "c22",
+   "extracted": 7,
+   "stated": 40,
+   "evidence": "Factory 2, Transportation volume to Location 2: 40"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

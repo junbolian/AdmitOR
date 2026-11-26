@@ -1,0 +1,87 @@
+{
+ "spec": {
+  "requirements": {
+   "base": [
+    60,
+    70,
+    60,
+    50,
+    20,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "shift_length": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 8.0,
+    "integer": true
+   }
+  },
+  "period_length": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[shift_length] degenerate abs range (lo == hi); perturbation has no effect",
+  "[period_length] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "requirements": {
+    "meaning": "Minimum number of drivers/crew required per 4-hour shift (shifts 1-6)",
+    "base": [
+     60,
+     70,
+     60,
+     50,
+     20,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "shift_length": {
+    "meaning": "Continuous working hours per crew member (covers two consecutive 4-hour shifts)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 8,
+     "integer": true
+    }
+   },
+   "period_length": {
+    "meaning": "Length of each time period in hours",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 4,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

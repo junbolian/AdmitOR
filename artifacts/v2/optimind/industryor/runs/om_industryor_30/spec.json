@@ -1,0 +1,134 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    100,
+    150,
+    80,
+    200
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "rate_A": {
+   "base": [
+    10,
+    15,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "rate_B": {
+   "base": [
+    15,
+    10,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "rate_C": {
+   "base": [
+    20,
+    5,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "rate_D": {
+   "base": [
+    10,
+    15,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Production hours available at workshops A, B, C, D",
+    "base": [
+     100,
+     150,
+     80,
+     200
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "rate_A": {
+    "meaning": "Workshop A production rates (units/hour) for components 1, 2, 3",
+    "base": [
+     10,
+     15,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "rate_B": {
+    "meaning": "Workshop B production rates (units/hour) for components 1, 2, 3",
+    "base": [
+     15,
+     10,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "rate_C": {
+    "meaning": "Workshop C production rates (units/hour) for components 1, 2, 3",
+    "base": [
+     20,
+     5,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "rate_D": {
+    "meaning": "Workshop D production rates (units/hour) for components 1, 2, 3",
+    "base": [
+     10,
+     15,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

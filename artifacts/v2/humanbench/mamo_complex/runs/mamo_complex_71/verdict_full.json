@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_AB": 19,
+   "cost_AC": 45,
+   "cost_AD": 30,
+   "cost_BA": 19,
+   "cost_BC": 89,
+   "cost_BD": 46,
+   "cost_CA": 45,
+   "cost_CB": 89,
+   "cost_CD": 11,
+   "cost_DA": 30,
+   "cost_DB": 46,
+   "cost_DC": 11
+  },
+  {
+   "cost_AB": 21.649109170699788,
+   "cost_AC": 23.62548398502001,
+   "cost_AD": 23.250879551073577,
+   "cost_BA": 13.741004024827632,
+   "cost_BC": 110.04593806059711,
+   "cost_BD": 54.12817642145392,
+   "cost_CA": 62.64808054671804,
+   "cost_CB": 52.23755610401804,
+   "cost_CD": 10.141140016537975,
+   "cost_DA": 15.89391658314211,
+   "cost_DB": 33.05734684096576,
+   "cost_DC": 11.058908169136984
+  },
+  {
+   "cost_AB": 10.004183423993409,
+   "cost_AC": 31.44769428089918,
+   "cost_AD": 34.4965331333857,
+   "cost_BA": 19.853888131461115,
+   "cost_BC": 64.11921536162201,
+   "cost_BD": 50.1062214582918,
+   "cost_CA": 58.924370550502196,
+   "cost_CB": 45.07838961134743,
+   "cost_CD": 14.364011770160888,
+   "cost_DA": 35.9441818496468,
+   "cost_DB": 38.651523759827626,
+   "cost_DC": 7.210274497929597
+  },
+  {
+   "cost_AB": 27.687048371928846,
+   "cost_AC": 37.64675453006821,
+   "cost_AD": 17.782375301404436,
+   "cost_BA": 11.337611159835816,
+   "cost_BC": 119.92699860492391,
+   "cost_BD": 50.77139744287699,
+   "cost_CA": 58.820772297347105,
+   "cost_CB": 109.44612901574978,
+   "cost_CD": 11.398509006001706,
+   "cost_DA": 44.193472919381115,
+   "cost_DB": 40.41258135158426,
+   "cost_DC": 11.572446944005495
+  },
+  {
+   "cost_AB": 25.258688620806904,
+   "cost_AC": 50.333388856391075,
+   "cost_AD": 40.85120700932332,
+   "cost_BA": 20.46969075987848,
+   "cost_BC": 107.2068934231282,
+   "cost_BD": 25.107921648160463,
+   "cost_CA": 32.75542240431961,
+   "cost_CB": 70.25552876058754,
+   "cost_CD": 6.377711746159902,
+   "cost_DA": 21.983726590830905,
+   "cost_DB": 27.64606575284754,
+   "cost_DC": 8.557709634211013
+  },
+  {
+   "cost_AB": 21.578004441023605,
+   "cost_AC": 38.91744805365379,
+   "cost_AD": 26.10542901350648,
+   "cost_BA": 13.480633584658266,
+   "cost_BC": 68.2610261623711,
+   "cost_BD": 66.08611103477473,
+   "cost_CA": 51.6615923360967,
+   "cost_CB": 98.71265950436197,
+   "cost_CD": 7.382525130179067,
+   "cost_DA": 36.87380393851048,
+   "cost_DB": 30.516514713048707,
+   "cost_DC": 9.674009859334125
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   121.0,
+   80.56497486735137,
+   104.31711794234882,
+   100.79545604748999,
+   91.67974230749799,
+   90.29712148153983
+  ],
+  "C-direct": [
+   121.0,
+   80.56497486735138,
+   104.31711794234882,
+   100.79545604748999,
+   91.67974230749799,
+   90.29712148153983
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded', 'infeasible_or_unbounded']"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,55 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "wage",
+  "max_hours",
+  "daily_operation_hours",
+  "undergrad_min_hours",
+  "grad_min_hours",
+  "max_shifts_per_student",
+  "max_students_per_day"
+ ],
+ "safe": [
+  "wage",
+  "daily_operation_hours",
+  "undergrad_min_hours",
+  "grad_min_hours",
+  "max_shifts_per_student",
+  "max_students_per_day"
+ ],
+ "tests": {
+  "wage": [
+   3,
+   3
+  ],
+  "max_hours": [
+   3,
+   0
+  ],
+  "daily_operation_hours": [
+   3,
+   3
+  ],
+  "undergrad_min_hours": [
+   3,
+   3
+  ],
+  "grad_min_hours": [
+   3,
+   3
+  ],
+  "max_shifts_per_student": [
+   3,
+   3
+  ],
+  "max_students_per_day": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

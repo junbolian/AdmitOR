@@ -1,0 +1,117 @@
+{
+ "spec": {
+  "m": {
+   "base": 2140,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "H": {
+   "base": 23000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "T": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "b": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "g": {
+   "base": 9.81,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 10.5,
+    "integer": false
+   }
+  },
+  "n": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "m": {
+    "meaning": "rocket mass (kg)",
+    "base": 2140,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "H": {
+    "meaning": "required height (m)",
+    "base": 23000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "T": {
+    "meaning": "time limit (s)",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "b": {
+    "meaning": "maximum thrust force (N)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "g": {
+    "meaning": "gravitational acceleration (m/s^2)",
+    "base": 9.81,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9.0,
+     "hi": 10.5,
+     "integer": false
+    }
+   },
+   "n": {
+    "meaning": "number of time intervals (frozen)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 20,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

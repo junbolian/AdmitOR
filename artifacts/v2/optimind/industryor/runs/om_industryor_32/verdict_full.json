@@ -1,0 +1,173 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "container_capacity": 60,
+   "container_min_load": 18,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.5,
+   "weight_B": 1.0,
+   "weight_C": 0.4,
+   "weight_D": 0.6,
+   "weight_E": 0.65,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 1
+  },
+  {
+   "container_capacity": 60,
+   "container_min_load": 19.505809423345145,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.4050021510445334,
+   "weight_B": 0.9100117273476477,
+   "weight_C": 0.3557137181038117,
+   "weight_D": 0.656753091399363,
+   "weight_E": 0.695941866729957,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 1.8382693515572681
+  },
+  {
+   "container_capacity": 60,
+   "container_min_load": 13.538939392397694,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.4843843639370541,
+   "weight_B": 0.8119188877752281,
+   "weight_C": 0.35498207596857656,
+   "weight_D": 0.601285269144807,
+   "weight_E": 0.5268993521178046,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 0.7982564760299727
+  },
+  {
+   "container_capacity": 60,
+   "container_min_load": 19.61875192801885,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.5089882961206433,
+   "weight_B": 0.8881762488162787,
+   "weight_C": 0.41428250942014544,
+   "weight_D": 0.6742633096026783,
+   "weight_E": 0.5216896775162959,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 1.7087288777492118
+  },
+  {
+   "container_capacity": 60,
+   "container_min_load": 20.13990546587285,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.46805010330359836,
+   "weight_B": 0.8621917999247126,
+   "weight_C": 0.473154091553085,
+   "weight_D": 0.5607826908270305,
+   "weight_E": 0.5441139192788385,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 0.645074565250196
+  },
+  {
+   "container_capacity": 60,
+   "container_min_load": 21.752939156552564,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.5207452062733782,
+   "weight_B": 1.122851309309752,
+   "weight_C": 0.4367570858710108,
+   "weight_D": 0.6086947419491282,
+   "weight_E": 0.7730100986346363,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 1.0678015658125302
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   7.0,
+   7.0,
+   6.0,
+   7.0,
+   7.0,
+   null
+  ],
+  "B-structured": [
+   7.0,
+   7.0,
+   6.0,
+   7.0,
+   7.0,
+   null
+  ],
+  "C-direct": [
+   7.0,
+   7.0,
+   6.0,
+   7.0,
+   7.0,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "solver_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

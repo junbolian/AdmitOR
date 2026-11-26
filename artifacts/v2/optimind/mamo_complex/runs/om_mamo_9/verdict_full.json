@@ -1,0 +1,98 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "opening_cost": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000
+   ],
+   "demand": [
+    908,
+    434,
+    605,
+    480,
+    961,
+    787,
+    401,
+    789
+   ],
+   "capacity": [
+    1365,
+    1929,
+    1502,
+    1201,
+    1529,
+    961
+   ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "missing_transport_cost",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

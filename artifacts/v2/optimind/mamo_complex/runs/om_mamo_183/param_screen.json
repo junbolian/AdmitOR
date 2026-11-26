@@ -1,0 +1,60 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "target_N",
+  "target_P",
+  "target_K",
+  "tol",
+  "price",
+  "nutrient_N",
+  "nutrient_P",
+  "nutrient_K"
+ ],
+ "safe": [
+  "target_P",
+  "target_K",
+  "tol",
+  "price",
+  "nutrient_P",
+  "nutrient_K"
+ ],
+ "tests": {
+  "target_N": [
+   0,
+   3
+  ],
+  "target_P": [
+   3,
+   3
+  ],
+  "target_K": [
+   3,
+   3
+  ],
+  "tol": [
+   3,
+   3
+  ],
+  "price": [
+   3,
+   3
+  ],
+  "nutrient_N": [
+   3,
+   0
+  ],
+  "nutrient_P": [
+   3,
+   3
+  ],
+  "nutrient_K": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

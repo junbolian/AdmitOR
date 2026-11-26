@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_155",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"capacity_matrix\",\"evidence\":\"The statement does not give values for self-links, Station 2 → Station 1, or Station 3 → Station 2; these entries were filled with 0.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix",
+   "evidence": "The statement does not give values for self-links, Station 2 → Station 1, or Station 3 → Station 2; these entries were filled with 0."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

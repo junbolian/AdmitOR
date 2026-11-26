@@ -1,0 +1,54 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "demand",
+  "regular_capacity",
+  "regular_cost",
+  "overtime_capacity",
+  "overtime_cost",
+  "holding_cost",
+  "initial_inventory"
+ ],
+ "safe": [
+  "regular_capacity",
+  "regular_cost",
+  "overtime_capacity",
+  "overtime_cost",
+  "holding_cost",
+  "initial_inventory"
+ ],
+ "tests": {
+  "demand": [
+   1,
+   1
+  ],
+  "regular_capacity": [
+   2,
+   2
+  ],
+  "regular_cost": [
+   2,
+   2
+  ],
+  "overtime_capacity": [
+   2,
+   2
+  ],
+  "overtime_cost": [
+   2,
+   2
+  ],
+  "holding_cost": [
+   2,
+   2
+  ],
+  "initial_inventory": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

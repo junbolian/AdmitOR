@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "storage_capacity": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "storage_cost_a": {
+   "base": 0.007,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "storage_cost_b": {
+   "base": 0.01,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "buy_price": {
+   "base": [
+    410,
+    430,
+    460,
+    450
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "sell_price": {
+   "base": [
+    425,
+    440,
+    465,
+    455
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.15
+   }
+  },
+  "max_sales": {
+   "base": [
+    100,
+    140,
+    200,
+    160
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "storage_capacity": {
+    "meaning": "Maximum warehouse storage capacity (10,000 m^3)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "storage_cost_a": {
+    "meaning": "Storage cost constant term a (10,000 yuan per 10,000 m^3 per quarter)",
+    "base": 0.007,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "storage_cost_b": {
+    "meaning": "Storage cost per-quarter rate b (10,000 yuan per 10,000 m^3 per quarter^2)",
+    "base": 0.01,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "buy_price": {
+    "meaning": "Buying price per quarter, winter to autumn (10,000 yuan per 10,000 m^3)",
+    "base": [
+     410,
+     430,
+     460,
+     450
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "sell_price": {
+    "meaning": "Selling price per quarter, winter to autumn (10,000 yuan per 10,000 m^3)",
+    "base": [
+     425,
+     440,
+     465,
+     455
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.15
+    }
+   },
+   "max_sales": {
+    "meaning": "Projected maximum sales volume per quarter, winter to autumn (10,000 m^3)",
+    "base": [
+     100,
+     140,
+     200,
+     160
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "spec": {
+  "cost": {
+   "base": [
+    5,
+    6,
+    5,
+    4,
+    1,
+    6,
+    1,
+    2,
+    7
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "protein": {
+   "base": [
+    18,
+    2,
+    7,
+    20,
+    5,
+    13,
+    15,
+    20,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carbs": {
+   "base": [
+    13,
+    25,
+    30,
+    16,
+    6,
+    9,
+    18,
+    18,
+    14
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories": {
+   "base": [
+    233,
+    251,
+    191,
+    231,
+    111,
+    275,
+    99,
+    210,
+    74
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "req_protein": {
+   "base": 68,
+   "perturb": {
+    "mode": "abs",
+    "lo": 34.0,
+    "hi": 102.0,
+    "integer": false
+   }
+  },
+  "req_carbs": {
+   "base": 151,
+   "perturb": {
+    "mode": "abs",
+    "lo": 76.0,
+    "hi": 227.0,
+    "integer": false
+   }
+  },
+  "req_calories": {
+   "base": 1900,
+   "perturb": {
+    "mode": "abs",
+    "lo": 950.0,
+    "hi": 2850.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost": {
+    "meaning": "cost per serving of each food (Beef, Pasta, Broccoli, Chicken, Apple, Pork, Lentils, Eggs, Cheese)",
+    "base": [
+     5,
+     6,
+     5,
+     4,
+     1,
+     6,
+     1,
+     2,
+     7
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "protein": {
+    "meaning": "protein grams per serving of each food",
+    "base": [
+     18,
+     2,
+     7,
+     20,
+     5,
+     13,
+     15,
+     20,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carbs": {
+    "meaning": "carbohydrate grams per serving of each food",
+    "base": [
+     13,
+     25,
+     30,
+     16,
+     6,
+     9,
+     18,
+     18,
+     14
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories": {
+    "meaning": "calories per serving of each food",
+    "base": [
+     233,
+     251,
+     191,
+     231,
+     111,
+     275,
+     99,
+     210,
+     74
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "req_protein": {
+    "meaning": "minimum daily protein requirement (grams)",
+    "base": 68,
+    "perturb": {
+     "mode": "abs",
+     "lo": 34,
+     "hi": 102,
+     "integer": false
+    }
+   },
+   "req_carbs": {
+    "meaning": "minimum daily carbohydrate requirement (grams)",
+    "base": 151,
+    "perturb": {
+     "mode": "abs",
+     "lo": 76,
+     "hi": 227,
+     "integer": false
+    }
+   },
+   "req_calories": {
+    "meaning": "minimum daily calorie requirement",
+    "base": 1900,
+    "perturb": {
+     "mode": "abs",
+     "lo": 950,
+     "hi": 2850,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

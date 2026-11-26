@@ -1,0 +1,35 @@
+{
+ "sample_id": "mamo_complex_182",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transport_costs\",\n      \"evidence\": \"Costs range with specifics such as $3 from Center 1 to Store 1, $5 from Center 2 to Store 2, and various other combinations — only two entries named; the full 9×8 matrix is not given.\"\n    },\n    {\n      \"parameter\": \"demands\",\n      \"evidence\": \"The demands range from 414 units to 920 units across the eight stores — only the range endpoints are stated, not the individual store values.\"\n    },\n    {\n      \"parameter\": \"capacities\",\n      \"evidence\": \"Capacities range from 1,030 units to 1,962 units — only the range endpoints are stated, not the individual center values.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "Costs range with specifics such as $3 from Center 1 to Store 1, $5 from Center 2 to Store 2, and various other combinations — only two entries named; the full 9×8 matrix is not given."
+  },
+  {
+   "parameter": "demands",
+   "evidence": "The demands range from 414 units to 920 units across the eight stores — only the range endpoints are stated, not the individual store values."
+  },
+  {
+   "parameter": "capacities",
+   "evidence": "Capacities range from 1,030 units to 1,962 units — only the range endpoints are stated, not the individual center values."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

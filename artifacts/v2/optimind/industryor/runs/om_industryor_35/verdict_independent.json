@@ -1,0 +1,158 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 2,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 300,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 15,
+   "target_profit": 10000,
+   "target_time_I": 150,
+   "target_time_II": 70
+  },
+  {
+   "time_I_A": 4.278853596915767,
+   "time_I_B": 4.575032265668002,
+   "time_II_A": 2.6625439775536788,
+   "time_II_B": 1.7232107381488229,
+   "capacity_I": 178.3765456996815,
+   "capacity_II": 79.89517129568301,
+   "profit_A": 417.6538703114536,
+   "profit_B": 264.1224746832373,
+   "min_units_A": 13,
+   "min_units_B": 1,
+   "target_profit": 7186.379748036034,
+   "target_time_I": 150.64263457240347,
+   "target_time_II": 43.48601430229636
+  },
+  {
+   "time_I_A": 3.397675301373297,
+   "time_I_B": 6.449653313338569,
+   "time_II_A": 3.0674122209048247,
+   "time_II_B": 1.7204406220406967,
+   "capacity_I": 160.71188206510905,
+   "capacity_II": 87.3281055739583,
+   "profit_A": 151.9496279034183,
+   "profit_B": 587.6186633247636,
+   "min_units_A": 21,
+   "min_units_B": 15,
+   "target_profit": 6554.794998117815,
+   "target_time_I": 204.86556866481374,
+   "target_time_II": 60.8492945263071
+  },
+  {
+   "time_I_A": 3.1854916867602956,
+   "time_I_B": 4.790149130500392,
+   "time_II_A": 3.5212415495211893,
+   "time_II_B": 2.1037260313668913,
+   "capacity_I": 186.8553927929256,
+   "capacity_II": 82.8649800548538,
+   "profit_A": 310.8684274364102,
+   "profit_B": 662.9020937907168,
+   "min_units_A": 11,
+   "min_units_B": 25,
+   "target_profit": 13294.04664252995,
+   "target_time_I": 164.2223702837095,
+   "target_time_II": 90.2555864174035
+  },
+  {
+   "time_I_A": 4.154704290513524,
+   "time_I_B": 6.613715508644771,
+   "time_II_A": 2.318736575483493,
+   "time_II_B": 1.7278982756515469,
+   "capacity_I": 124.72655563225285,
+   "capacity_II": 46.46835070772313,
+   "profit_A": 219.83726590830906,
+   "profit_B": 270.4506432343781,
+   "min_units_A": 8,
+   "min_units_B": 29,
+   "target_profit": 8648.321789700842,
+   "target_time_I": 134.42171605402592,
+   "target_time_II": 53.7323937232033
+  },
+  {
+   "time_I_A": 3.533955644098227,
+   "time_I_B": 7.309963763137482,
+   "time_II_A": 3.22205307786989,
+   "time_II_B": 2.1091310056669883,
+   "capacity_I": 110.53663778377164,
+   "capacity_II": 82.83110068521955,
+   "profit_A": 199.0207481285785,
+   "profit_B": 395.7549487909415,
+   "min_units_A": 30,
+   "min_units_B": 29,
+   "target_profit": 10569.497437746462,
+   "target_time_I": 172.15371011878494,
+   "target_time_II": 89.19970753062933
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   11250.0,
+   12456.373528445456,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   11250.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   11250.0,
+   12456.373528445456,
+   -1380059.9388469455,
+   -2408309.51770312,
+   -2985809622615.3955,
+   -4407188742207.499
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

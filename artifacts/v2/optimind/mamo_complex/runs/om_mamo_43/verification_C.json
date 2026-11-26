@@ -1,0 +1,65 @@
+{
+ "sample_id": "om_mamo_43",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"transfer_costs\",\n      \"extracted\": [[0,24,3,27,31],[24,0,11,7,37],[30,1,0,38,22],[36,18,17,0,35],[41,35,33,33,0]],\n      \"stated\": \"From/to Region 3: To Region 1 costs 30, to Region 2 costs 1\",\n      \"evidence\": \"The statement lists 'From/to Region 3: To Region 1 costs 30, to Region 2 costs 1' but extracted shows row 2 (Region 3) as [30,1,0,38,22], which reverses the intended meaning. The statement format 'From/to Region X' describes costs FROM Region X, but the values given match costs TO Region X from other regions in the extracted matrix.\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "transfer_costs",
+   "extracted": [
+    [
+     0,
+     24,
+     3,
+     27,
+     31
+    ],
+    [
+     24,
+     0,
+     11,
+     7,
+     37
+    ],
+    [
+     30,
+     1,
+     0,
+     38,
+     22
+    ],
+    [
+     36,
+     18,
+     17,
+     0,
+     35
+    ],
+    [
+     41,
+     35,
+     33,
+     33,
+     0
+    ]
+   ],
+   "stated": "From/to Region 3: To Region 1 costs 30, to Region 2 costs 1",
+   "evidence": "The statement lists 'From/to Region 3: To Region 1 costs 30, to Region 2 costs 1' but extracted shows row 2 (Region 3) as [30,1,0,38,22], which reverses the intended meaning. The statement format 'From/to Region X' describes costs FROM Region X, but the values given match costs TO Region X from other regions in the extracted matrix."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "motorcycle_pollution": 40,
+   "small_truck_pollution": 70,
+   "large_truck_pollution": 100,
+   "motorcycle_product": 10,
+   "small_truck_product": 20,
+   "large_truck_product": 50,
+   "motorcycle_max_trips": 8,
+   "product_demand": 300,
+   "max_total_trips": 20
+  },
+  {
+   "motorcycle_pollution": 45.57707193831534,
+   "small_truck_pollution": 36.75075286558668,
+   "large_truck_pollution": 77.50293183691193,
+   "motorcycle_product": 7.232107381488228,
+   "small_truck_product": 24.72942428328025,
+   "large_truck_product": 58.83497437114556,
+   "motorcycle_max_trips": 18,
+   "product_demand": 133,
+   "max_total_trips": 20
+  },
+  {
+   "motorcycle_pollution": 21.191888777522813,
+   "small_truck_pollution": 50.30465823625224,
+   "large_truck_pollution": 100.53552881033623,
+   "motorcycle_product": 5.265359696838637,
+   "small_truck_product": 13.97675301373297,
+   "large_truck_product": 57.49422188897616,
+   "motorcycle_max_trips": 11,
+   "product_demand": 259,
+   "max_total_trips": 26
+  },
+  {
+   "motorcycle_pollution": 52.377218267113065,
+   "small_truck_pollution": 35.45491317746427,
+   "large_truck_pollution": 130.5819251832808,
+   "motorcycle_product": 11.981393949882268,
+   "small_truck_product": 16.80501033035984,
+   "large_truck_product": 32.773974990589075,
+   "motorcycle_max_trips": 19,
+   "product_demand": 370,
+   "max_total_trips": 8
+  },
+  {
+   "motorcycle_pollution": 23.86865507333856,
+   "small_truck_pollution": 94.32460564432218,
+   "large_truck_pollution": 110.37260313668911,
+   "motorcycle_product": 13.0712827327438,
+   "small_truck_product": 24.594635733876355,
+   "large_truck_product": 51.81140457273503,
+   "motorcycle_max_trips": 19,
+   "product_demand": 410,
+   "max_total_trips": 24
+  },
+  {
+   "motorcycle_pollution": 53.176186570119796,
+   "small_truck_pollution": 78.29638266549722,
+   "large_truck_pollution": 136.17069003107773,
+   "motorcycle_product": 10.773521452567621,
+   "small_truck_product": 24.09143672429847,
+   "large_truck_product": 27.29121918278311,
+   "motorcycle_max_trips": 5,
+   "product_demand": 325,
+   "max_total_trips": 8
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   600.0,
+   187.75519043367197,
+   502.67764405168117,
+   null,
+   823.3888937201734,
+   null
+  ],
+  "B-structured": [
+   640.0,
+   187.75519043367197,
+   523.869532829204,
+   null,
+   823.3888937201734,
+   null
+  ],
+  "C-direct": [
+   600.0,
+   175.20004120822028,
+   452.89250130489546,
+   null,
+   797.8542841125193,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "no_feasible_solution",
+   "optimal",
+   "no_feasible_solution"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  4
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 2]",
+  "A-direct vs C-direct: diverge on instance(s) [1, 2, 4]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 4]"
+ ],
+ "notes": []
+}

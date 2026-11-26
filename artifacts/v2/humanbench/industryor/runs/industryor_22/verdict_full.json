@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand_A": 240,
+   "demand_B": 80,
+   "demand_C": 120,
+   "supply_A_per_truck": 4,
+   "supply_B_per_truck": 2,
+   "supply_C_per_truck_A": 6,
+   "supply_A_per_truck_B": 7,
+   "supply_B_per_truck_B": 2,
+   "supply_C_per_truck_B": 2,
+   "cost_per_truck_A": 200,
+   "cost_per_truck_B": 160
+  },
+  {
+   "demand_A": 273.4624316298921,
+   "demand_B": 42.00086041781336,
+   "demand_C": 93.00351820429431,
+   "supply_A_per_truck": 2.892842952595291,
+   "supply_B_per_truck": 2.472942428328025,
+   "supply_C_per_truck_A": 7.060196924537468,
+   "supply_A_per_truck_B": 9.745256973933918,
+   "supply_B_per_truck_B": 1.1738776652588323,
+   "supply_C_per_truck_B": 1.8438436393705409,
+   "cost_per_truck_A": 105.95944388761407,
+   "cost_per_truck_B": 114.98207596857654
+  },
+  {
+   "demand_A": 241.28526914480693,
+   "demand_B": 42.12287757470909,
+   "demand_C": 83.86051808239782,
+   "supply_A_per_truck": 4.599537751118093,
+   "supply_B_per_truck": 2.0898829612064334,
+   "supply_C_per_truck_A": 4.32264373224418,
+   "supply_A_per_truck_B": 7.624859787131361,
+   "supply_B_per_truck_B": 2.618860913355653,
+   "supply_C_per_truck_B": 1.012997519356122,
+   "cost_per_truck_A": 261.1638503665616,
+   "cost_per_truck_B": 191.70230319811628
+  },
+  {
+   "demand_A": 201.66012396431805,
+   "demand_B": 52.43835998494252,
+   "demand_C": 174.86556866481376,
+   "supply_A_per_truck": 3.346378180450507,
+   "supply_B_per_truck": 1.1854916867602958,
+   "supply_C_per_truck_A": 3.580298261000784,
+   "supply_A_per_truck_B": 9.432460564432217,
+   "supply_B_per_truck_B": 2.207452062733782,
+   "supply_C_per_truck_B": 2.61425654654876,
+   "cost_per_truck_A": 245.94635733876356,
+   "cost_per_truck_B": 165.79649463275211
+  },
+  {
+   "demand_A": 353.5477833550489,
+   "demand_B": 70.28275017666827,
+   "demand_C": 126.24487575278722,
+   "supply_A_per_truck": 5.317618657011979,
+   "supply_B_per_truck": 2.237039504728492,
+   "supply_C_per_truck_A": 8.170241401864665,
+   "supply_A_per_truck_B": 7.541465016797334,
+   "supply_B_per_truck_B": 2.409143672429847,
+   "supply_C_per_truck_B": 1.0916487673113244,
+   "cost_per_truck_A": 145.57965513030936,
+   "cost_per_truck_B": 126.30207417633714
+  },
+  {
+   "demand_A": 139.1500744616706,
+   "demand_B": 58.62327090888242,
+   "demand_C": 72.1201715291675,
+   "supply_A_per_truck": 3.1118944124403685,
+   "supply_B_per_truck": 2.2713688885288006,
+   "supply_C_per_truck_A": 5.188993073820505,
+   "supply_A_per_truck_B": 6.091266769818178,
+   "supply_B_per_truck_B": 1.4190140615429754,
+   "supply_C_per_truck_B": 1.5339556440982267,
+   "cost_per_truck_A": 287.3309175424988,
+   "cost_per_truck_B": 183.68566163945496
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   6800.0,
+   3681.595637094826,
+   8097.491246005478,
+   11089.99740475478,
+   6494.442460600576,
+   7475.195100741279
+  ],
+  "B-structured": [
+   6800.0,
+   3731.250082396288,
+   8257.149181886653,
+   11108.365140394391,
+   6634.181592532916,
+   7512.660416744629
+  ],
+  "C-direct": [
+   6800.0,
+   3731.2500823962887,
+   8257.149181886653,
+   11108.365140394391,
+   6634.181592532916,
+   7512.660416744628
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 159.7 on instance 2 (params: {'demand_A': 241.29, 'demand_B': 42.12, 'demand_C': 83.86, 'supply_A_per_truck': 4.6, 'supply_B_per_truck': 2.09, 'supply_C_per_truck_A': 4.32, 'supply_A_per_truck_B': 7.62, 'supply_B_per_truck_B': 2.62, 'supply_C_per_truck_B': 1.01, 'cost_per_truck_A': 261.16, 'cost_per_truck_B': 191.7})"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     10,
+     12,
+     17,
+     34
+    ],
+    [
+     10,
+     0,
+     18,
+     8,
+     46
+    ],
+    [
+     12,
+     18,
+     0,
+     9,
+     27
+    ],
+    [
+     17,
+     8,
+     9,
+     0,
+     20
+    ],
+    [
+     34,
+     46,
+     27,
+     20,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "supply": {
+   "base": [
+    115,
+    385,
+    410,
+    480,
+    610
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "demand": {
+   "base": [
+    300,
+    400,
+    800,
+    200,
+    300
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Unit cost of moving a freight car between regions; symmetric 5x5 cost matrix with zero diagonal",
+    "base": [
+     [
+      0,
+      10,
+      12,
+      17,
+      34
+     ],
+     [
+      10,
+      0,
+      18,
+      8,
+      46
+     ],
+     [
+      12,
+      18,
+      0,
+      9,
+      27
+     ],
+     [
+      17,
+      8,
+      9,
+      0,
+      20
+     ],
+     [
+      34,
+      46,
+      27,
+      20,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "supply": {
+    "meaning": "Current number of cars available in each region (supply)",
+    "base": [
+     115,
+     385,
+     410,
+     480,
+     610
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "demand": {
+    "meaning": "Number of cars needed for harvest shipping in each region (demand)",
+    "base": [
+     300,
+     400,
+     800,
+     200,
+     300
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

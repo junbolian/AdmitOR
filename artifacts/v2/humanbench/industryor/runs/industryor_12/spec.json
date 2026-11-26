@@ -1,0 +1,482 @@
+{
+ "spec": {
+  "tech_prep_A": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tech_prep_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "tech_prep_C": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_B": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "labor_C": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "material_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "material_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "material_C": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_tech_prep": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_labor": {
+   "base": 700,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_material": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "profit_A_tier1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 20.0,
+    "integer": false
+   }
+  },
+  "profit_A_tier2": {
+   "base": 9,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "profit_A_tier3": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "profit_A_tier4": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "profit_B_tier1": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "profit_B_tier2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "profit_B_tier3": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "profit_C_tier1": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "profit_C_tier2": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "breakpoint_A_1": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "breakpoint_A_2": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "breakpoint_A_3": {
+   "base": 150,
+   "perturb": {
+    "mode": "abs",
+    "lo": 150.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  },
+  "breakpoint_B_1": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "breakpoint_B_2": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "breakpoint_C_1": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[breakpoint_A_1] degenerate abs range (lo == hi); perturbation has no effect",
+  "[breakpoint_A_2] degenerate abs range (lo == hi); perturbation has no effect",
+  "[breakpoint_A_3] degenerate abs range (lo == hi); perturbation has no effect",
+  "[breakpoint_B_1] degenerate abs range (lo == hi); perturbation has no effect",
+  "[breakpoint_B_2] degenerate abs range (lo == hi); perturbation has no effect",
+  "[breakpoint_C_1] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "tech_prep_A": {
+    "meaning": "technical preparation hours per unit of A",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tech_prep_B": {
+    "meaning": "technical preparation hours per unit of B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "tech_prep_C": {
+    "meaning": "technical preparation hours per unit of C",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_A": {
+    "meaning": "direct labor hours per unit of A",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_B": {
+    "meaning": "direct labor hours per unit of B",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "labor_C": {
+    "meaning": "direct labor hours per unit of C",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "material_A": {
+    "meaning": "kilograms of material per unit of A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "material_B": {
+    "meaning": "kilograms of material per unit of B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "material_C": {
+    "meaning": "kilograms of material per unit of C",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_tech_prep": {
+    "meaning": "available technical preparation hours",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_labor": {
+    "meaning": "available direct labor hours",
+    "base": 700,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_material": {
+    "meaning": "available material kilograms",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "profit_A_tier1": {
+    "meaning": "profit per unit of A for sales volume 0-40",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 20,
+     "integer": false
+    }
+   },
+   "profit_A_tier2": {
+    "meaning": "profit per unit of A for sales volume 40-100",
+    "base": 9,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "profit_A_tier3": {
+    "meaning": "profit per unit of A for sales volume 100-150",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "profit_A_tier4": {
+    "meaning": "profit per unit of A for sales volume above 150",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "profit_B_tier1": {
+    "meaning": "profit per unit of B for sales volume 0-50",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "profit_B_tier2": {
+    "meaning": "profit per unit of B for sales volume 50-100",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "profit_B_tier3": {
+    "meaning": "profit per unit of B for sales volume above 100",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "profit_C_tier1": {
+    "meaning": "profit per unit of C for sales volume 0-100",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "profit_C_tier2": {
+    "meaning": "profit per unit of C for sales volume above 100",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "breakpoint_A_1": {
+    "meaning": "cumulative sales volume breakpoint for A tier 1 to 2",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "breakpoint_A_2": {
+    "meaning": "cumulative sales volume breakpoint for A tier 2 to 3",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "breakpoint_A_3": {
+    "meaning": "cumulative sales volume breakpoint for A tier 3 to 4",
+    "base": 150,
+    "perturb": {
+     "mode": "abs",
+     "lo": 150,
+     "hi": 150,
+     "integer": true
+    }
+   },
+   "breakpoint_B_1": {
+    "meaning": "cumulative sales volume breakpoint for B tier 1 to 2",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "breakpoint_B_2": {
+    "meaning": "cumulative sales volume breakpoint for B tier 2 to 3",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "breakpoint_C_1": {
+    "meaning": "cumulative sales volume breakpoint for C tier 1 to 2",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 100,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

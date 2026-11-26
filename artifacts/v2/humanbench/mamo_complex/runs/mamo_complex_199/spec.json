@@ -1,0 +1,318 @@
+{
+ "spec": {
+  "protein_bread": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_bread": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_bread": {
+   "base": 130,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_bread": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_milk": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_milk": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_milk": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_milk": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_fish": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_fish": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "calorie_fish": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_fish": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_potato": {
+   "base": 1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_potato": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_potato": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_potato": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_protein": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "req_carbs": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 25.0,
+    "hi": 80.0,
+    "integer": false
+   }
+  },
+  "req_calories": {
+   "base": 400,
+   "perturb": {
+    "mode": "abs",
+    "lo": 250.0,
+    "hi": 800.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_bread": {
+    "meaning": "grams of protein per unit of bread",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_bread": {
+    "meaning": "grams of carbohydrates per unit of bread",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_bread": {
+    "meaning": "calories per unit of bread",
+    "base": 130,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_bread": {
+    "meaning": "cost in dollars per unit of bread",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_milk": {
+    "meaning": "grams of protein per unit of milk",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_milk": {
+    "meaning": "grams of carbohydrates per unit of milk",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_milk": {
+    "meaning": "calories per unit of milk",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_milk": {
+    "meaning": "cost in dollars per unit of milk",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_fish": {
+    "meaning": "grams of protein per unit of fish",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_fish": {
+    "meaning": "grams of carbohydrates per unit of fish",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "calorie_fish": {
+    "meaning": "calories per unit of fish",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_fish": {
+    "meaning": "cost in dollars per unit of fish",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_potato": {
+    "meaning": "grams of protein per unit of potato",
+    "base": 1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_potato": {
+    "meaning": "grams of carbohydrates per unit of potato",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_potato": {
+    "meaning": "calories per unit of potato",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_potato": {
+    "meaning": "cost in dollars per unit of potato",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_protein": {
+    "meaning": "minimum daily protein requirement in grams",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "req_carbs": {
+    "meaning": "minimum daily carbohydrate requirement in grams",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 25,
+     "hi": 80,
+     "integer": false
+    }
+   },
+   "req_calories": {
+    "meaning": "minimum daily calorie requirement",
+    "base": 400,
+    "perturb": {
+     "mode": "abs",
+     "lo": 250,
+     "hi": 800,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

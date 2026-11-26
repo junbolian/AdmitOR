@@ -1,0 +1,330 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "setup_cost_A": 0,
+   "setup_cost_B": 0,
+   "setup_cost_C": 0,
+   "processing_cost_A": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_B": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_C": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_parts_on_C": 3
+  },
+  {
+   "setup_cost_A": 63.942679845788376,
+   "setup_cost_B": 2.5010755222666936,
+   "setup_cost_C": 27.502931836911927,
+   "processing_cost_A": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_B": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_C": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_parts_on_C": 3
+  },
+  {
+   "setup_cost_A": 73.64712141640123,
+   "setup_cost_B": 67.66994874229113,
+   "setup_cost_C": 89.21795677048453,
+   "processing_cost_A": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_B": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_C": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_parts_on_C": 2
+  },
+  {
+   "setup_cost_A": 42.192181968527045,
+   "setup_cost_B": 2.9797219438070344,
+   "setup_cost_C": 21.863797480360336,
+   "processing_cost_A": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_B": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_C": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_parts_on_C": 5
+  },
+  {
+   "setup_cost_A": 2.6535969683863625,
+   "setup_cost_B": 19.88376506866485,
+   "setup_cost_C": 64.98844377795233,
+   "processing_cost_A": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_B": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_C": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_parts_on_C": 5
+  },
+  {
+   "setup_cost_A": 22.044062204069668,
+   "setup_cost_B": 58.92656838759087,
+   "setup_cost_C": 80.94304566778267,
+   "processing_cost_A": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_B": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "processing_cost_C": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "max_parts_on_C": 1
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   0.0,
+   93.94668720496699,
+   230.5350269291769,
+   67.03570139269442,
+   87.52580581500354,
+   161.9136762594432
+  ],
+  "B-structured": [
+   0.0,
+   93.94668720496699,
+   230.5350269291769,
+   67.03570139269442,
+   87.52580581500354,
+   161.9136762594432
+  ],
+  "C-direct": [
+   0.0,
+   93.94668720496699,
+   230.5350269291769,
+   67.03570139269442,
+   87.52580581500354,
+   161.9136762594432
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,108 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "initial_capital": 100000,
+   "profit_rate_1yr": 0.7,
+   "profit_rate_2yr": 2.0
+  },
+  {
+   "initial_capital": 113942.67984578837,
+   "profit_rate_1yr": -0.15748171612146622,
+   "profit_rate_2yr": 0.7376319326610368
+  },
+  {
+   "initial_capital": 72321.07381488227,
+   "profit_rate_1yr": 1.052001064078821,
+   "profit_rate_2yr": 2.5451476934031008
+  },
+  {
+   "initial_capital": 139217.95677048454,
+   "profit_rate_1yr": -0.05220398452999256,
+   "profit_rate_2yr": 1.398648188583717
+  },
+  {
+   "initial_capital": 52979.72194380703,
+   "profit_rate_1yr": 0.17168455716612568,
+   "profit_rate_2yr": 1.7740987964651307
+  },
+  {
+   "initial_capital": 52653.596968386366,
+   "profit_rate_1yr": 0.13802400616730243,
+   "profit_rate_2yr": 2.4244799700078543
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   510000.0,
+   197990.438993015,
+   624881.4187114271,
+   333934.899825849,
+   172203.630993631,
+   205198.46071471556
+  ],
+  "B-structured": [
+   510000.0,
+   197990.438993015,
+   624881.418711427,
+   333934.899825849,
+   172203.630993631,
+   205198.46071471556
+  ],
+  "C-direct": [
+   410000.0,
+   84047.75914722664,
+   552560.3448965447,
+   194716.94305536445,
+   119223.90904982397,
+   152544.8637463292
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "diverges from consensus by 1.392e+05 on instance 3 (params: {'initial_capital': 139217.96, 'profit_rate_1yr': -0.05, 'profit_rate_2yr': 1.4})"
+ },
+ "disagreements": [],
+ "notes": []
+}

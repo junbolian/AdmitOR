@@ -1,0 +1,228 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "sales_price": 300,
+   "raw_material_cost": 90,
+   "outsourcing_cost": 200,
+   "inventory_holding_cost": 15,
+   "backorder_cost": 35,
+   "labor_hours_per_unit": 5,
+   "regular_hours_per_worker": 160,
+   "regular_wage_per_hour": 30,
+   "max_overtime_hours_per_worker": 20,
+   "overtime_wage_per_hour": 40,
+   "hiring_cost": 5000,
+   "firing_cost": 8000,
+   "initial_workforce": 1000,
+   "initial_inventory": 15000,
+   "terminal_min_inventory": 10000,
+   "demand": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ]
+  },
+  {
+   "sales_price": 325.09682372241906,
+   "raw_material_cost": 55.80077437603202,
+   "outsourcing_cost": 173.0035182042943,
+   "inventory_holding_cost": 10.044483216697024,
+   "backorder_cost": 77.3294774872213,
+   "labor_hours_per_unit": 5.353398974845822,
+   "regular_hours_per_worker": 191.37436541638763,
+   "regular_wage_per_hour": 22.564898987329492,
+   "max_overtime_hours_per_worker": 25.315309181116227,
+   "overtime_wage_per_hour": 28.71513326651369,
+   "hiring_cost": 3593.189874018017,
+   "firing_cost": 8042.842304826898,
+   "initial_workforce": 1000,
+   "initial_inventory": 15000,
+   "terminal_min_inventory": 796,
+   "demand": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ]
+  },
+  {
+   "sales_price": 245.7907771235967,
+   "raw_material_cost": 100.79167952012568,
+   "outsourcing_cost": 205.392977672386,
+   "inventory_holding_cost": 9.919827991831351,
+   "backorder_cost": 61.87289680697042,
+   "labor_hours_per_unit": 5.618860913355653,
+   "regular_hours_per_worker": 120.51990077424489,
+   "regular_wage_per_hour": 35.50474653299054,
+   "max_overtime_hours_per_worker": 41.88836369929361,
+   "overtime_wage_per_hour": 36.1660123964318,
+   "hiring_cost": 3277.3974990589077,
+   "firing_cost": 11657.70457765425,
+   "initial_workforce": 1000,
+   "initial_inventory": 15000,
+   "terminal_min_inventory": 10098,
+   "demand": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ]
+  },
+  {
+   "sales_price": 226.69425180842663,
+   "raw_material_cost": 60.96357913200941,
+   "outsourcing_cost": 241.69932396169517,
+   "inventory_holding_cost": 27.1676714115101,
+   "backorder_cost": 84.74846869380993,
+   "labor_hours_per_unit": 5.4594635733876355,
+   "regular_hours_per_worker": 162.89824731637606,
+   "regular_wage_per_hour": 38.51608375162867,
+   "max_overtime_hours_per_worker": 22.71206263250121,
+   "overtime_wage_per_hour": 41.24897515055744,
+   "hiring_cost": 6647.023321264975,
+   "firing_cost": 8948.158018913968,
+   "initial_workforce": 1000,
+   "initial_inventory": 15000,
+   "terminal_min_inventory": 25851,
+   "demand": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ]
+  },
+  {
+   "sales_price": 313.9233861462171,
+   "raw_material_cost": 104.72917220747449,
+   "outsourcing_cost": 145.49892603867946,
+   "inventory_holding_cost": 10.255422404319608,
+   "backorder_cost": 30.385736178221254,
+   "labor_hours_per_unit": 4.159583953847255,
+   "regular_hours_per_worker": 138.6232709088824,
+   "regular_wage_per_hour": 22.818025729375123,
+   "max_overtime_hours_per_worker": 16.678416186605528,
+   "overtime_wage_per_hour": 43.2564266623456,
+   "hiring_cost": 4324.160894850421,
+   "firing_cost": 6961.447736935062,
+   "initial_workforce": 1000,
+   "initial_inventory": 15000,
+   "terminal_min_inventory": 6285,
+   "demand": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ]
+  },
+  {
+   "sales_price": 258.0560079688404,
+   "raw_material_cost": 121.43913031529956,
+   "outsourcing_cost": 217.76424622959124,
+   "inventory_holding_cost": 27.41089525501447,
+   "backorder_cost": 17.969558060800182,
+   "labor_hours_per_unit": 5.458253595900699,
+   "regular_hours_per_worker": 133.07219950095427,
+   "regular_wage_per_hour": 27.83019795163766,
+   "max_overtime_hours_per_worker": 59.371401038195714,
+   "overtime_wage_per_hour": 43.35999423649823,
+   "hiring_cost": 5284.748718873231,
+   "firing_cost": 9476.914007918997,
+   "initial_workforce": 1000,
+   "initial_inventory": 15000,
+   "terminal_min_inventory": 25286,
+   "demand": [
+    20000,
+    40000,
+    42000,
+    35000,
+    19000,
+    18500
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   10350000.0,
+   24698065.1379538,
+   -3701622.6199294557,
+   -12611705.52201427,
+   23632188.362446204,
+   -4513456.057259474
+  ],
+  "B-structured": [
+   10349920.0,
+   24705257.39974435,
+   -3701622.619929456,
+   -12612091.906450124,
+   23632188.362446204,
+   -4679030.197339851
+  ],
+  "C-direct": [
+   10350000.0,
+   24705280.140490156,
+   -3701622.619929457,
+   -12611705.522014279,
+   23632188.3624462,
+   -4678679.458158225
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1.656e+05 on instance 5 (params: {'sales_price': 258.06, 'raw_material_cost': 121.44, 'outsourcing_cost': 217.76, 'inventory_holding_cost': 27.41, 'backorder_cost': 17.97, 'labor_hours_per_unit': 5.46, 'regular_hours_per_worker': 133.07, 'regular_wage_per_hour': 27.83, 'max_overtime_hours_per_worker': 59.37, 'overtime_wage_per_hour': 43.36, 'hiring_cost': 5284.75, 'firing_cost': 9476.91, 'initial_workforce': 1000, 'initial_inventory': 15000, 'terminal_min_inventory': 25286, 'demand': [20000, 40000, 42000, 35000, 19000, 18500]})"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,281 @@
+{
+ "spec": {
+  "supply_I": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_I_prime": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "supply_II": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_I": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_I_prime": {
+   "base": 4.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_II": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price_red": {
+   "base": 5.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "price_yellow": {
+   "base": 5.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "price_blue": {
+   "base": 4.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "red_min_output": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "red_gradeI_upper_frac": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.05,
+    "hi": 0.2,
+    "integer": false
+   }
+  },
+  "red_gradeI_lower_frac": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.35,
+    "hi": 0.65,
+    "integer": false
+   }
+  },
+  "yellow_gradeII_upper_frac": {
+   "base": 0.7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.55,
+    "hi": 0.85,
+    "integer": false
+   }
+  },
+  "yellow_gradeI_lower_frac": {
+   "base": 0.2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 0.35,
+    "integer": false
+   }
+  },
+  "blue_gradeI_upper_frac": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.35,
+    "hi": 0.65,
+    "integer": false
+   }
+  },
+  "blue_gradeI_lower_frac": {
+   "base": 0.1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.03,
+    "hi": 0.2,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply_I": {
+    "meaning": "Daily supply of grade I wine (kg); first row, labeled I in table",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_I_prime": {
+    "meaning": "Daily supply of grade I wine (kg); second row, also labeled I in table",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "supply_II": {
+    "meaning": "Daily supply of grade II wine (kg)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_I": {
+    "meaning": "Unit cost of grade I wine (元/kg), first row",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_I_prime": {
+    "meaning": "Unit cost of grade I wine (元/kg), second row",
+    "base": 4.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_II": {
+    "meaning": "Unit cost of grade II wine (元/kg)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price_red": {
+    "meaning": "Selling price of red brand (元/kg)",
+    "base": 5.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "price_yellow": {
+    "meaning": "Selling price of yellow brand (元/kg)",
+    "base": 5.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "price_blue": {
+    "meaning": "Selling price of blue brand (元/kg)",
+    "base": 4.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "red_min_output": {
+    "meaning": "Minimum daily production of red brand (kg)",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "red_gradeI_upper_frac": {
+    "meaning": "Red brand: maximum fraction of grade I (first grade-I row constraint: I less than 10%)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.05,
+     "hi": 0.2,
+     "integer": false
+    }
+   },
+   "red_gradeI_lower_frac": {
+    "meaning": "Red brand: minimum fraction of grade I (second constraint: I more than 50%)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.35,
+     "hi": 0.65,
+     "integer": false
+    }
+   },
+   "yellow_gradeII_upper_frac": {
+    "meaning": "Yellow brand: maximum fraction of grade II (II less than 70%)",
+    "base": 0.7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.55,
+     "hi": 0.85,
+     "integer": false
+    }
+   },
+   "yellow_gradeI_lower_frac": {
+    "meaning": "Yellow brand: minimum fraction of grade I (I more than 20%)",
+    "base": 0.2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 0.35,
+     "integer": false
+    }
+   },
+   "blue_gradeI_upper_frac": {
+    "meaning": "Blue brand: maximum fraction of grade I (I less than 50%)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.35,
+     "hi": 0.65,
+     "integer": false
+    }
+   },
+   "blue_gradeI_lower_frac": {
+    "meaning": "Blue brand: minimum fraction of grade I (I more than 10%)",
+    "base": 0.1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.03,
+     "hi": 0.2,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

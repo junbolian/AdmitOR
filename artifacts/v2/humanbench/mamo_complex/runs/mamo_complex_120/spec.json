@@ -1,0 +1,178 @@
+{
+ "spec": {
+  "protein_grams": {
+   "base": [
+    15,
+    20,
+    15,
+    19,
+    19,
+    12
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs_grams": {
+   "base": [
+    30,
+    16,
+    8,
+    5,
+    28,
+    17
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    154,
+    111,
+    211,
+    87,
+    98,
+    231
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    3,
+    8,
+    7,
+    2,
+    9,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_target": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carb_target": {
+   "base": 111,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "calorie_target": {
+   "base": 2196,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_grams": {
+    "meaning": "protein content per food item (g)",
+    "base": [
+     15,
+     20,
+     15,
+     19,
+     19,
+     12
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs_grams": {
+    "meaning": "carbohydrate content per food item (g)",
+    "base": [
+     30,
+     16,
+     8,
+     5,
+     28,
+     17
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "calorie content per food item (kcal)",
+    "base": [
+     154,
+     111,
+     211,
+     87,
+     98,
+     231
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "cost per food item ($)",
+    "base": [
+     3,
+     8,
+     7,
+     2,
+     9,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_target": {
+    "meaning": "minimum protein requirement (g)",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carb_target": {
+    "meaning": "minimum carbohydrate requirement (g)",
+    "base": 111,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "calorie_target": {
+    "meaning": "minimum calorie requirement (kcal)",
+    "base": 2196,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

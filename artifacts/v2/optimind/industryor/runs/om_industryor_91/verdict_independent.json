@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_A1": 24,
+   "profit_A2": 16,
+   "milk_supply": 50,
+   "labor_hours": 480,
+   "A1_per_barrel": 3,
+   "A2_per_barrel": 4,
+   "hours_per_barrel_A1": 12,
+   "hours_per_barrel_A2": 8,
+   "A1_capacity": 100
+  },
+  {
+   "profit_A1": 38.36560790747303,
+   "profit_A2": 1.0004302089066774,
+   "milk_supply": 42,
+   "labor_hours": 356,
+   "A1_per_barrel": 4.814120463738056,
+   "A2_per_barrel": 6.060196924537468,
+   "hours_per_barrel_A1": 22.059232218687217,
+   "hours_per_barrel_A2": 5.043265991552994,
+   "A1_capacity": 107.50749114964327
+  },
+  {
+   "profit_A1": 1.7878331662842206,
+   "profit_A2": 8.745518992144135,
+   "milk_supply": 60,
+   "labor_hours": 219,
+   "A1_per_barrel": 2.3947694280899183,
+   "A2_per_barrel": 5.89930662667714,
+   "hours_per_barrel_A1": 15.8089466508579,
+   "hours_per_barrel_A2": 6.64528746448836,
+   "A1_capacity": 134.2825094201454
+  },
+  {
+   "profit_A1": 48.5658274006696,
+   "profit_A2": 0.2599503871224407,
+   "milk_supply": 84,
+   "labor_hours": 689,
+   "A1_per_barrel": 3.0311273243309635,
+   "A2_per_barrel": 2.9328769988706895,
+   "hours_per_barrel_A1": 23.229835299722062,
+   "hours_per_barrel_A2": 8.03913454135152,
+   "A1_capacity": 54.83933494082366
+  },
+  {
+   "profit_A1": 5.802982610007841,
+   "profit_A2": 33.89977465389839,
+   "milk_supply": 68,
+   "labor_hours": 765,
+   "A1_per_barrel": 4.78379304012218,
+   "A2_per_barrel": 5.217368548728205,
+   "hours_per_barrel_A1": 23.51608375162867,
+   "hours_per_barrel_A2": 8.542412526500241,
+   "A1_capacity": 128.32650100371632
+  },
+  {
+   "profit_A1": 49.764279855179694,
+   "profit_A2": 24.740790094569842,
+   "milk_supply": 89,
+   "labor_hours": 604,
+   "A1_per_barrel": 4.670573262967156,
+   "A2_per_barrel": 2.2749463019339733,
+   "hours_per_barrel_A1": 10.102168961727843,
+   "hours_per_barrel_A2": 7.4726555632252865,
+   "A1_capacity": 52.7667163077804
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   3360.0,
+   2980.702575812064,
+   1700.2661139844165,
+   2688.802532190187,
+   12026.998029999166,
+   6315.584422637008
+  ],
+  "B-structured": [
+   3360.0,
+   2980.702575812064,
+   1700.2661139844165,
+   2688.802532190187,
+   12026.998029999166,
+   6315.584422637008
+  ],
+  "C-direct": [
+   3360.0,
+   2980.702575812064,
+   1700.2661139844165,
+   2688.802532190187,
+   12026.998029999166,
+   6315.584422637008
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

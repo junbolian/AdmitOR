@@ -1,0 +1,202 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_1_3": 13,
+   "cost_1_4": 11,
+   "cost_1_5": 28,
+   "cost_2_3": 18,
+   "cost_2_4": 8,
+   "cost_2_5": 46,
+   "cost_3_4": 9,
+   "cost_3_5": 27,
+   "cost_4_5": 20,
+   "supply_1": 120,
+   "supply_2": 330,
+   "supply_3": 400,
+   "supply_4": 400,
+   "supply_5": 600,
+   "demand_1": 150,
+   "demand_2": 200,
+   "demand_3": 600,
+   "demand_4": 200,
+   "demand_5": 400
+  },
+  {
+   "cost_1_3": 14.812548379952487,
+   "cost_1_4": 5.775118307449336,
+   "cost_1_5": 21.70082091433534,
+   "cost_2_3": 13.01779328667881,
+   "cost_2_4": 9.8917697133121,
+   "cost_2_5": 54.12817642145392,
+   "cost_3_4": 12.529616109343609,
+   "cost_3_5": 15.847348480994237,
+   "cost_4_5": 18.43843639370541,
+   "supply_1": 83,
+   "supply_2": 283,
+   "supply_3": 401,
+   "supply_4": 305,
+   "supply_5": 500,
+   "demand_1": 172,
+   "demand_2": 210,
+   "demand_3": 544,
+   "demand_4": 215,
+   "demand_5": 478
+  },
+  {
+   "cost_1_3": 6.584483875814794,
+   "cost_1_4": 14.364011770160888,
+   "cost_1_5": 33.547903059670354,
+   "cost_2_3": 15.124509297323854,
+   "cost_2_4": 5.243835998494252,
+   "cost_2_5": 67.03180132151194,
+   "cost_3_4": 7.529350906013641,
+   "cost_3_5": 16.004137771263995,
+   "cost_4_5": 11.93432753666928,
+   "supply_1": 156,
+   "supply_2": 341,
+   "supply_3": 461,
+   "supply_4": 446,
+   "supply_5": 584,
+   "demand_1": 198,
+   "demand_2": 192,
+   "demand_3": 610,
+   "demand_4": 241,
+   "demand_5": 436
+  },
+  {
+   "cost_1_3": 17.702189704040105,
+   "cost_1_4": 11.850873597824382,
+   "cost_1_5": 33.72801141401786,
+   "cost_2_3": 9.82483890580192,
+   "cost_2_4": 5.823186205212375,
+   "cost_2_5": 36.311846325696926,
+   "cost_3_4": 5.2181277923126475,
+   "cost_3_5": 19.785353931747814,
+   "cost_4_5": 12.020028588194583,
+   "supply_1": 105,
+   "supply_2": 345,
+   "supply_3": 373,
+   "supply_4": 374,
+   "supply_5": 502,
+   "demand_1": 141,
+   "demand_2": 253,
+   "demand_3": 630,
+   "demand_4": 217,
+   "demand_5": 338
+  },
+  {
+   "cost_1_3": 15.978648373354542,
+   "cost_1_4": 7.297427431381212,
+   "cost_1_5": 24.62475236921414,
+   "cost_2_3": 26.811420311458715,
+   "cost_2_4": 9.119998078832744,
+   "cost_2_5": 48.61968821363373,
+   "cost_3_4": 10.66152825890887,
+   "cost_3_5": 36.25700184512486,
+   "cost_4_5": 25.519998230924898,
+   "supply_1": 101,
+   "supply_2": 255,
+   "supply_3": 363,
+   "supply_4": 354,
+   "supply_5": 503,
+   "demand_1": 195,
+   "demand_2": 246,
+   "demand_3": 563,
+   "demand_4": 222,
+   "demand_5": 387
+  },
+  {
+   "cost_1_3": 18.389118666627066,
+   "cost_1_4": 10.547370378461387,
+   "cost_1_5": 21.41664466194547,
+   "cost_2_3": 13.439295138491701,
+   "cost_2_4": 8.490945073305205,
+   "cost_2_5": 35.08611399205502,
+   "cost_3_4": 9.761273912011866,
+   "cost_3_5": 37.74121785726688,
+   "cost_4_5": 17.988010102807944,
+   "supply_1": 100,
+   "supply_2": 400,
+   "supply_3": 402,
+   "supply_4": 318,
+   "supply_5": 462,
+   "demand_1": 129,
+   "demand_2": 219,
+   "demand_3": 658,
+   "demand_4": 196,
+   "demand_5": 314
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   2370.0,
+   null,
+   1715.0,
+   2720.0,
+   null,
+   3404.0
+  ],
+  "C-direct": [
+   2370.0,
+   null,
+   1715.0,
+   2720.0,
+   null,
+   3404.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "optimal",
+   "optimal",
+   "solve_failed",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 2, 3, 5]: ['infeasible_or_failed', 'infeasible_or_failed', 'infeasible_or_failed', 'infeasible_or_failed']"
+ },
+ "disagreements": [],
+ "notes": []
+}

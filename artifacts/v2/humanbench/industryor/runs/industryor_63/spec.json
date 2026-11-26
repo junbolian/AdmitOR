@@ -1,0 +1,243 @@
+{
+ "spec": {
+  "profit_A": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_B": {
+   "base": 450,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_target": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "time_I_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_I_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_II_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "time_II_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cap_I": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cap_II": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "overtime_cap_II": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "min_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "min_B": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "overtime_penalty_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 300.0,
+    "integer": false
+   }
+  },
+  "overtime_penalty_B": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 450.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_A": {
+    "meaning": "Unit profit of model A (RMB per unit)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_B": {
+    "meaning": "Unit profit of model B (RMB per unit)",
+    "base": 450,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_target": {
+    "meaning": "p1 target: minimum total weekly profit (RMB)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "time_I_A": {
+    "meaning": "Process I hours per unit of model A",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_I_B": {
+    "meaning": "Process I hours per unit of model B",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_II_A": {
+    "meaning": "Process II hours per unit of model A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "time_II_B": {
+    "meaning": "Process II hours per unit of model B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cap_I": {
+    "meaning": "Maximum regular processing capacity for process I (hours/week)",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cap_II": {
+    "meaning": "Maximum regular processing capacity for process II (hours/week)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "overtime_cap_II": {
+    "meaning": "Maximum overtime hours per week for process II",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "min_A": {
+    "meaning": "Contractual minimum weekly production of model A (units)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "min_B": {
+    "meaning": "Contractual minimum weekly production of model B (units)",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "overtime_penalty_A": {
+    "meaning": "Profit decrease per unit of model A produced in process II overtime (RMB/unit)",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 300,
+     "integer": false
+    }
+   },
+   "overtime_penalty_B": {
+    "meaning": "Profit decrease per unit of model B produced in process II overtime (RMB/unit)",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 450,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

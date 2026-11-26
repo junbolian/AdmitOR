@@ -1,0 +1,166 @@
+{
+ "spec": {
+  "device_A_hours_per_unit": {
+   "base": [
+    8,
+    2,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "device_B_hours_per_unit": {
+   "base": [
+    10,
+    5,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "device_C_hours_per_unit": {
+   "base": [
+    2,
+    13,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "capacity_A": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_B": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_C": {
+   "base": 420,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "unit_profit": {
+   "base": [
+    3,
+    2,
+    2.9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[unit_profit] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "device_A_hours_per_unit": {
+    "meaning": "Processing hours on device A required per unit of products I, II, III",
+    "base": [
+     8,
+     2,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "device_B_hours_per_unit": {
+    "meaning": "Processing hours on device B required per unit of products I, II, III",
+    "base": [
+     10,
+     5,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "device_C_hours_per_unit": {
+    "meaning": "Processing hours on device C required per unit of products I, II, III",
+    "base": [
+     2,
+     13,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "capacity_A": {
+    "meaning": "Monthly capacity of device A (hours)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_B": {
+    "meaning": "Monthly capacity of device B (hours)",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_C": {
+    "meaning": "Monthly capacity of device C (hours)",
+    "base": 420,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "unit_profit": {
+    "meaning": "Unit profit (thousands) for products I, II, III",
+    "base": [
+     3,
+     2,
+     2.9
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0.5,
+      0.5,
+      0.5
+     ],
+     "hi": [
+      5.5,
+      4.5,
+      5.4
+     ],
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

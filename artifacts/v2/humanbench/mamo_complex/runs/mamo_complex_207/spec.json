@@ -1,0 +1,311 @@
+{
+ "spec": {
+  "octane_raw_1": {
+   "base": 86,
+   "perturb": {
+    "mode": "abs",
+    "lo": 84.0,
+    "hi": 90.0,
+    "integer": false
+   }
+  },
+  "octane_raw_2": {
+   "base": 88,
+   "perturb": {
+    "mode": "abs",
+    "lo": 86.0,
+    "hi": 92.0,
+    "integer": false
+   }
+  },
+  "octane_raw_3": {
+   "base": 92,
+   "perturb": {
+    "mode": "abs",
+    "lo": 89.0,
+    "hi": 95.0,
+    "integer": false
+   }
+  },
+  "octane_raw_4": {
+   "base": 96,
+   "perturb": {
+    "mode": "abs",
+    "lo": 93.0,
+    "hi": 99.0,
+    "integer": false
+   }
+  },
+  "availability_raw_1": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "availability_raw_2": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "availability_raw_3": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "availability_raw_4": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_raw_1": {
+   "base": 17.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_raw_2": {
+   "base": 18.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_raw_3": {
+   "base": 20.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_raw_4": {
+   "base": 23.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "octane_min_regular": {
+   "base": 89,
+   "perturb": {
+    "mode": "abs",
+    "lo": 87.0,
+    "hi": 91.0,
+    "integer": false
+   }
+  },
+  "octane_min_premium": {
+   "base": 93,
+   "perturb": {
+    "mode": "abs",
+    "lo": 91.0,
+    "hi": 95.0,
+    "integer": false
+   }
+  },
+  "price_regular": {
+   "base": 19.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price_premium": {
+   "base": 22.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand_max_regular": {
+   "base": 35000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_max_premium": {
+   "base": 23000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "octane_raw_1": {
+    "meaning": "Octane rating of raw gasoline 1",
+    "base": 86,
+    "perturb": {
+     "mode": "abs",
+     "lo": 84,
+     "hi": 90,
+     "integer": false
+    }
+   },
+   "octane_raw_2": {
+    "meaning": "Octane rating of raw gasoline 2",
+    "base": 88,
+    "perturb": {
+     "mode": "abs",
+     "lo": 86,
+     "hi": 92,
+     "integer": false
+    }
+   },
+   "octane_raw_3": {
+    "meaning": "Octane rating of raw gasoline 3",
+    "base": 92,
+    "perturb": {
+     "mode": "abs",
+     "lo": 89,
+     "hi": 95,
+     "integer": false
+    }
+   },
+   "octane_raw_4": {
+    "meaning": "Octane rating of raw gasoline 4",
+    "base": 96,
+    "perturb": {
+     "mode": "abs",
+     "lo": 93,
+     "hi": 99,
+     "integer": false
+    }
+   },
+   "availability_raw_1": {
+    "meaning": "Daily availability of raw gasoline 1 (barrels)",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "availability_raw_2": {
+    "meaning": "Daily availability of raw gasoline 2 (barrels)",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "availability_raw_3": {
+    "meaning": "Daily availability of raw gasoline 3 (barrels)",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "availability_raw_4": {
+    "meaning": "Daily availability of raw gasoline 4 (barrels)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_raw_1": {
+    "meaning": "Cost per barrel of raw gasoline 1 ($)",
+    "base": 17.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_raw_2": {
+    "meaning": "Cost per barrel of raw gasoline 2 ($)",
+    "base": 18.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_raw_3": {
+    "meaning": "Cost per barrel of raw gasoline 3 ($)",
+    "base": 20.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_raw_4": {
+    "meaning": "Cost per barrel of raw gasoline 4 ($)",
+    "base": 23.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "octane_min_regular": {
+    "meaning": "Minimum octane for regular gasoline",
+    "base": 89,
+    "perturb": {
+     "mode": "abs",
+     "lo": 87,
+     "hi": 91,
+     "integer": false
+    }
+   },
+   "octane_min_premium": {
+    "meaning": "Minimum octane for premium gasoline",
+    "base": 93,
+    "perturb": {
+     "mode": "abs",
+     "lo": 91,
+     "hi": 95,
+     "integer": false
+    }
+   },
+   "price_regular": {
+    "meaning": "Selling price per barrel of regular gasoline ($)",
+    "base": 19.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price_premium": {
+    "meaning": "Selling price per barrel of premium gasoline ($)",
+    "base": 22.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand_max_regular": {
+    "meaning": "Maximum daily demand for regular gasoline (barrels)",
+    "base": 35000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_max_premium": {
+    "meaning": "Maximum daily demand for premium gasoline (barrels)",
+    "base": 23000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

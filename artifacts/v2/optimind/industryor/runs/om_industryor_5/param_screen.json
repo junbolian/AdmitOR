@@ -1,0 +1,47 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "reservations",
+  "ending_inventory_required",
+  "production_hours_per_quarter",
+  "hours_per_unit",
+  "delay_penalty",
+  "inventory_cost"
+ ],
+ "safe": [
+  "reservations",
+  "ending_inventory_required",
+  "delay_penalty",
+  "inventory_cost"
+ ],
+ "tests": {
+  "reservations": [
+   2,
+   2
+  ],
+  "ending_inventory_required": [
+   2,
+   2
+  ],
+  "production_hours_per_quarter": [
+   0,
+   0
+  ],
+  "hours_per_unit": [
+   0,
+   0
+  ],
+  "delay_penalty": [
+   2,
+   2
+  ],
+  "inventory_cost": [
+   2,
+   2
+  ]
+ },
+ "untested": []
+}

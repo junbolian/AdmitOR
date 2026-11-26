@@ -1,0 +1,192 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "bw_A_B": 90,
+   "bw_A_C": 85,
+   "bw_A_E": 65,
+   "bw_B_A": 95,
+   "bw_B_C": 70,
+   "bw_B_D": 65,
+   "bw_B_E": 34,
+   "bw_C_A": 60,
+   "bw_C_D": 88,
+   "bw_C_E": 80,
+   "bw_D_A": 67,
+   "bw_D_B": 30,
+   "bw_D_C": 25,
+   "bw_D_E": 84,
+   "bw_E_B": 51,
+   "bw_E_D": 56,
+   "zero_bandwidth": 0
+  },
+  {
+   "bw_A_B": 96,
+   "bw_A_C": 4,
+   "bw_A_E": 41,
+   "bw_B_A": 33,
+   "bw_B_C": 110,
+   "bw_B_D": 102,
+   "bw_B_E": 134,
+   "bw_C_A": 13,
+   "bw_C_D": 63,
+   "bw_C_E": 4,
+   "bw_D_A": 33,
+   "bw_D_B": 76,
+   "bw_D_C": 4,
+   "bw_D_E": 30,
+   "bw_E_B": 97,
+   "bw_E_D": 82,
+   "zero_bandwidth": 0
+  },
+  {
+   "bw_A_B": 88,
+   "bw_A_C": 121,
+   "bw_A_E": 1,
+   "bw_B_A": 121,
+   "bw_B_C": 105,
+   "bw_B_D": 51,
+   "bw_B_E": 23,
+   "bw_C_A": 144,
+   "bw_C_D": 50,
+   "bw_C_E": 14,
+   "bw_D_A": 15,
+   "bw_D_B": 127,
+   "bw_D_C": 91,
+   "bw_D_E": 121,
+   "bw_E_B": 109,
+   "bw_E_D": 80,
+   "zero_bandwidth": 0
+  },
+  {
+   "bw_A_B": 57,
+   "bw_A_C": 83,
+   "bw_A_E": 124,
+   "bw_B_A": 93,
+   "bw_B_C": 129,
+   "bw_B_D": 87,
+   "bw_B_E": 106,
+   "bw_C_A": 7,
+   "bw_C_D": 34,
+   "bw_C_E": 43,
+   "bw_D_A": 12,
+   "bw_D_B": 35,
+   "bw_D_C": 15,
+   "bw_D_E": 42,
+   "bw_E_B": 95,
+   "bw_E_D": 55,
+   "zero_bandwidth": 0
+  },
+  {
+   "bw_A_B": 31,
+   "bw_A_C": 40,
+   "bw_A_E": 140,
+   "bw_B_A": 97,
+   "bw_B_C": 91,
+   "bw_B_D": 26,
+   "bw_B_E": 109,
+   "bw_C_A": 25,
+   "bw_C_D": 57,
+   "bw_C_E": 148,
+   "bw_D_A": 96,
+   "bw_D_B": 84,
+   "bw_D_C": 103,
+   "bw_D_E": 126,
+   "bw_E_B": 116,
+   "bw_E_D": 34,
+   "zero_bandwidth": 0
+  },
+  {
+   "bw_A_B": 47,
+   "bw_A_C": 40,
+   "bw_A_E": 32,
+   "bw_B_A": 141,
+   "bw_B_C": 131,
+   "bw_B_D": 47,
+   "bw_B_E": 98,
+   "bw_C_A": 59,
+   "bw_C_D": 137,
+   "bw_C_E": 69,
+   "bw_D_A": 40,
+   "bw_D_B": 37,
+   "bw_D_C": 84,
+   "bw_D_E": 39,
+   "bw_E_B": 88,
+   "bw_E_D": 135,
+   "zero_bandwidth": 0
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   84.0,
+   63.0,
+   50.0,
+   43.0,
+   91.0,
+   47.0
+  ],
+  "B-structured": [
+   84.0,
+   30.0,
+   50.0,
+   43.0,
+   40.0,
+   47.0
+  ],
+  "C-direct": [
+   84.0,
+   30.0,
+   50.0,
+   43.0,
+   40.0,
+   47.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 51 on instance 4 (params: {'bw_A_B': 31, 'bw_A_C': 40, 'bw_A_E': 140, 'bw_B_A': 97, 'bw_B_C': 91, 'bw_B_D': 26, 'bw_B_E': 109, 'bw_C_A': 25, 'bw_C_D': 57, 'bw_C_E': 148, 'bw_D_A': 96, 'bw_D_B': 84, 'bw_D_C': 103, 'bw_D_E': 126, 'bw_E_B': 116, 'bw_E_D': 34, 'zero_bandwidth': 0})"
+ },
+ "disagreements": [],
+ "notes": []
+}

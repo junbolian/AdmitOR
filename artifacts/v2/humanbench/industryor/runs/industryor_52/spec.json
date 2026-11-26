@@ -1,0 +1,144 @@
+{
+ "spec": {
+  "normal_hours": {
+   "base": [
+    12000,
+    11000,
+    13000,
+    13500,
+    13500,
+    14000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_overtime_hours": {
+   "base": [
+    3000,
+    2500,
+    3300,
+    3500,
+    3500,
+    3800
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "overtime_cost_premium": {
+   "base": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": false
+   }
+  },
+  "penalty_p3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50000.0,
+    "integer": false
+   }
+  },
+  "penalty_p4": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50000.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "normal_hours": {
+    "meaning": "Normal production hours available per month (Jan-Jun), in hours",
+    "base": [
+     12000,
+     11000,
+     13000,
+     13500,
+     13500,
+     14000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_overtime_hours": {
+    "meaning": "Maximum allowable overtime hours per month (Jan-Jun), in hours",
+    "base": [
+     3000,
+     2500,
+     3300,
+     3500,
+     3500,
+     3800
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "overtime_cost_premium": {
+    "meaning": "Extra unit cost C_i' for each product produced during overtime (yuan/unit); values not given in problem, placeholders",
+    "base": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": false
+    }
+   },
+   "penalty_p3": {
+    "meaning": "Penalty per month of delay for product 3 (yuan/month)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50000,
+     "integer": false
+    }
+   },
+   "penalty_p4": {
+    "meaning": "Penalty per month of delay for product 4 (yuan/month)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50000,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

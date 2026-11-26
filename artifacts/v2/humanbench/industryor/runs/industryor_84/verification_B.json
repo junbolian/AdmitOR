@@ -1,0 +1,29 @@
+{
+ "sample_id": "industryor_84",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"content_B_min_2\",\"extracted\":0.15,\"stated\":\"0.15 is the minimum fraction of raw material A in candy type 2, not raw material B.\",\"evidence\":\"A & $\\\\geqslant 60 \\\\%$ & $\\\\geqslant 15 \\\\%$\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "content_B_min_2",
+   "extracted": 0.15,
+   "stated": "0.15 is the minimum fraction of raw material A in candy type 2, not raw material B.",
+   "evidence": "A & $\\geqslant 60 \\%$ & $\\geqslant 15 \\%$"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "spec": {
+  "warehouse_capacity": {
+   "base": 5000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "initial_inventory": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "initial_funds": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "purchase_price": {
+   "base": [
+    2.85,
+    3.05,
+    2.9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "selling_price": {
+   "base": [
+    3.1,
+    3.25,
+    2.95
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "terminal_inventory_requirement": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "warehouse_capacity": {
+    "meaning": "maximum storage capacity of the grain warehouse (dan)",
+    "base": 5000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "initial_inventory": {
+    "meaning": "grain stock on hand at the start of January (dan)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "initial_funds": {
+    "meaning": "cash available on January 1 (yuan)",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "purchase_price": {
+    "meaning": "grain purchase price by month, Jan–Mar (yuan/dan)",
+    "base": [
+     2.85,
+     3.05,
+     2.9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "selling_price": {
+    "meaning": "grain selling price by month, Jan–Mar (yuan/dan)",
+    "base": [
+     3.1,
+     3.25,
+     2.95
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "terminal_inventory_requirement": {
+    "meaning": "required grain inventory at the end of March (dan)",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

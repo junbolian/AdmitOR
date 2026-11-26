@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "assembly_hours_type1": 0.25,
+   "testing_hours_type1": 0.125,
+   "materials_cost_type1": 1.2,
+   "assembly_hours_type2": 0.3333333333333333,
+   "testing_hours_type2": 0.3333333333333333,
+   "materials_cost_type2": 0.9,
+   "regular_assembly_capacity": 90,
+   "testing_capacity": 80,
+   "overtime_assembly_capacity": 50,
+   "overtime_cost_per_hour": 9,
+   "market_value_type1": 9,
+   "market_value_type2": 8
+  },
+  {
+   "assembly_hours_type1": 0.2848566996144709,
+   "testing_hours_type1": 0.06562634440283337,
+   "materials_cost_type1": 0.9300351820429431,
+   "assembly_hours_type2": 0.24107024604960758,
+   "testing_hours_type2": 0.4121570713880041,
+   "materials_cost_type2": 1.05902953868062,
+   "regular_assembly_capacity": 111.17769665606164,
+   "testing_capacity": 60.17306396621198,
+   "overtime_assembly_capacity": 46.87687278741082,
+   "overtime_cost_per_hour": 4.768174974942633,
+   "market_value_type1": 6.974193418585944,
+   "market_value_type2": 8.034273843861518
+  },
+  {
+   "assembly_hours_type1": 0.1316339924209659,
+   "testing_hours_type1": 0.08735470633583106,
+   "materials_cost_type1": 1.3798613253354277,
+   "assembly_hours_type2": 0.3483138268677389,
+   "testing_hours_type2": 0.24014687401356555,
+   "materials_cost_type2": 0.9803391154883179,
+   "regular_assembly_capacity": 106.70924466060265,
+   "testing_capacity": 56.31194046454692,
+   "overtime_assembly_capacity": 62.23277007331232,
+   "overtime_cost_per_hour": 10.783254554894041,
+   "market_value_type1": 7.849803718929541,
+   "market_value_type2": 5.795068798795402
+  },
+  {
+   "assembly_hours_type1": 0.36430326805169533,
+   "testing_hours_type1": 0.10457431813907835,
+   "materials_cost_type1": 0.7112950120561775,
+   "assembly_hours_type2": 0.198905458944488,
+   "testing_hours_type2": 0.44916478878248656,
+   "materials_cost_type2": 0.993353428230202,
+   "regular_assembly_capacity": 106.58492675681654,
+   "testing_capacity": 91.02712576130327,
+   "overtime_assembly_capacity": 51.44912365818802,
+   "overtime_cost_per_hour": 13.258041875814335,
+   "market_value_type1": 8.125447515900145,
+   "market_value_type2": 8.333060040148652
+  },
+  {
+   "assembly_hours_type1": 0.3323511660632487,
+   "testing_hours_type1": 0.13981496904553076,
+   "materials_cost_type1": 1.6340482803729328,
+   "assembly_hours_type2": 0.359117381752254,
+   "testing_hours_type2": 0.4015239454049745,
+   "materials_cost_type2": 0.491241945290096,
+   "regular_assembly_capacity": 75.30650688518352,
+   "testing_capacity": 69.89062225290114,
+   "overtime_assembly_capacity": 33.1916790769451,
+   "overtime_cost_per_hour": 6.595117977249272,
+   "market_value_type1": 6.127210291750049,
+   "market_value_type2": 6.579031059904589
+  },
+  {
+   "assembly_hours_type1": 0.2839211110661001,
+   "testing_hours_type1": 0.10810402237126053,
+   "materials_cost_type1": 1.044217160540259,
+   "assembly_hours_type2": 0.23650234359049588,
+   "testing_hours_type2": 0.2556592740163711,
+   "materials_cost_type2": 1.2929891289412447,
+   "regular_assembly_capacity": 97.99391080331606,
+   "testing_capacity": 85.23828827201542,
+   "overtime_assembly_capacity": 36.84554592792388,
+   "overtime_cost_per_hour": 11.062141181553145,
+   "market_value_type1": 6.576497955085884,
+   "market_value_type2": 7.2285148272489455
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   2808.0,
+   2539.2612253889115,
+   4170.754229044638,
+   2676.5350162974837,
+   1206.17281112693,
+   2293.5269401078526
+  ],
+  "B-structured": [
+   3918.0,
+   3254.0,
+   4171.0,
+   2918.0,
+   1367.0,
+   2491.0
+  ],
+  "C-direct": [
+   3918.0,
+   3254.0,
+   4171.0,
+   2918.0,
+   1367.0,
+   2491.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1110 on instance 0 (params: {'assembly_hours_type1': 0.25, 'testing_hours_type1': 0.12, 'materials_cost_type1': 1.2, 'assembly_hours_type2': 0.33, 'testing_hours_type2': 0.33, 'materials_cost_type2': 0.9, 'regular_assembly_capacity': 90, 'testing_capacity': 80, 'overtime_assembly_capacity': 50, 'overtime_cost_per_hour': 9, 'market_value_type1': 9, 'market_value_type2': 8})"
+ },
+ "disagreements": [],
+ "notes": []
+}

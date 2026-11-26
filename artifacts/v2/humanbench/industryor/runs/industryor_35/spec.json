@@ -1,0 +1,94 @@
+{
+ "spec": {
+  "task_times": {
+   "base": [
+    [
+     9,
+     4,
+     3,
+     7
+    ],
+    [
+     4,
+     6,
+     5,
+     6
+    ],
+    [
+     5,
+     4,
+     7,
+     5
+    ],
+    [
+     7,
+     5,
+     2,
+     3
+    ],
+    [
+     10,
+     6,
+     7,
+     4
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "task_times": {
+    "meaning": "time required for each worker (rows I-V) to complete each task (columns A-D)",
+    "base": [
+     [
+      9,
+      4,
+      3,
+      7
+     ],
+     [
+      4,
+      6,
+      5,
+      6
+     ],
+     [
+      5,
+      4,
+      7,
+      5
+     ],
+     [
+      7,
+      5,
+      2,
+      3
+     ],
+     [
+      10,
+      6,
+      7,
+      4
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

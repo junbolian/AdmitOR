@@ -1,0 +1,59 @@
+{
+ "sample_id": "om_mamo_179",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_1_5\",\n      \"evidence\": \"From Node 1: Can send goods to Node 0 (1 unit), Node 2 (10 units), Node 3 (16 units), Node 4 (14 units), Node 6 (6 units), and Node 7 (10 units).\"\n    },\n    {\n      \"parameter\": \"capacity_2_1\",\n      \"evidence\": \"From Node 2: Can transport goods to Node 0 (4 units), Node 3 (7 units), Node 4 (2 units), Node 5 (2 units), Node 6 (6 units), and Node 7 (10 units).\"\n    },\n    {\n      \"parameter\": \"capacity_7_0\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_7_1\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_7_2\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_7_3\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_7_4\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_7_5\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_7_6\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_1_5",
+   "evidence": "From Node 1: Can send goods to Node 0 (1 unit), Node 2 (10 units), Node 3 (16 units), Node 4 (14 units), Node 6 (6 units), and Node 7 (10 units)."
+  },
+  {
+   "parameter": "capacity_2_1",
+   "evidence": "From Node 2: Can transport goods to Node 0 (4 units), Node 3 (7 units), Node 4 (2 units), Node 5 (2 units), Node 6 (6 units), and Node 7 (10 units)."
+  },
+  {
+   "parameter": "capacity_7_0",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_7_1",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_7_2",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_7_3",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_7_4",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_7_5",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_7_6",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

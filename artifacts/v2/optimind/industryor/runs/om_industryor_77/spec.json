@@ -1,0 +1,220 @@
+{
+ "spec": {
+  "sell_table": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sell_chair": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sell_bookshelf": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_table": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_chair": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_bookshelf": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "space_table": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "space_chair": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "space_bookshelf": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "space_capacity": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_tables": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 50.0,
+    "integer": true
+   }
+  },
+  "min_bookshelves": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "max_items": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "sell_table": {
+    "meaning": "selling price per table",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sell_chair": {
+    "meaning": "selling price per chair",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sell_bookshelf": {
+    "meaning": "selling price per bookshelf",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_table": {
+    "meaning": "manufacturing cost per table",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_chair": {
+    "meaning": "manufacturing cost per chair",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_bookshelf": {
+    "meaning": "manufacturing cost per bookshelf",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "space_table": {
+    "meaning": "warehouse space per table (m^2)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "space_chair": {
+    "meaning": "warehouse space per chair (m^2)",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "space_bookshelf": {
+    "meaning": "warehouse space per bookshelf (m^2)",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "space_capacity": {
+    "meaning": "total warehouse space limit (m^2)",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_tables": {
+    "meaning": "minimum tables to produce",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 50,
+     "integer": true
+    }
+   },
+   "min_bookshelves": {
+    "meaning": "minimum bookshelves to produce",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "max_items": {
+    "meaning": "maximum total items produced",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

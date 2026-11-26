@@ -1,0 +1,182 @@
+{
+ "spec": {
+  "protein_content": {
+   "base": [
+    14,
+    10,
+    4,
+    19,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "carb_content": {
+   "base": [
+    28,
+    27,
+    13,
+    5,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "calorie_content": {
+   "base": [
+    184,
+    298,
+    162,
+    81,
+    147
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost": {
+   "base": [
+    5,
+    1,
+    5,
+    9,
+    9
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "protein_requirement": {
+   "base": 97,
+   "perturb": {
+    "mode": "abs",
+    "lo": 60.0,
+    "hi": 150.0,
+    "integer": false
+   }
+  },
+  "carb_requirement": {
+   "base": 140,
+   "perturb": {
+    "mode": "abs",
+    "lo": 90.0,
+    "hi": 220.0,
+    "integer": false
+   }
+  },
+  "calorie_requirement": {
+   "base": 2304,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1800.0,
+    "hi": 2900.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_content": {
+    "meaning": "Protein grams per portion for Chicken, Rice, Apples, Cheese, Tofu",
+    "base": [
+     14,
+     10,
+     4,
+     19,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "carb_content": {
+    "meaning": "Carbohydrate grams per portion for Chicken, Rice, Apples, Cheese, Tofu",
+    "base": [
+     28,
+     27,
+     13,
+     5,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "calorie_content": {
+    "meaning": "Calories per portion for Chicken, Rice, Apples, Cheese, Tofu",
+    "base": [
+     184,
+     298,
+     162,
+     81,
+     147
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost": {
+    "meaning": "Price in dollars per portion for Chicken, Rice, Apples, Cheese, Tofu",
+    "base": [
+     5,
+     1,
+     5,
+     9,
+     9
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "protein_requirement": {
+    "meaning": "Minimum daily protein target in grams",
+    "base": 97,
+    "perturb": {
+     "mode": "abs",
+     "lo": 60,
+     "hi": 150,
+     "integer": false
+    }
+   },
+   "carb_requirement": {
+    "meaning": "Minimum daily carbohydrate target in grams",
+    "base": 140,
+    "perturb": {
+     "mode": "abs",
+     "lo": 90,
+     "hi": 220,
+     "integer": false
+    }
+   },
+   "calorie_requirement": {
+    "meaning": "Minimum daily calorie target",
+    "base": 2304,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1800,
+     "hi": 2900,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

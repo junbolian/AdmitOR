@@ -1,0 +1,113 @@
+{
+ "spec": {
+  "warehouse_capacity": {
+   "base": 500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 250.0,
+    "hi": 750.0,
+    "integer": true
+   }
+  },
+  "initial_inventory": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 400.0,
+    "integer": true
+   }
+  },
+  "purchase_prices": {
+   "base": [
+    28,
+    24,
+    25,
+    27,
+    23,
+    23
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "sale_prices": {
+   "base": [
+    29,
+    24,
+    26,
+    28,
+    22,
+    25
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "warehouse_capacity": {
+    "meaning": "Maximum inventory the store's warehouse can hold (units)",
+    "base": 500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 250,
+     "hi": 750,
+     "integer": true
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Units already in stock at the end of June (starting inventory before July)",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 400,
+     "integer": true
+    }
+   },
+   "purchase_prices": {
+    "meaning": "Purchase price per unit for months July through December (in order)",
+    "base": [
+     28,
+     24,
+     25,
+     27,
+     23,
+     23
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "sale_prices": {
+    "meaning": "Selling price per unit for months July through December (in order)",
+    "base": [
+     29,
+     24,
+     26,
+     28,
+     22,
+     25
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

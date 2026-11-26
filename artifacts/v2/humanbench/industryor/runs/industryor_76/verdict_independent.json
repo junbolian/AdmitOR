@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_A": 120,
+   "cost_B": 110,
+   "cost_C": 100,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 150,
+   "max_tables": 600,
+   "min_tables_B_if_A": 30
+  },
+  {
+   "cost_A": 130.03872948896765,
+   "cost_B": 78.65070984469601,
+   "cost_C": 86.50175910214715,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 185.29616109343607,
+   "max_tables": 451.2979797465898,
+   "min_tables_B_if_A": 27.657654590558113
+  },
+  {
+   "cost_A": 86.14539979954107,
+   "cost_B": 91.43010633703783,
+   "cost_C": 100.32131728620175,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 154.0447332542895,
+   "max_tables": 499.3586239346508,
+   "min_tables_B_if_A": 32.67797051627726
+  },
+  {
+   "cost_A": 142.27899288080354,
+   "cost_B": 77.42891813875202,
+   "cost_C": 118.34915510996846,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 191.14917649861033,
+   "max_tables": 541.1740362405457,
+   "min_tables_B_if_A": 17.782375301404436
+  },
+  {
+   "cost_A": 90.96357913200941,
+   "cost_B": 132.93462817893234,
+   "cost_C": 106.22356188201347,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 192.58041875814337,
+   "max_tables": 556.2723757950072,
+   "min_tables_B_if_A": 31.561218938196806
+  },
+  {
+   "cost_A": 143.71713582621564,
+   "cost_B": 117.82230365604023,
+   "cost_C": 121.70241401864664,
+   "tables_per_order_A": 20,
+   "tables_per_order_B": 15,
+   "tables_per_order_C": 15,
+   "min_tables": 125.5108448086392,
+   "max_tables": 524.1796668967586,
+   "min_tables_B_if_A": 17.393759307708827
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   940.0,
+   1022.4592279810481,
+   791.16271780836,
+   1006.5759358037764,
+   1126.5125175928724,
+   954.2302864431587
+  ],
+  "B-structured": [
+   15000.0,
+   15454.654158577488,
+   13882.258123478581,
+   15712.442591624891,
+   20084.394620353487,
+   15964.212649004527
+  ],
+  "C-direct": [
+   15000.0,
+   15454.654158577488,
+   13882.258123478581,
+   15712.442591624891,
+   20084.39462035349,
+   15964.212649004527
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 1.896e+04 on instance 4 (params: {'cost_A': 90.96, 'cost_B': 132.93, 'cost_C': 106.22, 'tables_per_order_A': 20, 'tables_per_order_B': 15, 'tables_per_order_C': 15, 'min_tables': 192.58, 'max_tables': 556.27, 'min_tables_B_if_A': 31.56})"
+ },
+ "disagreements": [],
+ "notes": []
+}

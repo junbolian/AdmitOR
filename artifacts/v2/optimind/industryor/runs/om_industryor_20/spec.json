@@ -1,0 +1,174 @@
+{
+ "spec": {
+  "days": {
+   "base": 22,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 26.0,
+    "integer": true
+   }
+  },
+  "max_demand": {
+   "base": [
+    5300,
+    4500,
+    5400
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "price": {
+   "base": [
+    124,
+    109,
+    115
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "cost": {
+   "base": [
+    73.3,
+    52.9,
+    65.4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "quota": {
+   "base": [
+    500,
+    450,
+    550
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "activation_cost": {
+   "base": [
+    170000,
+    150000,
+    100000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_batch": {
+   "base": [
+    20,
+    20,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "days": {
+    "meaning": "production days available in the month",
+    "base": 22,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 26,
+     "integer": true
+    }
+   },
+   "max_demand": {
+    "meaning": "maximum demand per product (100 kg units)",
+    "base": [
+     5300,
+     4500,
+     5400
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "price": {
+    "meaning": "selling price per 100 kg ($)",
+    "base": [
+     124,
+     109,
+     115
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "cost": {
+    "meaning": "production cost per 100 kg ($)",
+    "base": [
+     73.3,
+     52.9,
+     65.4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "quota": {
+    "meaning": "max units producible per day if dedicated to product",
+    "base": [
+     500,
+     450,
+     550
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "activation_cost": {
+    "meaning": "fixed line activation cost ($)",
+    "base": [
+     170000,
+     150000,
+     100000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_batch": {
+    "meaning": "minimum production batch if product is made (100 kg units)",
+    "base": [
+     20,
+     20,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

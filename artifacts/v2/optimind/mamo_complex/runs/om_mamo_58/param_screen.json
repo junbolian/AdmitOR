@@ -1,0 +1,30 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "initial_supplies",
+  "demands",
+  "transport_costs"
+ ],
+ "safe": [
+  "transport_costs"
+ ],
+ "tests": {
+  "initial_supplies": [
+   0,
+   2
+  ],
+  "demands": [
+   2,
+   2
+  ],
+  "transport_costs": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

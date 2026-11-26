@@ -1,0 +1,156 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_per_pair": 0.5,
+   "fulltime_sales_rate": 5,
+   "parttime_sales_rate": 2,
+   "fulltime_salary": 1,
+   "parttime_salary": 0.6,
+   "fulltime_overtime_pay": 1.5,
+   "parttime_overtime_pay": 0.7,
+   "fulltime_hours": 160,
+   "parttime_hours": 80,
+   "sales_target": 5500,
+   "fulltime_overtime_limit": 100
+  },
+  {
+   "profit_per_pair": 0.9591401976868257,
+   "fulltime_sales_rate": 2.1750752865586684,
+   "parttime_sales_rate": 1.7376319326610368,
+   "fulltime_salary": 0.9464214762976455,
+   "parttime_salary": 1.157412578413216,
+   "fulltime_overtime_pay": 3.030098462268734,
+   "parttime_overtime_pay": 1.8059232218687218,
+   "fulltime_hours": 110,
+   "parttime_hours": 71,
+   "sales_target": 2298,
+   "fulltime_overtime_limit": 66
+  },
+  {
+   "profit_per_pair": 0.7580329321550436,
+   "fulltime_sales_rate": 2.185751787787045,
+   "parttime_sales_rate": 1.3947694280899183,
+   "fulltime_salary": 1.7997688755590464,
+   "parttime_salary": 0.9084239247841817,
+   "fulltime_overtime_pay": 1.66132186612209,
+   "parttime_overtime_pay": 1.2606782309766358,
+   "fulltime_hours": 197,
+   "parttime_hours": 21,
+   "sales_target": 10058,
+   "fulltime_overtime_limit": 209
+  },
+  {
+   "profit_per_pair": 0.5103757747769878,
+   "fulltime_sales_rate": 3.088356498682471,
+   "parttime_sales_rate": 4.8074588249305155,
+   "fulltime_salary": 1.1731890902252535,
+   "parttime_salary": 0.3205695963941923,
+   "fulltime_overtime_pay": 1.290149130500392,
+   "parttime_overtime_pay": 1.7254898594254275,
+   "fulltime_hours": 172,
+   "parttime_hours": 117,
+   "sales_target": 9297,
+   "fulltime_overtime_limit": 161
+  },
+  {
+   "profit_per_pair": 1.459673645969056,
+   "fulltime_sales_rate": 4.649740640458474,
+   "parttime_sales_rate": 2.9841828407295217,
+   "fulltime_salary": 2.1588093285059897,
+   "parttime_salary": 1.0040756780735198,
+   "fulltime_overtime_pay": 3.5851207009323316,
+   "parttime_overtime_pay": 1.2392338614621716,
+   "fulltime_hours": 185,
+   "parttime_hours": 25,
+   "sales_target": 4279,
+   "fulltime_overtime_limit": 87
+  },
+  {
+   "profit_per_pair": 0.11968796538544124,
+   "fulltime_sales_rate": 3.629536204527211,
+   "parttime_sales_rate": 0.9545064323437811,
+   "fulltime_salary": 1.0559472062201842,
+   "parttime_salary": 1.0263897775437203,
+   "fulltime_overtime_pay": 2.0944965369102526,
+   "parttime_overtime_pay": 0.8663257408103888,
+   "fulltime_hours": 125,
+   "parttime_hours": 52,
+   "sales_target": 11367,
+   "fulltime_overtime_limit": 194
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   280.0,
+   333.41345268242657,
+   5465.102969981426,
+   913.3978762946681,
+   0.0,
+   8780.503173624325
+  ],
+  "B-structured": [
+   280.0,
+   333.4134526824266,
+   5465.102969981425,
+   913.3978762946681,
+   0.0,
+   8780.503173624325
+  ],
+  "C-direct": [
+   172.0,
+   279.6322165378031,
+   4991.00220508843,
+   913.3978762946681,
+   0.0,
+   6605.742446117042
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "diverges from consensus by 2175 on instance 5 (params: {'profit_per_pair': 0.12, 'fulltime_sales_rate': 3.63, 'parttime_sales_rate': 0.95, 'fulltime_salary': 1.06, 'parttime_salary': 1.03, 'fulltime_overtime_pay': 2.09, 'parttime_overtime_pay': 0.87, 'fulltime_hours': 125, 'parttime_hours': 52, 'sales_target': 11367, 'fulltime_overtime_limit': 194})"
+ },
+ "disagreements": [],
+ "notes": []
+}

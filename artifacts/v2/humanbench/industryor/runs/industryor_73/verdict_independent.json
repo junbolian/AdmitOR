@@ -1,0 +1,141 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": 1000,
+   "pollution_budget": 1000,
+   "pollution_per_horse_trip": 80,
+   "pollution_per_bicycle_trip": 0,
+   "pollution_per_handcart_trip": 0,
+   "min_horse_trips": 8,
+   "capacity_horse": 55,
+   "capacity_bicycle": 30,
+   "capacity_handcart": 40
+  },
+  {
+   "demand": 1083.6560790747303,
+   "pollution_budget": 440.0172083562671,
+   "pollution_per_horse_trip": 73.00351820429431,
+   "pollution_per_bicycle_trip": 4.4642147629764555,
+   "pollution_per_handcart_trip": 14.729424283280249,
+   "min_horse_trips": 14,
+   "capacity_horse": 67.9419257342599,
+   "capacity_bicycle": 22.564898987329492,
+   "capacity_handcart": 38.12612367244649
+  },
+  {
+   "demand": 717.8783316628422,
+   "pollution_budget": 749.8207596857653,
+   "pollution_per_horse_trip": 100.6426345724035,
+   "pollution_per_bicycle_trip": 0.5307193936772725,
+   "pollution_per_handcart_trip": 3.97675301373297,
+   "min_horse_trips": 13,
+   "capacity_horse": 56.48306885990615,
+   "capacity_bicycle": 24.967931196732536,
+   "capacity_handcart": 42.14237641302181
+  },
+  {
+   "demand": 1185.658274006696,
+   "pollution_budget": 410.39801548489766,
+   "pollution_per_horse_trip": 136.69831021993696,
+   "pollution_per_bicycle_trip": 13.962787899764537,
+   "pollution_per_handcart_trip": 6.8050103303598375,
+   "min_horse_trips": 3,
+   "capacity_horse": 70.08803138282379,
+   "capacity_bicycle": 27.05870181202728,
+   "capacity_handcart": 30.225900241123547
+  },
+  {
+   "demand": 758.0298261000784,
+   "pollution_budget": 1755.9909861559356,
+   "pollution_per_horse_trip": 112.44712376402693,
+   "pollution_per_bicycle_trip": 16.142565465487603,
+   "pollution_per_handcart_trip": 14.594635733876357,
+   "min_horse_trips": 11,
+   "capacity_horse": 70.61282021131923,
+   "capacity_bicycle": 27.81361878975036,
+   "capacity_handcart": 41.24897515055744
+  },
+  {
+   "demand": 1197.6427985517971,
+   "pollution_budget": 1389.6316037827937,
+   "pollution_per_horse_trip": 143.40482803729327,
+   "pollution_per_bicycle_trip": 11.54704290513524,
+   "pollution_per_handcart_trip": 14.09143672429847,
+   "min_horse_trips": 1,
+   "capacity_horse": 46.02064309650105,
+   "capacity_bicycle": 26.20898334483793,
+   "capacity_handcart": 29.91500744616706
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   20.3125,
+   null,
+   null,
+   null,
+   11.0,
+   36.38385952009162
+  ],
+  "B-structured": [
+   21.0,
+   null,
+   null,
+   null,
+   11.0,
+   37.0
+  ],
+  "C-direct": [
+   21.0,
+   null,
+   null,
+   null,
+   11.0,
+   37.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 0.6875 on instance 0 (params: {'demand': 1000, 'pollution_budget': 1000, 'pollution_per_horse_trip': 80, 'pollution_per_bicycle_trip': 0, 'pollution_per_handcart_trip': 0, 'min_horse_trips': 8, 'capacity_horse': 55, 'capacity_bicycle': 30, 'capacity_handcart': 40})"
+ },
+ "disagreements": [],
+ "notes": []
+}

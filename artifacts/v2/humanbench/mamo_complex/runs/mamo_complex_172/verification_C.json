@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_172",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll check each row of the extracted capacity matrix against the statement.\n\nRow 0 (from City 0): [0,1,16,8,18,4,0,8,5] — matches the statement.\nRow 1 (from City 1): [15,0,11,8,13,2,1,7,6] — matches.\nRow 2 (from City 2): [15,4,0,3,1,13,13,11,9] — matches.\nRow 3 (from City 3): [4,16,8,0,12,18,19,8,11] — matches.\nRow 4 (from City 4): [4,19,3,2,0,6,1,13,14] — matches.\nRow 5 (from City 5): [6,19,15,10,16,0,17,15,17] — matches.\nRow 6 (from City 6): [13,7,13,4,14,3,0,8,8] — matches.\nRow 7 (from City 7): [10,6,19,1,12,6,9,0,14] — matches.\nRow 8 (from City 8): [0,0,0,0,0,0,0,0,0] — the statement says City 8 \"primarily serves as the endpoint\" and gives no outgoing capacity values. The all-zeros row was filled in by inference, not stated explicitly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity\",\n      \"evidence\": \"From City 8 (Key Distribution Center): This city receives and dispatches goods but primarily serves as the endpoint for cargo coming from the Central Hub. — no outgoing capacities are given for City 8; the all-zeros row was inferred.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity",
+   "evidence": "From City 8 (Key Distribution Center): This city receives and dispatches goods but primarily serves as the endpoint for cargo coming from the Central Hub. — no outgoing capacities are given for City 8; the all-zeros row was inferred."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

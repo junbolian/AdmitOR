@@ -1,0 +1,278 @@
+{
+ "spec": {
+  "salary_A": {
+   "base": 8100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_B": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_C": {
+   "base": 21000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_D": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "salary_E": {
+   "base": 8000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_hires": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "budget": {
+   "base": 35000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_hires": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "experience_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "experience_B": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "experience_C": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "experience_D": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "experience_E": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_experience": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_from_A_E": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "min_advanced_degree": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[max_hires] degenerate abs range (lo == hi); perturbation has no effect",
+  "[min_hires] degenerate abs range (lo == hi); perturbation has no effect",
+  "[max_from_A_E] degenerate abs range (lo == hi); perturbation has no effect",
+  "[min_advanced_degree] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "salary_A": {
+    "meaning": "Salary requirement for candidate A",
+    "base": 8100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_B": {
+    "meaning": "Salary requirement for candidate B",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_C": {
+    "meaning": "Salary requirement for candidate C",
+    "base": 21000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_D": {
+    "meaning": "Salary requirement for candidate D",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "salary_E": {
+    "meaning": "Salary requirement for candidate E",
+    "base": 8000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_hires": {
+    "meaning": "Maximum number of new employees to hire",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "budget": {
+    "meaning": "Total budget for payments to selected candidates",
+    "base": 35000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_hires": {
+    "meaning": "Minimum number of new employees to hire",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "experience_A": {
+    "meaning": "Work experience of candidate A in years",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "experience_B": {
+    "meaning": "Work experience of candidate B in years",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "experience_C": {
+    "meaning": "Work experience of candidate C in years",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "experience_D": {
+    "meaning": "Work experience of candidate D in years",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "experience_E": {
+    "meaning": "Work experience of candidate E in years",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_experience": {
+    "meaning": "Minimum total work experience required for selected candidates (years)",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_from_A_E": {
+    "meaning": "Maximum number selected from the pair {A, E} due to equivalent skills",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "min_advanced_degree": {
+    "meaning": "Minimum number of selected candidates holding a Master's or Doctoral degree",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

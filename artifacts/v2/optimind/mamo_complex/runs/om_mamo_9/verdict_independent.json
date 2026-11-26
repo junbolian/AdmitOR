@@ -1,0 +1,233 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "opening_cost": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000
+   ],
+   "demand": [
+    908,
+    434,
+    605,
+    480,
+    961,
+    787,
+    401,
+    789
+   ],
+   "capacity": [
+    1365,
+    1929,
+    1502,
+    1201,
+    1529,
+    961
+   ]
+  },
+  {
+   "opening_cost": [
+    167842.75725371236,
+    119041.65200220163,
+    93482.67383526367,
+    133135.22897875894,
+    190268.3154129936,
+    136963.15079259945
+   ],
+   "demand": [
+    1086.0495237379998,
+    344.3657266805833,
+    581.3813504547943,
+    367.15133266513686,
+    825.8055468931315,
+    789.107305868673,
+    306.07046192161465,
+    670.1914531958828
+   ],
+   "capacity": [
+    1487.7553545414294,
+    1981.015269650163,
+    1250.0610885830758,
+    1265.3248518009798,
+    1812.8715009562384,
+    676.4471848303699
+   ]
+  },
+  {
+   "opening_cost": [
+    187942.9656214032,
+    222434.21107019164,
+    99430.84710644085,
+    123869.59557425171,
+    218523.27324246799,
+    104313.07633081217
+   ],
+   "demand": [
+    723.1066128945871,
+    346.48745377286167,
+    710.1170458201066,
+    504.89424752805394,
+    1108.5751353083397,
+    877.3994580640173,
+    408.2637323366675,
+    975.6441688898616
+   ],
+   "capacity": [
+    1265.5196549336415,
+    1989.2318266356328,
+    1798.859483424799,
+    1286.4053335536757,
+    1860.829910345107,
+    1005.601246955049
+   ]
+  },
+  {
+   "opening_cost": [
+    175712.27781476275,
+    122238.62532950971,
+    89184.32273942107,
+    142188.27342076824,
+    106213.37304622431,
+    94347.9250906589
+   ],
+   "demand": [
+    726.8546489520171,
+    385.82027187489,
+    646.0445443899811,
+    447.55972295282027,
+    898.6219546996621,
+    672.6910166085804,
+    354.27905332084725,
+    961.260234852579
+   ],
+   "capacity": [
+    1486.2409805169602,
+    2055.308225958972,
+    1205.6301497561249,
+    1366.1087706030214,
+    1220.205447777193,
+    891.4940077174597
+   ]
+  },
+  {
+   "opening_cost": [
+    210134.42075690068,
+    213503.96311358866,
+    119193.81663224772,
+    196255.22953541484,
+    203885.04578429562,
+    146495.9915084395
+   ],
+   "demand": [
+    784.9878246717034,
+    332.4657529271762,
+    549.1745470378722,
+    424.25781023416863,
+    822.1272563432299,
+    961.284972590844,
+    476.4617091077701,
+    715.8904239749995
+   ],
+   "capacity": [
+    1492.304266876507,
+    1808.2043622876126,
+    1875.590287874178,
+    1171.3486449744796,
+    1313.3010647453134,
+    814.9054209363509
+   ]
+  },
+  {
+   "opening_cost": [
+    158413.2706069086,
+    155557.11106912285,
+    121714.24230838689,
+    225422.17047681884,
+    147123.26465797084,
+    93054.7928790992
+   ],
+   "demand": [
+    1133.88207334878,
+    436.06720572779284,
+    481.25009718257263,
+    371.3079301019363,
+    773.4364071334918,
+    837.1500174101658,
+    459.56191255477427,
+    758.2921069024753
+   ],
+   "capacity": [
+    1007.5291913384528,
+    1791.9861622026656,
+    1949.1045878723753,
+    1221.9797970784382,
+    1961.1673036227337,
+    1169.0255763084115
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'",
+   "crash:transport = params[\"transport_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^ | KeyError: 'transport_cost'"
+  ],
+  "B-structured": [
+   "missing_transport_cost",
+   "missing_transport_cost",
+   "missing_transport_cost",
+   "missing_transport_cost",
+   "missing_transport_cost",
+   "missing_transport_cost"
+  ],
+  "C-direct": [
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'",
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'",
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'",
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'",
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'",
+   "crash:transport_cost = params[\"transportation_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^ | KeyError: 'transportation_cost'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

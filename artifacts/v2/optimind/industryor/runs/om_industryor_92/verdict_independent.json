@@ -1,0 +1,158 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "price_gas_I": 4800,
+   "price_gas_II": 5600,
+   "min_prop_A_I": 0.5,
+   "min_prop_A_II": 0.6,
+   "inventory_A": 500,
+   "inventory_B": 1000,
+   "max_purchase_A": 1500,
+   "price_tier1": 10000,
+   "tier1_limit": 500,
+   "price_tier2": 8000,
+   "tier2_limit": 1000,
+   "price_tier3": 6000
+  },
+  {
+   "price_gas_I": 5201.549179558705,
+   "price_gas_II": 4004.0361375481607,
+   "min_prop_A_I": 0.4100117273476477,
+   "min_prop_A_II": 0.4892842952595291,
+   "inventory_A": 618.2356070820063,
+   "inventory_B": 1176.6994874229113,
+   "max_purchase_A": 2088.2693515572682,
+   "price_tier1": 6695.510661035329,
+   "tier1_limit": 460.9609098426352,
+   "price_tier2": 4990.70220440365,
+   "tier2_limit": 718.6379748036034,
+   "price_tier3": 6025.705382896139
+  },
+  {
+   "price_gas_I": 3436.423592689527,
+   "price_gas_II": 4588.0945063071385,
+   "min_prop_A_I": 0.5599537751118093,
+   "min_prop_A_II": 0.6179765922412868,
+   "inventory_A": 360.22031102034833,
+   "inventory_B": 1089.2656838759087,
+   "max_purchase_A": 1964.14568501674,
+   "price_tier1": 6051.990077424488,
+   "tier1_limit": 652.909625916404,
+   "price_tier2": 9268.092127924652,
+   "tier2_limit": 840.2505165179919,
+   "price_tier3": 4346.301599096551
+  },
+  {
+   "price_gas_I": 6116.773647955531,
+   "price_gas_II": 5050.957671578426,
+   "min_prop_A_I": 0.33709833735205913,
+   "min_prop_A_II": 0.43868655073338564,
+   "inventory_A": 673.7471831737298,
+   "inventory_B": 1103.726031366891,
+   "max_purchase_A": 1960.6924099115702,
+   "price_tier1": 11837.854293550543,
+   "tier1_limit": 518.1140457273503,
+   "price_tier2": 11027.940889467971,
+   "tier2_limit": 878.5343772083535,
+   "price_tier3": 6249.795030111489
+  },
+  {
+   "price_gas_I": 5748.685433048626,
+   "price_gas_II": 5998.2263679438665,
+   "min_prop_A_I": 0.6446827601243108,
+   "min_prop_A_II": 0.6309408581027048,
+   "inventory_A": 602.2859181074618,
+   "inventory_B": 545.8243836556622,
+   "max_purchase_A": 1091.8474134773203,
+   "price_tier1": 8315.103708816856,
+   "tier1_limit": 289.8959884618138,
+   "price_tier2": 6289.861672710593,
+   "tier2_limit": 601.0014294097291,
+   "price_tier3": 4934.273294928442
+  },
+  {
+   "price_gas_I": 5190.771199481473,
+   "price_gas_II": 5145.836121339483,
+   "min_prop_A_I": 0.44807238684675305,
+   "min_prop_A_II": 0.4838028123085951,
+   "inventory_A": 383.48891102455667,
+   "inventory_B": 1436.654587712494,
+   "max_purchase_A": 1722.05307786989,
+   "price_tier1": 10873.048045335905,
+   "tier1_limit": 335.5693240990485,
+   "price_tier2": 9466.411506882234,
+   "tier2_limit": 663.4024937619284,
+   "price_tier3": 5421.3861204367095
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   8000000.0,
+   9487965.811402075,
+   7125295.225517983,
+   10872401.318648877,
+   8048299.896176698,
+   9267415.489410263
+  ],
+  "B-structured": [
+   5000000.0,
+   9038382.226243766,
+   5089582.178177852,
+   10872401.318648877,
+   6646479.801506968,
+   6111911.48825007
+  ],
+  "C-direct": [
+   8000000.0,
+   9390773.597897034,
+   7125295.225517981,
+   10872401.318648877,
+   8048299.896176698,
+   9267415.489410266
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [1]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 4, 5]"
+ ],
+ "notes": []
+}

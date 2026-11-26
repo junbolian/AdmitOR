@@ -1,0 +1,80 @@
+{
+ "spec": {},
+ "warnings": [
+  "[a] non-numeric base dropped",
+  "[b] non-numeric base dropped",
+  "[m] non-numeric base dropped",
+  "[n] non-numeric base dropped",
+  "[k] non-numeric base dropped",
+  "[d] non-numeric base dropped",
+  "[c] non-numeric base dropped"
+ ],
+ "raw": {
+  "params": {
+   "a": {
+    "meaning": "hours required per furnace using method 1",
+    "base": "a",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "b": {
+    "meaning": "hours required per furnace using method 2",
+    "base": "b",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "m": {
+    "meaning": "fuel cost per furnace using method 1 (dollars)",
+    "base": "m",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "n": {
+    "meaning": "fuel cost per furnace using method 2 (dollars)",
+    "base": "n",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "k": {
+    "meaning": "tons of steel produced per furnace",
+    "base": "k",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "d": {
+    "meaning": "minimum total steel production required (tons)",
+    "base": "d",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "c": {
+    "meaning": "total available furnace-hours",
+    "base": "c",
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

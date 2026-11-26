@@ -1,0 +1,297 @@
+{
+ "spec": {
+  "opening_cost": {
+   "base": [
+    151000,
+    192000,
+    114000,
+    171000,
+    160000,
+    120000,
+    182000,
+    186000,
+    174000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     3,
+     5,
+     4,
+     7,
+     6,
+     5,
+     8
+    ],
+    [
+     2,
+     4,
+     3,
+     6,
+     5,
+     4,
+     7
+    ],
+    [
+     4,
+     6,
+     5,
+     8,
+     7,
+     6,
+     9
+    ],
+    [
+     3,
+     5,
+     4,
+     7,
+     6,
+     5,
+     8
+    ],
+    [
+     2,
+     4,
+     3,
+     6,
+     5,
+     4,
+     7
+    ],
+    [
+     3,
+     5,
+     4,
+     7,
+     6,
+     5,
+     8
+    ],
+    [
+     2,
+     4,
+     3,
+     6,
+     5,
+     4,
+     7
+    ],
+    [
+     4,
+     6,
+     5,
+     8,
+     7,
+     6,
+     9
+    ],
+    [
+     3,
+     5,
+     4,
+     7,
+     6,
+     5,
+     8
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demand": {
+   "base": [
+    695,
+    737,
+    452,
+    616,
+    587,
+    779,
+    892
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity": {
+   "base": [
+    1864,
+    1980,
+    814,
+    864,
+    1320,
+    1952,
+    1447,
+    1886,
+    1962
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "opening_cost": {
+    "meaning": "Fixed cost to open each distribution center (per center, in dollars)",
+    "base": [
+     151000,
+     192000,
+     114000,
+     171000,
+     160000,
+     120000,
+     182000,
+     186000,
+     174000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "transport_cost": {
+    "meaning": "Per-unit transportation cost from each distribution center to each retail store (9x7 matrix, in dollars)",
+    "base": [
+     [
+      3,
+      5,
+      4,
+      7,
+      6,
+      5,
+      8
+     ],
+     [
+      2,
+      4,
+      3,
+      6,
+      5,
+      4,
+      7
+     ],
+     [
+      4,
+      6,
+      5,
+      8,
+      7,
+      6,
+      9
+     ],
+     [
+      3,
+      5,
+      4,
+      7,
+      6,
+      5,
+      8
+     ],
+     [
+      2,
+      4,
+      3,
+      6,
+      5,
+      4,
+      7
+     ],
+     [
+      3,
+      5,
+      4,
+      7,
+      6,
+      5,
+      8
+     ],
+     [
+      2,
+      4,
+      3,
+      6,
+      5,
+      4,
+      7
+     ],
+     [
+      4,
+      6,
+      5,
+      8,
+      7,
+      6,
+      9
+     ],
+     [
+      3,
+      5,
+      4,
+      7,
+      6,
+      5,
+      8
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demand": {
+    "meaning": "Demand of each retail store (units)",
+    "base": [
+     695,
+     737,
+     452,
+     616,
+     587,
+     779,
+     892
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity": {
+    "meaning": "Maximum supply capacity of each distribution center (units)",
+    "base": [
+     1864,
+     1980,
+     814,
+     864,
+     1320,
+     1952,
+     1447,
+     1886,
+     1962
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

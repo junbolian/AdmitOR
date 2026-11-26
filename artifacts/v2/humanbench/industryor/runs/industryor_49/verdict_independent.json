@@ -1,0 +1,119 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "D_jk": 1000,
+   "r_klm": 1.0,
+   "R_im": 10000,
+   "c_kl": 1.0,
+   "c_il": 2000,
+   "P_ikl": 10.0,
+   "T_ijk": 5.0
+  },
+  {
+   "D_jk": 1139.4267984578837,
+   "r_klm": 0.43001290626720035,
+   "R_im": 6850.410457167671,
+   "c_kl": 0.6678528857785874,
+   "c_il": 2662.1193996592347,
+   "P_ikl": 18.684482059801894,
+   "T_ijk": 22.304489192621133
+  },
+  {
+   "D_jk": 586.9388326294162,
+   "r_klm": 0.9063061836223246,
+   "R_im": 3417.1610721329853,
+   "c_kl": 0.662365569764324,
+   "c_il": 2014.9948066894146,
+   "P_ikl": -4.071241061064773,
+   "T_ijk": 4.9709412671662125
+  },
+  {
+   "D_jk": 1149.8844377795233,
+   "r_klm": 1.05392977672386,
+   "R_im": 6086.168708569755,
+   "c_kl": 1.1071188206510905,
+   "c_il": 2866.4052786979146,
+   "P_ikl": -4.772543411267865,
+   "T_ijk": 20.145481295820197
+  },
+  {
+   "D_jk": 1198.139394988227,
+   "r_klm": 0.8083006198215903,
+   "R_im": 5176.712997364942,
+   "c_kl": 1.5486556866481376,
+   "c_il": 1542.4647263153547,
+   "P_ikl": -1.7538954816948231,
+   "T_ijk": 2.4179094208366
+  },
+  {
+   "D_jk": 1347.4943663474596,
+   "r_klm": 1.1244712376402695,
+   "R_im": 14299.795825841322,
+   "c_kl": 1.2756781440325815,
+   "c_il": 2101.438656073162,
+   "P_ikl": 29.05905173927797,
+   "T_ijk": 9.463359430208836
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:I = list(range(len(R_im) // 4)) | ^^^^^^^^^ | TypeError: object of type 'int' has no len()",
+   "crash:I = list(range(len(R_im) // 4)) | ^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:I = list(range(len(R_im) // 4)) | ^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:I = list(range(len(R_im) // 4)) | ^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:I = list(range(len(R_im) // 4)) | ^^^^^^^^^ | TypeError: object of type 'float' has no len()",
+   "crash:I = list(range(len(R_im) // 4)) | ^^^^^^^^^ | TypeError: object of type 'float' has no len()"
+  ],
+  "B-structured": [
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed",
+   "solve_failed"
+  ],
+  "C-direct": [
+   "crash:coeff = float(T_ijk[i, j, k]) | ~~~~~^^^^^^^^^ | IndexError: too many indices for array: array is 0-dimensional, but 3 were indexed",
+   "crash:coeff = float(T_ijk[i, j, k]) | ~~~~~^^^^^^^^^ | IndexError: too many indices for array: array is 0-dimensional, but 3 were indexed",
+   "crash:coeff = float(T_ijk[i, j, k]) | ~~~~~^^^^^^^^^ | IndexError: too many indices for array: array is 0-dimensional, but 3 were indexed",
+   "crash:coeff = float(T_ijk[i, j, k]) | ~~~~~^^^^^^^^^ | IndexError: too many indices for array: array is 0-dimensional, but 3 were indexed",
+   "crash:coeff = float(T_ijk[i, j, k]) | ~~~~~^^^^^^^^^ | IndexError: too many indices for array: array is 0-dimensional, but 3 were indexed",
+   "crash:coeff = float(T_ijk[i, j, k]) | ~~~~~^^^^^^^^^ | IndexError: too many indices for array: array is 0-dimensional, but 3 were indexed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

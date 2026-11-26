@@ -1,0 +1,308 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 23,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_chicken": {
+   "base": 3.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_salmon": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_salmon": {
+   "base": 5.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_tofu": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_tofu": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_broccoli": {
+   "base": 2.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_broccoli": {
+   "base": 1.2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_carrots": {
+   "base": 0.9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_carrots": {
+   "base": 0.8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_spinach": {
+   "base": 2.9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_spinach": {
+   "base": 1.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_bell_pepper": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_bell_pepper": {
+   "base": 1.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_mushrooms": {
+   "base": 3.1,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_mushrooms": {
+   "base": 2.0,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "budget": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "max_weight": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_vegetable_types": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[min_vegetable_types] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "Protein per 100g of chicken (g)",
+    "base": 23,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_chicken": {
+    "meaning": "Cost per 100g of chicken ($)",
+    "base": 3.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_salmon": {
+    "meaning": "Protein per 100g of salmon (g)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_salmon": {
+    "meaning": "Cost per 100g of salmon ($)",
+    "base": 5.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_tofu": {
+    "meaning": "Protein per 100g of tofu (g)",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_tofu": {
+    "meaning": "Cost per 100g of tofu ($)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "Protein per 100g pack of broccoli (g)",
+    "base": 2.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_broccoli": {
+    "meaning": "Cost per 100g pack of broccoli ($)",
+    "base": 1.2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_carrots": {
+    "meaning": "Protein per 100g pack of carrots (g)",
+    "base": 0.9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_carrots": {
+    "meaning": "Cost per 100g pack of carrots ($)",
+    "base": 0.8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_spinach": {
+    "meaning": "Protein per 100g pack of spinach (g)",
+    "base": 2.9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_spinach": {
+    "meaning": "Cost per 100g pack of spinach ($)",
+    "base": 1.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_bell_pepper": {
+    "meaning": "Protein per 100g pack of bell pepper (g)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_bell_pepper": {
+    "meaning": "Cost per 100g pack of bell pepper ($)",
+    "base": 1.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_mushrooms": {
+    "meaning": "Protein per 100g pack of mushrooms (g)",
+    "base": 3.1,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_mushrooms": {
+    "meaning": "Cost per 100g pack of mushrooms ($)",
+    "base": 2.0,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "budget": {
+    "meaning": "Total budget ($)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "max_weight": {
+    "meaning": "Maximum total weight of food (g)",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_vegetable_types": {
+    "meaning": "Minimum number of different vegetable types selected",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

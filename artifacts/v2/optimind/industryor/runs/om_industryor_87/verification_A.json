@@ -1,0 +1,35 @@
+{
+ "sample_id": "om_industryor_87",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"space_per_A\", \"evidence\": \"The storage space occupied by product A is four times that of product B\"}, {\"parameter\": \"space_per_B\", \"evidence\": \"The storage space occupied by product A is four times that of product B\"}, {\"parameter\": \"storage_capacity\", \"evidence\": \"it can store 4 units of product A when only product A is stored\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "space_per_A",
+   "evidence": "The storage space occupied by product A is four times that of product B"
+  },
+  {
+   "parameter": "space_per_B",
+   "evidence": "The storage space occupied by product A is four times that of product B"
+  },
+  {
+   "parameter": "storage_capacity",
+   "evidence": "it can store 4 units of product A when only product A is stored"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "spec": {
+  "capacity_matrix": {
+   "base": [
+    [
+     0,
+     4,
+     12,
+     19,
+     13,
+     11
+    ],
+    [
+     20,
+     0,
+     13,
+     9,
+     10,
+     0
+    ],
+    [
+     14,
+     8,
+     0,
+     5,
+     13,
+     11
+    ],
+    [
+     5,
+     15,
+     18,
+     0,
+     6,
+     7
+    ],
+    [
+     8,
+     17,
+     20,
+     14,
+     0,
+     9
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity_matrix": {
+    "meaning": "Directed edge capacities in MW between stations 0-5; entry [i][j] is flow capacity from i to j, 0 means no arc",
+    "base": [
+     [
+      0,
+      4,
+      12,
+      19,
+      13,
+      11
+     ],
+     [
+      20,
+      0,
+      13,
+      9,
+      10,
+      0
+     ],
+     [
+      14,
+      8,
+      0,
+      5,
+      13,
+      11
+     ],
+     [
+      5,
+      15,
+      18,
+      0,
+      6,
+      7
+     ],
+     [
+      8,
+      17,
+      20,
+      14,
+      0,
+      9
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

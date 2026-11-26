@@ -1,0 +1,209 @@
+{
+ "spec": {
+  "shirts_available": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 100.0,
+    "hi": 300.0,
+    "integer": true
+   }
+  },
+  "pants_available": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 200.0,
+    "integer": true
+   }
+  },
+  "shirts_per_A": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  },
+  "pants_per_A": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "price_A": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "shirts_per_B": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "pants_per_B": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "price_B": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 90.0,
+    "integer": false
+   }
+  },
+  "min_A": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "min_B": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[shirts_per_A] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "shirts_available": {
+    "meaning": "number of shirts in inventory",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 100,
+     "hi": 300,
+     "integer": true
+    }
+   },
+   "pants_available": {
+    "meaning": "number of pants in inventory",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 200,
+     "integer": true
+    }
+   },
+   "shirts_per_A": {
+    "meaning": "shirts used in package A",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 1,
+     "integer": true
+    }
+   },
+   "pants_per_A": {
+    "meaning": "pants used in package A",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "price_A": {
+    "meaning": "price of package A (£)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "shirts_per_B": {
+    "meaning": "shirts used in package B",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "pants_per_B": {
+    "meaning": "pants used in package B",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "price_B": {
+    "meaning": "price of package B (£)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 90,
+     "integer": false
+    }
+   },
+   "min_A": {
+    "meaning": "minimum number of A packages to sell",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "min_B": {
+    "meaning": "minimum number of B packages to sell",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

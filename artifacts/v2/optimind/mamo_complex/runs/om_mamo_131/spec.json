@@ -1,0 +1,310 @@
+{
+ "spec": {
+  "cost_grain1": {
+   "base": 41,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_grain2": {
+   "base": 36,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_grain3": {
+   "base": 96,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_A_grain1": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_A_grain2": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_A_grain3": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_B_grain1": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  },
+  "nutrient_B_grain2": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  },
+  "nutrient_B_grain3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "nutrient_C_grain1": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_C_grain2": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_C_grain3": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 15.0,
+    "integer": false
+   }
+  },
+  "nutrient_D_grain1": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "nutrient_D_grain2": {
+   "base": 2.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "nutrient_D_grain3": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_A": {
+   "base": 110,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_B": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_C": {
+   "base": 90,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_D": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_grain1": {
+    "meaning": "cost per pound of Grain 1 (cents)",
+    "base": 41,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_grain2": {
+    "meaning": "cost per pound of Grain 2 (cents)",
+    "base": 36,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_grain3": {
+    "meaning": "cost per pound of Grain 3 (cents)",
+    "base": 96,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_A_grain1": {
+    "meaning": "units of nutrient A per pound of Grain 1",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_A_grain2": {
+    "meaning": "units of nutrient A per pound of Grain 2",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_A_grain3": {
+    "meaning": "units of nutrient A per pound of Grain 3",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_B_grain1": {
+    "meaning": "units of nutrient B per pound of Grain 1",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   },
+   "nutrient_B_grain2": {
+    "meaning": "units of nutrient B per pound of Grain 2",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   },
+   "nutrient_B_grain3": {
+    "meaning": "units of nutrient B per pound of Grain 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "nutrient_C_grain1": {
+    "meaning": "units of nutrient C per pound of Grain 1",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_C_grain2": {
+    "meaning": "units of nutrient C per pound of Grain 2",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_C_grain3": {
+    "meaning": "units of nutrient C per pound of Grain 3",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 15,
+     "integer": false
+    }
+   },
+   "nutrient_D_grain1": {
+    "meaning": "units of nutrient D per pound of Grain 1",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "nutrient_D_grain2": {
+    "meaning": "units of nutrient D per pound of Grain 2",
+    "base": 2.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "nutrient_D_grain3": {
+    "meaning": "units of nutrient D per pound of Grain 3",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_A": {
+    "meaning": "minimum daily requirement of nutrient A (units)",
+    "base": 110,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_B": {
+    "meaning": "minimum daily requirement of nutrient B (units)",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_C": {
+    "meaning": "minimum daily requirement of nutrient C (units)",
+    "base": 90,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_D": {
+    "meaning": "minimum daily requirement of nutrient D (units)",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "spec": {
+  "protein_grams": {
+   "base": [
+    18,
+    12,
+    7,
+    17,
+    3,
+    4,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "carb_grams": {
+   "base": [
+    23,
+    30,
+    16,
+    26,
+    30,
+    6,
+    23
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "calories": {
+   "base": [
+    217,
+    182,
+    79,
+    295,
+    264,
+    160,
+    141
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "prices": {
+   "base": [
+    3,
+    10,
+    10,
+    7,
+    4,
+    6,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_target": {
+   "base": 59,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "carb_target": {
+   "base": 160,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "calorie_target": {
+   "base": 1809,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_grams": {
+    "meaning": "protein provided by each food (Chicken, Tuna, Eggs, Beef, Rice, Apples, Bread)",
+    "base": [
+     18,
+     12,
+     7,
+     17,
+     3,
+     4,
+     4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "carb_grams": {
+    "meaning": "carbohydrates provided by each food",
+    "base": [
+     23,
+     30,
+     16,
+     26,
+     30,
+     6,
+     23
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "calories": {
+    "meaning": "calories provided by each food",
+    "base": [
+     217,
+     182,
+     79,
+     295,
+     264,
+     160,
+     141
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "prices": {
+    "meaning": "cost per unit of each food in dollars",
+    "base": [
+     3,
+     10,
+     10,
+     7,
+     4,
+     6,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_target": {
+    "meaning": "required weekly protein intake (grams)",
+    "base": 59,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "carb_target": {
+    "meaning": "required weekly carbohydrate intake (grams)",
+    "base": 160,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "calorie_target": {
+    "meaning": "required weekly calorie intake",
+    "base": 1809,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

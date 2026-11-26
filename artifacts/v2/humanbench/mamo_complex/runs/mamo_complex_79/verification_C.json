@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_79",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter:\n\n**supply**: Statement says 500, 497, 354, 223 for warehouses 1–4. Extracted matches.\n\n**demand**: Statement says 17, 65, 26, 332 for warehouses 1–4. Extracted matches.\n\n**transport_cost**: The statement lists costs \"from/to\" each warehouse, but the phrasing is ambiguous. Reading carefully:\n\n- \"Moving food from/to Warehouse 1: To Warehouse 2 costs 17, to Warehouse 3 costs 3, to Warehouse 4 costs 5.\" — these are the costs *to* warehouses 2, 3, 4 *from* warehouse 1: (1,2)=17, (1,3)=3, (1,4)=5. ✓\n- \"Moving food from/to Warehouse 2: To Warehouse 1 costs 39, to Warehouse 3 costs 18, to Warehouse 4 costs 50.\" — from warehouse 2: (2,1)=39, (2,3)=18, (2,4)=50. ✓\n- \"Moving food from/to Warehouse 3: To Warehouse 1 costs 8, to Warehouse 2 costs 45, to Warehouse 4 costs 15.\" — from warehouse 3: (3,1)=8, (3,2)=45, (3,4)=15. ✓\n- \"Moving food from/to Warehouse 4: To Warehouse 1 costs 11, to Warehouse 2 costs 4, to Warehouse 3 costs 29.\" — from warehouse 4: (4,1)=11, (4,2)=4, (4,3)=29. ✓\n\nAll values and ordering match.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

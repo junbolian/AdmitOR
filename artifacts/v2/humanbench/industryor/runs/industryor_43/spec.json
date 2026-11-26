@@ -1,0 +1,207 @@
+{
+ "spec": {
+  "workers_initial": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "prod_per_worker": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    700,
+    600,
+    500,
+    800,
+    900,
+    800
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "overtime_max_per_worker": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "overtime_unit_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "holding_cost": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "max_workforce_change": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "hiring_cost": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "layoff_cost": {
+   "base": 700,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "initial_inventory": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  },
+  "final_inventory": {
+   "base": 0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 0.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[initial_inventory] degenerate abs range (lo == hi); perturbation has no effect",
+  "[final_inventory] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "workers_initial": {
+    "meaning": "initial number of workers",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "prod_per_worker": {
+    "meaning": "regular monthly production per worker (units)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "monthly demand over the semester (units)",
+    "base": [
+     700,
+     600,
+     500,
+     800,
+     900,
+     800
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "overtime_max_per_worker": {
+    "meaning": "maximum extra units per worker per month",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "overtime_unit_cost": {
+    "meaning": "cost per unit produced via overtime (euros)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "holding_cost": {
+    "meaning": "warehouse cost per unit per month (euros)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "max_workforce_change": {
+    "meaning": "maximum hiring/layoff per month (persons)",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "hiring_cost": {
+    "meaning": "cost per hired worker (euros)",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "layoff_cost": {
+    "meaning": "cost per laid-off worker (euros)",
+    "base": 700,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "initial_inventory": {
+    "meaning": "warehouse inventory at start (units)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   },
+   "final_inventory": {
+    "meaning": "required warehouse inventory at end (units)",
+    "base": 0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 0,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

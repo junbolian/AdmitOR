@@ -1,0 +1,132 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "refrigerated_capacity_A": 20,
+   "nonrefrigerated_capacity_A": 40,
+   "total_capacity_B": 30,
+   "refrigerated_demand": 3000,
+   "nonrefrigerated_demand": 4000,
+   "cost_per_km_A": 30,
+   "cost_per_km_B": 40
+  },
+  {
+   "refrigerated_capacity_A": 22.78853596915767,
+   "nonrefrigerated_capacity_A": 21.00043020890668,
+   "total_capacity_B": 23.250879551073577,
+   "refrigerated_demand": 2169.6322144464684,
+   "nonrefrigerated_demand": 4945.88485665605,
+   "cost_per_km_A": 35.30098462268734,
+   "cost_per_km_B": 55.687182708193816
+  },
+  {
+   "refrigerated_capacity_A": 11.738776652588323,
+   "nonrefrigerated_capacity_A": 36.87687278741082,
+   "total_capacity_B": 15.89391658314211,
+   "refrigerated_demand": 2155.91392441081,
+   "nonrefrigerated_demand": 4021.421152413449,
+   "cost_per_km_A": 15.796079090515908,
+   "cost_per_km_B": 27.95350602746594
+  },
+  {
+   "refrigerated_capacity_A": 22.997688755590463,
+   "nonrefrigerated_capacity_A": 41.797659224128665,
+   "total_capacity_B": 21.613218661220902,
+   "refrigerated_demand": 3267.797051627726,
+   "nonrefrigerated_demand": 5237.721826711306,
+   "cost_per_km_A": 15.19496279034183,
+   "cost_per_km_B": 52.232770073312324
+  },
+  {
+   "refrigerated_capacity_A": 23.962787899764535,
+   "nonrefrigerated_capacity_A": 33.61002066071968,
+   "total_capacity_B": 19.664384994353448,
+   "refrigerated_demand": 4371.639216620344,
+   "nonrefrigerated_demand": 3346.378180450507,
+   "cost_per_km_A": 17.782375301404436,
+   "cost_per_km_B": 23.86865507333856
+  },
+  {
+   "refrigerated_capacity_A": 26.949887326949195,
+   "nonrefrigerated_capacity_A": 44.149041254675645,
+   "total_capacity_B": 39.2138481982314,
+   "refrigerated_demand": 3689.195360081453,
+   "nonrefrigerated_demand": 4144.912365818803,
+   "cost_per_km_A": 44.193472919381115,
+   "cost_per_km_B": 35.14137508833414
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4500.0,
+   8331.032370954212,
+   2906.478552654927,
+   2172.8796790188817,
+   3254.1746801570116,
+   6054.505789955213
+  ],
+  "B-structured": [
+   4500.0,
+   8331.032370954212,
+   2906.478552654927,
+   2172.8796790188817,
+   3254.1746801570116,
+   6054.505789955213
+  ],
+  "C-direct": [
+   4500.0,
+   8331.032370954212,
+   2906.478552654927,
+   2172.8796790188817,
+   3254.1746801570116,
+   6054.505789955213
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,170 @@
+{
+ "spec": {
+  "protein": {
+   "base": [
+    10,
+    3,
+    17,
+    6,
+    20
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "carbs": {
+   "base": [
+    22,
+    4,
+    10,
+    13,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "calories": {
+   "base": [
+    80,
+    189,
+    153,
+    232,
+    204
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "cost": {
+   "base": [
+    2,
+    8,
+    4,
+    1,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.8
+   }
+  },
+  "protein_req": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  },
+  "carb_req": {
+   "base": 102,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  },
+  "cal_req": {
+   "base": 1564,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.7
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein": {
+    "meaning": "Protein content (grams) per item for foods 1-5",
+    "base": [
+     10,
+     3,
+     17,
+     6,
+     20
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "carbs": {
+    "meaning": "Carbohydrate content (grams) per item for foods 1-5",
+    "base": [
+     22,
+     4,
+     10,
+     13,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "calories": {
+    "meaning": "Calorie content per item for foods 1-5",
+    "base": [
+     80,
+     189,
+     153,
+     232,
+     204
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "cost": {
+    "meaning": "Cost per item for foods 1-5",
+    "base": [
+     2,
+     8,
+     4,
+     1,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.8
+    }
+   },
+   "protein_req": {
+    "meaning": "Minimum total protein required",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   },
+   "carb_req": {
+    "meaning": "Minimum total carbohydrate required",
+    "base": 102,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   },
+   "cal_req": {
+    "meaning": "Minimum total calories required",
+    "base": 1564,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.7
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

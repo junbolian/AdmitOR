@@ -1,0 +1,220 @@
+{
+ "spec": {
+  "time_I_A": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "time_I_B": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "time_II_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "time_II_B": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "capacity_I": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "capacity_II": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "profit_A": {
+   "base": 300,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_B": {
+   "base": 450,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "min_units_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "min_units_B": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 45.0,
+    "integer": true
+   }
+  },
+  "target_profit": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "target_time_I": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "target_time_II": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "time_I_A": {
+    "meaning": "hours of Process I per unit of Model A",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "time_I_B": {
+    "meaning": "hours of Process I per unit of Model B",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "time_II_A": {
+    "meaning": "hours of Process II per unit of Model A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "time_II_B": {
+    "meaning": "hours of Process II per unit of Model B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "capacity_I": {
+    "meaning": "maximum weekly processing capacity for Process I (hours)",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "capacity_II": {
+    "meaning": "maximum weekly processing capacity for Process II (hours)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "profit_A": {
+    "meaning": "profit per unit of Model A ($)",
+    "base": 300,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_B": {
+    "meaning": "profit per unit of Model B ($)",
+    "base": 450,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "min_units_A": {
+    "meaning": "contractual minimum weekly production of Model A",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "min_units_B": {
+    "meaning": "contractual minimum weekly production of Model B",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 45,
+     "integer": true
+    }
+   },
+   "target_profit": {
+    "meaning": "aspired minimum total weekly profit ($)",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "target_time_I": {
+    "meaning": "target exact weekly time for Process I (hours, with overtime)",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "target_time_II": {
+    "meaning": "target full utilization of Process II (hours, overtime possible)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

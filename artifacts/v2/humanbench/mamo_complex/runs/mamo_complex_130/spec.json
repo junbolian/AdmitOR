@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "stock": {
+   "base": [
+    410,
+    266,
+    132,
+    6,
+    485
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "need": {
+   "base": [
+    274,
+    331,
+    232,
+    359,
+    74
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost": {
+   "base": [
+    [
+     0,
+     24,
+     3,
+     27,
+     31
+    ],
+    [
+     24,
+     0,
+     11,
+     7,
+     37
+    ],
+    [
+     30,
+     1,
+     0,
+     38,
+     22
+    ],
+    [
+     36,
+     18,
+     17,
+     0,
+     35
+    ],
+    [
+     41,
+     35,
+     33,
+     33,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "stock": {
+    "meaning": "initial supply units available in each region",
+    "base": [
+     410,
+     266,
+     132,
+     6,
+     485
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "need": {
+    "meaning": "required units in each region",
+    "base": [
+     274,
+     331,
+     232,
+     359,
+     74
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost": {
+    "meaning": "transfer cost per unit between ordered pairs of regions (off-diagonal); diagonal unused",
+    "base": [
+     [
+      0,
+      24,
+      3,
+      27,
+      31
+     ],
+     [
+      24,
+      0,
+      11,
+      7,
+      37
+     ],
+     [
+      30,
+      1,
+      0,
+      38,
+      22
+     ],
+     [
+      36,
+      18,
+      17,
+      0,
+      35
+     ],
+     [
+      41,
+      35,
+      33,
+      33,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

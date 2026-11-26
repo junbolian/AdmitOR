@@ -1,0 +1,103 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "total_capital": 100000,
+   "return_rate_option1": 0.7,
+   "return_rate_option2": 2.0
+  },
+  {
+   "total_capital": 113942.67984578837,
+   "return_rate_option1": -0.15748171612146622,
+   "return_rate_option2": 1.3250879551073578
+  },
+  {
+   "total_capital": 72321.07381488227,
+   "return_rate_option1": 1.052001064078821,
+   "return_rate_option2": 2.530098462268734
+  },
+  {
+   "total_capital": 139217.95677048454,
+   "return_rate_option1": -0.05220398452999256,
+   "return_rate_option2": 1.7657654590558112
+  },
+  {
+   "total_capital": 52979.72194380703,
+   "return_rate_option1": 0.17168455716612568,
+   "return_rate_option2": 2.0160658643100873
+  },
+  {
+   "total_capital": 52653.596968386366,
+   "return_rate_option1": 0.13802400616730243,
+   "return_rate_option2": 2.44965331333857
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   140000.0,
+   -23777.2308657739,
+   192494.56311093172,
+   -12833.11023994608,
+   18337.7320916236,
+   17802.75843052266
+  ],
+  "B-structured": [
+   140000.0,
+   null,
+   192494.56311093172,
+   null,
+   18337.7320916236,
+   17802.75843052266
+  ],
+  "C-direct": [
+   200000.0,
+   150984.07263630806,
+   182979.43764865724,
+   245826.25934564671,
+   106810.60891154943,
+   128983.05827280134
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: return_rate_option1[None] = '-0.15748171612146622', value type=<class 'float'>. | Value not in parameter domain NonNegativeReals",
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: return_rate_option1[None] = '-0.05220398452999256', value type=<class 'float'>. | Value not in parameter domain NonNegativeReals",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 2, 4, 5]"
+ ],
+ "notes": []
+}

@@ -1,0 +1,151 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     23,
+     50,
+     92,
+     56,
+     91
+    ],
+    [
+     23,
+     0,
+     38,
+     25,
+     25,
+     69
+    ],
+    [
+     50,
+     38,
+     0,
+     66,
+     51,
+     76
+    ],
+    [
+     92,
+     25,
+     66,
+     0,
+     97,
+     37
+    ],
+    [
+     56,
+     25,
+     51,
+     97,
+     0,
+     30
+    ],
+    [
+     91,
+     69,
+     76,
+     37,
+     30,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "num_cities": {
+   "base": 6,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_cities] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "Symmetric pairwise travel cost between ordered city pairs (6x6, diagonal 0)",
+    "base": [
+     [
+      0,
+      23,
+      50,
+      92,
+      56,
+      91
+     ],
+     [
+      23,
+      0,
+      38,
+      25,
+      25,
+      69
+     ],
+     [
+      50,
+      38,
+      0,
+      66,
+      51,
+      76
+     ],
+     [
+      92,
+      25,
+      66,
+      0,
+      97,
+      37
+     ],
+     [
+      56,
+      25,
+      51,
+      97,
+      0,
+      30
+     ],
+     [
+      91,
+      69,
+      76,
+      37,
+      30,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "num_cities": {
+    "meaning": "Number of cities (index-set size, frozen)",
+    "base": 6,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

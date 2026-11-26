@@ -1,0 +1,29 @@
+{
+ "sample_id": "om_mamo_20",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"capacity_matrix\",\n      \"extracted\": 0,\n      \"stated\": 15,\n      \"evidence\": \"From Station 1: Can transmit data to Station 0 (3 packets), Station 2 (15 packets), Station 3 (12 packets), Station 4 (17 packets), Station 6 (15 packets), Station 7 (3 packets), and Station 8 (3 packets).\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "capacity_matrix",
+   "extracted": 0,
+   "stated": 15,
+   "evidence": "From Station 1: Can transmit data to Station 0 (3 packets), Station 2 (15 packets), Station 3 (12 packets), Station 4 (17 packets), Station 6 (15 packets), Station 7 (3 packets), and Station 8 (3 packets)."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

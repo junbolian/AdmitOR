@@ -1,0 +1,191 @@
+{
+ "spec": {
+  "machine1_time_liquid": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "machine2_time_liquid": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "machine1_time_solid": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "machine2_time_solid": {
+   "base": 33,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "initial_inventory_liquid": {
+   "base": 30,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 60.0,
+    "integer": true
+   }
+  },
+  "initial_inventory_solid": {
+   "base": 90,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 140.0,
+    "integer": true
+   }
+  },
+  "machine1_capacity_hours": {
+   "base": 40,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "machine2_capacity_hours": {
+   "base": 35,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 55.0,
+    "integer": false
+   }
+  },
+  "demand_liquid": {
+   "base": 75,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 120.0,
+    "integer": true
+   }
+  },
+  "demand_solid": {
+   "base": 95,
+   "perturb": {
+    "mode": "abs",
+    "lo": 50.0,
+    "hi": 150.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "machine1_time_liquid": {
+    "meaning": "Minutes of Machine 1 per unit of liquid fertilizer",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "machine2_time_liquid": {
+    "meaning": "Minutes of Machine 2 per unit of liquid fertilizer",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "machine1_time_solid": {
+    "meaning": "Minutes of Machine 1 per unit of solid fertilizer",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "machine2_time_solid": {
+    "meaning": "Minutes of Machine 2 per unit of solid fertilizer",
+    "base": 33,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "initial_inventory_liquid": {
+    "meaning": "Starting inventory of liquid fertilizer (units)",
+    "base": 30,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 60,
+     "integer": true
+    }
+   },
+   "initial_inventory_solid": {
+    "meaning": "Starting inventory of solid fertilizer (units)",
+    "base": 90,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 140,
+     "integer": true
+    }
+   },
+   "machine1_capacity_hours": {
+    "meaning": "Available Machine 1 processing time this week (hours)",
+    "base": 40,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "machine2_capacity_hours": {
+    "meaning": "Available Machine 2 processing time this week (hours)",
+    "base": 35,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 55,
+     "integer": false
+    }
+   },
+   "demand_liquid": {
+    "meaning": "Demand for liquid fertilizer this week (units)",
+    "base": 75,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 120,
+     "integer": true
+    }
+   },
+   "demand_solid": {
+    "meaning": "Demand for solid fertilizer this week (units)",
+    "base": 95,
+    "perturb": {
+     "mode": "abs",
+     "lo": 50,
+     "hi": 150,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

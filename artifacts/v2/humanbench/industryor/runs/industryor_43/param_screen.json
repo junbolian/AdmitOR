@@ -1,0 +1,77 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "workers_initial",
+  "prod_per_worker",
+  "demand",
+  "overtime_max_per_worker",
+  "overtime_unit_cost",
+  "holding_cost",
+  "max_workforce_change",
+  "hiring_cost",
+  "layoff_cost",
+  "initial_inventory",
+  "final_inventory"
+ ],
+ "safe": [
+  "overtime_max_per_worker",
+  "overtime_unit_cost",
+  "holding_cost",
+  "max_workforce_change",
+  "hiring_cost",
+  "layoff_cost",
+  "initial_inventory",
+  "final_inventory"
+ ],
+ "tests": {
+  "workers_initial": [
+   1,
+   1
+  ],
+  "prod_per_worker": [
+   2,
+   2
+  ],
+  "demand": [
+   2,
+   2
+  ],
+  "overtime_max_per_worker": [
+   3,
+   3
+  ],
+  "overtime_unit_cost": [
+   3,
+   3
+  ],
+  "holding_cost": [
+   3,
+   3
+  ],
+  "max_workforce_change": [
+   3,
+   3
+  ],
+  "hiring_cost": [
+   3,
+   3
+  ],
+  "layoff_cost": [
+   3,
+   3
+  ],
+  "initial_inventory": [
+   3,
+   3
+  ],
+  "final_inventory": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

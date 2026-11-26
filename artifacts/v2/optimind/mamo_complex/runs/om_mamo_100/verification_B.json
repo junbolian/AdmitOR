@@ -1,0 +1,134 @@
+{
+ "sample_id": "om_mamo_100",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [\n    {\n      \"parameter\": \"capacity_matrix[0][4]\",\n      \"extracted\": 0,\n      \"stated\": 7,\n      \"evidence\": \"City 4: Receives from City 0 (7 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[2][0]\",\n      \"extracted\": 3,\n      \"stated\": {\"origin\": 0, \"destination\": 2, \"capacity\": 3},\n      \"evidence\": \"City 2: Can manage supplies from City 0 (3 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[3][0]\",\n      \"extracted\": 9,\n      \"stated\": {\"origin\": 0, \"destination\": 3, \"capacity\": 9},\n      \"evidence\": \"City 3: Starts with supplies from City 0 (9 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[4][0]\",\n      \"extracted\": 7,\n      \"stated\": {\"origin\": 0, \"destination\": 4, \"capacity\": 7},\n      \"evidence\": \"City 4: Receives from City 0 (7 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[5][0]\",\n      \"extracted\": 16,\n      \"stated\": {\"origin\": 0, \"destination\": 5, \"capacity\": 16},\n      \"evidence\": \"City 5: Gathers supplies from City 0 (16 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[6][0]\",\n      \"extracted\": 3,\n      \"stated\": {\"origin\": 0, \"destination\": 6, \"capacity\": 3},\n      \"evidence\": \"City 6: Channels supplies from City 0 (3 tons)\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[7][0]\",\n      \"extracted\": 14,\n      \"stated\": {\"origin\": 0, \"destination\": 7, \"capacity\": 14},\n      \"evidence\": \"City 7: Starts with resources from City 0 (14 tons)\"\n    }\n  ],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_matrix[0][0]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[0][1]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[1][1]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[2][2]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[3][3]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[4][4]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[5][5]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[5][7]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[6][6]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[7][7]\",\n      \"evidence\": \"no value in the statement\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[8]\",\n      \"evidence\": \"no value in the statement\"\n    }\n  ]\n}",
+ "mismatch": [
+  {
+   "parameter": "capacity_matrix[0][4]",
+   "extracted": 0,
+   "stated": 7,
+   "evidence": "City 4: Receives from City 0 (7 tons)"
+  },
+  {
+   "parameter": "capacity_matrix[2][0]",
+   "extracted": 3,
+   "stated": {
+    "origin": 0,
+    "destination": 2,
+    "capacity": 3
+   },
+   "evidence": "City 2: Can manage supplies from City 0 (3 tons)"
+  },
+  {
+   "parameter": "capacity_matrix[3][0]",
+   "extracted": 9,
+   "stated": {
+    "origin": 0,
+    "destination": 3,
+    "capacity": 9
+   },
+   "evidence": "City 3: Starts with supplies from City 0 (9 tons)"
+  },
+  {
+   "parameter": "capacity_matrix[4][0]",
+   "extracted": 7,
+   "stated": {
+    "origin": 0,
+    "destination": 4,
+    "capacity": 7
+   },
+   "evidence": "City 4: Receives from City 0 (7 tons)"
+  },
+  {
+   "parameter": "capacity_matrix[5][0]",
+   "extracted": 16,
+   "stated": {
+    "origin": 0,
+    "destination": 5,
+    "capacity": 16
+   },
+   "evidence": "City 5: Gathers supplies from City 0 (16 tons)"
+  },
+  {
+   "parameter": "capacity_matrix[6][0]",
+   "extracted": 3,
+   "stated": {
+    "origin": 0,
+    "destination": 6,
+    "capacity": 3
+   },
+   "evidence": "City 6: Channels supplies from City 0 (3 tons)"
+  },
+  {
+   "parameter": "capacity_matrix[7][0]",
+   "extracted": 14,
+   "stated": {
+    "origin": 0,
+    "destination": 7,
+    "capacity": 14
+   },
+   "evidence": "City 7: Starts with resources from City 0 (14 tons)"
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix[0][0]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[0][1]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[1][1]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[2][2]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[3][3]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[4][4]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[5][5]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[5][7]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[6][6]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[7][7]",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "capacity_matrix[8]",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

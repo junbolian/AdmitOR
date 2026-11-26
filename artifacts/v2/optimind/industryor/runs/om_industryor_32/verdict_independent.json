@@ -1,0 +1,163 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "container_capacity": 60,
+   "container_min_load": 18,
+   "quantity_A": 120,
+   "quantity_B": 90,
+   "quantity_C": 300,
+   "quantity_D": 90,
+   "quantity_E": 120,
+   "weight_A": 0.5,
+   "weight_B": 1.0,
+   "weight_C": 0.4,
+   "weight_D": 0.6,
+   "weight_E": 0.65,
+   "min_D_per_container": 12,
+   "A_requires_C_ratio": 1
+  },
+  {
+   "container_capacity": 64.18280395373651,
+   "container_min_load": 12.870116156404801,
+   "quantity_A": 103.80211092257657,
+   "quantity_B": 75.05337986003643,
+   "quantity_C": 342.5648185495222,
+   "quantity_D": 99.54177232083723,
+   "quantity_E": 148.23692887474886,
+   "weight_A": 0.4173877665258833,
+   "weight_B": 0.9687687278741082,
+   "weight_C": 0.32476755511009125,
+   "weight_D": 0.5324731139528648,
+   "weight_E": 0.6513923749068743,
+   "min_D_per_container": 4.424575514941818,
+   "A_requires_C_ratio": 0.7982564760299727
+  },
+  {
+   "container_capacity": 64.4965331333857,
+   "container_min_load": 18.48536799051474,
+   "quantity_A": 99.87172478693014,
+   "quantity_B": 94.82034692929908,
+   "quantity_C": 355.6974822020088,
+   "quantity_D": 63.35093302261529,
+   "quantity_E": 142.01898613196215,
+   "weight_A": 0.5396278789976454,
+   "weight_B": 0.9361002066071967,
+   "weight_C": 0.34487671996988506,
+   "weight_D": 0.7097311373296274,
+   "weight_E": 0.607514581729283,
+   "min_D_per_container": 5.4839334940823665,
+   "A_requires_C_ratio": 0.645074565250196
+  },
+  {
+   "container_capacity": 70.42483099042379,
+   "container_min_load": 19.120241138762424,
+   "quantity_A": 142.1132356757554,
+   "quantity_B": 102.40551648146617,
+   "quantity_C": 306.5210564618462,
+   "quantity_D": 115.54825125488603,
+   "quantity_E": 111.25447515900144,
+   "weight_A": 0.5104081262546454,
+   "weight_B": 1.1317618657011979,
+   "weight_C": 0.4189631603782794,
+   "weight_D": 0.6868096560745864,
+   "weight_E": 0.6701115577667582,
+   "min_D_per_container": 15.273149379438776,
+   "A_requires_C_ratio": 0.5687365754834933
+  },
+  {
+   "container_capacity": 51.836948269546404,
+   "container_min_load": 15.725390006902757,
+   "quantity_A": 89.74502233850117,
+   "quantity_B": 75.57070786349563,
+   "quantity_C": 228.18025729375123,
+   "quantity_D": 78.01057456794497,
+   "quantity_E": 129.7692799870368,
+   "weight_A": 0.47296643579401687,
+   "weight_B": 0.9480723868467531,
+   "weight_C": 0.35352112492343807,
+   "weight_D": 0.5440746772917873,
+   "weight_E": 0.7635301928052485,
+   "min_D_per_container": 14.368566163945497,
+   "A_requires_C_ratio": 1.4136965085004822
+  },
+  {
+   "container_capacity": 50.13415944594291,
+   "container_min_load": 20.47456941786377,
+   "quantity_A": 95.76497955085884,
+   "quantity_B": 83.49059385491299,
+   "quantity_C": 388.11420311458716,
+   "quantity_D": 97.55998703212101,
+   "quantity_E": 124.10038155177452,
+   "weight_A": 0.5369228501979749,
+   "weight_B": 1.1371407680759238,
+   "weight_C": 0.4441599858473992,
+   "weight_D": 0.534971537271385,
+   "weight_E": 0.5283460634150499,
+   "min_D_per_container": 9.04724876894531,
+   "A_requires_C_ratio": 0.9016113139635541
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   7.0,
+   6.0,
+   7.0,
+   7.0,
+   null,
+   9.0
+  ],
+  "B-structured": [
+   7.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   7.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: quantity[A] = '103.80211092257657', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: quantity[A] = '99.87172478693014', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: quantity[A] = '142.1132356757554', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: quantity[A] = '89.74502233850117', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: quantity[A] = '95.76497955085884', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "infeasible"
+  ]
+ },
+ "informative": [
+  0
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 1 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

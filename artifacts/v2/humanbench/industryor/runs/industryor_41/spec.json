@@ -1,0 +1,270 @@
+{
+ "spec": {
+  "demand_A1": {
+   "base": [
+    5300,
+    1200,
+    7400,
+    5300
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_A2": {
+   "base": [
+    4500,
+    5400,
+    6500,
+    7200
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_A3": {
+   "base": [
+    4400,
+    6700,
+    12500,
+    13200
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price": {
+   "base": [
+    124,
+    109,
+    115
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "production_cost": {
+   "base": [
+    73.3,
+    52.9,
+    65.4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "activation_cost": {
+   "base": [
+    150000,
+    150000,
+    100000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "production_quota": {
+   "base": [
+    500,
+    450,
+    550
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "min_batch_size": {
+   "base": [
+    20,
+    20,
+    16
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "production_days": {
+   "base": [
+    23,
+    20,
+    23,
+    22
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "storage_cost": {
+   "base": [
+    3.5,
+    4.0,
+    3.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "storage_capacity": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_A1": {
+    "meaning": "Monthly demand for product A1 (Jan, Feb, Mar, Apr)",
+    "base": [
+     5300,
+     1200,
+     7400,
+     5300
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_A2": {
+    "meaning": "Monthly demand for product A2 (Jan, Feb, Mar, Apr)",
+    "base": [
+     4500,
+     5400,
+     6500,
+     7200
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_A3": {
+    "meaning": "Monthly demand for product A3 (Jan, Feb, Mar, Apr)",
+    "base": [
+     4400,
+     6700,
+     12500,
+     13200
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price": {
+    "meaning": "Unit selling price per product (A1, A2, A3)",
+    "base": [
+     124,
+     109,
+     115
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "production_cost": {
+    "meaning": "Unit production cost per product (A1, A2, A3)",
+    "base": [
+     73.3,
+     52.9,
+     65.4
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "activation_cost": {
+    "meaning": "Fixed monthly activation cost per product line (A1, A2, A3)",
+    "base": [
+     150000,
+     150000,
+     100000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "production_quota": {
+    "meaning": "Maximum monthly production quantity per product if line active (A1, A2, A3)",
+    "base": [
+     500,
+     450,
+     550
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "min_batch_size": {
+    "meaning": "Minimum monthly production batch size when line active (A1, A2, A3)",
+    "base": [
+     20,
+     20,
+     16
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "production_days": {
+    "meaning": "Number of production days per month (Jan, Feb, Mar, Apr)",
+    "base": [
+     23,
+     20,
+     23,
+     22
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "storage_cost": {
+    "meaning": "Monthly per-unit storage cost per product (A1, A2, A3)",
+    "base": [
+     3.5,
+     4.0,
+     3.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "storage_capacity": {
+    "meaning": "Total monthly storage capacity in units",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

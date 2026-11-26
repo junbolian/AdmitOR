@@ -1,0 +1,27 @@
+{
+ "sample_id": "industryor_44",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"distance_matrix\",\"evidence\":\"Diagonal entries are shown as \\\"-\\\"; no diagonal value of 0 is stated.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "distance_matrix",
+   "evidence": "Diagonal entries are shown as \"-\"; no diagonal value of 0 is stated."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

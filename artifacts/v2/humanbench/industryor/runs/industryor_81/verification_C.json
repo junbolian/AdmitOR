@@ -1,0 +1,22 @@
+{
+ "sample_id": "industryor_81",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n- **initial_capital**: 500,000 yuan ✓\n- **annual_reinvest_profit_rate**: \"profit of 20% of the investment amount each year\" → rate is 0.2 ✓\n- **project2_total_interest_rate**: \"total interest of 150% of the investment amount\" — \"total interest of 150%\" means the interest earned is 1.5× the principal, so the total return (principal + interest) would be 2.5×. The extracted value 1.5 matches the stated \"150% interest\" literally, but the description says \"total interest rate\" with value 1.5, which is consistent with how the statement phrases it ✓\n- **project2_investment_cap**: 120,000 yuan ✓\n- **project3_total_interest_rate**: \"total interest of 160% of the investment amount\" → 1.6 ✓. However, the description says \"recovered end year 2\" but project 3 starts at beginning of year 2 and is recovered at end of year 2 — that part is fine.\n- **project3_investment_cap**: \"investment limit for this type of investment is 150,000 yuan\" ✓\n- **project4_profit_rate**: \"profit of 40%\" → 0.4 ✓\n- **project4_investment_cap**: 100,000 yuan ✓\n\nNo mismatches or not_stated values found.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

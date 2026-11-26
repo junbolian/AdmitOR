@@ -1,0 +1,170 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "process_I_hours_A": 4,
+   "process_I_hours_B": 6,
+   "process_II_hours_A": 3,
+   "process_II_hours_B": 2,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 300,
+   "profit_B": 450,
+   "profit_target": 10000,
+   "min_units_A": 10,
+   "min_units_B": 15,
+   "overtime_reduction_A": 20,
+   "overtime_reduction_B": 25,
+   "max_overtime_II": 30
+  },
+  {
+   "process_I_hours_A": 4.278853596915767,
+   "process_I_hours_B": 4.575032265668002,
+   "process_II_hours_A": 2.6625439775536788,
+   "process_II_hours_B": 1.7232107381488229,
+   "capacity_I": 167.73534106230096,
+   "capacity_II": 76.1844820598019,
+   "profit_A": 370.59232218687214,
+   "profit_B": 338.47348480994236,
+   "profit_target": 9531.530918111623,
+   "min_units_A": 1,
+   "min_units_B": 8,
+   "overtime_reduction_A": 30.321317286201744,
+   "overtime_reduction_B": 1.9901977262897719,
+   "max_overtime_II": 20.965129520599454
+  },
+  {
+   "process_I_hours_A": 4.299768875559046,
+   "process_I_hours_B": 6.134824441809649,
+   "process_II_hours_A": 2.5806609330610453,
+   "process_II_hours_B": 2.089265683875909,
+   "capacity_I": 173.20728425083698,
+   "capacity_II": 52.72745658873214,
+   "profit_A": 355.0474653299054,
+   "profit_B": 503.4976366468212,
+   "profit_target": 9041.503099107951,
+   "min_units_A": 4,
+   "min_units_B": 34,
+   "overtime_reduction_A": 20.195672706757605,
+   "overtime_reduction_B": 6.955938253511093,
+   "max_overtime_II": 17.90149130500392
+  },
+  {
+   "process_I_hours_A": 4.694988732694919,
+   "process_I_hours_B": 6.311178094100674,
+   "process_II_hours_A": 3.4606924099115703,
+   "process_II_hours_B": 2.2297317866938178,
+   "capacity_I": 152.71710685910256,
+   "capacity_II": 86.55905173927796,
+   "profit_A": 278.1361878975036,
+   "profit_B": 464.05097044377123,
+   "profit_target": 11976.42798551797,
+   "min_units_A": 15,
+   "min_units_B": 30,
+   "overtime_reduction_A": 34.64112871540572,
+   "overtime_reduction_B": 52.84288771611926,
+   "max_overtime_II": 16.374731509669868
+  },
+  {
+   "process_I_hours_A": 3.4557965513030937,
+   "process_I_hours_B": 5.368163890806321,
+   "process_II_hours_A": 2.3696879653854412,
+   "process_II_hours_B": 1.7327908863610302,
+   "capacity_I": 120.0751072057297,
+   "capacity_II": 62.22907610885322,
+   "profit_A": 324.42319996759204,
+   "profit_B": 413.50468832192274,
+   "profit_target": 9221.085802701295,
+   "min_units_A": 5,
+   "min_units_B": 9,
+   "overtime_reduction_A": 56.19927526274964,
+   "overtime_reduction_B": 48.60265389349451,
+   "max_overtime_II": 33.27393017000965
+  },
+  {
+   "process_I_hours_A": 3.342277296396194,
+   "process_I_hours_B": 6.687380393851048,
+   "process_II_hours_A": 2.495103740642892,
+   "process_II_hours_B": 1.879455441757648,
+   "capacity_I": 186.71425129774465,
+   "capacity_II": 74.89999159489325,
+   "profit_A": 310.2509538794363,
+   "profit_B": 499.8458477672662,
+   "profit_target": 12057.111521138859,
+   "min_units_A": 19,
+   "min_units_B": 8,
+   "overtime_reduction_A": 1.9260146342422657,
+   "overtime_reduction_B": 23.658978604431145,
+   "max_overtime_II": 23.032226279271082
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   10591.666666666666,
+   13120.235820892864,
+   null,
+   null,
+   null,
+   15350.308822021065
+  ],
+  "B-structured": [
+   0.0,
+   0.0,
+   35.707775564987244,
+   0.0,
+   0.0,
+   5.507494701412869
+  ],
+  "C-direct": [
+   11250.0,
+   13078.221483457139,
+   18539.109507311543,
+   17929.662772937394,
+   10338.88031232855,
+   16364.630453413642
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]"
+ ],
+ "notes": []
+}

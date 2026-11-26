@@ -1,0 +1,104 @@
+{
+ "spec": {
+  "cost_matrix": {
+   "base": [
+    [
+     0,
+     28,
+     89,
+     59,
+     41
+    ],
+    [
+     28,
+     0,
+     85,
+     12,
+     68
+    ],
+    [
+     89,
+     85,
+     0,
+     22,
+     70
+    ],
+    [
+     59,
+     12,
+     22,
+     0,
+     48
+    ],
+    [
+     41,
+     68,
+     70,
+     48,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_matrix": {
+    "meaning": "symmetric travel cost between each ordered pair of the five cities",
+    "base": [
+     [
+      0,
+      28,
+      89,
+      59,
+      41
+     ],
+     [
+      28,
+      0,
+      85,
+      12,
+      68
+     ],
+     [
+      89,
+      85,
+      0,
+      22,
+      70
+     ],
+     [
+      59,
+      12,
+      22,
+      0,
+      48
+     ],
+     [
+      41,
+      68,
+      70,
+      48,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

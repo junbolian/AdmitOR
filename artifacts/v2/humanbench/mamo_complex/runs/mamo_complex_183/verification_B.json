@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_183",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"transport_costs\",\"evidence\":\"Center 1 and Center 2 specify costs only to Stores 1, 2, and 9, with intervening entries described as 'and so on'; Centers 3–6 'follow similar patterns with varying costs to each store'.\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "Center 1 and Center 2 specify costs only to Stores 1, 2, and 9, with intervening entries described as 'and so on'; Centers 3–6 'follow similar patterns with varying costs to each store'."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

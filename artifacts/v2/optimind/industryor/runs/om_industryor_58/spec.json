@@ -1,0 +1,97 @@
+{
+ "spec": {
+  "N": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    86,
+    49,
+    57,
+    31,
+    69,
+    50,
+    68,
+    79,
+    93,
+    24,
+    5,
+    16,
+    7,
+    72,
+    67,
+    90,
+    69,
+    1,
+    86,
+    59,
+    81
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  }
+ },
+ "warnings": [
+  "[N] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "N": {
+    "meaning": "number of customers (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "symmetric pairwise distances between locations (upper-triangular entries, row-major for i<j)",
+    "base": [
+     86,
+     49,
+     57,
+     31,
+     69,
+     50,
+     68,
+     79,
+     93,
+     24,
+     5,
+     16,
+     7,
+     72,
+     67,
+     90,
+     69,
+     1,
+     86,
+     59,
+     81
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

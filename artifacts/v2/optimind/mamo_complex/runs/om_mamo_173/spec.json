@@ -1,0 +1,222 @@
+{
+ "spec": {
+  "initial_supply": {
+   "base": [
+    229,
+    345,
+    231,
+    164,
+    354,
+    437,
+    265
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "required_demand": {
+   "base": [
+    158,
+    14,
+    326,
+    432,
+    207,
+    215,
+    233
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transfer_cost": {
+   "base": [
+    [
+     0,
+     26,
+     8,
+     7,
+     34,
+     35,
+     34
+    ],
+    [
+     41,
+     0,
+     27,
+     31,
+     3,
+     33,
+     36
+    ],
+    [
+     20,
+     49,
+     0,
+     48,
+     21,
+     38,
+     42
+    ],
+    [
+     10,
+     35,
+     26,
+     0,
+     21,
+     33,
+     31
+    ],
+    [
+     21,
+     30,
+     24,
+     25,
+     0,
+     5,
+     8
+    ],
+    [
+     27,
+     34,
+     34,
+     26,
+     27,
+     0,
+     43
+    ],
+    [
+     38,
+     20,
+     11,
+     43,
+     49,
+     9,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_supply": {
+    "meaning": "initial units available at each facility (facilities 1-7)",
+    "base": [
+     229,
+     345,
+     231,
+     164,
+     354,
+     437,
+     265
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "required_demand": {
+    "meaning": "required units at each facility (facilities 1-7)",
+    "base": [
+     158,
+     14,
+     326,
+     432,
+     207,
+     215,
+     233
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transfer_cost": {
+    "meaning": "cost per unit transferred between facilities; rows are origin 1-7, columns are destination in order 2,3,4,5,6,7 for row 1, etc., with zeros on the diagonal omitted",
+    "base": [
+     [
+      0,
+      26,
+      8,
+      7,
+      34,
+      35,
+      34
+     ],
+     [
+      41,
+      0,
+      27,
+      31,
+      3,
+      33,
+      36
+     ],
+     [
+      20,
+      49,
+      0,
+      48,
+      21,
+      38,
+      42
+     ],
+     [
+      10,
+      35,
+      26,
+      0,
+      21,
+      33,
+      31
+     ],
+     [
+      21,
+      30,
+      24,
+      25,
+      0,
+      5,
+      8
+     ],
+     [
+      27,
+      34,
+      34,
+      26,
+      27,
+      0,
+      43
+     ],
+     [
+      38,
+      20,
+      11,
+      43,
+      49,
+      9,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

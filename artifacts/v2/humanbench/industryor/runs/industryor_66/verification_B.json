@@ -1,0 +1,31 @@
+{
+ "sample_id": "industryor_66",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[],\"not_stated\":[{\"parameter\":\"route_cost\",\"evidence\":\"Let $c_{j}$ be the cost of the $j$th route.\"},{\"parameter\":\"route_capacity_r\",\"evidence\":\"each delivery person can transport up to $r$ types of orders\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "route_cost",
+   "evidence": "Let $c_{j}$ be the cost of the $j$th route."
+  },
+  {
+   "parameter": "route_capacity_r",
+   "evidence": "each delivery person can transport up to $r$ types of orders"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

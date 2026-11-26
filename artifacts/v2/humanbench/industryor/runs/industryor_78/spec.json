@@ -1,0 +1,223 @@
+{
+ "spec": {
+  "painting_value": {
+   "base": 25000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "bust_value": {
+   "base": 5000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "vase_value": {
+   "base": 20000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "porsche_value": {
+   "base": 40000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "diamond_value": {
+   "base": 12000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "diamond_count": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  },
+  "sofa_value": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dog_value": {
+   "base": 3000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "dog_count": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  },
+  "sculpture_value": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "sailboat_value": {
+   "base": 15000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "harley_value": {
+   "base": 10000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cavour_furniture_value": {
+   "base": 13000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [
+  "[diamond_count] degenerate abs range (lo == hi); perturbation has no effect",
+  "[dog_count] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "painting_value": {
+    "meaning": "value of the Caillebotte painting",
+    "base": 25000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "bust_value": {
+    "meaning": "value of the bust of Diocletian",
+    "base": 5000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "vase_value": {
+    "meaning": "value of the Yuan Dynasty Chinese vase",
+    "base": 20000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "porsche_value": {
+    "meaning": "value of the 911 Porsche",
+    "base": 40000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "diamond_value": {
+    "meaning": "value of each of the three diamonds",
+    "base": 12000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "diamond_count": {
+    "meaning": "number of diamonds",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3,
+     "hi": 3,
+     "integer": true
+    }
+   },
+   "sofa_value": {
+    "meaning": "value of the Louis XV sofa",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dog_value": {
+    "meaning": "value of each of the two Jack Russell racing dogs",
+    "base": 3000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "dog_count": {
+    "meaning": "number of dogs (must stay together)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   },
+   "sculpture_value": {
+    "meaning": "value of the 200 AD sculpture",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "sailboat_value": {
+    "meaning": "value of the sailboat",
+    "base": 15000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "harley_value": {
+    "meaning": "value of the Harley Davidson motorcycle",
+    "base": 10000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cavour_furniture_value": {
+    "meaning": "value of the Cavour furniture piece",
+    "base": 13000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

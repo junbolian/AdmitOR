@@ -1,0 +1,144 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    430,
+    430,
+    380,
+    450,
+    520,
+    440
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "regular_capacity": {
+   "base": 420,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "regular_cost": {
+   "base": 40,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "overtime_capacity": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "overtime_cost": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "inventory_cost": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "initial_inventory": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 80.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Monthly demand for wrenches (Jan–Jun)",
+    "base": [
+     430,
+     430,
+     380,
+     450,
+     520,
+     440
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "regular_capacity": {
+    "meaning": "Regular-time production capacity per month",
+    "base": 420,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "regular_cost": {
+    "meaning": "Cost per wrench produced on regular time",
+    "base": 40,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "overtime_capacity": {
+    "meaning": "Overtime production capacity per month",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "overtime_cost": {
+    "meaning": "Cost per wrench produced on overtime",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "inventory_cost": {
+    "meaning": "Holding cost per wrench per month",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "initial_inventory": {
+    "meaning": "Inventory at beginning of January",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 80,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

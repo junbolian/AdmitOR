@@ -1,0 +1,192 @@
+{
+ "spec": {
+  "reliability_component1": {
+   "base": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.35,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "reliability_component2": {
+   "base": [
+    0.6,
+    0.75,
+    0.95,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.45,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "reliability_component3": {
+   "base": [
+    0.7,
+    0.9,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.55,
+    "hi": 1.0,
+    "integer": false
+   }
+  },
+  "unit_price": {
+   "base": [
+    20,
+    30,
+    40
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "unit_weight": {
+   "base": [
+    2,
+    4,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "total_budget": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "total_weight_limit": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "reliability_component1": {
+    "meaning": "Reliability of component 1 as a function of number of spares (index = number of spares, 0..5)",
+    "base": [
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     1.0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.35,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "reliability_component2": {
+    "meaning": "Reliability of component 2 as a function of number of spares (0..5)",
+    "base": [
+     0.6,
+     0.75,
+     0.95,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.45,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "reliability_component3": {
+    "meaning": "Reliability of component 3 as a function of number of spares (0..5)",
+    "base": [
+     0.7,
+     0.9,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.55,
+     "hi": 1.0,
+     "integer": false
+    }
+   },
+   "unit_price": {
+    "meaning": "Unit price of each component type in yuan (component 1, 2, 3)",
+    "base": [
+     20,
+     30,
+     40
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "unit_weight": {
+    "meaning": "Unit weight of each component type in kg (component 1, 2, 3)",
+    "base": [
+     2,
+     4,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "total_budget": {
+    "meaning": "Total budget limit for all spare parts in yuan",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "total_weight_limit": {
+    "meaning": "Total weight limit for all spare parts in kg",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "effective_hours": [
+    6000,
+    10000,
+    4000,
+    7000,
+    4000
+   ],
+   "machine_fee": [
+    0.05,
+    0.03,
+    0.06,
+    0.11,
+    0.05
+   ],
+   "raw_material_cost": [
+    0.25,
+    0.35,
+    0.5
+   ],
+   "selling_price": [
+    1.25,
+    2.0,
+    2.8
+   ]
+  },
+  {
+   "effective_hours": [
+    6334.62431629892,
+    8100.043020890668,
+    3640.046909390591,
+    6224.990066816704,
+    4378.35394266242
+   ],
+   "machine_fee": [
+    0.055300984622687344,
+    0.03705923221868721,
+    0.04512979797465898,
+    0.10484684009922784,
+    0.03589391658314211
+   ],
+   "raw_material_cost": [
+    0.22186379748036034,
+    0.3507497403344707,
+    0.4053071939367727
+   ],
+   "selling_price": [
+    1.0994188253433244,
+    2.1199075502236187,
+    2.8503344582756025
+   ]
+  },
+  {
+   "effective_hours": [
+    5329.057492897672,
+    10357.062735503634,
+    4495.0887306845225,
+    5618.196527098571,
+    4489.310802932493
+   ],
+   "machine_fee": [
+    0.05594418184964681,
+    0.027124509297323855,
+    0.04759726199322414,
+    0.14017606276564756,
+    0.0450978363533788
+   ],
+   "raw_material_cost": [
+    0.2092745843380148,
+    0.2935402927566849,
+    0.5694988732694919
+   ],
+   "selling_price": [
+    1.3018630156834454,
+    2.245702618619504,
+    3.0572996010970757
+   ]
+  },
+  {
+   "effective_hours": [
+    6086.947419491282,
+    11892.463055917482,
+    3805.6550035333653,
+    7145.713767565036,
+    4527.047462804791
+   ],
+   "machine_fee": [
+    0.05355559257092738,
+    0.03651072420559399,
+    0.06278467722924343,
+    0.12350174119018494,
+    0.03637473150966987
+   ],
+   "raw_material_cost": [
+    0.2227898275651547,
+    0.320514314904295,
+    0.4159583953847255
+   ],
+   "selling_price": [
+    1.1163954431805152,
+    1.6808011435277834,
+    2.5513304354833033
+   ]
+  },
+  {
+   "effective_hours": [
+    6325.64266623456,
+    9459.328715880338,
+    3792.2895473870126,
+    6186.619686160166,
+    3627.164515278582
+   ],
+   "machine_fee": [
+    0.06309963763137483,
+    0.03266463693443868,
+    0.06392871620401157,
+    0.0882951507810744,
+    0.05687380393851047
+   ],
+   "raw_material_cost": [
+    0.21634024937619284,
+    0.3331237618460707,
+    0.597904670127319
+   ],
+   "selling_price": [
+    1.3199998799270463,
+    2.045559795019717,
+    3.0067679611086593
+   ]
+  },
+  {
+   "effective_hours": [
+    6822.844608455543,
+    11103.999646184979,
+    3566.476915142567,
+    5689.880682931306,
+    3704.724876894531
+   ],
+   "machine_fee": [
+    0.043032226279271085,
+    0.024797691184553872,
+    0.07594474971606195,
+    0.13484026334719615,
+    0.04444033642395434
+   ],
+   "raw_material_cost": [
+    0.265543866529488,
+    0.33538846614849294,
+    0.5829095179481087
+   ],
+   "selling_price": [
+    1.2294259262936993,
+    1.811904133198442,
+    2.516222808617261
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:processing_time = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'"
+  ],
+  "B-structured": [
+   "invalid_or_missing_parameters",
+   "invalid_or_missing_parameters",
+   "invalid_or_missing_parameters",
+   "invalid_or_missing_parameters",
+   "invalid_or_missing_parameters",
+   "invalid_or_missing_parameters"
+  ],
+  "C-direct": [
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'",
+   "crash:raw_pt = params[\"processing_time\"] | ~~~~~~^^^^^^^^^^^^^^^^^^^ | KeyError: 'processing_time'"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

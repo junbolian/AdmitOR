@@ -1,0 +1,315 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "initial_supplies": [
+    483,
+    265,
+    130,
+    361
+   ],
+   "demands": [
+    346,
+    221,
+    217,
+    293
+   ],
+   "transport_costs": [
+    [
+     0,
+     2,
+     19,
+     13
+    ],
+    [
+     34,
+     0,
+     10,
+     48
+    ],
+    [
+     46,
+     22,
+     0,
+     46
+    ],
+    [
+     48,
+     15,
+     23,
+     0
+    ]
+   ]
+  },
+  {
+   "initial_supplies": [
+    550.3431436551577,
+    139.12785013400674,
+    100.75381138798551,
+    261.079076471725
+   ],
+   "demands": [
+    427.8190401007483,
+    260.0505867204634,
+    302.10296619195145,
+    171.97307796041892
+   ],
+   "transport_costs": [
+    [
+     0.0,
+     0.8715133266513688,
+     12.584945825522157,
+     13.083542494412455
+    ],
+    [
+     14.682667563101635,
+     0.0,
+     11.79861325335428,
+     50.58862928274528
+    ],
+    [
+     30.56832233664646,
+     24.35661405432399,
+     0.0,
+     18.75873153422897
+    ],
+    [
+     65.61518890556974,
+     18.566509109788086,
+     18.59091425589658,
+     0.0
+    ]
+   ]
+  },
+  {
+   "initial_supplies": [
+    703.8339138758754,
+    221.69755445484608,
+    77.05695963941923,
+    215.4146120368805
+   ],
+   "demands": [
+    466.233050756221,
+    243.92345293208294,
+    283.6468353005405,
+    360.3114135012886
+   ],
+   "transport_costs": [
+    [
+     0.0,
+     3.13547783355049,
+     16.230583800350463,
+     13.811833847862342
+    ],
+    [
+     47.4397103015222,
+     0.0,
+     14.340482803729326,
+     52.455483566789496
+    ],
+    [
+     57.29236535906379,
+     10.009763728509483,
+     0.0,
+     34.37421559083632
+    ],
+    [
+     23.796017870800945,
+     10.190235954498544,
+     11.987639451708526,
+     0.0
+    ]
+   ]
+  },
+  {
+   "initial_supplies": [
+    548.5355865797053,
+    229.18052742707232,
+    113.12352572519474,
+    256.13203810850706
+   ],
+   "demands": [
+    265.37432642899324,
+    317.5006638844612,
+    249.12367859851076,
+    324.97538466042755
+   ],
+   "transport_costs": [
+    [
+     0.0,
+     2.5499043150808385,
+     11.325576857771967,
+     11.119504891419306
+    ],
+    [
+     53.9725527059731,
+     0.0,
+     10.683396925295757,
+     58.63378085701679
+    ],
+    [
+     64.92542599447751,
+     29.286397664820864,
+     0.0,
+     20.171933463502885
+    ],
+    [
+     37.370095568203126,
+     10.81933576756265,
+     15.023126482982613,
+     0.0
+    ]
+   ]
+  },
+  {
+   "initial_supplies": [
+    664.7855635862991,
+    215.88963841159665,
+    150.2070264883344,
+    323.3231162828998
+   ],
+   "demands": [
+    489.43346605022805,
+    211.90625942181512,
+    165.97899613007738,
+    218.76185975433714
+   ],
+   "transport_costs": [
+    [
+     0.0,
+     1.4305798604550448,
+     20.928560577096725,
+     19.20603698419864
+    ],
+    [
+     29.89554060972821,
+     0.0,
+     15.970451277941326,
+     48.54871451576437
+    ],
+    [
+     23.418199551993425,
+     10.043872311212994,
+     0.0,
+     53.03502150201058
+    ],
+    [
+     64.82377138730673,
+     13.598879402394314,
+     10.953364689794018,
+     0.0
+    ]
+   ]
+  },
+  {
+   "initial_supplies": [
+    722.6266266559668,
+    272.71530145127133,
+    191.24018908977035,
+    491.2414725066538
+   ],
+   "demands": [
+    176.9724335922156,
+    269.779522078603,
+    256.43115007876673,
+    303.832306809777
+   ],
+   "transport_costs": [
+    [
+     0.0,
+     2.3383083165915397,
+     10.143389557985984,
+     11.982337910438039
+    ],
+    [
+     32.11192721823163,
+     0.0,
+     14.510235284538329,
+     34.37120932326283
+    ],
+    [
+     46.03235344037647,
+     13.516409645995468,
+     0.0,
+     66.45262505498954
+    ],
+    [
+     36.39041998744126,
+     17.501090907588093,
+     26.00757783569356,
+     0.0
+    ]
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   956.0,
+   null,
+   null,
+   null,
+   172.75613536237066,
+   661.2573129708575
+  ],
+  "B-structured": [
+   956.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   956.0,
+   null,
+   null,
+   null,
+   172.75613536237066,
+   661.2573129708575
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '550.3431436551577', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '703.8339138758754', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '548.5355865797053', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '664.7855635862991', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers",
+   "crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '722.6266266559668', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "infeasible",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [4, 5]: [\"crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '664.7855635862991', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\", \"crash:raise ValueError( | ValueError: Invalid parameter value: initial_supply[1] = '722.6266266559668', value type=<class 'float'>. | Value not in parameter domain NonNegativeIntegers\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,234 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "num_vertices": 10,
+   "num_edges": 20,
+   "edge_incidence_a": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "num_vertices": 10,
+   "num_edges": 20,
+   "edge_incidence_a": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  {
+   "num_vertices": 10,
+   "num_edges": 20,
+   "edge_incidence_a": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "num_vertices": 10,
+   "num_edges": 20,
+   "edge_incidence_a": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "num_vertices": 10,
+   "num_edges": 20,
+   "edge_incidence_a": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  {
+   "num_vertices": 10,
+   "num_edges": 20,
+   "edge_incidence_a": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   7.0,
+   7.0,
+   7.0,
+   7.0,
+   7.0,
+   7.0
+  ],
+  "B-structured": [
+   7.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   7.0,
+   7.0,
+   7.0,
+   7.0,
+   7.0,
+   7.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "inconsistent_incidence",
+   "inconsistent_incidence",
+   "inconsistent_incidence",
+   "inconsistent_incidence",
+   "inconsistent_incidence"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "failed on informative instance(s) [1, 2, 3, 4, 5]: ['inconsistent_incidence', 'inconsistent_incidence', 'inconsistent_incidence', 'inconsistent_incidence', 'inconsistent_incidence']"
+ },
+ "disagreements": [],
+ "notes": []
+}

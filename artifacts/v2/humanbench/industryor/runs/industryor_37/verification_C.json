@@ -1,0 +1,35 @@
+{
+ "sample_id": "industryor_37",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each extracted parameter against the statement:\n\n**supply**: The statement shows \"Δ0\" for factory 3's supply, which the extractor interprets as 0. However, \"Δ0\" likely represents 40 (a typographical rendering), and the total row sums to 100 (30+20+40=90... actually 30+20+40=90, not 100). The total is given as 100, so factory 3's supply should be 50 (30+20+50=100). But regardless, the statement does not give a clean numeric value for factory 3 — \"Δ0\" is ambiguous. The extractor's note acknowledges this. This is a not_stated situation for that entry since no unambiguous number is provided.\n\n**balance_satisfaction_target_customers1and3**: The statement says \"should be balanced as much as possible\" — it gives no numeric target value like 1.0.\n\n**factory2_to_customer4_penalty_weight**: The statement says \"preferably not\" — no numeric weight is given.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"supply\",\n      \"evidence\": \"Factory 3 supply shown as 'Δ0' — no unambiguous numeric value stated\"\n    },\n    {\n      \"parameter\": \"balance_satisfaction_target_customers1and3\",\n      \"evidence\": \"p5: 'should be balanced as much as possible' — no numeric target given\"\n    },\n    {\n      \"parameter\": \"factory2_to_customer4_penalty_weight\",\n      \"evidence\": \"p4: 'Factory 2 should preferably not be allocated to Customer 4' — no numeric weight given\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "supply",
+   "evidence": "Factory 3 supply shown as 'Δ0' — no unambiguous numeric value stated"
+  },
+  {
+   "parameter": "balance_satisfaction_target_customers1and3",
+   "evidence": "p5: 'should be balanced as much as possible' — no numeric target given"
+  },
+  {
+   "parameter": "factory2_to_customer4_penalty_weight",
+   "evidence": "p4: 'Factory 2 should preferably not be allocated to Customer 4' — no numeric weight given"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

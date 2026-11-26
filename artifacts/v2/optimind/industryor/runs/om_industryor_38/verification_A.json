@@ -1,0 +1,31 @@
+{
+ "sample_id": "om_industryor_38",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"engines_labor\", \"evidence\": \"1 person-year\"}, {\"parameter\": \"plastic_labor\", \"evidence\": \"2 person-years\"}]}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "engines_labor",
+   "evidence": "1 person-year"
+  },
+  {
+   "parameter": "plastic_labor",
+   "evidence": "2 person-years"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

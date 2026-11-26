@@ -1,0 +1,220 @@
+{
+ "spec": {
+  "cow_price": {
+   "base": 500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sheep_price": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_price": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cow_feed_cost": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sheep_feed_cost": {
+   "base": 80,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_feed_cost": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cow_manure": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sheep_manure": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_manure": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "manure_capacity": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "chicken_max": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cow_min": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "sheep_min": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "total_animals_max": {
+   "base": 100,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cow_price": {
+    "meaning": "selling price per cow",
+    "base": 500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sheep_price": {
+    "meaning": "selling price per sheep",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_price": {
+    "meaning": "selling price per chicken",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cow_feed_cost": {
+    "meaning": "feed cost per cow",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sheep_feed_cost": {
+    "meaning": "feed cost per sheep",
+    "base": 80,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_feed_cost": {
+    "meaning": "feed cost per chicken",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cow_manure": {
+    "meaning": "manure units per cow per day",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sheep_manure": {
+    "meaning": "manure units per sheep per day",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_manure": {
+    "meaning": "manure units per chicken per day",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "manure_capacity": {
+    "meaning": "max manure units cleanable per day",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "chicken_max": {
+    "meaning": "max number of chickens",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cow_min": {
+    "meaning": "min number of cows",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "sheep_min": {
+    "meaning": "min number of sheep",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "total_animals_max": {
+    "meaning": "max total number of animals",
+    "base": 100,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   }
+  },
+  "objective_sense": "max"
+ }
+}

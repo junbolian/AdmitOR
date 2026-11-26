@@ -1,0 +1,255 @@
+{
+ "spec": {
+  "target_Ni": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.5,
+    "hi": 10.5,
+    "integer": false
+   }
+  },
+  "target_Ph": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.5,
+    "hi": 8.5,
+    "integer": false
+   }
+  },
+  "target_Po": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.5,
+    "hi": 12.5,
+    "integer": false
+   }
+  },
+  "tol_Ni": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "tol_Ph": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "tol_Po": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "nutrient_Ni": {
+   "base": [
+    10,
+    8,
+    12,
+    10,
+    15
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "nutrient_Ph": {
+   "base": [
+    8,
+    11,
+    7,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "nutrient_Po": {
+   "base": [
+    12,
+    15,
+    12,
+    10,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "price": {
+   "base": [
+    21.75,
+    23.5,
+    22.0,
+    19.5,
+    18.5
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "target_Ni": {
+    "meaning": "Target minimum nitrogen percentage",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9.5,
+     "hi": 10.5,
+     "integer": false
+    }
+   },
+   "target_Ph": {
+    "meaning": "Target minimum phosphorus percentage",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7.5,
+     "hi": 8.5,
+     "integer": false
+    }
+   },
+   "target_Po": {
+    "meaning": "Target minimum potash percentage",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11.5,
+     "hi": 12.5,
+     "integer": false
+    }
+   },
+   "tol_Ni": {
+    "meaning": "Allowed excess above nitrogen target (percentage points)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "tol_Ph": {
+    "meaning": "Allowed excess above phosphorus target (percentage points)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "tol_Po": {
+    "meaning": "Allowed excess above potash target (percentage points)",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.0,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "nutrient_Ni": {
+    "meaning": "Nitrogen percentage in each fertilizer (1..5)",
+    "base": [
+     10,
+     8,
+     12,
+     10,
+     15
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "nutrient_Ph": {
+    "meaning": "Phosphorus percentage in each fertilizer (1..5)",
+    "base": [
+     8,
+     11,
+     7,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "nutrient_Po": {
+    "meaning": "Potash percentage in each fertilizer (1..5)",
+    "base": [
+     12,
+     15,
+     12,
+     10,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "price": {
+    "meaning": "Cost per 100 pounds for each fertilizer (1..5)",
+    "base": [
+     21.75,
+     23.5,
+     22.0,
+     19.5,
+     18.5
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5.0,
+     "hi": 40.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

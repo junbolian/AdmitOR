@@ -1,0 +1,162 @@
+{
+ "spec": {
+  "price": {
+   "base": [
+    0.75,
+    0.35,
+    0.4,
+    0.75,
+    0.65
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "share_limit": {
+   "base": [
+    10,
+    5,
+    10,
+    10,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "payoff": {
+   "base": [
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 1.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "price": {
+    "meaning": "purchasing price per share of each of the 5 securities",
+    "base": [
+     0.75,
+     0.35,
+     0.4,
+     0.75,
+     0.65
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "share_limit": {
+    "meaning": "maximum number of shares purchasable per security",
+    "base": [
+     10,
+     5,
+     10,
+     10,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "payoff": {
+    "meaning": "per-share payoff of each security under each country outcome; rows = countries [Argentina, Brazil, England, Germany, Spain], columns = securities 1..5",
+    "base": [
+     [
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 1,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

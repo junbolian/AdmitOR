@@ -1,0 +1,35 @@
+{
+ "sample_id": "industryor_16",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"storage_cost_a\",\"extracted\":0.007,\"stated\":70,\"evidence\":\"storage cost is $(a+b u)$ yuan per $\\\\mathrm{m}^3$, where $a=70$, $b=100$\"},{\"parameter\":\"storage_cost_b\",\"extracted\":0.01,\"stated\":100,\"evidence\":\"storage cost is $(a+b u)$ yuan per $\\\\mathrm{m}^3$, where $a=70$, $b=100$\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "storage_cost_a",
+   "extracted": 0.007,
+   "stated": 70,
+   "evidence": "storage cost is $(a+b u)$ yuan per $\\mathrm{m}^3$, where $a=70$, $b=100$"
+  },
+  {
+   "parameter": "storage_cost_b",
+   "extracted": 0.01,
+   "stated": 100,
+   "evidence": "storage cost is $(a+b u)$ yuan per $\\mathrm{m}^3$, where $a=70$, $b=100$"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

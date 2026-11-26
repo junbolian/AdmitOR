@@ -1,0 +1,317 @@
+{
+ "spec": {
+  "cost_12": {
+   "base": 12,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_13": {
+   "base": 11,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_14": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_15": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_23": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_24": {
+   "base": 8,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_25": {
+   "base": 46,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_34": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_35": {
+   "base": 27,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "cost_45": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "supply_1": {
+   "base": 120,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "supply_2": {
+   "base": 330,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "supply_3": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "supply_4": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "supply_5": {
+   "base": 600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_1": {
+   "base": 150,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_2": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_3": {
+   "base": 600,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_4": {
+   "base": 200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "demand_5": {
+   "base": 400,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_12": {
+    "meaning": "unit transport cost from region 1 to 2",
+    "base": 12,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_13": {
+    "meaning": "unit transport cost from region 1 to 3",
+    "base": 11,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_14": {
+    "meaning": "unit transport cost from region 1 to 4",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_15": {
+    "meaning": "unit transport cost from region 1 to 5",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_23": {
+    "meaning": "unit transport cost from region 2 to 3",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_24": {
+    "meaning": "unit transport cost from region 2 to 4",
+    "base": 8,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_25": {
+    "meaning": "unit transport cost from region 2 to 5",
+    "base": 46,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_34": {
+    "meaning": "unit transport cost from region 3 to 4",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_35": {
+    "meaning": "unit transport cost from region 3 to 5",
+    "base": 27,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "cost_45": {
+    "meaning": "unit transport cost from region 4 to 5",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "supply_1": {
+    "meaning": "cars initially present at region 1",
+    "base": 120,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "supply_2": {
+    "meaning": "cars initially present at region 2",
+    "base": 330,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "supply_3": {
+    "meaning": "cars initially present at region 3",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "supply_4": {
+    "meaning": "cars initially present at region 4",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "supply_5": {
+    "meaning": "cars initially present at region 5",
+    "base": 600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_1": {
+    "meaning": "cars needed at region 1",
+    "base": 150,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_2": {
+    "meaning": "cars needed at region 2",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_3": {
+    "meaning": "cars needed at region 3",
+    "base": 600,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_4": {
+    "meaning": "cars needed at region 4",
+    "base": 200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "demand_5": {
+    "meaning": "cars needed at region 5",
+    "base": 400,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

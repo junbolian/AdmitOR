@@ -1,0 +1,53 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "salary",
+  "budget",
+  "max_hires",
+  "skill",
+  "min_total_skill",
+  "experience",
+  "min_total_experience"
+ ],
+ "safe": [
+  "salary",
+  "max_hires",
+  "skill",
+  "experience"
+ ],
+ "tests": {
+  "salary": [
+   3,
+   3
+  ],
+  "budget": [
+   0,
+   3
+  ],
+  "max_hires": [
+   3,
+   3
+  ],
+  "skill": [
+   3,
+   3
+  ],
+  "min_total_skill": [
+   3,
+   0
+  ],
+  "experience": [
+   3,
+   3
+  ],
+  "min_total_experience": [
+   0,
+   0
+  ]
+ },
+ "untested": []
+}

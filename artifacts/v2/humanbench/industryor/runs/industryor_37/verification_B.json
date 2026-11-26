@@ -1,0 +1,46 @@
+{
+ "sample_id": "industryor_37",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"supply\",\"extracted\":[30,20,0],\"stated\":[30,20,\"Δ0\"],\"evidence\":\"Factory 3 supply is shown as \\\"$\\\\Delta 0$\\\", not 0.\"}],\"not_stated\":[{\"parameter\":\"balance_satisfaction_target_customers1and3\",\"evidence\":\"The degree of satisfaction of the demands of Customer 1 and Customer 3 should be balanced as much as possible.\"},{\"parameter\":\"factory2_to_customer4_penalty_weight\",\"evidence\":\"Factory 2 should preferably not be allocated to Customer 4.\"}]}",
+ "mismatch": [
+  {
+   "parameter": "supply",
+   "extracted": [
+    30,
+    20,
+    0
+   ],
+   "stated": [
+    30,
+    20,
+    "Δ0"
+   ],
+   "evidence": "Factory 3 supply is shown as \"$\\Delta 0$\", not 0."
+  }
+ ],
+ "not_stated": [
+  {
+   "parameter": "balance_satisfaction_target_customers1and3",
+   "evidence": "The degree of satisfaction of the demands of Customer 1 and Customer 3 should be balanced as much as possible."
+  },
+  {
+   "parameter": "factory2_to_customer4_penalty_weight",
+   "evidence": "Factory 2 should preferably not be allocated to Customer 4."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

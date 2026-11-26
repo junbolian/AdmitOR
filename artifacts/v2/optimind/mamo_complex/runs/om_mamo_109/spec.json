@@ -1,0 +1,158 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    133,
+    189,
+    446,
+    346,
+    184
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "demand": {
+   "base": [
+    146,
+    270,
+    313,
+    102,
+    412
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     0,
+     24,
+     32,
+     44,
+     46
+    ],
+    [
+     41,
+     0,
+     6,
+     11,
+     49
+    ],
+    [
+     40,
+     10,
+     0,
+     40,
+     45
+    ],
+    [
+     22,
+     22,
+     34,
+     0,
+     1
+    ],
+    [
+     46,
+     14,
+     35,
+     36,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "initial units of medical supplies available in each region",
+    "base": [
+     133,
+     189,
+     446,
+     346,
+     184
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "demand": {
+    "meaning": "required units of medical supplies in each region",
+    "base": [
+     146,
+     270,
+     313,
+     102,
+     412
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "transport_cost": {
+    "meaning": "cost per unit shipped between ordered region pairs (rows origin, cols destination; diagonal unused)",
+    "base": [
+     [
+      0,
+      24,
+      32,
+      44,
+      46
+     ],
+     [
+      41,
+      0,
+      6,
+      11,
+      49
+     ],
+     [
+      40,
+      10,
+      0,
+      40,
+      45
+     ],
+     [
+      22,
+      22,
+      34,
+      0,
+      1
+     ],
+     [
+      46,
+      14,
+      35,
+      36,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

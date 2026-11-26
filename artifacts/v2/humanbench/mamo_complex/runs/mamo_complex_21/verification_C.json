@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_21",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [], \"not_stated\": []}\n\nAll extracted parameters are directly supported by the statement: the Station 0 row values appear verbatim (\"Data Center 1 (6 Tbps), ... Data Center 8 (20 Tbps)\"), and the bound parameters match the stated upper bounds (\"up to 18 Tbps\", \"highest capacity being 19 Tbps\", \"20 Tbps from Data Center 7 to Data Center 3\", \"up to 20 Tbps from Data Center 3\").",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

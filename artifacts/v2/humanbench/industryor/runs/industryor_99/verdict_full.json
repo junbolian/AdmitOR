@@ -1,0 +1,128 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "prod_time_hours": 80,
+   "rate_m_per_hour": 1000,
+   "curtain_demand_m": 70000,
+   "clothing_demand_m": 45000,
+   "curtain_profit_per_m": 2.5,
+   "clothing_profit_per_m": 1.5,
+   "overtime_cap_hours": 10
+  },
+  {
+   "prod_time_hours": 91.97133992289419,
+   "rate_m_per_hour": 810.0043020890669,
+   "curtain_demand_m": 60551.231371503,
+   "clothing_demand_m": 37526.68993001821,
+   "curtain_profit_per_m": 3.209413642492037,
+   "clothing_profit_per_m": 2.191748718557278,
+   "overtime_cap_hours": 26.765387031145362
+  },
+  {
+   "prod_time_hours": 64.34694163147081,
+   "rate_m_per_hour": 968.7687278741082,
+   "curtain_demand_m": 50251.483216398956,
+   "clothing_demand_m": 37403.22531969729,
+   "curtain_profit_per_m": 2.5160658643100873,
+   "clothing_profit_per_m": 0.5663399242096591,
+   "overtime_cap_hours": 5.965129520599454
+  },
+  {
+   "prod_time_hours": 92.49422188897617,
+   "rate_m_per_hour": 1017.9765922412867,
+   "curtain_demand_m": 58258.50612570925,
+   "clothing_demand_m": 47410.17346464954,
+   "curtain_profit_per_m": 3.42829137003348,
+   "clothing_profit_per_m": 0.5162468991951525,
+   "overtime_cap_hours": 24.174577554984236
+  },
+  {
+   "prod_time_hours": 94.90696974941135,
+   "rate_m_per_hour": 936.1002066071967,
+   "curtain_demand_m": 55530.13899209483,
+   "clothing_demand_m": 57344.7529495831,
+   "curtain_profit_per_m": 2.00978363533788,
+   "clothing_profit_per_m": 0.7318646084503697,
+   "overtime_cap_hours": 2.9014913050039204
+  },
+  {
+   "prod_time_hours": 102.37471831737298,
+   "rate_m_per_hour": 1041.4904125467563,
+   "curtain_demand_m": 82899.38747752398,
+   "clothing_demand_m": 51202.758240733085,
+   "curtain_profit_per_m": 2.6086842743641023,
+   "clothing_profit_per_m": 2.9327894099484264,
+   "overtime_cap_hours": 11.356031316250604
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   52500.0,
+   51683.057324375695,
+   14338.256520499779,
+   5942.893259620873,
+   17588.50542825563,
+   71686.27369645737
+  ],
+  "B-structured": [
+   10.0,
+   26.765387031145366,
+   5.965129520599454,
+   11.3084395825487,
+   2.9014913050039226,
+   11.3560313162506
+  ],
+  "C-direct": [
+   37510.0,
+   4192.538128910197,
+   11071.43897498338,
+   11.3084395825487,
+   15603.599256154834,
+   40844.20497245213
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "A-direct vs C-direct: diverge on instance(s) [0, 1, 2, 3, 4, 5]",
+  "B-structured vs C-direct: diverge on instance(s) [0, 1, 2, 4, 5]"
+ ],
+ "notes": []
+}

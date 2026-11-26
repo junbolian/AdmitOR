@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "profit_A1": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 60.0,
+    "integer": false
+   }
+  },
+  "profit_A2": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "milk_supply": {
+   "base": 50,
+   "perturb": {
+    "mode": "abs",
+    "lo": 20.0,
+    "hi": 100.0,
+    "integer": true
+   }
+  },
+  "labor_hours": {
+   "base": 480,
+   "perturb": {
+    "mode": "abs",
+    "lo": 200.0,
+    "hi": 900.0,
+    "integer": true
+   }
+  },
+  "A1_per_barrel": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "A2_per_barrel": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  },
+  "hours_per_barrel_A1": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 24.0,
+    "integer": false
+   }
+  },
+  "hours_per_barrel_A2": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  },
+  "A1_capacity": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 40.0,
+    "hi": 200.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_A1": {
+    "meaning": "profit per kg of A1 (yuan/kg)",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 60,
+     "integer": false
+    }
+   },
+   "profit_A2": {
+    "meaning": "profit per kg of A2 (yuan/kg)",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "milk_supply": {
+    "meaning": "daily milk supply (barrels)",
+    "base": 50,
+    "perturb": {
+     "mode": "abs",
+     "lo": 20,
+     "hi": 100,
+     "integer": true
+    }
+   },
+   "labor_hours": {
+    "meaning": "daily labor hours available",
+    "base": 480,
+    "perturb": {
+     "mode": "abs",
+     "lo": 200,
+     "hi": 900,
+     "integer": true
+    }
+   },
+   "A1_per_barrel": {
+    "meaning": "kg of A1 produced per barrel of milk",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "A2_per_barrel": {
+    "meaning": "kg of A2 produced per barrel of milk",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 8,
+     "integer": false
+    }
+   },
+   "hours_per_barrel_A1": {
+    "meaning": "labor hours to process one barrel into A1",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 24,
+     "integer": false
+    }
+   },
+   "hours_per_barrel_A2": {
+    "meaning": "labor hours to process one barrel into A2",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 16,
+     "integer": false
+    }
+   },
+   "A1_capacity": {
+    "meaning": "Type A equipment capacity for A1 (kg/day)",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 40,
+     "hi": 200,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

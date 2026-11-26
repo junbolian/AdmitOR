@@ -1,0 +1,140 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "machine1_time_liquid": 50,
+   "machine2_time_liquid": 30,
+   "machine1_time_solid": 24,
+   "machine2_time_solid": 33,
+   "initial_inventory_liquid": 30,
+   "initial_inventory_solid": 90,
+   "machine1_capacity_hours": 40,
+   "machine2_capacity_hours": 35,
+   "demand_liquid": 75,
+   "demand_solid": 95
+  },
+  {
+   "machine1_time_liquid": 55.57707193831535,
+   "machine2_time_liquid": 18.600258125344006,
+   "machine1_time_solid": 19.680562912687087,
+   "machine2_time_solid": 25.692763487128918,
+   "initial_inventory_liquid": 47,
+   "initial_inventory_solid": 108,
+   "machine1_capacity_hours": 55.687182708193816,
+   "machine2_capacity_hours": 21.2167368072884,
+   "demand_liquid": 74,
+   "demand_solid": 53
+  },
+  {
+   "machine1_time_liquid": 38.745518992144135,
+   "machine2_time_liquid": 30.128526914480695,
+   "machine1_time_solid": 14.909490617930182,
+   "machine2_time_solid": 25.04931397812752,
+   "initial_inventory_liquid": 42,
+   "initial_inventory_solid": 94,
+   "machine1_capacity_hours": 28.817624881627868,
+   "machine2_capacity_hours": 39.802830303408626,
+   "demand_liquid": 105,
+   "demand_solid": 51
+  },
+  {
+   "machine1_time_liquid": 62.23277007331232,
+   "machine2_time_liquid": 34.75534547971744,
+   "machine1_time_solid": 20.93280991714544,
+   "machine2_time_solid": 23.904658795031033,
+   "initial_inventory_liquid": 58,
+   "initial_inventory_solid": 74,
+   "machine1_capacity_hours": 23.709833735205915,
+   "machine2_capacity_hours": 21.57850594283817,
+   "demand_liquid": 108,
+   "demand_solid": 110
+  },
+  {
+   "machine1_time_liquid": 62.28513093097521,
+   "machine2_time_liquid": 35.51356288065163,
+   "machine1_time_solid": 24.69557935593025,
+   "machine2_time_solid": 45.49025616905538,
+   "initial_inventory_liquid": 29,
+   "initial_inventory_solid": 95,
+   "machine1_capacity_hours": 53.176186570119796,
+   "machine2_capacity_hours": 40.8852308374771,
+   "demand_liquid": 109,
+   "demand_solid": 108
+  },
+  {
+   "machine1_time_liquid": 58.182873448596936,
+   "machine2_time_liquid": 19.09978520773589,
+   "machine1_time_solid": 18.775646892509698,
+   "machine2_time_solid": 27.439842239095626,
+   "initial_inventory_liquid": 14,
+   "initial_inventory_solid": 63,
+   "machine1_capacity_hours": 24.040057176389166,
+   "machine2_capacity_hours": 28.28502331507341,
+   "demand_liquid": 91,
+   "demand_solid": 86
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1.0,
+   93.0,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   1.0,
+   93.0,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   1.0,
+   93.0,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "solver_status_4",
+   "solver_status_4",
+   "solver_status_4",
+   "solver_status_4"
+  ]
+ },
+ "informative": [
+  0,
+  1
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

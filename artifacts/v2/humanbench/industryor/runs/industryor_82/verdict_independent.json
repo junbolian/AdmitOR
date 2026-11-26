@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand_2_6": 10,
+   "demand_6_10": 15,
+   "demand_10_14": 25,
+   "demand_14_18": 20,
+   "demand_18_22": 18,
+   "demand_22_2": 12,
+   "salary_regular": 10,
+   "salary_contract": 15,
+   "shift_length": 8
+  },
+  {
+   "demand_2_6": 13,
+   "demand_6_10": 8,
+   "demand_10_14": 21,
+   "demand_14_18": 16,
+   "demand_18_22": 23,
+   "demand_22_2": 15,
+   "salary_regular": 13.137436541638763,
+   "salary_contract": 9.477960154700074,
+   "shift_length": 8
+  },
+  {
+   "demand_2_6": 5,
+   "demand_6_10": 12,
+   "demand_10_14": 25,
+   "demand_14_18": 12,
+   "demand_18_22": 14,
+   "demand_22_2": 15,
+   "salary_regular": 10.359531844825733,
+   "salary_contract": 11.747490574691843,
+   "shift_length": 8
+  },
+  {
+   "demand_2_6": 16,
+   "demand_6_10": 8,
+   "demand_10_14": 31,
+   "demand_14_18": 25,
+   "demand_18_22": 16,
+   "demand_22_2": 8,
+   "salary_regular": 13.65770457765425,
+   "salary_contract": 13.722107266914655,
+   "shift_length": 8
+  },
+  {
+   "demand_2_6": 6,
+   "demand_6_10": 22,
+   "demand_10_14": 27,
+   "demand_14_18": 27,
+   "demand_18_22": 23,
+   "demand_22_2": 14,
+   "salary_regular": 13.784926111834965,
+   "salary_contract": 14.43508441254201,
+   "shift_length": 8
+  },
+  {
+   "demand_2_6": 16,
+   "demand_6_10": 19,
+   "demand_10_14": 32,
+   "demand_14_18": 22,
+   "demand_18_22": 23,
+   "demand_22_2": 7,
+   "salary_regular": 7.823186205212375,
+   "salary_contract": 12.919595381235823,
+   "shift_length": 8
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   4240.0,
+   4321.949830543234,
+   3646.555209378658,
+   6883.483107137742,
+   6947.602760364822,
+   4443.569764560629
+  ],
+  "B-structured": [
+   4240.0,
+   4321.949830543234,
+   3646.555209378658,
+   6883.483107137742,
+   6947.602760364822,
+   4443.569764560629
+  ],
+  "C-direct": [
+   4240.0,
+   4321.949830543234,
+   3646.555209378658,
+   6883.483107137741,
+   6947.602760364824,
+   4443.569764560629
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

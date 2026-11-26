@@ -1,0 +1,144 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "profit_A": 30,
+   "profit_B": 10,
+   "hours_available": 40,
+   "hours_per_A": 6,
+   "hours_per_B": 3,
+   "demand_ratio_B_to_A": 3,
+   "space_per_A": 4,
+   "space_per_B": 1,
+   "storage_capacity": 16
+  },
+  {
+   "profit_A": 34.18280395373651,
+   "profit_B": 5.25010755222667,
+   "hours_available": 31.001172734764772,
+   "hours_per_A": 4.339264428892936,
+   "hours_per_B": 3.709413642492037,
+   "demand_ratio_B_to_A": 3.530098462268734,
+   "space_per_A": 5.568718270819382,
+   "space_per_B": 0.5869388326294162,
+   "storage_capacity": 14.750749114964327
+  },
+  {
+   "profit_A": 15.89391658314211,
+   "profit_B": 7.186379748036034,
+   "hours_available": 40.21421152413449,
+   "hours_per_A": 3.1592158181031817,
+   "hours_per_B": 2.0965129520599453,
+   "demand_ratio_B_to_A": 3.44965331333857,
+   "space_per_A": 4.179765922412867,
+   "space_per_B": 0.7204406220406967,
+   "storage_capacity": 17.42825094201454
+  },
+  {
+   "profit_A": 39.282913700334795,
+   "profit_B": 5.06498759678061,
+   "hours_available": 52.232770073312324,
+   "hours_per_A": 7.188836369929361,
+   "hours_per_B": 2.5207515495539754,
+   "demand_ratio_B_to_A": 1.9664384994353448,
+   "space_per_A": 5.828852288827125,
+   "space_per_B": 0.8365945451126268,
+   "storage_capacity": 9.483933494082367
+  },
+  {
+   "profit_A": 17.90149130500392,
+   "profit_B": 13.474943663474598,
+   "hours_available": 44.149041254675645,
+   "hours_per_A": 7.8427696396462805,
+   "hours_per_B": 3.6891953600814533,
+   "demand_ratio_B_to_A": 3.108684274364102,
+   "space_per_A": 5.892463055917482,
+   "space_per_B": 0.8785343772083535,
+   "storage_capacity": 16.83265010037163
+  },
+  {
+   "profit_A": 39.88213992758985,
+   "profit_B": 11.185197523642461,
+   "hours_available": 54.46827601243109,
+   "hours_per_A": 6.464112871540572,
+   "hours_per_B": 3.6137155086447708,
+   "demand_ratio_B_to_A": 1.6374731509669866,
+   "space_per_A": 2.9115931026061874,
+   "space_per_B": 0.7893879636021072,
+   "storage_capacity": 9.27667163077804
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   140.0,
+   70.9335568193232,
+   138.06237229975468,
+   59.54286408745723,
+   148.22438029822058,
+   129.36372011672955
+  ],
+  "B-structured": [
+   140.0,
+   70.9335568193232,
+   138.06237229975468,
+   59.54286408745723,
+   148.22438029822058,
+   129.36372011672955
+  ],
+  "C-direct": [
+   140.0,
+   70.9335568193232,
+   138.06237229975468,
+   59.54286408745723,
+   148.22438029822058,
+   129.36372011672955
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,69 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "machine1_time_liquid",
+  "machine2_time_liquid",
+  "machine1_time_solid",
+  "machine2_time_solid",
+  "initial_inventory_liquid",
+  "initial_inventory_solid",
+  "machine1_capacity_hours",
+  "machine2_capacity_hours",
+  "demand_liquid",
+  "demand_solid"
+ ],
+ "safe": [
+  "machine2_time_liquid",
+  "machine1_time_solid",
+  "machine2_time_solid",
+  "machine1_capacity_hours",
+  "demand_solid"
+ ],
+ "tests": {
+  "machine1_time_liquid": [
+   3,
+   0
+  ],
+  "machine2_time_liquid": [
+   3,
+   3
+  ],
+  "machine1_time_solid": [
+   3,
+   3
+  ],
+  "machine2_time_solid": [
+   3,
+   3
+  ],
+  "initial_inventory_liquid": [
+   0,
+   3
+  ],
+  "initial_inventory_solid": [
+   0,
+   3
+  ],
+  "machine1_capacity_hours": [
+   3,
+   3
+  ],
+  "machine2_capacity_hours": [
+   3,
+   0
+  ],
+  "demand_liquid": [
+   0,
+   0
+  ],
+  "demand_solid": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

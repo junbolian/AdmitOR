@@ -1,0 +1,108 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "total_capital": 100000,
+   "return_rate_option1": 0.7,
+   "return_rate_option2": 2.0
+  },
+  {
+   "total_capital": 113942.67984578837,
+   "return_rate_option1": 0.037516132834000404,
+   "return_rate_option2": 1.3250879551073578
+  },
+  {
+   "total_capital": 72321.07381488227,
+   "return_rate_option1": 1.1047068212460185,
+   "return_rate_option2": 2.530098462268734
+  },
+  {
+   "total_capital": 139217.95677048454,
+   "return_rate_option1": 0.13040824894412423,
+   "return_rate_option2": 1.7657654590558112
+  },
+  {
+   "total_capital": 52979.72194380703,
+   "return_rate_option1": 0.32795696220540504,
+   "return_rate_option2": 2.0160658643100873
+  },
+  {
+   "total_capital": 52653.596968386366,
+   "return_rate_option1": 0.29825647602997274,
+   "return_rate_option2": 2.44965331333857
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   140000.0,
+   5664.338524842099,
+   202138.6329182322,
+   32057.772025749942,
+   35029.282829941316,
+   38470.03242801435
+  ],
+  "B-structured": [
+   140000.0,
+   5664.338524842099,
+   202138.6329182322,
+   32057.772025749942,
+   35029.282829941316,
+   38470.03242801435
+  ],
+  "C-direct": [
+   200000.0,
+   150984.07263630806,
+   182979.43764865724,
+   245826.25934564671,
+   106810.60891154943,
+   128983.05827280134
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "diverges from consensus by 2.138e+05 on instance 3 (params: {'total_capital': 139217.96, 'return_rate_option1': 0.13, 'return_rate_option2': 1.77})"
+ },
+ "disagreements": [],
+ "notes": []
+}

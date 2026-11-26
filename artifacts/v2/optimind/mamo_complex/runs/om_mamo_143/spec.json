@@ -1,0 +1,48 @@
+{
+ "spec": {
+  "requirements": {
+   "base": [
+    17,
+    13,
+    15,
+    19,
+    14,
+    16,
+    11
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "requirements": {
+    "meaning": "Required number of full-time employees on duty for each day, Monday through Sunday",
+    "base": [
+     17,
+     13,
+     15,
+     19,
+     14,
+     16,
+     11
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

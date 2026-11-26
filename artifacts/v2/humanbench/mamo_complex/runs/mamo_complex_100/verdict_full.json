@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cost_A_B": 61,
+   "cost_A_C": 65,
+   "cost_A_D": 63,
+   "cost_B_A": 61,
+   "cost_B_C": 94,
+   "cost_B_D": 31,
+   "cost_C_A": 65,
+   "cost_C_B": 94,
+   "cost_C_D": 19,
+   "cost_D_A": 63,
+   "cost_D_B": 31,
+   "cost_D_C": 19
+  },
+  {
+   "cost_A_B": 84,
+   "cost_A_C": 23,
+   "cost_A_D": 48,
+   "cost_B_A": 42,
+   "cost_B_C": 116,
+   "cost_B_D": 69,
+   "cost_C_A": 109,
+   "cost_C_B": 31,
+   "cost_C_D": 45,
+   "cost_D_A": 23,
+   "cost_D_B": 26,
+   "cost_D_C": 53
+  },
+  {
+   "cost_A_B": 23,
+   "cost_A_C": 40,
+   "cost_A_D": 85,
+   "cost_B_A": 74,
+   "cost_B_C": 49,
+   "cost_B_D": 61,
+   "cost_C_A": 101,
+   "cost_C_B": 21,
+   "cost_C_D": 82,
+   "cost_D_A": 90,
+   "cost_D_B": 37,
+   "cost_D_C": 20
+  },
+  {
+   "cost_A_B": 116,
+   "cost_A_C": 54,
+   "cost_A_D": 29,
+   "cost_B_A": 30,
+   "cost_B_C": 130,
+   "cost_B_D": 62,
+   "cost_C_A": 101,
+   "cost_C_B": 115,
+   "cost_C_D": 56,
+   "cost_D_A": 117,
+   "cost_D_B": 41,
+   "cost_D_C": 57
+  },
+  {
+   "cost_A_B": 103,
+   "cost_A_C": 82,
+   "cost_A_D": 106,
+   "cost_B_A": 78,
+   "cost_B_C": 112,
+   "cost_B_D": 9,
+   "cost_C_A": 43,
+   "cost_C_B": 58,
+   "cost_C_D": 13,
+   "cost_D_A": 43,
+   "cost_D_B": 15,
+   "cost_D_C": 31
+  },
+  {
+   "cost_A_B": 84,
+   "cost_A_C": 56,
+   "cost_A_D": 57,
+   "cost_B_A": 41,
+   "cost_B_C": 55,
+   "cost_B_D": 94,
+   "cost_C_A": 85,
+   "cost_C_B": 99,
+   "cost_C_D": 21,
+   "cost_D_A": 93,
+   "cost_D_B": 21,
+   "cost_D_C": 41
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   160.0,
+   136.0,
+   199.0,
+   181.0,
+   149.0,
+   139.0
+  ],
+  "B-structured": [
+   176.0,
+   136.0,
+   200.0,
+   181.0,
+   186.0,
+   139.0
+  ],
+  "C-direct": [
+   176.0,
+   136.0,
+   200.0,
+   181.0,
+   186.0,
+   139.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 37 on instance 4 (params: {'cost_A_B': 103, 'cost_A_C': 82, 'cost_A_D': 106, 'cost_B_A': 78, 'cost_B_C': 112, 'cost_B_D': 9, 'cost_C_A': 43, 'cost_C_B': 58, 'cost_C_D': 13, 'cost_D_A': 43, 'cost_D_B': 15, 'cost_D_C': 31})"
+ },
+ "disagreements": [],
+ "notes": []
+}

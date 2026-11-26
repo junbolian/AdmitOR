@@ -1,0 +1,242 @@
+{
+ "spec": {
+  "remuneration": {
+   "base": [
+    10.0,
+    10.0,
+    9.9,
+    9.8,
+    10.8,
+    11.3
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "max_hours": {
+   "base": [
+    [
+     6,
+     0,
+     6,
+     0,
+     7
+    ],
+    [
+     0,
+     6,
+     0,
+     6,
+     0
+    ],
+    [
+     4,
+     8,
+     3,
+     0,
+     5
+    ],
+    [
+     5,
+     5,
+     6,
+     0,
+     4
+    ],
+    [
+     3,
+     0,
+     4,
+     8,
+     0
+    ],
+    [
+     0,
+     6,
+     0,
+     6,
+     3
+    ]
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 12.0,
+    "integer": true
+   }
+  },
+  "opening_hours": {
+   "base": 14,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "min_weekly_undergrad": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "min_weekly_grad": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "max_shifts_week": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 5.0,
+    "integer": true
+   }
+  },
+  "max_students_per_day": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "remuneration": {
+    "meaning": "Hourly duty remuneration for students 1-6 (¥/h)",
+    "base": [
+     10.0,
+     10.0,
+     9.9,
+     9.8,
+     10.8,
+     11.3
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "max_hours": {
+    "meaning": "Maximum duty hours per day for each student (rows 1-6, columns Mon-Fri)",
+    "base": [
+     [
+      6,
+      0,
+      6,
+      0,
+      7
+     ],
+     [
+      0,
+      6,
+      0,
+      6,
+      0
+     ],
+     [
+      4,
+      8,
+      3,
+      0,
+      5
+     ],
+     [
+      5,
+      5,
+      6,
+      0,
+      4
+     ],
+     [
+      3,
+      0,
+      4,
+      8,
+      0
+     ],
+     [
+      0,
+      6,
+      0,
+      6,
+      3
+     ]
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 12,
+     "integer": true
+    }
+   },
+   "opening_hours": {
+    "meaning": "Total daily opening hours requiring exactly one student on duty",
+    "base": 14,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "min_weekly_undergrad": {
+    "meaning": "Minimum weekly duty hours for each undergraduate student (1-4)",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "min_weekly_grad": {
+    "meaning": "Minimum weekly duty hours for each graduate student (5-6)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "max_shifts_week": {
+    "meaning": "Maximum number of duty shifts per week per student",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 5,
+     "integer": true
+    }
+   },
+   "max_students_per_day": {
+    "meaning": "Maximum number of students assigned to duty each day",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 6,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

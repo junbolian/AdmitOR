@@ -1,0 +1,162 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "profit_A": 300,
+   "profit_B": 450,
+   "time_procI_A": 4,
+   "time_procI_B": 6,
+   "time_procII_A": 3,
+   "time_procII_B": 2,
+   "cap_procI": 150,
+   "cap_procII": 70,
+   "profit_target": 10000,
+   "min_A": 10,
+   "min_B": 15,
+   "procI_target": 150
+  },
+  {
+   "profit_A": 341.8280395373651,
+   "profit_B": 236.2548398502001,
+   "time_procI_A": 3.460070364085886,
+   "time_procI_B": 5.003558657335762,
+   "time_procII_A": 3.4256481854952225,
+   "time_procII_B": 2.2120393849074937,
+   "cap_procI": 197.06154812458144,
+   "cap_procII": 46.8685746272473,
+   "profit_target": 9219.218196852704,
+   "min_A": 6,
+   "min_B": 10,
+   "procI_target": 150.64263457240347
+  },
+  {
+   "profit_A": 157.9607909051591,
+   "profit_B": 314.4769428089918,
+   "time_procI_A": 4.3597226506708555,
+   "time_procI_B": 6.16178933017158,
+   "time_procII_A": 2.496793119673254,
+   "time_procII_B": 2.1071188206510905,
+   "cap_procI": 187.1316548013392,
+   "cap_procII": 42.36393054197142,
+   "profit_target": 13058.19251832808,
+   "min_A": 19,
+   "min_B": 14,
+   "procI_target": 108.65753997741379
+  },
+  {
+   "profit_A": 437.1639216620344,
+   "profit_B": 376.46754530068205,
+   "time_procI_A": 3.022590024112355,
+   "time_procI_B": 4.54817895660047,
+   "time_procII_A": 3.6254898594254277,
+   "time_procII_B": 2.1244712376402695,
+   "cap_procI": 186.8553927929256,
+   "cap_procII": 82.8649800548538,
+   "profit_target": 10362.280914547006,
+   "min_A": 24,
+   "min_B": 14,
+   "procI_target": 156.24487575278724
+  },
+  {
+   "profit_A": 398.82139927589844,
+   "profit_B": 503.3338885639107,
+   "time_procI_A": 4.868096560745865,
+   "time_procI_B": 6.2784677229243435,
+   "time_procII_A": 3.368229305186862,
+   "time_procII_B": 1.4549892603867947,
+   "cap_procI": 117.34779307818562,
+   "cap_procII": 58.205725961717995,
+   "profit_target": 5797.919769236275,
+   "min_A": 10,
+   "min_B": 8,
+   "procI_target": 123.35683237321105
+  },
+  {
+   "profit_A": 340.7053332793201,
+   "profit_B": 389.1744805365379,
+   "time_procI_A": 3.688434321080518,
+   "time_procI_B": 4.954225310777355,
+   "time_procII_A": 2.5805600796884036,
+   "time_procII_B": 2.523985505254993,
+   "cap_procI": 167.7642462295912,
+   "cap_procII": 76.11133631735133,
+   "profit_target": 6711.38648198097,
+   "min_A": 20,
+   "min_B": 9,
+   "procI_target": 135.53465301091774
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   0.0,
+   0.0,
+   171.23052464102236,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "B-structured": [
+   -5.0,
+   -74.8579876406059,
+   56.84549212479063,
+   -64.0182191673812,
+   6.134580132246015,
+   -10.234032898159455
+  ],
+  "C-direct": [
+   0.0,
+   0.0,
+   171.23052464102236,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 114.4 on instance 2 (params: {'profit_A': 157.96, 'profit_B': 314.48, 'time_procI_A': 4.36, 'time_procI_B': 6.16, 'time_procII_A': 2.5, 'time_procII_B': 2.11, 'cap_procI': 187.13, 'cap_procII': 42.36, 'profit_target': 13058.19, 'min_A': 19, 'min_B': 14, 'procI_target': 108.66})"
+ },
+ "disagreements": [],
+ "notes": []
+}

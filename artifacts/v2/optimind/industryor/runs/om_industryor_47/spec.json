@@ -1,0 +1,137 @@
+{
+ "spec": {
+  "demand_1": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_2": {
+   "base": 1000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_3": {
+   "base": 2000,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand_4": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_1month": {
+   "base": 22,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_2month": {
+   "base": 21,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_3month": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_4month": {
+   "base": 19,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_1": {
+    "meaning": "Required storage area in month 1 (m²)",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_2": {
+    "meaning": "Required storage area in month 2 (m²)",
+    "base": 1000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_3": {
+    "meaning": "Required storage area in month 3 (m²)",
+    "base": 2000,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand_4": {
+    "meaning": "Required storage area in month 4 (m²)",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_1month": {
+    "meaning": "Rental fee per m² per month for a 1-month contract",
+    "base": 22,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_2month": {
+    "meaning": "Rental fee per m² per month for a 2-month contract",
+    "base": 21,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_3month": {
+    "meaning": "Rental fee per m² per month for a 3-month contract",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_4month": {
+    "meaning": "Rental fee per m² per month for a 4-month contract",
+    "base": 19,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

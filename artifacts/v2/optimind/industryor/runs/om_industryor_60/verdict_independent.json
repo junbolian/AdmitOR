@@ -1,0 +1,168 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "revenue": [
+    15000,
+    40000,
+    30000,
+    50000
+   ],
+   "cost": [
+    1.6,
+    2.5,
+    1.8,
+    3.0
+   ],
+   "budget": 6.0
+  },
+  {
+   "revenue": [
+    16673.121581494604,
+    24800.344167125342,
+    24600.70364085886,
+    38928.42952595291
+   ],
+   "cost": [
+    1.864847759863694,
+    2.809224102990095,
+    2.2941462553081053,
+    2.1325715485217738
+   ],
+   "budget": 5.109609098426352
+  },
+  {
+   "revenue": [
+    9357.566633256843,
+    30996.415193715307,
+    30128.52691448069,
+    31061.438787354546
+   ],
+   "cost": [
+    1.2626981687690464,
+    2.7622977661141657,
+    1.8566262655600532,
+    2.412925306285463
+   ],
+   "budget": 5.946328419379544
+  },
+  {
+   "revenue": [
+    18713.16548013392,
+    24207.96030969795,
+    37339.66204398739,
+    57925.57579952907
+   ],
+   "cost": [
+    1.421080578500151,
+    1.8970891246706179,
+    2.3760884709805445,
+    2.6568485447365164
+   ],
+   "budget": 3.4637292169007394
+  },
+  {
+   "revenue": [
+    10160.596522001568,
+    51119.81972311871,
+    32489.424752805382,
+    62285.13093097521
+   ],
+   "cost": [
+    1.8572996010970764,
+    2.5633991600457264,
+    2.396125862614007,
+    2.744922192137542
+   ],
+   "budget": 5.760203156366135
+  },
+  {
+   "revenue": [
+    18952.855971035937,
+    43792.63207565587,
+    38680.965607458646,
+    53094.08581027047
+   ],
+   "cost": [
+    1.8291204565607146,
+    1.7051926713974088,
+    1.4571518273209492,
+    2.557714723564425
+   ],
+   "budget": 3.3989598846181375
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   90000.0,
+   63728.773693078256,
+   70482.50874145284,
+   57925.57579952907,
+   113404.95065409392,
+   82473.59768311452
+  ],
+  "B-structured": [
+   90000.0,
+   63728.773693078256,
+   70482.50874145284,
+   57925.57579952907,
+   113404.95065409392,
+   82473.59768311452
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str",
+   "crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: ['crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str', 'crash:gp.quicksum(revenue[r] * buy[r] for r in restaurants), | ~~~~~~~^^^ | TypeError: list indices must be integers or slices, not str']"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,221 @@
+{
+ "spec": {
+  "profit_A": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "profit_B": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "mango_per_A": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "pineapple_per_A": {
+   "base": 0.125,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "strawberry_per_A": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 4.0,
+    "integer": true
+   }
+  },
+  "mango_per_B": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "pineapple_per_B": {
+   "base": 0.25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "strawberry_per_B": {
+   "base": 1,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.75,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "mango_stock": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 18.0,
+    "hi": 32.0,
+    "integer": true
+   }
+  },
+  "pineapple_stock": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 14.0,
+    "integer": true
+   }
+  },
+  "strawberry_stock": {
+   "base": 120,
+   "perturb": {
+    "mode": "abs",
+    "lo": 80.0,
+    "hi": 160.0,
+    "integer": true
+   }
+  },
+  "slack_tolerance": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "profit_A": {
+    "meaning": "net profit per unit of fruit salad A (RMB)",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "profit_B": {
+    "meaning": "net profit per unit of fruit salad B (RMB)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "mango_per_A": {
+    "meaning": "mangos required per unit of A",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "pineapple_per_A": {
+    "meaning": "pineapples required per unit of A",
+    "base": 0.125,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "strawberry_per_A": {
+    "meaning": "strawberries required per unit of A",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 4,
+     "integer": true
+    }
+   },
+   "mango_per_B": {
+    "meaning": "mangos required per unit of B",
+    "base": 0.5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "pineapple_per_B": {
+    "meaning": "pineapples required per unit of B",
+    "base": 0.25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "strawberry_per_B": {
+    "meaning": "strawberries required per unit of B",
+    "base": 1,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.75,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "mango_stock": {
+    "meaning": "mangos available",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 18,
+     "hi": 32,
+     "integer": true
+    }
+   },
+   "pineapple_stock": {
+    "meaning": "pineapples available",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 14,
+     "integer": true
+    }
+   },
+   "strawberry_stock": {
+    "meaning": "strawberries available",
+    "base": 120,
+    "perturb": {
+     "mode": "abs",
+     "lo": 80,
+     "hi": 160,
+     "integer": true
+    }
+   },
+   "slack_tolerance": {
+    "meaning": "allowed absolute deviation in fruit usage (at most 5 units left or 5 extra used)",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

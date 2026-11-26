@@ -1,0 +1,125 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "mileage_A_M": 17.1,
+   "mileage_Z_M": 26.4,
+   "max_continuous_driving_minutes": 120,
+   "max_daily_mileage_km": 120,
+   "min_transfer_buffer_minutes": 5,
+   "max_shift_length_minutes": 480,
+   "num_driving_tasks": 200,
+   "num_platforms": 40
+  },
+  {
+   "mileage_A_M": 19.484198253629813,
+   "mileage_Z_M": 13.860283937878407,
+   "max_continuous_driving_minutes": 126,
+   "max_daily_mileage_km": 98,
+   "min_transfer_buffer_minutes": 22,
+   "max_shift_length_minutes": 565,
+   "num_driving_tasks": 200,
+   "num_platforms": 40
+  },
+  {
+   "mileage_A_M": 15.764863116618125,
+   "mileage_Z_M": 13.986646593165057,
+   "max_continuous_driving_minutes": 112,
+   "max_daily_mileage_km": 171,
+   "min_transfer_buffer_minutes": 1,
+   "max_shift_length_minutes": 335,
+   "num_driving_tasks": 200,
+   "num_platforms": 40
+  },
+  {
+   "mileage_A_M": 12.319534636895915,
+   "mileage_Z_M": 28.75661405432399,
+   "max_continuous_driving_minutes": 254,
+   "max_daily_mileage_km": 42,
+   "min_transfer_buffer_minutes": 24,
+   "max_shift_length_minutes": 575,
+   "num_driving_tasks": 200,
+   "num_platforms": 40
+  },
+  {
+   "mileage_A_M": 24.918343534735964,
+   "mileage_Z_M": 22.086095990973345,
+   "max_continuous_driving_minutes": 82,
+   "max_daily_mileage_km": 65,
+   "min_transfer_buffer_minutes": 25,
+   "max_shift_length_minutes": 530,
+   "num_driving_tasks": 200,
+   "num_platforms": 40
+  },
+  {
+   "mileage_A_M": 17.719500363875383,
+   "mileage_Z_M": 38.890256169055384,
+   "max_continuous_driving_minutes": 151,
+   "max_daily_mileage_km": 184,
+   "min_transfer_buffer_minutes": 25,
+   "max_shift_length_minutes": 537,
+   "num_driving_tasks": 200,
+   "num_platforms": 40
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   46.0,
+   33.0,
+   null,
+   null,
+   49.0
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   100.0,
+   100.0,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr",
+   "crash:ValueError: Invalid constraint expression. The constraint expression resolved to a trivial Boolean (True) instead of a Pyomo object. Please modify your rule to return Constraint.Feasible instead of Tr"
+  ],
+  "B-structured": [
+   "timeout",
+   "optimal",
+   "optimal",
+   "timeout",
+   "timeout",
+   "optimal"
+  ],
+  "C-direct": [
+   "timeout",
+   "timeout",
+   "timeout",
+   "optimal",
+   "optimal",
+   "timeout"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

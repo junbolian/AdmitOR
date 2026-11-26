@@ -1,0 +1,96 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "supply": [
+    412,
+    92,
+    265,
+    342
+   ],
+   "demand": [
+    74,
+    334,
+    61,
+    352
+   ],
+   "cost_1_to_2": 20,
+   "cost_1_to_3": 43,
+   "cost_1_to_4": 1,
+   "cost_2_to_1": 42,
+   "cost_2_to_3": 32,
+   "cost_2_to_4": 13,
+   "cost_3_to_1": 27,
+   "cost_3_to_2": 5,
+   "cost_3_to_4": 10,
+   "cost_4_to_1": 30,
+   "cost_4_to_2": 22,
+   "cost_4_to_3": 9
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   1600.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "B-structured": [
+   "optimal",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ],
+  "C-direct": [
+   "infeasible",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed",
+   "unperturbed"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

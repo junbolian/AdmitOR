@@ -1,0 +1,107 @@
+{
+ "spec": {
+  "req_shift1": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_shift2": {
+   "base": 70,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_shift3": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_shift4": {
+   "base": 50,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "req_shift5": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "req_shift6": {
+   "base": 30,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "req_shift1": {
+    "meaning": "required staff in shift 1 (6:00-10:00)",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_shift2": {
+    "meaning": "required staff in shift 2 (10:00-14:00)",
+    "base": 70,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_shift3": {
+    "meaning": "required staff in shift 3 (14:00-18:00)",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_shift4": {
+    "meaning": "required staff in shift 4 (18:00-22:00)",
+    "base": 50,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "req_shift5": {
+    "meaning": "required staff in shift 5 (22:00-2:00)",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "req_shift6": {
+    "meaning": "required staff in shift 6 (2:00-6:00)",
+    "base": 30,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

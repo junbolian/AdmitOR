@@ -1,0 +1,204 @@
+{
+ "spec": {
+  "labor_per_unit": {
+   "base": [
+    3,
+    2,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "material_per_unit": {
+   "base": [
+    4,
+    3,
+    6
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "selling_price": {
+   "base": [
+    120,
+    80,
+    180
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "variable_cost": {
+   "base": [
+    60,
+    40,
+    80
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "labor_capacity": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 2500.0,
+    "integer": true
+   }
+  },
+  "material_capacity": {
+   "base": 1600,
+   "perturb": {
+    "mode": "abs",
+    "lo": 800.0,
+    "hi": 2600.0,
+    "integer": true
+   }
+  },
+  "fixed_cost_shirt": {
+   "base": 2000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 4000.0,
+    "integer": false
+   }
+  },
+  "fixed_cost_short_sleeve": {
+   "base": 1500,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 3000.0,
+    "integer": false
+   }
+  },
+  "fixed_cost_casual_cloth": {
+   "base": 1000,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 2500.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "labor_per_unit": {
+    "meaning": "Labor units required per unit of each product (shirt, short-sleeve, casual cloth)",
+    "base": [
+     3,
+     2,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "material_per_unit": {
+    "meaning": "Material units required per unit of each product (shirt, short-sleeve, casual cloth)",
+    "base": [
+     4,
+     3,
+     6
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "selling_price": {
+    "meaning": "Selling price per unit of each product (shirt, short-sleeve, casual cloth)",
+    "base": [
+     120,
+     80,
+     180
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "variable_cost": {
+    "meaning": "Variable cost per unit of each product (shirt, short-sleeve, casual cloth)",
+    "base": [
+     60,
+     40,
+     80
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "labor_capacity": {
+    "meaning": "Available labor units per week",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 2500,
+     "integer": true
+    }
+   },
+   "material_capacity": {
+    "meaning": "Available material units per week",
+    "base": 1600,
+    "perturb": {
+     "mode": "abs",
+     "lo": 800,
+     "hi": 2600,
+     "integer": true
+    }
+   },
+   "fixed_cost_shirt": {
+    "meaning": "Weekly fixed (equipment) cost if shirts are produced",
+    "base": 2000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 4000,
+     "integer": false
+    }
+   },
+   "fixed_cost_short_sleeve": {
+    "meaning": "Weekly fixed (equipment) cost if short-sleeve shirts are produced",
+    "base": 1500,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 3000,
+     "integer": false
+    }
+   },
+   "fixed_cost_casual_cloth": {
+    "meaning": "Weekly fixed (equipment) cost if casual clothes are produced",
+    "base": 1000,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 2500,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

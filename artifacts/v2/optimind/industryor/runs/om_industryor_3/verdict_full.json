@@ -1,0 +1,192 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "cow_price": 500,
+   "sheep_price": 200,
+   "chicken_price": 8,
+   "cow_feed_cost": 100,
+   "sheep_feed_cost": 80,
+   "chicken_feed_cost": 5,
+   "cow_profit": 400,
+   "sheep_profit": 120,
+   "chicken_profit": 3,
+   "manure_per_cow": 10,
+   "manure_per_sheep": 5,
+   "manure_per_chicken": 3,
+   "manure_capacity": 800,
+   "max_chickens": 50,
+   "min_cows": 10,
+   "min_sheep": 20,
+   "max_total_animals": 100
+  },
+  {
+   "cow_price": 541.8280395373652,
+   "sheep_price": 143.00129062672002,
+   "chicken_price": 6.200234546952954,
+   "cow_feed_cost": 83.39264428892936,
+   "sheep_feed_cost": 91.35061827987259,
+   "chicken_feed_cost": 5.706797949691644,
+   "cow_profit": 535.3077406229072,
+   "sheep_profit": 17.38776652588323,
+   "chicken_profit": 3.3753745574821634,
+   "manure_per_cow": 7.178783316628422,
+   "manure_per_sheep": 4.15591392441081,
+   "manure_per_chicken": 3.0096395185860523,
+   "manure_capacity": 534.8601430229636,
+   "max_chickens": 40,
+   "min_cows": 19,
+   "min_sheep": 30,
+   "max_total_animals": 83
+  },
+  {
+   "cow_price": 526.7797051627726,
+   "sheep_price": 237.1316548013392,
+   "chicken_price": 4.051990077424488,
+   "cow_feed_cost": 118.34915510996846,
+   "sheep_feed_cost": 89.51069095943488,
+   "chicken_feed_cost": 4.3610020660719675,
+   "cow_profit": 93.28769988706892,
+   "sheep_profit": 191.44261444135623,
+   "chicken_profit": 2.692756360901014,
+   "manure_per_cow": 7.556475060280887,
+   "manure_per_sheep": 3.7901491305003923,
+   "manure_per_chicken": 3.6254898594254277,
+   "manure_capacity": 858.086577565459,
+   "max_chickens": 101,
+   "min_cows": 22,
+   "min_sheep": 29,
+   "max_total_animals": 196
+  },
+  {
+   "cow_price": 463.560313162506,
+   "sheep_price": 206.24487575278724,
+   "chicken_price": 10.635237314023959,
+   "cow_feed_cost": 107.11118514185476,
+   "sheep_feed_cost": 97.3619312149173,
+   "chicken_feed_cost": 5.309408581027047,
+   "cow_profit": 422.74310172895406,
+   "sheep_profit": 9.164876731132443,
+   "chicken_profit": 1.8231862052123748,
+   "manure_per_cow": 8.736327781612642,
+   "manure_per_sheep": 3.7393759307708825,
+   "manure_per_chicken": 2.5190235954498545,
+   "manure_capacity": 576.5608004694483,
+   "max_chickens": 48,
+   "min_cows": 19,
+   "min_sheep": 21,
+   "max_total_animals": 106
+  },
+  {
+   "cow_price": 412.85210923144626,
+   "sheep_price": 172.03733864589358,
+   "chicken_price": 11.493236701699953,
+   "cow_feed_cost": 108.88212311479562,
+   "sheep_feed_cost": 85.23828827201542,
+   "chicken_feed_cost": 3.684554592792388,
+   "cow_profit": 437.4760787702095,
+   "sheep_profit": 32.68049875238568,
+   "chicken_profit": 3.0356435340611823,
+   "manure_per_cow": 12.937140103819571,
+   "manure_per_sheep": 5.419999279562279,
+   "manure_per_chicken": 3.1025095387943633,
+   "manure_capacity": 903.3839805543298,
+   "max_chickens": 104,
+   "min_cows": 23,
+   "min_sheep": 15,
+   "max_total_animals": 55
+  },
+  {
+   "cow_price": 444.63591441772456,
+   "sheep_price": 172.12890511708432,
+   "chicken_price": 5.687862748690612,
+   "cow_feed_cost": 126.57458286010326,
+   "sheep_feed_cost": 98.0656460706881,
+   "chicken_feed_cost": 4.258711523193911,
+   "cow_profit": 393.263199176928,
+   "sheep_profit": 79.12638021213286,
+   "chicken_profit": 7.316380717924348,
+   "manure_per_cow": 9.753111115524394,
+   "manure_per_sheep": 4.294640499494157,
+   "manure_per_chicken": 2.54392951384917,
+   "manure_capacity": 834.3661551313644,
+   "max_chickens": 46,
+   "min_cows": 18,
+   "min_sheep": 45,
+   "max_total_animals": 110
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   30400.0,
+   28892.94324879058,
+   35363.3443103115,
+   24291.878484009565,
+   17989.250632094165,
+   29122.7950560463
+  ],
+  "B-structured": [
+   30400.0,
+   28892.94324879058,
+   35363.3443103115,
+   24288.819209904163,
+   17989.250632094165,
+   29122.7950560463
+  ],
+  "C-direct": [
+   30400.0,
+   28892.94324879058,
+   35363.3443103115,
+   24288.819209904163,
+   17989.250632094165,
+   29122.7950560463
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 3.059 on instance 3 (params: {'cow_price': 463.56, 'sheep_price': 206.24, 'chicken_price': 10.64, 'cow_feed_cost': 107.11, 'sheep_feed_cost': 97.36, 'chicken_feed_cost': 5.31, 'cow_profit': 422.74, 'sheep_profit': 9.16, 'chicken_profit': 1.82, 'manure_per_cow': 8.74, 'manure_per_sheep': 3.74, 'manure_per_chicken': 2.52, 'manure_capacity': 576.56, 'max_chickens': 48, 'min_cows': 19, 'min_sheep': 21, 'max_total_animals': 106})"
+ },
+ "disagreements": [],
+ "notes": []
+}

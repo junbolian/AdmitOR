@@ -1,0 +1,174 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek"
+ ],
+ "instantiations": [
+  {
+   "profit_truck": 5,
+   "profit_plane": 10,
+   "profit_boat": 8,
+   "profit_train": 7,
+   "wood_available": 890,
+   "wood_truck": 12,
+   "wood_plane": 20,
+   "wood_boat": 15,
+   "wood_train": 10,
+   "steel_available": 500,
+   "steel_truck": 6,
+   "steel_plane": 3,
+   "steel_boat": 5,
+   "steel_train": 4
+  },
+  {
+   "profit_truck": 8.394267984578837,
+   "profit_plane": 5.375161328340004,
+   "profit_boat": 6.575381138798551,
+   "profit_train": 4.901739595934696,
+   "wood_available": 1100.459380605971,
+   "wood_truck": 15.473792823920759,
+   "wood_plane": 27.843591354096908,
+   "wood_boat": 9.391021322070658,
+   "wood_train": 10.484983655908515,
+   "steel_available": 264.89860971903516,
+   "steel_truck": 4.5304658236252235,
+   "steel_plane": 3.526776440516812,
+   "steel_boat": 2.185751787787045,
+   "steel_train": 3.193025904119891
+  },
+  {
+   "profit_truck": 8.498844377795232,
+   "profit_plane": 13.17412220904825,
+   "profit_boat": 5.865728086529057,
+   "profit_train": 9.660453890386814,
+   "wood_available": 1165.3931064432659,
+   "wood_truck": 6.090982635492854,
+   "wood_plane": 26.11638503665616,
+   "wood_boat": 19.17023031981163,
+   "wood_train": 9.423256714733895,
+   "steel_available": 327.7397499058908,
+   "steel_truck": 9.700491505447468,
+   "steel_plane": 2.682972725563134,
+   "steel_boat": 2.6492209036610355,
+   "steel_train": 2.580298261000784
+  },
+  {
+   "profit_truck": 10.474943663474598,
+   "profit_plane": 14.055890470503366,
+   "profit_boat": 13.492667552566942,
+   "profit_train": 11.486513227019632,
+   "wood_available": 922.2430013946837,
+   "wood_truck": 19.62362069571119,
+   "wood_plane": 17.570687544167072,
+   "wood_boat": 16.83265010037163,
+   "wood_train": 15.782260635288933,
+   "steel_available": 559.259876182123,
+   "steel_truck": 9.03194830217544,
+   "steel_plane": 3.88676072628381,
+   "steel_boat": 6.932002853504464,
+   "steel_train": 2.2749463019339733
+  },
+  {
+   "profit_truck": 4.278982756515468,
+   "profit_plane": 9.340819454031607,
+   "profit_boat": 4.037295700007157,
+   "profit_train": 5.026281522693393,
+   "wood_available": 534.8912721746589,
+   "wood_truck": 9.89163044354129,
+   "wood_plane": 22.713688885288004,
+   "wood_boat": 13.837314863521348,
+   "wood_train": 9.812352572519474,
+   "steel_available": 354.75351538574387,
+   "steel_truck": 4.868844754343794,
+   "steel_plane": 5.68327293856247,
+   "steel_boat": 6.5362476967261545,
+   "steel_train": 5.654786034001929
+  },
+  {
+   "profit_truck": 3.71138648198097,
+   "profit_plane": 15.936901969255238,
+   "profit_boat": 5.124232418905069,
+   "profit_train": 6.932920742849421,
+   "wood_available": 1325.6757820665698,
+   "wood_truck": 14.9599966379573,
+   "wood_plane": 21.138994875492926,
+   "wood_boat": 18.953828015837992,
+   "wood_train": 15.957074962467525,
+   "steel_available": 637.9999557731223,
+   "steel_truck": 4.60333650374873,
+   "steel_plane": 1.1605012195201887,
+   "steel_boat": 4.2081713364135735,
+   "steel_train": 3.6064452558542164
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   623.0,
+   563.0847858978224,
+   1194.7277581185735,
+   737.7597821489494,
+   273.99281651486075,
+   999.4403757722679
+  ],
+  "B-structured": [
+   623.0,
+   556.2769565955358,
+   1188.235828517578,
+   732.9950172089342,
+   271.4192022254432,
+   991.7993085758058
+  ],
+  "C-direct": [
+   623.0,
+   563.0847858978224,
+   1194.7277581185735,
+   737.7597821489494,
+   273.99281651486075,
+   999.4403757722679
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "B-structured": "diverges from consensus by 7.641 on instance 5 (params: {'profit_truck': 3.71, 'profit_plane': 15.94, 'profit_boat': 5.12, 'profit_train': 6.93, 'wood_available': 1325.68, 'wood_truck': 14.96, 'wood_plane': 21.14, 'wood_boat': 18.95, 'wood_train': 15.96, 'steel_available': 638.0, 'steel_truck': 4.6, 'steel_plane': 1.16, 'steel_boat': 4.21, 'steel_train': 3.61})"
+ },
+ "disagreements": [],
+ "notes": []
+}

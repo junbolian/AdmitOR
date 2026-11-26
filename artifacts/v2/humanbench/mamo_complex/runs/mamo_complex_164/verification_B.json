@@ -1,0 +1,140 @@
+{
+ "sample_id": "mamo_complex_164",
+ "family": "B",
+ "model": "gpt-6.1-sol",
+ "response_model": "gpt-6.1-sol",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\":[{\"parameter\":\"cap_2_0\",\"extracted\":3,\"stated\":{\"route\":\"0->2\",\"capacity\":3},\"evidence\":\"City 2: Can manage supplies from City 0 (3 tons)\"},{\"parameter\":\"cap_3_0\",\"extracted\":9,\"stated\":{\"route\":\"0->3\",\"capacity\":9},\"evidence\":\"City 3: Starts with supplies from City 0 (9 tons)\"},{\"parameter\":\"cap_4_0\",\"extracted\":7,\"stated\":{\"route\":\"0->4\",\"capacity\":7},\"evidence\":\"City 4: Receives from City 0 (7 tons)\"},{\"parameter\":\"cap_5_0\",\"extracted\":16,\"stated\":{\"route\":\"0->5\",\"capacity\":16},\"evidence\":\"City 5: Gathers supplies from City 0 (16 tons)\"},{\"parameter\":\"cap_6_0\",\"extracted\":3,\"stated\":{\"route\":\"0->6\",\"capacity\":3},\"evidence\":\"City 6: Channels supplies from City 0 (3 tons)\"},{\"parameter\":\"cap_7_0\",\"extracted\":14,\"stated\":{\"route\":\"0->7\",\"capacity\":14},\"evidence\":\"City 7: Starts with resources from City 0 (14 tons)\"},{\"parameter\":\"cap_8_1\",\"extracted\":5,\"stated\":{\"route\":\"1->8\",\"capacity\":5},\"evidence\":\"City 8 (Destination): Can receive from City 0 (20 tons), City 1 (5 tons)\"},{\"parameter\":\"cap_8_2\",\"extracted\":20,\"stated\":{\"route\":\"2->8\",\"capacity\":20},\"evidence\":\"Can receive from ... City 2 (20 tons)\"},{\"parameter\":\"cap_8_3\",\"extracted\":16,\"stated\":{\"route\":\"3->8\",\"capacity\":16},\"evidence\":\"Can receive from ... City 3 (16 tons)\"},{\"parameter\":\"cap_8_4\",\"extracted\":0,\"stated\":{\"route\":\"4->8\",\"capacity\":0},\"evidence\":\"Can receive from ... City 4 (0 tons)\"},{\"parameter\":\"cap_8_5\",\"extracted\":15,\"stated\":{\"route\":\"5->8\",\"capacity\":15},\"evidence\":\"Can receive from ... City 5 (15 tons)\"},{\"parameter\":\"cap_8_6\",\"extracted\":1,\"stated\":{\"route\":\"6->8\",\"capacity\":1},\"evidence\":\"Can receive from ... City 6 (1 ton)\"},{\"parameter\":\"cap_8_7\",\"extracted\":12,\"stated\":{\"route\":\"7->8\",\"capacity\":12},\"evidence\":\"Can receive from ... City 7 (12 tons)\"}],\"not_stated\":[]}",
+ "mismatch": [
+  {
+   "parameter": "cap_2_0",
+   "extracted": 3,
+   "stated": {
+    "route": "0->2",
+    "capacity": 3
+   },
+   "evidence": "City 2: Can manage supplies from City 0 (3 tons)"
+  },
+  {
+   "parameter": "cap_3_0",
+   "extracted": 9,
+   "stated": {
+    "route": "0->3",
+    "capacity": 9
+   },
+   "evidence": "City 3: Starts with supplies from City 0 (9 tons)"
+  },
+  {
+   "parameter": "cap_4_0",
+   "extracted": 7,
+   "stated": {
+    "route": "0->4",
+    "capacity": 7
+   },
+   "evidence": "City 4: Receives from City 0 (7 tons)"
+  },
+  {
+   "parameter": "cap_5_0",
+   "extracted": 16,
+   "stated": {
+    "route": "0->5",
+    "capacity": 16
+   },
+   "evidence": "City 5: Gathers supplies from City 0 (16 tons)"
+  },
+  {
+   "parameter": "cap_6_0",
+   "extracted": 3,
+   "stated": {
+    "route": "0->6",
+    "capacity": 3
+   },
+   "evidence": "City 6: Channels supplies from City 0 (3 tons)"
+  },
+  {
+   "parameter": "cap_7_0",
+   "extracted": 14,
+   "stated": {
+    "route": "0->7",
+    "capacity": 14
+   },
+   "evidence": "City 7: Starts with resources from City 0 (14 tons)"
+  },
+  {
+   "parameter": "cap_8_1",
+   "extracted": 5,
+   "stated": {
+    "route": "1->8",
+    "capacity": 5
+   },
+   "evidence": "City 8 (Destination): Can receive from City 0 (20 tons), City 1 (5 tons)"
+  },
+  {
+   "parameter": "cap_8_2",
+   "extracted": 20,
+   "stated": {
+    "route": "2->8",
+    "capacity": 20
+   },
+   "evidence": "Can receive from ... City 2 (20 tons)"
+  },
+  {
+   "parameter": "cap_8_3",
+   "extracted": 16,
+   "stated": {
+    "route": "3->8",
+    "capacity": 16
+   },
+   "evidence": "Can receive from ... City 3 (16 tons)"
+  },
+  {
+   "parameter": "cap_8_4",
+   "extracted": 0,
+   "stated": {
+    "route": "4->8",
+    "capacity": 0
+   },
+   "evidence": "Can receive from ... City 4 (0 tons)"
+  },
+  {
+   "parameter": "cap_8_5",
+   "extracted": 15,
+   "stated": {
+    "route": "5->8",
+    "capacity": 15
+   },
+   "evidence": "Can receive from ... City 5 (15 tons)"
+  },
+  {
+   "parameter": "cap_8_6",
+   "extracted": 1,
+   "stated": {
+    "route": "6->8",
+    "capacity": 1
+   },
+   "evidence": "Can receive from ... City 6 (1 ton)"
+  },
+  {
+   "parameter": "cap_8_7",
+   "extracted": 12,
+   "stated": {
+    "route": "7->8",
+    "capacity": 12
+   },
+   "evidence": "Can receive from ... City 7 (12 tons)"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

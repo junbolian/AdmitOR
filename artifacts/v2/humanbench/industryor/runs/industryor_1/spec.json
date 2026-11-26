@@ -1,0 +1,138 @@
+{
+ "spec": {
+  "cost_Harry": {
+   "base": 1200,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_Hermione": {
+   "base": 1650,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_Ron": {
+   "base": 750,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_Fred": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_George": {
+   "base": 800,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_Ginny": {
+   "base": 1500,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "max_children": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 6.0,
+    "integer": true
+   }
+  },
+  "min_children": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "cost_Harry": {
+    "meaning": "cost of taking Harry",
+    "base": 1200,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_Hermione": {
+    "meaning": "cost of taking Hermione",
+    "base": 1650,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_Ron": {
+    "meaning": "cost of taking Ron",
+    "base": 750,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_Fred": {
+    "meaning": "cost of taking Fred",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_George": {
+    "meaning": "cost of taking George",
+    "base": 800,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_Ginny": {
+    "meaning": "cost of taking Ginny",
+    "base": 1500,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "max_children": {
+    "meaning": "maximum number of children allowed on the trip",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 6,
+     "integer": true
+    }
+   },
+   "min_children": {
+    "meaning": "minimum number of children that must be taken",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ }
+}

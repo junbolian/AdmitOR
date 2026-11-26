@@ -1,0 +1,22 @@
+{
+ "sample_id": "om_mamo_94",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**cost**: [8,4,1,4,7,2,9,3] — matches Chicken($8), Rice($4), Eggs($1), Beans($4), Spinach($7), Corn($2), Beef($9), Broccoli($3). ✓\n\n**protein**: [5,8,18,16,3,3,6,17] — matches all items. ✓\n\n**carbs**: [15,17,20,15,28,19,24,9] — matches all items. ✓\n\n**calories**: [162,282,234,85,194,153,167,192] — Beans is stated as 85 calories, but extracted as 85. Rice is 282, Eggs 234... all match. ✓\n\n**protein_req**: 68 — stated as \"at least 68 grams of protein\". ✓\n\n**carb_req**: 189 — stated as \"189 grams of carbohydrates\". ✓\n\n**calorie_req**: 1840 — stated as \"1840 calories\". ✓\n\nAll parameters check out cleanly.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

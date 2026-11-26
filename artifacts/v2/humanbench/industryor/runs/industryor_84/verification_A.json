@@ -1,0 +1,27 @@
+{
+ "sample_id": "industryor_84",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"content_B_min_2\",\n      \"evidence\": \"Table shows A >= 60% and B >= 15% in the column for candy type A (row A), not for candy type B\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "content_B_min_2",
+   "evidence": "Table shows A >= 60% and B >= 15% in the column for candy type A (row A), not for candy type B"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

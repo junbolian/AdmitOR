@@ -1,0 +1,204 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "demand": 2000,
+   "prep_cost": [
+    1000,
+    920,
+    800,
+    700
+   ],
+   "unit_cost": [
+    20,
+    24,
+    16,
+    28
+   ],
+   "capacity": [
+    900,
+    1000,
+    1200,
+    1600
+   ]
+  },
+  {
+   "demand": 2139.4267984578837,
+   "prep_cost": [
+    620.0086041781335,
+    754.4215783196718,
+    622.8548724152465,
+    832.423879931847
+   ],
+   "unit_cost": [
+    22.120393849074937,
+    29.647385774949772,
+    12.034612793242395,
+    26.688286570712542
+   ],
+   "capacity": [
+    357,
+    715,
+    1260,
+    350
+   ]
+  },
+  {
+   "demand": 1698.8376506866484,
+   "prep_cost": [
+    1119.9075502236187,
+    953.0769297239675,
+    621.0819981060458,
+    749.9887829705089
+   ],
+   "unit_cost": [
+    23.713165480133924,
+    16.893582139364078,
+    18.935864817594954,
+    31.32874183580221
+   ],
+   "capacity": [
+    946,
+    595,
+    2119,
+    940
+   ]
+  },
+  {
+   "demand": 1592.7458433801478,
+   "prep_cost": [
+    677.3731014667712,
+    1175.7558536317304,
+    866.3846600748102,
+    871.9918330336529
+   ],
+   "unit_cost": [
+    22.756781440325817,
+    24.521684516947694,
+    20.54191133420196,
+    25.959377537100337
+   ],
+   "capacity": [
+    1349,
+    1876,
+    1475,
+    1937
+   ]
+  },
+  {
+   "demand": 2077.352145256762,
+   "prep_cost": [
+    1163.6574689719387,
+    585.7267463705674,
+    625.85489641699,
+    582.05725961718
+   ],
+   "unit_cost": [
+    14.95750372308353,
+    20.152188763598836,
+    12.169613722333398,
+    24.269956532249545
+   ],
+   "capacity": [
+    1508,
+    993,
+    1003,
+    698
+   ]
+  },
+  {
+   "demand": 1766.9778220491135,
+   "prep_cost": [
+    1349.323670169995,
+    1028.9540435414929,
+    869.8438436268724,
+    515.8376429909343
+   ],
+   "unit_cost": [
+    22.749521575404188,
+    19.152995910171768,
+    14.842772240873419,
+    36.223992290694795
+   ],
+   "capacity": [
+    1516,
+    1358,
+    1601,
+    1901
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   37000.0,
+   40343.20577001985,
+   32527.960834725614,
+   34522.59340279833,
+   30065.261141470124,
+   28841.048791692596
+  ],
+  "C-direct": [
+   37000.0,
+   40343.20577001985,
+   32527.960834725614,
+   34522.59340279833,
+   30065.261141470124,
+   28841.0487916926
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'",
+   "crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'",
+   "crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'",
+   "crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'",
+   "crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'",
+   "crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "failed on informative instance(s) [0, 1, 2, 3, 4, 5]: [\"crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'\", \"crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'\", \"crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'\", \"crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'\", \"crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'\", \"crash:return self._fcn(parent, idx, **kwargs) | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | TypeError: solve.<locals>.cap_rule() missing 1 required positional argument: 'k'\"]"
+ },
+ "disagreements": [],
+ "notes": []
+}

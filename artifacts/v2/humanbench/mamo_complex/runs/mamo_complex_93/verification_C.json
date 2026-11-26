@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_93",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The statement gives only ranges for transport_costs (not full matrices), so that parameter is correctly flagged. Let me check everything else carefully.\n\n**opening_costs**: [151000, 192000, 114000, 171000, 160000, 120000, 182000, 186000] — matches the statement exactly.\n\n**transport_costs**: The statement gives only per-row min/max ranges (e.g., \"$2 to $5\"). The extracted value represents those ranges as `[min, max]` pairs. The statement does not provide the full per-store values, so this is `not_stated`. However, the extracted representation also mismatches the stated range for Center 6: the statement says \"$1 to $5\" but the extracted value shows `[1,5]` — that actually matches. Let me re-check Center 3: statement says \"$1 to $4\", extracted is `[1,4]` — matches. All ranges match the statement. The issue is only that the full matrix is not stated.\n\n**demands**: [779, 892, 440, 556, 414, 464, 920, 743, 528] — matches exactly.\n\n**capacities**: [1447, 1886, 1962, 1392, 1191, 1218, 1088, 1178] — matches exactly.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transport_costs\",\n      \"evidence\": \"From Center 1 to Stores: $2 to $5, varying per store — only per-row min/max ranges are given, not the individual per-store values\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "From Center 1 to Stores: $2 to $5, varying per store — only per-row min/max ranges are given, not the individual per-store values"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

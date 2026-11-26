@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "protein_chicken": {
+   "base": 17,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_rice": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_broccoli": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "protein_eggs": {
+   "base": 18,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carbs_chicken": {
+   "base": 6,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carbs_rice": {
+   "base": 13,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carbs_broccoli": {
+   "base": 25,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "carbs_eggs": {
+   "base": 20,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_chicken": {
+   "base": 94,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_rice": {
+   "base": 74,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_broccoli": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "calories_eggs": {
+   "base": 119,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  },
+  "price_chicken": {
+   "base": 7,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_rice": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_broccoli": {
+   "base": 9,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "price_eggs": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_requirement": {
+   "base": 84,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "carbs_requirement": {
+   "base": 117,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "calories_requirement": {
+   "base": 1554,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein_chicken": {
+    "meaning": "protein grams per portion of Chicken",
+    "base": 17,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_rice": {
+    "meaning": "protein grams per portion of Rice",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_broccoli": {
+    "meaning": "protein grams per portion of Broccoli",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "protein_eggs": {
+    "meaning": "protein grams per portion of Eggs",
+    "base": 18,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carbs_chicken": {
+    "meaning": "carbohydrate grams per portion of Chicken",
+    "base": 6,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carbs_rice": {
+    "meaning": "carbohydrate grams per portion of Rice",
+    "base": 13,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carbs_broccoli": {
+    "meaning": "carbohydrate grams per portion of Broccoli",
+    "base": 25,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "carbs_eggs": {
+    "meaning": "carbohydrate grams per portion of Eggs",
+    "base": 20,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_chicken": {
+    "meaning": "calories per portion of Chicken",
+    "base": 94,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_rice": {
+    "meaning": "calories per portion of Rice",
+    "base": 74,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_broccoli": {
+    "meaning": "calories per portion of Broccoli",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "calories_eggs": {
+    "meaning": "calories per portion of Eggs",
+    "base": 119,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   },
+   "price_chicken": {
+    "meaning": "cost in dollars per portion of Chicken",
+    "base": 7,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_rice": {
+    "meaning": "cost in dollars per portion of Rice",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_broccoli": {
+    "meaning": "cost in dollars per portion of Broccoli",
+    "base": 9,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "price_eggs": {
+    "meaning": "cost in dollars per portion of Eggs",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_requirement": {
+    "meaning": "minimum daily protein grams required",
+    "base": 84,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "carbs_requirement": {
+    "meaning": "minimum daily carbohydrate grams required",
+    "base": 117,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "calories_requirement": {
+    "meaning": "minimum daily calories required",
+    "base": 1554,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

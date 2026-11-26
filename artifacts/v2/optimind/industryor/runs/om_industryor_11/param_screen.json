@@ -1,0 +1,37 @@
+{
+ "alive": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "volume",
+  "demand",
+  "unit_cost",
+  "setup_cost"
+ ],
+ "safe": [
+  "volume",
+  "unit_cost",
+  "setup_cost"
+ ],
+ "tests": {
+  "volume": [
+   3,
+   3
+  ],
+  "demand": [
+   2,
+   2
+  ],
+  "unit_cost": [
+   3,
+   3
+  ],
+  "setup_cost": [
+   3,
+   3
+  ]
+ },
+ "untested": []
+}

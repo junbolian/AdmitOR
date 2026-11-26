@@ -1,0 +1,138 @@
+{
+ "spec": {
+  "supplies": {
+   "base": [
+    57,
+    180,
+    288,
+    255,
+    477,
+    222,
+    314
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "demands": {
+   "base": [
+    499,
+    173,
+    293,
+    158,
+    15,
+    78,
+    278
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "transport_costs": {
+   "base": [
+    36,
+    36,
+    48,
+    10,
+    20,
+    48,
+    16,
+    18,
+    36,
+    42,
+    12,
+    49,
+    31,
+    1,
+    46,
+    9,
+    12,
+    1,
+    7,
+    25,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supplies": {
+    "meaning": "initial supply at each warehouse",
+    "base": [
+     57,
+     180,
+     288,
+     255,
+     477,
+     222,
+     314
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "demands": {
+    "meaning": "required demand at each warehouse",
+    "base": [
+     499,
+     173,
+     293,
+     158,
+     15,
+     78,
+     278
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "transport_costs": {
+    "meaning": "directed cost per unit moved from warehouse i to j for i != j (row-major for i<j pairs)",
+    "base": [
+     36,
+     36,
+     48,
+     10,
+     20,
+     48,
+     16,
+     18,
+     36,
+     42,
+     12,
+     49,
+     31,
+     1,
+     46,
+     9,
+     12,
+     1,
+     7,
+     25,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "spec": {
+  "processing_cost_A": {
+   "base": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "processing_cost_B": {
+   "base": [
+    15,
+    25,
+    35,
+    45,
+    55,
+    65,
+    75,
+    85,
+    95,
+    105
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "processing_cost_C": {
+   "base": [
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "setup_cost_A": {
+   "base": 100,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 300.0,
+    "integer": false
+   }
+  },
+  "setup_cost_B": {
+   "base": 135,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 400.0,
+    "integer": false
+   }
+  },
+  "setup_cost_C": {
+   "base": 200,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 600.0,
+    "integer": false
+   }
+  },
+  "max_parts_on_C": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "processing_cost_A": {
+    "meaning": "Unit processing cost on machine A for parts 1-10",
+    "base": [
+     10,
+     20,
+     30,
+     40,
+     50,
+     60,
+     70,
+     80,
+     90,
+     100
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "processing_cost_B": {
+    "meaning": "Unit processing cost on machine B for parts 1-10",
+    "base": [
+     15,
+     25,
+     35,
+     45,
+     55,
+     65,
+     75,
+     85,
+     95,
+     105
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "processing_cost_C": {
+    "meaning": "Unit processing cost on machine C for parts 1-10",
+    "base": [
+     20,
+     30,
+     40,
+     50,
+     60,
+     70,
+     80,
+     90,
+     100,
+     110
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "setup_cost_A": {
+    "meaning": "One-time setup cost for using machine A",
+    "base": 100,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 300,
+     "integer": false
+    }
+   },
+   "setup_cost_B": {
+    "meaning": "One-time setup cost for using machine B",
+    "base": 135,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 400,
+     "integer": false
+    }
+   },
+   "setup_cost_C": {
+    "meaning": "One-time setup cost for using machine C",
+    "base": 200,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 600,
+     "integer": false
+    }
+   },
+   "max_parts_on_C": {
+    "meaning": "Maximum number of part types that may be processed on machine C",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

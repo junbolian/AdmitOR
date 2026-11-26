@@ -1,0 +1,64 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    4,
+    8,
+    10,
+    7,
+    12,
+    4
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  }
+ },
+ "warnings": [
+  "[demand] malformed abs bounds (lo/hi not scalar); fell back to rel +/-30% around base"
+ ],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "minimum number of waiters needed in each of the six 4-hour time blocks (2-6, 6-10, 10-14, 14-18, 18-22, 22-2)",
+    "base": [
+     4,
+     8,
+     10,
+     7,
+     12,
+     4
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "hi": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+     ],
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

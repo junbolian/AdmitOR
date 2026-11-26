@@ -1,0 +1,188 @@
+{
+ "spec": {
+  "supply": {
+   "base": [
+    467,
+    121,
+    109,
+    131,
+    500,
+    10
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "demand": {
+   "base": [
+    261,
+    209,
+    135,
+    146,
+    488,
+    30
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     0,
+     43,
+     8,
+     15,
+     37,
+     9
+    ],
+    [
+     9,
+     0,
+     50,
+     37,
+     50,
+     29
+    ],
+    [
+     3,
+     37,
+     0,
+     7,
+     18,
+     27
+    ],
+    [
+     15,
+     3,
+     3,
+     0,
+     2,
+     48
+    ],
+    [
+     34,
+     18,
+     44,
+     2,
+     0,
+     27
+    ],
+    [
+     36,
+     49,
+     29,
+     12,
+     33,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "supply": {
+    "meaning": "Initial supply held by each of the six clinics",
+    "base": [
+     467,
+     121,
+     109,
+     131,
+     500,
+     10
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "demand": {
+    "meaning": "Required supply (demand) for each of the six clinics",
+    "base": [
+     261,
+     209,
+     135,
+     146,
+     488,
+     30
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "transport_cost": {
+    "meaning": "Cost per unit moved between ordered clinic pairs; entry [i][j] is cost to move from clinic i to clinic j, with diagonal entries unused/self-transfer cost set to 0",
+    "base": [
+     [
+      0,
+      43,
+      8,
+      15,
+      37,
+      9
+     ],
+     [
+      9,
+      0,
+      50,
+      37,
+      50,
+      29
+     ],
+     [
+      3,
+      37,
+      0,
+      7,
+      18,
+      27
+     ],
+     [
+      15,
+      3,
+      3,
+      0,
+      2,
+      48
+     ],
+     [
+      34,
+      18,
+      44,
+      2,
+      0,
+      27
+     ],
+     [
+      36,
+      49,
+      29,
+      12,
+      33,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

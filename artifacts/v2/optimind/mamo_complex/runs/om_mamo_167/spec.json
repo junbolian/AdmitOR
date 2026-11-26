@@ -1,0 +1,132 @@
+{
+ "spec": {
+  "initial_stock": {
+   "base": [
+    500,
+    497,
+    354,
+    223
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "required_demand": {
+   "base": [
+    17,
+    65,
+    26,
+    332
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.25
+   }
+  },
+  "transport_cost": {
+   "base": [
+    [
+     0,
+     17,
+     3,
+     5
+    ],
+    [
+     39,
+     0,
+     18,
+     50
+    ],
+    [
+     8,
+     45,
+     0,
+     15
+    ],
+    [
+     11,
+     4,
+     29,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "initial_stock": {
+    "meaning": "Initial food stock (tons) at each warehouse [W1, W2, W3, W4]",
+    "base": [
+     500,
+     497,
+     354,
+     223
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "required_demand": {
+    "meaning": "Required food quantity (tons) at each warehouse [W1, W2, W3, W4]",
+    "base": [
+     17,
+     65,
+     26,
+     332
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.25
+    }
+   },
+   "transport_cost": {
+    "meaning": "Unit cost matrix for moving food between warehouses (rows = origin, cols = destination); diagonal = 0",
+    "base": [
+     [
+      0,
+      17,
+      3,
+      5
+     ],
+     [
+      39,
+      0,
+      18,
+      50
+     ],
+     [
+      8,
+      45,
+      0,
+      15
+     ],
+     [
+      11,
+      4,
+      29,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

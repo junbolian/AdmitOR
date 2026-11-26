@@ -1,0 +1,239 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "salary": [
+    12000,
+    15000,
+    18000,
+    5000,
+    10000
+   ],
+   "budget": 40000,
+   "max_hires": 4,
+   "skill": [
+    2,
+    3,
+    4,
+    1,
+    2
+   ],
+   "min_total_skill": 8,
+   "experience": [
+    1,
+    2,
+    2,
+    5,
+    4
+   ],
+   "min_total_experience": 8
+  },
+  {
+   "salary": [
+    13338.497265195683,
+    9300.129062672004,
+    14760.422184515317,
+    3892.8429525952906,
+    11891.7697133121
+   ],
+   "budget": 40000,
+   "max_hires": 4,
+   "skill": [
+    5,
+    1,
+    3,
+    0,
+    1
+   ],
+   "min_total_skill": 8,
+   "experience": [
+    4,
+    0,
+    2,
+    5,
+    4
+   ],
+   "min_total_experience": 8
+  },
+  {
+   "salary": [
+    9316.229971590688,
+    16071.188206510904,
+    22455.798576160705,
+    3025.995038712244,
+    12446.554014662463
+   ],
+   "budget": 40000,
+   "max_hires": 4,
+   "skill": [
+    2,
+    1,
+    6,
+    2,
+    1
+   ],
+   "min_total_skill": 8,
+   "experience": [
+    1,
+    7,
+    5,
+    6,
+    6
+   ],
+   "min_total_experience": 8
+  },
+  {
+   "salary": [
+    12347.789677965126,
+    20677.389167752444,
+    16250.895031800288,
+    5208.162525092907,
+    12635.237314023958
+   ],
+   "budget": 40000,
+   "max_hires": 4,
+   "skill": [
+    5,
+    3,
+    4,
+    0,
+    1
+   ],
+   "min_total_skill": 8,
+   "experience": [
+    2,
+    1,
+    2,
+    1,
+    2
+   ],
+   "min_total_experience": 8
+  },
+  {
+   "salary": [
+    13302.570664938241,
+    13377.98614764101,
+    16130.60592648311,
+    3838.0281230859505,
+    8135.822576392906
+   ],
+   "budget": 40000,
+   "max_hires": 5,
+   "skill": [
+    4,
+    4,
+    1,
+    4,
+    1
+   ],
+   "min_total_skill": 8,
+   "experience": [
+    3,
+    8,
+    5,
+    4,
+    5
+   ],
+   "min_total_experience": 8
+  },
+  {
+   "salary": [
+    15291.37843382217,
+    18311.998938554938,
+    14098.292236283101,
+    3128.400975616151,
+    8523.624384472654
+   ],
+   "budget": 40000,
+   "max_hires": 4,
+   "skill": [
+    1,
+    6,
+    5,
+    2,
+    4
+   ],
+   "min_total_skill": 8,
+   "experience": [
+    3,
+    7,
+    4,
+    2,
+    2
+   ],
+   "min_total_experience": 8
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   38000.0,
+   31991.76240230629,
+   25481.79361487295,
+   null,
+   17216.01427072696,
+   21440.39991417109
+  ],
+  "B-structured": [
+   38000.0,
+   31991.76240230629,
+   25481.79361487295,
+   null,
+   17216.01427072696,
+   21440.39991417109
+  ],
+  "C-direct": [
+   38000.0,
+   31991.76240230629,
+   25481.79361487295,
+   null,
+   17216.01427072696,
+   21440.39991417109
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "solve_failed",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

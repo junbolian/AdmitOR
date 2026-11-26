@@ -1,0 +1,108 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured"
+ ],
+ "families": [
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "initial_capital": 100000,
+   "profit_rate_1yr": 0.7,
+   "profit_rate_2yr": 2.0
+  },
+  {
+   "initial_capital": 113942.67984578837,
+   "profit_rate_1yr": 0.037516132834000404,
+   "profit_rate_2yr": 1.100117273476477
+  },
+  {
+   "initial_capital": 72321.07381488227,
+   "profit_rate_1yr": 1.1047068212460185,
+   "profit_rate_2yr": 2.706797949691645
+  },
+  {
+   "initial_capital": 139217.95677048454,
+   "profit_rate_1yr": 0.13040824894412423,
+   "profit_rate_2yr": 1.6876872787410817
+  },
+  {
+   "initial_capital": 52979.72194380703,
+   "profit_rate_1yr": 0.32795696220540504,
+   "profit_rate_2yr": 2.0214211524134496
+  },
+  {
+   "initial_capital": 52653.596968386366,
+   "profit_rate_1yr": 0.29825647602997274,
+   "profit_rate_2yr": 2.599537751118093
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   510000.0,
+   248270.3377343152,
+   674279.0893957597,
+   422969.7507400296,
+   212571.4525256493,
+   246056.7453512475
+  ],
+  "B-structured": [
+   510000.0,
+   248270.3377343152,
+   674279.0893957597,
+   422969.7507400296,
+   212571.4525256493,
+   246056.74535124746
+  ],
+  "C-direct": [
+   410000.0,
+   134327.65788852682,
+   601958.0155808774,
+   283751.79396954505,
+   159591.73058184228,
+   193403.1483828611
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "C-direct": "diverges from consensus by 1.392e+05 on instance 3 (params: {'initial_capital': 139217.96, 'profit_rate_1yr': 0.13, 'profit_rate_2yr': 1.69})"
+ },
+ "disagreements": [],
+ "notes": []
+}

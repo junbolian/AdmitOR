@@ -1,0 +1,178 @@
+{
+ "spec": {
+  "protein": {
+   "base": [
+    14,
+    2,
+    17,
+    3,
+    15,
+    2
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carbs": {
+   "base": [
+    23,
+    13,
+    13,
+    1,
+    23,
+    8
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calories": {
+   "base": [
+    63,
+    162,
+    260,
+    55,
+    231,
+    297
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost": {
+   "base": [
+    4,
+    6,
+    6,
+    8,
+    8,
+    5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "protein_req": {
+   "base": 83,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "carb_req": {
+   "base": 192,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "calorie_req": {
+   "base": 2089,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.2
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "protein": {
+    "meaning": "protein per unit of each food (Steak, Tofu, Chicken, Broccoli, Rice, Spinach) in grams",
+    "base": [
+     14,
+     2,
+     17,
+     3,
+     15,
+     2
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carbs": {
+    "meaning": "carbohydrates per unit of each food in grams",
+    "base": [
+     23,
+     13,
+     13,
+     1,
+     23,
+     8
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calories": {
+    "meaning": "calories per unit of each food",
+    "base": [
+     63,
+     162,
+     260,
+     55,
+     231,
+     297
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost": {
+    "meaning": "cost per unit of each food in dollars",
+    "base": [
+     4,
+     6,
+     6,
+     8,
+     8,
+     5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "protein_req": {
+    "meaning": "minimum required protein intake in grams",
+    "base": 83,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "carb_req": {
+    "meaning": "minimum required carbohydrates intake in grams",
+    "base": 192,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "calorie_req": {
+    "meaning": "minimum required calorie intake",
+    "base": 2089,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.2
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

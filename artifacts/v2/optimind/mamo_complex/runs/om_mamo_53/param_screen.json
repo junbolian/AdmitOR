@@ -1,0 +1,112 @@
+{
+ "alive": [
+  "B-structured",
+  "C-direct"
+ ],
+ "testable": [
+  "labor_cost_tape",
+  "labor_cost_radio",
+  "material_cost_tape",
+  "material_cost_radio",
+  "price_tape",
+  "price_radio",
+  "raw_material_capacity_tape",
+  "raw_material_capacity_radio",
+  "cash_initial",
+  "accounts_receivable_initial",
+  "inventory_initial",
+  "bank_loan_initial",
+  "ar_collection_december",
+  "loan_repayment_december",
+  "rent_december",
+  "raw_material_received_january",
+  "min_cash_january",
+  "min_current_ratio_january"
+ ],
+ "safe": [
+  "labor_cost_tape",
+  "labor_cost_radio",
+  "material_cost_radio",
+  "price_radio",
+  "raw_material_capacity_tape",
+  "raw_material_capacity_radio",
+  "cash_initial",
+  "inventory_initial",
+  "ar_collection_december"
+ ],
+ "tests": {
+  "labor_cost_tape": [
+   2,
+   2
+  ],
+  "labor_cost_radio": [
+   2,
+   2
+  ],
+  "material_cost_tape": [
+   2,
+   0
+  ],
+  "material_cost_radio": [
+   2,
+   2
+  ],
+  "price_tape": [
+   0,
+   2
+  ],
+  "price_radio": [
+   2,
+   2
+  ],
+  "raw_material_capacity_tape": [
+   2,
+   2
+  ],
+  "raw_material_capacity_radio": [
+   2,
+   2
+  ],
+  "cash_initial": [
+   2,
+   2
+  ],
+  "accounts_receivable_initial": [
+   2,
+   0
+  ],
+  "inventory_initial": [
+   2,
+   2
+  ],
+  "bank_loan_initial": [
+   0,
+   0
+  ],
+  "ar_collection_december": [
+   2,
+   2
+  ],
+  "loan_repayment_december": [
+   2,
+   0
+  ],
+  "rent_december": [
+   2,
+   0
+  ],
+  "raw_material_received_january": [
+   0,
+   2
+  ],
+  "min_cash_january": [
+   0,
+   2
+  ],
+  "min_current_ratio_january": [
+   2,
+   0
+  ]
+ },
+ "untested": []
+}

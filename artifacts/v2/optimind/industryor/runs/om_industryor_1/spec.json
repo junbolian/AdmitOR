@@ -1,0 +1,95 @@
+{
+ "spec": {
+  "a1": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "a2": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 25.0,
+    "integer": true
+   }
+  },
+  "pilot_yield_per_training_jet": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  },
+  "n": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 10.0,
+    "hi": 10.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[n] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "a1": {
+    "meaning": "annual new jets delivered by production line 1",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "a2": {
+    "meaning": "annual new jets delivered by production line 2",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 25,
+     "integer": true
+    }
+   },
+   "pilot_yield_per_training_jet": {
+    "meaning": "newly qualified pilots produced per training jet per year",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 10,
+     "integer": true
+    }
+   },
+   "n": {
+    "meaning": "number of years in the planning horizon (index-set size, frozen)",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 10,
+     "hi": 10,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

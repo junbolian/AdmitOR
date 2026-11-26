@@ -1,0 +1,47 @@
+{
+ "sample_id": "industryor_70",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each parameter against the statement:\n\n**mileage_A_M = 17.1**: The example table shows \"A,M,17.1\". The statement says this is an example, not a definitive value given in the problem statement itself.\n\n**mileage_Z_M = 26.4**: Same situation — appears only in the example table.\n\n**max_continuous_driving_minutes = 120**: The statement mentions \"maximum continuous driving time constraint\" as a constraint type but gives no number.\n\n**max_daily_mileage_km = 120**: The statement mentions \"mileage limit constraint\" but gives no number.\n\n**min_transfer_buffer_minutes = 5**: The statement mentions \"attendance location constraint\" and transfer platforms but gives no buffer time value.\n\n**max_shift_length_minutes = 480**: The statement gives no shift length value.\n\n**num_driving_tasks = 200**: The statement says \"consider 200 driving tasks\" — this is stated.\n\n**num_platforms = 40**: The statement says \"includes 40 platforms\" — this is stated.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\"parameter\": \"mileage_A_M\", \"evidence\": \"values appear only in the example table, not in the problem statement body\"},\n    {\"parameter\": \"mileage_Z_M\", \"evidence\": \"values appear only in the example table, not in the problem statement body\"},\n    {\"parameter\": \"max_continuous_driving_minutes\", \"evidence\": \"\\\"maximum continuous driving time constraint\\\" is named but no numeric value is given\"},\n    {\"parameter\": \"max_daily_mileage_km\", \"evidence\": \"\\\"mileage limit constraint\\\" is named but no numeric value is given\"},\n    {\"parameter\": \"min_transfer_buffer_minutes\", \"evidence\": \"no value in the statement\"},\n    {\"parameter\": \"max_shift_length_minutes\", \"evidence\": \"no value in the statement\"}\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "mileage_A_M",
+   "evidence": "values appear only in the example table, not in the problem statement body"
+  },
+  {
+   "parameter": "mileage_Z_M",
+   "evidence": "values appear only in the example table, not in the problem statement body"
+  },
+  {
+   "parameter": "max_continuous_driving_minutes",
+   "evidence": "\"maximum continuous driving time constraint\" is named but no numeric value is given"
+  },
+  {
+   "parameter": "max_daily_mileage_km",
+   "evidence": "\"mileage limit constraint\" is named but no numeric value is given"
+  },
+  {
+   "parameter": "min_transfer_buffer_minutes",
+   "evidence": "no value in the statement"
+  },
+  {
+   "parameter": "max_shift_length_minutes",
+   "evidence": "no value in the statement"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

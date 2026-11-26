@@ -1,0 +1,201 @@
+{
+ "spec": {
+  "a_front_hours": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "b_front_hours": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "a_back_hours": {
+   "base": 3,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "b_back_hours": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "front_capacity": {
+   "base": 16,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "back_capacity": {
+   "base": 24,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "c_per_b": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "c_sellable_max": {
+   "base": 5,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.6
+   }
+  },
+  "c_disposal_cost": {
+   "base": 2,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "profit_a": {
+   "base": 4,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "profit_b": {
+   "base": 10,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.75
+   }
+  },
+  "profit_c": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "a_front_hours": {
+    "meaning": "Front-process hours required per unit of product A",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "b_front_hours": {
+    "meaning": "Front-process hours required per unit of product B",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "a_back_hours": {
+    "meaning": "Back-process hours required per unit of product A",
+    "base": 3,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "b_back_hours": {
+    "meaning": "Back-process hours required per unit of product B",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "front_capacity": {
+    "meaning": "Available front-process hours",
+    "base": 16,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "back_capacity": {
+    "meaning": "Available back-process hours",
+    "base": 24,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "c_per_b": {
+    "meaning": "Units of byproduct C generated per unit of product B",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "c_sellable_max": {
+    "meaning": "Maximum units of byproduct C that can be sold",
+    "base": 5,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.6
+    }
+   },
+   "c_disposal_cost": {
+    "meaning": "Disposal cost per unit of unsold byproduct C",
+    "base": 2,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "profit_a": {
+    "meaning": "Profit per unit of product A sold",
+    "base": 4,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "profit_b": {
+    "meaning": "Profit per unit of product B sold",
+    "base": 10,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.75
+    }
+   },
+   "profit_c": {
+    "meaning": "Profit per unit of byproduct C sold",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 8,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

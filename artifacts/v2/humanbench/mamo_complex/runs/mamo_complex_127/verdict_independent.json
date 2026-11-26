@@ -1,0 +1,185 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "initial_supply": [
+    229,
+    345,
+    231,
+    164,
+    354,
+    437,
+    265
+   ],
+   "required_supply": [
+    158,
+    14,
+    326,
+    432,
+    207,
+    215,
+    233
+   ]
+  },
+  {
+   "initial_supply": [
+    248.15724210811322,
+    246.67722633109204,
+    199.8190635259599,
+    136.76393663384417,
+    404.22648588843623,
+    483.3306056022874,
+    327.3565512650704
+   ],
+   "required_supply": [
+    118.84180133326865,
+    13.344143285356271,
+    234.02833612208656,
+    359.070963069094,
+    207.66512678243762,
+    153.9231400892184,
+    190.89750356599345
+   ]
+  },
+  {
+   "initial_supply": [
+    249.59412175090648,
+    354.30288648486584,
+    192.25307021484053,
+    172.78374329338942,
+    419.7230289983704,
+    307.60397478758756,
+    313.6252610414164
+   ],
+   "required_supply": [
+    176.7836146448839,
+    12.658104338751132,
+    258.6117901631845,
+    550.5096283159977,
+    186.70504250298825,
+    162.46421379603908,
+    176.62094948131826
+   ]
+  },
+  {
+   "initial_supply": [
+    276.74572593614096,
+    366.4712884929465,
+    273.5679786758291,
+    186.60560781067167,
+    361.6948466249785,
+    561.050953315391,
+    245.6869659761282
+   ],
+   "required_supply": [
+    162.93345184470192,
+    16.766999179725158,
+    349.1824635624465,
+    525.7544285605535,
+    216.60713644088983,
+    241.3897668717251,
+    169.50624883506157
+   ]
+  },
+  {
+   "initial_supply": [
+    191.61322307452252,
+    301.4033084656362,
+    172.75916800161477,
+    137.70662321792537,
+    269.2527036066264,
+    378.7846787354661,
+    286.57382663803963
+   ],
+   "required_supply": [
+    145.186090566364,
+    12.909520123781814,
+    269.179575218903,
+    371.6006514751302,
+    261.2324997938918,
+    234.09656469681056,
+    248.25651459224494
+   ]
+  },
+  {
+   "initial_supply": [
+    183.81445026241852,
+    392.42924717572225,
+    184.34758563540328,
+    152.13841546895256,
+    457.9747596752128,
+    473.7079370337432,
+    274.05500926016873
+   ],
+   "required_supply": [
+    175.50143099384013,
+    16.879956129594405,
+    379.9855826984455,
+    361.76926025309587,
+    148.8868502928815,
+    191.19344319962156,
+    200.53017446140322
+   ]
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "B-structured": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "crash:transfer_cost = params[\"transfer_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^ | KeyError: 'transfer_cost'",
+   "crash:transfer_cost = params[\"transfer_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^ | KeyError: 'transfer_cost'",
+   "crash:transfer_cost = params[\"transfer_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^ | KeyError: 'transfer_cost'",
+   "crash:transfer_cost = params[\"transfer_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^ | KeyError: 'transfer_cost'",
+   "crash:transfer_cost = params[\"transfer_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^ | KeyError: 'transfer_cost'",
+   "crash:transfer_cost = params[\"transfer_cost\"] | ~~~~~~^^^^^^^^^^^^^^^^^ | KeyError: 'transfer_cost'"
+  ],
+  "B-structured": [
+   "missing_transfer_cost",
+   "missing_transfer_cost",
+   "missing_transfer_cost",
+   "missing_transfer_cost",
+   "missing_transfer_cost",
+   "missing_transfer_cost"
+  ],
+  "C-direct": [
+   "crash:transfer_cost = params[cost_key] | ~~~~~~^^^^^^^^^^ | KeyError: None",
+   "crash:transfer_cost = params[cost_key] | ~~~~~~^^^^^^^^^^ | KeyError: None",
+   "crash:transfer_cost = params[cost_key] | ~~~~~~^^^^^^^^^^ | KeyError: None",
+   "crash:transfer_cost = params[cost_key] | ~~~~~~^^^^^^^^^^ | KeyError: None",
+   "crash:transfer_cost = params[cost_key] | ~~~~~~^^^^^^^^^^ | KeyError: None",
+   "crash:transfer_cost = params[cost_key] | ~~~~~~^^^^^^^^^^ | KeyError: None"
+  ]
+ },
+ "informative": [],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 0 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

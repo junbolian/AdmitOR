@@ -1,0 +1,106 @@
+{
+ "spec": {
+  "capacity": {
+   "base": [
+    0,
+    4,
+    12,
+    19,
+    13,
+    11,
+    20,
+    0,
+    13,
+    9,
+    10,
+    0,
+    14,
+    8,
+    0,
+    5,
+    13,
+    11,
+    5,
+    15,
+    18,
+    0,
+    6,
+    7,
+    8,
+    17,
+    20,
+    14,
+    0,
+    9,
+    9,
+    19,
+    19,
+    11,
+    4,
+    0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "capacity": {
+    "meaning": "Maximum transmission capacity in MW for each directed cable; 0 means no connection. Covers all 30 ordered pairs including source and sink arcs.",
+    "base": [
+     0,
+     4,
+     12,
+     19,
+     13,
+     11,
+     20,
+     0,
+     13,
+     9,
+     10,
+     0,
+     14,
+     8,
+     0,
+     5,
+     13,
+     11,
+     5,
+     15,
+     18,
+     0,
+     6,
+     7,
+     8,
+     17,
+     20,
+     14,
+     0,
+     9,
+     9,
+     19,
+     19,
+     11,
+     4,
+     0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

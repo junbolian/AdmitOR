@@ -1,0 +1,22 @@
+{
+ "sample_id": "industryor_79",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "The labor parameters mix units: some are person-months and some are person-years, but `labor_capacity` is in person-years. The extracted values for `labor_steel` and `labor_electronics` are stated in person-months in the problem, so there's no mismatch in the raw numbers — the unit conversion issue is a modeling concern, not a parameter extraction error. I'll check only for numeric mismatches and not-stated values.\n\nGoing through each parameter against the statement:\n\n- All prices match.\n- All input coefficients match.\n- All import costs match.\n- Labor values match what's stated (6 person-months, 1 person-year, 6 person-months, 2 person-years).\n- `engine_capacity` = 650,000 ✓\n- `plastics_capacity` = 60,000 ✓\n- `labor_capacity` = 830,000 ✓\n\nNo production limits are stated for steel or electronics, but those parameters weren't extracted either.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

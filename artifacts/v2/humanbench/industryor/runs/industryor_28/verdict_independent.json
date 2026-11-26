@@ -1,0 +1,146 @@
+{
+ "decision": "UNINFORMATIVE",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "pollution_per_car_trip": 100,
+   "pollution_per_truck_trip": 80,
+   "pollution_per_bus_trip": 110,
+   "capacity_per_car_trip": 25,
+   "capacity_per_truck_trip": 30,
+   "capacity_per_bus_trip": 40,
+   "min_products_required": 500,
+   "max_truck_trips": 10,
+   "bus_fraction_limit": 0.2,
+   "max_total_trips": 15,
+   "max_modes_selected": 2
+  },
+  {
+   "pollution_per_car_trip": 113.94267984578836,
+   "pollution_per_truck_trip": 42.00086041781336,
+   "pollution_per_bus_trip": 85.25322502060313,
+   "capacity_per_car_trip": 21,
+   "capacity_per_truck_trip": 38,
+   "capacity_per_bus_trip": 49,
+   "min_products_required": 578,
+   "max_truck_trips": 6,
+   "bus_fraction_limit": 0.22657654590558116,
+   "max_total_trips": 10,
+   "max_modes_selected": 2
+  },
+  {
+   "pollution_per_car_trip": 100.53552881033623,
+   "pollution_per_truck_trip": 42.12287757470909,
+   "pollution_per_bus_trip": 76.87214157553133,
+   "capacity_per_car_trip": 31,
+   "capacity_per_truck_trip": 34,
+   "capacity_per_bus_trip": 33,
+   "min_products_required": 518,
+   "max_truck_trips": 13,
+   "bus_fraction_limit": 0.10194962790341831,
+   "max_total_trips": 22,
+   "max_modes_selected": 2
+  },
+  {
+   "pollution_per_car_trip": 84.02505165179919,
+   "pollution_per_truck_trip": 52.43835998494252,
+   "pollution_per_bus_trip": 160.29343794274595,
+   "capacity_per_car_trip": 23,
+   "capacity_per_truck_trip": 22,
+   "capacity_per_bus_trip": 28,
+   "min_products_required": 569,
+   "max_truck_trips": 11,
+   "bus_fraction_limit": 0.3421384819823141,
+   "max_total_trips": 21,
+   "max_modes_selected": 2
+  },
+  {
+   "pollution_per_car_trip": 147.31157639793707,
+   "pollution_per_truck_trip": 70.28275017666827,
+   "pollution_per_bus_trip": 115.72446944005496,
+   "capacity_per_car_trip": 36,
+   "capacity_per_truck_trip": 35,
+   "capacity_per_bus_trip": 55,
+   "min_products_required": 515,
+   "max_truck_trips": 12,
+   "bus_fraction_limit": 0.11374731509669866,
+   "max_total_trips": 13,
+   "max_modes_selected": 2
+  },
+  {
+   "pollution_per_car_trip": 57.979197692362746,
+   "pollution_per_truck_trip": 58.62327090888242,
+   "pollution_per_bus_trip": 66.1101572350702,
+   "capacity_per_car_trip": 22,
+   "capacity_per_truck_trip": 36,
+   "capacity_per_bus_trip": 38,
+   "min_products_required": 474,
+   "max_truck_trips": 7,
+   "bus_fraction_limit": 0.18009334661473403,
+   "max_total_trips": 24,
+   "max_modes_selected": 2
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   null,
+   null,
+   849.2039949022269,
+   null,
+   null,
+   1047.4899977616474
+  ],
+  "B-structured": [
+   null,
+   null,
+   849.2039949022269,
+   null,
+   null,
+   1047.4899977616474
+  ],
+  "C-direct": [
+   null,
+   null,
+   849.2039949022269,
+   null,
+   null,
+   1047.4899977616474
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded",
+   "optimal"
+  ],
+  "B-structured": [
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "optimal",
+   "no_feasible_solution",
+   "no_feasible_solution",
+   "optimal"
+  ],
+  "C-direct": [
+   "infeasible",
+   "infeasible",
+   "optimal",
+   "infeasible",
+   "infeasible",
+   "optimal"
+  ]
+ },
+ "informative": [
+  2,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": [
+  "only 2 informative instantiation(s) (needed 3); repair the sampling domain or the candidate pool before judging"
+ ]
+}

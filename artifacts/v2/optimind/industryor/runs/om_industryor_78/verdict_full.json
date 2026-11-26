@@ -1,0 +1,143 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "wage_skilled": 100,
+   "wage_laborer": 80,
+   "effective_hours_skilled": 42,
+   "effective_hours_laborer": 36,
+   "demand_task1": 8400,
+   "demand_task2": 10800,
+   "demand_task3": 18000,
+   "max_skilled": 400,
+   "max_laborers": 800
+  },
+  {
+   "wage_skilled": 108.36560790747302,
+   "wage_laborer": 57.20051625068801,
+   "effective_hours_skilled": 38.2204925486012,
+   "effective_hours_laborer": 32.01423462934305,
+   "demand_task1": 9393.179099488852,
+   "demand_task2": 11754.177232083719,
+   "demand_task3": 21529.61610934361,
+   "max_skilled": 317.3877665258832,
+   "max_laborers": 768.7687278741082
+  },
+  {
+   "wage_skilled": 71.78783316628422,
+   "wage_laborer": 66.49462279057296,
+   "effective_hours_skilled": 42.08996884013649,
+   "effective_hours_laborer": 29.182117963447638,
+   "demand_task1": 7135.118132883924,
+   "demand_task2": 11609.375964009425,
+   "demand_task3": 18404.47332542895,
+   "max_skilled": 344.0881244081393,
+   "max_laborers": 835.7062735503636
+  },
+  {
+   "wage_skilled": 118.5658274006696,
+   "wage_laborer": 56.31194046454692,
+   "effective_hours_skilled": 47.137763430791175,
+   "effective_hours_laborer": 38.85320728783047,
+   "demand_task1": 7729.052169375565,
+   "demand_task2": 8939.58929898362,
+   "demand_task3": 22114.917649861032,
+   "max_skilled": 367.31890902252536,
+   "max_laborers": 637.0983373520592
+  },
+  {
+   "wage_skilled": 75.80298261000785,
+   "wage_laborer": 96.67972958467807,
+   "effective_hours_skilled": 43.74259732696377,
+   "effective_hours_laborer": 40.422647135151074,
+   "demand_task1": 9364.873504114035,
+   "demand_task2": 10995.631693855383,
+   "demand_task3": 22258.041875814335,
+   "max_skilled": 375.7068754416707,
+   "max_laborers": 820.8162525092907
+  },
+  {
+   "wage_skilled": 119.7642798551797,
+   "wage_laborer": 85.6889481134838,
+   "effective_hours_skilled": 48.07667592522105,
+   "effective_hours_laborer": 37.113870891697374,
+   "demand_task1": 9259.201712102678,
+   "demand_task2": 8347.451671740577,
+   "demand_task3": 15551.084480863921,
+   "max_skilled": 357.87759272042143,
+   "max_laborers": 631.916790769451
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   84000.0,
+   null,
+   76348.98577592398,
+   71166.58259844483,
+   91104.91219873108,
+   78324.15641098047
+  ],
+  "B-structured": [
+   84000.0,
+   null,
+   76361.33651747697,
+   71203.32264131593,
+   91171.26297920902,
+   78364.33678557968
+  ],
+  "C-direct": [
+   84000.0,
+   null,
+   76361.33651747694,
+   71203.32264131593,
+   91171.26297920903,
+   78364.33678557967
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "solve_failed",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  2,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {
+  "A-direct": "diverges from consensus by 66.35 on instance 4 (params: {'wage_skilled': 75.8, 'wage_laborer': 96.68, 'effective_hours_skilled': 43.74, 'effective_hours_laborer': 40.42, 'demand_task1': 9364.87, 'demand_task2': 10995.63, 'demand_task3': 22258.04, 'max_skilled': 375.71, 'max_laborers': 820.82})"
+ },
+ "disagreements": [],
+ "notes": []
+}

@@ -1,0 +1,51 @@
+{
+ "sample_id": "mamo_complex_175",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\"mismatch\": [], \"not_stated\": [{\"parameter\": \"capacity_7_0\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 0 (3 units)\"}, {\"parameter\": \"capacity_7_1\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 1 (6 units)\"}, {\"parameter\": \"capacity_7_2\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 2 (5 units)\"}, {\"parameter\": \"capacity_7_3\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 3 (1 unit)\"}, {\"parameter\": \"capacity_7_4\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 4 (14 units)\"}, {\"parameter\": \"capacity_7_5\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 5 (20 units)\"}, {\"parameter\": \"capacity_7_6\", \"evidence\": \"Node 7 (Destination): Can receive goods from Node 6 (9 units)\"}]}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_7_0",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 0 (3 units)"
+  },
+  {
+   "parameter": "capacity_7_1",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 1 (6 units)"
+  },
+  {
+   "parameter": "capacity_7_2",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 2 (5 units)"
+  },
+  {
+   "parameter": "capacity_7_3",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 3 (1 unit)"
+  },
+  {
+   "parameter": "capacity_7_4",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 4 (14 units)"
+  },
+  {
+   "parameter": "capacity_7_5",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 5 (20 units)"
+  },
+  {
+   "parameter": "capacity_7_6",
+   "evidence": "Node 7 (Destination): Can receive goods from Node 6 (9 units)"
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "spec": {
+  "revenue": {
+   "base": [
+    15000,
+    40000,
+    30000,
+    50000
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost": {
+   "base": [
+    1.6,
+    2.5,
+    1.8,
+    3.0
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  },
+  "budget": {
+   "base": 6.0,
+   "perturb": {
+    "mode": "abs",
+    "lo": 3.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "revenue": {
+    "meaning": "Annual revenue of each restaurant (A, B, C, D) in dollars",
+    "base": [
+     15000,
+     40000,
+     30000,
+     50000
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost": {
+    "meaning": "Purchase cost of each restaurant (A, B, C, D) in millions of dollars",
+    "base": [
+     1.6,
+     2.5,
+     1.8,
+     3.0
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   },
+   "budget": {
+    "meaning": "Total investment budget in millions of dollars",
+    "base": 6.0,
+    "perturb": {
+     "mode": "abs",
+     "lo": 3.0,
+     "hi": 8.0,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

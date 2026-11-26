@@ -1,0 +1,29 @@
+{
+ "sample_id": "om_industryor_74",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "```json\n{\n  \"mismatch\": [\n    {\n      \"parameter\": \"storage_capacity\",\n      \"extracted\": 200,\n      \"stated\": \"200,000 m³\",\n      \"evidence\": \"the maximum storage capacity of the company's warehouse is 200,000 m³\"\n    }\n  ],\n  \"not_stated\": []\n}\n```",
+ "mismatch": [
+  {
+   "parameter": "storage_capacity",
+   "extracted": 200,
+   "stated": "200,000 m³",
+   "evidence": "the maximum storage capacity of the company's warehouse is 200,000 m³"
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

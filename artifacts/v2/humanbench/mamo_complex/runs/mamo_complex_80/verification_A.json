@@ -1,0 +1,27 @@
+{
+ "sample_id": "mamo_complex_80",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"transport_costs\",\n      \"evidence\": \"Cost list is given as directed pairs (e.g., 'to Warehouse 2 costs 36'), not as a condensed row-major upper-triangular sequence; the extracted vector does not match the stated set of directed costs.\"\n    }\n  ]\n}",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "transport_costs",
+   "evidence": "Cost list is given as directed pairs (e.g., 'to Warehouse 2 costs 36'), not as a condensed row-major upper-triangular sequence; the extracted vector does not match the stated set of directed costs."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "decision": "ABSTAIN",
+ "clique": [],
+ "families": [],
+ "instantiations": [
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 2,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 300,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 15,
+   "target_profit": 10000,
+   "target_time_I": 150,
+   "target_time_II": 70
+  },
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 2.1394267984578836,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 157.5032265668001,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 12,
+   "target_profit": 7232.1073814882275,
+   "target_time_I": 150,
+   "target_time_II": 70
+  },
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 2.2364712141640126,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 353.0098462268734,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 40,
+   "target_profit": 5869.388326294162,
+   "target_time_I": 150,
+   "target_time_II": 70
+  },
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 1.9219218196852705,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 158.9391658314211,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 10,
+   "target_profit": 10053.552881033624,
+   "target_time_I": 150,
+   "target_time_II": 70
+  },
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 1.5265359696838636,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 209.65129520599456,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 29,
+   "target_profit": 10449.414806032166,
+   "target_time_I": 150,
+   "target_time_II": 70
+  },
+  {
+   "time_I_A": 4,
+   "time_I_B": 6,
+   "time_II_A": 3,
+   "time_II_B": 1.7204406220406967,
+   "capacity_I": 150,
+   "capacity_II": 70,
+   "profit_A": 326.77970516277264,
+   "profit_B": 450,
+   "min_units_A": 10,
+   "min_units_B": 36,
+   "target_profit": 5064.98759678061,
+   "target_time_I": 150,
+   "target_time_II": 70
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   11250.0,
+   9754.6605983025,
+   null,
+   9448.331781699944,
+   null,
+   null
+  ],
+  "B-structured": [
+   11250.0,
+   9540.038718801601,
+   null,
+   null,
+   null,
+   null
+  ],
+  "C-direct": [
+   11250.0,
+   9754.6605983025,
+   -21876251.458531976,
+   -1515539.492569624,
+   -11050135.528797684,
+   -17663607.45821096
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "infeasible_or_unbounded",
+   "infeasible_or_unbounded"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed",
+   "infeasible_or_failed"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  3
+ ],
+ "diagnoses": {},
+ "disagreements": [
+  "A-direct vs B-structured: diverge on instance(s) [1]",
+  "A-direct vs C-direct: diverge on instance(s) [3]",
+  "B-structured vs C-direct: diverge on instance(s) [1]"
+ ],
+ "notes": []
+}

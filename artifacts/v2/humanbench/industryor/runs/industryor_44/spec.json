@@ -1,0 +1,181 @@
+{
+ "spec": {
+  "num_customers": {
+   "base": 7,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 7.0,
+    "integer": true
+   }
+  },
+  "distance_matrix": {
+   "base": [
+    [
+     0,
+     86,
+     49,
+     57,
+     31,
+     69,
+     50
+    ],
+    [
+     86,
+     0,
+     68,
+     79,
+     93,
+     24,
+     5
+    ],
+    [
+     49,
+     68,
+     0,
+     16,
+     7,
+     72,
+     67
+    ],
+    [
+     57,
+     79,
+     16,
+     0,
+     90,
+     69,
+     1
+    ],
+    [
+     31,
+     93,
+     7,
+     90,
+     0,
+     86,
+     59
+    ],
+    [
+     69,
+     24,
+     72,
+     69,
+     86,
+     0,
+     81
+    ],
+    [
+     50,
+     5,
+     67,
+     1,
+     59,
+     81,
+     0
+    ]
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.35
+   }
+  }
+ },
+ "warnings": [
+  "[num_customers] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "num_customers": {
+    "meaning": "number of customer locations including depot (index-set size, frozen)",
+    "base": 7,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 7,
+     "integer": true
+    }
+   },
+   "distance_matrix": {
+    "meaning": "symmetric pairwise travel distances d_ij between locations 1..7",
+    "base": [
+     [
+      0,
+      86,
+      49,
+      57,
+      31,
+      69,
+      50
+     ],
+     [
+      86,
+      0,
+      68,
+      79,
+      93,
+      24,
+      5
+     ],
+     [
+      49,
+      68,
+      0,
+      16,
+      7,
+      72,
+      67
+     ],
+     [
+      57,
+      79,
+      16,
+      0,
+      90,
+      69,
+      1
+     ],
+     [
+      31,
+      93,
+      7,
+      90,
+      0,
+      86,
+      59
+     ],
+     [
+      69,
+      24,
+      72,
+      69,
+      86,
+      0,
+      81
+     ],
+     [
+      50,
+      5,
+      67,
+      1,
+      59,
+      81,
+      0
+     ]
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.35
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

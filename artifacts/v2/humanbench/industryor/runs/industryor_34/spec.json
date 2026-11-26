@@ -1,0 +1,145 @@
+{
+ "spec": {
+  "x_coords": {
+   "base": [
+    0,
+    10,
+    12,
+    14,
+    16,
+    18,
+    8,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "y_coords": {
+   "base": [
+    0,
+    0,
+    3,
+    15,
+    13,
+    9,
+    6,
+    12
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": -5.0,
+    "hi": 25.0,
+    "integer": false
+   }
+  },
+  "student_counts": {
+   "base": [
+    60,
+    80,
+    100,
+    120,
+    80,
+    60,
+    40,
+    80
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.5
+   }
+  },
+  "num_schools": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 2.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [
+  "[num_schools] degenerate abs range (lo == hi); perturbation has no effect"
+ ],
+ "raw": {
+  "params": {
+   "x_coords": {
+    "meaning": "x-coordinate of each village (x-coordinate of village 1 is missing from the table; base uses 0 as placeholder for the extraction)",
+    "base": [
+     0,
+     10,
+     12,
+     14,
+     16,
+     18,
+     8,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "y_coords": {
+    "meaning": "y-coordinate of each village",
+    "base": [
+     0,
+     0,
+     3,
+     15,
+     13,
+     9,
+     6,
+     12
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": -5,
+     "hi": 25,
+     "integer": false
+    }
+   },
+   "student_counts": {
+    "meaning": "number of elementary school students in each village",
+    "base": [
+     60,
+     80,
+     100,
+     120,
+     80,
+     60,
+     40,
+     80
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.5
+    }
+   },
+   "num_schools": {
+    "meaning": "number of elementary schools to build (fixed structural parameter)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 2,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

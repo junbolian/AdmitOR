@@ -1,0 +1,102 @@
+{
+ "spec": {
+  "demand": {
+   "base": [
+    1500,
+    1000,
+    2000,
+    1200
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "cost_1": {
+   "base": 28,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_2": {
+   "base": 45,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_3": {
+   "base": 60,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  },
+  "cost_4": {
+   "base": 73,
+   "perturb": {
+    "mode": "rel",
+    "r": 0.4
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand": {
+    "meaning": "Required warehouse area (m^2) in months 1-4",
+    "base": [
+     1500,
+     1000,
+     2000,
+     1200
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "cost_1": {
+    "meaning": "Rental fee per m^2 for a 1-month contract",
+    "base": 28,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_2": {
+    "meaning": "Rental fee per m^2 for a 2-month contract",
+    "base": 45,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_3": {
+    "meaning": "Rental fee per m^2 for a 3-month contract",
+    "base": 60,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   },
+   "cost_4": {
+    "meaning": "Rental fee per m^2 for a 4-month contract",
+    "base": 73,
+    "perturb": {
+     "mode": "rel",
+     "r": 0.4
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

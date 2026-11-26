@@ -1,0 +1,213 @@
+{
+ "spec": {
+  "target_N": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 9.0,
+    "hi": 11.0,
+    "integer": false
+   }
+  },
+  "target_P": {
+   "base": 8,
+   "perturb": {
+    "mode": "abs",
+    "lo": 7.0,
+    "hi": 9.0,
+    "integer": false
+   }
+  },
+  "target_K": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 11.0,
+    "hi": 13.0,
+    "integer": false
+   }
+  },
+  "tol": {
+   "base": 0.5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.1,
+    "hi": 1.5,
+    "integer": false
+   }
+  },
+  "price": {
+   "base": [
+    21.75,
+    23.5,
+    22.0,
+    19.5,
+    18.5
+   ],
+   "perturb": {
+    "mode": "rel",
+    "r": 0.3
+   }
+  },
+  "nutrient_N": {
+   "base": [
+    10,
+    8,
+    12,
+    10,
+    15
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 18.0,
+    "integer": false
+   }
+  },
+  "nutrient_P": {
+   "base": [
+    8,
+    11,
+    7,
+    10,
+    10
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 14.0,
+    "integer": false
+   }
+  },
+  "nutrient_K": {
+   "base": [
+    12,
+    15,
+    12,
+    10,
+    6
+   ],
+   "perturb": {
+    "mode": "abs",
+    "lo": 5.0,
+    "hi": 16.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "target_N": {
+    "meaning": "target minimum nitrogen percentage",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 9,
+     "hi": 11,
+     "integer": false
+    }
+   },
+   "target_P": {
+    "meaning": "target minimum phosphorus percentage",
+    "base": 8,
+    "perturb": {
+     "mode": "abs",
+     "lo": 7,
+     "hi": 9,
+     "integer": false
+    }
+   },
+   "target_K": {
+    "meaning": "target minimum potash percentage",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 11,
+     "hi": 13,
+     "integer": false
+    }
+   },
+   "tol": {
+    "meaning": "maximum allowed excess above each target percentage",
+    "base": 0.5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0.1,
+     "hi": 1.5,
+     "integer": false
+    }
+   },
+   "price": {
+    "meaning": "cost per 100 pounds for each fertilizer (1..5)",
+    "base": [
+     21.75,
+     23.5,
+     22.0,
+     19.5,
+     18.5
+    ],
+    "perturb": {
+     "mode": "rel",
+     "r": 0.3
+    }
+   },
+   "nutrient_N": {
+    "meaning": "nitrogen percentage in each fertilizer (1..5)",
+    "base": [
+     10,
+     8,
+     12,
+     10,
+     15
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 18,
+     "integer": false
+    }
+   },
+   "nutrient_P": {
+    "meaning": "phosphorus percentage in each fertilizer (1..5)",
+    "base": [
+     8,
+     11,
+     7,
+     10,
+     10
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 14,
+     "integer": false
+    }
+   },
+   "nutrient_K": {
+    "meaning": "potash percentage in each fertilizer (1..5)",
+    "base": [
+     12,
+     15,
+     12,
+     10,
+     6
+    ],
+    "perturb": {
+     "mode": "abs",
+     "lo": 5,
+     "hi": 16,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

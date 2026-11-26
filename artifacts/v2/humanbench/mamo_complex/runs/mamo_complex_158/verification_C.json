@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_158",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll check each row of the extracted matrix against the statement.\n\n- Row 0: [0,6,1,14,20,6,13,13,15] — matches.\n- Row 1: [2,0,5,5,13,5,12,9,15] — matches.\n- Row 2: [15,0,0,8,16,9,19,15,6] — statement lists no capacity from Reservoir 2 to Reservoir 1, so 0 is correct. Matches.\n- Row 3: [13,8,0,0,14,12,9,1,2] — statement lists no capacity from Reservoir 3 to Reservoir 2, so 0 is correct. Matches.\n- Row 4: [4,14,19,16,0,14,11,11,2] — matches.\n- Row 5: [19,18,5,20,9,0,11,5,7] — matches.\n- Row 6: [11,14,20,17,11,13,0,11,16] — matches.\n- Row 7: [6,2,17,0,10,13,17,0,9] — statement lists no capacity from Reservoir 7 to Reservoir 3, so 0 is correct. Matches.\n- Row 8: [8,9,7,18,12,13,5,9,0] — matches.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

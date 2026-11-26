@@ -1,0 +1,245 @@
+{
+ "spec": {
+  "a_proc1_hours": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 4.0,
+    "integer": false
+   }
+  },
+  "a_proc2_hours": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "b_proc1_hours": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.5,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "b_proc2_hours": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 6.0,
+    "integer": false
+   }
+  },
+  "proc1_capacity": {
+   "base": 16,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 28.0,
+    "integer": false
+   }
+  },
+  "proc2_capacity": {
+   "base": 24,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 40.0,
+    "integer": false
+   }
+  },
+  "byproduct_per_b": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 1.0,
+    "hi": 3.0,
+    "integer": false
+   }
+  },
+  "c_sales_limit": {
+   "base": 5,
+   "perturb": {
+    "mode": "abs",
+    "lo": 2.0,
+    "hi": 12.0,
+    "integer": false
+   }
+  },
+  "c_disposal_cost": {
+   "base": 2,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 5.0,
+    "integer": false
+   }
+  },
+  "a_profit": {
+   "base": 4,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 10.0,
+    "integer": false
+   }
+  },
+  "b_profit": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 0.0,
+    "hi": 22.0,
+    "integer": false
+   }
+  },
+  "c_sell_profit": {
+   "base": 3,
+   "perturb": {
+    "mode": "abs",
+    "lo": -2.0,
+    "hi": 8.0,
+    "integer": false
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "a_proc1_hours": {
+    "meaning": "hours of first process required per unit of product A",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 4,
+     "integer": false
+    }
+   },
+   "a_proc2_hours": {
+    "meaning": "hours of second process required per unit of product A",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "b_proc1_hours": {
+    "meaning": "hours of first process required per unit of product B",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1.5,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "b_proc2_hours": {
+    "meaning": "hours of second process required per unit of product B",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 6,
+     "integer": false
+    }
+   },
+   "proc1_capacity": {
+    "meaning": "available hours for the first process",
+    "base": 16,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 28,
+     "integer": false
+    }
+   },
+   "proc2_capacity": {
+    "meaning": "available hours for the second process",
+    "base": 24,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 40,
+     "integer": false
+    }
+   },
+   "byproduct_per_b": {
+    "meaning": "units of by-product C generated per unit of product B",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 1,
+     "hi": 3,
+     "integer": false
+    }
+   },
+   "c_sales_limit": {
+    "meaning": "maximum units of by-product C that can be sold",
+    "base": 5,
+    "perturb": {
+     "mode": "abs",
+     "lo": 2,
+     "hi": 12,
+     "integer": false
+    }
+   },
+   "c_disposal_cost": {
+    "meaning": "cost per unit of by-product C disposed of (rest beyond sales limit)",
+    "base": 2,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 5,
+     "integer": false
+    }
+   },
+   "a_profit": {
+    "meaning": "profit per unit of product A sold",
+    "base": 4,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 10,
+     "integer": false
+    }
+   },
+   "b_profit": {
+    "meaning": "profit per unit of product B sold",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 0,
+     "hi": 22,
+     "integer": false
+    }
+   },
+   "c_sell_profit": {
+    "meaning": "profit per unit of by-product C sold",
+    "base": 3,
+    "perturb": {
+     "mode": "abs",
+     "lo": -2,
+     "hi": 8,
+     "integer": false
+    }
+   }
+  },
+  "objective_sense": "max"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

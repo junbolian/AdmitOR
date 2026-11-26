@@ -1,0 +1,31 @@
+{
+ "sample_id": "mamo_complex_155",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "I'll compare each row of the extracted capacity matrix against the statement.\n\nRow 0 (from Station 0): extracted [0,15,1,9,18,12,18,6,17] — matches statement.\nRow 1 (from Station 1): extracted [14,0,13,11,14,10,15,4,15] — matches statement.\nRow 2 (from Station 2): extracted [3,0,0,2,14,16,7,12,4] — statement lists Station 2 → Station 1 with no value given (Station 1 is skipped entirely in the list), so the extracted value of 0 for c[2][1] is not stated. Same for c[2][2] (self-loop, trivially 0, fine).\nRow 3 (from Station 3): extracted [5,20,0,0,9,1,12,1,20] — statement skips Station 2 and Station 3 (self), so c[3][2]=0 is not stated.\nRow 4 (from Station 4): extracted [11,18,12,3,0,4,16,15,2] — matches statement.\nRow 5 (from Station 5): extracted [13,8,8,6,4,0,8,10,11] — matches statement.\nRow 6 (from Station 6): extracted [12,1,3,4,11,8,0,10,19] — matches statement.\nRow 7 (from Station 7): extracted [18,3,9,5,9,17,10,0,13] — matches statement.\nRow 8 (from Station 8): extracted [9,8,12,2,5,2,16,5,0] — matches statement.\n\nFor rows 2 and 3, the statement simply omits certain destination stations (implying no direct link, i.e., 0), but the statement says a capacity of \"0\" means no direct link — it doesn't explicitly state those values, they were inferred/filled in.\n\n```json\n{\n  \"mismatch\": [],\n  \"not_stated\": [\n    {\n      \"parameter\": \"capacity_matrix[2][1]\",\n      \"evidence\": \"From Station 2: Can route data to Station 0 (3 TB), Station 3 (2 TB), Station 4 (14 TB), Station 5 (16 TB), Station 6 (7 TB), Station 7 (12 TB), and Station 8 (4 TB). — Station 1 is not listed; the 0 value was filled in.\"\n    },\n    {\n      \"parameter\": \"capacity_matrix[3][2]\",\n      \"evidence\": \"From Station 3: Can forward data to Station 0 (5 TB), Station 1 (20 TB), Station 4 (9 TB), Station 5 (1 TB), Station 6 (12 TB), Station 7 (1 TB), and Station 8 (20 TB). — Station 2 is not listed; the 0 value was filled in.\"\n    }\n  ]\n}\n```",
+ "mismatch": [],
+ "not_stated": [
+  {
+   "parameter": "capacity_matrix[2][1]",
+   "evidence": "From Station 2: Can route data to Station 0 (3 TB), Station 3 (2 TB), Station 4 (14 TB), Station 5 (16 TB), Station 6 (7 TB), Station 7 (12 TB), and Station 8 (4 TB). — Station 1 is not listed; the 0 value was filled in."
+  },
+  {
+   "parameter": "capacity_matrix[3][2]",
+   "evidence": "From Station 3: Can forward data to Station 0 (5 TB), Station 1 (20 TB), Station 4 (9 TB), Station 5 (1 TB), Station 6 (12 TB), Station 7 (1 TB), and Station 8 (20 TB). — Station 2 is not listed; the 0 value was filled in."
+  }
+ ],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": true,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

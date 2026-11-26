@@ -1,0 +1,22 @@
+{
+ "sample_id": "mamo_complex_17",
+ "family": "C",
+ "model": "claude-sonnet-5-5",
+ "response_model": "claude-sonnet-5-5",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "Looking at each row of the capacity matrix against the statement:\n\n**Row 0 (Center 0):** Statement says \"Centers 1 through 8 with capacities of 9, 7, 18, 0, 0, 7, 0, and 2.\" Extracted row: [0,9,7,18,0,0,7,0,2]. ✓\n\n**Row 1 (Center 1):** Statement says \"15, 11, 5, 20, 15, 18, 9, and 15 thousand gallons per hour to Centers 0 through 8 (excluding itself).\" That's 8 values for 8 destinations → [15,0,11,5,20,15,18,9,15]. Extracted matches. ✓\n\n**Row 2 (Center 2):** Statement says \"3, 8, 0, 10, 16, 18, 8, 0, and 20\" — that's 9 values for Centers 0 through 8 including itself. Excluding the self-entry (index 2, value 0): [3,8,0,10,16,18,8,20]. Inserted into full row: [3,8,0,0,10,16,18,8,20]. Extracted matches. ✓\n\n**Row 3 (Center 3):** Statement says \"13, 3, 7, 0, 20, 13, 16, 6, and 20\" — 9 values. Self-entry at index 3 is 0: [13,3,7,0,20,13,16,6,20]. Extracted matches. ✓\n\n**Row 4 (Center 4):** Statement says \"7, 20, 2, 4, 0, 9, 3, 14, and 2\" — 9 values. Self at index 4 is 0: [7,20,2,4,0,9,3,14,2]. Extracted matches. ✓\n\n**Row 5 (Center 5):** Statement says \"17, 10, 5, 1, 4, 0, 4, 3, and 20\" — self at index 5 is 0: [17,10,5,1,4,0,4,3,20]. Extracted matches. ✓\n\n**Row 6 (Center 6):** Statement says \"0, 20, 10, 10, 15, 5, 0, 1, and 10\" — self at index 6 is 0: [0,20,10,10,15,5,0,1,10]. Extracted matches. ✓\n\n**Row 7 (Center 7):** Statement says \"10, 3, 9, 4, 3, 13, 18, 0, and 20\" — self at index 7 is 0: [10,3,9,4,3,13,18,0,20]. Extracted matches. ✓\n\n**Row 8 (Center 8):** Statement says \"2, 12, 10, 5, 15, 14, 0, 10, and 0\" — self at index 8 is 0: [2,12,10,5,15,14,0,10,0]. Extracted matches. ✓\n\nAll other parameters match directly. No issues found.\n\n```json\n{\"mismatch\": [], \"not_stated\": []}\n```",
+ "mismatch": [],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": false,
+ "flag_not_stated": false,
+ "flag_any": false,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

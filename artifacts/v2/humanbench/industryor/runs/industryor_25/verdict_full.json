@@ -1,0 +1,155 @@
+{
+ "decision": "ACCEPT",
+ "clique": [
+  "A-direct",
+  "B-structured",
+  "C-direct"
+ ],
+ "families": [
+  "claude",
+  "deepseek",
+  "gpt"
+ ],
+ "instantiations": [
+  {
+   "supply_A_lower": 80,
+   "supply_B_lower": 100,
+   "demand_1": 55,
+   "demand_2": 75,
+   "demand_3": 50,
+   "dist_A1": 10,
+   "dist_A2": 5,
+   "dist_A3": 6,
+   "dist_B1": 4,
+   "dist_B2": 8,
+   "dist_B3": 15
+  },
+  {
+   "supply_A_lower": 80,
+   "supply_B_lower": 100,
+   "demand_1": 63.774205930604765,
+   "demand_2": 75,
+   "demand_3": 50,
+   "dist_A1": 5.275118307449336,
+   "dist_A2": 4.200234546952954,
+   "dist_A3": 4.232107381488228,
+   "dist_B1": 6.891769713312099,
+   "dist_B2": 10.443694361652025,
+   "dist_B3": 22.274873083277527
+  },
+  {
+   "supply_A_lower": 80,
+   "supply_B_lower": 100,
+   "demand_1": 38.91224746832373,
+   "demand_2": 75,
+   "demand_3": 50,
+   "dist_A1": 9.641140016537975,
+   "dist_A2": 2.2383777555045627,
+   "dist_A3": 4.186379748036034,
+   "dist_B1": 5.042842304826899,
+   "dist_B2": 3.2918956665224997,
+   "dist_B3": 11.181402410986376
+  },
+  {
+   "supply_A_lower": 80,
+   "supply_B_lower": 100,
+   "demand_1": 64.24479970007854,
+   "demand_2": 75,
+   "demand_3": 50,
+   "dist_A1": 10.994356286635384,
+   "dist_A2": 3.7635249763255736,
+   "dist_A3": 7.892656838759088,
+   "dist_B1": 7.475443653422613,
+   "dist_B2": 3.071486356458671,
+   "dist_B3": 20.893108029324928
+  },
+  {
+   "supply_A_lower": 80,
+   "supply_B_lower": 100,
+   "demand_1": 66.4162727744702,
+   "demand_2": 75,
+   "demand_3": 50,
+   "dist_A1": 8.742755681697911,
+   "dist_A2": 3.2438359984942524,
+   "dist_A3": 11.572130722067811,
+   "dist_B1": 3.692756360901014,
+   "dist_B2": 4.020204277181627,
+   "dist_B3": 9.547462029335424
+  },
+  {
+   "supply_A_lower": 80,
+   "supply_B_lower": 100,
+   "demand_1": 73.1372464856357,
+   "demand_2": 75,
+   "demand_3": 50,
+   "dist_A1": 11.640986345035802,
+   "dist_A2": 8.45702618619504,
+   "dist_A3": 9.29731786693818,
+   "dist_B1": 5.289824731637606,
+   "dist_B2": 13.704273403773076,
+   "dist_B3": 14.056550035333656
+  }
+ ],
+ "objectives": {
+  "A-direct": [
+   1030.0,
+   1192.3143905467869,
+   null,
+   1126.013857451721,
+   976.0432585727638,
+   1613.8721532323696
+  ],
+  "B-structured": [
+   1030.0,
+   1192.3143905467869,
+   null,
+   1126.013857451721,
+   976.0432585727638,
+   1613.8721532323696
+  ],
+  "C-direct": [
+   1030.0,
+   1192.3143905467869,
+   null,
+   1126.013857451721,
+   976.0432585727638,
+   1613.8721532323696
+  ]
+ },
+ "statuses": {
+  "A-direct": [
+   "optimal",
+   "optimal",
+   "infeasible_or_unbounded",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "B-structured": [
+   "optimal",
+   "optimal",
+   "solver_failed",
+   "optimal",
+   "optimal",
+   "optimal"
+  ],
+  "C-direct": [
+   "optimal",
+   "optimal",
+   "infeasible",
+   "optimal",
+   "optimal",
+   "optimal"
+  ]
+ },
+ "informative": [
+  0,
+  1,
+  3,
+  4,
+  5
+ ],
+ "diagnoses": {},
+ "disagreements": [],
+ "notes": []
+}

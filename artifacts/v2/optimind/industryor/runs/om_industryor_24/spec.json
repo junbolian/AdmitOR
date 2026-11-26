@@ -1,0 +1,131 @@
+{
+ "spec": {
+  "demand_2_6": {
+   "base": 10,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 20.0,
+    "integer": true
+   }
+  },
+  "demand_6_10": {
+   "base": 15,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 28.0,
+    "integer": true
+   }
+  },
+  "demand_10_14": {
+   "base": 25,
+   "perturb": {
+    "mode": "abs",
+    "lo": 12.0,
+    "hi": 40.0,
+    "integer": true
+   }
+  },
+  "demand_14_18": {
+   "base": 20,
+   "perturb": {
+    "mode": "abs",
+    "lo": 8.0,
+    "hi": 34.0,
+    "integer": true
+   }
+  },
+  "demand_18_22": {
+   "base": 18,
+   "perturb": {
+    "mode": "abs",
+    "lo": 6.0,
+    "hi": 30.0,
+    "integer": true
+   }
+  },
+  "demand_22_2": {
+   "base": 12,
+   "perturb": {
+    "mode": "abs",
+    "lo": 4.0,
+    "hi": 24.0,
+    "integer": true
+   }
+  }
+ },
+ "warnings": [],
+ "raw": {
+  "params": {
+   "demand_2_6": {
+    "meaning": "Salespeople required in period 2:00-6:00",
+    "base": 10,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 20,
+     "integer": true
+    }
+   },
+   "demand_6_10": {
+    "meaning": "Salespeople required in period 6:00-10:00",
+    "base": 15,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 28,
+     "integer": true
+    }
+   },
+   "demand_10_14": {
+    "meaning": "Salespeople required in period 10:00-14:00",
+    "base": 25,
+    "perturb": {
+     "mode": "abs",
+     "lo": 12,
+     "hi": 40,
+     "integer": true
+    }
+   },
+   "demand_14_18": {
+    "meaning": "Salespeople required in period 14:00-18:00",
+    "base": 20,
+    "perturb": {
+     "mode": "abs",
+     "lo": 8,
+     "hi": 34,
+     "integer": true
+    }
+   },
+   "demand_18_22": {
+    "meaning": "Salespeople required in period 18:00-22:00",
+    "base": 18,
+    "perturb": {
+     "mode": "abs",
+     "lo": 6,
+     "hi": 30,
+     "integer": true
+    }
+   },
+   "demand_22_2": {
+    "meaning": "Salespeople required in period 22:00-2:00",
+    "base": 12,
+    "perturb": {
+     "mode": "abs",
+     "lo": 4,
+     "hi": 24,
+     "integer": true
+    }
+   }
+  },
+  "objective_sense": "min"
+ },
+ "extraction_attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}

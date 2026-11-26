@@ -1,0 +1,101 @@
+{
+ "sample_id": "om_mamo_105",
+ "family": "A",
+ "model": "deepseek-v4-flash",
+ "response_model": "deepseek-v4-flash-0731",
+ "finish_reason": "stop",
+ "status": "ok",
+ "reply": "{\"mismatch\": [{\"parameter\": \"payoff\", \"extracted\": [[1, 0, 1, 1, 0], [1, 0, 0, 1, 1], [1, 0, 1, 1, 0], [0, 1, 0, 1, 1], [0, 1, 1, 0, 1]], \"stated\": [[1, 0, 1, 1, 0], [1, 0, 0, 1, 0], [1, 0, 1, 1, 0], [0, 1, 0, 1, 1], [0, 1, 1, 0, 1]], \"evidence\": \"Security 3 has a price of 0.40 and a share limit of 10. Similar to Security 2, the payoff is $1 for Argentina, $1 for Spain, and $1 for England, and 0 payoff for Germany and Brazil.\"}], \"not_stated\": []}",
+ "mismatch": [
+  {
+   "parameter": "payoff",
+   "extracted": [
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "stated": [
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "evidence": "Security 3 has a price of 0.40 and a share limit of 10. Similar to Security 2, the payoff is $1 for Argentina, $1 for Spain, and $1 for England, and 0 payoff for Germany and Brazil."
+  }
+ ],
+ "not_stated": [],
+ "missing_keys": [],
+ "flag_mismatch": true,
+ "flag_not_stated": false,
+ "flag_any": true,
+ "attempts": [
+  {
+   "attempt": 1,
+   "status": "ok",
+   "finish_reason": "stop"
+  }
+ ]
+}
